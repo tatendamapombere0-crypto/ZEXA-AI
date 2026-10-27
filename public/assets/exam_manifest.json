@@ -1,0 +1,902 @@
+[
+  {
+    "id": "exam_bank_agriculture_4001_1",
+    "file": "exam_bank_agriculture_4001_1.json",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "paperCode": "4001/1",
+    "paperName": "Agriculture Paper 1 (Multiple Choice)",
+    "paperType": "Specimen Paper",
+    "questionCount": 40
+  },
+  {
+    "id": "exam_bank_agriculture_a_level_paper1",
+    "file": "exam_bank_agriculture_a_level_paper1.json",
+    "subject": "Agriculture",
+    "level": "A-Level",
+    "paperCode": "Agriculture Paper 1",
+    "paperName": "Agriculture A-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_agriculture_a_level_paper2",
+    "file": "exam_bank_agriculture_a_level_paper2.json",
+    "subject": "Agriculture",
+    "level": "A-Level",
+    "paperCode": "Agriculture Paper 2",
+    "paperName": "Agriculture A-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_agriculture_grade7_p2_practice",
+    "file": "exam_bank_agriculture_grade7_p2_practice.json",
+    "subject": "Agriculture",
+    "level": "Primary",
+    "paperCode": "G7-AGRIC-2",
+    "paperName": "Grade 7 Agriculture Paper 2 - Practice Set (original questions, real ZIMSEC format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC Grade 7 Agriculture Paper 2 structure/format)",
+    "questionCount": 10
+  },
+  {
+    "id": "exam_bank_agriculture_grade7_p2_practice_b",
+    "file": "exam_bank_agriculture_grade7_p2_practice_b.json",
+    "subject": "Agriculture",
+    "level": "Primary",
+    "paperCode": "G7-AGRIC-2B",
+    "paperName": "Grade 7 Agriculture Paper 2 - Practice Set B (original questions, real Ministry/ZIMSEC-style format)",
+    "paperType": "Practice Paper (original questions, written in the real Grade 7 Agriculture Paper 2 structure/format, grounded in a verified real mark scheme)",
+    "questionCount": 10
+  },
+  {
+    "id": "exam_bank_agriculture_o_level_paper1",
+    "file": "exam_bank_agriculture_o_level_paper1.json",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "paperCode": "Agriculture Paper 1",
+    "paperName": "Agriculture O-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_agriculture_o_level_paper2",
+    "file": "exam_bank_agriculture_o_level_paper2.json",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "paperCode": "Agriculture Paper 2",
+    "paperName": "Agriculture O-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_biology_paper1",
+    "file": "exam_bank_biology_paper1.json",
+    "subject": "Biology",
+    "level": "O-Level",
+    "paperCode": "BIO-P1-PRACTICE",
+    "paperName": "Biology Paper 1 - Multiple Choice Practice Questions (Full Syllabus Coverage)",
+    "paperType": "Practice Questions (Original, ZIMSEC-syllabus-aligned - not a real past exam paper)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_biology_paper2",
+    "file": "exam_bank_biology_paper2.json",
+    "subject": "Biology",
+    "level": "O-Level",
+    "paperCode": "BIO-P2-PRACTICE",
+    "paperName": "Biology Paper 2 - Multiple Choice Practice Questions (Full Syllabus Coverage)",
+    "paperType": "Practice Questions (Original, ZIMSEC-syllabus-aligned - not a real past exam paper)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_chishona_7040_1_grade7",
+    "file": "exam_bank_chishona_7040_1_grade7.json",
+    "subject": "Chishona",
+    "level": "Primary",
+    "paperCode": "7040/1",
+    "paperName": "Grade 7 Chishona Paper 1 - Expanded Exam Bank",
+    "paperType": "Practice question bank (original ZIMSEC-style multiple choice)",
+    "questionCount": 155
+  },
+  {
+    "id": "exam_bank_chishona_7040_2_grade7",
+    "file": "exam_bank_chishona_7040_2_grade7.json",
+    "subject": "Chishona",
+    "level": "Primary",
+    "paperCode": "7040/2",
+    "paperName": "Grade 7 Chishona Paper 2 - Expanded Structured Exam Bank",
+    "paperType": "Practice question bank (original ZIMSEC-style structured questions)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_economics_a_level_6073_Paper1_150",
+    "file": "exam_bank_economics_a_level_6073_Paper1_150.json",
+    "subject": "Economics",
+    "level": "A Level",
+    "paperCode": "6073/1",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_english_7010_2_practice",
+    "file": "exam_bank_english_7010_2_practice.json",
+    "subject": "English",
+    "level": "Primary",
+    "paperCode": "7010/2",
+    "paperName": "Grade 7 English Paper 2 - Practice Set (original content, ZIMSEC 7010/2 format)",
+    "paperType": "Practice Paper (original questions and passage, written in the real ZIMSEC 7010/2 format/structure)",
+    "questionCount": 13
+  },
+  {
+    "id": "exam_bank_english_grade7_2022_p2",
+    "file": "exam_bank_english_grade7_2022_p2.json",
+    "subject": "English",
+    "level": "Primary",
+    "paperCode": "7010/2",
+    "paperName": "Grade 7 English Paper 2 - October 2022",
+    "paperType": "Past Paper (verified via official ZIMSEC Examiners' Report)",
+    "questionCount": 13
+  },
+  {
+    "id": "exam_bank_general_paper_grade7_1_practice",
+    "file": "exam_bank_general_paper_grade7_1_practice.json",
+    "subject": "General Paper",
+    "level": "Primary",
+    "paperCode": "G7-GENPAPER-1",
+    "paperName": "Grade 7 General Paper 1 - Practice Set (original questions, real ZIMSEC-style MCQ format)",
+    "paperType": "Practice Paper (original questions, written in the real Grade 7 General Paper 1 MCQ structure/format)",
+    "questionCount": 50
+  },
+  {
+    "id": "exam_bank_history_alevel_9155_paper1 (1)",
+    "file": "exam_bank_history_alevel_9155_paper1 (1).json",
+    "subject": "History",
+    "level": "A-Level",
+    "paperCode": "9155/1",
+    "paperName": "History Paper 1 - African and Zimbabwean History",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 10
+  },
+  {
+    "id": "exam_bank_history_alevel_9155_paper1",
+    "file": "exam_bank_history_alevel_9155_paper1.json",
+    "subject": "History",
+    "level": "A-Level",
+    "paperCode": "9155/1",
+    "paperName": "History Paper 1 - African and Zimbabwean History",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 4
+  },
+  {
+    "id": "exam_bank_history_alevel_9155_paper2 (1)",
+    "file": "exam_bank_history_alevel_9155_paper2 (1).json",
+    "subject": "History",
+    "level": "A-Level",
+    "paperCode": "9155/2",
+    "paperName": "History Paper 2 - World and International History",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 11
+  },
+  {
+    "id": "exam_bank_history_alevel_9155_paper2",
+    "file": "exam_bank_history_alevel_9155_paper2.json",
+    "subject": "History",
+    "level": "A-Level",
+    "paperCode": "9155/2",
+    "paperName": "History Paper 2 - World and International History",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 4
+  },
+  {
+    "id": "exam_bank_history_olevel_2167_paper1 (1)",
+    "file": "exam_bank_history_olevel_2167_paper1 (1).json",
+    "subject": "History",
+    "level": "O-Level",
+    "paperCode": "2167/1",
+    "paperName": "History Paper 1 - Southern Africa and Zimbabwe",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 19
+  },
+  {
+    "id": "exam_bank_history_olevel_2167_paper1",
+    "file": "exam_bank_history_olevel_2167_paper1.json",
+    "subject": "History",
+    "level": "O-Level",
+    "paperCode": "2167/1",
+    "paperName": "History Paper 1 - Southern Africa and Zimbabwe",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 8
+  },
+  {
+    "id": "exam_bank_history_olevel_2167_paper2 (1)",
+    "file": "exam_bank_history_olevel_2167_paper2 (1).json",
+    "subject": "History",
+    "level": "O-Level",
+    "paperCode": "2167/2",
+    "paperName": "History Paper 2 - International Affairs",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 19
+  },
+  {
+    "id": "exam_bank_history_olevel_2167_paper2",
+    "file": "exam_bank_history_olevel_2167_paper2.json",
+    "subject": "History",
+    "level": "O-Level",
+    "paperCode": "2167/2",
+    "paperName": "History Paper 2 - International Affairs",
+    "paperType": "Original Practice Paper (ZIMSEC-format, AI-generated - not a copied past paper)",
+    "questionCount": 8
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_practice_1b",
+    "file": "exam_bank_mathematics_002_1_practice_1b.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set 1B (original questions, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/topic-structure)",
+    "questionCount": 50
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_set_a",
+    "file": "exam_bank_mathematics_002_1_set_a.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set A (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 20
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_set_b",
+    "file": "exam_bank_mathematics_002_1_set_b.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set B (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 20
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_set_c",
+    "file": "exam_bank_mathematics_002_1_set_c.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set C (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 20
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_set_d",
+    "file": "exam_bank_mathematics_002_1_set_d.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set D (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 20
+  },
+  {
+    "id": "exam_bank_mathematics_002_1_set_e",
+    "file": "exam_bank_mathematics_002_1_set_e.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set E (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 20
+  },
+  {
+    "id": "exam_bank_mathematics_a_level_paper1",
+    "file": "exam_bank_mathematics_a_level_paper1.json",
+    "subject": "Mathematics",
+    "level": "A-Level",
+    "paperCode": "9154/1",
+    "paperName": "Mathematics A-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_mathematics_a_level_paper2",
+    "file": "exam_bank_mathematics_a_level_paper2.json",
+    "subject": "Mathematics",
+    "level": "A-Level",
+    "paperCode": "9154/2",
+    "paperName": "Mathematics A-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_mathematics_grade7_1",
+    "file": "exam_bank_mathematics_grade7_1.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "G7-MATH-1",
+    "paperName": "Grade 7 Mathematics Revision Paper 1",
+    "paperType": "Practice Paper",
+    "questionCount": 37
+  },
+  {
+    "id": "exam_bank_mathematics_o_level_paper1",
+    "file": "exam_bank_mathematics_o_level_paper1.json",
+    "subject": "Mathematics",
+    "level": "O-Level",
+    "paperCode": "4028/1",
+    "paperName": "Mathematics O-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_mathematics_o_level_paper2",
+    "file": "exam_bank_mathematics_o_level_paper2.json",
+    "subject": "Mathematics",
+    "level": "O-Level",
+    "paperCode": "4028/2",
+    "paperName": "Mathematics O-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_physical_education_and_arts_7130_1_grade7",
+    "file": "exam_bank_physical_education_and_arts_7130_1_grade7.json",
+    "subject": "Physical Education and Arts",
+    "level": "Primary",
+    "paperCode": "7130/1",
+    "paperName": "Grade 7 Physical Education and Arts Paper 1 - Expanded Practice Bank",
+    "paperType": "Practice question bank (original questions in ZIMSEC-style MCQ format)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_physical_education_and_arts_7130_2_grade7",
+    "file": "exam_bank_physical_education_and_arts_7130_2_grade7.json",
+    "subject": "Physical Education and Arts",
+    "level": "Primary",
+    "paperCode": "7130/2",
+    "paperName": "Grade 7 Physical Education and Arts Paper 2 - Expanded Structured Practice Bank",
+    "paperType": "Practice question bank (original structured questions in ZIMSEC-style format)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_agriculture_paper1",
+    "file": "exam_bank_primary_agriculture_paper1.json",
+    "subject": "Agriculture",
+    "level": "Primary",
+    "paperCode": "703/01_PRACTICE",
+    "paperName": "Grade 7 Agriculture - Paper 1",
+    "paperType": "Original ZIMSEC-aligned Expanded Practice Bank (2023-June 2026 topic/pattern coverage)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_agriculture_paper2",
+    "file": "exam_bank_primary_agriculture_paper2.json",
+    "subject": "Agriculture",
+    "level": "Primary",
+    "paperCode": "703/02_PRACTICE",
+    "paperName": "Grade 7 Agriculture - Paper 2",
+    "paperType": "Original ZIMSEC-aligned Expanded Practice Bank (2023-June 2026 topic/pattern coverage)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_mathematics_paper1",
+    "file": "exam_bank_primary_mathematics_paper1.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "7020/01_PRACTICE",
+    "paperName": "Grade 7 Mathematics - Paper 1",
+    "paperType": "Original ZIMSEC-aligned Practice Bank (2023-June 2026 patterns)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_mathematics_paper2",
+    "file": "exam_bank_primary_mathematics_paper2.json",
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "7020/02_PRACTICE",
+    "paperName": "Grade 7 Mathematics - Paper 2",
+    "paperType": "Original ZIMSEC-aligned Practice Bank (2023-June 2026 patterns)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_science_technology_paper1",
+    "file": "exam_bank_primary_science_technology_paper1.json",
+    "subject": "Science and Technology",
+    "level": "Primary",
+    "paperCode": "7150/01_PRACTICE",
+    "paperName": "Grade 7 Science and Technology - Paper 1",
+    "paperType": "Original ZIMSEC-aligned Practice Bank (2023-June 2026 patterns)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_primary_science_technology_paper2",
+    "file": "exam_bank_primary_science_technology_paper2.json",
+    "subject": "Science and Technology",
+    "level": "Primary",
+    "paperCode": "7150/02_PRACTICE",
+    "paperName": "Grade 7 Science and Technology - Paper 2",
+    "paperType": "Original ZIMSEC-aligned Practice Bank (2023-June 2026 patterns)",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_social_science_705_1",
+    "file": "exam_bank_social_science_705_1.json",
+    "subject": "Social Science",
+    "level": "Primary",
+    "paperCode": "705/1",
+    "paperName": "Grade 7 Social Science Paper 1 (Practice - Multiple Choice)",
+    "paperType": "Practice Paper",
+    "questionCount": 40
+  },
+  {
+    "id": "exam_bank_social_science_705_2",
+    "file": "exam_bank_social_science_705_2.json",
+    "subject": "Social Science",
+    "level": "Primary",
+    "paperCode": "705/2",
+    "paperName": "Grade 7 Social Science Paper 2 (Practice - Structured)",
+    "paperType": "Practice Paper",
+    "questionCount": 68
+  },
+  {
+    "id": "exam_bank_zimsec_accounting_a_level_6001_paper1_150",
+    "file": "exam_bank_zimsec_accounting_a_level_6001_paper1_150.json",
+    "subject": "Accounting",
+    "level": "A Level",
+    "paperCode": "6001/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_accounting_a_level_6001_paper2_150",
+    "file": "exam_bank_zimsec_accounting_a_level_6001_paper2_150.json",
+    "subject": "Accounting",
+    "level": "A Level",
+    "paperCode": "6001/02",
+    "paperName": "Paper 2 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_accounting_a_level_6001_paper3_150",
+    "file": "exam_bank_zimsec_accounting_a_level_6001_paper3_150.json",
+    "subject": "Accounting",
+    "level": "A Level",
+    "paperCode": "6001/03",
+    "paperName": "Paper 3 – Problem Solving",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_accounting_o_level_4051_paper1_150",
+    "file": "exam_bank_zimsec_accounting_o_level_4051_paper1_150.json",
+    "subject": "Accounting",
+    "level": "O Level",
+    "paperCode": "4051/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_accounting_o_level_4051_paper2_150",
+    "file": "exam_bank_zimsec_accounting_o_level_4051_paper2_150.json",
+    "subject": "Accounting",
+    "level": "O Level",
+    "paperCode": "4051/02",
+    "paperName": "Paper 2 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_biology_a_level_paper1_150",
+    "file": "exam_bank_zimsec_biology_a_level_paper1_150.json",
+    "subject": "Biology",
+    "level": "A Level",
+    "paperCode": "BIO/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_biology_a_level_paper2_150",
+    "file": "exam_bank_zimsec_biology_a_level_paper2_150.json",
+    "subject": "Biology",
+    "level": "A Level",
+    "paperCode": "BIO/02",
+    "paperName": "Paper 2 – Structured Theory",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_business_studies_a_level_6025_paper1_150",
+    "file": "exam_bank_zimsec_business_studies_a_level_6025_paper1_150.json",
+    "subject": "Business Studies",
+    "level": "A Level",
+    "paperCode": "6025/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_business_studies_a_level_6025_paper2_150",
+    "file": "exam_bank_zimsec_business_studies_a_level_6025_paper2_150.json",
+    "subject": "Business Studies",
+    "level": "A Level",
+    "paperCode": "6025/02",
+    "paperName": "Paper 2 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_chemistry_a_level_6031_01",
+    "file": "exam_bank_zimsec_chemistry_a_level_6031_01.json",
+    "subject": "Chemistry",
+    "level": "A-Level",
+    "paperCode": "6031/01",
+    "paperName": "Chemistry Paper 1",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_chemistry_a_level_6031_02",
+    "file": "exam_bank_zimsec_chemistry_a_level_6031_02.json",
+    "subject": "Chemistry",
+    "level": "O-Level",
+    "paperCode": "4024/02",
+    "paperName": "Chemistry Paper 2",
+    "paperType": "Structured Theory",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_chemistry_o_level_4024_01",
+    "file": "exam_bank_zimsec_chemistry_o_level_4024_01.json",
+    "subject": "Chemistry",
+    "level": "O-Level",
+    "paperCode": "4024/01",
+    "paperName": "Chemistry Paper 1",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_chemistry_o_level_4024_02",
+    "file": "exam_bank_zimsec_chemistry_o_level_4024_02.json",
+    "subject": "Chemistry",
+    "level": "A-Level",
+    "paperCode": "6031/02",
+    "paperName": "Chemistry Paper 2",
+    "paperType": "Structured Theory",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_combined_science_o_level_4003_paper1_150",
+    "file": "exam_bank_zimsec_combined_science_o_level_4003_paper1_150.json",
+    "subject": "Combined Science",
+    "level": "O Level",
+    "paperCode": "4003/01",
+    "paperName": "Combined Science Paper 1",
+    "paperType": "Theory/Objective Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_combined_science_o_level_4003_paper2_150",
+    "file": "exam_bank_zimsec_combined_science_o_level_4003_paper2_150.json",
+    "subject": "Combined Science",
+    "level": "O Level",
+    "paperCode": "4003/02",
+    "paperName": "Combined Science Paper 2",
+    "paperType": "Theory/Structured Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_combined_science_o_level_4003_paper3_150",
+    "file": "exam_bank_zimsec_combined_science_o_level_4003_paper3_150.json",
+    "subject": "Combined Science",
+    "level": "O Level",
+    "paperCode": "4003/03",
+    "paperName": "Combined Science Paper 3",
+    "paperType": "Practical/Investigation Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_commerce_o_level_4049_paper1_150",
+    "file": "exam_bank_zimsec_commerce_o_level_4049_paper1_150.json",
+    "subject": "Commerce",
+    "level": "O Level",
+    "paperCode": "4049/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_commerce_o_level_4049_paper2_150",
+    "file": "exam_bank_zimsec_commerce_o_level_4049_paper2_150.json",
+    "subject": "Commerce",
+    "level": "O Level",
+    "paperCode": "4049/02",
+    "paperName": "Paper 2 – Structured / Theory",
+    "paperType": "Structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_computer_science_o_level_4021_paper1_150",
+    "file": "exam_bank_zimsec_computer_science_o_level_4021_paper1_150.json",
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_computer_science_o_level_4021_paper2_150",
+    "file": "exam_bank_zimsec_computer_science_o_level_4021_paper2_150.json",
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/02",
+    "paperName": "Paper 2 – Theory / Structured",
+    "paperType": "Structured Theory",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_computer_science_o_level_4021_paper3_150",
+    "file": "exam_bank_zimsec_computer_science_o_level_4021_paper3_150.json",
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/03",
+    "paperName": "Paper 3 – Practical",
+    "paperType": "Practical / Programming Tasks",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_divinity_a_level_9154_paper1_150",
+    "file": "exam_bank_zimsec_divinity_a_level_9154_paper1_150.json",
+    "subject": "Divinity",
+    "level": "A Level",
+    "paperCode": "9154/01",
+    "paperName": "Paper 1 – Prophets of the Old Testament",
+    "paperType": "essay",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_divinity_a_level_9154_paper2_150",
+    "file": "exam_bank_zimsec_divinity_a_level_9154_paper2_150.json",
+    "subject": "Divinity",
+    "level": "A Level",
+    "paperCode": "9154/02",
+    "paperName": "Paper 2 – The Gospels",
+    "paperType": "essay",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_economics_a_level_6073_paper2_150",
+    "file": "exam_bank_zimsec_economics_a_level_6073_paper2_150.json",
+    "subject": "Economics",
+    "level": "A Level",
+    "paperCode": "6073/2",
+    "paperName": "Paper 2 – Data Response",
+    "paperType": "data_response",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_english_language_o_level_4005_paper1_150",
+    "file": "exam_bank_zimsec_english_language_o_level_4005_paper1_150.json",
+    "subject": "English Language",
+    "level": "O Level",
+    "paperCode": "4005/01",
+    "paperName": "English Language Paper 1",
+    "paperType": "Objective/Language Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_english_language_o_level_4005_paper2_150",
+    "file": "exam_bank_zimsec_english_language_o_level_4005_paper2_150.json",
+    "subject": "English Language",
+    "level": "O Level",
+    "paperCode": "4005/02",
+    "paperName": "English Language Paper 2",
+    "paperType": "Comprehension & Writing Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_english_literature_a_level_6039_paper1_150",
+    "file": "exam_bank_zimsec_english_literature_a_level_6039_paper1_150.json",
+    "subject": "English Literature",
+    "level": "A Level",
+    "paperCode": "6039/01",
+    "paperName": "Paper 1 – Literature in English",
+    "paperType": "essay",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_english_literature_a_level_6039_paper2_150",
+    "file": "exam_bank_zimsec_english_literature_a_level_6039_paper2_150.json",
+    "subject": "English Literature",
+    "level": "A Level",
+    "paperCode": "6039/02",
+    "paperName": "Paper 2 – Zimbabwean Literature",
+    "paperType": "essay",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_geography_a_level_6037_paper1_150",
+    "file": "exam_bank_zimsec_geography_a_level_6037_paper1_150.json",
+    "subject": "Geography",
+    "level": "A-Level",
+    "paperCode": "6037/01",
+    "paperName": "Geography Paper 1 — Physical Geography",
+    "paperType": "Structured Free-Response/Data Response",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_geography_a_level_6037_paper2_150",
+    "file": "exam_bank_zimsec_geography_a_level_6037_paper2_150.json",
+    "subject": "Geography",
+    "level": "A-Level",
+    "paperCode": "6037/02",
+    "paperName": "Geography Paper 2 — Human Geography",
+    "paperType": "Structured Free-Response/Data Response",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_geography_o_level_4022_paper1_150",
+    "file": "exam_bank_zimsec_geography_o_level_4022_paper1_150.json",
+    "subject": "Geography",
+    "level": "O-Level",
+    "paperCode": "4022/01",
+    "paperName": "Geography Paper 1 — Multiple Choice",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_geography_o_level_4022_paper2_150",
+    "file": "exam_bank_zimsec_geography_o_level_4022_paper2_150.json",
+    "subject": "Geography",
+    "level": "O-Level",
+    "paperCode": "4022/02",
+    "paperName": "Geography Paper 2 — Structured",
+    "paperType": "Structured Free-Response/Data Response",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_pure_mathematics_a_level_6042_paper1_150",
+    "file": "exam_bank_zimsec_pure_mathematics_a_level_6042_paper1_150.json",
+    "subject": "Pure Mathematics",
+    "level": "A Level",
+    "paperCode": "6042/01",
+    "paperName": "Paper 1 – Short Answer",
+    "paperType": "short_answer",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_pure_mathematics_a_level_6042_paper2_150",
+    "file": "exam_bank_zimsec_pure_mathematics_a_level_6042_paper2_150.json",
+    "subject": "Pure Mathematics",
+    "level": "A Level",
+    "paperCode": "6042/02",
+    "paperName": "Paper 2 – Short and Long Answer",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_religious_studies_o_level_4047_paper1_150",
+    "file": "exam_bank_zimsec_religious_studies_o_level_4047_paper1_150.json",
+    "subject": "Family and Religious Studies",
+    "level": "O Level",
+    "paperCode": "4047/01",
+    "paperName": "Family and Religious Studies Paper 1",
+    "paperType": "Theory/Objective Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_religious_studies_o_level_4047_paper2_150",
+    "file": "exam_bank_zimsec_religious_studies_o_level_4047_paper2_150.json",
+    "subject": "Family and Religious Studies",
+    "level": "O Level",
+    "paperCode": "4047/02",
+    "paperName": "Family and Religious Studies Paper 2",
+    "paperType": "Theory/Structured Practice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_shona_a_level_paper1_150",
+    "file": "exam_bank_zimsec_shona_a_level_paper1_150.json",
+    "subject": "Shona",
+    "level": "A Level",
+    "paperCode": "SHO/01",
+    "paperName": "Paper 1 – Language and Literature",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_shona_a_level_paper2_150",
+    "file": "exam_bank_zimsec_shona_a_level_paper2_150.json",
+    "subject": "Shona",
+    "level": "A Level",
+    "paperCode": "SHO/02",
+    "paperName": "Paper 2 – Literature and Analysis",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_shona_o_level_4007_paper1_150",
+    "file": "exam_bank_zimsec_shona_o_level_4007_paper1_150.json",
+    "subject": "Shona",
+    "level": "O Level",
+    "paperCode": "4007/01",
+    "paperName": "Paper 1 – Language",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_shona_o_level_4007_paper2_150",
+    "file": "exam_bank_zimsec_shona_o_level_4007_paper2_150.json",
+    "subject": "Shona",
+    "level": "O Level",
+    "paperCode": "4007/02",
+    "paperName": "Paper 2 – Language / Composition",
+    "paperType": "Structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_statistics_a_level_6046_paper1_150",
+    "file": "exam_bank_zimsec_statistics_a_level_6046_paper1_150.json",
+    "subject": "Statistics",
+    "level": "A Level",
+    "paperCode": "6046/1",
+    "paperName": "Paper 1 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_statistics_a_level_6046_paper2_150",
+    "file": "exam_bank_zimsec_statistics_a_level_6046_paper2_150.json",
+    "subject": "Statistics",
+    "level": "A Level",
+    "paperCode": "6046/2",
+    "paperName": "Paper 2 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_textile_technology_and_design_o_level_4058_paper1_150",
+    "file": "exam_bank_zimsec_textile_technology_and_design_o_level_4058_paper1_150.json",
+    "subject": "Textile Technology and Design",
+    "level": "O Level",
+    "paperCode": "4058/01",
+    "paperName": "Paper 1 – Theory",
+    "paperType": "Multiple Choice",
+    "questionCount": 150
+  },
+  {
+    "id": "exam_bank_zimsec_textile_technology_and_design_o_level_4058_paper2_150",
+    "file": "exam_bank_zimsec_textile_technology_and_design_o_level_4058_paper2_150.json",
+    "subject": "Textile Technology and Design",
+    "level": "O Level",
+    "paperCode": "4058/02",
+    "paperName": "Paper 2 – Practical Test",
+    "paperType": "Practical Test / Structured Tasks",
+    "questionCount": 150
+  },
+  {
+    "id": "zimsec_grade7_english_paper1_exam_bank_150",
+    "file": "zimsec_grade7_english_paper1_exam_bank_150.json",
+    "subject": "English",
+    "level": "Primary",
+    "paperCode": "7010/01_PRACTICE_BANK",
+    "paperName": "Grade 7 English - Paper 1",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  },
+  {
+    "id": "zimsec_grade7_english_paper2_exam_bank_150",
+    "file": "zimsec_grade7_english_paper2_exam_bank_150.json",
+    "subject": "English",
+    "level": "Primary",
+    "paperCode": "7010/02_PRACTICE_BANK",
+    "paperName": "Grade 7 English - Paper 2",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "questionCount": 150
+  }
+]

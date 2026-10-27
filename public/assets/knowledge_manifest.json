@@ -1,0 +1,1298 @@
+[
+  {
+    "file": "zimsec primary _health_creative_performing_arts_syllabus.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec primary_social_studies 2.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec primary_social_studies_syllabus.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_a_level_biology_full_final.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_a_level_divinity_full_syllabus.json",
+    "type": "flat",
+    "count": 33,
+    "subjects": [
+      "Divinity"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_a_level_english_literature_9153_full_expanded.json",
+    "type": "flat",
+    "count": 37,
+    "subjects": [
+      "English Literature"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_a_level_geography_full_syllabus.json",
+    "type": "flat",
+    "count": 16,
+    "subjects": [
+      "Geography"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_a_level_history_9155_extensive_study_pack.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "History"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_a_level_pure_mathematics_6042_full_final.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_a_level_pure_mathematics_6042_study_pack.json",
+    "type": "flat",
+    "count": 41,
+    "subjects": [
+      "Pure Mathematics"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_a_level_shona_9145_full_expanded.json",
+    "type": "flat",
+    "count": 39,
+    "subjects": [
+      "Shona"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_accounting_4051_o_level_final.json",
+    "type": "nested",
+    "subject": "Principles of Accounting",
+    "level": "ZIMSEC Ordinary Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_accounting_a_level_2024_2030_expanded.json",
+    "type": "flat",
+    "count": 40,
+    "subjects": [
+      "Accounting"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_accounting_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Principles of Accounts"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_agriculture Primary.json",
+    "type": "nested",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_agriculture.json",
+    "type": "nested",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_agriculture_4001_o_level_full_study_pack.json",
+    "type": "nested",
+    "subject": "Agriculture",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_agriculture_7grade.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Agriculture"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_agriculture_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Agriculture"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_biology_4025_o_level_full_study_pack.json",
+    "type": "nested",
+    "subject": "Biology",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_biology_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Biology"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_business_studies_a_level_2024_2030_expanded.json",
+    "type": "flat",
+    "count": 44,
+    "subjects": [
+      "Business Studies"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_a_level_applied.json",
+    "type": "flat",
+    "count": 9,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_a_level_full.json",
+    "type": "flat",
+    "count": 32,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_a_level_inorganic.json",
+    "type": "flat",
+    "count": 7,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_a_level_organic.json",
+    "type": "flat",
+    "count": 8,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_a_level_physical.json",
+    "type": "flat",
+    "count": 8,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chemistry_o_level_full_study_pack.json",
+    "type": "nested",
+    "subject": "Chemistry",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_chemistry_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_chishona primary 2.json",
+    "type": "nested",
+    "subject": "ChiShona",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_chishona.json",
+    "type": "nested",
+    "subject": "ChiShona",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_chishona_g7_full_notes.json",
+    "type": "flat",
+    "count": 28,
+    "subjects": [
+      "ChiShona"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_chishona_g7_original_practice.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_chishona_g7_studyguide.json",
+    "type": "flat",
+    "count": 15,
+    "subjects": [
+      "ChiShona"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_combined_science_biology_f1f2.json",
+    "type": "flat",
+    "count": 7,
+    "subjects": [
+      "Combined Science"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_combined_science_o_level_100k_detailed.json",
+    "type": "flat",
+    "count": 62,
+    "subjects": [
+      "Combined Science"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_commerce_4049_o_level_FULL_DEPTH_FINAL.json",
+    "type": "nested",
+    "subject": "Commerce",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_comprehensive_database.json",
+    "type": "flat",
+    "count": 6,
+    "subjects": [
+      "Agriculture",
+      "Principles of Accounts",
+      "Economics",
+      "Heritage Studies",
+      "Combined Science",
+      "Computer Science"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_comprehensive_study_vault.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "English Language",
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "Heritage Studies",
+      "Sociology",
+      "Commerce",
+      "Travel and Tourism"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_computer_science_4021_o_level_FULL_DEPTH_FINAL.json",
+    "type": "nested",
+    "subject": "Computer Science",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_computer_science_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Computer Science"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_countries_v1.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Geography"
+    ],
+    "levels": [
+      "General"
+    ]
+  },
+  {
+    "file": "zimsec_countries_v2.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Geography"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_countries_v3.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Geography"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_curriculum_final_expansion.json",
+    "type": "flat",
+    "count": 7,
+    "subjects": [
+      "Agriculture",
+      "Combined Science",
+      "Sociology",
+      "Heritage Studies",
+      "Computer Science",
+      "English Language",
+      "Commerce"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level",
+      "General"
+    ]
+  },
+  {
+    "file": "zimsec_curriculum_massive.json",
+    "type": "flat",
+    "count": 11,
+    "subjects": [
+      "Curriculum Overview",
+      "English Language",
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "Heritage Studies",
+      "Sociology",
+      "Commerce",
+      "Travel and Tourism"
+    ],
+    "levels": [
+      "General",
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_curriculum_v2.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "English Language",
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "Heritage Studies",
+      "Sociology",
+      "Commerce",
+      "Travel and Tourism",
+      "Food and Nutrition",
+      "Design and Technology"
+    ],
+    "levels": [
+      "General",
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_curriculum_v3.json",
+    "type": "flat",
+    "count": 15,
+    "subjects": [
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "English Language",
+      "Sociology",
+      "Heritage Studies",
+      "Travel and Tourism"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_deep_knowledge_v1.json",
+    "type": "flat",
+    "count": 53,
+    "subjects": [
+      "English Language",
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "Heritage Studies",
+      "Sociology",
+      "Commerce",
+      "Geography",
+      "History",
+      "Family and Religious Studies",
+      "Social Science",
+      "General Studies",
+      "Indigenous Language and Literature",
+      "Business Enterprise",
+      "Physics",
+      "Biology",
+      "Chemistry",
+      "Music",
+      "Theatre Arts",
+      "Physical Education",
+      "Building Technology",
+      "Wood Technology",
+      "Metal Technology",
+      "Textile Technology",
+      "Art and Design",
+      "Shona",
+      "Mathematics",
+      "Ndebele",
+      "Literature in English"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level",
+      "General",
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_economics_a_level_2024_2030_expanded.json",
+    "type": "flat",
+    "count": 36,
+    "subjects": [
+      "Economics"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_economics_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Economics"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_elements.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Chemistry"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_english_junior_grades_3to7.json",
+    "type": "flat",
+    "count": 27,
+    "subjects": [
+      "English Grade 3",
+      "English Grade 4",
+      "English Grade 5",
+      "English Grade 6",
+      "English Grade 7"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_english_language.json",
+    "type": "nested",
+    "subject": "English Language",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_english_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "English Language"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_exhaustive_subject_guide.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Sociology",
+      "Heritage Studies"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_fareme primary.json",
+    "type": "nested",
+    "subject": "Family, Religion and Moral Education (FAREME)",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_fareme.json",
+    "type": "nested",
+    "subject": "Family, Religion and Moral Education (FAREME)",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_general_knowledge_current_affairs.json",
+    "type": "nested",
+    "subject": "General Knowledge and Current Affairs",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_general_v1.json",
+    "type": "flat",
+    "count": 16,
+    "subjects": [
+      "Physics",
+      "Computer Science",
+      "Mathematics",
+      "History",
+      "Geography",
+      "Life Skills",
+      "Language"
+    ],
+    "levels": [
+      "O-Level",
+      "General"
+    ]
+  },
+  {
+    "file": "zimsec_general_v3.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Technology",
+      "General Science",
+      "History",
+      "Geography",
+      "Mathematics",
+      "Religious Studies",
+      "Life Skills"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_geography_o_level_full_study_pack.json",
+    "type": "nested",
+    "subject": "Geography",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_geography_o_level_study_pack.json",
+    "type": "nested",
+    "subject": "Geography",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_geography_secondary.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "Forms 1-4 (Ordinary Level); Geography is also offered at Advanced Level (Forms 5-6) as a separate, more specialised syllabus",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_grade7_frme.json",
+    "type": "flat",
+    "count": 16,
+    "subjects": [
+      "Family, Religion and Moral Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_grade_7_agriculture_full_expanded.json",
+    "type": "flat",
+    "count": 29,
+    "subjects": [
+      "Agriculture"
+    ],
+    "levels": [
+      "Grade 7"
+    ]
+  },
+  {
+    "file": "zimsec_heritage_mastery.json",
+    "type": "flat",
+    "count": 7,
+    "subjects": [
+      "Heritage Studies"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_heritage_primary.json",
+    "type": "flat",
+    "count": 19,
+    "subjects": [
+      "Heritage Studies"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_heritage_social_studies.json",
+    "type": "nested",
+    "subject": "Heritage and Social Studies",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_heritage_studies_grade7_topics1-3.json",
+    "type": "flat",
+    "count": 18,
+    "subjects": [
+      "Heritage Studies"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_history_heritage_full_depth.json",
+    "type": "flat",
+    "count": 11,
+    "subjects": [
+      "Heritage Studies"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_history_olevel_paper1_topic1_precolonial_states.json",
+    "type": "flat",
+    "count": 11,
+    "subjects": [
+      "History"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_history_olevel_paper1_topics2-7.json",
+    "type": "flat",
+    "count": 18,
+    "subjects": [
+      "History"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_history_secondary.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "Forms 1-4 (Ordinary Level); History is also offered at Advanced Level (Forms 5-6) as a separate, more specialised syllabus",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_history_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "History"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_ict primary.json",
+    "type": "nested",
+    "subject": "Information and Communication Technology (ICT)",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_ict.json",
+    "type": "nested",
+    "subject": "Information and Communication Technology (ICT)",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_ict_grade7.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "ICT/Computer Studies"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_isindebele Primary 1.json",
+    "type": "nested",
+    "subject": "isiNdebele",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_isindebele primary.json",
+    "type": "nested",
+    "subject": "isiNdebele",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_literature_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Literature"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_massive_revision_guide.json",
+    "type": "flat",
+    "count": 8,
+    "subjects": [
+      "English Language",
+      "Principles of Accounts",
+      "Economics",
+      "Agriculture",
+      "Combined Science",
+      "Computer Science",
+      "Heritage Studies",
+      "Sociology"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_math_v1.json",
+    "type": "flat",
+    "count": 6,
+    "subjects": [
+      "Mathematics"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_mathematics_fill_in.json",
+    "type": "nested",
+    "subject": "Mathematics",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_mathematics_grade7.json",
+    "type": "flat",
+    "count": 18,
+    "subjects": [
+      "Mathematics"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_mathematics_olevel.json",
+    "type": "flat",
+    "count": 17,
+    "subjects": [
+      "Mathematics"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_mathematics_olevelP1.json",
+    "type": "flat",
+    "count": 17,
+    "subjects": [
+      "Mathematics"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_ndebele_grade7.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "IsiNdebele"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_olevel_english_language.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "English Language"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_pack.json",
+    "type": "flat",
+    "count": 9,
+    "subjects": [
+      "Integrated Science",
+      "Mathematics",
+      "General"
+    ],
+    "levels": [
+      "O-Level",
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part1.json",
+    "type": "flat",
+    "count": 6,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part2.json",
+    "type": "flat",
+    "count": 3,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part3.json",
+    "type": "flat",
+    "count": 4,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part4.json",
+    "type": "flat",
+    "count": 4,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part5.json",
+    "type": "flat",
+    "count": 2,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_part6.json",
+    "type": "flat",
+    "count": 3,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_pe_sport_mass_displays.json",
+    "type": "nested",
+    "subject": "Physical Education, Sport and Mass Displays",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_physics_4023_o_level_FULL_DEPTH_FINAL_310KB.json",
+    "type": "nested",
+    "subject": "Physics",
+    "level": "O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_physics_a_level_2024_2030_expanded.json",
+    "type": "flat",
+    "count": 10,
+    "subjects": [
+      "Physics"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_physics_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Physics"
+    ],
+    "levels": [
+      "O-Level",
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_primary_expansion_v2.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "Agriculture",
+      "ICT/Computer Studies",
+      "Family, Religious and Moral Education",
+      "Physical Education",
+      "Art and Music",
+      "Mathematics",
+      "English Language",
+      "Environmental Science"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_primary_heritage_grade7.json",
+    "type": "flat",
+    "count": 22,
+    "subjects": [
+      "Heritage Studies"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_primary_math_full_depth.json",
+    "type": "flat",
+    "count": 18,
+    "subjects": [
+      "Mathematics"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_primary_pe_grade7.json",
+    "type": "flat",
+    "count": 22,
+    "subjects": [
+      "Physical Education"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_religious_studies_v1.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Religious Studies"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_science_and_technology.json",
+    "type": "nested",
+    "subject": "Science and Technology (Environmental Science)",
+    "level": "O-Level",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_science_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Combined Science"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_science_technology_full_depth.json",
+    "type": "flat",
+    "count": 21,
+    "subjects": [
+      "Science and Technology"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_shona_grade2.json",
+    "type": "flat",
+    "count": 33,
+    "subjects": [
+      "Shona Grade 2"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_shona_o_level_4007_study_pack.json",
+    "type": "flat",
+    "count": 33,
+    "subjects": [
+      "Shona"
+    ],
+    "levels": [
+      "O-Level"
+    ]
+  },
+  {
+    "file": "zimsec_sociology_mastery.json",
+    "type": "flat",
+    "count": 5,
+    "subjects": [
+      "Sociology"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_statistics_a_level_6046_study_pack.json",
+    "type": "flat",
+    "count": 13,
+    "subjects": [
+      "Statistics"
+    ],
+    "levels": [
+      "A-Level"
+    ]
+  },
+  {
+    "file": "zimsec_supplement_civics_primary.json",
+    "type": "flat",
+    "count": 19,
+    "subjects": [
+      "Heritage Studies",
+      "Economics",
+      "Mathematics",
+      "English Language",
+      "Environmental Science",
+      "Social Science",
+      "Shona",
+      "Ndebele"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
+    "file": "zimsec_textile_technology_design_4058_o_level_FULL_DEPTH_FINAL.json",
+    "type": "nested",
+    "subject": "Textile Technology and Design",
+    "level": "ZIMSEC O-Level",
+    "hasStructure": true
+  },
+  {
+    "file": "zimsec_trivia.json",
+    "type": "flat",
+    "count": 13,
+    "subjects": [
+      "General Knowledge"
+    ],
+    "levels": [
+      "General"
+    ]
+  },
+  {
+    "file": "zimsec_tve_deep.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "Secondary (Ordinary Level, Forms 1-4; select subjects extend to Forms 5-6)",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_tve_syllabus_expanded (2).json",
+    "type": "nested",
+    "subject": "General",
+    "level": "Secondary (Ordinary Level, Forms 1-4; select subjects extend to Forms 5-6)",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_tve_syllabus_expanded.json",
+    "type": "nested",
+    "subject": "General",
+    "level": "Secondary (Ordinary Level, Forms 1-4; select subjects extend to Forms 5-6)",
+    "hasStructure": false
+  },
+  {
+    "file": "zimsec_visual_performing_arts.json",
+    "type": "nested",
+    "subject": "Visual and Performing Arts",
+    "level": "O-Level",
+    "hasStructure": false
+  }
+]
