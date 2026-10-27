@@ -1,0 +1,47 @@
+[
+  {
+    "id": "phys_o_mech_1",
+    "level": "O-Level",
+    "subject": "Physics",
+    "topic": "Mechanics: Motion and Forces",
+    "content": "## Newtonian Mechanics: The Study of Motion\n\nMechanics is the branch of physics that deals with the motion of objects and the forces that cause that motion. It is based on the principles laid out by Isaac Newton.\n\n### Kinematics\n- **Scalars vs. Vectors:** Scalars have magnitude only (speed, distance, time), while vectors have both magnitude and direction (velocity, displacement, acceleration).\n- **Equations of Motion (SUVAT):** For objects with constant acceleration: v = u + at, s = ut + 1/2 at^2, v^2 = u^2 + 2as. (u=initial velocity, v=final velocity, a=acceleration, t=time, s=displacement).\n\n### Dynamics\n- **Newton's Second Law:** F = ma. The net force acting on an object is equal to its mass times its acceleration. Force is measured in Newtons (N).\n- **Momentum:** p = mv. In any closed system, the total momentum is conserved during a collision or explosion.\n- **Weight vs. Mass:** Mass is the amount of matter in an object (kg), while weight is the gravitational force acting on that mass (W = mg). On Earth, g is approximately 9.8 m/s^2.",
+    "source": "ZIMSEC Physics Syllabus",
+    "keywords": ["physics", "mechanics", "suvat", "force", "acceleration", "momentum", "mass", "weight"]
+  },
+  {
+    "id": "phys_o_energy_1",
+    "level": "O-Level",
+    "subject": "Physics",
+    "topic": "Energy, Work, and Power",
+    "content": "## Energy, Work, and Power\n\nEnergy is the ability to do work. It cannot be created or destroyed, only transformed from one form to another (Law of Conservation of Energy).\n\n### Key Concepts\n- **Work Done:** W = F x d. Work is done when a force moves an object through a distance. It is measured in Joules (J).\n- **Kinetic Energy (KE):** KE = 1/2 mv^2. The energy an object possesses due to its motion.\n- **Gravitational Potential Energy (GPE):** GPE = mgh. The energy an object possesses due to its position in a gravitational field.\n- **Power:** P = W / t. The rate at which work is done or energy is transferred. It is measured in Watts (W).\n- **Efficiency:** Efficiency = (Useful Energy Output / Total Energy Input) x 100%. No machine is 100% efficient due to energy 'losses' to heat and sound.\n\n### Energy Sources\nEnergy can be classified as Renewable (solar, wind, hydroelectric) or Non-renewable (coal, oil, gas, nuclear). Understanding the transition to sustainable energy is a key focus of modern physics.",
+    "source": "ZIMSEC Physics O-Level",
+    "keywords": ["energy", "work", "power", "kinetic energy", "potential energy", "efficiency", "physics"]
+  },
+  {
+    "id": "phys_o_waves_1",
+    "level": "O-Level",
+    "subject": "Physics",
+    "topic": "Waves and Optics",
+    "content": "## Waves and the Behavior of Light\n\nWaves are disturbances that transfer energy from one place to another without transferring matter. They can be transverse (vibrations perpendicular to direction of travel) or longitudinal (vibrations parallel).\n\n### Wave Properties\n- **The Wave Equation:** v = f x lambda. (v=speed, f=frequency, lambda=wavelength).\n- **Frequency:** The number of waves passing a point per second (measured in Hertz, Hz).\n- **Amplitude:** The maximum displacement from the equilibrium position.\n\n### Light and Optics\n- **Reflection:** The bouncing of light off a surface. The angle of incidence equals the angle of reflection.\n- **Refraction:** The bending of light as it passes from one medium to another (e.g., air to glass). Snell's Law: n = sin(i) / sin(r).\n- **Total Internal Reflection:** Occurs when light traveling from a denser to a less dense medium hits the boundary at an angle greater than the 'critical angle.' This is the principle behind fiber optics.\n- **Lenses:** Converging (convex) lenses focus light to a point, while diverging (concave) lenses spread light out.",
+    "source": "ZIMSEC Physics Waves Guide",
+    "keywords": ["waves", "light", "refraction", "reflection", "frequency", "wavelength", "optics", "physics"]
+  },
+  {
+    "id": "phys_a_fields_1",
+    "level": "A-Level",
+    "subject": "Physics",
+    "topic": "Fields: Gravitational and Electric",
+    "content": "## Gravitational and Electric Fields\n\nFields are regions of space where a mass or charge experiences a force. Understanding fields is essential for studying astrophysics and electronics.\n\n### Gravitational Fields\n- **Newton's Law of Gravitation:** F = G m1 m2 / r^2. Every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between them.\n- **Gravitational Field Strength (g):** g = F / m = GM / r^2. On Earth's surface, g = 9.81 N/kg.\n- **Potential:** The work done per unit mass in bringing a mass from infinity to a point in the field.\n\n### Electric Fields\n- **Coulomb's Law:** F = k q1 q2 / r^2. The force between two point charges.\n- **Electric Field Strength (E):** E = F / q. For a uniform field between parallel plates, E = V / d.\n- **Potential Difference (V):** The work done per unit charge. Potential around a point charge is given by V = kq / r.\n- **Capacitance:** C = Q / V. The ability of a system to store electric charge. Capacitors are vital in circuits for timing and energy storage.",
+    "source": "ZIMSEC A-Level Physics",
+    "keywords": ["fields", "gravity", "electric field", "capacitance", "potential", "physics", "coulomb"]
+  },
+  {
+    "id": "phys_o_elec_1",
+    "level": "O-Level",
+    "subject": "Physics",
+    "topic": "Electricity and Magnetism",
+    "content": "## Current Electricity and Circuits\n\nElectricity is the flow of electric charge. It is the primary way we power modern technology.\n\n### Circuit Fundamentals\n- **Current (I):** The rate of flow of charge (Q = It). Measured in Amperes (A).\n- **Potential Difference (V):** The energy transferred per unit charge. Measured in Volts (V).\n- **Resistance (R):** The opposition to current flow. Ohm's Law: V = IR.\n- **Series Circuits:** Current is the same everywhere; voltage is split across components.\n- **Parallel Circuits:** Voltage is the same across branches; current is split.\n\n### Magnetism and Induction\n- **Magnetic Fields:** Region around a magnet where magnetic materials experience a force. Represented by field lines from North to South.\n- **Electromagnetism:** A current-flowing wire creates a magnetic field. Coiling the wire creates a stronger field (solenoid).\n- **Electromagnetic Induction:** A changing magnetic field through a coil 'induces' a voltage. This is the principle behind electric generators and transformers.",
+    "source": "ZIMSEC Physics Electricity",
+    "keywords": ["electricity", "circuits", "resistance", "ohms law", "magnetism", "induction", "physics"]
+  }
+]

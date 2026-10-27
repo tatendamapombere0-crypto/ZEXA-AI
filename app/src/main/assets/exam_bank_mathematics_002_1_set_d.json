@@ -1,0 +1,531 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set D (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": 1,
+      "questionText": "Seventy five thousand and forty in figures is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "750 040."
+        },
+        {
+          "letter": "B",
+          "text": "75 400."
+        },
+        {
+          "letter": "C",
+          "text": "75 040."
+        },
+        {
+          "letter": "D",
+          "text": "7 540."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Seventy five thousand (75 000) plus forty (40) = 75 040.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q2",
+      "questionNumber": 2,
+      "questionText": "18,275 correct to two decimal places is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18,27."
+        },
+        {
+          "letter": "B",
+          "text": "18,28."
+        },
+        {
+          "letter": "C",
+          "text": "18,3."
+        },
+        {
+          "letter": "D",
+          "text": "19,00."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The third decimal digit is 5, which rounds the second decimal digit up: 18,275 -> 18,28.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q3",
+      "questionNumber": 3,
+      "questionText": "50 - 3 x 6 + 4",
+      "options": [
+        {
+          "letter": "A",
+          "text": "36."
+        },
+        {
+          "letter": "B",
+          "text": "282."
+        },
+        {
+          "letter": "C",
+          "text": "96."
+        },
+        {
+          "letter": "D",
+          "text": "48."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Order of operations: multiply first (3 x 6 = 18), then work left to right: 50 - 18 + 4 = 36.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q4",
+      "questionNumber": 4,
+      "questionText": "29/6 expressed as a mixed number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3(5/6)."
+        },
+        {
+          "letter": "B",
+          "text": "4(5/6)."
+        },
+        {
+          "letter": "C",
+          "text": "4(1/6)."
+        },
+        {
+          "letter": "D",
+          "text": "5(1/6)."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "29 divided by 6 = 4 remainder 5, so 29/6 = 4(5/6).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q5",
+      "questionNumber": 5,
+      "questionText": "How many lines of symmetry does a regular pentagon have?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3."
+        },
+        {
+          "letter": "B",
+          "text": "4."
+        },
+        {
+          "letter": "C",
+          "text": "5."
+        },
+        {
+          "letter": "D",
+          "text": "6."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A regular pentagon (5 equal sides) has 5 lines of symmetry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q6",
+      "questionNumber": 6,
+      "questionText": "Which of the following solid shapes has two identical circular ends joined by a curved surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cube"
+        },
+        {
+          "letter": "B",
+          "text": "Cone"
+        },
+        {
+          "letter": "C",
+          "text": "Cylinder"
+        },
+        {
+          "letter": "D",
+          "text": "Pyramid"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A cylinder has two identical circular ends (top and bottom) joined by a curved surface.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q7",
+      "questionNumber": 7,
+      "questionText": "In 15 + 27 = 42, which one is an addend?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42"
+        },
+        {
+          "letter": "B",
+          "text": "15"
+        },
+        {
+          "letter": "C",
+          "text": "57"
+        },
+        {
+          "letter": "D",
+          "text": "27 and 42"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "In an addition sentence, the addends are the numbers being added together: 15 and 27, so 15 is one addend.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q8",
+      "questionNumber": 8,
+      "questionText": "The time shown on a clock is 0920. In 4 hours 45 minutes the time will be",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1345."
+        },
+        {
+          "letter": "B",
+          "text": "1405."
+        },
+        {
+          "letter": "C",
+          "text": "1445."
+        },
+        {
+          "letter": "D",
+          "text": "1305."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "0920 + 4 hours = 1320. 1320 + 45 minutes = 1405.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q9",
+      "questionNumber": 9,
+      "questionText": "Blessing bought 20 pens for $40. She sold each pen for $2,50. Her profit was",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0."
+        },
+        {
+          "letter": "B",
+          "text": "$10."
+        },
+        {
+          "letter": "C",
+          "text": "$20."
+        },
+        {
+          "letter": "D",
+          "text": "$50."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Selling price total = 20 x 2,50 = $50. Profit = 50 - 40 = $10.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q10",
+      "questionNumber": 10,
+      "questionText": "719 384 rounded off to the nearest 10 000 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "700 000."
+        },
+        {
+          "letter": "B",
+          "text": "710 000."
+        },
+        {
+          "letter": "C",
+          "text": "720 000."
+        },
+        {
+          "letter": "D",
+          "text": "730 000."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The thousands digit is 9, which is 5 or more, so 719 384 rounds up to 720 000.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q11",
+      "questionNumber": 11,
+      "questionText": "The difference between two numbers is 4. Their product is 45. The numbers are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 and 9."
+        },
+        {
+          "letter": "B",
+          "text": "3 and 15."
+        },
+        {
+          "letter": "C",
+          "text": "6 and 10."
+        },
+        {
+          "letter": "D",
+          "text": "4 and 8."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "9 - 5 = 4 and 9 x 5 = 45, so the numbers are 5 and 9.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q12",
+      "questionNumber": 12,
+      "questionText": "16/20 in its lowest terms is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3/5."
+        },
+        {
+          "letter": "B",
+          "text": "4/5."
+        },
+        {
+          "letter": "C",
+          "text": "8/10."
+        },
+        {
+          "letter": "D",
+          "text": "2/5."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dividing both 16 and 20 by their highest common factor, 4, gives 4/5.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q13",
+      "questionNumber": 13,
+      "questionText": "What is the perimeter of a square with sides measuring 11,5cm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23cm."
+        },
+        {
+          "letter": "B",
+          "text": "46cm."
+        },
+        {
+          "letter": "C",
+          "text": "132,25cm."
+        },
+        {
+          "letter": "D",
+          "text": "57,5cm."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Perimeter of a square = 4 x side = 4 x 11,5 = 46cm.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q14",
+      "questionNumber": 14,
+      "questionText": "8 machines can produce a batch of goods in 21 days. How many machines are needed to produce the same batch in 12 days?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10."
+        },
+        {
+          "letter": "B",
+          "text": "12."
+        },
+        {
+          "letter": "C",
+          "text": "14."
+        },
+        {
+          "letter": "D",
+          "text": "16."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "This is inverse proportion: 8 x 21 = 168 machine-days. 168 / 12 = 14 machines.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q15",
+      "questionNumber": 15,
+      "questionText": "Find the value of 6 - 3,78.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2,22."
+        },
+        {
+          "letter": "B",
+          "text": "2,32."
+        },
+        {
+          "letter": "C",
+          "text": "3,22."
+        },
+        {
+          "letter": "D",
+          "text": "3,32."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "6,00 - 3,78 = 2,22.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q16",
+      "questionNumber": 16,
+      "questionText": "What must be added to 3 675 to make 6 000?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 235."
+        },
+        {
+          "letter": "B",
+          "text": "2 325."
+        },
+        {
+          "letter": "C",
+          "text": "2 425."
+        },
+        {
+          "letter": "D",
+          "text": "3 325."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "6 000 - 3 675 = 2 325.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q17",
+      "questionNumber": 17,
+      "questionText": "Share 315 exercise books between two Grade 7 classes in the ratio 5:4. How many books does the smaller share get?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "105."
+        },
+        {
+          "letter": "B",
+          "text": "120."
+        },
+        {
+          "letter": "C",
+          "text": "140."
+        },
+        {
+          "letter": "D",
+          "text": "175."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Total parts = 5 + 4 = 9. One part = 315 / 9 = 35. Smaller share (4 parts) = 4 x 35 = 140.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q18",
+      "questionNumber": 18,
+      "questionText": "Find the average of 60, 72, 58 and 66.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "62."
+        },
+        {
+          "letter": "B",
+          "text": "64."
+        },
+        {
+          "letter": "C",
+          "text": "65."
+        },
+        {
+          "letter": "D",
+          "text": "66."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sum = 60 + 72 + 58 + 66 = 256. Average = 256 / 4 = 64.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q19",
+      "questionNumber": 19,
+      "questionText": "A number, when multiplied by 9, gives 216. The number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "22."
+        },
+        {
+          "letter": "B",
+          "text": "24."
+        },
+        {
+          "letter": "C",
+          "text": "26."
+        },
+        {
+          "letter": "D",
+          "text": "28."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Number = 216 / 9 = 24.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q20",
+      "questionNumber": 20,
+      "questionText": "Which of the following best describes a right angle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An angle less than 90 degrees."
+        },
+        {
+          "letter": "B",
+          "text": "An angle equal to exactly 90 degrees."
+        },
+        {
+          "letter": "C",
+          "text": "An angle greater than 90 but less than 180 degrees."
+        },
+        {
+          "letter": "D",
+          "text": "An angle equal to exactly 180 degrees."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A right angle measures exactly 90 degrees.",
+      "answerConfidence": "high"
+    }
+  ]
+}

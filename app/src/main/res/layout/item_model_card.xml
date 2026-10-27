@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_rounded_status"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Row: Name + Action Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvModelName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ZEXA 2.5 - 0.5B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A" />
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/stat_sys_download" />
+    </LinearLayout>
+
+    <!-- Badges Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/badgeParams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.49 B"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/badge_outline"
+            android:textSize="12sp"
+            android:textColor="#475569"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/badgeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.81 GB"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/badge_outline"
+            android:textSize="12sp"
+            android:textColor="#475569"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/badgeSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/badge_outline"
+            android:textSize="12sp"
+            android:textColor="#475569" />
+    </LinearLayout>
+
+    <!-- Incompatible Badge -->
+    <TextView
+        android:id="@+id/badgeIncompatible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incompatible"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/badge_error"
+        android:textSize="12sp"
+        android:textColor="#DC2626"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- Progress Section -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:indicatorColor="@color/primary"
+        app:trackColor="@color/primary_light"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvProgressPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+</LinearLayout>

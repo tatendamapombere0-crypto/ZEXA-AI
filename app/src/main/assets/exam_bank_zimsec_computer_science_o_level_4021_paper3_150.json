@@ -1,0 +1,1515 @@
+{
+  "paperInfo": {
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/03",
+    "paperName": "Paper 3 – Practical",
+    "paperType": "Practical / Programming Tasks",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Computer_Science_O_Level_4021_Paper3_150.json",
+    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus, specimen/exam patterns and revision material; not verbatim past-paper copies.",
+    "sourceBasis": "ZIMSEC syllabus/specimen and recurring examination themes."
+  },
+  "questions": [
+    {
+      "id": "4021_03_001",
+      "questionNumber": 1,
+      "questionText": "Design an algorithm and pseudocode for processing student marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_002",
+      "questionNumber": 2,
+      "questionText": "Create a flowchart for calculating the total and average of five numbers.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_003",
+      "questionNumber": 3,
+      "questionText": "Write a program that accepts a name and three marks and outputs the average.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_004",
+      "questionNumber": 4,
+      "questionText": "Use selection to classify a mark into an appropriate grade.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_005",
+      "questionNumber": 5,
+      "questionText": "Use iteration to display numbers from 1 to 20.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_006",
+      "questionNumber": 6,
+      "questionText": "Write a program to calculate the factorial of a positive integer.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_007",
+      "questionNumber": 7,
+      "questionText": "Write a program to find the largest value in a list.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_008",
+      "questionNumber": 8,
+      "questionText": "Write a program to count values above a stated threshold.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_009",
+      "questionNumber": 9,
+      "questionText": "Design a menu-driven program for a school library.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_010",
+      "questionNumber": 10,
+      "questionText": "Design a program that validates a user's age before registration.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_011",
+      "questionNumber": 11,
+      "questionText": "Design a program that calculates a shopping bill and applies a discount.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_012",
+      "questionNumber": 12,
+      "questionText": "Design a student-record database and identify fields and a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_013",
+      "questionNumber": 13,
+      "questionText": "Create validation rules for a student registration database.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_014",
+      "questionNumber": 14,
+      "questionText": "Create test data and expected results for a program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_015",
+      "questionNumber": 15,
+      "questionText": "Debug an algorithm containing a logical error and explain the correction.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_016",
+      "questionNumber": 16,
+      "questionText": "Produce a trace table for a loop.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_017",
+      "questionNumber": 17,
+      "questionText": "Design an input-process-output table for a payroll problem.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_018",
+      "questionNumber": 18,
+      "questionText": "Convert a problem statement into a flowchart and pseudocode.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_019",
+      "questionNumber": 19,
+      "questionText": "Design a stock-control system with inputs, processes and outputs.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_020",
+      "questionNumber": 20,
+      "questionText": "Design a school attendance system and specify stored data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_021",
+      "questionNumber": 21,
+      "questionText": "Create a test plan with normal, boundary and erroneous cases.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_022",
+      "questionNumber": 22,
+      "questionText": "Explain how source code should be documented for maintenance.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_023",
+      "questionNumber": 23,
+      "questionText": "Design a password-checking routine and discuss its limitations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_024",
+      "questionNumber": 24,
+      "questionText": "Write pseudocode to search a list for an item.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_025",
+      "questionNumber": 25,
+      "questionText": "Write pseudocode to sum all even numbers in a range.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_026",
+      "questionNumber": 26,
+      "questionText": "Design an algorithm to sort a small list into ascending order.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_027",
+      "questionNumber": 27,
+      "questionText": "State a database query requirement for records meeting a condition.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_028",
+      "questionNumber": 28,
+      "questionText": "Design a database report and identify displayed fields.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_029",
+      "questionNumber": 29,
+      "questionText": "Decompose a large problem into smaller modules.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_030",
+      "questionNumber": 30,
+      "questionText": "Explain how to test a completed solution with a user.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_031",
+      "questionNumber": 31,
+      "questionText": "Design an algorithm and pseudocode for processing student marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_032",
+      "questionNumber": 32,
+      "questionText": "Create a flowchart for calculating the total and average of five numbers.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_033",
+      "questionNumber": 33,
+      "questionText": "Write a program that accepts a name and three marks and outputs the average.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_034",
+      "questionNumber": 34,
+      "questionText": "Use selection to classify a mark into an appropriate grade.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_035",
+      "questionNumber": 35,
+      "questionText": "Use iteration to display numbers from 1 to 20.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_036",
+      "questionNumber": 36,
+      "questionText": "Write a program to calculate the factorial of a positive integer.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_037",
+      "questionNumber": 37,
+      "questionText": "Write a program to find the largest value in a list.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_038",
+      "questionNumber": 38,
+      "questionText": "Write a program to count values above a stated threshold.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_039",
+      "questionNumber": 39,
+      "questionText": "Design a menu-driven program for a school library.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_040",
+      "questionNumber": 40,
+      "questionText": "Design a program that validates a user's age before registration.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_041",
+      "questionNumber": 41,
+      "questionText": "Design a program that calculates a shopping bill and applies a discount.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_042",
+      "questionNumber": 42,
+      "questionText": "Design a student-record database and identify fields and a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_043",
+      "questionNumber": 43,
+      "questionText": "Create validation rules for a student registration database.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_044",
+      "questionNumber": 44,
+      "questionText": "Create test data and expected results for a program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_045",
+      "questionNumber": 45,
+      "questionText": "Debug an algorithm containing a logical error and explain the correction.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_046",
+      "questionNumber": 46,
+      "questionText": "Produce a trace table for a loop.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_047",
+      "questionNumber": 47,
+      "questionText": "Design an input-process-output table for a payroll problem.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_048",
+      "questionNumber": 48,
+      "questionText": "Convert a problem statement into a flowchart and pseudocode.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_049",
+      "questionNumber": 49,
+      "questionText": "Design a stock-control system with inputs, processes and outputs.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_050",
+      "questionNumber": 50,
+      "questionText": "Design a school attendance system and specify stored data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_051",
+      "questionNumber": 51,
+      "questionText": "Create a test plan with normal, boundary and erroneous cases.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_052",
+      "questionNumber": 52,
+      "questionText": "Explain how source code should be documented for maintenance.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_053",
+      "questionNumber": 53,
+      "questionText": "Design a password-checking routine and discuss its limitations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_054",
+      "questionNumber": 54,
+      "questionText": "Write pseudocode to search a list for an item.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_055",
+      "questionNumber": 55,
+      "questionText": "Write pseudocode to sum all even numbers in a range.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_056",
+      "questionNumber": 56,
+      "questionText": "Design an algorithm to sort a small list into ascending order.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_057",
+      "questionNumber": 57,
+      "questionText": "State a database query requirement for records meeting a condition.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_058",
+      "questionNumber": 58,
+      "questionText": "Design a database report and identify displayed fields.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_059",
+      "questionNumber": 59,
+      "questionText": "Decompose a large problem into smaller modules.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_060",
+      "questionNumber": 60,
+      "questionText": "Explain how to test a completed solution with a user.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_061",
+      "questionNumber": 61,
+      "questionText": "Design an algorithm and pseudocode for processing student marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_062",
+      "questionNumber": 62,
+      "questionText": "Create a flowchart for calculating the total and average of five numbers.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_063",
+      "questionNumber": 63,
+      "questionText": "Write a program that accepts a name and three marks and outputs the average.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_064",
+      "questionNumber": 64,
+      "questionText": "Use selection to classify a mark into an appropriate grade.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_065",
+      "questionNumber": 65,
+      "questionText": "Use iteration to display numbers from 1 to 20.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_066",
+      "questionNumber": 66,
+      "questionText": "Write a program to calculate the factorial of a positive integer.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_067",
+      "questionNumber": 67,
+      "questionText": "Write a program to find the largest value in a list.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_068",
+      "questionNumber": 68,
+      "questionText": "Write a program to count values above a stated threshold.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_069",
+      "questionNumber": 69,
+      "questionText": "Design a menu-driven program for a school library.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_070",
+      "questionNumber": 70,
+      "questionText": "Design a program that validates a user's age before registration.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_071",
+      "questionNumber": 71,
+      "questionText": "Design a program that calculates a shopping bill and applies a discount.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_072",
+      "questionNumber": 72,
+      "questionText": "Design a student-record database and identify fields and a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_073",
+      "questionNumber": 73,
+      "questionText": "Create validation rules for a student registration database.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_074",
+      "questionNumber": 74,
+      "questionText": "Create test data and expected results for a program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_075",
+      "questionNumber": 75,
+      "questionText": "Debug an algorithm containing a logical error and explain the correction.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_076",
+      "questionNumber": 76,
+      "questionText": "Produce a trace table for a loop.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_077",
+      "questionNumber": 77,
+      "questionText": "Design an input-process-output table for a payroll problem.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_078",
+      "questionNumber": 78,
+      "questionText": "Convert a problem statement into a flowchart and pseudocode.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_079",
+      "questionNumber": 79,
+      "questionText": "Design a stock-control system with inputs, processes and outputs.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_080",
+      "questionNumber": 80,
+      "questionText": "Design a school attendance system and specify stored data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_081",
+      "questionNumber": 81,
+      "questionText": "Create a test plan with normal, boundary and erroneous cases.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_082",
+      "questionNumber": 82,
+      "questionText": "Explain how source code should be documented for maintenance.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_083",
+      "questionNumber": 83,
+      "questionText": "Design a password-checking routine and discuss its limitations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_084",
+      "questionNumber": 84,
+      "questionText": "Write pseudocode to search a list for an item.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_085",
+      "questionNumber": 85,
+      "questionText": "Write pseudocode to sum all even numbers in a range.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_086",
+      "questionNumber": 86,
+      "questionText": "Design an algorithm to sort a small list into ascending order.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_087",
+      "questionNumber": 87,
+      "questionText": "State a database query requirement for records meeting a condition.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_088",
+      "questionNumber": 88,
+      "questionText": "Design a database report and identify displayed fields.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_089",
+      "questionNumber": 89,
+      "questionText": "Decompose a large problem into smaller modules.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_090",
+      "questionNumber": 90,
+      "questionText": "Explain how to test a completed solution with a user.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_091",
+      "questionNumber": 91,
+      "questionText": "Design an algorithm and pseudocode for processing student marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_092",
+      "questionNumber": 92,
+      "questionText": "Create a flowchart for calculating the total and average of five numbers.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_093",
+      "questionNumber": 93,
+      "questionText": "Write a program that accepts a name and three marks and outputs the average.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_094",
+      "questionNumber": 94,
+      "questionText": "Use selection to classify a mark into an appropriate grade.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_095",
+      "questionNumber": 95,
+      "questionText": "Use iteration to display numbers from 1 to 20.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_096",
+      "questionNumber": 96,
+      "questionText": "Write a program to calculate the factorial of a positive integer.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_097",
+      "questionNumber": 97,
+      "questionText": "Write a program to find the largest value in a list.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_098",
+      "questionNumber": 98,
+      "questionText": "Write a program to count values above a stated threshold.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_099",
+      "questionNumber": 99,
+      "questionText": "Design a menu-driven program for a school library.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_100",
+      "questionNumber": 100,
+      "questionText": "Design a program that validates a user's age before registration.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_101",
+      "questionNumber": 101,
+      "questionText": "Design a program that calculates a shopping bill and applies a discount.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_102",
+      "questionNumber": 102,
+      "questionText": "Design a student-record database and identify fields and a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_103",
+      "questionNumber": 103,
+      "questionText": "Create validation rules for a student registration database.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_104",
+      "questionNumber": 104,
+      "questionText": "Create test data and expected results for a program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_105",
+      "questionNumber": 105,
+      "questionText": "Debug an algorithm containing a logical error and explain the correction.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_106",
+      "questionNumber": 106,
+      "questionText": "Produce a trace table for a loop.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_107",
+      "questionNumber": 107,
+      "questionText": "Design an input-process-output table for a payroll problem.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_108",
+      "questionNumber": 108,
+      "questionText": "Convert a problem statement into a flowchart and pseudocode.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_109",
+      "questionNumber": 109,
+      "questionText": "Design a stock-control system with inputs, processes and outputs.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_110",
+      "questionNumber": 110,
+      "questionText": "Design a school attendance system and specify stored data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_111",
+      "questionNumber": 111,
+      "questionText": "Create a test plan with normal, boundary and erroneous cases.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_112",
+      "questionNumber": 112,
+      "questionText": "Explain how source code should be documented for maintenance.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_113",
+      "questionNumber": 113,
+      "questionText": "Design a password-checking routine and discuss its limitations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_114",
+      "questionNumber": 114,
+      "questionText": "Write pseudocode to search a list for an item.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_115",
+      "questionNumber": 115,
+      "questionText": "Write pseudocode to sum all even numbers in a range.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_116",
+      "questionNumber": 116,
+      "questionText": "Design an algorithm to sort a small list into ascending order.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_117",
+      "questionNumber": 117,
+      "questionText": "State a database query requirement for records meeting a condition.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_118",
+      "questionNumber": 118,
+      "questionText": "Design a database report and identify displayed fields.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_119",
+      "questionNumber": 119,
+      "questionText": "Decompose a large problem into smaller modules.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_120",
+      "questionNumber": 120,
+      "questionText": "Explain how to test a completed solution with a user.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_121",
+      "questionNumber": 121,
+      "questionText": "Design an algorithm and pseudocode for processing student marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_122",
+      "questionNumber": 122,
+      "questionText": "Create a flowchart for calculating the total and average of five numbers.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_123",
+      "questionNumber": 123,
+      "questionText": "Write a program that accepts a name and three marks and outputs the average.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_124",
+      "questionNumber": 124,
+      "questionText": "Use selection to classify a mark into an appropriate grade.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_125",
+      "questionNumber": 125,
+      "questionText": "Use iteration to display numbers from 1 to 20.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_126",
+      "questionNumber": 126,
+      "questionText": "Write a program to calculate the factorial of a positive integer.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_127",
+      "questionNumber": 127,
+      "questionText": "Write a program to find the largest value in a list.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_128",
+      "questionNumber": 128,
+      "questionText": "Write a program to count values above a stated threshold.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_129",
+      "questionNumber": 129,
+      "questionText": "Design a menu-driven program for a school library.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_130",
+      "questionNumber": 130,
+      "questionText": "Design a program that validates a user's age before registration.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_131",
+      "questionNumber": 131,
+      "questionText": "Design a program that calculates a shopping bill and applies a discount.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_132",
+      "questionNumber": 132,
+      "questionText": "Design a student-record database and identify fields and a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_03_133",
+      "questionNumber": 133,
+      "questionText": "Create validation rules for a student registration database.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_03_134",
+      "questionNumber": 134,
+      "questionText": "Create test data and expected results for a program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_03_135",
+      "questionNumber": 135,
+      "questionText": "Debug an algorithm containing a logical error and explain the correction.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_03_136",
+      "questionNumber": 136,
+      "questionText": "Produce a trace table for a loop.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_03_137",
+      "questionNumber": 137,
+      "questionText": "Design an input-process-output table for a payroll problem.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_03_138",
+      "questionNumber": 138,
+      "questionText": "Convert a problem statement into a flowchart and pseudocode.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_03_139",
+      "questionNumber": 139,
+      "questionText": "Design a stock-control system with inputs, processes and outputs.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_03_140",
+      "questionNumber": 140,
+      "questionText": "Design a school attendance system and specify stored data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_03_141",
+      "questionNumber": 141,
+      "questionText": "Create a test plan with normal, boundary and erroneous cases.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_03_142",
+      "questionNumber": 142,
+      "questionText": "Explain how source code should be documented for maintenance.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_03_143",
+      "questionNumber": 143,
+      "questionText": "Design a password-checking routine and discuss its limitations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_03_144",
+      "questionNumber": 144,
+      "questionText": "Write pseudocode to search a list for an item.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_03_145",
+      "questionNumber": 145,
+      "questionText": "Write pseudocode to sum all even numbers in a range.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_03_146",
+      "questionNumber": 146,
+      "questionText": "Design an algorithm to sort a small list into ascending order.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_03_147",
+      "questionNumber": 147,
+      "questionText": "State a database query requirement for records meeting a condition.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_03_148",
+      "questionNumber": 148,
+      "questionText": "Design a database report and identify displayed fields.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_03_149",
+      "questionNumber": 149,
+      "questionText": "Decompose a large problem into smaller modules.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_03_150",
+      "questionNumber": 150,
+      "questionText": "Explain how to test a completed solution with a user.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    }
+  ]
+}

@@ -1,0 +1,2724 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "A-Level",
+    "paperCode": "9154/1",
+    "paperName": "Mathematics A-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "sourceBasis": [
+      "ZIMSEC Mathematics syllabus/topic coverage",
+      "ZIMSEC past-paper style and assessment patterns for June 2023-2026",
+      "Original questions generated for this exam bank; not transcriptions of past papers"
+    ],
+    "yearsReferenced": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "questionCount": 150,
+    "note": "Questions are original ZIMSEC-aligned practice questions. They are designed to reflect syllabus coverage and examination style without reproducing copyrighted past-paper text."
+  },
+  "questions": [
+    {
+      "id": "math_al_p1_001",
+      "questionNumber": 1,
+      "questionText": "Solve for x: 2x² − 3x − 6 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.637 or x = -1.137",
+      "explanation": "Use the quadratic formula x=[3±√(57)]/(2×2); numerical roots are approximately 2.637 and -1.137.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_002",
+      "questionNumber": 2,
+      "questionText": "Differentiate y = x³ − 3x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 6x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−3x²)/dx=−6x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_003",
+      "questionNumber": 3,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_004",
+      "questionNumber": 4,
+      "questionText": "Evaluate sin(60°)cos(60°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(120°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_005",
+      "questionNumber": 5,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=6+7i.",
+      "options": [],
+      "correctAnswer": "|z|=9.220, arg=49.4°",
+      "explanation": "|z|=√(6²+7²)≈9.220; arg=tan⁻¹(7/6)≈49.4°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_006",
+      "questionNumber": 6,
+      "questionText": "Find the sum of the first 8 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "1020",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^8−1)=1020.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_007",
+      "questionNumber": 7,
+      "questionText": "Find the coefficient of x^5 in the expansion of (1+x)^8.",
+      "options": [],
+      "correctAnswer": "56",
+      "explanation": "The coefficient is C(8,5)=56.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_008",
+      "questionNumber": 8,
+      "questionText": "Find the determinant of the matrix [[4,1,0],[2,4,1],[0,3,4]].",
+      "options": [],
+      "correctAnswer": "44",
+      "explanation": "Expanding along the first row gives 4(4×4−3)−24=44.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_009",
+      "questionNumber": 9,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_010",
+      "questionNumber": 10,
+      "questionText": "Evaluate ∫₀¹ (5x + 7) dx.",
+      "options": [],
+      "correctAnswer": "9.5",
+      "explanation": "[5/2 x² + 7x]₀¹ = 5/2 + 7 = 9.5.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_011",
+      "questionNumber": 11,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_012",
+      "questionNumber": 12,
+      "questionText": "Find the inverse of the function f(x)=3x−6.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+6)/3",
+      "explanation": "Let y=3x−6; then y+6=3x, so x=(y+6)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_013",
+      "questionNumber": 13,
+      "questionText": "Solve the differential equation dy/dx = 4x + 3, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 3x + 1",
+      "explanation": "Integrating gives y=4/2x²+3x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_014",
+      "questionNumber": 14,
+      "questionText": "Find the distance between the points (2,8) and (10,11).",
+      "options": [],
+      "correctAnswer": "8.544",
+      "explanation": "Distance=√[(10−2)²+(11−8)²]≈8.544.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_015",
+      "questionNumber": 15,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_016",
+      "questionNumber": 16,
+      "questionText": "Solve for x: 3x² − 3x − 9 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.303 or x = -1.303",
+      "explanation": "Use the quadratic formula x=[3±√(117)]/(2×3); numerical roots are approximately 2.303 and -1.303.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_017",
+      "questionNumber": 17,
+      "questionText": "Differentiate y = x³ − 6x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 12x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−6x²)/dx=−12x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_018",
+      "questionNumber": 18,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_019",
+      "questionNumber": 19,
+      "questionText": "Evaluate sin(30°)cos(30°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(60°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_020",
+      "questionNumber": 20,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=3+8i.",
+      "options": [],
+      "correctAnswer": "|z|=8.544, arg=69.4°",
+      "explanation": "|z|=√(3²+8²)≈8.544; arg=tan⁻¹(8/3)≈69.4°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_021",
+      "questionNumber": 21,
+      "questionText": "Find the sum of the first 7 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "508",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^7−1)=508.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_022",
+      "questionNumber": 22,
+      "questionText": "Find the coefficient of x^4 in the expansion of (1+x)^7.",
+      "options": [],
+      "correctAnswer": "35",
+      "explanation": "The coefficient is C(7,4)=35.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_023",
+      "questionNumber": 23,
+      "questionText": "Find the determinant of the matrix [[3,1,0],[2,4,1],[0,3,7]].",
+      "options": [],
+      "correctAnswer": "61",
+      "explanation": "Expanding along the first row gives 3(4×7−3)−27=61.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_024",
+      "questionNumber": 24,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_025",
+      "questionNumber": 25,
+      "questionText": "Evaluate ∫₀¹ (2x + 7) dx.",
+      "options": [],
+      "correctAnswer": "8",
+      "explanation": "[2/2 x² + 7x]₀¹ = 2/2 + 7 = 8.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_026",
+      "questionNumber": 26,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_027",
+      "questionNumber": 27,
+      "questionText": "Find the inverse of the function f(x)=3x−5.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+5)/3",
+      "explanation": "Let y=3x−5; then y+5=3x, so x=(y+5)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_028",
+      "questionNumber": 28,
+      "questionText": "Solve the differential equation dy/dx = 4x + 6, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 6x + 1",
+      "explanation": "Integrating gives y=4/2x²+6x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_029",
+      "questionNumber": 29,
+      "questionText": "Find the distance between the points (5,2) and (9,8).",
+      "options": [],
+      "correctAnswer": "7.211",
+      "explanation": "Distance=√[(9−5)²+(8−2)²]≈7.211.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_030",
+      "questionNumber": 30,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_031",
+      "questionNumber": 31,
+      "questionText": "Solve for x: 4x² − 3x − 12 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.147 or x = -1.397",
+      "explanation": "Use the quadratic formula x=[3±√(201)]/(2×4); numerical roots are approximately 2.147 and -1.397.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_032",
+      "questionNumber": 32,
+      "questionText": "Differentiate y = x³ − 3x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 6x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−3x²)/dx=−6x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_033",
+      "questionNumber": 33,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_034",
+      "questionNumber": 34,
+      "questionText": "Evaluate sin(60°)cos(60°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(120°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_035",
+      "questionNumber": 35,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=6+9i.",
+      "options": [],
+      "correctAnswer": "|z|=10.817, arg=56.3°",
+      "explanation": "|z|=√(6²+9²)≈10.817; arg=tan⁻¹(9/6)≈56.3°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_036",
+      "questionNumber": 36,
+      "questionText": "Find the sum of the first 6 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "252",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^6−1)=252.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_037",
+      "questionNumber": 37,
+      "questionText": "Find the coefficient of x^3 in the expansion of (1+x)^6.",
+      "options": [],
+      "correctAnswer": "20",
+      "explanation": "The coefficient is C(6,3)=20.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_038",
+      "questionNumber": 38,
+      "questionText": "Find the determinant of the matrix [[2,1,0],[2,4,1],[0,3,4]].",
+      "options": [],
+      "correctAnswer": "18",
+      "explanation": "Expanding along the first row gives 2(4×4−3)−24=18.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_039",
+      "questionNumber": 39,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_040",
+      "questionNumber": 40,
+      "questionText": "Evaluate ∫₀¹ (5x + 7) dx.",
+      "options": [],
+      "correctAnswer": "9.5",
+      "explanation": "[5/2 x² + 7x]₀¹ = 5/2 + 7 = 9.5.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_041",
+      "questionNumber": 41,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_042",
+      "questionNumber": 42,
+      "questionText": "Find the inverse of the function f(x)=3x−4.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+4)/3",
+      "explanation": "Let y=3x−4; then y+4=3x, so x=(y+4)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_043",
+      "questionNumber": 43,
+      "questionText": "Solve the differential equation dy/dx = 4x + 5, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 5x + 1",
+      "explanation": "Integrating gives y=4/2x²+5x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_044",
+      "questionNumber": 44,
+      "questionText": "Find the distance between the points (2,3) and (8,14).",
+      "options": [],
+      "correctAnswer": "12.530",
+      "explanation": "Distance=√[(8−2)²+(14−3)²]≈12.530.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_045",
+      "questionNumber": 45,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_046",
+      "questionNumber": 46,
+      "questionText": "Solve for x: 5x² − 3x − 15 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.058 or x = -1.458",
+      "explanation": "Use the quadratic formula x=[3±√(309)]/(2×5); numerical roots are approximately 2.058 and -1.458.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_047",
+      "questionNumber": 47,
+      "questionText": "Differentiate y = x³ − 6x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 12x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−6x²)/dx=−12x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_048",
+      "questionNumber": 48,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_049",
+      "questionNumber": 49,
+      "questionText": "Evaluate sin(30°)cos(30°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(60°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_050",
+      "questionNumber": 50,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=3+3i.",
+      "options": [],
+      "correctAnswer": "|z|=4.243, arg=45.0°",
+      "explanation": "|z|=√(3²+3²)≈4.243; arg=tan⁻¹(3/3)≈45.0°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_051",
+      "questionNumber": 51,
+      "questionText": "Find the sum of the first 5 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "124",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^5−1)=124.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_052",
+      "questionNumber": 52,
+      "questionText": "Find the coefficient of x^6 in the expansion of (1+x)^9.",
+      "options": [],
+      "correctAnswer": "84",
+      "explanation": "The coefficient is C(9,6)=84.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_053",
+      "questionNumber": 53,
+      "questionText": "Find the determinant of the matrix [[1,1,0],[2,4,1],[0,3,7]].",
+      "options": [],
+      "correctAnswer": "11",
+      "explanation": "Expanding along the first row gives 1(4×7−3)−27=11.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_054",
+      "questionNumber": 54,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_055",
+      "questionNumber": 55,
+      "questionText": "Evaluate ∫₀¹ (2x + 7) dx.",
+      "options": [],
+      "correctAnswer": "8",
+      "explanation": "[2/2 x² + 7x]₀¹ = 2/2 + 7 = 8.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_056",
+      "questionNumber": 56,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_057",
+      "questionNumber": 57,
+      "questionText": "Find the inverse of the function f(x)=3x−3.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+3)/3",
+      "explanation": "Let y=3x−3; then y+3=3x, so x=(y+3)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_058",
+      "questionNumber": 58,
+      "questionText": "Solve the differential equation dy/dx = 4x + 4, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 4x + 1",
+      "explanation": "Integrating gives y=4/2x²+4x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_059",
+      "questionNumber": 59,
+      "questionText": "Find the distance between the points (5,4) and (7,11).",
+      "options": [],
+      "correctAnswer": "7.280",
+      "explanation": "Distance=√[(7−5)²+(11−4)²]≈7.280.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_060",
+      "questionNumber": 60,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_061",
+      "questionNumber": 61,
+      "questionText": "Solve for x: 6x² − 3x − 18 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.000 or x = -1.500",
+      "explanation": "Use the quadratic formula x=[3±√(441)]/(2×6); numerical roots are approximately 2.000 and -1.500.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_062",
+      "questionNumber": 62,
+      "questionText": "Differentiate y = x³ − 3x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 6x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−3x²)/dx=−6x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_063",
+      "questionNumber": 63,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_064",
+      "questionNumber": 64,
+      "questionText": "Evaluate sin(60°)cos(60°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(120°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_065",
+      "questionNumber": 65,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=6+4i.",
+      "options": [],
+      "correctAnswer": "|z|=7.211, arg=33.7°",
+      "explanation": "|z|=√(6²+4²)≈7.211; arg=tan⁻¹(4/6)≈33.7°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_066",
+      "questionNumber": 66,
+      "questionText": "Find the sum of the first 4 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "60",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^4−1)=60.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_067",
+      "questionNumber": 67,
+      "questionText": "Find the coefficient of x^5 in the expansion of (1+x)^8.",
+      "options": [],
+      "correctAnswer": "56",
+      "explanation": "The coefficient is C(8,5)=56.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_068",
+      "questionNumber": 68,
+      "questionText": "Find the determinant of the matrix [[4,1,0],[2,4,1],[0,3,4]].",
+      "options": [],
+      "correctAnswer": "44",
+      "explanation": "Expanding along the first row gives 4(4×4−3)−24=44.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_069",
+      "questionNumber": 69,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_070",
+      "questionNumber": 70,
+      "questionText": "Evaluate ∫₀¹ (5x + 7) dx.",
+      "options": [],
+      "correctAnswer": "9.5",
+      "explanation": "[5/2 x² + 7x]₀¹ = 5/2 + 7 = 9.5.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_071",
+      "questionNumber": 71,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_072",
+      "questionNumber": 72,
+      "questionText": "Find the inverse of the function f(x)=3x−6.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+6)/3",
+      "explanation": "Let y=3x−6; then y+6=3x, so x=(y+6)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_073",
+      "questionNumber": 73,
+      "questionText": "Solve the differential equation dy/dx = 4x + 3, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 3x + 1",
+      "explanation": "Integrating gives y=4/2x²+3x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_074",
+      "questionNumber": 74,
+      "questionText": "Find the distance between the points (2,5) and (6,8).",
+      "options": [],
+      "correctAnswer": "5.000",
+      "explanation": "Distance=√[(6−2)²+(8−5)²]≈5.000.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_075",
+      "questionNumber": 75,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_076",
+      "questionNumber": 76,
+      "questionText": "Solve for x: 7x² − 3x − 21 = 0.",
+      "options": [],
+      "correctAnswer": "x = 1.960 or x = -1.531",
+      "explanation": "Use the quadratic formula x=[3±√(597)]/(2×7); numerical roots are approximately 1.960 and -1.531.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_077",
+      "questionNumber": 77,
+      "questionText": "Differentiate y = x³ − 6x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 12x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−6x²)/dx=−12x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_078",
+      "questionNumber": 78,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_079",
+      "questionNumber": 79,
+      "questionText": "Evaluate sin(30°)cos(30°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(60°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_080",
+      "questionNumber": 80,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=3+5i.",
+      "options": [],
+      "correctAnswer": "|z|=5.831, arg=59.0°",
+      "explanation": "|z|=√(3²+5²)≈5.831; arg=tan⁻¹(5/3)≈59.0°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_081",
+      "questionNumber": 81,
+      "questionText": "Find the sum of the first 3 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "28",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^3−1)=28.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_082",
+      "questionNumber": 82,
+      "questionText": "Find the coefficient of x^4 in the expansion of (1+x)^7.",
+      "options": [],
+      "correctAnswer": "35",
+      "explanation": "The coefficient is C(7,4)=35.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_083",
+      "questionNumber": 83,
+      "questionText": "Find the determinant of the matrix [[3,1,0],[2,4,1],[0,3,7]].",
+      "options": [],
+      "correctAnswer": "61",
+      "explanation": "Expanding along the first row gives 3(4×7−3)−27=61.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_084",
+      "questionNumber": 84,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_085",
+      "questionNumber": 85,
+      "questionText": "Evaluate ∫₀¹ (2x + 7) dx.",
+      "options": [],
+      "correctAnswer": "8",
+      "explanation": "[2/2 x² + 7x]₀¹ = 2/2 + 7 = 8.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_086",
+      "questionNumber": 86,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_087",
+      "questionNumber": 87,
+      "questionText": "Find the inverse of the function f(x)=3x−5.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+5)/3",
+      "explanation": "Let y=3x−5; then y+5=3x, so x=(y+5)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_088",
+      "questionNumber": 88,
+      "questionText": "Solve the differential equation dy/dx = 4x + 6, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 6x + 1",
+      "explanation": "Integrating gives y=4/2x²+6x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_089",
+      "questionNumber": 89,
+      "questionText": "Find the distance between the points (5,6) and (5,14).",
+      "options": [],
+      "correctAnswer": "8.000",
+      "explanation": "Distance=√[(5−5)²+(14−6)²]≈8.000.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_090",
+      "questionNumber": 90,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_091",
+      "questionNumber": 91,
+      "questionText": "Solve for x: 8x² − 3x − 24 = 0.",
+      "options": [],
+      "correctAnswer": "x = 1.930 or x = -1.555",
+      "explanation": "Use the quadratic formula x=[3±√(777)]/(2×8); numerical roots are approximately 1.930 and -1.555.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_092",
+      "questionNumber": 92,
+      "questionText": "Differentiate y = x³ − 3x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 6x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−3x²)/dx=−6x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_093",
+      "questionNumber": 93,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_094",
+      "questionNumber": 94,
+      "questionText": "Evaluate sin(60°)cos(60°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(120°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_095",
+      "questionNumber": 95,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=6+6i.",
+      "options": [],
+      "correctAnswer": "|z|=8.485, arg=45.0°",
+      "explanation": "|z|=√(6²+6²)≈8.485; arg=tan⁻¹(6/6)≈45.0°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_096",
+      "questionNumber": 96,
+      "questionText": "Find the sum of the first 10 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "4092",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^10−1)=4092.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_097",
+      "questionNumber": 97,
+      "questionText": "Find the coefficient of x^3 in the expansion of (1+x)^6.",
+      "options": [],
+      "correctAnswer": "20",
+      "explanation": "The coefficient is C(6,3)=20.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_098",
+      "questionNumber": 98,
+      "questionText": "Find the determinant of the matrix [[2,1,0],[2,4,1],[0,3,4]].",
+      "options": [],
+      "correctAnswer": "18",
+      "explanation": "Expanding along the first row gives 2(4×4−3)−24=18.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_099",
+      "questionNumber": 99,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_100",
+      "questionNumber": 100,
+      "questionText": "Evaluate ∫₀¹ (5x + 7) dx.",
+      "options": [],
+      "correctAnswer": "9.5",
+      "explanation": "[5/2 x² + 7x]₀¹ = 5/2 + 7 = 9.5.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_101",
+      "questionNumber": 101,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_102",
+      "questionNumber": 102,
+      "questionText": "Find the inverse of the function f(x)=3x−4.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+4)/3",
+      "explanation": "Let y=3x−4; then y+4=3x, so x=(y+4)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_103",
+      "questionNumber": 103,
+      "questionText": "Solve the differential equation dy/dx = 4x + 5, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 5x + 1",
+      "explanation": "Integrating gives y=4/2x²+5x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_104",
+      "questionNumber": 104,
+      "questionText": "Find the distance between the points (2,7) and (12,11).",
+      "options": [],
+      "correctAnswer": "10.770",
+      "explanation": "Distance=√[(12−2)²+(11−7)²]≈10.770.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_105",
+      "questionNumber": 105,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_106",
+      "questionNumber": 106,
+      "questionText": "Solve for x: 2x² − 3x − 6 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.637 or x = -1.137",
+      "explanation": "Use the quadratic formula x=[3±√(57)]/(2×2); numerical roots are approximately 2.637 and -1.137.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_107",
+      "questionNumber": 107,
+      "questionText": "Differentiate y = x³ − 6x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 12x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−6x²)/dx=−12x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_108",
+      "questionNumber": 108,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_109",
+      "questionNumber": 109,
+      "questionText": "Evaluate sin(30°)cos(30°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(60°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_110",
+      "questionNumber": 110,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=3+7i.",
+      "options": [],
+      "correctAnswer": "|z|=7.616, arg=66.8°",
+      "explanation": "|z|=√(3²+7²)≈7.616; arg=tan⁻¹(7/3)≈66.8°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_111",
+      "questionNumber": 111,
+      "questionText": "Find the sum of the first 9 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "2044",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^9−1)=2044.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_112",
+      "questionNumber": 112,
+      "questionText": "Find the coefficient of x^6 in the expansion of (1+x)^9.",
+      "options": [],
+      "correctAnswer": "84",
+      "explanation": "The coefficient is C(9,6)=84.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_113",
+      "questionNumber": 113,
+      "questionText": "Find the determinant of the matrix [[1,1,0],[2,4,1],[0,3,7]].",
+      "options": [],
+      "correctAnswer": "11",
+      "explanation": "Expanding along the first row gives 1(4×7−3)−27=11.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_114",
+      "questionNumber": 114,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_115",
+      "questionNumber": 115,
+      "questionText": "Evaluate ∫₀¹ (2x + 7) dx.",
+      "options": [],
+      "correctAnswer": "8",
+      "explanation": "[2/2 x² + 7x]₀¹ = 2/2 + 7 = 8.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_116",
+      "questionNumber": 116,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_117",
+      "questionNumber": 117,
+      "questionText": "Find the inverse of the function f(x)=3x−3.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+3)/3",
+      "explanation": "Let y=3x−3; then y+3=3x, so x=(y+3)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_118",
+      "questionNumber": 118,
+      "questionText": "Solve the differential equation dy/dx = 4x + 4, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 4x + 1",
+      "explanation": "Integrating gives y=4/2x²+4x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_119",
+      "questionNumber": 119,
+      "questionText": "Find the distance between the points (5,8) and (11,8).",
+      "options": [],
+      "correctAnswer": "6.000",
+      "explanation": "Distance=√[(11−5)²+(8−8)²]≈6.000.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_120",
+      "questionNumber": 120,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_121",
+      "questionNumber": 121,
+      "questionText": "Solve for x: 3x² − 3x − 9 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.303 or x = -1.303",
+      "explanation": "Use the quadratic formula x=[3±√(117)]/(2×3); numerical roots are approximately 2.303 and -1.303.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_122",
+      "questionNumber": 122,
+      "questionText": "Differentiate y = x³ − 3x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 6x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−3x²)/dx=−6x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_123",
+      "questionNumber": 123,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_124",
+      "questionNumber": 124,
+      "questionText": "Evaluate sin(60°)cos(60°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(120°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_125",
+      "questionNumber": 125,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=6+8i.",
+      "options": [],
+      "correctAnswer": "|z|=10.000, arg=53.1°",
+      "explanation": "|z|=√(6²+8²)≈10.000; arg=tan⁻¹(8/6)≈53.1°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_126",
+      "questionNumber": 126,
+      "questionText": "Find the sum of the first 8 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "1020",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^8−1)=1020.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_127",
+      "questionNumber": 127,
+      "questionText": "Find the coefficient of x^5 in the expansion of (1+x)^8.",
+      "options": [],
+      "correctAnswer": "56",
+      "explanation": "The coefficient is C(8,5)=56.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_128",
+      "questionNumber": 128,
+      "questionText": "Find the determinant of the matrix [[4,1,0],[2,4,1],[0,3,4]].",
+      "options": [],
+      "correctAnswer": "44",
+      "explanation": "Expanding along the first row gives 4(4×4−3)−24=44.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_129",
+      "questionNumber": 129,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_130",
+      "questionNumber": 130,
+      "questionText": "Evaluate ∫₀¹ (5x + 7) dx.",
+      "options": [],
+      "correctAnswer": "9.5",
+      "explanation": "[5/2 x² + 7x]₀¹ = 5/2 + 7 = 9.5.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_131",
+      "questionNumber": 131,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_132",
+      "questionNumber": 132,
+      "questionText": "Find the inverse of the function f(x)=3x−6.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+6)/3",
+      "explanation": "Let y=3x−6; then y+6=3x, so x=(y+6)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_133",
+      "questionNumber": 133,
+      "questionText": "Solve the differential equation dy/dx = 4x + 3, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 3x + 1",
+      "explanation": "Integrating gives y=4/2x²+3x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_134",
+      "questionNumber": 134,
+      "questionText": "Find the distance between the points (2,2) and (10,14).",
+      "options": [],
+      "correctAnswer": "14.422",
+      "explanation": "Distance=√[(10−2)²+(14−2)²]≈14.422.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_135",
+      "questionNumber": 135,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_136",
+      "questionNumber": 136,
+      "questionText": "Solve for x: 4x² − 3x − 12 = 0.",
+      "options": [],
+      "correctAnswer": "x = 2.147 or x = -1.397",
+      "explanation": "Use the quadratic formula x=[3±√(201)]/(2×4); numerical roots are approximately 2.147 and -1.397.",
+      "answerConfidence": "high",
+      "topic": "Quadratic equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_137",
+      "questionNumber": 137,
+      "questionText": "Differentiate y = x³ − 6x² + 4x − 7.",
+      "options": [],
+      "correctAnswer": "dy/dx = 3x² − 12x + 4",
+      "explanation": "Apply the power rule term by term: d(x³)/dx=3x², d(−6x²)/dx=−12x, d(4x)/dx=4.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_138",
+      "questionNumber": 138,
+      "questionText": "Integrate ∫(4x² − 4x + 3) dx.",
+      "options": [],
+      "correctAnswer": "4/3 x³ − 2x² + 3x + C",
+      "explanation": "Integrate each term: ∫4x²dx=4/3x³, ∫−4xdx=−2x², ∫3dx=3x; include C.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_139",
+      "questionNumber": 139,
+      "questionText": "Evaluate sin(30°)cos(30°) using a double-angle identity.",
+      "options": [],
+      "correctAnswer": "0.4330",
+      "explanation": "sinθcosθ=½sin2θ, so the value is ½sin(60°)≈0.4330.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_140",
+      "questionNumber": 140,
+      "questionText": "Find the modulus and argument (principal value in degrees) of z=3+9i.",
+      "options": [],
+      "correctAnswer": "|z|=9.487, arg=71.6°",
+      "explanation": "|z|=√(3²+9²)≈9.487; arg=tan⁻¹(9/3)≈71.6°.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_141",
+      "questionNumber": 141,
+      "questionText": "Find the sum of the first 7 terms of the geometric progression with first term 4 and common ratio 2.",
+      "options": [],
+      "correctAnswer": "508",
+      "explanation": "S_n=a(r^n−1)/(r−1)=4(2^7−1)=508.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_142",
+      "questionNumber": 142,
+      "questionText": "Find the coefficient of x^4 in the expansion of (1+x)^7.",
+      "options": [],
+      "correctAnswer": "35",
+      "explanation": "The coefficient is C(7,4)=35.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_143",
+      "questionNumber": 143,
+      "questionText": "Find the determinant of the matrix [[3,1,0],[2,4,1],[0,3,7]].",
+      "options": [],
+      "correctAnswer": "61",
+      "explanation": "Expanding along the first row gives 3(4×7−3)−27=61.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_144",
+      "questionNumber": 144,
+      "questionText": "Find the equation of the tangent to y=x²+3x−1 at x=5.",
+      "options": [],
+      "correctAnswer": "y=13x-26",
+      "explanation": "dy/dx=2x+3, so at x=5, m=13. The point is (5,39); hence y−39=13(x−5), giving y=13x-26.",
+      "answerConfidence": "high",
+      "topic": "Differentiation and tangents",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_145",
+      "questionNumber": 145,
+      "questionText": "Evaluate ∫₀¹ (2x + 7) dx.",
+      "options": [],
+      "correctAnswer": "8",
+      "explanation": "[2/2 x² + 7x]₀¹ = 2/2 + 7 = 8.",
+      "answerConfidence": "high",
+      "topic": "Definite integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_146",
+      "questionNumber": 146,
+      "questionText": "Find the first two terms in the Maclaurin expansion of e^2x.",
+      "options": [],
+      "correctAnswer": "1 + 2x + …",
+      "explanation": "e^(2x)=1+2x+(2²x²)/2!+…; therefore the first two terms are 1+2x.",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_147",
+      "questionNumber": 147,
+      "questionText": "Find the inverse of the function f(x)=3x−5.",
+      "options": [],
+      "correctAnswer": "f⁻¹(x)=(x+5)/3",
+      "explanation": "Let y=3x−5; then y+5=3x, so x=(y+5)/3. Replace y by x.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_148",
+      "questionNumber": 148,
+      "questionText": "Solve the differential equation dy/dx = 4x + 6, given y=1 when x=0.",
+      "options": [],
+      "correctAnswer": "y = 4/2 x² + 6x + 1",
+      "explanation": "Integrating gives y=4/2x²+6x+C. Since y(0)=1, C=1.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_149",
+      "questionNumber": 149,
+      "questionText": "Find the distance between the points (5,3) and (9,11).",
+      "options": [],
+      "correctAnswer": "8.944",
+      "explanation": "Distance=√[(9−5)²+(11−3)²]≈8.944.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p1_150",
+      "questionNumber": 150,
+      "questionText": "Find the coefficient of x² in (2+x)^7.",
+      "options": [],
+      "correctAnswer": "672",
+      "explanation": "Choose x² from two factors: C(7,2)×2^5=672.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    }
+  ]
+}

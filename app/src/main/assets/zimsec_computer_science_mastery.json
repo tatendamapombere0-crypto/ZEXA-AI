@@ -1,0 +1,47 @@
+[
+  {
+    "id": "comp_mastery_os_1",
+    "level": "O-Level",
+    "subject": "Computer Science",
+    "topic": "Operating Systems: Functions and Types",
+    "content": "An Operating System (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. 1. Core Functions: - Process Management: Scheduling which programs get CPU time (Multi-tasking). - Memory Management: Allocating and tracking RAM usage. - File Management: Organizing how data is stored on disks. - Device Management: Communicating with hardware like printers and keyboards via 'Drivers'. - User Interface: Providing a way for users to interact (GUI like Windows/Android or CLI like Linux Terminal). - Security: User authentication (passwords) and protecting files from unauthorized access. 2. Types of OS: - Single-user, single-task: One person doing one thing at a time (e.g., early DOS). - Single-user, multi-tasking: One person doing many things (e.g., Windows, macOS, Android). - Multi-user: Multiple people using one powerful computer simultaneously (e.g., Linux/Unix servers). - Real-time OS (RTOS): Used where timing is critical, like in fly-by-wire airplane controls or medical equipment. 3. Memory Techniques: 'Virtual Memory' is a section of the hard drive used as if it were RAM when physical RAM is full. 'Paging' and 'Segmentation' are methods of dividing memory into blocks for efficiency.",
+    "source": "ZIMSEC Computer Science Mastery Series",
+    "keywords": ["operating system", "os", "multi-tasking", "gui", "cli", "virtual memory", "drivers", "computer science"]
+  },
+  {
+    "id": "comp_mastery_languages_1",
+    "level": "O-Level",
+    "subject": "Computer Science",
+    "topic": "Programming Languages and Translators",
+    "content": "Computer programs are written in languages that humans can understand but computers cannot execute directly. 1. Levels of Languages: - Low-Level Languages: Machine Code (pure binary - 0s and 1s) and Assembly Language (uses mnemonics like MOV and ADD). These are very fast but difficult for humans to write. - High-Level Languages: Languages like Python, Java, and VB.net. They use English-like keywords and are easier to learn and debug. 2. Language Translators: Needed to convert high-level code into machine code. - Compiler: Translates the whole program at once. It creates an executable (.exe) file. This makes the program fast to run later but slow to translate initially. - Interpreter: Translates the code line-by-line while the program is running. It is great for debugging (stops exactly at the error) but runs slower than compiled code. - Assembler: Translates assembly language into machine code. 3. Integrated Development Environment (IDE): A software application (like PyCharm or Visual Studio) that provides tools like a code editor, debugger, and translator in one place to help programmers build software.",
+    "source": "ZIMSEC Computer Science Mastery Series",
+    "keywords": ["programming", "compiler", "interpreter", "assembly language", "high-level language", "ide", "machine code", "computer science"]
+  },
+  {
+    "id": "comp_mastery_data_structures_1",
+    "level": "A-Level",
+    "subject": "Computer Science",
+    "topic": "Abstract Data Structures: Stacks and Queues",
+    "content": "Data structures are ways of organizing data for efficient use. 1. Stacks: A 'LIFO' (Last-In, First-Out) structure. Imagine a stack of plates; the last one you put on is the first one you take off. - Operations: PUSH (add item), POP (remove top item), PEEK (see top item without removing). - Uses: 'Undo' function in software, back button in browsers, and managing function calls in memory (the Call Stack). 2. Queues: A 'FIFO' (First-In, First-Out) structure. Like a line of people waiting for a bus; the first person in is the first person out. - Operations: ENQUEUE (add to back), DEQUEUE (remove from front). - Uses: Print queues (first document sent prints first), data buffers, and scheduling processes in an OS. 3. Linked Lists: A series of 'nodes' where each node contains data and a 'pointer' to the next node. Unlike arrays, they are 'Dynamic', meaning their size can change during runtime. They are the building blocks for complex structures like Trees and Graphs.",
+    "source": "ZIMSEC Computer Science Mastery Series",
+    "keywords": ["data structures", "stack", "queue", "fifo", "lifo", "linked list", "programming", "computer science"]
+  },
+  {
+    "id": "comp_mastery_sdlc_detailed_1",
+    "level": "O-Level",
+    "subject": "Computer Science",
+    "topic": "The Software Development Life Cycle: Deep Dive",
+    "content": "The SDLC ensures that software projects are successful and meet user needs. 1. Analysis: The most critical phase. Techniques include: - Interviews: Asking users what they need. - Questionnaires: Gathering data from large groups. - Observation: Watching how the current system works. - Document Review: Looking at existing forms and files. The output is a 'System Specification'. 2. Design: Planning 'How' to build it. - Input Design: Layout of screens and forms. - Output Design: Format of reports. - Database Design: Creating tables and relationships. - Algorithm Design: Using Pseudocode or Flowcharts. 3. Testing Strategies: - Normal Data: Data the system expects. - Boundary/Extreme Data: Data at the limits (e.g., 0 or 100). - Erroneous/Invalid Data: Data that should be rejected (e.g., text in a number field). - User Acceptance Testing (UAT): Final check by the client. 4. Implementation Methods: - Direct Changeover: Stop old, start new (fast but risky). - Parallel Running: Run both for a while (safe but expensive). - Phased Conversion: Introduce parts of the new system slowly. - Pilot Running: Test in one department first.",
+    "source": "ZIMSEC Computer Science Mastery Series",
+    "keywords": ["sdlc", "system analysis", "software testing", "implementation", "flowcharts", "pseudocode", "computer science"]
+  },
+  {
+    "id": "comp_mastery_ethics_1",
+    "level": "O-Level",
+    "subject": "Computer Science",
+    "topic": "Computer Ethics, Law and the Digital Divide",
+    "content": "Technology impacts society in many ways, leading to ethical and legal challenges. 1. Computer Ethics: Professional codes of conduct for programmers (e.g., don't steal, respect privacy). 2. Key Legislation: Many countries (including Zimbabwe) have laws against: - Hacking: Unauthorized access to data. - Piracy: Copyright infringement (copying software/music/movies without paying). - Cyberbullying and Online Harassment. - Data Protection: Ensuring personal info is not sold or misused. 3. The Digital Divide: The gap between those who have access to modern technology (high-speed internet, latest devices) and those who don't. In Zimbabwe, this gap exists between urban and rural schools. Causes include poverty, lack of electricity, and high data costs. 4. Environmental Impact: The 'E-waste' problem (discarded electronics contain toxic chemicals) and the huge energy consumption of large data centers. Ethical computing involves choosing energy-efficient hardware and recycling old devices.",
+    "source": "ZIMSEC Computer Science Mastery Series",
+    "keywords": ["ethics", "digital divide", "copyright", "hacking", "e-waste", "privacy", "computer science"]
+  }
+]

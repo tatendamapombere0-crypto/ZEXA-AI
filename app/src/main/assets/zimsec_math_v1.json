@@ -1,0 +1,56 @@
+[
+  {
+    "id": "math_o_algebra_1",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Algebra: Algebraic Manipulation",
+    "content": "## Algebraic Manipulation and Equations\n\nAlgebra is the branch of mathematics that uses symbols to represent numbers in formulas and equations. It is essential for solving problems involving unknown quantities.\n\n### Expanding and Factorizing\n- **Expanding:** Using the distributive law to remove brackets. Example: 3(x + 4) = 3x + 12. For quadratic expressions: (x + a)(x + b) = x^2 + (a + b)x + ab.\n- **Factorizing:** The reverse of expanding. It involves finding common factors and putting them outside brackets. Example: 5x^2 - 10x = 5x(x - 2).\n\n### Linear Equations and Inequalities\n- **Solving Equations:** The goal is to isolate the variable. Whatever operation is done to one side of the equation must be done to the other side to maintain balance.\n- **Inequalities:** Similar to equations, but with symbols like <, >, <=, >=. Crucially, if you multiply or divide by a negative number, the direction of the inequality sign must be reversed.\n\n### Simultaneous Equations\nInvolves finding a single pair of (x, y) values that satisfy two different equations. Methods include Substitution (replacing one variable with an expression from the other equation) and Elimination (adding or subtracting equations to remove one variable).",
+    "source": "ZIMSEC Mathematics O-Level Syllabus",
+    "keywords": ["algebra", "equations", "factorizing", "expanding", "simultaneous", "inequalities", "variables"]
+  },
+  {
+    "id": "math_o_geom_1",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Geometry: Circle Theorems",
+    "content": "## Essential Circle Geometry Theorems\n\nCircle geometry involves studying the properties of circles and the lines and angles associated with them. These theorems are fundamental for solving complex geometric proofs.\n\n### Key Theorems\n1. **Angle at Center:** The angle subtended by an arc at the center of a circle is twice the angle subtended by it at any point on the remaining part of the circumference.\n2. **Angle in a Semicircle:** An angle inscribed in a semicircle is always a right angle (90 degrees).\n3. **Angles in Same Segment:** Angles subtended by the same arc (or segment) at the circumference are equal.\n4. **Cyclic Quadrilaterals:** The opposite angles of a cyclic quadrilateral (a four-sided shape where all vertices touch the circle) add up to 180 degrees.\n5. **Tangent-Radius Property:** A tangent to a circle is perpendicular to the radius at the point of contact.\n6. **Alternate Segment Theorem:** The angle between a tangent and a chord through the point of contact is equal to the angle in the alternate segment.",
+    "source": "ZIMSEC Geometry Revision",
+    "keywords": ["circle", "geometry", "theorems", "tangent", "quadrilateral", "angles", "circumference"]
+  },
+  {
+    "id": "math_o_trig_1",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Trigonometry: SOH CAH TOA and Beyond",
+    "content": "## Trigonometry: Solving Triangles\n\nTrigonometry is the study of the relationships between the sides and angles of triangles. It is used extensively in navigation, engineering, and physics.\n\n### Right-Angled Triangles (SOH CAH TOA)\n- **Sine (Sin):** Opposite / Hypotenuse\n- **Cosine (Cos):** Adjacent / Hypotenuse\n- **Tangent (Tan):** Opposite / Adjacent\n\n### Non-Right-Angled Triangles\n- **The Sine Rule:** a/sin(A) = b/sin(B) = c/sin(C). Use this when you know an angle and its opposite side, plus one other piece of information.\n- **The Cosine Rule:** a^2 = b^2 + c^2 - 2bc cos(A). Use this when you know two sides and the included angle (SAS) or all three sides (SSS).\n- **Area of a Triangle:** Area = 1/2 ab sin(C). This allows you to find the area using two sides and the included angle.\n\n### Bearings\nBearings are angles measured clockwise from North, always expressed using three digits (e.g., 045 degrees). They are used to describe directions and positions in navigation problems.",
+    "source": "ZIMSEC Trigonometry Guide",
+    "keywords": ["trigonometry", "sine", "cosine", "tangent", "bearings", "triangles", "sohcahtoa"]
+  },
+  {
+    "id": "math_a_pure_1",
+    "level": "A-Level",
+    "subject": "Mathematics",
+    "topic": "Pure Math: Calculus - Differentiation",
+    "content": "## Advanced Calculus: Differentiation\n\nDifferentiation is the study of how a function changes as its input changes. It is used to find the gradient of a curve, rates of change, and stationary points.\n\n### Basic Rules\n- **Power Rule:** d/dx (x^n) = nx^(n-1).\n- **Chain Rule:** Used for composite functions, dy/dx = (dy/du) * (du/dx).\n- **Product Rule:** d/dx (uv) = u(dv/dx) + v(du/dx).\n- **Quotient Rule:** d/dx (u/v) = [v(du/dx) - u(dv/dx)] / v^2.\n\n### Differentiation of Trig and Exponential Functions\n- d/dx (sin x) = cos x\n- d/dx (cos x) = -sin x\n- d/dx (e^x) = e^x\n- d/dx (ln x) = 1/x\n\n### Applications\n- **Stationary Points:** Points where the gradient is zero (dy/dx = 0). These include local maxima, local minima, and points of inflection. The second derivative (d^2y/dx^2) is used to determine the nature of these points.\n- **Optimization:** Using differentiation to find the maximum or minimum value of a variable (e.g., area, volume, cost) in a given situation.",
+    "source": "ZIMSEC Pure Mathematics Syllabus",
+    "keywords": ["calculus", "differentiation", "gradient", "chain rule", "product rule", "optimization", "math"]
+  },
+  {
+    "id": "math_a_pure_2",
+    "level": "A-Level",
+    "subject": "Mathematics",
+    "topic": "Pure Math: Integration",
+    "content": "## Advanced Calculus: Integration\n\nIntegration is the inverse process of differentiation. It is used to find areas under curves, volumes of revolution, and the total value of a changing quantity.\n\n### Fundamental Concepts\n- **Indefinite Integral:** Finding the general antiderivative, which includes a constant of integration (+ C).\n- **Definite Integral:** Finding the exact value over a specific interval [a, b]. It represents the net area between the function and the x-axis.\n\n### Integration Techniques\n- **Substitution:** Changing variables to simplify the integral. Useful for functions in the form f(g(x))g'(x).\n- **Integration by Parts:** Based on the product rule, integral(u dv) = uv - integral(v du).\n- **Partial Fractions:** Breaking down complex rational functions into simpler fractions that are easier to integrate.\n\n### Applications\n- **Area:** Finding the area bounded by a curve, the x-axis, and vertical lines x=a and x=b.\n- **Volume of Revolution:** Finding the volume generated when an area is rotated 360 degrees around the x or y axis.",
+    "source": "ZIMSEC Pure Mathematics Syllabus",
+    "keywords": ["integration", "calculus", "area", "volume", "partial fractions", "antiderivative", "math"]
+  },
+  {
+    "id": "math_o_stats_1",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Statistics: Data Representation",
+    "content": "## Statistics: Organizing and Visualizing Data\n\nStatistics involves the collection, analysis, interpretation, and presentation of data. It is a vital tool for making informed decisions in science, business, and policy.\n\n### Measures of Central Tendency\n- **Mean:** The average of all data points.\n- **Median:** The middle value when data is arranged in order.\n- **Mode:** The most frequent value in a dataset.\n\n### Data Representation\n- **Frequency Tables:** Used to group raw data into intervals.\n- **Histograms:** Bar graphs representing the frequency of continuous data intervals. The area of the bars (not just height) is proportional to frequency if intervals are unequal.\n- **Cumulative Frequency Curves (Ogive):** Used to estimate the median and quartiles of a dataset. The **Interquartile Range (IQR)** is the difference between the upper quartile (75th percentile) and lower quartile (25th percentile), measuring data spread.\n- **Probability:** The study of chance. The probability of an event ranges from 0 (impossible) to 1 (certain).",
+    "source": "ZIMSEC O-Level Statistics",
+    "keywords": ["statistics", "mean", "median", "histogram", "ogive", "probability", "data"]
+  }
+]

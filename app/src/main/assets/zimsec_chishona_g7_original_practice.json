@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "ChiShona Grade 7 - Original Practice Set",
+    "note": "All items below were freshly written for this practice set. Traditional proverbs (tsumo) and totems (mitupo) are general Shona folklore/cultural knowledge in the public domain; the specific selection, wording of explanations, and question format here are original and not copied from any published revision guide.",
+    "language": "ChiShona / English"
+  },
+  "tsumo_practice": {
+    "instructions": "Complete each tsumo, then check the meaning given.",
+    "items": [
+      {"prompt": "Chara chimwe hachitswanyi ____.", "answer": "inda", "meaning": "Unity brings strength; one person alone struggles to achieve what a group can achieve together."},
+      {"prompt": "Chikomba chinoparara ____.", "answer": "nekunyepa", "meaning": "Dishonesty eventually destroys a relationship or reputation."},
+      {"prompt": "Kandiro kanoenda ____.", "answer": "kunobva kamwe", "meaning": "Kindness given is usually returned in kind."},
+      {"prompt": "Gudo guru peta muswe ____.", "answer": "kuti vaduku vagokwana", "meaning": "A leader or elder should set an example of humility so that younger ones can follow."},
+      {"prompt": "Chisi hachieri ____.", "answer": "chinoerwa", "meaning": "A taboo is not something that respects itself; it is people who must respect and observe it."},
+      {"prompt": "Rume rimwe harikombi ____.", "answer": "churu", "meaning": "One person cannot surround or accomplish a big task alone; teamwork is needed."},
+      {"prompt": "Mwana asingachemi ____.", "answer": "anofira mumbereko", "meaning": "If you do not speak up about a problem, it may never be solved."},
+      {"prompt": "Chakafukidza dzimba ____.", "answer": "matenga", "meaning": "There are things kept hidden or secret within a household that outsiders do not see."},
+      {"prompt": "Chinokanganwa idemo ____.", "answer": "asi chigutsa hachikanganwi", "meaning": "The one who caused harm may forget, but the one who suffered it often remembers."},
+      {"prompt": "Ukama igasva ____.", "answer": "hunozadziswa nekudya", "meaning": "Kinship alone is not complete without generosity and sharing."}
+    ]
+  },
+  "madimikira_practice": {
+    "instructions": "Match each idiom to its meaning.",
+    "items": [
+      {"idiom": "kutuka mhepo", "meaning": "to complain about something out of one's control / to be extremely angry with no clear target"},
+      {"idiom": "kudya moyo", "meaning": "to worry deeply about something"},
+      {"idiom": "kupfuya nyoka mudumbu", "meaning": "to secretly harbour a dangerous grudge or enemy"},
+      {"idiom": "kubvisa nzeve", "meaning": "to refuse to listen or take advice"},
+      {"idiom": "kuona nyeredzi masikati", "meaning": "to be in extreme pain or shock"}
+    ]
+  },
+  "nyaudzosingwi_practice": {
+    "instructions": "Choose the ideophone that best completes each sentence.",
+    "items": [
+      {"sentence": "Mwana akati ______ paakaona chikara.", "options": ["tsvi", "dzvi", "svo", "chechetu"], "answer": "dzvi", "note": "describes freezing/going still from fright"},
+      {"sentence": "Mvura yakanaya yakati ______ zuva rese.", "options": ["shwarara", "kwesu", "vhu", "bvurugu"], "answer": "shwarara", "note": "describes continuous, steady falling"},
+      {"sentence": "Akasvetuka rukova akati ______.", "options": ["svo", "pfacha", "twasu", "zii"], "answer": "svo", "note": "describes a quick leaping motion"}
+    ]
+  },
+  "ukama_quiz": {
+    "instructions": "Choose the correct kinship term for each description.",
+    "items": [
+      {"question": "What do you call your father's older brother?", "options": ["Babamukuru", "Babamunini", "Sekuru", "Muzukuru"], "answer": "Babamukuru"},
+      {"question": "What do you call your mother's brother?", "options": ["Sekuru", "Tsano", "Muramu", "Mukuwasha"], "answer": "Sekuru"},
+      {"question": "What is a man's sister's child called to him?", "options": ["Muzukuru", "Mwanasikana", "Mainini", "Muroora"], "answer": "Muzukuru"},
+      {"question": "What do you call your spouse's younger sibling (opposite sex)?", "options": ["Muramu", "Hanzvadzi", "Tezvara", "Vamwene"], "answer": "Muramu"},
+      {"question": "What is a grandfather's father called?", "options": ["Tateguru", "Sekuru", "Babamukuru", "Muzukuru"], "answer": "Tateguru"}
+    ]
+  },
+  "mitupo_practice": {
+    "instructions": "Match the totem (mutupo) to its chidau (praise name) - pairs are widely known Shona cultural knowledge.",
+    "items": [
+      {"mutupo": "Moyo", "chidau": "Chirandu"},
+      {"mutupo": "Shava", "chidau": "Mhofu / Museyamwa"},
+      {"mutupo": "Shumba", "chidau": "Murambwi / Nechigumira"},
+      {"mutupo": "Nzou", "chidau": "Samanyanga"},
+      {"mutupo": "Mbizi", "chidau": "Marowa"}
+    ]
+  },
+  "sample_composition_prompts": {
+    "instructions": "Original prompts for practising rondedzero, tsamba and hurukuro writing (approx. 120 words each).",
+    "items": [
+      {"type": "Rondedzero", "prompt": "Nyora rondedzero pamusoro pezuva rako rekuzvarwa rakaipa rawakambosangana naro."},
+      {"type": "Tsamba", "prompt": "Nyora tsamba kushamwari yako uchiitaurira nezverwendo rwawakaita kunze kwenyika."},
+      {"type": "Hurukuro", "prompt": "Nyora hurukuro pakati pababa nemwana vachikurukura pamusoro pekukosha kwedzidzo."},
+      {"type": "Mhan'arwa", "prompt": "Nyora mhan'arwa kumukuru wechikoro pamusoro perutivi rwechikoro rwakakuvadzwa nedutu."}
+    ]
+  }
+}

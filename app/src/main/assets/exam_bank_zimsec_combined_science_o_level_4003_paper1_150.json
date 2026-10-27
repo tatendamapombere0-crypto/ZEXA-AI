@@ -1,0 +1,4065 @@
+{
+  "paperInfo": {
+    "subject": "Combined Science",
+    "level": "O Level",
+    "paperCode": "4003/01",
+    "paperName": "Combined Science Paper 1",
+    "paperType": "Theory/Objective Practice",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Combined_Science_O_Level_4003_Paper1_150.json",
+    "copyrightNote": "Original practice questions synthesized from syllabus themes and recurring ZIMSEC-style patterns; not verbatim reproduction of past papers.",
+    "sourceBasis": "ZIMSEC O-Level Combined Science 4003/01 official paper listing and broad Combined Science syllabus themes."
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "questionNumber": 1,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pipette"
+        },
+        {
+          "letter": "B",
+          "text": "Beaker"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "D",
+          "text": "Watch glass"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q002",
+      "questionNumber": 2,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proton"
+        },
+        {
+          "letter": "B",
+          "text": "Neutron"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Electron"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q003",
+      "questionNumber": 3,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "B",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "D",
+          "text": "Neutral"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q004",
+      "questionNumber": 4,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Melting"
+        },
+        {
+          "letter": "B",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "C",
+          "text": "Freezing"
+        },
+        {
+          "letter": "D",
+          "text": "Condensation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q005",
+      "questionNumber": 5,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Heart"
+        },
+        {
+          "letter": "B",
+          "text": "Liver"
+        },
+        {
+          "letter": "C",
+          "text": "Kidney"
+        },
+        {
+          "letter": "D",
+          "text": "Lung"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The heart contracts to pump blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Human biology"
+    },
+    {
+      "id": "q006",
+      "questionNumber": 6,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "B",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Light energy and chlorophyll"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q007",
+      "questionNumber": 7,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "B",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Cell wall"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q008",
+      "questionNumber": 8,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pascal"
+        },
+        {
+          "letter": "B",
+          "text": "Newton"
+        },
+        {
+          "letter": "C",
+          "text": "Joule"
+        },
+        {
+          "letter": "D",
+          "text": "Watt"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q009",
+      "questionNumber": 9,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "0.083 m/s"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q010",
+      "questionNumber": 10,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q011",
+      "questionNumber": 11,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Carbon dioxide"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q012",
+      "questionNumber": 12,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "B",
+          "text": "Filtration"
+        },
+        {
+          "letter": "C",
+          "text": "Distillation"
+        },
+        {
+          "letter": "D",
+          "text": "Chromatography"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q013",
+      "questionNumber": 13,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "B",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "C",
+          "text": "It always halves"
+        },
+        {
+          "letter": "D",
+          "text": "It disappears"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q014",
+      "questionNumber": 14,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "B",
+          "text": "Rickets"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "D",
+          "text": "Malaria"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q015",
+      "questionNumber": 15,
+      "questionText": "Which change is chemical rather than physical?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Boiling water"
+        },
+        {
+          "letter": "B",
+          "text": "Dissolving sugar"
+        },
+        {
+          "letter": "C",
+          "text": "Rusting of iron"
+        },
+        {
+          "letter": "D",
+          "text": "Melting ice"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting produces new substances.",
+      "answerConfidence": "high",
+      "topic": "Chemical changes"
+    },
+    {
+      "id": "q016",
+      "questionNumber": 16,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "B",
+          "text": "Pipette"
+        },
+        {
+          "letter": "C",
+          "text": "Beaker"
+        },
+        {
+          "letter": "D",
+          "text": "Evaporating basin"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q017",
+      "questionNumber": 17,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electron"
+        },
+        {
+          "letter": "B",
+          "text": "Proton"
+        },
+        {
+          "letter": "C",
+          "text": "Neutron"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q018",
+      "questionNumber": 18,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutral"
+        },
+        {
+          "letter": "B",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "D",
+          "text": "Strongly acidic"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q019",
+      "questionNumber": 19,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Condensation"
+        },
+        {
+          "letter": "B",
+          "text": "Melting"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "D",
+          "text": "Freezing"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q020",
+      "questionNumber": 20,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q021",
+      "questionNumber": 21,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "C",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen chloride"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q022",
+      "questionNumber": 22,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "B",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "C",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q023",
+      "questionNumber": 23,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watt"
+        },
+        {
+          "letter": "B",
+          "text": "Pascal"
+        },
+        {
+          "letter": "C",
+          "text": "Newton"
+        },
+        {
+          "letter": "D",
+          "text": "Joule"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q024",
+      "questionNumber": 24,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "1200 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q025",
+      "questionNumber": 25,
+      "questionText": "Which material is generally a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Copper"
+        },
+        {
+          "letter": "B",
+          "text": "Rubber"
+        },
+        {
+          "letter": "C",
+          "text": "Glass"
+        },
+        {
+          "letter": "D",
+          "text": "Dry wood"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Copper has mobile electrons and conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q026",
+      "questionNumber": 26,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q027",
+      "questionNumber": 27,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "B",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Filtration"
+        },
+        {
+          "letter": "D",
+          "text": "Distillation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q028",
+      "questionNumber": 28,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It disappears"
+        },
+        {
+          "letter": "B",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "C",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "D",
+          "text": "It always halves"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q029",
+      "questionNumber": 29,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Malaria"
+        },
+        {
+          "letter": "B",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "C",
+          "text": "Rickets"
+        },
+        {
+          "letter": "D",
+          "text": "Diabetes"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q030",
+      "questionNumber": 30,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q031",
+      "questionNumber": 31,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "B",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "C",
+          "text": "Pipette"
+        },
+        {
+          "letter": "D",
+          "text": "Beaker"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q032",
+      "questionNumber": 32,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "B",
+          "text": "Electron"
+        },
+        {
+          "letter": "C",
+          "text": "Proton"
+        },
+        {
+          "letter": "D",
+          "text": "Neutron"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q033",
+      "questionNumber": 33,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "B",
+          "text": "Neutral"
+        },
+        {
+          "letter": "C",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "D",
+          "text": "Strongly alkaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q034",
+      "questionNumber": 34,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Freezing"
+        },
+        {
+          "letter": "B",
+          "text": "Condensation"
+        },
+        {
+          "letter": "C",
+          "text": "Melting"
+        },
+        {
+          "letter": "D",
+          "text": "Evaporation"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q035",
+      "questionNumber": 35,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Kidney"
+        },
+        {
+          "letter": "B",
+          "text": "Lung"
+        },
+        {
+          "letter": "C",
+          "text": "Heart"
+        },
+        {
+          "letter": "D",
+          "text": "Liver"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heart contracts to pump blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Human biology"
+    },
+    {
+      "id": "q036",
+      "questionNumber": 36,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "D",
+          "text": "Animal starch"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q037",
+      "questionNumber": 37,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "B",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "C",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "D",
+          "text": "Cytoplasm only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q038",
+      "questionNumber": 38,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Joule"
+        },
+        {
+          "letter": "B",
+          "text": "Watt"
+        },
+        {
+          "letter": "C",
+          "text": "Pascal"
+        },
+        {
+          "letter": "D",
+          "text": "Newton"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q039",
+      "questionNumber": 39,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "10 m/s"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q040",
+      "questionNumber": 40,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q041",
+      "questionNumber": 41,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q042",
+      "questionNumber": 42,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distillation"
+        },
+        {
+          "letter": "B",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "C",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "D",
+          "text": "Filtration"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q043",
+      "questionNumber": 43,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It always halves"
+        },
+        {
+          "letter": "B",
+          "text": "It disappears"
+        },
+        {
+          "letter": "C",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "D",
+          "text": "It becomes exactly zero"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q044",
+      "questionNumber": 44,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "B",
+          "text": "Malaria"
+        },
+        {
+          "letter": "C",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "D",
+          "text": "Rickets"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q045",
+      "questionNumber": 45,
+      "questionText": "Which change is chemical rather than physical?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rusting of iron"
+        },
+        {
+          "letter": "B",
+          "text": "Melting ice"
+        },
+        {
+          "letter": "C",
+          "text": "Boiling water"
+        },
+        {
+          "letter": "D",
+          "text": "Dissolving sugar"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting produces new substances.",
+      "answerConfidence": "high",
+      "topic": "Chemical changes"
+    },
+    {
+      "id": "q046",
+      "questionNumber": 46,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Beaker"
+        },
+        {
+          "letter": "B",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "C",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "D",
+          "text": "Pipette"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q047",
+      "questionNumber": 47,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutron"
+        },
+        {
+          "letter": "B",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "Electron"
+        },
+        {
+          "letter": "D",
+          "text": "Proton"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q048",
+      "questionNumber": 48,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "B",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "C",
+          "text": "Neutral"
+        },
+        {
+          "letter": "D",
+          "text": "Weakly alkaline"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q049",
+      "questionNumber": 49,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "B",
+          "text": "Freezing"
+        },
+        {
+          "letter": "C",
+          "text": "Condensation"
+        },
+        {
+          "letter": "D",
+          "text": "Melting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q050",
+      "questionNumber": 50,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q051",
+      "questionNumber": 51,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "C",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q052",
+      "questionNumber": 52,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "B",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "D",
+          "text": "Vacuole"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q053",
+      "questionNumber": 53,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Newton"
+        },
+        {
+          "letter": "B",
+          "text": "Joule"
+        },
+        {
+          "letter": "C",
+          "text": "Watt"
+        },
+        {
+          "letter": "D",
+          "text": "Pascal"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q054",
+      "questionNumber": 54,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "12 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q055",
+      "questionNumber": 55,
+      "questionText": "Which material is generally a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Glass"
+        },
+        {
+          "letter": "B",
+          "text": "Dry wood"
+        },
+        {
+          "letter": "C",
+          "text": "Copper"
+        },
+        {
+          "letter": "D",
+          "text": "Rubber"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Copper has mobile electrons and conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q056",
+      "questionNumber": 56,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q057",
+      "questionNumber": 57,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Filtration"
+        },
+        {
+          "letter": "B",
+          "text": "Distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "D",
+          "text": "Fractional distillation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q058",
+      "questionNumber": 58,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "B",
+          "text": "It always halves"
+        },
+        {
+          "letter": "C",
+          "text": "It disappears"
+        },
+        {
+          "letter": "D",
+          "text": "It generally increases"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q059",
+      "questionNumber": 59,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rickets"
+        },
+        {
+          "letter": "B",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "C",
+          "text": "Malaria"
+        },
+        {
+          "letter": "D",
+          "text": "Scurvy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q060",
+      "questionNumber": 60,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q061",
+      "questionNumber": 61,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pipette"
+        },
+        {
+          "letter": "B",
+          "text": "Beaker"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "D",
+          "text": "Watch glass"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q062",
+      "questionNumber": 62,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proton"
+        },
+        {
+          "letter": "B",
+          "text": "Neutron"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Electron"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q063",
+      "questionNumber": 63,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "B",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "D",
+          "text": "Neutral"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q064",
+      "questionNumber": 64,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Melting"
+        },
+        {
+          "letter": "B",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "C",
+          "text": "Freezing"
+        },
+        {
+          "letter": "D",
+          "text": "Condensation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q065",
+      "questionNumber": 65,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Heart"
+        },
+        {
+          "letter": "B",
+          "text": "Liver"
+        },
+        {
+          "letter": "C",
+          "text": "Kidney"
+        },
+        {
+          "letter": "D",
+          "text": "Lung"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The heart contracts to pump blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Human biology"
+    },
+    {
+      "id": "q066",
+      "questionNumber": 66,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "B",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Light energy and chlorophyll"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q067",
+      "questionNumber": 67,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "B",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Cell wall"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q068",
+      "questionNumber": 68,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pascal"
+        },
+        {
+          "letter": "B",
+          "text": "Newton"
+        },
+        {
+          "letter": "C",
+          "text": "Joule"
+        },
+        {
+          "letter": "D",
+          "text": "Watt"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q069",
+      "questionNumber": 69,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "0.083 m/s"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q070",
+      "questionNumber": 70,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q071",
+      "questionNumber": 71,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Carbon dioxide"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q072",
+      "questionNumber": 72,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "B",
+          "text": "Filtration"
+        },
+        {
+          "letter": "C",
+          "text": "Distillation"
+        },
+        {
+          "letter": "D",
+          "text": "Chromatography"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q073",
+      "questionNumber": 73,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "B",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "C",
+          "text": "It always halves"
+        },
+        {
+          "letter": "D",
+          "text": "It disappears"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q074",
+      "questionNumber": 74,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "B",
+          "text": "Rickets"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "D",
+          "text": "Malaria"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q075",
+      "questionNumber": 75,
+      "questionText": "Which change is chemical rather than physical?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Boiling water"
+        },
+        {
+          "letter": "B",
+          "text": "Dissolving sugar"
+        },
+        {
+          "letter": "C",
+          "text": "Rusting of iron"
+        },
+        {
+          "letter": "D",
+          "text": "Melting ice"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting produces new substances.",
+      "answerConfidence": "high",
+      "topic": "Chemical changes"
+    },
+    {
+      "id": "q076",
+      "questionNumber": 76,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "B",
+          "text": "Pipette"
+        },
+        {
+          "letter": "C",
+          "text": "Beaker"
+        },
+        {
+          "letter": "D",
+          "text": "Evaporating basin"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q077",
+      "questionNumber": 77,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electron"
+        },
+        {
+          "letter": "B",
+          "text": "Proton"
+        },
+        {
+          "letter": "C",
+          "text": "Neutron"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q078",
+      "questionNumber": 78,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutral"
+        },
+        {
+          "letter": "B",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "D",
+          "text": "Strongly acidic"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q079",
+      "questionNumber": 79,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Condensation"
+        },
+        {
+          "letter": "B",
+          "text": "Melting"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "D",
+          "text": "Freezing"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q080",
+      "questionNumber": 80,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q081",
+      "questionNumber": 81,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "C",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen chloride"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q082",
+      "questionNumber": 82,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "B",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "C",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q083",
+      "questionNumber": 83,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watt"
+        },
+        {
+          "letter": "B",
+          "text": "Pascal"
+        },
+        {
+          "letter": "C",
+          "text": "Newton"
+        },
+        {
+          "letter": "D",
+          "text": "Joule"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q084",
+      "questionNumber": 84,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "1200 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q085",
+      "questionNumber": 85,
+      "questionText": "Which material is generally a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Copper"
+        },
+        {
+          "letter": "B",
+          "text": "Rubber"
+        },
+        {
+          "letter": "C",
+          "text": "Glass"
+        },
+        {
+          "letter": "D",
+          "text": "Dry wood"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Copper has mobile electrons and conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q086",
+      "questionNumber": 86,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q087",
+      "questionNumber": 87,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "B",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Filtration"
+        },
+        {
+          "letter": "D",
+          "text": "Distillation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q088",
+      "questionNumber": 88,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It disappears"
+        },
+        {
+          "letter": "B",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "C",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "D",
+          "text": "It always halves"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q089",
+      "questionNumber": 89,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Malaria"
+        },
+        {
+          "letter": "B",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "C",
+          "text": "Rickets"
+        },
+        {
+          "letter": "D",
+          "text": "Diabetes"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q090",
+      "questionNumber": 90,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q091",
+      "questionNumber": 91,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "B",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "C",
+          "text": "Pipette"
+        },
+        {
+          "letter": "D",
+          "text": "Beaker"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q092",
+      "questionNumber": 92,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "B",
+          "text": "Electron"
+        },
+        {
+          "letter": "C",
+          "text": "Proton"
+        },
+        {
+          "letter": "D",
+          "text": "Neutron"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q093",
+      "questionNumber": 93,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "B",
+          "text": "Neutral"
+        },
+        {
+          "letter": "C",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "D",
+          "text": "Strongly alkaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q094",
+      "questionNumber": 94,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Freezing"
+        },
+        {
+          "letter": "B",
+          "text": "Condensation"
+        },
+        {
+          "letter": "C",
+          "text": "Melting"
+        },
+        {
+          "letter": "D",
+          "text": "Evaporation"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q095",
+      "questionNumber": 95,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Kidney"
+        },
+        {
+          "letter": "B",
+          "text": "Lung"
+        },
+        {
+          "letter": "C",
+          "text": "Heart"
+        },
+        {
+          "letter": "D",
+          "text": "Liver"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heart contracts to pump blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Human biology"
+    },
+    {
+      "id": "q096",
+      "questionNumber": 96,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "D",
+          "text": "Animal starch"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q097",
+      "questionNumber": 97,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "B",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "C",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "D",
+          "text": "Cytoplasm only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q098",
+      "questionNumber": 98,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Joule"
+        },
+        {
+          "letter": "B",
+          "text": "Watt"
+        },
+        {
+          "letter": "C",
+          "text": "Pascal"
+        },
+        {
+          "letter": "D",
+          "text": "Newton"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q099",
+      "questionNumber": 99,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "10 m/s"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q100",
+      "questionNumber": 100,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q101",
+      "questionNumber": 101,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q102",
+      "questionNumber": 102,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distillation"
+        },
+        {
+          "letter": "B",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "C",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "D",
+          "text": "Filtration"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q103",
+      "questionNumber": 103,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It always halves"
+        },
+        {
+          "letter": "B",
+          "text": "It disappears"
+        },
+        {
+          "letter": "C",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "D",
+          "text": "It becomes exactly zero"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q104",
+      "questionNumber": 104,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "B",
+          "text": "Malaria"
+        },
+        {
+          "letter": "C",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "D",
+          "text": "Rickets"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q105",
+      "questionNumber": 105,
+      "questionText": "Which change is chemical rather than physical?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rusting of iron"
+        },
+        {
+          "letter": "B",
+          "text": "Melting ice"
+        },
+        {
+          "letter": "C",
+          "text": "Boiling water"
+        },
+        {
+          "letter": "D",
+          "text": "Dissolving sugar"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting produces new substances.",
+      "answerConfidence": "high",
+      "topic": "Chemical changes"
+    },
+    {
+      "id": "q106",
+      "questionNumber": 106,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Beaker"
+        },
+        {
+          "letter": "B",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "C",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "D",
+          "text": "Pipette"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q107",
+      "questionNumber": 107,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutron"
+        },
+        {
+          "letter": "B",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "Electron"
+        },
+        {
+          "letter": "D",
+          "text": "Proton"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q108",
+      "questionNumber": 108,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "B",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "C",
+          "text": "Neutral"
+        },
+        {
+          "letter": "D",
+          "text": "Weakly alkaline"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q109",
+      "questionNumber": 109,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "B",
+          "text": "Freezing"
+        },
+        {
+          "letter": "C",
+          "text": "Condensation"
+        },
+        {
+          "letter": "D",
+          "text": "Melting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q110",
+      "questionNumber": 110,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q111",
+      "questionNumber": 111,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "C",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q112",
+      "questionNumber": 112,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "B",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "D",
+          "text": "Vacuole"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q113",
+      "questionNumber": 113,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Newton"
+        },
+        {
+          "letter": "B",
+          "text": "Joule"
+        },
+        {
+          "letter": "C",
+          "text": "Watt"
+        },
+        {
+          "letter": "D",
+          "text": "Pascal"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q114",
+      "questionNumber": 114,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "12 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q115",
+      "questionNumber": 115,
+      "questionText": "Which material is generally a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Glass"
+        },
+        {
+          "letter": "B",
+          "text": "Dry wood"
+        },
+        {
+          "letter": "C",
+          "text": "Copper"
+        },
+        {
+          "letter": "D",
+          "text": "Rubber"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Copper has mobile electrons and conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q116",
+      "questionNumber": 116,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q117",
+      "questionNumber": 117,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Filtration"
+        },
+        {
+          "letter": "B",
+          "text": "Distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "D",
+          "text": "Fractional distillation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q118",
+      "questionNumber": 118,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "B",
+          "text": "It always halves"
+        },
+        {
+          "letter": "C",
+          "text": "It disappears"
+        },
+        {
+          "letter": "D",
+          "text": "It generally increases"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q119",
+      "questionNumber": 119,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rickets"
+        },
+        {
+          "letter": "B",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "C",
+          "text": "Malaria"
+        },
+        {
+          "letter": "D",
+          "text": "Scurvy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q120",
+      "questionNumber": 120,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q121",
+      "questionNumber": 121,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pipette"
+        },
+        {
+          "letter": "B",
+          "text": "Beaker"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporating basin"
+        },
+        {
+          "letter": "D",
+          "text": "Watch glass"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q122",
+      "questionNumber": 122,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proton"
+        },
+        {
+          "letter": "B",
+          "text": "Neutron"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Electron"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q123",
+      "questionNumber": 123,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "B",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly acidic"
+        },
+        {
+          "letter": "D",
+          "text": "Neutral"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q124",
+      "questionNumber": 124,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Melting"
+        },
+        {
+          "letter": "B",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "C",
+          "text": "Freezing"
+        },
+        {
+          "letter": "D",
+          "text": "Condensation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q125",
+      "questionNumber": 125,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Heart"
+        },
+        {
+          "letter": "B",
+          "text": "Liver"
+        },
+        {
+          "letter": "C",
+          "text": "Kidney"
+        },
+        {
+          "letter": "D",
+          "text": "Lung"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The heart contracts to pump blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Human biology"
+    },
+    {
+      "id": "q126",
+      "questionNumber": 126,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "B",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Light energy and chlorophyll"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q127",
+      "questionNumber": 127,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "B",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "C",
+          "text": "Nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "Cell wall"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q128",
+      "questionNumber": 128,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pascal"
+        },
+        {
+          "letter": "B",
+          "text": "Newton"
+        },
+        {
+          "letter": "C",
+          "text": "Joule"
+        },
+        {
+          "letter": "D",
+          "text": "Watt"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q129",
+      "questionNumber": 129,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "1200 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "0.083 m/s"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q130",
+      "questionNumber": 130,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q131",
+      "questionNumber": 131,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Carbon dioxide"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q132",
+      "questionNumber": 132,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "B",
+          "text": "Filtration"
+        },
+        {
+          "letter": "C",
+          "text": "Distillation"
+        },
+        {
+          "letter": "D",
+          "text": "Chromatography"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q133",
+      "questionNumber": 133,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "B",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "C",
+          "text": "It always halves"
+        },
+        {
+          "letter": "D",
+          "text": "It disappears"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q134",
+      "questionNumber": 134,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "B",
+          "text": "Rickets"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetes"
+        },
+        {
+          "letter": "D",
+          "text": "Malaria"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q135",
+      "questionNumber": 135,
+      "questionText": "Which change is chemical rather than physical?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Boiling water"
+        },
+        {
+          "letter": "B",
+          "text": "Dissolving sugar"
+        },
+        {
+          "letter": "C",
+          "text": "Rusting of iron"
+        },
+        {
+          "letter": "D",
+          "text": "Melting ice"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting produces new substances.",
+      "answerConfidence": "high",
+      "topic": "Chemical changes"
+    },
+    {
+      "id": "q136",
+      "questionNumber": 136,
+      "questionText": "Which apparatus is most suitable for measuring 25.0 cm3 of liquid accurately?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watch glass"
+        },
+        {
+          "letter": "B",
+          "text": "Pipette"
+        },
+        {
+          "letter": "C",
+          "text": "Beaker"
+        },
+        {
+          "letter": "D",
+          "text": "Evaporating basin"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A pipette is designed to deliver a measured volume accurately.",
+      "answerConfidence": "high",
+      "topic": "Laboratory measurement"
+    },
+    {
+      "id": "q137",
+      "questionNumber": 137,
+      "questionText": "Which particle has a negative charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electron"
+        },
+        {
+          "letter": "B",
+          "text": "Proton"
+        },
+        {
+          "letter": "C",
+          "text": "Neutron"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Electrons carry negative charge.",
+      "answerConfidence": "high",
+      "topic": "Atomic structure"
+    },
+    {
+      "id": "q138",
+      "questionNumber": 138,
+      "questionText": "A solution with pH 2 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutral"
+        },
+        {
+          "letter": "B",
+          "text": "Weakly alkaline"
+        },
+        {
+          "letter": "C",
+          "text": "Strongly alkaline"
+        },
+        {
+          "letter": "D",
+          "text": "Strongly acidic"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A very low pH indicates strong acidity.",
+      "answerConfidence": "high",
+      "topic": "Acids and bases"
+    },
+    {
+      "id": "q139",
+      "questionNumber": 139,
+      "questionText": "Which process changes a liquid into a gas at the surface?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Condensation"
+        },
+        {
+          "letter": "B",
+          "text": "Melting"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "D",
+          "text": "Freezing"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Evaporation occurs at the surface of a liquid.",
+      "answerConfidence": "high",
+      "topic": "States of matter"
+    },
+    {
+      "id": "q140",
+      "questionNumber": 140,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q141",
+      "questionNumber": 141,
+      "questionText": "Photosynthesis requires carbon dioxide, water and",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Light energy and chlorophyll"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas only"
+        },
+        {
+          "letter": "C",
+          "text": "Animal starch"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen chloride"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Light energy drives photosynthesis and chlorophyll absorbs it.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "q142",
+      "questionNumber": 142,
+      "questionText": "Which structure controls many activities of a cell?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cell wall"
+        },
+        {
+          "letter": "B",
+          "text": "Vacuole"
+        },
+        {
+          "letter": "C",
+          "text": "Cytoplasm only"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleus"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The nucleus contains genetic material and controls many cellular activities.",
+      "answerConfidence": "high",
+      "topic": "Cells"
+    },
+    {
+      "id": "q143",
+      "questionNumber": 143,
+      "questionText": "What is the SI unit of force?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Watt"
+        },
+        {
+          "letter": "B",
+          "text": "Pascal"
+        },
+        {
+          "letter": "C",
+          "text": "Newton"
+        },
+        {
+          "letter": "D",
+          "text": "Joule"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Force is measured in newtons.",
+      "answerConfidence": "high",
+      "topic": "Forces"
+    },
+    {
+      "id": "q144",
+      "questionNumber": 144,
+      "questionText": "If a car travels 120 m in 10 s, its average speed is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.083 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "12 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "1200 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = distance ÷ time = 120 ÷ 10 = 12 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q145",
+      "questionNumber": 145,
+      "questionText": "Which material is generally a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Copper"
+        },
+        {
+          "letter": "B",
+          "text": "Rubber"
+        },
+        {
+          "letter": "C",
+          "text": "Glass"
+        },
+        {
+          "letter": "D",
+          "text": "Dry wood"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Copper has mobile electrons and conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q146",
+      "questionNumber": 146,
+      "questionText": "Which gas is required for aerobic respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Aerobic respiration uses oxygen to release energy efficiently.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "q147",
+      "questionNumber": 147,
+      "questionText": "Which method separates an insoluble solid from a liquid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chromatography"
+        },
+        {
+          "letter": "B",
+          "text": "Fractional distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Filtration"
+        },
+        {
+          "letter": "D",
+          "text": "Distillation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Filtration separates insoluble solids from liquids.",
+      "answerConfidence": "high",
+      "topic": "Separation techniques"
+    },
+    {
+      "id": "q148",
+      "questionNumber": 148,
+      "questionText": "What happens to resistance in a metal wire when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It disappears"
+        },
+        {
+          "letter": "B",
+          "text": "It generally increases"
+        },
+        {
+          "letter": "C",
+          "text": "It becomes exactly zero"
+        },
+        {
+          "letter": "D",
+          "text": "It always halves"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Metal resistance generally increases with temperature.",
+      "answerConfidence": "high",
+      "topic": "Electric circuits"
+    },
+    {
+      "id": "q149",
+      "questionNumber": 149,
+      "questionText": "Which disease is caused by a pathogen transmitted by mosquitoes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Malaria"
+        },
+        {
+          "letter": "B",
+          "text": "Scurvy"
+        },
+        {
+          "letter": "C",
+          "text": "Rickets"
+        },
+        {
+          "letter": "D",
+          "text": "Diabetes"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Malaria is transmitted by infected mosquitoes.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "q150",
+      "questionNumber": 150,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    }
+  ]
+}

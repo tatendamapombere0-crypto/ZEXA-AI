@@ -1,0 +1,344 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "G7-MATH-1",
+    "paperName": "Grade 7 Mathematics Revision Paper 1",
+    "paperType": "Practice Paper"
+  },
+  "questions": [
+    {
+      "id": "g7_math_1_q1",
+      "questionNumber": 1,
+      "questionText": "The average mass of three boys is 42kg. Two of the boys have masses of 39kg and 45kg. What is the mass of the third boy?",
+      "options": [],
+      "correctAnswer": "42kg",
+      "explanation": "Total mass = 42 x 3 = 126kg. Mass of third boy = 126 - 39 - 45 = 42kg.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q2",
+      "questionNumber": 2,
+      "questionText": "Tapiwa scored 63 marks out of 90 in a test. What percentage of the possible marks did she get?",
+      "options": [],
+      "correctAnswer": "70%",
+      "explanation": "(63 / 90) x 100 = 70%.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q3",
+      "questionNumber": 3,
+      "questionText": "8 workers can dig a trench in 15 days. How many workers are needed to dig the same trench in 10 days?",
+      "options": [],
+      "correctAnswer": "12 workers",
+      "explanation": "This is inverse proportion: 8 x 15 = 120 worker-days. 120 / 10 = 12 workers.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q4",
+      "questionNumber": 4,
+      "questionText": "A bus travels at an average speed of 60 km/h and takes 2 hours 30 minutes to travel from Gweru to Harare. What is the distance from Gweru to Harare?",
+      "options": [],
+      "correctAnswer": "150 km",
+      "explanation": "2 hours 30 minutes = 2.5 hours. Distance = speed x time = 60 x 2.5 = 150 km.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q5",
+      "questionNumber": 5,
+      "questionText": "One exercise book costs $1.35. What is the cost of eight exercise books?",
+      "options": [],
+      "correctAnswer": "$10.80",
+      "explanation": "1.35 x 8 = 10.80.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q6",
+      "questionNumber": 6,
+      "questionText": "Express 1935 hours in 12-hour clock notation.",
+      "options": [],
+      "correctAnswer": "7:35 pm",
+      "explanation": "Subtract 1200 from 1935 to get 7:35, and since it is after 1200 hours it is pm: 7:35 pm.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q7",
+      "questionNumber": 7,
+      "questionText": "Round off 47 382 to the nearest 1000.",
+      "options": [],
+      "correctAnswer": "47 000",
+      "explanation": "The hundreds digit is 3, which is less than 5, so 47 382 rounds down to 47 000.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q8",
+      "questionNumber": 8,
+      "questionText": "Chipo started reading at 9:20 am and finished at 11:55 am. How long did she spend reading? Give your answer in the form X hours X minutes.",
+      "options": [],
+      "correctAnswer": "2 hours 35 minutes",
+      "explanation": "From 9:20am to 11:20am is 2 hours. From 11:20am to 11:55am is a further 35 minutes. Total = 2 hours 35 minutes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q9",
+      "questionNumber": 9,
+      "questionText": "A rectangular hall floor measures 18m by 12m. How many square tiles, each measuring 2m by 3m, are needed to cover the floor?",
+      "options": [],
+      "correctAnswer": "36 tiles",
+      "explanation": "Area of floor = 18 x 12 = 216 sq m. Area of one tile = 2 x 3 = 6 sq m. Number of tiles = 216 / 6 = 36.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q10",
+      "questionNumber": 10,
+      "questionText": "Find the value of 7 - 3.85.",
+      "options": [],
+      "correctAnswer": "3.15",
+      "explanation": "7.00 - 3.85 = 3.15.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q11",
+      "questionNumber": 11,
+      "questionText": "Find the value of 0.472 x 100.",
+      "options": [],
+      "correctAnswer": "47.2",
+      "explanation": "Multiplying by 100 moves the decimal point two places to the right: 0.472 x 100 = 47.2.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q12",
+      "questionNumber": 12,
+      "questionText": "Tendai has a mass of 48.5kg. Farai's mass is 5.5kg less than Tendai's. What is Farai's mass?",
+      "options": [],
+      "correctAnswer": "43kg",
+      "explanation": "48.5 - 5.5 = 43kg.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q13",
+      "questionNumber": 13,
+      "questionText": "Find the product of 36 and 24.",
+      "options": [],
+      "correctAnswer": "864",
+      "explanation": "36 x 24 = 864.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q14",
+      "questionNumber": 14,
+      "questionText": "Six exercise books cost $9.30. What is the cost of one exercise book? Give your answer in the form $amount.cents.",
+      "options": [],
+      "correctAnswer": "$1.55",
+      "explanation": "9.30 / 6 = 1.55, so one book costs $1.55.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q15",
+      "questionNumber": 15,
+      "questionText": "What is the difference between 342 and 189?",
+      "options": [],
+      "correctAnswer": "153",
+      "explanation": "342 - 189 = 153.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q16",
+      "questionNumber": 16,
+      "questionText": "Find the volume of a cube with sides of 5cm. Give your answer as Xcm^3.",
+      "options": [],
+      "correctAnswer": "125cm^3",
+      "explanation": "Volume of a cube = side x side x side = 5 x 5 x 5 = 125cm^3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q17",
+      "questionNumber": 17,
+      "questionText": "A trader bought a radio for $180.00 and sold it for $225.00. What percentage profit did the trader make?",
+      "options": [],
+      "correctAnswer": "25%",
+      "explanation": "Profit = 225 - 180 = 45. Percentage profit = (45/180) x 100 = 25%.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q18",
+      "questionNumber": 18,
+      "questionText": "What must be added to 456 to make 3 000?",
+      "options": [],
+      "correctAnswer": "2 544",
+      "explanation": "3 000 - 456 = 2 544.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q19",
+      "questionNumber": 19,
+      "questionText": "Express 3c in dollars.",
+      "options": [],
+      "correctAnswer": "$0.03",
+      "explanation": "There are 100 cents in a dollar, so 3 cents = 3/100 = $0.03.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q20",
+      "questionNumber": 20,
+      "questionText": "Share 350 mangoes between Tafara and Rutendo in the ratio 3:4. How many mangoes does Rutendo get?",
+      "options": [],
+      "correctAnswer": "200 mangoes",
+      "explanation": "Total parts = 3 + 4 = 7. One part = 350 / 7 = 50. Rutendo's share (4 parts) = 4 x 50 = 200 mangoes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q21",
+      "questionNumber": 21,
+      "questionText": "What is the perimeter of a square with sides measuring 9.5cm?",
+      "options": [],
+      "correctAnswer": "38cm",
+      "explanation": "Perimeter of a square = 4 x side = 4 x 9.5 = 38cm.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q22",
+      "questionNumber": 22,
+      "questionText": "A truck had a total mass of 18.750 tonnes after being loaded with maize bags. The maize bags had a mass of 11.225 tonnes. What is the mass of the empty truck?",
+      "options": [],
+      "correctAnswer": "7.525 tonnes",
+      "explanation": "18.750 - 11.225 = 7.525 tonnes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q23",
+      "questionNumber": 23,
+      "questionText": "Tendai has a mass of 48.5kg. Farai's mass is 5.5kg less than Tendai's. What is their average mass?",
+      "options": [],
+      "correctAnswer": "45.75kg",
+      "explanation": "Farai's mass = 48.5 - 5.5 = 43kg. Total mass = 48.5 + 43 = 91.5kg. Average = 91.5 / 2 = 45.75kg.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q24",
+      "questionNumber": 24,
+      "questionText": "A certain number, when divided by 12, gives a quotient of 34. What is the number?",
+      "options": [],
+      "correctAnswer": "408",
+      "explanation": "Number = quotient x divisor = 34 x 12 = 408.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q25",
+      "questionNumber": 25,
+      "questionText": "Share 350 mangoes between Tafara and Rutendo in the ratio 3:4. Subtract Tafara's share from Rutendo's share.",
+      "options": [],
+      "correctAnswer": "50 mangoes",
+      "explanation": "Total parts = 7, one part = 50. Tafara's share = 3 x 50 = 150. Rutendo's share = 4 x 50 = 200. Difference = 200 - 150 = 50 mangoes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q26",
+      "questionNumber": 26,
+      "questionText": "How many hours and minutes are there between 11:40 pm and 6:15 am the next day? Give your answer as X hr X min.",
+      "options": [],
+      "correctAnswer": "6 hr 35 min",
+      "explanation": "From 11:40pm to 12:00 midnight is 20 minutes. From midnight to 6:15am is 6 hours 15 minutes. Total = 20 min + 6 hr 15 min = 6 hr 35 min.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q27",
+      "questionNumber": 27,
+      "questionText": "Rufaro read 40% of her book on Monday, 30% on Tuesday, and the remaining 90 pages on Wednesday. What percentage of the book did she read on Wednesday?",
+      "options": [],
+      "correctAnswer": "30%",
+      "explanation": "Percentage read on Wednesday = 100% - 40% - 30% = 30%.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q28",
+      "questionNumber": 28,
+      "questionText": "Find the value of 5 - 1/3. Give your answer as a mixed number in the form X(a/b).",
+      "options": [],
+      "correctAnswer": "4(2/3)",
+      "explanation": "5 = 4 + 1 whole. Rewrite 1 whole as 3/3, so 5 - 1/3 = 4 + 3/3 - 1/3 = 4(2/3).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q29",
+      "questionNumber": 29,
+      "questionText": "Find the sum of 2(3/5) and 1(7/10). Give your answer as a mixed number in the form X(a/b).",
+      "options": [],
+      "correctAnswer": "4(3/10)",
+      "explanation": "Convert to tenths: 2(3/5) = 2(6/10). 2(6/10) + 1(7/10) = 3(13/10) = 4(3/10).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q30",
+      "questionNumber": 30,
+      "questionText": "2(1/3) of a number is 14. What is the number?",
+      "options": [],
+      "correctAnswer": "6",
+      "explanation": "2(1/3) = 7/3. If (7/3) x number = 14, then number = 14 divided by (7/3) = 14 x (3/7) = 6.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q31",
+      "questionNumber": 31,
+      "questionText": "Increase 10^3 by 5^2.",
+      "options": [],
+      "correctAnswer": "1025",
+      "explanation": "10^3 = 1000. 5^2 = 25. 1000 + 25 = 1025.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q32",
+      "questionNumber": 32,
+      "questionText": "Find the value of 38.542 x 100.",
+      "options": [],
+      "correctAnswer": "3854.2",
+      "explanation": "Multiplying by 100 moves the decimal point two places to the right: 38.542 x 100 = 3854.2.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q33",
+      "questionNumber": 33,
+      "questionText": "Write 12.75 as a mixed number in its lowest terms. Write your answer as X(a/b).",
+      "options": [],
+      "correctAnswer": "12(3/4)",
+      "explanation": "0.75 = 75/100 = 3/4 in its lowest terms, so 12.75 = 12(3/4).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q34",
+      "questionNumber": 34,
+      "questionText": "Write 0.635 correct to 2 decimal places.",
+      "options": [],
+      "correctAnswer": "0.64",
+      "explanation": "The third decimal digit is 5, so we round the second decimal digit up: 0.635 rounds to 0.64.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q35",
+      "questionNumber": 35,
+      "questionText": "A shopkeeper bought 40kg of sugar and packed it into 500g packets. How many packets did the shopkeeper get?",
+      "options": [],
+      "correctAnswer": "80 packets",
+      "explanation": "40kg = 40 000g. 500g packets: 40 000 / 500 = 80 packets.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q36",
+      "questionNumber": 36,
+      "questionText": "A car's odometer read 45 682 km at the start of a trip and 46 214 km at the end. How many kilometres were travelled?",
+      "options": [],
+      "correctAnswer": "532 km",
+      "explanation": "46 214 - 45 682 = 532 km.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1_q37",
+      "questionNumber": 37,
+      "questionText": "A farmer sold 3/4 of a 240kg bag of maize meal. How many kilograms of maize meal were sold?",
+      "options": [],
+      "correctAnswer": "180kg",
+      "explanation": "3/4 of 240 = (3 x 240) / 4 = 720 / 4 = 180kg.",
+      "answerConfidence": "high"
+    }
+  ]
+}

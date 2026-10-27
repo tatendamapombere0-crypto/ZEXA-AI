@@ -1,0 +1,4066 @@
+{
+  "paperInfo": {
+    "subject": "Statistics",
+    "level": "A Level",
+    "paperCode": "6046/1",
+    "paperName": "Paper 1 – Structured Questions",
+    "paperType": "structured",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Statistics_A_Level_6046_Paper1_150.json",
+    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6 syllabus",
+    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus/specimen structure and recurring exam themes; not verbatim copies of copyrighted past papers.",
+    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+  },
+  "questions": [
+    {
+      "id": "DAT-001",
+      "questionNumber": 1,
+      "questionText": "A sample has mean 13 and standard deviation 6. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 17, SD 6"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 13, SD 10"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 17, SD 10"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 13, SD 6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-002",
+      "questionNumber": 2,
+      "questionText": "If the probability of an event is 0.3, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7"
+        },
+        {
+          "letter": "B",
+          "text": "0.3"
+        },
+        {
+          "letter": "C",
+          "text": "1.3"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-003",
+      "questionNumber": 3,
+      "questionText": "Which statement is most appropriate when applying measures of central tendency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-004",
+      "questionNumber": 4,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-005",
+      "questionNumber": 5,
+      "questionText": "Explain one important interpretation or limitation associated with probability.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-006",
+      "questionNumber": 6,
+      "questionText": "A sample has mean 18 and standard deviation 5. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 22, SD 5"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 18, SD 9"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 22, SD 9"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 18, SD 5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-007",
+      "questionNumber": 7,
+      "questionText": "If the probability of an event is 0.1, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.9"
+        },
+        {
+          "letter": "B",
+          "text": "0.1"
+        },
+        {
+          "letter": "C",
+          "text": "1.1"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-008",
+      "questionNumber": 8,
+      "questionText": "Which statement is most appropriate when applying poisson distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-009",
+      "questionNumber": 9,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-010",
+      "questionNumber": 10,
+      "questionText": "Explain one important interpretation or limitation associated with correlation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-011",
+      "questionNumber": 11,
+      "questionText": "A sample has mean 14 and standard deviation 10. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 18, SD 10"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 14, SD 14"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 18, SD 14"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 14, SD 10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-012",
+      "questionNumber": 12,
+      "questionText": "If the probability of an event is 0.6, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4"
+        },
+        {
+          "letter": "B",
+          "text": "0.6"
+        },
+        {
+          "letter": "C",
+          "text": "1.6"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-013",
+      "questionNumber": 13,
+      "questionText": "Which statement is most appropriate when applying index numbers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-014",
+      "questionNumber": 14,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-015",
+      "questionNumber": 15,
+      "questionText": "Explain one important interpretation or limitation associated with hypothesis testing.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-016",
+      "questionNumber": 16,
+      "questionText": "A sample has mean 19 and standard deviation 9. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 23, SD 9"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 19, SD 13"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 23, SD 13"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 19, SD 9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-017",
+      "questionNumber": 17,
+      "questionText": "If the probability of an event is 0.4, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.6"
+        },
+        {
+          "letter": "B",
+          "text": "0.4"
+        },
+        {
+          "letter": "C",
+          "text": "1.4"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-018",
+      "questionNumber": 18,
+      "questionText": "Which statement is most appropriate when applying frequency distributions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-019",
+      "questionNumber": 19,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-020",
+      "questionNumber": 20,
+      "questionText": "Explain one important interpretation or limitation associated with measures of dispersion.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-021",
+      "questionNumber": 21,
+      "questionText": "A sample has mean 15 and standard deviation 8. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 19, SD 8"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 15, SD 12"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 19, SD 12"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 15, SD 8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-022",
+      "questionNumber": 22,
+      "questionText": "If the probability of an event is 0.2, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8"
+        },
+        {
+          "letter": "B",
+          "text": "0.2"
+        },
+        {
+          "letter": "C",
+          "text": "1.2"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-023",
+      "questionNumber": 23,
+      "questionText": "Which statement is most appropriate when applying binomial distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-024",
+      "questionNumber": 24,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-025",
+      "questionNumber": 25,
+      "questionText": "Explain one important interpretation or limitation associated with normal distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-026",
+      "questionNumber": 26,
+      "questionText": "A sample has mean 20 and standard deviation 7. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 24, SD 7"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 20, SD 11"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 24, SD 11"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 20, SD 7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-027",
+      "questionNumber": 27,
+      "questionText": "If the probability of an event is 0.7, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3"
+        },
+        {
+          "letter": "B",
+          "text": "0.7"
+        },
+        {
+          "letter": "C",
+          "text": "1.7"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-028",
+      "questionNumber": 28,
+      "questionText": "Which statement is most appropriate when applying time series?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-029",
+      "questionNumber": 29,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-030",
+      "questionNumber": 30,
+      "questionText": "Explain one important interpretation or limitation associated with statistical inference.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-031",
+      "questionNumber": 31,
+      "questionText": "A sample has mean 16 and standard deviation 6. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 20, SD 6"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 16, SD 10"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 20, SD 10"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 16, SD 6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-032",
+      "questionNumber": 32,
+      "questionText": "If the probability of an event is 0.5, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5"
+        },
+        {
+          "letter": "B",
+          "text": "0.5"
+        },
+        {
+          "letter": "C",
+          "text": "1.5"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-033",
+      "questionNumber": 33,
+      "questionText": "Which statement is most appropriate when applying data collection and sampling?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-034",
+      "questionNumber": 34,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-035",
+      "questionNumber": 35,
+      "questionText": "Explain one important interpretation or limitation associated with measures of central tendency.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-036",
+      "questionNumber": 36,
+      "questionText": "A sample has mean 12 and standard deviation 5. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 16, SD 5"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 12, SD 9"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 16, SD 9"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 12, SD 5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-037",
+      "questionNumber": 37,
+      "questionText": "If the probability of an event is 0.3, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7"
+        },
+        {
+          "letter": "B",
+          "text": "0.3"
+        },
+        {
+          "letter": "C",
+          "text": "1.3"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-038",
+      "questionNumber": 38,
+      "questionText": "Which statement is most appropriate when applying discrete random variables?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-039",
+      "questionNumber": 39,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-040",
+      "questionNumber": 40,
+      "questionText": "Explain one important interpretation or limitation associated with poisson distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-041",
+      "questionNumber": 41,
+      "questionText": "A sample has mean 17 and standard deviation 10. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 21, SD 10"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 17, SD 14"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 21, SD 14"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 17, SD 10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-042",
+      "questionNumber": 42,
+      "questionText": "If the probability of an event is 0.1, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.9"
+        },
+        {
+          "letter": "B",
+          "text": "0.1"
+        },
+        {
+          "letter": "C",
+          "text": "1.1"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-043",
+      "questionNumber": 43,
+      "questionText": "Which statement is most appropriate when applying regression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-044",
+      "questionNumber": 44,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-045",
+      "questionNumber": 45,
+      "questionText": "Explain one important interpretation or limitation associated with index numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-046",
+      "questionNumber": 46,
+      "questionText": "A sample has mean 13 and standard deviation 9. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 17, SD 9"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 13, SD 13"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 17, SD 13"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 13, SD 9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-047",
+      "questionNumber": 47,
+      "questionText": "If the probability of an event is 0.6, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4"
+        },
+        {
+          "letter": "B",
+          "text": "0.6"
+        },
+        {
+          "letter": "C",
+          "text": "1.6"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-048",
+      "questionNumber": 48,
+      "questionText": "Which statement is most appropriate when applying estimation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-049",
+      "questionNumber": 49,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-050",
+      "questionNumber": 50,
+      "questionText": "Explain one important interpretation or limitation associated with frequency distributions.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-051",
+      "questionNumber": 51,
+      "questionText": "A sample has mean 18 and standard deviation 8. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 22, SD 8"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 18, SD 12"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 22, SD 12"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 18, SD 8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-052",
+      "questionNumber": 52,
+      "questionText": "If the probability of an event is 0.4, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.6"
+        },
+        {
+          "letter": "B",
+          "text": "0.4"
+        },
+        {
+          "letter": "C",
+          "text": "1.4"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-053",
+      "questionNumber": 53,
+      "questionText": "Which statement is most appropriate when applying probability?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-054",
+      "questionNumber": 54,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-055",
+      "questionNumber": 55,
+      "questionText": "Explain one important interpretation or limitation associated with binomial distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-056",
+      "questionNumber": 56,
+      "questionText": "A sample has mean 14 and standard deviation 7. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 18, SD 7"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 14, SD 11"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 18, SD 11"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 14, SD 7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-057",
+      "questionNumber": 57,
+      "questionText": "If the probability of an event is 0.2, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8"
+        },
+        {
+          "letter": "B",
+          "text": "0.2"
+        },
+        {
+          "letter": "C",
+          "text": "1.2"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-058",
+      "questionNumber": 58,
+      "questionText": "Which statement is most appropriate when applying correlation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-059",
+      "questionNumber": 59,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-060",
+      "questionNumber": 60,
+      "questionText": "Explain one important interpretation or limitation associated with time series.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-061",
+      "questionNumber": 61,
+      "questionText": "A sample has mean 19 and standard deviation 6. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 23, SD 6"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 19, SD 10"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 23, SD 10"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 19, SD 6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-062",
+      "questionNumber": 62,
+      "questionText": "If the probability of an event is 0.7, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3"
+        },
+        {
+          "letter": "B",
+          "text": "0.7"
+        },
+        {
+          "letter": "C",
+          "text": "1.7"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-063",
+      "questionNumber": 63,
+      "questionText": "Which statement is most appropriate when applying hypothesis testing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-064",
+      "questionNumber": 64,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-065",
+      "questionNumber": 65,
+      "questionText": "Explain one important interpretation or limitation associated with data collection and sampling.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-066",
+      "questionNumber": 66,
+      "questionText": "A sample has mean 15 and standard deviation 5. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 19, SD 5"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 15, SD 9"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 19, SD 9"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 15, SD 5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-067",
+      "questionNumber": 67,
+      "questionText": "If the probability of an event is 0.5, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5"
+        },
+        {
+          "letter": "B",
+          "text": "0.5"
+        },
+        {
+          "letter": "C",
+          "text": "1.5"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-068",
+      "questionNumber": 68,
+      "questionText": "Which statement is most appropriate when applying measures of dispersion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-069",
+      "questionNumber": 69,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-070",
+      "questionNumber": 70,
+      "questionText": "Explain one important interpretation or limitation associated with discrete random variables.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-071",
+      "questionNumber": 71,
+      "questionText": "A sample has mean 20 and standard deviation 10. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 24, SD 10"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 20, SD 14"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 24, SD 14"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 20, SD 10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-072",
+      "questionNumber": 72,
+      "questionText": "If the probability of an event is 0.3, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7"
+        },
+        {
+          "letter": "B",
+          "text": "0.3"
+        },
+        {
+          "letter": "C",
+          "text": "1.3"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-073",
+      "questionNumber": 73,
+      "questionText": "Which statement is most appropriate when applying normal distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-074",
+      "questionNumber": 74,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-075",
+      "questionNumber": 75,
+      "questionText": "Explain one important interpretation or limitation associated with regression.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-076",
+      "questionNumber": 76,
+      "questionText": "A sample has mean 16 and standard deviation 9. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 20, SD 9"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 16, SD 13"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 20, SD 13"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 16, SD 9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-077",
+      "questionNumber": 77,
+      "questionText": "If the probability of an event is 0.1, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.9"
+        },
+        {
+          "letter": "B",
+          "text": "0.1"
+        },
+        {
+          "letter": "C",
+          "text": "1.1"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-078",
+      "questionNumber": 78,
+      "questionText": "Which statement is most appropriate when applying statistical inference?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-079",
+      "questionNumber": 79,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-080",
+      "questionNumber": 80,
+      "questionText": "Explain one important interpretation or limitation associated with estimation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-081",
+      "questionNumber": 81,
+      "questionText": "A sample has mean 12 and standard deviation 8. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 16, SD 8"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 12, SD 12"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 16, SD 12"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 12, SD 8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-082",
+      "questionNumber": 82,
+      "questionText": "If the probability of an event is 0.6, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4"
+        },
+        {
+          "letter": "B",
+          "text": "0.6"
+        },
+        {
+          "letter": "C",
+          "text": "1.6"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-083",
+      "questionNumber": 83,
+      "questionText": "Which statement is most appropriate when applying measures of central tendency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-084",
+      "questionNumber": 84,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-085",
+      "questionNumber": 85,
+      "questionText": "Explain one important interpretation or limitation associated with probability.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-086",
+      "questionNumber": 86,
+      "questionText": "A sample has mean 17 and standard deviation 7. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 21, SD 7"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 17, SD 11"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 21, SD 11"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 17, SD 7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-087",
+      "questionNumber": 87,
+      "questionText": "If the probability of an event is 0.4, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.6"
+        },
+        {
+          "letter": "B",
+          "text": "0.4"
+        },
+        {
+          "letter": "C",
+          "text": "1.4"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-088",
+      "questionNumber": 88,
+      "questionText": "Which statement is most appropriate when applying poisson distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-089",
+      "questionNumber": 89,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-090",
+      "questionNumber": 90,
+      "questionText": "Explain one important interpretation or limitation associated with correlation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-091",
+      "questionNumber": 91,
+      "questionText": "A sample has mean 13 and standard deviation 6. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 17, SD 6"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 13, SD 10"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 17, SD 10"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 13, SD 6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-092",
+      "questionNumber": 92,
+      "questionText": "If the probability of an event is 0.2, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8"
+        },
+        {
+          "letter": "B",
+          "text": "0.2"
+        },
+        {
+          "letter": "C",
+          "text": "1.2"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-093",
+      "questionNumber": 93,
+      "questionText": "Which statement is most appropriate when applying index numbers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-094",
+      "questionNumber": 94,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-095",
+      "questionNumber": 95,
+      "questionText": "Explain one important interpretation or limitation associated with hypothesis testing.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-096",
+      "questionNumber": 96,
+      "questionText": "A sample has mean 18 and standard deviation 5. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 22, SD 5"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 18, SD 9"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 22, SD 9"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 18, SD 5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-097",
+      "questionNumber": 97,
+      "questionText": "If the probability of an event is 0.7, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3"
+        },
+        {
+          "letter": "B",
+          "text": "0.7"
+        },
+        {
+          "letter": "C",
+          "text": "1.7"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-098",
+      "questionNumber": 98,
+      "questionText": "Which statement is most appropriate when applying frequency distributions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-099",
+      "questionNumber": 99,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-100",
+      "questionNumber": 100,
+      "questionText": "Explain one important interpretation or limitation associated with measures of dispersion.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-101",
+      "questionNumber": 101,
+      "questionText": "A sample has mean 14 and standard deviation 10. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 18, SD 10"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 14, SD 14"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 18, SD 14"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 14, SD 10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-102",
+      "questionNumber": 102,
+      "questionText": "If the probability of an event is 0.5, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5"
+        },
+        {
+          "letter": "B",
+          "text": "0.5"
+        },
+        {
+          "letter": "C",
+          "text": "1.5"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-103",
+      "questionNumber": 103,
+      "questionText": "Which statement is most appropriate when applying binomial distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-104",
+      "questionNumber": 104,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-105",
+      "questionNumber": 105,
+      "questionText": "Explain one important interpretation or limitation associated with normal distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-106",
+      "questionNumber": 106,
+      "questionText": "A sample has mean 19 and standard deviation 9. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 23, SD 9"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 19, SD 13"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 23, SD 13"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 19, SD 9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-107",
+      "questionNumber": 107,
+      "questionText": "If the probability of an event is 0.3, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7"
+        },
+        {
+          "letter": "B",
+          "text": "0.3"
+        },
+        {
+          "letter": "C",
+          "text": "1.3"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-108",
+      "questionNumber": 108,
+      "questionText": "Which statement is most appropriate when applying time series?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-109",
+      "questionNumber": 109,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-110",
+      "questionNumber": 110,
+      "questionText": "Explain one important interpretation or limitation associated with statistical inference.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-111",
+      "questionNumber": 111,
+      "questionText": "A sample has mean 15 and standard deviation 8. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 19, SD 8"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 15, SD 12"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 19, SD 12"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 15, SD 8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-112",
+      "questionNumber": 112,
+      "questionText": "If the probability of an event is 0.1, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.9"
+        },
+        {
+          "letter": "B",
+          "text": "0.1"
+        },
+        {
+          "letter": "C",
+          "text": "1.1"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-113",
+      "questionNumber": 113,
+      "questionText": "Which statement is most appropriate when applying data collection and sampling?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-114",
+      "questionNumber": 114,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-115",
+      "questionNumber": 115,
+      "questionText": "Explain one important interpretation or limitation associated with measures of central tendency.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-116",
+      "questionNumber": 116,
+      "questionText": "A sample has mean 20 and standard deviation 7. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 24, SD 7"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 20, SD 11"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 24, SD 11"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 20, SD 7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-117",
+      "questionNumber": 117,
+      "questionText": "If the probability of an event is 0.6, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4"
+        },
+        {
+          "letter": "B",
+          "text": "0.6"
+        },
+        {
+          "letter": "C",
+          "text": "1.6"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-118",
+      "questionNumber": 118,
+      "questionText": "Which statement is most appropriate when applying discrete random variables?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-119",
+      "questionNumber": 119,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-120",
+      "questionNumber": 120,
+      "questionText": "Explain one important interpretation or limitation associated with poisson distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-121",
+      "questionNumber": 121,
+      "questionText": "A sample has mean 16 and standard deviation 6. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 20, SD 6"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 16, SD 10"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 20, SD 10"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 16, SD 6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-122",
+      "questionNumber": 122,
+      "questionText": "If the probability of an event is 0.4, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.6"
+        },
+        {
+          "letter": "B",
+          "text": "0.4"
+        },
+        {
+          "letter": "C",
+          "text": "1.4"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-123",
+      "questionNumber": 123,
+      "questionText": "Which statement is most appropriate when applying regression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-124",
+      "questionNumber": 124,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-125",
+      "questionNumber": 125,
+      "questionText": "Explain one important interpretation or limitation associated with index numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-126",
+      "questionNumber": 126,
+      "questionText": "A sample has mean 12 and standard deviation 5. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 16, SD 5"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 12, SD 9"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 16, SD 9"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 12, SD 5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-127",
+      "questionNumber": 127,
+      "questionText": "If the probability of an event is 0.2, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8"
+        },
+        {
+          "letter": "B",
+          "text": "0.2"
+        },
+        {
+          "letter": "C",
+          "text": "1.2"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-128",
+      "questionNumber": 128,
+      "questionText": "Which statement is most appropriate when applying estimation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-129",
+      "questionNumber": 129,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-130",
+      "questionNumber": 130,
+      "questionText": "Explain one important interpretation or limitation associated with frequency distributions.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-131",
+      "questionNumber": 131,
+      "questionText": "A sample has mean 17 and standard deviation 10. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 21, SD 10"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 17, SD 14"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 21, SD 14"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 17, SD 10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-132",
+      "questionNumber": 132,
+      "questionText": "If the probability of an event is 0.7, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3"
+        },
+        {
+          "letter": "B",
+          "text": "0.7"
+        },
+        {
+          "letter": "C",
+          "text": "1.7"
+        },
+        {
+          "letter": "D",
+          "text": "0.3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-133",
+      "questionNumber": 133,
+      "questionText": "Which statement is most appropriate when applying probability?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-134",
+      "questionNumber": 134,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    },
+    {
+      "id": "BIN-135",
+      "questionNumber": 135,
+      "questionText": "Explain one important interpretation or limitation associated with binomial distribution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Binomial distribution"
+    },
+    {
+      "id": "POI-136",
+      "questionNumber": 136,
+      "questionText": "A sample has mean 13 and standard deviation 9. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 17, SD 9"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 13, SD 13"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 17, SD 13"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 13, SD 9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Poisson distribution"
+    },
+    {
+      "id": "NOR-137",
+      "questionNumber": 137,
+      "questionText": "If the probability of an event is 0.5, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5"
+        },
+        {
+          "letter": "B",
+          "text": "0.5"
+        },
+        {
+          "letter": "C",
+          "text": "1.5"
+        },
+        {
+          "letter": "D",
+          "text": "0.2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Normal distribution"
+    },
+    {
+      "id": "COR-138",
+      "questionNumber": 138,
+      "questionText": "Which statement is most appropriate when applying correlation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Correlation"
+    },
+    {
+      "id": "REG-139",
+      "questionNumber": 139,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Regression"
+    },
+    {
+      "id": "TIM-140",
+      "questionNumber": 140,
+      "questionText": "Explain one important interpretation or limitation associated with time series.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Time series"
+    },
+    {
+      "id": "IND-141",
+      "questionNumber": 141,
+      "questionText": "A sample has mean 18 and standard deviation 8. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 22, SD 8"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 18, SD 12"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 22, SD 12"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 18, SD 8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Index numbers"
+    },
+    {
+      "id": "STA-142",
+      "questionNumber": 142,
+      "questionText": "If the probability of an event is 0.3, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7"
+        },
+        {
+          "letter": "B",
+          "text": "0.3"
+        },
+        {
+          "letter": "C",
+          "text": "1.3"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Statistical inference"
+    },
+    {
+      "id": "HYP-143",
+      "questionNumber": 143,
+      "questionText": "Which statement is most appropriate when applying hypothesis testing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Hypothesis testing"
+    },
+    {
+      "id": "EST-144",
+      "questionNumber": 144,
+      "questionText": "A binomial experiment has 24 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(24,4)(0.2)^4(0.8)^20"
+        },
+        {
+          "letter": "B",
+          "text": "24(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(24,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^24"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Estimation"
+    },
+    {
+      "id": "DAT-145",
+      "questionNumber": 145,
+      "questionText": "Explain one important interpretation or limitation associated with data collection and sampling.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Data collection and sampling"
+    },
+    {
+      "id": "FRE-146",
+      "questionNumber": 146,
+      "questionText": "A sample has mean 14 and standard deviation 7. If every observation is increased by 4, state the new mean and standard deviation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean 18, SD 7"
+        },
+        {
+          "letter": "B",
+          "text": "Mean 14, SD 11"
+        },
+        {
+          "letter": "C",
+          "text": "Mean 18, SD 11"
+        },
+        {
+          "letter": "D",
+          "text": "Mean 14, SD 7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adding a constant changes the mean by that constant but does not change the standard deviation.",
+      "answerConfidence": "high",
+      "topic": "Frequency distributions"
+    },
+    {
+      "id": "MEA-147",
+      "questionNumber": 147,
+      "questionText": "If the probability of an event is 0.1, what is the probability that it does not occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.9"
+        },
+        {
+          "letter": "B",
+          "text": "0.1"
+        },
+        {
+          "letter": "C",
+          "text": "1.1"
+        },
+        {
+          "letter": "D",
+          "text": "0.1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "For complementary events, P(not A)=1−P(A).",
+      "answerConfidence": "high",
+      "topic": "Measures of central tendency"
+    },
+    {
+      "id": "MEA-148",
+      "questionNumber": 148,
+      "questionText": "Which statement is most appropriate when applying measures of dispersion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the assumptions and definitions of the statistical method before interpreting the result"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the sample design"
+        },
+        {
+          "letter": "C",
+          "text": "Treat correlation as proof of causation"
+        },
+        {
+          "letter": "D",
+          "text": "Round all intermediate calculations immediately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical conclusions depend on the correct method, assumptions and interpretation.",
+      "answerConfidence": "high",
+      "topic": "Measures of dispersion"
+    },
+    {
+      "id": "PRO-149",
+      "questionNumber": 149,
+      "questionText": "A binomial experiment has 29 trials and success probability 0.2. State the expression for the probability of exactly 4 successes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(29,4)(0.2)^4(0.8)^25"
+        },
+        {
+          "letter": "B",
+          "text": "29(0.2)^k"
+        },
+        {
+          "letter": "C",
+          "text": "C(29,4)(0.8)^k"
+        },
+        {
+          "letter": "D",
+          "text": "(0.2+0.8)^29"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The binomial probability is C(n,k)p^k(1−p)^(n−k).",
+      "answerConfidence": "high",
+      "topic": "Probability"
+    },
+    {
+      "id": "DIS-150",
+      "questionNumber": 150,
+      "questionText": "Explain one important interpretation or limitation associated with discrete random variables.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be interpreted in context and with appropriate assumptions"
+        },
+        {
+          "letter": "B",
+          "text": "It always gives a causal conclusion"
+        },
+        {
+          "letter": "C",
+          "text": "It never depends on sample size"
+        },
+        {
+          "letter": "D",
+          "text": "It makes data collection unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Statistical methods require context and appropriate assumptions.",
+      "answerConfidence": "high",
+      "topic": "Discrete random variables"
+    }
+  ]
+}

@@ -1,0 +1,3921 @@
+{
+  "paperInfo": {
+    "subject": "Chemistry",
+    "level": "A-Level",
+    "paperCode": "6031/01",
+    "paperName": "Chemistry Paper 1",
+    "paperType": "Multiple Choice",
+    "syllabus": "A-Level Chemistry Forms 5–6 (ZIMSEC code 6031; current heritage-based syllabus scope)",
+    "coverage": "Original expanded practice bank synthesised from ZIMSEC syllabus scope and recurring examination-style skills; not a reproduction of copyrighted past-paper text.",
+    "source": "ZIMSEC official resources (www5.zimsec.co.zw) and syllabus copies hosted on StudyLib (studylib.net).",
+    "referenceYears": [
+      "2023",
+      "2024",
+      "2025",
+      "June 2026"
+    ],
+    "notes": "150 original MCQs spanning physical, inorganic, organic and analytical chemistry."
+  },
+  "questions": [
+    {
+      "id": "zimsec_a_chem_p1_001",
+      "questionNumber": 1,
+      "questionText": "Which statement best describes first ionisation energy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Energy released when an atom gains an electron"
+        },
+        {
+          "letter": "B",
+          "text": "Energy required to remove one electron from each atom in one mole of gaseous atoms"
+        },
+        {
+          "letter": "C",
+          "text": "Energy required to remove all electrons"
+        },
+        {
+          "letter": "D",
+          "text": "Energy released when ions form"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "First ionisation energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form gaseous +1 ions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_002",
+      "questionNumber": 2,
+      "questionText": "Across a period, first ionisation energy generally increases because",
+      "options": [
+        {
+          "letter": "A",
+          "text": "nuclear charge increases while shielding changes little"
+        },
+        {
+          "letter": "B",
+          "text": "atomic radius always increases"
+        },
+        {
+          "letter": "C",
+          "text": "electrons enter lower shells"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear charge decreases"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Increasing nuclear charge with similar shielding generally strengthens attraction for outer electrons.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_003",
+      "questionNumber": 3,
+      "questionText": "Which species has the same electron configuration as neon?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Na+"
+        },
+        {
+          "letter": "B",
+          "text": "Na"
+        },
+        {
+          "letter": "C",
+          "text": "Mg+"
+        },
+        {
+          "letter": "D",
+          "text": "Cl−"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Na+ has 10 electrons, the same as neon.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_004",
+      "questionNumber": 4,
+      "questionText": "An emission line spectrum provides evidence that electrons",
+      "options": [
+        {
+          "letter": "A",
+          "text": "have any energy value"
+        },
+        {
+          "letter": "B",
+          "text": "occupy quantised energy levels"
+        },
+        {
+          "letter": "C",
+          "text": "are inside the nucleus"
+        },
+        {
+          "letter": "D",
+          "text": "have no kinetic energy"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Only specific electron transitions are allowed, producing discrete spectral lines.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_005",
+      "questionNumber": 5,
+      "questionText": "Which orbital can contain a maximum of two electrons?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Any one orbital"
+        },
+        {
+          "letter": "B",
+          "text": "Any one shell"
+        },
+        {
+          "letter": "C",
+          "text": "Only a p subshell"
+        },
+        {
+          "letter": "D",
+          "text": "Only a d subshell"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each orbital holds a maximum of two electrons with opposite spins.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_006",
+      "questionNumber": 6,
+      "questionText": "What is the enthalpy change for an exothermic reaction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Positive"
+        },
+        {
+          "letter": "B",
+          "text": "Negative"
+        },
+        {
+          "letter": "C",
+          "text": "Always zero"
+        },
+        {
+          "letter": "D",
+          "text": "Always equal to activation energy"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heat is released to the surroundings, so ΔH is negative under the usual convention.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_007",
+      "questionNumber": 7,
+      "questionText": "Which equation correctly relates enthalpy change, mass, specific heat capacity and temperature change?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q=mcΔT"
+        },
+        {
+          "letter": "B",
+          "text": "q=m/cΔT"
+        },
+        {
+          "letter": "C",
+          "text": "q=c/mΔT"
+        },
+        {
+          "letter": "D",
+          "text": "q=m+c+ΔT"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The heat transferred is q = mcΔT.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_008",
+      "questionNumber": 8,
+      "questionText": "Hess's law is based on the fact that enthalpy is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a path function"
+        },
+        {
+          "letter": "B",
+          "text": "a state function"
+        },
+        {
+          "letter": "C",
+          "text": "always positive"
+        },
+        {
+          "letter": "D",
+          "text": "independent of temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Enthalpy change depends only on initial and final states.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_009",
+      "questionNumber": 9,
+      "questionText": "Bond breaking is generally",
+      "options": [
+        {
+          "letter": "A",
+          "text": "exothermic"
+        },
+        {
+          "letter": "B",
+          "text": "endothermic"
+        },
+        {
+          "letter": "C",
+          "text": "always spontaneous"
+        },
+        {
+          "letter": "D",
+          "text": "catalytic"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Energy must be supplied to break a chemical bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_010",
+      "questionNumber": 10,
+      "questionText": "Which quantity is dimensionless?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Relative atomic mass"
+        },
+        {
+          "letter": "B",
+          "text": "Molar concentration"
+        },
+        {
+          "letter": "C",
+          "text": "Enthalpy change"
+        },
+        {
+          "letter": "D",
+          "text": "Gas volume"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Relative atomic mass is a ratio and has no units.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_011",
+      "questionNumber": 11,
+      "questionText": "The rate equation rate = k[A]^2[B] has overall order",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1"
+        },
+        {
+          "letter": "B",
+          "text": "2"
+        },
+        {
+          "letter": "C",
+          "text": "3"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Overall order is the sum of powers: 2 + 1 = 3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_012",
+      "questionNumber": 12,
+      "questionText": "A catalyst increases rate by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "raising activation energy"
+        },
+        {
+          "letter": "B",
+          "text": "providing a lower activation-energy pathway"
+        },
+        {
+          "letter": "C",
+          "text": "changing ΔH"
+        },
+        {
+          "letter": "D",
+          "text": "increasing equilibrium constant"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_013",
+      "questionNumber": 13,
+      "questionText": "A Maxwell–Boltzmann distribution is shifted at higher temperature so that",
+      "options": [
+        {
+          "letter": "A",
+          "text": "fewer particles exceed Ea"
+        },
+        {
+          "letter": "B",
+          "text": "more particles have energies above Ea"
+        },
+        {
+          "letter": "C",
+          "text": "all particles have the same energy"
+        },
+        {
+          "letter": "D",
+          "text": "Ea becomes zero"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A higher-temperature distribution has a greater fraction above the activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_014",
+      "questionNumber": 14,
+      "questionText": "If doubling [A] doubles rate while [B] is constant, the order with respect to A is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "zero"
+        },
+        {
+          "letter": "B",
+          "text": "one"
+        },
+        {
+          "letter": "C",
+          "text": "two"
+        },
+        {
+          "letter": "D",
+          "text": "three"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rate proportional to [A]^1 when doubling concentration doubles rate.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_015",
+      "questionNumber": 15,
+      "questionText": "A reaction mechanism contains a slow elementary step. The slow step is important because it often",
+      "options": [
+        {
+          "letter": "A",
+          "text": "determines the observed rate law"
+        },
+        {
+          "letter": "B",
+          "text": "changes atomic numbers"
+        },
+        {
+          "letter": "C",
+          "text": "sets the melting point"
+        },
+        {
+          "letter": "D",
+          "text": "removes all intermediates"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The rate-determining step constrains the rate expression for the mechanism.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_016",
+      "questionNumber": 16,
+      "questionText": "For Kc, pure solids are omitted because their",
+      "options": [
+        {
+          "letter": "A",
+          "text": "concentration is effectively constant"
+        },
+        {
+          "letter": "B",
+          "text": "mass is zero"
+        },
+        {
+          "letter": "C",
+          "text": "particles do not exist"
+        },
+        {
+          "letter": "D",
+          "text": "temperature is always zero"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The activity/concentration of a pure solid is treated as constant.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_017",
+      "questionNumber": 17,
+      "questionText": "A large Kc for a reaction as written generally indicates",
+      "options": [
+        {
+          "letter": "A",
+          "text": "reactants predominate at equilibrium"
+        },
+        {
+          "letter": "B",
+          "text": "products are favoured at equilibrium"
+        },
+        {
+          "letter": "C",
+          "text": "no equilibrium forms"
+        },
+        {
+          "letter": "D",
+          "text": "the reaction is always fast"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Large Kc means the equilibrium mixture contains relatively more products.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_018",
+      "questionNumber": 18,
+      "questionText": "A buffer resists changes in",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pH"
+        },
+        {
+          "letter": "C",
+          "text": "mass"
+        },
+        {
+          "letter": "D",
+          "text": "pressure only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A buffer contains a weak acid/base pair that consumes added H+ or OH−.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_019",
+      "questionNumber": 19,
+      "questionText": "At the half-equivalence point in a weak-acid/strong-base titration",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pH=pKa"
+        },
+        {
+          "letter": "B",
+          "text": "pH=0"
+        },
+        {
+          "letter": "C",
+          "text": "pH=14 always"
+        },
+        {
+          "letter": "D",
+          "text": "[H+]=0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "At half-neutralisation, [HA]=[A−], so Henderson–Hasselbalch gives pH=pKa.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_020",
+      "questionNumber": 20,
+      "questionText": "The ionic product of water at 25 °C is approximately",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0×10−14"
+        },
+        {
+          "letter": "B",
+          "text": "1.0×10−7"
+        },
+        {
+          "letter": "C",
+          "text": "1.0×10−1"
+        },
+        {
+          "letter": "D",
+          "text": "1.0×1014"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kw = [H+][OH−] ≈ 1.0×10−14 at 25 °C.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_021",
+      "questionNumber": 21,
+      "questionText": "A positive E°cell value indicates that the cell reaction as written is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "thermodynamically feasible under standard conditions"
+        },
+        {
+          "letter": "B",
+          "text": "impossible"
+        },
+        {
+          "letter": "C",
+          "text": "always infinitely fast"
+        },
+        {
+          "letter": "D",
+          "text": "at equilibrium"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A positive standard cell potential corresponds to positive driving force under standard conditions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_022",
+      "questionNumber": 22,
+      "questionText": "Oxidation occurs at the",
+      "options": [
+        {
+          "letter": "A",
+          "text": "cathode only"
+        },
+        {
+          "letter": "B",
+          "text": "anode"
+        },
+        {
+          "letter": "C",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "D",
+          "text": "voltmeter"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation is defined as loss of electrons and occurs at the anode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_023",
+      "questionNumber": 23,
+      "questionText": "A salt bridge primarily",
+      "options": [
+        {
+          "letter": "A",
+          "text": "supplies electrons"
+        },
+        {
+          "letter": "B",
+          "text": "maintains electrical neutrality and completes the ionic circuit"
+        },
+        {
+          "letter": "C",
+          "text": "stops ion movement"
+        },
+        {
+          "letter": "D",
+          "text": "increases electrode mass"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ions migrate through the salt bridge to maintain charge balance.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_024",
+      "questionNumber": 24,
+      "questionText": "For a galvanic cell, electrons flow through the external circuit from",
+      "options": [
+        {
+          "letter": "A",
+          "text": "cathode to anode"
+        },
+        {
+          "letter": "B",
+          "text": "anode to cathode"
+        },
+        {
+          "letter": "C",
+          "text": "salt bridge to cathode"
+        },
+        {
+          "letter": "D",
+          "text": "solution to solution"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation at the anode supplies electrons that travel to the cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_025",
+      "questionNumber": 25,
+      "questionText": "Faraday's laws connect electrolysis quantitatively to",
+      "options": [
+        {
+          "letter": "A",
+          "text": "charge passed and amount of substance discharged"
+        },
+        {
+          "letter": "B",
+          "text": "temperature only"
+        },
+        {
+          "letter": "C",
+          "text": "pressure only"
+        },
+        {
+          "letter": "D",
+          "text": "atomic radius only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The amount discharged depends on the quantity of electrical charge and electron stoichiometry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_026",
+      "questionNumber": 26,
+      "questionText": "Which reagent distinguishes an alkene from an alkane at room conditions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aqueous bromine"
+        },
+        {
+          "letter": "B",
+          "text": "Sodium chloride solution"
+        },
+        {
+          "letter": "C",
+          "text": "Dilute sulfuric acid only"
+        },
+        {
+          "letter": "D",
+          "text": "Limewater"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Alkenes decolourise bromine through addition across the C=C bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_027",
+      "questionNumber": 27,
+      "questionText": "Oxidation of a primary alcohol under controlled conditions can produce",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an aldehyde"
+        },
+        {
+          "letter": "B",
+          "text": "a ketone only"
+        },
+        {
+          "letter": "C",
+          "text": "an alkane"
+        },
+        {
+          "letter": "D",
+          "text": "an amide only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Primary alcohols oxidise first to aldehydes and further to carboxylic acids.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_028",
+      "questionNumber": 28,
+      "questionText": "Esterification generally involves a carboxylic acid reacting with",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an alcohol"
+        },
+        {
+          "letter": "B",
+          "text": "an alkane"
+        },
+        {
+          "letter": "C",
+          "text": "an amine only"
+        },
+        {
+          "letter": "D",
+          "text": "a metal oxide only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Carboxylic acid + alcohol ⇌ ester + water, usually acid-catalysed.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_029",
+      "questionNumber": 29,
+      "questionText": "A nucleophile is best described as a species that",
+      "options": [
+        {
+          "letter": "A",
+          "text": "accepts an electron pair"
+        },
+        {
+          "letter": "B",
+          "text": "donates an electron pair"
+        },
+        {
+          "letter": "C",
+          "text": "always loses a proton"
+        },
+        {
+          "letter": "D",
+          "text": "contains no electrons"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Nucleophiles are electron-pair donors.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_030",
+      "questionNumber": 30,
+      "questionText": "Benzene is unusually stable because its π electrons are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "localised in one double bond"
+        },
+        {
+          "letter": "B",
+          "text": "delocalised over the ring"
+        },
+        {
+          "letter": "C",
+          "text": "absent"
+        },
+        {
+          "letter": "D",
+          "text": "ionic"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A delocalised π system gives aromatic stabilisation.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_031",
+      "questionNumber": 31,
+      "questionText": "Which species is amphoteric?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Al(OH)3"
+        },
+        {
+          "letter": "B",
+          "text": "NaCl"
+        },
+        {
+          "letter": "C",
+          "text": "HCl"
+        },
+        {
+          "letter": "D",
+          "text": "CO2 only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Aluminium hydroxide reacts with both acids and bases.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_032",
+      "questionNumber": 32,
+      "questionText": "Transition-metal complexes are often coloured because",
+      "options": [
+        {
+          "letter": "A",
+          "text": "d-orbital energy differences allow absorption of visible light"
+        },
+        {
+          "letter": "B",
+          "text": "all metals are coloured"
+        },
+        {
+          "letter": "C",
+          "text": "the nucleus emits visible light"
+        },
+        {
+          "letter": "D",
+          "text": "ligands have no effect"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ligand fields split d-orbital energies; electronic transitions can absorb visible wavelengths.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_033",
+      "questionNumber": 33,
+      "questionText": "A ligand is a species that",
+      "options": [
+        {
+          "letter": "A",
+          "text": "donates an electron pair to a central metal ion"
+        },
+        {
+          "letter": "B",
+          "text": "always removes a proton"
+        },
+        {
+          "letter": "C",
+          "text": "contains no lone pairs"
+        },
+        {
+          "letter": "D",
+          "text": "must be a metal"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ligands form coordinate bonds by donating lone pairs to the metal centre.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_034",
+      "questionNumber": 34,
+      "questionText": "Which ion commonly gives a deep blue aqueous complex with excess ammonia?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cu2+"
+        },
+        {
+          "letter": "B",
+          "text": "Na+"
+        },
+        {
+          "letter": "C",
+          "text": "K+"
+        },
+        {
+          "letter": "D",
+          "text": "Ca2+"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cu2+ forms characteristic blue and deep-blue ammine complexes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_035",
+      "questionNumber": 35,
+      "questionText": "The oxidation state of sulfur in sulfate, SO4²−, is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+2"
+        },
+        {
+          "letter": "B",
+          "text": "+4"
+        },
+        {
+          "letter": "C",
+          "text": "+6"
+        },
+        {
+          "letter": "D",
+          "text": "−2"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Let sulfur be x: x + 4(−2)=−2, giving x=+6.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_036",
+      "questionNumber": 36,
+      "questionText": "In titration, concordant titres are used because they",
+      "options": [
+        {
+          "letter": "A",
+          "text": "improve reliability of the mean value"
+        },
+        {
+          "letter": "B",
+          "text": "make the indicator stronger"
+        },
+        {
+          "letter": "C",
+          "text": "change the analyte"
+        },
+        {
+          "letter": "D",
+          "text": "remove the burette"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Closely agreeing titres indicate good repeatability.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_037",
+      "questionNumber": 37,
+      "questionText": "A primary standard should be",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impure and volatile"
+        },
+        {
+          "letter": "B",
+          "text": "stable, pure and of accurately known composition"
+        },
+        {
+          "letter": "C",
+          "text": "highly reactive with air"
+        },
+        {
+          "letter": "D",
+          "text": "insoluble in all solvents"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "These properties allow accurate preparation of a solution of known concentration.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_038",
+      "questionNumber": 38,
+      "questionText": "Chromatography separates substances mainly because components",
+      "options": [
+        {
+          "letter": "A",
+          "text": "have different partition/adsorption behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "have identical solubility"
+        },
+        {
+          "letter": "C",
+          "text": "are all gases"
+        },
+        {
+          "letter": "D",
+          "text": "have the same boiling point"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Different interactions with stationary and mobile phases produce different movement.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_039",
+      "questionNumber": 39,
+      "questionText": "Infrared spectroscopy is especially useful for identifying",
+      "options": [
+        {
+          "letter": "A",
+          "text": "functional groups through characteristic absorptions"
+        },
+        {
+          "letter": "B",
+          "text": "atomic nuclei only"
+        },
+        {
+          "letter": "C",
+          "text": "mass number only"
+        },
+        {
+          "letter": "D",
+          "text": "equilibrium constants directly"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Functional groups have characteristic bond vibrations in IR spectra.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_040",
+      "questionNumber": 40,
+      "questionText": "Mass spectrometry can provide molecular information including",
+      "options": [
+        {
+          "letter": "A",
+          "text": "relative molecular mass and fragmentation patterns"
+        },
+        {
+          "letter": "B",
+          "text": "pH only"
+        },
+        {
+          "letter": "C",
+          "text": "melting point only"
+        },
+        {
+          "letter": "D",
+          "text": "density only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mass spectra give molecular-ion and fragment-mass information.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_041",
+      "questionNumber": 41,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Energy required to remove one electron from each atom in one mole of gaseous atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Energy required to remove all electrons"
+        },
+        {
+          "letter": "C",
+          "text": "Energy released when ions form"
+        },
+        {
+          "letter": "D",
+          "text": "Energy released when an atom gains an electron"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "First ionisation energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form gaseous +1 ions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_042",
+      "questionNumber": 42,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q=c/mΔT"
+        },
+        {
+          "letter": "B",
+          "text": "q=m+c+ΔT"
+        },
+        {
+          "letter": "C",
+          "text": "q=mcΔT"
+        },
+        {
+          "letter": "D",
+          "text": "q=m/cΔT"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heat transferred is q = mcΔT.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_043",
+      "questionNumber": 43,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ea becomes zero"
+        },
+        {
+          "letter": "B",
+          "text": "fewer particles exceed Ea"
+        },
+        {
+          "letter": "C",
+          "text": "more particles have energies above Ea"
+        },
+        {
+          "letter": "D",
+          "text": "all particles have the same energy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A higher-temperature distribution has a greater fraction above the activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_044",
+      "questionNumber": 44,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pH=pKa"
+        },
+        {
+          "letter": "B",
+          "text": "pH=0"
+        },
+        {
+          "letter": "C",
+          "text": "pH=14 always"
+        },
+        {
+          "letter": "D",
+          "text": "[H+]=0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "At half-neutralisation, [HA]=[A−], so Henderson–Hasselbalch gives pH=pKa.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_045",
+      "questionNumber": 45,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pressure only"
+        },
+        {
+          "letter": "C",
+          "text": "atomic radius only"
+        },
+        {
+          "letter": "D",
+          "text": "charge passed and amount of substance discharged"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The amount discharged depends on the quantity of electrical charge and electron stoichiometry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_046",
+      "questionNumber": 46,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dilute sulfuric acid only"
+        },
+        {
+          "letter": "B",
+          "text": "Limewater"
+        },
+        {
+          "letter": "C",
+          "text": "Aqueous bromine"
+        },
+        {
+          "letter": "D",
+          "text": "Sodium chloride solution"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkenes decolourise bromine through addition across the C=C bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_047",
+      "questionNumber": 47,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligands have no effect"
+        },
+        {
+          "letter": "B",
+          "text": "d-orbital energy differences allow absorption of visible light"
+        },
+        {
+          "letter": "C",
+          "text": "all metals are coloured"
+        },
+        {
+          "letter": "D",
+          "text": "the nucleus emits visible light"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligand fields split d-orbital energies; electronic transitions can absorb visible wavelengths.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_048",
+      "questionNumber": 48,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "have different partition/adsorption behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "have identical solubility"
+        },
+        {
+          "letter": "C",
+          "text": "are all gases"
+        },
+        {
+          "letter": "D",
+          "text": "have the same boiling point"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Different interactions with stationary and mobile phases produce different movement.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_049",
+      "questionNumber": 49,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "occupy quantised energy levels"
+        },
+        {
+          "letter": "B",
+          "text": "are inside the nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "have no kinetic energy"
+        },
+        {
+          "letter": "D",
+          "text": "have any energy value"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Only specific electron transitions are allowed, producing discrete spectral lines.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_050",
+      "questionNumber": 50,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enthalpy change"
+        },
+        {
+          "letter": "B",
+          "text": "Gas volume"
+        },
+        {
+          "letter": "C",
+          "text": "Relative atomic mass"
+        },
+        {
+          "letter": "D",
+          "text": "Molar concentration"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Relative atomic mass is a ratio and has no units.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_051",
+      "questionNumber": 51,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Overall order is the sum of powers: 2 + 1 = 3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_052",
+      "questionNumber": 52,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "reactants predominate at equilibrium"
+        },
+        {
+          "letter": "B",
+          "text": "products are favoured at equilibrium"
+        },
+        {
+          "letter": "C",
+          "text": "no equilibrium forms"
+        },
+        {
+          "letter": "D",
+          "text": "the reaction is always fast"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Large Kc means the equilibrium mixture contains relatively more products.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_053",
+      "questionNumber": 53,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "maintains electrical neutrality and completes the ionic circuit"
+        },
+        {
+          "letter": "B",
+          "text": "stops ion movement"
+        },
+        {
+          "letter": "C",
+          "text": "increases electrode mass"
+        },
+        {
+          "letter": "D",
+          "text": "supplies electrons"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ions migrate through the salt bridge to maintain charge balance.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_054",
+      "questionNumber": 54,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always loses a proton"
+        },
+        {
+          "letter": "B",
+          "text": "contains no electrons"
+        },
+        {
+          "letter": "C",
+          "text": "accepts an electron pair"
+        },
+        {
+          "letter": "D",
+          "text": "donates an electron pair"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Nucleophiles are electron-pair donors.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_055",
+      "questionNumber": 55,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−2"
+        },
+        {
+          "letter": "B",
+          "text": "+2"
+        },
+        {
+          "letter": "C",
+          "text": "+4"
+        },
+        {
+          "letter": "D",
+          "text": "+6"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Let sulfur be x: x + 4(−2)=−2, giving x=+6.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_056",
+      "questionNumber": 56,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "improve reliability of the mean value"
+        },
+        {
+          "letter": "B",
+          "text": "make the indicator stronger"
+        },
+        {
+          "letter": "C",
+          "text": "change the analyte"
+        },
+        {
+          "letter": "D",
+          "text": "remove the burette"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Closely agreeing titres indicate good repeatability.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_057",
+      "questionNumber": 57,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atomic radius always increases"
+        },
+        {
+          "letter": "B",
+          "text": "electrons enter lower shells"
+        },
+        {
+          "letter": "C",
+          "text": "nuclear charge decreases"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear charge increases while shielding changes little"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increasing nuclear charge with similar shielding generally strengthens attraction for outer electrons.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_058",
+      "questionNumber": 58,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always positive"
+        },
+        {
+          "letter": "B",
+          "text": "independent of temperature"
+        },
+        {
+          "letter": "C",
+          "text": "a path function"
+        },
+        {
+          "letter": "D",
+          "text": "a state function"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Enthalpy change depends only on initial and final states.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_059",
+      "questionNumber": 59,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "three"
+        },
+        {
+          "letter": "B",
+          "text": "zero"
+        },
+        {
+          "letter": "C",
+          "text": "one"
+        },
+        {
+          "letter": "D",
+          "text": "two"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rate proportional to [A]^1 when doubling concentration doubles rate.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_060",
+      "questionNumber": 60,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0×10−14"
+        },
+        {
+          "letter": "B",
+          "text": "1.0×10−7"
+        },
+        {
+          "letter": "C",
+          "text": "1.0×10−1"
+        },
+        {
+          "letter": "D",
+          "text": "1.0×1014"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kw = [H+][OH−] ≈ 1.0×10−14 at 25 °C.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_061",
+      "questionNumber": 61,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impossible"
+        },
+        {
+          "letter": "B",
+          "text": "always infinitely fast"
+        },
+        {
+          "letter": "C",
+          "text": "at equilibrium"
+        },
+        {
+          "letter": "D",
+          "text": "thermodynamically feasible under standard conditions"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A positive standard cell potential corresponds to positive driving force under standard conditions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_062",
+      "questionNumber": 62,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an alkane"
+        },
+        {
+          "letter": "B",
+          "text": "an amide only"
+        },
+        {
+          "letter": "C",
+          "text": "an aldehyde"
+        },
+        {
+          "letter": "D",
+          "text": "a ketone only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Primary alcohols oxidise first to aldehydes and further to carboxylic acids.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_063",
+      "questionNumber": 63,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "must be a metal"
+        },
+        {
+          "letter": "B",
+          "text": "donates an electron pair to a central metal ion"
+        },
+        {
+          "letter": "C",
+          "text": "always removes a proton"
+        },
+        {
+          "letter": "D",
+          "text": "contains no lone pairs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligands form coordinate bonds by donating lone pairs to the metal centre.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_064",
+      "questionNumber": 64,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "functional groups through characteristic absorptions"
+        },
+        {
+          "letter": "B",
+          "text": "atomic nuclei only"
+        },
+        {
+          "letter": "C",
+          "text": "mass number only"
+        },
+        {
+          "letter": "D",
+          "text": "equilibrium constants directly"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Functional groups have characteristic bond vibrations in IR spectra.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_065",
+      "questionNumber": 65,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Any one shell"
+        },
+        {
+          "letter": "B",
+          "text": "Only a p subshell"
+        },
+        {
+          "letter": "C",
+          "text": "Only a d subshell"
+        },
+        {
+          "letter": "D",
+          "text": "Any one orbital"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Each orbital holds a maximum of two electrons with opposite spins.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_066",
+      "questionNumber": 66,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Always zero"
+        },
+        {
+          "letter": "B",
+          "text": "Always equal to activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "Positive"
+        },
+        {
+          "letter": "D",
+          "text": "Negative"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heat is released to the surroundings, so ΔH is negative under the usual convention.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_067",
+      "questionNumber": 67,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "increasing equilibrium constant"
+        },
+        {
+          "letter": "B",
+          "text": "raising activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "providing a lower activation-energy pathway"
+        },
+        {
+          "letter": "D",
+          "text": "changing ΔH"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_068",
+      "questionNumber": 68,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pH"
+        },
+        {
+          "letter": "C",
+          "text": "mass"
+        },
+        {
+          "letter": "D",
+          "text": "pressure only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A buffer contains a weak acid/base pair that consumes added H+ or OH−.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_069",
+      "questionNumber": 69,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode to cathode"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge to cathode"
+        },
+        {
+          "letter": "C",
+          "text": "solution to solution"
+        },
+        {
+          "letter": "D",
+          "text": "cathode to anode"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxidation at the anode supplies electrons that travel to the cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_070",
+      "questionNumber": 70,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "absent"
+        },
+        {
+          "letter": "B",
+          "text": "ionic"
+        },
+        {
+          "letter": "C",
+          "text": "localised in one double bond"
+        },
+        {
+          "letter": "D",
+          "text": "delocalised over the ring"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A delocalised π system gives aromatic stabilisation.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_071",
+      "questionNumber": 71,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CO2 only"
+        },
+        {
+          "letter": "B",
+          "text": "Al(OH)3"
+        },
+        {
+          "letter": "C",
+          "text": "NaCl"
+        },
+        {
+          "letter": "D",
+          "text": "HCl"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aluminium hydroxide reacts with both acids and bases.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_072",
+      "questionNumber": 72,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impure and volatile"
+        },
+        {
+          "letter": "B",
+          "text": "stable, pure and of accurately known composition"
+        },
+        {
+          "letter": "C",
+          "text": "highly reactive with air"
+        },
+        {
+          "letter": "D",
+          "text": "insoluble in all solvents"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "These properties allow accurate preparation of a solution of known concentration.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_073",
+      "questionNumber": 73,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Na"
+        },
+        {
+          "letter": "B",
+          "text": "Mg+"
+        },
+        {
+          "letter": "C",
+          "text": "Cl−"
+        },
+        {
+          "letter": "D",
+          "text": "Na+"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Na+ has 10 electrons, the same as neon.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_074",
+      "questionNumber": 74,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always spontaneous"
+        },
+        {
+          "letter": "B",
+          "text": "catalytic"
+        },
+        {
+          "letter": "C",
+          "text": "exothermic"
+        },
+        {
+          "letter": "D",
+          "text": "endothermic"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Energy must be supplied to break a chemical bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_075",
+      "questionNumber": 75,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "removes all intermediates"
+        },
+        {
+          "letter": "B",
+          "text": "determines the observed rate law"
+        },
+        {
+          "letter": "C",
+          "text": "changes atomic numbers"
+        },
+        {
+          "letter": "D",
+          "text": "sets the melting point"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The rate-determining step constrains the rate expression for the mechanism.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_076",
+      "questionNumber": 76,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "concentration is effectively constant"
+        },
+        {
+          "letter": "B",
+          "text": "mass is zero"
+        },
+        {
+          "letter": "C",
+          "text": "particles do not exist"
+        },
+        {
+          "letter": "D",
+          "text": "temperature is always zero"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The activity/concentration of a pure solid is treated as constant.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_077",
+      "questionNumber": 77,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "cathode only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxidation is defined as loss of electrons and occurs at the anode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_078",
+      "questionNumber": 78,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an amine only"
+        },
+        {
+          "letter": "B",
+          "text": "a metal oxide only"
+        },
+        {
+          "letter": "C",
+          "text": "an alcohol"
+        },
+        {
+          "letter": "D",
+          "text": "an alkane"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Carboxylic acid + alcohol ⇌ ester + water, usually acid-catalysed.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_079",
+      "questionNumber": 79,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ca2+"
+        },
+        {
+          "letter": "B",
+          "text": "Cu2+"
+        },
+        {
+          "letter": "C",
+          "text": "Na+"
+        },
+        {
+          "letter": "D",
+          "text": "K+"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cu2+ forms characteristic blue and deep-blue ammine complexes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_080",
+      "questionNumber": 80,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "relative molecular mass and fragmentation patterns"
+        },
+        {
+          "letter": "B",
+          "text": "pH only"
+        },
+        {
+          "letter": "C",
+          "text": "melting point only"
+        },
+        {
+          "letter": "D",
+          "text": "density only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mass spectra give molecular-ion and fragment-mass information.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_081",
+      "questionNumber": 81,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Energy required to remove one electron from each atom in one mole of gaseous atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Energy required to remove all electrons"
+        },
+        {
+          "letter": "C",
+          "text": "Energy released when ions form"
+        },
+        {
+          "letter": "D",
+          "text": "Energy released when an atom gains an electron"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "First ionisation energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form gaseous +1 ions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_082",
+      "questionNumber": 82,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q=c/mΔT"
+        },
+        {
+          "letter": "B",
+          "text": "q=m+c+ΔT"
+        },
+        {
+          "letter": "C",
+          "text": "q=mcΔT"
+        },
+        {
+          "letter": "D",
+          "text": "q=m/cΔT"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heat transferred is q = mcΔT.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_083",
+      "questionNumber": 83,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ea becomes zero"
+        },
+        {
+          "letter": "B",
+          "text": "fewer particles exceed Ea"
+        },
+        {
+          "letter": "C",
+          "text": "more particles have energies above Ea"
+        },
+        {
+          "letter": "D",
+          "text": "all particles have the same energy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A higher-temperature distribution has a greater fraction above the activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_084",
+      "questionNumber": 84,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pH=pKa"
+        },
+        {
+          "letter": "B",
+          "text": "pH=0"
+        },
+        {
+          "letter": "C",
+          "text": "pH=14 always"
+        },
+        {
+          "letter": "D",
+          "text": "[H+]=0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "At half-neutralisation, [HA]=[A−], so Henderson–Hasselbalch gives pH=pKa.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_085",
+      "questionNumber": 85,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pressure only"
+        },
+        {
+          "letter": "C",
+          "text": "atomic radius only"
+        },
+        {
+          "letter": "D",
+          "text": "charge passed and amount of substance discharged"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The amount discharged depends on the quantity of electrical charge and electron stoichiometry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_086",
+      "questionNumber": 86,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dilute sulfuric acid only"
+        },
+        {
+          "letter": "B",
+          "text": "Limewater"
+        },
+        {
+          "letter": "C",
+          "text": "Aqueous bromine"
+        },
+        {
+          "letter": "D",
+          "text": "Sodium chloride solution"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkenes decolourise bromine through addition across the C=C bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_087",
+      "questionNumber": 87,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligands have no effect"
+        },
+        {
+          "letter": "B",
+          "text": "d-orbital energy differences allow absorption of visible light"
+        },
+        {
+          "letter": "C",
+          "text": "all metals are coloured"
+        },
+        {
+          "letter": "D",
+          "text": "the nucleus emits visible light"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligand fields split d-orbital energies; electronic transitions can absorb visible wavelengths.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_088",
+      "questionNumber": 88,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "have different partition/adsorption behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "have identical solubility"
+        },
+        {
+          "letter": "C",
+          "text": "are all gases"
+        },
+        {
+          "letter": "D",
+          "text": "have the same boiling point"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Different interactions with stationary and mobile phases produce different movement.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_089",
+      "questionNumber": 89,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "occupy quantised energy levels"
+        },
+        {
+          "letter": "B",
+          "text": "are inside the nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "have no kinetic energy"
+        },
+        {
+          "letter": "D",
+          "text": "have any energy value"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Only specific electron transitions are allowed, producing discrete spectral lines.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_090",
+      "questionNumber": 90,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enthalpy change"
+        },
+        {
+          "letter": "B",
+          "text": "Gas volume"
+        },
+        {
+          "letter": "C",
+          "text": "Relative atomic mass"
+        },
+        {
+          "letter": "D",
+          "text": "Molar concentration"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Relative atomic mass is a ratio and has no units.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_091",
+      "questionNumber": 91,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Overall order is the sum of powers: 2 + 1 = 3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_092",
+      "questionNumber": 92,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "reactants predominate at equilibrium"
+        },
+        {
+          "letter": "B",
+          "text": "products are favoured at equilibrium"
+        },
+        {
+          "letter": "C",
+          "text": "no equilibrium forms"
+        },
+        {
+          "letter": "D",
+          "text": "the reaction is always fast"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Large Kc means the equilibrium mixture contains relatively more products.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_093",
+      "questionNumber": 93,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "maintains electrical neutrality and completes the ionic circuit"
+        },
+        {
+          "letter": "B",
+          "text": "stops ion movement"
+        },
+        {
+          "letter": "C",
+          "text": "increases electrode mass"
+        },
+        {
+          "letter": "D",
+          "text": "supplies electrons"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ions migrate through the salt bridge to maintain charge balance.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_094",
+      "questionNumber": 94,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always loses a proton"
+        },
+        {
+          "letter": "B",
+          "text": "contains no electrons"
+        },
+        {
+          "letter": "C",
+          "text": "accepts an electron pair"
+        },
+        {
+          "letter": "D",
+          "text": "donates an electron pair"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Nucleophiles are electron-pair donors.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_095",
+      "questionNumber": 95,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−2"
+        },
+        {
+          "letter": "B",
+          "text": "+2"
+        },
+        {
+          "letter": "C",
+          "text": "+4"
+        },
+        {
+          "letter": "D",
+          "text": "+6"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Let sulfur be x: x + 4(−2)=−2, giving x=+6.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_096",
+      "questionNumber": 96,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "improve reliability of the mean value"
+        },
+        {
+          "letter": "B",
+          "text": "make the indicator stronger"
+        },
+        {
+          "letter": "C",
+          "text": "change the analyte"
+        },
+        {
+          "letter": "D",
+          "text": "remove the burette"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Closely agreeing titres indicate good repeatability.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_097",
+      "questionNumber": 97,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atomic radius always increases"
+        },
+        {
+          "letter": "B",
+          "text": "electrons enter lower shells"
+        },
+        {
+          "letter": "C",
+          "text": "nuclear charge decreases"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear charge increases while shielding changes little"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increasing nuclear charge with similar shielding generally strengthens attraction for outer electrons.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_098",
+      "questionNumber": 98,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always positive"
+        },
+        {
+          "letter": "B",
+          "text": "independent of temperature"
+        },
+        {
+          "letter": "C",
+          "text": "a path function"
+        },
+        {
+          "letter": "D",
+          "text": "a state function"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Enthalpy change depends only on initial and final states.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_099",
+      "questionNumber": 99,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "three"
+        },
+        {
+          "letter": "B",
+          "text": "zero"
+        },
+        {
+          "letter": "C",
+          "text": "one"
+        },
+        {
+          "letter": "D",
+          "text": "two"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rate proportional to [A]^1 when doubling concentration doubles rate.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_100",
+      "questionNumber": 100,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0×10−14"
+        },
+        {
+          "letter": "B",
+          "text": "1.0×10−7"
+        },
+        {
+          "letter": "C",
+          "text": "1.0×10−1"
+        },
+        {
+          "letter": "D",
+          "text": "1.0×1014"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kw = [H+][OH−] ≈ 1.0×10−14 at 25 °C.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_101",
+      "questionNumber": 101,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impossible"
+        },
+        {
+          "letter": "B",
+          "text": "always infinitely fast"
+        },
+        {
+          "letter": "C",
+          "text": "at equilibrium"
+        },
+        {
+          "letter": "D",
+          "text": "thermodynamically feasible under standard conditions"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A positive standard cell potential corresponds to positive driving force under standard conditions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_102",
+      "questionNumber": 102,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an alkane"
+        },
+        {
+          "letter": "B",
+          "text": "an amide only"
+        },
+        {
+          "letter": "C",
+          "text": "an aldehyde"
+        },
+        {
+          "letter": "D",
+          "text": "a ketone only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Primary alcohols oxidise first to aldehydes and further to carboxylic acids.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_103",
+      "questionNumber": 103,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "must be a metal"
+        },
+        {
+          "letter": "B",
+          "text": "donates an electron pair to a central metal ion"
+        },
+        {
+          "letter": "C",
+          "text": "always removes a proton"
+        },
+        {
+          "letter": "D",
+          "text": "contains no lone pairs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligands form coordinate bonds by donating lone pairs to the metal centre.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_104",
+      "questionNumber": 104,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "functional groups through characteristic absorptions"
+        },
+        {
+          "letter": "B",
+          "text": "atomic nuclei only"
+        },
+        {
+          "letter": "C",
+          "text": "mass number only"
+        },
+        {
+          "letter": "D",
+          "text": "equilibrium constants directly"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Functional groups have characteristic bond vibrations in IR spectra.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_105",
+      "questionNumber": 105,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Any one shell"
+        },
+        {
+          "letter": "B",
+          "text": "Only a p subshell"
+        },
+        {
+          "letter": "C",
+          "text": "Only a d subshell"
+        },
+        {
+          "letter": "D",
+          "text": "Any one orbital"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Each orbital holds a maximum of two electrons with opposite spins.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_106",
+      "questionNumber": 106,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Always zero"
+        },
+        {
+          "letter": "B",
+          "text": "Always equal to activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "Positive"
+        },
+        {
+          "letter": "D",
+          "text": "Negative"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heat is released to the surroundings, so ΔH is negative under the usual convention.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_107",
+      "questionNumber": 107,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "increasing equilibrium constant"
+        },
+        {
+          "letter": "B",
+          "text": "raising activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "providing a lower activation-energy pathway"
+        },
+        {
+          "letter": "D",
+          "text": "changing ΔH"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_108",
+      "questionNumber": 108,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pH"
+        },
+        {
+          "letter": "C",
+          "text": "mass"
+        },
+        {
+          "letter": "D",
+          "text": "pressure only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A buffer contains a weak acid/base pair that consumes added H+ or OH−.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_109",
+      "questionNumber": 109,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode to cathode"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge to cathode"
+        },
+        {
+          "letter": "C",
+          "text": "solution to solution"
+        },
+        {
+          "letter": "D",
+          "text": "cathode to anode"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxidation at the anode supplies electrons that travel to the cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_110",
+      "questionNumber": 110,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "absent"
+        },
+        {
+          "letter": "B",
+          "text": "ionic"
+        },
+        {
+          "letter": "C",
+          "text": "localised in one double bond"
+        },
+        {
+          "letter": "D",
+          "text": "delocalised over the ring"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A delocalised π system gives aromatic stabilisation.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_111",
+      "questionNumber": 111,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CO2 only"
+        },
+        {
+          "letter": "B",
+          "text": "Al(OH)3"
+        },
+        {
+          "letter": "C",
+          "text": "NaCl"
+        },
+        {
+          "letter": "D",
+          "text": "HCl"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aluminium hydroxide reacts with both acids and bases.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_112",
+      "questionNumber": 112,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impure and volatile"
+        },
+        {
+          "letter": "B",
+          "text": "stable, pure and of accurately known composition"
+        },
+        {
+          "letter": "C",
+          "text": "highly reactive with air"
+        },
+        {
+          "letter": "D",
+          "text": "insoluble in all solvents"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "These properties allow accurate preparation of a solution of known concentration.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_113",
+      "questionNumber": 113,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Na"
+        },
+        {
+          "letter": "B",
+          "text": "Mg+"
+        },
+        {
+          "letter": "C",
+          "text": "Cl−"
+        },
+        {
+          "letter": "D",
+          "text": "Na+"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Na+ has 10 electrons, the same as neon.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_114",
+      "questionNumber": 114,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always spontaneous"
+        },
+        {
+          "letter": "B",
+          "text": "catalytic"
+        },
+        {
+          "letter": "C",
+          "text": "exothermic"
+        },
+        {
+          "letter": "D",
+          "text": "endothermic"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Energy must be supplied to break a chemical bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_115",
+      "questionNumber": 115,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "removes all intermediates"
+        },
+        {
+          "letter": "B",
+          "text": "determines the observed rate law"
+        },
+        {
+          "letter": "C",
+          "text": "changes atomic numbers"
+        },
+        {
+          "letter": "D",
+          "text": "sets the melting point"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The rate-determining step constrains the rate expression for the mechanism.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_116",
+      "questionNumber": 116,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "concentration is effectively constant"
+        },
+        {
+          "letter": "B",
+          "text": "mass is zero"
+        },
+        {
+          "letter": "C",
+          "text": "particles do not exist"
+        },
+        {
+          "letter": "D",
+          "text": "temperature is always zero"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The activity/concentration of a pure solid is treated as constant.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_117",
+      "questionNumber": 117,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "cathode only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxidation is defined as loss of electrons and occurs at the anode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_118",
+      "questionNumber": 118,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an amine only"
+        },
+        {
+          "letter": "B",
+          "text": "a metal oxide only"
+        },
+        {
+          "letter": "C",
+          "text": "an alcohol"
+        },
+        {
+          "letter": "D",
+          "text": "an alkane"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Carboxylic acid + alcohol ⇌ ester + water, usually acid-catalysed.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_119",
+      "questionNumber": 119,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ca2+"
+        },
+        {
+          "letter": "B",
+          "text": "Cu2+"
+        },
+        {
+          "letter": "C",
+          "text": "Na+"
+        },
+        {
+          "letter": "D",
+          "text": "K+"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cu2+ forms characteristic blue and deep-blue ammine complexes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_120",
+      "questionNumber": 120,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "relative molecular mass and fragmentation patterns"
+        },
+        {
+          "letter": "B",
+          "text": "pH only"
+        },
+        {
+          "letter": "C",
+          "text": "melting point only"
+        },
+        {
+          "letter": "D",
+          "text": "density only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mass spectra give molecular-ion and fragment-mass information.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_121",
+      "questionNumber": 121,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Energy required to remove one electron from each atom in one mole of gaseous atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Energy required to remove all electrons"
+        },
+        {
+          "letter": "C",
+          "text": "Energy released when ions form"
+        },
+        {
+          "letter": "D",
+          "text": "Energy released when an atom gains an electron"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "First ionisation energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form gaseous +1 ions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_122",
+      "questionNumber": 122,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q=c/mΔT"
+        },
+        {
+          "letter": "B",
+          "text": "q=m+c+ΔT"
+        },
+        {
+          "letter": "C",
+          "text": "q=mcΔT"
+        },
+        {
+          "letter": "D",
+          "text": "q=m/cΔT"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heat transferred is q = mcΔT.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_123",
+      "questionNumber": 123,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ea becomes zero"
+        },
+        {
+          "letter": "B",
+          "text": "fewer particles exceed Ea"
+        },
+        {
+          "letter": "C",
+          "text": "more particles have energies above Ea"
+        },
+        {
+          "letter": "D",
+          "text": "all particles have the same energy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A higher-temperature distribution has a greater fraction above the activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_124",
+      "questionNumber": 124,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pH=pKa"
+        },
+        {
+          "letter": "B",
+          "text": "pH=0"
+        },
+        {
+          "letter": "C",
+          "text": "pH=14 always"
+        },
+        {
+          "letter": "D",
+          "text": "[H+]=0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "At half-neutralisation, [HA]=[A−], so Henderson–Hasselbalch gives pH=pKa.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_125",
+      "questionNumber": 125,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pressure only"
+        },
+        {
+          "letter": "C",
+          "text": "atomic radius only"
+        },
+        {
+          "letter": "D",
+          "text": "charge passed and amount of substance discharged"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The amount discharged depends on the quantity of electrical charge and electron stoichiometry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_126",
+      "questionNumber": 126,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dilute sulfuric acid only"
+        },
+        {
+          "letter": "B",
+          "text": "Limewater"
+        },
+        {
+          "letter": "C",
+          "text": "Aqueous bromine"
+        },
+        {
+          "letter": "D",
+          "text": "Sodium chloride solution"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkenes decolourise bromine through addition across the C=C bond.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_127",
+      "questionNumber": 127,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligands have no effect"
+        },
+        {
+          "letter": "B",
+          "text": "d-orbital energy differences allow absorption of visible light"
+        },
+        {
+          "letter": "C",
+          "text": "all metals are coloured"
+        },
+        {
+          "letter": "D",
+          "text": "the nucleus emits visible light"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligand fields split d-orbital energies; electronic transitions can absorb visible wavelengths.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_128",
+      "questionNumber": 128,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "have different partition/adsorption behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "have identical solubility"
+        },
+        {
+          "letter": "C",
+          "text": "are all gases"
+        },
+        {
+          "letter": "D",
+          "text": "have the same boiling point"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Different interactions with stationary and mobile phases produce different movement.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_129",
+      "questionNumber": 129,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "occupy quantised energy levels"
+        },
+        {
+          "letter": "B",
+          "text": "are inside the nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "have no kinetic energy"
+        },
+        {
+          "letter": "D",
+          "text": "have any energy value"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Only specific electron transitions are allowed, producing discrete spectral lines.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_130",
+      "questionNumber": 130,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enthalpy change"
+        },
+        {
+          "letter": "B",
+          "text": "Gas volume"
+        },
+        {
+          "letter": "C",
+          "text": "Relative atomic mass"
+        },
+        {
+          "letter": "D",
+          "text": "Molar concentration"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Relative atomic mass is a ratio and has no units.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_131",
+      "questionNumber": 131,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Overall order is the sum of powers: 2 + 1 = 3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_132",
+      "questionNumber": 132,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "reactants predominate at equilibrium"
+        },
+        {
+          "letter": "B",
+          "text": "products are favoured at equilibrium"
+        },
+        {
+          "letter": "C",
+          "text": "no equilibrium forms"
+        },
+        {
+          "letter": "D",
+          "text": "the reaction is always fast"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Large Kc means the equilibrium mixture contains relatively more products.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_133",
+      "questionNumber": 133,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "maintains electrical neutrality and completes the ionic circuit"
+        },
+        {
+          "letter": "B",
+          "text": "stops ion movement"
+        },
+        {
+          "letter": "C",
+          "text": "increases electrode mass"
+        },
+        {
+          "letter": "D",
+          "text": "supplies electrons"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ions migrate through the salt bridge to maintain charge balance.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_134",
+      "questionNumber": 134,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always loses a proton"
+        },
+        {
+          "letter": "B",
+          "text": "contains no electrons"
+        },
+        {
+          "letter": "C",
+          "text": "accepts an electron pair"
+        },
+        {
+          "letter": "D",
+          "text": "donates an electron pair"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Nucleophiles are electron-pair donors.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_135",
+      "questionNumber": 135,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−2"
+        },
+        {
+          "letter": "B",
+          "text": "+2"
+        },
+        {
+          "letter": "C",
+          "text": "+4"
+        },
+        {
+          "letter": "D",
+          "text": "+6"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Let sulfur be x: x + 4(−2)=−2, giving x=+6.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_136",
+      "questionNumber": 136,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "improve reliability of the mean value"
+        },
+        {
+          "letter": "B",
+          "text": "make the indicator stronger"
+        },
+        {
+          "letter": "C",
+          "text": "change the analyte"
+        },
+        {
+          "letter": "D",
+          "text": "remove the burette"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Closely agreeing titres indicate good repeatability.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_137",
+      "questionNumber": 137,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atomic radius always increases"
+        },
+        {
+          "letter": "B",
+          "text": "electrons enter lower shells"
+        },
+        {
+          "letter": "C",
+          "text": "nuclear charge decreases"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear charge increases while shielding changes little"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increasing nuclear charge with similar shielding generally strengthens attraction for outer electrons.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_138",
+      "questionNumber": 138,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "always positive"
+        },
+        {
+          "letter": "B",
+          "text": "independent of temperature"
+        },
+        {
+          "letter": "C",
+          "text": "a path function"
+        },
+        {
+          "letter": "D",
+          "text": "a state function"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Enthalpy change depends only on initial and final states.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_139",
+      "questionNumber": 139,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "three"
+        },
+        {
+          "letter": "B",
+          "text": "zero"
+        },
+        {
+          "letter": "C",
+          "text": "one"
+        },
+        {
+          "letter": "D",
+          "text": "two"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rate proportional to [A]^1 when doubling concentration doubles rate.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_140",
+      "questionNumber": 140,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0×10−14"
+        },
+        {
+          "letter": "B",
+          "text": "1.0×10−7"
+        },
+        {
+          "letter": "C",
+          "text": "1.0×10−1"
+        },
+        {
+          "letter": "D",
+          "text": "1.0×1014"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Kw = [H+][OH−] ≈ 1.0×10−14 at 25 °C.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_141",
+      "questionNumber": 141,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "impossible"
+        },
+        {
+          "letter": "B",
+          "text": "always infinitely fast"
+        },
+        {
+          "letter": "C",
+          "text": "at equilibrium"
+        },
+        {
+          "letter": "D",
+          "text": "thermodynamically feasible under standard conditions"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A positive standard cell potential corresponds to positive driving force under standard conditions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_142",
+      "questionNumber": 142,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an alkane"
+        },
+        {
+          "letter": "B",
+          "text": "an amide only"
+        },
+        {
+          "letter": "C",
+          "text": "an aldehyde"
+        },
+        {
+          "letter": "D",
+          "text": "a ketone only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Primary alcohols oxidise first to aldehydes and further to carboxylic acids.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_143",
+      "questionNumber": 143,
+      "questionText": "In an examination question on inorganic chemistry, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "must be a metal"
+        },
+        {
+          "letter": "B",
+          "text": "donates an electron pair to a central metal ion"
+        },
+        {
+          "letter": "C",
+          "text": "always removes a proton"
+        },
+        {
+          "letter": "D",
+          "text": "contains no lone pairs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ligands form coordinate bonds by donating lone pairs to the metal centre.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_144",
+      "questionNumber": 144,
+      "questionText": "Which observation is consistent with analytical and applied chemistry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "functional groups through characteristic absorptions"
+        },
+        {
+          "letter": "B",
+          "text": "atomic nuclei only"
+        },
+        {
+          "letter": "C",
+          "text": "mass number only"
+        },
+        {
+          "letter": "D",
+          "text": "equilibrium constants directly"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Functional groups have characteristic bond vibrations in IR spectra.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_145",
+      "questionNumber": 145,
+      "questionText": "A learner is analysing a problem in atomic structure. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Any one shell"
+        },
+        {
+          "letter": "B",
+          "text": "Only a p subshell"
+        },
+        {
+          "letter": "C",
+          "text": "Only a d subshell"
+        },
+        {
+          "letter": "D",
+          "text": "Any one orbital"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Each orbital holds a maximum of two electrons with opposite spins.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_146",
+      "questionNumber": 146,
+      "questionText": "Which statement is the most accurate application of the amount of substance and energetics principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Always zero"
+        },
+        {
+          "letter": "B",
+          "text": "Always equal to activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "Positive"
+        },
+        {
+          "letter": "D",
+          "text": "Negative"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heat is released to the surroundings, so ΔH is negative under the usual convention.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_147",
+      "questionNumber": 147,
+      "questionText": "In an examination question on kinetics, which conclusion is justified?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "increasing equilibrium constant"
+        },
+        {
+          "letter": "B",
+          "text": "raising activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "providing a lower activation-energy pathway"
+        },
+        {
+          "letter": "D",
+          "text": "changing ΔH"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_148",
+      "questionNumber": 148,
+      "questionText": "Which observation is consistent with equilibrium and acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "temperature only"
+        },
+        {
+          "letter": "B",
+          "text": "pH"
+        },
+        {
+          "letter": "C",
+          "text": "mass"
+        },
+        {
+          "letter": "D",
+          "text": "pressure only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A buffer contains a weak acid/base pair that consumes added H+ or OH−.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_149",
+      "questionNumber": 149,
+      "questionText": "A learner is analysing a problem in redox and electrochemistry. Which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode to cathode"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge to cathode"
+        },
+        {
+          "letter": "C",
+          "text": "solution to solution"
+        },
+        {
+          "letter": "D",
+          "text": "cathode to anode"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxidation at the anode supplies electrons that travel to the cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_a_chem_p1_150",
+      "questionNumber": 150,
+      "questionText": "Which statement is the most accurate application of the organic chemistry principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "absent"
+        },
+        {
+          "letter": "B",
+          "text": "ionic"
+        },
+        {
+          "letter": "C",
+          "text": "localised in one double bond"
+        },
+        {
+          "letter": "D",
+          "text": "delocalised over the ring"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A delocalised π system gives aromatic stabilisation.",
+      "answerConfidence": "high"
+    }
+  ]
+}

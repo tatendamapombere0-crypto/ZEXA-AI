@@ -1,0 +1,245 @@
+[
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_01",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "1. Data Collection, Sampling and Statistical Investigations",
+    "content": "A. STATISTICAL INVESTIGATIONS\nStatistics is the systematic collection, organisation, presentation, analysis and interpretation of data for the purpose of making informed conclusions. A statistical investigation normally proceeds through: identifying the problem; defining the population and variables; choosing a sampling or census method; collecting data; organising and presenting the data; analysing the data; interpreting results; and reporting conclusions with limitations.\n\nPopulation: the complete set of individuals, objects or measurements about which information is required. A sample is a subset selected from the population. A census investigates every member of the population. A sampling frame is a list or other operational representation from which the sample is selected. The frame should cover the target population as completely as possible.\n\nVARIABLES\nA qualitative variable records a category or attribute, for example province, occupation or preferred brand. A quantitative variable records numerical measurements. A discrete variable takes separate countable values, while a continuous variable can take any value in an interval. A variable may also be classified as nominal, ordinal, interval or ratio according to the nature of its measurement.\n\nPRIMARY AND SECONDARY DATA\nPrimary data are collected specifically for the investigation, for example by questionnaire, interview, observation or experiment. Secondary data have already been collected for another purpose, for example administrative records, published reports or official statistics. The investigator should consider accuracy, relevance, date, coverage and method of collection when using secondary data.\n\nSAMPLING METHODS\nSimple random sampling gives every possible sample of the required size an equal chance of selection. Random numbers can be used to select units from a sampling frame.\nSystematic sampling selects units at a regular interval after a random starting point. If N units are available and n are required, the sampling interval is approximately N/n.\nStratified sampling divides the population into homogeneous strata and samples from each stratum, often in proportion to stratum size. It is useful when important subgroups must be represented.\nCluster sampling divides the population into naturally occurring groups and selects clusters, then investigates all or some units within selected clusters.\nQuota sampling selects specified numbers from categories without necessarily using random selection.\nConvenience sampling selects units that are easiest to access. It is simple but vulnerable to bias.\nJudgement or purposive sampling uses informed selection by the investigator and can be appropriate in specialised studies but is not generally representative.\n\nBIAS AND ERRORS\nSampling bias occurs when the selection process systematically favours some members or characteristics. Non-response bias occurs when selected people do not respond and respondents differ from non-respondents. Response bias can arise from leading questions, interviewer influence, inaccurate recall or deliberate misreporting. Measurement error occurs when an instrument or procedure does not measure the variable accurately. Random sampling error is natural variation between samples and cannot normally be eliminated by taking only one sample.\n\nQUESTIONNAIRES\nA good questionnaire uses clear, neutral and unambiguous questions. Avoid double-barrelled questions, unnecessary technical language, leading wording and overlapping response categories. Closed questions are easier to code and analyse; open questions may provide richer information. A pilot study can identify confusing wording, excessive length and missing response options.\n\nEXPERIMENTAL DESIGN\nIn an experiment, treatments are deliberately imposed and outcomes observed. Important ideas include randomisation, replication and control. A control group provides a comparison. Blinding can reduce observer or participant effects. Blocking groups similar experimental units before randomisation and can reduce unwanted variation. Association in observational data does not by itself establish causation.\n\nEXAMINATION POINTS\nAlways identify the target population before discussing a sample. When asked for advantages and disadvantages of a method, link the answer to representativeness, cost, time, feasibility and bias. When interpreting an investigation, distinguish a statement about the sample from a justified inference about the population.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Data Collection, Sampling and Statistical Investigations",
+      "Statistics",
+      "ZIMSEC",
+      "collection",
+      "data",
+      "investigations",
+      "sampling",
+      "statistical"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_02",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "2. Presentation and Description of Data",
+    "content": "DATA PRESENTATION\nRaw data should be organised before analysis. Frequency tables summarise repeated observations. For grouped continuous data, use class intervals and class boundaries carefully. Class width is the difference between successive boundaries. Class midpoint or class centre is (lower boundary + upper boundary)/2.\n\nFREQUENCY, RELATIVE FREQUENCY AND CUMULATIVE FREQUENCY\nFrequency is the number of observations in a category or class. Relative frequency is frequency divided by total frequency. Cumulative frequency is the running total. For unequal class widths, a histogram must use frequency density rather than frequency as its vertical measure:\nfrequency density = frequency / class width.\nThe area of each histogram rectangle represents frequency.\n\nGRAPHS\nBar charts are appropriate for categorical or discrete data where categories are distinct. Histograms are appropriate for continuous grouped data and have touching rectangles. Frequency polygons plot class centres against frequencies or frequency densities, as appropriate. Pie charts represent proportions by sector angle:\nangle = (category frequency / total frequency) × 360°.\nA stem-and-leaf diagram retains individual values while showing distributional shape. Back-to-back stem-and-leaf diagrams can compare two groups.\n\nBOX-AND-WHISKER PLOTS\nA box plot is based on the minimum, lower quartile Q1, median Q2, upper quartile Q3 and maximum, or suitable modified values when outliers are excluded. Interquartile range is IQR = Q3 − Q1. The plot helps compare centre, spread and skewness.\n\nMEASURES OF LOCATION\nArithmetic mean:\nx̄ = Σx/n for ungrouped data.\nFor a frequency distribution:\nx̄ = Σfx/Σf.\nFor grouped continuous data, class centres are used as approximations:\nx̄ ≈ Σ(f × class centre)/Σf.\nWeighted mean:\nx̄w = Σwx/Σw.\n\nMEDIAN\nThe median is the central value after ordering the data. For an even number of observations it is the mean of the two central observations. In grouped data the median can be estimated from the cumulative frequency distribution by locating the median position and interpolating within the median class when required.\n\nMODE\nThe mode is the most frequent value. In grouped data, the modal class has the largest frequency; with unequal class widths, frequency density should be considered when identifying the class with greatest concentration.\n\nMEASURES OF DISPERSION\nRange = maximum − minimum.\nVariance of a population:\nσ² = (Σx²/n) − x̄².\nSample variance, when an unbiased estimate of population variance is required:\ns² = [Σx² − (Σx)²/n]/(n−1).\nEquivalent computational forms should be used carefully.\nStandard deviation is the positive square root of variance.\n\nLINEAR TRANSFORMATIONS\nIf Y = aX + b:\nE(Y) = aE(X) + b,\nVar(Y) = a²Var(X),\nSD(Y) = |a|SD(X).\nAdding a constant changes the mean but not the variance. Multiplication by a changes the standard deviation by |a| and the variance by a².\n\nSKEWNESS AND INTERPRETATION\nA distribution may be approximately symmetric, positively skewed or negatively skewed. The mean is pulled toward a long tail, whereas the median is more resistant to extreme observations. When commenting on a distribution, mention centre, spread, skewness and unusual observations where appropriate.\n\nGRAPHICAL ACCURACY\nFor exam graphs, label both axes, state units, choose an appropriate uniform scale, plot points accurately and draw the required line or curve. ZIMSEC examiner feedback has specifically identified incorrect frequency-density axes, poor graph labelling and inaccurate pie-chart construction as recurring problems.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Presentation and Description of Data",
+      "Statistics",
+      "ZIMSEC",
+      "data",
+      "description",
+      "presentation"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_03",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "3. Probability",
+    "content": "BASIC PROBABILITY\nFor an event A, 0 ≤ P(A) ≤ 1. P(A') = 1 − P(A). For mutually exclusive events A and B:\nP(A ∪ B) = P(A) + P(B).\nIn general:\nP(A ∪ B) = P(A) + P(B) − P(A ∩ B).\n\nCONDITIONAL PROBABILITY\nP(A|B) = P(A ∩ B)/P(B), provided P(B) > 0.\nMultiplication rule:\nP(A ∩ B) = P(A|B)P(B) = P(B|A)P(A).\nIndependence means occurrence of one event does not change the probability of the other:\nP(A|B)=P(A), equivalently P(A∩B)=P(A)P(B).\n\nTREE DIAGRAMS\nTree diagrams represent sequences of events. Probabilities on branches are conditional probabilities when earlier outcomes affect later trials. Multiply along branches to obtain the probability of a complete path, then add probabilities of mutually exclusive paths. Without replacement must be reflected by changing the numerator and denominator after each selection.\n\nTOTAL PROBABILITY\nIf B1, B2, ..., Bn form a partition:\nP(A)=ΣP(A|Bi)P(Bi).\n\nBAYES' THEOREM\nP(Bj|A) = P(A|Bj)P(Bj) / ΣP(A|Bi)P(Bi).\nInterpretation should distinguish a prior probability from a posterior probability.\n\nCOUNTING\nThe number of ordered arrangements of n distinct objects is n!. The number of arrangements of r objects selected from n is nPr = n!/(n−r)!. The number of selections of r objects from n where order is irrelevant is nCr = n!/[r!(n−r)!].\nCombinations are appropriate when selecting groups; permutations are appropriate when order matters.\n\nBINOMIAL COEFFICIENTS\nnCr = nC(n−r), and Pascal-type identities may simplify calculations. The binomial expansion also provides coefficients used in probability calculations.\n\nCOMMON ERRORS\nDo not add probabilities of events that are not mutually exclusive. Do not assume independence merely because two events are described separately. In without-replacement problems, later probabilities normally change. Clearly identify whether the required event is an intersection, union, complement or conditional event.\n\nEXAMINATION INTERPRETATION\nA correct numerical answer is not always sufficient. In conditional probability questions, state the condition clearly. In tree diagrams, label every branch. If a quadratic produces two possible probability values, reject any value outside [0,1].",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Probability",
+      "Statistics",
+      "ZIMSEC",
+      "probability"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_04",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "4. Discrete Random Variables and Probability Distributions",
+    "content": "RANDOM VARIABLES\nA random variable X assigns a numerical value to each outcome of a random experiment. A discrete random variable has a countable set of possible values. A probability distribution lists the possible values and their probabilities, with ΣP(X=x)=1.\n\nEXPECTED VALUE\nE(X)=ΣxP(X=x).\nFor a function g(X):\nE[g(X)] = Σg(x)P(X=x).\nVariance:\nVar(X)=E(X²)−[E(X)]².\nStandard deviation is √Var(X).\n\nLINEAR COMBINATIONS\nFor Y=aX+b:\nE(Y)=aE(X)+b,\nVar(Y)=a²Var(X).\nIf X and Y are independent:\nVar(X+Y)=Var(X)+Var(Y).\nMore generally, Var(aX+bY)=a²Var(X)+b²Var(Y)+2abCov(X,Y).\n\nBINOMIAL DISTRIBUTION\nX ~ B(n,p) when there are n fixed trials, each trial has two outcomes, the probability of success p is constant, and trials are independent. q=1−p.\nP(X=x)=nCx p^x q^(n−x), x=0,1,...,n.\nMean=np.\nVariance=npq.\nStandard deviation=√(npq).\nTypical applications include the number of successes in repeated independent trials.\n\nGEOMETRIC DISTRIBUTION\nThe geometric model describes the number of trials up to and including the first success. If X~Geo(p), with q=1−p:\nP(X=x)=q^(x−1)p, x=1,2,...\nE(X)=1/p,\nVar(X)=q/p².\nThe memoryless property is:\nP(X>m+n | X>m)=P(X>n).\nThe probability that at least n trials are required is P(X≥n)=q^(n−1).\n\nPOISSON DISTRIBUTION\nX~Po(λ) models a count of events occurring in a fixed interval when events occur independently at a constant average rate.\nP(X=x)=e^(−λ) λ^x/x!, x=0,1,2,...\nE(X)=λ,\nVar(X)=λ.\nFor a changed interval, scale λ in proportion to the length or exposure. For example, if the average is λ events per hour, the expected number in t hours is λt.\n\nUNIFORM DISCRETE DISTRIBUTION\nWhen each of n possible values is equally likely, each has probability 1/n. The mean is the arithmetic average of the possible values. Variance can be obtained directly from E(X²)−[E(X)]².\n\nIDENTIFYING A DISTRIBUTION\nLook for clues: fixed number of independent success/failure trials suggests Binomial; trials until first success suggests Geometric; counts of events in a fixed interval with a rate suggests Poisson; equally likely finite outcomes suggests a discrete uniform model.\n\nMODELLING\nA statistical model is an idealised probability description. State the assumptions before applying it. A model may be mathematically convenient but only appropriate if its assumptions are reasonable. Exam answers should not simply write a distribution; explain why the situation fits it.\n\nZIMSEC EXAM EMPHASIS\nThe 2022 examiner report identified incorrect identification of Uniform and Geometric distributions as a problem and also noted difficulty recalling the Geometric variance formula. Candidates should learn both the defining conditions and formulae, not merely memorise distribution names.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Discrete Random Variables and Probability Distributions",
+      "Statistics",
+      "ZIMSEC",
+      "discrete",
+      "distributions",
+      "probability",
+      "random",
+      "variables"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_05",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "5. Continuous Random Variables and Probability Density Functions",
+    "content": "CONTINUOUS RANDOM VARIABLES\nA continuous random variable can take values throughout intervals. Probabilities are represented by areas under a probability density function (pdf), f(x). A valid pdf satisfies f(x)≥0 and ∫f(x)dx over its entire support =1.\n\nFor a continuous variable:\nP(a<X<b)=∫a^b f(x)dx.\nFor continuous X, P(X=a)=0, so endpoint inclusion does not change probability.\n\nCUMULATIVE DISTRIBUTION FUNCTION\nF(x)=P(X≤x)=∫ from lower support limit to x of f(t)dt.\nThen P(a<X≤b)=F(b)−F(a).\nWhere differentiable, f(x)=F'(x).\n\nEXPECTATION AND VARIANCE\nE(X)=∫x f(x)dx over the support.\nE(X²)=∫x² f(x)dx.\nVar(X)=E(X²)−[E(X)]².\nFor a transformation, use the appropriate expectation formula.\n\nUNIFORM CONTINUOUS DISTRIBUTION\nIf X is uniform on [a,b], its pdf is 1/(b−a) on the interval and 0 outside.\nE(X)=(a+b)/2.\nVar(X)=(b−a)²/12.\nProbabilities are proportional to interval length:\nP(c<X<d)=(d−c)/(b−a), for a≤c<d≤b.\n\nEXPONENTIAL DISTRIBUTION\nFor rate λ>0:\nf(x)=λe^(−λx), x≥0.\nF(x)=1−e^(−λx).\nP(X>x)=e^(−λx).\nE(X)=1/λ.\nVar(X)=1/λ².\nThe exponential distribution models waiting times between Poisson events. It has the memoryless property:\nP(X>s+t | X>s)=P(X>t).\n\nMODELLING AND SUPPORT\nAlways state the range over which a pdf applies. To find an unknown constant k, use the condition that total probability is one. To find a median or percentile, solve F(x)=required probability. To find an interval probability, integrate over the relevant interval.\n\nCOMMON ERRORS\nDo not treat a pdf value f(x) as a probability. Probability is area, not height. Check that the density integrates to one. When finding a constant, include the complete support. For exponential questions, identify whether the rate or mean waiting time is given.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Continuous Random Variables and Probability Density Functions",
+      "Statistics",
+      "ZIMSEC",
+      "continuous",
+      "density",
+      "functions",
+      "probability",
+      "random",
+      "variables"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_06",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "6. Normal Distribution and Normal Approximations",
+    "content": "NORMAL DISTRIBUTION\nA normal random variable has a bell-shaped, symmetric distribution. Write X~N(μ,σ²), where μ is the mean and σ² is the variance. The curve is symmetric about μ and total area is 1.\n\nSTANDARDISATION\nZ=(X−μ)/σ.\nIf X~N(μ,σ²), then Z~N(0,1).\nUse standard normal tables or an approved calculator to obtain probabilities.\n\nPROBABILITY CALCULATIONS\nP(X<a)=P(Z<(a−μ)/σ).\nP(X>a)=1−P(Z<(a−μ)/σ).\nP(a<X<b)=P((a−μ)/σ<Z<(b−μ)/σ).\nFor symmetric tables, use the appropriate symmetry of the standard normal distribution.\n\nPERCENTILES\nTo find x such that P(X<x)=p, find the corresponding standard-normal value z and use:\nx=μ+zσ.\n\nSAMPLE MEANS AND CENTRAL LIMIT THEOREM\nFor independent observations from a population with mean μ and variance σ², the sample mean has mean μ and variance σ²/n. For large n, the Central Limit Theorem gives an approximate normal distribution for the sample mean even when the original population is not normal, subject to the usual conditions.\n\nNORMAL APPROXIMATION TO BINOMIAL\nFor X~B(n,p), if np and nq are sufficiently large, X can be approximated by N(np,npq). Because X is discrete and the normal variable is continuous, use continuity correction.\nP(X≤k) becomes approximately P(Y<k+0.5).\nP(X≥k) becomes approximately P(Y>k−0.5).\nP(a≤X≤b) becomes approximately P(a−0.5<Y<b+0.5).\n\nCONTINUITY CORRECTION\nThe correction is essential when converting an integer-valued event to an interval under a continuous normal model. ZIMSEC examiner feedback specifically identified failure to use continuity correction as a recurring source of incorrect answers.\n\nNORMAL APPROXIMATION TO A SAMPLE PROPORTION\nIf X~B(n,p), then p̂=X/n. Approximately:\np̂ ~ N(p,pq/n)\nfor sufficiently large n.\n\nINTERPRETATION\nAlways state whether the probability is for an individual observation, a count, a sample mean or a sample proportion. The parameters and units must match the random variable being standardised.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Normal Distribution and Normal Approximations",
+      "Statistics",
+      "ZIMSEC",
+      "approximations",
+      "distribution",
+      "normal"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_07",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "7. Sampling Distributions, Estimation and Confidence Intervals",
+    "content": "SAMPLING DISTRIBUTION\nA statistic is a numerical quantity calculated from a sample, such as x̄ or p̂. Its sampling distribution describes how that statistic varies over repeated samples.\n\nSAMPLE MEAN\nFor independent observations with population mean μ and variance σ²:\nE(X̄)=μ,\nVar(X̄)=σ²/n,\nSE(X̄)=σ/√n.\nFor large samples, X̄ is approximately normal by the Central Limit Theorem. If the population itself is normal, the normal result holds for any sample size.\n\nESTIMATION\nA point estimate is a single sample-based estimate of a population parameter. The sample mean estimates μ. A sample proportion estimates a population proportion p. An estimator should ideally be unbiased, consistent and reasonably efficient.\n\nUNBIASED ESTIMATION\nAn estimator T is unbiased for θ if E(T)=θ. The usual sample variance\ns² = Σ(x−x̄)²/(n−1)\nis an unbiased estimator of population variance σ² under the standard random-sampling assumptions.\n\nCONFIDENCE INTERVALS\nA confidence interval gives a range of plausible values for an unknown population parameter, constructed by a specified procedure. A 95% confidence procedure captures the true parameter in approximately 95% of repeated applications under the model assumptions.\n\nFor a large-sample mean with known or appropriate estimated standard deviation:\nx̄ ± z* (σ/√n).\nFor a population proportion:\np̂ ± z*√[p̂(1−p̂)/n]\nwhen the normal approximation is justified.\n\nCommon z values include approximately 1.645 for 90%, 1.96 for 95% and 2.576 for 99%.\n\nINTERPRETING WIDTH\nLarger sample size decreases standard error and narrows the interval. Higher confidence requires a larger critical value and therefore produces a wider interval. Greater variability produces a wider interval.\n\nCONFIDENCE INTERVAL FOR A PROPORTION\nCheck that the sample is large enough for the normal approximation. In ZIMSEC-style questions, the sample proportion is used in the estimated standard error unless the question specifies otherwise.\n\nCENTRAL LIMIT THEOREM\nState the theorem in terms of the distribution of the sample mean for a sufficiently large random sample and the resulting mean and variance. The 2021 ZIMSEC Paper 1 directly tested the theorem and a 95% confidence interval for a population mean.\n\nCOMMON ERRORS\nDo not confuse population standard deviation with standard error. Do not use n−1 in the denominator of a confidence-interval standard error unless the required estimator specifically calls for it. Keep confidence level, critical value and interpretation consistent.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Sampling Distributions, Estimation and Confidence Intervals",
+      "Statistics",
+      "ZIMSEC",
+      "confidence",
+      "distributions",
+      "estimation",
+      "intervals",
+      "sampling"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_08",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "8. Hypothesis Testing",
+    "content": "STATISTICAL HYPOTHESES\nA null hypothesis H0 is a statement about a population parameter or distribution, usually representing the status quo or no effect. The alternative hypothesis H1 or HA states the competing claim.\n\nTests may be:\none-tailed: H1: μ>μ0 or H1: μ<μ0;\ntwo-tailed: H1: μ≠μ0.\nThe alternative determines the rejection region.\n\nSIGNIFICANCE LEVEL\nThe significance level α is the probability of rejecting H0 when H0 is true. Common levels are 10%, 5% and 1%.\n\nTEST STATISTIC\nA test statistic measures how far the observed sample result is from the value expected under H0, usually in standard-error units.\n\nNORMAL TEST FOR A MEAN\nWhen the model permits:\nZ=(x̄−μ0)/(σ/√n).\nCompare the calculated value with the relevant critical value, or use a p-value.\n\nTEST FOR A PROPORTION\nFor a hypothesised p0:\nZ=(p̂−p0)/√[p0(1−p0)/n].\nThe denominator uses p0 because the test statistic is calculated under H0.\n\nBINOMIAL TESTS\nWhen the sample is small or the Binomial model is required, calculate the exact tail probability under H0 rather than replacing it automatically by a normal approximation.\n\nERRORS\nType I error: rejecting H0 when H0 is true.\nType II error: failing to reject H0 when H0 is false.\nThe significance level controls the Type I error probability in the usual test procedure.\n\nDECISION AND CONCLUSION\nA correct conclusion must refer to the context. Do not simply say “accept H0”; normally say “there is insufficient evidence to reject H0” or “there is sufficient evidence to reject H0 in favour of H1.” If a test is at 5%, compare with the 5% critical boundary or p-value.\n\nCHI-SQUARE TESTS\nFor categorical data:\nχ²=Σ[(O−E)²/E].\nFor goodness-of-fit, expected frequencies are determined by the hypothesised distribution. Degrees of freedom depend on the number of categories and parameters estimated from the data.\nFor contingency tables, test independence between two categorical variables. Expected frequency for a cell is:\n(row total × column total)/grand total.\nDegrees of freedom=(number of rows−1)(number of columns−1).\n\nCONTINUITY CORRECTION\nWhen appropriate for a discrete distribution approximated by a continuous normal distribution, use continuity correction before standardising. Examiner feedback has specifically highlighted this in hypothesis testing.\n\nGOODNESS-OF-FIT TO NORMAL\nGrouped observations can be compared with expected normal frequencies calculated from interval probabilities. If parameters are estimated from the same sample, the degrees of freedom must reflect the number of estimated parameters according to the syllabus/test procedure.\n\nP-VALUE\nThe p-value is the probability, assuming H0 is true, of obtaining a result at least as extreme as the observed result in the direction relevant to H1. Reject H0 when p<α. Otherwise do not reject H0.\n\nEXAM PRESENTATION\nWrite H0 and H1, identify the test distribution, calculate the statistic, state the critical value or p-value, make the decision, and give a contextual conclusion.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Hypothesis Testing",
+      "Statistics",
+      "ZIMSEC",
+      "hypothesis",
+      "testing"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_09",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "9. Correlation and Regression",
+    "content": "BIVARIATE DATA\nBivariate data consist of paired observations (x,y). A scatter diagram is used to investigate the relationship. A positive association means larger x values tend to accompany larger y values; a negative association means the opposite. A linear relationship is one that can be reasonably represented by a straight line.\n\nPRODUCT MOMENT CORRELATION\nPearson's correlation coefficient r measures the strength and direction of linear association:\nr = Sxy / √(Sxx Syy),\nwhere\nSxx=Σ(x−x̄)²,\nSyy=Σ(y−ȳ)²,\nSxy=Σ(x−x̄)(y−ȳ).\n−1≤r≤1.\nValues close to +1 indicate strong positive linear correlation; values close to −1 indicate strong negative linear correlation; values near 0 indicate weak linear correlation.\n\nCORRELATION IS NOT CAUSATION\nA high correlation does not prove that changes in x cause changes in y. A third variable, coincidence or another mechanism may explain the association.\n\nREGRESSION LINE OF Y ON X\nThe least-squares regression line of y on x is:\ny = a + bx,\nwhere\nb=Sxy/Sxx,\na=ȳ−b x̄.\nIt is the line that minimises the sum of squared vertical residuals.\n\nREGRESSION LINE OF X ON Y\nSimilarly:\nx = c + dy,\nwhere\nd=Sxy/Syy,\nc=x̄−dȳ.\nThe two regression lines both pass through (x̄,ȳ).\n\nPREDICTION\nUse y on x to predict y from a given x. Use x on y to predict x from a given y. Predictions inside the observed range are interpolations and are generally more reliable than extrapolations beyond the observed range.\n\nCOEFFICIENT OF DETERMINATION\nr² measures the proportion of variation in the response that is explained by the linear regression relationship, under the model interpretation. Express r² as a percentage when appropriate.\n\nRESIDUALS\nA residual is observed y minus predicted y:\ne=y−ŷ.\nA residual plot can reveal curvature, changing variance or other model problems. A random pattern around zero supports the adequacy of a linear model more than a systematic pattern does.\n\nCOMMENTING\nA full comment should include direction and strength, for example “strong positive linear correlation,” rather than merely saying “positive.” If r is close to zero, do not claim that there is no relationship at all; say there is little or no evidence of linear correlation.\n\nGRAPHING\nUse a scatter diagram with labelled axes and a sensible uniform scale. Draw a line of best fit only when requested. Do not use the regression equation when the question specifically asks for a graphical estimate.\n\nZIMSEC EMPHASIS\nThe 2022 examiner report identified regression and correlation, especially commenting on the correlation coefficient, as an area requiring attention. It also noted candidates sometimes substituted into the regression equation when the question asked for a graphical estimate.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Correlation and Regression",
+      "Statistics",
+      "ZIMSEC",
+      "correlation",
+      "regression"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_10",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "10. Time Series and Forecasting",
+    "content": "TIME SERIES\nA time series is a sequence of observations recorded over time, usually at regular intervals. Examples include monthly sales, quarterly production, annual rainfall or daily demand.\n\nCOMPONENTS\nThe main components are:\nTrend (T): long-term upward or downward movement.\nSeasonal variation (S): regular pattern repeating within a year or shorter fixed period.\nCyclical variation (C): longer-term oscillations around trend, often associated with economic or business cycles.\nIrregular/random variation (I): unpredictable residual movement.\n\nTREND\nA trend describes the long-term direction, not every short-term movement. A fitted trend may be represented by a straight line:\ny=a+bt.\nThe sign of b indicates upward or downward trend.\n\nMOVING AVERAGES\nA moving average smooths short-term fluctuations. For an odd number of periods, calculate successive averages and associate them with the central period. For example, a 3-point moving average is:\n(x_{t−1}+x_t+x_{t+1})/3.\nA moving average of order equal to the seasonal period can help remove seasonal effects.\n\nCENTRED MOVING AVERAGES\nWhen the moving-average order is even, the averages fall between time periods. Centring is then used by averaging adjacent moving averages so the final smoothed value aligns with an actual period.\n\nLEAST-SQUARES TREND\nFor a linear trend, estimate a and b using least squares. Choose a convenient coding of time, often x=0 at the middle of the data, to simplify calculations. The fitted trend can be used for interpolation or cautious forecasting.\n\nSEASONAL INDICES\nSeasonal indices measure typical seasonal effects relative to the overall level. In a multiplicative model, an index of 1 (or 100%) represents average level; values above 1 indicate above-average seasonal activity and values below 1 indicate below-average activity. Seasonal indices are often adjusted so their average is 1 over a complete seasonal cycle.\n\nDESEASONALISING AND FORECASTING\nFor multiplicative seasonality:\ndeseasonalised value = observed value / seasonal index.\nA trend can be fitted to deseasonalised data, then seasonal effects reintroduced to obtain forecasts.\n\nADDITIVE MODEL\nAn additive model can be written:\nY=T+S+C+I.\nA multiplicative model is:\nY=T×S×C×I.\nChoose the model according to how variation changes with the level of the series and the context.\n\nFORECASTING VERSUS PLANNING\nForecasting concerns what is expected to happen in the future based on evidence and a model. Planning concerns the actions to be taken in response to expected conditions. The 2022 examiner report noted confusion between these terms.\n\nLIMITATIONS\nForecasts are uncertain. Structural changes, unusual events, changing consumer behaviour and model inadequacy can reduce reliability. Extrapolation should be treated cautiously, especially far beyond the observed period.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Statistics",
+      "Time Series and Forecasting",
+      "ZIMSEC",
+      "forecasting",
+      "series",
+      "time"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_11",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "11. Index Numbers",
+    "content": "INDEX NUMBERS\nAn index number measures relative change in a variable or group of variables compared with a base period. The base period index is usually 100.\n\nSIMPLE PRICE RELATIVE\nFor commodity i:\nprice relative = (current price/base price) ×100.\nAn index of 120 means the price is 20% higher than in the base period. An index of 85 means it is 15% lower.\n\nSIMPLE AGGREGATE INDEX\nA simple aggregate price index is:\nΣp1 / Σp0 ×100,\nwhere p0 is the base-period price and p1 is the current-period price.\n\nWEIGHTED INDICES\nWeights represent importance, such as quantities purchased or expenditure shares. Weighted indices prevent a low-importance item from having the same influence as a major item.\n\nLASPEYRES PRICE INDEX\nL = [Σ(p1 q0)/Σ(p0 q0)]×100.\nIt uses base-period quantities as weights.\n\nPAASCHE PRICE INDEX\nP = [Σ(p1 q1)/Σ(p0 q1)]×100.\nIt uses current-period quantities as weights.\n\nFISHER'S IDEAL INDEX\nFisher's index is the geometric mean of the Laspeyres and Paasche indices:\nF=√(LP).\n\nINTERPRETATION\nIf an index is 135, prices or the measured quantity are 35% above the base-period level. The percentage change from index I is I−100 percent when I is expressed on a base-100 scale.\n\nLIMITATIONS\nIndex numbers depend on the selected basket, base period, weights, quality adjustments and data reliability. They may become less representative when consumption patterns change. A change in an index does not automatically explain why the change occurred.\n\nLINKING OR CHANGING BASE\nWhen indices from different base periods need comparison, rebase them consistently using the relevant base relationship. Always identify the base year before interpreting a number.\n\nAPPLICATIONS\nIndex numbers can be used for prices, quantities, wages, production and other economic indicators. In practical interpretation, distinguish a price index from a measure of real output or quantity.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Index Numbers",
+      "Statistics",
+      "ZIMSEC",
+      "index",
+      "numbers"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_topic_12",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "12. Statistical Decision-Making, Interpretation and Examination Practice",
+    "content": "STATISTICAL REASONING\nA good statistical solution combines calculation with interpretation. Every numerical result should answer the question asked and be stated in context. A correct method with an inappropriate conclusion can still lose marks.\n\nCHOOSING A METHOD\nAsk:\n1. What type of data are present: categorical, discrete, continuous or paired?\n2. Is the problem about probability, estimation, association, prediction or testing?\n3. What assumptions are given?\n4. Which parameter is involved?\n5. Is the sample large enough for an approximation?\n6. Is the requested result a probability, interval, test decision, graph, estimate or interpretation?\n\nFORMULA DISCIPLINE\nWrite the model and parameter values before substituting. Keep units consistent. Do not round intermediate values unnecessarily. Follow the question's required accuracy. If no accuracy is stated, follow the examination convention indicated on the paper.\n\nCOMMON ZIMSEC EXAMINATION WEAKNESSES\nZIMSEC's November 2022 examiner report highlighted several recurring issues: failure to identify the correct probability distribution; confusion between variance and standard deviation; incorrect frequency-density calculations and graph axes; difficulty interpreting conditional probability; weak definitions of population and sampling frame; problems with continuity correction; weak comments on regression/correlation; and difficulty with permutations and combinations. It also highlighted related mathematical skills such as integration, differentiation, logarithms and sums of series where these are required by statistical questions.\n\nDEFINITIONS\nDefinitions should contain the key distinguishing feature. For example, a population is the whole group under consideration, while a sampling frame is a list or operational representation from which a sample is selected. Avoid circular definitions.\n\nWORKING\nShow enough working to make the statistical method clear. For tests, show hypotheses, test statistic and decision rule. For confidence intervals, show estimate, standard error, critical value and resulting interval. For distributions, identify the distribution and its parameters before calculating.\n\nGRAPH QUESTIONS\nUse graph paper where appropriate. Label axes, include units, use an appropriate scale and plot accurately. For histograms with unequal class widths, use frequency density. For scatter diagrams, plot ordered pairs correctly.\n\nCONTEXTUAL CONCLUSIONS\nInstead of writing “H0 is true,” use the statistically appropriate wording “there is insufficient evidence to reject H0.” If rejecting, identify what the evidence supports. Avoid claiming causation from correlation alone.\n\nREVISION STRATEGY\nBuild a formula sheet, but learn the conditions behind each formula. Practise identifying distributions from wording. Practise complete hypothesis-test structures and confidence intervals. Work through graph interpretation, regression and time-series questions. After each question, check not only the arithmetic but whether the final statement answers the exact wording.\n\nQUALITY CHECKLIST\nBefore submitting:\n- Have all hypotheses been stated?\n- Have the correct tail and significance level been used?\n- Has continuity correction been applied where needed?\n- Are standard deviation and variance distinguished?\n- Are graph axes and units correct?\n- Is the statistical conclusion written in context?\n- Have sufficient significant figures been retained?\n- If a model was used, were its assumptions reasonable?",
+    "source": "ZIMSEC Advanced Level Statistics 6046; supplemented with syllabus-aligned statistical explanations",
+    "keywords": [
+      "6046",
+      "A Level Statistics",
+      "Statistical Decision-Making, Interpretation and Examination Practice",
+      "Statistics",
+      "ZIMSEC",
+      "decision-making",
+      "examination",
+      "interpretation",
+      "practice",
+      "statistical"
+    ]
+  },
+  {
+    "id": "zimsec_a_level_statistics_6046_formula_reference",
+    "level": "A-Level",
+    "subject": "Statistics",
+    "topic": "13. Formulae and Statistical Methods Reference",
+    "content": "A-LEVEL STATISTICS 6046 — CORE FORMULA AND METHOD REFERENCE\n\nData:\nx̄=Σx/n; x̄=Σfx/Σf; weighted mean=Σwx/Σw.\nPopulation variance σ²=Σx²/n−x̄².\nUnbiased sample variance s²=[Σx²−(Σx)²/n]/(n−1).\nSD=√variance.\nFor Y=aX+b: E(Y)=aE(X)+b; Var(Y)=a²Var(X).\n\nProbability:\nP(A')=1−P(A).\nP(A∪B)=P(A)+P(B)−P(A∩B).\nP(A|B)=P(A∩B)/P(B).\nP(A∩B)=P(A|B)P(B).\nFor independent A,B: P(A∩B)=P(A)P(B).\n\nCounting:\nnPr=n!/(n−r)!.\nnCr=n!/[r!(n−r)!].\n\nBinomial:\nP(X=x)=nCx p^x q^(n−x), q=1−p.\nE(X)=np; Var(X)=npq.\n\nGeometric:\nP(X=x)=q^(x−1)p.\nE(X)=1/p; Var(X)=q/p².\nP(X≥n)=q^(n−1).\n\nPoisson:\nP(X=x)=e^(−λ)λ^x/x!.\nE(X)=Var(X)=λ.\n\nUniform continuous:\nf(x)=1/(b−a), a≤x≤b.\nE(X)=(a+b)/2; Var(X)=(b−a)²/12.\n\nExponential:\nf(x)=λe^(−λx), x≥0.\nP(X>x)=e^(−λx).\nE(X)=1/λ; Var(X)=1/λ².\n\nNormal:\nZ=(X−μ)/σ.\nFor X̄: E(X̄)=μ; Var(X̄)=σ²/n.\nFor large n, X̄≈N(μ,σ²/n).\nFor p̂: approximately N(p,pq/n).\nBinomial normal approximation: Y~N(np,npq), with continuity correction.\n\nConfidence intervals:\nestimate ± critical value × standard error.\nCommon z values: 90%→1.645; 95%→1.96; 99%→2.576.\n\nHypothesis tests:\nMean test statistic Z=(x̄−μ0)/(σ/√n).\nProportion test statistic Z=(p̂−p0)/√[p0(1−p0)/n].\nChi-square: χ²=Σ(O−E)²/E.\nContingency-table expected frequency=(row total×column total)/grand total.\n\nCorrelation:\nr=Sxy/√(SxxSyy).\nRegression y on x: y=a+bx, b=Sxy/Sxx, a=ȳ−bx̄.\nRegression x on y: x=c+dy, d=Sxy/Syy, c=x̄−dȳ.\nCoefficient of determination=r².\n\nTime series:\n3-point moving average=(x_{t−1}+x_t+x_{t+1})/3.\nTrend line y=a+bt.\nMultiplicative deseasonalisation=observed/seasonal index.\n\nIndex numbers:\nSimple price relative=(p1/p0)×100.\nLaspeyres=[Σp1q0/Σp0q0]×100.\nPaasche=[Σp1q1/Σp0q1]×100.\nFisher=√(Laspeyres×Paasche).\n\nAlways identify the model, state assumptions where relevant, show working and interpret the final result in context.",
+    "source": "ZIMSEC Advanced Level Statistics 6046; formulae consolidated for study use",
+    "keywords": [
+      "formulae",
+      "formula sheet",
+      "statistics formulas",
+      "6046",
+      "normal",
+      "binomial",
+      "poisson",
+      "geometric",
+      "regression",
+      "hypothesis testing",
+      "confidence intervals"
+    ]
+  }
+]

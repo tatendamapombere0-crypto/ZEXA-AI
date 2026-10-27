@@ -1,0 +1,3921 @@
+{
+  "paperInfo": {
+    "subject": "Chemistry",
+    "level": "O-Level",
+    "paperCode": "4024/01",
+    "paperName": "Chemistry Paper 1",
+    "paperType": "Multiple Choice",
+    "syllabus": "O-Level Chemistry Forms 3–4 (revised 2024–2030; ZIMSEC code 4024)",
+    "coverage": "Original expanded practice bank synthesised from ZIMSEC syllabus scope and recurring examination-style skills; not a reproduction of copyrighted past-paper text.",
+    "source": "ZIMSEC official resources (www5.zimsec.co.zw) and syllabus copies hosted on StudyLib (studylib.net).",
+    "referenceYears": [
+      "2023",
+      "2024",
+      "2025",
+      "June 2026"
+    ],
+    "notes": "150 original MCQs covering the syllabus breadth and common Paper 1 skills."
+  },
+  "questions": [
+    {
+      "id": "zimsec_o_chem_p1_001",
+      "questionNumber": 1,
+      "questionText": "A substance is heated and its particles gain kinetic energy. Which change is most directly explained by this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_002",
+      "questionNumber": 2,
+      "questionText": "Which observation provides evidence for diffusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A liquid settling at the bottom of a beaker"
+        },
+        {
+          "letter": "B",
+          "text": "A gas spreading through a room"
+        },
+        {
+          "letter": "C",
+          "text": "A solid retaining its shape"
+        },
+        {
+          "letter": "D",
+          "text": "A crystal melting at a fixed temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diffusion is the net movement of particles from a region of higher concentration to lower concentration.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_003",
+      "questionNumber": 3,
+      "questionText": "Why is a gas much more compressible than a solid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gas particles have no mass"
+        },
+        {
+          "letter": "B",
+          "text": "Gas particles are farther apart"
+        },
+        {
+          "letter": "C",
+          "text": "Solid particles are chemically bonded into atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Gas particles stop moving"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Large spaces between gas particles can be reduced by applying pressure.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_004",
+      "questionNumber": 4,
+      "questionText": "Which change is endothermic at particle level?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Freezing"
+        },
+        {
+          "letter": "B",
+          "text": "Condensation"
+        },
+        {
+          "letter": "C",
+          "text": "Melting"
+        },
+        {
+          "letter": "D",
+          "text": "Deposition"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Melting requires energy to overcome attractive forces between particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_005",
+      "questionNumber": 5,
+      "questionText": "A pure substance has a sharp melting point. What does this most strongly suggest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It contains many impurities"
+        },
+        {
+          "letter": "B",
+          "text": "It has a characteristic fixed composition"
+        },
+        {
+          "letter": "C",
+          "text": "It must be a mixture of gases"
+        },
+        {
+          "letter": "D",
+          "text": "It has no particles"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A pure substance changes state at a characteristic temperature under fixed pressure.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_006",
+      "questionNumber": 6,
+      "questionText": "Which particle determines the atomic number of an element?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutron"
+        },
+        {
+          "letter": "B",
+          "text": "Electron"
+        },
+        {
+          "letter": "C",
+          "text": "Proton"
+        },
+        {
+          "letter": "D",
+          "text": "Nucleon"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Atomic number is the number of protons in the nucleus.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_007",
+      "questionNumber": 7,
+      "questionText": "An atom has 17 protons and 18 electrons. What is its charge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+1"
+        },
+        {
+          "letter": "B",
+          "text": "0"
+        },
+        {
+          "letter": "C",
+          "text": "−1"
+        },
+        {
+          "letter": "D",
+          "text": "+17"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_008",
+      "questionNumber": 8,
+      "questionText": "Isotopes of an element have the same number of",
+      "options": [
+        {
+          "letter": "A",
+          "text": "neutrons"
+        },
+        {
+          "letter": "B",
+          "text": "protons"
+        },
+        {
+          "letter": "C",
+          "text": "nucleons"
+        },
+        {
+          "letter": "D",
+          "text": "mass numbers"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Isotopes have the same proton number but different neutron numbers.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_009",
+      "questionNumber": 9,
+      "questionText": "Across a period, elements generally change from metals to",
+      "options": [
+        {
+          "letter": "A",
+          "text": "metals only"
+        },
+        {
+          "letter": "B",
+          "text": "non-metals"
+        },
+        {
+          "letter": "C",
+          "text": "noble gases only"
+        },
+        {
+          "letter": "D",
+          "text": "transition metals only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The broad trend across a period is from metallic to non-metallic character.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_010",
+      "questionNumber": 10,
+      "questionText": "Why do noble gases have low chemical reactivity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They have no electrons"
+        },
+        {
+          "letter": "B",
+          "text": "Their outer electron shells are complete"
+        },
+        {
+          "letter": "C",
+          "text": "They contain only neutrons"
+        },
+        {
+          "letter": "D",
+          "text": "They are all solids"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A complete outer shell makes electron gain, loss or sharing less favourable.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_011",
+      "questionNumber": 11,
+      "questionText": "Which bonding involves electrostatic attraction between oppositely charged ions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Covalent"
+        },
+        {
+          "letter": "B",
+          "text": "Metallic"
+        },
+        {
+          "letter": "C",
+          "text": "Ionic"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ionic bonding is attraction between positive and negative ions.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_012",
+      "questionNumber": 12,
+      "questionText": "Why does solid sodium chloride not conduct electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It has no ions"
+        },
+        {
+          "letter": "B",
+          "text": "Its ions are fixed in a lattice"
+        },
+        {
+          "letter": "C",
+          "text": "Its electrons are delocalised"
+        },
+        {
+          "letter": "D",
+          "text": "It contains only molecules"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The ions cannot move freely in the solid lattice.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_013",
+      "questionNumber": 13,
+      "questionText": "Which substance is expected to have a giant covalent structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_014",
+      "questionNumber": 14,
+      "questionText": "Why does graphite conduct electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It contains mobile ions"
+        },
+        {
+          "letter": "B",
+          "text": "It has delocalised electrons"
+        },
+        {
+          "letter": "C",
+          "text": "It melts at room temperature"
+        },
+        {
+          "letter": "D",
+          "text": "It contains water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each carbon layer has delocalised electrons that can move.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_015",
+      "questionNumber": 15,
+      "questionText": "Metallic bonding can explain why metals are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "brittle and non-conducting"
+        },
+        {
+          "letter": "B",
+          "text": "malleable and electrically conducting"
+        },
+        {
+          "letter": "C",
+          "text": "always gases"
+        },
+        {
+          "letter": "D",
+          "text": "soluble in water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Delocalised electrons carry charge and allow metal layers to slide without the lattice breaking completely.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_016",
+      "questionNumber": 16,
+      "questionText": "How many moles are present in 18 g of water, Mr = 18?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "18"
+        },
+        {
+          "letter": "D",
+          "text": "36"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Moles = mass/Mr = 18/18 = 1 mol.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_017",
+      "questionNumber": 17,
+      "questionText": "What is the relative formula mass of CaCO3? (Ca=40, C=12, O=16)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "68"
+        },
+        {
+          "letter": "B",
+          "text": "84"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "116"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "40 + 12 + (3×16) = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_018",
+      "questionNumber": 18,
+      "questionText": "At r.t.p., approximately what volume is occupied by 2 mol of gas if 1 mol occupies 24 dm³?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 dm³"
+        },
+        {
+          "letter": "B",
+          "text": "24 dm³"
+        },
+        {
+          "letter": "C",
+          "text": "48 dm³"
+        },
+        {
+          "letter": "D",
+          "text": "72 dm³"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Volume = moles × molar gas volume = 2×24 = 48 dm³.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_019",
+      "questionNumber": 19,
+      "questionText": "A solution contains 0.50 mol solute in 2.0 dm³. What is its concentration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "4.0 mol dm−3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_020",
+      "questionNumber": 20,
+      "questionText": "A reaction gives 8 g product when 10 g is theoretically possible. What is the percentage yield?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20%"
+        },
+        {
+          "letter": "B",
+          "text": "40%"
+        },
+        {
+          "letter": "C",
+          "text": "80%"
+        },
+        {
+          "letter": "D",
+          "text": "125%"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Percentage yield = actual/theoretical ×100 = 8/10×100 = 80%.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_021",
+      "questionNumber": 21,
+      "questionText": "Which ion is characteristic of an acidic aqueous solution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Na+"
+        },
+        {
+          "letter": "B",
+          "text": "H+"
+        },
+        {
+          "letter": "C",
+          "text": "OH−"
+        },
+        {
+          "letter": "D",
+          "text": "Cl−"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Acids produce hydrogen ions in aqueous solution.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_022",
+      "questionNumber": 22,
+      "questionText": "Which substance is an alkali?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Copper(II) oxide"
+        },
+        {
+          "letter": "B",
+          "text": "Sodium hydroxide solution"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Calcium carbonate"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An alkali is a soluble base; sodium hydroxide solution is an alkali.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_023",
+      "questionNumber": 23,
+      "questionText": "Which indicator is commonly suitable for a strong acid–strong alkali titration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methyl orange"
+        },
+        {
+          "letter": "B",
+          "text": "Starch only"
+        },
+        {
+          "letter": "C",
+          "text": "Iodine only"
+        },
+        {
+          "letter": "D",
+          "text": "Benedict's solution"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Methyl orange is an acid-base indicator suitable for strong acid/strong alkali titrations.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_024",
+      "questionNumber": 24,
+      "questionText": "What is formed when an acid reacts with a metal carbonate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Salt, water and carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Salt and oxygen only"
+        },
+        {
+          "letter": "C",
+          "text": "Metal and water"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen and oxygen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Acid + carbonate → salt + water + carbon dioxide.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_025",
+      "questionNumber": 25,
+      "questionText": "A solution of pH 2 is how many times more acidic in hydrogen-ion concentration than pH 4?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_026",
+      "questionNumber": 26,
+      "questionText": "Which change usually increases reaction rate by increasing collision frequency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "B",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "D",
+          "text": "Using larger lumps only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_027",
+      "questionNumber": 27,
+      "questionText": "What does a catalyst do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases equilibrium yield permanently"
+        },
+        {
+          "letter": "B",
+          "text": "Provides an alternative pathway with lower activation energy"
+        },
+        {
+          "letter": "C",
+          "text": "Gets consumed completely"
+        },
+        {
+          "letter": "D",
+          "text": "Raises the activation energy"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A catalyst changes the pathway and lowers activation energy without being consumed overall.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_028",
+      "questionNumber": 28,
+      "questionText": "In a reversible reaction at dynamic equilibrium, the forward and reverse rates are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "both zero"
+        },
+        {
+          "letter": "B",
+          "text": "equal"
+        },
+        {
+          "letter": "C",
+          "text": "always increasing"
+        },
+        {
+          "letter": "D",
+          "text": "unrelated"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "At dynamic equilibrium the opposing reaction rates are equal.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_029",
+      "questionNumber": 29,
+      "questionText": "If concentration of a reactant is increased, the system tends initially to",
+      "options": [
+        {
+          "letter": "A",
+          "text": "oppose the change by consuming some added reactant"
+        },
+        {
+          "letter": "B",
+          "text": "stop all reactions"
+        },
+        {
+          "letter": "C",
+          "text": "remove the catalyst"
+        },
+        {
+          "letter": "D",
+          "text": "change the atomic numbers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The equilibrium shifts in the direction that reduces the effect of the concentration increase.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_030",
+      "questionNumber": 30,
+      "questionText": "Why does powdered calcium carbonate usually react faster than large lumps of the same mass with acid?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Powder has lower purity"
+        },
+        {
+          "letter": "B",
+          "text": "Powder has greater surface area"
+        },
+        {
+          "letter": "C",
+          "text": "Powder has fewer particles"
+        },
+        {
+          "letter": "D",
+          "text": "Powder is always a catalyst"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Greater surface area gives more frequent collisions between reactant particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_031",
+      "questionNumber": 31,
+      "questionText": "Oxidation can be defined as",
+      "options": [
+        {
+          "letter": "A",
+          "text": "gain of electrons"
+        },
+        {
+          "letter": "B",
+          "text": "loss of electrons"
+        },
+        {
+          "letter": "C",
+          "text": "gain of neutrons"
+        },
+        {
+          "letter": "D",
+          "text": "loss of protons only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation is loss of electrons; reduction is gain.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_032",
+      "questionNumber": 32,
+      "questionText": "In electrolysis, positive ions move towards the",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_033",
+      "questionNumber": 33,
+      "questionText": "Which substance is reduced when Cu2+ gains electrons?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cu2+"
+        },
+        {
+          "letter": "B",
+          "text": "Cu"
+        },
+        {
+          "letter": "C",
+          "text": "e−"
+        },
+        {
+          "letter": "D",
+          "text": "SO4²−"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cu2+ + 2e− → Cu, so Cu2+ is reduced.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_034",
+      "questionNumber": 34,
+      "questionText": "What is the main role of an electrolyte in electrolysis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To prevent ion movement"
+        },
+        {
+          "letter": "B",
+          "text": "To provide mobile ions"
+        },
+        {
+          "letter": "C",
+          "text": "To remove all electrons"
+        },
+        {
+          "letter": "D",
+          "text": "To act only as an indicator"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An electrolyte contains ions that can carry charge when molten or dissolved.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_035",
+      "questionNumber": 35,
+      "questionText": "A more reactive metal can generally displace a less reactive metal from its",
+      "options": [
+        {
+          "letter": "A",
+          "text": "oxide or salt compound"
+        },
+        {
+          "letter": "B",
+          "text": "nucleus"
+        },
+        {
+          "letter": "C",
+          "text": "isotope"
+        },
+        {
+          "letter": "D",
+          "text": "electron shell only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A more reactive metal is more readily oxidised and can displace a less reactive metal from suitable compounds.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_036",
+      "questionNumber": 36,
+      "questionText": "Which ore is a common source of iron?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bauxite"
+        },
+        {
+          "letter": "B",
+          "text": "Hematite"
+        },
+        {
+          "letter": "C",
+          "text": "Galena"
+        },
+        {
+          "letter": "D",
+          "text": "Malachite"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hematite is iron(III) oxide and an important iron ore.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_037",
+      "questionNumber": 37,
+      "questionText": "Why is aluminium extracted by electrolysis rather than carbon reduction in the usual industrial process?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aluminium is less reactive than carbon"
+        },
+        {
+          "letter": "B",
+          "text": "Aluminium is more reactive than carbon"
+        },
+        {
+          "letter": "C",
+          "text": "Aluminium has no ions"
+        },
+        {
+          "letter": "D",
+          "text": "Carbon is an electrolyte"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aluminium is too reactive for practical extraction by carbon reduction.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_038",
+      "questionNumber": 38,
+      "questionText": "What is rusting of iron essentially?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "D",
+          "text": "Reaction with carbon dioxide only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_039",
+      "questionNumber": 39,
+      "questionText": "Which property makes copper useful in electrical wiring?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Poor conductivity"
+        },
+        {
+          "letter": "B",
+          "text": "High electrical conductivity and ductility"
+        },
+        {
+          "letter": "C",
+          "text": "Extreme brittleness"
+        },
+        {
+          "letter": "D",
+          "text": "High solubility in water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Copper conducts well and can be drawn into wires.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_040",
+      "questionNumber": 40,
+      "questionText": "Why are alloys often harder than pure metals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They contain no atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Different-sized atoms disrupt regular layers"
+        },
+        {
+          "letter": "C",
+          "text": "They have no metallic bonding"
+        },
+        {
+          "letter": "D",
+          "text": "They are always ionic"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Different atom sizes hinder the easy sliding of metal layers.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_041",
+      "questionNumber": 41,
+      "questionText": "Which gas is the largest component of dry air?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Argon"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Nitrogen makes up about 78% of dry air.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_042",
+      "questionNumber": 42,
+      "questionText": "What is the test for carbon dioxide?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Relights a glowing splint"
+        },
+        {
+          "letter": "B",
+          "text": "Turns limewater milky"
+        },
+        {
+          "letter": "C",
+          "text": "Pops with a lighted splint"
+        },
+        {
+          "letter": "D",
+          "text": "Turns cobalt chloride blue"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Carbon dioxide reacts with limewater to form insoluble calcium carbonate.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_043",
+      "questionNumber": 43,
+      "questionText": "Which process converts atmospheric nitrogen into biologically useful compounds by lightning or industrial fixation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen fixation"
+        },
+        {
+          "letter": "B",
+          "text": "Distillation"
+        },
+        {
+          "letter": "C",
+          "text": "Sublimation"
+        },
+        {
+          "letter": "D",
+          "text": "Neutralisation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen fixation converts N2 into compounds that can enter the nitrogen cycle.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_044",
+      "questionNumber": 44,
+      "questionText": "Which gas is strongly associated with acid rain from sulfur-containing fuels?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_045",
+      "questionNumber": 45,
+      "questionText": "Why is oxygen important in combustion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It acts as an oxidising agent"
+        },
+        {
+          "letter": "B",
+          "text": "It is always a fuel"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all reactions"
+        },
+        {
+          "letter": "D",
+          "text": "It is inert"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxygen supports oxidation reactions involved in combustion.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_046",
+      "questionNumber": 46,
+      "questionText": "Which functional group identifies an alcohol?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−OH"
+        },
+        {
+          "letter": "B",
+          "text": "−COOH"
+        },
+        {
+          "letter": "C",
+          "text": "−COO−"
+        },
+        {
+          "letter": "D",
+          "text": "−NH2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Alcohols contain a hydroxyl group, −OH.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_047",
+      "questionNumber": 47,
+      "questionText": "What is the general formula of an alkane?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CnH2n"
+        },
+        {
+          "letter": "B",
+          "text": "CnH2n+2"
+        },
+        {
+          "letter": "C",
+          "text": "CnH2n−2"
+        },
+        {
+          "letter": "D",
+          "text": "CnHn"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Acyclic saturated hydrocarbons follow CnH2n+2.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_048",
+      "questionNumber": 48,
+      "questionText": "Ethene can undergo addition polymerisation because it contains",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a carbon-carbon double bond"
+        },
+        {
+          "letter": "B",
+          "text": "only single bonds"
+        },
+        {
+          "letter": "C",
+          "text": "an ionic bond"
+        },
+        {
+          "letter": "D",
+          "text": "a carboxyl group"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The C=C bond opens to form links in the polymer chain.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_049",
+      "questionNumber": 49,
+      "questionText": "Complete combustion of a hydrocarbon produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "carbon and hydrogen"
+        },
+        {
+          "letter": "B",
+          "text": "carbon dioxide and water"
+        },
+        {
+          "letter": "C",
+          "text": "carbon monoxide only"
+        },
+        {
+          "letter": "D",
+          "text": "nitrogen and water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "With sufficient oxygen, carbon forms CO2 and hydrogen forms H2O.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_050",
+      "questionNumber": 50,
+      "questionText": "Why is recycling polymers environmentally useful?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "B",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "C",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all combustion"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_051",
+      "questionNumber": 51,
+      "questionText": "In a laboratory investigation related to particulate nature of matter, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_052",
+      "questionNumber": 52,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0"
+        },
+        {
+          "letter": "B",
+          "text": "−1"
+        },
+        {
+          "letter": "C",
+          "text": "+17"
+        },
+        {
+          "letter": "D",
+          "text": "+1"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_053",
+      "questionNumber": 53,
+      "questionText": "A learner is revising bonding and structure. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Water"
+        },
+        {
+          "letter": "C",
+          "text": "Methane"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_054",
+      "questionNumber": 54,
+      "questionText": "Which observation would be most consistent with the principle in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 mol dm−3"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_055",
+      "questionNumber": 55,
+      "questionText": "In a laboratory investigation related to acids bases salts, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_056",
+      "questionNumber": 56,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "D",
+          "text": "Lowering temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_057",
+      "questionNumber": 57,
+      "questionText": "A learner is revising redox and electrochemistry. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "anode"
+        },
+        {
+          "letter": "D",
+          "text": "cathode"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_058",
+      "questionNumber": 58,
+      "questionText": "Which observation would be most consistent with the principle in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "B",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Melting of iron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_059",
+      "questionNumber": 59,
+      "questionText": "In a laboratory investigation related to non-metals and atmosphere, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_060",
+      "questionNumber": 60,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "B",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "D",
+          "text": "It always makes polymers disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_061",
+      "questionNumber": 61,
+      "questionText": "A learner is revising particulate nature of matter. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in intermolecular spaces"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "D",
+          "text": "Faster particle movement"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_062",
+      "questionNumber": 62,
+      "questionText": "Which observation would be most consistent with the principle in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+17"
+        },
+        {
+          "letter": "B",
+          "text": "+1"
+        },
+        {
+          "letter": "C",
+          "text": "0"
+        },
+        {
+          "letter": "D",
+          "text": "−1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_063",
+      "questionNumber": 63,
+      "questionText": "In a laboratory investigation related to bonding and structure, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_064",
+      "questionNumber": 64,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "0.25 mol dm−3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_065",
+      "questionNumber": 65,
+      "questionText": "A learner is revising acids bases salts. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1000"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_066",
+      "questionNumber": 66,
+      "questionText": "Which observation would be most consistent with the principle in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "B",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_067",
+      "questionNumber": 67,
+      "questionText": "In a laboratory investigation related to redox and electrochemistry, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_068",
+      "questionNumber": 68,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "C",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "D",
+          "text": "Reduction of iron by nitrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_069",
+      "questionNumber": 69,
+      "questionText": "A learner is revising non-metals and atmosphere. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Neon"
+        },
+        {
+          "letter": "C",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_070",
+      "questionNumber": 70,
+      "questionText": "Which observation would be most consistent with the principle in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "B",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "D",
+          "text": "It increases landfill volume"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_071",
+      "questionNumber": 71,
+      "questionText": "In a laboratory investigation related to particulate nature of matter, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_072",
+      "questionNumber": 72,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0"
+        },
+        {
+          "letter": "B",
+          "text": "−1"
+        },
+        {
+          "letter": "C",
+          "text": "+17"
+        },
+        {
+          "letter": "D",
+          "text": "+1"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_073",
+      "questionNumber": 73,
+      "questionText": "A learner is revising bonding and structure. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Water"
+        },
+        {
+          "letter": "C",
+          "text": "Methane"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_074",
+      "questionNumber": 74,
+      "questionText": "Which observation would be most consistent with the principle in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 mol dm−3"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_075",
+      "questionNumber": 75,
+      "questionText": "In a laboratory investigation related to acids bases salts, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_076",
+      "questionNumber": 76,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "D",
+          "text": "Lowering temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_077",
+      "questionNumber": 77,
+      "questionText": "A learner is revising redox and electrochemistry. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "anode"
+        },
+        {
+          "letter": "D",
+          "text": "cathode"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_078",
+      "questionNumber": 78,
+      "questionText": "Which observation would be most consistent with the principle in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "B",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Melting of iron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_079",
+      "questionNumber": 79,
+      "questionText": "In a laboratory investigation related to non-metals and atmosphere, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_080",
+      "questionNumber": 80,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "B",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "D",
+          "text": "It always makes polymers disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_081",
+      "questionNumber": 81,
+      "questionText": "A learner is revising particulate nature of matter. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in intermolecular spaces"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "D",
+          "text": "Faster particle movement"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_082",
+      "questionNumber": 82,
+      "questionText": "Which observation would be most consistent with the principle in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+17"
+        },
+        {
+          "letter": "B",
+          "text": "+1"
+        },
+        {
+          "letter": "C",
+          "text": "0"
+        },
+        {
+          "letter": "D",
+          "text": "−1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_083",
+      "questionNumber": 83,
+      "questionText": "In a laboratory investigation related to bonding and structure, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_084",
+      "questionNumber": 84,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "0.25 mol dm−3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_085",
+      "questionNumber": 85,
+      "questionText": "A learner is revising acids bases salts. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1000"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_086",
+      "questionNumber": 86,
+      "questionText": "Which observation would be most consistent with the principle in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "B",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_087",
+      "questionNumber": 87,
+      "questionText": "In a laboratory investigation related to redox and electrochemistry, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_088",
+      "questionNumber": 88,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "C",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "D",
+          "text": "Reduction of iron by nitrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_089",
+      "questionNumber": 89,
+      "questionText": "A learner is revising non-metals and atmosphere. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Neon"
+        },
+        {
+          "letter": "C",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_090",
+      "questionNumber": 90,
+      "questionText": "Which observation would be most consistent with the principle in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "B",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "D",
+          "text": "It increases landfill volume"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_091",
+      "questionNumber": 91,
+      "questionText": "In a laboratory investigation related to particulate nature of matter, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_092",
+      "questionNumber": 92,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0"
+        },
+        {
+          "letter": "B",
+          "text": "−1"
+        },
+        {
+          "letter": "C",
+          "text": "+17"
+        },
+        {
+          "letter": "D",
+          "text": "+1"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_093",
+      "questionNumber": 93,
+      "questionText": "A learner is revising bonding and structure. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Water"
+        },
+        {
+          "letter": "C",
+          "text": "Methane"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_094",
+      "questionNumber": 94,
+      "questionText": "Which observation would be most consistent with the principle in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 mol dm−3"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_095",
+      "questionNumber": 95,
+      "questionText": "In a laboratory investigation related to acids bases salts, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_096",
+      "questionNumber": 96,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "D",
+          "text": "Lowering temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_097",
+      "questionNumber": 97,
+      "questionText": "A learner is revising redox and electrochemistry. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "anode"
+        },
+        {
+          "letter": "D",
+          "text": "cathode"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_098",
+      "questionNumber": 98,
+      "questionText": "Which observation would be most consistent with the principle in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "B",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Melting of iron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_099",
+      "questionNumber": 99,
+      "questionText": "In a laboratory investigation related to non-metals and atmosphere, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_100",
+      "questionNumber": 100,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "B",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "D",
+          "text": "It always makes polymers disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_101",
+      "questionNumber": 101,
+      "questionText": "A learner is revising particulate nature of matter. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in intermolecular spaces"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "D",
+          "text": "Faster particle movement"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_102",
+      "questionNumber": 102,
+      "questionText": "Which observation would be most consistent with the principle in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+17"
+        },
+        {
+          "letter": "B",
+          "text": "+1"
+        },
+        {
+          "letter": "C",
+          "text": "0"
+        },
+        {
+          "letter": "D",
+          "text": "−1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_103",
+      "questionNumber": 103,
+      "questionText": "In a laboratory investigation related to bonding and structure, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_104",
+      "questionNumber": 104,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "0.25 mol dm−3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_105",
+      "questionNumber": 105,
+      "questionText": "A learner is revising acids bases salts. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1000"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_106",
+      "questionNumber": 106,
+      "questionText": "Which observation would be most consistent with the principle in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "B",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_107",
+      "questionNumber": 107,
+      "questionText": "In a laboratory investigation related to redox and electrochemistry, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_108",
+      "questionNumber": 108,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "C",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "D",
+          "text": "Reduction of iron by nitrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_109",
+      "questionNumber": 109,
+      "questionText": "A learner is revising non-metals and atmosphere. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Neon"
+        },
+        {
+          "letter": "C",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_110",
+      "questionNumber": 110,
+      "questionText": "Which observation would be most consistent with the principle in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "B",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "D",
+          "text": "It increases landfill volume"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_111",
+      "questionNumber": 111,
+      "questionText": "In a laboratory investigation related to particulate nature of matter, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_112",
+      "questionNumber": 112,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0"
+        },
+        {
+          "letter": "B",
+          "text": "−1"
+        },
+        {
+          "letter": "C",
+          "text": "+17"
+        },
+        {
+          "letter": "D",
+          "text": "+1"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_113",
+      "questionNumber": 113,
+      "questionText": "A learner is revising bonding and structure. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Water"
+        },
+        {
+          "letter": "C",
+          "text": "Methane"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_114",
+      "questionNumber": 114,
+      "questionText": "Which observation would be most consistent with the principle in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 mol dm−3"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_115",
+      "questionNumber": 115,
+      "questionText": "In a laboratory investigation related to acids bases salts, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_116",
+      "questionNumber": 116,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "D",
+          "text": "Lowering temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_117",
+      "questionNumber": 117,
+      "questionText": "A learner is revising redox and electrochemistry. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "anode"
+        },
+        {
+          "letter": "D",
+          "text": "cathode"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_118",
+      "questionNumber": 118,
+      "questionText": "Which observation would be most consistent with the principle in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "B",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Melting of iron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_119",
+      "questionNumber": 119,
+      "questionText": "In a laboratory investigation related to non-metals and atmosphere, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_120",
+      "questionNumber": 120,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "B",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "D",
+          "text": "It always makes polymers disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_121",
+      "questionNumber": 121,
+      "questionText": "A learner is revising particulate nature of matter. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in intermolecular spaces"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "D",
+          "text": "Faster particle movement"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_122",
+      "questionNumber": 122,
+      "questionText": "Which observation would be most consistent with the principle in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+17"
+        },
+        {
+          "letter": "B",
+          "text": "+1"
+        },
+        {
+          "letter": "C",
+          "text": "0"
+        },
+        {
+          "letter": "D",
+          "text": "−1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_123",
+      "questionNumber": 123,
+      "questionText": "In a laboratory investigation related to bonding and structure, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_124",
+      "questionNumber": 124,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "0.25 mol dm−3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_125",
+      "questionNumber": 125,
+      "questionText": "A learner is revising acids bases salts. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1000"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_126",
+      "questionNumber": 126,
+      "questionText": "Which observation would be most consistent with the principle in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "B",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_127",
+      "questionNumber": 127,
+      "questionText": "In a laboratory investigation related to redox and electrochemistry, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_128",
+      "questionNumber": 128,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "C",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "D",
+          "text": "Reduction of iron by nitrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_129",
+      "questionNumber": 129,
+      "questionText": "A learner is revising non-metals and atmosphere. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Neon"
+        },
+        {
+          "letter": "C",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_130",
+      "questionNumber": 130,
+      "questionText": "Which observation would be most consistent with the principle in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "B",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "D",
+          "text": "It increases landfill volume"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_131",
+      "questionNumber": 131,
+      "questionText": "In a laboratory investigation related to particulate nature of matter, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "B",
+          "text": "Faster particle movement"
+        },
+        {
+          "letter": "C",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in intermolecular spaces"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_132",
+      "questionNumber": 132,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0"
+        },
+        {
+          "letter": "B",
+          "text": "−1"
+        },
+        {
+          "letter": "C",
+          "text": "+17"
+        },
+        {
+          "letter": "D",
+          "text": "+1"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_133",
+      "questionNumber": 133,
+      "questionText": "A learner is revising bonding and structure. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "B",
+          "text": "Water"
+        },
+        {
+          "letter": "C",
+          "text": "Methane"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_134",
+      "questionNumber": 134,
+      "questionText": "Which observation would be most consistent with the principle in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "0.25 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 mol dm−3"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_135",
+      "questionNumber": 135,
+      "questionText": "In a laboratory investigation related to acids bases salts, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "10"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "1000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_136",
+      "questionNumber": 136,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "D",
+          "text": "Lowering temperature"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_137",
+      "questionNumber": 137,
+      "questionText": "A learner is revising redox and electrochemistry. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "B",
+          "text": "salt bridge"
+        },
+        {
+          "letter": "C",
+          "text": "anode"
+        },
+        {
+          "letter": "D",
+          "text": "cathode"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_138",
+      "questionNumber": 138,
+      "questionText": "Which observation would be most consistent with the principle in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "B",
+          "text": "Reduction of iron by nitrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "D",
+          "text": "Melting of iron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_139",
+      "questionNumber": 139,
+      "questionText": "In a laboratory investigation related to non-metals and atmosphere, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Helium"
+        },
+        {
+          "letter": "D",
+          "text": "Neon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_140",
+      "questionNumber": 140,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "B",
+          "text": "It increases landfill volume"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "D",
+          "text": "It always makes polymers disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_141",
+      "questionNumber": 141,
+      "questionText": "A learner is revising particulate nature of matter. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creation of new atoms"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in intermolecular spaces"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in particle mass"
+        },
+        {
+          "letter": "D",
+          "text": "Faster particle movement"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heating increases the average kinetic energy and movement of particles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_142",
+      "questionNumber": 142,
+      "questionText": "Which observation would be most consistent with the principle in atomic structure and periodicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+17"
+        },
+        {
+          "letter": "B",
+          "text": "+1"
+        },
+        {
+          "letter": "C",
+          "text": "0"
+        },
+        {
+          "letter": "D",
+          "text": "−1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "There is one more electron than proton, giving a −1 charge.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_143",
+      "questionNumber": 143,
+      "questionText": "In a laboratory investigation related to bonding and structure, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Sodium chloride"
+        },
+        {
+          "letter": "D",
+          "text": "Water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diamond contains a three-dimensional network of covalently bonded carbon atoms.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_144",
+      "questionNumber": 144,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in mole concept and stoichiometry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 mol dm−3"
+        },
+        {
+          "letter": "B",
+          "text": "2.5 mol dm−3"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 mol dm−3"
+        },
+        {
+          "letter": "D",
+          "text": "0.25 mol dm−3"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Concentration = moles/volume = 0.50/2.0 = 0.25 mol dm−3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_145",
+      "questionNumber": 145,
+      "questionText": "A learner is revising acids bases salts. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1000"
+        },
+        {
+          "letter": "C",
+          "text": "2"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pH unit represents a tenfold change; two units means 10² = 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_146",
+      "questionNumber": 146,
+      "questionText": "Which observation would be most consistent with the principle in rates and reversible reactions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using larger lumps only"
+        },
+        {
+          "letter": "B",
+          "text": "Lowering temperature"
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing concentration"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher temperature increases particle kinetic energy and effective collision frequency.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_147",
+      "questionNumber": 147,
+      "questionText": "In a laboratory investigation related to redox and electrochemistry, which statement is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anode"
+        },
+        {
+          "letter": "B",
+          "text": "cathode"
+        },
+        {
+          "letter": "C",
+          "text": "electrolyte surface only"
+        },
+        {
+          "letter": "D",
+          "text": "salt bridge"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cations are attracted to the negative cathode.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_148",
+      "questionNumber": 148,
+      "questionText": "Which conclusion is best supported by the chemistry principle illustrated in metals and extraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxidation of iron in the presence of water and oxygen"
+        },
+        {
+          "letter": "B",
+          "text": "Melting of iron"
+        },
+        {
+          "letter": "C",
+          "text": "Reaction with carbon dioxide only"
+        },
+        {
+          "letter": "D",
+          "text": "Reduction of iron by nitrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Rusting involves electrochemical oxidation of iron requiring water and oxygen.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_149",
+      "questionNumber": 149,
+      "questionText": "A learner is revising non-metals and atmosphere. Which option gives the correct statement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Neon"
+        },
+        {
+          "letter": "C",
+          "text": "Sulfur dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide can oxidise and form sulfuric acid in atmospheric processes.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "zimsec_o_chem_p1_150",
+      "questionNumber": 150,
+      "questionText": "Which observation would be most consistent with the principle in organic chemistry and environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all combustion"
+        },
+        {
+          "letter": "B",
+          "text": "It always makes polymers disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It can reduce waste and demand for new raw materials"
+        },
+        {
+          "letter": "D",
+          "text": "It increases landfill volume"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Recycling can reduce disposal needs and use of virgin raw materials.",
+      "answerConfidence": "high"
+    }
+  ]
+}

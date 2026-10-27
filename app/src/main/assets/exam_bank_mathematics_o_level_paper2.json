@@ -1,0 +1,2724 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "O-Level",
+    "paperCode": "4028/2",
+    "paperName": "Mathematics O-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "sourceBasis": [
+      "ZIMSEC Mathematics syllabus/topic coverage",
+      "ZIMSEC past-paper style and assessment patterns for June 2023-2026",
+      "Original questions generated for this exam bank; not transcriptions of past papers"
+    ],
+    "yearsReferenced": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "questionCount": 150,
+    "note": "Questions are original ZIMSEC-aligned practice questions. They are designed to reflect syllabus coverage and examination style without reproducing copyrighted past-paper text."
+  },
+  "questions": [
+    {
+      "id": "math_ol_p2_001",
+      "questionNumber": 1,
+      "questionText": "(a) Calculate 24 × 6. (b) State whether the answer is a factor of 288. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "144",
+      "explanation": "(a) 24×6=144. (b) Yes, because 144×2=288. (c) Any proper factor such as 6 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_002",
+      "questionNumber": 2,
+      "questionText": "Given x=3, y=4, z=5, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "23; 13",
+      "explanation": "xy+z²=3×4+5²=23. Also 2x+3y−z=2(3)+3(4)−5=13.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_003",
+      "questionNumber": 3,
+      "questionText": "Solve the equation 4x + 7 = 35. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "7",
+      "explanation": "Subtract 7 from both sides to get 4x=28; divide by 4, giving x=7. Substitution gives 4(7)+7=35.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_004",
+      "questionNumber": 4,
+      "questionText": "A rectangular garden is 11 m long and 8 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 38 m; (b) 88 m²; (c) $114",
+      "explanation": "Perimeter=2(11+8)=38 m. Area=11×8=88 m². Fencing cost=38×$3=$114.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_005",
+      "questionNumber": 5,
+      "questionText": "A triangle has angles 39° and 54°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "87°",
+      "explanation": "Third angle=180−39−54=87°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_006",
+      "questionNumber": 6,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 9 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=396/7 cm; area=1782/7 cm²",
+      "explanation": "C=2πr=2×22/7×9=396/7 cm. A=πr²=22/7×9²=1782/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_007",
+      "questionNumber": 7,
+      "questionText": "A right-angled triangle has legs 3 cm and 10 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "10.4 cm",
+      "explanation": "By Pythagoras, c=√(3²+10²)=√(109)≈10.4 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_008",
+      "questionNumber": 8,
+      "questionText": "In a right-angled triangle, opposite side to θ is 3 cm and adjacent side is 11 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.273; θ=15.3°",
+      "explanation": "tanθ=opposite/adjacent=3/11=0.273; θ=tan⁻¹(0.273)≈15.3°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_009",
+      "questionNumber": 9,
+      "questionText": "The data set is 11, 4, 7, 10, 13. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=9; median=10",
+      "explanation": "Mean=45/5=9. After ordering the five values, the middle value is 10.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_010",
+      "questionNumber": 10,
+      "questionText": "A box contains 6 red, 6 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/14; P(not blue)=8/14",
+      "explanation": "Total=14. P(red)=6/14; P(not blue)=(6+2)/14=8/14.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_011",
+      "questionNumber": 11,
+      "questionText": "An arithmetic sequence has first term 5 and common difference 7. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=5+7(n−1); (b) 68; (c) 365",
+      "explanation": "Tn=a+(n−1)d=5+7(n−1). T10=68. S10=10/2[2(5)+9(7)]=365.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_012",
+      "questionNumber": 12,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(6) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(6)=29; x=0 or x=2",
+      "explanation": "f(6)=6²−2(6)+5=29. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_013",
+      "questionNumber": 13,
+      "questionText": "For matrix A = [[4, 3], [9, 5]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-7; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×5−3×9=-7. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_014",
+      "questionNumber": 14,
+      "questionText": "Find the gradient and equation of the line through (2,8) and (7,11).",
+      "options": [],
+      "correctAnswer": "gradient=3/5; equation y=3/5x+(34/5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(11−8)/(7−2)=3/5. Using y=mx+c gives c=34/5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_015",
+      "questionNumber": 15,
+      "questionText": "Simplify (a) (x+4)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+8x+16; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_016",
+      "questionNumber": 16,
+      "questionText": "(a) Calculate 39 × 9. (b) State whether the answer is a factor of 702. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "351",
+      "explanation": "(a) 39×9=351. (b) Yes, because 351×2=702. (c) Any proper factor such as 9 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_017",
+      "questionNumber": 17,
+      "questionText": "Given x=2, y=5, z=8, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "42; 11",
+      "explanation": "xy+z²=2×5+8²=42. Also 2x+3y−z=2(2)+3(5)−8=11.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_018",
+      "questionNumber": 18,
+      "questionText": "Solve the equation 7x + 13 = 104. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "13",
+      "explanation": "Subtract 13 from both sides to get 7x=91; divide by 7, giving x=13. Substitution gives 7(13)+13=104.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_019",
+      "questionNumber": 19,
+      "questionText": "A rectangular garden is 14 m long and 5 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 38 m; (b) 70 m²; (c) $114",
+      "explanation": "Perimeter=2(14+5)=38 m. Area=14×5=70 m². Fencing cost=38×$3=$114.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_020",
+      "questionNumber": 20,
+      "questionText": "A triangle has angles 54° and 69°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "57°",
+      "explanation": "Third angle=180−54−69=57°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_021",
+      "questionNumber": 21,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 6 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=264/7 cm; area=792/7 cm²",
+      "explanation": "C=2πr=2×22/7×6=264/7 cm. A=πr²=22/7×6²=792/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_022",
+      "questionNumber": 22,
+      "questionText": "A right-angled triangle has legs 6 cm and 4 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "7.2 cm",
+      "explanation": "By Pythagoras, c=√(6²+4²)=√(52)≈7.2 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_023",
+      "questionNumber": 23,
+      "questionText": "In a right-angled triangle, opposite side to θ is 4 cm and adjacent side is 10 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.400; θ=21.8°",
+      "explanation": "tanθ=opposite/adjacent=4/10=0.400; θ=tan⁻¹(0.400)≈21.8°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_024",
+      "questionNumber": 24,
+      "questionText": "The data set is 6, 9, 12, 15, 8. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=10; median=9",
+      "explanation": "Mean=50/5=10. After ordering the five values, the middle value is 9.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_025",
+      "questionNumber": 25,
+      "questionText": "A box contains 6 red, 3 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/11; P(not blue)=8/11",
+      "explanation": "Total=11. P(red)=6/11; P(not blue)=(6+2)/11=8/11.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_026",
+      "questionNumber": 26,
+      "questionText": "An arithmetic sequence has first term 6 and common difference 4. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=6+4(n−1); (b) 42; (c) 240",
+      "explanation": "Tn=a+(n−1)d=6+4(n−1). T10=42. S10=10/2[2(6)+9(4)]=240.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_027",
+      "questionNumber": 27,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(7) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(7)=40; x=0 or x=2",
+      "explanation": "f(7)=7²−2(7)+5=40. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_028",
+      "questionNumber": 28,
+      "questionText": "For matrix A = [[4, 6], [10, 8]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-28; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×8−6×10=-28. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_029",
+      "questionNumber": 29,
+      "questionText": "Find the gradient and equation of the line through (5,2) and (10,8).",
+      "options": [],
+      "correctAnswer": "gradient=6/5; equation y=6/5x+(-4)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(8−2)/(10−5)=6/5. Using y=mx+c gives c=-4.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_030",
+      "questionNumber": 30,
+      "questionText": "Simplify (a) (x+3)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+6x+9; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_031",
+      "questionNumber": 31,
+      "questionText": "(a) Calculate 24 × 12. (b) State whether the answer is a factor of 576. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "288",
+      "explanation": "(a) 24×12=288. (b) Yes, because 288×2=576. (c) Any proper factor such as 12 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_032",
+      "questionNumber": 32,
+      "questionText": "Given x=9, y=6, z=5, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "39; 31",
+      "explanation": "xy+z²=9×6+5²=39. Also 2x+3y−z=2(9)+3(6)−5=31.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_033",
+      "questionNumber": 33,
+      "questionText": "Solve the equation 4x + 10 = 50. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "10",
+      "explanation": "Subtract 10 from both sides to get 4x=40; divide by 4, giving x=10. Substitution gives 4(10)+10=50.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_034",
+      "questionNumber": 34,
+      "questionText": "A rectangular garden is 17 m long and 11 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 56 m; (b) 187 m²; (c) $168",
+      "explanation": "Perimeter=2(17+11)=56 m. Area=17×11=187 m². Fencing cost=56×$3=$168.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_035",
+      "questionNumber": 35,
+      "questionText": "A triangle has angles 44° and 64°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "72°",
+      "explanation": "Third angle=180−44−64=72°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_036",
+      "questionNumber": 36,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 12 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=528/7 cm; area=3168/7 cm²",
+      "explanation": "C=2πr=2×22/7×12=528/7 cm. A=πr²=22/7×12²=3168/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_037",
+      "questionNumber": 37,
+      "questionText": "A right-angled triangle has legs 3 cm and 5 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "5.8 cm",
+      "explanation": "By Pythagoras, c=√(3²+5²)=√(34)≈5.8 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_038",
+      "questionNumber": 38,
+      "questionText": "In a right-angled triangle, opposite side to θ is 5 cm and adjacent side is 9 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.556; θ=29.1°",
+      "explanation": "tanθ=opposite/adjacent=5/9=0.556; θ=tan⁻¹(0.556)≈29.1°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_039",
+      "questionNumber": 39,
+      "questionText": "The data set is 11, 4, 7, 10, 13. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=9; median=10",
+      "explanation": "Mean=45/5=9. After ordering the five values, the middle value is 10.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_040",
+      "questionNumber": 40,
+      "questionText": "A box contains 6 red, 6 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/14; P(not blue)=8/14",
+      "explanation": "Total=14. P(red)=6/14; P(not blue)=(6+2)/14=8/14.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_041",
+      "questionNumber": 41,
+      "questionText": "An arithmetic sequence has first term 7 and common difference 7. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=7+7(n−1); (b) 70; (c) 385",
+      "explanation": "Tn=a+(n−1)d=7+7(n−1). T10=70. S10=10/2[2(7)+9(7)]=385.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_042",
+      "questionNumber": 42,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(8) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(8)=53; x=0 or x=2",
+      "explanation": "f(8)=8²−2(8)+5=53. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_043",
+      "questionNumber": 43,
+      "questionText": "For matrix A = [[4, 3], [4, 7]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=16; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×7−3×4=16. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_044",
+      "questionNumber": 44,
+      "questionText": "Find the gradient and equation of the line through (2,3) and (7,14).",
+      "options": [],
+      "correctAnswer": "gradient=11/5; equation y=11/5x+(-7/5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(14−3)/(7−2)=11/5. Using y=mx+c gives c=-7/5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_045",
+      "questionNumber": 45,
+      "questionText": "Simplify (a) (x+2)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+4x+4; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_046",
+      "questionNumber": 46,
+      "questionText": "(a) Calculate 39 × 15. (b) State whether the answer is a factor of 1170. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "585",
+      "explanation": "(a) 39×15=585. (b) Yes, because 585×2=1170. (c) Any proper factor such as 15 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_047",
+      "questionNumber": 47,
+      "questionText": "Given x=8, y=7, z=8, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "64; 29",
+      "explanation": "xy+z²=8×7+8²=64. Also 2x+3y−z=2(8)+3(7)−8=29.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_048",
+      "questionNumber": 48,
+      "questionText": "Solve the equation 7x + 7 = 56. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "7",
+      "explanation": "Subtract 7 from both sides to get 7x=49; divide by 7, giving x=7. Substitution gives 7(7)+7=56.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_049",
+      "questionNumber": 49,
+      "questionText": "A rectangular garden is 8 m long and 8 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 32 m; (b) 64 m²; (c) $96",
+      "explanation": "Perimeter=2(8+8)=32 m. Area=8×8=64 m². Fencing cost=32×$3=$96.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_050",
+      "questionNumber": 50,
+      "questionText": "A triangle has angles 59° and 59°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "62°",
+      "explanation": "Third angle=180−59−59=62°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_051",
+      "questionNumber": 51,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 9 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=396/7 cm; area=1782/7 cm²",
+      "explanation": "C=2πr=2×22/7×9=396/7 cm. A=πr²=22/7×9²=1782/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_052",
+      "questionNumber": 52,
+      "questionText": "A right-angled triangle has legs 6 cm and 6 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "8.5 cm",
+      "explanation": "By Pythagoras, c=√(6²+6²)=√(72)≈8.5 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_053",
+      "questionNumber": 53,
+      "questionText": "In a right-angled triangle, opposite side to θ is 6 cm and adjacent side is 8 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.750; θ=36.9°",
+      "explanation": "tanθ=opposite/adjacent=6/8=0.750; θ=tan⁻¹(0.750)≈36.9°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_054",
+      "questionNumber": 54,
+      "questionText": "The data set is 6, 9, 12, 15, 8. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=10; median=9",
+      "explanation": "Mean=50/5=10. After ordering the five values, the middle value is 9.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_055",
+      "questionNumber": 55,
+      "questionText": "A box contains 6 red, 3 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/11; P(not blue)=8/11",
+      "explanation": "Total=11. P(red)=6/11; P(not blue)=(6+2)/11=8/11.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_056",
+      "questionNumber": 56,
+      "questionText": "An arithmetic sequence has first term 8 and common difference 4. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=8+4(n−1); (b) 44; (c) 260",
+      "explanation": "Tn=a+(n−1)d=8+4(n−1). T10=44. S10=10/2[2(8)+9(4)]=260.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_057",
+      "questionNumber": 57,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(2) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(2)=5; x=0 or x=2",
+      "explanation": "f(2)=2²−2(2)+5=5. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_058",
+      "questionNumber": 58,
+      "questionText": "For matrix A = [[4, 6], [5, 6]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-6; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×6−6×5=-6. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_059",
+      "questionNumber": 59,
+      "questionText": "Find the gradient and equation of the line through (5,4) and (10,11).",
+      "options": [],
+      "correctAnswer": "gradient=7/5; equation y=7/5x+(-3)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(11−4)/(10−5)=7/5. Using y=mx+c gives c=-3.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_060",
+      "questionNumber": 60,
+      "questionText": "Simplify (a) (x+5)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+10x+25; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_061",
+      "questionNumber": 61,
+      "questionText": "(a) Calculate 24 × 6. (b) State whether the answer is a factor of 288. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "144",
+      "explanation": "(a) 24×6=144. (b) Yes, because 144×2=288. (c) Any proper factor such as 6 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_062",
+      "questionNumber": 62,
+      "questionText": "Given x=7, y=8, z=5, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "47; 33",
+      "explanation": "xy+z²=7×8+5²=47. Also 2x+3y−z=2(7)+3(8)−5=33.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_063",
+      "questionNumber": 63,
+      "questionText": "Solve the equation 4x + 13 = 65. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "13",
+      "explanation": "Subtract 13 from both sides to get 4x=52; divide by 4, giving x=13. Substitution gives 4(13)+13=65.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_064",
+      "questionNumber": 64,
+      "questionText": "A rectangular garden is 11 m long and 5 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 32 m; (b) 55 m²; (c) $96",
+      "explanation": "Perimeter=2(11+5)=32 m. Area=11×5=55 m². Fencing cost=32×$3=$96.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_065",
+      "questionNumber": 65,
+      "questionText": "A triangle has angles 49° and 54°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "77°",
+      "explanation": "Third angle=180−49−54=77°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_066",
+      "questionNumber": 66,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 6 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=264/7 cm; area=792/7 cm²",
+      "explanation": "C=2πr=2×22/7×6=264/7 cm. A=πr²=22/7×6²=792/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_067",
+      "questionNumber": 67,
+      "questionText": "A right-angled triangle has legs 3 cm and 7 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "7.6 cm",
+      "explanation": "By Pythagoras, c=√(3²+7²)=√(58)≈7.6 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_068",
+      "questionNumber": 68,
+      "questionText": "In a right-angled triangle, opposite side to θ is 7 cm and adjacent side is 7 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=1.000; θ=45.0°",
+      "explanation": "tanθ=opposite/adjacent=7/7=1.000; θ=tan⁻¹(1.000)≈45.0°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_069",
+      "questionNumber": 69,
+      "questionText": "The data set is 11, 4, 7, 10, 13. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=9; median=10",
+      "explanation": "Mean=45/5=9. After ordering the five values, the middle value is 10.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_070",
+      "questionNumber": 70,
+      "questionText": "A box contains 6 red, 6 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/14; P(not blue)=8/14",
+      "explanation": "Total=14. P(red)=6/14; P(not blue)=(6+2)/14=8/14.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_071",
+      "questionNumber": 71,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 7. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=2+7(n−1); (b) 65; (c) 335",
+      "explanation": "Tn=a+(n−1)d=2+7(n−1). T10=65. S10=10/2[2(2)+9(7)]=335.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_072",
+      "questionNumber": 72,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(3) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(3)=8; x=0 or x=2",
+      "explanation": "f(3)=3²−2(3)+5=8. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_073",
+      "questionNumber": 73,
+      "questionText": "For matrix A = [[4, 3], [6, 5]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=2; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×5−3×6=2. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_074",
+      "questionNumber": 74,
+      "questionText": "Find the gradient and equation of the line through (2,5) and (7,8).",
+      "options": [],
+      "correctAnswer": "gradient=3/5; equation y=3/5x+(19/5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(8−5)/(7−2)=3/5. Using y=mx+c gives c=19/5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_075",
+      "questionNumber": 75,
+      "questionText": "Simplify (a) (x+4)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+8x+16; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_076",
+      "questionNumber": 76,
+      "questionText": "(a) Calculate 39 × 9. (b) State whether the answer is a factor of 702. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "351",
+      "explanation": "(a) 39×9=351. (b) Yes, because 351×2=702. (c) Any proper factor such as 9 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_077",
+      "questionNumber": 77,
+      "questionText": "Given x=6, y=9, z=8, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "78; 31",
+      "explanation": "xy+z²=6×9+8²=78. Also 2x+3y−z=2(6)+3(9)−8=31.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_078",
+      "questionNumber": 78,
+      "questionText": "Solve the equation 7x + 10 = 80. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "10",
+      "explanation": "Subtract 10 from both sides to get 7x=70; divide by 7, giving x=10. Substitution gives 7(10)+10=80.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_079",
+      "questionNumber": 79,
+      "questionText": "A rectangular garden is 14 m long and 11 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 50 m; (b) 154 m²; (c) $150",
+      "explanation": "Perimeter=2(14+11)=50 m. Area=14×11=154 m². Fencing cost=50×$3=$150.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_080",
+      "questionNumber": 80,
+      "questionText": "A triangle has angles 39° and 69°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "72°",
+      "explanation": "Third angle=180−39−69=72°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_081",
+      "questionNumber": 81,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 12 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=528/7 cm; area=3168/7 cm²",
+      "explanation": "C=2πr=2×22/7×12=528/7 cm. A=πr²=22/7×12²=3168/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_082",
+      "questionNumber": 82,
+      "questionText": "A right-angled triangle has legs 6 cm and 8 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "10.0 cm",
+      "explanation": "By Pythagoras, c=√(6²+8²)=√(100)≈10.0 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_083",
+      "questionNumber": 83,
+      "questionText": "In a right-angled triangle, opposite side to θ is 8 cm and adjacent side is 6 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=1.333; θ=53.1°",
+      "explanation": "tanθ=opposite/adjacent=8/6=1.333; θ=tan⁻¹(1.333)≈53.1°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_084",
+      "questionNumber": 84,
+      "questionText": "The data set is 6, 9, 12, 15, 8. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=10; median=9",
+      "explanation": "Mean=50/5=10. After ordering the five values, the middle value is 9.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_085",
+      "questionNumber": 85,
+      "questionText": "A box contains 6 red, 3 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/11; P(not blue)=8/11",
+      "explanation": "Total=11. P(red)=6/11; P(not blue)=(6+2)/11=8/11.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_086",
+      "questionNumber": 86,
+      "questionText": "An arithmetic sequence has first term 3 and common difference 4. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=3+4(n−1); (b) 39; (c) 210",
+      "explanation": "Tn=a+(n−1)d=3+4(n−1). T10=39. S10=10/2[2(3)+9(4)]=210.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_087",
+      "questionNumber": 87,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(4) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(4)=13; x=0 or x=2",
+      "explanation": "f(4)=4²−2(4)+5=13. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_088",
+      "questionNumber": 88,
+      "questionText": "For matrix A = [[4, 6], [7, 8]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-10; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×8−6×7=-10. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_089",
+      "questionNumber": 89,
+      "questionText": "Find the gradient and equation of the line through (5,6) and (10,14).",
+      "options": [],
+      "correctAnswer": "gradient=8/5; equation y=8/5x+(-2)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(14−6)/(10−5)=8/5. Using y=mx+c gives c=-2.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_090",
+      "questionNumber": 90,
+      "questionText": "Simplify (a) (x+3)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+6x+9; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_091",
+      "questionNumber": 91,
+      "questionText": "(a) Calculate 24 × 12. (b) State whether the answer is a factor of 576. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "288",
+      "explanation": "(a) 24×12=288. (b) Yes, because 288×2=576. (c) Any proper factor such as 12 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_092",
+      "questionNumber": 92,
+      "questionText": "Given x=5, y=3, z=5, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "20; 14",
+      "explanation": "xy+z²=5×3+5²=20. Also 2x+3y−z=2(5)+3(3)−5=14.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_093",
+      "questionNumber": 93,
+      "questionText": "Solve the equation 4x + 7 = 35. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "7",
+      "explanation": "Subtract 7 from both sides to get 4x=28; divide by 4, giving x=7. Substitution gives 4(7)+7=35.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_094",
+      "questionNumber": 94,
+      "questionText": "A rectangular garden is 17 m long and 8 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 50 m; (b) 136 m²; (c) $150",
+      "explanation": "Perimeter=2(17+8)=50 m. Area=17×8=136 m². Fencing cost=50×$3=$150.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_095",
+      "questionNumber": 95,
+      "questionText": "A triangle has angles 54° and 64°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "62°",
+      "explanation": "Third angle=180−54−64=62°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_096",
+      "questionNumber": 96,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 9 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=396/7 cm; area=1782/7 cm²",
+      "explanation": "C=2πr=2×22/7×9=396/7 cm. A=πr²=22/7×9²=1782/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_097",
+      "questionNumber": 97,
+      "questionText": "A right-angled triangle has legs 3 cm and 9 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "9.5 cm",
+      "explanation": "By Pythagoras, c=√(3²+9²)=√(90)≈9.5 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_098",
+      "questionNumber": 98,
+      "questionText": "In a right-angled triangle, opposite side to θ is 9 cm and adjacent side is 5 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=1.800; θ=60.9°",
+      "explanation": "tanθ=opposite/adjacent=9/5=1.800; θ=tan⁻¹(1.800)≈60.9°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_099",
+      "questionNumber": 99,
+      "questionText": "The data set is 11, 4, 7, 10, 13. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=9; median=10",
+      "explanation": "Mean=45/5=9. After ordering the five values, the middle value is 10.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_100",
+      "questionNumber": 100,
+      "questionText": "A box contains 6 red, 6 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/14; P(not blue)=8/14",
+      "explanation": "Total=14. P(red)=6/14; P(not blue)=(6+2)/14=8/14.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_101",
+      "questionNumber": 101,
+      "questionText": "An arithmetic sequence has first term 4 and common difference 7. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=4+7(n−1); (b) 67; (c) 355",
+      "explanation": "Tn=a+(n−1)d=4+7(n−1). T10=67. S10=10/2[2(4)+9(7)]=355.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_102",
+      "questionNumber": 102,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(5) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(5)=20; x=0 or x=2",
+      "explanation": "f(5)=5²−2(5)+5=20. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_103",
+      "questionNumber": 103,
+      "questionText": "For matrix A = [[4, 3], [8, 7]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=4; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×7−3×8=4. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_104",
+      "questionNumber": 104,
+      "questionText": "Find the gradient and equation of the line through (2,7) and (7,11).",
+      "options": [],
+      "correctAnswer": "gradient=4/5; equation y=4/5x+(27/5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(11−7)/(7−2)=4/5. Using y=mx+c gives c=27/5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_105",
+      "questionNumber": 105,
+      "questionText": "Simplify (a) (x+2)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+4x+4; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_106",
+      "questionNumber": 106,
+      "questionText": "(a) Calculate 39 × 15. (b) State whether the answer is a factor of 1170. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "585",
+      "explanation": "(a) 39×15=585. (b) Yes, because 585×2=1170. (c) Any proper factor such as 15 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_107",
+      "questionNumber": 107,
+      "questionText": "Given x=4, y=4, z=8, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "36; 12",
+      "explanation": "xy+z²=4×4+8²=36. Also 2x+3y−z=2(4)+3(4)−8=12.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_108",
+      "questionNumber": 108,
+      "questionText": "Solve the equation 7x + 13 = 104. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "13",
+      "explanation": "Subtract 13 from both sides to get 7x=91; divide by 7, giving x=13. Substitution gives 7(13)+13=104.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_109",
+      "questionNumber": 109,
+      "questionText": "A rectangular garden is 8 m long and 5 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 26 m; (b) 40 m²; (c) $78",
+      "explanation": "Perimeter=2(8+5)=26 m. Area=8×5=40 m². Fencing cost=26×$3=$78.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_110",
+      "questionNumber": 110,
+      "questionText": "A triangle has angles 44° and 59°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "77°",
+      "explanation": "Third angle=180−44−59=77°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_111",
+      "questionNumber": 111,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 6 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=264/7 cm; area=792/7 cm²",
+      "explanation": "C=2πr=2×22/7×6=264/7 cm. A=πr²=22/7×6²=792/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_112",
+      "questionNumber": 112,
+      "questionText": "A right-angled triangle has legs 6 cm and 10 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "11.7 cm",
+      "explanation": "By Pythagoras, c=√(6²+10²)=√(136)≈11.7 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_113",
+      "questionNumber": 113,
+      "questionText": "In a right-angled triangle, opposite side to θ is 3 cm and adjacent side is 4 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.750; θ=36.9°",
+      "explanation": "tanθ=opposite/adjacent=3/4=0.750; θ=tan⁻¹(0.750)≈36.9°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_114",
+      "questionNumber": 114,
+      "questionText": "The data set is 6, 9, 12, 15, 8. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=10; median=9",
+      "explanation": "Mean=50/5=10. After ordering the five values, the middle value is 9.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_115",
+      "questionNumber": 115,
+      "questionText": "A box contains 6 red, 3 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/11; P(not blue)=8/11",
+      "explanation": "Total=11. P(red)=6/11; P(not blue)=(6+2)/11=8/11.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_116",
+      "questionNumber": 116,
+      "questionText": "An arithmetic sequence has first term 5 and common difference 4. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=5+4(n−1); (b) 41; (c) 230",
+      "explanation": "Tn=a+(n−1)d=5+4(n−1). T10=41. S10=10/2[2(5)+9(4)]=230.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_117",
+      "questionNumber": 117,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(6) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(6)=29; x=0 or x=2",
+      "explanation": "f(6)=6²−2(6)+5=29. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_118",
+      "questionNumber": 118,
+      "questionText": "For matrix A = [[4, 6], [9, 6]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-30; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×6−6×9=-30. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_119",
+      "questionNumber": 119,
+      "questionText": "Find the gradient and equation of the line through (5,8) and (10,8).",
+      "options": [],
+      "correctAnswer": "gradient=0; equation y=0x+(8)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(8−8)/(10−5)=0. Using y=mx+c gives c=8.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_120",
+      "questionNumber": 120,
+      "questionText": "Simplify (a) (x+5)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+10x+25; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_121",
+      "questionNumber": 121,
+      "questionText": "(a) Calculate 24 × 6. (b) State whether the answer is a factor of 288. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "144",
+      "explanation": "(a) 24×6=144. (b) Yes, because 144×2=288. (c) Any proper factor such as 6 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_122",
+      "questionNumber": 122,
+      "questionText": "Given x=3, y=5, z=5, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "28; 16",
+      "explanation": "xy+z²=3×5+5²=28. Also 2x+3y−z=2(3)+3(5)−5=16.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_123",
+      "questionNumber": 123,
+      "questionText": "Solve the equation 4x + 10 = 50. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "10",
+      "explanation": "Subtract 10 from both sides to get 4x=40; divide by 4, giving x=10. Substitution gives 4(10)+10=50.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_124",
+      "questionNumber": 124,
+      "questionText": "A rectangular garden is 11 m long and 11 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 44 m; (b) 121 m²; (c) $132",
+      "explanation": "Perimeter=2(11+11)=44 m. Area=11×11=121 m². Fencing cost=44×$3=$132.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_125",
+      "questionNumber": 125,
+      "questionText": "A triangle has angles 59° and 54°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "67°",
+      "explanation": "Third angle=180−59−54=67°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_126",
+      "questionNumber": 126,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 12 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=528/7 cm; area=3168/7 cm²",
+      "explanation": "C=2πr=2×22/7×12=528/7 cm. A=πr²=22/7×12²=3168/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_127",
+      "questionNumber": 127,
+      "questionText": "A right-angled triangle has legs 3 cm and 4 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "5.0 cm",
+      "explanation": "By Pythagoras, c=√(3²+4²)=√(25)≈5.0 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_128",
+      "questionNumber": 128,
+      "questionText": "In a right-angled triangle, opposite side to θ is 4 cm and adjacent side is 11 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.364; θ=20.0°",
+      "explanation": "tanθ=opposite/adjacent=4/11=0.364; θ=tan⁻¹(0.364)≈20.0°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_129",
+      "questionNumber": 129,
+      "questionText": "The data set is 11, 4, 7, 10, 13. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=9; median=10",
+      "explanation": "Mean=45/5=9. After ordering the five values, the middle value is 10.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_130",
+      "questionNumber": 130,
+      "questionText": "A box contains 6 red, 6 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/14; P(not blue)=8/14",
+      "explanation": "Total=14. P(red)=6/14; P(not blue)=(6+2)/14=8/14.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_131",
+      "questionNumber": 131,
+      "questionText": "An arithmetic sequence has first term 6 and common difference 7. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=6+7(n−1); (b) 69; (c) 375",
+      "explanation": "Tn=a+(n−1)d=6+7(n−1). T10=69. S10=10/2[2(6)+9(7)]=375.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_132",
+      "questionNumber": 132,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(7) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(7)=40; x=0 or x=2",
+      "explanation": "f(7)=7²−2(7)+5=40. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_133",
+      "questionNumber": 133,
+      "questionText": "For matrix A = [[4, 3], [10, 5]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=-10; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×5−3×10=-10. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_134",
+      "questionNumber": 134,
+      "questionText": "Find the gradient and equation of the line through (2,2) and (7,14).",
+      "options": [],
+      "correctAnswer": "gradient=12/5; equation y=12/5x+(-14/5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(14−2)/(7−2)=12/5. Using y=mx+c gives c=-14/5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_135",
+      "questionNumber": 135,
+      "questionText": "Simplify (a) (x+4)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+8x+16; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_136",
+      "questionNumber": 136,
+      "questionText": "(a) Calculate 39 × 9. (b) State whether the answer is a factor of 702. (c) Give one factor other than 1 and the number itself.",
+      "options": [],
+      "correctAnswer": "351",
+      "explanation": "(a) 39×9=351. (b) Yes, because 351×2=702. (c) Any proper factor such as 9 is acceptable.",
+      "answerConfidence": "high",
+      "topic": "Number and arithmetic",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_137",
+      "questionNumber": 137,
+      "questionText": "Given x=2, y=6, z=8, calculate xy+z² and then 2x+3y−z.",
+      "options": [],
+      "correctAnswer": "50; 14",
+      "explanation": "xy+z²=2×6+8²=50. Also 2x+3y−z=2(2)+3(6)−8=14.",
+      "answerConfidence": "high",
+      "topic": "Algebra",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_138",
+      "questionNumber": 138,
+      "questionText": "Solve the equation 7x + 7 = 56. Show the algebraic steps and check your answer.",
+      "options": [],
+      "correctAnswer": "7",
+      "explanation": "Subtract 7 from both sides to get 7x=49; divide by 7, giving x=7. Substitution gives 7(7)+7=56.",
+      "answerConfidence": "high",
+      "topic": "Equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_139",
+      "questionNumber": 139,
+      "questionText": "A rectangular garden is 14 m long and 8 m wide. Find (a) its perimeter, (b) its area, and (c) the cost of fencing it at $3 per metre.",
+      "options": [],
+      "correctAnswer": "(a) 44 m; (b) 112 m²; (c) $132",
+      "explanation": "Perimeter=2(14+8)=44 m. Area=14×8=112 m². Fencing cost=44×$3=$132.",
+      "answerConfidence": "high",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_140",
+      "questionNumber": 140,
+      "questionText": "A triangle has angles 49° and 69°. Calculate the third angle. If the triangle is isosceles, state a possible condition on its other angles.",
+      "options": [],
+      "correctAnswer": "62°",
+      "explanation": "Third angle=180−49−69=62°. For an isosceles triangle, two angles must be equal; this condition depends on the given values.",
+      "answerConfidence": "high",
+      "topic": "Geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_141",
+      "questionNumber": 141,
+      "questionText": "Using π=22/7, calculate the circumference and area of a circle of radius 9 cm.",
+      "options": [],
+      "correctAnswer": "Circumference=396/7 cm; area=1782/7 cm²",
+      "explanation": "C=2πr=2×22/7×9=396/7 cm. A=πr²=22/7×9²=1782/7 cm².",
+      "answerConfidence": "high",
+      "topic": "Circle geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_142",
+      "questionNumber": 142,
+      "questionText": "A right-angled triangle has legs 6 cm and 5 cm. Calculate the hypotenuse, giving your answer to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "7.8 cm",
+      "explanation": "By Pythagoras, c=√(6²+5²)=√(61)≈7.8 cm.",
+      "answerConfidence": "high",
+      "topic": "Pythagoras",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_143",
+      "questionNumber": 143,
+      "questionText": "In a right-angled triangle, opposite side to θ is 5 cm and adjacent side is 10 cm. Calculate tan θ and use a calculator to find θ to 1 decimal place.",
+      "options": [],
+      "correctAnswer": "tan θ=0.500; θ=26.6°",
+      "explanation": "tanθ=opposite/adjacent=5/10=0.500; θ=tan⁻¹(0.500)≈26.6°.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_144",
+      "questionNumber": 144,
+      "questionText": "The data set is 6, 9, 12, 15, 8. Calculate the mean and median.",
+      "options": [],
+      "correctAnswer": "Mean=10; median=9",
+      "explanation": "Mean=50/5=10. After ordering the five values, the middle value is 9.",
+      "answerConfidence": "high",
+      "topic": "Statistics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_145",
+      "questionNumber": 145,
+      "questionText": "A box contains 6 red, 3 blue and 2 green counters. One counter is selected at random. Find P(red) and P(not blue).",
+      "options": [],
+      "correctAnswer": "P(red)=6/11; P(not blue)=8/11",
+      "explanation": "Total=11. P(red)=6/11; P(not blue)=(6+2)/11=8/11.",
+      "answerConfidence": "high",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_146",
+      "questionNumber": 146,
+      "questionText": "An arithmetic sequence has first term 7 and common difference 4. Find (a) the nth term, (b) the 10th term, and (c) the sum of the first 10 terms.",
+      "options": [],
+      "correctAnswer": "(a) Tn=7+4(n−1); (b) 43; (c) 250",
+      "explanation": "Tn=a+(n−1)d=7+4(n−1). T10=43. S10=10/2[2(7)+9(4)]=250.",
+      "answerConfidence": "high",
+      "topic": "Sequences",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_147",
+      "questionNumber": 147,
+      "questionText": "Given f(x)=x²−2x+5, calculate f(8) and solve f(x)=5 for real x.",
+      "options": [],
+      "correctAnswer": "f(8)=53; x=0 or x=2",
+      "explanation": "f(8)=8²−2(8)+5=53. For f(x)=5, x²−2x=0, so x(x−2)=0 and x=0 or 2.",
+      "answerConfidence": "high",
+      "topic": "Functions",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_148",
+      "questionNumber": 148,
+      "questionText": "For matrix A = [[4, 6], [4, 8]], find det(A). State whether A has an inverse.",
+      "options": [],
+      "correctAnswer": "det(A)=8; A has an inverse.",
+      "explanation": "det(A)=ad−bc=4×8−6×4=8. A 2×2 matrix is invertible exactly when its determinant is non-zero.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_149",
+      "questionNumber": 149,
+      "questionText": "Find the gradient and equation of the line through (5,3) and (10,11).",
+      "options": [],
+      "correctAnswer": "gradient=8/5; equation y=8/5x+(-5)",
+      "explanation": "m=(y2−y1)/(x2−x1)=(11−3)/(10−5)=8/5. Using y=mx+c gives c=-5.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_ol_p2_150",
+      "questionNumber": 150,
+      "questionText": "Simplify (a) (x+3)² and (b) (x−7)(x+7).",
+      "options": [],
+      "correctAnswer": "(a) x²+6x+9; (b) x²−49",
+      "explanation": "Use (x+a)²=x²+2ax+a² and (x−b)(x+b)=x²−b².",
+      "answerConfidence": "high",
+      "topic": "Algebraic manipulation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    }
+  ]
+}

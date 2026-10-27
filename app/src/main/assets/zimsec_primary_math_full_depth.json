@@ -1,0 +1,164 @@
+[
+  {
+    "id": "math_full_counting_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Counting, Number Recognition, and Number Bonds",
+    "content": "Counting is the foundation of all mathematics. Learners start by counting objects one at a time (one-to-one correspondence), then recognizing and writing numerals (the symbols 0-9 and beyond). Number bonds show pairs of numbers that combine to make a target number, and knowing them by heart speeds up mental maths. Number bonds to 10: 0+10, 1+9, 2+8, 3+7, 4+6, 5+5. Number bonds to 20 and 100 follow the same idea with bigger numbers. Skip counting means counting in jumps rather than one at a time, such as counting in 2s (2,4,6,8...), 5s (5,10,15,20...), or 10s (10,20,30,40...), which builds a foundation for multiplication later.",
+    "source": "ZIMSEC Primary Mathematics Infant Syllabus",
+    "keywords": ["counting", "number bonds", "numerals", "skip counting", "mental maths", "math"]
+  },
+  {
+    "id": "math_full_rounding_estimation_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Rounding Numbers and Estimation",
+    "content": "Rounding means changing a number to a simpler, close value, often to make calculations quicker or to estimate an answer. To round to the nearest 10: look at the ones digit - if it is 5 or more, round up to the next ten; if it is less than 5, round down. Example: 47 rounds to 50, but 42 rounds to 40. To round to the nearest 100: look at the tens digit using the same rule. Example: 350 rounds to 400, but 340 rounds to 300. Estimation means finding an approximate answer quickly, often by rounding numbers before calculating, which helps you check whether an exact answer 'makes sense' - for example, estimating 29 + 51 as roughly 30 + 50 = 80 before working out the exact answer of 80.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["rounding", "estimation", "nearest ten", "nearest hundred", "approximation", "math"]
+  },
+  {
+    "id": "math_full_factors_multiples_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Factors, Multiples, and Prime Numbers",
+    "content": "A factor is a number that divides exactly into another number with no remainder. Example: the factors of 12 are 1, 2, 3, 4, 6, and 12, because each divides into 12 exactly. A multiple is the result of multiplying a number by a whole number. Example: the first five multiples of 4 are 4, 8, 12, 16, and 20. A prime number has exactly two factors: 1 and itself (examples: 2, 3, 5, 7, 11, 13). Note that 2 is the only even prime number. A composite number has more than two factors (examples: 4, 6, 8, 9, 10). The number 1 is neither prime nor composite. Finding the Highest Common Factor (HCF) and Lowest Common Multiple (LCM) of two numbers is a useful upper-primary skill, often needed when working with fractions.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["factors", "multiples", "prime numbers", "composite numbers", "hcf", "lcm", "math"]
+  },
+  {
+    "id": "math_full_fractions_advanced_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Equivalent Fractions, Comparing Fractions, and Mixed Numbers",
+    "content": "Equivalent fractions represent the same amount even though they look different, made by multiplying or dividing the numerator and denominator by the same number. Example: 1/2 = 2/4 = 3/6 = 4/8 (all equal one half). To compare fractions with different denominators, convert them to equivalent fractions with the same denominator first, then compare the numerators. Example: to compare 1/3 and 1/4, convert to 4/12 and 3/12 - since 4 is bigger than 3, 1/3 is bigger than 1/4. A mixed number combines a whole number and a fraction, like 2 and 1/2 (two and a half). An improper fraction has a numerator bigger than its denominator, like 5/2, which equals the mixed number 2 and 1/2. To add or subtract fractions with the same denominator, simply add or subtract the numerators and keep the denominator the same: 2/5 + 1/5 = 3/5.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["equivalent fractions", "comparing fractions", "mixed numbers", "improper fractions", "adding fractions", "math"]
+  },
+  {
+    "id": "math_full_decimals_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Introduction to Decimals",
+    "content": "A decimal is another way to show a fraction of a whole number, using a decimal point. The first digit after the decimal point is the tenths place, and the second digit is the hundredths place. Example: 0.5 means five tenths (the same as the fraction 1/2), and 0.25 means twenty-five hundredths (the same as 1/4). To add or subtract decimals, line up the decimal points carefully before calculating, just like lining up place value columns with whole numbers. Example: 3.4 + 2.15 - line up so the decimal points match, then add each column, giving 5.55. Decimals are commonly used with money (e.g., $2.50) and measurements (e.g., 1.75 metres).",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["decimals", "decimal point", "tenths", "hundredths", "money", "math"]
+  },
+  {
+    "id": "math_full_percentages_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Introduction to Percentages",
+    "content": "Percent (%) means 'out of 100'. A percentage is a special way of writing a fraction with a denominator of 100. Example: 50% means 50 out of 100, which is the same as the fraction 1/2 or the decimal 0.5. 25% is the same as 1/4 or 0.25. To find a simple percentage of an amount, you can use fractions: to find 50% of 40, find half of 40, which is 20. To find 25% of 40, find a quarter of 40, which is 10. Percentages are commonly seen in test scores (e.g., scoring 80%), discounts in shops, and interest rates, making them a very practical part of everyday mathematics.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["percentages", "percent", "fractions", "decimals", "discount", "math"]
+  },
+  {
+    "id": "math_full_negative_numbers_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Introduction to Negative Numbers",
+    "content": "Negative numbers are numbers less than zero, shown with a minus sign in front, like -5. On a number line, negative numbers are found to the left of zero, and positive numbers to the right. Negative numbers are used in real life to show temperatures below freezing (e.g., -2 degrees Celsius), amounts owed (debt), and levels below sea level or ground level (e.g., a basement floor labelled -1). When comparing negative numbers, remember that the number closer to zero is actually bigger: -2 is greater than -5, even though 5 is bigger than 2 as a positive number. Adding a positive number moves you right on the number line; subtracting moves you left.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["negative numbers", "number line", "temperature", "integers", "math"]
+  },
+  {
+    "id": "math_full_ratio_proportion_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "content": "A ratio compares two or more quantities, showing how much of one thing there is compared to another. It is written with a colon, like 2:3. Example: if a fruit juice mix uses 2 cups of concentrate for every 3 cups of water, the ratio is 2:3. To keep the same taste with more juice, you must scale both numbers by the same factor - for 4 cups of concentrate, you would need 6 cups of water (multiplying both parts of the ratio by 2). Proportion means two ratios are equal to each other, which is useful for solving problems like adjusting a recipe for more or fewer people, or working out how much of an ingredient is needed for a bigger batch while keeping things in the same balance.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["ratio", "proportion", "scaling", "recipes", "comparing quantities", "math"]
+  },
+  {
+    "id": "math_full_area_perimeter_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Area and Perimeter",
+    "content": "Perimeter is the total distance around the outside edge of a shape, found by adding up the lengths of all its sides. Example: a rectangle with sides 5cm and 3cm has a perimeter of 5+3+5+3 = 16cm. Area is the amount of flat space inside a shape, measured in square units (like cm² or m²). For a rectangle (including a square), Area = length x width. Example: a rectangle 5cm by 3cm has an area of 5 x 3 = 15cm². For a triangle, Area = 1/2 x base x height. Perimeter tells you how much fencing you'd need around a garden, while area tells you how much space is inside it, such as how much grass seed to buy.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["area", "perimeter", "rectangle", "triangle", "square units", "geometry", "math"]
+  },
+  {
+    "id": "math_full_volume_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Volume of 3D Shapes",
+    "content": "Volume is the amount of space a 3D (solid) object takes up, measured in cubic units (like cm³ or m³). For a cuboid (a box shape) or cube, Volume = length x width x height. Example: a box that is 4cm long, 3cm wide, and 2cm high has a volume of 4 x 3 x 2 = 24cm³. Volume is different from capacity: volume measures the space a solid object occupies, while capacity measures how much liquid a container can hold (usually in millilitres or litres). A useful fact: 1 cm³ of water has a capacity of exactly 1 millilitre, which connects the two ideas.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["volume", "cuboid", "cube", "capacity", "cubic units", "math"]
+  },
+  {
+    "id": "math_full_position_direction_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Position, Direction, and Grid References",
+    "content": "Position and direction describe where things are and how to get from one place to another. The four cardinal points are North, South, East, and West, usually shown on a compass, with North at the top of most maps. Directions can also be described using left, right, forward, backward, up, and down, or using clockwise and anti-clockwise turns. On a grid or map, position can be described using coordinates - two numbers or letters showing how far across and how far up a point is, similar to describing a seat by its row and column number. Understanding position and direction is useful for reading maps, giving directions, and understanding movement in geometry.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["position", "direction", "north south east west", "compass", "grid", "coordinates", "math"]
+  },
+  {
+    "id": "math_full_angles_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Types of Angles and Measuring Angles",
+    "content": "An angle is formed where two lines meet at a point, measured in degrees using a protractor. Types of angles: an Acute angle is less than 90 degrees (a sharp, small angle). A Right angle is exactly 90 degrees (like the corner of a square, often marked with a small square symbol). An Obtuse angle is more than 90 degrees but less than 180 degrees. A Straight angle is exactly 180 degrees (a straight line). A Reflex angle is more than 180 degrees but less than 360 degrees. A full turn is 360 degrees. To measure an angle with a protractor, line up the base line of the protractor with one arm of the angle, with the centre point on the vertex (the corner point), then read where the other arm crosses the scale.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["angles", "acute", "obtuse", "right angle", "reflex angle", "protractor", "degrees", "math"]
+  },
+  {
+    "id": "math_full_symmetry_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Symmetry",
+    "content": "A shape has line symmetry (also called reflective symmetry) if it can be folded along a line so that both halves match up exactly - this fold line is called the line of symmetry (or axis of symmetry). Some shapes have more than one line of symmetry: a square has 4 lines of symmetry, a rectangle has 2, an equilateral triangle has 3, and a circle has infinite lines of symmetry (any line through its centre). Some shapes have no lines of symmetry at all, like a scalene triangle (a triangle with three different side lengths). Symmetry is found all around us, in butterflies, leaves, buildings, and many traditional patterns used in African textile and basket designs.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["symmetry", "line of symmetry", "reflective symmetry", "shapes", "geometry", "math"]
+  },
+  {
+    "id": "math_full_averages_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Finding the Average (Mean)",
+    "content": "The average (also called the mean) of a set of numbers shows a typical or middle value for a group of data. To find the mean: add up all the numbers in the set, then divide by how many numbers there are. Example: to find the average of the test scores 6, 8, 7, 9, and 5: add them together (6+8+7+9+5 = 35), then divide by how many scores there are (5), giving an average of 35 ÷ 5 = 7. The mean is useful for comparing groups of data, like comparing average rainfall between two months, or average marks between two classes.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["average", "mean", "data", "statistics", "math"]
+  },
+  {
+    "id": "math_full_probability_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Introduction to Probability",
+    "content": "Probability describes how likely something is to happen. Events can be described using words like: Impossible (will never happen, like the sun rising in the west), Unlikely (probably won't happen), Even chance/50-50 (equally likely to happen or not, like flipping a coin and getting heads), Likely (probably will happen), and Certain (will definitely happen, like the sun rising tomorrow). Probability can also be shown as a fraction: if you roll a normal six-sided dice, the probability of rolling a 4 is 1/6 (one favourable outcome out of six possible outcomes), since each number has an equal chance of appearing.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["probability", "chance", "likely", "unlikely", "certain", "dice", "math"]
+  },
+  {
+    "id": "math_full_word_problems_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Strategies for Solving Word Problems",
+    "content": "Word problems describe a real-life situation using words, and you must work out which calculation to use. Helpful strategies: 1. Read the problem carefully, maybe twice, to understand what is being asked. 2. Identify the important numbers and what you need to find (the unknown). 3. Look for key words that hint at the operation needed: 'altogether', 'total', 'sum' often mean addition; 'left', 'remain', 'difference' often mean subtraction; 'each', 'every', 'times' often mean multiplication; 'shared equally', 'split' often mean division. 4. Write a number sentence (equation) based on the problem. 5. Solve the calculation carefully. 6. Check your answer makes sense in the context of the question - for example, you cannot have half a person.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["word problems", "problem solving", "strategies", "keywords", "math"]
+  },
+  {
+    "id": "math_full_roman_numerals_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Roman Numerals",
+    "content": "Roman numerals are an old number system still used today for things like clock faces, book chapters, and important dates. The main symbols are: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000. Rules: symbols are usually added together when a smaller value follows a larger one (VI = 5+1 = 6), but a smaller value placed before a larger one is subtracted (IV = 5-1 = 4, IX = 10-1 = 9). Examples: III = 3, VII = 7, XII = 12, XIV = 14, XX = 20, XL = 40, L = 50, XC = 90, C = 100. No symbol is repeated more than three times in a row.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["roman numerals", "numbers", "clock", "math"]
+  },
+  {
+    "id": "math_full_multiplication_tables_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Multiplication Tables and Mental Strategies",
+    "content": "Knowing multiplication tables (times tables) up to 12 x 12 by heart is one of the most important primary maths skills, making later work with fractions, division, and algebra much faster. Useful mental strategies: the 2 times table is just doubling a number; the 5 times table always ends in 0 or 5, and you can find it by halving the 10 times table; the 10 times table just adds a zero to the end of a number; the 9 times table has a pattern where the digits of the answer always add up to 9 (e.g., 9x4=36, and 3+6=9). Regular practice with times tables, using songs, games, or flashcards, helps build speed and confidence in mental maths.",
+    "source": "ZIMSEC Primary Mathematics",
+    "keywords": ["multiplication tables", "times tables", "mental maths", "strategies", "math"]
+  }
+]

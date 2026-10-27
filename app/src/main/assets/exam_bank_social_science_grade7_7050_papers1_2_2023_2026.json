@@ -1,0 +1,6576 @@
+{
+  "examMode": {
+    "name": "ZIMSEC Grade 7 Social Science Exam Mode",
+    "subject": "Social Science",
+    "grade": "Grade 7",
+    "subjectCode": "7050",
+    "papers": [
+      "7050/1",
+      "7050/2"
+    ],
+    "questionBankSize": {
+      "paper1": 150,
+      "paper2": 150,
+      "total": 300
+    },
+    "copyrightNote": "Original practice/revision questions, not verbatim reproductions of copyrighted ZIMSEC past papers. Built from observed ZIMSEC structure and recurring Grade 7 Zimbabwe Social Science themes.",
+    "sourceBasis": [
+      {
+        "source": "Uploaded JSON structure reference",
+        "citation": "turn0file0"
+      },
+      {
+        "source": "ZIMSEC official Social Science Paper 1",
+        "url": "https://www5.zimsec.co.zw/download/social-science-paper-1/"
+      },
+      {
+        "source": "ZIMSEC official Social Science Paper 2",
+        "url": "https://www5.zimsec.co.zw/download/social-science-paper-2/"
+      },
+      {
+        "source": "ZIMSEC Grade 7 specimen-paper index",
+        "url": "https://www5.zimsec.co.zw/specimen-papers/"
+      },
+      {
+        "source": "2024 publicly indexed Grade 7 Social Science papers",
+        "purpose": "format/topic verification"
+      },
+      {
+        "source": "2025 June Grade 7 Social Science examination material",
+        "purpose": "recurring topic verification"
+      },
+      {
+        "source": "2026 Grade 7 Social Sciences teaching plan",
+        "purpose": "current curriculum alignment"
+      }
+    ]
+  },
+  "paperInfo": {
+    "subject": "Social Science",
+    "level": "Grade 7",
+    "paperCode": "7050/1",
+    "paperName": "Social Science Paper 1 (Multiple Choice) - Original Practice Bank",
+    "paperType": "Exam Mode Practice Bank",
+    "questionCount": 150,
+    "duration": "1 hour 45 minutes",
+    "instructions": "Answer all questions. Choose one best answer from A, B, C or D."
+  },
+  "paper1Questions": [
+    {
+      "id": "ss7050_1_q1",
+      "questionNumber": 1,
+      "questionText": "What is a nuclear family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family consisting mainly of parents and their children"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q2",
+      "questionNumber": 2,
+      "questionText": "What is a polygamous family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family in which a man has more than one wife"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q3",
+      "questionNumber": 3,
+      "questionText": "What is a genealogy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A record showing family relationships across generations"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_1_q4",
+      "questionNumber": 4,
+      "questionText": "What is a totem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A symbol identifying a clan or family lineage"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_1_q5",
+      "questionNumber": 5,
+      "questionText": "What is empathy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trying to understand another person’s feelings"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Moral values"
+    },
+    {
+      "id": "ss7050_1_q6",
+      "questionNumber": 6,
+      "questionText": "State one practice associated with Indigenous Religion.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Honouring ancestors"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Indigenous Religion"
+    },
+    {
+      "id": "ss7050_1_q7",
+      "questionNumber": 7,
+      "questionText": "What is the Bible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sacred text of Christianity"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q8",
+      "questionNumber": 8,
+      "questionText": "Which festival celebrates the birth of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Christmas"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q9",
+      "questionNumber": 9,
+      "questionText": "Which festival commemorates the resurrection of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Easter"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q10",
+      "questionNumber": 10,
+      "questionText": "Where is the Kaaba located?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mecca"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q11",
+      "questionNumber": 11,
+      "questionText": "Name one of the Five Pillars of Islam.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Salah"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q12",
+      "questionNumber": 12,
+      "questionText": "During which month do Muslims fast?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ramadan"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q13",
+      "questionNumber": 13,
+      "questionText": "How is Judaism commonly described?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A monotheistic religion"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Judaism"
+    },
+    {
+      "id": "ss7050_1_q14",
+      "questionNumber": 14,
+      "questionText": "Why is Great Zimbabwe important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a major cultural and archaeological heritage site"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_1_q15",
+      "questionNumber": 15,
+      "questionText": "State one way to protect a heritage site.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prevent vandalism and damage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage conservation"
+    },
+    {
+      "id": "ss7050_1_q16",
+      "questionNumber": 16,
+      "questionText": "Who is a chief?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A traditional leader"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q17",
+      "questionNumber": 17,
+      "questionText": "State one role of a traditional leader.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helping resolve community disputes"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q18",
+      "questionNumber": 18,
+      "questionText": "Give one national symbol of Zimbabwe.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The national flag"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_1_q19",
+      "questionNumber": 19,
+      "questionText": "What is the general voting age in Zimbabwe?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 years"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q20",
+      "questionNumber": 20,
+      "questionText": "State one responsibility of a citizen.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Obeying laws and protecting public property"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q21",
+      "questionNumber": 21,
+      "questionText": "What is democracy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A system involving citizen participation in choosing representatives"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q22",
+      "questionNumber": 22,
+      "questionText": "Which institution makes national laws?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parliament"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q23",
+      "questionNumber": 23,
+      "questionText": "Why is a secret ballot important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It protects the privacy of the voter’s choice"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_1_q24",
+      "questionNumber": 24,
+      "questionText": "What is gender equality?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fair opportunities and treatment regardless of gender"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_1_q25",
+      "questionNumber": 25,
+      "questionText": "What is production?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Making goods or providing services"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q26",
+      "questionNumber": 26,
+      "questionText": "What is consumption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using goods and services"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q27",
+      "questionNumber": 27,
+      "questionText": "What is distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Moving goods and services towards markets and users"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q28",
+      "questionNumber": 28,
+      "questionText": "Who is an entrepreneur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A person who starts and manages a business venture"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_1_q29",
+      "questionNumber": 29,
+      "questionText": "What is a budget?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A plan of expected income and expenditure"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_1_q30",
+      "questionNumber": 30,
+      "questionText": "What is opportunity cost?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The next best alternative given up when a choice is made"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_1_q31",
+      "questionNumber": 31,
+      "questionText": "What is rural-urban migration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Movement from rural areas to towns or cities"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_1_q32",
+      "questionNumber": 32,
+      "questionText": "What is population density?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The number of people per unit area"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Population"
+    },
+    {
+      "id": "ss7050_1_q33",
+      "questionNumber": 33,
+      "questionText": "What is a census?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A systematic count and description of a population"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Population"
+    },
+    {
+      "id": "ss7050_1_q34",
+      "questionNumber": 34,
+      "questionText": "State one effect of deforestation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil erosion and habitat loss"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_1_q35",
+      "questionNumber": 35,
+      "questionText": "Give one way to conserve water.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Repair leaking taps and avoid unnecessary wastage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_1_q36",
+      "questionNumber": 36,
+      "questionText": "What is sustainable development?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Meeting present needs while protecting resources for the future"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Sustainability"
+    },
+    {
+      "id": "ss7050_1_q37",
+      "questionNumber": 37,
+      "questionText": "What is self-awareness?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Understanding one’s strengths, feelings and values"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Guidance"
+    },
+    {
+      "id": "ss7050_1_q38",
+      "questionNumber": 38,
+      "questionText": "What is negative peer pressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Influence that pushes a person towards harmful behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_1_q39",
+      "questionNumber": 39,
+      "questionText": "How can a learner resist harmful peer pressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Say no and seek trusted support"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_1_q40",
+      "questionNumber": 40,
+      "questionText": "What is adolescence?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A period of physical, emotional and social development"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Adolescence"
+    },
+    {
+      "id": "ss7050_1_q41",
+      "questionNumber": 41,
+      "questionText": "Give one personal hygiene practice.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Regular bathing and handwashing"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Health and hygiene"
+    },
+    {
+      "id": "ss7050_1_q42",
+      "questionNumber": 42,
+      "questionText": "What should a learner do if abuse is suspected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tell a trusted adult or appropriate authority"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Child protection"
+    },
+    {
+      "id": "ss7050_1_q43",
+      "questionNumber": 43,
+      "questionText": "Give one healthy leisure activity.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Playing sport safely"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Leisure"
+    },
+    {
+      "id": "ss7050_1_q44",
+      "questionNumber": 44,
+      "questionText": "Name one reliable source of health information.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A qualified health professional"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_1_q45",
+      "questionNumber": 45,
+      "questionText": "What is volunteerism?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Offering time or skills willingly to help others"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_1_q46",
+      "questionNumber": 46,
+      "questionText": "What is corporate social responsibility?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Responsible business action that benefits society or the environment"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_1_q47",
+      "questionNumber": 47,
+      "questionText": "How can ICT preserve heritage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By digitising records, photographs and oral histories"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "ICT"
+    },
+    {
+      "id": "ss7050_1_q48",
+      "questionNumber": 48,
+      "questionText": "State one risk of careless online sharing.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Misuse of personal information"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_1_q49",
+      "questionNumber": 49,
+      "questionText": "What is religious tolerance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Respecting people with different lawful beliefs"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_1_q50",
+      "questionNumber": 50,
+      "questionText": "How can tourism benefit communities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By creating employment and markets"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Tourism"
+    },
+    {
+      "id": "ss7050_1_q51",
+      "questionNumber": 51,
+      "questionText": "Why is occupational safety important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It reduces workplace injuries and hazards"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Occupational safety"
+    },
+    {
+      "id": "ss7050_1_q52",
+      "questionNumber": 52,
+      "questionText": "What is a map key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An explanation of symbols used on a map"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Map skills"
+    },
+    {
+      "id": "ss7050_1_q53",
+      "questionNumber": 53,
+      "questionText": "What is a compass used for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Determining direction"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Map skills"
+    },
+    {
+      "id": "ss7050_1_q54",
+      "questionNumber": 54,
+      "questionText": "Give one physical feature.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A river"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Geography"
+    },
+    {
+      "id": "ss7050_1_q55",
+      "questionNumber": 55,
+      "questionText": "Give one human-made feature.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A road"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Geography"
+    },
+    {
+      "id": "ss7050_1_q56",
+      "questionNumber": 56,
+      "questionText": "State one factor influencing settlement.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Availability of water, land or services"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Settlement"
+    },
+    {
+      "id": "ss7050_1_q57",
+      "questionNumber": 57,
+      "questionText": "What is urbanisation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Growth of towns and cities and their populations"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Urbanisation"
+    },
+    {
+      "id": "ss7050_1_q58",
+      "questionNumber": 58,
+      "questionText": "What is a drought?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A prolonged period of abnormally low rainfall"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_1_q59",
+      "questionNumber": 59,
+      "questionText": "How can flood risk be reduced?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keeping drainage clear and avoiding risky settlement sites"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_1_q60",
+      "questionNumber": 60,
+      "questionText": "How can weather information help farmers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By helping them plan activities and manage weather risks"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_1_q61",
+      "questionNumber": 61,
+      "questionText": "Give one basic need.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Clean drinking water"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Needs and wants"
+    },
+    {
+      "id": "ss7050_1_q62",
+      "questionNumber": 62,
+      "questionText": "Why is a receipt useful?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It provides evidence of a purchase"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Consumer education"
+    },
+    {
+      "id": "ss7050_1_q63",
+      "questionNumber": 63,
+      "questionText": "In a Grade 7 context, what is a nuclear family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family consisting mainly of parents and their children"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q64",
+      "questionNumber": 64,
+      "questionText": "In a Grade 7 context, what is a polygamous family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family in which a man has more than one wife"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q65",
+      "questionNumber": 65,
+      "questionText": "In a Grade 7 context, what is a genealogy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A record showing family relationships across generations"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_1_q66",
+      "questionNumber": 66,
+      "questionText": "In a Grade 7 context, what is a totem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A symbol identifying a clan or family lineage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_1_q67",
+      "questionNumber": 67,
+      "questionText": "In a Grade 7 context, what is empathy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trying to understand another person’s feelings"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Moral values"
+    },
+    {
+      "id": "ss7050_1_q68",
+      "questionNumber": 68,
+      "questionText": "In this situation, state one practice associated with Indigenous Religion.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Honouring ancestors"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Indigenous Religion"
+    },
+    {
+      "id": "ss7050_1_q69",
+      "questionNumber": 69,
+      "questionText": "In a Grade 7 context, what is the Bible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sacred text of Christianity"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q70",
+      "questionNumber": 70,
+      "questionText": "Which festival celebrates the birth of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Christmas"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q71",
+      "questionNumber": 71,
+      "questionText": "Which festival commemorates the resurrection of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Easter"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q72",
+      "questionNumber": 72,
+      "questionText": "Where is the Kaaba located?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mecca"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q73",
+      "questionNumber": 73,
+      "questionText": "Name one of the Five Pillars of Islam.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Salah"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q74",
+      "questionNumber": 74,
+      "questionText": "During which month do Muslims fast?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ramadan"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q75",
+      "questionNumber": 75,
+      "questionText": "How is Judaism commonly described?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A monotheistic religion"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Judaism"
+    },
+    {
+      "id": "ss7050_1_q76",
+      "questionNumber": 76,
+      "questionText": "In this situation, why is Great Zimbabwe important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a major cultural and archaeological heritage site"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_1_q77",
+      "questionNumber": 77,
+      "questionText": "In this situation, state one way to protect a heritage site.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prevent vandalism and damage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage conservation"
+    },
+    {
+      "id": "ss7050_1_q78",
+      "questionNumber": 78,
+      "questionText": "Who is a chief?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A traditional leader"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q79",
+      "questionNumber": 79,
+      "questionText": "In this situation, state one role of a traditional leader.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helping resolve community disputes"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q80",
+      "questionNumber": 80,
+      "questionText": "In this situation, give one national symbol of Zimbabwe.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The national flag"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_1_q81",
+      "questionNumber": 81,
+      "questionText": "In a Grade 7 context, what is the general voting age in Zimbabwe?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 years"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q82",
+      "questionNumber": 82,
+      "questionText": "In this situation, state one responsibility of a citizen.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Obeying laws and protecting public property"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q83",
+      "questionNumber": 83,
+      "questionText": "In a Grade 7 context, what is democracy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A system involving citizen participation in choosing representatives"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q84",
+      "questionNumber": 84,
+      "questionText": "Which institution makes national laws?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parliament"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q85",
+      "questionNumber": 85,
+      "questionText": "In this situation, why is a secret ballot important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It protects the privacy of the voter’s choice"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_1_q86",
+      "questionNumber": 86,
+      "questionText": "In a Grade 7 context, what is gender equality?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fair opportunities and treatment regardless of gender"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_1_q87",
+      "questionNumber": 87,
+      "questionText": "In a Grade 7 context, what is production?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Making goods or providing services"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q88",
+      "questionNumber": 88,
+      "questionText": "In a Grade 7 context, what is consumption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using goods and services"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q89",
+      "questionNumber": 89,
+      "questionText": "In a Grade 7 context, what is distribution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Moving goods and services towards markets and users"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q90",
+      "questionNumber": 90,
+      "questionText": "A learner finds an old cultural artefact at school. What should happen next?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Report it to a responsible heritage authority or adult"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_1_q91",
+      "questionNumber": 91,
+      "questionText": "A family must choose between repairing a leaking roof and buying a luxury item. Which should come first?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Repair the roof because it is an essential need"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_1_q92",
+      "questionNumber": 92,
+      "questionText": "Residents work together to repair a damaged community water point. What is this an example of?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Community service and cooperation"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_1_q93",
+      "questionNumber": 93,
+      "questionText": "A company supports a school and improves waste management near its operations. What principle is shown?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Corporate social responsibility"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_1_q94",
+      "questionNumber": 94,
+      "questionText": "A learner receives a threatening message online. What is a safe response?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Preserve evidence and tell a trusted adult"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_1_q95",
+      "questionNumber": 95,
+      "questionText": "Two neighbours have different religions. What promotes peaceful coexistence?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Respecting each other’s lawful beliefs"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_1_q96",
+      "questionNumber": 96,
+      "questionText": "A school gives boys and girls equal leadership opportunities. What value is promoted?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gender equality"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_1_q97",
+      "questionNumber": 97,
+      "questionText": "A village experiences prolonged low rainfall and crop failure. What hazard is described?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Drought"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_1_q98",
+      "questionNumber": 98,
+      "questionText": "A town receives many new residents from rural areas. What process is occurring?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rural-urban migration"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_1_q99",
+      "questionNumber": 99,
+      "questionText": "A school records elders’ oral histories and stores them digitally with permission. What is being done?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Preserving heritage through ICT"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "ICT and heritage"
+    },
+    {
+      "id": "ss7050_1_q100",
+      "questionNumber": 100,
+      "questionText": "A consumer finds a product is faulty. What should the consumer keep?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The receipt or other proof of purchase"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Consumer education"
+    },
+    {
+      "id": "ss7050_1_q101",
+      "questionNumber": 101,
+      "questionText": "A farmer receives a heavy-rain forecast. How can this help?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can guide farming decisions and risk planning"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_1_q102",
+      "questionNumber": 102,
+      "questionText": "A wetland provides water and animal habitat. What should the community do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conserve it and use it sustainably"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_1_q103",
+      "questionNumber": 103,
+      "questionText": "A learner is pressured to misuse a harmful substance. What is safest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Refuse and seek trusted support"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_1_q104",
+      "questionNumber": 104,
+      "questionText": "A community wants tourism income without damaging a heritage site. What should it do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Protect the site and manage responsible tourism"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Tourism"
+    },
+    {
+      "id": "ss7050_1_q105",
+      "questionNumber": 105,
+      "questionText": "A school wants to reduce litter. Which approach is most suitable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Provide bins, educate learners and organise clean-ups"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_1_q106",
+      "questionNumber": 106,
+      "questionText": "A family wants to save for school expenses. What is a sensible first step?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Set a savings goal and plan regular amounts"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_1_q107",
+      "questionNumber": 107,
+      "questionText": "A class elects a representative. What makes the election fair?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Eligible learners have a genuine and private choice"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_1_q108",
+      "questionNumber": 108,
+      "questionText": "Two families disagree about a shared resource. What should they do first?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Listen to both sides and identify the issue"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Conflict resolution"
+    },
+    {
+      "id": "ss7050_1_q109",
+      "questionNumber": 109,
+      "questionText": "A learner hears an unverified health rumour. What is responsible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Avoid spreading it and check with a reliable source"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_1_q110",
+      "questionNumber": 110,
+      "questionText": "A school garden uses rainwater and compost. What does this demonstrate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sustainable resource management"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Sustainability"
+    },
+    {
+      "id": "ss7050_1_q111",
+      "questionNumber": 111,
+      "questionText": "A map contains symbols for a clinic, river and road. What explains the symbols?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The map key"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Map skills"
+    },
+    {
+      "id": "ss7050_1_q112",
+      "questionNumber": 112,
+      "questionText": "A family has limited income. Which should be prioritised?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Essential needs"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Needs and wants"
+    },
+    {
+      "id": "ss7050_1_q113",
+      "questionNumber": 113,
+      "questionText": "A youth group organises a supervised sports day. What is important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Safe facilities and supervision"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Leisure"
+    },
+    {
+      "id": "ss7050_1_q114",
+      "questionNumber": 114,
+      "questionText": "A learner experiences abuse. What is a safe action?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tell a trusted adult or appropriate authority"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Child protection"
+    },
+    {
+      "id": "ss7050_1_q115",
+      "questionNumber": 115,
+      "questionText": "A youth group teaches forgiveness after conflict. What value is promoted?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reconciliation and forgiveness"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Moral values"
+    },
+    {
+      "id": "ss7050_1_q116",
+      "questionNumber": 116,
+      "questionText": "An entrepreneur researches customers and costs before starting a business. What is shown?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Business planning"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_1_q117",
+      "questionNumber": 117,
+      "questionText": "A village protects vegetation along a stream. What benefit can result?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reduced erosion and better water protection"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_1_q118",
+      "questionNumber": 118,
+      "questionText": "A family shares household tasks fairly. What is promoted?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gender equality and cooperation"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family roles"
+    },
+    {
+      "id": "ss7050_1_q119",
+      "questionNumber": 119,
+      "questionText": "A community cleans a public facility without payment. What is this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Volunteerism"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the situation completely"
+        },
+        {
+          "letter": "C",
+          "text": "Damage the public facility"
+        },
+        {
+          "letter": "D",
+          "text": "Spread unverified rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_1_q120",
+      "questionNumber": 120,
+      "questionText": "In a Grade 7 context, what is a drought?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A prolonged period of abnormally low rainfall"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_1_q121",
+      "questionNumber": 121,
+      "questionText": "In this situation, how can flood risk be reduced?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keeping drainage clear and avoiding risky settlement sites"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_1_q122",
+      "questionNumber": 122,
+      "questionText": "In this situation, how can weather information help farmers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By helping them plan activities and manage weather risks"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_1_q123",
+      "questionNumber": 123,
+      "questionText": "In this situation, give one basic need.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Clean drinking water"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Needs and wants"
+    },
+    {
+      "id": "ss7050_1_q124",
+      "questionNumber": 124,
+      "questionText": "In this situation, why is a receipt useful?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It provides evidence of a purchase"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Consumer education"
+    },
+    {
+      "id": "ss7050_1_q125",
+      "questionNumber": 125,
+      "questionText": "In a Grade 7 context, what is a nuclear family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family consisting mainly of parents and their children"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q126",
+      "questionNumber": 126,
+      "questionText": "In a Grade 7 context, what is a polygamous family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A family in which a man has more than one wife"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_1_q127",
+      "questionNumber": 127,
+      "questionText": "In a Grade 7 context, what is a genealogy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A record showing family relationships across generations"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_1_q128",
+      "questionNumber": 128,
+      "questionText": "In a Grade 7 context, what is a totem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A symbol identifying a clan or family lineage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_1_q129",
+      "questionNumber": 129,
+      "questionText": "In a Grade 7 context, what is empathy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trying to understand another person’s feelings"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Moral values"
+    },
+    {
+      "id": "ss7050_1_q130",
+      "questionNumber": 130,
+      "questionText": "In this situation, state one practice associated with Indigenous Religion.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Honouring ancestors"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Indigenous Religion"
+    },
+    {
+      "id": "ss7050_1_q131",
+      "questionNumber": 131,
+      "questionText": "In a Grade 7 context, what is the Bible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sacred text of Christianity"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q132",
+      "questionNumber": 132,
+      "questionText": "Which festival celebrates the birth of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Christmas"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q133",
+      "questionNumber": 133,
+      "questionText": "Which festival commemorates the resurrection of Jesus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Easter"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_1_q134",
+      "questionNumber": 134,
+      "questionText": "Where is the Kaaba located?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mecca"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q135",
+      "questionNumber": 135,
+      "questionText": "Name one of the Five Pillars of Islam.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Salah"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q136",
+      "questionNumber": 136,
+      "questionText": "During which month do Muslims fast?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ramadan"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_1_q137",
+      "questionNumber": 137,
+      "questionText": "How is Judaism commonly described?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A monotheistic religion"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Judaism"
+    },
+    {
+      "id": "ss7050_1_q138",
+      "questionNumber": 138,
+      "questionText": "In this situation, why is Great Zimbabwe important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a major cultural and archaeological heritage site"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_1_q139",
+      "questionNumber": 139,
+      "questionText": "In this situation, state one way to protect a heritage site.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prevent vandalism and damage"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Heritage conservation"
+    },
+    {
+      "id": "ss7050_1_q140",
+      "questionNumber": 140,
+      "questionText": "Who is a chief?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A traditional leader"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q141",
+      "questionNumber": 141,
+      "questionText": "In this situation, state one role of a traditional leader.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helping resolve community disputes"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_1_q142",
+      "questionNumber": 142,
+      "questionText": "In this situation, give one national symbol of Zimbabwe.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The national flag"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_1_q143",
+      "questionNumber": 143,
+      "questionText": "In a Grade 7 context, what is the general voting age in Zimbabwe?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 years"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q144",
+      "questionNumber": 144,
+      "questionText": "In this situation, state one responsibility of a citizen.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Obeying laws and protecting public property"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_1_q145",
+      "questionNumber": 145,
+      "questionText": "In a Grade 7 context, what is democracy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A system involving citizen participation in choosing representatives"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q146",
+      "questionNumber": 146,
+      "questionText": "Which institution makes national laws?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parliament"
+        },
+        {
+          "letter": "B",
+          "text": "A school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "A type of transport"
+        },
+        {
+          "letter": "D",
+          "text": "A sports result"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_1_q147",
+      "questionNumber": 147,
+      "questionText": "In this situation, why is a secret ballot important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It protects the privacy of the voter’s choice"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_1_q148",
+      "questionNumber": 148,
+      "questionText": "In a Grade 7 context, what is gender equality?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fair opportunities and treatment regardless of gender"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_1_q149",
+      "questionNumber": 149,
+      "questionText": "In a Grade 7 context, what is production?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Making goods or providing services"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_1_q150",
+      "questionNumber": 150,
+      "questionText": "In a Grade 7 context, what is consumption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using goods and services"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the issue"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging public property"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": "",
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    }
+  ],
+  "paper2Info": {
+    "subject": "Social Science",
+    "level": "Grade 7",
+    "paperCode": "7050/2",
+    "paperName": "Social Science Paper 2 (Structured Questions) - Original Practice Bank",
+    "paperType": "Exam Mode Practice Bank",
+    "questionCount": 150,
+    "duration": "1 hour 30 minutes",
+    "sections": {
+      "A": "Short structured questions",
+      "B": "Scenario/source-based questions",
+      "C": "Extended-response questions"
+    }
+  },
+  "paper2Questions": [
+    {
+      "id": "ss7050_2_q1",
+      "questionNumber": 1,
+      "section": "A",
+      "questionText": "Define nuclear family.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family types"
+    },
+    {
+      "id": "ss7050_2_q2",
+      "questionNumber": 2,
+      "section": "A",
+      "questionText": "State one characteristic of a polygamous family.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family types"
+    },
+    {
+      "id": "ss7050_2_q3",
+      "questionNumber": 3,
+      "section": "A",
+      "questionText": "Name another family type.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family types"
+    },
+    {
+      "id": "ss7050_2_q4",
+      "questionNumber": 4,
+      "section": "A",
+      "questionText": "State one role of parents.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family roles"
+    },
+    {
+      "id": "ss7050_2_q5",
+      "questionNumber": 5,
+      "section": "A",
+      "questionText": "Give one example of family wealth.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family resources"
+    },
+    {
+      "id": "ss7050_2_q6",
+      "questionNumber": 6,
+      "section": "A",
+      "questionText": "Define genealogy.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_2_q7",
+      "questionNumber": 7,
+      "section": "A",
+      "questionText": "State one reason for preserving genealogy.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_2_q8",
+      "questionNumber": 8,
+      "section": "A",
+      "questionText": "Define totem.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_2_q9",
+      "questionNumber": 9,
+      "section": "A",
+      "questionText": "State one reason for respecting a totem.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_2_q10",
+      "questionNumber": 10,
+      "section": "A",
+      "questionText": "Name one indigenous grain-processing tool.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Indigenous technology"
+    },
+    {
+      "id": "ss7050_2_q11",
+      "questionNumber": 11,
+      "section": "A",
+      "questionText": "State one use of a mortar and pestle.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Indigenous technology"
+    },
+    {
+      "id": "ss7050_2_q12",
+      "questionNumber": 12,
+      "section": "A",
+      "questionText": "Name one indigenous staple food.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Indigenous foods"
+    },
+    {
+      "id": "ss7050_2_q13",
+      "questionNumber": 13,
+      "section": "A",
+      "questionText": "Define heritage site.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_2_q14",
+      "questionNumber": 14,
+      "section": "A",
+      "questionText": "Name one Zimbabwean heritage site.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_2_q15",
+      "questionNumber": 15,
+      "section": "A",
+      "questionText": "State one way to protect a heritage site.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage conservation"
+    },
+    {
+      "id": "ss7050_2_q16",
+      "questionNumber": 16,
+      "section": "A",
+      "questionText": "Name one traditional leader.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_2_q17",
+      "questionNumber": 17,
+      "section": "A",
+      "questionText": "State one role of a traditional leader.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_2_q18",
+      "questionNumber": 18,
+      "section": "A",
+      "questionText": "Define citizenship.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_2_q19",
+      "questionNumber": 19,
+      "section": "A",
+      "questionText": "State one citizen responsibility.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_2_q20",
+      "questionNumber": 20,
+      "section": "A",
+      "questionText": "State the general voting age in Zimbabwe.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_2_q21",
+      "questionNumber": 21,
+      "section": "A",
+      "questionText": "Name one national symbol.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_2_q22",
+      "questionNumber": 22,
+      "section": "A",
+      "questionText": "State one purpose of a national symbol.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_2_q23",
+      "questionNumber": 23,
+      "section": "A",
+      "questionText": "Define democracy.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_2_q24",
+      "questionNumber": 24,
+      "section": "A",
+      "questionText": "Name the national law-making institution.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Governance"
+    },
+    {
+      "id": "ss7050_2_q25",
+      "questionNumber": 25,
+      "section": "A",
+      "questionText": "State one reason for a secret ballot.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_2_q26",
+      "questionNumber": 26,
+      "section": "A",
+      "questionText": "Define gender equality.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_2_q27",
+      "questionNumber": 27,
+      "section": "A",
+      "questionText": "Give one example of gender equality at home.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_2_q28",
+      "questionNumber": 28,
+      "section": "A",
+      "questionText": "Define production.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_2_q29",
+      "questionNumber": 29,
+      "section": "A",
+      "questionText": "Define consumption.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_2_q30",
+      "questionNumber": 30,
+      "section": "A",
+      "questionText": "Define distribution.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_2_q31",
+      "questionNumber": 31,
+      "section": "A",
+      "questionText": "Define entrepreneur.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_2_q32",
+      "questionNumber": 32,
+      "section": "A",
+      "questionText": "State one benefit of entrepreneurship.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_2_q33",
+      "questionNumber": 33,
+      "section": "A",
+      "questionText": "Define scarcity.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_2_q34",
+      "questionNumber": 34,
+      "section": "A",
+      "questionText": "Define budget.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_2_q35",
+      "questionNumber": 35,
+      "section": "A",
+      "questionText": "State one benefit of saving.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_2_q36",
+      "questionNumber": 36,
+      "section": "A",
+      "questionText": "Define opportunity cost.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_2_q37",
+      "questionNumber": 37,
+      "section": "A",
+      "questionText": "Define rural-urban migration.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_2_q38",
+      "questionNumber": 38,
+      "section": "A",
+      "questionText": "State one cause of rural-urban migration.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_2_q39",
+      "questionNumber": 39,
+      "section": "A",
+      "questionText": "Define population density.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Population"
+    },
+    {
+      "id": "ss7050_2_q40",
+      "questionNumber": 40,
+      "section": "A",
+      "questionText": "What is a census?",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Population"
+    },
+    {
+      "id": "ss7050_2_q41",
+      "questionNumber": 41,
+      "section": "A",
+      "questionText": "Define pollution.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q42",
+      "questionNumber": 42,
+      "section": "A",
+      "questionText": "State one effect of deforestation.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q43",
+      "questionNumber": 43,
+      "section": "A",
+      "questionText": "Give one way to conserve water.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q44",
+      "questionNumber": 44,
+      "section": "A",
+      "questionText": "Define sustainable development.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Sustainability"
+    },
+    {
+      "id": "ss7050_2_q45",
+      "questionNumber": 45,
+      "section": "A",
+      "questionText": "Define self-awareness.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Guidance"
+    },
+    {
+      "id": "ss7050_2_q46",
+      "questionNumber": 46,
+      "section": "A",
+      "questionText": "Define peer pressure.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_2_q47",
+      "questionNumber": 47,
+      "section": "A",
+      "questionText": "State one way to resist harmful peer pressure.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_2_q48",
+      "questionNumber": 48,
+      "section": "A",
+      "questionText": "Name one hygiene practice.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health and hygiene"
+    },
+    {
+      "id": "ss7050_2_q49",
+      "questionNumber": 49,
+      "section": "A",
+      "questionText": "State one action when abuse is suspected.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Child protection"
+    },
+    {
+      "id": "ss7050_2_q50",
+      "questionNumber": 50,
+      "section": "A",
+      "questionText": "Give one safe leisure activity.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Leisure"
+    },
+    {
+      "id": "ss7050_2_q51",
+      "questionNumber": 51,
+      "section": "A",
+      "questionText": "Name one reliable health-information source.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_2_q52",
+      "questionNumber": 52,
+      "section": "A",
+      "questionText": "Define volunteerism.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q53",
+      "questionNumber": 53,
+      "section": "A",
+      "questionText": "State one benefit of volunteerism.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q54",
+      "questionNumber": 54,
+      "section": "A",
+      "questionText": "Define corporate social responsibility.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_2_q55",
+      "questionNumber": 55,
+      "section": "A",
+      "questionText": "State one ICT method of preserving heritage.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT"
+    },
+    {
+      "id": "ss7050_2_q56",
+      "questionNumber": 56,
+      "section": "A",
+      "questionText": "State one risk of careless online sharing.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_2_q57",
+      "questionNumber": 57,
+      "section": "A",
+      "questionText": "Define religious tolerance.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_2_q58",
+      "questionNumber": 58,
+      "section": "A",
+      "questionText": "Name one Christian festival.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Christianity"
+    },
+    {
+      "id": "ss7050_2_q59",
+      "questionNumber": 59,
+      "section": "A",
+      "questionText": "Name one Pillar of Islam.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Islam"
+    },
+    {
+      "id": "ss7050_2_q60",
+      "questionNumber": 60,
+      "section": "A",
+      "questionText": "Name one sacred text associated with Judaism.",
+      "subparts": [],
+      "markAllocation": 1,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Judaism"
+    },
+    {
+      "id": "ss7050_2_q61",
+      "questionNumber": 61,
+      "section": "B",
+      "questionText": "A learner finds an old cultural artefact at school. What should happen next?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_2_q62",
+      "questionNumber": 62,
+      "section": "B",
+      "questionText": "A family must choose between repairing a leaking roof and buying a luxury item. Which should come first?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_2_q63",
+      "questionNumber": 63,
+      "section": "B",
+      "questionText": "Residents work together to repair a damaged community water point. What is this an example of?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q64",
+      "questionNumber": 64,
+      "section": "B",
+      "questionText": "A company supports a school and improves waste management near its operations. What principle is shown?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_2_q65",
+      "questionNumber": 65,
+      "section": "B",
+      "questionText": "A learner receives a threatening message online. What is a safe response?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_2_q66",
+      "questionNumber": 66,
+      "section": "B",
+      "questionText": "Two neighbours have different religions. What promotes peaceful coexistence?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_2_q67",
+      "questionNumber": 67,
+      "section": "B",
+      "questionText": "A school gives boys and girls equal leadership opportunities. What value is promoted?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_2_q68",
+      "questionNumber": 68,
+      "section": "B",
+      "questionText": "A village experiences prolonged low rainfall and crop failure. What hazard is described?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_2_q69",
+      "questionNumber": 69,
+      "section": "B",
+      "questionText": "A town receives many new residents from rural areas. What process is occurring?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_2_q70",
+      "questionNumber": 70,
+      "section": "B",
+      "questionText": "A school records elders’ oral histories and stores them digitally with permission. What is being done?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT and heritage"
+    },
+    {
+      "id": "ss7050_2_q71",
+      "questionNumber": 71,
+      "section": "B",
+      "questionText": "A consumer finds a product is faulty. What should the consumer keep?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Consumer education"
+    },
+    {
+      "id": "ss7050_2_q72",
+      "questionNumber": 72,
+      "section": "B",
+      "questionText": "A farmer receives a heavy-rain forecast. How can this help?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_2_q73",
+      "questionNumber": 73,
+      "section": "B",
+      "questionText": "A wetland provides water and animal habitat. What should the community do?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q74",
+      "questionNumber": 74,
+      "section": "B",
+      "questionText": "A learner is pressured to misuse a harmful substance. What is safest?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_2_q75",
+      "questionNumber": 75,
+      "section": "B",
+      "questionText": "A community wants tourism income without damaging a heritage site. What should it do?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Tourism"
+    },
+    {
+      "id": "ss7050_2_q76",
+      "questionNumber": 76,
+      "section": "B",
+      "questionText": "A school wants to reduce litter. Which approach is most suitable?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q77",
+      "questionNumber": 77,
+      "section": "B",
+      "questionText": "A family wants to save for school expenses. What is a sensible first step?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_2_q78",
+      "questionNumber": 78,
+      "section": "B",
+      "questionText": "A class elects a representative. What makes the election fair?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_2_q79",
+      "questionNumber": 79,
+      "section": "B",
+      "questionText": "Two families disagree about a shared resource. What should they do first?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Conflict resolution"
+    },
+    {
+      "id": "ss7050_2_q80",
+      "questionNumber": 80,
+      "section": "B",
+      "questionText": "A learner hears an unverified health rumour. What is responsible?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_2_q81",
+      "questionNumber": 81,
+      "section": "B",
+      "questionText": "A school garden uses rainwater and compost. What does this demonstrate?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Sustainability"
+    },
+    {
+      "id": "ss7050_2_q82",
+      "questionNumber": 82,
+      "section": "B",
+      "questionText": "A map contains symbols for a clinic, river and road. What explains the symbols?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Map skills"
+    },
+    {
+      "id": "ss7050_2_q83",
+      "questionNumber": 83,
+      "section": "B",
+      "questionText": "A family has limited income. Which should be prioritised?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Needs and wants"
+    },
+    {
+      "id": "ss7050_2_q84",
+      "questionNumber": 84,
+      "section": "B",
+      "questionText": "A youth group organises a supervised sports day. What is important?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Leisure"
+    },
+    {
+      "id": "ss7050_2_q85",
+      "questionNumber": 85,
+      "section": "B",
+      "questionText": "A learner experiences abuse. What is a safe action?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Child protection"
+    },
+    {
+      "id": "ss7050_2_q86",
+      "questionNumber": 86,
+      "section": "B",
+      "questionText": "A youth group teaches forgiveness after conflict. What value is promoted?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Moral values"
+    },
+    {
+      "id": "ss7050_2_q87",
+      "questionNumber": 87,
+      "section": "B",
+      "questionText": "An entrepreneur researches customers and costs before starting a business. What is shown?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_2_q88",
+      "questionNumber": 88,
+      "section": "B",
+      "questionText": "A village protects vegetation along a stream. What benefit can result?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q89",
+      "questionNumber": 89,
+      "section": "B",
+      "questionText": "A family shares household tasks fairly. What is promoted?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family roles"
+    },
+    {
+      "id": "ss7050_2_q90",
+      "questionNumber": 90,
+      "section": "B",
+      "questionText": "A community cleans a public facility without payment. What is this?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q91",
+      "questionNumber": 91,
+      "section": "B",
+      "questionText": "A learner finds an old cultural artefact at school. What should happen next?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_2_q92",
+      "questionNumber": 92,
+      "section": "B",
+      "questionText": "A family must choose between repairing a leaking roof and buying a luxury item. Which should come first?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_2_q93",
+      "questionNumber": 93,
+      "section": "B",
+      "questionText": "Residents work together to repair a damaged community water point. What is this an example of?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q94",
+      "questionNumber": 94,
+      "section": "B",
+      "questionText": "A company supports a school and improves waste management near its operations. What principle is shown?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_2_q95",
+      "questionNumber": 95,
+      "section": "B",
+      "questionText": "A learner receives a threatening message online. What is a safe response?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_2_q96",
+      "questionNumber": 96,
+      "section": "B",
+      "questionText": "Two neighbours have different religions. What promotes peaceful coexistence?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_2_q97",
+      "questionNumber": 97,
+      "section": "B",
+      "questionText": "A school gives boys and girls equal leadership opportunities. What value is promoted?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_2_q98",
+      "questionNumber": 98,
+      "section": "B",
+      "questionText": "A village experiences prolonged low rainfall and crop failure. What hazard is described?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_2_q99",
+      "questionNumber": 99,
+      "section": "B",
+      "questionText": "A town receives many new residents from rural areas. What process is occurring?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_2_q100",
+      "questionNumber": 100,
+      "section": "B",
+      "questionText": "A school records elders’ oral histories and stores them digitally with permission. What is being done?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT and heritage"
+    },
+    {
+      "id": "ss7050_2_q101",
+      "questionNumber": 101,
+      "section": "B",
+      "questionText": "A consumer finds a product is faulty. What should the consumer keep?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Consumer education"
+    },
+    {
+      "id": "ss7050_2_q102",
+      "questionNumber": 102,
+      "section": "B",
+      "questionText": "A farmer receives a heavy-rain forecast. How can this help?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_2_q103",
+      "questionNumber": 103,
+      "section": "B",
+      "questionText": "A wetland provides water and animal habitat. What should the community do?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q104",
+      "questionNumber": 104,
+      "section": "B",
+      "questionText": "A learner is pressured to misuse a harmful substance. What is safest?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_2_q105",
+      "questionNumber": 105,
+      "section": "B",
+      "questionText": "A community wants tourism income without damaging a heritage site. What should it do?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Tourism"
+    },
+    {
+      "id": "ss7050_2_q106",
+      "questionNumber": 106,
+      "section": "B",
+      "questionText": "A school wants to reduce litter. Which approach is most suitable?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q107",
+      "questionNumber": 107,
+      "section": "B",
+      "questionText": "A family wants to save for school expenses. What is a sensible first step?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_2_q108",
+      "questionNumber": 108,
+      "section": "B",
+      "questionText": "A class elects a representative. What makes the election fair?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_2_q109",
+      "questionNumber": 109,
+      "section": "B",
+      "questionText": "Two families disagree about a shared resource. What should they do first?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Conflict resolution"
+    },
+    {
+      "id": "ss7050_2_q110",
+      "questionNumber": 110,
+      "section": "B",
+      "questionText": "A learner hears an unverified health rumour. What is responsible?",
+      "subparts": [
+        [
+          "a",
+          "Identify the main issue or concept in the situation.",
+          1
+        ],
+        [
+          "b",
+          "State two relevant points that explain or address the situation.",
+          2
+        ],
+        [
+          "c",
+          "Explain why the recommended response is important to the learner or community.",
+          2
+        ]
+      ],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_2_q111",
+      "questionNumber": 111,
+      "section": "C",
+      "questionText": "Discuss five ways families can promote strong relationships.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family"
+    },
+    {
+      "id": "ss7050_2_q112",
+      "questionNumber": 112,
+      "section": "C",
+      "questionText": "Explain how family roles contribute to children’s wellbeing.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family roles"
+    },
+    {
+      "id": "ss7050_2_q113",
+      "questionNumber": 113,
+      "section": "C",
+      "questionText": "Discuss why family genealogies and oral histories should be preserved.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Family heritage"
+    },
+    {
+      "id": "ss7050_2_q114",
+      "questionNumber": 114,
+      "section": "C",
+      "questionText": "Explain the importance of totems in Zimbabwean identity.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Totems"
+    },
+    {
+      "id": "ss7050_2_q115",
+      "questionNumber": 115,
+      "section": "C",
+      "questionText": "Discuss how Indigenous Religion can promote moral behaviour and unity.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Indigenous Religion"
+    },
+    {
+      "id": "ss7050_2_q116",
+      "questionNumber": 116,
+      "section": "C",
+      "questionText": "Explain how religious tolerance promotes peace.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Religious tolerance"
+    },
+    {
+      "id": "ss7050_2_q117",
+      "questionNumber": 117,
+      "section": "C",
+      "questionText": "Describe how religions can encourage positive moral values.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Religion"
+    },
+    {
+      "id": "ss7050_2_q118",
+      "questionNumber": 118,
+      "section": "C",
+      "questionText": "Explain the importance of heritage sites to Zimbabwe.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage"
+    },
+    {
+      "id": "ss7050_2_q119",
+      "questionNumber": 119,
+      "section": "C",
+      "questionText": "Discuss practical measures for conserving heritage sites.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Heritage conservation"
+    },
+    {
+      "id": "ss7050_2_q120",
+      "questionNumber": 120,
+      "section": "C",
+      "questionText": "Explain the roles of traditional leaders in communities.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Traditional leadership"
+    },
+    {
+      "id": "ss7050_2_q121",
+      "questionNumber": 121,
+      "section": "C",
+      "questionText": "Discuss responsible participation in a democracy.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Citizenship"
+    },
+    {
+      "id": "ss7050_2_q122",
+      "questionNumber": 122,
+      "section": "C",
+      "questionText": "Explain the importance of national symbols.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "National symbols"
+    },
+    {
+      "id": "ss7050_2_q123",
+      "questionNumber": 123,
+      "section": "C",
+      "questionText": "Discuss why laws are important in society.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Law and governance"
+    },
+    {
+      "id": "ss7050_2_q124",
+      "questionNumber": 124,
+      "section": "C",
+      "questionText": "Explain why elections should be fair and secret.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Elections"
+    },
+    {
+      "id": "ss7050_2_q125",
+      "questionNumber": 125,
+      "section": "C",
+      "questionText": "Discuss the importance of gender equality.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Gender"
+    },
+    {
+      "id": "ss7050_2_q126",
+      "questionNumber": 126,
+      "section": "C",
+      "questionText": "Explain how production, distribution and consumption are connected.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economics"
+    },
+    {
+      "id": "ss7050_2_q127",
+      "questionNumber": 127,
+      "section": "C",
+      "questionText": "Discuss how entrepreneurship can create employment.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Enterprise"
+    },
+    {
+      "id": "ss7050_2_q128",
+      "questionNumber": 128,
+      "section": "C",
+      "questionText": "Explain why budgeting and saving matter.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Financial literacy"
+    },
+    {
+      "id": "ss7050_2_q129",
+      "questionNumber": 129,
+      "section": "C",
+      "questionText": "Discuss how scarcity affects family choices.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_2_q130",
+      "questionNumber": 130,
+      "section": "C",
+      "questionText": "Explain opportunity cost using a realistic example.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Economic choices"
+    },
+    {
+      "id": "ss7050_2_q131",
+      "questionNumber": 131,
+      "section": "C",
+      "questionText": "Discuss causes and effects of rural-urban migration.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Migration"
+    },
+    {
+      "id": "ss7050_2_q132",
+      "questionNumber": 132,
+      "section": "C",
+      "questionText": "Explain pressures created by rapid urbanisation.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Urbanisation"
+    },
+    {
+      "id": "ss7050_2_q133",
+      "questionNumber": 133,
+      "section": "C",
+      "questionText": "Discuss ways to conserve natural resources.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q134",
+      "questionNumber": 134,
+      "section": "C",
+      "questionText": "Explain effects of deforestation on people and the environment.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q135",
+      "questionNumber": 135,
+      "section": "C",
+      "questionText": "Discuss ways schools can reduce pollution and waste.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Environment"
+    },
+    {
+      "id": "ss7050_2_q136",
+      "questionNumber": 136,
+      "section": "C",
+      "questionText": "Explain sustainable development using Zimbabwean examples.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Sustainability"
+    },
+    {
+      "id": "ss7050_2_q137",
+      "questionNumber": 137,
+      "section": "C",
+      "questionText": "Discuss preparation for droughts and floods.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Disaster risk"
+    },
+    {
+      "id": "ss7050_2_q138",
+      "questionNumber": 138,
+      "section": "C",
+      "questionText": "Explain how weather information helps farmers.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Weather"
+    },
+    {
+      "id": "ss7050_2_q139",
+      "questionNumber": 139,
+      "section": "C",
+      "questionText": "Discuss positive and negative effects of tourism.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Tourism"
+    },
+    {
+      "id": "ss7050_2_q140",
+      "questionNumber": 140,
+      "section": "C",
+      "questionText": "Explain why occupational safety matters.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Occupational safety"
+    },
+    {
+      "id": "ss7050_2_q141",
+      "questionNumber": 141,
+      "section": "C",
+      "questionText": "Discuss the value of volunteerism.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Community service"
+    },
+    {
+      "id": "ss7050_2_q142",
+      "questionNumber": 142,
+      "section": "C",
+      "questionText": "Explain how corporate social responsibility benefits communities.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Corporate responsibility"
+    },
+    {
+      "id": "ss7050_2_q143",
+      "questionNumber": 143,
+      "section": "C",
+      "questionText": "Discuss how ICT supports education and heritage.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT"
+    },
+    {
+      "id": "ss7050_2_q144",
+      "questionNumber": 144,
+      "section": "C",
+      "questionText": "Explain risks of irresponsible social-media use and how learners can stay safe.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "ICT safety"
+    },
+    {
+      "id": "ss7050_2_q145",
+      "questionNumber": 145,
+      "section": "C",
+      "questionText": "Discuss causes and effects of negative peer pressure.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Peer pressure"
+    },
+    {
+      "id": "ss7050_2_q146",
+      "questionNumber": 146,
+      "section": "C",
+      "questionText": "Explain healthy ways adolescents can manage stress and change.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Guidance"
+    },
+    {
+      "id": "ss7050_2_q147",
+      "questionNumber": 147,
+      "section": "C",
+      "questionText": "Discuss personal hygiene and healthy lifestyles.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health and hygiene"
+    },
+    {
+      "id": "ss7050_2_q148",
+      "questionNumber": 148,
+      "section": "C",
+      "questionText": "Explain how communities can protect children from abuse.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Child protection"
+    },
+    {
+      "id": "ss7050_2_q149",
+      "questionNumber": 149,
+      "section": "C",
+      "questionText": "Discuss the importance of reliable health information.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Health literacy"
+    },
+    {
+      "id": "ss7050_2_q150",
+      "questionNumber": 150,
+      "section": "C",
+      "questionText": "Explain how conflict-resolution skills strengthen communities.",
+      "subparts": [],
+      "markAllocation": 5,
+      "expectedAnswer": null,
+      "answerConfidence": "unverified",
+      "topic": "Conflict resolution"
+    }
+  ]
+}

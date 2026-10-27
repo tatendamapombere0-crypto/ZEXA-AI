@@ -1,0 +1,4066 @@
+{
+  "paperInfo": {
+    "subject": "Pure Mathematics",
+    "level": "A Level",
+    "paperCode": "6042/01",
+    "paperName": "Paper 1 – Short Answer",
+    "paperType": "short_answer",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Pure_Mathematics_A_Level_6042_Paper1_150.json",
+    "curriculum": "ZIMSEC Advanced Level / Heritage-Based Curriculum-aligned practice",
+    "copyrightNote": "Original practice questions synthesized from syllabus and examination structure; not verbatim copies of copyrighted past papers.",
+    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "questionNumber": 1,
+      "questionText": "Simplify the expression 3x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "-1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 3x + 4x = 7x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q002",
+      "questionNumber": 2,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q003",
+      "questionNumber": 3,
+      "questionText": "Evaluate the simple arithmetic expression 8^2 − 8.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56"
+        },
+        {
+          "letter": "B",
+          "text": "72"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "8² − 8 = 56.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q004",
+      "questionNumber": 4,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q005",
+      "questionNumber": 5,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q006",
+      "questionNumber": 6,
+      "questionText": "Simplify the expression 8x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "32"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 8x + 4x = 12x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q007",
+      "questionNumber": 7,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q008",
+      "questionNumber": 8,
+      "questionText": "Evaluate the simple arithmetic expression 5^2 − 5.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20"
+        },
+        {
+          "letter": "B",
+          "text": "30"
+        },
+        {
+          "letter": "C",
+          "text": "25"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5² − 5 = 20.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q009",
+      "questionNumber": 9,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q010",
+      "questionNumber": 10,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q011",
+      "questionNumber": 11,
+      "questionText": "Simplify the expression 6x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 6x + 4x = 10x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q012",
+      "questionNumber": 12,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q013",
+      "questionNumber": 13,
+      "questionText": "Evaluate the simple arithmetic expression 10^2 − 10.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "90"
+        },
+        {
+          "letter": "B",
+          "text": "110"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "10² − 10 = 90.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q014",
+      "questionNumber": 14,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q015",
+      "questionNumber": 15,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q016",
+      "questionNumber": 16,
+      "questionText": "Simplify the expression 4x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "16"
+        },
+        {
+          "letter": "D",
+          "text": "0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 4x + 4x = 8x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q017",
+      "questionNumber": 17,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q018",
+      "questionNumber": 18,
+      "questionText": "Evaluate the simple arithmetic expression 7^2 − 7.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42"
+        },
+        {
+          "letter": "B",
+          "text": "56"
+        },
+        {
+          "letter": "C",
+          "text": "49"
+        },
+        {
+          "letter": "D",
+          "text": "6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "7² − 7 = 42.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q019",
+      "questionNumber": 19,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q020",
+      "questionNumber": 20,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q021",
+      "questionNumber": 21,
+      "questionText": "Simplify the expression 2x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "8"
+        },
+        {
+          "letter": "D",
+          "text": "-2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 2x + 4x = 6x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q022",
+      "questionNumber": 22,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q023",
+      "questionNumber": 23,
+      "questionText": "Evaluate the simple arithmetic expression 12^2 − 12.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "132"
+        },
+        {
+          "letter": "B",
+          "text": "156"
+        },
+        {
+          "letter": "C",
+          "text": "144"
+        },
+        {
+          "letter": "D",
+          "text": "11"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "12² − 12 = 132.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q024",
+      "questionNumber": 24,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q025",
+      "questionNumber": 25,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q026",
+      "questionNumber": 26,
+      "questionText": "Simplify the expression 7x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "28"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 7x + 4x = 11x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q027",
+      "questionNumber": 27,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q028",
+      "questionNumber": 28,
+      "questionText": "Evaluate the simple arithmetic expression 9^2 − 9.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "72"
+        },
+        {
+          "letter": "B",
+          "text": "90"
+        },
+        {
+          "letter": "C",
+          "text": "81"
+        },
+        {
+          "letter": "D",
+          "text": "8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "9² − 9 = 72.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q029",
+      "questionNumber": 29,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q030",
+      "questionNumber": 30,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q031",
+      "questionNumber": 31,
+      "questionText": "Simplify the expression 5x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "20"
+        },
+        {
+          "letter": "D",
+          "text": "1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 5x + 4x = 9x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q032",
+      "questionNumber": 32,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q033",
+      "questionNumber": 33,
+      "questionText": "Evaluate the simple arithmetic expression 6^2 − 6.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30"
+        },
+        {
+          "letter": "B",
+          "text": "42"
+        },
+        {
+          "letter": "C",
+          "text": "36"
+        },
+        {
+          "letter": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "6² − 6 = 30.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q034",
+      "questionNumber": 34,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q035",
+      "questionNumber": 35,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q036",
+      "questionNumber": 36,
+      "questionText": "Simplify the expression 3x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "-1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 3x + 4x = 7x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q037",
+      "questionNumber": 37,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q038",
+      "questionNumber": 38,
+      "questionText": "Evaluate the simple arithmetic expression 11^2 − 11.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "110"
+        },
+        {
+          "letter": "B",
+          "text": "132"
+        },
+        {
+          "letter": "C",
+          "text": "121"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "11² − 11 = 110.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q039",
+      "questionNumber": 39,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q040",
+      "questionNumber": 40,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q041",
+      "questionNumber": 41,
+      "questionText": "Simplify the expression 8x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "32"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 8x + 4x = 12x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q042",
+      "questionNumber": 42,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q043",
+      "questionNumber": 43,
+      "questionText": "Evaluate the simple arithmetic expression 8^2 − 8.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56"
+        },
+        {
+          "letter": "B",
+          "text": "72"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "8² − 8 = 56.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q044",
+      "questionNumber": 44,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q045",
+      "questionNumber": 45,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q046",
+      "questionNumber": 46,
+      "questionText": "Simplify the expression 6x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 6x + 4x = 10x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q047",
+      "questionNumber": 47,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q048",
+      "questionNumber": 48,
+      "questionText": "Evaluate the simple arithmetic expression 5^2 − 5.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20"
+        },
+        {
+          "letter": "B",
+          "text": "30"
+        },
+        {
+          "letter": "C",
+          "text": "25"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5² − 5 = 20.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q049",
+      "questionNumber": 49,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q050",
+      "questionNumber": 50,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q051",
+      "questionNumber": 51,
+      "questionText": "Simplify the expression 4x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "16"
+        },
+        {
+          "letter": "D",
+          "text": "0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 4x + 4x = 8x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q052",
+      "questionNumber": 52,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q053",
+      "questionNumber": 53,
+      "questionText": "Evaluate the simple arithmetic expression 10^2 − 10.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "90"
+        },
+        {
+          "letter": "B",
+          "text": "110"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "10² − 10 = 90.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q054",
+      "questionNumber": 54,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q055",
+      "questionNumber": 55,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q056",
+      "questionNumber": 56,
+      "questionText": "Simplify the expression 2x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "8"
+        },
+        {
+          "letter": "D",
+          "text": "-2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 2x + 4x = 6x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q057",
+      "questionNumber": 57,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q058",
+      "questionNumber": 58,
+      "questionText": "Evaluate the simple arithmetic expression 7^2 − 7.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42"
+        },
+        {
+          "letter": "B",
+          "text": "56"
+        },
+        {
+          "letter": "C",
+          "text": "49"
+        },
+        {
+          "letter": "D",
+          "text": "6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "7² − 7 = 42.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q059",
+      "questionNumber": 59,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q060",
+      "questionNumber": 60,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q061",
+      "questionNumber": 61,
+      "questionText": "Simplify the expression 7x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "28"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 7x + 4x = 11x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q062",
+      "questionNumber": 62,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q063",
+      "questionNumber": 63,
+      "questionText": "Evaluate the simple arithmetic expression 12^2 − 12.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "132"
+        },
+        {
+          "letter": "B",
+          "text": "156"
+        },
+        {
+          "letter": "C",
+          "text": "144"
+        },
+        {
+          "letter": "D",
+          "text": "11"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "12² − 12 = 132.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q064",
+      "questionNumber": 64,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q065",
+      "questionNumber": 65,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q066",
+      "questionNumber": 66,
+      "questionText": "Simplify the expression 5x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "20"
+        },
+        {
+          "letter": "D",
+          "text": "1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 5x + 4x = 9x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q067",
+      "questionNumber": 67,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q068",
+      "questionNumber": 68,
+      "questionText": "Evaluate the simple arithmetic expression 9^2 − 9.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "72"
+        },
+        {
+          "letter": "B",
+          "text": "90"
+        },
+        {
+          "letter": "C",
+          "text": "81"
+        },
+        {
+          "letter": "D",
+          "text": "8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "9² − 9 = 72.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q069",
+      "questionNumber": 69,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q070",
+      "questionNumber": 70,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q071",
+      "questionNumber": 71,
+      "questionText": "Simplify the expression 3x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "-1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 3x + 4x = 7x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q072",
+      "questionNumber": 72,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q073",
+      "questionNumber": 73,
+      "questionText": "Evaluate the simple arithmetic expression 6^2 − 6.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30"
+        },
+        {
+          "letter": "B",
+          "text": "42"
+        },
+        {
+          "letter": "C",
+          "text": "36"
+        },
+        {
+          "letter": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "6² − 6 = 30.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q074",
+      "questionNumber": 74,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q075",
+      "questionNumber": 75,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q076",
+      "questionNumber": 76,
+      "questionText": "Simplify the expression 8x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "32"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 8x + 4x = 12x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q077",
+      "questionNumber": 77,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q078",
+      "questionNumber": 78,
+      "questionText": "Evaluate the simple arithmetic expression 11^2 − 11.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "110"
+        },
+        {
+          "letter": "B",
+          "text": "132"
+        },
+        {
+          "letter": "C",
+          "text": "121"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "11² − 11 = 110.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q079",
+      "questionNumber": 79,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q080",
+      "questionNumber": 80,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q081",
+      "questionNumber": 81,
+      "questionText": "Simplify the expression 6x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 6x + 4x = 10x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q082",
+      "questionNumber": 82,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q083",
+      "questionNumber": 83,
+      "questionText": "Evaluate the simple arithmetic expression 8^2 − 8.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56"
+        },
+        {
+          "letter": "B",
+          "text": "72"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "8² − 8 = 56.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q084",
+      "questionNumber": 84,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q085",
+      "questionNumber": 85,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q086",
+      "questionNumber": 86,
+      "questionText": "Simplify the expression 4x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "16"
+        },
+        {
+          "letter": "D",
+          "text": "0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 4x + 4x = 8x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q087",
+      "questionNumber": 87,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q088",
+      "questionNumber": 88,
+      "questionText": "Evaluate the simple arithmetic expression 5^2 − 5.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20"
+        },
+        {
+          "letter": "B",
+          "text": "30"
+        },
+        {
+          "letter": "C",
+          "text": "25"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5² − 5 = 20.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q089",
+      "questionNumber": 89,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q090",
+      "questionNumber": 90,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q091",
+      "questionNumber": 91,
+      "questionText": "Simplify the expression 2x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "8"
+        },
+        {
+          "letter": "D",
+          "text": "-2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 2x + 4x = 6x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q092",
+      "questionNumber": 92,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q093",
+      "questionNumber": 93,
+      "questionText": "Evaluate the simple arithmetic expression 10^2 − 10.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "90"
+        },
+        {
+          "letter": "B",
+          "text": "110"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "10² − 10 = 90.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q094",
+      "questionNumber": 94,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q095",
+      "questionNumber": 95,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q096",
+      "questionNumber": 96,
+      "questionText": "Simplify the expression 7x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "28"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 7x + 4x = 11x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q097",
+      "questionNumber": 97,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q098",
+      "questionNumber": 98,
+      "questionText": "Evaluate the simple arithmetic expression 7^2 − 7.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42"
+        },
+        {
+          "letter": "B",
+          "text": "56"
+        },
+        {
+          "letter": "C",
+          "text": "49"
+        },
+        {
+          "letter": "D",
+          "text": "6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "7² − 7 = 42.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q099",
+      "questionNumber": 99,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q100",
+      "questionNumber": 100,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q101",
+      "questionNumber": 101,
+      "questionText": "Simplify the expression 5x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "20"
+        },
+        {
+          "letter": "D",
+          "text": "1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 5x + 4x = 9x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q102",
+      "questionNumber": 102,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q103",
+      "questionNumber": 103,
+      "questionText": "Evaluate the simple arithmetic expression 12^2 − 12.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "132"
+        },
+        {
+          "letter": "B",
+          "text": "156"
+        },
+        {
+          "letter": "C",
+          "text": "144"
+        },
+        {
+          "letter": "D",
+          "text": "11"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "12² − 12 = 132.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q104",
+      "questionNumber": 104,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q105",
+      "questionNumber": 105,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q106",
+      "questionNumber": 106,
+      "questionText": "Simplify the expression 3x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "-1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 3x + 4x = 7x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q107",
+      "questionNumber": 107,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q108",
+      "questionNumber": 108,
+      "questionText": "Evaluate the simple arithmetic expression 9^2 − 9.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "72"
+        },
+        {
+          "letter": "B",
+          "text": "90"
+        },
+        {
+          "letter": "C",
+          "text": "81"
+        },
+        {
+          "letter": "D",
+          "text": "8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "9² − 9 = 72.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q109",
+      "questionNumber": 109,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q110",
+      "questionNumber": 110,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q111",
+      "questionNumber": 111,
+      "questionText": "Simplify the expression 8x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "32"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 8x + 4x = 12x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q112",
+      "questionNumber": 112,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q113",
+      "questionNumber": 113,
+      "questionText": "Evaluate the simple arithmetic expression 6^2 − 6.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30"
+        },
+        {
+          "letter": "B",
+          "text": "42"
+        },
+        {
+          "letter": "C",
+          "text": "36"
+        },
+        {
+          "letter": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "6² − 6 = 30.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q114",
+      "questionNumber": 114,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q115",
+      "questionNumber": 115,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q116",
+      "questionNumber": 116,
+      "questionText": "Simplify the expression 6x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 6x + 4x = 10x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q117",
+      "questionNumber": 117,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q118",
+      "questionNumber": 118,
+      "questionText": "Evaluate the simple arithmetic expression 11^2 − 11.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "110"
+        },
+        {
+          "letter": "B",
+          "text": "132"
+        },
+        {
+          "letter": "C",
+          "text": "121"
+        },
+        {
+          "letter": "D",
+          "text": "10"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "11² − 11 = 110.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q119",
+      "questionNumber": 119,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q120",
+      "questionNumber": 120,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q121",
+      "questionNumber": 121,
+      "questionText": "Simplify the expression 4x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "16"
+        },
+        {
+          "letter": "D",
+          "text": "0"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 4x + 4x = 8x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q122",
+      "questionNumber": 122,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q123",
+      "questionNumber": 123,
+      "questionText": "Evaluate the simple arithmetic expression 8^2 − 8.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56"
+        },
+        {
+          "letter": "B",
+          "text": "72"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "7"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "8² − 8 = 56.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q124",
+      "questionNumber": 124,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q125",
+      "questionNumber": 125,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q126",
+      "questionNumber": 126,
+      "questionText": "Simplify the expression 2x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "8"
+        },
+        {
+          "letter": "D",
+          "text": "-2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 2x + 4x = 6x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q127",
+      "questionNumber": 127,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q128",
+      "questionNumber": 128,
+      "questionText": "Evaluate the simple arithmetic expression 5^2 − 5.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20"
+        },
+        {
+          "letter": "B",
+          "text": "30"
+        },
+        {
+          "letter": "C",
+          "text": "25"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5² − 5 = 20.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q129",
+      "questionNumber": 129,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q130",
+      "questionNumber": 130,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    },
+    {
+      "id": "Q131",
+      "questionNumber": 131,
+      "questionText": "Simplify the expression 7x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "28"
+        },
+        {
+          "letter": "D",
+          "text": "3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 7x + 4x = 11x.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration"
+    },
+    {
+      "id": "Q132",
+      "questionNumber": 132,
+      "questionText": "Which method is most appropriate for solving a problem involving numerical methods?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Numerical methods"
+    },
+    {
+      "id": "Q133",
+      "questionNumber": 133,
+      "questionText": "Evaluate the simple arithmetic expression 10^2 − 10.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "90"
+        },
+        {
+          "letter": "B",
+          "text": "110"
+        },
+        {
+          "letter": "C",
+          "text": "100"
+        },
+        {
+          "letter": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "10² − 10 = 90.",
+      "answerConfidence": "high",
+      "topic": "Vectors"
+    },
+    {
+      "id": "Q134",
+      "questionNumber": 134,
+      "questionText": "State one condition that should be checked when applying a standard result in complex numbers.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Complex numbers"
+    },
+    {
+      "id": "Q135",
+      "questionNumber": 135,
+      "questionText": "A-level problem-solving question on Proof: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Proof"
+    },
+    {
+      "id": "Q136",
+      "questionNumber": 136,
+      "questionText": "Simplify the expression 5x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "20"
+        },
+        {
+          "letter": "D",
+          "text": "1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 5x + 4x = 9x.",
+      "answerConfidence": "high",
+      "topic": "Parametric equations"
+    },
+    {
+      "id": "Q137",
+      "questionNumber": 137,
+      "questionText": "Which method is most appropriate for solving a problem involving differential equations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Differential equations"
+    },
+    {
+      "id": "Q138",
+      "questionNumber": 138,
+      "questionText": "Evaluate the simple arithmetic expression 7^2 − 7.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42"
+        },
+        {
+          "letter": "B",
+          "text": "56"
+        },
+        {
+          "letter": "C",
+          "text": "49"
+        },
+        {
+          "letter": "D",
+          "text": "6"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "7² − 7 = 42.",
+      "answerConfidence": "high",
+      "topic": "Inequalities"
+    },
+    {
+      "id": "Q139",
+      "questionNumber": 139,
+      "questionText": "State one condition that should be checked when applying a standard result in circles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "Q140",
+      "questionNumber": 140,
+      "questionText": "A-level problem-solving question on Mathematical modelling: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Mathematical modelling"
+    },
+    {
+      "id": "Q141",
+      "questionNumber": 141,
+      "questionText": "Simplify the expression 3x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "-1"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 3x + 4x = 7x.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "Q142",
+      "questionNumber": 142,
+      "questionText": "Which method is most appropriate for solving a problem involving functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Functions"
+    },
+    {
+      "id": "Q143",
+      "questionNumber": 143,
+      "questionText": "Evaluate the simple arithmetic expression 12^2 − 12.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "132"
+        },
+        {
+          "letter": "B",
+          "text": "156"
+        },
+        {
+          "letter": "C",
+          "text": "144"
+        },
+        {
+          "letter": "D",
+          "text": "11"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "12² − 12 = 132.",
+      "answerConfidence": "high",
+      "topic": "Sequences and series"
+    },
+    {
+      "id": "Q144",
+      "questionNumber": 144,
+      "questionText": "State one condition that should be checked when applying a standard result in binomial theorem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Binomial theorem"
+    },
+    {
+      "id": "Q145",
+      "questionNumber": 145,
+      "questionText": "A-level problem-solving question on Coordinate geometry: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry"
+    },
+    {
+      "id": "Q146",
+      "questionNumber": 146,
+      "questionText": "Simplify the expression 8x + 4x and state the coefficient of x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "x"
+        },
+        {
+          "letter": "C",
+          "text": "32"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like terms are added: 8x + 4x = 12x.",
+      "answerConfidence": "high",
+      "topic": "Trigonometry"
+    },
+    {
+      "id": "Q147",
+      "questionNumber": 147,
+      "questionText": "Which method is most appropriate for solving a problem involving exponential and logarithmic functions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the relevant theorem, definition or standard technique and verify the result"
+        },
+        {
+          "letter": "B",
+          "text": "Round every intermediate value immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Ignore domain restrictions"
+        },
+        {
+          "letter": "D",
+          "text": "Differentiate every expression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct mathematical method depends on the structure of the problem and its stated conditions.",
+      "answerConfidence": "high",
+      "topic": "Exponential and logarithmic functions"
+    },
+    {
+      "id": "Q148",
+      "questionNumber": 148,
+      "questionText": "Evaluate the simple arithmetic expression 9^2 − 9.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "72"
+        },
+        {
+          "letter": "B",
+          "text": "90"
+        },
+        {
+          "letter": "C",
+          "text": "81"
+        },
+        {
+          "letter": "D",
+          "text": "8"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "9² − 9 = 72.",
+      "answerConfidence": "high",
+      "topic": "Differentiation"
+    },
+    {
+      "id": "Q149",
+      "questionNumber": 149,
+      "questionText": "State one condition that should be checked when applying a standard result in applications of differentiation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The assumptions and domain of the result"
+        },
+        {
+          "letter": "B",
+          "text": "Only the final decimal place"
+        },
+        {
+          "letter": "C",
+          "text": "The colour of the graph"
+        },
+        {
+          "letter": "D",
+          "text": "Whether the question has a diagram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematical results require their assumptions and domain conditions to be satisfied.",
+      "answerConfidence": "high",
+      "topic": "Applications of differentiation"
+    },
+    {
+      "id": "Q150",
+      "questionNumber": 150,
+      "questionText": "A-level problem-solving question on Integration: select the best general strategy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translate the information into appropriate mathematical notation, solve systematically and check the result"
+        },
+        {
+          "letter": "B",
+          "text": "Guess an answer without working"
+        },
+        {
+          "letter": "C",
+          "text": "Change the given data"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore units and restrictions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good mathematical problem solving translates information, applies suitable techniques and checks the result.",
+      "answerConfidence": "high",
+      "topic": "Integration"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "final_agri_anatomy",
+    "level": "O-Level",
+    "subject": "Agriculture",
+    "topic": "Anatomy and Physiology of Farm Animals",
+    "content": "Understanding the internal systems of farm animals is essential for proper health and nutrition management. 1. The Digestive System: - Ruminants (Cattle, Sheep, Goats): Have a four-compartment stomach: Rumen (fermentation vat where microbes break down cellulose), Reticulum (honeycomb structure), Omasum (water absorption), and Abomasum (true stomach where enzymes act). This allows them to digest tough grasses. - Non-Ruminants (Monogastric - Pigs, Poultry): Have a single-chambered stomach. In poultry, the 'Gizzard' contains grit to grind food since they lack teeth, and the 'Crop' stores food temporarily. 2. The Reproductive System: - Female: Ovaries produce eggs, Oviduct (site of fertilization), Uterus (where the fetus develops), and Cervix (protects the uterus). - Male: Testes (produce sperm and testosterone), Epididymis (storage), and Vas Deferens. 3. The Respiratory System: Includes the Trachea, Bronchi, and Lungs where oxygen is absorbed into the blood. 4. The Circulatory System: The heart pumps blood carrying nutrients and oxygen to all cells and removes waste (CO2). Knowledge of these systems helps farmers identify issues like 'Bloat' (gas buildup in the rumen) or reproductive failures.",
+    "source": "ZEXA Final Agriculture Notes",
+    "keywords": ["anatomy", "physiology", "ruminant", "stomach", "rumen", "digestion", "reproduction", "agriculture"]
+  },
+  {
+    "id": "final_sci_reaction_rates",
+    "level": "O-Level",
+    "subject": "Combined Science",
+    "topic": "Chemistry: Rates of Chemical Reactions",
+    "content": "The rate of a chemical reaction is the speed at which reactants are converted into products. According to the 'Collision Theory', for a reaction to occur, particles must collide with enough 'Activation Energy' and in the correct orientation. 1. Factors Affecting Rate: - Concentration/Pressure: Increasing concentration (liquids) or pressure (gases) puts more particles in the same space, leading to more frequent collisions. - Temperature: Increasing temperature gives particles more kinetic energy, so they move faster and collide more often and with more energy. - Surface Area: For solids, crushing them into powder increases the area available for collisions. - Catalysts: Substances that speed up a reaction without being used up. They work by providing an alternative pathway with a lower activation energy. Example: Enzymes in the body or Manganese Dioxide in the decomposition of hydrogen peroxide. 2. Measuring Rate: This can be done by tracking the volume of gas produced over time or the change in mass of the reactants. In the ZIMSEC exam, students are often asked to interpret graphs where a steeper slope indicates a faster reaction.",
+    "source": "ZEXA Final Science Notes",
+    "keywords": ["reaction rates", "collision theory", "activation energy", "catalyst", "concentration", "temperature", "chemistry", "combined science"]
+  },
+  {
+    "id": "final_soc_postmodernism",
+    "level": "A-Level",
+    "subject": "Sociology",
+    "topic": "Postmodernism and its Critique of Sociology",
+    "content": "Postmodernism is a contemporary perspective that emerged in the late 20th century, challenging 'Meta-narratives' (grand theories like Marxism or Functionalism). 1. Key Ideas: - Fragmentation: Society is no longer a unified whole but a collection of diverse, fragmented groups and identities. - Choice and Fluidity: Individuals have more choice in how they live (family types, careers, religions). Identity is no longer fixed by class or gender. - Consumerism: Our identity is now defined by what we consume (brands, media, lifestyle) rather than what we produce. - Globalization: The world is increasingly interconnected, leading to cultural hybridization. 2. Critique of Science: Postmodernists like Lyotard argue that 'Truth' is relative; what is true for one group is not necessarily true for another. 3. Evaluation: Critics argue that postmodernism ignores the continued reality of structural inequalities like poverty and racism. They suggest that while society has changed, class and gender still exert a powerful influence on life chances. For A-Level students, postmodernism provides a useful contrast to traditional theories when discussing the family, education, and religion in a modern, digital world.",
+    "source": "ZEXA Final Sociology Notes",
+    "keywords": ["postmodernism", "meta-narratives", "fragmentation", "consumerism", "identity", "social change", "sociology"]
+  },
+  {
+    "id": "final_heritage_resources",
+    "level": "O-Level",
+    "subject": "Heritage Studies",
+    "topic": "National Resources and the Economy of Zimbabwe",
+    "content": "Zimbabwe's heritage includes its vast natural resources, which are the backbone of the economy and the subject of national sovereignty. 1. Mineral Resources: Zimbabwe has one of the world's largest reserves of Platinum Group Metals (PGMs), Chrome, and Lithium (essential for electric vehicle batteries). It also has significant deposits of Gold, Diamonds (Marange), Coal, and Iron Ore. Mining is a major source of foreign currency. 2. Land and Agriculture: Fertile soils and a favorable climate allow for the production of tobacco, maize, cotton, and diverse horticultural products. Land is a sacred resource that was reclaimed during the Third Chimurenga (Fast Track Land Reform) to empower indigenous people. 3. Water Resources: Major rivers like the Zambezi and Limpopo, and dams like Kariba and Tugwi-Mukosi, provide water for irrigation, fisheries, and hydroelectric power. 4. Wildlife and Tourism: The 'Big Five' and unique landscapes attract international tourists. 5. Human Resources: Zimbabwe is known for its high literacy rate and skilled workforce. The heritage-based curriculum (Education 5.0) aims to align this human capital with the exploitation of local resources to achieve Vision 2030 (becoming an upper-middle-income economy). Proper and sustainable management of these resources is a key responsibility of every citizen.",
+    "source": "ZEXA Final Heritage Notes",
+    "keywords": ["natural resources", "mining", "lithium", "gold", "land reform", "economy", "vision 2030", "zimbabwe", "heritage"]
+  },
+  {
+    "id": "final_comp_osi_deep",
+    "level": "O-Level",
+    "subject": "Computer Science",
+    "topic": "Extremely Detailed Guide to the 7 OSI Layers",
+    "content": "The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system. 1. Layer 1: Physical Layer: Responsible for the physical connection between devices. It deals with cables, connectors, and the transmission of raw bits over a physical medium. 2. Layer 2: Data Link Layer: Responsible for node-to-node data transfer. It handles error detection and correction from the physical layer and manages MAC (Media Access Control) addresses. 3. Layer 3: Network Layer: Responsible for packet forwarding and routing through intermediate routers. It uses IP (Internet Protocol) addresses to find the best path for data. 4. Layer 4: Transport Layer: Responsible for end-to-end communication, reliability, and flow control. Protocols like TCP (Transmission Control Protocol) ensure data arrives correctly and in order. 5. Layer 5: Session Layer: Manages sessions between applications. It establishes, maintains, and terminates connections. 6. Layer 6: Presentation Layer: Transforms data into the form that the application layer can accept. It handles encryption, compression, and data translation (e.g., ASCII to EBCDIC). 7. Layer 7: Application Layer: The layer closest to the end user. It provides network services directly to applications like web browsers (HTTP), email clients (SMTP), and file transfer tools (FTP). Understanding this model is vital for troubleshooting network problems and designing secure communications.",
+    "source": "ZEXA Final Computer Science Notes",
+    "keywords": ["osi model", "networking", "tcp/ip", "layers", "routing", "encryption", "protocols", "computer science"]
+  },
+  {
+    "id": "final_eng_synonyms",
+    "level": "General",
+    "subject": "English Language",
+    "topic": "Extensive Glossary of Synonyms and Antonyms",
+    "content": "Building a rich vocabulary is the best way to improve your language marks. Here is a list of sophisticated alternatives to common words. 1. Happy: Elated, Jubilant, Ecstatic, Content. (Antonyms: Dejected, Melancholy, Despondent). 2. Sad: Sorrowful, Mournful, Lugubrious, Heartbroken. (Antonyms: Joyful, Cheerful). 3. Big: Enormous, Immense, Colossal, Gargantuan. (Antonyms: Minute, Tiny, Diminutive). 4. Small: Insignificant, Negligible, Trivial, Paltry. (Antonyms: Substantial, Significant). 5. Hardworking: Diligent, Industrious, Assiduous, Persevering. (Antonyms: Indolent, Lethargic, Slothful). 6. Smart: Intelligent, Astute, Perceptive, Sagacious. (Antonyms: Simple-minded, Ignorant). 7. Brave: Courageous, Valiant, Intrepid, Dauntless. (Antonyms: Cowardly, Timid). 8. Angry: Irate, Incensed, Infuriated, Livid. (Antonyms: Placated, Serene, Calm). 9. Interesting: Captivating, Engaging, Intriguing, Compelling. (Antonyms: Mundane, Tedious, Banal). 10. Beautiful: Exquisite, Radiant, Stunning, Picturesque. (Antonyms: Grotesque, Unappealing). Using these words in your Paper 1 compositions will immediately signal to the examiner that you are an 'A' grade student.",
+    "source": "ZEXA Final English Notes",
+    "keywords": ["vocabulary", "synonyms", "antonyms", "writing", "english", "zimsec", "adjectives"]
+  },
+  {
+    "id": "final_comm_intl_trade_docs",
+    "level": "O-Level",
+    "subject": "Commerce",
+    "topic": "Key Documents Used in International Trade",
+    "content": "International trade involves complex paperwork to ensure payment and the safe movement of goods across borders. 1. Pro-forma Invoice: A preliminary bill sent by the seller to the buyer before the goods are shipped. It provides a quote and is often used to apply for an import license or foreign currency. 2. Bill of Lading: The most important document in sea transport. It acts as: - A receipt for the goods from the shipping company. - A contract of carriage. - A document of title (the person holding it owns the goods). 3. Air Waybill: Similar to a Bill of Lading but used for air freight. It is NOT a document of title. 4. Certificate of Origin: A document certifying that the goods were produced in a specific country. This is used to determine customs duties and eligibility for trade agreements like COMESA or SADC. 5. Commercial Invoice: The final bill from the seller to the buyer. 6. Insurance Certificate: Proof that the goods are covered against risks during transit. 7. Bill of Exchange: A written order once used widely for payment, where the buyer agrees to pay the seller a specific amount at a future date. Understanding these documents is essential for anyone involved in import/export business in Zimbabwe.",
+    "source": "ZEXA Final Commerce Notes",
+    "keywords": ["international trade", "bill of lading", "pro-forma invoice", "certificate of origin", "customs", "import", "export", "commerce"]
+  }
+]

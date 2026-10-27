@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "title": "Health, Creative and Performing Arts (Physical Education and Arts)",
+    "country": "Zimbabwe",
+    "issuing_body": "Ministry of Primary and Secondary Education (MoPSE), in collaboration with the Zimbabwe School Examinations Council (ZIMSEC)",
+    "curriculum_periods_covered": ["2015 - 2022 (Visual and Performing Arts; Physical Education, Sport and Mass Displays - as separate learning areas)", "2024 - 2030 (merged 'Physical Education and Arts' / Heritage-Based Curriculum syllabus)"],
+    "levels_covered": "ECD A - Grade 7 (Infant: ECD A-Grade 2; Junior: Grade 3-7)",
+    "learning_area_family": "Visual and Performing Arts sits under the Arts pathway; Physical Education and Sport sits under Mass Displays/Sport; the two are combined at primary level and increasingly examined together as 'Physical Education and Arts' under the Heritage-Based Curriculum (HBC).",
+    "notes": "Zimbabwe's primary curriculum historically taught 'Visual and Performing Arts' and 'Physical Education, Sport and Mass Displays' as two related but separate learning areas (2015-2022 Curriculum Framework). Under the newer Heritage-Based Curriculum (HBC, syllabi rolled out 2024-2030), these were combined into a single 'Physical Education and Arts' (PE and Arts) syllabus for Infant and Junior levels, which integrates health, safety, the human body and physical fitness together with music, dance, theatre and visual arts. This file therefore documents both strands together as 'Health, Creative and Performing Arts', reflecting how the subject is actually taught in Zimbabwean primary schools.",
+    "source_documents": [
+      "Visual and Performing Arts Infant School Level (ECD-Grade 2) Teacher's Guide, 2015-2022",
+      "Visual and Performing Arts Junior School Level (Grade 3-7) National Syllabus, 2015-2022",
+      "Infant Physical Education and Arts Syllabus, MoPSE, 2024-2030 (Heritage-Based Curriculum)",
+      "Junior Physical Education and Arts Syllabus, MoPSE, 2024-2030 (Heritage-Based Curriculum)",
+      "Curriculum Framework for Primary and Secondary Education, 2015-2022",
+      "Constitution of Zimbabwe (2013), Articles 6, 16, 20, 32, 33, 53, 75"
+    ]
+  },
+
+  "rationale": "Zimbabwe is endowed with cultural diversity, and it is imperative for learners to acquire visual and performing arts skills and competencies, as these are essential for self and national identity, entertainment, employment creation, problem-solving, critical thinking, creativity and self-discipline. Combined with Physical Education, the learning area also promotes physical, mental, emotional and social development, cultural heritage appreciation, healthy habits, teamwork and lifelong physical literacy. Music, dance, theatre and visual arts can lead to entrepreneurship, while physical education and sport prepare learners for both leisure and competitive participation and can be a means of livelihood.",
+
+  "aims": [
+    "Develop understanding and appreciation of visual and performing arts (music, dance, theatre, visual arts) in their socio-economic, political and cultural context",
+    "Develop a positive interest in Visual and Performing Arts and Physical Education",
+    "Develop manipulative, hand-eye and foot-eye coordination, and other psychomotor skills",
+    "Promote physical fitness, healthy habits and lifelong participation in physical activity",
+    "Develop knowledge of safety, hygiene, the human body and disease prevention",
+    "Foster creativity, originality, critical thinking and problem-solving through the arts and sport",
+    "Instil teamwork, determination, leadership, self-discipline and Unhu/Ubuntu/Vumunhu values",
+    "Develop entrepreneurial/enterprising skills through the arts and sport (e.g. fundraising performances, careers in the arts)",
+    "Promote understanding and celebration of Zimbabwean cultural heritage through music, dance, theatre and visual arts",
+    "Provide equal opportunities for all learners, including those with different abilities, to reach their potential"
+  ],
+
+  "assessment_objectives": [
+    "Identify and operate simple musical, visual arts, theatre and dance tools and technologies appropriate to level",
+    "Demonstrate basic movement, rhythm, pitch and performance skills in music, dance and theatre",
+    "Produce simple visual artworks using appropriate media, tools and techniques",
+    "Describe and appreciate the history, culture and role of the arts in family, school, community and nation",
+    "Demonstrate safety awareness and injury-prevention practices during physical activities",
+    "Explain basic human body systems, hygiene and healthy-living practices",
+    "Participate in and demonstrate fundamental movement skills, games and physical fitness activities",
+    "Demonstrate enterprising/entrepreneurial skills and business ethics related to the arts and sport"
+  ],
+
+  "cross_cutting_themes": [
+    "Health (including HIV and AIDS education)",
+    "ICT",
+    "Gender",
+    "Children's rights and responsibilities",
+    "Disaster risk management",
+    "Financial literacy",
+    "Child protection",
+    "Human rights",
+    "Collaboration",
+    "Environmental issues",
+    "Unhu/Ubuntu/Vumunhu"
+  ],
+
+  "skills_to_be_developed": [
+    "Manipulative skills", "Hand and eye coordination", "Left-to-right orientation", "Foot and eye coordination",
+    "Creativity", "Observation skills", "Listening skills", "Oral/speaking skills", "Communication skills",
+    "Imaginative skills", "Collaborative skills", "Enterprising skills", "Cognitive skills", "Problem-solving skills",
+    "Emotional skills", "Social skills", "Mathematical skills", "Scientific skills", "Psychomotor skills",
+    "Visual skills", "Technological skills", "Tactile skills", "Kinesthetic skills", "Aesthetic skills",
+    "Confidence", "Concentration skills", "Leadership skills"
+  ],
+
+  "arts_syllabus_topics": [
+    {"id": 1, "name": "History and Culture", "description": "The role of music, musicians, composers, visual artists, actors, dancers and their works in family, school, community and national culture, past and present."},
+    {"id": 2, "name": "The Creative Process and Performance", "description": "Practical creation and performance skills across music (pitch, rhythm, composition), visual arts (drawing, painting, modelling, crafting), theatre (story-telling, improvisation, tableau) and dance (movement patterns, sequences, group dynamics)."},
+    {"id": 3, "name": "Aesthetic Values and Appreciation", "description": "Appreciating and critiquing artworks and performances; understanding elements/principles of design, meaning, mood and emotional response in art, music, theatre and dance."},
+    {"id": 4, "name": "Arts Technology", "description": "Use of technological tools in the arts - photography, video/filming, recording, ICT tools, lighting and sound effects, digital theatre, and internet ethics."},
+    {"id": 5, "name": "Enterprising Skills (Entrepreneurship)", "description": "Careers in the arts, business ethics, copyright protection, fundraising performances, exhibitions and commissioned work."}
+  ],
+
+  "physical_education_health_topics": [
+    {"id": 1, "name": "Human Body and Health", "description": "Body systems (e.g. digestion, respiration/breathing), personal hygiene, nutrition, growth and development."},
+    {"id": 2, "name": "Safety and Injury Prevention", "description": "Safety rules and regulations for physical activities and games; recognising and preventing common injuries; use of protective gear."},
+    {"id": 3, "name": "Fundamental Movement Skills", "description": "Running, jumping, balancing, throwing, catching, sprinting and other basic motor skills developed through games and gymnastics."},
+    {"id": 4, "name": "Games and Sports", "description": "Indigenous and modern children's games, team sports, athletics, and mass displays."},
+    {"id": 5, "name": "Healthy Living and Disease Prevention", "description": "Effects of physical inactivity and poor sanitation, disease prevention (including HIV/AIDS awareness), hydration and healthy habits."},
+    {"id": 6, "name": "Dance and Physical Expression", "description": "Movement patterns, rhythm and physical expression, overlapping with the Creative Arts strand."}
+  ],
+
+  "infant_level_scope_and_sequence_arts": {
+    "note": "This is the official MoPSE scope-and-sequence table for Visual and Performing Arts at Infant level (ECD 0-3 years, ECD A, ECD B, Grade 1, Grade 2), showing how content spirals in depth across the levels. Each grade level list combines Music, Visual Arts, Theatre and Dance content for that topic.",
+
+    "topic_1_history_and_culture": {
+      "ECD_0_3_years": [
+        "Music: Musical instruments and sounds in the home; music in everyday life; movement in response to folk songs",
+        "Visual Arts: Visual arts in the home - eye movement to familiar colours/images, touching and feeling embossed material",
+        "Theatre: Mobiles; animation and puppetry in my home",
+        "Dance: Movement in response to folk songs; movement to sounds in everyday life experiences"
+      ],
+      "ECD_A": [
+        "Music: The role of music, musicians and composers in past and present cultures; musical instruments in my environment; songs and games in my home",
+        "Visual Arts: Visual arts in my home and culture; the role of visual arts and artists in my family; different types of visual arts past and present; safety with visual arts materials",
+        "Theatre: The role of theatre, animation and puppetry in my home and culture; characterisation - different family members and their roles; family stories",
+        "Dance: The role of dances and dancers in my home and culture; dance games"
+      ],
+      "ECD_B": [
+        "Music: The role of music/musicians/composers in past/present cultures; cultural diversity in music; movement in response to various instruments/genres/periods; songs and games in my school",
+        "Visual Arts: The role of visual arts and artists in my school; diversity in visual arts and artists; visual arts materials in the local environment",
+        "Theatre: The role of theatre, animation and puppetry in my school and culture; characterisation - different school members and their roles; school stories",
+        "Dance: The role of dances and dancers in my school and culture; folk dance and costumes"
+      ],
+      "Grade_1": [
+        "Music: The role of music/musicians/composers in past/present cultures; music and celebrations within Zimbabwe past and present; movements in response to instruments of different genres/periods/styles; songs and games in other cultures in my society",
+        "Visual Arts: The role of visual arts and artists in my community; works of art from a variety of places and times; visual arts materials from different cultures",
+        "Theatre: The role of theatre, animation and puppetry in my community and culture; characterisation - different community members and their roles; community stories",
+        "Dance: The role of dances and dancers in my community and culture; dance styles, costumes and music"
+      ],
+      "Grade_2": [
+        "Music: The role of music/musicians/composers in past and present cultures in daily and special events; movements in response to instruments of different genres/periods/styles; songs and games in my country",
+        "Visual Arts: The role of visual arts and artists in my country; functions of visual arts in daily life; visual arts objects and materials from different cultures",
+        "Theatre: The role of theatre, animation and puppetry in my country and culture; characterisation - different national leaders and their roles; national stories; roles and responsibilities of actors and audiences",
+        "Dance: The role of dances and dancers in my country and culture; social and cultural dances"
+      ]
+    },
+
+    "topic_2_creative_process_and_performance": {
+      "ECD_0_3_years": ["Music: Body percussion", "Visual Arts: Visual arts in the home", "Theatre/Dance: Animated faces, children's play (Amadlwane/Mahumbwe), call and response games"],
+      "ECD_A": [
+        "Music: Pitch identification; body percussion to accompany short melodies; improvisation of melodies; oral reading of basic note values",
+        "Visual Arts: Modelling and moulding; painting in the home; drawing family members; sorting and matching colours",
+        "Theatre: Children's play (Amadlwane/Mahumbwe); tableau/still pictures - myself and my family"
+      ],
+      "ECD_B": [
+        "Music: Pitch identification; body percussion; arrangement and improvisation of melodies; voice accompaniments; oral reading of basic note values",
+        "Visual Arts: Modelling and moulding; weaving and decorating; drawing/painting in the school; sorting and matching primary colours",
+        "Theatre: Movement and rhythm through theatre games; story telling; pantomime; tableau/still pictures - my friends; costumes and props"
+      ],
+      "Grade_1": [
+        "Music: Pitch identification in short melodies; percussion instruments in short melodies; composition, arrangement and improvisation of songs; oral reading of basic note values",
+        "Visual Arts: Two-dimensional media and pattern; application of elements of design; primary and secondary colours; picture collage",
+        "Theatre: Theatre games - trust building; improvisation of age-appropriate stories; pantomime; tableau/still pictures - community members; costumes and props; picture book reading"
+      ],
+      "Grade_2": [
+        "Music: Pitch identification in songs; percussion instruments in short melodies and songs; composition, arrangement and improvisation of melodies; oral reading of basic note values",
+        "Visual Arts: Three-dimensional media; elements and principles of design; drawing and painting; crafting objects",
+        "Theatre: Theatre games - cooperation skills and concentration; story outline; tableau/still pictures - national leaders; costume and prop creation; improvisation of stories from picture books"
+      ]
+    },
+
+    "topic_3_aesthetic_values_and_appreciation": {
+      "ECD_0_3_years": ["Music and movement", "Artworks in the home", "Theatre audience: listening skills, animation/puppetry appreciation"],
+      "ECD_A": ["Music and movement", "Artworks in the home", "Theatre audience: listening/appreciation skills - clapping, smiling, facial expression; animation/puppetry appreciation", "Dance: everyday movements in dance, meaning of dance"],
+      "ECD_B": ["Music and movement; songs for different purposes", "Artworks vocabulary; elements of design; meaning of artworks within the school", "Theatre audience: participatory audience, real stories and folk tales; animation/puppetry appreciation", "Dance: types of dances, meaning of dance"],
+      "Grade_1": ["Music and guided movements; ideas and moods through music", "Artwork production in the environment; elements and principles of design; meaning of artworks within the community", "Theatre appreciation skills: describing, deriving meaning, emotional reaction; animation/puppetry appreciation", "Dance vocabulary: shapes, levels, directions, tempos; communication in dance"],
+      "Grade_2": ["Elements of music in movement; music and musicians - ideas and moods from recorded music", "Artwork critique; elements/principles of design; meaning of artworks within the nation", "Theatre: actor's performance, live performance appreciation, message/moral values of the story; animation/puppetry appreciation", "Dance vocabulary: levels, rhythm, patterns, types of energy; communication in dance - mood, ideas"]
+    },
+
+    "topic_4_arts_technology": {
+      "ECD_0_3_years": ["Music videos and pictures", "Visual arts technological tools in the home", "Theatre: lighting/shadows/silhouette, picture stories", "Dance: lighting/shadows/silhouette, slides of dance pictures"],
+      "ECD_A": ["Music videos/pictures, audio and visual music, ethics of music and the internet", "Visual arts technological tools in my home - photography, video/filming, visual arts software, internet ethics", "Theatre: lighting/shadows/silhouette, natural sound effects, slides picture story (character), internet ethics", "Dance: lighting/shadows/silhouette, natural sound effects, slides dance pictures, internet ethics"],
+      "ECD_B": ["Music videos/pictures, use of ICT tools, audio-visual music, internet ethics", "Visual technological tools in my school - photography, video/filming, software, internet ethics", "Theatre: lighting and hue/colour, recorded sound effects, slides picture story (character and objects), internet ethics", "Dance: lighting and hue/colour, recorded sound effects, slides dance pictures depicting a story, internet ethics"],
+      "Grade_1": ["Music recording, audio-visual music, musical icons and symbols, internet ethics", "Visual technological tools in my community - photography, video/filming, software, internet ethics", "Theatre: lighting and mood, sound effects responding with movement, slides picture story (character and objects), internet ethics", "Dance: lighting and mood, sound effects responding with movement, slides dancers and objects, internet ethics"],
+      "Grade_2": ["Music composition and recording, audio-visual music, musical icons/symbols, internet ethics", "Visual technological tools in my country - photography, video/filming, software, internet ethics", "Theatre: lighting and setting, sound effects/impact, slides picture story (character and conflict), digital theatre, internet ethics", "Dance: lighting and setting, sound effects/impact, video dance drama, internet ethics"]
+    },
+
+    "topic_5_enterprise_skills": {
+      "all_infant_levels_pattern": "This topic follows a consistent structure across ECD A, ECD B, Grade 1 and Grade 2, deepening only in complexity of activity:",
+      "content_areas": {
+        "music": ["Careers in music", "Musical instruments", "Fundraising performances", "Business ethics (soft skills, Unhu/Ubuntu, copyright protection)"],
+        "visual_arts": ["Careers in visual arts", "Media and tools (progressing from home, to school, to community, to country)", "Exhibitions and commissioned work", "Business ethics (soft skills, Unhu/Ubuntu, copyright protection)"],
+        "theatre": ["Careers in theatre", "Props and costumes", "Fundraising performances", "Business ethics (soft skills, Unhu/Ubuntu, copyright protection)"],
+        "dance": ["Careers in dance", "Instruments and costumes", "Fundraising performances", "Business ethics (soft skills, Unhu/Ubuntu, copyright protection)"]
+      }
+    }
+  },
+
+  "sample_infant_lesson_plan": {
+    "class": "ECD A",
+    "learning_area": "Visual and Performing Arts",
+    "topic": "Arts Technology",
+    "lesson_topic": "Technological Musical Tools",
+    "duration": "20 minutes (0750-0810)",
+    "assumed_knowledge": "Learners have seen and once played with some musical tools such as smartphones, TVs, picture puzzles etc.",
+    "objectives": ["Name video clips and pictures of different local artists", "Operate musical tools"],
+    "competencies": ["Teamwork", "Problem solving", "Critical thinking", "Listening"],
+    "resources": ["Video clips", "Camera", "Musical tools (radio, TV, smartphones, tape recorders, cassettes)", "Picture puzzles", "Collage", "Pictures of local artists", "Books with pictures of musical tools", "Local environment", "Textbooks"],
+    "lesson_phases": [
+      {"phase": "Introduction (5 min)", "activity": "Guided discovery - teacher shows video/audio clips; learners watch, study pictures and listen to music performances by various artists and identify what they saw/heard."},
+      {"phase": "Development and presentation (15 min)", "activity": "Group work - learners explore pictures, photographs and videos of music performances and artists, then present their findings while the teacher reinforces answers."},
+      {"phase": "Conclusion (5 min)", "activity": "Teacher asks summary questions on musical tools; learners respond and perform one song of their choice."}
+    ]
+  },
+
+  "sample_junior_pe_content_grade6": {
+    "note": "Representative content from Grade 6 Physical Education/Health notes used in Zimbabwean primary schools under the Heritage-Based Curriculum.",
+    "safety_rules_and_regulations": [
+      "Wear proper gear and equipment (e.g. helmets, knee pads)",
+      "Warm up and cool down before and after exercise",
+      "Follow rules and guidelines for each activity",
+      "Stay hydrated and properly fuelled",
+      "Listen to your body and rest when needed",
+      "Supervise children and inexperienced participants",
+      "Ensure proper technique and use of equipment"
+    ],
+    "healthy_living_topics": [
+      "Effects of physical inactivity on the body",
+      "Effects of poor sanitation on health",
+      "The process of storing and transporting food in the body (digestion)",
+      "The process of transporting air in the body (respiration/breathing)",
+      "Injury prevention during physical activities"
+    ],
+    "arts_topics_covered_alongside_pe_at_this_grade": [
+      "Zimbabwean music: cultural significance and evolution over time",
+      "Zimbabwean dance: cultural significance and evolution over time",
+      "Zimbabwean visual arts: cultural significance and evolution over time"
+    ]
+  },
+
+  "recommended_teaching_methods": {
+    "presentation_methods_teacher_centred": ["Lecture", "Story telling", "Demonstration", "Resource person method"],
+    "construction_methods": ["Model construction", "Exhibitions"],
+    "creative_activity_method": ["Drawing and painting", "Posters", "Creative writing", "Cartoons"],
+    "inquiry_methods": ["Surveys", "Opinion polls", "Interviews", "Questionnaires", "Field trips"],
+    "discussion_methods": ["Small group discussion", "Panel discussion", "Debates"],
+    "problem_solving_methods": ["Puzzles", "Quizzes", "Word cards", "Sorting", "Project method"],
+    "simulation_method": "Imitation of a real or possible situation/process (e.g. simulating the liberation war, playing mahumbwe)",
+    "questioning_method": ["Focusing questions", "Probing questions", "Extending questions", "Summarising questions", "Review questions"],
+    "dramatisation_methods": ["Miming", "Playlets", "Role-playing", "Monologues and dialogues", "Puppetry"],
+    "instructional_materials": {
+      "visual": ["Real objects", "Models", "Specimens", "Textbooks", "Workbooks", "Chalkboards", "Flannel/felt boards", "Bulletin boards", "Photographs", "Slides/filmstrips", "Charts, graphs, maps, posters, diagrams"],
+      "audio": ["Radio", "Record players", "Tape recorders"],
+      "audio_visual": ["Motion pictures", "Television", "Video clips", "YouTube clips"],
+      "community_resources": ["Local resource persons", "Field trip venues (galleries, arts centres, studios)"]
+    }
+  },
+
+  "assessment": {
+    "mode": "Continuous assessment supplemented by tests, projects, examinations and assignments",
+    "components": ["Tests and exercises", "Projects", "Examinations", "Assignments", "Practical performance assessment"],
+    "profiling": "Learners are profiled to capture soft skills and practical/performance competencies not easily captured by written tests alone.",
+    "inclusivity_principle": "Assessment must accommodate learners with special needs/different abilities so that all can access and demonstrate their competencies.",
+    "specification_grid": "Used at national syllabus level to show proposed mark allocation across content areas (music, visual arts, theatre, dance, and PE/health strands) to ensure balanced syllabus coverage."
+  },
+
+  "related_examinable_subjects_beyond_grade_7": {
+    "note": "From Form 1 onward, this combined primary learning area is carried into separate, more specialised ZIMSEC O-Level and A-Level subjects under the Visual and Performing Arts, and Physical Education/Sport pathways.",
+    "subjects": [
+      {"name": "Music", "level": "O-Level and A-Level"},
+      {"name": "Art (Visual Arts)", "level": "O-Level (Art syllabus)"},
+      {"name": "Theatre Art", "level": "O-Level and A-Level"},
+      {"name": "Dance", "level": "O-Level and A-Level"},
+      {"name": "Physical Education and Sport", "level": "O-Level and A-Level (Physical Education Syllabus; Sport Management/Sport and Technology at A-Level)"},
+      {"name": "Family and Religious Studies", "level": "O-Level", "description": "Continues the health/moral education strand from FAREME at Junior level"}
+    ]
+  }
+}

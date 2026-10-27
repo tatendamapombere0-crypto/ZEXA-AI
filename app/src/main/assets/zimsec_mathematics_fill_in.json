@@ -1,0 +1,380 @@
+{
+  "subject": "Mathematics",
+  "curriculum": "Zimbabwe Ministry of Primary and Secondary Education (MoPSE)",
+  "syllabus_sources": [
+    "Mathematics and Science Infant (ECD A - Grade 2) Syllabus, 2015-2022",
+    "Mathematics Junior (Grade 3-7) Syllabus, 2015-2022"
+  ],
+  "note": "This file adds strands/topics NOT already covered in the earlier Mathematics file (addition/subtraction, multiplication/division, basic fractions, shapes, time/money, measurement, data handling basics, place value). It covers: Number Theory (factors, multiples, primes, HCF/LCM), Ratio/Proportion/Percentages/Financial Maths, Shape-Space-Position beyond basic shapes (direction, angles, symmetry, transformations, coordinates), Data Handling extensions (mean/mode/median, probability), and Relationships & Patterns (sequences, algebra readiness). Grade placements and content are grounded in the official scope-and-sequence tables of the syllabuses named above.",
+  "generated": "2026-08-22",
+  "chunks": [
+    {
+      "id": "math-num-001",
+      "strand": "Number",
+      "topic": "Factors and Multiples",
+      "grade": "Grade 4",
+      "content": "In Grade 4, learners are introduced to factors of numbers within the range 1 to 100. A factor is a whole number that divides exactly into another number, leaving no remainder. Learners identify all the factors of a given number by systematically testing which numbers divide it evenly. This directly supports the multiplication and division work of the same grade, since multiplication facts and factor pairs are two views of the same relationship (e.g. 3 x 4 = 12 means 3 and 4 are both factors of 12).",
+      "learning_activities": [
+        "Finding factor pairs of numbers up to 100 using multiplication tables",
+        "Sorting numbers into 'has many factors' and 'has few factors' using number cards",
+        "Using arrays (rows and columns of counters) to show factor pairs visually"
+      ],
+      "keywords": ["factors", "factor pairs", "divides exactly", "grade 4 mathematics"]
+    },
+    {
+      "id": "math-num-002",
+      "strand": "Number",
+      "topic": "HCF and LCM (Highest Common Factor / Lowest Common Multiple)",
+      "grade": "Grade 4 to Grade 7 (progressive depth)",
+      "content": "HCF and LCM are introduced from Grade 4 and are revisited with increasing depth through to Grade 7, where they are applied to combined operations, ratio and scale, and fraction work. The Highest Common Factor (HCF) of two or more numbers is the largest number that divides exactly into all of them. The Lowest Common Multiple (LCM) is the smallest number that is a multiple of all the given numbers. By upper grades (6-7), learners use HCF to simplify fractions and LCM to find common denominators when adding or subtracting fractions with different denominators.",
+      "learning_activities": [
+        "Listing multiples of two numbers and circling the first common one to find the LCM",
+        "Listing factors of two numbers and identifying the largest shared factor for HCF",
+        "Applying HCF to reduce fractions to their simplest form",
+        "Applying LCM to find a common denominator before adding/subtracting fractions"
+      ],
+      "keywords": ["HCF", "highest common factor", "LCM", "lowest common multiple", "simplifying fractions", "common denominator"]
+    },
+    {
+      "id": "math-num-003",
+      "strand": "Number",
+      "topic": "Prime and Composite Numbers",
+      "grade": "Grade 5 to Grade 7",
+      "content": "Building on factor work, learners classify whole numbers as prime (having exactly two factors: 1 and itself, e.g. 2, 3, 5, 7, 11) or composite (having more than two factors, e.g. 4, 6, 8, 9). This underpins later work on HCF, LCM and number patterns, and is used as an extension activity for learners who have mastered basic factor identification.",
+      "learning_activities": [
+        "Using the 'sieve' method (crossing out multiples on a hundred square) to find prime numbers up to 100",
+        "Sorting number cards into prime and composite groups with reasons",
+        "Identifying the only even prime number (2) and discussing why"
+      ],
+      "keywords": ["prime numbers", "composite numbers", "hundred square", "number classification"]
+    },
+    {
+      "id": "math-num-004",
+      "strand": "Number",
+      "topic": "Percentages - Introduction",
+      "grade": "Grade 4",
+      "content": "Percentages are introduced in Grade 4 alongside decimals, giving learners an early meaning for 'per hundred' as a way of expressing a fraction with a denominator of 100. Learners connect percentages to fractions (e.g. 50% = 1/2) and to decimals (e.g. 50% = 0.5) using diagrams such as hundred squares and fraction/percentage charts.",
+      "learning_activities": [
+        "Shading hundred squares to represent given percentages",
+        "Converting simple fractions (halves, quarters, tenths) to percentages and back",
+        "Reading percentages in everyday contexts such as battery charge or exam scores"
+      ],
+      "keywords": ["percentages", "per hundred", "fraction to percentage", "decimal to percentage", "grade 4"]
+    },
+    {
+      "id": "math-num-005",
+      "strand": "Number",
+      "topic": "Percentages - Applied Calculations",
+      "grade": "Grade 5 to Grade 7",
+      "content": "From Grade 5, percentage work becomes calculation-based: finding a given percentage of a quantity, expressing one quantity as a percentage of another, and calculating percentage increase or decrease. By Grade 7, percentages are fully integrated into financial mathematics (profit and loss percentage, discount, commission, interest, sales tax and Value Added Tax).",
+      "learning_activities": [
+        "Calculating a percentage of a quantity of money, mass or distance",
+        "Working out percentage increase/decrease for real-life scenarios such as price changes",
+        "Solving word problems combining percentages with money (e.g. discount on a purchase)"
+      ],
+      "keywords": ["percentage of a quantity", "percentage increase", "percentage decrease", "financial mathematics"]
+    },
+    {
+      "id": "math-num-006",
+      "strand": "Number",
+      "topic": "Ratio and Proportion",
+      "grade": "Grade 6 to Grade 7",
+      "content": "Ratio and proportion are formally introduced in Grade 6, where learners express relationships between two or more quantities as a ratio, simplify ratios (often using HCF), and divide a quantity in a given ratio. In Grade 7, this extends to direct proportion problems, and to scale (interpreting and drawing to scale, e.g. on maps or plans) and exchange rate calculations, which apply ratio reasoning to currency conversion.",
+      "learning_activities": [
+        "Expressing quantities in a bag of mixed objects as a ratio (e.g. red:blue counters)",
+        "Simplifying ratios by dividing both terms by their HCF",
+        "Dividing an amount of money or objects according to a given ratio",
+        "Reading and drawing simple scale diagrams (e.g. 1 cm represents 1 m)",
+        "Converting between currencies using a given exchange rate"
+      ],
+      "keywords": ["ratio", "proportion", "dividing in a ratio", "scale", "exchange rate", "grade 6", "grade 7"]
+    },
+    {
+      "id": "math-num-007",
+      "strand": "Number",
+      "topic": "Roman Numerals",
+      "grade": "Grade 3 to Grade 7 (progressive range)",
+      "content": "Roman numerals are taught alongside the Arabic (Hindu-Arabic) number system from Grade 3, with the range of numerals extending each year: Grade 3 covers I to X, Grade 4 extends to L, Grade 5 to C, Grade 6 to D, and Grade 7 to M. Learners read and write numbers in both systems and convert between them.",
+      "learning_activities": [
+        "Matching Roman numeral cards to their Arabic numeral equivalents",
+        "Reading dates or clock faces that use Roman numerals",
+        "Converting Arabic numbers to Roman numerals and vice versa within the grade's range"
+      ],
+      "keywords": ["Roman numerals", "Arabic numerals", "numeration systems", "I V X L C D M"]
+    },
+    {
+      "id": "math-num-008",
+      "strand": "Number",
+      "topic": "Combined Operations and Order of Operations",
+      "grade": "Grade 6 to Grade 7",
+      "content": "From Grade 6, learners solve problems involving combined operations, applying the correct order of operations to expressions with more than one operation (addition, subtraction, multiplication, division) so that calculations are carried out consistently and correctly, including when working with whole numbers, fractions and decimals together.",
+      "learning_activities": [
+        "Solving multi-step number sentences by identifying which operation to perform first",
+        "Using brackets to guide the order in which operations are carried out",
+        "Applying combined operations within money and measurement word problems"
+      ],
+      "keywords": ["combined operations", "order of operations", "BODMAS", "multi-step calculations"]
+    },
+    {
+      "id": "math-shape-001",
+      "strand": "Shape, Space and Position",
+      "topic": "Direction and Cardinal Points",
+      "grade": "Grade 3",
+      "content": "Grade 3 introduces the four cardinal points (North, South, East and West) as a way of giving and finding the direction of objects and places. Learners point to and describe locations relative to a reference point using these four directions before more complex direction and angle work is introduced in later grades.",
+      "learning_activities": [
+        "Identifying the direction of familiar places in the classroom or school using the four cardinal points",
+        "Using a simple compass to find North and orient a map",
+        "Drawing arrows on squared paper to show North, South, East and West"
+      ],
+      "keywords": ["direction", "cardinal points", "north south east west", "compass", "grade 3"]
+    },
+    {
+      "id": "math-shape-002",
+      "strand": "Shape, Space and Position",
+      "topic": "Angles",
+      "grade": "Grade 5 to Grade 7",
+      "content": "Angle work builds from informal recognition of turns and corners in lower grades to formal measurement in upper Junior grades. Learners identify and name types of angles (acute, right, obtuse, straight and reflex), measure angles using a protractor, and by Grade 7 apply angle properties to the interior angles of triangles and quadrilaterals.",
+      "learning_activities": [
+        "Sorting angles found in the environment into acute, right and obtuse",
+        "Measuring angles accurately using a protractor",
+        "Calculating missing angles in triangles and quadrilaterals using known angle-sum properties"
+      ],
+      "keywords": ["angles", "acute", "obtuse", "right angle", "reflex angle", "protractor", "triangle angle sum"]
+    },
+    {
+      "id": "math-shape-003",
+      "strand": "Shape, Space and Position",
+      "topic": "Symmetry",
+      "grade": "Grade 4 to Grade 5",
+      "content": "Learners explore line symmetry by folding shapes and pictures to find lines along which the two halves match exactly. They identify and draw lines of symmetry in regular shapes and in patterns found in the local environment, including cultural patterns and designs.",
+      "learning_activities": [
+        "Folding paper shapes to find lines of symmetry",
+        "Completing the other half of a symmetrical picture given one half",
+        "Identifying symmetry in local cultural patterns, leaves and everyday objects"
+      ],
+      "keywords": ["symmetry", "line of symmetry", "folding", "reflection"]
+    },
+    {
+      "id": "math-shape-004",
+      "strand": "Shape, Space and Position",
+      "topic": "Transformations (Reflection, Rotation, Translation)",
+      "grade": "Grade 6 to Grade 7",
+      "content": "In upper Junior grades, symmetry work is extended into formal transformations. Learners describe and perform reflections (flips), rotations (turns) and translations (slides) of simple shapes on squared or grid paper, and describe the effect of each transformation on the position and orientation of a shape.",
+      "learning_activities": [
+        "Reflecting a shape across a mirror line drawn on squared paper",
+        "Rotating a shape about a fixed point through quarter and half turns",
+        "Translating (sliding) a shape a given number of squares and describing the movement"
+      ],
+      "keywords": ["transformations", "reflection", "rotation", "translation", "grid paper"]
+    },
+    {
+      "id": "math-shape-005",
+      "strand": "Shape, Space and Position",
+      "topic": "Coordinates and Position",
+      "grade": "Grade 6 to Grade 7",
+      "content": "Learners are introduced to plotting and reading positions using ordered pairs (coordinates) on a simple grid, connecting this to earlier direction work. This prepares learners for coordinate geometry at secondary level and reinforces the link between number pairs and spatial position.",
+      "learning_activities": [
+        "Plotting given points on a labelled grid using ordered pairs",
+        "Reading the coordinates of marked points on a grid",
+        "Describing routes between points on a grid using coordinates and direction together"
+      ],
+      "keywords": ["coordinates", "ordered pairs", "grid", "position", "x and y axis"]
+    },
+    {
+      "id": "math-shape-006",
+      "strand": "Shape, Space and Position",
+      "topic": "Properties of 3D Shapes",
+      "grade": "Grade 4 to Grade 6",
+      "content": "Beyond naming basic solids, learners investigate and describe the properties of three-dimensional shapes (cubes, cuboids, cylinders, cones, spheres, pyramids) in terms of the number of faces, edges and vertices, and relate these properties to nets that can be folded to form the solids.",
+      "learning_activities": [
+        "Counting and recording the faces, edges and vertices of real 3D objects",
+        "Folding paper nets to construct 3D shapes and matching nets to their solids",
+        "Sorting 3D shapes by shared properties such as 'has a curved surface' or 'all faces are flat'"
+      ],
+      "keywords": ["3D shapes", "faces edges vertices", "nets", "cube", "cylinder", "cone", "sphere", "pyramid"]
+    },
+    {
+      "id": "math-data-001",
+      "strand": "Data Handling",
+      "topic": "Mode",
+      "grade": "Grade 5 to Grade 6",
+      "content": "Learners are introduced to the mode as the value that appears most often in a set of data. This is the simplest of the three measures of central tendency taught in the Junior syllabus and is typically introduced before mean and median, using data collected from the classroom or local environment.",
+      "learning_activities": [
+        "Collecting a simple data set (e.g. favourite fruit, shoe size) and finding the most common value",
+        "Identifying the mode from a frequency table or tally chart",
+        "Discussing situations where the mode is the most useful average to use"
+      ],
+      "keywords": ["mode", "measures of central tendency", "frequency table", "most common value"]
+    },
+    {
+      "id": "math-data-002",
+      "strand": "Data Handling",
+      "topic": "Median",
+      "grade": "Grade 6 to Grade 7",
+      "content": "The median is introduced as the middle value of a data set once the values have been arranged in order (ascending or descending). Learners practise ordering data sets and locating the middle value, including handling the case of an even number of values by finding the mean of the two middle values in later work.",
+      "learning_activities": [
+        "Arranging a set of numbers in ascending order to find the middle value",
+        "Finding the median of small data sets collected from surveys",
+        "Comparing the median and mode for the same data set and discussing differences"
+      ],
+      "keywords": ["median", "middle value", "ordering data", "ascending order"]
+    },
+    {
+      "id": "math-data-003",
+      "strand": "Data Handling",
+      "topic": "Mean (Average)",
+      "grade": "Grade 6 to Grade 7",
+      "content": "The mean is taught as the sum of all values in a data set divided by the number of values, giving learners a formal method for finding an 'average'. By Grade 7, learners apply the mean to real-life data sets and use it alongside mode and median to interpret and compare data.",
+      "learning_activities": [
+        "Calculating the mean of a small set of numbers by adding and dividing",
+        "Using the mean to compare performance, e.g. average marks across tests",
+        "Solving problems that require finding a missing value given the mean"
+      ],
+      "keywords": ["mean", "average", "sum divided by count", "data interpretation"]
+    },
+    {
+      "id": "math-data-004",
+      "strand": "Data Handling",
+      "topic": "Line Graphs and Pie Charts",
+      "grade": "Grade 6 to Grade 7",
+      "content": "Beyond the tally charts and bar graphs introduced in earlier grades, learners in Grades 6-7 read, interpret and draw line graphs to show data that changes over time (such as temperature or growth records), and are introduced to reading simple pie charts to compare proportions within a whole.",
+      "learning_activities": [
+        "Plotting a line graph from recorded data such as daily temperature over a week",
+        "Reading values and trends from a given line graph",
+        "Interpreting simple pie charts showing how a whole is divided into categories"
+      ],
+      "keywords": ["line graph", "pie chart", "data over time", "interpreting graphs"]
+    },
+    {
+      "id": "math-data-005",
+      "strand": "Data Handling",
+      "topic": "Introduction to Probability",
+      "grade": "Grade 7",
+      "content": "As an introductory concept in Grade 7, learners explore the likelihood of simple events happening, using everyday language such as 'certain', 'likely', 'unlikely' and 'impossible' before any numerical probability is introduced. This builds a foundation for formal probability studied at secondary level.",
+      "learning_activities": [
+        "Describing the likelihood of everyday events using words such as certain, likely, unlikely, impossible",
+        "Predicting and testing outcomes of simple activities such as coin tosses or spinning a simple spinner",
+        "Ordering events from least likely to most likely on a likelihood line"
+      ],
+      "keywords": ["probability", "likelihood", "certain", "likely", "unlikely", "impossible", "chance"]
+    },
+    {
+      "id": "math-rel-001",
+      "strand": "Relationships and Patterns",
+      "topic": "Number Sequences and Patterns",
+      "grade": "Grade 3 to Grade 5",
+      "content": "Learners identify, continue and create number patterns and sequences, including counting patterns in multiples, and supply missing numbers in a sequence. This strand develops the pattern-recognition skills that underpin later algebraic thinking.",
+      "learning_activities": [
+        "Continuing a given number sequence and explaining the rule used",
+        "Finding missing numbers in a sequence shown on a number line or chart",
+        "Creating their own number patterns and challenging classmates to find the rule"
+      ],
+      "keywords": ["number patterns", "sequences", "missing numbers", "counting patterns"]
+    },
+    {
+      "id": "math-rel-002",
+      "strand": "Relationships and Patterns",
+      "topic": "Missing Number Sentences (Algebra Readiness)",
+      "grade": "Grade 3 to Grade 6",
+      "content": "Across the Junior grades, learners solve open number sentences by finding missing values in addition, subtraction, multiplication, division and fraction statements (e.g. 8 + __ = 15). This is the Junior syllabus's approach to building algebraic reasoning before formal algebra is introduced at secondary level.",
+      "learning_activities": [
+        "Solving open number sentences with a missing addend, subtrahend, factor or divisor",
+        "Using balance/scale models to represent equality in number sentences",
+        "Writing their own missing-number problems for a partner to solve"
+      ],
+      "keywords": ["missing number sentences", "open sentences", "algebra readiness", "equality"]
+    },
+    {
+      "id": "math-rel-003",
+      "strand": "Relationships and Patterns",
+      "topic": "Rate",
+      "grade": "Grade 3 to Grade 4",
+      "content": "Rate is introduced through practical activities relating quantity to a fixed period of time, such as how much of a task can be completed in a set time. This groups relationships between two different quantities and lays informal groundwork for later ratio, proportion and speed-related calculations.",
+      "learning_activities": [
+        "Timing how long it takes to complete a simple task such as filling a container",
+        "Comparing the rate at which different groups complete the same task",
+        "Recording and discussing results using stopwatches or clocks"
+      ],
+      "keywords": ["rate", "fixed period of time", "task completion", "comparing rates"]
+    },
+    {
+      "id": "math-num-009",
+      "strand": "Number",
+      "topic": "Whole Numbers Beyond One Million",
+      "grade": "Grade 7",
+      "content": "By Grade 7, the range of whole numbers studied extends up to ten million, with learners reading, writing, comparing and rounding numbers within this range (to the nearest ten, hundred, thousand and so on), and identifying place value of digits at this larger scale.",
+      "learning_activities": [
+        "Reading and writing large numbers (up to ten million) in numerals and words",
+        "Comparing and ordering large numbers using place value understanding",
+        "Rounding large numbers to a specified place value"
+      ],
+      "keywords": ["large numbers", "ten million", "place value", "rounding", "grade 7"]
+    },
+    {
+      "id": "math-num-010",
+      "strand": "Number",
+      "topic": "Decimals - Extended Place Value",
+      "grade": "Grade 5 to Grade 7",
+      "content": "Decimal work extends progressively: Grade 4-5 covers decimals to two places, Grade 6 extends to three decimal places with larger whole-number parts, and by Grade 7 learners add, subtract, multiply and divide decimals confidently, including combining decimal operations with fractions and percentages in mixed problems.",
+      "learning_activities": [
+        "Adding and subtracting decimals with up to three decimal places",
+        "Multiplying and dividing decimal numbers by one- and two-digit whole numbers",
+        "Solving mixed word problems that combine decimals, fractions and percentages"
+      ],
+      "keywords": ["decimals", "decimal places", "decimal operations", "mixed number problems"]
+    },
+    {
+      "id": "math-num-011",
+      "strand": "Number",
+      "topic": "Financial Mathematics",
+      "grade": "Grade 7",
+      "content": "Grade 7 brings together number, percentage and ratio skills in applied financial mathematics: selling price, cost price, profit and loss and their percentages, discount, commission, interest, hire purchase, sales tax and Value Added Tax (VAT). This strand connects classroom mathematics directly to real-world money management and enterprise skills.",
+      "learning_activities": [
+        "Calculating profit or loss and expressing it as a percentage of cost price",
+        "Working out discount amounts and final prices after a percentage discount",
+        "Solving problems involving simple interest and hire purchase payments",
+        "Calculating VAT and sales tax additions to a purchase price"
+      ],
+      "keywords": ["financial mathematics", "profit and loss", "discount", "commission", "interest", "hire purchase", "VAT", "sales tax", "grade 7"]
+    },
+    {
+      "id": "math-num-012",
+      "strand": "Number",
+      "topic": "Mixed Numbers - Operations",
+      "grade": "Grade 5 to Grade 7",
+      "content": "Beyond basic fraction work, learners in Grades 5-7 add and subtract mixed numbers with denominators up to 12 and multiples of these, multiply and divide mixed numbers and proper fractions (up to three terms by Grade 7), and apply these operations within real-life problems.",
+      "learning_activities": [
+        "Converting between mixed numbers and improper fractions before calculating",
+        "Adding and subtracting mixed numbers with different denominators using a common denominator",
+        "Multiplying and dividing mixed numbers in practical word problems"
+      ],
+      "keywords": ["mixed numbers", "improper fractions", "fraction operations", "common denominator"]
+    },
+    {
+      "id": "math-inf-001",
+      "strand": "Number",
+      "topic": "Early Number Concepts (ECD A/B)",
+      "grade": "ECD A to ECD B",
+      "content": "The Infant syllabus (ECD A, ECD B, Grade 1, Grade 2) begins Mathematics with pre-number and early number concepts: matching, sorting and classifying objects by attribute, one-to-one correspondence, counting objects within a small range, and recognising and writing numerals before formal operations are introduced in Grade 1.",
+      "learning_activities": [
+        "Sorting and classifying real objects by colour, size or shape",
+        "Matching objects one-to-one, such as cups to saucers, to build the concept of equal sets",
+        "Counting concrete objects and matching the count to the correct numeral card"
+      ],
+      "keywords": ["ECD", "early childhood development", "pre-number concepts", "sorting", "matching", "one-to-one correspondence"]
+    },
+    {
+      "id": "math-inf-002",
+      "strand": "Shape, Space and Position",
+      "topic": "Position and Spatial Language (Infant)",
+      "grade": "ECD A to Grade 2",
+      "content": "Before formal direction and coordinate work in Junior grades, Infant learners develop spatial vocabulary and awareness through position words such as on, under, in, out, beside, in front of and behind, and through recognising and naming basic 2D and 3D shapes in their environment.",
+      "learning_activities": [
+        "Following instructions using position words during movement games",
+        "Describing the position of objects in the classroom using correct position vocabulary",
+        "Identifying and naming basic shapes (circle, square, triangle, rectangle) found around the school"
+      ],
+      "keywords": ["position words", "spatial vocabulary", "infant mathematics", "basic shapes"]
+    }
+  ]
+}

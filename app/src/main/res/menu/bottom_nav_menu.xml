@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_nav_chat"
+        android:title="AI Chat" />
+
+    <item
+        android:id="@+id/nav_study_pack"
+        android:icon="@drawable/ic_nav_study"
+        android:title="Study Pack" />
+
+    <item
+        android:id="@+id/nav_exam_mode"
+        android:icon="@drawable/ic_nav_exam"
+        android:title="Exam Mode" />
+
+</menu>

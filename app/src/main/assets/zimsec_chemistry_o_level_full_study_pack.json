@@ -1,0 +1,1698 @@
+{
+  "metadata": {
+    "source": "Zimbabwe School Examinations Council (ZIMSEC), O-Level Chemistry 4024, 2024–2030 Heritage-Based Curriculum cycle",
+    "subject": "Chemistry",
+    "level": "O-Level",
+    "curriculum": "Heritage-Based Curriculum",
+    "coverage": "Forms 3–4 / Ordinary Level",
+    "content_type": "Comprehensive Zimbabwe ZIMSEC O-Level Chemistry study notes",
+    "scope_note": "Detailed student-facing notes organised by major Chemistry content areas, including theory, calculations, practical chemistry, qualitative analysis, organic chemistry and examination skills.",
+    "verification_sources": [
+      "ZIMSEC official syllabi/resource portal",
+      "ZIMSEC Chemistry 4024 specimen and examination resources for the 2024–2030 cycle"
+    ],
+    "exam_code": "4024",
+    "exam_structure_note": "ZIMSEC currently publishes Chemistry 4024/01, 4024/02 and 4024/03 resources; practical and theory preparation are therefore included.",
+    "syllabus_scope_verified": [
+      "Physical chemistry: laboratory techniques, separation, particle theory, atomic structure, bonding, mole concept, stoichiometry, energetics, equilibrium and kinetics.",
+      "Inorganic chemistry: periodic trends, transition elements, metals/non-metals, reactivity, mineral extraction and industrial non-metal applications.",
+      "Organic chemistry: hydrocarbons, crude oil, coal, biofuels, alkanes, alkenes, alcohols, carboxylic acids, esters, saponification and polymers.",
+      "Environmental chemistry: waste management, water purification, pollution, acid rain, eutrophication and ozone depletion."
+    ],
+    "source_note": "Topic scope was cross-checked against the 2024–2030 Chemistry 4024 syllabus description and current ZIMSEC specimen/examination resources; explanatory notes are original study material, not verbatim copied syllabus text.",
+    "expanded_version": "Deep curriculum study-pack build",
+    "expanded_focus": "Detailed theory + worked calculation methods + industrial chemistry + organic chemistry + environmental chemistry + practical chemistry + exam technique"
+  },
+  "structure": [
+    {
+      "form": 3,
+      "terms": [
+        {
+          "term": 1,
+          "topics": [
+            {
+              "title": "Experimental Chemistry and Laboratory Skills",
+              "subtopics": [
+                {
+                  "title": "Laboratory Safety and Apparatus",
+                  "content": "Chemistry is an experimental science. Safe practical work requires knowledge of\nhazards, correct apparatus and correct procedures.\n\nWear appropriate protective equipment, keep chemicals away from the mouth,\nnever taste laboratory substances, and report spills, breakages and accidents.\nWhen heating, point test tubes away from people. Handle acids, alkalis,\nflammable substances and toxic chemicals according to laboratory instructions.\n\nCommon apparatus include test tubes, beakers, conical flasks, measuring\ncylinders, burettes, pipettes, thermometers, evaporating basins, crucibles,\nfunnels, filter paper, balances and gas syringes. The apparatus selected should\nmatch the required measurement. A measuring cylinder is suitable for ordinary\nvolume measurement; a burette is designed for accurate delivery of variable\nvolumes; a pipette is designed to transfer a fixed measured volume accurately.\n\nRead scales at eye level where possible and read the bottom of a meniscus for\nmost aqueous solutions. Record units and appropriate precision.\n\nA good practical answer states the apparatus, method, observation, conclusion\nand relevant safety precaution rather than simply naming a chemical test.",
+                  "keywords": [
+                    "4024",
+                    "apparatus",
+                    "burette",
+                    "chemistry",
+                    "laboratory safety",
+                    "meniscus",
+                    "o level",
+                    "pipette",
+                    "practical chemistry",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Measurement, Accuracy, Precision and Errors",
+                  "content": "Accuracy describes how close a measurement is to the accepted value. Precision\ndescribes how closely repeated measurements agree with one another.\n\nRandom errors cause readings to vary unpredictably. Repeating measurements and\ncalculating a mean can reduce their effect. Systematic errors shift results in\na consistent direction and are not removed simply by repeating a measurement.\n\nParallax can occur when a scale is viewed from the wrong position. Zero error\noccurs when an instrument does not read zero when it should. Poorly calibrated\napparatus can introduce systematic error.\n\nIn a practical investigation, identify the independent variable, dependent\nvariable and controlled variables. Repeat measurements where appropriate,\ndiscard anomalous readings only with a justified reason, and use tables and\ngraphs to identify relationships.\n\nA conclusion should be supported by the observations or numerical data. Do not\nclaim more than the evidence demonstrates.",
+                  "keywords": [
+                    "4024",
+                    "accuracy",
+                    "chemistry",
+                    "errors",
+                    "o level",
+                    "precision",
+                    "random error",
+                    "systematic error",
+                    "variables",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Separation and Purification Techniques",
+                  "content": "Separation methods depend on differences in physical properties.\n\nFiltration separates an insoluble solid from a liquid. The solid retained on\nthe filter paper is the residue and the liquid passing through is the filtrate.\n\nEvaporation removes solvent to leave a dissolved solid. Crystallisation is\nused when a soluble solid is required as crystals and overheating may cause\ndecomposition.\n\nSimple distillation can separate a solvent from a solution by boiling the\nmore volatile component and condensing its vapour. Fractional distillation is\nused to separate miscible liquids with different boiling points.\n\nChromatography separates dissolved substances because components have\ndifferent affinities for the stationary phase and the solvent. A pure substance\nnormally gives one spot under suitable conditions, while a mixture can give\nseveral.\n\nThe choice of method should always be justified by the physical properties\nbeing exploited: solubility, boiling point, particle size or affinity for a\nsolvent.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "chromatography",
+                    "crystallisation",
+                    "distillation",
+                    "filtration",
+                    "fractional distillation",
+                    "o level",
+                    "separation",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Acid-Base Titration Worked Method",
+                  "content": "A titration is a quantitative method for determining how much of one solution\nreacts with a known volume of another solution.\n\nFirst rinse the burette with the solution that will be placed in it. Fill it\ncarefully and remove air bubbles from the jet. Record the initial burette\nreading. Rinse the pipette with the solution it will deliver, transfer the\nrequired fixed volume to a conical flask and add a few drops of a suitable\nindicator.\n\nRun solution from the burette into the flask while swirling. Near the endpoint,\nadd the titrant drop by drop. Record the final reading. The titre is the final\nreading minus the initial reading.\n\nA rough titration establishes the approximate endpoint. Further titrations are\nperformed until concordant results are obtained. The mean should normally use\nthe concordant titres rather than an unsuitable rough value.\n\nFor calculations, convert cm3 to dm3 by dividing by 1000. Calculate moles using\nconcentration × volume, then apply the balanced equation's mole ratio. If the\nequation is 1:1, the reacting substances have equal mole amounts at complete\nreaction; if it is 1:2 or another ratio, use that ratio explicitly.\n\nGood technique reduces uncertainty: read the meniscus at eye level, remove\nfunnel from the burette before titrating, rinse the flask with distilled water\nrather than the reacting solution, and wash down flask walls with distilled\nwater during titration when appropriate.",
+                  "keywords": [
+                    "4024",
+                    "burette",
+                    "calculation",
+                    "chemistry",
+                    "concordant titres",
+                    "endpoint",
+                    "o level",
+                    "pipette",
+                    "titration",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Planning a Fair Chemical Investigation",
+                  "content": "A fair chemical investigation changes one independent variable while measuring\na dependent variable and controlling other relevant variables.\n\nA plan should state the aim, apparatus, method, variables, safety measures,\ndata to collect and how results will be analysed.\n\nFor example, to investigate how concentration affects reaction rate, use the\nsame temperature, volume, mass and surface area of the other reactant while\nchanging only concentration. Measure a consistent endpoint such as gas volume\nor time to reach a specified observation.\n\nRepeating measurements improves reliability. A wide range of values can\nreveal trends, while too narrow a range may make differences difficult to\ndetect.\n\nEvaluation should identify realistic sources of error and specific\nimprovements rather than vague statements such as 'be more careful'.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "evaluation",
+                    "fair test",
+                    "investigation",
+                    "o level",
+                    "practical",
+                    "reliability",
+                    "variables",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Particles, Atomic Structure and the Periodic Table",
+              "subtopics": [
+                {
+                  "title": "States of Matter and Particle Theory",
+                  "content": "Matter is made of particles. In a solid, particles are closely packed and\nvibrate about fixed positions. A liquid has particles that remain close\ntogether but can move past one another. In a gas, particles are far apart and\nmove rapidly in random directions.\n\nMelting is the change from solid to liquid. Freezing is liquid to solid.\nBoiling and evaporation involve liquid changing to gas. Condensation changes\ngas to liquid. Sublimation is direct change between solid and gas.\n\nHeating increases the average kinetic energy of particles. During a change of\nstate, energy is used to overcome attractive forces rather than simply\nraising temperature. Diffusion is the net movement of particles from a region\nof higher concentration to lower concentration due to random motion.",
+                  "keywords": [
+                    "4024",
+                    "boiling",
+                    "chemistry",
+                    "diffusion",
+                    "evaporation",
+                    "melting",
+                    "o level",
+                    "particle theory",
+                    "states of matter",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Atomic Structure and Isotopes",
+                  "content": "An atom contains a small, dense nucleus surrounded by electrons. The nucleus\ncontains protons and neutrons. A proton has relative charge +1 and a neutron\nhas charge 0; an electron has relative charge −1.\n\nThe atomic number is the number of protons. In a neutral atom it is also the\nnumber of electrons. The mass number is the total number of protons and\nneutrons.\n\nIsotopes are atoms of the same element with the same number of protons but\ndifferent numbers of neutrons. They have the same chemical properties to a\nlarge extent because they have the same electron arrangement, although some\nphysical properties differ.\n\nElectron arrangement is important because chemical reactions involve\nelectrons, especially the outer-shell electrons.",
+                  "keywords": [
+                    "4024",
+                    "atom",
+                    "atomic number",
+                    "chemistry",
+                    "electron",
+                    "isotopes",
+                    "mass number",
+                    "neutron",
+                    "o level",
+                    "proton",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Electron Arrangement and Ions",
+                  "content": "Electrons occupy shells or energy levels around the nucleus. For the first\ntwenty elements at O-Level, the common shell capacities used for simple\nelectron arrangements are 2, 8 and then 8 for the third shell.\n\nAtoms tend to form ions when they gain or lose electrons to obtain a more\nstable outer-shell arrangement. Metals generally lose electrons to form\npositive ions (cations). Non-metals generally gain electrons to form negative\nions (anions).\n\nFor example, sodium forms Na+ by losing one electron, while chlorine forms\nCl− by gaining one electron. Magnesium forms Mg2+ by losing two electrons,\nand oxygen forms O2− by gaining two electrons.\n\nIon charge is essential when writing formulae of ionic compounds.",
+                  "keywords": [
+                    "4024",
+                    "anions",
+                    "cations",
+                    "chemistry",
+                    "electron arrangement",
+                    "electron shells",
+                    "ions",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Periodic Table and Periodic Trends",
+                  "content": "The Periodic Table arranges elements in order of increasing atomic number.\nElements in the same group have similar chemical properties because they have\nsimilar outer-electron arrangements.\n\nGroup 1 elements are reactive metals with one outer electron. Group 2 metals\nhave two outer electrons and generally form 2+ ions. Group 7 elements are\nhalogens and generally gain one electron to form 1− ions. Group 0 noble gases\nhave full outer shells and are relatively unreactive.\n\nAcross a period, the number of outer electrons generally increases while\nproperties change gradually from metallic to non-metallic. Elements in the\nsame period have the same number of occupied electron shells in the simple\nmodel.\n\nThe position of an element can therefore be used to predict its ion charge,\nreactivity and broad chemical behaviour.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "group 0",
+                    "group 1",
+                    "group 2",
+                    "group 7",
+                    "groups",
+                    "o level",
+                    "periodic table",
+                    "periods",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Nuclide Notation and Relative Atomic Mass",
+                  "content": "Nuclide notation represents an atom using its mass number at the upper left\nand atomic number at the lower left of the element symbol.\n\nThe mass number equals protons plus neutrons. The atomic number equals protons.\nTherefore:\nneutrons = mass number − atomic number.\n\nFor an element with several isotopes, relative atomic mass is a weighted\naverage based on the abundance of each isotope:\nAr = Σ(isotope mass × fractional abundance).\n\nIsotopes may be stable or radioactive. Radioactive isotopes have unstable\nnuclei and emit radiation as they change toward more stable arrangements.\nUses of radioisotopes include medical diagnosis/treatment, tracing and\nindustrial measurements, but radiation requires controlled handling.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "isotopes",
+                    "mass number",
+                    "nuclide notation",
+                    "o level",
+                    "radioisotopes",
+                    "relative atomic mass",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Radioactivity and Radiation",
+                  "content": "Some atomic nuclei are unstable and undergo radioactive decay. Radiation can\nbe classified as alpha, beta or gamma.\n\nAlpha radiation consists of relatively massive particles and has low\npenetrating power but high ionising power. Beta radiation consists of fast\nelectrons or positrons and has intermediate penetration. Gamma radiation is\nelectromagnetic radiation with high penetrating power.\n\nRadiation can be useful in medicine, industry and scientific investigation.\nIt can also damage living tissue, so exposure must be controlled.\n\nSafety principles include minimising exposure time, maximising distance and\nusing suitable shielding. Radioactive sources should be handled only by\ntrained personnel using appropriate controls.\n\nThe chemistry relevance is that radioactive change originates in the nucleus,\nwhereas ordinary chemical reactions mainly involve rearrangement of electrons.",
+                  "keywords": [
+                    "4024",
+                    "alpha",
+                    "beta",
+                    "chemistry",
+                    "gamma",
+                    "nuclear",
+                    "o level",
+                    "radiation",
+                    "radioactivity",
+                    "safety",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Chemical Bonding and Structure",
+              "subtopics": [
+                {
+                  "title": "Ionic Bonding",
+                  "content": "Ionic bonding is the electrostatic attraction between oppositely charged ions.\nIt commonly forms when a metal transfers electrons to a non-metal.\n\nSodium transfers one electron to chlorine, producing Na+ and Cl−. The ions\narrange in a giant ionic lattice with strong electrostatic attractions in all\ndirections.\n\nIonic compounds generally have high melting and boiling points because strong\nforces must be overcome. They conduct electricity when molten or dissolved in\nwater because ions are free to move. They do not normally conduct as solids\nbecause their ions are fixed in the lattice.\n\nThe formula of an ionic compound must give overall electrical neutrality.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "electrical conductivity",
+                    "ionic bonding",
+                    "ionic lattice",
+                    "ions",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Covalent Bonding",
+                  "content": "Covalent bonding occurs when non-metal atoms share pairs of electrons. The\nshared electrons are attracted to the nuclei of the bonded atoms.\n\nSimple covalent molecules include hydrogen, chlorine, water, ammonia, methane\nand carbon dioxide. A covalent bond may be represented by a line between atoms\nto show a shared pair of electrons.\n\nSimple molecular substances usually have relatively low melting and boiling\npoints because the forces between individual molecules are weaker than the\ncovalent bonds within the molecules.\n\nSimple covalent substances generally do not conduct electricity because they\ndo not contain mobile ions or delocalised electrons.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "covalent bonding",
+                    "molecules",
+                    "o level",
+                    "shared electrons",
+                    "simple molecular",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Metallic Bonding and Properties of Metals",
+                  "content": "Metallic bonding consists of positive metal ions in a lattice surrounded by\ndelocalised electrons. The attraction between the ions and these electrons\nholds the structure together.\n\nDelocalised electrons can move through the structure, explaining why metals\nconduct electricity and heat. Layers of metal ions can move while the\nmetallic bonding remains, helping explain malleability and ductility.\n\nMetal properties include conductivity, strength, lustre and generally high\nmelting points. Actual properties vary between metals and alloys.\n\nAlloys are mixtures containing a metal and one or more other elements. Their\ndifferent-sized particles can disrupt the regular arrangement and may make\nthem harder or more useful than the pure metal.",
+                  "keywords": [
+                    "4024",
+                    "alloys",
+                    "chemistry",
+                    "conductivity",
+                    "delocalised electrons",
+                    "metallic bonding",
+                    "metals",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Giant Covalent Structures",
+                  "content": "Some substances contain giant covalent structures rather than separate small\nmolecules.\n\nDiamond consists of carbon atoms joined by strong covalent bonds in a\nthree-dimensional network. It is very hard and has a high melting point.\nIt does not conduct electricity because it has no mobile charged particles.\n\nGraphite also consists of carbon atoms but each carbon is bonded to three\nothers in layers. One electron from each carbon is delocalised, allowing\ngraphite to conduct electricity. Weak forces between layers allow layers to\nslide, making graphite useful as a lubricant and in pencils.\n\nThese structures show why the arrangement of atoms, not simply the elements\npresent, determines physical properties.",
+                  "keywords": [
+                    "4024",
+                    "carbon",
+                    "chemistry",
+                    "delocalised electrons",
+                    "diamond",
+                    "giant covalent",
+                    "graphite",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Intermolecular Forces and Physical Properties",
+                  "content": "The properties of a molecular substance depend on both the covalent bonds\ninside molecules and the forces between molecules.\n\nWhen a simple molecular substance melts or boils, the covalent bonds within\neach molecule are generally not broken. Instead, energy is used to overcome\nattractions between molecules.\n\nSmall molecules often have lower boiling points than larger molecules in the\nsame homologous series because intermolecular attractions generally increase\nwith molecular size.\n\nThis distinction is important in examination questions: breaking covalent\nbonds is a chemical change, whereas separating molecules during melting or\nboiling is a physical change.",
+                  "keywords": [
+                    "4024",
+                    "boiling",
+                    "chemistry",
+                    "intermolecular forces",
+                    "melting",
+                    "molecular substances",
+                    "o level",
+                    "physical properties",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Formulae, Equations and Chemical Calculations",
+              "subtopics": [
+                {
+                  "title": "Writing Formulae and Valency",
+                  "content": "A chemical formula shows the elements present and the ratio of their atoms or\nions. In an ionic compound the total positive charge must equal the total\nnegative charge.\n\nFor example, magnesium forms Mg2+ and chloride forms Cl−, so magnesium chloride\nis MgCl2. Aluminium forms Al3+ and oxide forms O2−, so aluminium oxide is\nAl2O3.\n\nUse the simplest whole-number ratio. Brackets are needed when a polyatomic ion\noccurs more than once, for example Ca(OH)2.\n\nFormulae should be checked by counting atoms and, for ionic compounds,\nchecking that total charge is zero.",
+                  "keywords": [
+                    "4024",
+                    "chemical formula",
+                    "chemistry",
+                    "formula writing",
+                    "ionic charge",
+                    "o level",
+                    "valency",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Balancing Chemical Equations",
+                  "content": "A chemical equation represents a reaction using formulae. It must conserve\natoms: the number of atoms of each element must be the same on both sides.\n\nBalance equations by changing coefficients placed in front of formulae.\nNever change the small subscripts inside a chemical formula merely to balance\nan equation, because that would change the substance.\n\nFor example:\n2H2 + O2 → 2H2O\n\nState symbols may be used: (s) solid, (l) liquid, (g) gas and (aq) aqueous.\n\nA balanced equation provides the mole ratio between reactants and products,\nwhich is essential for quantitative calculations.",
+                  "keywords": [
+                    "4024",
+                    "balancing equations",
+                    "chemical equations",
+                    "chemistry",
+                    "conservation of mass",
+                    "o level",
+                    "state symbols",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Relative Atomic Mass, Formula Mass and Moles",
+                  "content": "Relative atomic mass (Ar) is the weighted average mass of an atom of an element\nrelative to the chosen carbon standard. Relative formula mass (Mr) is found by\nadding the relative atomic masses of all atoms in the formula.\n\nThe mole is the amount of substance containing a fixed number of particles,\nthe Avogadro constant, approximately 6.02 × 10^23 particles per mole.\n\nMoles can be calculated from mass using:\nmoles = mass / molar mass.\n\nFor solutions:\nconcentration in mol/dm3 = moles / volume in dm3.\n\nFor gases at room conditions, the molar gas volume used in a question should\nbe the value specified by the syllabus or question. Always check units before\nsubstitution.\n\nChemical equations give mole ratios, allowing the amount of one substance to\nbe calculated from another.",
+                  "keywords": [
+                    "4024",
+                    "avogadro constant",
+                    "chemistry",
+                    "concentration",
+                    "molar mass",
+                    "moles",
+                    "mr",
+                    "o level",
+                    "relative atomic mass",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Percentage Composition and Empirical Formula",
+                  "content": "Percentage by mass of an element in a compound can be calculated from its\nrelative atomic mass contribution divided by the relative formula mass,\nmultiplied by 100.\n\nAn empirical formula gives the simplest whole-number ratio of atoms in a\ncompound. To determine it from percentage composition, convert each element's\nmass or percentage to moles, divide all values by the smallest number of\nmoles, and multiply if necessary to obtain whole numbers.\n\nA molecular formula is a multiple of the empirical formula. The multiplier is\nfound by dividing the compound's molecular mass by the empirical formula mass.\n\nShow working clearly because each step carries chemical meaning.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "empirical formula",
+                    "molecular formula",
+                    "o level",
+                    "percentage composition",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Mole Calculations, Stoichiometry and Percentage Yield",
+                  "content": "Stoichiometry uses a balanced chemical equation to calculate the amounts of\nreactants and products.\n\nA reliable method is:\n1. Write and balance the equation.\n2. Convert the known quantity to moles.\n3. Use the mole ratio from the balanced equation.\n4. Convert the calculated moles into the required unit such as mass, volume\n   or concentration.\n5. Check units and significant figures.\n\nFor gases at room temperature and pressure, use the molar gas volume specified\nfor the syllabus or question; the current 2024–2030 syllabus guidance uses\n24 dm3 per mole at r.t.p.\n\nPercentage yield compares the actual amount of product obtained with the\ntheoretical amount:\npercentage yield = actual yield / theoretical yield × 100.\n\nA yield below 100% can result from incomplete reaction, side reactions, loss\nduring transfer or purification, or measurement limitations. A calculation\nshould never assume 100% yield unless the question says so.",
+                  "keywords": [
+                    "24 dm3",
+                    "4024",
+                    "chemistry",
+                    "molar gas volume",
+                    "mole ratio",
+                    "o level",
+                    "percentage yield",
+                    "stoichiometry",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Ionic Equations",
+                  "content": "An ionic equation shows only the particles that actually participate in a\nreaction.\n\nSpectator ions, which remain unchanged in solution, are omitted. For example,\nneutralisation can be represented as:\nH+ + OH− → H2O.\n\nA precipitation reaction can be represented by the ions that form the\ninsoluble solid. The equation must conserve both atoms and charge.\n\nTo write an ionic equation:\n1. Write the balanced full equation.\n2. Convert soluble strong electrolytes into ions where appropriate.\n3. Leave solids, liquids and gases as compounds.\n4. Cancel identical ions on both sides.\n5. Check atoms and total charge.\n\nIonic equations are especially useful for precipitation, neutralisation and\nredox reactions.",
+                  "keywords": [
+                    "4024",
+                    "charge",
+                    "chemistry",
+                    "ionic equations",
+                    "net ionic equation",
+                    "o level",
+                    "redox",
+                    "spectator ions",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Concentration Calculations",
+                  "content": "Concentration may be expressed in g/dm3 or mol/dm3.\n\nFor mass concentration:\nconcentration = mass of solute / volume of solution.\n\nFor molar concentration:\nconcentration = moles of solute / volume in dm3.\n\nIf a solution has 0.20 mol dissolved in 0.50 dm3:\nconcentration = 0.20 / 0.50 = 0.40 mol/dm3.\n\nWhen a question gives cm3, convert to dm3 before using the molar concentration\nformula. A common error is to use 50 cm3 as 50 dm3.\n\nDilution lowers concentration because the amount of solute remains the same\nwhile the solution volume increases. In suitable problems:\nC1V1 = C2V2.\nUse consistent volume units on both sides.",
+                  "keywords": [
+                    "4024",
+                    "c1v1=c2v2",
+                    "chemistry",
+                    "concentration",
+                    "dilution",
+                    "mass concentration",
+                    "molar concentration",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "term": 2,
+          "topics": [
+            {
+              "title": "Acids, Bases, Alkalis and Salts",
+              "subtopics": [
+                {
+                  "title": "Acids and Their Reactions",
+                  "content": "An acid is a substance that produces hydrogen ions, H+, in aqueous solution.\nCommon laboratory acids include hydrochloric acid, sulfuric acid and nitric\nacid.\n\nAcids react with reactive metals to produce a salt and hydrogen gas:\nacid + metal → salt + hydrogen.\n\nAcids react with metal oxides and metal hydroxides to form a salt and water:\nacid + metal oxide → salt + water.\n\nAcids react with carbonates to form a salt, water and carbon dioxide:\nacid + carbonate → salt + water + carbon dioxide.\n\nThe identity of the salt depends on the acid and the positive ion in the\nreacting base, metal or carbonate.",
+                  "keywords": [
+                    "4024",
+                    "acid reactions",
+                    "acids",
+                    "chemistry",
+                    "hydrochloric acid",
+                    "nitric acid",
+                    "o level",
+                    "sulfuric acid",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Bases, Alkalis and Neutralisation",
+                  "content": "A base is a substance that reacts with an acid to form a salt. An alkali is a\nbase that dissolves in water to produce hydroxide ions.\n\nNeutralisation occurs when acid and base react. In ionic terms, hydrogen ions\nreact with hydroxide ions:\nH+ + OH− → H2O.\n\nA typical neutralisation is:\nacid + metal hydroxide → salt + water.\n\nIndicators change colour over different pH ranges. Universal indicator gives\nan approximate pH value across a broad range, while specific indicators can\nbe used to detect an endpoint in titration.\n\nNeutralisation is used in agriculture to manage soil acidity, in treating\nindigestion and in industrial processes.",
+                  "keywords": [
+                    "4024",
+                    "alkalis",
+                    "bases",
+                    "chemistry",
+                    "hydroxide",
+                    "indicators",
+                    "neutralisation",
+                    "o level",
+                    "ph",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Preparation of Salts",
+                  "content": "Soluble salts can be prepared by reacting an acid with a suitable insoluble\nbase or carbonate, filtering excess solid and concentrating the filtrate\nbefore crystallisation.\n\nIf both reactants are soluble, titration can be used to find the exact volumes\nneeded for complete neutralisation. The solution is then concentrated and\ncrystals obtained.\n\nA salt can also be prepared by precipitation when two soluble solutions react\nto form an insoluble salt. The precipitate is filtered, washed and dried.\n\nThe method depends on solubility. A correct preparation identifies which\nreactant should be in excess and which purification steps remove unwanted\nmaterial.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "crystallisation",
+                    "o level",
+                    "precipitation",
+                    "salt preparation",
+                    "titration",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "pH and the Strength of Acids and Alkalis",
+                  "content": "The pH scale describes acidity or alkalinity of aqueous solutions. Lower pH\nvalues indicate greater acidity, pH 7 is neutral at standard conditions, and\nhigher pH values indicate alkalinity.\n\nStrong acids ionise extensively in water; weak acids ionise only partially.\nStrength is different from concentration. A dilute strong acid may contain\nfewer acid particles per unit volume than a concentrated solution but can\nstill be chemically strong in terms of ionisation.\n\nThe pH of a solution affects reactions, indicators, agriculture, aquatic\necosystems and industrial processes.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "concentration",
+                    "ionisation",
+                    "o level",
+                    "ph",
+                    "strong acid",
+                    "weak acid",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Strong and Weak Electrolytes",
+                  "content": "Electrolytes conduct electricity in solution because they contain mobile ions.\nStrong electrolytes ionise or dissociate extensively; weak electrolytes\nproduce fewer ions because ionisation is incomplete.\n\nStrong and weak describe the extent of ionisation, not the concentration of\nthe solution. A concentrated weak acid can contain more acid particles per\nunit volume than a dilute strong acid.\n\nElectrical conductivity therefore depends on ion concentration and mobility.\nThis provides experimental evidence for the presence of ions in solutions.\n\nWhen comparing acids, distinguish strength, concentration and volume. These\nare different ideas and should not be used interchangeably.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "conductivity",
+                    "electrolyte",
+                    "ionisation",
+                    "o level",
+                    "strong acid",
+                    "weak acid",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "The Periodic Table: Families and Reactivity",
+              "subtopics": [
+                {
+                  "title": "Group 1 Alkali Metals",
+                  "content": "Group 1 elements have one electron in their outer shell and commonly form +1\nions. They are soft, relatively low-density metals and are highly reactive.\n\nReactivity generally increases down the group because the outer electron is\nfarther from the nucleus and more easily lost. Reactions with water produce\nan alkaline hydroxide solution and hydrogen gas.\n\nThe general reaction is:\nmetal + water → metal hydroxide + hydrogen.\n\nGroup 1 metals are stored under oil when appropriate because they react with\nair and water. Their high reactivity means they are not found naturally as\nfree metals in ordinary environments.",
+                  "keywords": [
+                    "4024",
+                    "alkali metals",
+                    "chemistry",
+                    "group 1",
+                    "o level",
+                    "potassium",
+                    "reactivity",
+                    "sodium",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Group 7 Halogens",
+                  "content": "Halogens are non-metals with seven outer-shell electrons. They commonly form\n−1 ions by gaining one electron.\n\nThey exist as diatomic molecules, for example F2, Cl2 and Br2. Reactivity\ngenerally decreases down the group because it becomes more difficult for a\nlarger atom to attract an additional electron strongly.\n\nA more reactive halogen can displace a less reactive halide from solution.\nFor example, chlorine can displace bromide ions:\nCl2 + 2Br− → 2Cl− + Br2.\n\nHalogens have important uses but some are toxic or corrosive, so laboratory\nwork requires controlled conditions.",
+                  "keywords": [
+                    "4024",
+                    "bromine",
+                    "chemistry",
+                    "chlorine",
+                    "displacement",
+                    "group 7",
+                    "halogens",
+                    "o level",
+                    "reactivity",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Noble Gases",
+                  "content": "Group 0 or Group 18 noble gases have full outer electron shells and are\nchemically unreactive compared with most other elements.\n\nThey are monatomic gases at room conditions. Their low reactivity makes them\nuseful where an inert atmosphere is required. Helium is used where a very\nlight, non-flammable gas is needed; argon can provide an inert atmosphere in\nsome industrial and laboratory applications.\n\nThe explanation for low reactivity is linked to their stable electron\narrangements.",
+                  "keywords": [
+                    "4024",
+                    "argon",
+                    "chemistry",
+                    "electron arrangement",
+                    "group 0",
+                    "group 18",
+                    "helium",
+                    "noble gases",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Periodic Trends Across a Period",
+                  "content": "Across a period, proton number increases by one from element to element and\nelectrons are added to the same principal shell in the simple model.\n\nThe number of outer electrons increases, causing a gradual change in chemical\nproperties. Metallic character generally decreases across a period while\nnon-metallic character increases.\n\nElements on the left tend to lose electrons and form positive ions; elements\non the right, especially the halogens, tend to gain electrons. Noble gases\nhave stable outer shells.\n\nThese trends allow predictions. An element's position can suggest its likely\nion charge, bonding type, reactivity and whether it is metallic or\nnon-metallic.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "metallic character",
+                    "non-metallic character",
+                    "o level",
+                    "period",
+                    "periodic trends",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Group 2 Metals",
+                  "content": "Group 2 metals have two outer electrons and commonly form 2+ ions.\n\nReactivity generally increases down the group because the outer electrons are\nfarther from the nucleus and are easier to remove. The metals react with water\nwith increasing vigour down the group, although the exact behaviour depends\non the metal.\n\nGroup 2 oxides and hydroxides are generally basic. Solubility of hydroxides\nchanges down the group and has industrial and laboratory significance.\n\nThe trend is explained by electron arrangement and the increasing distance\nbetween the nucleus and outer electrons.",
+                  "keywords": [
+                    "4024",
+                    "alkaline earth metals",
+                    "calcium",
+                    "chemistry",
+                    "group 2",
+                    "magnesium",
+                    "o level",
+                    "reactivity",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Metals, Reactivity and Extraction",
+              "subtopics": [
+                {
+                  "title": "Reactivity Series of Metals",
+                  "content": "The reactivity series orders metals according to their tendency to lose\nelectrons and form positive ions.\n\nA typical O-Level sequence is:\npotassium, sodium, calcium, magnesium, aluminium, carbon, zinc, iron, hydrogen,\ncopper, silver, gold.\n\nA metal above another metal in the series can generally displace it from a\nsolution of its compound. Metals above hydrogen react more readily with\ndilute non-oxidising acids to release hydrogen, subject to conditions.\n\nThe series also predicts extraction methods. Very reactive metals cannot\nnormally be obtained by heating their ores with carbon and instead require\nelectrolysis. Less reactive metals may be obtained by reduction with carbon\nor by other suitable methods.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "displacement",
+                    "extraction",
+                    "hydrogen",
+                    "metals",
+                    "o level",
+                    "reactivity series",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Extraction of Iron",
+                  "content": "Iron is extracted from iron ore in a blast furnace. The charge contains iron\nore, coke and limestone, with hot air entering the furnace.\n\nCoke burns to provide heat and forms carbon monoxide. Carbon monoxide reduces\niron(III) oxide to iron:\nFe2O3 + 3CO → 2Fe + 3CO2.\n\nLimestone decomposes to calcium oxide, which reacts with silica impurities to\nform slag. The slag can be separated from molten iron.\n\nThe blast furnace process involves chemical reduction as well as physical\nseparation. The resulting iron is not the same as pure laboratory iron and\ncan be processed into steels with controlled properties.",
+                  "keywords": [
+                    "4024",
+                    "blast furnace",
+                    "chemistry",
+                    "coke",
+                    "iron extraction",
+                    "iron ore",
+                    "limestone",
+                    "o level",
+                    "slag",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Extraction of Aluminium",
+                  "content": "Aluminium is highly reactive and cannot be extracted economically by reducing\nits oxide with carbon. Aluminium oxide is extracted from bauxite and then\nelectrolysed when molten.\n\nThe electrolyte is maintained in a molten state and aluminium ions are\nreduced at the cathode while oxide ions are oxidised at the anode. Cryolite\nis used industrially to lower the operating temperature and improve the\nprocess.\n\nElectrolysis requires large amounts of electrical energy. The extraction\nmethod therefore links chemistry with energy availability and environmental\nconsiderations.",
+                  "keywords": [
+                    "4024",
+                    "aluminium",
+                    "bauxite",
+                    "chemistry",
+                    "cryolite",
+                    "electrolysis",
+                    "extraction",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Corrosion and Prevention of Rusting",
+                  "content": "Rusting is the corrosion of iron in the presence of oxygen and water. Salt and\nother electrolytes can accelerate corrosion.\n\nRusting is an electrochemical process involving oxidation of iron. Preventing\nrust means preventing contact between iron and the conditions required for\ncorrosion or protecting the metal electrochemically.\n\nMethods include painting, oiling, greasing, plastic coating, galvanising,\nelectroplating and alloying. Galvanising coats iron or steel with zinc. Zinc\nalso provides sacrificial protection because it is more reactive than iron.\n\nCorrosion prevention is economically important because corrosion damages\nvehicles, buildings, machinery, pipelines and infrastructure.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "corrosion",
+                    "electroplating",
+                    "galvanising",
+                    "o level",
+                    "rusting",
+                    "sacrificial protection",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Copper, Gold and Platinum Extraction",
+                  "content": "Copper is extracted from copper ores using concentration, heating and\nreduction or other industrial processes depending on the ore. Modern\nprocessing may include smelting followed by electrorefining to obtain high\npurity copper.\n\nGold and platinum are valuable metals found in mineral deposits. Their low\nreactivity allows extraction and recovery methods that differ from those used\nfor very reactive metals. Zimbabwe has significant mineral resources, so\nmining chemistry can be connected to local beneficiation, environmental\nmanagement and economic value addition.\n\nOre processing commonly involves crushing and concentration before the\nchemical stage. Waste rock and tailings must be managed to reduce pollution.\n\nThe extraction method is determined by the chemical properties of the metal,\nthe nature of its ore, economic factors and available technology.",
+                  "keywords": [
+                    "4024",
+                    "beneficiation",
+                    "chemistry",
+                    "copper",
+                    "extraction",
+                    "gold",
+                    "o level",
+                    "ores",
+                    "platinum",
+                    "zimbabwe",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Transition Elements",
+                  "content": "Transition elements are metals whose atoms or ions can have partially filled\nd subshells. At O-Level, focus on their characteristic properties rather than\nadvanced electronic theory.\n\nMany transition-metal compounds are coloured. Transition elements can show\nmore than one oxidation state, form complex ions and act as catalysts in\nimportant reactions.\n\nIron, copper and other transition metals have important industrial uses.\nTheir alloys can have useful combinations of strength, hardness, corrosion\nresistance and other properties.\n\nTheir catalytic behaviour is economically important because catalysts can\nincrease reaction rates without being consumed overall.",
+                  "keywords": [
+                    "4024",
+                    "alloys",
+                    "catalysts",
+                    "chemistry",
+                    "coloured compounds",
+                    "o level",
+                    "oxidation states",
+                    "transition elements",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Non-Metals, Lime and Air Liquefaction",
+                  "content": "Non-metals have a wide range of properties and uses. Oxygen supports\ncombustion and respiration, nitrogen is used in industrial and agricultural\napplications, chlorine is used in water treatment and sulfur compounds are\nimportant in chemical manufacture.\n\nLimestone, calcium carbonate, is thermally decomposed to quicklime:\nCaCO3 → CaO + CO2.\n\nQuicklime reacts with water to form calcium hydroxide:\nCaO + H2O → Ca(OH)2.\n\nLime has agricultural uses in correcting acidic soils and construction uses\nthrough cement and mortar-related materials.\n\nAir can be separated industrially by cooling it to a liquid and then using\nfractional distillation. Nitrogen and oxygen have different boiling points,\nallowing them to be separated. This is an important example of using physical\nproperties in industrial chemistry.",
+                  "keywords": [
+                    "4024",
+                    "acidic soils",
+                    "air liquefaction",
+                    "calcium oxide",
+                    "chemistry",
+                    "fractional distillation",
+                    "lime",
+                    "limestone",
+                    "non-metals",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Electrorefining of Copper",
+                  "content": "Electrorefining produces high-purity copper for electrical applications.\n\nThe impure copper is used as the anode and pure copper is used as the\ncathode. The electrolyte contains copper ions. Copper atoms from the anode\nare oxidised to Cu2+ ions and copper ions are reduced at the cathode.\n\nCu → Cu2+ + 2e− at the anode.\nCu2+ + 2e− → Cu at the cathode.\n\nLess reactive impurities may form anode sludge, while more reactive metals\nremain in solution under suitable conditions.\n\nThe process illustrates how electrolysis can be used not only to extract a\nmetal but also to purify it.",
+                  "keywords": [
+                    "4024",
+                    "anode",
+                    "cathode",
+                    "chemistry",
+                    "copper",
+                    "electrorefining",
+                    "o level",
+                    "purification",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "term": 3,
+          "topics": [
+            {
+              "title": "Electrolysis",
+              "subtopics": [
+                {
+                  "title": "Principles of Electrolysis",
+                  "content": "Electrolysis is the chemical decomposition of an ionic compound when molten\nor in aqueous solution by passing an electric current through it.\n\nThe electrolyte contains mobile ions. The cathode is the negative electrode\nin an electrolytic cell and attracts positive ions (cations). Reduction\noccurs at the cathode. The anode is positive and attracts negative ions\n(anions). Oxidation occurs at the anode.\n\nRemember:\nREDUCTION occurs at the CATHODE.\nOXIDATION occurs at the ANODE.\n\nElectrons move through the external circuit, while ions move through the\nelectrolyte. The products depend on the ions present and the conditions.",
+                  "keywords": [
+                    "4024",
+                    "anode",
+                    "cathode",
+                    "chemistry",
+                    "electrolysis",
+                    "electrolyte",
+                    "o level",
+                    "oxidation",
+                    "reduction",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Electrolysis of Molten Compounds",
+                  "content": "A molten ionic compound contains only its own mobile ions, so the products can\nusually be predicted directly.\n\nDuring electrolysis of molten lead(II) bromide, Pb2+ ions move to the cathode\nand gain electrons:\nPb2+ + 2e− → Pb.\n\nBromide ions move to the anode and lose electrons:\n2Br− → Br2 + 2e−.\n\nThe overall reaction decomposes the ionic compound into its elements.\n\nMolten electrolysis is used industrially for substances whose ions cannot be\ndischarged conveniently from aqueous solution.",
+                  "keywords": [
+                    "4024",
+                    "anode",
+                    "cathode",
+                    "chemistry",
+                    "ions",
+                    "lead bromide",
+                    "molten electrolysis",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Electrolysis of Aqueous Solutions",
+                  "content": "Aqueous electrolysis is more complicated because water also contributes ions.\nAt the cathode, hydrogen may be produced instead of a metal if the metal is\nmore reactive than hydrogen. Less reactive metal ions may be discharged.\n\nAt the anode, halide ions such as chloride, bromide or iodide may be\ndischarged under suitable conditions; otherwise hydroxide ions can lead to\noxygen formation.\n\nThe actual product depends on the ions present, their relative ease of\ndischarge, concentration and electrode conditions.\n\nIn answering practical questions, state the ion discharged, the half-equation\nwhere required, and the observation at the electrode.",
+                  "keywords": [
+                    "4024",
+                    "aqueous electrolysis",
+                    "chemistry",
+                    "chloride",
+                    "discharge of ions",
+                    "hydrogen",
+                    "o level",
+                    "oxygen",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Electroplating",
+                  "content": "Electroplating uses electrolysis to coat an object with a thin layer of metal.\nThe object being plated is made the cathode so metal ions are reduced onto its\nsurface.\n\nThe plating metal is often the anode, and the electrolyte contains ions of\nthat metal. For example, copper plating uses a copper-containing electrolyte\nand a copper anode under appropriate conditions.\n\nPurposes include improving appearance, preventing corrosion and changing\nsurface properties. The object must be clean for a uniform coating.\n\nElectroplating links electrolysis, redox reactions and industrial technology.",
+                  "keywords": [
+                    "4024",
+                    "cathode",
+                    "chemistry",
+                    "corrosion protection",
+                    "electroplating",
+                    "metal coating",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Oxidation and Reduction in Electrolysis",
+                  "content": "Oxidation and reduction always occur together in a redox process.\n\nOxidation can be remembered as loss of electrons, while reduction is gain of\nelectrons. The mnemonic OIL RIG is useful: Oxidation Is Loss, Reduction Is\nGain.\n\nAt the cathode in electrolysis, positive ions gain electrons and are reduced.\nAt the anode, negative ions lose electrons and are oxidised.\n\nHalf-equations make electron transfer explicit. When combining half-equations,\nthe electrons lost must equal the electrons gained.\n\nChecking charge as well as atoms is essential when balancing half-equations.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "electrons",
+                    "half-equations",
+                    "o level",
+                    "oil rig",
+                    "oxidation",
+                    "redox",
+                    "reduction",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Energy Changes, Rates and Reversible Reactions",
+              "subtopics": [
+                {
+                  "title": "Exothermic and Endothermic Reactions",
+                  "content": "An exothermic reaction releases energy to the surroundings, usually causing\nthe surroundings to warm. Combustion and many neutralisation reactions are\nexamples.\n\nAn endothermic reaction absorbs energy from the surroundings, often causing\nthe surroundings to cool. Some thermal decomposition and photosynthesis are\nexamples.\n\nEnergy changes can be represented using reaction-profile diagrams. In an\nexothermic reaction, the products are at a lower energy level than the\nreactants. In an endothermic reaction, the products are at a higher energy\nlevel.\n\nThe activation energy is the minimum energy required for a reaction to begin.\nA catalyst provides an alternative pathway with lower activation energy.",
+                  "keywords": [
+                    "4024",
+                    "activation energy",
+                    "catalyst",
+                    "chemistry",
+                    "endothermic",
+                    "energy changes",
+                    "exothermic",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Factors Affecting Rate of Reaction",
+                  "content": "Reaction rate describes how quickly reactants are converted into products.\n\nIncreasing concentration usually increases rate because particles are closer\ntogether and collisions are more frequent. Increasing gas pressure has a\nsimilar effect for gaseous reactants.\n\nIncreasing temperature raises the average kinetic energy of particles and\nincreases the fraction of collisions with enough energy to react.\n\nIncreasing surface area of a solid exposes more particles for collision.\nPowdered solids generally react faster than large lumps under comparable\nconditions.\n\nA catalyst increases reaction rate without being permanently consumed by\nproviding a lower-activation-energy pathway.\n\nCollision theory explains these effects: successful reactions require\nparticles to collide with sufficient energy and appropriate orientation.",
+                  "keywords": [
+                    "4024",
+                    "catalyst",
+                    "chemistry",
+                    "collision theory",
+                    "concentration",
+                    "o level",
+                    "pressure",
+                    "rate of reaction",
+                    "surface area",
+                    "temperature",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Investigating Reaction Rates",
+                  "content": "A rate experiment should identify the variable changed, the quantity measured\nand the variables kept constant.\n\nOne method measures the time taken to produce a fixed volume of gas. Another\nmeasures the loss of mass when a gas escapes. A precipitate may be followed by\nmeasuring the time required for a visual mark to disappear.\n\nFor fair testing, change only the independent variable. Keep temperature,\nvolume, concentration of other reactants, surface area and apparatus\nconsistent where relevant.\n\nResults should be tabulated and may be plotted as a graph. A steeper gradient\nindicates a faster rate at that part of the reaction. Repeating trials helps\nidentify anomalies and improve reliability.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "fair test",
+                    "gradient",
+                    "graph",
+                    "o level",
+                    "reaction rate experiment",
+                    "reliability",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Reversible Reactions and Equilibrium",
+                  "content": "Some chemical reactions are reversible: products can react to reform the\noriginal reactants. A reversible reaction is represented by a double arrow.\n\nIn a closed system, dynamic equilibrium occurs when the forward and reverse\nreactions continue but occur at equal rates. Concentrations remain constant\nat equilibrium, although reactions have not stopped.\n\nChanging concentration, temperature or pressure can shift the position of\nequilibrium. The system responds in a direction that tends to oppose the\nchange.\n\nFor gases, increasing pressure favours the side with fewer gas molecules,\nprovided the reaction conditions allow this principle to apply. Temperature\nchanges depend on whether the forward reaction is exothermic or endothermic.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "dynamic equilibrium",
+                    "equilibrium",
+                    "o level",
+                    "pressure",
+                    "reversible reactions",
+                    "temperature",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Calorimetry and Chemical Energetics",
+                  "content": "Calorimetry measures energy changes associated with reactions by measuring\ntemperature changes.\n\nFor a simple aqueous experiment:\nq = mcΔT\n\nwhere q is heat energy transferred in joules, m is mass in grams, c is the\nspecific heat capacity in J g−1 °C−1, and ΔT is the temperature change.\n\nThe temperature change is the final temperature minus the initial\ntemperature. For an exothermic reaction the solution generally warms; for an\nendothermic reaction it cools.\n\nIf the mass of solution is not supplied, a reasonable assumption may sometimes\nbe made, but in an examination use the value or instruction given.\n\nSources of error include heat loss to the surroundings, heat absorbed by the\ncontainer and incomplete mixing. Better insulation, a lid, rapid measurement\nand careful temperature reading can improve the experiment.\n\nEnergy calculations should show units at every stage and distinguish heat\nenergy from molar enthalpy where the question requires a per-mole value.",
+                  "keywords": [
+                    "4024",
+                    "calorimetry",
+                    "chemistry",
+                    "endothermic",
+                    "energy",
+                    "enthalpy",
+                    "exothermic",
+                    "o level",
+                    "q=mcδt",
+                    "specific heat capacity",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Industrial Equilibrium: Haber, Contact and Ostwald Processes",
+                  "content": "Dynamic equilibrium has major industrial importance because industrial\nconditions must balance yield, reaction rate, energy cost, safety and\nequipment cost.\n\nThe Haber process produces ammonia:\nN2 + 3H2 ⇌ 2NH3.\n\nIncreasing pressure favours ammonia because the product side has fewer gas\nmolecules. Lower temperature favours the exothermic forward reaction but\nmakes the rate too slow, so industry uses a compromise temperature and an\niron catalyst. Ammonia is removed and unreacted gases are recycled.\n\nThe Contact process produces sulfuric acid. Sulfur dioxide is oxidised to\nsulfur trioxide:\n2SO2 + O2 ⇌ 2SO3.\nThe reaction is exothermic and a catalyst is used. Sulfur trioxide is then\nprocessed through sulfuric acid production steps rather than simply adding\nwater directly to SO3 on an industrial scale.\n\nThe Ostwald process produces nitric acid from ammonia through catalytic\noxidation. These processes illustrate how equilibrium, catalysis, temperature,\npressure and raw-material availability interact in industrial chemistry.",
+                  "keywords": [
+                    "4024",
+                    "ammonia",
+                    "chemistry",
+                    "contact process",
+                    "equilibrium",
+                    "haber process",
+                    "nitric acid",
+                    "o level",
+                    "ostwald process",
+                    "sulfuric acid",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Catalysts and Industrial Efficiency",
+                  "content": "A catalyst increases the rate of a reaction by providing an alternative\nreaction pathway with lower activation energy. It is not permanently used up\nin the overall reaction.\n\nIndustrial catalysts can allow a process to operate at a lower temperature\nthan would otherwise be practical, increasing production rate and reducing\nenergy requirements. However, the catalyst does not change the equilibrium\nposition itself; it speeds up the forward and reverse reactions.\n\nCatalysts may be poisoned by impurities, reducing their effectiveness. The\nchoice of catalyst therefore depends on activity, selectivity, cost,\nstability and operating conditions.",
+                  "keywords": [
+                    "4024",
+                    "activation energy",
+                    "catalyst",
+                    "chemistry",
+                    "energy efficiency",
+                    "equilibrium",
+                    "industrial catalysis",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Reaction Profiles and Activation Energy",
+                  "content": "A reaction-profile diagram shows energy on the vertical axis and reaction\nprogress on the horizontal axis.\n\nThe reactants rise to a maximum energy point representing the activated\ncomplex. The difference between the reactant energy and this maximum is the\nactivation energy.\n\nThe difference between reactant and product energy represents the overall\nenergy change. In an exothermic reaction, products have lower energy than\nreactants. In an endothermic reaction, products have higher energy.\n\nA catalyst lowers the activation-energy peak but does not change the energy\ndifference between reactants and products.\n\nWhen drawing a profile, label reactants, products, activation energy and\noverall energy change clearly.",
+                  "keywords": [
+                    "4024",
+                    "activation energy",
+                    "catalyst",
+                    "chemistry",
+                    "energy level",
+                    "o level",
+                    "reaction profile",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Air, Water and Environmental Chemistry",
+              "subtopics": [
+                {
+                  "title": "Composition and Uses of Air",
+                  "content": "Dry air is mainly nitrogen and oxygen, with smaller amounts of argon, carbon\ndioxide and other gases. Water vapour varies considerably.\n\nNitrogen is important in biological systems and industrial processes.\nOxygen supports respiration and combustion. Carbon dioxide is used by plants\nin photosynthesis and is also a greenhouse gas.\n\nAir composition can be investigated experimentally, but results may be\naffected by impurities and experimental conditions. Combustion consumes\noxygen and may produce carbon dioxide and water.",
+                  "keywords": [
+                    "4024",
+                    "air",
+                    "atmosphere",
+                    "carbon dioxide",
+                    "chemistry",
+                    "nitrogen",
+                    "o level",
+                    "oxygen",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Water Treatment and Purification",
+                  "content": "Natural water contains dissolved substances and suspended particles. Drinking\nwater must be treated to remove harmful organisms and undesirable substances.\n\nTreatment can involve screening, sedimentation, filtration and sterilisation.\nChlorination can kill many microorganisms. Water may also be treated by other\nmethods depending on its source and intended use.\n\nDistillation can produce very pure water because dissolved substances remain\nbehind when water evaporates and the vapour is condensed. It is effective but\nenergy-intensive.\n\nWater pollution can arise from sewage, industrial waste, agricultural\nchemicals, oil and litter. Preventing pollution is generally better than\ntrying to remove contaminants after they enter water supplies.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "chlorination",
+                    "distillation",
+                    "filtration",
+                    "o level",
+                    "water pollution",
+                    "water treatment",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Air Pollution",
+                  "content": "Air pollutants include carbon monoxide, sulfur dioxide, nitrogen oxides,\nparticulates and excess carbon dioxide.\n\nCarbon monoxide is poisonous because it reduces the blood's ability to carry\noxygen. Sulfur dioxide and nitrogen oxides can contribute to acid deposition\nand respiratory problems. Particulates can damage the respiratory system.\n\nSulfur dioxide can be produced when sulfur-containing fuels burn. Catalytic\nconverters and cleaner fuels can reduce some vehicle emissions. Industrial\nscrubbers can remove certain gases from exhaust streams.\n\nAir pollution control requires a combination of cleaner technology,\nappropriate regulation, monitoring and responsible energy use.",
+                  "keywords": [
+                    "4024",
+                    "air pollution",
+                    "carbon monoxide",
+                    "chemistry",
+                    "nitrogen oxides",
+                    "o level",
+                    "particulates",
+                    "sulfur dioxide",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Greenhouse Effect, Climate Change and Acid Rain",
+                  "content": "The natural greenhouse effect keeps Earth warmer than it would otherwise be.\nCertain gases absorb outgoing infrared radiation. Human activities can\nincrease greenhouse-gas concentrations and strengthen this effect.\n\nCarbon dioxide increases through fossil-fuel combustion, cement production\nand land-use changes. Methane and other gases also contribute to warming.\n\nClimate change can affect rainfall, temperature, agriculture, water resources\nand ecosystems. Mitigation includes renewable energy, energy efficiency,\nreforestation and reduced emissions. Adaptation includes drought planning,\nwater conservation and resilient infrastructure.\n\nAcid rain is associated mainly with sulfur dioxide and nitrogen oxides. These\ngases form acidic substances in the atmosphere that can damage vegetation,\naquatic environments, buildings and soils.",
+                  "keywords": [
+                    "4024",
+                    "acid rain",
+                    "carbon dioxide",
+                    "chemistry",
+                    "climate change",
+                    "greenhouse effect",
+                    "mitigation",
+                    "o level",
+                    "sulfur dioxide",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Solid, Liquid and Gaseous Waste Management",
+                  "content": "Waste may be solid, liquid or gaseous. Effective waste management begins with\nprevention and reduction, followed by reuse, recovery and recycling where\nappropriate, treatment and safe disposal.\n\nSolid waste can include household refuse, industrial waste, agricultural\nwaste and hazardous materials. Poor disposal can attract disease vectors,\npollute soil and water and block drainage.\n\nLiquid waste includes sewage and industrial effluent. Treatment can remove\nsolids, organic matter, nutrients and microorganisms before discharge or\nreuse.\n\nGaseous waste includes smoke, dust and industrial emissions. Filters,\nscrubbers, catalytic converters and cleaner fuels can reduce some pollutants.\n\nHazardous waste requires specialised handling because it may be toxic,\ncorrosive, reactive or infectious.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "gaseous waste",
+                    "hazardous waste",
+                    "liquid waste",
+                    "o level",
+                    "recycling",
+                    "solid waste",
+                    "waste management",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Flocculation, Sedimentation and Water Purification",
+                  "content": "Water treatment often uses several stages because different impurities require\ndifferent processes.\n\nFlocculation encourages small suspended particles to join into larger\naggregates called flocs. The flocs become easier to remove.\n\nSedimentation allows heavier particles and flocs to settle under gravity.\nFiltration then removes remaining suspended material.\n\nChlorination is used to disinfect water by killing many microorganisms. The\namount must be carefully controlled to provide effective disinfection while\nmaintaining acceptable water quality.\n\nThe treatment sequence depends on the source water and required quality.\nBoiling can also make water microbiologically safer for household use, but it\ndoes not remove every dissolved chemical contaminant.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "chlorination",
+                    "filtration",
+                    "flocculation",
+                    "o level",
+                    "sedimentation",
+                    "water purification",
+                    "water treatment",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Eutrophication",
+                  "content": "Eutrophication is excessive enrichment of water by nutrients, especially\nnitrates and phosphates.\n\nNutrients may enter water from fertiliser runoff, sewage and detergents. Rapid\ngrowth of algae can form an algal bloom. When algae die, decomposers break\nthem down and consume dissolved oxygen. Oxygen depletion can cause fish and\nother aquatic organisms to die.\n\nPrevention includes controlling nutrient runoff, improving sewage treatment,\nusing fertilisers carefully and protecting vegetation buffers near waterways.\n\nThe key sequence is:\nnutrient enrichment → algal growth → death and decomposition → oxygen\ndepletion → damage to aquatic life.",
+                  "keywords": [
+                    "4024",
+                    "algal bloom",
+                    "chemistry",
+                    "eutrophication",
+                    "nitrates",
+                    "o level",
+                    "oxygen depletion",
+                    "phosphates",
+                    "water pollution",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Ozone Layer and Ozone Depletion",
+                  "content": "Stratospheric ozone absorbs much of the Sun's harmful ultraviolet radiation.\nOzone depletion increases the amount of ultraviolet radiation reaching the\nEarth's surface.\n\nCertain chlorine- and bromine-containing compounds can participate in\ncatalytic reactions that destroy ozone. International controls have reduced\nthe use of many ozone-depleting substances.\n\nOzone depletion is different from the greenhouse effect. The ozone layer\nprotects against ultraviolet radiation, while greenhouse gases influence\nEarth's heat balance. Both are atmospheric environmental issues but involve\ndifferent chemical processes.",
+                  "keywords": [
+                    "4024",
+                    "atmosphere",
+                    "cfcs",
+                    "chemistry",
+                    "o level",
+                    "ozone depletion",
+                    "ozone layer",
+                    "ultraviolet radiation",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Local Herbs, Chemistry and Health",
+                  "content": "The Heritage-Based approach can connect chemistry with locally available\nnatural resources and community knowledge. Plants contain chemical compounds\nthat may have useful biological activity.\n\nWhen discussing local herbs, distinguish traditional or community use from\nscientifically established medicinal action. A plant should not be described\nas a guaranteed treatment merely because it is traditionally used.\n\nChemical investigation can involve extraction, separation and identification\nof plant compounds. Safe practice requires correct identification of plants,\nappropriate preparation and awareness of toxicity, dosage and interactions.\n\nStudents should understand that 'natural' does not automatically mean safe,\nand that medical claims require appropriate scientific evidence.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "health",
+                    "local herbs",
+                    "natural products",
+                    "o level",
+                    "plant compounds",
+                    "traditional knowledge",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Acid Rain and Its Effects",
+                  "content": "Acid rain results when acidic substances formed from atmospheric pollutants\nreach the ground in rain, snow or dry deposition.\n\nSulfur dioxide can be oxidised and react with water to form sulfur-containing\nacids. Nitrogen oxides can contribute to nitric acid formation.\n\nEffects include damage to vegetation, acidification of lakes and streams,\nloss of aquatic organisms, nutrient leaching from soils and corrosion of\nlimestone and some building materials.\n\nControls include low-sulfur fuels, flue-gas treatment, cleaner energy\nsources, catalytic technologies and regulation of emissions.\n\nThe key chemistry is the conversion of gaseous pollutants into acidic\nsubstances and their subsequent interaction with the environment.",
+                  "keywords": [
+                    "4024",
+                    "acid deposition",
+                    "acid rain",
+                    "chemistry",
+                    "nitrogen oxides",
+                    "o level",
+                    "pollution",
+                    "sulfur dioxide",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Industrial and Agricultural Pollution",
+                  "content": "Industrial pollution can include acidic gases, particulates, heavy metals,\nheated wastewater and chemical effluent. Agriculture can contribute\nfertiliser nutrients, pesticides, animal waste and sediment to water.\n\nPollution control begins with prevention. Industries can modify processes,\nrecover materials, recycle water and treat waste before discharge. Farmers\ncan apply fertilisers according to crop requirements, maintain vegetation\nbuffers and prevent chemical storage near waterways.\n\nPollution should be assessed by source, pollutant, pathway, receptor and\neffect. This framework helps identify a suitable control strategy.",
+                  "keywords": [
+                    "4024",
+                    "agricultural pollution",
+                    "chemistry",
+                    "effluent",
+                    "fertilisers",
+                    "industrial pollution",
+                    "o level",
+                    "pesticides",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "form": 4,
+      "terms": [
+        {
+          "term": 1,
+          "topics": [
+            {
+              "title": "Organic Chemistry",
+              "subtopics": [
+                {
+                  "title": "Introduction to Organic Chemistry and Hydrocarbons",
+                  "content": "Organic chemistry is the study of carbon compounds, especially compounds\ncontaining carbon-hydrogen bonds.\n\nHydrocarbons contain only carbon and hydrogen. Alkanes are saturated\nhydrocarbons with only single carbon-carbon bonds. Alkenes contain at least\none carbon-carbon double bond and are unsaturated.\n\nThe homologous series concept describes families of compounds with the same\nfunctional group and similar chemical properties, where successive members\ndiffer by CH2.\n\nStructural formulae show how atoms are arranged. Molecular formulae show the\nactual number of each type of atom.",
+                  "keywords": [
+                    "4024",
+                    "alkanes",
+                    "alkenes",
+                    "chemistry",
+                    "homologous series",
+                    "hydrocarbons",
+                    "o level",
+                    "organic chemistry",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Alkanes and Combustion",
+                  "content": "Alkanes are saturated hydrocarbons. Their general formula is CnH2n+2 for\nstraight-chain members.\n\nAlkanes undergo combustion. Complete combustion in a plentiful supply of\noxygen produces carbon dioxide and water:\nhydrocarbon + oxygen → carbon dioxide + water.\n\nIncomplete combustion occurs when oxygen is limited and can produce carbon\nmonoxide and/or carbon (soot) as well as water. Carbon monoxide is poisonous.\n\nAlkanes are important fuels. Their combustion releases useful energy but also\nproduces carbon dioxide, so fuel use has environmental consequences.",
+                  "keywords": [
+                    "4024",
+                    "alkanes",
+                    "carbon monoxide",
+                    "chemistry",
+                    "combustion",
+                    "complete combustion",
+                    "incomplete combustion",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Alkenes and Addition Reactions",
+                  "content": "Alkenes are unsaturated hydrocarbons containing a carbon-carbon double bond.\nThe double bond makes them more reactive than alkanes in many reactions.\n\nAlkenes undergo addition reactions in which atoms or groups add across the\ndouble bond. Hydrogen can add to an alkene in hydrogenation. Bromine water is\ndecolourised by an alkene, providing a common test for unsaturation.\n\nAlkenes are important feedstocks for polymer manufacture. Ethene can be\npolymerised to form poly(ethene).",
+                  "keywords": [
+                    "4024",
+                    "addition reaction",
+                    "alkenes",
+                    "bromine water",
+                    "chemistry",
+                    "ethene",
+                    "o level",
+                    "polymerisation",
+                    "unsaturation",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Alcohols",
+                  "content": "Alcohols contain the hydroxyl functional group, −OH. Ethanol is an important\nO-Level example.\n\nEthanol can be produced by fermentation of sugars using yeast under suitable\nconditions. Fermentation produces ethanol and carbon dioxide and occurs\nwithout oxygen.\n\nEthanol burns in oxygen to produce carbon dioxide and water. It can also be\noxidised under appropriate conditions.\n\nAlcohols have uses as solvents, fuels, disinfectants and industrial\nfeedstocks. Their properties depend on molecular structure and the functional\ngroup.",
+                  "keywords": [
+                    "4024",
+                    "alcohols",
+                    "chemistry",
+                    "ethanol",
+                    "fermentation",
+                    "o level",
+                    "oxidation",
+                    "yeast",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Carboxylic Acids and Esters",
+                  "content": "Carboxylic acids contain the −COOH functional group. Ethanoic acid is a common\nexample and is responsible for the acidity of vinegar.\n\nCarboxylic acids react with metals, bases and carbonates in ways related to\ntheir acidic properties.\n\nAn ester can be formed by reacting an alcohol with a carboxylic acid, usually\nwith an acid catalyst. Esterification is reversible. Esters often have\ndistinctive smells and are used in flavourings, fragrances and solvents.\n\nOrganic reactions should be written using correct structural or molecular\nformulae and balanced equations where required.",
+                  "keywords": [
+                    "4024",
+                    "carboxylic acids",
+                    "chemistry",
+                    "esterification",
+                    "esters",
+                    "ethanoic acid",
+                    "o level",
+                    "organic reactions",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Polymers and Plastics",
+                  "content": "Addition polymers form when many unsaturated monomer molecules join together.\nThe double bond opens and forms a long chain.\n\nPoly(ethene) is produced from ethene. Poly(propene) is produced from propene.\nThe properties of a polymer depend on chain structure and processing.\n\nPlastics are useful because they are light, durable and resistant to many\nchemicals, but their persistence creates waste-management challenges.\n\nResponsible use includes reducing unnecessary consumption, reusing materials,\nrecycling where practical and improving waste collection and disposal.",
+                  "keywords": [
+                    "4024",
+                    "addition polymerisation",
+                    "chemistry",
+                    "monomer",
+                    "o level",
+                    "plastics",
+                    "polyethene",
+                    "polymers",
+                    "polypropene",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Crude Oil and Fractional Distillation",
+                  "content": "Crude oil is a mixture of hydrocarbons. It is separated into fractions by\nfractional distillation because the components have different boiling\nranges.\n\nIn a fractionating column, crude oil is heated and vapours rise through a\ntemperature gradient. Fractions condense at different heights according to\ntheir boiling ranges. Smaller hydrocarbons generally have lower boiling\npoints and are more volatile.\n\nImportant fractions have different uses, including refinery gases, petrol,\nkerosene, diesel, fuel oils and bitumen. The exact products and names may vary\nwith refinery practice.\n\nFractional distillation separates substances physically; it does not create\nnew substances. Cracking is a chemical process used to convert larger\nhydrocarbons into smaller, more useful molecules.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "crude oil",
+                    "diesel",
+                    "fractional distillation",
+                    "fractions",
+                    "hydrocarbons",
+                    "kerosene",
+                    "o level",
+                    "petrol",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Cracking and Fuels",
+                  "content": "Cracking breaks large hydrocarbon molecules into smaller, more useful\nhydrocarbons. It can produce shorter alkanes and alkenes.\n\nCracking may use high temperature and a catalyst. It is important because\ndemand for smaller, useful fuels and chemical feedstocks can exceed the\nproportion naturally present in crude oil.\n\nAlkenes produced by cracking can be used to manufacture polymers and other\nchemicals. Cracking therefore connects petroleum refining with organic\nchemical manufacture.\n\nFuels release chemical energy during combustion. Complete combustion produces\ncarbon dioxide and water, while incomplete combustion can produce carbon\nmonoxide and soot.",
+                  "keywords": [
+                    "4024",
+                    "alkenes",
+                    "chemistry",
+                    "combustion",
+                    "cracking",
+                    "fuels",
+                    "o level",
+                    "petroleum",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Coal, Destructive Distillation and Jatropha Biodiesel",
+                  "content": "Destructive distillation of coal involves heating coal strongly in the\nabsence or restricted supply of air. Useful products can include coke, coal\ngas and coal tar.\n\nCoke is carbon-rich and has industrial uses, including iron production. Coal\ntar contains many organic compounds that can be separated and used as\nchemical feedstocks.\n\nBiodiesel can be produced from plant oils. Jatropha has been investigated as\na potential oil-bearing crop for biofuel production. The environmental and\neconomic value of biodiesel depends on land requirements, crop productivity,\nprocessing, transport, food-security considerations and the properties of the\nfuel.\n\nBiofuels may reduce dependence on fossil fuels, but they are not automatically\nenvironmentally neutral.",
+                  "keywords": [
+                    "4024",
+                    "biodiesel",
+                    "biofuel",
+                    "chemistry",
+                    "coal",
+                    "coal tar",
+                    "coke",
+                    "destructive distillation",
+                    "jatropha",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Saponification and Soaps",
+                  "content": "Saponification is the alkaline hydrolysis of fats or oils to form soap and\nglycerol. The reaction uses an alkali such as sodium hydroxide or potassium\nhydroxide.\n\nA soap molecule has a long non-polar hydrocarbon tail and an ionic or polar\nend. The hydrocarbon tail interacts with grease and oils while the polar end\ninteracts with water. Agitation allows oily dirt to be dispersed into small\ndroplets that can be washed away.\n\nHard water contains calcium and magnesium ions. These can react with soap to\nform insoluble scum and reduce cleaning efficiency. Synthetic detergents are\noften less affected by hard water.\n\nSoap manufacture therefore links organic chemistry with household and\nindustrial applications.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "detergents",
+                    "fats",
+                    "glycerol",
+                    "hard water",
+                    "o level",
+                    "oils",
+                    "saponification",
+                    "soap",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Natural and Synthetic Polymers",
+                  "content": "Natural polymers include starch, cellulose, proteins and natural rubber.\nThey are produced by biological systems and have important structural,\nnutritional or industrial roles.\n\nSynthetic polymers are manufactured chemically. Addition polymers are formed\nfrom unsaturated monomers such as ethene. Synthetic polymers can be designed\nfor strength, flexibility, chemical resistance or other properties.\n\nPolymer waste can persist in the environment. Management options include\nreduction, reuse, recycling, controlled collection and improved material\ndesign. Burning plastics without proper controls can release harmful\nsubstances.",
+                  "keywords": [
+                    "4024",
+                    "cellulose",
+                    "chemistry",
+                    "natural polymers",
+                    "o level",
+                    "plastics",
+                    "rubber",
+                    "starch",
+                    "synthetic polymers",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Homologous Series and Nomenclature",
+                  "content": "A homologous series is a family of organic compounds with the same functional\ngroup and general formula, similar chemical properties and a gradual change\nin physical properties. Successive members differ by CH2.\n\nStraight-chain alkane names include methane, ethane, propane, butane, pentane\nand hexane. The corresponding alkenes include ethene, propene, butene, pentene\nand hexene where the position of the double bond is consistent with the\nstructure being named.\n\nNaming should identify the longest relevant carbon chain and the functional\ngroup or unsaturation where required.\n\nStructural formulae are useful because compounds with the same molecular\nformula can have different arrangements of atoms.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "ethane",
+                    "functional group",
+                    "hexane",
+                    "homologous series",
+                    "methane",
+                    "nomenclature",
+                    "o level",
+                    "propane",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Ethanol Production and Properties",
+                  "content": "Ethanol can be manufactured by fermentation or by industrial hydration of\nethene. Fermentation uses yeast to convert sugars into ethanol and carbon\ndioxide under controlled conditions.\n\nFermentation is carried out at a suitable temperature. Too high a temperature\ncan damage yeast enzymes; too low a temperature slows the process. Ethanol\nconcentration is limited in fermentation because high concentrations inhibit\nyeast.\n\nEthanol is flammable and burns to form carbon dioxide and water. It dissolves\nmany substances and is used as a solvent and fuel.\n\nIndustrial production requires separation and purification after fermentation,\nbecause the fermented mixture contains water and other substances.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "ethanol",
+                    "fermentation",
+                    "fuel",
+                    "hydration",
+                    "o level",
+                    "solvent",
+                    "yeast",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Carboxylic Acids: Reactions and Uses",
+                  "content": "Carboxylic acids contain the carboxyl group, −COOH, and are weak acids in\naqueous solution.\n\nThey react with reactive metals to form salts and hydrogen, with alkalis to\nform salts and water, and with carbonates to form salts, water and carbon\ndioxide.\n\nEthanoic acid is widely encountered in dilute form in vinegar. Longer-chain\ncarboxylic acids occur in fats and oils.\n\nThe reactions are useful for identifying acid behaviour and for preparing\nsalts and esters.",
+                  "keywords": [
+                    "4024",
+                    "acid reactions",
+                    "carboxylic acids",
+                    "chemistry",
+                    "ethanoic acid",
+                    "o level",
+                    "salts",
+                    "vinegar",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Addition and Condensation: Comparing Polymer Formation",
+                  "content": "Addition polymerisation joins unsaturated monomers without producing a small\nmolecule as a by-product. Ethene produces poly(ethene), with the double bond\nopening to form links between carbon atoms.\n\nCondensation polymerisation involves monomers with suitable functional groups\nand produces a small molecule such as water in many examples. The exact\npolymer chemistry depends on the monomers.\n\nAt O-Level, always identify whether the monomer contains a carbon-carbon\ndouble bond and whether the polymerisation process is addition or condensation.\n\nUnderstanding polymer structure helps explain properties and environmental\nbehaviour.",
+                  "keywords": [
+                    "4024",
+                    "addition polymerisation",
+                    "chemistry",
+                    "condensation polymerisation",
+                    "monomers",
+                    "o level",
+                    "polymers",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Chemical Tests and Qualitative Analysis",
+              "subtopics": [
+                {
+                  "title": "Tests for Common Gases",
+                  "content": "Hydrogen gives a squeaky pop with a lighted splint. Oxygen relights a glowing\nsplint. Carbon dioxide turns limewater milky.\n\nChlorine can bleach damp coloured material and has characteristic toxic\nproperties, so it must never be deliberately inhaled. Ammonia turns damp red\nlitmus paper blue and can form white fumes with hydrogen chloride.\n\nGas tests should be performed using small quantities and appropriate safety\nprecautions. The observation should be distinguished from the conclusion.",
+                  "keywords": [
+                    "4024",
+                    "ammonia",
+                    "carbon dioxide",
+                    "chemistry",
+                    "chlorine",
+                    "gas tests",
+                    "hydrogen",
+                    "o level",
+                    "oxygen",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Tests for Positive Ions",
+                  "content": "Qualitative analysis identifies ions from characteristic reactions.\n\nFlame tests can provide evidence for some metal ions. Sodium commonly gives a\nyellow flame, potassium a lilac flame, calcium a brick-red or orange-red\nflame, and copper compounds may give a blue-green flame. Interfering colours\ncan make identification difficult.\n\nAqueous hydroxide tests can produce characteristic precipitates. The colour,\nsolubility in excess reagent and behaviour after further treatment can help\ndistinguish ions.\n\nExact observations should be memorised as a table and practised experimentally\nwhere possible.",
+                  "keywords": [
+                    "4024",
+                    "cation tests",
+                    "chemistry",
+                    "flame tests",
+                    "hydroxide precipitates",
+                    "metal ions",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Tests for Negative Ions",
+                  "content": "Carbonate ions react with dilute acid to release carbon dioxide, which turns\nlimewater milky.\n\nChloride ions can be tested using acidified silver nitrate, producing a white\nprecipitate of silver chloride. Bromide and iodide give differently coloured\nsilver halide precipitates.\n\nSulfate ions can be tested using acidified barium-containing solution,\nproducing a white precipitate of barium sulfate.\n\nNitrate testing may involve reduction and ammonia formation under suitable\nschool-laboratory conditions. The exact reagent sequence and observations\nshould follow the practical method taught in the syllabus.\n\nIn qualitative analysis, always state reagent → observation → inference.",
+                  "keywords": [
+                    "4024",
+                    "anion tests",
+                    "bromide",
+                    "carbonate",
+                    "chemistry",
+                    "chloride",
+                    "iodide",
+                    "nitrate",
+                    "o level",
+                    "sulfate",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chromatography and Identification of Unknowns",
+                  "content": "Paper chromatography can separate a mixture and help identify components by\ncomparison with known substances.\n\nA small spot of the sample is placed near the baseline and the solvent is\nallowed to move through the paper. Components travel different distances.\nThe solvent front should be marked before the chromatogram dries.\n\nThe retention factor may be calculated where required:\nRf = distance travelled by substance / distance travelled by solvent front.\n\nAn unknown can be compared with known standards under identical conditions.\nDifferent substances can have similar Rf values under one solvent, so\nidentification should use appropriate controls and evidence.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "chromatography",
+                    "o level",
+                    "qualitative analysis",
+                    "rf",
+                    "unknowns",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Practical Chemistry, Investigations and Exam Technique",
+              "subtopics": [
+                {
+                  "title": "Titration and Acid-Base Analysis",
+                  "content": "Titration determines the volume of one solution required to react completely\nwith a measured volume of another solution.\n\nA burette is rinsed with the solution it will contain and filled above the\nzero mark before excess solution is run out carefully. A pipette transfers a\nfixed volume into a conical flask. Indicator is added and the solution is\ntitrated while the flask is swirled.\n\nThe endpoint is approached carefully, adding solution dropwise near the colour\nchange. Record initial and final burette readings and calculate the titre by\nsubtraction.\n\nRepeat until concordant titres are obtained, then use an appropriate mean.\nThe balanced chemical equation supplies the mole ratio for the calculation.\n\nCorrect units and significant figures are important. A good calculation shows\nvolume conversion from cm3 to dm3 where required.",
+                  "keywords": [
+                    "4024",
+                    "burette",
+                    "chemistry",
+                    "concordant",
+                    "endpoint",
+                    "moles",
+                    "o level",
+                    "pipette",
+                    "titration",
+                    "titre",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Practical Observations and Conclusions",
+                  "content": "Chemistry practical questions often separate observation from inference.\n\nAn observation is what is directly seen, heard or measured: a colour change,\neffervescence, a precipitate, temperature change, mass change or gas volume.\n\nAn inference identifies the chemical explanation: a particular ion is present,\na gas has been produced, a reaction is exothermic or a precipitate has formed.\n\nWhen a precipitate forms, describe its colour and whether it dissolves in\nexcess reagent if that is part of the test. For gases, record the appropriate\ntest result rather than merely writing 'gas produced'.\n\nConclusions should be linked to the evidence. Avoid claiming a substance is\nidentified when the test only establishes a class of substances.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "conclusion",
+                    "inference",
+                    "o level",
+                    "observations",
+                    "practical chemistry",
+                    "precipitate",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Graphing and Data Analysis",
+                  "content": "Choose axes that match the variables. Put the independent variable on the\nhorizontal axis and the dependent variable on the vertical axis unless the\nquestion specifies otherwise.\n\nLabel axes with quantities and units. Use an appropriate scale and plot points\naccurately. A smooth curve or best-fit line should be used where appropriate.\n\nThe gradient can represent a rate or another physical relationship. An\nanomalous point should be considered separately and not removed without\njustification.\n\nUse the graph to describe trends, compare values, identify turning points and\nmake interpolated or extrapolated estimates only where scientifically\nreasonable.",
+                  "keywords": [
+                    "4024",
+                    "anomalous result",
+                    "best fit",
+                    "chemistry",
+                    "data analysis",
+                    "gradient",
+                    "graphs",
+                    "o level",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "ZIMSEC Chemistry Examination Strategy",
+                  "content": "For definitions, give concise chemical meanings. For explanations, connect\ncause to chemical mechanism. For equations, use correct formulae and balance\nall atoms. For calculations, show the formula, substitution, units and final\nanswer.\n\nFor electrolysis, identify the electrolyte, electrodes, ions discharged and\nhalf-equations when required. For organic chemistry, identify the functional\ngroup and reaction type. For qualitative analysis, use reagent → observation →\nconclusion.\n\nFor practical questions, distinguish apparatus, method, observation,\ninterpretation, variables, safety and evaluation.\n\nPaper 1 multiple-choice questions reward precise recall and conceptual\nunderstanding. Theory questions require clear working and chemical reasoning.\nPractical assessment requires accurate observation and controlled experimental\nprocedure.\n\nUse Zimbabwe-relevant examples where appropriate, but do not substitute a\nlocal example for the chemical principle being tested.",
+                  "keywords": [
+                    "4024",
+                    "chemistry",
+                    "chemistry exam",
+                    "exam technique",
+                    "o level",
+                    "paper 1",
+                    "paper 2",
+                    "paper 3",
+                    "practical",
+                    "zimsec"
+                  ]
+                },
+                {
+                  "title": "Chemistry Examination Master Checklist",
+                  "content": "DEFINITIONS\nKnow precise definitions for atom, isotope, ion, element, compound, mixture,\nacid, base, alkali, salt, oxidation, reduction, catalyst, electrolyte,\nhydrocarbon, homologous series, polymer and equilibrium.\n\nEQUATIONS\nWrite correct formulae first, then balance. Include state symbols when asked.\nFor ionic and redox equations, check both atoms and charge.\n\nCALCULATIONS\nWrite the balanced equation, calculate moles, apply the mole ratio, then\nconvert to the requested quantity. Check units, especially cm3 versus dm3.\n\nPRACTICAL\nKnow the apparatus, sequence, observation and chemical conclusion for\nseparation, titration, electrolysis, gas tests, ion tests and rate\ninvestigations.\n\nINDUSTRIAL CHEMISTRY\nFor every industrial process, know raw materials, conditions, catalyst where\nrelevant, equations, products, separation steps, reason for the conditions,\nand one economic/environmental consideration.\n\nORGANIC CHEMISTRY\nKnow homologous-series patterns, functional groups, names, formulae,\ncombustion, addition, cracking, fermentation, oxidation, esterification,\nsaponification and polymerisation.\n\nENVIRONMENT\nLink pollutant → source → chemical process → environmental effect →\ncontrol strategy.\n\nEXAMINER-STYLE ANSWERS\nDo not list unexplained facts. Use chemical reasoning and observations.",
+                  "keywords": [
+                    "4024",
+                    "calculations",
+                    "chemistry",
+                    "definitions",
+                    "equations",
+                    "examination checklist",
+                    "industrial chemistry",
+                    "o level",
+                    "practical",
+                    "zimsec"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "term": 2,
+          "topics": []
+        },
+        {
+          "term": 3,
+          "topics": []
+        }
+      ]
+    }
+  ]
+}

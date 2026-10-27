@@ -1,0 +1,531 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set B (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": 1,
+      "questionText": "Sixty thousand and ninety in figures is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "600 090."
+        },
+        {
+          "letter": "B",
+          "text": "60 900."
+        },
+        {
+          "letter": "C",
+          "text": "60 090."
+        },
+        {
+          "letter": "D",
+          "text": "6 090."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sixty thousand (60 000) plus ninety (90) = 60 090.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q2",
+      "questionNumber": 2,
+      "questionText": "27,548 correct to two decimal places is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "27,54."
+        },
+        {
+          "letter": "B",
+          "text": "27,55."
+        },
+        {
+          "letter": "C",
+          "text": "27,5."
+        },
+        {
+          "letter": "D",
+          "text": "28,00."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The third decimal digit is 8, which rounds the second decimal digit up: 27,548 -> 27,55.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q3",
+      "questionNumber": 3,
+      "questionText": "30 - 4 x 5",
+      "options": [
+        {
+          "letter": "A",
+          "text": "130."
+        },
+        {
+          "letter": "B",
+          "text": "26."
+        },
+        {
+          "letter": "C",
+          "text": "20."
+        },
+        {
+          "letter": "D",
+          "text": "10."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Order of operations: multiply first (4 x 5 = 20), then subtract: 30 - 20 = 10.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q4",
+      "questionNumber": 4,
+      "questionText": "21/5 expressed as a mixed number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3(1/5)."
+        },
+        {
+          "letter": "B",
+          "text": "4(1/5)."
+        },
+        {
+          "letter": "C",
+          "text": "4(2/5)."
+        },
+        {
+          "letter": "D",
+          "text": "5(1/5)."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "21 divided by 5 = 4 remainder 1, so 21/5 = 4(1/5).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q5",
+      "questionNumber": 5,
+      "questionText": "How many lines of symmetry does an equilateral triangle have?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1."
+        },
+        {
+          "letter": "B",
+          "text": "2."
+        },
+        {
+          "letter": "C",
+          "text": "3."
+        },
+        {
+          "letter": "D",
+          "text": "4."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "An equilateral triangle (three equal sides) has 3 lines of symmetry.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q6",
+      "questionNumber": 6,
+      "questionText": "Which of the following solid shapes has exactly 6 identical square faces?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cube"
+        },
+        {
+          "letter": "B",
+          "text": "Cuboid"
+        },
+        {
+          "letter": "C",
+          "text": "Cylinder"
+        },
+        {
+          "letter": "D",
+          "text": "Triangular prism"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A cube has 6 identical square faces. A cuboid may have rectangular (not all square) faces.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q7",
+      "questionNumber": 7,
+      "questionText": "In 56 / 8 = 7, which one is a divisor?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56"
+        },
+        {
+          "letter": "B",
+          "text": "8"
+        },
+        {
+          "letter": "C",
+          "text": "7"
+        },
+        {
+          "letter": "D",
+          "text": "63"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "In a division sentence, the divisor is the number you divide by: 8.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q8",
+      "questionNumber": 8,
+      "questionText": "The time shown on a clock is 1350. In 1 hour 40 minutes the time will be",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1410."
+        },
+        {
+          "letter": "B",
+          "text": "1430."
+        },
+        {
+          "letter": "C",
+          "text": "1510."
+        },
+        {
+          "letter": "D",
+          "text": "1530."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "1350 + 1 hour = 1450. 1450 + 40 minutes = 1530.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q9",
+      "questionNumber": 9,
+      "questionText": "Tendai bought 12 books for $60. He sold each book for $6. His profit was",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0."
+        },
+        {
+          "letter": "B",
+          "text": "$12."
+        },
+        {
+          "letter": "C",
+          "text": "$60."
+        },
+        {
+          "letter": "D",
+          "text": "$72."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Selling price total = 12 x 6 = $72. Profit = 72 - 60 = $12.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q10",
+      "questionNumber": 10,
+      "questionText": "398 245 rounded off to the nearest 1 000 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "398 000."
+        },
+        {
+          "letter": "B",
+          "text": "399 000."
+        },
+        {
+          "letter": "C",
+          "text": "400 000."
+        },
+        {
+          "letter": "D",
+          "text": "390 000."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The hundreds digit is 2, which is less than 5, so 398 245 rounds down to 398 000.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q11",
+      "questionNumber": 11,
+      "questionText": "The difference between two numbers is 6. Their product is 91. The numbers are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 and 11."
+        },
+        {
+          "letter": "B",
+          "text": "6 and 12."
+        },
+        {
+          "letter": "C",
+          "text": "7 and 13."
+        },
+        {
+          "letter": "D",
+          "text": "9 and 15."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "13 - 7 = 6 and 13 x 7 = 91, so the numbers are 7 and 13.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q12",
+      "questionNumber": 12,
+      "questionText": "9/12 in its lowest terms is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3/4."
+        },
+        {
+          "letter": "B",
+          "text": "4/5."
+        },
+        {
+          "letter": "C",
+          "text": "6/8."
+        },
+        {
+          "letter": "D",
+          "text": "2/3."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Dividing both 9 and 12 by their highest common factor, 3, gives 3/4.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q13",
+      "questionNumber": 13,
+      "questionText": "What is the area of a rectangle measuring 15m by 8m?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23 sq m."
+        },
+        {
+          "letter": "B",
+          "text": "46 sq m."
+        },
+        {
+          "letter": "C",
+          "text": "120 sq m."
+        },
+        {
+          "letter": "D",
+          "text": "240 sq m."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Area of a rectangle = length x width = 15 x 8 = 120 sq m.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q14",
+      "questionNumber": 14,
+      "questionText": "4 painters can paint a hall in 18 days. How many painters are needed to paint the same hall in 8 days?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6."
+        },
+        {
+          "letter": "B",
+          "text": "8."
+        },
+        {
+          "letter": "C",
+          "text": "9."
+        },
+        {
+          "letter": "D",
+          "text": "12."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "This is inverse proportion: 4 x 18 = 72 painter-days. 72 / 8 = 9 painters.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q15",
+      "questionNumber": 15,
+      "questionText": "Find the value of 12,4 x 100.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "124."
+        },
+        {
+          "letter": "B",
+          "text": "1 240."
+        },
+        {
+          "letter": "C",
+          "text": "0,124."
+        },
+        {
+          "letter": "D",
+          "text": "12 400."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Multiplying by 100 moves the decimal point two places to the right: 12,4 x 100 = 1 240.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q16",
+      "questionNumber": 16,
+      "questionText": "What must be subtracted from 5 000 to leave 3 246?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 754."
+        },
+        {
+          "letter": "B",
+          "text": "1 764."
+        },
+        {
+          "letter": "C",
+          "text": "2 246."
+        },
+        {
+          "letter": "D",
+          "text": "1 854."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5 000 - 3 246 = 1 754.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q17",
+      "questionNumber": 17,
+      "questionText": "Share 240 sweets between Farai and Tino in the ratio 3:5. How many sweets does Farai get?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "60."
+        },
+        {
+          "letter": "B",
+          "text": "80."
+        },
+        {
+          "letter": "C",
+          "text": "90."
+        },
+        {
+          "letter": "D",
+          "text": "150."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Total parts = 3 + 5 = 8. One part = 240 / 8 = 30. Farai's share (3 parts) = 3 x 30 = 90.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q18",
+      "questionNumber": 18,
+      "questionText": "Find the average of 15, 22, 19, 26 and 18.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18."
+        },
+        {
+          "letter": "B",
+          "text": "19."
+        },
+        {
+          "letter": "C",
+          "text": "20."
+        },
+        {
+          "letter": "D",
+          "text": "21."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sum = 15 + 22 + 19 + 26 + 18 = 100. Average = 100 / 5 = 20.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q19",
+      "questionNumber": 19,
+      "questionText": "A number, when multiplied by 7, gives 168. The number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "21."
+        },
+        {
+          "letter": "B",
+          "text": "24."
+        },
+        {
+          "letter": "C",
+          "text": "26."
+        },
+        {
+          "letter": "D",
+          "text": "28."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Number = 168 / 7 = 24.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q20",
+      "questionNumber": 20,
+      "questionText": "Which of the following angles is a reflex angle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "75 degrees."
+        },
+        {
+          "letter": "B",
+          "text": "90 degrees."
+        },
+        {
+          "letter": "C",
+          "text": "150 degrees."
+        },
+        {
+          "letter": "D",
+          "text": "200 degrees."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A reflex angle is greater than 180 degrees but less than 360 degrees; 200 degrees fits this range.",
+      "answerConfidence": "high"
+    }
+  ]
+}

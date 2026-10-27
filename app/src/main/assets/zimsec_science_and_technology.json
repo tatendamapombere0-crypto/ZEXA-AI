@@ -1,0 +1,308 @@
+{
+  "subject": "Science and Technology (Environmental Science)",
+  "curriculum": "Zimbabwe Ministry of Primary and Secondary Education (MoPSE) - Junior Grade 3-7 / Infant ECD-Grade 2",
+  "confidence_flag": "IMPORTANT: Unlike the Mathematics and English Language files, this file's grade-by-grade placement and exact syllabus wording could NOT be verified against the official MoPSE Science and Technology Junior (Grade 3-7) scope-and-sequence document - that PDF was not accessible via search or fetch (JS-gated ZIMSEC site, login-walled Scribd, binary CourseHero). The SUBJECT NAME, its known strand structure (Living Things, Materials, Energy and Forces, Earth and Space, Technology/ICT, Health and Hygiene), and its place in the Junior curriculum are confirmed from multiple independent sources. The underlying SCIENCE FACTS in each chunk are accurate, standard curriculum content and safe to use for answering student questions. What is NOT verified: which exact grade each topic is first introduced at in Zimbabwe specifically, and the precise official wording/sequencing. Treat grade labels here as reasonable estimates based on common junior-science progression (simple/concrete concepts in Grade 3, building to more abstract/quantitative treatment by Grade 7), not as confirmed MoPSE placements. Swap this file for a verified one once the official PDF is obtained.",
+  "generated": "2026-08-22",
+  "chunks": [
+    {
+      "id": "sci-living-001",
+      "strand": "Living Things",
+      "topic": "Living vs Non-Living Things",
+      "grade_estimate": "Grade 3",
+      "content": "Living things share seven key life processes, often remembered by the acronym MRS GREN: Movement, Respiration, Sensitivity (responding to surroundings), Growth, Reproduction, Excretion (getting rid of waste), and Nutrition (taking in food/energy). A thing is classified as living if it can do all of these over its lifetime. Non-living things (rocks, water, a chair, a car) may show one or two of these features (a car 'moves' and 'excretes' exhaust) but not all seven, and they do not grow, reproduce, or respond to stimuli on their own the way living organisms do.",
+      "learning_activities": [
+        "Sorting picture cards of objects into living and non-living groups",
+        "Testing objects in the local environment against the MRS GREN criteria",
+        "Discussing borderline cases such as seeds or dormant organisms"
+      ],
+      "keywords": ["living things", "non-living things", "MRS GREN", "life processes", "grade 3"]
+    },
+    {
+      "id": "sci-living-002",
+      "strand": "Living Things",
+      "topic": "Classifying Plants and Animals",
+      "grade_estimate": "Grade 3 to Grade 4",
+      "content": "Living things are broadly classified into the plant kingdom and animal kingdom. Animals are further grouped into vertebrates (with a backbone: mammals, birds, reptiles, amphibians, fish) and invertebrates (without a backbone: insects, spiders, worms, molluscs). Plants are grouped into flowering plants and non-flowering plants (such as ferns and mosses). Classification is based on shared observable characteristics: mammals have fur/hair and feed young on milk; birds have feathers and lay hard-shelled eggs; reptiles have dry scaly skin; amphibians live both in water and on land and have moist skin; fish live in water and breathe through gills.",
+      "learning_activities": [
+        "Sorting local animals into vertebrate groups by their features",
+        "Building a simple classification key for plants and animals found around the school",
+        "Comparing an insect (6 legs, 3 body parts) with a spider (8 legs, 2 body parts)"
+      ],
+      "keywords": ["classification", "vertebrates", "invertebrates", "mammals", "birds", "reptiles", "amphibians", "fish", "insects"]
+    },
+    {
+      "id": "sci-living-003",
+      "strand": "Living Things",
+      "topic": "Parts of a Flowering Plant and Their Functions",
+      "grade_estimate": "Grade 3 to Grade 4",
+      "content": "A typical flowering plant has roots (anchor the plant and absorb water and minerals from the soil), a stem (supports the plant and transports water/nutrients between roots and leaves), leaves (make food through photosynthesis, using sunlight, water and carbon dioxide to produce glucose and oxygen), and flowers (the reproductive part, containing male parts - stamens producing pollen - and female parts - the pistil/carpel, which develops into fruit containing seeds after fertilisation).",
+      "learning_activities": [
+        "Dissecting a flower to identify and label its parts",
+        "Growing bean seeds and observing root, stem and leaf development",
+        "Diagramming water's path from roots to leaves"
+      ],
+      "keywords": ["plant parts", "roots", "stem", "leaves", "flowers", "photosynthesis", "pollination"]
+    },
+    {
+      "id": "sci-living-004",
+      "strand": "Living Things",
+      "topic": "Photosynthesis",
+      "grade_estimate": "Grade 4 to Grade 5",
+      "content": "Photosynthesis is the process by which green plants make their own food. Using chlorophyll (the green pigment in leaves) to capture energy from sunlight, plants combine carbon dioxide (taken in from the air through tiny pores called stomata) with water (absorbed by the roots) to produce glucose (a sugar used for energy and growth) and oxygen (released back into the air as a by-product). The word equation is: carbon dioxide + water --(sunlight, chlorophyll)--> glucose + oxygen. This process is essential for nearly all life on Earth, since it is the primary source of atmospheric oxygen and the base of most food chains.",
+      "learning_activities": [
+        "Testing a leaf for starch (a product of photosynthesis) using iodine solution",
+        "Demonstrating that a plant kept in the dark makes less starch than one in sunlight",
+        "Drawing and labelling the photosynthesis word equation"
+      ],
+      "keywords": ["photosynthesis", "chlorophyll", "carbon dioxide", "oxygen", "glucose", "stomata", "sunlight"]
+    },
+    {
+      "id": "sci-living-005",
+      "strand": "Living Things",
+      "topic": "Life Cycles",
+      "grade_estimate": "Grade 3 to Grade 5",
+      "content": "Living things go through a life cycle - a series of stages from birth/germination to death, often including reproduction. A butterfly's life cycle has four stages: egg, larva (caterpillar), pupa (chrysalis), and adult butterfly - a process called complete metamorphosis. A frog's life cycle (also metamorphosis) goes egg, tadpole (with gills, living in water), tadpole growing legs, and adult frog (with lungs, living on land and water). A flowering plant's life cycle goes seed, germination, seedling, mature plant, flowering, pollination and fertilisation, and seed production, which restarts the cycle.",
+      "learning_activities": [
+        "Sequencing picture cards of the butterfly or frog life cycle",
+        "Growing and recording the germination and growth stages of a bean plant",
+        "Comparing complete metamorphosis (butterfly) with incomplete metamorphosis (grasshopper, which has no pupa stage)"
+      ],
+      "keywords": ["life cycle", "metamorphosis", "germination", "tadpole", "caterpillar", "pupa", "pollination"]
+    },
+    {
+      "id": "sci-living-006",
+      "strand": "Living Things",
+      "topic": "Human Body Systems",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "The human body is organised into systems that work together. The skeletal system (bones) supports the body and protects internal organs (e.g. the skull protects the brain, the ribcage protects the heart and lungs). The muscular system works with bones to produce movement. The digestive system (mouth, oesophagus, stomach, small and large intestines) breaks down food into nutrients the body can absorb and use. The circulatory system (heart, blood vessels, blood) pumps blood around the body to deliver oxygen and nutrients and remove waste. The respiratory system (nose, trachea, lungs) takes in oxygen and removes carbon dioxide through breathing. The nervous system (brain, spinal cord, nerves) controls and coordinates the body's actions and senses.",
+      "learning_activities": [
+        "Labelling a diagram of the human skeleton and naming major bones",
+        "Measuring pulse rate before and after exercise to observe the circulatory system at work",
+        "Tracing the path of food through the digestive system on a diagram"
+      ],
+      "keywords": ["human body", "skeletal system", "muscular system", "digestive system", "circulatory system", "respiratory system", "nervous system"]
+    },
+    {
+      "id": "sci-living-007",
+      "strand": "Living Things",
+      "topic": "Food Chains and Food Webs",
+      "grade_estimate": "Grade 5 to Grade 6",
+      "content": "A food chain shows how energy passes from one living thing to another, starting with a producer (a green plant, which makes its own food via photosynthesis), then to a primary consumer (herbivore, which eats plants), then a secondary consumer (carnivore/omnivore, which eats the herbivore), and sometimes a tertiary consumer (top predator). Arrows in a food chain point in the direction energy flows (e.g. grass -> grasshopper -> frog -> snake -> eagle). A food web shows how multiple food chains in an ecosystem interconnect, since most animals eat and are eaten by more than one other species. Decomposers (bacteria, fungi) break down dead organisms and waste, returning nutrients to the soil.",
+      "learning_activities": [
+        "Constructing a food chain from a set of local plants and animals",
+        "Building a food web by connecting several overlapping food chains",
+        "Discussing what happens to a food chain/web if one species is removed"
+      ],
+      "keywords": ["food chain", "food web", "producer", "consumer", "predator", "prey", "decomposer", "ecosystem"]
+    },
+    {
+      "id": "sci-living-008",
+      "strand": "Living Things",
+      "topic": "Health, Hygiene and Nutrition",
+      "grade_estimate": "Grade 3 to Grade 7 (progressive)",
+      "content": "A balanced diet includes carbohydrates (energy, e.g. sadza, rice, bread), proteins (growth and repair, e.g. meat, beans, fish, eggs), fats (energy storage and insulation), vitamins and minerals (regulating body processes, e.g. from fruits and vegetables), and water. Good personal hygiene practices - regular hand washing (especially before eating and after using the toilet), bathing, brushing teeth, and keeping nails short and clean - prevent the spread of disease-causing germs (bacteria, viruses, fungi, parasites). Common ways diseases spread include contaminated water and food, unwashed hands, insect bites (e.g. malaria from mosquitoes), and contact with an infected person.",
+      "learning_activities": [
+        "Sorting foods into a balanced-diet food group chart",
+        "Demonstrating correct handwashing technique and explaining why it matters",
+        "Discussing how common local diseases (e.g. malaria, diarrhoea) spread and can be prevented"
+      ],
+      "keywords": ["balanced diet", "nutrition", "hygiene", "handwashing", "disease prevention", "carbohydrates", "proteins", "vitamins"]
+    },
+    {
+      "id": "sci-matter-001",
+      "strand": "Materials (Matter)",
+      "topic": "States of Matter",
+      "grade_estimate": "Grade 3 to Grade 4",
+      "content": "Matter exists in three common states: solid (has a fixed shape and volume; particles are tightly packed and vibrate in place, e.g. wood, rock, ice), liquid (has a fixed volume but takes the shape of its container; particles are close together but can move past each other, e.g. water, oil), and gas (has no fixed shape or volume, spreading to fill its container; particles are far apart and move freely, e.g. air, steam). Matter can change state: melting (solid to liquid, by heating), freezing (liquid to solid, by cooling), evaporation (liquid to gas, by heating), condensation (gas to liquid, by cooling), and sublimation (solid directly to gas, e.g. dry ice).",
+      "learning_activities": [
+        "Observing and recording ice melting into water and water boiling into steam",
+        "Sorting classroom objects by state of matter",
+        "Drawing a diagram of the water cycle showing the state changes involved"
+      ],
+      "keywords": ["states of matter", "solid", "liquid", "gas", "melting", "freezing", "evaporation", "condensation"]
+    },
+    {
+      "id": "sci-matter-002",
+      "strand": "Materials (Matter)",
+      "topic": "Properties of Materials",
+      "grade_estimate": "Grade 3 to Grade 5",
+      "content": "Materials are chosen for particular uses based on their properties: strength (resists breaking, e.g. steel for construction), hardness (resists scratching, e.g. diamond, stone), flexibility (bends without breaking, e.g. rubber, some plastics), transparency (lets light through, e.g. glass), conductivity (allows heat or electricity to pass through, e.g. metals conduct well; wood, plastic and rubber are insulators that resist the flow of heat/electricity), absorbency (soaks up liquid, e.g. cloth, paper), and waterproofing (resists water, e.g. plastic, some fabrics treated with wax). Materials can be natural (wood, cotton, wool, clay) or man-made/synthetic (plastic, nylon, glass).",
+      "learning_activities": [
+        "Testing a set of materials for strength, flexibility and water absorbency",
+        "Sorting materials into natural and man-made groups",
+        "Matching materials to appropriate uses based on their properties (e.g. why umbrellas are waterproof)"
+      ],
+      "keywords": ["properties of materials", "strength", "conductivity", "insulators", "natural materials", "synthetic materials"]
+    },
+    {
+      "id": "sci-matter-003",
+      "strand": "Materials (Matter)",
+      "topic": "Mixtures and Separation Techniques",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "A mixture is formed when two or more substances are combined without a chemical reaction, so each substance keeps its own properties and can usually be separated again. Common separation techniques include: filtration (separating an insoluble solid from a liquid using a filter, e.g. sand from water), evaporation (separating a dissolved solid from a liquid by heating off the liquid, e.g. salt from salty water), sieving (separating solids of different particle sizes, e.g. stones from sand), magnetism (separating magnetic materials like iron filings from a mixture), and decanting (carefully pouring off a liquid from a settled solid). A solution is a special mixture where one substance (the solute) fully dissolves in another (the solvent), such as sugar dissolved in water.",
+      "learning_activities": [
+        "Separating a mixture of sand and water by filtration",
+        "Separating salt from salty water by evaporation",
+        "Using a magnet to separate iron filings from a sand-iron mixture"
+      ],
+      "keywords": ["mixtures", "separation techniques", "filtration", "evaporation", "sieving", "solution", "solute", "solvent"]
+    },
+    {
+      "id": "sci-energy-001",
+      "strand": "Energy and Forces",
+      "topic": "Forms of Energy",
+      "grade_estimate": "Grade 4 to Grade 6",
+      "content": "Energy exists in many forms: kinetic energy (movement energy, e.g. a moving car), potential energy (stored energy due to position or condition, e.g. water behind a dam, a stretched rubber band), heat/thermal energy, light energy, sound energy, electrical energy, and chemical energy (stored in food and fuels). Energy can be transformed from one form to another but, according to the law of conservation of energy, it cannot be created or destroyed - only changed in form. For example, a torch converts chemical energy (from the battery) into electrical energy, then into light and some heat energy.",
+      "learning_activities": [
+        "Identifying energy transformations in everyday devices (torch, radio, car)",
+        "Demonstrating potential energy becoming kinetic energy with a ball rolling down a ramp",
+        "Discussing renewable (solar, wind, hydro) versus non-renewable (coal, oil, gas) energy sources"
+      ],
+      "keywords": ["forms of energy", "kinetic energy", "potential energy", "energy transformation", "renewable energy", "non-renewable energy"]
+    },
+    {
+      "id": "sci-energy-002",
+      "strand": "Energy and Forces",
+      "topic": "Simple Machines",
+      "grade_estimate": "Grade 5 to Grade 6",
+      "content": "Simple machines make work easier by changing the size or direction of a force. The six classical simple machines are: the lever (a rigid bar that pivots on a fulcrum, e.g. a see-saw, crowbar, scissors), the wheel and axle (e.g. a doorknob, a bicycle wheel), the pulley (a wheel with a rope/chain, used to lift loads, e.g. a well bucket system, a flagpole), the inclined plane (a sloped surface that makes it easier to move a load up or down, e.g. a ramp), the wedge (two inclined planes joined back to back, used to split or cut, e.g. an axe, a knife), and the screw (an inclined plane wrapped around a cylinder, e.g. a bolt, a jar lid).",
+      "learning_activities": [
+        "Identifying examples of each simple machine in the classroom or home",
+        "Building a simple lever and testing how the fulcrum's position affects the force needed",
+        "Comparing the effort needed to lift a load directly versus using a ramp"
+      ],
+      "keywords": ["simple machines", "lever", "wheel and axle", "pulley", "inclined plane", "wedge", "screw", "fulcrum"]
+    },
+    {
+      "id": "sci-energy-003",
+      "strand": "Energy and Forces",
+      "topic": "Types of Forces",
+      "grade_estimate": "Grade 4 to Grade 6",
+      "content": "A force is a push or pull that can change an object's speed, direction, or shape. Key types include: gravity (pulls objects towards the Earth's centre, giving them weight), friction (resists motion between two surfaces in contact, e.g. why a ball rolling on grass slows faster than on a smooth floor), magnetism (attraction or repulsion between magnetic materials, e.g. iron, nickel; like poles repel, unlike poles attract), and air resistance/water resistance (a form of friction that slows objects moving through air or water, e.g. why a parachute falls slowly). Forces are measured in newtons (N).",
+      "learning_activities": [
+        "Testing how different surfaces (grass, tile, sand) affect friction using a toy car",
+        "Investigating magnetic attraction and repulsion between bar magnets",
+        "Discussing why gravity keeps objects on the ground and pulls falling objects downward"
+      ],
+      "keywords": ["forces", "gravity", "friction", "magnetism", "air resistance", "newtons"]
+    },
+    {
+      "id": "sci-energy-004",
+      "strand": "Energy and Forces",
+      "topic": "Electricity and Simple Circuits",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "Electricity flows through a complete, unbroken loop called a circuit. A simple circuit needs a power source (e.g. a battery), a conductor (wire, usually made of a metal like copper, which allows electric current to flow), and a component such as a bulb or buzzer. A switch can open (break) or close (complete) the circuit to turn the component off or on. In a series circuit, components are connected in a single loop, so if one bulb fails the whole circuit breaks; in a parallel circuit, components are connected on separate branches, so each operates independently of the others. Insulators (rubber, plastic, wood) do not allow current to flow and are used to make electrical equipment safe to handle.",
+      "learning_activities": [
+        "Building a simple circuit with a battery, wire and bulb to light it up",
+        "Comparing series and parallel circuits by building both and observing bulb behaviour",
+        "Testing which everyday materials are conductors and which are insulators"
+      ],
+      "keywords": ["electricity", "circuit", "conductor", "insulator", "series circuit", "parallel circuit", "battery"]
+    },
+    {
+      "id": "sci-earth-001",
+      "strand": "Earth and Space",
+      "topic": "Weather and Climate",
+      "grade_estimate": "Grade 3 to Grade 5",
+      "content": "Weather is the day-to-day state of the atmosphere in a place (e.g. today it is hot and rainy), while climate is the average weather pattern of a region over many years (e.g. Zimbabwe has a subtropical climate with a distinct rainy season, roughly November to March, and a dry season for the rest of the year). Weather elements measured include temperature (using a thermometer), rainfall (using a rain gauge), wind speed and direction (using an anemometer and wind vane), and cloud cover. Zimbabwe's seasons are typically described as the warm/rainy season (roughly November-March), the cool/dry season (April-August), and the hot/dry season before the rains (September-October).",
+      "learning_activities": [
+        "Recording daily weather observations (temperature, rainfall, cloud cover) over a week or month",
+        "Making a simple rain gauge and measuring rainfall",
+        "Comparing Zimbabwe's seasons and their typical weather patterns"
+      ],
+      "keywords": ["weather", "climate", "seasons", "rainfall", "temperature", "thermometer", "rain gauge"]
+    },
+    {
+      "id": "sci-earth-002",
+      "strand": "Earth and Space",
+      "topic": "The Water Cycle",
+      "grade_estimate": "Grade 4 to Grade 5",
+      "content": "The water cycle describes how water continuously moves between the Earth's surface and the atmosphere. Key stages: evaporation (the sun heats water in oceans, rivers and lakes, turning it into water vapour that rises into the air), transpiration (water vapour released from plant leaves, often grouped with evaporation as 'evapotranspiration'), condensation (water vapour cools high in the atmosphere and turns back into tiny water droplets, forming clouds), precipitation (water falls back to Earth as rain, hail, sleet or snow), and collection/runoff (water flows into rivers, lakes and oceans, or soaks into the ground as groundwater, ready to evaporate again and repeat the cycle).",
+      "learning_activities": [
+        "Drawing and labelling a water cycle diagram with all stages",
+        "Setting up a simple evaporation-condensation demonstration with a covered cup of water in the sun",
+        "Discussing how the water cycle connects to rainfall patterns and water conservation"
+      ],
+      "keywords": ["water cycle", "evaporation", "condensation", "precipitation", "transpiration", "groundwater"]
+    },
+    {
+      "id": "sci-earth-003",
+      "strand": "Earth and Space",
+      "topic": "Soil Types and Formation",
+      "grade_estimate": "Grade 4 to Grade 6",
+      "content": "Soil forms over long periods through the weathering (physical and chemical breakdown) of rocks, combined with decomposed organic matter (humus) from dead plants and animals. Main soil types by particle size are: sandy soil (large particles, drains water quickly, holds few nutrients), clay soil (very fine particles, holds water well but drains poorly and can become waterlogged), and loamy soil (a balanced mixture of sand, silt and clay, generally considered the most fertile for farming as it retains both moisture and nutrients while still draining adequately). Soil layers (horizons) typically include topsoil (richest in organic matter, best for plant growth), subsoil, and bedrock at the base.",
+      "learning_activities": [
+        "Testing local soil samples for texture (sandy, clay, loamy) by feel and a simple settling test in water",
+        "Comparing how quickly water drains through different soil types",
+        "Discussing why loamy soil is generally preferred for crop farming"
+      ],
+      "keywords": ["soil types", "sandy soil", "clay soil", "loamy soil", "weathering", "humus", "topsoil"]
+    },
+    {
+      "id": "sci-earth-004",
+      "strand": "Earth and Space",
+      "topic": "The Solar System",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "The solar system consists of the Sun (a star, at the centre, providing light and heat through nuclear fusion) and the objects that orbit it: eight planets (in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune), their moons, dwarf planets (such as Pluto), asteroids, and comets. Earth is the third planet from the Sun and the only known planet to support life, due to its distance from the Sun (allowing liquid water), its atmosphere, and its magnetic field. Earth rotates on its axis once approximately every 24 hours, causing day and night, and orbits the Sun once approximately every 365.25 days, causing the year and (combined with Earth's tilted axis) the seasons.",
+      "learning_activities": [
+        "Ordering the eight planets from the Sun and comparing their relative sizes",
+        "Modelling day and night using a torch (Sun) and a rotating globe (Earth)",
+        "Discussing why Earth's tilt causes the seasons to change through the year"
+      ],
+      "keywords": ["solar system", "sun", "planets", "earth's rotation", "earth's orbit", "day and night", "seasons"]
+    },
+    {
+      "id": "sci-earth-005",
+      "strand": "Earth and Space",
+      "topic": "Natural Resources and Conservation",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "Natural resources are materials or substances occurring in nature that people use, classified as renewable (can replenish naturally within a human lifetime, e.g. water, forests, sunlight, wind, soil if managed well) or non-renewable (form over millions of years and are used up faster than they form, e.g. coal, oil, natural gas, minerals). Conservation practices to protect natural resources include afforestation/reforestation (planting trees), avoiding overgrazing and deforestation, water conservation (avoiding waste, protecting water sources from pollution), recycling and reducing waste, and sustainable farming practices (crop rotation, contour ploughing to prevent soil erosion). Environmental issues connected to poor resource management include soil erosion, deforestation, water pollution, and loss of biodiversity.",
+      "learning_activities": [
+        "Sorting local natural resources into renewable and non-renewable categories",
+        "Investigating causes and effects of soil erosion in the local area and possible solutions",
+        "Planning a simple school conservation project such as a tree-planting or recycling initiative"
+      ],
+      "keywords": ["natural resources", "renewable resources", "non-renewable resources", "conservation", "deforestation", "soil erosion", "sustainability"]
+    },
+    {
+      "id": "sci-tech-001",
+      "strand": "Technology",
+      "topic": "Technology and Everyday Problem-Solving",
+      "grade_estimate": "Grade 3 to Grade 7 (progressive)",
+      "content": "Technology is the application of scientific knowledge to solve practical problems and meet human needs, ranging from simple tools (a hoe, a wheelbarrow) to complex systems (computers, the internet, mobile phones). The technology/design process typically follows: identifying a problem or need, researching and generating possible solutions, designing and planning (including sketches or models), making/building the solution, testing it, and evaluating and improving it based on results. Information and Communication Technology (ICT) - computers, tablets, mobile phones, the internet - is increasingly integrated into science learning for research, data recording, simulations and communication.",
+      "learning_activities": [
+        "Working through the design process to solve a simple local problem (e.g. designing a water carrier)",
+        "Building and testing a simple model (e.g. a bridge from straws, a simple water filter)",
+        "Using ICT tools to research a science topic or record experimental data"
+      ],
+      "keywords": ["technology", "design process", "problem-solving", "ICT integration", "invention"]
+    },
+    {
+      "id": "sci-tech-003",
+      "strand": "Technology",
+      "topic": "Digital Devices and ICT Tools",
+      "grade_estimate": "Grade 3 to Grade 7",
+      "content": "Under the Heritage-Based Curriculum, learners study various digital devices and ICT tools used in daily life. This includes personal computers (desktops and laptops), mobile devices (smartphones and tablets), and peripheral devices like printers, scanners, and digital cameras. Key skills involve identifying these tools, understanding their functions (input, process, output, storage), and using them responsibly. Digital devices help in searching for information, creating documents, and communicating with others. Awareness of basic software, file management, and internet safety (cyber-wellness) is essential for modern learners.",
+      "learning_activities": [
+        "Identifying and naming parts of a computer system",
+        "Practising basic typing and mouse skills",
+        "Discussing the uses of smartphones and tablets in the community",
+        "Learning to stay safe online and protecting personal information"
+      ],
+      "keywords": ["digital devices", "ICT tools", "computers", "smartphones", "internet safety", "technology"]
+    },
+    {
+      "id": "sci-tech-002",
+      "strand": "Technology",
+      "topic": "Safety Signs and Laboratory Safety",
+      "grade_estimate": "Grade 5 to Grade 7",
+      "content": "Safety signs use standard shapes and colours to convey their meaning at a glance: red circles with a diagonal line indicate prohibition (something not allowed); yellow triangles indicate warning/caution (a hazard to be aware of); blue circles indicate mandatory action (something that must be done, e.g. wear protective equipment); green squares/rectangles indicate safe conditions or emergency information (e.g. exit routes, first aid). In science activities, basic safety practices include not tasting or smelling unknown substances, handling sharp or hot objects with care, washing hands after experiments, and telling a teacher immediately about spills or breakages.",
+      "learning_activities": [
+        "Matching safety sign shapes and colours to their meanings",
+        "Identifying safety signs found around the school and community",
+        "Discussing safe practices to follow during a simple science experiment"
+      ],
+      "keywords": ["safety signs", "laboratory safety", "hazard symbols", "prohibition sign", "warning sign"]
+    }
+  ]
+}

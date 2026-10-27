@@ -1,0 +1,133 @@
+{
+  "subject": "Information and Communication Technology (ICT)",
+  "curriculum": "Zimbabwe Ministry of Primary and Secondary Education (MoPSE) - Junior (Grade 3-7)",
+  "syllabus_source": "ICT Junior School Level Teacher's Guide, Grade 3-7, 2015-2022 - official MoPSE document, fetched and verified directly, including the full Scope and Sequence Chart",
+  "confidence_flag": "This file is grounded directly in the official ICT Junior Teacher's Guide, which was retrieved in full including its Scope and Sequence Chart showing exact Grade 3-7 progression for 6 of the 8 syllabus topics (ICT Tools, Creating and Publishing, Computer Software, Safety and Security, The World Wide Web and Online Collaboration, ICT Enterprise). Content for these 6 topics is exact/verified per grade. The remaining 2 topics (Programming, and Communication and Networks) were named in the syllabus topic list but their grade-by-grade chart rows were not captured in the retrieved text; a worked Grade 3 lesson-plan example on 'Types of Computer Networks' is included as a Communication and Networks data point, but the full 5-grade progression for those two topics is not verified here.",
+  "generated": "2026-08-22",
+  "chunks": [
+    {
+      "id": "ict-overview-001",
+      "strand": "Syllabus Overview",
+      "topic": "Rationale and Position in the Curriculum",
+      "grade": "Grade 3 to Grade 7",
+      "content": "ICT is one of nine learning areas at Junior level in Zimbabwe's reviewed Curriculum Framework. It requires learners to develop adequate life and career skills, equipping them for entry-level work, further study, lifelong learning, and life as inquisitive, reflective, discerning and caring citizens. The syllabus gives learners a broad perspective on the basic knowledge and practical skills needed to use and apply a variety of technologies in everyday life, and understand how information systems are designed and how they work. The ICT syllabus is intended to be infused within other subjects across the school curriculum, not taught in isolation.",
+      "keywords": ["ICT", "rationale", "nine learning areas", "life and career skills", "cross-curricular infusion"]
+    },
+    {
+      "id": "ict-overview-002",
+      "strand": "Syllabus Overview",
+      "topic": "The 8 Syllabus Topics",
+      "grade": "Grade 3 to Grade 7",
+      "content": "The Junior ICT syllabus follows a spiral approach (the same topics are taught at every grade level, gaining in breadth and depth as learners progress). The 8 topics covered Grade 3-7 are: (1) ICT Tools, (2) Creating and Publishing, (3) Computer Software, (4) Safety and Security, (5) The World Wide Web and Online Collaboration, (6) ICT Enterprise, (7) Programming, and (8) Communication and Networks.",
+      "keywords": ["syllabus topics", "spiral approach", "ICT tools", "computer software", "safety and security", "world wide web", "programming", "communication and networks"]
+    },
+    {
+      "id": "ict-overview-003",
+      "strand": "Syllabus Overview",
+      "topic": "Assessment Structure",
+      "grade": "Grade 3 to Grade 7",
+      "content": "ICT is assessed through Continuous Assessment (55% of the final mark - profiling, tests and practical assignments administered and collated from Infant through to Grade 7, with research/design projects starting at Grade 5) and Summative Assessment (45%, split into Paper 1 worth 20% and Paper 2 worth 25%). By the end of Junior ICT, learners are expected to demonstrate Knowledge and Understanding (e.g. identifying ICT tools, communicating using ICT, archiving cultural information using ICT), Problem Solving (e.g. creating a computer project from a problem statement, designing data flow diagrams), and Practical Skills (e.g. developing presentations, diagnosing and repairing ICT tool faults, updating and using anti-virus software).",
+      "keywords": ["assessment", "continuous assessment", "summative assessment", "Paper 1", "Paper 2", "assessment objectives"]
+    },
+    {
+      "id": "ict-tools-001",
+      "strand": "1. ICT Tools",
+      "topic": "ICT Tools - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "Grade 3: Types of Computers - learners identify and describe different types of personal computers (e.g. desktop, laptop) and match computer pictures with their names. Grade 4: Computer Peripherals - input/output devices connected to a computer. Grade 5: Fault Diagnosis and Fixing - identifying and correcting simple computer faults. Grade 6: Hardware and Software Maintenance - keeping computer hardware and software in good working order. Grade 7: Faults in ICT Tools - more advanced fault identification and troubleshooting across ICT tools generally.",
+      "learning_activities": [
+        "Identifying different types of personal computers (Grade 3)",
+        "Matching computer pictures with their correct names (Grade 3)",
+        "Diagnosing and fixing simple computer faults (Grade 5)"
+      ],
+      "keywords": ["ICT tools", "types of computers", "computer peripherals", "fault diagnosis", "hardware maintenance", "software maintenance"]
+    },
+    {
+      "id": "ict-publish-001",
+      "strand": "2. Creating and Publishing",
+      "topic": "Creating and Publishing - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "Grade 3: Charts, Bar Graphs, Pictograms - creating simple visual representations of data. Grade 4: Presentations, Slide shows of drawings/images - creating basic slide-based presentations. Grade 5: Animation, Databases - introducing simple animation and basic database concepts. Grade 6: Database forms and reports - building structured database forms and generating reports. Grade 7: Database queries, Database Principles - querying databases and understanding underlying database design principles.",
+      "learning_activities": [
+        "Creating charts, bar graphs and pictograms from simple data (Grade 3)",
+        "Building a basic slide show presentation with images (Grade 4)",
+        "Designing a simple database form and generating a report from it (Grade 6)"
+      ],
+      "keywords": ["creating and publishing", "charts", "bar graphs", "presentations", "animation", "databases", "database queries"]
+    },
+    {
+      "id": "ict-software-001",
+      "strand": "3. Computer Software",
+      "topic": "Computer Software - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "Grade 3: Uses of software, Text Input, File management - understanding what software does and basic typing/file organisation skills. Grade 4: Desktop Publishing, File management, Multimedia - creating simple documents/layouts and working with multimedia files. Grade 5: Sending and receiving information (VoIP), Multimedia - using Voice over Internet Protocol tools and further multimedia work. Grade 6: Spreadsheets, Data storage - working with spreadsheet software and understanding data storage concepts. Grade 7: Multimedia, Installation of software - advanced multimedia work and learning to install software programs.",
+      "learning_activities": [
+        "Practising basic text input and organising files into folders (Grade 3)",
+        "Creating a simple desktop-published document (Grade 4)",
+        "Entering and organising data in a spreadsheet (Grade 6)"
+      ],
+      "keywords": ["computer software", "file management", "desktop publishing", "multimedia", "spreadsheets", "software installation", "VoIP"]
+    },
+    {
+      "id": "ict-safety-001",
+      "strand": "4. Safety and Security",
+      "topic": "Safety and Security - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "Grade 3: Passwords - understanding what a password is and why it matters for account security. Grade 4: Computer Viruses, Antivirus - learning about viruses and how antivirus software protects a computer. Grade 5: Cyber Wellness - safe, healthy and responsible use of ICT and online spaces. Grade 6: Hacking, Data Legislation - understanding what hacking is and basic awareness of laws governing data. Grade 7: Firewalls - understanding how firewalls help protect computer networks from unauthorised access.",
+      "learning_activities": [
+        "Creating and explaining the importance of a strong password (Grade 3)",
+        "Discussing what computer viruses are and how antivirus software helps (Grade 4)",
+        "Discussing cyber wellness practices for safe internet use (Grade 5)"
+      ],
+      "keywords": ["safety and security", "passwords", "computer viruses", "antivirus", "cyber wellness", "hacking", "data legislation", "firewalls"]
+    },
+    {
+      "id": "ict-web-001",
+      "strand": "5. The World Wide Web and Online Collaboration",
+      "topic": "World Wide Web and Online Collaboration - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "Grade 3: Web page, Search Engines, Information Presentation - basic understanding of what a webpage is and how to search for information online. Grade 4: Web page, Search Tools, Information Presentation - continued development of web navigation and search skills. Grade 5: Surfing the Internet, E-mail, Mailbox, e-Messages - learning to browse the internet and use email/messaging. Grade 6: Web Page, Surfing the Internet, Web design, e-Messages - introduction to basic web design concepts. Grade 7: Surfing the Internet, Web design - more advanced internet use and web design skills.",
+      "learning_activities": [
+        "Using a search engine to find information on a given topic (Grade 3)",
+        "Sending and receiving a simple email (Grade 5)",
+        "Designing a basic web page layout (Grade 6-7)"
+      ],
+      "keywords": ["world wide web", "search engines", "email", "internet browsing", "web design", "online collaboration"]
+    },
+    {
+      "id": "ict-enterprise-001",
+      "strand": "6. ICT Enterprise",
+      "topic": "ICT Enterprise - Grade-by-Grade Progression",
+      "grade": "Grade 3 to Grade 7",
+      "content": "This topic introduces learners progressively to ICT-related careers: Grade 3 - Data capture clerk; Grade 4 - Computer Operator, Copyist; Grade 5 - Digital Photographer, Sound technician; Grade 6 - Web Developer, Software Technicians; Grade 7 - ICT Careers (broader overview), Web Designing, Network Technicians. This strand builds career awareness alongside the more technical topics, connecting classroom ICT skills to real workplace roles.",
+      "learning_activities": [
+        "Learning about the role of a data capture clerk (Grade 3)",
+        "Discussing the work of a digital photographer or sound technician (Grade 5)",
+        "Researching different ICT careers such as web developer or network technician (Grade 6-7)"
+      ],
+      "keywords": ["ICT enterprise", "ICT careers", "data capture clerk", "web developer", "digital photographer", "network technician"]
+    },
+    {
+      "id": "ict-network-001",
+      "strand": "8. Communication and Networks",
+      "topic": "Types and Benefits of Computer Networks (Grade 3 worked example)",
+      "grade": "Grade 3",
+      "content": "A Grade 3 lesson on Communication and Networks (Sub-Topic: Types of Computer Networks) has learners build on their existing knowledge of social networks (e.g. WhatsApp) to identify types of computer networks, describe their characteristics, and discuss the benefits of computer networks. The lesson explicitly assumes learners already know social networking apps like WhatsApp as a starting point before introducing formal computer networking concepts.",
+      "learning_activities": [
+        "Class discussion on the benefits of familiar social networks such as WhatsApp and Facebook",
+        "Grouping computer networks according to given characteristics",
+        "Identifying types of computer networks seen in an instructional video",
+        "Answering group questions on the benefits and characteristics of computer networks"
+      ],
+      "keywords": ["communication and networks", "computer networks", "social networks", "WhatsApp", "grade 3"]
+    },
+    {
+      "id": "ict-methods-001",
+      "strand": "Methodology",
+      "topic": "Teaching Methods for ICT",
+      "grade": "Grade 3 to Grade 7",
+      "content": "ICT teaching methods are grouped into three categories aligned with domains of learning: Cognitive development methods (Discussion, Questioning/Socratic Method, Team Teaching, Field Trips, Group work), Affective development methods (Modelling, Simulation, Dramatic Method, Role-Playing, Observation, Lecture), and Psychomotor development methods (Inquiry Method, Interactive e-learning, Discovery Method, Demonstration, Project Method, Games, Song and dance). Teachers are encouraged to expose learners to more than one method per lesson, chosen based on the subject matter, instructional objectives, learner development level, content, time, materials, and class size.",
+      "keywords": ["methodology", "teaching methods", "cognitive development", "affective development", "psychomotor development", "learner-centred"]
+    }
+  ]
+}

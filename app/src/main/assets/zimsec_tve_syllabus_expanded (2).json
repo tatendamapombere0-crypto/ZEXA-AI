@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "title": "ZIMSEC Secondary Technical and Vocational Education (TVE) Study Reference",
+    "issuing_authority": "Zimbabwe Ministry of Primary and Secondary Education / ZIMSEC",
+    "level": "Secondary (Ordinary Level, Forms 1-4; select subjects extend to Forms 5-6)",
+    "purpose": "Expanded study reference with real explanatory content per topic, intended to help answer student questions directly (definitions, key facts, worked concepts) rather than just listing topic names.",
+    "important_note": "This is compiled teaching content written to match ZIMSEC syllabus topic areas. For exact mark allocations, paper codes and official wording, cross-check the current syllabus PDF at https://www5.zimsec.co.zw/syllabi/. Numeric mark/paper details are indicative unless marked confirmed.",
+    "subjects_covered": [
+      "Agriculture",
+      "Computer Science",
+      "Technical Graphics and Design",
+      "Wood Technology and Design",
+      "Metal Technology and Design",
+      "Building Technology and Design",
+      "Food Technology and Design",
+      "Textile Technology and Design"
+    ]
+  },
+  "subjects": {
+    "agriculture": {
+      "subject_name": "Agriculture",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Soil Science",
+          "explanation": "Soil is formed through weathering (physical, chemical, biological) of parent rock over long periods, combined with organic matter decomposition. It has three main textural classes based on particle size: sand (largest particles, good drainage, poor nutrient/water retention), silt (medium particles), and clay (smallest particles, high water/nutrient retention, poor drainage, prone to waterlogging). Loam soils, a balanced mix of sand, silt and clay, are considered ideal for most crops. Soil profile has distinct horizons: O (organic litter), A (topsoil, rich in humus and nutrients), B (subsoil, less organic matter), C (weathered parent rock), and R (bedrock).",
+          "key_facts": [
+            "Soil pH affects nutrient availability; most crops grow best between pH 5.5-7.0",
+            "Soil erosion (sheet, rill, gully, wind) is combated through contour ploughing, terracing, cover crops, crop rotation, and mulching",
+            "Soil fertility is maintained via organic manure, compost, crop rotation, and correct fertiliser application (NPK - nitrogen, phosphorus, potassium)",
+            "Waterlogged soils can be improved through drainage (open drains, tile/pipe drains) and by growing on ridges"
+          ]
+        },
+        {
+          "topic": "Crop Production",
+          "explanation": "Crop production involves land preparation (clearing, ploughing, harrowing, ridging), selection of suitable seed/variety, correct spacing and planting depth, fertiliser application, weed control, pest and disease management, and timely harvesting. Major crop groups examined include cereals (maize, sorghum, wheat, rice), legumes (groundnuts, soya beans, beans - which fix nitrogen via Rhizobium bacteria in root nodules), and horticultural crops (vegetables, fruits).",
+          "key_facts": [
+            "Maize requires a spacing of roughly 90cm between rows and 25-30cm within rows (varies by variety and region) for optimum yield",
+            "Crop rotation prevents pest/disease build-up and manages soil nutrient depletion - e.g. cereal followed by a legume replenishes soil nitrogen",
+            "Common pests: aphids, stalk borer, armyworm; common diseases: maize streak virus, rust, blight - controlled via resistant varieties, chemical/biological control, and cultural practices",
+            "Weeds compete with crops for light, water, nutrients and space; controlled by hand weeding, herbicides, mulching, or mechanical cultivation"
+          ]
+        },
+        {
+          "topic": "Livestock/Animal Production",
+          "explanation": "Covers husbandry of cattle, poultry, goats, pigs and other livestock: breeds and breeding systems, housing/shelter requirements, nutrition (balanced rations of energy, protein, minerals, vitamins, water), disease prevention (vaccination, hygiene, quarantine) and marketing of animal products.",
+          "key_facts": [
+            "Common cattle diseases in Zimbabwe include foot and mouth disease, anthrax, and tick-borne diseases (e.g. theileriosis/January disease) - controlled via dipping, vaccination and movement control",
+            "Poultry housing must provide ventilation, adequate space, protection from predators, and easy cleaning to control diseases like Newcastle disease and coccidiosis",
+            "Balanced livestock feed requires the right ratio of carbohydrates, proteins, fats, vitamins, minerals and water for growth, maintenance and production",
+            "Record keeping (breeding, health, production records) is essential for good farm management and decision-making"
+          ]
+        },
+        {
+          "topic": "Farm Structures and Mechanisation",
+          "explanation": "Includes design and construction considerations for basic farm structures (kraals, poultry runs, storage barns) and the use/maintenance of farm implements and machinery (ploughs, cultivators, planters) to improve efficiency of farm operations.",
+          "key_facts": [
+            "Storage structures must protect produce from moisture, pests (weevils, rodents) and theft - grain is often treated with insecticide dust before storage",
+            "Regular maintenance of farm tools (cleaning, oiling, sharpening) extends their lifespan and improves work efficiency"
+          ]
+        },
+        {
+          "topic": "Agricultural Economics and Agribusiness",
+          "explanation": "Covers farm business principles: costs of production (fixed and variable costs), calculating gross margin, marketing of produce, farm records, and basic entrepreneurship for turning farming into a viable income-generating enterprise.",
+          "key_facts": [
+            "Gross margin = Total revenue - Variable costs (used to assess enterprise profitability)",
+            "Fixed costs (e.g. land rent, machinery depreciation) remain constant regardless of output; variable costs (e.g. seed, fertiliser, labour) change with production level",
+            "Marketing channels include direct sales, farmers' markets, contract farming and cooperatives"
+          ]
+        },
+        {
+          "topic": "Environmental Management and Sustainable Agriculture",
+          "explanation": "Focuses on farming practices that protect natural resources for future use: conservation agriculture, agroforestry, organic farming, integrated pest management, and climate-smart agriculture techniques that build resilience to drought and climate variability.",
+          "key_facts": [
+            "Conservation agriculture principles: minimum soil disturbance, permanent soil cover (mulch/cover crops), and crop rotation",
+            "Deforestation and overgrazing accelerate soil erosion and land degradation - addressed through afforestation and controlled grazing/rotational grazing"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "Name three factors that affect soil fertility.",
+          "a": "Organic matter content, pH level, and nutrient availability (N, P, K) - also influenced by soil structure/texture and moisture."
+        },
+        {
+          "q": "Why is crop rotation important?",
+          "a": "It breaks pest and disease cycles, improves soil fertility (e.g. legumes fix nitrogen for the next cereal crop), and reduces the build-up of weeds specific to one crop type."
+        },
+        {
+          "q": "State two methods of controlling soil erosion.",
+          "a": "Contour ploughing/ridging and terracing on slopes; also mulching, cover cropping, and maintaining vegetation cover."
+        }
+      ]
+    },
+    "computer_science": {
+      "subject_name": "Computer Science",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Data Representation",
+          "explanation": "Computers store all data as binary (base 2: 0s and 1s) because digital circuits have two stable states (on/off). To convert denary (base 10) to binary, repeatedly divide by 2 and record remainders, reading them bottom-to-top. To convert binary to denary, multiply each bit by its place value (powers of 2: 1,2,4,8,16,32...) and sum. Hexadecimal (base 16) is often used as a shorthand for binary since each hex digit represents exactly 4 bits. Characters are represented using codes such as ASCII (7/8-bit) or Unicode (supports many languages/symbols).",
+          "key_facts": [
+            "Example: denary 13 = binary 1101 (8+4+0+1=13)",
+            "1 byte = 8 bits; 1 kilobyte (KB) = 1024 bytes; 1 megabyte (MB) = 1024 KB",
+            "Two's complement is used to represent negative binary numbers",
+            "Images are represented as pixels, each holding colour data (e.g. RGB values); sound is represented via sampling (sample rate and bit depth)"
+          ]
+        },
+        {
+          "topic": "Computer Architecture / Fetch-Execute Cycle",
+          "explanation": "The CPU (Central Processing Unit) executes instructions through the fetch-decode-execute cycle: fetch (instruction retrieved from memory address held in the Program Counter), decode (Control Unit interprets the instruction), execute (the ALU/Arithmetic Logic Unit or Control Unit carries it out). Key CPU registers include the Program Counter (PC - address of next instruction), Memory Address Register (MAR), Memory Data Register (MDR), and Accumulator (stores results of calculations).",
+          "key_facts": [
+            "Von Neumann architecture stores both program instructions and data in the same memory",
+            "Clock speed (measured in GHz) determines how many fetch-execute cycles occur per second",
+            "RAM (Random Access Memory) is volatile working memory; ROM (Read-Only Memory) is non-volatile and holds firmware/boot instructions"
+          ]
+        },
+        {
+          "topic": "Algorithms and Programming",
+          "explanation": "An algorithm is a step-by-step, unambiguous set of instructions to solve a problem. Algorithms are commonly represented using pseudocode (structured plain-English-like statements) or flowcharts (using standard symbols: oval=start/end, rectangle=process, diamond=decision, parallelogram=input/output). Programs use three basic control structures: sequence (steps in order), selection (if/else decisions), and iteration (loops - for/while/repeat).",
+          "key_facts": [
+            "Example pseudocode for finding the largest of two numbers: IF a > b THEN PRINT a ELSE PRINT b",
+            "Common data types: integer, real/float, string, boolean, character",
+            "Variables store data that can change; constants store fixed values",
+            "Common languages taught at this level include Python and Visual Basic; syntax errors occur when code breaks language rules, logic errors produce wrong results without crashing the program"
+          ]
+        },
+        {
+          "topic": "Databases",
+          "explanation": "A database is an organised collection of related data. A table stores data in rows (records) and columns (fields). A primary key is a field that uniquely identifies each record (e.g. a Student ID). Relationships link tables together (one-to-one, one-to-many, many-to-many) to avoid data duplication - this process is called normalisation. Queries (using SQL - Structured Query Language, or query-by-example tools) retrieve specific data matching given criteria.",
+          "key_facts": [
+            "Basic SQL example: SELECT Name FROM Students WHERE Grade = 'A';",
+            "A foreign key is a field in one table that refers to the primary key in another table, creating a relationship",
+            "Database Management Systems (DBMS) allow creation, querying, updating and securing of data (e.g. MS Access, MySQL)"
+          ]
+        },
+        {
+          "topic": "Networks and the Internet",
+          "explanation": "A network connects computers to share resources and data. LAN (Local Area Network) covers a small area like a school; WAN (Wide Area Network) covers a large geographic area, e.g. the internet. Network topologies (physical layout) include star, bus, and ring. The internet relies on protocols such as TCP/IP (data transmission), HTTP/HTTPS (web pages), and FTP (file transfer). An IP address uniquely identifies a device on a network.",
+          "key_facts": [
+            "A router directs data between networks; a switch connects devices within the same network",
+            "Bandwidth is the maximum rate of data transfer, usually measured in Mbps",
+            "Wi-Fi is a form of wireless LAN using radio waves"
+          ]
+        },
+        {
+          "topic": "Computer Security, Ethics and Legal Issues",
+          "explanation": "Covers threats to data/systems (viruses, malware, hacking, phishing) and countermeasures (antivirus software, firewalls, strong passwords, encryption, backups). Also covers ethical and legal issues: data protection principles, copyright/software piracy, and appropriate/responsible ICT use.",
+          "key_facts": [
+            "A firewall filters incoming/outgoing network traffic based on security rules",
+            "Encryption scrambles data so it is unreadable without the correct decryption key",
+            "Backups (copies of data stored separately) protect against data loss from hardware failure, theft, or malware"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "Convert denary 25 to binary.",
+          "a": "11001 (16+8+0+0+1 = 25)"
+        },
+        {
+          "q": "What is the difference between RAM and ROM?",
+          "a": "RAM is volatile (loses data when powered off) and used for temporary working storage; ROM is non-volatile and permanently stores firmware/boot instructions."
+        },
+        {
+          "q": "Explain what a primary key is in a database.",
+          "a": "A field (or combination of fields) that uniquely identifies each record in a table, ensuring no duplicate records exist."
+        }
+      ]
+    },
+    "technical_graphics_and_design": {
+      "subject_name": "Technical Graphics and Design",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Geometric Construction",
+          "explanation": "Uses drawing instruments (compass, set squares, protractor, scale rule) to construct accurate geometric shapes: bisecting lines and angles, constructing perpendiculars, dividing lines into equal parts, constructing regular polygons (triangle, pentagon, hexagon) inscribed in circles, and drawing tangents to circles.",
+          "key_facts": [
+            "To bisect an angle: with the vertex as centre, draw an arc crossing both arms; from each intersection draw arcs of equal radius that cross; join the vertex to that crossing point",
+            "A hexagon can be constructed by stepping the compass (set to the circle's radius) around a circle six times",
+            "45-degree set squares are used for 45/90 degree angles; 30/60-degree set squares for 30/60/90 degree angles"
+          ]
+        },
+        {
+          "topic": "Orthographic Projection",
+          "explanation": "A method of representing 3D objects in 2D using multiple views (typically front view/elevation, plan/top view, and side/end view) projected at right angles to each other. First-angle projection (used in ZIMSEC/British standard) places the object between the observer and the plane of projection - the plan is drawn below the front view, and the side view is drawn to the side opposite the viewing direction. Third-angle projection (American standard) places the plane between the observer and the object.",
+          "key_facts": [
+            "First-angle projection symbol: a truncated cone with the larger circle on the left (viewed from the right)",
+            "Hidden details are shown using dashed/hidden lines; centre lines use long-short dash lines",
+            "Views must align: the plan is projected directly below the front elevation using vertical projection lines"
+          ]
+        },
+        {
+          "topic": "Pictorial Projection",
+          "explanation": "Shows an object in a single 3D-looking view for clarity. Isometric projection uses axes at 120 degrees to each other with all dimensions drawn to true (full) scale along the isometric axes, giving a realistic but slightly distorted 3D look. Oblique projection keeps the front face true to shape/size and draws depth lines (usually at 45 degrees) at half scale (cabinet oblique) or full scale (cavalier oblique).",
+          "key_facts": [
+            "Isometric drawings use an isometric grid/isometric scale where vertical lines remain vertical and the other two axes are drawn at 30 degrees from horizontal",
+            "Oblique projection is best for objects with one face containing circles/complex detail, since that face is drawn without distortion"
+          ]
+        },
+        {
+          "topic": "Sectional Views",
+          "explanation": "A sectional view shows the internal detail of an object by imagining it cut through by a cutting plane and removing the near portion. The cut surfaces are shown with hatching (thin parallel lines, usually at 45 degrees) to distinguish solid material that has been sliced through.",
+          "key_facts": [
+            "A cutting plane line indicates where the imaginary cut is made, with arrows showing the viewing direction",
+            "Full sections cut completely through the object; half sections cut through only half, often used for symmetrical objects"
+          ]
+        },
+        {
+          "topic": "Development of Surfaces",
+          "explanation": "Also called 'true shape' or 'pattern' development - unfolding/unrolling the surface of a 3D solid (prism, cylinder, cone, pyramid) into a flat 2D pattern, used in sheet metal work and packaging design to determine the exact flat shape needed before folding/rolling into the final form.",
+          "key_facts": [
+            "A cylinder develops into a rectangle (height x circumference) plus two circles for the ends",
+            "A cone develops into a sector of a circle plus a circle for the base"
+          ]
+        },
+        {
+          "topic": "Loci and Mechanisms",
+          "explanation": "A locus is the path traced by a point as it moves according to a given rule or constraint (e.g. the path of a point on a rotating wheel, called a cycloid). This topic connects to understanding mechanisms - how points and linkages move in machines.",
+          "key_facts": [
+            "A locus equidistant from two fixed points is the perpendicular bisector of the line joining them",
+            "A locus equidistant from two fixed lines is the angle bisector"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "What is the difference between isometric and oblique projection?",
+          "a": "Isometric uses three axes at 120 degrees with all dimensions to true scale, giving a balanced 3D view; oblique keeps the front face true shape/size and draws depth at 45 degrees, usually at half scale, making it easier to draw circular detail on the front face."
+        },
+        {
+          "q": "Why are hidden lines used in orthographic drawings?",
+          "a": "To show edges or details of the object that are not visible from the direction of viewing but still exist within the object (represented as dashed lines)."
+        }
+      ]
+    },
+    "wood_technology_and_design": {
+      "subject_name": "Wood Technology and Design",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Timber Properties, Conversion and Seasoning",
+          "explanation": "Timber is classified as hardwood (from broad-leaved, usually deciduous trees, e.g. oak, mukwa - generally denser and slower growing) or softwood (from coniferous trees, e.g. pine - generally faster growing, lighter, easier to work). Conversion is the process of sawing a felled log into usable planks/boards (methods include through-and-through/plain sawing, and quarter sawing which produces more stable, decorative boards but with more waste). Seasoning removes moisture from timber to prevent later shrinkage, warping and fungal decay - done naturally (air seasoning, slower, cheaper) or artificially (kiln seasoning, faster, more controlled).",
+          "key_facts": [
+            "Green (freshly cut) timber can have moisture content above 100%; timber for furniture is typically seasoned to around 10-14% moisture content",
+            "Common timber defects: warping (twisting/bending out of shape), splitting/checking (cracks along the grain), knots (weak points from branch growth), and shakes (natural splits between growth rings)",
+            "Wood-based manufactured boards include plywood (thin veneers glued with grain alternating at 90 degrees for strength), chipboard (compressed wood particles/resin), and MDF - Medium Density Fibreboard (compressed wood fibres, smooth surface, good for painting)"
+          ]
+        },
+        {
+          "topic": "Joints",
+          "explanation": "Joints connect two or more pieces of timber. A butt joint is the simplest - two pieces joined edge to edge or end to end, often reinforced with nails, screws or dowels since it has little inherent strength. A lap joint overlaps two pieces (e.g. halving joint, where equal amounts of material are removed from each piece so they sit flush). A mortice and tenon joint is a strong traditional joint where a projecting tongue (tenon) on one piece fits into a matching slot (mortice) cut into the other - commonly used in furniture frames. A dovetail joint uses wedge/fan-shaped interlocking pins and tails, resisting pulling forces, and is traditionally used for drawer construction.",
+          "key_facts": [
+            "Dowel joints use cylindrical wooden pins glued into matching drilled holes in both pieces as a simpler alternative to mortice and tenon",
+            "Glue (PVA wood glue) is commonly used alongside mechanical joints for extra strength",
+            "Joint choice depends on the strength required, the visual finish desired, and the tools/skill level available"
+          ]
+        },
+        {
+          "topic": "Wood Machining and Tools",
+          "explanation": "Hand tools include saws (rip saw for cutting along the grain, cross-cut saw for cutting across the grain, tenon saw for fine joint work), planes (for smoothing/shaping surfaces), chisels (for cutting recesses/joints), and marking/measuring tools (try square, marking gauge, rule). Machines/portable power tools include circular saws, routers, planers, and pillar drills - these speed up production but require strict safety procedures (guards in place, correct footwear, no loose clothing, tools sharp and well-maintained).",
+          "key_facts": [
+            "A marking gauge scribes a line parallel to an edge, used to mark joint dimensions accurately before cutting",
+            "Chisels should always be pushed/cut away from the body; hands should stay behind the cutting edge",
+            "Machine safety includes using push sticks (never hands) to feed material near blades, and ensuring guards are fitted before operation"
+          ]
+        },
+        {
+          "topic": "Furniture Design and the Design Process",
+          "explanation": "The design process for a wood project typically follows: identifying a need/design brief, research, generating design ideas (sketches), selecting a final design, planning materials/construction sequence, making the product, and evaluating it against the original brief. Good furniture design considers function, ergonomics (fit for the user), aesthetics, and choice of appropriate materials/joints for the intended use.",
+          "key_facts": [
+            "A cutting list itemises all pieces of material needed (with dimensions) before construction begins",
+            "Costing a project involves calculating material cost, hardware/fittings cost, and sometimes labour time"
+          ]
+        },
+        {
+          "topic": "Wood Finishes and Preservation",
+          "explanation": "Finishes protect wood and improve appearance. Varnish and lacquer form a clear protective surface film; paint provides a coloured, opaque, fully protective coat; wood stain colours the wood while allowing the grain to show; wax/oil finishes penetrate and protect while giving a natural look. Preservatives (e.g. creosote) protect timber used outdoors or in ground contact from rot and insect attack.",
+          "key_facts": [
+            "Surface preparation (sanding, filling holes/cracks) before finishing is essential for a good final result",
+            "Outdoor timber (fence posts, structural timber) is often pressure-treated with preservative to resist decay and termite attack"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "Why is timber seasoned before use?",
+          "a": "To reduce moisture content so the wood does not shrink, warp, split or decay after it has been made into a product; seasoned timber is more stable and stronger."
+        },
+        {
+          "q": "Describe a mortice and tenon joint.",
+          "a": "A joint where a projecting tongue (tenon) cut on the end of one piece of timber fits into a matching rectangular hole (mortice) cut into another piece, forming a strong, often glued and sometimes pegged connection - commonly used in frame construction."
+        },
+        {
+          "q": "State one safety precaution when using a chisel.",
+          "a": "Always cut away from the body/hands, keeping both hands behind the cutting edge, and keep the chisel sharp (a blunt chisel requires more force and is more likely to slip)."
+        }
+      ]
+    },
+    "metal_technology_and_design": {
+      "subject_name": "Metal Technology and Design",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Metals: Properties and Classification",
+          "explanation": "Metals are classified as ferrous (contain iron, e.g. mild steel, cast iron - generally magnetic and prone to rusting) or non-ferrous (no iron, e.g. aluminium, copper, brass - generally non-magnetic and corrosion-resistant). Key mechanical properties include: hardness (resistance to scratching/indentation), malleability (ability to be hammered/rolled into shape without cracking), ductility (ability to be drawn into wire), tensile strength (resistance to being pulled apart), and elasticity (ability to return to original shape after a force is removed).",
+          "key_facts": [
+            "Mild steel is a common ferrous metal used in general fabrication - contains a low percentage of carbon (~0.1-0.3%), making it tough and easily worked but not very hard",
+            "Cast iron has a higher carbon content, making it hard and brittle - good for compression but poor under tension/impact",
+            "Aluminium is light, corrosion-resistant, and a good conductor of heat/electricity, used widely in construction and manufacturing"
+          ]
+        },
+        {
+          "topic": "Heat Treatment",
+          "explanation": "Heat treatment changes the internal structure of steel to alter its properties. Hardening involves heating steel to a specific temperature (until it becomes non-magnetic, indicating the correct structure change) then rapidly cooling it (quenching in water or oil) to make it very hard but brittle. Tempering follows hardening - reheating the hardened steel to a lower temperature and then cooling it, which reduces brittleness while retaining useful hardness. Annealing involves heating then cooling very slowly (often in the furnace) to soften the metal, relieve internal stresses, and make it easier to work.",
+          "key_facts": [
+            "Normalising is similar to annealing but with air cooling (faster than furnace cooling) - refines grain structure",
+            "Tempering colours (straw, brown, purple, blue) indicate temperature reached and are used to judge tempering for different tools"
+          ]
+        },
+        {
+          "topic": "Joining Processes",
+          "explanation": "Soldering uses a low-melting-point filler metal (solder) to join metals, mainly for electrical connections or thin sheet metal - it is a low-strength, low-temperature process. Brazing uses a higher-melting-point filler (usually brass-based) and produces stronger joints than soldering, without melting the base metal. Welding fuses the base metals themselves (with or without filler rod) using heat - common types include arc welding (uses an electric arc between an electrode and the workpiece) and gas welding (uses an oxy-acetylene flame).",
+          "key_facts": [
+            "Arc welding produces intense UV light and heat - requires a welding helmet, gloves and protective clothing",
+            "Gas welding equipment uses oxygen and acetylene gas cylinders with pressure regulators and a torch that mixes and burns the gases",
+            "Riveting and bolting are mechanical (non-heat) joining methods, useful where a permanent weld is not desired or heat would damage materials"
+          ]
+        },
+        {
+          "topic": "Machining Processes",
+          "explanation": "The lathe rotates the workpiece against a cutting tool to produce cylindrical shapes (turning), and can also perform facing, drilling and thread-cutting operations. The pillar drill bores holes using a rotating drill bit, with speed and feed adjusted for material type and hole size. Milling machines use a rotating multi-tooth cutter to remove material and shape flat or contoured surfaces.",
+          "key_facts": [
+            "Cutting speed must be matched to the material - too fast can overheat/blunt the tool, too slow reduces efficiency and can cause chatter",
+            "Workpieces must be securely clamped (e.g. in a chuck, vice, or clamps) before machining to prevent injury and inaccurate work"
+          ]
+        },
+        {
+          "topic": "Sheet Metal Work",
+          "explanation": "Involves cutting, bending, folding and joining thin metal sheet to make items such as trays, ducting, or containers. Common processes include marking out (using a scriber and steel rule), cutting (tin snips, guillotine), folding (using a folding bar/machine), and joining (folded seams, riveting, soldering).",
+          "key_facts": [
+            "A development (flat pattern) must be drawn accurately before cutting sheet metal, allowing for bends and seam allowances",
+            "Edges of cut sheet metal are often filed or folded to remove sharp burrs for safety"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "What is the difference between hardening and tempering?",
+          "a": "Hardening heats steel then rapidly quenches it to make it very hard but brittle. Tempering follows hardening by reheating to a lower temperature and cooling again, reducing brittleness while keeping useful hardness - making the steel tougher and less likely to shatter."
+        },
+        {
+          "q": "Name two ferrous metals and one property of each.",
+          "a": "Mild steel - tough and easily worked, low carbon content; Cast iron - hard and brittle, good in compression, poor under impact/tension."
+        },
+        {
+          "q": "Why must a welder wear a protective helmet during arc welding?",
+          "a": "Arc welding produces intense ultraviolet and infrared light that can cause serious eye damage ('arc eye') and skin burns, so a welding helmet with a darkened lens is required to protect the eyes and face."
+        }
+      ]
+    },
+    "building_technology_and_design": {
+      "subject_name": "Building Technology and Design",
+      "level": "Forms 1-4 (Ordinary Level); also offered at Advanced Level",
+      "topics": [
+        {
+          "topic": "Setting Out a Building",
+          "explanation": "Setting out establishes the exact position, size and shape of a building on site before construction starts, using profile boards (timber boards set up at corners with nails/marks indicating wall lines) and string lines. The 3-4-5 method is commonly used to check that corners are square: measuring 3 units along one wall line and 4 units along the perpendicular line, the diagonal between those points should measure exactly 5 units (based on the 3-4-5 right-angle triangle rule) if the corner is a true right angle.",
+          "key_facts": [
+            "A builder's square, spirit level, and line and pins are essential setting-out tools",
+            "Datum points/pegs establish reference levels for excavation and construction height"
+          ]
+        },
+        {
+          "topic": "Foundations",
+          "explanation": "Foundations transfer the building's load safely to the ground and must be appropriate for the soil type and building weight. Strip foundations (a continuous strip of concrete under load-bearing walls) are common for typical low-rise buildings on reasonably stable soil. Trench fill foundations fill the whole trench with concrete up to near ground level. Pad/pile foundations concentrate load at specific points (used under columns or on poor/soft soil).",
+          "key_facts": [
+            "Foundation depth must go below the level affected by seasonal ground movement (frost line/shrink-swell zone) to a stable bearing layer",
+            "Concrete used in foundations is usually a mix of cement, sand, aggregate (stone) and water - a common general mix ratio is 1:2:4 (cement:sand:aggregate) by volume, though exact mix depends on required strength"
+          ]
+        },
+        {
+          "topic": "Walling: Bricklaying and Blockwork",
+          "explanation": "Bricks/blocks are laid in courses using mortar (a mix of cement, sand and water) to bond them together. A 'bond' is the pattern in which bricks overlap to distribute load and add strength - common bonds include stretcher bond (most common, bricks laid lengthwise with each course offset by half a brick) and English/Flemish bond (alternating headers and stretchers, used for thicker/decorative walls).",
+          "key_facts": [
+            "A spirit level and gauge rod (marked with brick/mortar joint heights) ensure courses stay level and joints stay consistent",
+            "Mortar joints are typically around 10mm thick",
+            "A 'perpend' is the vertical joint between bricks in the same course - these should align vertically every other course in a stretcher bond"
+          ]
+        },
+        {
+          "topic": "Concrete Technology",
+          "explanation": "Concrete is a mixture of cement (the binder), fine aggregate (sand), coarse aggregate (stone) and water, which hardens through a chemical reaction (hydration) rather than simply drying. Reinforcement (steel bars/mesh) is added in areas of tension (e.g. beams, slabs) since concrete is strong in compression but weak in tension. Curing (keeping concrete moist for several days after placing, commonly 7+ days) is essential to allow the hydration reaction to complete and achieve full strength.",
+          "key_facts": [
+            "Slump test measures the workability/consistency of fresh concrete",
+            "Too much water weakens concrete strength once cured (a high water-cement ratio reduces final strength)",
+            "Concrete typically reaches most of its design strength after about 28 days of curing"
+          ]
+        },
+        {
+          "topic": "Roof Construction",
+          "explanation": "Roofs are constructed using trusses or traditional rafter/purlin framing to support roof coverings. Common roof shapes include gable (two sloping sides meeting at a ridge, with vertical triangular ends), hip (all sides slope down to the walls, no vertical ends), and lean-to/mono-pitch (single sloping surface). Roof coverings include corrugated iron/asbestos-cement sheets, tiles, and thatch.",
+          "key_facts": [
+            "Roof pitch (slope angle) affects water shedding - steeper pitches shed water/rain faster and are often needed for tiled or thatched roofs",
+            "Purlins are horizontal members that span between trusses/rafters to support the roof covering"
+          ]
+        },
+        {
+          "topic": "Plastering, Rendering and Finishes",
+          "explanation": "Plastering/rendering applies a smooth protective and decorative coat of mortar (cement, sand, sometimes lime, and water) to walls, usually in two coats - a rougher base/scratch coat for adhesion followed by a smoother finishing coat.",
+          "key_facts": [
+            "A wooden or steel float is used to apply and smooth plaster/render",
+            "Rendering protects masonry from weather and improves appearance; internal plastering also provides a surface ready for painting"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "What is the purpose of curing concrete?",
+          "a": "Curing keeps concrete moist after placing so the hydration (chemical hardening) reaction can complete fully, allowing the concrete to reach its designed strength; without proper curing, concrete can crack and lose strength."
+        },
+        {
+          "q": "Explain the 3-4-5 method used in setting out.",
+          "a": "It is a practical application of the right-angle triangle rule used to check that a corner is a true 90 degrees: measuring 3 units along one line and 4 units along the perpendicular line, the diagonal connecting those two points should measure exactly 5 units if the angle is truly square."
+        },
+        {
+          "q": "Why is steel reinforcement added to concrete beams?",
+          "a": "Concrete is strong in compression but weak in tension; steel reinforcement bars are added in the tension zones (e.g. the underside of a simply supported beam) to resist the tensile forces and prevent cracking/failure."
+        }
+      ]
+    },
+    "food_technology_and_design": {
+      "subject_name": "Food Technology and Design",
+      "level": "Forms 1-4 (Ordinary Level)",
+      "topics": [
+        {
+          "topic": "Nutrition Science",
+          "explanation": "Nutrients are grouped into: carbohydrates (main energy source - sugars and starches, e.g. sadza/maize meal, bread, rice), proteins (growth and repair of body tissue, e.g. meat, beans, eggs, milk - can be complete/first-class from animal sources or incomplete/second-class from most plant sources), fats/lipids (concentrated energy source and insulation, e.g. cooking oil, butter), vitamins (regulate body processes, e.g. Vitamin C for immunity/wound healing, Vitamin A for eyesight), minerals (e.g. iron for blood/haemoglobin, calcium for bones/teeth), and water (essential for all body processes, temperature regulation, transport of nutrients).",
+          "key_facts": [
+            "A balanced diet supplies the correct proportions of all nutrient groups needed for a person's age, activity level and health status",
+            "Deficiency diseases result from lack of specific nutrients - e.g. kwashiorkor (protein deficiency), anaemia (iron deficiency), scurvy (Vitamin C deficiency), rickets (Vitamin D/calcium deficiency)",
+            "Special dietary needs vary by life stage/condition: infants, pregnant/lactating women, the elderly, diabetics, and people with food allergies all require adjusted diets"
+          ]
+        },
+        {
+          "topic": "Food Preparation Methods",
+          "explanation": "Cooking methods include boiling (cooking in liquid at 100°C), steaming (cooking using steam, retains more nutrients than boiling), frying (cooking in fat/oil - shallow or deep frying), grilling/roasting (dry heat cooking, often over/under direct heat), baking (dry heat in an oven, used for bread/cakes), and stewing (slow, moist cooking at lower temperature, tenderises tougher cuts of meat).",
+          "key_facts": [
+            "Steaming and microwaving generally retain more water-soluble vitamins (like Vitamin C and B vitamins) than boiling, since fewer nutrients leach into cooking water",
+            "Correct cooking temperatures and times are essential both for food safety (destroying harmful bacteria) and for palatability/texture"
+          ]
+        },
+        {
+          "topic": "Food Preservation and Processing",
+          "explanation": "Preservation methods extend shelf life by preventing microbial growth and spoilage: drying/dehydration (removes moisture bacteria need to grow), canning (sealing food in airtight containers after heat treatment to destroy microorganisms), freezing (slows microbial activity and enzyme action via low temperature), salting/curing and sugaring (draw out moisture via osmosis, creating an environment hostile to bacteria), and fermentation (uses beneficial microorganisms, e.g. in making yoghurt or traditional fermented porridge/mahewu).",
+          "key_facts": [
+            "Freezing does not kill bacteria, it only slows their growth - food can still spoil once thawed if not handled properly",
+            "Canned food must be processed at sufficient temperature/time to destroy dangerous bacteria such as Clostridium botulinum"
+          ]
+        },
+        {
+          "topic": "Food Safety and Hygiene",
+          "explanation": "Covers preventing food contamination (biological - bacteria/viruses/parasites, chemical - e.g. pesticide residue, and physical - e.g. hair, glass) and food poisoning. Good practice includes handwashing, keeping raw and cooked foods separate (to avoid cross-contamination), correct storage temperatures (keeping perishable food out of the 'danger zone' of roughly 5-60°C where bacteria multiply fastest), and maintaining clean equipment and surfaces.",
+          "key_facts": [
+            "Common food poisoning bacteria include Salmonella, E. coli, and Staphylococcus aureus",
+            "Perishable foods should be refrigerated below 5°C and thoroughly cooked foods should reach a safe internal temperature to kill pathogens"
+          ]
+        },
+        {
+          "topic": "Menu Planning and Meal Management",
+          "explanation": "Menu planning considers the nutritional needs of those being catered for, the occasion, budget, seasonal availability of ingredients, variety in colour/texture/flavour, and time/equipment available for preparation.",
+          "key_facts": [
+            "A well-planned menu balances nutrient groups across the day/meal and avoids repetition of the same food/cooking method in one meal",
+            "Costing a menu involves calculating ingredient quantities and prices to stay within a set budget per person"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "Name the main nutrient groups and one function of each.",
+          "a": "Carbohydrates (energy), Proteins (growth and repair), Fats (concentrated energy and insulation), Vitamins (regulate body processes), Minerals (e.g. bone/blood health), Water (essential for all body processes/transport)."
+        },
+        {
+          "q": "Why is steaming considered healthier than boiling for vegetables?",
+          "a": "Steaming exposes food to less direct contact with water, so fewer water-soluble vitamins (like Vitamin C) leach out into the cooking liquid compared to boiling."
+        },
+        {
+          "q": "State two ways of preventing cross-contamination in the kitchen.",
+          "a": "Use separate chopping boards/utensils for raw and cooked foods, and always wash hands and surfaces after handling raw meat before touching other food."
+        }
+      ]
+    },
+    "textile_technology_and_design": {
+      "subject_name": "Textile Technology and Design",
+      "level": "Forms 1-4 (Ordinary Level); also offered at Advanced Level",
+      "topics": [
+        {
+          "topic": "Textile Fibres",
+          "explanation": "Fibres are classified as natural (from plant sources like cotton and linen/flax, or animal sources like wool and silk) or synthetic/man-made (produced from chemicals, e.g. polyester, nylon, acrylic - often derived from petroleum, or regenerated fibres like rayon/viscose made from processed natural cellulose). Fibre type determines properties like absorbency, warmth, strength, elasticity, crease resistance and care requirements.",
+          "key_facts": [
+            "Cotton is absorbent, cool to wear, and comfortable, but creases easily and shrinks if not pre-treated",
+            "Wool is warm, elastic and absorbent but can shrink/felt if washed incorrectly (needs careful washing, often by hand or wool cycle)",
+            "Polyester is strong, crease-resistant and quick-drying but less absorbent/breathable than natural fibres and can build static",
+            "Blended fabrics (e.g. polyester-cotton) combine properties of two or more fibre types"
+          ]
+        },
+        {
+          "topic": "Fabric Construction",
+          "explanation": "Woven fabric is made by interlacing two sets of yarns at right angles on a loom - the lengthwise yarns (warp) and crosswise yarns (weft). Basic weaves include plain weave (simplest, over-under pattern, strong and stable), twill weave (diagonal pattern, e.g. denim - strong and durable), and satin weave (long floats give a smooth, shiny surface). Knitted fabric is made by interlocking loops of yarn (weft knitting, like a jumper, or warp knitting) giving it more stretch/elasticity than woven fabric. Non-woven fabrics (e.g. felt) are made by bonding/matting fibres together without weaving or knitting.",
+          "key_facts": [
+            "Woven fabrics generally have less stretch than knitted fabrics, which is why knitwear is often used for close-fitting or stretch garments",
+            "The 'grain' of woven fabric (direction of the warp threads) is important in pattern layout to ensure garments hang correctly"
+          ]
+        },
+        {
+          "topic": "Pattern Drafting and Garment Construction",
+          "explanation": "Pattern drafting involves creating a template (from body/garment measurements) used to cut fabric pieces accurately for a garment. Basic sewing techniques include seams (joining fabric pieces, e.g. plain/open seam, French seam for a neat enclosed edge), hems (finishing raw edges at the bottom of garments), fastenings (buttons, zips, hooks and eyes, Velcro), and darts (folds sewn to shape flat fabric around body curves, e.g. at the bust or waist).",
+          "key_facts": [
+            "Seam allowance is the extra fabric (typically ~1.5cm) left beyond the stitch line for joining pieces together",
+            "A French seam encloses the raw edges inside the seam for a neat, durable finish often used on sheer or delicate fabrics",
+            "Understitching and topstitching are techniques used to keep facings/seams flat and neat"
+          ]
+        },
+        {
+          "topic": "The Design Process in Fashion/Textiles",
+          "explanation": "Follows a similar structure to other design/technology subjects: identifying a design brief/need, researching (fabric, styles, target user), generating design ideas through sketches (fashion illustration), selecting fabric/colour/trims, making a toile (test garment) or pattern, constructing the final garment, and evaluating the outcome against the original brief.",
+          "key_facts": [
+            "Elements of design include line, shape, colour, texture and pattern; principles include balance, proportion, contrast and emphasis",
+            "A mood board is often used to collect inspiration (colours, fabrics, images) before finalising a design"
+          ]
+        },
+        {
+          "topic": "Fabric Care and Maintenance",
+          "explanation": "Correct care extends the life of textile items. Care labels use standard symbols to show recommended washing temperature, drying method, ironing temperature, and whether dry cleaning is required/bleaching is safe.",
+          "key_facts": [
+            "A washtub symbol with a number indicates maximum safe washing temperature in Celsius",
+            "A crossed-out iron symbol means the item should not be ironed; dots on an iron symbol indicate safe heat settings (low/medium/high)"
+          ]
+        }
+      ],
+      "sample_questions": [
+        {
+          "q": "Give two properties of cotton as a textile fibre.",
+          "a": "Cotton is highly absorbent and comfortable/cool to wear, but it creases easily and can shrink if not treated before use."
+        },
+        {
+          "q": "What is the difference between woven and knitted fabric?",
+          "a": "Woven fabric is made by interlacing two sets of yarns (warp and weft) at right angles on a loom, giving a stable structure with limited stretch. Knitted fabric is made by interlocking loops of a single yarn, giving it more elasticity/stretch."
+        },
+        {
+          "q": "Why is a seam allowance needed when cutting a garment pattern?",
+          "a": "It provides extra fabric beyond the stitch line so that pieces can be joined together (sewn) without the finished garment ending up too small, and it allows the seam to be neatened or adjusted."
+        }
+      ]
+    }
+  },
+  "recommendation": "This expanded reference gives real explanatory content, key facts and sample Q&A per topic so it can directly answer typical student questions. For exact official mark schemes, paper durations, and any wording required for formal exam preparation, still cross-check https://www5.zimsec.co.zw/syllabi/."
+}

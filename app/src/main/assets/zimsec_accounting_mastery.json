@@ -1,0 +1,47 @@
+[
+  {
+    "id": "acc_mastery_books_1",
+    "level": "O-Level",
+    "subject": "Principles of Accounts",
+    "topic": "Books of Original Entry and the Cash Book",
+    "content": "Books of Original Entry are where transactions are first recorded before being posted to the ledgers. 1. Sales Journal: For credit sales of goods. 2. Purchases Journal: For credit purchases of goods. 3. Sales Returns Journal (Returns Inwards): For goods returned by customers. 4. Purchases Returns Journal (Returns Outwards): For goods returned to suppliers. 5. General Journal: For non-routine transactions like the purchase of fixed assets on credit, correction of errors, and opening entries. 6. The Cash Book: This is a book of original entry AND a ledger account. - Two-Column Cash Book: Has columns for Cash and Bank. - Three-Column Cash Book: Adds a 'Discount' column. Discount Allowed is on the Debit side (an expense), and Discount Received is on the Credit side (an income). 7. Petty Cash Book: Used for small, frequent payments (e.g., milk, stamps). It usually operates on the 'Imprest System', where the petty cashier starts with a fixed 'Float'. At the end of the period, the petty cashier is reimbursed the exact amount spent to restore the float. This system helps prevent theft and keeps the main Cash Book from being cluttered with tiny transactions.",
+    "source": "ZIMSEC Accounting Mastery Series",
+    "keywords": ["cash book", "journals", "petty cash", "imprest system", "discount", "accounting"]
+  },
+  {
+    "id": "acc_mastery_depreciation_1",
+    "level": "O-Level",
+    "subject": "Principles of Accounts",
+    "topic": "Accounting for the Depreciation of Non-Current Assets",
+    "content": "Depreciation is the systematic allocation of the cost of a non-current asset over its useful life. It is an application of the 'Matching Principle'. 1. Causes: Wear and tear, obsolescence (technology changes), and passage of time (depletion). 2. Methods: - Straight Line Method: The same amount is charged every year. Formula: (Cost - Scrap Value) / Useful Life. - Reducing Balance Method: A fixed percentage is applied to the 'Book Value' (Cost - Accumulated Depreciation) each year. This results in higher charges in early years. - Revaluation Method: Used for small assets like tools. (Opening Value + Additions) - Closing Value = Depreciation. 3. Accounting Entries: - Annual Charge: DR Depreciation Expense, CR Provision for Depreciation. - Disposal of an Asset: When an asset is sold, it is moved to a 'Disposal Account'. The difference between the sale price and the book value is either a 'Profit on Disposal' (CR Profit or Loss) or a 'Loss on Disposal' (DR Profit or Loss). Proper depreciation ensures that the Statement of Financial Position shows a realistic value for assets.",
+    "source": "ZIMSEC Accounting Mastery Series",
+    "keywords": ["depreciation", "straight line", "reducing balance", "disposal", "provision", "matching principle", "accounting"]
+  },
+  {
+    "id": "acc_mastery_accruals_1",
+    "level": "O-Level",
+    "subject": "Principles of Accounts",
+    "topic": "Adjustments: Accruals and Prepayments",
+    "content": "At the end of an accounting period, adjustments are needed to ensure the Profit or Loss account reflects the true income and expenses for that period. 1. Accrued Expenses: Expenses incurred but not yet paid (e.g., electricity used in December but bill paid in January). These are ADDED to the expense and shown as a 'Current Liability'. 2. Prepaid Expenses: Expenses paid in advance (e.g., insurance paid for 15 months). The extra 3 months are SUBTRACTED and shown as a 'Current Asset'. 3. Accrued Income: Income earned but not yet received. ADDED to income and shown as a 'Current Asset'. 4. Prepaid Income (Income Received in Advance): Income received for a future period. SUBTRACTED and shown as a 'Current Liability'. These adjustments follow the 'Accruals Concept' (or Matching Concept), which states that revenue and costs are recognized as they are earned or incurred, not when money changes hands. This is vital for calculating a fair and accurate profit figure.",
+    "source": "ZIMSEC Accounting Mastery Series",
+    "keywords": ["accruals", "prepayments", "adjustments", "matching concept", "current asset", "current liability", "accounting"]
+  },
+  {
+    "id": "acc_mastery_doubtful_debts_1",
+    "level": "O-Level",
+    "subject": "Principles of Accounts",
+    "topic": "Bad Debts and Provision for Doubtful Debts",
+    "content": "When a credit customer cannot pay, it is a loss for the business. 1. Bad Debts: A debt that is definitely uncollectible. Entry: DR Bad Debts (expense), CR the Customer's Account. If a bad debt is later recovered: DR Cash/Bank, CR 'Bad Debts Recovered' (income). 2. Provision for Doubtful Debts: This is an estimate of the debts that *might* become bad in the future, based on the 'Prudence Concept'. Entry to create: DR Profit or Loss, CR Provision for Doubtful Debts. 3. Adjusting the Provision: - Increase in Provision: DR Profit or Loss (as an expense), CR Provision. - Decrease in Provision: DR Provision, CR Profit or Loss (as an income). On the Statement of Financial Position, the Provision is subtracted from 'Trade Receivables' to show the 'Net Realizable Value' of the debtors. This ensures the business does not overstate its assets.",
+    "source": "ZIMSEC Accounting Mastery Series",
+    "keywords": ["bad debts", "doubtful debts", "provision", "prudence concept", "trade receivables", "accounting"]
+  },
+  {
+    "id": "acc_mastery_not_for_profit_1",
+    "level": "O-Level",
+    "subject": "Principles of Accounts",
+    "topic": "Accounts for Not-for-Profit Organizations (Clubs)",
+    "content": "Organizations like social clubs, charities, and sports teams don't aim for profit, so their terminology is different. 1. Receipts and Payments Account: This is essentially a summarized Cash Book, showing all money in and out. 2. Income and Expenditure Account: This is the equivalent of a Profit and Loss account. Instead of 'Net Profit', it shows a 'Surplus' (Income > Expenditure). Instead of 'Net Loss', it shows a 'Deficit'. 3. Accumulated Fund: This replaces 'Capital' and represents the total value owned by the members. 4. Key Income Source: 'Subscriptions' (membership fees). A Subscription Account is often needed to handle accruals (subscriptions in arrears) and prepayments (subscriptions in advance). 5. Life Membership: Sometimes treated as a liability and released to income over several years. 6. Fundraising: The profit from a specific event (e.g., a dance or tuck shop) is shown as a single 'Profit from...' figure in the Income and Expenditure Account.",
+    "source": "ZIMSEC Accounting Mastery Series",
+    "keywords": ["clubs", "not-for-profit", "subscriptions", "surplus", "deficit", "accumulated fund", "accounting"]
+  }
+]

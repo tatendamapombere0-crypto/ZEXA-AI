@@ -1,0 +1,2724 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "A-Level",
+    "paperCode": "9154/2",
+    "paperName": "Mathematics A-Level Paper 2 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "sourceBasis": [
+      "ZIMSEC Mathematics syllabus/topic coverage",
+      "ZIMSEC past-paper style and assessment patterns for June 2023-2026",
+      "Original questions generated for this exam bank; not transcriptions of past papers"
+    ],
+    "yearsReferenced": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "questionCount": 150,
+    "note": "Questions are original ZIMSEC-aligned practice questions. They are designed to reflect syllabus coverage and examination style without reproducing copyrighted past-paper text."
+  },
+  "questions": [
+    {
+      "id": "math_al_p2_001",
+      "questionNumber": 1,
+      "questionText": "Solve completely the inequality x² − 2x + 3 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_002",
+      "questionNumber": 2,
+      "questionText": "Find the stationary points of y=x³−3x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "No real stationary points",
+      "explanation": "The discriminant of 3x²−6x+4 is negative, so dy/dx=0 has no real solution.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_003",
+      "questionNumber": 3,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_004",
+      "questionNumber": 4,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_005",
+      "questionNumber": 5,
+      "questionText": "Let z=6+1i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=35+12i; |z|=√37; 1/z=(6−1i)/37",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_006",
+      "questionNumber": 6,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_007",
+      "questionNumber": 7,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_008",
+      "questionNumber": 8,
+      "questionText": "Given A=[[4,1],[2,6]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/22 [[6,−1],[−2,4]]",
+      "explanation": "det(A)=4×6−2=22; the inverse is (1/det)[[6,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_009",
+      "questionNumber": 9,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_010",
+      "questionNumber": 10,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_011",
+      "questionNumber": 11,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_012",
+      "questionNumber": 12,
+      "questionText": "Find the general solution of dy/dx + 3y = 6e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (6x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=6; integration gives ye^(3x)=6x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_013",
+      "questionNumber": 13,
+      "questionText": "Find the distance from the point (4,3) to the line 4x + 3y − 12=0.",
+      "options": [],
+      "correctAnswer": "2.600",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 2.600 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_014",
+      "questionNumber": 14,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_015",
+      "questionNumber": 15,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_016",
+      "questionNumber": 16,
+      "questionText": "Solve completely the inequality x² − 2x + 6 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_017",
+      "questionNumber": 17,
+      "questionText": "Find the stationary points of y=x³−6x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "x≈0.367, y≈0.709; x≈3.633, y≈-16.709. Classify using the second derivative.",
+      "explanation": "Set dy/dx=3x²−12x+4=0. Then use d²y/dx²=6x−12; a positive value indicates a local minimum and a negative value a local maximum.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_018",
+      "questionNumber": 18,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_019",
+      "questionNumber": 19,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_020",
+      "questionNumber": 20,
+      "questionText": "Let z=6+4i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=20+48i; |z|=√52; 1/z=(6−4i)/52",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_021",
+      "questionNumber": 21,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_022",
+      "questionNumber": 22,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_023",
+      "questionNumber": 23,
+      "questionText": "Given A=[[4,1],[2,5]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/18 [[5,−1],[−2,4]]",
+      "explanation": "det(A)=4×5−2=18; the inverse is (1/det)[[5,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_024",
+      "questionNumber": 24,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_025",
+      "questionNumber": 25,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_026",
+      "questionNumber": 26,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_027",
+      "questionNumber": 27,
+      "questionText": "Find the general solution of dy/dx + 3y = 5e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (5x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=5; integration gives ye^(3x)=5x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_028",
+      "questionNumber": 28,
+      "questionText": "Find the distance from the point (4,6) to the line 4x + 6y − 24=0.",
+      "options": [],
+      "correctAnswer": "3.883",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 3.883 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_029",
+      "questionNumber": 29,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_030",
+      "questionNumber": 30,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_031",
+      "questionNumber": 31,
+      "questionText": "Solve completely the inequality x² − 2x + 5 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_032",
+      "questionNumber": 32,
+      "questionText": "Find the stationary points of y=x³−3x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "No real stationary points",
+      "explanation": "The discriminant of 3x²−6x+4 is negative, so dy/dx=0 has no real solution.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_033",
+      "questionNumber": 33,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_034",
+      "questionNumber": 34,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_035",
+      "questionNumber": 35,
+      "questionText": "Let z=6+3i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=27+36i; |z|=√45; 1/z=(6−3i)/45",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_036",
+      "questionNumber": 36,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_037",
+      "questionNumber": 37,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_038",
+      "questionNumber": 38,
+      "questionText": "Given A=[[4,1],[2,4]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/14 [[4,−1],[−2,4]]",
+      "explanation": "det(A)=4×4−2=14; the inverse is (1/det)[[4,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_039",
+      "questionNumber": 39,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_040",
+      "questionNumber": 40,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_041",
+      "questionNumber": 41,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_042",
+      "questionNumber": 42,
+      "questionText": "Find the general solution of dy/dx + 3y = 4e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (4x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=4; integration gives ye^(3x)=4x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_043",
+      "questionNumber": 43,
+      "questionText": "Find the distance from the point (4,5) to the line 4x + 5y − 20=0.",
+      "options": [],
+      "correctAnswer": "3.280",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 3.280 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_044",
+      "questionNumber": 44,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_045",
+      "questionNumber": 45,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_046",
+      "questionNumber": 46,
+      "questionText": "Solve completely the inequality x² − 2x + 4 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_047",
+      "questionNumber": 47,
+      "questionText": "Find the stationary points of y=x³−6x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "x≈0.367, y≈0.709; x≈3.633, y≈-16.709. Classify using the second derivative.",
+      "explanation": "Set dy/dx=3x²−12x+4=0. Then use d²y/dx²=6x−12; a positive value indicates a local minimum and a negative value a local maximum.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_048",
+      "questionNumber": 48,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_049",
+      "questionNumber": 49,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_050",
+      "questionNumber": 50,
+      "questionText": "Let z=6+2i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=32+24i; |z|=√40; 1/z=(6−2i)/40",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_051",
+      "questionNumber": 51,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_052",
+      "questionNumber": 52,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_053",
+      "questionNumber": 53,
+      "questionText": "Given A=[[4,1],[2,3]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/10 [[3,−1],[−2,4]]",
+      "explanation": "det(A)=4×3−2=10; the inverse is (1/det)[[3,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_054",
+      "questionNumber": 54,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_055",
+      "questionNumber": 55,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_056",
+      "questionNumber": 56,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_057",
+      "questionNumber": 57,
+      "questionText": "Find the general solution of dy/dx + 3y = 3e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (3x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=3; integration gives ye^(3x)=3x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_058",
+      "questionNumber": 58,
+      "questionText": "Find the distance from the point (4,4) to the line 4x + 4y − 16=0.",
+      "options": [],
+      "correctAnswer": "2.828",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 2.828 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_059",
+      "questionNumber": 59,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_060",
+      "questionNumber": 60,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_061",
+      "questionNumber": 61,
+      "questionText": "Solve completely the inequality x² − 2x + 3 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_062",
+      "questionNumber": 62,
+      "questionText": "Find the stationary points of y=x³−3x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "No real stationary points",
+      "explanation": "The discriminant of 3x²−6x+4 is negative, so dy/dx=0 has no real solution.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_063",
+      "questionNumber": 63,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_064",
+      "questionNumber": 64,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_065",
+      "questionNumber": 65,
+      "questionText": "Let z=6+1i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=35+12i; |z|=√37; 1/z=(6−1i)/37",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_066",
+      "questionNumber": 66,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_067",
+      "questionNumber": 67,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_068",
+      "questionNumber": 68,
+      "questionText": "Given A=[[4,1],[2,6]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/22 [[6,−1],[−2,4]]",
+      "explanation": "det(A)=4×6−2=22; the inverse is (1/det)[[6,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_069",
+      "questionNumber": 69,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_070",
+      "questionNumber": 70,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_071",
+      "questionNumber": 71,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_072",
+      "questionNumber": 72,
+      "questionText": "Find the general solution of dy/dx + 3y = 6e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (6x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=6; integration gives ye^(3x)=6x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_073",
+      "questionNumber": 73,
+      "questionText": "Find the distance from the point (4,3) to the line 4x + 3y − 12=0.",
+      "options": [],
+      "correctAnswer": "2.600",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 2.600 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_074",
+      "questionNumber": 74,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_075",
+      "questionNumber": 75,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_076",
+      "questionNumber": 76,
+      "questionText": "Solve completely the inequality x² − 2x + 6 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_077",
+      "questionNumber": 77,
+      "questionText": "Find the stationary points of y=x³−6x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "x≈0.367, y≈0.709; x≈3.633, y≈-16.709. Classify using the second derivative.",
+      "explanation": "Set dy/dx=3x²−12x+4=0. Then use d²y/dx²=6x−12; a positive value indicates a local minimum and a negative value a local maximum.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_078",
+      "questionNumber": 78,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_079",
+      "questionNumber": 79,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_080",
+      "questionNumber": 80,
+      "questionText": "Let z=6+4i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=20+48i; |z|=√52; 1/z=(6−4i)/52",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_081",
+      "questionNumber": 81,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_082",
+      "questionNumber": 82,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_083",
+      "questionNumber": 83,
+      "questionText": "Given A=[[4,1],[2,5]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/18 [[5,−1],[−2,4]]",
+      "explanation": "det(A)=4×5−2=18; the inverse is (1/det)[[5,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_084",
+      "questionNumber": 84,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_085",
+      "questionNumber": 85,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_086",
+      "questionNumber": 86,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_087",
+      "questionNumber": 87,
+      "questionText": "Find the general solution of dy/dx + 3y = 5e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (5x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=5; integration gives ye^(3x)=5x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_088",
+      "questionNumber": 88,
+      "questionText": "Find the distance from the point (4,6) to the line 4x + 6y − 24=0.",
+      "options": [],
+      "correctAnswer": "3.883",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 3.883 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_089",
+      "questionNumber": 89,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_090",
+      "questionNumber": 90,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_091",
+      "questionNumber": 91,
+      "questionText": "Solve completely the inequality x² − 2x + 5 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_092",
+      "questionNumber": 92,
+      "questionText": "Find the stationary points of y=x³−3x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "No real stationary points",
+      "explanation": "The discriminant of 3x²−6x+4 is negative, so dy/dx=0 has no real solution.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_093",
+      "questionNumber": 93,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_094",
+      "questionNumber": 94,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_095",
+      "questionNumber": 95,
+      "questionText": "Let z=6+3i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=27+36i; |z|=√45; 1/z=(6−3i)/45",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_096",
+      "questionNumber": 96,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_097",
+      "questionNumber": 97,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_098",
+      "questionNumber": 98,
+      "questionText": "Given A=[[4,1],[2,4]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/14 [[4,−1],[−2,4]]",
+      "explanation": "det(A)=4×4−2=14; the inverse is (1/det)[[4,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_099",
+      "questionNumber": 99,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_100",
+      "questionNumber": 100,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_101",
+      "questionNumber": 101,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_102",
+      "questionNumber": 102,
+      "questionText": "Find the general solution of dy/dx + 3y = 4e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (4x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=4; integration gives ye^(3x)=4x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_103",
+      "questionNumber": 103,
+      "questionText": "Find the distance from the point (4,5) to the line 4x + 5y − 20=0.",
+      "options": [],
+      "correctAnswer": "3.280",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 3.280 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_104",
+      "questionNumber": 104,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_105",
+      "questionNumber": 105,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_106",
+      "questionNumber": 106,
+      "questionText": "Solve completely the inequality x² − 2x + 4 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_107",
+      "questionNumber": 107,
+      "questionText": "Find the stationary points of y=x³−6x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "x≈0.367, y≈0.709; x≈3.633, y≈-16.709. Classify using the second derivative.",
+      "explanation": "Set dy/dx=3x²−12x+4=0. Then use d²y/dx²=6x−12; a positive value indicates a local minimum and a negative value a local maximum.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_108",
+      "questionNumber": 108,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_109",
+      "questionNumber": 109,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_110",
+      "questionNumber": 110,
+      "questionText": "Let z=6+2i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=32+24i; |z|=√40; 1/z=(6−2i)/40",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_111",
+      "questionNumber": 111,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_112",
+      "questionNumber": 112,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_113",
+      "questionNumber": 113,
+      "questionText": "Given A=[[4,1],[2,3]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/10 [[3,−1],[−2,4]]",
+      "explanation": "det(A)=4×3−2=10; the inverse is (1/det)[[3,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_114",
+      "questionNumber": 114,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_115",
+      "questionNumber": 115,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_116",
+      "questionNumber": 116,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_117",
+      "questionNumber": 117,
+      "questionText": "Find the general solution of dy/dx + 3y = 3e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (3x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=3; integration gives ye^(3x)=3x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_118",
+      "questionNumber": 118,
+      "questionText": "Find the distance from the point (4,4) to the line 4x + 4y − 16=0.",
+      "options": [],
+      "correctAnswer": "2.828",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 2.828 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_119",
+      "questionNumber": 119,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_120",
+      "questionNumber": 120,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_121",
+      "questionNumber": 121,
+      "questionText": "Solve completely the inequality x² − 2x + 3 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_122",
+      "questionNumber": 122,
+      "questionText": "Find the stationary points of y=x³−3x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "No real stationary points",
+      "explanation": "The discriminant of 3x²−6x+4 is negative, so dy/dx=0 has no real solution.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_123",
+      "questionNumber": 123,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_124",
+      "questionNumber": 124,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_125",
+      "questionNumber": 125,
+      "questionText": "Let z=6+1i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=35+12i; |z|=√37; 1/z=(6−1i)/37",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_126",
+      "questionNumber": 126,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_127",
+      "questionNumber": 127,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_128",
+      "questionNumber": 128,
+      "questionText": "Given A=[[4,1],[2,6]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/22 [[6,−1],[−2,4]]",
+      "explanation": "det(A)=4×6−2=22; the inverse is (1/det)[[6,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_129",
+      "questionNumber": 129,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_130",
+      "questionNumber": 130,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_131",
+      "questionNumber": 131,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_132",
+      "questionNumber": 132,
+      "questionText": "Find the general solution of dy/dx + 3y = 6e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (6x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=6; integration gives ye^(3x)=6x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_133",
+      "questionNumber": 133,
+      "questionText": "Find the distance from the point (4,3) to the line 4x + 3y − 12=0.",
+      "options": [],
+      "correctAnswer": "2.600",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 2.600 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_134",
+      "questionNumber": 134,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_135",
+      "questionNumber": 135,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_136",
+      "questionNumber": 136,
+      "questionText": "Solve completely the inequality x² − 2x + 6 < 0. Give your answer in interval notation where appropriate.",
+      "options": [],
+      "correctAnswer": "No real x",
+      "explanation": "The discriminant is negative and the leading coefficient is positive, so the quadratic is always positive.",
+      "answerConfidence": "high",
+      "topic": "Inequalities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_137",
+      "questionNumber": 137,
+      "questionText": "Find the stationary points of y=x³−6x²+4x and classify them.",
+      "options": [],
+      "correctAnswer": "x≈0.367, y≈0.709; x≈3.633, y≈-16.709. Classify using the second derivative.",
+      "explanation": "Set dy/dx=3x²−12x+4=0. Then use d²y/dx²=6x−12; a positive value indicates a local minimum and a negative value a local maximum.",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_138",
+      "questionNumber": 138,
+      "questionText": "Evaluate ∫ x(4+x)² dx.",
+      "options": [],
+      "correctAnswer": "16/2 x² + 8/3 x³ + 1/4 x⁴ + C",
+      "explanation": "Expand to 16x+8x²+x³, then integrate term by term.",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_139",
+      "questionNumber": 139,
+      "questionText": "Prove the identity: (1−cos 2θ)/sin 2θ = tan θ, where defined.",
+      "options": [],
+      "correctAnswer": "Identity proved.",
+      "explanation": "Use 1−cos2θ=2sin²θ and sin2θ=2sinθcosθ. The quotient becomes (2sin²θ)/(2sinθcosθ)=tanθ.",
+      "answerConfidence": "high",
+      "topic": "Trigonometric identities",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_140",
+      "questionNumber": 140,
+      "questionText": "Let z=6+4i. Find z², |z| and 1/z.",
+      "options": [],
+      "correctAnswer": "z²=20+48i; |z|=√52; 1/z=(6−4i)/52",
+      "explanation": "Use (a+bi)²=(a²−b²)+2abi, |z|=√(a²+b²), and 1/z=(a−bi)/(a²+b²).",
+      "answerConfidence": "high",
+      "topic": "Complex numbers",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_141",
+      "questionNumber": 141,
+      "questionText": "An arithmetic sequence has first term 2 and common difference 4. Derive its nth term and sum of the first n terms.",
+      "options": [],
+      "correctAnswer": "Tn=2+4(n−1); Sn=n/2[2(2)+4(n−1)]",
+      "explanation": "Use Tn=a+(n−1)d and Sn=n/2[2a+(n−1)d].",
+      "answerConfidence": "high",
+      "topic": "Sequences and series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_142",
+      "questionNumber": 142,
+      "questionText": "Find the term independent of x in the expansion of (2x + 1/x)^7.",
+      "options": [],
+      "correctAnswer": "No term independent of x",
+      "explanation": "Since 7 is odd, the exponent 7−2k can never be zero for integer k.",
+      "answerConfidence": "high",
+      "topic": "Binomial expansion",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_143",
+      "questionNumber": 143,
+      "questionText": "Given A=[[4,1],[2,5]], find A⁻¹ and verify AA⁻¹=I.",
+      "options": [],
+      "correctAnswer": "A⁻¹=1/18 [[5,−1],[−2,4]]",
+      "explanation": "det(A)=4×5−2=18; the inverse is (1/det)[[5,−1],[−2,4]]. Multiplication with A gives I.",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_144",
+      "questionNumber": 144,
+      "questionText": "Find the equation of the normal to y=x²−2x+4 at x=5.",
+      "options": [],
+      "correctAnswer": "Normal gradient=-0.125; equation y=-0.125x+19.625",
+      "explanation": "Curve gradient is 2x−2=8; normal gradient is −1/8=-0.125. Use point (5,19) to form the line.",
+      "answerConfidence": "high",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_145",
+      "questionNumber": 145,
+      "questionText": "Find the area between y=x² and y=6x for x≥0.",
+      "options": [],
+      "correctAnswer": "36 square units",
+      "explanation": "Intersections are x=0 and x=6. Area=∫₀^6(6x−x²)dx=36.",
+      "answerConfidence": "high",
+      "topic": "Applications of integration",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_146",
+      "questionNumber": 146,
+      "questionText": "Using mathematical induction, prove that 1+2+…+n = n(n+1)/2.",
+      "options": [],
+      "correctAnswer": "Proof by induction.",
+      "explanation": "Base case n=1: 1=1(2)/2. Assume true for n=k. Then 1+…+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2, proving the statement for k+1.",
+      "answerConfidence": "high",
+      "topic": "Mathematical induction",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_147",
+      "questionNumber": 147,
+      "questionText": "Find the general solution of dy/dx + 3y = 5e^(−3x).",
+      "options": [],
+      "correctAnswer": "y = (5x + C)e^(−3x)",
+      "explanation": "The integrating factor is e^(3x). Thus d/dx(ye^(3x))=5; integration gives ye^(3x)=5x+C.",
+      "answerConfidence": "high",
+      "topic": "Differential equations",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_148",
+      "questionNumber": 148,
+      "questionText": "Find the distance from the point (4,6) to the line 4x + 6y − 24=0.",
+      "options": [],
+      "correctAnswer": "3.883",
+      "explanation": "Use |Ax₁+By₁+C|/√(A²+B²); the distance is approximately 3.883 units.",
+      "answerConfidence": "high",
+      "topic": "Coordinate geometry",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_149",
+      "questionNumber": 149,
+      "questionText": "Find dy/dx and the stationary point of y=5ln x−x² for x>0.",
+      "options": [],
+      "correctAnswer": "dy/dx=5/x−2x; stationary point approximately (1.581, -0.209)",
+      "explanation": "dy/dx=5/x−2x. Setting it to zero gives x²=5/2, so x=√(5/2)≈1.581; substitution gives y≈-0.209.",
+      "answerConfidence": "high",
+      "topic": "Logarithmic differentiation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "math_al_p2_150",
+      "questionNumber": 150,
+      "questionText": "Evaluate the infinite geometric series 6 + 6/3 + 6/9 + … and state the condition used.",
+      "options": [],
+      "correctAnswer": "9",
+      "explanation": "Here a=6, r=1/3 and |r|<1. Therefore S∞=a/(1−r)=9.",
+      "answerConfidence": "high",
+      "topic": "Infinite series",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    }
+  ]
+}

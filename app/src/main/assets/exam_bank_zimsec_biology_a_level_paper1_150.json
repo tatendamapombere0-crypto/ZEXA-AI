@@ -1,0 +1,4066 @@
+{
+  "paperInfo": {
+    "subject": "Biology",
+    "level": "A Level",
+    "paperCode": "BIO/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Biology_A_Level_Paper1_150.json",
+    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6",
+    "copyrightNote": "Original practice questions synthesized from syllabus/specimen structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
+    "sourceBasis": "ZIMSEC Forms 5–6 Biology syllabus/specimen structure."
+  },
+  "questions": [
+    {
+      "id": "CEL-001",
+      "questionNumber": 1,
+      "questionText": "Which statement is most accurate about cell structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell structure"
+    },
+    {
+      "id": "BIO-002",
+      "questionNumber": 2,
+      "questionText": "Which process is most directly associated with biological molecules?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Biological molecules"
+    },
+    {
+      "id": "ENZ-003",
+      "questionNumber": 3,
+      "questionText": "A biological measurement is 13 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 13 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 18 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Enzymes"
+    },
+    {
+      "id": "MEM-004",
+      "questionNumber": 4,
+      "questionText": "Which investigation would best provide evidence about membranes and transport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Membranes and transport"
+    },
+    {
+      "id": "CEL-005",
+      "questionNumber": 5,
+      "questionText": "Which statement is most accurate about cell division?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell division"
+    },
+    {
+      "id": "NUC-006",
+      "questionNumber": 6,
+      "questionText": "Which process is most directly associated with nucleic acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Nucleic acids"
+    },
+    {
+      "id": "DNA-007",
+      "questionNumber": 7,
+      "questionText": "A biological measurement is 17 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 17 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 22 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "DNA replication"
+    },
+    {
+      "id": "PRO-008",
+      "questionNumber": 8,
+      "questionText": "Which investigation would best provide evidence about protein synthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Protein synthesis"
+    },
+    {
+      "id": "GEN-009",
+      "questionNumber": 9,
+      "questionText": "Which statement is most accurate about genetic inheritance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Genetic inheritance"
+    },
+    {
+      "id": "MUT-010",
+      "questionNumber": 10,
+      "questionText": "Which process is most directly associated with mutation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Mutation"
+    },
+    {
+      "id": "EVO-011",
+      "questionNumber": 11,
+      "questionText": "A biological measurement is 12 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 12 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 17 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Evolution"
+    },
+    {
+      "id": "CLA-012",
+      "questionNumber": 12,
+      "questionText": "Which investigation would best provide evidence about classification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Classification"
+    },
+    {
+      "id": "BIO-013",
+      "questionNumber": 13,
+      "questionText": "Which statement is most accurate about biodiversity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Biodiversity"
+    },
+    {
+      "id": "GAS-014",
+      "questionNumber": 14,
+      "questionText": "Which process is most directly associated with gas exchange?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Gas exchange"
+    },
+    {
+      "id": "TRA-015",
+      "questionNumber": 15,
+      "questionText": "A biological measurement is 16 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 16 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 21 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Transport in plants"
+    },
+    {
+      "id": "TRA-016",
+      "questionNumber": 16,
+      "questionText": "Which investigation would best provide evidence about transport in mammals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Transport in mammals"
+    },
+    {
+      "id": "HOM-017",
+      "questionNumber": 17,
+      "questionText": "Which statement is most accurate about homeostasis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Homeostasis"
+    },
+    {
+      "id": "EXC-018",
+      "questionNumber": 18,
+      "questionText": "Which process is most directly associated with excretion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Excretion"
+    },
+    {
+      "id": "COO-019",
+      "questionNumber": 19,
+      "questionText": "A biological measurement is 11 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 11 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 16 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Coordination"
+    },
+    {
+      "id": "HOR-020",
+      "questionNumber": 20,
+      "questionText": "Which investigation would best provide evidence about hormones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Hormones"
+    },
+    {
+      "id": "REP-021",
+      "questionNumber": 21,
+      "questionText": "Which statement is most accurate about reproduction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "PHO-022",
+      "questionNumber": 22,
+      "questionText": "Which process is most directly associated with photosynthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "RES-023",
+      "questionNumber": 23,
+      "questionText": "A biological measurement is 15 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 15 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 20 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "ECO-024",
+      "questionNumber": 24,
+      "questionText": "Which investigation would best provide evidence about ecology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Ecology"
+    },
+    {
+      "id": "POP-025",
+      "questionNumber": 25,
+      "questionText": "Which statement is most accurate about population dynamics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Population dynamics"
+    },
+    {
+      "id": "ENE-026",
+      "questionNumber": 26,
+      "questionText": "Which process is most directly associated with energy flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Energy flow"
+    },
+    {
+      "id": "NUT-027",
+      "questionNumber": 27,
+      "questionText": "A biological measurement is 10 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 10 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 15 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Nutrient cycles"
+    },
+    {
+      "id": "CON-028",
+      "questionNumber": 28,
+      "questionText": "Which investigation would best provide evidence about conservation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Conservation"
+    },
+    {
+      "id": "IMM-029",
+      "questionNumber": 29,
+      "questionText": "Which statement is most accurate about immunity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Immunity"
+    },
+    {
+      "id": "DIS-030",
+      "questionNumber": 30,
+      "questionText": "Which process is most directly associated with disease?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "BIO-031",
+      "questionNumber": 31,
+      "questionText": "A biological measurement is 14 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 14 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 19 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Biotechnology"
+    },
+    {
+      "id": "GEN-032",
+      "questionNumber": 32,
+      "questionText": "Which investigation would best provide evidence about genetic engineering?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Genetic engineering"
+    },
+    {
+      "id": "CEL-033",
+      "questionNumber": 33,
+      "questionText": "Which statement is most accurate about cell structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell structure"
+    },
+    {
+      "id": "BIO-034",
+      "questionNumber": 34,
+      "questionText": "Which process is most directly associated with biological molecules?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Biological molecules"
+    },
+    {
+      "id": "ENZ-035",
+      "questionNumber": 35,
+      "questionText": "A biological measurement is 18 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 18 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 23 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Enzymes"
+    },
+    {
+      "id": "MEM-036",
+      "questionNumber": 36,
+      "questionText": "Which investigation would best provide evidence about membranes and transport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Membranes and transport"
+    },
+    {
+      "id": "CEL-037",
+      "questionNumber": 37,
+      "questionText": "Which statement is most accurate about cell division?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell division"
+    },
+    {
+      "id": "NUC-038",
+      "questionNumber": 38,
+      "questionText": "Which process is most directly associated with nucleic acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Nucleic acids"
+    },
+    {
+      "id": "DNA-039",
+      "questionNumber": 39,
+      "questionText": "A biological measurement is 13 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 13 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 18 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "DNA replication"
+    },
+    {
+      "id": "PRO-040",
+      "questionNumber": 40,
+      "questionText": "Which investigation would best provide evidence about protein synthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Protein synthesis"
+    },
+    {
+      "id": "GEN-041",
+      "questionNumber": 41,
+      "questionText": "Which statement is most accurate about genetic inheritance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Genetic inheritance"
+    },
+    {
+      "id": "MUT-042",
+      "questionNumber": 42,
+      "questionText": "Which process is most directly associated with mutation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Mutation"
+    },
+    {
+      "id": "EVO-043",
+      "questionNumber": 43,
+      "questionText": "A biological measurement is 17 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 17 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 22 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Evolution"
+    },
+    {
+      "id": "CLA-044",
+      "questionNumber": 44,
+      "questionText": "Which investigation would best provide evidence about classification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Classification"
+    },
+    {
+      "id": "BIO-045",
+      "questionNumber": 45,
+      "questionText": "Which statement is most accurate about biodiversity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Biodiversity"
+    },
+    {
+      "id": "GAS-046",
+      "questionNumber": 46,
+      "questionText": "Which process is most directly associated with gas exchange?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Gas exchange"
+    },
+    {
+      "id": "TRA-047",
+      "questionNumber": 47,
+      "questionText": "A biological measurement is 12 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 12 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 17 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Transport in plants"
+    },
+    {
+      "id": "TRA-048",
+      "questionNumber": 48,
+      "questionText": "Which investigation would best provide evidence about transport in mammals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Transport in mammals"
+    },
+    {
+      "id": "HOM-049",
+      "questionNumber": 49,
+      "questionText": "Which statement is most accurate about homeostasis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Homeostasis"
+    },
+    {
+      "id": "EXC-050",
+      "questionNumber": 50,
+      "questionText": "Which process is most directly associated with excretion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Excretion"
+    },
+    {
+      "id": "COO-051",
+      "questionNumber": 51,
+      "questionText": "A biological measurement is 16 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 16 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 21 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Coordination"
+    },
+    {
+      "id": "HOR-052",
+      "questionNumber": 52,
+      "questionText": "Which investigation would best provide evidence about hormones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Hormones"
+    },
+    {
+      "id": "REP-053",
+      "questionNumber": 53,
+      "questionText": "Which statement is most accurate about reproduction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "PHO-054",
+      "questionNumber": 54,
+      "questionText": "Which process is most directly associated with photosynthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "RES-055",
+      "questionNumber": 55,
+      "questionText": "A biological measurement is 11 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 11 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 16 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "ECO-056",
+      "questionNumber": 56,
+      "questionText": "Which investigation would best provide evidence about ecology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Ecology"
+    },
+    {
+      "id": "POP-057",
+      "questionNumber": 57,
+      "questionText": "Which statement is most accurate about population dynamics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Population dynamics"
+    },
+    {
+      "id": "ENE-058",
+      "questionNumber": 58,
+      "questionText": "Which process is most directly associated with energy flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Energy flow"
+    },
+    {
+      "id": "NUT-059",
+      "questionNumber": 59,
+      "questionText": "A biological measurement is 15 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 15 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 20 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Nutrient cycles"
+    },
+    {
+      "id": "CON-060",
+      "questionNumber": 60,
+      "questionText": "Which investigation would best provide evidence about conservation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Conservation"
+    },
+    {
+      "id": "IMM-061",
+      "questionNumber": 61,
+      "questionText": "Which statement is most accurate about immunity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Immunity"
+    },
+    {
+      "id": "DIS-062",
+      "questionNumber": 62,
+      "questionText": "Which process is most directly associated with disease?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "BIO-063",
+      "questionNumber": 63,
+      "questionText": "A biological measurement is 10 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 10 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 15 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Biotechnology"
+    },
+    {
+      "id": "GEN-064",
+      "questionNumber": 64,
+      "questionText": "Which investigation would best provide evidence about genetic engineering?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Genetic engineering"
+    },
+    {
+      "id": "CEL-065",
+      "questionNumber": 65,
+      "questionText": "Which statement is most accurate about cell structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell structure"
+    },
+    {
+      "id": "BIO-066",
+      "questionNumber": 66,
+      "questionText": "Which process is most directly associated with biological molecules?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Biological molecules"
+    },
+    {
+      "id": "ENZ-067",
+      "questionNumber": 67,
+      "questionText": "A biological measurement is 14 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 14 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 19 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Enzymes"
+    },
+    {
+      "id": "MEM-068",
+      "questionNumber": 68,
+      "questionText": "Which investigation would best provide evidence about membranes and transport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Membranes and transport"
+    },
+    {
+      "id": "CEL-069",
+      "questionNumber": 69,
+      "questionText": "Which statement is most accurate about cell division?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell division"
+    },
+    {
+      "id": "NUC-070",
+      "questionNumber": 70,
+      "questionText": "Which process is most directly associated with nucleic acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Nucleic acids"
+    },
+    {
+      "id": "DNA-071",
+      "questionNumber": 71,
+      "questionText": "A biological measurement is 18 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 18 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 23 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "DNA replication"
+    },
+    {
+      "id": "PRO-072",
+      "questionNumber": 72,
+      "questionText": "Which investigation would best provide evidence about protein synthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Protein synthesis"
+    },
+    {
+      "id": "GEN-073",
+      "questionNumber": 73,
+      "questionText": "Which statement is most accurate about genetic inheritance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Genetic inheritance"
+    },
+    {
+      "id": "MUT-074",
+      "questionNumber": 74,
+      "questionText": "Which process is most directly associated with mutation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Mutation"
+    },
+    {
+      "id": "EVO-075",
+      "questionNumber": 75,
+      "questionText": "A biological measurement is 13 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 13 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 18 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Evolution"
+    },
+    {
+      "id": "CLA-076",
+      "questionNumber": 76,
+      "questionText": "Which investigation would best provide evidence about classification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Classification"
+    },
+    {
+      "id": "BIO-077",
+      "questionNumber": 77,
+      "questionText": "Which statement is most accurate about biodiversity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Biodiversity"
+    },
+    {
+      "id": "GAS-078",
+      "questionNumber": 78,
+      "questionText": "Which process is most directly associated with gas exchange?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Gas exchange"
+    },
+    {
+      "id": "TRA-079",
+      "questionNumber": 79,
+      "questionText": "A biological measurement is 17 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 17 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 22 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Transport in plants"
+    },
+    {
+      "id": "TRA-080",
+      "questionNumber": 80,
+      "questionText": "Which investigation would best provide evidence about transport in mammals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Transport in mammals"
+    },
+    {
+      "id": "HOM-081",
+      "questionNumber": 81,
+      "questionText": "Which statement is most accurate about homeostasis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Homeostasis"
+    },
+    {
+      "id": "EXC-082",
+      "questionNumber": 82,
+      "questionText": "Which process is most directly associated with excretion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Excretion"
+    },
+    {
+      "id": "COO-083",
+      "questionNumber": 83,
+      "questionText": "A biological measurement is 12 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 12 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 17 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Coordination"
+    },
+    {
+      "id": "HOR-084",
+      "questionNumber": 84,
+      "questionText": "Which investigation would best provide evidence about hormones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Hormones"
+    },
+    {
+      "id": "REP-085",
+      "questionNumber": 85,
+      "questionText": "Which statement is most accurate about reproduction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "PHO-086",
+      "questionNumber": 86,
+      "questionText": "Which process is most directly associated with photosynthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "RES-087",
+      "questionNumber": 87,
+      "questionText": "A biological measurement is 16 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 16 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 21 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "ECO-088",
+      "questionNumber": 88,
+      "questionText": "Which investigation would best provide evidence about ecology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Ecology"
+    },
+    {
+      "id": "POP-089",
+      "questionNumber": 89,
+      "questionText": "Which statement is most accurate about population dynamics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Population dynamics"
+    },
+    {
+      "id": "ENE-090",
+      "questionNumber": 90,
+      "questionText": "Which process is most directly associated with energy flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Energy flow"
+    },
+    {
+      "id": "NUT-091",
+      "questionNumber": 91,
+      "questionText": "A biological measurement is 11 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 11 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 16 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Nutrient cycles"
+    },
+    {
+      "id": "CON-092",
+      "questionNumber": 92,
+      "questionText": "Which investigation would best provide evidence about conservation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Conservation"
+    },
+    {
+      "id": "IMM-093",
+      "questionNumber": 93,
+      "questionText": "Which statement is most accurate about immunity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Immunity"
+    },
+    {
+      "id": "DIS-094",
+      "questionNumber": 94,
+      "questionText": "Which process is most directly associated with disease?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "BIO-095",
+      "questionNumber": 95,
+      "questionText": "A biological measurement is 15 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 15 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 20 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Biotechnology"
+    },
+    {
+      "id": "GEN-096",
+      "questionNumber": 96,
+      "questionText": "Which investigation would best provide evidence about genetic engineering?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Genetic engineering"
+    },
+    {
+      "id": "CEL-097",
+      "questionNumber": 97,
+      "questionText": "Which statement is most accurate about cell structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell structure"
+    },
+    {
+      "id": "BIO-098",
+      "questionNumber": 98,
+      "questionText": "Which process is most directly associated with biological molecules?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Biological molecules"
+    },
+    {
+      "id": "ENZ-099",
+      "questionNumber": 99,
+      "questionText": "A biological measurement is 10 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 10 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 15 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Enzymes"
+    },
+    {
+      "id": "MEM-100",
+      "questionNumber": 100,
+      "questionText": "Which investigation would best provide evidence about membranes and transport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Membranes and transport"
+    },
+    {
+      "id": "CEL-101",
+      "questionNumber": 101,
+      "questionText": "Which statement is most accurate about cell division?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell division"
+    },
+    {
+      "id": "NUC-102",
+      "questionNumber": 102,
+      "questionText": "Which process is most directly associated with nucleic acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Nucleic acids"
+    },
+    {
+      "id": "DNA-103",
+      "questionNumber": 103,
+      "questionText": "A biological measurement is 14 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 14 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 19 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "DNA replication"
+    },
+    {
+      "id": "PRO-104",
+      "questionNumber": 104,
+      "questionText": "Which investigation would best provide evidence about protein synthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Protein synthesis"
+    },
+    {
+      "id": "GEN-105",
+      "questionNumber": 105,
+      "questionText": "Which statement is most accurate about genetic inheritance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Genetic inheritance"
+    },
+    {
+      "id": "MUT-106",
+      "questionNumber": 106,
+      "questionText": "Which process is most directly associated with mutation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Mutation"
+    },
+    {
+      "id": "EVO-107",
+      "questionNumber": 107,
+      "questionText": "A biological measurement is 18 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 18 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 23 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Evolution"
+    },
+    {
+      "id": "CLA-108",
+      "questionNumber": 108,
+      "questionText": "Which investigation would best provide evidence about classification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Classification"
+    },
+    {
+      "id": "BIO-109",
+      "questionNumber": 109,
+      "questionText": "Which statement is most accurate about biodiversity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Biodiversity"
+    },
+    {
+      "id": "GAS-110",
+      "questionNumber": 110,
+      "questionText": "Which process is most directly associated with gas exchange?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Gas exchange"
+    },
+    {
+      "id": "TRA-111",
+      "questionNumber": 111,
+      "questionText": "A biological measurement is 13 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 13 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 18 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Transport in plants"
+    },
+    {
+      "id": "TRA-112",
+      "questionNumber": 112,
+      "questionText": "Which investigation would best provide evidence about transport in mammals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Transport in mammals"
+    },
+    {
+      "id": "HOM-113",
+      "questionNumber": 113,
+      "questionText": "Which statement is most accurate about homeostasis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Homeostasis"
+    },
+    {
+      "id": "EXC-114",
+      "questionNumber": 114,
+      "questionText": "Which process is most directly associated with excretion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Excretion"
+    },
+    {
+      "id": "COO-115",
+      "questionNumber": 115,
+      "questionText": "A biological measurement is 17 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 17 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 22 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Coordination"
+    },
+    {
+      "id": "HOR-116",
+      "questionNumber": 116,
+      "questionText": "Which investigation would best provide evidence about hormones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Hormones"
+    },
+    {
+      "id": "REP-117",
+      "questionNumber": 117,
+      "questionText": "Which statement is most accurate about reproduction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "PHO-118",
+      "questionNumber": 118,
+      "questionText": "Which process is most directly associated with photosynthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    },
+    {
+      "id": "RES-119",
+      "questionNumber": 119,
+      "questionText": "A biological measurement is 12 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 12 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 17 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Respiration"
+    },
+    {
+      "id": "ECO-120",
+      "questionNumber": 120,
+      "questionText": "Which investigation would best provide evidence about ecology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Ecology"
+    },
+    {
+      "id": "POP-121",
+      "questionNumber": 121,
+      "questionText": "Which statement is most accurate about population dynamics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Population dynamics"
+    },
+    {
+      "id": "ENE-122",
+      "questionNumber": 122,
+      "questionText": "Which process is most directly associated with energy flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Energy flow"
+    },
+    {
+      "id": "NUT-123",
+      "questionNumber": 123,
+      "questionText": "A biological measurement is 16 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 16 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 21 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Nutrient cycles"
+    },
+    {
+      "id": "CON-124",
+      "questionNumber": 124,
+      "questionText": "Which investigation would best provide evidence about conservation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Conservation"
+    },
+    {
+      "id": "IMM-125",
+      "questionNumber": 125,
+      "questionText": "Which statement is most accurate about immunity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Immunity"
+    },
+    {
+      "id": "DIS-126",
+      "questionNumber": 126,
+      "questionText": "Which process is most directly associated with disease?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Disease"
+    },
+    {
+      "id": "BIO-127",
+      "questionNumber": 127,
+      "questionText": "A biological measurement is 11 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 11 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 16 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Biotechnology"
+    },
+    {
+      "id": "GEN-128",
+      "questionNumber": 128,
+      "questionText": "Which investigation would best provide evidence about genetic engineering?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Genetic engineering"
+    },
+    {
+      "id": "CEL-129",
+      "questionNumber": 129,
+      "questionText": "Which statement is most accurate about cell structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell structure"
+    },
+    {
+      "id": "BIO-130",
+      "questionNumber": 130,
+      "questionText": "Which process is most directly associated with biological molecules?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Biological molecules"
+    },
+    {
+      "id": "ENZ-131",
+      "questionNumber": 131,
+      "questionText": "A biological measurement is 15 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 15 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 20 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Enzymes"
+    },
+    {
+      "id": "MEM-132",
+      "questionNumber": 132,
+      "questionText": "Which investigation would best provide evidence about membranes and transport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Membranes and transport"
+    },
+    {
+      "id": "CEL-133",
+      "questionNumber": 133,
+      "questionText": "Which statement is most accurate about cell division?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Cell division"
+    },
+    {
+      "id": "NUC-134",
+      "questionNumber": 134,
+      "questionText": "Which process is most directly associated with nucleic acids?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Nucleic acids"
+    },
+    {
+      "id": "DNA-135",
+      "questionNumber": 135,
+      "questionText": "A biological measurement is 10 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 10 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 15 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "DNA replication"
+    },
+    {
+      "id": "PRO-136",
+      "questionNumber": 136,
+      "questionText": "Which investigation would best provide evidence about protein synthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Protein synthesis"
+    },
+    {
+      "id": "GEN-137",
+      "questionNumber": 137,
+      "questionText": "Which statement is most accurate about genetic inheritance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Genetic inheritance"
+    },
+    {
+      "id": "MUT-138",
+      "questionNumber": 138,
+      "questionText": "Which process is most directly associated with mutation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Mutation"
+    },
+    {
+      "id": "EVO-139",
+      "questionNumber": 139,
+      "questionText": "A biological measurement is 14 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 14 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 19 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Evolution"
+    },
+    {
+      "id": "CLA-140",
+      "questionNumber": 140,
+      "questionText": "Which investigation would best provide evidence about classification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Classification"
+    },
+    {
+      "id": "BIO-141",
+      "questionNumber": 141,
+      "questionText": "Which statement is most accurate about biodiversity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Biodiversity"
+    },
+    {
+      "id": "GAS-142",
+      "questionNumber": 142,
+      "questionText": "Which process is most directly associated with gas exchange?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Gas exchange"
+    },
+    {
+      "id": "TRA-143",
+      "questionNumber": 143,
+      "questionText": "A biological measurement is 18 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 18 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 23 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Transport in plants"
+    },
+    {
+      "id": "TRA-144",
+      "questionNumber": 144,
+      "questionText": "Which investigation would best provide evidence about transport in mammals?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Transport in mammals"
+    },
+    {
+      "id": "HOM-145",
+      "questionNumber": 145,
+      "questionText": "Which statement is most accurate about homeostasis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Homeostasis"
+    },
+    {
+      "id": "EXC-146",
+      "questionNumber": 146,
+      "questionText": "Which process is most directly associated with excretion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Excretion"
+    },
+    {
+      "id": "COO-147",
+      "questionNumber": 147,
+      "questionText": "A biological measurement is 13 units with an uncertainty of 5 units. Which is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The value is approximately 13 ± 5 units"
+        },
+        {
+          "letter": "B",
+          "text": "The value is exactly 18 units"
+        },
+        {
+          "letter": "C",
+          "text": "The uncertainty is ignored"
+        },
+        {
+          "letter": "D",
+          "text": "The measurement has no units"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An uncertainty interval communicates the precision of the measurement.",
+      "answerConfidence": "high",
+      "topic": "Coordination"
+    },
+    {
+      "id": "HOR-148",
+      "questionNumber": 148,
+      "questionText": "Which investigation would best provide evidence about hormones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A controlled investigation with suitable variables, repeats and appropriate measurements"
+        },
+        {
+          "letter": "B",
+          "text": "A single unsupported observation"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables simultaneously"
+        },
+        {
+          "letter": "D",
+          "text": "Recording no measurements"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reliable biological investigations require appropriate controls, measurements and replication.",
+      "answerConfidence": "high",
+      "topic": "Hormones"
+    },
+    {
+      "id": "REP-149",
+      "questionNumber": 149,
+      "questionText": "Which statement is most accurate about reproduction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be explained using the relevant biological principles and evidence"
+        },
+        {
+          "letter": "B",
+          "text": "It occurs independently of all environmental factors"
+        },
+        {
+          "letter": "C",
+          "text": "It applies only to microorganisms"
+        },
+        {
+          "letter": "D",
+          "text": "It has no measurable biological consequence"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement is the appropriate biological interpretation.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "PHO-150",
+      "questionNumber": 150,
+      "questionText": "Which process is most directly associated with photosynthesis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A defined biological mechanism"
+        },
+        {
+          "letter": "B",
+          "text": "An accounting procedure"
+        },
+        {
+          "letter": "C",
+          "text": "A geological classification only"
+        },
+        {
+          "letter": "D",
+          "text": "A purely mathematical operation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first option identifies the relevant biological mechanism.",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis"
+    }
+  ]
+}

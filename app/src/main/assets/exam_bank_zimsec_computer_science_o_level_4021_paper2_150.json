@@ -1,0 +1,1515 @@
+{
+  "paperInfo": {
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/02",
+    "paperName": "Paper 2 – Theory / Structured",
+    "paperType": "Structured Theory",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Computer_Science_O_Level_4021_Paper2_150.json",
+    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus, specimen/exam patterns and revision material; not verbatim past-paper copies.",
+    "sourceBasis": "ZIMSEC syllabus/specimen and recurring examination themes."
+  },
+  "questions": [
+    {
+      "id": "4021_02_001",
+      "questionNumber": 1,
+      "questionText": "Define a computer system and distinguish hardware from software.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_002",
+      "questionNumber": 2,
+      "questionText": "Explain the functions of the CPU, RAM and secondary storage.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_003",
+      "questionNumber": 3,
+      "questionText": "Compare RAM and ROM and give one use of each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_004",
+      "questionNumber": 4,
+      "questionText": "Explain system software and application software with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_005",
+      "questionNumber": 5,
+      "questionText": "Describe how an operating system manages files, memory and peripherals.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_006",
+      "questionNumber": 6,
+      "questionText": "Convert a denary integer to binary and show your working.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_007",
+      "questionNumber": 7,
+      "questionText": "Convert a binary integer to denary and explain place values.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_008",
+      "questionNumber": 8,
+      "questionText": "Explain the purpose of a LAN and give two advantages.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_009",
+      "questionNumber": 9,
+      "questionText": "Compare wired and wireless networks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_010",
+      "questionNumber": 10,
+      "questionText": "Explain the roles of a router, switch and network interface.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_011",
+      "questionNumber": 11,
+      "questionText": "Describe three cyber threats and one prevention method for each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_012",
+      "questionNumber": 12,
+      "questionText": "Explain authentication and distinguish it from authorisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_013",
+      "questionNumber": 13,
+      "questionText": "Explain how strong passwords and multi-factor authentication improve security.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_014",
+      "questionNumber": 14,
+      "questionText": "Explain the purpose of encryption when transmitting sensitive data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_015",
+      "questionNumber": 15,
+      "questionText": "Describe a suitable backup strategy for a school laboratory.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_016",
+      "questionNumber": 16,
+      "questionText": "Define an algorithm and state characteristics of a good algorithm.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_017",
+      "questionNumber": 17,
+      "questionText": "Write pseudocode to accept two numbers and output the larger.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_018",
+      "questionNumber": 18,
+      "questionText": "Write pseudocode to calculate the average of several marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_019",
+      "questionNumber": 19,
+      "questionText": "Explain sequence, selection and iteration with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_020",
+      "questionNumber": 20,
+      "questionText": "Describe a flowchart for a menu-driven program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_021",
+      "questionNumber": 21,
+      "questionText": "Explain the difference between syntax and logic errors.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_022",
+      "questionNumber": 22,
+      "questionText": "Describe normal, boundary and erroneous test data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_023",
+      "questionNumber": 23,
+      "questionText": "Explain variables, constants and data types.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_024",
+      "questionNumber": 24,
+      "questionText": "Explain arrays/lists and give a suitable example.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_025",
+      "questionNumber": 25,
+      "questionText": "Describe stages of the systems development life cycle.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_026",
+      "questionNumber": 26,
+      "questionText": "Explain why requirements analysis is important.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_027",
+      "questionNumber": 27,
+      "questionText": "Define database, table, record and field.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_028",
+      "questionNumber": 28,
+      "questionText": "Explain the purpose of a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_029",
+      "questionNumber": 29,
+      "questionText": "Describe range, type, length and presence validation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_030",
+      "questionNumber": 30,
+      "questionText": "Explain double-entry and visual verification.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_031",
+      "questionNumber": 31,
+      "questionText": "Explain a one-to-many database relationship.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_032",
+      "questionNumber": 32,
+      "questionText": "Describe social and ethical effects of computerisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_033",
+      "questionNumber": 33,
+      "questionText": "Explain environmental effects of computer use and possible mitigations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_034",
+      "questionNumber": 34,
+      "questionText": "Explain how a spreadsheet can model a small business.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_035",
+      "questionNumber": 35,
+      "questionText": "Distinguish between data and information.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_036",
+      "questionNumber": 36,
+      "questionText": "Define a computer system and distinguish hardware from software.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_037",
+      "questionNumber": 37,
+      "questionText": "Explain the functions of the CPU, RAM and secondary storage.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_038",
+      "questionNumber": 38,
+      "questionText": "Compare RAM and ROM and give one use of each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_039",
+      "questionNumber": 39,
+      "questionText": "Explain system software and application software with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_040",
+      "questionNumber": 40,
+      "questionText": "Describe how an operating system manages files, memory and peripherals.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_041",
+      "questionNumber": 41,
+      "questionText": "Convert a denary integer to binary and show your working.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_042",
+      "questionNumber": 42,
+      "questionText": "Convert a binary integer to denary and explain place values.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_043",
+      "questionNumber": 43,
+      "questionText": "Explain the purpose of a LAN and give two advantages.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_044",
+      "questionNumber": 44,
+      "questionText": "Compare wired and wireless networks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_045",
+      "questionNumber": 45,
+      "questionText": "Explain the roles of a router, switch and network interface.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_046",
+      "questionNumber": 46,
+      "questionText": "Describe three cyber threats and one prevention method for each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_047",
+      "questionNumber": 47,
+      "questionText": "Explain authentication and distinguish it from authorisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_048",
+      "questionNumber": 48,
+      "questionText": "Explain how strong passwords and multi-factor authentication improve security.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_049",
+      "questionNumber": 49,
+      "questionText": "Explain the purpose of encryption when transmitting sensitive data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_050",
+      "questionNumber": 50,
+      "questionText": "Describe a suitable backup strategy for a school laboratory.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_051",
+      "questionNumber": 51,
+      "questionText": "Define an algorithm and state characteristics of a good algorithm.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_052",
+      "questionNumber": 52,
+      "questionText": "Write pseudocode to accept two numbers and output the larger.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_053",
+      "questionNumber": 53,
+      "questionText": "Write pseudocode to calculate the average of several marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_054",
+      "questionNumber": 54,
+      "questionText": "Explain sequence, selection and iteration with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_055",
+      "questionNumber": 55,
+      "questionText": "Describe a flowchart for a menu-driven program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_056",
+      "questionNumber": 56,
+      "questionText": "Explain the difference between syntax and logic errors.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_057",
+      "questionNumber": 57,
+      "questionText": "Describe normal, boundary and erroneous test data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_058",
+      "questionNumber": 58,
+      "questionText": "Explain variables, constants and data types.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_059",
+      "questionNumber": 59,
+      "questionText": "Explain arrays/lists and give a suitable example.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_060",
+      "questionNumber": 60,
+      "questionText": "Describe stages of the systems development life cycle.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_061",
+      "questionNumber": 61,
+      "questionText": "Explain why requirements analysis is important.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_062",
+      "questionNumber": 62,
+      "questionText": "Define database, table, record and field.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_063",
+      "questionNumber": 63,
+      "questionText": "Explain the purpose of a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_064",
+      "questionNumber": 64,
+      "questionText": "Describe range, type, length and presence validation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_065",
+      "questionNumber": 65,
+      "questionText": "Explain double-entry and visual verification.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_066",
+      "questionNumber": 66,
+      "questionText": "Explain a one-to-many database relationship.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_067",
+      "questionNumber": 67,
+      "questionText": "Describe social and ethical effects of computerisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_068",
+      "questionNumber": 68,
+      "questionText": "Explain environmental effects of computer use and possible mitigations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_069",
+      "questionNumber": 69,
+      "questionText": "Explain how a spreadsheet can model a small business.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_070",
+      "questionNumber": 70,
+      "questionText": "Distinguish between data and information.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_071",
+      "questionNumber": 71,
+      "questionText": "Define a computer system and distinguish hardware from software.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_072",
+      "questionNumber": 72,
+      "questionText": "Explain the functions of the CPU, RAM and secondary storage.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_073",
+      "questionNumber": 73,
+      "questionText": "Compare RAM and ROM and give one use of each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_074",
+      "questionNumber": 74,
+      "questionText": "Explain system software and application software with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_075",
+      "questionNumber": 75,
+      "questionText": "Describe how an operating system manages files, memory and peripherals.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_076",
+      "questionNumber": 76,
+      "questionText": "Convert a denary integer to binary and show your working.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_077",
+      "questionNumber": 77,
+      "questionText": "Convert a binary integer to denary and explain place values.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_078",
+      "questionNumber": 78,
+      "questionText": "Explain the purpose of a LAN and give two advantages.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_079",
+      "questionNumber": 79,
+      "questionText": "Compare wired and wireless networks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_080",
+      "questionNumber": 80,
+      "questionText": "Explain the roles of a router, switch and network interface.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_081",
+      "questionNumber": 81,
+      "questionText": "Describe three cyber threats and one prevention method for each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_082",
+      "questionNumber": 82,
+      "questionText": "Explain authentication and distinguish it from authorisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_083",
+      "questionNumber": 83,
+      "questionText": "Explain how strong passwords and multi-factor authentication improve security.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_084",
+      "questionNumber": 84,
+      "questionText": "Explain the purpose of encryption when transmitting sensitive data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_085",
+      "questionNumber": 85,
+      "questionText": "Describe a suitable backup strategy for a school laboratory.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_086",
+      "questionNumber": 86,
+      "questionText": "Define an algorithm and state characteristics of a good algorithm.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_087",
+      "questionNumber": 87,
+      "questionText": "Write pseudocode to accept two numbers and output the larger.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_088",
+      "questionNumber": 88,
+      "questionText": "Write pseudocode to calculate the average of several marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_089",
+      "questionNumber": 89,
+      "questionText": "Explain sequence, selection and iteration with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_090",
+      "questionNumber": 90,
+      "questionText": "Describe a flowchart for a menu-driven program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_091",
+      "questionNumber": 91,
+      "questionText": "Explain the difference between syntax and logic errors.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_092",
+      "questionNumber": 92,
+      "questionText": "Describe normal, boundary and erroneous test data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_093",
+      "questionNumber": 93,
+      "questionText": "Explain variables, constants and data types.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_094",
+      "questionNumber": 94,
+      "questionText": "Explain arrays/lists and give a suitable example.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_095",
+      "questionNumber": 95,
+      "questionText": "Describe stages of the systems development life cycle.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_096",
+      "questionNumber": 96,
+      "questionText": "Explain why requirements analysis is important.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_097",
+      "questionNumber": 97,
+      "questionText": "Define database, table, record and field.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_098",
+      "questionNumber": 98,
+      "questionText": "Explain the purpose of a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_099",
+      "questionNumber": 99,
+      "questionText": "Describe range, type, length and presence validation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_100",
+      "questionNumber": 100,
+      "questionText": "Explain double-entry and visual verification.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_101",
+      "questionNumber": 101,
+      "questionText": "Explain a one-to-many database relationship.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_102",
+      "questionNumber": 102,
+      "questionText": "Describe social and ethical effects of computerisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_103",
+      "questionNumber": 103,
+      "questionText": "Explain environmental effects of computer use and possible mitigations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_104",
+      "questionNumber": 104,
+      "questionText": "Explain how a spreadsheet can model a small business.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_105",
+      "questionNumber": 105,
+      "questionText": "Distinguish between data and information.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_106",
+      "questionNumber": 106,
+      "questionText": "Define a computer system and distinguish hardware from software.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_107",
+      "questionNumber": 107,
+      "questionText": "Explain the functions of the CPU, RAM and secondary storage.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_108",
+      "questionNumber": 108,
+      "questionText": "Compare RAM and ROM and give one use of each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_109",
+      "questionNumber": 109,
+      "questionText": "Explain system software and application software with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_110",
+      "questionNumber": 110,
+      "questionText": "Describe how an operating system manages files, memory and peripherals.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_111",
+      "questionNumber": 111,
+      "questionText": "Convert a denary integer to binary and show your working.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_112",
+      "questionNumber": 112,
+      "questionText": "Convert a binary integer to denary and explain place values.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_113",
+      "questionNumber": 113,
+      "questionText": "Explain the purpose of a LAN and give two advantages.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_114",
+      "questionNumber": 114,
+      "questionText": "Compare wired and wireless networks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_115",
+      "questionNumber": 115,
+      "questionText": "Explain the roles of a router, switch and network interface.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_116",
+      "questionNumber": 116,
+      "questionText": "Describe three cyber threats and one prevention method for each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_117",
+      "questionNumber": 117,
+      "questionText": "Explain authentication and distinguish it from authorisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_118",
+      "questionNumber": 118,
+      "questionText": "Explain how strong passwords and multi-factor authentication improve security.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_119",
+      "questionNumber": 119,
+      "questionText": "Explain the purpose of encryption when transmitting sensitive data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_120",
+      "questionNumber": 120,
+      "questionText": "Describe a suitable backup strategy for a school laboratory.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_121",
+      "questionNumber": 121,
+      "questionText": "Define an algorithm and state characteristics of a good algorithm.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_122",
+      "questionNumber": 122,
+      "questionText": "Write pseudocode to accept two numbers and output the larger.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_123",
+      "questionNumber": 123,
+      "questionText": "Write pseudocode to calculate the average of several marks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_124",
+      "questionNumber": 124,
+      "questionText": "Explain sequence, selection and iteration with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_125",
+      "questionNumber": 125,
+      "questionText": "Describe a flowchart for a menu-driven program.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_126",
+      "questionNumber": 126,
+      "questionText": "Explain the difference between syntax and logic errors.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_127",
+      "questionNumber": 127,
+      "questionText": "Describe normal, boundary and erroneous test data.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_128",
+      "questionNumber": 128,
+      "questionText": "Explain variables, constants and data types.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_129",
+      "questionNumber": 129,
+      "questionText": "Explain arrays/lists and give a suitable example.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_130",
+      "questionNumber": 130,
+      "questionText": "Describe stages of the systems development life cycle.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_131",
+      "questionNumber": 131,
+      "questionText": "Explain why requirements analysis is important.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_132",
+      "questionNumber": 132,
+      "questionText": "Define database, table, record and field.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_02_133",
+      "questionNumber": 133,
+      "questionText": "Explain the purpose of a primary key.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate internet terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_02_134",
+      "questionNumber": 134,
+      "questionText": "Describe range, type, length and presence validation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate cybersecurity terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_02_135",
+      "questionNumber": 135,
+      "questionText": "Explain double-entry and visual verification.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate databases terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_02_136",
+      "questionNumber": 136,
+      "questionText": "Explain a one-to-many database relationship.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate algorithms terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_02_137",
+      "questionNumber": 137,
+      "questionText": "Describe social and ethical effects of computerisation.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate flowcharts terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_02_138",
+      "questionNumber": 138,
+      "questionText": "Explain environmental effects of computer use and possible mitigations.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate programming terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_02_139",
+      "questionNumber": 139,
+      "questionText": "Explain how a spreadsheet can model a small business.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data types terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_02_140",
+      "questionNumber": 140,
+      "questionText": "Distinguish between data and information.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate Boolean logic terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_02_141",
+      "questionNumber": 141,
+      "questionText": "Define a computer system and distinguish hardware from software.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate systems analysis terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_02_142",
+      "questionNumber": 142,
+      "questionText": "Explain the functions of the CPU, RAM and secondary storage.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate ethics terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_02_143",
+      "questionNumber": 143,
+      "questionText": "Compare RAM and ROM and give one use of each.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate applications terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_02_144",
+      "questionNumber": 144,
+      "questionText": "Explain system software and application software with examples.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate troubleshooting terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_02_145",
+      "questionNumber": 145,
+      "questionText": "Describe how an operating system manages files, memory and peripherals.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate hardware terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_02_146",
+      "questionNumber": 146,
+      "questionText": "Convert a denary integer to binary and show your working.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate software terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "software"
+    },
+    {
+      "id": "4021_02_147",
+      "questionNumber": 147,
+      "questionText": "Convert a binary integer to denary and explain place values.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate data representation terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_02_148",
+      "questionNumber": 148,
+      "questionText": "Explain the purpose of a LAN and give two advantages.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate operating systems terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_02_149",
+      "questionNumber": 149,
+      "questionText": "Compare wired and wireless networks.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate storage terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_02_150",
+      "questionNumber": 150,
+      "questionText": "Explain the roles of a router, switch and network interface.",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Give a clear, technically correct response using appropriate networks terminology and working.",
+      "answerConfidence": "unverified",
+      "topic": "networks"
+    }
+  ]
+}

@@ -1,0 +1,5274 @@
+{
+  "paperInfo": {
+    "subject": "Agriculture",
+    "level": "A-Level",
+    "paperCode": "Agriculture Paper 1",
+    "paperName": "Agriculture A-Level Paper 1 — Exam Mode",
+    "paperType": "Original ZIMSEC-aligned practice bank",
+    "sourceBasis": [
+      "Zimbabwe secondary Agriculture syllabus/topic coverage",
+      "ZIMSEC-style assessment formats and recurring syllabus areas",
+      "Original questions generated for this bank; not transcriptions of past papers"
+    ],
+    "yearsReferenced": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "questionCount": 150,
+    "note": "Original practice questions aligned to Agriculture syllabus coverage. They do not reproduce copyrighted past-paper text."
+  },
+  "questions": [
+    {
+      "id": "ag_al_p1_001",
+      "questionNumber": 1,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_002",
+      "questionNumber": 2,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_003",
+      "questionNumber": 3,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_004",
+      "questionNumber": 4,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_005",
+      "questionNumber": 5,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_006",
+      "questionNumber": 6,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_007",
+      "questionNumber": 7,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_008",
+      "questionNumber": 8,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_009",
+      "questionNumber": 9,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_010",
+      "questionNumber": 10,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_011",
+      "questionNumber": 11,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_012",
+      "questionNumber": 12,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_013",
+      "questionNumber": 13,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_014",
+      "questionNumber": 14,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_015",
+      "questionNumber": 15,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_016",
+      "questionNumber": 16,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_017",
+      "questionNumber": 17,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_018",
+      "questionNumber": 18,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_019",
+      "questionNumber": 19,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_020",
+      "questionNumber": 20,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_021",
+      "questionNumber": 21,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_022",
+      "questionNumber": 22,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_023",
+      "questionNumber": 23,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_024",
+      "questionNumber": 24,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_025",
+      "questionNumber": 25,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_026",
+      "questionNumber": 26,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_027",
+      "questionNumber": 27,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_028",
+      "questionNumber": 28,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_029",
+      "questionNumber": 29,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_030",
+      "questionNumber": 30,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_031",
+      "questionNumber": 31,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_032",
+      "questionNumber": 32,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_033",
+      "questionNumber": 33,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_034",
+      "questionNumber": 34,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_035",
+      "questionNumber": 35,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_036",
+      "questionNumber": 36,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_037",
+      "questionNumber": 37,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_038",
+      "questionNumber": 38,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_039",
+      "questionNumber": 39,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_040",
+      "questionNumber": 40,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_041",
+      "questionNumber": 41,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_042",
+      "questionNumber": 42,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_043",
+      "questionNumber": 43,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_044",
+      "questionNumber": 44,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_045",
+      "questionNumber": 45,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_046",
+      "questionNumber": 46,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_047",
+      "questionNumber": 47,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_048",
+      "questionNumber": 48,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_049",
+      "questionNumber": 49,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_050",
+      "questionNumber": 50,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_051",
+      "questionNumber": 51,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_052",
+      "questionNumber": 52,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_053",
+      "questionNumber": 53,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_054",
+      "questionNumber": 54,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_055",
+      "questionNumber": 55,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_056",
+      "questionNumber": 56,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_057",
+      "questionNumber": 57,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_058",
+      "questionNumber": 58,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_059",
+      "questionNumber": 59,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_060",
+      "questionNumber": 60,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_061",
+      "questionNumber": 61,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_062",
+      "questionNumber": 62,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_063",
+      "questionNumber": 63,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_064",
+      "questionNumber": 64,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_065",
+      "questionNumber": 65,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_066",
+      "questionNumber": 66,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_067",
+      "questionNumber": 67,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_068",
+      "questionNumber": 68,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_069",
+      "questionNumber": 69,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_070",
+      "questionNumber": 70,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_071",
+      "questionNumber": 71,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_072",
+      "questionNumber": 72,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_073",
+      "questionNumber": 73,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_074",
+      "questionNumber": 74,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_075",
+      "questionNumber": 75,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_076",
+      "questionNumber": 76,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_077",
+      "questionNumber": 77,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_078",
+      "questionNumber": 78,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_079",
+      "questionNumber": 79,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_080",
+      "questionNumber": 80,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_081",
+      "questionNumber": 81,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_082",
+      "questionNumber": 82,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_083",
+      "questionNumber": 83,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_084",
+      "questionNumber": 84,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_085",
+      "questionNumber": 85,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_086",
+      "questionNumber": 86,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_087",
+      "questionNumber": 87,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_088",
+      "questionNumber": 88,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_089",
+      "questionNumber": 89,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_090",
+      "questionNumber": 90,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_091",
+      "questionNumber": 91,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_092",
+      "questionNumber": 92,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_093",
+      "questionNumber": 93,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_094",
+      "questionNumber": 94,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_095",
+      "questionNumber": 95,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_096",
+      "questionNumber": 96,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_097",
+      "questionNumber": 97,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_098",
+      "questionNumber": 98,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_099",
+      "questionNumber": 99,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_100",
+      "questionNumber": 100,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_101",
+      "questionNumber": 101,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_102",
+      "questionNumber": 102,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_103",
+      "questionNumber": 103,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_104",
+      "questionNumber": 104,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_105",
+      "questionNumber": 105,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_106",
+      "questionNumber": 106,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_107",
+      "questionNumber": 107,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_108",
+      "questionNumber": 108,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_109",
+      "questionNumber": 109,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_110",
+      "questionNumber": 110,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_111",
+      "questionNumber": 111,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_112",
+      "questionNumber": 112,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_113",
+      "questionNumber": 113,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_114",
+      "questionNumber": 114,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_115",
+      "questionNumber": 115,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_116",
+      "questionNumber": 116,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_117",
+      "questionNumber": 117,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_118",
+      "questionNumber": 118,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_119",
+      "questionNumber": 119,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_120",
+      "questionNumber": 120,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_121",
+      "questionNumber": 121,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_122",
+      "questionNumber": 122,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_123",
+      "questionNumber": 123,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_124",
+      "questionNumber": 124,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_125",
+      "questionNumber": 125,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_126",
+      "questionNumber": 126,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_127",
+      "questionNumber": 127,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_128",
+      "questionNumber": 128,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_129",
+      "questionNumber": 129,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_130",
+      "questionNumber": 130,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_131",
+      "questionNumber": 131,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_132",
+      "questionNumber": 132,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_133",
+      "questionNumber": 133,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_134",
+      "questionNumber": 134,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_135",
+      "questionNumber": 135,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_136",
+      "questionNumber": 136,
+      "questionText": "Which measure is most useful for comparing the efficiency of two farm enterprises that use different amounts of variable inputs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gross margin per unit of limiting resource"
+        },
+        {
+          "letter": "B",
+          "text": "Total sales alone"
+        },
+        {
+          "letter": "C",
+          "text": "Farm size alone"
+        },
+        {
+          "letter": "D",
+          "text": "Number of workers alone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gross margin per unit of a limiting resource allows enterprises to be compared where resources such as land, labour or capital are constrained.",
+      "answerConfidence": "high",
+      "topic": "Farm management and economics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_137",
+      "questionNumber": 137,
+      "questionText": "Which soil property most directly determines the soil's ability to resist a rapid change in pH when acid or alkali is added?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buffering capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Bulk density"
+        },
+        {
+          "letter": "C",
+          "text": "Particle density"
+        },
+        {
+          "letter": "D",
+          "text": "Colour"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Buffering capacity is the resistance of a soil to changes in pH.",
+      "answerConfidence": "high",
+      "topic": "Soil chemistry and fertility",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_138",
+      "questionNumber": 138,
+      "questionText": "What is the main significance of stomatal opening in crop physiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It regulates gas exchange and water loss"
+        },
+        {
+          "letter": "B",
+          "text": "It fixes nitrogen directly"
+        },
+        {
+          "letter": "C",
+          "text": "It forms seed coats"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all transpiration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Stomata regulate CO2 entry for photosynthesis and water-vapour loss through transpiration.",
+      "answerConfidence": "high",
+      "topic": "Crop physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_139",
+      "questionNumber": 139,
+      "questionText": "Which breeding strategy is most directly used to combine desirable traits from two genetically different parent lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hybridisation"
+        },
+        {
+          "letter": "B",
+          "text": "Clonal multiplication only"
+        },
+        {
+          "letter": "C",
+          "text": "Irrigation"
+        },
+        {
+          "letter": "D",
+          "text": "Top dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hybridisation crosses genetically different parents to combine traits in offspring.",
+      "answerConfidence": "high",
+      "topic": "Crop improvement",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_140",
+      "questionNumber": 140,
+      "questionText": "Why is an economic threshold used in integrated pest management?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid unnecessary control costs when pest damage is below an economically important level"
+        },
+        {
+          "letter": "B",
+          "text": "To guarantee zero pests"
+        },
+        {
+          "letter": "C",
+          "text": "To increase pesticide use"
+        },
+        {
+          "letter": "D",
+          "text": "To replace crop monitoring"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The threshold supports economically justified intervention rather than automatic pesticide application.",
+      "answerConfidence": "high",
+      "topic": "Crop protection",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_141",
+      "questionNumber": 141,
+      "questionText": "What does heritability describe in quantitative genetics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The proportion of observed phenotypic variation attributable to genetic variation in a specified population and environment"
+        },
+        {
+          "letter": "B",
+          "text": "The number of genes in an animal"
+        },
+        {
+          "letter": "C",
+          "text": "The age at puberty"
+        },
+        {
+          "letter": "D",
+          "text": "The feed conversion ratio"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heritability is a population statistic describing the genetic contribution to phenotypic variance under specified conditions.",
+      "answerConfidence": "high",
+      "topic": "Livestock genetics",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_142",
+      "questionNumber": 142,
+      "questionText": "Which amino-acid-related concept is central when assessing the quality of protein in a monogastric animal diet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Limiting essential amino acid"
+        },
+        {
+          "letter": "B",
+          "text": "Crude fibre colour"
+        },
+        {
+          "letter": "C",
+          "text": "Water hardness"
+        },
+        {
+          "letter": "D",
+          "text": "Soil texture"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The limiting essential amino acid constrains the utilisation of other amino acids for protein synthesis.",
+      "answerConfidence": "high",
+      "topic": "Animal nutrition",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_143",
+      "questionNumber": 143,
+      "questionText": "Which hormone is strongly associated with milk ejection in a lactating mammal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxytocin"
+        },
+        {
+          "letter": "B",
+          "text": "Insulin"
+        },
+        {
+          "letter": "C",
+          "text": "Thyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenaline"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Oxytocin stimulates contraction of myoepithelial cells, causing milk ejection.",
+      "answerConfidence": "high",
+      "topic": "Animal physiology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_144",
+      "questionNumber": 144,
+      "questionText": "What is a major advantage of including a well-managed legume in a pasture system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Biological nitrogen fixation can increase nitrogen inputs"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all weeds permanently"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates grazing management"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents drought"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Legumes can fix atmospheric nitrogen in symbiosis with compatible bacteria, contributing nitrogen to the system.",
+      "answerConfidence": "high",
+      "topic": "Pasture science",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_145",
+      "questionNumber": 145,
+      "questionText": "Why is matching tractor power to an implement important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It improves field efficiency and reduces unnecessary fuel use and machine stress"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees higher rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates maintenance"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for calibration"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct matching improves power utilisation, work rate, fuel efficiency and machine longevity.",
+      "answerConfidence": "high",
+      "topic": "Farm mechanisation",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_146",
+      "questionNumber": 146,
+      "questionText": "Which market function adds value by making produce more uniform in quality and presentation before sale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grading and standardisation"
+        },
+        {
+          "letter": "B",
+          "text": "Vaccination"
+        },
+        {
+          "letter": "C",
+          "text": "Ploughing"
+        },
+        {
+          "letter": "D",
+          "text": "Germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Grading and standardisation classify produce according to defined quality characteristics, supporting market transactions.",
+      "answerConfidence": "high",
+      "topic": "Agricultural marketing",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_147",
+      "questionNumber": 147,
+      "questionText": "If an enterprise has gross income of $24,000 and variable costs of $14,500, what is its gross margin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9,500"
+        },
+        {
+          "letter": "B",
+          "text": "$10,500"
+        },
+        {
+          "letter": "C",
+          "text": "$38,500"
+        },
+        {
+          "letter": "D",
+          "text": "$14,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "$24,000 − $14,500 = $9,500.",
+      "answerConfidence": "high",
+      "topic": "Farm business analysis",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_148",
+      "questionNumber": 148,
+      "questionText": "Which soil-management practice most directly improves infiltration while reducing erosion and preserving surface residue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation/minimum tillage"
+        },
+        {
+          "letter": "B",
+          "text": "Repeated intensive ploughing"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Burning all residues"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reduced disturbance and residue retention protect the surface and can improve infiltration and soil structure.",
+      "answerConfidence": "high",
+      "topic": "Conservation agriculture",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_149",
+      "questionNumber": 149,
+      "questionText": "Which climatic variable is especially useful when estimating evaporative demand of a crop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature and atmospheric humidity"
+        },
+        {
+          "letter": "B",
+          "text": "Soil colour only"
+        },
+        {
+          "letter": "C",
+          "text": "Livestock breed"
+        },
+        {
+          "letter": "D",
+          "text": "Seed shape"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Temperature and humidity strongly influence atmospheric evaporative demand; wind and radiation are also important.",
+      "answerConfidence": "high",
+      "topic": "Agricultural climatology",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "id": "ag_al_p1_150",
+      "questionNumber": 150,
+      "questionText": "Which feature of a well-designed agricultural experiment most directly improves the ability to separate treatment effects from random variation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Replication and randomisation"
+        },
+        {
+          "letter": "B",
+          "text": "Using only one plot"
+        },
+        {
+          "letter": "C",
+          "text": "Changing several variables without controls"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring environmental variation"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Replication estimates experimental variation while randomisation reduces systematic allocation bias.",
+      "answerConfidence": "high",
+      "topic": "Research and experimental design",
+      "difficulty": "medium",
+      "questionOrigin": "original_zimsec_aligned",
+      "referenceYears": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4065 @@
+{
+  "paperInfo": {
+    "subject": "Combined Science",
+    "level": "O Level",
+    "paperCode": "4003/03",
+    "paperName": "Combined Science Paper 3",
+    "paperType": "Practical/Investigation Practice",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Combined_Science_O_Level_4003_Paper3_150.json",
+    "copyrightNote": "Original practice questions synthesized from syllabus themes and recurring ZIMSEC-style patterns; not verbatim reproduction of past papers.",
+    "sourceBasis": "ZIMSEC O-Level Combined Science 4003/03 official paper listing and practical/investigation themes."
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "questionNumber": 1,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q002",
+      "questionNumber": 2,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q003",
+      "questionNumber": 3,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q004",
+      "questionNumber": 4,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q005",
+      "questionNumber": 5,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q006",
+      "questionNumber": 6,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q007",
+      "questionNumber": 7,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q008",
+      "questionNumber": 8,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q009",
+      "questionNumber": 9,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q010",
+      "questionNumber": 10,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q011",
+      "questionNumber": 11,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q012",
+      "questionNumber": 12,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q013",
+      "questionNumber": 13,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q014",
+      "questionNumber": 14,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q015",
+      "questionNumber": 15,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q016",
+      "questionNumber": 16,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q017",
+      "questionNumber": 17,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q018",
+      "questionNumber": 18,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q019",
+      "questionNumber": 19,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q020",
+      "questionNumber": 20,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q021",
+      "questionNumber": 21,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q022",
+      "questionNumber": 22,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q023",
+      "questionNumber": 23,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q024",
+      "questionNumber": 24,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q025",
+      "questionNumber": 25,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q026",
+      "questionNumber": 26,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q027",
+      "questionNumber": 27,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q028",
+      "questionNumber": 28,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q029",
+      "questionNumber": 29,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q030",
+      "questionNumber": 30,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q031",
+      "questionNumber": 31,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q032",
+      "questionNumber": 32,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q033",
+      "questionNumber": 33,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q034",
+      "questionNumber": 34,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q035",
+      "questionNumber": 35,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q036",
+      "questionNumber": 36,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q037",
+      "questionNumber": 37,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q038",
+      "questionNumber": 38,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q039",
+      "questionNumber": 39,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q040",
+      "questionNumber": 40,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q041",
+      "questionNumber": 41,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q042",
+      "questionNumber": 42,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q043",
+      "questionNumber": 43,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q044",
+      "questionNumber": 44,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q045",
+      "questionNumber": 45,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q046",
+      "questionNumber": 46,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q047",
+      "questionNumber": 47,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q048",
+      "questionNumber": 48,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q049",
+      "questionNumber": 49,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q050",
+      "questionNumber": 50,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q051",
+      "questionNumber": 51,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q052",
+      "questionNumber": 52,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q053",
+      "questionNumber": 53,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q054",
+      "questionNumber": 54,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q055",
+      "questionNumber": 55,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q056",
+      "questionNumber": 56,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q057",
+      "questionNumber": 57,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q058",
+      "questionNumber": 58,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q059",
+      "questionNumber": 59,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q060",
+      "questionNumber": 60,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q061",
+      "questionNumber": 61,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q062",
+      "questionNumber": 62,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q063",
+      "questionNumber": 63,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q064",
+      "questionNumber": 64,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q065",
+      "questionNumber": 65,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q066",
+      "questionNumber": 66,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q067",
+      "questionNumber": 67,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q068",
+      "questionNumber": 68,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q069",
+      "questionNumber": 69,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q070",
+      "questionNumber": 70,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q071",
+      "questionNumber": 71,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q072",
+      "questionNumber": 72,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q073",
+      "questionNumber": 73,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q074",
+      "questionNumber": 74,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q075",
+      "questionNumber": 75,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q076",
+      "questionNumber": 76,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q077",
+      "questionNumber": 77,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q078",
+      "questionNumber": 78,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q079",
+      "questionNumber": 79,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q080",
+      "questionNumber": 80,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q081",
+      "questionNumber": 81,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q082",
+      "questionNumber": 82,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q083",
+      "questionNumber": 83,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q084",
+      "questionNumber": 84,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q085",
+      "questionNumber": 85,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q086",
+      "questionNumber": 86,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q087",
+      "questionNumber": 87,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q088",
+      "questionNumber": 88,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q089",
+      "questionNumber": 89,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q090",
+      "questionNumber": 90,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q091",
+      "questionNumber": 91,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q092",
+      "questionNumber": 92,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q093",
+      "questionNumber": 93,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q094",
+      "questionNumber": 94,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q095",
+      "questionNumber": 95,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q096",
+      "questionNumber": 96,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q097",
+      "questionNumber": 97,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q098",
+      "questionNumber": 98,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q099",
+      "questionNumber": 99,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q100",
+      "questionNumber": 100,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q101",
+      "questionNumber": 101,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q102",
+      "questionNumber": 102,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q103",
+      "questionNumber": 103,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q104",
+      "questionNumber": 104,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q105",
+      "questionNumber": 105,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q106",
+      "questionNumber": 106,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q107",
+      "questionNumber": 107,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q108",
+      "questionNumber": 108,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q109",
+      "questionNumber": 109,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q110",
+      "questionNumber": 110,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q111",
+      "questionNumber": 111,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q112",
+      "questionNumber": 112,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q113",
+      "questionNumber": 113,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q114",
+      "questionNumber": 114,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q115",
+      "questionNumber": 115,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q116",
+      "questionNumber": 116,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q117",
+      "questionNumber": 117,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q118",
+      "questionNumber": 118,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q119",
+      "questionNumber": 119,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q120",
+      "questionNumber": 120,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q121",
+      "questionNumber": 121,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q122",
+      "questionNumber": 122,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q123",
+      "questionNumber": 123,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q124",
+      "questionNumber": 124,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q125",
+      "questionNumber": 125,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q126",
+      "questionNumber": 126,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q127",
+      "questionNumber": 127,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q128",
+      "questionNumber": 128,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q129",
+      "questionNumber": 129,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q130",
+      "questionNumber": 130,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q131",
+      "questionNumber": 131,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "B",
+          "text": "Hold it with bare fingers"
+        },
+        {
+          "letter": "C",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "D",
+          "text": "Seal it tightly"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q132",
+      "questionNumber": 132,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "B",
+          "text": "Melting when current becomes too large"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "D",
+          "text": "Storing water"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q133",
+      "questionNumber": 133,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen"
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q134",
+      "questionNumber": 134,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digestion"
+        },
+        {
+          "letter": "B",
+          "text": "Fermentation"
+        },
+        {
+          "letter": "C",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "D",
+          "text": "Transpiration stream"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q135",
+      "questionNumber": 135,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Ammeter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q136",
+      "questionNumber": 136,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "D",
+          "text": "Nitrogen gas"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q137",
+      "questionNumber": 137,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "B",
+          "text": "Only a switch with no source"
+        },
+        {
+          "letter": "C",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "D",
+          "text": "A thermometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q138",
+      "questionNumber": 138,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "B",
+          "text": "Normal tides"
+        },
+        {
+          "letter": "C",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "D",
+          "text": "Global warming"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q139",
+      "questionNumber": 139,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zygote"
+        },
+        {
+          "letter": "B",
+          "text": "Embryo"
+        },
+        {
+          "letter": "C",
+          "text": "Sperm"
+        },
+        {
+          "letter": "D",
+          "text": "Ovum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q140",
+      "questionNumber": 140,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "15 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "6 m/s"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    },
+    {
+      "id": "q141",
+      "questionNumber": 141,
+      "questionText": "Which safety practice is appropriate when heating a test tube?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Point it away from people"
+        },
+        {
+          "letter": "B",
+          "text": "Seal it tightly"
+        },
+        {
+          "letter": "C",
+          "text": "Look directly into it"
+        },
+        {
+          "letter": "D",
+          "text": "Hold it with bare fingers"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pointing the test tube away reduces risk from splashes or sudden release.",
+      "answerConfidence": "high",
+      "topic": "Laboratory safety"
+    },
+    {
+      "id": "q142",
+      "questionNumber": 142,
+      "questionText": "A fuse protects a circuit by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing current indefinitely"
+        },
+        {
+          "letter": "B",
+          "text": "Storing water"
+        },
+        {
+          "letter": "C",
+          "text": "Producing fuel"
+        },
+        {
+          "letter": "D",
+          "text": "Melting when current becomes too large"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fuse melts and breaks the circuit when current is excessive.",
+      "answerConfidence": "high",
+      "topic": "Electricity"
+    },
+    {
+      "id": "q143",
+      "questionNumber": 143,
+      "questionText": "Which gas is most abundant in Earth's atmosphere?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon dioxide"
+        },
+        {
+          "letter": "B",
+          "text": "Hydrogen"
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nitrogen makes up most of Earth's atmosphere.",
+      "answerConfidence": "high",
+      "topic": "Earth science"
+    },
+    {
+      "id": "q144",
+      "questionNumber": 144,
+      "questionText": "Which process in plants transports water mainly through xylem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pollination only"
+        },
+        {
+          "letter": "B",
+          "text": "Transpiration stream"
+        },
+        {
+          "letter": "C",
+          "text": "Digestion"
+        },
+        {
+          "letter": "D",
+          "text": "Fermentation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Water moves through xylem as part of the transpiration stream.",
+      "answerConfidence": "high",
+      "topic": "Plant transport"
+    },
+    {
+      "id": "q145",
+      "questionNumber": 145,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "B",
+          "text": "Ammeter"
+        },
+        {
+          "letter": "C",
+          "text": "Voltmeter"
+        },
+        {
+          "letter": "D",
+          "text": "Barometer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Measurement"
+    },
+    {
+      "id": "q146",
+      "questionNumber": 146,
+      "questionText": "A metal that reacts readily with dilute acid often produces",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chlorine gas"
+        },
+        {
+          "letter": "B",
+          "text": "Nitrogen gas"
+        },
+        {
+          "letter": "C",
+          "text": "Oxygen only"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrogen gas"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reactive metals can displace hydrogen from dilute acids.",
+      "answerConfidence": "high",
+      "topic": "Metals"
+    },
+    {
+      "id": "q147",
+      "questionNumber": 147,
+      "questionText": "Which component is needed for a complete simple circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only an insulator"
+        },
+        {
+          "letter": "B",
+          "text": "A thermometer"
+        },
+        {
+          "letter": "C",
+          "text": "A conducting path"
+        },
+        {
+          "letter": "D",
+          "text": "Only a switch with no source"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete conducting path allows current to flow from the source and back.",
+      "answerConfidence": "high",
+      "topic": "Circuits"
+    },
+    {
+      "id": "q148",
+      "questionNumber": 148,
+      "questionText": "Which environmental problem is strongly associated with excess greenhouse gases?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rock crystallisation"
+        },
+        {
+          "letter": "B",
+          "text": "Global warming"
+        },
+        {
+          "letter": "C",
+          "text": "Soil formation"
+        },
+        {
+          "letter": "D",
+          "text": "Normal tides"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Increased greenhouse gases can enhance the greenhouse effect and warming.",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "q149",
+      "questionNumber": 149,
+      "questionText": "Which reproductive cell is produced by the male human reproductive system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sperm"
+        },
+        {
+          "letter": "B",
+          "text": "Ovum"
+        },
+        {
+          "letter": "C",
+          "text": "Zygote"
+        },
+        {
+          "letter": "D",
+          "text": "Embryo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sperm are male gametes.",
+      "answerConfidence": "high",
+      "topic": "Reproduction"
+    },
+    {
+      "id": "q150",
+      "questionNumber": 150,
+      "questionText": "A cyclist travels 300 m in 20 s. What is the average speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "6 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "150 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "15 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = 300 ÷ 20 = 15 m/s.",
+      "answerConfidence": "high",
+      "topic": "Motion"
+    }
+  ]
+}

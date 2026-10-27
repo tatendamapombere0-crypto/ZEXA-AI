@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chem_o_atomic_1",
+    "level": "O-Level",
+    "subject": "Chemistry",
+    "topic": "Atomic Structure and Bonding",
+    "content": "## Atoms, Elements, and Compounds\n\nChemistry is the study of matter and the changes it undergoes. All matter is made of atoms.\n\n### Atomic Structure\n- **Protons:** Positively charged particles in the nucleus. The number of protons determines the element (Atomic Number).\n- **Neutrons:** Neutral particles in the nucleus. Atoms of the same element with different numbers of neutrons are called **Isotopes**.\n- **Electrons:** Negatively charged particles that orbit the nucleus in shells.\n- **Mass Number:** The total number of protons and neutrons.\n\n### Chemical Bonding\n- **Ionic Bonding:** Between metals and non-metals. Electrons are transferred to create ions with full outer shells. Resulting compounds (e.g., NaCl) have high melting points.\n- **Covalent Bonding:** Between non-metals. Electrons are shared to achieve stability. Simple molecules (H2O, CH4) have low melting points, while giant structures (Diamond, Graphite) have very high ones.\n- **Metallic Bonding:** In metals. Positive ions are held together in a 'sea' of delocalized electrons, which allows metals to conduct electricity and heat.",
+    "source": "ZIMSEC Chemistry O-Level",
+    "keywords": ["chemistry", "atoms", "protons", "neutrons", "electrons", "bonding", "ionic", "covalent"]
+  },
+  {
+    "id": "chem_o_stoich_1",
+    "level": "O-Level",
+    "subject": "Chemistry",
+    "topic": "The Mole Concept and Stoichiometry",
+    "content": "## Stoichiometry: The Math of Chemistry\n\nStoichiometry involves calculating the quantities of reactants and products in chemical reactions.\n\n### The Mole\nA mole is the unit for the amount of substance. One mole contains Avogadro's number of particles (6.02 x 10^23).\n- **Mass to Moles:** moles = mass (g) / Molar Mass (g/mol).\n- **Concentration:** Concentration (mol/dm^3) = moles / volume (dm^3).\n- **Molar Volume of Gas:** At r.t.p. (room temperature and pressure), one mole of any gas occupies 24 dm^3.\n\n### Balancing Equations\nChemical equations must be balanced to obey the Law of Conservation of Mass. The coefficients (numbers in front) tell you the ratio of moles reacting. For example, in 2H2 + O2 -> 2H2O, two moles of hydrogen react with one mole of oxygen to produce two moles of water.\n\n### Yield and Purity\n- **Percentage Yield:** (Actual Yield / Theoretical Yield) x 100%.\n- **Percentage Purity:** (Mass of pure substance / Total mass of sample) x 100%.",
+    "source": "ZIMSEC Chemistry Revision",
+    "keywords": ["mole", "stoichiometry", "calculations", "molar mass", "yield", "purity", "chemistry"]
+  },
+  {
+    "id": "chem_o_organic_1",
+    "level": "O-Level",
+    "subject": "Chemistry",
+    "topic": "Introduction to Organic Chemistry",
+    "content": "## Organic Chemistry: The Chemistry of Carbon\n\nOrganic chemistry focuses on compounds containing carbon, which is the basis for all life and many industrial products.\n\n### Hydrocarbons\n- **Alkanes:** Saturated hydrocarbons with single C-C bonds. General formula: CnH2n+2. They are relatively unreactive except for combustion.\n- **Alkenes:** Unsaturated hydrocarbons with at least one C=C double bond. General formula: CnH2n. They are more reactive and can undergo addition reactions (e.g., adding bromine water turns from orange to colorless).\n\n### Functional Groups\n- **Alcohols:** Contain the -OH group (e.g., Ethanol). Used as fuels and solvents.\n- **Carboxylic Acids:** Contain the -COOH group (e.g., Ethanoic acid). They are weak acids and react with alcohols to form **Esters**, which often have pleasant fruity smells.\n\n### Polymers\nPolymers are large molecules made of many repeating units called monomers. **Addition polymerization** occurs with alkenes (e.g., polyethene). **Condensation polymerization** (e.g., Nylon, Terylene) involves the loss of a small molecule like water.",
+    "source": "ZIMSEC Organic Chemistry",
+    "keywords": ["organic", "carbon", "alkane", "alkene", "polymer", "alcohols", "chemistry"]
+  },
+  {
+    "id": "chem_a_equilib_1",
+    "level": "A-Level",
+    "subject": "Chemistry",
+    "topic": "Physical Chemistry: Chemical Equilibria",
+    "content": "## Chemical Equilibria and Kinetics\n\nUnderstanding how fast reactions happen (Kinetics) and how far they go (Equilibria) is vital for industrial chemical production.\n\n### Reversible Reactions\nMany reactions can proceed in both directions. In a closed system, they reach **Dynamic Equilibrium**, where the rate of the forward reaction equals the rate of the reverse reaction, and concentrations remain constant.\n\n### Le Chatelier's Principle\nIf a system at equilibrium is disturbed (by changing concentration, temperature, or pressure), the system shifts its position to counteract the disturbance.\n- **Pressure:** Increasing pressure shifts equilibrium to the side with fewer gas moles.\n- **Temperature:** Increasing temperature shifts equilibrium in the endothermic direction.\n\n### Reaction Rates (Kinetics)\nThe rate depends on the frequency and energy of collisions between particles. Factors include:\n- **Concentration/Pressure:** Increases frequency of collisions.\n- **Temperature:** Increases both frequency and the proportion of particles with energy >= **Activation Energy**.\n- **Catalysts:** Provide an alternative pathway with a lower activation energy, speeding up the reaction without being consumed.",
+    "source": "ZIMSEC A-Level Physical Chemistry",
+    "keywords": ["equilibria", "kinetics", "le chatelier", "reaction rate", "catalyst", "chemistry"]
+  },
+  {
+    "id": "chem_o_acidbase_1",
+    "level": "O-Level",
+    "subject": "Chemistry",
+    "topic": "Acids, Bases, and Salts",
+    "content": "## Acids, Bases, and pH\n\nAcids and bases are common substances used in everything from cooking to battery production.\n\n### Definitions\n- **Acids:** Substances that produce H+ ions in water. They have a pH < 7 and turn blue litmus paper red.\n- **Bases:** Substances that react with acids to form a salt and water. Bases soluble in water are called **Alkalis**, producing OH- ions. They have a pH > 7 and turn red litmus blue.\n\n### Reactions\n- **Neutralization:** Acid + Base -> Salt + Water.\n- **Acid + Metal:** -> Salt + Hydrogen gas.\n- **Acid + Carbonate:** -> Salt + Water + Carbon Dioxide gas.\n\n### Salts\nSalts are formed when the hydrogen in an acid is replaced by a metal or ammonium ion. Soluble salts can be prepared by titration or reacting acid with excess solid. Insoluble salts are prepared by **Precipitation** (mixing two soluble salts). Examples: Copper sulfate (blue), Sodium chloride (white).",
+    "source": "ZIMSEC Chemistry Revision",
+    "keywords": ["acids", "bases", "salts", "ph", "neutralization", "chemistry"]
+  }
+]

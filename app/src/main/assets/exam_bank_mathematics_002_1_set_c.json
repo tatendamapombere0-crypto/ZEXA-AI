@@ -1,0 +1,531 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set C (MCQ, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": 1,
+      "questionText": "Ninety thousand three hundred and eight in figures is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "903 008."
+        },
+        {
+          "letter": "B",
+          "text": "90 380."
+        },
+        {
+          "letter": "C",
+          "text": "90 308."
+        },
+        {
+          "letter": "D",
+          "text": "9 308."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ninety thousand (90 000) plus three hundred and eight (308) = 90 308.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q2",
+      "questionNumber": 2,
+      "questionText": "6,0937 correct to three decimal places is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6,093."
+        },
+        {
+          "letter": "B",
+          "text": "6,094."
+        },
+        {
+          "letter": "C",
+          "text": "6,09."
+        },
+        {
+          "letter": "D",
+          "text": "6,1."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The fourth decimal digit is 7, which rounds the third decimal digit up: 6,0937 -> 6,094.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q3",
+      "questionNumber": 3,
+      "questionText": "40 - 6 x 3 + 2",
+      "options": [
+        {
+          "letter": "A",
+          "text": "24."
+        },
+        {
+          "letter": "B",
+          "text": "20."
+        },
+        {
+          "letter": "C",
+          "text": "44."
+        },
+        {
+          "letter": "D",
+          "text": "104."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Order of operations: multiply first (6 x 3 = 18), then work left to right: 40 - 18 + 2 = 24.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q4",
+      "questionNumber": 4,
+      "questionText": "32/7 expressed as a mixed number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3(4/7)."
+        },
+        {
+          "letter": "B",
+          "text": "4(1/7)."
+        },
+        {
+          "letter": "C",
+          "text": "4(4/7)."
+        },
+        {
+          "letter": "D",
+          "text": "5(1/7)."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "32 divided by 7 = 4 remainder 4, so 32/7 = 4(4/7).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q5",
+      "questionNumber": 5,
+      "questionText": "How many lines of symmetry does a square have?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2."
+        },
+        {
+          "letter": "B",
+          "text": "3."
+        },
+        {
+          "letter": "C",
+          "text": "4."
+        },
+        {
+          "letter": "D",
+          "text": "5."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A square has 4 lines of symmetry (2 diagonals and 2 through the midpoints of opposite sides).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q6",
+      "questionNumber": 6,
+      "questionText": "Which of the following solid shapes has one flat circular face and one curved surface meeting at a point?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cylinder"
+        },
+        {
+          "letter": "B",
+          "text": "Cone"
+        },
+        {
+          "letter": "C",
+          "text": "Sphere"
+        },
+        {
+          "letter": "D",
+          "text": "Cube"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A cone has a single flat circular base and a curved surface tapering to a point (apex).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q7",
+      "questionNumber": 7,
+      "questionText": "In 84 - 29 = 55, which one is the minuend?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "84"
+        },
+        {
+          "letter": "B",
+          "text": "29"
+        },
+        {
+          "letter": "C",
+          "text": "55"
+        },
+        {
+          "letter": "D",
+          "text": "113"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "In a subtraction sentence, the minuend is the number being subtracted from: 84.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q8",
+      "questionNumber": 8,
+      "questionText": "The time shown on a clock is 1615. In 3 hours 50 minutes the time will be",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1905."
+        },
+        {
+          "letter": "B",
+          "text": "1955."
+        },
+        {
+          "letter": "C",
+          "text": "2005."
+        },
+        {
+          "letter": "D",
+          "text": "2015."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "1615 + 3 hours = 1915. 1915 + 50 minutes = 2005.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q9",
+      "questionNumber": 9,
+      "questionText": "Chido bought 15 plates for $75. She sold each plate for $6. Her profit was",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0."
+        },
+        {
+          "letter": "B",
+          "text": "$15."
+        },
+        {
+          "letter": "C",
+          "text": "$75."
+        },
+        {
+          "letter": "D",
+          "text": "$90."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Selling price total = 15 x 6 = $90. Profit = 90 - 75 = $15.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q10",
+      "questionNumber": 10,
+      "questionText": "845 672 rounded off to the nearest 100 000 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "800 000."
+        },
+        {
+          "letter": "B",
+          "text": "840 000."
+        },
+        {
+          "letter": "C",
+          "text": "850 000."
+        },
+        {
+          "letter": "D",
+          "text": "900 000."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The ten-thousands digit is 4, which is less than 5, so 845 672 rounds down to 800 000.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q11",
+      "questionNumber": 11,
+      "questionText": "The sum of two numbers is 15. Their product is 56. The numbers are",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 and 10."
+        },
+        {
+          "letter": "B",
+          "text": "6 and 9."
+        },
+        {
+          "letter": "C",
+          "text": "7 and 8."
+        },
+        {
+          "letter": "D",
+          "text": "4 and 11."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "7 + 8 = 15 and 7 x 8 = 56, so the numbers are 7 and 8.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q12",
+      "questionNumber": 12,
+      "questionText": "7/10 is the same as",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14/15."
+        },
+        {
+          "letter": "B",
+          "text": "21/30."
+        },
+        {
+          "letter": "C",
+          "text": "28/50."
+        },
+        {
+          "letter": "D",
+          "text": "35/40."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Multiplying both the numerator and denominator of 7/10 by 3 gives 21/30, an equivalent fraction.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q13",
+      "questionNumber": 13,
+      "questionText": "What is the volume of a cube with sides of 4cm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16cm cubed."
+        },
+        {
+          "letter": "B",
+          "text": "48cm cubed."
+        },
+        {
+          "letter": "C",
+          "text": "64cm cubed."
+        },
+        {
+          "letter": "D",
+          "text": "12cm cubed."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Volume of a cube = side x side x side = 4 x 4 x 4 = 64cm cubed.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q14",
+      "questionNumber": 14,
+      "questionText": "10 workers can build a wall in 12 days. How many workers are needed to build the same wall in 8 days?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12."
+        },
+        {
+          "letter": "B",
+          "text": "13."
+        },
+        {
+          "letter": "C",
+          "text": "15."
+        },
+        {
+          "letter": "D",
+          "text": "16."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "This is inverse proportion: 10 x 12 = 120 worker-days. 120 / 8 = 15 workers.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q15",
+      "questionNumber": 15,
+      "questionText": "Find the value of 356,8 divided by 100.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3,568."
+        },
+        {
+          "letter": "B",
+          "text": "35,68."
+        },
+        {
+          "letter": "C",
+          "text": "0,3568."
+        },
+        {
+          "letter": "D",
+          "text": "3 568."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Dividing by 100 moves the decimal point two places to the left: 356,8 / 100 = 3,568.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q16",
+      "questionNumber": 16,
+      "questionText": "What must be added to 2 468 to make 5 000?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 432."
+        },
+        {
+          "letter": "B",
+          "text": "2 532."
+        },
+        {
+          "letter": "C",
+          "text": "2 542."
+        },
+        {
+          "letter": "D",
+          "text": "3 468."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "5 000 - 2 468 = 2 532.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q17",
+      "questionNumber": 17,
+      "questionText": "Share 168 oranges between two families in the ratio 4:3. How many does the larger family get?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "72."
+        },
+        {
+          "letter": "B",
+          "text": "84."
+        },
+        {
+          "letter": "C",
+          "text": "96."
+        },
+        {
+          "letter": "D",
+          "text": "98."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Total parts = 4 + 3 = 7. One part = 168 / 7 = 24. Larger family's share (4 parts) = 4 x 24 = 96.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q18",
+      "questionNumber": 18,
+      "questionText": "Find the average of 40, 55, 35 and 50.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42,5."
+        },
+        {
+          "letter": "B",
+          "text": "44."
+        },
+        {
+          "letter": "C",
+          "text": "45."
+        },
+        {
+          "letter": "D",
+          "text": "46."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sum = 40 + 55 + 35 + 50 = 180. Average = 180 / 4 = 45.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q19",
+      "questionNumber": 19,
+      "questionText": "A number, when divided by 6, gives a quotient of 34. The number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "28."
+        },
+        {
+          "letter": "B",
+          "text": "40."
+        },
+        {
+          "letter": "C",
+          "text": "198."
+        },
+        {
+          "letter": "D",
+          "text": "204."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Number = quotient x divisor = 34 x 6 = 204.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "q20",
+      "questionNumber": 20,
+      "questionText": "Which of the following is a pair of parallel lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Two lines that cross at a right angle."
+        },
+        {
+          "letter": "B",
+          "text": "Two straight lines that never meet, however far extended, and stay the same distance apart."
+        },
+        {
+          "letter": "C",
+          "text": "Two lines that meet at a single point."
+        },
+        {
+          "letter": "D",
+          "text": "Two curved lines that touch at one point."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Parallel lines are straight lines in the same plane that never meet, remaining the same distance apart.",
+      "answerConfidence": "high"
+    }
+  ]
+}

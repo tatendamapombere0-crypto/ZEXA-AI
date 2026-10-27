@@ -1,0 +1,1311 @@
+{
+  "paperInfo": {
+    "subject": "Mathematics",
+    "level": "Primary",
+    "paperCode": "002/1",
+    "paperName": "Grade 7 Mathematics Paper 1 - Practice Set 1B (original questions, ZIMSEC 002/1 format)",
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/topic-structure)"
+  },
+  "questions": [
+    {
+      "id": "g7_math_1b_q1",
+      "questionNumber": 1,
+      "questionText": "Three hundred and forty two thousand one hundred is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "342 100"
+        },
+        {
+          "letter": "B",
+          "text": "34 100"
+        },
+        {
+          "letter": "C",
+          "text": "34 210"
+        },
+        {
+          "letter": "D",
+          "text": "342 001"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Three hundred and forty two thousand (342 000) plus one hundred (100) = 342 100.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q2",
+      "questionNumber": 2,
+      "questionText": "Which of the following is NOT a factor of 72?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3"
+        },
+        {
+          "letter": "B",
+          "text": "6"
+        },
+        {
+          "letter": "C",
+          "text": "9"
+        },
+        {
+          "letter": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "72 = 2^3 x 3^2. Its factors include 3, 6 and 9, but 72 / 5 = 14.4, which is not a whole number, so 5 is not a factor.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q3",
+      "questionNumber": 3,
+      "questionText": "The prime number in the following is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81"
+        },
+        {
+          "letter": "B",
+          "text": "85"
+        },
+        {
+          "letter": "C",
+          "text": "87"
+        },
+        {
+          "letter": "D",
+          "text": "83"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "81 = 3x27, 85 = 5x17, 87 = 3x29, all have factors other than 1 and themselves. 83 has no factors other than 1 and 83, so it is prime.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q4",
+      "questionNumber": 4,
+      "questionText": "(10^5 x 3) + (10^3 x 5) + (10^1 x 8) is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "300 580"
+        },
+        {
+          "letter": "B",
+          "text": "358 000"
+        },
+        {
+          "letter": "C",
+          "text": "35 800"
+        },
+        {
+          "letter": "D",
+          "text": "305 080"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "(100 000 x 3) + (1 000 x 5) + (10 x 8) = 300 000 + 5 000 + 80 = 305 080.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q5",
+      "questionNumber": 5,
+      "questionText": "What must be added to the sum of 34 and 47 to give a total of 100?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81"
+        },
+        {
+          "letter": "B",
+          "text": "29"
+        },
+        {
+          "letter": "C",
+          "text": "19"
+        },
+        {
+          "letter": "D",
+          "text": "71"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sum of 34 and 47 = 81. To reach 100: 100 - 81 = 19.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q6",
+      "questionNumber": 6,
+      "questionText": "A motorist travelled 45 km in 9 hours. What was his average speed in km/h?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 km/h"
+        },
+        {
+          "letter": "B",
+          "text": "5 km/h"
+        },
+        {
+          "letter": "C",
+          "text": "9 km/h"
+        },
+        {
+          "letter": "D",
+          "text": "45 km/h"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Average speed = distance / time = 45 / 9 = 5 km/h.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q7",
+      "questionNumber": 7,
+      "questionText": "Tapiwa was born in 1971 and Ropafadzo in 1985. How many years older is Tapiwa than Ropafadzo?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12"
+        },
+        {
+          "letter": "B",
+          "text": "13"
+        },
+        {
+          "letter": "C",
+          "text": "14"
+        },
+        {
+          "letter": "D",
+          "text": "15"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "1985 - 1971 = 14 years.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q8",
+      "questionNumber": 8,
+      "questionText": "What is 3/4 of 1 day?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6 hrs"
+        },
+        {
+          "letter": "B",
+          "text": "12 hrs"
+        },
+        {
+          "letter": "C",
+          "text": "18 hrs"
+        },
+        {
+          "letter": "D",
+          "text": "20 hrs"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "1 day = 24 hours. 3/4 of 24 = (3 x 24) / 4 = 72 / 4 = 18 hrs.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q9",
+      "questionNumber": 9,
+      "questionText": "6 - 0,438 =",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5,562"
+        },
+        {
+          "letter": "B",
+          "text": "5,438"
+        },
+        {
+          "letter": "C",
+          "text": "6,438"
+        },
+        {
+          "letter": "D",
+          "text": "5,652"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "6,000 - 0,438 = 5,562.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q10",
+      "questionNumber": 10,
+      "questionText": "A digital watch shows 08:15:20. How many minutes and seconds will pass before the watch shows 09:00:00?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "44 min 40 sec"
+        },
+        {
+          "letter": "B",
+          "text": "45 min 20 sec"
+        },
+        {
+          "letter": "C",
+          "text": "44 min 20 sec"
+        },
+        {
+          "letter": "D",
+          "text": "45 min 40 sec"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "From 08:15:20 to 09:00:00. From 08:15:20 to 08:59:20 is 44 minutes. From 08:59:20 to 09:00:00 is 40 seconds. Total = 44 min 40 sec.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q11",
+      "questionNumber": 11,
+      "questionText": "Farai counted his money as $2,05 instead of $2,50. Farai's counting was wrong by",
+      "options": [
+        {
+          "letter": "A",
+          "text": "55c"
+        },
+        {
+          "letter": "B",
+          "text": "45c"
+        },
+        {
+          "letter": "C",
+          "text": "35c"
+        },
+        {
+          "letter": "D",
+          "text": "25c"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "$2,50 - $2,05 = $0,45 = 45c.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q12",
+      "questionNumber": 12,
+      "questionText": "53/12 expressed as a mixed number in its lowest terms is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4(1/12)"
+        },
+        {
+          "letter": "B",
+          "text": "4(5/12)"
+        },
+        {
+          "letter": "C",
+          "text": "4(4/12)"
+        },
+        {
+          "letter": "D",
+          "text": "5(1/12)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "53 divided by 12 = 4 remainder 5, so 53/12 = 4(5/12), already in lowest terms since 5 and 12 share no common factor.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q13",
+      "questionNumber": 13,
+      "questionText": "0,07 kg expressed in grammes is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0,7g"
+        },
+        {
+          "letter": "B",
+          "text": "7g"
+        },
+        {
+          "letter": "C",
+          "text": "70g"
+        },
+        {
+          "letter": "D",
+          "text": "700g"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "1 kg = 1 000g. 0,07 x 1 000 = 70g.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q14",
+      "questionNumber": 14,
+      "questionText": "The gross mass of a bag of maize is 850 kg. If the empty bag has a mass of 15 kg, what is the mass of the maize?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "835 kg"
+        },
+        {
+          "letter": "B",
+          "text": "865 kg"
+        },
+        {
+          "letter": "C",
+          "text": "800 kg"
+        },
+        {
+          "letter": "D",
+          "text": "12,75 kg"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mass of maize = gross mass - empty bag mass = 850 - 15 = 835 kg.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q15",
+      "questionNumber": 15,
+      "questionText": "By how much is the sum of 0,05 and 4 greater than their product?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0,15"
+        },
+        {
+          "letter": "B",
+          "text": "3,85"
+        },
+        {
+          "letter": "C",
+          "text": "4,05"
+        },
+        {
+          "letter": "D",
+          "text": "4,15"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sum = 0,05 + 4 = 4,05. Product = 0,05 x 4 = 0,20. Difference = 4,05 - 0,20 = 3,85.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q16",
+      "questionNumber": 16,
+      "questionText": "In a circle centre O, a straight line joining two points on the circumference and passing through the centre O is called",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a chord."
+        },
+        {
+          "letter": "B",
+          "text": "an arc."
+        },
+        {
+          "letter": "C",
+          "text": "the diameter."
+        },
+        {
+          "letter": "D",
+          "text": "the circumference."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A straight line joining two points on the circle and passing through the centre is the diameter - it is the longest possible chord.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q17",
+      "questionNumber": 17,
+      "questionText": "2(1/2) + 1(3/8) + 2(1/4) =",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5(1/8)"
+        },
+        {
+          "letter": "B",
+          "text": "6(1/8)"
+        },
+        {
+          "letter": "C",
+          "text": "5(7/8)"
+        },
+        {
+          "letter": "D",
+          "text": "6(3/8)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Convert to eighths: 2(4/8) + 1(3/8) + 2(2/8) = 5 + (4+3+2)/8 = 5 + 9/8 = 5 + 1(1/8) = 6(1/8).",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q18",
+      "questionNumber": 18,
+      "questionText": "What is 4 divided by 1/3?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/3"
+        },
+        {
+          "letter": "B",
+          "text": "12"
+        },
+        {
+          "letter": "C",
+          "text": "3(1/3)"
+        },
+        {
+          "letter": "D",
+          "text": "1(1/3)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dividing by a fraction means multiplying by its reciprocal: 4 divided by (1/3) = 4 x 3 = 12.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q19",
+      "questionNumber": 19,
+      "questionText": "If the dividend is 84,60 and the divisor is 0,2, the quotient is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4,23"
+        },
+        {
+          "letter": "B",
+          "text": "42,3"
+        },
+        {
+          "letter": "C",
+          "text": "423"
+        },
+        {
+          "letter": "D",
+          "text": "4230"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "84,60 / 0,2 = 846 / 2 = 423.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q20",
+      "questionNumber": 20,
+      "questionText": "The perimeter, in cm, of a regular hexagon of side 5,5 cm is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11"
+        },
+        {
+          "letter": "B",
+          "text": "27,5"
+        },
+        {
+          "letter": "C",
+          "text": "33"
+        },
+        {
+          "letter": "D",
+          "text": "30,25"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A regular hexagon has 6 equal sides. Perimeter = 6 x 5,5 = 33cm.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q21",
+      "questionNumber": 21,
+      "questionText": "Find the volume of a box whose inside measurements are 12cm x 6cm x 9cm.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "648 cm3"
+        },
+        {
+          "letter": "B",
+          "text": "486 cm3"
+        },
+        {
+          "letter": "C",
+          "text": "27 cm3"
+        },
+        {
+          "letter": "D",
+          "text": "658 cm3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Volume = length x width x height = 12 x 6 x 9 = 648 cm3.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q22",
+      "questionNumber": 22,
+      "questionText": "A Grade 6 class has 18 boys and 24 girls. What is the ratio of boys to girls?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3:4"
+        },
+        {
+          "letter": "B",
+          "text": "4:3"
+        },
+        {
+          "letter": "C",
+          "text": "6:8"
+        },
+        {
+          "letter": "D",
+          "text": "2:3"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "18:24 simplifies (dividing both by their HCF, 6) to 3:4.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q23",
+      "questionNumber": 23,
+      "questionText": "On a bus, 30% of the passengers were adults. There were 63 children. How many people were on the bus altogether?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81"
+        },
+        {
+          "letter": "B",
+          "text": "90"
+        },
+        {
+          "letter": "C",
+          "text": "70"
+        },
+        {
+          "letter": "D",
+          "text": "110"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "If 30% were adults, 70% were children = 63. So 1% = 63/70 = 0,9. Total (100%) = 0,9 x 100 = 90.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q24",
+      "questionNumber": 24,
+      "questionText": "The average mass of 5 children is 38,4 kg. What is their total mass?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "192 kg"
+        },
+        {
+          "letter": "B",
+          "text": "7,68 kg"
+        },
+        {
+          "letter": "C",
+          "text": "43,4 kg"
+        },
+        {
+          "letter": "D",
+          "text": "190 kg"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total mass = average x number of children = 38,4 x 5 = 192 kg.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q25",
+      "questionNumber": 25,
+      "questionText": "A rectangular garden measuring 8m by 6m has a square flower bed of side 2m removed from one corner. What is the remaining area?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "44 sq m"
+        },
+        {
+          "letter": "B",
+          "text": "48 sq m"
+        },
+        {
+          "letter": "C",
+          "text": "40 sq m"
+        },
+        {
+          "letter": "D",
+          "text": "46 sq m"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Area of garden = 8 x 6 = 48 sq m. Area of flower bed = 2 x 2 = 4 sq m. Remaining area = 48 - 4 = 44 sq m.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q26",
+      "questionNumber": 26,
+      "questionText": "At how much should a trader sell a bicycle bought for $840,50 to make a profit of $155,80?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$996,30"
+        },
+        {
+          "letter": "B",
+          "text": "$684,70"
+        },
+        {
+          "letter": "C",
+          "text": "$995,30"
+        },
+        {
+          "letter": "D",
+          "text": "$1 000,00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Selling price = cost price + profit = 840,50 + 155,80 = $996,30.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q27",
+      "questionNumber": 27,
+      "questionText": "In a class of 40 pupils, 5 of the pupils wear glasses. What percentage of the class wear glasses?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5%"
+        },
+        {
+          "letter": "B",
+          "text": "10%"
+        },
+        {
+          "letter": "C",
+          "text": "12,5%"
+        },
+        {
+          "letter": "D",
+          "text": "8%"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Percentage = (5/40) x 100 = 12,5%.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q28",
+      "questionNumber": 28,
+      "questionText": "Tendai's watch shows 2:20 pm. It is 7 minutes slow. What is the correct time?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2:13 pm"
+        },
+        {
+          "letter": "B",
+          "text": "2:27 pm"
+        },
+        {
+          "letter": "C",
+          "text": "2:07 pm"
+        },
+        {
+          "letter": "D",
+          "text": "2:33 pm"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "If the watch is slow (behind), the correct time is later: 2:20 pm + 7 minutes = 2:27 pm.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q29",
+      "questionNumber": 29,
+      "questionText": "How many bottles holding 250 ml can be filled from a container holding 6 litres?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15"
+        },
+        {
+          "letter": "B",
+          "text": "20"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "30"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "6 litres = 6 000 ml. Number of bottles = 6 000 / 250 = 24.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q30",
+      "questionNumber": 30,
+      "questionText": "In a triangle, one angle is 50 degrees and another is 90 degrees. What is the size of the third angle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 degrees"
+        },
+        {
+          "letter": "B",
+          "text": "40 degrees"
+        },
+        {
+          "letter": "C",
+          "text": "50 degrees"
+        },
+        {
+          "letter": "D",
+          "text": "140 degrees"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Angles in a triangle add up to 180 degrees. Third angle = 180 - 50 - 90 = 40 degrees.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q31",
+      "questionNumber": 31,
+      "questionText": "(64 + 21) x 0 =",
+      "options": [
+        {
+          "letter": "A",
+          "text": "85"
+        },
+        {
+          "letter": "B",
+          "text": "0"
+        },
+        {
+          "letter": "C",
+          "text": "43"
+        },
+        {
+          "letter": "D",
+          "text": "64"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Any number multiplied by 0 equals 0, regardless of what is inside the brackets.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q32",
+      "questionNumber": 32,
+      "questionText": "Farai and Tino shared a cake equally. Tino later shared her share of the cake equally with Nyasha. What fraction of the whole cake does Nyasha get?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/2"
+        },
+        {
+          "letter": "B",
+          "text": "1/3"
+        },
+        {
+          "letter": "C",
+          "text": "1/4"
+        },
+        {
+          "letter": "D",
+          "text": "1/6"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tino's share is 1/2 of the cake. Sharing this equally between Tino and Nyasha gives each 1/2 of 1/2 = 1/4 of the whole cake.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q33",
+      "questionNumber": 33,
+      "questionText": "7,45 - 0,6 =",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7,39"
+        },
+        {
+          "letter": "B",
+          "text": "6,85"
+        },
+        {
+          "letter": "C",
+          "text": "7,85"
+        },
+        {
+          "letter": "D",
+          "text": "6,39"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "7,45 - 0,60 = 6,85.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q34",
+      "questionNumber": 34,
+      "questionText": "The highest common factor (HCF) of 18, 36, and 54 is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "9"
+        },
+        {
+          "letter": "C",
+          "text": "18"
+        },
+        {
+          "letter": "D",
+          "text": "36"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "18 = 2x3^2, 36 = 2^2x3^2, 54 = 2x3^3. The highest common factor of all three is 2 x 3^2 = 18.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q35",
+      "questionNumber": 35,
+      "questionText": "If 3/5 of a number is 45, the number is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "27"
+        },
+        {
+          "letter": "B",
+          "text": "54"
+        },
+        {
+          "letter": "C",
+          "text": "75"
+        },
+        {
+          "letter": "D",
+          "text": "15"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "If (3/5) x number = 45, then number = 45 divided by (3/5) = 45 x (5/3) = 75.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q36",
+      "questionNumber": 36,
+      "questionText": "In 2021, Chindunduma School had a total enrolment of 640 pupils. In 2022, enrolment dropped by 10%. What was the enrolment in 2022?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "64"
+        },
+        {
+          "letter": "B",
+          "text": "576"
+        },
+        {
+          "letter": "C",
+          "text": "630"
+        },
+        {
+          "letter": "D",
+          "text": "704"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "10% of 640 = 64. New enrolment = 640 - 64 = 576.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q37",
+      "questionNumber": 37,
+      "questionText": "Rutendo had $300. She used 0,4 of it on food and 0,2 on transport. She saved half of the remainder in the bank. How much did she save?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$60"
+        },
+        {
+          "letter": "B",
+          "text": "$120"
+        },
+        {
+          "letter": "C",
+          "text": "$90"
+        },
+        {
+          "letter": "D",
+          "text": "$150"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Food = 0,4 x 300 = $120. Transport = 0,2 x 300 = $60. Remainder = 300 - 120 - 60 = $120. Saved (half of remainder) = $120 / 2 = $60.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q38",
+      "questionNumber": 38,
+      "questionText": "0,8 as a common fraction in its lowest terms is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8/100"
+        },
+        {
+          "letter": "B",
+          "text": "4/5"
+        },
+        {
+          "letter": "C",
+          "text": "1/8"
+        },
+        {
+          "letter": "D",
+          "text": "8/10 not simplified"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "0,8 = 8/10, which simplifies (dividing both by 2) to 4/5.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q39",
+      "questionNumber": 39,
+      "questionText": "Study the distance chart (distances in km between towns): Beitbridge to Masvingo = 285; Beitbridge to Mutare = 420; Beitbridge to Harare = 292; Masvingo to Mutare = 310; Masvingo to Harare = 293; Mutare to Harare = 263. How far is it from Masvingo to Mutare?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "310 km"
+        },
+        {
+          "letter": "B",
+          "text": "420 km"
+        },
+        {
+          "letter": "C",
+          "text": "263 km"
+        },
+        {
+          "letter": "D",
+          "text": "292 km"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reading directly from the chart, the distance from Masvingo to Mutare is given as 310 km.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q40",
+      "questionNumber": 40,
+      "questionText": "Using the same distance chart as the previous question, from Harare, which of the three other towns listed is furthest away?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Beitbridge"
+        },
+        {
+          "letter": "B",
+          "text": "Masvingo"
+        },
+        {
+          "letter": "C",
+          "text": "Mutare"
+        },
+        {
+          "letter": "D",
+          "text": "They are all the same distance"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "From the chart, Harare to Beitbridge = 292 km, Harare to Masvingo = 293 km, Harare to Mutare = 263 km. The largest of these is 293 km, so Masvingo is furthest from Harare.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q41",
+      "questionNumber": 41,
+      "questionText": "Mrs Ncube spends her monthly salary as follows: 1/4 on rent, 1/4 on food, 1/6 on school fees, and 1/12 on transport. What fraction does she save?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3"
+        },
+        {
+          "letter": "B",
+          "text": "1/4"
+        },
+        {
+          "letter": "C",
+          "text": "1/6"
+        },
+        {
+          "letter": "D",
+          "text": "5/12"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rent + food + fees + transport = 1/4 + 1/4 + 1/6 + 1/12. Using a common denominator of 12: 3/12 + 3/12 + 2/12 + 1/12 = 9/12 = 3/4. Savings = 1 - 3/4 = 1/4.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q42",
+      "questionNumber": 42,
+      "questionText": "5 218\n2 764\n+1 349\n______",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9 331"
+        },
+        {
+          "letter": "B",
+          "text": "9 231"
+        },
+        {
+          "letter": "C",
+          "text": "8 331"
+        },
+        {
+          "letter": "D",
+          "text": "9 321"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "5 218 + 2 764 + 1 349 = 9 331.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q43",
+      "questionNumber": 43,
+      "questionText": "8 305\n-6 927\n______",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 378"
+        },
+        {
+          "letter": "B",
+          "text": "1 478"
+        },
+        {
+          "letter": "C",
+          "text": "2 378"
+        },
+        {
+          "letter": "D",
+          "text": "1 388"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "8 305 - 6 927 = 1 378.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q44",
+      "questionNumber": 44,
+      "questionText": "45 - N = 28. N is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17"
+        },
+        {
+          "letter": "B",
+          "text": "73"
+        },
+        {
+          "letter": "C",
+          "text": "23"
+        },
+        {
+          "letter": "D",
+          "text": "27"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "N = 45 - 28 = 17.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q45",
+      "questionNumber": 45,
+      "questionText": "What is the value of four $10 notes, three $5 notes and six 5 cent coins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$55,30"
+        },
+        {
+          "letter": "B",
+          "text": "$55,25"
+        },
+        {
+          "letter": "C",
+          "text": "$55,35"
+        },
+        {
+          "letter": "D",
+          "text": "$40,30"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "4 x $10 = $40. 3 x $5 = $15. 6 x 5c = 30c. Total = 40 + 15 + 0,30 = $55,30.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q46",
+      "questionNumber": 46,
+      "questionText": "What do we call a triangle with only two equal sides and two equal angles?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scalene"
+        },
+        {
+          "letter": "B",
+          "text": "Isosceles"
+        },
+        {
+          "letter": "C",
+          "text": "Equilateral"
+        },
+        {
+          "letter": "D",
+          "text": "Obtuse"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An isosceles triangle has exactly two equal sides and two equal base angles.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q47",
+      "questionNumber": 47,
+      "questionText": "The difference between two numbers is 12. The larger number is 35. What is the smaller number?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "47"
+        },
+        {
+          "letter": "B",
+          "text": "23"
+        },
+        {
+          "letter": "C",
+          "text": "24"
+        },
+        {
+          "letter": "D",
+          "text": "22"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Smaller number = 35 - 12 = 23.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q48",
+      "questionNumber": 48,
+      "questionText": "A rectangular pool measuring 25m by 4m has a capacity of 200 cubic metres. Its depth is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2m"
+        },
+        {
+          "letter": "B",
+          "text": "4m"
+        },
+        {
+          "letter": "C",
+          "text": "8m"
+        },
+        {
+          "letter": "D",
+          "text": "20m"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Volume = length x width x depth. 200 = 25 x 4 x depth = 100 x depth. Depth = 200 / 100 = 2m.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q49",
+      "questionNumber": 49,
+      "questionText": "Tanaka is facing South. She turns in a clockwise direction through 2 right angles. She is now facing",
+      "options": [
+        {
+          "letter": "A",
+          "text": "North."
+        },
+        {
+          "letter": "B",
+          "text": "East."
+        },
+        {
+          "letter": "C",
+          "text": "West."
+        },
+        {
+          "letter": "D",
+          "text": "South."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "2 right angles = 180 degrees, a half turn. Facing South and turning 180 degrees brings her to face North.",
+      "answerConfidence": "high"
+    },
+    {
+      "id": "g7_math_1b_q50",
+      "questionNumber": 50,
+      "questionText": "What is the area of a square whose side is 7cm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14 sq cm"
+        },
+        {
+          "letter": "B",
+          "text": "28 sq cm"
+        },
+        {
+          "letter": "C",
+          "text": "49 sq cm"
+        },
+        {
+          "letter": "D",
+          "text": "21 sq cm"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Area of a square = side x side = 7 x 7 = 49 sq cm.",
+      "answerConfidence": "high"
+    }
+  ]
+}

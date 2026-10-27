@@ -1,0 +1,4065 @@
+{
+  "paperInfo": {
+    "subject": "Computer Science",
+    "level": "O Level",
+    "paperCode": "4021/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "Multiple Choice",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Computer_Science_O_Level_4021_Paper1_150.json",
+    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus, specimen/exam patterns and revision material; not verbatim past-paper copies.",
+    "sourceBasis": "ZIMSEC syllabus/specimen and recurring examination themes."
+  },
+  "questions": [
+    {
+      "id": "4021_01_001",
+      "questionNumber": 1,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "CPU"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is CPU. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_002",
+      "questionNumber": 2,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ROM"
+        },
+        {
+          "letter": "B",
+          "text": "RAM"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Optical disc"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is RAM. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_003",
+      "questionNumber": 3,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Scanner"
+        },
+        {
+          "letter": "C",
+          "text": "Webcam"
+        },
+        {
+          "letter": "D",
+          "text": "Microphone"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Printer. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_004",
+      "questionNumber": 4,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Router"
+        },
+        {
+          "letter": "B",
+          "text": "Scanner"
+        },
+        {
+          "letter": "C",
+          "text": "Projector"
+        },
+        {
+          "letter": "D",
+          "text": "Speaker"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Scanner. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_005",
+      "questionNumber": 5,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Operating system"
+        },
+        {
+          "letter": "B",
+          "text": "Web page"
+        },
+        {
+          "letter": "C",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "D",
+          "text": "Media player"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Operating system. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_006",
+      "questionNumber": 6,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "C",
+          "text": "CPU"
+        },
+        {
+          "letter": "D",
+          "text": "RAM"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Optical disc. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_007",
+      "questionNumber": 7,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Router"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Router. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_008",
+      "questionNumber": 8,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Local Area Network"
+        },
+        {
+          "letter": "B",
+          "text": "Linked Application Network"
+        },
+        {
+          "letter": "C",
+          "text": "Large Access Node"
+        },
+        {
+          "letter": "D",
+          "text": "Local Analog Number"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Local Area Network. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_009",
+      "questionNumber": 9,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A deceptive attempt to obtain sensitive information"
+        },
+        {
+          "letter": "B",
+          "text": "A sorting method"
+        },
+        {
+          "letter": "C",
+          "text": "A printer type"
+        },
+        {
+          "letter": "D",
+          "text": "A storage medium"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_010",
+      "questionNumber": 10,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Octal"
+        },
+        {
+          "letter": "B",
+          "text": "Decimal"
+        },
+        {
+          "letter": "C",
+          "text": "Binary"
+        },
+        {
+          "letter": "D",
+          "text": "Hexadecimal"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Binary. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_011",
+      "questionNumber": 11,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cable"
+        },
+        {
+          "letter": "B",
+          "text": "A storage device"
+        },
+        {
+          "letter": "C",
+          "text": "A virus"
+        },
+        {
+          "letter": "D",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_012",
+      "questionNumber": 12,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rectangle"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Parallelogram"
+        },
+        {
+          "letter": "D",
+          "text": "Oval"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Diamond. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_013",
+      "questionNumber": 13,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Boolean"
+        },
+        {
+          "letter": "B",
+          "text": "String"
+        },
+        {
+          "letter": "C",
+          "text": "Real"
+        },
+        {
+          "letter": "D",
+          "text": "Date"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Boolean. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_014",
+      "questionNumber": 14,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sequence"
+        },
+        {
+          "letter": "B",
+          "text": "WHILE loop"
+        },
+        {
+          "letter": "C",
+          "text": "Constant"
+        },
+        {
+          "letter": "D",
+          "text": "Comment"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is WHILE loop. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_015",
+      "questionNumber": 15,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "B",
+          "text": "A cable"
+        },
+        {
+          "letter": "C",
+          "text": "A duplicate field"
+        },
+        {
+          "letter": "D",
+          "text": "A printer setting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_016",
+      "questionNumber": 16,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Checking that input meets specified rules"
+        },
+        {
+          "letter": "B",
+          "text": "Printing data"
+        },
+        {
+          "letter": "C",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "D",
+          "text": "Changing resolution"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_017",
+      "questionNumber": 17,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "B",
+          "text": "Formatting a disk"
+        },
+        {
+          "letter": "C",
+          "text": "Installing a monitor"
+        },
+        {
+          "letter": "D",
+          "text": "Checking that data was entered or transferred accurately"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_018",
+      "questionNumber": 18,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compiler"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "D",
+          "text": "Antivirus software"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Antivirus software. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_019",
+      "questionNumber": 19,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "B",
+          "text": "A screen saver"
+        },
+        {
+          "letter": "C",
+          "text": "A network address"
+        },
+        {
+          "letter": "D",
+          "text": "A loop"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_020",
+      "questionNumber": 20,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ring"
+        },
+        {
+          "letter": "B",
+          "text": "Bus"
+        },
+        {
+          "letter": "C",
+          "text": "Star"
+        },
+        {
+          "letter": "D",
+          "text": "Linear chain"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Star. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_021",
+      "questionNumber": 21,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transforming data so it cannot be understood without the key"
+        },
+        {
+          "letter": "B",
+          "text": "Deleting data"
+        },
+        {
+          "letter": "C",
+          "text": "Printing data"
+        },
+        {
+          "letter": "D",
+          "text": "Sorting data"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_022",
+      "questionNumber": 22,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Word processor"
+        },
+        {
+          "letter": "B",
+          "text": "Media player"
+        },
+        {
+          "letter": "C",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "D",
+          "text": "Paint program"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Spreadsheet. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_023",
+      "questionNumber": 23,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translates source code into machine-oriented code"
+        },
+        {
+          "letter": "B",
+          "text": "Cleans hardware"
+        },
+        {
+          "letter": "C",
+          "text": "Prints documents"
+        },
+        {
+          "letter": "D",
+          "text": "Connects networks"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_024",
+      "questionNumber": 24,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Confidentiality"
+        },
+        {
+          "letter": "B",
+          "text": "Pagination"
+        },
+        {
+          "letter": "C",
+          "text": "Resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Brightness"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Confidentiality. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_025",
+      "questionNumber": 25,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Projector"
+        },
+        {
+          "letter": "C",
+          "text": "Network interface card"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Network interface card. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_026",
+      "questionNumber": 26,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "CPU"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is CPU. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_027",
+      "questionNumber": 27,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "ROM"
+        },
+        {
+          "letter": "C",
+          "text": "RAM"
+        },
+        {
+          "letter": "D",
+          "text": "Printer"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is RAM. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_028",
+      "questionNumber": 28,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Microphone"
+        },
+        {
+          "letter": "C",
+          "text": "Webcam"
+        },
+        {
+          "letter": "D",
+          "text": "Scanner"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Printer. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_029",
+      "questionNumber": 29,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scanner"
+        },
+        {
+          "letter": "B",
+          "text": "Speaker"
+        },
+        {
+          "letter": "C",
+          "text": "Projector"
+        },
+        {
+          "letter": "D",
+          "text": "Router"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Scanner. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_030",
+      "questionNumber": 30,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Operating system"
+        },
+        {
+          "letter": "B",
+          "text": "Media player"
+        },
+        {
+          "letter": "C",
+          "text": "Web page"
+        },
+        {
+          "letter": "D",
+          "text": "Spreadsheet"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Operating system. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_031",
+      "questionNumber": 31,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "CPU"
+        },
+        {
+          "letter": "C",
+          "text": "RAM"
+        },
+        {
+          "letter": "D",
+          "text": "Optical disc"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Optical disc. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_032",
+      "questionNumber": 32,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "C",
+          "text": "Monitor"
+        },
+        {
+          "letter": "D",
+          "text": "Router"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Router. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_033",
+      "questionNumber": 33,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Local Area Network"
+        },
+        {
+          "letter": "B",
+          "text": "Local Analog Number"
+        },
+        {
+          "letter": "C",
+          "text": "Large Access Node"
+        },
+        {
+          "letter": "D",
+          "text": "Linked Application Network"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Local Area Network. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_034",
+      "questionNumber": 34,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A printer type"
+        },
+        {
+          "letter": "B",
+          "text": "A sorting method"
+        },
+        {
+          "letter": "C",
+          "text": "A deceptive attempt to obtain sensitive information"
+        },
+        {
+          "letter": "D",
+          "text": "A storage medium"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_035",
+      "questionNumber": 35,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hexadecimal"
+        },
+        {
+          "letter": "B",
+          "text": "Octal"
+        },
+        {
+          "letter": "C",
+          "text": "Decimal"
+        },
+        {
+          "letter": "D",
+          "text": "Binary"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Binary. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_036",
+      "questionNumber": 36,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cable"
+        },
+        {
+          "letter": "B",
+          "text": "A storage device"
+        },
+        {
+          "letter": "C",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        },
+        {
+          "letter": "D",
+          "text": "A virus"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_037",
+      "questionNumber": 37,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diamond"
+        },
+        {
+          "letter": "B",
+          "text": "Parallelogram"
+        },
+        {
+          "letter": "C",
+          "text": "Rectangle"
+        },
+        {
+          "letter": "D",
+          "text": "Oval"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Diamond. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_038",
+      "questionNumber": 38,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Date"
+        },
+        {
+          "letter": "B",
+          "text": "Boolean"
+        },
+        {
+          "letter": "C",
+          "text": "String"
+        },
+        {
+          "letter": "D",
+          "text": "Real"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Boolean. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_039",
+      "questionNumber": 39,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "WHILE loop"
+        },
+        {
+          "letter": "B",
+          "text": "Comment"
+        },
+        {
+          "letter": "C",
+          "text": "Sequence"
+        },
+        {
+          "letter": "D",
+          "text": "Constant"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is WHILE loop. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_040",
+      "questionNumber": 40,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "B",
+          "text": "A printer setting"
+        },
+        {
+          "letter": "C",
+          "text": "A cable"
+        },
+        {
+          "letter": "D",
+          "text": "A duplicate field"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_041",
+      "questionNumber": 41,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Changing resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Checking that input meets specified rules"
+        },
+        {
+          "letter": "C",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "D",
+          "text": "Printing data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_042",
+      "questionNumber": 42,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "B",
+          "text": "Formatting a disk"
+        },
+        {
+          "letter": "C",
+          "text": "Installing a monitor"
+        },
+        {
+          "letter": "D",
+          "text": "Checking that data was entered or transferred accurately"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_043",
+      "questionNumber": 43,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Antivirus software"
+        },
+        {
+          "letter": "D",
+          "text": "Compiler"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Antivirus software. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_044",
+      "questionNumber": 44,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A loop"
+        },
+        {
+          "letter": "B",
+          "text": "A network address"
+        },
+        {
+          "letter": "C",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "D",
+          "text": "A screen saver"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_045",
+      "questionNumber": 45,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bus"
+        },
+        {
+          "letter": "B",
+          "text": "Linear chain"
+        },
+        {
+          "letter": "C",
+          "text": "Ring"
+        },
+        {
+          "letter": "D",
+          "text": "Star"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Star. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_046",
+      "questionNumber": 46,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deleting data"
+        },
+        {
+          "letter": "B",
+          "text": "Sorting data"
+        },
+        {
+          "letter": "C",
+          "text": "Printing data"
+        },
+        {
+          "letter": "D",
+          "text": "Transforming data so it cannot be understood without the key"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_047",
+      "questionNumber": 47,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Media player"
+        },
+        {
+          "letter": "B",
+          "text": "Paint program"
+        },
+        {
+          "letter": "C",
+          "text": "Word processor"
+        },
+        {
+          "letter": "D",
+          "text": "Spreadsheet"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Spreadsheet. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_048",
+      "questionNumber": 48,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Connects networks"
+        },
+        {
+          "letter": "B",
+          "text": "Prints documents"
+        },
+        {
+          "letter": "C",
+          "text": "Translates source code into machine-oriented code"
+        },
+        {
+          "letter": "D",
+          "text": "Cleans hardware"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_049",
+      "questionNumber": 49,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Pagination"
+        },
+        {
+          "letter": "C",
+          "text": "Brightness"
+        },
+        {
+          "letter": "D",
+          "text": "Confidentiality"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Confidentiality. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_050",
+      "questionNumber": 50,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Projector"
+        },
+        {
+          "letter": "C",
+          "text": "Monitor"
+        },
+        {
+          "letter": "D",
+          "text": "Network interface card"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Network interface card. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_051",
+      "questionNumber": 51,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "CPU"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is CPU. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_052",
+      "questionNumber": 52,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "ROM"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "RAM"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is RAM. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_053",
+      "questionNumber": 53,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scanner"
+        },
+        {
+          "letter": "B",
+          "text": "Microphone"
+        },
+        {
+          "letter": "C",
+          "text": "Webcam"
+        },
+        {
+          "letter": "D",
+          "text": "Printer"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Printer. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_054",
+      "questionNumber": 54,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Speaker"
+        },
+        {
+          "letter": "B",
+          "text": "Scanner"
+        },
+        {
+          "letter": "C",
+          "text": "Projector"
+        },
+        {
+          "letter": "D",
+          "text": "Router"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Scanner. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_055",
+      "questionNumber": 55,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Operating system"
+        },
+        {
+          "letter": "B",
+          "text": "Media player"
+        },
+        {
+          "letter": "C",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "D",
+          "text": "Web page"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Operating system. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_056",
+      "questionNumber": 56,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "RAM"
+        },
+        {
+          "letter": "C",
+          "text": "CPU"
+        },
+        {
+          "letter": "D",
+          "text": "Keyboard"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Optical disc. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_057",
+      "questionNumber": 57,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Monitor"
+        },
+        {
+          "letter": "B",
+          "text": "Printer"
+        },
+        {
+          "letter": "C",
+          "text": "Router"
+        },
+        {
+          "letter": "D",
+          "text": "Keyboard"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Router. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_058",
+      "questionNumber": 58,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Local Area Network"
+        },
+        {
+          "letter": "B",
+          "text": "Local Analog Number"
+        },
+        {
+          "letter": "C",
+          "text": "Linked Application Network"
+        },
+        {
+          "letter": "D",
+          "text": "Large Access Node"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Local Area Network. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_059",
+      "questionNumber": 59,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sorting method"
+        },
+        {
+          "letter": "B",
+          "text": "A storage medium"
+        },
+        {
+          "letter": "C",
+          "text": "A printer type"
+        },
+        {
+          "letter": "D",
+          "text": "A deceptive attempt to obtain sensitive information"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_060",
+      "questionNumber": 60,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Octal"
+        },
+        {
+          "letter": "B",
+          "text": "Decimal"
+        },
+        {
+          "letter": "C",
+          "text": "Hexadecimal"
+        },
+        {
+          "letter": "D",
+          "text": "Binary"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Binary. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_061",
+      "questionNumber": 61,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A virus"
+        },
+        {
+          "letter": "B",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        },
+        {
+          "letter": "C",
+          "text": "A cable"
+        },
+        {
+          "letter": "D",
+          "text": "A storage device"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_062",
+      "questionNumber": 62,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parallelogram"
+        },
+        {
+          "letter": "B",
+          "text": "Rectangle"
+        },
+        {
+          "letter": "C",
+          "text": "Oval"
+        },
+        {
+          "letter": "D",
+          "text": "Diamond"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Diamond. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_063",
+      "questionNumber": 63,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Real"
+        },
+        {
+          "letter": "B",
+          "text": "Boolean"
+        },
+        {
+          "letter": "C",
+          "text": "String"
+        },
+        {
+          "letter": "D",
+          "text": "Date"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Boolean. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_064",
+      "questionNumber": 64,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Constant"
+        },
+        {
+          "letter": "B",
+          "text": "Comment"
+        },
+        {
+          "letter": "C",
+          "text": "Sequence"
+        },
+        {
+          "letter": "D",
+          "text": "WHILE loop"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is WHILE loop. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_065",
+      "questionNumber": 65,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A duplicate field"
+        },
+        {
+          "letter": "B",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "C",
+          "text": "A printer setting"
+        },
+        {
+          "letter": "D",
+          "text": "A cable"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_066",
+      "questionNumber": 66,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Checking that input meets specified rules"
+        },
+        {
+          "letter": "B",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "C",
+          "text": "Changing resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Printing data"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_067",
+      "questionNumber": 67,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Installing a monitor"
+        },
+        {
+          "letter": "B",
+          "text": "Checking that data was entered or transferred accurately"
+        },
+        {
+          "letter": "C",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "D",
+          "text": "Formatting a disk"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_068",
+      "questionNumber": 68,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Antivirus software"
+        },
+        {
+          "letter": "D",
+          "text": "Compiler"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Antivirus software. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_069",
+      "questionNumber": 69,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "B",
+          "text": "A screen saver"
+        },
+        {
+          "letter": "C",
+          "text": "A loop"
+        },
+        {
+          "letter": "D",
+          "text": "A network address"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_070",
+      "questionNumber": 70,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ring"
+        },
+        {
+          "letter": "B",
+          "text": "Star"
+        },
+        {
+          "letter": "C",
+          "text": "Linear chain"
+        },
+        {
+          "letter": "D",
+          "text": "Bus"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Star. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_071",
+      "questionNumber": 71,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transforming data so it cannot be understood without the key"
+        },
+        {
+          "letter": "B",
+          "text": "Deleting data"
+        },
+        {
+          "letter": "C",
+          "text": "Sorting data"
+        },
+        {
+          "letter": "D",
+          "text": "Printing data"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_072",
+      "questionNumber": 72,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Paint program"
+        },
+        {
+          "letter": "B",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "C",
+          "text": "Media player"
+        },
+        {
+          "letter": "D",
+          "text": "Word processor"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Spreadsheet. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_073",
+      "questionNumber": 73,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cleans hardware"
+        },
+        {
+          "letter": "B",
+          "text": "Prints documents"
+        },
+        {
+          "letter": "C",
+          "text": "Translates source code into machine-oriented code"
+        },
+        {
+          "letter": "D",
+          "text": "Connects networks"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_074",
+      "questionNumber": 74,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Brightness"
+        },
+        {
+          "letter": "B",
+          "text": "Pagination"
+        },
+        {
+          "letter": "C",
+          "text": "Resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Confidentiality"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Confidentiality. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_075",
+      "questionNumber": 75,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Network interface card"
+        },
+        {
+          "letter": "B",
+          "text": "Projector"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Network interface card. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_076",
+      "questionNumber": 76,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CPU"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "Printer"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is CPU. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_077",
+      "questionNumber": 77,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ROM"
+        },
+        {
+          "letter": "B",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "RAM"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is RAM. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_078",
+      "questionNumber": 78,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Microphone"
+        },
+        {
+          "letter": "B",
+          "text": "Webcam"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Scanner"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Printer. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_079",
+      "questionNumber": 79,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scanner"
+        },
+        {
+          "letter": "B",
+          "text": "Router"
+        },
+        {
+          "letter": "C",
+          "text": "Projector"
+        },
+        {
+          "letter": "D",
+          "text": "Speaker"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Scanner. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_080",
+      "questionNumber": 80,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Operating system"
+        },
+        {
+          "letter": "B",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "C",
+          "text": "Web page"
+        },
+        {
+          "letter": "D",
+          "text": "Media player"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Operating system. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_081",
+      "questionNumber": 81,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "RAM"
+        },
+        {
+          "letter": "C",
+          "text": "CPU"
+        },
+        {
+          "letter": "D",
+          "text": "Keyboard"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Optical disc. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_082",
+      "questionNumber": 82,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printer"
+        },
+        {
+          "letter": "B",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "C",
+          "text": "Monitor"
+        },
+        {
+          "letter": "D",
+          "text": "Router"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Router. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_083",
+      "questionNumber": 83,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Local Area Network"
+        },
+        {
+          "letter": "B",
+          "text": "Large Access Node"
+        },
+        {
+          "letter": "C",
+          "text": "Linked Application Network"
+        },
+        {
+          "letter": "D",
+          "text": "Local Analog Number"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Local Area Network. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_084",
+      "questionNumber": 84,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A storage medium"
+        },
+        {
+          "letter": "B",
+          "text": "A deceptive attempt to obtain sensitive information"
+        },
+        {
+          "letter": "C",
+          "text": "A printer type"
+        },
+        {
+          "letter": "D",
+          "text": "A sorting method"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_085",
+      "questionNumber": 85,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Octal"
+        },
+        {
+          "letter": "B",
+          "text": "Binary"
+        },
+        {
+          "letter": "C",
+          "text": "Hexadecimal"
+        },
+        {
+          "letter": "D",
+          "text": "Decimal"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Binary. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_086",
+      "questionNumber": 86,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cable"
+        },
+        {
+          "letter": "B",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        },
+        {
+          "letter": "C",
+          "text": "A storage device"
+        },
+        {
+          "letter": "D",
+          "text": "A virus"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_087",
+      "questionNumber": 87,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rectangle"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Oval"
+        },
+        {
+          "letter": "D",
+          "text": "Parallelogram"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Diamond. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_088",
+      "questionNumber": 88,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Real"
+        },
+        {
+          "letter": "B",
+          "text": "String"
+        },
+        {
+          "letter": "C",
+          "text": "Boolean"
+        },
+        {
+          "letter": "D",
+          "text": "Date"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Boolean. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_089",
+      "questionNumber": 89,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "WHILE loop"
+        },
+        {
+          "letter": "B",
+          "text": "Sequence"
+        },
+        {
+          "letter": "C",
+          "text": "Comment"
+        },
+        {
+          "letter": "D",
+          "text": "Constant"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is WHILE loop. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_090",
+      "questionNumber": 90,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A duplicate field"
+        },
+        {
+          "letter": "B",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "C",
+          "text": "A cable"
+        },
+        {
+          "letter": "D",
+          "text": "A printer setting"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_091",
+      "questionNumber": 91,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printing data"
+        },
+        {
+          "letter": "B",
+          "text": "Changing resolution"
+        },
+        {
+          "letter": "C",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "D",
+          "text": "Checking that input meets specified rules"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_092",
+      "questionNumber": 92,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Checking that data was entered or transferred accurately"
+        },
+        {
+          "letter": "B",
+          "text": "Formatting a disk"
+        },
+        {
+          "letter": "C",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "D",
+          "text": "Installing a monitor"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_093",
+      "questionNumber": 93,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "B",
+          "text": "Antivirus software"
+        },
+        {
+          "letter": "C",
+          "text": "Compiler"
+        },
+        {
+          "letter": "D",
+          "text": "Word processor"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Antivirus software. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_094",
+      "questionNumber": 94,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A network address"
+        },
+        {
+          "letter": "B",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "C",
+          "text": "A screen saver"
+        },
+        {
+          "letter": "D",
+          "text": "A loop"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_095",
+      "questionNumber": 95,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bus"
+        },
+        {
+          "letter": "B",
+          "text": "Linear chain"
+        },
+        {
+          "letter": "C",
+          "text": "Ring"
+        },
+        {
+          "letter": "D",
+          "text": "Star"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Star. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_096",
+      "questionNumber": 96,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sorting data"
+        },
+        {
+          "letter": "B",
+          "text": "Transforming data so it cannot be understood without the key"
+        },
+        {
+          "letter": "C",
+          "text": "Printing data"
+        },
+        {
+          "letter": "D",
+          "text": "Deleting data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_097",
+      "questionNumber": 97,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Paint program"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Media player"
+        },
+        {
+          "letter": "D",
+          "text": "Spreadsheet"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Spreadsheet. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_098",
+      "questionNumber": 98,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prints documents"
+        },
+        {
+          "letter": "B",
+          "text": "Cleans hardware"
+        },
+        {
+          "letter": "C",
+          "text": "Connects networks"
+        },
+        {
+          "letter": "D",
+          "text": "Translates source code into machine-oriented code"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_099",
+      "questionNumber": 99,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pagination"
+        },
+        {
+          "letter": "B",
+          "text": "Brightness"
+        },
+        {
+          "letter": "C",
+          "text": "Resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Confidentiality"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Confidentiality. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_100",
+      "questionNumber": 100,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Monitor"
+        },
+        {
+          "letter": "B",
+          "text": "Projector"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Network interface card"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Network interface card. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_101",
+      "questionNumber": 101,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Monitor"
+        },
+        {
+          "letter": "B",
+          "text": "CPU"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Keyboard"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is CPU. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_102",
+      "questionNumber": 102,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "RAM"
+        },
+        {
+          "letter": "C",
+          "text": "ROM"
+        },
+        {
+          "letter": "D",
+          "text": "Printer"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is RAM. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_103",
+      "questionNumber": 103,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Microphone"
+        },
+        {
+          "letter": "B",
+          "text": "Scanner"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Webcam"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Printer. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_104",
+      "questionNumber": 104,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Speaker"
+        },
+        {
+          "letter": "B",
+          "text": "Projector"
+        },
+        {
+          "letter": "C",
+          "text": "Scanner"
+        },
+        {
+          "letter": "D",
+          "text": "Router"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Scanner. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_105",
+      "questionNumber": 105,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Operating system"
+        },
+        {
+          "letter": "B",
+          "text": "Web page"
+        },
+        {
+          "letter": "C",
+          "text": "Media player"
+        },
+        {
+          "letter": "D",
+          "text": "Spreadsheet"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Operating system. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_106",
+      "questionNumber": 106,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "CPU"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "RAM"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Optical disc. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_107",
+      "questionNumber": 107,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Router"
+        },
+        {
+          "letter": "D",
+          "text": "Printer"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Router. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_108",
+      "questionNumber": 108,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Local Analog Number"
+        },
+        {
+          "letter": "B",
+          "text": "Local Area Network"
+        },
+        {
+          "letter": "C",
+          "text": "Large Access Node"
+        },
+        {
+          "letter": "D",
+          "text": "Linked Application Network"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Local Area Network. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_109",
+      "questionNumber": 109,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A deceptive attempt to obtain sensitive information"
+        },
+        {
+          "letter": "B",
+          "text": "A printer type"
+        },
+        {
+          "letter": "C",
+          "text": "A storage medium"
+        },
+        {
+          "letter": "D",
+          "text": "A sorting method"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_110",
+      "questionNumber": 110,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Decimal"
+        },
+        {
+          "letter": "B",
+          "text": "Binary"
+        },
+        {
+          "letter": "C",
+          "text": "Octal"
+        },
+        {
+          "letter": "D",
+          "text": "Hexadecimal"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Binary. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_111",
+      "questionNumber": 111,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cable"
+        },
+        {
+          "letter": "B",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        },
+        {
+          "letter": "C",
+          "text": "A storage device"
+        },
+        {
+          "letter": "D",
+          "text": "A virus"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_112",
+      "questionNumber": 112,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parallelogram"
+        },
+        {
+          "letter": "B",
+          "text": "Diamond"
+        },
+        {
+          "letter": "C",
+          "text": "Oval"
+        },
+        {
+          "letter": "D",
+          "text": "Rectangle"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Diamond. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_113",
+      "questionNumber": 113,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "String"
+        },
+        {
+          "letter": "B",
+          "text": "Date"
+        },
+        {
+          "letter": "C",
+          "text": "Boolean"
+        },
+        {
+          "letter": "D",
+          "text": "Real"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Boolean. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_114",
+      "questionNumber": 114,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "WHILE loop"
+        },
+        {
+          "letter": "B",
+          "text": "Sequence"
+        },
+        {
+          "letter": "C",
+          "text": "Comment"
+        },
+        {
+          "letter": "D",
+          "text": "Constant"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is WHILE loop. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_115",
+      "questionNumber": 115,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A duplicate field"
+        },
+        {
+          "letter": "B",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "C",
+          "text": "A printer setting"
+        },
+        {
+          "letter": "D",
+          "text": "A cable"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_116",
+      "questionNumber": 116,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "B",
+          "text": "Checking that input meets specified rules"
+        },
+        {
+          "letter": "C",
+          "text": "Changing resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Printing data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_117",
+      "questionNumber": 117,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Checking that data was entered or transferred accurately"
+        },
+        {
+          "letter": "B",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "C",
+          "text": "Formatting a disk"
+        },
+        {
+          "letter": "D",
+          "text": "Installing a monitor"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_118",
+      "questionNumber": 118,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Antivirus software"
+        },
+        {
+          "letter": "D",
+          "text": "Compiler"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Antivirus software. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_119",
+      "questionNumber": 119,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A loop"
+        },
+        {
+          "letter": "B",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "C",
+          "text": "A screen saver"
+        },
+        {
+          "letter": "D",
+          "text": "A network address"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_120",
+      "questionNumber": 120,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bus"
+        },
+        {
+          "letter": "B",
+          "text": "Ring"
+        },
+        {
+          "letter": "C",
+          "text": "Linear chain"
+        },
+        {
+          "letter": "D",
+          "text": "Star"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Star. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_121",
+      "questionNumber": 121,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transforming data so it cannot be understood without the key"
+        },
+        {
+          "letter": "B",
+          "text": "Deleting data"
+        },
+        {
+          "letter": "C",
+          "text": "Printing data"
+        },
+        {
+          "letter": "D",
+          "text": "Sorting data"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_122",
+      "questionNumber": 122,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "B",
+          "text": "Media player"
+        },
+        {
+          "letter": "C",
+          "text": "Word processor"
+        },
+        {
+          "letter": "D",
+          "text": "Paint program"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Spreadsheet. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_123",
+      "questionNumber": 123,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prints documents"
+        },
+        {
+          "letter": "B",
+          "text": "Connects networks"
+        },
+        {
+          "letter": "C",
+          "text": "Cleans hardware"
+        },
+        {
+          "letter": "D",
+          "text": "Translates source code into machine-oriented code"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_124",
+      "questionNumber": 124,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Confidentiality"
+        },
+        {
+          "letter": "C",
+          "text": "Pagination"
+        },
+        {
+          "letter": "D",
+          "text": "Brightness"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Confidentiality. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_125",
+      "questionNumber": 125,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Projector"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Network interface card"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Network interface card. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_126",
+      "questionNumber": 126,
+      "questionText": "Which component performs arithmetic and logical processing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CPU"
+        },
+        {
+          "letter": "B",
+          "text": "Printer"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is CPU. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_127",
+      "questionNumber": 127,
+      "questionText": "Which memory is volatile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "RAM"
+        },
+        {
+          "letter": "B",
+          "text": "Printer"
+        },
+        {
+          "letter": "C",
+          "text": "ROM"
+        },
+        {
+          "letter": "D",
+          "text": "Optical disc"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is RAM. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_128",
+      "questionNumber": 128,
+      "questionText": "Which device produces a hard copy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scanner"
+        },
+        {
+          "letter": "B",
+          "text": "Webcam"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Microphone"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Printer. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_129",
+      "questionNumber": 129,
+      "questionText": "Which device digitises a paper document?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scanner"
+        },
+        {
+          "letter": "B",
+          "text": "Router"
+        },
+        {
+          "letter": "C",
+          "text": "Speaker"
+        },
+        {
+          "letter": "D",
+          "text": "Projector"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Scanner. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_130",
+      "questionNumber": 130,
+      "questionText": "Which software manages hardware resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Media player"
+        },
+        {
+          "letter": "B",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "C",
+          "text": "Web page"
+        },
+        {
+          "letter": "D",
+          "text": "Operating system"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Operating system. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_131",
+      "questionNumber": 131,
+      "questionText": "Which medium uses a laser to read data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical disc"
+        },
+        {
+          "letter": "B",
+          "text": "RAM"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "CPU"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Optical disc. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_132",
+      "questionNumber": 132,
+      "questionText": "Which device forwards packets between networks?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Router"
+        },
+        {
+          "letter": "B",
+          "text": "Printer"
+        },
+        {
+          "letter": "C",
+          "text": "Keyboard"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Router. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    },
+    {
+      "id": "4021_01_133",
+      "questionNumber": 133,
+      "questionText": "What does LAN stand for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Large Access Node"
+        },
+        {
+          "letter": "B",
+          "text": "Linked Application Network"
+        },
+        {
+          "letter": "C",
+          "text": "Local Analog Number"
+        },
+        {
+          "letter": "D",
+          "text": "Local Area Network"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Local Area Network. This tests internet.",
+      "answerConfidence": "high",
+      "topic": "internet"
+    },
+    {
+      "id": "4021_01_134",
+      "questionNumber": 134,
+      "questionText": "What is phishing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A storage medium"
+        },
+        {
+          "letter": "B",
+          "text": "A printer type"
+        },
+        {
+          "letter": "C",
+          "text": "A deceptive attempt to obtain sensitive information"
+        },
+        {
+          "letter": "D",
+          "text": "A sorting method"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is A deceptive attempt to obtain sensitive information. This tests cybersecurity.",
+      "answerConfidence": "high",
+      "topic": "cybersecurity"
+    },
+    {
+      "id": "4021_01_135",
+      "questionNumber": 135,
+      "questionText": "Which number system uses only 0 and 1?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Octal"
+        },
+        {
+          "letter": "B",
+          "text": "Hexadecimal"
+        },
+        {
+          "letter": "C",
+          "text": "Binary"
+        },
+        {
+          "letter": "D",
+          "text": "Decimal"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Binary. This tests databases.",
+      "answerConfidence": "high",
+      "topic": "databases"
+    },
+    {
+      "id": "4021_01_136",
+      "questionNumber": 136,
+      "questionText": "What is an algorithm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A storage device"
+        },
+        {
+          "letter": "B",
+          "text": "A virus"
+        },
+        {
+          "letter": "C",
+          "text": "A cable"
+        },
+        {
+          "letter": "D",
+          "text": "A finite sequence of ordered steps for solving a problem"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is A finite sequence of ordered steps for solving a problem. This tests algorithms.",
+      "answerConfidence": "high",
+      "topic": "algorithms"
+    },
+    {
+      "id": "4021_01_137",
+      "questionNumber": 137,
+      "questionText": "Which flowchart symbol represents a decision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rectangle"
+        },
+        {
+          "letter": "B",
+          "text": "Oval"
+        },
+        {
+          "letter": "C",
+          "text": "Diamond"
+        },
+        {
+          "letter": "D",
+          "text": "Parallelogram"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The correct answer is Diamond. This tests flowcharts.",
+      "answerConfidence": "high",
+      "topic": "flowcharts"
+    },
+    {
+      "id": "4021_01_138",
+      "questionNumber": 138,
+      "questionText": "Which data type stores true or false?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Boolean"
+        },
+        {
+          "letter": "B",
+          "text": "String"
+        },
+        {
+          "letter": "C",
+          "text": "Real"
+        },
+        {
+          "letter": "D",
+          "text": "Date"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Boolean. This tests programming.",
+      "answerConfidence": "high",
+      "topic": "programming"
+    },
+    {
+      "id": "4021_01_139",
+      "questionNumber": 139,
+      "questionText": "Which loop repeats while a condition is true?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sequence"
+        },
+        {
+          "letter": "B",
+          "text": "Constant"
+        },
+        {
+          "letter": "C",
+          "text": "Comment"
+        },
+        {
+          "letter": "D",
+          "text": "WHILE loop"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is WHILE loop. This tests data types.",
+      "answerConfidence": "high",
+      "topic": "data types"
+    },
+    {
+      "id": "4021_01_140",
+      "questionNumber": 140,
+      "questionText": "What is a primary key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A printer setting"
+        },
+        {
+          "letter": "B",
+          "text": "A field that uniquely identifies a record"
+        },
+        {
+          "letter": "C",
+          "text": "A duplicate field"
+        },
+        {
+          "letter": "D",
+          "text": "A cable"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is A field that uniquely identifies a record. This tests Boolean logic.",
+      "answerConfidence": "high",
+      "topic": "Boolean logic"
+    },
+    {
+      "id": "4021_01_141",
+      "questionNumber": 141,
+      "questionText": "What is validation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Printing data"
+        },
+        {
+          "letter": "B",
+          "text": "Checking that input meets specified rules"
+        },
+        {
+          "letter": "C",
+          "text": "Deleting records"
+        },
+        {
+          "letter": "D",
+          "text": "Changing resolution"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Checking that input meets specified rules. This tests systems analysis.",
+      "answerConfidence": "high",
+      "topic": "systems analysis"
+    },
+    {
+      "id": "4021_01_142",
+      "questionNumber": 142,
+      "questionText": "What is verification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sorting files"
+        },
+        {
+          "letter": "B",
+          "text": "Installing a monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Formatting a disk"
+        },
+        {
+          "letter": "D",
+          "text": "Checking that data was entered or transferred accurately"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Checking that data was entered or transferred accurately. This tests ethics.",
+      "answerConfidence": "high",
+      "topic": "ethics"
+    },
+    {
+      "id": "4021_01_143",
+      "questionNumber": 143,
+      "questionText": "Which software detects malware?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Presentation software"
+        },
+        {
+          "letter": "B",
+          "text": "Word processor"
+        },
+        {
+          "letter": "C",
+          "text": "Compiler"
+        },
+        {
+          "letter": "D",
+          "text": "Antivirus software"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The correct answer is Antivirus software. This tests applications.",
+      "answerConfidence": "high",
+      "topic": "applications"
+    },
+    {
+      "id": "4021_01_144",
+      "questionNumber": 144,
+      "questionText": "What is a backup?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A separate copy of data kept for recovery"
+        },
+        {
+          "letter": "B",
+          "text": "A network address"
+        },
+        {
+          "letter": "C",
+          "text": "A loop"
+        },
+        {
+          "letter": "D",
+          "text": "A screen saver"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is A separate copy of data kept for recovery. This tests troubleshooting.",
+      "answerConfidence": "high",
+      "topic": "troubleshooting"
+    },
+    {
+      "id": "4021_01_145",
+      "questionNumber": 145,
+      "questionText": "Which topology uses a central switch or hub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bus"
+        },
+        {
+          "letter": "B",
+          "text": "Star"
+        },
+        {
+          "letter": "C",
+          "text": "Ring"
+        },
+        {
+          "letter": "D",
+          "text": "Linear chain"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Star. This tests hardware.",
+      "answerConfidence": "high",
+      "topic": "hardware"
+    },
+    {
+      "id": "4021_01_146",
+      "questionNumber": 146,
+      "questionText": "What is encryption?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deleting data"
+        },
+        {
+          "letter": "B",
+          "text": "Transforming data so it cannot be understood without the key"
+        },
+        {
+          "letter": "C",
+          "text": "Printing data"
+        },
+        {
+          "letter": "D",
+          "text": "Sorting data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Transforming data so it cannot be understood without the key. This tests software.",
+      "answerConfidence": "high",
+      "topic": "software"
+    },
+    {
+      "id": "4021_01_147",
+      "questionNumber": 147,
+      "questionText": "Which application is suited to numerical calculations in rows and columns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Paint program"
+        },
+        {
+          "letter": "B",
+          "text": "Spreadsheet"
+        },
+        {
+          "letter": "C",
+          "text": "Word processor"
+        },
+        {
+          "letter": "D",
+          "text": "Media player"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Spreadsheet. This tests data representation.",
+      "answerConfidence": "high",
+      "topic": "data representation"
+    },
+    {
+      "id": "4021_01_148",
+      "questionNumber": 148,
+      "questionText": "What does a compiler do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translates source code into machine-oriented code"
+        },
+        {
+          "letter": "B",
+          "text": "Connects networks"
+        },
+        {
+          "letter": "C",
+          "text": "Cleans hardware"
+        },
+        {
+          "letter": "D",
+          "text": "Prints documents"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Translates source code into machine-oriented code. This tests operating systems.",
+      "answerConfidence": "high",
+      "topic": "operating systems"
+    },
+    {
+      "id": "4021_01_149",
+      "questionNumber": 149,
+      "questionText": "Which principle concerns preventing unauthorised disclosure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pagination"
+        },
+        {
+          "letter": "B",
+          "text": "Confidentiality"
+        },
+        {
+          "letter": "C",
+          "text": "Brightness"
+        },
+        {
+          "letter": "D",
+          "text": "Resolution"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct answer is Confidentiality. This tests storage.",
+      "answerConfidence": "high",
+      "topic": "storage"
+    },
+    {
+      "id": "4021_01_150",
+      "questionNumber": 150,
+      "questionText": "Which device connects a computer to a network?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Network interface card"
+        },
+        {
+          "letter": "B",
+          "text": "Monitor"
+        },
+        {
+          "letter": "C",
+          "text": "Printer"
+        },
+        {
+          "letter": "D",
+          "text": "Projector"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct answer is Network interface card. This tests networks.",
+      "answerConfidence": "high",
+      "topic": "networks"
+    }
+  ]
+}

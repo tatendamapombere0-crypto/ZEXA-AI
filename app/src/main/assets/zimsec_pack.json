@@ -1,0 +1,83 @@
+[
+  {
+    "id": "o_sci_1",
+    "level": "O-Level",
+    "subject": "Integrated Science",
+    "topic": "Photosynthesis: Process and Factors",
+    "content": "Photosynthesis is the process by which green plants make food using sunlight, water, and carbon dioxide. 1. Chemical Equation: 6CO2 + 6H2O + Light Energy -> C6H12O6 + 6O2. 2. Location: It occurs in the chloroplasts (thylakoids and stroma). 3. Limiting Factors: Temperature, light intensity, and carbon dioxide concentration. 4. Process: Chlorophyll absorbs light energy to split water (photolysis) and produce glucose. This provides the primary energy source for almost all life on Earth.",
+    "source": "ZIMSEC Science Revision Guide",
+    "keywords": ["photosynthesis", "equation", "chloroplast", "chlorophyll", "glucose", "oxygen", "carbon dioxide", "plants", "6CO2", "C6H12O6", "limiting factors"]
+  },
+  {
+    "id": "o_sci_2",
+    "level": "O-Level",
+    "subject": "Integrated Science",
+    "topic": "Respiration",
+    "content": "Aerobic respiration is the breakdown of glucose in the presence of oxygen to release energy. Equation: C6H12O6 + 6O2 -> 6CO2 + 6H2O + Energy (ATP). This occurs in the mitochondria of cells. Anaerobic respiration in humans produces lactic acid, while in yeast it produces ethanol and CO2 (fermentation).",
+    "source": "ZIMSEC Science Revision Guide",
+    "keywords": ["respiration", "aerobic", "anaerobic", "mitochondria", "atp", "glucose", "energy"]
+  },
+  {
+    "id": "o_math_quad",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Quadratic Equations",
+    "content": "A quadratic equation is in the form ax^2 + bx + c = 0. To solve, you can use: 1. Factorization. 2. Completing the square. 3. The Quadratic Formula: x = [-b +/- sqrt(b^2 - 4ac)] / 2a. The discriminant (b^2 - 4ac) determines the nature of the roots: >0 (two real roots), =0 (one real root), <0 (no real roots).",
+    "source": "ZIMSEC Mathematics Textbook",
+    "keywords": ["quadratic", "formula", "algebra", "discriminant", "roots", "equations", "sqrt"]
+  },
+  {
+    "id": "o_math_trig",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Trigonometry",
+    "content": "In a right-angled triangle, we use SOH CAH TOA: Sin(theta) = Opposite/Hypotenuse, Cos(theta) = Adjacent/Hypotenuse, Tan(theta) = Opposite/Adjacent. The Sine Rule: a/sinA = b/sinB = c/sinC. The Cosine Rule: a^2 = b^2 + c^2 - 2bc cosA.",
+    "source": "ZIMSEC Mathematics Textbook",
+    "keywords": ["trigonometry", "sine", "cosine", "tangent", "sohcahtoa", "triangle", "angles"]
+  },
+  {
+    "id": "o_sci_circ",
+    "level": "O-Level",
+    "subject": "Integrated Science",
+    "topic": "Circulatory System",
+    "content": "The human circulatory system is a double system consisting of the heart, blood vessels, and blood. Arteries carry oxygenated blood away from the heart (except the pulmonary artery). Veins carry deoxygenated blood to the heart (except the pulmonary vein). Capillaries are site of gas exchange. The heart has four chambers: left/right atria and left/right ventricles.",
+    "source": "ZIMSEC Science Revision Guide",
+    "keywords": ["heart", "blood", "artery", "vein", "circulatory", "oxygen", "capillaries"]
+  },
+  {
+    "id": "p_math_1",
+    "level": "Primary",
+    "subject": "Mathematics",
+    "topic": "Addition of Whole Numbers",
+    "content": "Addition is the process of calculating the total of two or more numbers. 1. Standard Addition: line up numbers by place value and add from right to left. 2. Carrying: If a column total is 10 or more, carry the 1 to the next column. Example: 45 + 27. 5+7=12 (write 2 carry 1). 4+2+1=7. Answer: 72. 3. Word Problem: If Tinashe has 12 apples and Rudo gives him 15 more, he has 27 apples in total (12+15).",
+    "source": "ZIMSEC Primary Math",
+    "keywords": ["math", "numbers", "plus", "sum", "carrying", "addition"]
+  },
+  {
+    "id": "o_sci_chem_bonding",
+    "level": "O-Level",
+    "subject": "Integrated Science",
+    "topic": "Chemical Bonding",
+    "content": "Ionic bonding occurs between metals and non-metals via electron transfer (e.g., NaCl). Covalent bonding occurs between non-metals via electron sharing (e.g., H2O, CO2). Metallic bonding involves a 'sea' of delocalized electrons. Ionic compounds have high melting points and conduct electricity when molten or in solution.",
+    "source": "ZIMSEC Science Text",
+    "keywords": ["bonding", "ionic", "covalent", "metallic", "electrons", "chemistry"]
+  },
+  {
+    "id": "o_math_circles",
+    "level": "O-Level",
+    "subject": "Mathematics",
+    "topic": "Circle Geometry",
+    "content": "Key circle theorems: 1. Angle at the center is twice the angle at the circumference. 2. Angle in a semi-circle is 90 degrees. 3. Angles in the same segment are equal. 4. Opposite angles of a cyclic quadrilateral add up to 180 degrees. 5. Tangent is perpendicular to the radius at the point of contact.",
+    "source": "ZIMSEC Mathematics",
+    "keywords": ["circle", "geometry", "theorems", "angles", "tangent", "quadrilateral"]
+  },
+  {
+    "id": "zimsec_info_1",
+    "level": "O-Level",
+    "subject": "General",
+    "topic": "ZIMSEC",
+    "content": "ZIMSEC stands for the Zimbabwe School Examinations Council. It is the body responsible for O-Level and A-Level exams in Zimbabwe. It was established in 1996 and provides internationally recognized qualifications.",
+    "source": "Official ZIMSEC Info",
+    "keywords": ["zimsec", "exams", "zimbabwe", "education", "council"]
+  }
+]

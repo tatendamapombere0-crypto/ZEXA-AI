@@ -1,0 +1,1116 @@
+{
+  "chunks": [
+    {
+      "id": "pm6042_indices_surds_logs",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Indices, Surds, Logarithms and Exponential Functions",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — INDICES, SURDS, LOGARITHMS AND EXPONENTIAL FUNCTIONS\n\n1. INDICES\n\nFor a non-zero number a and integers m,n:\na^m a^n = a^(m+n)\na^m / a^n = a^(m-n)\n(a^m)^n = a^(mn)\n(ab)^n = a^n b^n\n(a/b)^n = a^n/b^n\na^0 = 1\na^(-n) = 1/a^n.\n\nFractional indices:\na^(1/n)=n√a\na^(m/n)=n√(a^m)=(n√a)^m.\n\nThese laws must be used only when their algebraic conditions are satisfied. In real-valued work, even roots require non-negative radicands.\n\n2. SURDS\n\nA surd is an irrational root expressed exactly in radical form. Simplify by extracting perfect powers:\n√72 = √(36×2)=6√2.\n3√54 = 3√(27×2)=9? More carefully, √[3](54)=√[3](27×2)=3√[3]2.\n\nLike surds can be added or subtracted:\n3√5+2√5=5√5.\nUnlike surds such as √2 and √3 cannot be combined by addition.\n\nMultiplication:\n√a√b=√(ab), subject to real-domain restrictions.\nDivision can be simplified similarly.\n\nRationalising denominators:\n1/√a = √a/a.\nFor 1/(√a+√b), multiply numerator and denominator by the conjugate √a−√b:\n1/(√a+√b)=(√a−√b)/(a−b).\n\n3. LOGARITHMS\n\nIf a^x=y, where a>0 and a≠1, then log_a(y)=x.\n\nLaws:\nlog_a(xy)=log_a x+log_a y\nlog_a(x/y)=log_a x−log_a y\nlog_a(x^r)=r log_a x\nlog_a 1=0\nlog_a a=1.\n\nChange of base:\nlog_a x = log_b x / log_b a.\n\nNatural logarithms use base e:\nln x = log_e x.\n\nDomain:\nFor log_a x to be real, x>0.\n\n4. SOLVING LOGARITHMIC EQUATIONS\n\nFirst establish the domain. Then combine logarithms using the laws and solve the resulting equation. Finally check every solution in the original equation because algebraic manipulation can introduce inadmissible values.\n\nExample:\nlog_2(x−1)+log_2(x+1)=3\nDomain: x>1.\nlog_2[(x−1)(x+1)]=3\nx^2−1=8\nx^2=9\nx=±3.\nOnly x=3 satisfies x>1.\n\n5. EXPONENTIAL EQUATIONS\n\nFor a>0, a≠1, the function a^x is one-to-one. Therefore if a^f(x)=a^g(x), then f(x)=g(x).\n\nFor equations involving different bases, logarithms may be taken:\ne^(2x)=7 → 2x=ln7 → x=(ln7)/2.\n\n6. EXPONENTIAL MODELS\n\nA quantity growing at a constant proportional rate may be modelled by y=Ae^(kt). If k>0, growth occurs; if k<0, decay occurs.\n\nThe half-life relation for exponential decay is:\nN=N_0 e^(-kt)\nand at half-life T, 1/2=e^(-kT), hence k=ln2/T.\n\n7. COMMON ERRORS\n\nDo not use log(x+y)=logx+logy; this is false.\nDo not cancel terms across addition.\nDo not forget the domain of logarithms.\nDo not leave exact answers as decimals when an exact logarithmic form is expected.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "indices",
+        "surds",
+        "logarithms",
+        "exponentials",
+        "laws of logarithms",
+        "rationalising",
+        "natural logarithm"
+      ]
+    },
+    {
+      "id": "pm6042_polynomials_quadratics",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Polynomials, Algebraic Division, Factor and Remainder Theorems",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — POLYNOMIALS\n\n1. POLYNOMIALS\n\nA polynomial in x has the form\nP(x)=a_nx^n+a_(n−1)x^(n−1)+...+a_1x+a_0,\nwhere a_n≠0. Its degree is n.\n\nA root α satisfies P(α)=0. A root may also be called a zero of the polynomial.\n\n2. FACTOR THEOREM\n\nIf P(a)=0, then (x−a) is a factor of P(x).\nConversely, if (x−a) is a factor, P(a)=0.\n\nThis provides an efficient way of finding a linear factor and then reducing the polynomial.\n\n3. REMAINDER THEOREM\n\nWhen P(x) is divided by x−a, the remainder is P(a).\n\nIf division is by ax+b, the remainder is P(−b/a).\n\n4. POLYNOMIAL DIVISION\n\nLong division works like numerical long division. Divide the leading term, multiply, subtract, bring down and repeat.\n\nSynthetic division is a shorter method for division by x−a when the polynomial is written in descending powers.\n\n5. CUBIC EQUATIONS\n\nFor\nax^3+bx^2+cx+d=0,\nlook for a simple rational root where appropriate. Once a root r is found, factor:\nP(x)=(x−r)Q(x),\nthen solve the quadratic Q(x)=0.\n\nThe cubic may have:\n- three real roots;\n- one real root and two complex conjugate roots;\n- repeated roots.\n\n6. RELATIONSHIPS BETWEEN ROOTS AND COEFFICIENTS\n\nFor ax^2+bx+c with roots α,β:\nα+β=−b/a\nαβ=c/a.\n\nFor ax^3+bx^2+cx+d with roots α,β,γ:\nα+β+γ=−b/a\nαβ+βγ+γα=c/a\nαβγ=−d/a.\n\nThese are Vieta-type relations and allow unknown coefficients or symmetric expressions in roots to be found without solving for every root.\n\n7. REPEATED ROOTS\n\nIf α is a repeated root, then P(α)=0 and P'(α)=0. This is important when identifying tangency or repeated factors.\n\n8. PARAMETER PROBLEMS\n\nIf a polynomial contains an unknown parameter and a stated root, substitute the root into P(x)=0. If two roots or a repeated root are specified, use the corresponding coefficient/root relationships.\n\n9. INEQUALITIES\n\nAfter factorisation, locate critical points on a number line. Determine the sign of each factor in every interval. For strict inequalities exclude roots; for non-strict inequalities include roots when the expression is defined.\n\n10. COMMON ERRORS\n\nDo not confuse a factor with a remainder.\nWhen dividing by x−a, use P(a), not P(−a).\nInclude missing powers with zero coefficients in polynomial division.\nWhen solving inequalities, account for sign changes at every real root.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "polynomials",
+        "factor theorem",
+        "remainder theorem",
+        "cubic equations",
+        "roots",
+        "Vieta",
+        "polynomial division",
+        "inequalities"
+      ]
+    },
+    {
+      "id": "pm6042_sequences_series_binomial",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Sequences, Series, Binomial Expansion and Recurrence",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — SEQUENCES AND SERIES\n\n1. ARITHMETIC PROGRESSIONS\n\nAn arithmetic progression has constant difference d:\na, a+d, a+2d,...\n\nThe nth term:\nu_n=a+(n−1)d.\n\nSum of first n terms:\nS_n=n/2[2a+(n−1)d]\nor\nS_n=n/2(a+l),\nwhere l is the last term.\n\n2. GEOMETRIC PROGRESSIONS\n\nA geometric progression has constant ratio r:\na, ar, ar^2,...\n\nnth term:\nu_n=ar^(n−1).\n\nFinite sum:\nS_n=a(1−r^n)/(1−r), r≠1.\n\nIf |r|<1, sum to infinity:\nS_∞=a/(1−r).\n\n3. APPLICATIONS\n\nGrowth, depreciation, repeated payments and population models can be represented by geometric sequences. Identify the first term and ratio carefully. A percentage increase p% corresponds to multiplying by 1+p/100; a decrease corresponds to 1−p/100.\n\n4. SIGMA NOTATION\n\nΣ notation represents a sum. Useful identities include:\nΣ1=n\nΣr = n(n+1)/2\nΣr^2 = n(n+1)(2n+1)/6\nΣr^3 = [n(n+1)/2]^2.\n\nIndex changes must be made consistently.\n\n5. RECURRENCE RELATIONS\n\nA sequence may be defined by\nu_(n+1)=f(u_n).\nTo investigate it, calculate initial terms and look for a pattern, but do not assume convergence merely because numerical terms appear to settle.\n\nFor a recurrence with a fixed point L, if u_(n+1)=f(u_n) and u_n→L, then necessarily L=f(L), provided f behaves suitably at the limit.\n\n6. BINOMIAL THEOREM\n\nFor positive integer n:\n(a+b)^n=Σ[k=0 to n] C(n,k)a^(n−k)b^k.\n\nThe general term is:\nT_(k+1)=C(n,k)a^(n−k)b^k.\n\nFor a negative or fractional index, an infinite expansion can be used where |x|<1:\n(1+x)^n=1+nx+n(n−1)x^2/2!+n(n−1)(n−2)x^3/3!+...\n\n7. APPROXIMATION\n\nIf x is small, retain the required number of terms. The omitted terms determine the order of the error. Be careful to identify whether the question asks for an approximation, a coefficient, a particular term, or an interval of validity.\n\n8. COMMON ERRORS\n\nFor binomial expansions, the powers of the second term increase while powers of the first decrease.\nDo not use the finite binomial formula blindly for fractional indices.\nFor an infinite geometric sum, |r|<1 is essential.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "sequences",
+        "series",
+        "arithmetic progression",
+        "geometric progression",
+        "binomial theorem",
+        "recurrence",
+        "sigma",
+        "approximation"
+      ]
+    },
+    {
+      "id": "pm6042_functions_graphs",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Functions, Composite Functions, Inverses and Transformations",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — FUNCTIONS\n\n1. FUNCTION LANGUAGE\n\nA function f maps each permitted input x to exactly one output f(x). The domain is the set of permitted inputs; the range is the set of resulting outputs.\n\n2. DOMAIN RESTRICTIONS\n\nFor rational functions, denominators cannot be zero.\nFor √g(x), require g(x)≥0 in real-valued work.\nFor ln(g(x)), require g(x)>0.\n\n3. COMPOSITE FUNCTIONS\n\n(f∘g)(x)=f(g(x)).\nThe order matters:\nf∘g is generally not equal to g∘f.\n\nWhen finding the domain of f(g(x)), both g(x) must be defined and g(x) must belong to the domain of f.\n\n4. INVERSE FUNCTIONS\n\nAn inverse exists as a function when f is one-to-one on the chosen domain. To find f^−1:\nwrite y=f(x);\ninterchange x and y;\nsolve for y.\n\nThe graph of y=f^−1(x) is the reflection of y=f(x) in y=x.\n\n5. ONE-TO-ONE TEST\n\nA horizontal line should intersect the graph at most once. If a function fails this test on its natural domain, restrict the domain so that it becomes one-to-one.\n\n6. MODULUS\n\n|x|=x if x≥0 and −x if x<0.\n\nFor |f(x)|, split according to the sign of f(x). For equations:\n|f(x)|=k with k≥0 implies f(x)=k or f(x)=−k.\n\nFor inequalities:\n|x|<a means −a<x<a for a>0;\n|x|>a means x<−a or x>a.\n\n7. GRAPH TRANSFORMATIONS\n\ny=f(x)+a: translation upward by a.\ny=f(x)−a: downward by a.\ny=f(x−a): right by a.\ny=f(x+a): left by a.\ny=af(x): vertical scale factor |a|.\ny=f(ax): horizontal scale factor 1/|a|.\ny=−f(x): reflection in x-axis.\ny=f(−x): reflection in y-axis.\n\n8. RATIONAL FUNCTIONS\n\nFor y=(ax+b)/(cx+d), c≠0, the vertical asymptote occurs where cx+d=0. The horizontal asymptote is y=a/c when degrees are equal. Long division may reveal the structure.\n\n9. GRAPH SKETCHING\n\nA good sketch identifies:\ndomain;\nintercepts;\nstationary points if relevant;\nasymptotes;\nturning points;\nsymmetry;\nend behaviour;\nimportant transformations.\n\n10. COMMON ERRORS\n\nDo not state the inverse without checking one-to-one behaviour.\nDo not forget domain restrictions after composing functions.\nFor transformations, signs inside brackets work opposite to the apparent sign.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "functions",
+        "domain",
+        "range",
+        "composite functions",
+        "inverse functions",
+        "modulus",
+        "transformations",
+        "graphs",
+        "asymptotes"
+      ]
+    },
+    {
+      "id": "pm6042_coordinate_geometry_circles",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Coordinate Geometry, Lines, Circles and Geometric Loci",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — COORDINATE GEOMETRY\n\n1. STRAIGHT LINES\n\nGradient:\nm=(y_2−y_1)/(x_2−x_1).\n\nEquation:\ny−y_1=m(x−x_1).\n\nFor ax+by+c=0, gradient is −a/b when b≠0.\n\nParallel lines have equal gradients. Perpendicular non-vertical lines satisfy m_1m_2=−1.\n\n2. DISTANCE AND MIDPOINT\n\nDistance between (x_1,y_1) and (x_2,y_2):\n√[(x_2−x_1)^2+(y_2−y_1)^2].\n\nMidpoint:\n((x_1+x_2)/2,(y_1+y_2)/2).\n\n3. CIRCLE\n\nStandard equation:\n(x−a)^2+(y−b)^2=r^2.\n\nCentre is (a,b), radius r.\n\nGeneral form:\nx^2+y^2+Dx+Ey+F=0.\n\nCompleting the square gives the centre and radius.\n\n4. DIAMETER\n\nIf A(x_1,y_1) and B(x_2,y_2) are endpoints of a diameter, the centre is their midpoint and the radius is half their distance.\n\nA point P lies on the circle with AB as diameter iff angle APB=90° (Thales' theorem).\n\n5. TANGENTS\n\nThe radius to a point of contact is perpendicular to the tangent. If the circle is\n(x−a)^2+(y−b)^2=r^2,\nthen at (x_1,y_1) the tangent can be obtained from the gradient condition or the standard tangent formula:\n(x_1−a)(x−a)+(y_1−b)(y−b)=r^2.\n\n6. CHORDS\n\nThe perpendicular from the centre to a chord bisects the chord. Equal chords subtend equal angles at the centre.\n\n7. INTERSECTION OF LINE AND CIRCLE\n\nSubstitute the line equation into the circle. A quadratic results. Two intersections correspond to two real roots; one repeated root corresponds to tangency; no real roots means no intersection.\n\n8. LOCI\n\nA locus is the set of points satisfying a condition.\nExamples:\npoints at fixed distance r from a fixed point → circle;\npoints equidistant from two fixed points → perpendicular bisector;\npoints equidistant from two intersecting lines → angle bisectors.\n\n9. COMMON ERRORS\n\nA tangent is not generally parallel to a chord.\nDo not confuse radius with diameter.\nWhen completing the square, add and subtract the same quantity.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "coordinate geometry",
+        "straight lines",
+        "circles",
+        "tangents",
+        "chords",
+        "loci",
+        "distance",
+        "midpoint"
+      ]
+    },
+    {
+      "id": "pm6042_trigonometry",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Trigonometry, Identities, Equations, R-form and Inverse Trigonometric Functions",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — TRIGONOMETRY\n\n1. BASIC IDENTITIES\n\nsin^2x+cos^2x=1\n1+tan^2x=sec^2x\n1+cot^2x=cosec^2x.\n\nUse identities to transform expressions into a common form rather than manipulating both sides unpredictably.\n\n2. ADDITION FORMULAE\n\nsin(A±B)=sinA cosB±cosA sinB\ncos(A±B)=cosA cosB∓sinA sinB\ntan(A±B)=(tanA±tanB)/(1∓tanA tanB).\n\n3. DOUBLE ANGLE\n\nsin2A=2sinA cosA\ncos2A=cos^2A−sin^2A\n=1−2sin^2A\n=2cos^2A−1.\n\n4. HALF-ANGLE RELATIONS\n\nsin^2(A/2)=(1−cosA)/2\ncos^2(A/2)=(1+cosA)/2.\n\n5. R-FORM\n\na sinx+b cosx can be written as R sin(x+α), where\nR=√(a^2+b^2),\nRcosα=a,\nRsinα=b.\n\nLikewise a cosx+b sinx=R cos(x−α) with appropriate α.\n\nThis is useful for finding maximum and minimum values and solving trigonometric equations.\n\n6. TRIGONOMETRIC EQUATIONS\n\nSolve for the required interval. Find the principal solutions and use periodicity:\nsin x has period 2π;\ncos x has period 2π;\ntan x has period π.\n\nDo not give solutions outside the specified interval.\n\n7. INVERSE FUNCTIONS\n\narcsin x gives values in [−π/2,π/2].\narccos x gives values in [0,π].\narctan x gives values in (−π/2,π/2).\n\nThese principal ranges explain why identities involving inverse functions require care.\n\n8. PROVING IDENTITIES\n\nStart with one side and transform it into the other. Useful strategies:\nconvert sec/cosec/cot into sin and cos;\nfactor;\nuse common denominators;\napply Pythagorean identities;\nuse double-angle or compound-angle identities.\n\n9. TRIPLE ANGLES\n\nsin3x=3sinx−4sin^3x.\ncos3x=4cos^3x−3cosx.\n\nThese can be derived from addition formulae.\n\n10. COMMON ERRORS\n\nDegrees and radians must not be mixed.\nCalculus uses radians.\nDo not divide by an expression that could be zero without checking lost solutions.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "trigonometry",
+        "identities",
+        "compound angles",
+        "double angle",
+        "triple angle",
+        "R-form",
+        "inverse trigonometry",
+        "radians"
+      ]
+    },
+    {
+      "id": "pm6042_differentiation",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Differentiation: Rules, Parametric Functions, Stationary Points and Applications",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — DIFFERENTIATION\n\n1. DERIVATIVE AS A LIMIT\n\nf'(x)=lim[h→0] [f(x+h)−f(x)]/h.\n\nThe derivative represents instantaneous rate of change and, geometrically, the gradient of the tangent.\n\n2. STANDARD RESULTS\n\nd(x^n)/dx=nx^(n−1)\nd(e^x)/dx=e^x\nd(a^x)/dx=a^x ln a\nd(ln x)/dx=1/x\nd(sin x)/dx=cos x\nd(cos x)/dx=−sin x\nd(tan x)/dx=sec^2x.\n\n3. PRODUCT RULE\n\nIf y=uv:\ndy/dx=u dv/dx+v du/dx.\n\n4. QUOTIENT RULE\n\nIf y=u/v:\ndy/dx=[v du/dx−u dv/dx]/v^2.\n\n5. CHAIN RULE\n\nIf y=f(g(x)):\ndy/dx=f'(g(x))g'(x).\n\n6. IMPLICIT DIFFERENTIATION\n\nWhen x and y occur together, differentiate both sides with respect to x, remembering:\nd(y^n)/dx=ny^(n−1)dy/dx.\n\n7. PARAMETRIC DIFFERENTIATION\n\nIf x=f(t), y=g(t):\ndy/dx=(dy/dt)/(dx/dt).\n\nSecond derivative:\nd^2y/dx^2 = [d/dt(dy/dx)]/(dx/dt).\n\n8. STATIONARY POINTS\n\nStationary points satisfy dy/dx=0. Classify using the second derivative:\nd^2y/dx^2>0 → local minimum.\nd^2y/dx^2<0 → local maximum.\nIf the second derivative is zero, classification requires another method, such as sign change of dy/dx or higher derivatives.\n\n9. INCREASING AND DECREASING\n\nf'(x)>0 means increasing.\nf'(x)<0 means decreasing.\n\n10. CURVE SKETCHING\n\nUse derivative information to locate stationary points and intervals of increase/decrease. Combine this with intercepts, asymptotes and end behaviour.\n\n11. RELATED RATES\n\nIf variables depend on time t, differentiate the relationship with respect to t and substitute the known values only after the differentiated equation has been obtained.\n\n12. OPTIMISATION\n\nSet up the quantity to be maximised/minimised as a function of one variable, find the feasible domain, differentiate, solve dy/dx=0, classify and check endpoints.\n\n13. COMMON ERRORS\n\nDo not treat dy/dx as an ordinary fraction in every algebraic context.\nUse radians for trigonometric differentiation.\nCheck endpoints in optimisation.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "differentiation",
+        "chain rule",
+        "product rule",
+        "quotient rule",
+        "implicit differentiation",
+        "parametric differentiation",
+        "stationary points",
+        "optimisation"
+      ]
+    },
+    {
+      "id": "pm6042_integration",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Integration: Indefinite and Definite Integrals, Substitution and By Parts",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — INTEGRATION\n\n1. INDEFINITE INTEGRATION\n\nIntegration reverses differentiation:\n∫x^n dx=x^(n+1)/(n+1)+C, n≠−1.\n∫1/x dx=ln|x|+C.\n\n2. STANDARD INTEGRALS\n\n∫e^x dx=e^x+C\n∫sinx dx=−cosx+C\n∫cosx dx=sinx+C\n∫sec^2x dx=tanx+C\n∫1/(1+x^2) dx=tan^−1x+C.\n\n3. SUBSTITUTION\n\nChoose a substitution that simplifies the integrand, often u=g(x). Then du=g'(x)dx. Change limits as well for a definite integral.\n\n4. INTEGRATION BY PARTS\n\n∫u dv=uv−∫v du.\n\nChoose u so that differentiation simplifies it. A useful priority is often logarithmic functions, inverse trigonometric functions, algebraic functions, then exponential/trigonometric functions, though the best choice depends on the integrand.\n\n5. PARTIAL FRACTIONS\n\nFor proper rational functions, decompose into simpler fractions. For distinct linear factors:\nA/(x−a)+B/(x−b).\n\nRepeated factors require terms such as:\nA/(x−a)+B/(x−a)^2.\n\nAn irreducible quadratic requires a linear numerator:\n(Ax+B)/(quadratic).\n\n6. DEFINITE INTEGRALS\n\n∫_a^b f(x)dx=F(b)−F(a), where F'=f.\n\nThe definite integral gives signed area. If f is below the x-axis, the integral is negative over that region.\n\n7. AREA BETWEEN CURVES\n\nIf upper curve is y=f(x) and lower curve y=g(x):\nArea=∫_a^b[f(x)−g(x)]dx.\n\nFirst determine intersections and which curve is on top.\n\n8. VOLUMES OF REVOLUTION\n\nRotation about the x-axis:\nV=π∫_a^b y^2 dx.\n\nFor rotation about the y-axis using x as a function of y:\nV=π∫x^2 dy.\n\n9. IMPROPER INTEGRALS\n\nIf the interval is unbounded or the integrand is undefined at an endpoint, use a limit. Convergence must be established before assigning a finite value.\n\n10. COMMON ERRORS\n\nAlways include +C in indefinite integrals.\nDo not forget the absolute value in ∫1/x dx.\nFor substitution, transform dx correctly.\nFor area, use a positive geometric area, even if the raw definite integral is negative.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "integration",
+        "substitution",
+        "integration by parts",
+        "partial fractions",
+        "definite integrals",
+        "area",
+        "volume",
+        "improper integrals"
+      ]
+    },
+    {
+      "id": "pm6042_maclaurin_taylor",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Maclaurin and Taylor Series, Approximations and Error",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — MACLAURIN AND TAYLOR SERIES\n\n1. TAYLOR SERIES\n\nAbout x=a:\nf(x)=f(a)+f'(a)(x−a)+f''(a)(x−a)^2/2!+... .\n\nMaclaurin series is Taylor series about a=0:\nf(x)=f(0)+f'(0)x+f''(0)x^2/2!+... .\n\n2. STANDARD SERIES\n\ne^x=1+x+x^2/2!+x^3/3!+...\nsinx=x−x^3/3!+x^5/5!−...\ncosx=1−x^2/2!+x^4/4!−...\nln(1+x)=x−x^2/2+x^3/3−x^4/4+..., |x|<1.\n\n(1+x)^n=1+nx+n(n−1)x^2/2!+... for suitable |x|.\n\n3. USING SERIES\n\nSeries can be multiplied, substituted into one another, differentiated or integrated within their interval of validity when justified.\n\n4. APPROXIMATION\n\nIf x is small, truncate after the requested term. The next omitted term often gives an estimate of the error, depending on the conditions of the expansion.\n\n5. LIMITS\n\nSeries can simplify limits when direct substitution produces 0/0 or another indeterminate form. Compare leading non-zero terms.\n\n6. DERIVING A SERIES\n\nIf the exact Maclaurin series is not memorised, repeatedly differentiate, evaluate at zero, and substitute into the formula.\n\n7. TAYLOR ABOUT NONZERO POINT\n\nIf expanding around x=a, use powers of (x−a), not x.\n\n8. COMMON ERRORS\n\nDo not use a series outside its convergence interval without justification.\nDo not confuse the coefficient of x^n with the nth derivative itself; the coefficient is f^(n)(0)/n! in a Maclaurin expansion.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "Maclaurin",
+        "Taylor series",
+        "series expansion",
+        "approximation",
+        "error",
+        "convergence",
+        "power series"
+      ]
+    },
+    {
+      "id": "pm6042_differential_equations",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "First-Order Differential Equations and Mathematical Modelling",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — DIFFERENTIAL EQUATIONS\n\n1. TERMINOLOGY\n\nA differential equation contains an unknown function and one or more derivatives. The order is the highest derivative present.\n\n2. SEPARABLE EQUATIONS\n\nIf\ndy/dx=f(x)g(y),\nrearrange:\ndy/g(y)=f(x)dx.\nIntegrate both sides and apply the initial condition.\n\n3. INITIAL CONDITIONS\n\nA general solution contains a constant. An initial condition such as y(0)=y_0 determines that constant.\n\n4. EXPONENTIAL GROWTH AND DECAY\n\ndy/dt=ky\ngives\ny=Ae^(kt).\n\nIf k>0, growth; if k<0, decay.\n\n5. LOGISTIC-TYPE MODELS\n\nA model of the form\ndy/dt=ky(1−y/K)\nhas equilibrium solutions y=0 and y=K. K is a carrying capacity in population-type interpretations.\n\n6. VERIFYING A SOLUTION\n\nDifferentiate the proposed solution and substitute into the original equation. Check the initial condition separately.\n\n7. EQUILIBRIUM SOLUTIONS\n\nIf dy/dx=F(y), constant solutions can arise from F(y)=0. They must not be lost during separation if dividing by F(y).\n\n8. MODELLING\n\nTranslate words into variables and rates. Identify what the derivative represents and state assumptions. Solve symbolically first where possible, then apply numerical data.\n\n9. COMMON ERRORS\n\nDo not divide by y or another expression before checking whether it can be zero.\nDo not forget units in applied interpretations.\nDo not discard the integration constant before using the initial condition.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "differential equations",
+        "separable equations",
+        "growth",
+        "decay",
+        "logistic",
+        "modelling",
+        "initial conditions"
+      ]
+    },
+    {
+      "id": "pm6042_vectors",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Vectors, Lines and Planes in Three Dimensions",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — VECTORS\n\n1. VECTOR BASICS\n\nA vector has magnitude and direction. In Cartesian form:\na=(a1,a2,a3).\n\nMagnitude:\n|a|=√(a1^2+a2^2+a3^2).\n\nA unit vector in the direction of a:\na/|a|.\n\n2. VECTOR ADDITION AND SCALAR MULTIPLICATION\n\nVectors add componentwise. Scalar multiplication changes magnitude and, for a negative scalar, reverses direction.\n\n3. POSITION VECTORS\n\nIf A has position vector a and B has b, then:\nAB=b−a.\n\nThe midpoint position vector is (a+b)/2.\n\n4. DOT PRODUCT\n\na·b=a1b1+a2b2+a3b3=|a||b|cosθ.\n\nTherefore:\ncosθ=(a·b)/(|a||b|).\n\nPerpendicular vectors satisfy a·b=0.\n\n5. VECTOR EQUATIONS OF LINES\n\nA line through point a with direction vector b:\nr=a+λb.\n\nA point lies on the line if its coordinates can be represented by the same λ.\n\n6. INTERSECTION OF LINES\n\nEquate coordinate components and solve for the parameters. If a common solution exists, the lines intersect. Otherwise they may be parallel or skew.\n\n7. ANGLE BETWEEN LINES\n\nUse the angle between their direction vectors. Take the acute angle if the question asks for the angle between two lines.\n\n8. PLANES\n\nA plane can be represented by:\nax+by+cz=d,\nwhere n=(a,b,c) is a normal vector.\n\nA plane through point r_0 with normal n satisfies:\nn·(r−r_0)=0.\n\n9. LINE-PLANE INTERSECTION\n\nSubstitute the line equation into the plane equation to find the line parameter, then obtain the intersection point.\n\n10. ANGLE BETWEEN LINE AND PLANE\n\nIf the line has direction vector b and plane normal n, then the angle φ between the line and the plane satisfies:\nsinφ=|b·n|/(|b||n|).\n\n11. DISTANCE FROM POINT TO PLANE\n\nFor ax+by+cz+d=0 and P(x_0,y_0,z_0):\ndistance=|ax_0+by_0+cz_0+d|/√(a^2+b^2+c^2).\n\n12. COMMON ERRORS\n\nDo not use a plane's normal vector as though it were a direction vector lying in the plane.\nWhen comparing line parameters, the same parameter value must be used consistently across components.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "vectors",
+        "dot product",
+        "3D geometry",
+        "lines",
+        "planes",
+        "normal vector",
+        "angle",
+        "distance"
+      ]
+    },
+    {
+      "id": "pm6042_complex_numbers",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Complex Numbers, Argand Diagrams, Modulus, Argument and De Moivre",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — COMPLEX NUMBERS\n\n1. BASIC FORM\n\nA complex number is z=a+bi, where i^2=−1. a is the real part and b is the imaginary part.\n\n2. OPERATIONS\n\nAdd and subtract real and imaginary parts separately.\nMultiply using i^2=−1.\nFor division, multiply numerator and denominator by the complex conjugate.\n\n3. CONJUGATE\n\nIf z=a+bi, then z*=a−bi.\nzz*=a^2+b^2=|z|^2.\n\n4. MODULUS\n\n|z|=√(a^2+b^2).\n\nGeometrically, this is the distance from the origin to the point representing z.\n\n5. ARGUMENT\n\narg z is the angle θ made with the positive real axis. Use quadrant information carefully:\ntanθ=b/a, but arctan alone does not determine the quadrant.\n\nPrincipal argument is conventionally taken in a specified interval such as (−π,π].\n\n6. POLAR FORM\n\nz=r(cosθ+i sinθ)\nor\nz=r cisθ.\n\nEuler form:\nz=re^(iθ).\n\n7. MULTIPLICATION AND DIVISION\n\nMultiplication:\nr_1cisθ_1 × r_2cisθ_2 = r_1r_2cis(θ_1+θ_2).\n\nDivision:\n(r_1cisθ_1)/(r_2cisθ_2)=(r_1/r_2)cis(θ_1−θ_2).\n\n8. DE MOIVRE'S THEOREM\n\n(cosθ+i sinθ)^n=cos(nθ)+i sin(nθ).\n\nIt is useful for powers and roots.\n\n9. nth ROOTS\n\nIf z=r cisθ, its nth roots are:\nr^(1/n) cis[(θ+2kπ)/n], k=0,1,...,n−1.\n\nThe roots are equally spaced around a circle in the Argand plane.\n\n10. LOCI\n\n|z−a|=r represents a circle with centre a and radius r.\n|z−a|=|z−b| represents the perpendicular bisector of points a and b.\narg(z−a)=θ represents a ray/line through a, subject to the precise argument condition.\n\n11. POLYNOMIAL ROOTS\n\nIf a polynomial has real coefficients and a+bi is a root, then a−bi is also a root.\n\n12. COMMON ERRORS\n\nWhen using arguments, always consider the quadrant.\nDo not confuse |z| with z.\nDo not lose all roots when solving z^n=w.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "complex numbers",
+        "Argand diagram",
+        "modulus",
+        "argument",
+        "conjugate",
+        "De Moivre",
+        "roots",
+        "loci"
+      ]
+    },
+    {
+      "id": "pm6042_matrices_transformations",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Matrices, Determinants, Inverses and Linear Transformations",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — MATRICES\n\n1. MATRIX BASICS\n\nA matrix is a rectangular array. Addition requires equal dimensions. Multiplication requires the number of columns of the first matrix to equal the number of rows of the second.\n\n2. MATRIX MULTIPLICATION\n\nFor A(m×n) and B(n×p), AB is m×p. Matrix multiplication is generally not commutative: AB≠BA.\n\n3. DETERMINANT OF 2×2\n\nFor\nA=[[a,b],[c,d]],\ndet(A)=ad−bc.\n\n4. INVERSE OF 2×2\n\nA^−1=1/(ad−bc) [[d,−b],[−c,a]]\nprovided det(A)≠0.\n\n5. SIMULTANEOUS EQUATIONS\n\nA system can be written AX=b. If A is invertible:\nX=A^−1b.\n\n6. THREE-BY-THREE DETERMINANTS\n\nUse expansion by minors/cofactors or a reliable determinant method. Keep signs in the cofactor pattern:\n+ − +\n− + −\n+ − +.\n\n7. SINGULAR MATRICES\n\ndet(A)=0 means A has no inverse. A corresponding linear system may have no solution or infinitely many solutions depending on consistency.\n\n8. TRANSFORMATIONS\n\nA matrix maps a vector x to Ax. For a 2D transformation, columns of A are images of the standard basis vectors.\n\n9. GEOMETRIC INTERPRETATION\n\nA matrix may represent reflection, rotation, enlargement, shear or a combination. The determinant gives the signed area scale factor in two dimensions.\n\n10. COMPOSITION\n\nIf transformation A is followed by B, the resulting transformation is BA when column vectors are used. Order matters.\n\n11. EIGENVALUES AND EIGENVECTORS\n\nAn eigenvector v satisfies Av=λv. Non-zero v exists when:\ndet(A−λI)=0.\nThe resulting equation is the characteristic equation.\n\n12. COMMON ERRORS\n\nDo not reverse matrix multiplication order.\nCheck determinant before using an inverse.\nKeep row/column orientation consistent.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "matrices",
+        "determinants",
+        "inverse matrix",
+        "simultaneous equations",
+        "transformations",
+        "eigenvalues",
+        "eigenvectors"
+      ]
+    },
+    {
+      "id": "pm6042_numerical_methods",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Numerical Methods: Iteration, Newton-Raphson and Root Finding",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — NUMERICAL METHODS\n\n1. WHY NUMERICAL METHODS?\n\nSome equations cannot be solved conveniently in closed form. Numerical methods produce approximations to roots.\n\n2. FIXED-POINT ITERATION\n\nRewrite f(x)=0 as x=g(x), then iterate:\nx_(n+1)=g(x_n).\n\nStarting from x_0, calculate successive values until the required accuracy is reached.\n\n3. CONVERGENCE\n\nA fixed-point iteration converges locally when |g'(x)|<1 near the fixed point. If |g'(x)|>1, convergence is generally not expected locally.\n\n4. NEWTON-RAPHSON METHOD\n\nFor f(x)=0:\nx_(n+1)=x_n−f(x_n)/f'(x_n).\n\nGeometrically, this uses the x-intercept of the tangent at the current approximation.\n\n5. STOPPING RULE\n\nContinue until successive approximations agree to the requested number of decimal places or until the error is demonstrably below the required tolerance.\n\n6. BRACKETING\n\nIf f(a) and f(b) have opposite signs and f is continuous on [a,b], at least one root lies between a and b.\n\nBisection repeatedly halves the interval while preserving a sign change. It is slower than Newton-Raphson but robust.\n\n7. GRAPHICAL ROOTS\n\nA root of f(x)=0 is an x-intercept. A solution of f(x)=g(x) is an intersection of the graphs.\n\n8. COMMON ERRORS\n\nNewton-Raphson needs a sensible starting value.\nDo not round intermediate values too aggressively.\nDo not claim a root is exact when it was obtained numerically.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "numerical methods",
+        "Newton-Raphson",
+        "iteration",
+        "bisection",
+        "root finding",
+        "convergence"
+      ]
+    },
+    {
+      "id": "pm6042_proof",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mathematical Proof, Induction, Contradiction and Counterexamples",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — PROOF\n\n1. DIRECT PROOF\n\nStart with known facts and logically derive the desired result. Every important step must be justified.\n\n2. MATHEMATICAL INDUCTION\n\nTo prove P(n) for all integers n≥n_0:\n\nBase case: prove P(n_0).\n\nInductive hypothesis: assume P(k) is true for an arbitrary k≥n_0.\n\nInductive step: using the hypothesis, prove P(k+1).\n\nConclusion: therefore P(n) is true for all n≥n_0.\n\n3. INEQUALITIES BY INDUCTION\n\nWhen proving inequalities, preserve inequality direction when multiplying/dividing by quantities whose sign is known. If a sign is unknown, the argument requires more care.\n\n4. DIVISIBILITY\n\nTo prove n divides an expression, show the expression can be written as n times an integer expression.\n\n5. CONTRADICTION\n\nAssume the negation of the statement and derive an impossibility. Then the original statement must be true.\n\n6. COUNTEREXAMPLE\n\nTo disprove a universal statement, one valid counterexample is enough. A single example cannot prove a universal statement.\n\n7. PROOF QUALITY\n\nA correct proof must cover every required case. Testing several numerical examples is not proof.\n\n8. COMMON ERRORS\n\nIn induction, proving P(k) does not prove P(k+1). Both the hypothesis and inductive step are required.\nDo not assume what you are trying to prove.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "proof",
+        "mathematical induction",
+        "contradiction",
+        "counterexample",
+        "divisibility",
+        "inequalities"
+      ]
+    },
+    {
+      "id": "pm6042_inequalities_partial_fractions",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Inequalities, Partial Fractions and Algebraic Techniques",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — ALGEBRAIC TECHNIQUES\n\n1. LINEAR AND QUADRATIC INEQUALITIES\n\nSolve by moving everything to one side, factorising where possible, finding critical values, then using a sign chart.\n\n2. QUADRATIC DISCRIMINANT\n\nFor ax^2+bx+c, discriminant:\nΔ=b^2−4ac.\n\nΔ>0: two distinct real roots.\nΔ=0: repeated real root.\nΔ<0: no real roots.\n\nFor inequalities, the sign of a quadratic also depends on the leading coefficient.\n\n3. RATIONAL INEQUALITIES\n\nFind zeros of numerator and denominator. Denominator zeros are excluded from the domain. Construct a sign chart across all critical points.\n\n4. PARTIAL FRACTIONS\n\nBefore decomposing, perform polynomial division if the fraction is improper.\n\nFor\nP(x)/[(x−a)(x−b)],\nwrite:\nA/(x−a)+B/(x−b).\n\nFor repeated factors, include every power.\nFor an irreducible quadratic, use a linear numerator.\n\n5. MODULUS INEQUALITIES\n\n|f(x)|<a requires a>0 and:\n−a<f(x)<a.\n\n|f(x)|>a gives:\nf(x)<−a or f(x)>a.\n\n6. PARAMETRIC CONDITIONS\n\nIf an equation must have a repeated root, use simultaneous conditions P(a)=0 and P'(a)=0. If it must have two real roots, use the discriminant condition together with any domain restrictions.\n\n7. COMMON ERRORS\n\nNever include a denominator zero in the solution set.\nFor sign charts, a factor with an even multiplicity does not change sign at its root.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "inequalities",
+        "quadratic",
+        "discriminant",
+        "partial fractions",
+        "rational inequalities",
+        "modulus"
+      ]
+    },
+    {
+      "id": "pm6042_exam_strategy",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "ZIMSEC A-Level Pure Mathematics Exam Strategy and Mathematical Communication",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — EXAM STRATEGY\n\n1. PAPER STRUCTURE\n\nZIMSEC's Advanced Level Pure Mathematics 6042 has Paper 1 and Paper 2. Recent official examination timetables list Paper 1 as a three-hour Pure Mathematics paper. Official ZIMSEC materials also provide a 6042/2 paper and examiner reports. citeturn0search15turn0search7turn0search10\n\nA recent Paper 2 specimen instructs candidates to answer all questions in Section A and any five questions from Section B, with a total of 120 marks; it also expects calculator use where appropriate and clear presentation. citeturn2search5\n\n2. MATHEMATICAL PRESENTATION\n\nWrite enough working for the examiner to follow the method. A final answer with no supporting method may lose method marks where the question requires reasoning.\n\nUse:\n- exact values where appropriate;\n- clearly defined variables;\n- correct notation;\n- units in applied contexts;\n- logical equality signs;\n- a final statement for the requested quantity.\n\n3. EXACT VS APPROXIMATE\n\nKeep exact forms such as √3, ln2, π and fractions until the final stage unless the question explicitly requires decimal approximation. Rounding early can alter subsequent calculations.\n\n4. CALCULATOR\n\nA calculator is useful for numerical evaluation, but it should not replace algebraic reasoning. Check whether an exact answer is possible before entering decimals.\n\n5. TRIGONOMETRY\n\nCheck whether the calculator is in radians or degrees. Calculus identities and differentiation/integration of trigonometric functions use radians.\n\n6. CALCULUS\n\nBefore integrating, simplify or decompose where necessary.\nBefore differentiating a complicated expression, look for product, quotient or chain structure.\nFor stationary points, solve dy/dx=0 and then classify.\nFor area, determine which curve is above the other.\n\n7. SERIES\n\nState the expansion being used and its interval/condition where relevant. Keep enough terms to reach the requested accuracy.\n\n8. VECTORS\n\nWrite vector equations clearly. When finding intersections, equate components and solve parameters consistently.\n\n9. COMPLEX NUMBERS\n\nUse the Argand diagram to check quadrant and geometric interpretation. When finding roots, give all distinct roots required by the question.\n\n10. NUMERICAL METHODS\n\nKeep extra decimal places in intermediate iterations. Report the final answer to the requested accuracy.\n\n11. PROOF\n\nUse a proof structure rather than examples. In induction, explicitly label base case, hypothesis, inductive step and conclusion.\n\n12. ERROR CHECKLIST\n\nBefore submitting:\n- Have all requested parts been answered?\n- Are signs correct?\n- Are denominators non-zero?\n- Are logarithm arguments positive?\n- Are square-root restrictions satisfied?\n- Are angles in the correct units?\n- Did you reject extraneous roots?\n- Did you round only at the end?\n- Does the final value make sense?\n\n13. HIGH-LEVEL STUDY METHOD\n\nFor every topic build four layers:\nA. Definitions and notation.\nB. Core results and formulae.\nC. Derivations and why the results work.\nD. Mixed problems requiring several ideas.\n\nA-Level Pure Mathematics is not mastered by memorising formulae alone. The student should be able to recognise which theorem or technique applies and explain why.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "ZIMSEC",
+        "6042",
+        "exam strategy",
+        "Paper 1",
+        "Paper 2",
+        "proof",
+        "calculator",
+        "mathematical communication"
+      ]
+    },
+    {
+      "id": "pm6042_mixed_revision",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Integrated Revision: How Topics Combine in Advanced Problems",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — INTEGRATED REVISION\n\n1. ALGEBRA + CALCULUS\n\nA rational function may require polynomial division or partial fractions before differentiation or integration. Always simplify the algebraic structure first.\n\n2. FUNCTIONS + CALCULUS\n\nDomain restrictions must be carried into differentiation and optimisation. A stationary point outside the function's domain is not a valid stationary point of the original function.\n\n3. TRIGONOMETRY + CALCULUS\n\nTrig identities may simplify derivatives or integrals. R-form can convert a combination of sine and cosine into a single sinusoid, which is useful for extrema.\n\n4. SERIES + CALCULUS\n\nDifferentiate or integrate a known power series term-by-term where valid. This can produce expansions for functions that are related to a standard series.\n\n5. COMPLEX NUMBERS + POLYNOMIALS\n\nComplex roots can factor a polynomial over the complex numbers. Real coefficients force non-real roots to occur in conjugate pairs.\n\n6. VECTORS + COORDINATE GEOMETRY\n\nA vector line equation is the three-dimensional analogue of a coordinate line. Dot products provide perpendicularity and angles; plane normals provide equations of planes.\n\n7. MATRICES + TRANSFORMATIONS\n\nA matrix describes a linear transformation. Composition corresponds to matrix multiplication, and determinant measures signed area scaling in two dimensions.\n\n8. NUMERICAL METHODS + FUNCTIONS\n\nBefore applying Newton-Raphson, inspect the graph or algebraic structure. A poor starting value can lead to divergence or convergence to an unwanted root.\n\n9. PROOF + SEQUENCES\n\nInduction is often used to prove formulae for sums and sequences. A recurrence can be combined with induction to prove bounds or identities.\n\n10. MIXED-PROBLEM CHECKLIST\n\nWhen a difficult question appears:\nStep 1: Identify the mathematical objects.\nStep 2: Write down restrictions.\nStep 3: Look for structure.\nStep 4: Choose a theorem or technique.\nStep 5: Work symbolically.\nStep 6: Check the result.\nStep 7: Give the answer in the requested form.\n\n11. DEEP PRACTICE\n\nA strong A-Level student should practise problems where:\n- a polynomial is factorised before integration;\n- a trig identity is needed before differentiation;\n- a parameter is determined from a repeated root;\n- a curve is analysed using first and second derivatives;\n- a complex-number condition becomes a geometric locus;\n- a vector problem requires both dot products and simultaneous equations;\n- a numerical approximation is justified by an interval;\n- a series is used to approximate a numerical quantity.\n\n12. FINAL PRINCIPLE\n\nThe syllabus is a connected mathematical system. Algebra supports calculus; functions give calculus its domain; trigonometry provides identities used in calculus; vectors and matrices express geometry systematically; complex numbers extend algebra; numerical methods handle equations without convenient exact solutions; proof establishes the validity of general results.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "integrated revision",
+        "mixed problems",
+        "algebra",
+        "calculus",
+        "trigonometry",
+        "complex numbers",
+        "vectors",
+        "matrices",
+        "numerical methods",
+        "proof"
+      ]
+    },
+    {
+      "id": "pm6042_algebra_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Advanced Algebraic Techniques",
+      "content": "ZIMSEC A-LEVEL PURE MATHEMATICS 6042 — ADVANCED ALGEBRAIC TECHNIQUES\n\nCOMPLETING THE SQUARE\nFor ax²+bx+c:\nax²+bx+c=a(x+b/(2a))²−(b²−4ac)/(4a).\nThis immediately gives the vertex of a quadratic and is useful in coordinate geometry, inequalities and optimisation.\n\nExample:\n2x²−8x+3=2(x−2)²−5.\nThe minimum value is −5 at x=2.\n\nALGEBRAIC FRACTIONS\nBefore simplifying a rational expression, factor numerator and denominator and identify excluded values. Cancellation is permitted only between factors.\n(x²−1)/(x−1)=x+1, but x≠1 because the original denominator is zero at x=1.\n\nIDENTITIES\nAn identity is true for every value in the common domain. To prove one, transform one side into the other. Do not “solve” an identity for x.\n\nPARAMETERS\nIf a is a root of P(x), then P(a)=0. If a is a repeated root, then both P(a)=0 and P'(a)=0. These conditions are powerful for determining unknown coefficients.\n\nDISCRIMINANT\nFor ax²+bx+c:\nΔ=b²−4ac.\nΔ>0 gives two distinct real roots; Δ=0 gives a repeated real root; Δ<0 gives no real roots.\n\nROOT RELATIONSHIPS\nFor ax²+bx+c with roots α,β:\nα+β=−b/a, αβ=c/a.\nFor ax³+bx²+cx+d with roots α,β,γ:\nα+β+γ=−b/a;\nαβ+βγ+γα=c/a;\nαβγ=−d/a.\n\nROOT LOCATION\nIf f is continuous and f(a)f(b)<0, at least one root lies in (a,b). If f is also strictly monotonic there, the root is unique.\n\nINEQUALITIES\nFactor the expression, find every critical point, create a sign chart, and include/exclude endpoints according to the inequality and domain. For rational inequalities, denominator zeros are always excluded.\n\nCOMMON TRAPS\nNever divide by an expression that might be zero without checking that case. Never cancel terms across addition. Keep exact forms until decimal approximation is requested.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "algebra",
+        "quadratics",
+        "identities",
+        "parameters",
+        "discriminant",
+        "roots",
+        "inequalities"
+      ]
+    },
+    {
+      "id": "pm6042_functions_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Functions, Modulus, Transformations and Inverses — Deep Study",
+      "content": "FUNCTIONS\n\nDOMAIN\nThe domain is determined by restrictions:\ndenominator ≠0;\neven-root radicand ≥0;\nlogarithm argument >0.\n\nCOMPOSITE FUNCTIONS\n(f∘g)(x)=f(g(x)).\nThe order matters. To find its domain, first require x to be in the domain of g and then require g(x) to lie in the domain of f.\n\nINVERSE\nAn inverse function exists when the function is one-to-one on its chosen domain. To find it, write y=f(x), interchange x and y, and solve for y. The graph of the inverse is the reflection of the original graph in y=x.\n\nMODULUS\n|x|=x for x≥0 and −x for x<0.\n|f(x)|=k, k≥0, gives f(x)=±k.\n|f(x)|<k gives −k<f(x)<k.\n|f(x)|>k gives f(x)<−k or f(x)>k.\n\nTRANSFORMATIONS\nf(x)+a: up a.\nf(x)−a: down a.\nf(x−a): right a.\nf(x+a): left a.\naf(x): vertical scale |a|.\nf(ax): horizontal scale 1/|a|.\n−f(x): reflection in x-axis.\nf(−x): reflection in y-axis.\n\nRATIONAL FUNCTIONS\nFor y=(ax+b)/(cx+d), the vertical asymptote is cx+d=0 and, when degrees are equal, the horizontal asymptote is y=a/c. Polynomial division can expose oblique asymptotes.\n\nGRAPH SKETCHING\nA serious A-Level sketch should consider domain, intercepts, symmetry, stationary points, asymptotes, end behaviour and transformations. A sketch is an argument, not decoration.\n\nCOMMON TRAP\nInside-bracket signs act oppositely: f(x−3) shifts right by 3, not left.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "functions",
+        "domain",
+        "range",
+        "inverse",
+        "modulus",
+        "transformations",
+        "graphs",
+        "asymptotes"
+      ]
+    },
+    {
+      "id": "pm6042_sequences_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Sequences, Recurrences, Convergence and Binomial Applications",
+      "content": "ARITHMETIC PROGRESSION\nu_n=a+(n−1)d.\nS_n=n/2[2a+(n−1)d].\n\nGEOMETRIC PROGRESSION\nu_n=ar^(n−1).\nS_n=a(1−r^n)/(1−r).\nIf |r|<1:\nS∞=a/(1−r).\n\nAPPLICATIONS\nA percentage increase p% multiplies a quantity by 1+p/100. A decrease multiplies by 1−p/100. Indexing matters in financial and population problems.\n\nSIGMA RESULTS\nΣ1=n.\nΣk=n(n+1)/2.\nΣk²=n(n+1)(2n+1)/6.\nΣk³=[n(n+1)/2]².\n\nRECURRENCE\nFor u_(n+1)=f(u_n), calculate terms to understand behaviour but do not infer convergence solely from numerical evidence. If convergence is established and f is continuous, L=f(L).\n\nMONOTONIC + BOUNDED\nA monotonic bounded sequence converges. This theorem is central to rigorous recurrence arguments.\n\nARITHMETIC-GEOMETRIC SERIES\nStarting with Σr^n=1/(1−r), |r|<1, differentiate to obtain:\nΣnr^(n−1)=1/(1−r)².\nThis allows sums containing n r^n to be evaluated.\n\nBINOMIAL\n(a+b)^n=Σ C(n,r)a^(n−r)b^r.\nThe general term is T_(r+1)=C(n,r)a^(n−r)b^r.\n\nFor fractional n:\n(1+x)^n=1+nx+n(n−1)x²/2!+...,\nvalid within the relevant convergence interval.\n\nTERM INDEPENDENT OF x\nWrite the power of x in the general term, set it equal to zero, solve for r, then substitute that integer into the term.\n\nCOMMON TRAPS\nAn infinite geometric series converges only when |r|<1. A necessary condition for Σu_n to converge is u_n→0, but this alone is not sufficient.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "sequences",
+        "series",
+        "AP",
+        "GP",
+        "recurrence",
+        "convergence",
+        "binomial",
+        "sigma"
+      ]
+    },
+    {
+      "id": "pm6042_coordinate_circles_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Coordinate Geometry, Circles, Tangents and Loci",
+      "content": "STRAIGHT LINES\nGradient m=(y₂−y₁)/(x₂−x₁).\nLine through (x₁,y₁):\ny−y₁=m(x−x₁).\n\nParallel lines have equal gradients. Perpendicular non-vertical lines satisfy m₁m₂=−1.\n\nDISTANCE\nd=√[(x₂−x₁)²+(y₂−y₁)²].\nMidpoint=((x₁+x₂)/2,(y₁+y₂)/2).\n\nCIRCLE\n(x−a)²+(y−b)²=r².\nGeneral:\nx²+y²+Dx+Ey+F=0.\nComplete the square to obtain centre and radius.\n\nDIAMETER\nFor endpoints A and B, centre is midpoint and radius is AB/2. A point P lies on the circle with AB as diameter exactly when ∠APB=90°.\n\nTANGENT\nAt a point P on a circle, the tangent is perpendicular to the radius OP. For centre (a,b):\n(x₁−a)(x−a)+(y₁−b)(y−b)=r²\nis the tangent at (x₁,y₁).\n\nLINE-CIRCLE INTERSECTION\nSubstitute the line into the circle. A quadratic results:\ntwo distinct roots → two intersections;\nrepeated root → tangent;\nno real roots → no intersection.\n\nLOCUS\nFixed distance from a point → circle.\nEquidistant from two points → perpendicular bisector.\nEquidistant from two intersecting lines → angle bisectors.\n\nCOMPLETING THE SQUARE\nx²+y²+Dx+Ey+F=0 becomes:\n(x+D/2)²+(y+E/2)²=(D²+E²)/4−F.\n\nCOMMON TRAPS\nA repeated root of the substituted quadratic indicates tangency. Do not confuse the radius with the diameter.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "coordinate geometry",
+        "circles",
+        "tangent",
+        "locus",
+        "straight lines",
+        "diameter"
+      ]
+    },
+    {
+      "id": "pm6042_trig_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Advanced Trigonometry and R-Form",
+      "content": "CORE IDENTITIES\nsin²x+cos²x=1.\n1+tan²x=sec²x.\n1+cot²x=cosec²x.\n\nCOMPOUND ANGLES\nsin(A±B)=sinAcosB±cosAsinB.\ncos(A±B)=cosAcosB∓sinAsinB.\ntan(A±B)=(tanA±tanB)/(1∓tanAtanB).\n\nDOUBLE ANGLES\nsin2x=2sinxcosx.\ncos2x=1−2sin²x=2cos²x−1.\n\nTRIPLE ANGLES\nsin3x=3sinx−4sin³x.\ncos3x=4cos³x−3cosx.\n\nR-FORM\na sinx+b cosx=R sin(x+α),\nwhere R=√(a²+b²), Rcosα=a and Rsinα=b.\nTherefore the maximum is R and minimum is −R.\n\nExample:\n3sinx+4cosx=2\nbecomes 5sin(x+α)=2 with cosα=3/5 and sinα=4/5. Solve the resulting sine equation over the stated interval.\n\nTRIG EQUATIONS\nSolve the basic equation, use the principal solutions and then apply periodicity. For sin and cos the period is 2π; for tan it is π.\n\nTRIG INEQUALITIES\nSolve the equality to obtain critical angles, then use the unit circle or sign analysis to determine the required intervals.\n\nPROVING IDENTITIES\nConvert sec, cosec and cot into sin/cos; factor; use a common denominator; use compound/double-angle identities. Start with one side and never assume the result.\n\nTRIG SUBSTITUTION\nFor √(a²−x²), x=a sinθ may simplify the radical. Transform dx and limits consistently.\n\nCALCULUS NOTE\nTrigonometric differentiation and integration formulae assume angles are measured in radians.\n\nCOMMON TRAPS\nNever divide by sinx or cosx without considering zero cases. Squaring an equation may create extraneous solutions, so check final answers.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "trigonometry",
+        "R-form",
+        "identities",
+        "equations",
+        "inequalities",
+        "double angle",
+        "triple angle",
+        "radians"
+      ]
+    },
+    {
+      "id": "pm6042_calculus_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Differentiation and Integration — Advanced Applications",
+      "content": "DIFFERENTIATION\nPower rule: d(x^n)/dx=nx^(n−1).\nProduct: (uv)'=uv'+vu'.\nQuotient: (u/v)'=(vu'−uv')/v².\nChain rule: d[f(g(x))]/dx=f'(g(x))g'(x).\n\nSTANDARD:\n(e^x)'=e^x.\n(lnx)'=1/x.\n(sinx)'=cosx.\n(cosx)'=−sinx.\n(tanx)'=sec²x.\n\nIMPLICIT DIFFERENTIATION\nDifferentiate y as a function of x:\nd(y²)/dx=2y dy/dx.\nThen solve for dy/dx.\n\nPARAMETRIC\nIf x=f(t), y=g(t):\ndy/dx=(dy/dt)/(dx/dt).\nSecond derivative:\nd²y/dx²=[d/dt(dy/dx)]/(dx/dt).\n\nSTATIONARY POINTS\nSolve f'(x)=0. Use f'' or a sign change in f' to classify.\n\nINFLECTION\nf''=0 gives candidates; an actual inflection requires a change in concavity.\n\nOPTIMISATION\nDefine variables, impose constraints, reduce to one variable, state domain, differentiate, solve, classify and check endpoints.\n\nRELATED RATES\nDifferentiate the relationship with respect to time before inserting numerical values.\n\nINTEGRATION\n∫x^n dx=x^(n+1)/(n+1)+C, n≠−1.\n∫1/x dx=ln|x|+C.\n∫e^x dx=e^x+C.\n∫sinx dx=−cosx+C.\n∫cosx dx=sinx+C.\n\nSUBSTITUTION\nSet u=g(x), calculate du, change limits for definite integrals, and integrate in u.\n\nBY PARTS\n∫u dv=uv−∫vdu.\nA useful choice often makes u simpler when differentiated.\n\nPARTIAL FRACTIONS\nDistinct linear factors use A/(x−a)+B/(x−b).\nRepeated factors require each power.\nIrreducible quadratics use a linear numerator.\n\nAREA\nArea between f and g:\n∫[upper−lower]dx.\nFind intersections first and split if the curves cross.\n\nVOLUME\nRotation around x-axis:\nV=π∫y²dx.\nWashers:\nV=π∫(R²−r²)dx.\n\nCOMMON TRAPS\nKeep +C in indefinite integrals. Use |x| in ln|x|. Check which curve is upper before evaluating an area.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "differentiation",
+        "integration",
+        "parametric",
+        "implicit",
+        "optimisation",
+        "related rates",
+        "partial fractions",
+        "area",
+        "volume"
+      ]
+    },
+    {
+      "id": "pm6042_maclaurin_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Maclaurin, Taylor, Error and Series Manipulation",
+      "content": "MACLAURIN\nf(x)=f(0)+f'(0)x+f''(0)x²/2!+f'''(0)x³/3!+....\n\nTAYLOR ABOUT a\nf(x)=Σ f^(n)(a)(x−a)^n/n!.\n\nSTANDARD SERIES\ne^x=1+x+x²/2!+x³/3!+....\nsinx=x−x³/3!+x⁵/5!−....\ncosx=1−x²/2!+x⁴/4!−....\nln(1+x)=x−x²/2+x³/3−... for |x|<1.\n\nBINOMIAL SERIES\n(1+x)^n=1+nx+n(n−1)x²/2!+... for suitable |x|.\n\nDERIVING SERIES\nDifferentiate repeatedly and evaluate at the expansion point. The nth coefficient is f^(n)(a)/n!.\n\nSERIES FROM KNOWN RESULTS\nIf a function contains a known standard function, substitute into the known series. Example:\ne^(2x)=1+2x+(2x)²/2!+(2x)³/3!+....\n\nMULTIPLICATION\nMultiply series carefully and collect like powers. To obtain terms through x³, any product terms of degree above x³ can be ignored after collection.\n\nDIVISION\nAssume the required series form and equate coefficients, or use algebraic manipulation to put the expression into a standard form.\n\nAPPROXIMATION\nIf x is small, truncate after the required power. The first omitted term provides useful information about the likely size of the truncation error when the conditions of the series support such an estimate.\n\nLIMITS\nCompare leading terms of expansions to evaluate indeterminate limits.\n\nCOMMON TRAPS\nDo not confuse f^(n)(0) with the coefficient of x^n. The coefficient is f^(n)(0)/n!.\nDo not use a series outside its convergence interval without justification.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "Maclaurin",
+        "Taylor",
+        "power series",
+        "approximation",
+        "error",
+        "series multiplication",
+        "series division"
+      ]
+    },
+    {
+      "id": "pm6042_differential_equations_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Differential Equations and Mathematical Modelling",
+      "content": "SEPARABLE EQUATIONS\nIf dy/dx=f(x)g(y), rearrange:\ndy/g(y)=f(x)dx,\nthen integrate.\n\nEXPONENTIAL GROWTH\ndy/dt=ky.\nSolution:\ny=Ae^(kt).\n\nIf y(0)=y₀:\ny=y₀e^(kt).\n\nDoubling time:\nT=ln2/k.\n\nDECAY\ny=y₀e^(−kt).\nHalf-life:\nT=ln2/k.\n\nEQUILIBRIA\nFor dy/dt=F(y), constant solutions satisfy F(y)=0. Check these before dividing by F(y).\n\nLOGISTIC MODEL\ndy/dt=ky(1−y/K).\nEquilibria are y=0 and y=K.\nWhen 0<y<K, the population grows; as y approaches K, growth slows; above K the derivative becomes negative.\n\nVERIFYING SOLUTIONS\nDifferentiate the proposed solution and substitute into the differential equation. Then check the initial condition.\n\nMODELLING\nDefine variables, units and assumptions. Translate “rate of change” into a derivative. Solve symbolically, apply conditions, then interpret.\n\nUNITS\nIn dy/dt=ky, if t is measured in years then k has units year⁻¹.\n\nCOMMON TRAP\nDividing by y in the exponential equation loses the equilibrium y=0 unless that case is considered separately.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "differential equations",
+        "growth",
+        "decay",
+        "logistic",
+        "equilibrium",
+        "modelling",
+        "initial conditions"
+      ]
+    },
+    {
+      "id": "pm6042_vectors_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Vectors in Three Dimensions",
+      "content": "VECTOR BASICS\na=(a₁,a₂,a₃).\n|a|=√(a₁²+a₂²+a₃²).\nUnit vector=a/|a|.\n\nDOT PRODUCT\na·b=a₁b₁+a₂b₂+a₃b₃=|a||b|cosθ.\nPerpendicular vectors have dot product zero.\n\nCROSS PRODUCT\na×b is perpendicular to both a and b.\n|a×b|=|a||b|sinθ.\nArea of a triangle with sides a,b is 1/2|a×b|.\n\nLINE\nr=a+λb.\na is a point on the line; b is its direction vector.\n\nINTERSECTION\nEquate components and solve parameters. A common parameter relationship must satisfy all three coordinates.\n\nPLANE\nn·(r−r₀)=0.\nIf n=(A,B,C), the Cartesian equation is Ax+By+Cz=D.\n\nLINE-PLANE INTERSECTION\nSubstitute the line into the plane to find λ, then substitute back.\n\nANGLE\nBetween two lines:\ncosθ=|b₁·b₂|/(|b₁||b₂|).\n\nFor a line and plane:\nsinφ=|b·n|/(|b||n|).\n\nDISTANCE POINT-PLANE\nFor Ax+By+Cz+D=0:\nd=|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²).\n\nSCALAR TRIPLE PRODUCT\na·(b×c) gives signed volume of the parallelepiped. Coplanarity occurs when it is zero.\n\nCOMMON TRAPS\nA normal vector is perpendicular to a plane; it is not a direction lying in the plane. Cross-product order changes sign.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "vectors",
+        "3D",
+        "dot product",
+        "cross product",
+        "planes",
+        "lines",
+        "scalar triple product",
+        "coplanarity"
+      ]
+    },
+    {
+      "id": "pm6042_matrices_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Matrices, Transformations and Linear Algebra",
+      "content": "MATRIX MULTIPLICATION\nIf A is m×n and B is n×p, AB exists and is m×p. In general AB≠BA.\n\n2×2 DETERMINANT\nFor [[a,b],[c,d]]:\ndetA=ad−bc.\n\nINVERSE\nA⁻¹=1/(ad−bc)[[d,−b],[-c,a]]\nwhen detA≠0.\n\nSIMULTANEOUS EQUATIONS\nAX=b.\nIf A is invertible:\nX=A⁻¹b.\n\n3×3 DETERMINANT\nUse expansion by minors/cofactors. Cofactor signs follow:\n+ − +\n− + −\n+ − +.\n\nSINGULAR MATRIX\ndetA=0. No inverse exists.\n\nTRANSFORMATIONS\nA matrix maps a vector x to Ax. Columns describe images of the standard basis vectors.\n\nCOMPOSITION\nIf A is followed by B, the combined transformation is BA for column-vector convention.\n\nDETERMINANT AS SCALE\nIn two dimensions, |detA| is the area scale factor. Negative determinant also indicates orientation reversal.\n\nEIGENVALUES\nAv=λv for non-zero v.\nTherefore:\n(A−λI)v=0.\nA non-zero solution requires:\ndet(A−λI)=0.\nThe roots are eigenvalues.\n\nEIGENVECTORS\nFor each eigenvalue λ, solve (A−λI)v=0. Eigenvectors associated with distinct eigenvalues are linearly independent under standard conditions.\n\nCOMMON TRAPS\nDo not reverse multiplication order. Check dimensions. Never divide by a determinant without verifying it is non-zero.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "matrices",
+        "determinants",
+        "inverse",
+        "transformations",
+        "eigenvalues",
+        "eigenvectors",
+        "simultaneous equations"
+      ]
+    },
+    {
+      "id": "pm6042_complex_geometry_deep",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Complex Numbers and Argand Geometry",
+      "content": "CARTESIAN FORM\nz=a+bi.\nRe(z)=a; Im(z)=b.\nz*=a−bi.\n|z|=√(a²+b²).\nzz*=|z|².\n\nPOLAR FORM\nz=r(cosθ+i sinθ)=r cisθ=re^(iθ).\n\nMULTIPLICATION\nr₁cisθ₁ × r₂cisθ₂=r₁r₂cis(θ₁+θ₂).\n\nDIVISION\nr₁cisθ₁/r₂cisθ₂=(r₁/r₂)cis(θ₁−θ₂).\n\nDE MOIVRE\n(cosθ+i sinθ)^n=cosnθ+i sinnθ.\n\nROOTS\nIf z=r cisθ, nth roots are:\nr^(1/n) cis[(θ+2kπ)/n],\nk=0,...,n−1.\n\nROOTS OF UNITY\nz^n=1 gives n equally spaced points on the unit circle.\n\nCONJUGATE ROOT THEOREM\nFor real-coefficient polynomials, non-real roots occur in conjugate pairs.\n\nLOCI\n|z−a|=r is a circle.\n|z−a|=|z−b| is a perpendicular bisector.\narg(z−a)=θ describes a direction from a.\n\nGEOMETRIC TRANSFORMATIONS\nMultiplication by re^(iθ) scales every distance from the origin by r and rotates by θ.\n\nCOMMON TRAPS\nDo not use tan⁻¹(Im/Re) without quadrant checking. Do not give only one nth root when all distinct roots are required.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "complex numbers",
+        "Argand",
+        "De Moivre",
+        "roots",
+        "conjugate",
+        "loci",
+        "Euler"
+      ]
+    },
+    {
+      "id": "pm6042_numerical_proof_exam",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Numerical Methods, Proof and Exam-Level Reasoning",
+      "content": "NEWTON-RAPHSON\nFor f(x)=0:\nx_(n+1)=x_n−f(x_n)/f'(x_n).\n\nIt is usually fast near a simple root but can fail with a poor starting value or where f' is zero/small.\n\nFIXED POINT\nRewrite x=g(x), then:\nx_(n+1)=g(x_n).\nLocal convergence is associated with |g'(x)|<1 near the fixed point.\n\nBISECTION\nIf f is continuous and f(a)f(b)<0, a root lies in (a,b). Repeatedly halve the interval while retaining a sign change. This is slower but reliable.\n\nNUMERICAL ACCURACY\nKeep guard digits during iteration. If a result must be correct to 3 decimal places, do not round every intermediate value to 3 decimals.\n\nMATHEMATICAL INDUCTION\n1. Base case.\n2. Assume P(k).\n3. Prove P(k+1) using P(k).\n4. Conclude P(n) for all n in the stated range.\n\nCOUNTEREXAMPLE\nOne valid counterexample disproves a universal statement. Numerical testing cannot prove a universal theorem.\n\nCONTRADICTION\nAssume the negation and derive an impossibility.\n\nEXAM REASONING\nWhen a question looks unfamiliar:\nidentify the object;\nwrite restrictions;\nlook for a standard form;\nchoose a theorem;\nwork symbolically;\ncheck the result;\nstate the answer.\n\nMATHEMATICAL COMMUNICATION\nShow enough working to establish the method. Keep exact values until the final numerical step. Use correct notation and state units where relevant.\n\nCHECKLIST\nSigns; domains; denominator restrictions; logarithm arguments; square-root conditions; radians; extraneous roots; endpoint checks; accuracy; all requested parts.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "numerical methods",
+        "Newton-Raphson",
+        "iteration",
+        "proof",
+        "induction",
+        "contradiction",
+        "counterexample",
+        "exam strategy"
+      ]
+    },
+    {
+      "id": "pm6042_worked_algebra",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Algebra Examples and Methods",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — WORKED ALGEBRA METHODS\n\nExample 1: Cubic factorisation\nSolve x³−6x²+11x−6=0.\nTry integer roots. P(1)=1−6+11−6=0, so x−1 is a factor.\nDivision gives x²−5x+6=(x−2)(x−3).\nTherefore:\n(x−1)(x−2)(x−3)=0,\nso x=1,2,3.\n\nExample 2: Parameter from a root\nGiven x=2 is a root of x³+px²−4x+q=0:\n8+4p−8+q=0,\nso 4p+q=0.\nA second condition would be needed to determine both p and q.\n\nExample 3: Repeated root\nFor x²−(k+2)x+2k=0 to have equal roots:\n(k+2)²−8k=0.\nk²−4k+4=0,\n(k−2)²=0,\nso k=2.\n\nExample 4: Rational inequality\nSolve (x−2)(x+1)/(x−3)≥0.\nCritical points: −1,2,3.\nCreate sign intervals:\n(-∞,−1), (-1,2), (2,3), (3,∞).\nThe denominator zero x=3 is excluded. Include −1 and 2 because equality is allowed.\nThe final set follows from the sign chart.\n\nExample 5: Logarithmic equation\nlog_3(x−1)+log_3(x+3)=2.\nDomain x>1.\nCombine:\nlog_3[(x−1)(x+3)]=2.\n(x−1)(x+3)=9.\nx²+2x−3=9.\nx²+2x−12=0.\nx=−1±√13.\nOnly x=−1+√13 satisfies x>1.\n\nExample 6: Surd rationalisation\n1/(2+√3).\nMultiply by 2−√3:\n(2−√3)/(4−3)=2−√3.\n\nExample 7: Exponential equation\n5^(2x−1)=13.\nTake natural logs:\n(2x−1)ln5=ln13.\nx=[1+ln13/ln5]/2.\n\nMethod lesson:\nThe strongest algebraic solutions identify restrictions first, preserve exact values, and check candidate solutions in the original problem.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_sequences",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Sequences, Series and Binomial Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — WORKED SEQUENCES\n\nExample 1: AP\nAn AP has first term 7 and common difference 4.\nu_n=7+4(n−1)=4n+3.\nu_20=83.\nS_20=20/2(7+83)=900.\n\nExample 2: GP\nFirst term 12 and ratio 1/3:\nu_n=12(1/3)^(n−1).\nS∞=12/(1−1/3)=18.\n\nExample 3: Find a ratio from two terms\nIf u_3=20 and u_6=160:\nar²=20,\nar⁵=160.\nDivide:\nr³=8,\nso r=2.\nThen a=20/4=5.\n\nExample 4: Sum to infinity condition\nIf a geometric sequence has sum to infinity 30 and first term 10:\n30=10/(1−r),\n1−r=1/3,\nr=2/3.\n\nExample 5: Binomial coefficient\nFind the coefficient of x³ in (2+x)^7.\nGeneral term:\nC(7,r)2^(7−r)x^r.\nFor x³, r=3.\nCoefficient=C(7,3)2^4=35×16=560.\n\nExample 6: Independent term\nIn (x²+2/x)^6, general term has power:\nx^[2(6−r)]x^(−r)=x^(12−3r).\nSet 12−3r=0, so r=4.\nThe independent term is:\nC(6,4)2^4=15×16=240.\n\nExample 7: Recurrence\nu_(n+1)=1/2(u_n+6), u_1=0.\nu_2=3, u_3=4.5, u_4=5.25.\nIf the sequence converges to L:\nL=(L+6)/2,\n2L=L+6,\nL=6.\nA complete proof of convergence requires additional reasoning, such as showing the sequence is bounded and monotonic.\n\nExample 8: Geometric application\nA machine loses 8% of its value each year. If its initial value is V:\nV_n=V(0.92)^n.\nThis is a geometric sequence with ratio 0.92.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_functions",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Functions and Graph Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — WORKED FUNCTIONS\n\nExample 1: Domain\nf(x)=√(5−2x)/(x−1).\nNeed:\n5−2x≥0 → x≤5/2.\nAlso x≠1.\nDomain: x≤5/2, x≠1.\n\nExample 2: Composite function\nf(x)=2x+1, g(x)=x²−3.\n(f∘g)(x)=2(x²−3)+1=2x²−5.\n(g∘f)(x)=(2x+1)²−3=4x²+4x−2.\nThey are not equal.\n\nExample 3: Inverse\nf(x)=3x−5.\ny=3x−5.\nInterchange:\nx=3y−5.\n3y=x+5.\nf⁻¹(x)=(x+5)/3.\n\nExample 4: Modulus\nSolve |2x−3|=7.\n2x−3=7 or 2x−3=−7.\nx=5 or x=−2.\n\nExample 5: Modulus inequality\n|x−2|<3.\n−3<x−2<3.\n−1<x<5.\n\nExample 6: Transformation\nIf y=f(x), then y=f(x−4)+2 is the graph shifted 4 units right and 2 units up.\n\nExample 7: Rational asymptotes\nf(x)=(2x+1)/(x−3).\nVertical asymptote x=3.\nDegrees equal, so horizontal asymptote y=2.\nRewrite:\n(2x+1)/(x−3)=2+7/(x−3).\n\nExample 8: One-to-one restriction\nf(x)=x² is not one-to-one on all real numbers. Restrict to x≥0; then its inverse is √x.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_coordinate",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Coordinate Geometry and Circle Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — WORKED COORDINATE GEOMETRY\n\nExample 1: Equation of line\nThrough (2,3) and (6,11):\nm=(11−3)/(6−2)=2.\ny−3=2(x−2),\nso y=2x−1.\n\nExample 2: Perpendicular line\nA line has gradient 3. A perpendicular line has gradient −1/3.\nThrough (4,2):\ny−2=−(1/3)(x−4).\n\nExample 3: Circle from centre and point\nCentre (2,−1), point (5,3).\nr²=(5−2)²+(3+1)²=25.\nCircle:\n(x−2)²+(y+1)²=25.\n\nExample 4: Circle in general form\nx²+y²−6x+4y−12=0.\nComplete squares:\n(x−3)²−9+(y+2)²−4−12=0.\nTherefore:\n(x−3)²+(y+2)²=25.\nCentre (3,−2), radius 5.\n\nExample 5: Tangent\nFor circle x²+y²=25 at P=(3,4):\n3x+4y=25.\nThis follows from OP=(3,4) being normal to the tangent.\n\nExample 6: Diameter\nA=(−7,3), B=(1,9).\nCentre=((−7+1)/2,(3+9)/2)=(−3,6).\nAB²=8²+6²=100, so r=5.\nCircle:\n(x+3)²+(y−6)²=25.\n\nExample 7: Tangency test\nSubstitute a line into the circle. If the resulting quadratic has discriminant zero, the line touches the circle at exactly one point.\n\nExample 8: Locus\nPoints P equidistant from A(1,2) and B(5,4):\nPA²=PB².\n(x−1)²+(y−2)²=(x−5)²+(y−4)².\nAfter simplification:\n4x+2y−14=0,\nor 2x+y−7=0.\nThis is the perpendicular bisector.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_trig",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Trigonometry Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — WORKED TRIGONOMETRY\n\nExample 1: Identity\nShow:\n(1−cos2x)/sinx=2sinx.\nSince 1−cos2x=2sin²x:\nLHS=2sin²x/sinx=2sinx,\nprovided sinx≠0.\n\nExample 2: R-form\nSolve 3sinx+4cosx=1.\nWrite:\n5sin(x+α)=1,\nwith cosα=3/5 and sinα=4/5.\nThen solve sin(x+α)=1/5 over the required interval.\n\nExample 3: Double angle\nSolve 2cos²x−1=0.\nUsing cos2x=2cos²x−1:\ncos2x=0.\nTherefore:\n2x=π/2+kπ,\nx=π/4+kπ/2.\n\nExample 4: Triple angle\nSolve 4cos³x−3cosx=1.\nRecognise:\n4cos³x−3cosx=cos3x.\nHence:\ncos3x=1.\nThen apply the specified interval.\n\nExample 5: Trig equation\n2sin²x−3sinx+1=0.\nFactor:\n(2sinx−1)(sinx−1)=0.\nThus sinx=1/2 or sinx=1.\nList all solutions in the requested interval.\n\nExample 6: Maximum value\nFind maximum of 5sinx−12cosx.\nR=√(25+144)=13.\nMaximum=13.\n\nExample 7: Trig inequality\nSolve sinx>1/2 for 0≤x≤2π.\nBoundary points:\nx=π/6,5π/6.\nThe sine is greater between them:\nπ/6<x<5π/6.\n\nExample 8: Inverse trig\nIf θ=arctan(−1), principal θ=−π/4. Other solutions of tanx=−1 are x=−π/4+kπ.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_diff",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Differentiation Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — DIFFERENTIATION PRACTICE\n\nExample 1: Product rule\ny=x²e^x.\ndy/dx=2xe^x+x²e^x=e^x(x²+2x).\n\nExample 2: Chain rule\ny=(3x²+1)^5.\ndy/dx=5(3x²+1)^4(6x)=30x(3x²+1)^4.\n\nExample 3: Logarithmic differentiation\ny=x^x, x>0.\nlny=xlnx.\nDifferentiate:\ny'/y=lnx+1.\nTherefore:\ny'=x^x(lnx+1).\n\nExample 4: Implicit differentiation\nx²+y²=25.\n2x+2y dy/dx=0.\ndy/dx=−x/y.\n\nExample 5: Parametric\nx=t²+1, y=t³.\ndx/dt=2t; dy/dt=3t².\ndy/dx=3t/2.\n\nExample 6: Stationary points\nf(x)=x³−3x²+2.\nf'=3x²−6x=3x(x−2).\nStationary x=0,2.\nf''=6x−6.\nAt x=0, f''=−6 → local maximum.\nAt x=2, f''=6 → local minimum.\n\nExample 7: Optimisation\nA rectangle has perimeter 20. Let width x, length 10−x.\nArea A=x(10−x)=10x−x².\nA'=10−2x=0 gives x=5.\nA''=−2<0, so maximum area is 25.\n\nExample 8: Related rate\nV=4/3πr³.\ndV/dt=4πr² dr/dt.\nIf r=2 and dr/dt=0.5:\ndV/dt=8π.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_integration",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Integration Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — INTEGRATION PRACTICE\n\nExample 1:\n∫(3x²−4x+5)dx=x³−2x²+5x+C.\n\nExample 2: Substitution\n∫2x(x²+1)^5dx.\nLet u=x²+1, du=2x dx.\nIntegral=∫u^5du=u^6/6+C.\n\nExample 3: By parts\n∫x ln x dx.\nLet u=lnx, dv=x dx.\nThen du=dx/x, v=x²/2.\nIntegral=x²lnx/2−∫x/2 dx\n=x²lnx/2−x²/4+C.\n\nExample 4: Partial fractions\n1/[(x−1)(x+2)]\n=1/[3(x−1)]−1/[3(x+2)].\nTherefore integral:\n(1/3)ln|x−1|−(1/3)ln|x+2|+C.\n\nExample 5: Quadratic\n∫dx/(x²+4x+13)\n=∫dx/[(x+2)²+9]\n=(1/3)tan^−1[(x+2)/3]+C.\n\nExample 6: Definite integral\n∫_0^2(3x²+1)dx\n=[x³+x]_0^2=10.\n\nExample 7: Area\nFor y=x and y=x² on [0,1], x≥x².\nArea=∫_0^1(x−x²)dx\n=[x²/2−x³/3]_0^1\n=1/6.\n\nExample 8: Volume\nRotate y=x, 0≤x≤2 about x-axis:\nV=π∫_0^2x²dx=π[ x³/3 ]_0²=8π/3.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_complex",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Complex Number Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — COMPLEX NUMBERS PRACTICE\n\nExample 1:\n(3+2i)(4−i)\n=12−3i+8i−2i²\n=14+5i.\n\nExample 2:\n(2+i)/(1−i).\nMultiply by 1+i:\n[(2+i)(1+i)]/2\n=(2+2i+i+i²)/2\n=(1+3i)/2.\n\nExample 3: Modulus and argument\nz=1+√3 i.\n|z|=2.\narg z=π/3.\nSo z=2cis(π/3).\n\nExample 4: De Moivre\n[2cis(π/6)]³\n=8cis(π/2)=8i.\n\nExample 5: Cube roots of 8\n8=8cis(2kπ).\nCube roots have modulus 2 and arguments:\n0, 2π/3, 4π/3.\nThus:\n2,\n2cis(2π/3),\n2cis(4π/3).\n\nExample 6: Locus\n|z−2|=3 is the circle centre (2,0), radius 3.\n\nExample 7: Conjugate roots\nIf 2+i is a root of a real polynomial, 2−i is also a root. Their factor:\n(x−2−i)(x−2+i)=(x−2)²+1=x²−4x+5.\n\nExample 8: Argument condition\narg(z−1)=π/4 describes the ray starting at (1,0) with direction angle π/4, subject to the exact argument convention and any additional restrictions in the question.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_vectors",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Vector and Plane Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — VECTOR PRACTICE\n\nExample 1:\na=(2,−1,2).\n|a|=√(4+1+4)=3.\nUnit vector=(2/3,−1/3,2/3).\n\nExample 2: Angle\na=(1,2,2), b=(2,1,2).\na·b=2+2+4=8.\n|a|=3, |b|=3.\ncosθ=8/9.\n\nExample 3: Line\nThrough A=(1,2,−1) in direction b=(2,−1,3):\nr=(1,2,−1)+λ(2,−1,3).\n\nExample 4: Plane\nThrough (1,0,2), normal n=(2,−1,3):\n2(x−1)−y+3(z−2)=0.\nHence:\n2x−y+3z−8=0.\n\nExample 5: Line-plane intersection\nLine r=(1,0,0)+λ(2,1,−1).\nPlane x+y+z=4.\nSubstitute:\n1+2λ+λ−λ=4,\nso 1+2λ=4,\nλ=3/2.\nPoint=(4,3/2,−3/2).\n\nExample 6: Perpendicularity\nDirection vectors (1,2,−1) and (2,0,2):\ndot=2+0−2=0.\nTherefore the lines' directions are perpendicular.\n\nExample 7: Area\na=(1,0,0), b=(0,2,0).\n|a×b|=2.\nTriangle area=1.\n\nExample 8: Coplanarity\nThree vectors are coplanar if their scalar triple product is zero.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_matrices",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Matrix and Transformation Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — MATRICES PRACTICE\n\nExample 1:\nA=[[2,1],[3,4]].\ndetA=8−3=5.\nTherefore:\nA⁻¹=(1/5)[[4,−1],[−3,2]].\n\nExample 2: Simultaneous equations\n2x+y=7\n3x+4y=18.\nMatrix:\n[[2,1],[3,4]][[x],[y]]=[[7],[18]].\nThe inverse method gives x=2, y=3.\n\nExample 3: Reflection in x-axis\nMatrix:\n[[1,0],[0,−1]].\nIt maps (x,y) to (x,−y).\n\nExample 4: Rotation through θ\n[[cosθ,−sinθ],[sinθ,cosθ]].\n\nExample 5: Enlargement\nScale factor k:\n[[k,0],[0,k]].\nDeterminant k², so areas scale by k².\n\nExample 6: Composition\nIf A is first and B is second, the combined matrix is BA. Test with a simple vector to verify the order.\n\nExample 7: Eigenvalue\nA=[[2,1],[1,2]].\ndet(A−λI)=(2−λ)²−1=0.\nThus λ=1 or 3.\nFor λ=3, solve:\n[[-1,1],[1,−1]]v=0,\ngiving eigenvectors proportional to (1,1).\n\nExample 8: Singular matrix\nA=[[1,2],[2,4]].\ndetA=4−4=0.\nNo inverse exists.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "pm6042_worked_numerical_proof",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Worked Numerical Methods and Proof Problems",
+      "content": "A-LEVEL PURE MATHEMATICS 6042 — NUMERICAL METHODS AND PROOF\n\nExample 1: Newton-Raphson\nSolve x²−5=0 with x₀=2.\nf(x)=x²−5, f'(x)=2x.\nx₁=2−(−1)/4=2.25.\nx₂=2.25−(2.25²−5)/(4.5)\n≈2.2361.\nThis approaches √5.\n\nExample 2: Fixed point\nSolve x=cosx using x_(n+1)=cosx_n. Start with x₀=0.5 and continue until required accuracy. The convergence behaviour depends on the chosen iteration function.\n\nExample 3: Bisection\nFor f(x)=x³−x−1, f(1)=−1 and f(2)=5, so a root lies in (1,2). Repeatedly halve the interval and retain the half in which the sign changes.\n\nExample 4: Induction sum\nProve:\n1+2+...+n=n(n+1)/2.\nBase n=1: 1=1.\nAssume sum to k is k(k+1)/2.\nThen:\n1+...+k+(k+1)\n=k(k+1)/2+k+1\n=(k+1)(k+2)/2.\nTherefore the result holds for all positive integers n.\n\nExample 5: Induction divisibility\nTo prove 7^n−1 is divisible by 6:\nBase n=1: 7−1=6.\nAssume 7^k−1=6m.\nThen:\n7^(k+1)−1=7(7^k)−1\n=7(7^k−1)+6\n=42m+6=6(7m+1).\nHence divisible by 6.\n\nExample 6: Counterexample\nThe statement “every prime number is odd” is false because 2 is prime and even.\n\nExample 7: Contradiction\nTo prove √2 is irrational, assume √2=p/q in lowest terms, square to get p²=2q², infer p is even, then q is even, contradicting lowest terms.\n\nEXAM PRINCIPLE\nA proof is not a collection of examples. A numerical approximation is not an exact proof. Every universal claim requires a logical argument covering all permitted cases.",
+      "source": "ZIMSEC",
+      "keywords": [
+        "worked examples",
+        "A-Level",
+        "Pure Mathematics 6042",
+        "exam practice"
+      ]
+    },
+    {
+      "id": "6042-expanded-7001",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Indices, Surds and Algebraic Structure — Mastery",
+      "content": "At A-Level, index manipulation should be treated as an algebraic language rather than a collection of isolated rules. For non-zero a, a^m a^n = a^(m+n), a^m/a^n = a^(m-n), (a^m)^n = a^(mn), a^0 = 1, a^(-n)=1/a^n and a^(m/n) = the appropriate nth root raised to m. Always state restrictions when a variable occurs in a denominator or even root. For example, sqrt(x^2) is |x|, not automatically x. This distinction becomes important in equations and graph transformations.\n\nSurds should be simplified before numerical comparison or rationalisation. Factor the radicand into a perfect-square part and a square-free part. To rationalise a denominator containing a single square root, multiply by that root; for a binomial such as a+b sqrt(c), multiply by its conjugate a-b sqrt(c). The conjugate method is also useful when proving that an expression is rational.\n\nExam method: simplify powers first, then collect like surds, then rationalise. Do not combine unlike surds such as sqrt(2)+sqrt(3). When an equation contains radicals, isolate a radical before squaring and check every final answer in the original equation because squaring can introduce extraneous roots.\n\nUseful challenge patterns include proving that an expression such as (sqrt(a)+sqrt(b))/(sqrt(a)-sqrt(b)) has a specified form, solving equations with nested radicals, and establishing bounds by comparing squares. For inequalities involving positive quantities, squaring is legitimate only after the signs of both sides have been established.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "indices",
+        "surds",
+        "and",
+        "algebraic",
+        "structure",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7002",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Polynomials, Factors, Roots and Remainder Reasoning — Mastery",
+      "content": "A polynomial f(x) is completely controlled by its degree, leading coefficient and roots. The Factor Theorem says that (x-a) is a factor exactly when f(a)=0. The Remainder Theorem says that division by x-a leaves remainder f(a). For a monic cubic x^3+px^2+qx+r with roots alpha, beta and gamma, Vieta relationships give alpha+beta+gamma=-p, alpha beta+alpha gamma+beta gamma=q, and alpha beta gamma=-r. For a general cubic, divide the corresponding coefficients by the leading coefficient where necessary.\n\nPolynomial division should be performed systematically, but synthetic reasoning can be faster for linear factors. Once one root is known, factor it out and reduce the problem to a quadratic or lower-degree equation. For repeated roots, both f(a)=0 and f'(a)=0 hold at a repeated root; this provides a powerful test in parameter questions.\n\nWhen a polynomial has integer coefficients, possible rational roots can often be tested using factors of the constant term divided by factors of the leading coefficient. Do not assume every polynomial has rational roots. Complex roots occur in conjugate pairs when coefficients are real.\n\nParameter questions frequently ask for values of k such that a factor is repeated, a polynomial has a particular number of real roots, or two equations share a root. Build equations from substitution and use discriminants where a quadratic factor is involved. Always distinguish between a root, a factor, and a remainder.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "polynomials",
+        "factors",
+        "roots",
+        "and",
+        "remainder",
+        "reasoning",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7003",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Partial Fractions — Full Technique and Integration Link",
+      "content": "Partial fractions rewrite a rational function into simpler algebraic pieces. The denominator must first be factorised completely. For distinct linear factors, write A/(x-a)+B/(x-b). For a repeated linear factor, use A/(x-a)+B/(x-a)^2+... . For an irreducible quadratic ax^2+bx+c, the numerator must be linear: (Mx+N)/(ax^2+bx+c). Proper fractions are decomposed directly; improper fractions require polynomial division first.\n\nThe cover-up shortcut is useful for distinct linear factors but should not be relied upon for repeated factors or irreducible quadratics. A robust method is to multiply through by the common denominator and compare coefficients or substitute convenient values.\n\nPartial fractions are especially important before integration. Terms of the form A/(x-a) integrate to A ln|x-a|. Powers (x-a)^(-n), n not equal to 1, use the power rule after rewriting. A quadratic denominator may be handled by completing the square or splitting the numerator into a multiple of the derivative plus a remainder.\n\nFor a definite integral, simplify the decomposition before substituting limits. Keep logarithmic absolute values until the sign of the relevant factor is known on the interval. In exam work, a clean decomposition can prevent long and error-prone substitutions later.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "partial",
+        "fractions",
+        "full",
+        "technique",
+        "and",
+        "integration",
+        "link"
+      ]
+    },
+    {
+      "id": "6042-expanded-7004",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Functions, Domains, Ranges and Graph Transformations — Mastery",
+      "content": "A function assigns exactly one output to every member of its domain. At A-Level, domain restrictions arise from denominators, even roots and logarithms. For example, 1/(x-2) excludes x=2; sqrt(3-x) requires x<=3; ln(x+1) requires x>-1. A range is the set of possible output values, and finding it can require completing the square, considering monotonicity, or using the inverse relationship.\n\nComposition is read from the inside outward: (fg)(x)=f(g(x)) if that notation is being used for composition. The expression f(g(x)) is defined only when x belongs to the domain of g and g(x) belongs to the domain of f. This domain check is frequently omitted in weak solutions.\n\nAn inverse exists as a function on the stated domain when the original function is one-to-one. Algebraically, write y=f(x), interchange x and y, and solve for y. Graphically, f and f^(-1) are reflections in y=x. The domain of f becomes the range of f^(-1), and vice versa.\n\nTransformations should be applied in the correct order. y=f(x)+a shifts vertically; y=f(x-a) shifts right by a; y=f(x)+b changes the output, while y=af(x) stretches vertically and y=f(ax) compresses horizontally by factor 1/a. Absolute-value transformations can be understood by reflecting portions of the graph. In exam questions, sketch the parent curve first, identify stationary/asymptotic features, then apply transformations.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "functions",
+        "domains",
+        "ranges",
+        "and",
+        "graph",
+        "transformations",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7005",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Algebraic Inequalities and Parametric Conditions",
+      "content": "Linear and quadratic inequalities require careful treatment of sign changes. Multiplication or division by a negative quantity reverses an inequality. For a quadratic ax^2+bx+c, identify roots and use the sign of the leading coefficient to construct the solution intervals. A sign diagram is safer than relying on a memorised pattern.\n\nRational inequalities should be solved using critical points from both numerator and denominator. A zero of the numerator may be included if the original expression is defined there; a zero of the denominator is never included. Test one point in each interval if the sign pattern is uncertain.\n\nAbsolute-value inequalities are often easiest after considering the definition: |x|<a means -a<x<a for a>0, while |x|>a means x<-a or x>a. For more complicated forms, isolate the modulus first.\n\nParameter problems combine algebra with conditions. If a quadratic must have two distinct real roots, require discriminant >0. For equal roots, discriminant =0. For no real roots, discriminant <0. If the roots must lie in a specified interval, combine the discriminant condition with sign or vertex arguments. State all parameter restrictions explicitly and intersect them before giving the final answer.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "algebraic",
+        "inequalities",
+        "and",
+        "parametric",
+        "conditions"
+      ]
+    },
+    {
+      "id": "6042-expanded-7006",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Sequences and Series — Recurrence, Convergence and Summation",
+      "content": "A sequence is an ordered list, while a series is the sum of sequence terms. An arithmetic progression has constant first difference and nth term a+(n-1)d. A geometric progression has constant ratio r and nth term ar^(n-1). Finite sums are S_n=n/2[2a+(n-1)d] for arithmetic progressions and S_n=a(1-r^n)/(1-r) for r not equal to 1 in geometric progressions.\n\nFor an infinite geometric series, convergence requires |r|<1 and the sum is a/(1-r). If |r|>=1, the usual infinite sum does not converge. In exam problems, identify the common ratio before applying the formula; signs and fractional ratios are common sources of mistakes.\n\nSigma notation expresses finite or structured sums compactly. Standard results include sums of integers, squares and cubes. Method of differences is useful when terms can be written as F(r+1)-F(r), because most intermediate terms cancel. Always write enough terms to show the cancellation pattern before jumping to the final result.\n\nRecurrence relations define a sequence from earlier terms. To establish a closed form, calculate initial terms, identify the structure, and prove the proposed expression by substitution into the recurrence. Convergence questions require a clear limiting argument, not simply a numerical guess from the first few terms.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "sequences",
+        "and",
+        "series",
+        "recurrence",
+        "convergence",
+        "and",
+        "summation"
+      ]
+    },
+    {
+      "id": "6042-expanded-7007",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Binomial Theorem and Coefficient Problems — Mastery",
+      "content": "For a positive integer n, (a+b)^n expands into a finite sum whose coefficients are binomial coefficients. The general term is T_(r+1)=C(n,r)a^(n-r)b^r. Index carefully: r=0 gives the first term. Coefficient questions usually require identifying the power of x generated by a general term and solving an equation for r.\n\nThe generalised binomial expansion allows non-integer or negative indices and is usually treated as an infinite series valid for an appropriate range of the expansion variable. The first few terms are generated from 1+px+p(p-1)x^2/2!+p(p-1)(p-2)x^3/3!+... after taking the expansion in a suitable form.\n\nBefore expanding a complicated expression, factor out a constant or rewrite the expression so that the remaining variable part has the required small magnitude. This is essential for approximation and convergence questions.\n\nCoefficient matching is powerful when two algebraic expansions are known to be equal. Expand only as far as the required power, collect like powers carefully, and compare coefficients. For numerical approximation, retain enough terms to meet the stated accuracy and estimate the neglected term where required.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "binomial",
+        "theorem",
+        "and",
+        "coefficient",
+        "problems",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7008",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Coordinate Geometry — Lines, Circles, Loci and Parametric Forms",
+      "content": "The gradient of a line through (x1,y1) and (x2,y2) is (y2-y1)/(x2-x1), provided x2 is not x1. A line can be written y-y1=m(x-x1), or in other equivalent forms. Parallel lines have equal gradients; perpendicular non-vertical lines have gradients whose product is -1.\n\nFor a circle, (x-a)^2+(y-b)^2=r^2 has centre (a,b) and radius r. Expanding gives x^2+y^2+Dx+Ey+F=0, from which completing the square recovers the centre and radius. A tangent to a circle is perpendicular to the radius at the point of contact. An alternative method is to substitute the line into the circle and require a repeated intersection, giving discriminant zero.\n\nA locus is a set of points satisfying a condition. Translate geometric statements into equations: fixed distance from a point gives a circle, equal distance from two points gives the perpendicular bisector, and a fixed ratio of distances can lead to an Apollonius circle.\n\nParametric equations x=f(t), y=g(t) are useful when eliminating t would be awkward. To find a tangent gradient, use dy/dx=(dy/dt)/(dx/dt), assuming dx/dt is non-zero. At special points where dx/dt=0, inspect the curve rather than automatically declaring the tangent undefined.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "coordinate",
+        "geometry",
+        "lines",
+        "circles",
+        "loci",
+        "and",
+        "parametric",
+        "forms"
+      ]
+    },
+    {
+      "id": "6042-expanded-7009",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Trigonometry — Identities, Equations and R-Form Mastery",
+      "content": "Core identities include sin^2x+cos^2x=1, 1+tan^2x=sec^2x and 1+cot^2x=cosec^2x. Double-angle identities include sin 2x=2sin x cos x and cos 2x=cos^2x-sin^2x=1-2sin^2x=2cos^2x-1. Half-angle forms follow by rearrangement.\n\nFor equations, find the reference angle and then list all solutions in the required interval. Do not stop after the principal inverse-trigonometric value. Use the signs of sine, cosine and tangent in each quadrant. If a multiple angle appears, solve for the multiple angle first and then divide, taking care to preserve all solutions.\n\nExpressions of the form a sin x+b cos x can be written as R sin(x+alpha), where R=sqrt(a^2+b^2), with R cos alpha=a and R sin alpha=b. The equivalent cosine form can also be used. This R-form converts a mixed trigonometric expression into one sinusoid and is particularly effective for finding maximum and minimum values.\n\nIn identity proofs, work on one side only and transform it toward the other side. Avoid circular reasoning. Convert everything to sine and cosine when the target is unclear, or use a strategically chosen identity such as the Pythagorean identity. For equations, unlike identities, numerical or interval restrictions matter.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "trigonometry",
+        "identities",
+        "equations",
+        "and",
+        "r-form",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7010",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Differentiation — Higher Derivatives, Inverse Functions and Curvature",
+      "content": "Differentiation measures instantaneous rate of change. The product rule is (uv)'=u'v+uv', the quotient rule is (u/v)'=(u'v-uv')/v^2, and the chain rule differentiates a composite function by multiplying derivatives through the inner function.\n\nImplicit differentiation is used when x and y cannot conveniently be separated. Differentiate every term with respect to x, remembering that d(y^n)/dx=n y^(n-1) dy/dx. For inverse functions, if y=f^(-1)(x), then dy/dx=1/[f'(y)] provided the derivative is non-zero.\n\nStationary points satisfy dy/dx=0. Classify them using the second derivative when appropriate: f''>0 indicates a local minimum and f''<0 a local maximum, while f''=0 requires further analysis. Increasing/decreasing behaviour comes from the sign of the first derivative.\n\nCurvature-related questions may involve the radius of curvature. A standard expression in Cartesian form is rho=[1+(dy/dx)^2]^(3/2)/|d^2y/dx^2| when the denominator is non-zero. Use the formula only after differentiating carefully. Related-rate problems differentiate a relationship with respect to time, then substitute the known instantaneous values.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "differentiation",
+        "higher",
+        "derivatives",
+        "inverse",
+        "functions",
+        "and",
+        "curvature"
+      ]
+    },
+    {
+      "id": "6042-expanded-7011",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Integration — Technique Selection and Definite Integrals",
+      "content": "Integration is the reverse process of differentiation, but technique choice is central at A-Level. Direct substitution is appropriate when an expression contains a function and a multiple of its derivative. Integration by parts follows ∫u dv=uv-∫v du and is useful for products such as x e^x or x ln x. Choose u so that differentiating it simplifies the expression.\n\nTrigonometric integrals may require identities such as sin^2x=(1-cos2x)/2 or cos^2x=(1+cos2x)/2. For rational functions, factor the denominator and consider partial fractions. For quadratic expressions, completing the square can reveal standard arctangent or logarithmic forms.\n\nDefinite integrals give signed area. If the curve crosses the axis, split the interval if the question asks for total area rather than algebraic area. For area between two curves, integrate upper minus lower after determining which curve is above on the interval. Volumes of revolution depend on the chosen axis and whether a disk, washer or shell-style setup is appropriate.\n\nMean value of a function over [a,b] is 1/(b-a) times the definite integral. Check dimensions and interpretation. In applications, state the units and distinguish a signed integral from a physical quantity such as distance, area or volume.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "integration",
+        "technique",
+        "selection",
+        "and",
+        "definite",
+        "integrals"
+      ]
+    },
+    {
+      "id": "6042-expanded-7012",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Taylor and Maclaurin Series — Approximation and Error",
+      "content": "A Maclaurin series is the Taylor series about x=0: f(x)=f(0)+xf'(0)+x^2 f''(0)/2!+... . A Taylor series about x=a uses powers of (x-a). Common expansions include e^x, sin x, cos x, ln(1+x), and (1+x)^p in their appropriate domains.\n\nTo derive a series, differentiate repeatedly, evaluate at the centre, and substitute into the Taylor formula. To obtain a series for a new function, manipulate known expansions: replace x by a function of x, multiply series, differentiate or integrate term-by-term when justified.\n\nApproximation questions require attention to the size of x. If x is small, successive terms should normally decrease in magnitude. Retaining terms through x^n means the next omitted term often provides a useful indication of error, though a rigorous bound depends on the available remainder information.\n\nWhen multiplying series, only calculate products that contribute to the requested power. A table of powers is often safer than expanding everything. For reciprocal series, assume an unknown coefficient pattern and compare coefficients, or use known standard expansions.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "taylor",
+        "and",
+        "maclaurin",
+        "series",
+        "approximation",
+        "and",
+        "error"
+      ]
+    },
+    {
+      "id": "6042-expanded-7013",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Differential Equations — Separation, Initial Conditions and Modelling",
+      "content": "A first-order separable differential equation can be rearranged so that all y terms are on one side and all x terms on the other: g(y)dy=f(x)dx. Integrate both sides and include a constant of integration. If an initial condition is supplied, substitute it after obtaining the general solution.\n\nBe careful with logarithms and absolute values during integration. If ∫dy/y appears, the result is ln|y|, although a physical model may impose y>0 and allow simplification afterward.\n\nExponential growth and decay often satisfy dy/dt=ky, giving y=Ae^(kt). If k>0 the model grows; if k<0 it decays. Logistic-type models have a limiting population and require careful separation or a known transformation.\n\nA good modelling solution defines variables, states assumptions, derives the differential equation, solves it, applies initial data and interprets constants. Check whether the solution remains physically meaningful over the stated interval. A mathematical solution outside the model's domain is not automatically an acceptable real-world answer.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "differential",
+        "equations",
+        "separation",
+        "initial",
+        "conditions",
+        "and",
+        "modelling"
+      ]
+    },
+    {
+      "id": "6042-expanded-7014",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Vectors in Three Dimensions — Lines, Planes and Geometry",
+      "content": "A vector has magnitude and direction. For a=(a1,a2,a3), |a|=sqrt(a1^2+a2^2+a3^2). Unit vectors have magnitude 1. Vector addition and scalar multiplication are componentwise.\n\nThe dot product a·b=a1b1+a2b2+a3b3=|a||b|cos theta. Therefore perpendicular vectors have dot product zero. The angle between vectors follows from rearranging the dot-product formula.\n\nA line through point A with direction vector d can be written r=a+lambda d. A plane can be represented using a point and a normal vector n as n·(r-a)=0. The cross product a×b is perpendicular to both a and b; its magnitude is the area of the parallelogram formed by a and b.\n\nFor line-plane intersections, substitute the line equation into the plane equation to solve for the parameter. For the angle between a line and a plane, use the complement relationship between the line's direction vector and the plane's normal. For shortest distance between skew lines, cross products provide a normal direction, but always verify whether the geometry is genuinely skew rather than intersecting or parallel.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "vectors",
+        "in",
+        "three",
+        "dimensions",
+        "lines",
+        "planes",
+        "and",
+        "geometry"
+      ]
+    },
+    {
+      "id": "6042-expanded-7015",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Matrices, Determinants and Linear Systems — Mastery",
+      "content": "Matrix multiplication is defined only when the inner dimensions agree. It is generally not commutative: AB need not equal BA. The identity matrix I satisfies AI=IA=A for compatible square matrices.\n\nFor a 2 by 2 matrix [[a,b],[c,d]], determinant is ad-bc. The inverse exists exactly when the determinant is non-zero and is 1/(ad-bc)[[d,-b],[-c,a]]. For larger matrices, determinants can be evaluated using expansion or row/column operations where appropriate.\n\nLinear systems can be written AX=B. If A is invertible, X=A^(-1)B. Gaussian elimination is often more efficient for larger systems. A zero determinant signals that the coefficient matrix is singular, so there is no unique solution; further analysis is required to distinguish no solution from infinitely many solutions.\n\nTransformations are represented by matrices acting on coordinate vectors. Track the order of successive transformations because matrix multiplication order matters. In eigenvalue problems, solve det(A-lambda I)=0 and then find eigenvectors from (A-lambda I)x=0. Eigenvalues describe invariant directions or scaling behaviour and may simplify repeated transformation calculations.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "matrices",
+        "determinants",
+        "and",
+        "linear",
+        "systems",
+        "mastery"
+      ]
+    },
+    {
+      "id": "6042-expanded-7016",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Complex Numbers — Argand Plane, Modulus, Argument and De Moivre",
+      "content": "A complex number has the form z=a+ib, where i^2=-1. The conjugate is z*=a-ib, the modulus is |z|=sqrt(a^2+b^2), and the argument is an angle theta satisfying tan theta=b/a with the correct quadrant selected.\n\nDivision is simplified by multiplying numerator and denominator by the conjugate of the denominator. Geometrically, conjugation reflects a point in the real axis. Modulus represents distance from the origin, while multiplication adds arguments and multiplies moduli.\n\nThe polar form z=r(cos theta+i sin theta) leads to De Moivre's theorem: [r(cos theta+i sin theta)]^n=r^n(cos ntheta+i sin ntheta). It is useful for powers, roots and trigonometric identities. nth roots have arguments (theta+2k pi)/n for k=0,...,n-1, producing n distinct roots.\n\nLoci in the Argand plane translate algebra into geometry. |z-a|=r is a circle centred at a; |z-a|=|z-b| is the perpendicular bisector of a and b. Argument conditions describe rays or angle constraints. Always check whether the locus includes or excludes boundary points.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "complex",
+        "numbers",
+        "argand",
+        "plane",
+        "modulus",
+        "argument",
+        "and",
+        "de",
+        "moivre"
+      ]
+    },
+    {
+      "id": "6042-expanded-7017",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Numerical Methods — Bisection, Iteration and Newton-Raphson",
+      "content": "Numerical methods are used when exact algebraic solutions are inconvenient or impossible. The bisection method requires an interval [a,b] on which f(a) and f(b) have opposite signs, ensuring a root under the usual continuity assumption. Repeatedly halve the interval and retain the half containing the sign change.\n\nFixed-point iteration rewrites x=g(x) and generates x_(n+1)=g(x_n). Convergence depends on the behaviour of g near the fixed point; a common local sufficient condition is |g'(x)|<1 near the solution. Different rearrangements of the same equation can therefore have very different convergence behaviour.\n\nNewton-Raphson uses x_(n+1)=x_n-f(x_n)/f'(x_n). It is often rapidly convergent near a simple root when the starting value is suitable, but it can fail if f' is zero or if the iteration moves into an unsuitable region. State the starting value and show enough iterations to justify the requested accuracy.\n\nWhen reporting numerical answers, follow the requested number of decimal places or significant figures. Do not round intermediate values unnecessarily; premature rounding can alter later iterations.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "numerical",
+        "methods",
+        "bisection",
+        "iteration",
+        "and",
+        "newton-raphson"
+      ]
+    },
+    {
+      "id": "6042-expanded-7018",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mathematical Proof — Induction, Contradiction and Counterexample",
+      "content": "A proof must establish a statement for every case covered by its claim, not merely provide several examples. Mathematical induction is appropriate for statements indexed by positive integers. First prove the base case. Then assume the statement true for n=k and use that assumption to prove it for n=k+1. Conclude explicitly that the statement holds for all relevant integers.\n\nProof by contradiction assumes the negation of the desired statement and derives an impossibility. The contradiction must arise logically from the assumption and accepted facts. Counterexamples disprove universal claims: one valid counterexample is enough.\n\nProof by exhaustion is useful when the possibilities are finite. Algebraic identities can be proved by expanding and simplifying, but remember that an identity is true for every allowed value of the variable, whereas an equation may have only selected solutions.\n\nIn induction problems involving divisibility, factor out the required divisor after applying the induction hypothesis. In inequalities, preserve the direction of the inequality and state why multiplication by a positive or negative quantity is permitted. A polished proof should make the logical structure visible.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "mathematical",
+        "proof",
+        "induction",
+        "contradiction",
+        "and",
+        "counterexample"
+      ]
+    },
+    {
+      "id": "6042-expanded-7019",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Groups and Binary Operations — Introductory Abstract Algebra",
+      "content": "A binary operation on a set combines two elements of the set to produce another element of the same set. A group is a set together with a binary operation satisfying closure, associativity, existence of an identity element and existence of an inverse for every element.\n\nClosure means the operation never leaves the set. Associativity requires (a*b)*c=a*(b*c). The identity e satisfies e*a=a*e=a. The inverse of a satisfies a*a^(-1)=a^(-1)*a=e. A group need not be commutative; if a*b=b*a for all elements, it is abelian.\n\nWhen checking whether a proposed structure is a group, test each axiom systematically. Do not infer associativity merely because the operation looks familiar. If the set is finite, a Cayley table can help verify closure and identify the identity and inverses.\n\nTypical exam questions may ask for the identity, inverses, whether a structure is a group, or whether it is abelian. Keep the operation notation consistent throughout the argument.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "groups",
+        "and",
+        "binary",
+        "operations",
+        "introductory",
+        "abstract",
+        "algebra"
+      ]
+    },
+    {
+      "id": "6042-expanded-7020",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Exam-Level Mathematical Communication and Strategy",
+      "content": "A-Level Pure Mathematics rewards correct reasoning as well as final answers. Start each solution by identifying the mathematical structure: polynomial, function, sequence, geometric condition, differential equation, vector system or numerical iteration. Select the shortest justified method rather than performing unnecessary algebra.\n\nShow key intermediate steps, especially where marks are likely to be awarded for a theorem, substitution, factorisation, derivative, integral or numerical iteration. A final unexplained answer can lose method marks even when numerically correct.\n\nUse exact forms until the question requests an approximation. Keep pi, logarithms, surds and fractions exact where practical. In numerical methods, state the iteration formula and starting value. In geometry, define points and vectors clearly. In proof, use explicit logical connectors such as therefore, hence and since.\n\nAt the end, check domain restrictions, signs, units, interval requirements, number of solutions and requested accuracy. For graph questions, inspect intercepts, asymptotes, turning points and symmetry. For algebra, substitute selected roots back into the original expression when extraneous solutions are possible.",
+      "source": "Original ZIMSEC-aligned study notes; scope cross-checked against the Zimbabwe 2024–2030 Pure Mathematics curriculum and ZIMSEC 6042 materials.",
+      "keywords": [
+        "exam-level",
+        "mathematical",
+        "communication",
+        "and",
+        "strategy"
+      ]
+    },
+    {
+      "id": "6042-revision-01",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Algebra and Functions",
+      "content": "Mastery targets: simplify indices and surds without changing domains; factor and analyse polynomials; use remainder/factor theorem; solve inequalities with sign charts; determine domains/ranges; compose and invert functions; analyse transformations. Practice prompts: prove a parameter condition using a discriminant; determine a range from a completed square; solve a rational inequality and justify excluded points.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "algebra",
+        "and",
+        "functions"
+      ]
+    },
+    {
+      "id": "6042-revision-02",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Sequences, Series and Binomial",
+      "content": "Mastery targets: derive nth terms; use AP/GP sums; test geometric convergence; manipulate sigma notation; use method of differences; solve recurrence problems; identify binomial general terms; match coefficients; use generalised expansions for approximation. Practice prompts: find a parameter from a coefficient condition; derive a finite sum by telescoping; determine the first omitted term in an approximation.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "sequences",
+        "series",
+        "and",
+        "binomial"
+      ]
+    },
+    {
+      "id": "6042-revision-03",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Coordinate Geometry and Trigonometry",
+      "content": "Mastery targets: line and circle equations; tangent conditions; loci; parametric curves; trigonometric identities; complete solution sets; multiple angles; R-form and extrema. Practice prompts: find a circle tangent to a line; derive a locus from equal distances; solve a trig equation over a specified interval; express a mixed sinusoid in R-form.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "coordinate",
+        "geometry",
+        "and",
+        "trigonometry"
+      ]
+    },
+    {
+      "id": "6042-revision-04",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Differentiation and Integration",
+      "content": "Mastery targets: chain/product/quotient rules; implicit and inverse differentiation; stationary-point classification; related rates; curvature; integration by substitution, parts, trigonometric identities and partial fractions; area, volume and mean-value applications. Practice prompts: analyse a parameterised stationary point; integrate a rational function by partial fractions; find an area where curves cross; model a rate problem.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "differentiation",
+        "and",
+        "integration"
+      ]
+    },
+    {
+      "id": "6042-revision-05",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Series, Differential Equations and Modelling",
+      "content": "Mastery targets: Taylor/Maclaurin derivation and manipulation; approximation and error; separable differential equations; initial conditions; exponential growth/decay; interpretation of constants. Practice prompts: derive a required series to a specified power; approximate a logarithm or trigonometric value; solve a separable model and interpret the parameter.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "series",
+        "differential",
+        "equations",
+        "and",
+        "modelling"
+      ]
+    },
+    {
+      "id": "6042-revision-06",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Vectors, Matrices and Complex Numbers",
+      "content": "Mastery targets: vector angles and perpendicularity; line-plane intersections; normals; cross products; shortest-distance reasoning; matrix inverses and systems; transformation composition; eigenvalue basics; complex modulus/argument; De Moivre; roots and loci. Practice prompts: find a plane through three points; calculate a line-plane angle; solve AX=B; find nth roots of a complex number; derive a locus from modulus/argument conditions.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "vectors",
+        "matrices",
+        "and",
+        "complex",
+        "numbers"
+      ]
+    },
+    {
+      "id": "6042-revision-07",
+      "level": "A-Level",
+      "subject": "Pure Mathematics",
+      "topic": "Mastery Revision Bank: Numerical Methods and Proof",
+      "content": "Mastery targets: bisection intervals; fixed-point iteration; Newton-Raphson; convergence awareness; induction; contradiction; counterexamples; proof communication. Practice prompts: compare two iteration schemes; justify a root bracket; prove a divisibility result by induction; disprove a universal statement with one counterexample.",
+      "source": "Original revision guidance aligned to ZIMSEC A-Level Pure Mathematics 6042.",
+      "keywords": [
+        "numerical",
+        "methods",
+        "and",
+        "proof"
+      ]
+    }
+  ]
+}

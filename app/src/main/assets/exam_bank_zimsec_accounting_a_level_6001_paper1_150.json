@@ -1,0 +1,4066 @@
+{
+  "paperInfo": {
+    "subject": "Accounting",
+    "level": "A Level",
+    "paperCode": "6001/01",
+    "paperName": "Paper 1 – Multiple Choice",
+    "paperType": "multiple_choice",
+    "questionCount": 150,
+    "sourceFile": "ZIMSEC_Accounting_A_Level_6001_Paper1_150.json",
+    "curriculum": "ZIMSEC Heritage-Based Curriculum / Accounting syllabus",
+    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus, specimen structure and recurring exam themes; not verbatim copies of copyrighted past papers.",
+    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible exam-pattern references."
+  },
+  "questions": [
+    {
+      "id": "ACC-001",
+      "questionNumber": 1,
+      "questionText": "A business has assets of $1,020 and liabilities of $307. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$713"
+        },
+        {
+          "letter": "B",
+          "text": "$1,327"
+        },
+        {
+          "letter": "C",
+          "text": "$307"
+        },
+        {
+          "letter": "D",
+          "text": "$1,020"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $713.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-002",
+      "questionNumber": 2,
+      "questionText": "Which statement is correct about double entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-003",
+      "questionNumber": 3,
+      "questionText": "An accounting amount of $5,075.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$761.25"
+        },
+        {
+          "letter": "B",
+          "text": "$861.25"
+        },
+        {
+          "letter": "C",
+          "text": "$661.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,075.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,075.00 = $761.25.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-004",
+      "questionNumber": 4,
+      "questionText": "Which option best represents the normal treatment of books of original entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-005",
+      "questionNumber": 5,
+      "questionText": "A business has assets of $1,100 and liabilities of $335. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$765"
+        },
+        {
+          "letter": "B",
+          "text": "$1,435"
+        },
+        {
+          "letter": "C",
+          "text": "$335"
+        },
+        {
+          "letter": "D",
+          "text": "$1,100"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $765.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-006",
+      "questionNumber": 6,
+      "questionText": "Which statement is correct about trial balance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-007",
+      "questionNumber": 7,
+      "questionText": "An accounting amount of $5,175.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$776.25"
+        },
+        {
+          "letter": "B",
+          "text": "$876.25"
+        },
+        {
+          "letter": "C",
+          "text": "$676.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,175.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,175.00 = $776.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-008",
+      "questionNumber": 8,
+      "questionText": "Which option best represents the normal treatment of capital expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-009",
+      "questionNumber": 9,
+      "questionText": "A business has assets of $1,180 and liabilities of $363. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$817"
+        },
+        {
+          "letter": "B",
+          "text": "$1,543"
+        },
+        {
+          "letter": "C",
+          "text": "$363"
+        },
+        {
+          "letter": "D",
+          "text": "$1,180"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $817.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-010",
+      "questionNumber": 10,
+      "questionText": "Which statement is correct about depreciation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-011",
+      "questionNumber": 11,
+      "questionText": "An accounting amount of $5,275.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$791.25"
+        },
+        {
+          "letter": "B",
+          "text": "$891.25"
+        },
+        {
+          "letter": "C",
+          "text": "$691.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,275.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,275.00 = $791.25.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-012",
+      "questionNumber": 12,
+      "questionText": "Which option best represents the normal treatment of bank reconciliation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-013",
+      "questionNumber": 13,
+      "questionText": "A business has assets of $1,260 and liabilities of $391. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$869"
+        },
+        {
+          "letter": "B",
+          "text": "$1,651"
+        },
+        {
+          "letter": "C",
+          "text": "$391"
+        },
+        {
+          "letter": "D",
+          "text": "$1,260"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $869.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-014",
+      "questionNumber": 14,
+      "questionText": "Which statement is correct about inventory?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-015",
+      "questionNumber": 15,
+      "questionText": "An accounting amount of $5,375.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$806.25"
+        },
+        {
+          "letter": "B",
+          "text": "$906.25"
+        },
+        {
+          "letter": "C",
+          "text": "$706.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,375.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,375.00 = $806.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-016",
+      "questionNumber": 16,
+      "questionText": "Which option best represents the normal treatment of incomplete records?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-017",
+      "questionNumber": 17,
+      "questionText": "A business has assets of $1,340 and liabilities of $419. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$921"
+        },
+        {
+          "letter": "B",
+          "text": "$1,759"
+        },
+        {
+          "letter": "C",
+          "text": "$419"
+        },
+        {
+          "letter": "D",
+          "text": "$1,340"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $921.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-018",
+      "questionNumber": 18,
+      "questionText": "Which statement is correct about departmental accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-019",
+      "questionNumber": 19,
+      "questionText": "An accounting amount of $5,475.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$821.25"
+        },
+        {
+          "letter": "B",
+          "text": "$921.25"
+        },
+        {
+          "letter": "C",
+          "text": "$721.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,475.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,475.00 = $821.25.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-020",
+      "questionNumber": 20,
+      "questionText": "Which option best represents the normal treatment of partnerships?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-021",
+      "questionNumber": 21,
+      "questionText": "A business has assets of $1,420 and liabilities of $447. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$973"
+        },
+        {
+          "letter": "B",
+          "text": "$1,867"
+        },
+        {
+          "letter": "C",
+          "text": "$447"
+        },
+        {
+          "letter": "D",
+          "text": "$1,420"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $973.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-022",
+      "questionNumber": 22,
+      "questionText": "Which statement is correct about ethics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-023",
+      "questionNumber": 23,
+      "questionText": "An accounting amount of $5,575.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$836.25"
+        },
+        {
+          "letter": "B",
+          "text": "$936.25"
+        },
+        {
+          "letter": "C",
+          "text": "$736.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,575.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,575.00 = $836.25.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-024",
+      "questionNumber": 24,
+      "questionText": "Which option best represents the normal treatment of cash book?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-025",
+      "questionNumber": 25,
+      "questionText": "A business has assets of $1,500 and liabilities of $475. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,025"
+        },
+        {
+          "letter": "B",
+          "text": "$1,975"
+        },
+        {
+          "letter": "C",
+          "text": "$475"
+        },
+        {
+          "letter": "D",
+          "text": "$1,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,025.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    },
+    {
+      "id": "ACC-026",
+      "questionNumber": 26,
+      "questionText": "Which statement is correct about accounting equation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-027",
+      "questionNumber": 27,
+      "questionText": "An accounting amount of $5,675.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$851.25"
+        },
+        {
+          "letter": "B",
+          "text": "$951.25"
+        },
+        {
+          "letter": "C",
+          "text": "$751.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,675.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,675.00 = $851.25.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-028",
+      "questionNumber": 28,
+      "questionText": "Which option best represents the normal treatment of source documents?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-029",
+      "questionNumber": 29,
+      "questionText": "A business has assets of $1,580 and liabilities of $503. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,077"
+        },
+        {
+          "letter": "B",
+          "text": "$2,083"
+        },
+        {
+          "letter": "C",
+          "text": "$503"
+        },
+        {
+          "letter": "D",
+          "text": "$1,580"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,077.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-030",
+      "questionNumber": 30,
+      "questionText": "Which statement is correct about ledger?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-031",
+      "questionNumber": 31,
+      "questionText": "An accounting amount of $5,775.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$866.25"
+        },
+        {
+          "letter": "B",
+          "text": "$966.25"
+        },
+        {
+          "letter": "C",
+          "text": "$766.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,775.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,775.00 = $866.25.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-032",
+      "questionNumber": 32,
+      "questionText": "Which option best represents the normal treatment of accounting concepts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-033",
+      "questionNumber": 33,
+      "questionText": "A business has assets of $1,660 and liabilities of $531. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,129"
+        },
+        {
+          "letter": "B",
+          "text": "$2,191"
+        },
+        {
+          "letter": "C",
+          "text": "$531"
+        },
+        {
+          "letter": "D",
+          "text": "$1,660"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,129.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-034",
+      "questionNumber": 34,
+      "questionText": "Which statement is correct about revenue expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-035",
+      "questionNumber": 35,
+      "questionText": "An accounting amount of $5,875.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$881.25"
+        },
+        {
+          "letter": "B",
+          "text": "$981.25"
+        },
+        {
+          "letter": "C",
+          "text": "$781.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,875.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,875.00 = $881.25.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-036",
+      "questionNumber": 36,
+      "questionText": "Which option best represents the normal treatment of bad debts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-037",
+      "questionNumber": 37,
+      "questionText": "A business has assets of $1,740 and liabilities of $559. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,181"
+        },
+        {
+          "letter": "B",
+          "text": "$2,299"
+        },
+        {
+          "letter": "C",
+          "text": "$559"
+        },
+        {
+          "letter": "D",
+          "text": "$1,740"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,181.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-038",
+      "questionNumber": 38,
+      "questionText": "Which statement is correct about control accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-039",
+      "questionNumber": 39,
+      "questionText": "An accounting amount of $5,975.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$896.25"
+        },
+        {
+          "letter": "B",
+          "text": "$996.25"
+        },
+        {
+          "letter": "C",
+          "text": "$796.25"
+        },
+        {
+          "letter": "D",
+          "text": "$5,975.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $5,975.00 = $896.25.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-040",
+      "questionNumber": 40,
+      "questionText": "Which option best represents the normal treatment of accounting ratios?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-041",
+      "questionNumber": 41,
+      "questionText": "A business has assets of $1,820 and liabilities of $587. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,233"
+        },
+        {
+          "letter": "B",
+          "text": "$2,407"
+        },
+        {
+          "letter": "C",
+          "text": "$587"
+        },
+        {
+          "letter": "D",
+          "text": "$1,820"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,233.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-042",
+      "questionNumber": 42,
+      "questionText": "Which statement is correct about not-for-profit organisations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-043",
+      "questionNumber": 43,
+      "questionText": "An accounting amount of $6,075.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$911.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,011.25"
+        },
+        {
+          "letter": "C",
+          "text": "$811.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,075.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,075.00 = $911.25.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-044",
+      "questionNumber": 44,
+      "questionText": "Which option best represents the normal treatment of manufacturing accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-045",
+      "questionNumber": 45,
+      "questionText": "A business has assets of $1,900 and liabilities of $615. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,285"
+        },
+        {
+          "letter": "B",
+          "text": "$2,515"
+        },
+        {
+          "letter": "C",
+          "text": "$615"
+        },
+        {
+          "letter": "D",
+          "text": "$1,900"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,285.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-046",
+      "questionNumber": 46,
+      "questionText": "Which statement is correct about company accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-047",
+      "questionNumber": 47,
+      "questionText": "An accounting amount of $6,175.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$926.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,026.25"
+        },
+        {
+          "letter": "C",
+          "text": "$826.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,175.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,175.00 = $926.25.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-048",
+      "questionNumber": 48,
+      "questionText": "Which option best represents the normal treatment of computerised accounting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-049",
+      "questionNumber": 49,
+      "questionText": "A business has assets of $1,980 and liabilities of $643. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,337"
+        },
+        {
+          "letter": "B",
+          "text": "$2,623"
+        },
+        {
+          "letter": "C",
+          "text": "$643"
+        },
+        {
+          "letter": "D",
+          "text": "$1,980"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,337.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-050",
+      "questionNumber": 50,
+      "questionText": "Which statement is correct about accounting errors?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    },
+    {
+      "id": "ACC-051",
+      "questionNumber": 51,
+      "questionText": "An accounting amount of $6,275.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$941.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,041.25"
+        },
+        {
+          "letter": "C",
+          "text": "$841.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,275.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,275.00 = $941.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-052",
+      "questionNumber": 52,
+      "questionText": "Which option best represents the normal treatment of double entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-053",
+      "questionNumber": 53,
+      "questionText": "A business has assets of $2,060 and liabilities of $671. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,389"
+        },
+        {
+          "letter": "B",
+          "text": "$2,731"
+        },
+        {
+          "letter": "C",
+          "text": "$671"
+        },
+        {
+          "letter": "D",
+          "text": "$2,060"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,389.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-054",
+      "questionNumber": 54,
+      "questionText": "Which statement is correct about books of original entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-055",
+      "questionNumber": 55,
+      "questionText": "An accounting amount of $6,375.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$956.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,056.25"
+        },
+        {
+          "letter": "C",
+          "text": "$856.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,375.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,375.00 = $956.25.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-056",
+      "questionNumber": 56,
+      "questionText": "Which option best represents the normal treatment of trial balance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-057",
+      "questionNumber": 57,
+      "questionText": "A business has assets of $2,140 and liabilities of $699. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,441"
+        },
+        {
+          "letter": "B",
+          "text": "$2,839"
+        },
+        {
+          "letter": "C",
+          "text": "$699"
+        },
+        {
+          "letter": "D",
+          "text": "$2,140"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,441.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-058",
+      "questionNumber": 58,
+      "questionText": "Which statement is correct about capital expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-059",
+      "questionNumber": 59,
+      "questionText": "An accounting amount of $6,475.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$971.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,071.25"
+        },
+        {
+          "letter": "C",
+          "text": "$871.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,475.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,475.00 = $971.25.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-060",
+      "questionNumber": 60,
+      "questionText": "Which option best represents the normal treatment of depreciation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-061",
+      "questionNumber": 61,
+      "questionText": "A business has assets of $2,220 and liabilities of $727. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,493"
+        },
+        {
+          "letter": "B",
+          "text": "$2,947"
+        },
+        {
+          "letter": "C",
+          "text": "$727"
+        },
+        {
+          "letter": "D",
+          "text": "$2,220"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,493.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-062",
+      "questionNumber": 62,
+      "questionText": "Which statement is correct about bank reconciliation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-063",
+      "questionNumber": 63,
+      "questionText": "An accounting amount of $6,575.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$986.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,086.25"
+        },
+        {
+          "letter": "C",
+          "text": "$886.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,575.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,575.00 = $986.25.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-064",
+      "questionNumber": 64,
+      "questionText": "Which option best represents the normal treatment of inventory?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-065",
+      "questionNumber": 65,
+      "questionText": "A business has assets of $2,300 and liabilities of $755. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,545"
+        },
+        {
+          "letter": "B",
+          "text": "$3,055"
+        },
+        {
+          "letter": "C",
+          "text": "$755"
+        },
+        {
+          "letter": "D",
+          "text": "$2,300"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,545.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-066",
+      "questionNumber": 66,
+      "questionText": "Which statement is correct about incomplete records?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-067",
+      "questionNumber": 67,
+      "questionText": "An accounting amount of $6,675.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,001.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,101.25"
+        },
+        {
+          "letter": "C",
+          "text": "$901.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,675.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,675.00 = $1,001.25.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-068",
+      "questionNumber": 68,
+      "questionText": "Which option best represents the normal treatment of departmental accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-069",
+      "questionNumber": 69,
+      "questionText": "A business has assets of $2,380 and liabilities of $783. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,597"
+        },
+        {
+          "letter": "B",
+          "text": "$3,163"
+        },
+        {
+          "letter": "C",
+          "text": "$783"
+        },
+        {
+          "letter": "D",
+          "text": "$2,380"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,597.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-070",
+      "questionNumber": 70,
+      "questionText": "Which statement is correct about partnerships?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-071",
+      "questionNumber": 71,
+      "questionText": "An accounting amount of $6,775.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,016.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,116.25"
+        },
+        {
+          "letter": "C",
+          "text": "$916.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,775.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,775.00 = $1,016.25.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-072",
+      "questionNumber": 72,
+      "questionText": "Which option best represents the normal treatment of ethics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-073",
+      "questionNumber": 73,
+      "questionText": "A business has assets of $2,460 and liabilities of $811. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,649"
+        },
+        {
+          "letter": "B",
+          "text": "$3,271"
+        },
+        {
+          "letter": "C",
+          "text": "$811"
+        },
+        {
+          "letter": "D",
+          "text": "$2,460"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,649.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-074",
+      "questionNumber": 74,
+      "questionText": "Which statement is correct about cash book?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-075",
+      "questionNumber": 75,
+      "questionText": "An accounting amount of $6,875.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,031.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,131.25"
+        },
+        {
+          "letter": "C",
+          "text": "$931.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,875.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,875.00 = $1,031.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    },
+    {
+      "id": "ACC-076",
+      "questionNumber": 76,
+      "questionText": "Which option best represents the normal treatment of accounting equation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-077",
+      "questionNumber": 77,
+      "questionText": "A business has assets of $2,540 and liabilities of $839. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,701"
+        },
+        {
+          "letter": "B",
+          "text": "$3,379"
+        },
+        {
+          "letter": "C",
+          "text": "$839"
+        },
+        {
+          "letter": "D",
+          "text": "$2,540"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,701.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-078",
+      "questionNumber": 78,
+      "questionText": "Which statement is correct about source documents?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-079",
+      "questionNumber": 79,
+      "questionText": "An accounting amount of $6,975.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,046.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,146.25"
+        },
+        {
+          "letter": "C",
+          "text": "$946.25"
+        },
+        {
+          "letter": "D",
+          "text": "$6,975.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $6,975.00 = $1,046.25.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-080",
+      "questionNumber": 80,
+      "questionText": "Which option best represents the normal treatment of ledger?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-081",
+      "questionNumber": 81,
+      "questionText": "A business has assets of $2,620 and liabilities of $867. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,753"
+        },
+        {
+          "letter": "B",
+          "text": "$3,487"
+        },
+        {
+          "letter": "C",
+          "text": "$867"
+        },
+        {
+          "letter": "D",
+          "text": "$2,620"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,753.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-082",
+      "questionNumber": 82,
+      "questionText": "Which statement is correct about accounting concepts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-083",
+      "questionNumber": 83,
+      "questionText": "An accounting amount of $7,075.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,061.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,161.25"
+        },
+        {
+          "letter": "C",
+          "text": "$961.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,075.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,075.00 = $1,061.25.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-084",
+      "questionNumber": 84,
+      "questionText": "Which option best represents the normal treatment of revenue expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-085",
+      "questionNumber": 85,
+      "questionText": "A business has assets of $2,700 and liabilities of $895. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,805"
+        },
+        {
+          "letter": "B",
+          "text": "$3,595"
+        },
+        {
+          "letter": "C",
+          "text": "$895"
+        },
+        {
+          "letter": "D",
+          "text": "$2,700"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,805.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-086",
+      "questionNumber": 86,
+      "questionText": "Which statement is correct about bad debts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-087",
+      "questionNumber": 87,
+      "questionText": "An accounting amount of $7,175.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,076.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,176.25"
+        },
+        {
+          "letter": "C",
+          "text": "$976.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,175.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,175.00 = $1,076.25.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-088",
+      "questionNumber": 88,
+      "questionText": "Which option best represents the normal treatment of control accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-089",
+      "questionNumber": 89,
+      "questionText": "A business has assets of $2,780 and liabilities of $923. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,857"
+        },
+        {
+          "letter": "B",
+          "text": "$3,703"
+        },
+        {
+          "letter": "C",
+          "text": "$923"
+        },
+        {
+          "letter": "D",
+          "text": "$2,780"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,857.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-090",
+      "questionNumber": 90,
+      "questionText": "Which statement is correct about accounting ratios?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-091",
+      "questionNumber": 91,
+      "questionText": "An accounting amount of $7,275.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,091.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,191.25"
+        },
+        {
+          "letter": "C",
+          "text": "$991.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,275.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,275.00 = $1,091.25.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-092",
+      "questionNumber": 92,
+      "questionText": "Which option best represents the normal treatment of not-for-profit organisations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-093",
+      "questionNumber": 93,
+      "questionText": "A business has assets of $2,860 and liabilities of $951. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,909"
+        },
+        {
+          "letter": "B",
+          "text": "$3,811"
+        },
+        {
+          "letter": "C",
+          "text": "$951"
+        },
+        {
+          "letter": "D",
+          "text": "$2,860"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,909.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-094",
+      "questionNumber": 94,
+      "questionText": "Which statement is correct about manufacturing accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-095",
+      "questionNumber": 95,
+      "questionText": "An accounting amount of $7,375.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,106.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,206.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,006.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,375.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,375.00 = $1,106.25.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-096",
+      "questionNumber": 96,
+      "questionText": "Which option best represents the normal treatment of company accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-097",
+      "questionNumber": 97,
+      "questionText": "A business has assets of $2,940 and liabilities of $979. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,961"
+        },
+        {
+          "letter": "B",
+          "text": "$3,919"
+        },
+        {
+          "letter": "C",
+          "text": "$979"
+        },
+        {
+          "letter": "D",
+          "text": "$2,940"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $1,961.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-098",
+      "questionNumber": 98,
+      "questionText": "Which statement is correct about computerised accounting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-099",
+      "questionNumber": 99,
+      "questionText": "An accounting amount of $7,475.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,121.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,221.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,021.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,475.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,475.00 = $1,121.25.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-100",
+      "questionNumber": 100,
+      "questionText": "Which option best represents the normal treatment of accounting errors?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    },
+    {
+      "id": "ACC-101",
+      "questionNumber": 101,
+      "questionText": "A business has assets of $3,020 and liabilities of $1,007. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,013"
+        },
+        {
+          "letter": "B",
+          "text": "$4,027"
+        },
+        {
+          "letter": "C",
+          "text": "$1,007"
+        },
+        {
+          "letter": "D",
+          "text": "$3,020"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,013.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-102",
+      "questionNumber": 102,
+      "questionText": "Which statement is correct about double entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-103",
+      "questionNumber": 103,
+      "questionText": "An accounting amount of $7,575.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,136.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,236.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,036.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,575.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,575.00 = $1,136.25.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-104",
+      "questionNumber": 104,
+      "questionText": "Which option best represents the normal treatment of books of original entry?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-105",
+      "questionNumber": 105,
+      "questionText": "A business has assets of $3,100 and liabilities of $1,035. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,065"
+        },
+        {
+          "letter": "B",
+          "text": "$4,135"
+        },
+        {
+          "letter": "C",
+          "text": "$1,035"
+        },
+        {
+          "letter": "D",
+          "text": "$3,100"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,065.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-106",
+      "questionNumber": 106,
+      "questionText": "Which statement is correct about trial balance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-107",
+      "questionNumber": 107,
+      "questionText": "An accounting amount of $7,675.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,151.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,251.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,051.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,675.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,675.00 = $1,151.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-108",
+      "questionNumber": 108,
+      "questionText": "Which option best represents the normal treatment of capital expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-109",
+      "questionNumber": 109,
+      "questionText": "A business has assets of $3,180 and liabilities of $1,063. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,117"
+        },
+        {
+          "letter": "B",
+          "text": "$4,243"
+        },
+        {
+          "letter": "C",
+          "text": "$1,063"
+        },
+        {
+          "letter": "D",
+          "text": "$3,180"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,117.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-110",
+      "questionNumber": 110,
+      "questionText": "Which statement is correct about depreciation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-111",
+      "questionNumber": 111,
+      "questionText": "An accounting amount of $7,775.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,166.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,266.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,066.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,775.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,775.00 = $1,166.25.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-112",
+      "questionNumber": 112,
+      "questionText": "Which option best represents the normal treatment of bank reconciliation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-113",
+      "questionNumber": 113,
+      "questionText": "A business has assets of $3,260 and liabilities of $1,091. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,169"
+        },
+        {
+          "letter": "B",
+          "text": "$4,351"
+        },
+        {
+          "letter": "C",
+          "text": "$1,091"
+        },
+        {
+          "letter": "D",
+          "text": "$3,260"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,169.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-114",
+      "questionNumber": 114,
+      "questionText": "Which statement is correct about inventory?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-115",
+      "questionNumber": 115,
+      "questionText": "An accounting amount of $7,875.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,181.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,281.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,081.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,875.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,875.00 = $1,181.25.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-116",
+      "questionNumber": 116,
+      "questionText": "Which option best represents the normal treatment of incomplete records?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-117",
+      "questionNumber": 117,
+      "questionText": "A business has assets of $3,340 and liabilities of $1,119. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,221"
+        },
+        {
+          "letter": "B",
+          "text": "$4,459"
+        },
+        {
+          "letter": "C",
+          "text": "$1,119"
+        },
+        {
+          "letter": "D",
+          "text": "$3,340"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,221.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-118",
+      "questionNumber": 118,
+      "questionText": "Which statement is correct about departmental accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-119",
+      "questionNumber": 119,
+      "questionText": "An accounting amount of $7,975.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,196.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,296.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,096.25"
+        },
+        {
+          "letter": "D",
+          "text": "$7,975.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $7,975.00 = $1,196.25.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-120",
+      "questionNumber": 120,
+      "questionText": "Which option best represents the normal treatment of partnerships?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-121",
+      "questionNumber": 121,
+      "questionText": "A business has assets of $3,420 and liabilities of $1,147. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,273"
+        },
+        {
+          "letter": "B",
+          "text": "$4,567"
+        },
+        {
+          "letter": "C",
+          "text": "$1,147"
+        },
+        {
+          "letter": "D",
+          "text": "$3,420"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,273.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-122",
+      "questionNumber": 122,
+      "questionText": "Which statement is correct about ethics?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-123",
+      "questionNumber": 123,
+      "questionText": "An accounting amount of $8,075.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,211.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,311.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,111.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,075.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,075.00 = $1,211.25.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-124",
+      "questionNumber": 124,
+      "questionText": "Which option best represents the normal treatment of cash book?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-125",
+      "questionNumber": 125,
+      "questionText": "A business has assets of $3,500 and liabilities of $1,175. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,325"
+        },
+        {
+          "letter": "B",
+          "text": "$4,675"
+        },
+        {
+          "letter": "C",
+          "text": "$1,175"
+        },
+        {
+          "letter": "D",
+          "text": "$3,500"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,325.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    },
+    {
+      "id": "ACC-126",
+      "questionNumber": 126,
+      "questionText": "Which statement is correct about accounting equation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting equation"
+    },
+    {
+      "id": "ACC-127",
+      "questionNumber": 127,
+      "questionText": "An accounting amount of $8,175.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,226.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,326.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,126.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,175.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,175.00 = $1,226.25.",
+      "answerConfidence": "high",
+      "topic": "Double entry"
+    },
+    {
+      "id": "ACC-128",
+      "questionNumber": 128,
+      "questionText": "Which option best represents the normal treatment of source documents?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Source documents"
+    },
+    {
+      "id": "ACC-129",
+      "questionNumber": 129,
+      "questionText": "A business has assets of $3,580 and liabilities of $1,203. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,377"
+        },
+        {
+          "letter": "B",
+          "text": "$4,783"
+        },
+        {
+          "letter": "C",
+          "text": "$1,203"
+        },
+        {
+          "letter": "D",
+          "text": "$3,580"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,377.",
+      "answerConfidence": "high",
+      "topic": "Books of original entry"
+    },
+    {
+      "id": "ACC-130",
+      "questionNumber": 130,
+      "questionText": "Which statement is correct about ledger?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Ledger"
+    },
+    {
+      "id": "ACC-131",
+      "questionNumber": 131,
+      "questionText": "An accounting amount of $8,275.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,241.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,341.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,141.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,275.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,275.00 = $1,241.25.",
+      "answerConfidence": "high",
+      "topic": "Trial balance"
+    },
+    {
+      "id": "ACC-132",
+      "questionNumber": 132,
+      "questionText": "Which option best represents the normal treatment of accounting concepts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting concepts"
+    },
+    {
+      "id": "ACC-133",
+      "questionNumber": 133,
+      "questionText": "A business has assets of $3,660 and liabilities of $1,231. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,429"
+        },
+        {
+          "letter": "B",
+          "text": "$4,891"
+        },
+        {
+          "letter": "C",
+          "text": "$1,231"
+        },
+        {
+          "letter": "D",
+          "text": "$3,660"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,429.",
+      "answerConfidence": "high",
+      "topic": "Capital expenditure"
+    },
+    {
+      "id": "ACC-134",
+      "questionNumber": 134,
+      "questionText": "Which statement is correct about revenue expenditure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Revenue expenditure"
+    },
+    {
+      "id": "ACC-135",
+      "questionNumber": 135,
+      "questionText": "An accounting amount of $8,375.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,256.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,356.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,156.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,375.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,375.00 = $1,256.25.",
+      "answerConfidence": "high",
+      "topic": "Depreciation"
+    },
+    {
+      "id": "ACC-136",
+      "questionNumber": 136,
+      "questionText": "Which option best represents the normal treatment of bad debts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Bad debts"
+    },
+    {
+      "id": "ACC-137",
+      "questionNumber": 137,
+      "questionText": "A business has assets of $3,740 and liabilities of $1,259. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,481"
+        },
+        {
+          "letter": "B",
+          "text": "$4,999"
+        },
+        {
+          "letter": "C",
+          "text": "$1,259"
+        },
+        {
+          "letter": "D",
+          "text": "$3,740"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,481.",
+      "answerConfidence": "high",
+      "topic": "Bank reconciliation"
+    },
+    {
+      "id": "ACC-138",
+      "questionNumber": 138,
+      "questionText": "Which statement is correct about control accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Control accounts"
+    },
+    {
+      "id": "ACC-139",
+      "questionNumber": 139,
+      "questionText": "An accounting amount of $8,475.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,271.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,371.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,171.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,475.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,475.00 = $1,271.25.",
+      "answerConfidence": "high",
+      "topic": "Inventory"
+    },
+    {
+      "id": "ACC-140",
+      "questionNumber": 140,
+      "questionText": "Which option best represents the normal treatment of accounting ratios?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Accounting ratios"
+    },
+    {
+      "id": "ACC-141",
+      "questionNumber": 141,
+      "questionText": "A business has assets of $3,820 and liabilities of $1,287. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,533"
+        },
+        {
+          "letter": "B",
+          "text": "$5,107"
+        },
+        {
+          "letter": "C",
+          "text": "$1,287"
+        },
+        {
+          "letter": "D",
+          "text": "$3,820"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,533.",
+      "answerConfidence": "high",
+      "topic": "Incomplete records"
+    },
+    {
+      "id": "ACC-142",
+      "questionNumber": 142,
+      "questionText": "Which statement is correct about not-for-profit organisations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Not-for-profit organisations"
+    },
+    {
+      "id": "ACC-143",
+      "questionNumber": 143,
+      "questionText": "An accounting amount of $8,575.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,286.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,386.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,186.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,575.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,575.00 = $1,286.25.",
+      "answerConfidence": "high",
+      "topic": "Departmental accounts"
+    },
+    {
+      "id": "ACC-144",
+      "questionNumber": 144,
+      "questionText": "Which option best represents the normal treatment of manufacturing accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Manufacturing accounts"
+    },
+    {
+      "id": "ACC-145",
+      "questionNumber": 145,
+      "questionText": "A business has assets of $3,900 and liabilities of $1,315. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,585"
+        },
+        {
+          "letter": "B",
+          "text": "$5,215"
+        },
+        {
+          "letter": "C",
+          "text": "$1,315"
+        },
+        {
+          "letter": "D",
+          "text": "$3,900"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,585.",
+      "answerConfidence": "high",
+      "topic": "Partnerships"
+    },
+    {
+      "id": "ACC-146",
+      "questionNumber": 146,
+      "questionText": "Which statement is correct about company accounts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Company accounts"
+    },
+    {
+      "id": "ACC-147",
+      "questionNumber": 147,
+      "questionText": "An accounting amount of $8,675.00 is subject to a 15% adjustment. What is the adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1,301.25"
+        },
+        {
+          "letter": "B",
+          "text": "$1,401.25"
+        },
+        {
+          "letter": "C",
+          "text": "$1,201.25"
+        },
+        {
+          "letter": "D",
+          "text": "$8,675.00"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "15% × $8,675.00 = $1,301.25.",
+      "answerConfidence": "high",
+      "topic": "Ethics"
+    },
+    {
+      "id": "ACC-148",
+      "questionNumber": 148,
+      "questionText": "Which option best represents the normal treatment of computerised accounting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apply the relevant accounting principle consistently and document the transaction"
+        },
+        {
+          "letter": "B",
+          "text": "Ignore the transaction until year end"
+        },
+        {
+          "letter": "C",
+          "text": "Record only the cash effect"
+        },
+        {
+          "letter": "D",
+          "text": "Post the same amount twice"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accounting treatment should follow the applicable principle and maintain an auditable record.",
+      "answerConfidence": "high",
+      "topic": "Computerised accounting"
+    },
+    {
+      "id": "ACC-149",
+      "questionNumber": 149,
+      "questionText": "A business has assets of $3,980 and liabilities of $1,343. Calculate owner's capital.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2,637"
+        },
+        {
+          "letter": "B",
+          "text": "$5,323"
+        },
+        {
+          "letter": "C",
+          "text": "$1,343"
+        },
+        {
+          "letter": "D",
+          "text": "$3,980"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capital = assets − liabilities = $2,637.",
+      "answerConfidence": "high",
+      "topic": "Cash book"
+    },
+    {
+      "id": "ACC-150",
+      "questionNumber": 150,
+      "questionText": "Which statement is correct about accounting errors?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It follows an identifiable accounting rule or procedure"
+        },
+        {
+          "letter": "B",
+          "text": "It applies only to cash sales"
+        },
+        {
+          "letter": "C",
+          "text": "It eliminates the need for ledgers"
+        },
+        {
+          "letter": "D",
+          "text": "It is unrelated to financial reporting"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The first statement correctly describes the accounting treatment or principle involved.",
+      "answerConfidence": "high",
+      "topic": "Accounting errors"
+    }
+  ]
+}
