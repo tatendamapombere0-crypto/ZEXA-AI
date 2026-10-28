@@ -81,12 +81,8 @@ export const App: React.FC = () => {
   };
 
   const handleNewChat = () => {
-    if (messages.length > 0) {
-      if (confirm('Start a new session? This will clear current chat messages.')) {
-        StorageManager.clearChat();
-        setMessages([]);
-      }
-    }
+    StorageManager.clearChat();
+    setMessages([]);
   };
 
   return (
@@ -149,6 +145,7 @@ export const App: React.FC = () => {
         isOpen={isLevelModalOpen}
         onClose={() => setIsLevelModalOpen(false)}
         currentLevel={educationLevel}
+        contentLevel={contentLevel}
         onSelectLevel={handleLevelSelect}
         onOpenUpgrade={handleOpenUpgrade}
         isPremium={subscriptionStatus === 'PREMIUM'}

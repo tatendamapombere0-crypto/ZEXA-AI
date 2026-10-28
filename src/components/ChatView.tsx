@@ -144,42 +144,116 @@ export const ChatView: React.FC<ChatViewProps> = ({
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  const suggestions = [
-    'In which natural farming region of Zimbabwe is Chiredzi located?',
-    'Explain the light and dark reactions of photosynthesis.',
-    'What were the economic activities of Great Zimbabwe?',
-    'Solve 2x² - 5x - 3 = 0 using the quadratic formula.',
-    'State Newton’s three laws of motion with examples.',
-    'Explain the principle of double entry bookkeeping.'
-  ];
+  const getLevelInfo = () => {
+    const isPrimary = educationLevel.includes('Primary') || contentLevel === 'Primary';
+    const isTertiary = educationLevel.includes('Tertiary') || contentLevel === 'Tertiary';
+    const isALevel =
+      educationLevel.includes('A-Level') ||
+      educationLevel.includes('Form 5') ||
+      educationLevel.includes('Forms 5') ||
+      contentLevel === 'A-Level';
+
+    if (isPrimary) {
+      return {
+        title: 'AM ZEXA AI your PRIMARY EDUCATION AI TUTOR',
+        desc: 'Ask me anything you study in ZIMSEC Primary (Grade 1 - 7): English, Mathematics, Agric, Science & Tech, Shona, Social Science, and Physical Edu & Arts.',
+        placeholder: 'Ask ZEXA AI about Grade 1 - 7 Primary subjects...',
+        suggestionsLabel: 'Official Grade 7 Curriculum Revision Questions (6 Subjects):',
+        suggestions: [
+          'Agric, Science & Tech: Name the 3 soil types and their properties (Sand, Clay, Loam)',
+          'Agric, Science & Tech: How do green leaves make food through photosynthesis?',
+          'Social Science: What do the national symbols of Zimbabwe (Flag, Bird, Anthem) mean?',
+          'Shona: Tsumo dzeChishona: Chara chimwe hachitswanyi inda zvinorevei?',
+          'Mathematics: How do you calculate perimeter and area of a rectangle of 8cm by 5cm?',
+          'English: Identify parts of speech: nouns, verbs, and adjectives with examples',
+          'Physical Edu & Arts: Name traditional Zimbabwean games (Pada, Nhodo, Tsoro) and dances'
+        ]
+      };
+    }
+
+    if (isTertiary) {
+      return {
+        title: 'AM ZEXA AI your TERTIARY & HIGHER EDUCATION TUTOR',
+        desc: 'Ask me anything about your university or polytechnic degree modules, research dissertations, and advanced course units.',
+        placeholder: 'Ask ZEXA AI about university & polytechnic courses...',
+        suggestionsLabel: 'Recommended Tertiary Research Topics:',
+        suggestions: [
+          'Explain Keynesian vs Classical macroeconomic fiscal policy.',
+          'Discuss Object-Oriented Design patterns (SOLID principles).',
+          'Principles of econometric regression analysis and multicollinearity.',
+          'Compare civil law and common law judicial precedents.',
+          'Thermodynamics: Second law and entropy in closed systems.',
+          'Qualitative vs Quantitative research methodologies in dissertations.'
+        ]
+      };
+    }
+
+    if (isALevel) {
+      return {
+        title: 'AM ZEXA AI your A-LEVEL (FORMS 5 - 6) ADVANCED TUTOR',
+        desc: 'Ask me anything you study in ZIMSEC Advanced Level (Forms 5 & 6): Pure Mathematics, Statistics, Accounting, Business Studies, Economics, Biology, Chemistry, Physics, Literature, Divinity, History, and Geography.',
+        placeholder: 'Ask ZEXA AI about ZIMSEC A-Level subjects...',
+        suggestionsLabel: 'Recommended ZIMSEC A-Level Revision Questions:',
+        suggestions: [
+          'Pure Maths 6042: Explain differentiation from first principles and the chain rule',
+          'A-Level Economics: Terms of trade effect on balance of payments in Zimbabwe',
+          'A-Level Accounting: Distinguish between capital vs revenue reserves and IAS 7 cash flow',
+          'A-Level Biology: Fluid mosaic membrane transport (osmosis vs active transport)',
+          'A-Level History 9155: Historiographical debates on the origins of the 1896 Chimurenga',
+          'A-Level Chemistry: Reaction kinetics, Arrhenius equation, and activation energy',
+          'A-Level Geography: Hydrological cycle, flood hydrographs, and river basin dynamics'
+        ]
+      };
+    }
+
+    // Default to O-Level (Forms 1 - 4)
+    return {
+      title: 'AM ZEXA AI your O-LEVEL (FORMS 1 - 4) AI TUTOR',
+      desc: 'Ask me anything you study in ZIMSEC O-Level (Forms 1 - 4): Combined Science, Mathematics, Commerce, Accounts, Geography, History, English Language, ChiShona, and Computer Science.',
+      placeholder: 'Ask ZEXA AI about ZIMSEC O-Level topics...',
+      suggestionsLabel: 'Recommended ZIMSEC O-Level Revision Questions:',
+      suggestions: [
+        'In which natural farming region of Zimbabwe is Chiredzi located?',
+        'Combined Science: Explain the light and dark reactions of photosynthesis.',
+        'What were the economic activities and decline of Great Zimbabwe?',
+        'Solve 2x² - 5x - 3 = 0 using the quadratic formula.',
+        'State Newton’s three laws of motion with everyday examples.',
+        'Explain the principle of double entry bookkeeping (debit vs credit).',
+        'Discuss the causes and results of the 1896 First Chimurenga.',
+        'Geography: How do river erosion features like waterfalls and gorges form?'
+      ]
+    };
+  };
+
+  const levelInfo = getLevelInfo();
 
   return (
     <div className="flex flex-col h-[calc(100vh-60px)] pb-18">
       {/* Scrollable messages container */}
       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4 max-w-3xl w-full mx-auto">
-        {/* Android Silicon Valley Welcome Banner */}
+        {/* Welcome Banner tailored for current level */}
         {messages.length === 0 && (
           <div className="my-6 p-5 rounded-2xl bg-[#0e1628] border-2 border-cyan-400/40 glow-cyan-sm text-center shadow-xl">
             <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center glow-cyan-sm">
               <Sparkles className="w-6 h-6 text-cyan-400" />
             </div>
             <h2 className="text-sm md:text-base font-bold text-white tracking-wide uppercase mb-1">
-              AM ZEXA AI your OFFLINE EXPERT AI
+              {levelInfo.title}
             </h2>
             <p className="text-xs md:text-sm text-slate-300 font-medium leading-relaxed max-w-lg mx-auto">
-              Ask me anything you study in ZIMSEC <span className="text-cyan-300 font-bold">{contentLevel}</span>. Be specific in the area you want to research, some words are Universal. <br />
+              {levelInfo.desc} <br />
               <span className="text-cyan-400 font-semibold">LETS BEGIN 🎓</span>
             </p>
 
-            {/* Quick Suggestions */}
+            {/* Quick Suggestions tailored strictly for current level */}
             <div className="mt-5 text-left">
               <p className="text-[11px] font-bold text-cyan-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                <BookCheck className="w-3.5 h-3.5" /> Recommended ZIMSEC Research Topics:
+                <BookCheck className="w-3.5 h-3.5" /> {levelInfo.suggestionsLabel}
               </p>
               <div className="flex flex-wrap gap-2">
-                {suggestions.map((s, idx) => (
+                {levelInfo.suggestions.map((s, idx) => (
                   <button
-                    key={idx}
+                    key={`${s}_${idx}`}
                     onClick={() => handleSendMessage(s)}
                     className="text-xs text-left px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500/60 text-slate-200 transition-all hover:text-cyan-300 active:scale-98"
                   >
@@ -192,9 +266,9 @@ export const ChatView: React.FC<ChatViewProps> = ({
         )}
 
         {/* Message items */}
-        {messages.map((msg) => (
+        {messages.map((msg, idx) => (
           <div
-            key={msg.id}
+            key={`${msg.id}_${idx}`}
             className={`flex items-start gap-3 ${msg.isUser ? 'justify-end' : 'justify-start'}`}
           >
             {!msg.isUser && (
@@ -302,7 +376,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               disabled={isGenerating}
-              placeholder={`Ask ZEXA AI about ZIMSEC ${contentLevel} topics...`}
+              placeholder={levelInfo.placeholder}
               className="w-full bg-[#111827] border border-slate-700/80 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 rounded-xl px-4 py-3 text-sm placeholder:text-slate-500 outline-none transition-all disabled:opacity-60"
             />
           </div>

@@ -1,8 +1,7 @@
-import React from 'react';
-import { X, Settings, RotateCcw, Trash2, Calendar, ShieldCheck, Key } from 'lucide-react';
+import React, { useState } from 'react';
+import { X, Settings, RotateCcw, Trash2, Calendar, Check, AlertTriangle } from 'lucide-react';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
-import { OfflineActivationManager } from '../lib/offlineActivation';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -19,22 +18,32 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onClearChat,
   dailyLimit
 }) => {
+  const [resetMessage, setResetMessage] = useState<string | null>(null);
+  const [clearConfirming, setClearConfirming] = useState(false);
+  const [clearMessage, setClearMessage] = useState<string | null>(null);
+
   if (!isOpen) return null;
 
   const currentPeriod = TermCalendarManager.getCurrentPeriod();
   const daysLeft = TermCalendarManager.getDaysRemainingInCurrentTerm();
-  const todayCode = OfflineActivationManager.generateDailyCode();
 
   const handleResetLimit = () => {
     StorageManager.resetDailyLimitForTesting();
     onResetQueries();
-    alert('Daily query limit has been reset to 0! You have full free queries available.');
+    setResetMessage(`✓ Daily query count reset to 0! You have ${dailyLimit} free queries available.`);
+    setTimeout(() => {
+      setResetMessage(null);
+    }, 4000);
   };
 
   const handleClearHistory = () => {
-    if (confirm('Are you sure you want to clear your current conversation history?')) {
-      onClearChat();
-    }
+    StorageManager.clearChat();
+    onClearChat();
+    setClearConfirming(false);
+    setClearMessage('✓ All conversation history has been cleared.');
+    setTimeout(() => {
+      setClearMessage(null);
+    }, 3000);
   };
 
   return (
@@ -54,7 +63,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           <div>
             <h3 className="text-lg font-bold text-white">System Settings &amp; Diagnostics</h3>
             <p className="text-xs text-slate-400">
-              ZEXA AI Zimbabwe v2.7 Offline Engine
+              ZEXA AI Zimbabwe  Offline Engine
             </p>
           </div>
         </div>
@@ -74,44 +83,77 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </p>
           </div>
 
-          {/* Offline Activation Inspection */}
-          <div className="p-4 rounded-2xl bg-[#0d1424] border border-slate-800 space-y-1.5">
-            <div className="flex items-center gap-2 text-xs font-bold text-cyan-400">
-              <Key className="w-4 h-4" /> Daily Offline Activation Hash
+          {/* Action Buttons & Feedback */}
+          <div className="space-y-3 pt-2">
+            {/* Reset Button */}
+            <div>
+              <button
+                type="button"
+                onClick={handleResetLimit}
+                className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700/70 hover:border-cyan-500/40 text-slate-200 text-xs font-semibold transition-all active:scale-98"
+              >
+                <span className="flex items-center gap-2">
+                  <RotateCcw className="w-4 h-4 text-cyan-400" /> Reset Daily Query Limit ({dailyLimit} free queries)
+                </span>
+                <span className="text-[10px] bg-cyan-950 text-cyan-300 border border-cyan-500/30 px-2.5 py-1 rounded-md font-mono font-bold">
+                  Reset Limit
+                </span>
+              </button>
+              {resetMessage && (
+                <div className="mt-2 p-2.5 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2 animate-fadeIn">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>{resetMessage}</span>
+                </div>
+              )}
             </div>
-            <p className="text-xs font-mono text-cyan-300 break-all bg-slate-900 p-2 rounded-lg border border-slate-800">
-              {todayCode}
-            </p>
-            <p className="text-[11px] text-slate-500">
-              Calculated via Day|Year|Term|Month|SecretKey protocol.
-            </p>
-          </div>
 
-          {/* Action Buttons */}
-          <div className="space-y-2 pt-2">
-            <button
-              onClick={handleResetLimit}
-              className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/70 text-slate-200 text-xs font-semibold transition-all active:scale-98"
-            >
-              <span className="flex items-center gap-2">
-                <RotateCcw className="w-4 h-4 text-cyan-400" /> Reset Daily Query Limit ({dailyLimit} free queries)
-              </span>
-              <span className="text-[10px] bg-cyan-950 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded font-mono">
-                Reset
-              </span>
-            </button>
+            {/* Clear Chat Button */}
+            <div>
+              {!clearConfirming ? (
+                <button
+                  type="button"
+                  onClick={() => setClearConfirming(true)}
+                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-800/90 hover:bg-red-950/40 border border-slate-700/70 hover:border-red-500/40 text-slate-200 text-xs font-semibold transition-all active:scale-98"
+                >
+                  <span className="flex items-center gap-2 text-red-300">
+                    <Trash2 className="w-4 h-4 text-red-400" /> Clear Current Chat Messages
+                  </span>
+                  <span className="text-[10px] bg-red-950 text-red-300 border border-red-500/30 px-2.5 py-1 rounded-md font-mono font-bold">
+                    Clear Chat
+                  </span>
+                </button>
+              ) : (
+                <div className="p-3.5 rounded-xl bg-red-950/50 border border-red-500/60 text-xs space-y-2.5 animate-fadeIn">
+                  <div className="flex items-center gap-2 text-red-200 font-medium">
+                    <AlertTriangle className="w-4 h-4 text-red-400 shrink-0" />
+                    <span>Confirm clearing all chat history? This cannot be undone.</span>
+                  </div>
+                  <div className="flex items-center justify-end gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setClearConfirming(false)}
+                      className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-colors"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleClearHistory}
+                      className="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors shadow"
+                    >
+                      Yes, Clear Now
+                    </button>
+                  </div>
+                </div>
+              )}
 
-            <button
-              onClick={handleClearHistory}
-              className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-800/80 hover:bg-red-950/40 border border-slate-700/70 hover:border-red-500/40 text-slate-200 text-xs font-semibold transition-all active:scale-98"
-            >
-              <span className="flex items-center gap-2 text-red-300">
-                <Trash2 className="w-4 h-4" /> Clear Current Chat Messages
-              </span>
-              <span className="text-[10px] bg-red-950 text-red-300 border border-red-500/30 px-2 py-0.5 rounded font-mono">
-                Clear
-              </span>
-            </button>
+              {clearMessage && (
+                <div className="mt-2 p-2.5 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2 animate-fadeIn">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>{clearMessage}</span>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* About Footer */}

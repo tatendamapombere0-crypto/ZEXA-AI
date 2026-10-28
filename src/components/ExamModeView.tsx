@@ -41,6 +41,8 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   useEffect(() => {
     async function loadPapers() {
       setLoading(true);
+      setSelectedSubject('All');
+      setActivePaper(null);
       const subList = await ExamStore.getSubjects(contentLevel);
       setSubjects(['All', ...subList]);
 
@@ -130,12 +132,28 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
     <div className="max-w-4xl mx-auto px-4 py-4 pb-24">
       {/* Header */}
       <div className="mb-4">
-        <h2 className="text-xl font-bold text-white flex items-center gap-2">
-          <GraduationCap className="w-5 h-5 text-cyan-400" />
-          ZIMSEC Past Exam Paper Bank
-        </h2>
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+          <h2 className="text-xl font-bold text-white flex items-center gap-2">
+            <GraduationCap className="w-5 h-5 text-cyan-400" />
+            ZIMSEC Past Exam Paper Bank
+          </h2>
+          {contentLevel === 'Primary' && (
+            <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/40 text-cyan-300">
+              Official 6-Subject Results Format
+            </span>
+          )}
+        </div>
         <p className="text-xs text-slate-400">
-          Real questions, official specimen papers, and revision tests for <span className="text-cyan-300 font-semibold">{contentLevel}</span>
+          Real questions, official specimen papers, and revision tests for{' '}
+          <span className="text-cyan-300 font-semibold">
+            {contentLevel === 'O-Level'
+              ? 'O-Level (Forms 1 – 4)'
+              : contentLevel === 'A-Level'
+              ? 'A-Level (Forms 5 – 6)'
+              : contentLevel === 'Primary'
+              ? 'Primary (Official 6-Subject ZIMSEC Curriculum)'
+              : contentLevel}
+          </span>
         </p>
       </div>
 
@@ -251,7 +269,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
               {/* Options */}
               <div className="space-y-2.5">
-                {activePaper.questions[currentQIndex].options.map((option) => {
+                {activePaper.questions[currentQIndex].options.map((option, optIdx) => {
                   const isSelected = userAnswers[currentQIndex] === option.letter;
                   const isCorrect = activePaper.questions[currentQIndex].correctAnswer === option.letter;
                   const isRevealed = revealedQuestions[currentQIndex] || examFinished;
@@ -272,7 +290,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
                   return (
                     <button
-                      key={option.letter}
+                      key={`${option.letter}_${optIdx}`}
                       onClick={() => handleSelectOption(option.letter)}
                       className={`w-full text-left p-3.5 rounded-xl border flex items-start gap-3 transition-all ${optionStyle}`}
                     >
@@ -394,9 +412,9 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {filteredPapers.map((paper) => (
+              {filteredPapers.map((paper, idx) => (
                 <div
-                  key={paper.id}
+                  key={`${paper.id}_${idx}`}
                   onClick={() => handleSelectPaper(paper)}
                   className="group p-4 rounded-xl bg-[#111827] hover:bg-[#162033] border border-slate-800 hover:border-cyan-500/50 cursor-pointer transition-all shadow-md flex flex-col justify-between"
                 >

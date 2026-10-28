@@ -19,20 +19,29 @@ const STORAGE_KEYS = {
 
 export const LEVEL_PRICES: Record<EducationLevel, number> = {
   'Primary Education': 4.0,
+  'O-Level (Form 1 to 4)': 5.0,
+  'A-Level (Form 5 to 6)': 5.0,
+  'Secondary: O-Level (Forms 1 - 4)': 5.0,
+  'Secondary: A-Level (Forms 5 - 6)': 5.0,
   'Secondary Education': 5.0,
   'Tertiary Education': 5.0
 };
 
-export function mapEducationToContentLevel(level: EducationLevel): ContentLevel {
-  if (level.includes('Primary')) return 'Primary';
-  if (level.includes('Tertiary')) return 'Tertiary';
+export function mapEducationToContentLevel(level: EducationLevel | string): ContentLevel {
+  const l = (level || '').toLowerCase();
+  if (l.includes('primary') || l.includes('grade')) return 'Primary';
+  if (l.includes('a-level') || l.includes('form 5') || l.includes('form 6') || l.includes('alevel') || l.includes('a level') || l.includes('form5') || l.includes('form6')) return 'A-Level';
+  if (l.includes('tertiary') || l.includes('higher') || l.includes('university') || l.includes('college')) return 'Tertiary';
   return 'O-Level';
 }
 
 export class StorageManager {
   static getEducationLevel(): EducationLevel {
     const saved = localStorage.getItem(STORAGE_KEYS.EDUCATION_LEVEL) as EducationLevel;
-    return saved || 'Secondary Education';
+    if (!saved || saved === 'Secondary Education') {
+      return 'O-Level (Form 1 to 4)';
+    }
+    return saved;
   }
 
   static hasSelectedLevel(): boolean {

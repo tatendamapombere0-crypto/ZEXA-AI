@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Crown, Key, Phone, CheckCircle2, AlertCircle, Copy, Check, Calendar } from 'lucide-react';
+import { X, Crown, Key, Phone, CheckCircle2, AlertCircle, Calendar } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { EducationLevel } from '../types';
 import { TermCalendarManager } from '../lib/termCalendar';
@@ -23,14 +23,12 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
   const [codeError, setCodeError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'code' | 'ecocash'>('code');
   const [isProcessing, setIsProcessing] = useState(false);
-  const [copiedCode, setCopiedCode] = useState(false);
 
   if (!isOpen) return null;
 
   const currentPeriod = TermCalendarManager.getCurrentPeriod();
   const isHoliday = currentPeriod.id.startsWith('holiday');
   const price = LEVEL_PRICES[educationLevel] || 5.0;
-  const todayExpectedCode = OfflineActivationManager.generateDailyCode();
 
   const handleValidateCode = () => {
     setCodeError(null);
@@ -54,6 +52,8 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
     }, 1200);
   };
 
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
   const activateSubscription = (message: string) => {
     const expiryDate = new Date(currentPeriod.endDate).getTime();
     StorageManager.setPremiumStatus(true, expiryDate, educationLevel);
@@ -69,8 +69,10 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
       // Confetti fallback
     }
 
-    alert(`🎉 Premium Active!\n\n${message}.\nYou now have unlimited ZEXA AI queries and full offline exam bank access for ${currentPeriod.name}!`);
-    onClose();
+    setSuccessMessage(`${message}. Unlimited ZEXA AI queries and full offline exam bank access active for ${currentPeriod.name}!`);
+    setTimeout(() => {
+      onClose();
+    }, 2500);
   };
 
   return (
@@ -98,6 +100,13 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
             </p>
           </div>
         </div>
+
+        {successMessage && (
+          <div className="mb-5 p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-xs flex items-center gap-3 animate-fadeIn">
+            <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+            <p className="font-medium leading-relaxed">{successMessage}</p>
+          </div>
+        )}
 
         {/* Term Calendar Status Badge */}
         <div className="mb-5 p-3.5 rounded-2xl bg-[#0e1628] border border-cyan-500/30 flex items-start gap-3">
@@ -171,28 +180,6 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
             >
               Activate Premium Now
             </button>
-
-            {/* Offline Code Helper for Testing & School Agents */}
-            <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-400 space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="font-semibold text-slate-300">Today&apos;s Generated Code (Offline Test):</span>
-                <button
-                  onClick={() => {
-                    setActivationCode(todayExpectedCode);
-                    navigator.clipboard.writeText(todayExpectedCode);
-                    setCopiedCode(true);
-                    setTimeout(() => setCopiedCode(false), 2000);
-                  }}
-                  className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 font-mono font-bold"
-                >
-                  {copiedCode ? <Check className="w-3 h-3 text-green-400" /> : <Copy className="w-3 h-3" />}
-                  {copiedCode ? 'Filled & Copied' : 'Auto-Fill Today\'s Code'}
-                </button>
-              </div>
-              <p className="font-mono text-cyan-400/90 text-xs tracking-wider break-all">
-                {todayExpectedCode}
-              </p>
-            </div>
           </div>
         )}
 

@@ -73,7 +73,18 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
             title="Change Education Level"
           >
             <Layers className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="hidden sm:inline">{contentLevel}</span>
+            <span className="hidden sm:inline">
+              {contentLevel === 'O-Level'
+                ? 'O-Level (Forms 1-4)'
+                : contentLevel === 'A-Level'
+                ? 'A-Level (Forms 5-6)'
+                : contentLevel === 'Primary'
+                ? 'Primary (Grade 1-7)'
+                : 'Tertiary'}
+            </span>
+            <span className="sm:hidden font-mono font-bold text-cyan-300">
+              {contentLevel}
+            </span>
             <span className="text-[10px] text-cyan-300 bg-cyan-950/60 px-1 py-0.5 rounded ml-0.5">Edit</span>
           </button>
 

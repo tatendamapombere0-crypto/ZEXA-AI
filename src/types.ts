@@ -1,4 +1,11 @@
-export type EducationLevel = 'Primary Education' | 'Secondary Education' | 'Tertiary Education';
+export type EducationLevel =
+  | 'Primary Education'
+  | 'O-Level (Form 1 to 4)'
+  | 'A-Level (Form 5 to 6)'
+  | 'Secondary: O-Level (Forms 1 - 4)'
+  | 'Secondary: A-Level (Forms 5 - 6)'
+  | 'Secondary Education'
+  | 'Tertiary Education';
 export type ContentLevel = 'Primary' | 'O-Level' | 'A-Level' | 'Tertiary';
 
 export type SubscriptionStatus = 'FREE' | 'PREMIUM' | 'HOLIDAY_FREE';

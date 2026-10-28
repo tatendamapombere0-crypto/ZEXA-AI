@@ -22,10 +22,13 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
   useEffect(() => {
     async function init() {
       setLoading(true);
+      setSelectedTopic(null);
       const subList = await KnowledgeStore.getSubjects(contentLevel);
       setSubjects(subList);
-      if (subList.length > 0 && !selectedSubject) {
+      if (subList.length > 0) {
         setSelectedSubject(subList[0]);
+      } else {
+        setSelectedSubject(null);
       }
       setLoading(false);
     }
@@ -57,12 +60,28 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
     <div className="max-w-4xl mx-auto px-4 py-4 pb-24">
       {/* Top Header */}
       <div className="mb-4">
-        <h2 className="text-xl font-bold text-white flex items-center gap-2">
-          <BookOpen className="w-5 h-5 text-cyan-400" />
-          ZIMSEC Study Pack &amp; Syllabus Vault
-        </h2>
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+          <h2 className="text-xl font-bold text-white flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-cyan-400" />
+            ZIMSEC Study Pack &amp; Syllabus Vault
+          </h2>
+          {contentLevel === 'Primary' && (
+            <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/40 text-cyan-300">
+              Official 6-Subject Results Format
+            </span>
+          )}
+        </div>
         <p className="text-xs text-slate-400">
-          Official curriculum notes and study modules for <span className="text-cyan-300 font-semibold">{contentLevel}</span>
+          Official curriculum notes and study modules for{' '}
+          <span className="text-cyan-300 font-semibold">
+            {contentLevel === 'O-Level'
+              ? 'O-Level (Forms 1 – 4)'
+              : contentLevel === 'A-Level'
+              ? 'A-Level (Forms 5 – 6)'
+              : contentLevel === 'Primary'
+              ? 'Primary (Official 6-Subject ZIMSEC Curriculum)'
+              : contentLevel}
+          </span>
         </p>
       </div>
 
@@ -161,9 +180,9 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {filteredTopics.map((topic) => (
+              {filteredTopics.map((topic, index) => (
                 <div
-                  key={topic.id}
+                  key={`${topic.id}_${index}`}
                   onClick={() => setSelectedTopic(topic)}
                   className="group p-4 rounded-xl bg-[#111827] hover:bg-[#162033] border border-slate-800 hover:border-cyan-500/40 cursor-pointer transition-all shadow-md flex flex-col justify-between"
                 >
