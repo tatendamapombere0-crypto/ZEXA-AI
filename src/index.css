@@ -2,51 +2,129 @@
 
 @layer base {
   :root {
-    --primary-dark: #0a0f1d;
-    --card-dark: #111827;
-    --accent-cyan: #00f2fe;
-    --accent-blue: #4facfe;
+    --bg-canvas: #080d1a;
+    --bg-surface: #0e1628;
+    --bg-surface-elevated: #131e36;
+    --border-hairline: rgba(255, 255, 255, 0.08);
+    --border-glow: rgba(6, 182, 212, 0.35);
+    --accent-cyan: #06b6d4;
+    --accent-indigo: #6366f1;
   }
 
   body {
-    background-color: #0a0f1d;
+    background-color: #080d1a;
     color: #f1f5f9;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   code, pre, .font-mono {
     font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
   }
+}
+
+/* Silicon Valley Modern Glass & Surface Utilities */
+.glass-panel {
+  background: rgba(14, 22, 40, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(19, 30, 54, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+.glass-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 8px 30px -4px rgba(6, 182, 212, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #040814;
+  font-weight: 700;
+  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.3), inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-primary-gradient:hover {
+  background: linear-gradient(135deg, #22d3ee 0%, #60a5fa 100%);
+  box-shadow: 0 6px 20px 0 rgba(6, 182, 212, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-0.5px);
 }
 
 /* Custom glowing effects */
 .glow-cyan {
-  box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+  box-shadow: 0 0 16px rgba(6, 182, 212, 0.25);
 }
 
 .glow-cyan-sm {
-  box-shadow: 0 0 8px rgba(0, 242, 254, 0.2);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.2);
 }
 
 .text-glow {
-  text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.45);
+}
+
+/* Calm & Comfortable Brain Logo Ambient Glow Animation */
+@keyframes brainComfortGlow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.4)) drop-shadow(0 0 10px rgba(168, 85, 247, 0.2));
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 9px rgba(6, 182, 212, 0.65)) drop-shadow(0 0 15px rgba(168, 85, 247, 0.35));
+    opacity: 1;
+  }
+}
+
+.animate-brain-glow {
+  animation: brainComfortGlow 4.5s ease-in-out infinite;
+}
+
+.animate-brain-glow-subtle {
+  animation: brainComfortGlow 5.5s ease-in-out infinite;
+}
+
+/* Ambient Radial Mesh Background */
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(6, 182, 212, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 20%, rgba(99, 102, 241, 0.06) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(14, 165, 233, 0.05) 0px, transparent 60%);
 }
 
 /* Custom scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0f1d;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f293d;
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00f2fe55;
+  background: rgba(6, 182, 212, 0.4);
 }

@@ -64,6 +64,7 @@ export interface ChatMessage {
   timestamp: number;
   metrics?: string | null;
   source?: string | null;
+  suggestions?: string[];
 }
 
 export interface AcademicTerm {

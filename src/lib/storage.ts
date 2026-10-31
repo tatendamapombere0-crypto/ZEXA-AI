@@ -14,7 +14,11 @@ const STORAGE_KEYS = {
   DAILY_LIMIT: 'zexa_daily_limit',
   CHAT_MESSAGES: 'zexa_chat_messages',
   BOOKMARKED_QUESTIONS: 'zexa_bookmarked_questions',
-  EXAM_SCORES: 'zexa_exam_scores'
+  EXAM_SCORES: 'zexa_exam_scores',
+  SESSION_LOGGED_IN: 'zexa_session_logged_in',
+  SESSION_USER_EMAIL: 'zexa_session_user_email',
+  BRAIN_INITIALIZED: 'zexa_brain_initialized',
+  PREFERRED_LANGUAGE: 'zexa_preferred_language'
 };
 
 export const LEVEL_PRICES: Record<EducationLevel, number> = {
@@ -178,6 +182,93 @@ export class StorageManager {
     } catch {
       // Ignore quota errors
     }
+  }
+
+  static isSessionLoggedIn(): boolean {
+    return localStorage.getItem(STORAGE_KEYS.SESSION_LOGGED_IN) === 'true';
+  }
+
+  static setSessionLoggedIn(loggedIn: boolean, email?: string): void {
+    localStorage.setItem(STORAGE_KEYS.SESSION_LOGGED_IN, loggedIn ? 'true' : 'false');
+    if (email) {
+      localStorage.setItem(STORAGE_KEYS.SESSION_USER_EMAIL, email);
+    } else if (!loggedIn) {
+      localStorage.removeItem(STORAGE_KEYS.SESSION_USER_EMAIL);
+    }
+  }
+
+  static getSessionUserEmail(): string {
+    return localStorage.getItem(STORAGE_KEYS.SESSION_USER_EMAIL) || 'Offline Student';
+  }
+
+  static isBrainInitialized(): boolean {
+    return localStorage.getItem(STORAGE_KEYS.BRAIN_INITIALIZED) === 'true';
+  }
+
+  static setBrainInitialized(initialized: boolean): void {
+    localStorage.setItem(STORAGE_KEYS.BRAIN_INITIALIZED, initialized ? 'true' : 'false');
+  }
+
+  static getPreferredLanguage(): 'en' | 'sn' {
+    return (localStorage.getItem(STORAGE_KEYS.PREFERRED_LANGUAGE) as 'en' | 'sn') || 'en';
+  }
+
+  static setPreferredLanguage(lang: 'en' | 'sn'): void {
+    localStorage.setItem(STORAGE_KEYS.PREFERRED_LANGUAGE, lang);
+  }
+
+  static initNewSession(email?: string): void {
+    this.setSessionLoggedIn(true, email || 'Offline Student');
+    // Ensure fresh account starts on Free tier with 2 free questions
+    localStorage.removeItem(STORAGE_KEYS.IS_PREMIUM);
+    localStorage.setItem(STORAGE_KEYS.OFFLINE_QUERY_COUNT, '0');
+    localStorage.setItem(STORAGE_KEYS.DAILY_LIMIT, '2');
+    localStorage.setItem(STORAGE_KEYS.LAST_QUERY_DATE, this.getTodayString());
+  }
+
+  static activateWithCode(code: string): { success: boolean; message: string } {
+    const clean = code.trim().toUpperCase();
+    if (!clean) {
+      return { success: false, message: 'Please enter an activation code.' };
+    }
+    const validKeys = [
+      'ZEXA-PREMIUM', 'ZEXA2026', 'ZEXA-VIP', 'ZIMSEC2026', 'ZIMSEC-VIP',
+      'TATENDA', 'OFFLINE-AI', 'ZEXA-OFFLINE', 'ZEXA-STUDENT', 'FREE-UNLIMITED'
+    ];
+    // Accepts any valid key from list, or key pattern ZEXA-XXXX, or any 6+ alphanumeric code
+    const isPattern = /^(ZEXA|VIP|EDU|ZIMSEC)-?[A-Z0-9]{3,12}$/i.test(clean);
+    const isLengthValid = clean.length >= 6;
+
+    if (validKeys.includes(clean) || isPattern || isLengthValid) {
+      // 1-year unlimited access
+      const oneYearExpiry = Date.now() + 365 * 24 * 60 * 60 * 1000;
+      this.setPremiumStatus(true, oneYearExpiry);
+      return {
+        success: true,
+        message: 'Activation successful! Your account is now upgraded to Unlimited Offline Access.'
+      };
+    }
+
+    return {
+      success: false,
+      message: 'Invalid activation code. Please check and try again.'
+    };
+  }
+
+  static logout(): void {
+    localStorage.removeItem(STORAGE_KEYS.SESSION_LOGGED_IN);
+    localStorage.removeItem(STORAGE_KEYS.SESSION_USER_EMAIL);
+    localStorage.removeItem(STORAGE_KEYS.BRAIN_INITIALIZED);
+    localStorage.removeItem(STORAGE_KEYS.LEVEL_SELECTED);
+    localStorage.removeItem(STORAGE_KEYS.CHAT_MESSAGES);
+    // Fresh account reset: Reset to Free user tier with 2 free questions
+    localStorage.removeItem(STORAGE_KEYS.IS_PREMIUM);
+    localStorage.removeItem(STORAGE_KEYS.HAS_PAID_BEFORE);
+    localStorage.removeItem(STORAGE_KEYS.TERM_END_DATE);
+    localStorage.removeItem(STORAGE_KEYS.PAID_FOR_LEVEL);
+    localStorage.setItem(STORAGE_KEYS.OFFLINE_QUERY_COUNT, '0');
+    localStorage.setItem(STORAGE_KEYS.DAILY_LIMIT, '2');
+    localStorage.setItem(STORAGE_KEYS.LAST_QUERY_DATE, this.getTodayString());
   }
 
   static clearChat(): void {

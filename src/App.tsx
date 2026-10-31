@@ -9,8 +9,14 @@ import { ExamModeView } from './components/ExamModeView';
 import { LevelSelectModal } from './components/LevelSelectModal';
 import { PremiumModal } from './components/PremiumModal';
 import { SettingsModal } from './components/SettingsModal';
+import { OnboardingFlow } from './components/OnboardingFlow';
 
 export const App: React.FC = () => {
+  // Session authentication state (Login -> Education Level -> AI Brain -> Dashboard)
+  const [isSessionActive, setIsSessionActive] = useState<boolean>(() =>
+    StorageManager.isSessionLoggedIn() && StorageManager.isBrainInitialized()
+  );
+
   const [educationLevel, setEducationLevel] = useState<EducationLevel>(() =>
     StorageManager.getEducationLevel()
   );
@@ -28,9 +34,9 @@ export const App: React.FC = () => {
   );
 
   const [activeTab, setActiveTab] = useState<NavTab>('chat');
-  const [messages, setMessages] = useState<ChatMessage[]>(() =>
-    StorageManager.getChatMessages()
-  );
+
+  // Requirement 2: Start fresh without auto-loading previous question on app reopen
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
 
   // Modals
   const [isLevelModalOpen, setIsLevelModalOpen] = useState(false);
@@ -43,13 +49,6 @@ export const App: React.FC = () => {
     hint?: string;
   } | null>(null);
 
-  // First-turn onboarding check (redirect to Level Select if first time)
-  useEffect(() => {
-    if (!StorageManager.hasSelectedLevel()) {
-      setIsLevelModalOpen(true);
-    }
-  }, []);
-
   const refreshQueries = () => {
     setQueriesUsedToday(StorageManager.getDailyQueriesUsed());
     setSubscriptionStatus(StorageManager.getSubscriptionStatus());
@@ -60,7 +59,7 @@ export const App: React.FC = () => {
     setEducationLevel(newLevel);
     setContentLevel(mapEducationToContentLevel(newLevel));
     // If Tertiary, switch back to chat if currently in studypack/exam
-    if (newLevel === 'Tertiary Education' && activeTab !== 'chat') {
+    if (newLevel === 'Tertiary Education' && (activeTab === 'studypack' || activeTab === 'exam')) {
       setActiveTab('chat');
     }
   };
@@ -85,8 +84,31 @@ export const App: React.FC = () => {
     setMessages([]);
   };
 
+  const handleOnboardingComplete = (level: EducationLevel, email?: string) => {
+    StorageManager.initNewSession(email || 'Offline Student');
+    StorageManager.setBrainInitialized(true);
+    handleLevelSelect(level);
+    setIsSessionActive(true);
+    setMessages([]);
+    setActiveTab('chat');
+    refreshQueries();
+  };
+
+  const handleLogout = () => {
+    StorageManager.logout();
+    setIsSessionActive(false);
+    setMessages([]);
+    setActiveTab('chat');
+    refreshQueries();
+  };
+
+  // If not logged in or AI brain not initialized, present the complete login & onboarding sequence
+  if (!isSessionActive) {
+    return <OnboardingFlow onComplete={handleOnboardingComplete} />;
+  }
+
   return (
-    <div className="min-h-screen bg-[#0a0f1d] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div className="min-h-screen bg-[#080d1a] bg-mesh text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
       {/* App Header */}
       <AppHeader
         educationLevel={educationLevel}
@@ -161,15 +183,31 @@ export const App: React.FC = () => {
       <SettingsModal
         isOpen={isSettingsModalOpen}
         onClose={() => setIsSettingsModalOpen(false)}
+        educationLevel={educationLevel}
+        contentLevel={contentLevel}
+        subscriptionStatus={subscriptionStatus}
+        queriesUsedToday={queriesUsedToday}
+        dailyLimit={dailyLimit}
+        onOpenLevelSelect={() => {
+          setIsSettingsModalOpen(false);
+          setIsLevelModalOpen(true);
+        }}
+        onOpenPremium={() => {
+          setIsSettingsModalOpen(false);
+          setIsPremiumModalOpen(true);
+        }}
         onResetQueries={refreshQueries}
         onClearChat={() => {
           StorageManager.clearChat();
           setMessages([]);
-          setIsSettingsModalOpen(false);
         }}
-        dailyLimit={dailyLimit}
+        onLogout={() => {
+          setIsSettingsModalOpen(false);
+          handleLogout();
+        }}
       />
     </div>
   );
 };
+
 export default App;

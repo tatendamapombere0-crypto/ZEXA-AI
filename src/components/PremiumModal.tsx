@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Crown, Key, Phone, CheckCircle2, AlertCircle, Calendar } from 'lucide-react';
+import { X, Key, Phone, CheckCircle2, AlertCircle, Calendar } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { EducationLevel } from '../types';
 import { TermCalendarManager } from '../lib/termCalendar';
@@ -23,6 +23,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
   const [codeError, setCodeError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'code' | 'ecocash'>('code');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
@@ -40,7 +41,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
     if (OfflineActivationManager.validateCode(activationCode)) {
       activateSubscription('Offline Activation Code verified');
     } else {
-      setCodeError('Invalid or expired Action Code. Please verify with your school or agent.');
+      setCodeError('Invalid or expired Activation Code. Please verify with your school or agent.');
     }
   };
 
@@ -51,8 +52,6 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
       activateSubscription('EcoCash payment successfully verified');
     }, 1200);
   };
-
-  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
   const activateSubscription = (message: string) => {
     const expiryDate = new Date(currentPeriod.endDate).getTime();
@@ -76,63 +75,66 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-[#111827] border border-cyan-900/50 rounded-3xl max-w-lg w-full p-6 shadow-2xl relative glow-cyan-sm max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
+      <div className="glass-panel-elevated rounded-3xl max-w-lg w-full p-5 sm:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto space-y-4">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+          className="absolute top-5 right-5 p-2 rounded-xl bg-slate-800/60 hover:bg-slate-700/80 text-slate-400 hover:text-white transition-colors"
+          title="Close"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header */}
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 shadow-md">
-            <Crown className="w-6 h-6 fill-slate-950" />
-          </div>
+        <div className="flex items-center gap-3 pr-10">
+          <img
+            src="/assets/zexa_brain_logo.png"
+            alt="ZEXA AI Brain Logo"
+            className="w-10 h-9 object-contain animate-brain-glow shrink-0"
+          />
           <div>
-            <h3 className="text-lg md:text-xl font-extrabold text-white">
+            <h3 className="text-base sm:text-lg font-bold text-white">
               Activate ZEXA Premium
             </h3>
             <p className="text-xs text-slate-400">
-              Unlimited offline AI tutoring for <span className="text-cyan-300 font-bold">{educationLevel}</span>
+              Unlimited offline AI tutoring for <span className="text-cyan-300 font-medium">{educationLevel}</span>
             </p>
           </div>
         </div>
 
         {successMessage && (
-          <div className="mb-5 p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-xs flex items-center gap-3 animate-fadeIn">
-            <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+          <div className="p-3.5 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-200 text-xs flex items-center gap-3 animate-fadeIn">
+            <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
             <p className="font-medium leading-relaxed">{successMessage}</p>
           </div>
         )}
 
         {/* Term Calendar Status Badge */}
-        <div className="mb-5 p-3.5 rounded-2xl bg-[#0e1628] border border-cyan-500/30 flex items-start gap-3">
-          <Calendar className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+        <div className="p-3.5 rounded-2xl glass-panel flex items-start gap-3">
+          <Calendar className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
           <div className="text-xs">
-            <div className="font-bold text-white flex items-center gap-1.5">
+            <div className="font-semibold text-white flex items-center gap-1.5">
               <span>{currentPeriod.name}</span>
               {isHoliday && (
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-950/80 text-emerald-400 border border-emerald-500/30">
                   Holiday Mode
                 </span>
               )}
             </div>
             <p className="text-slate-400 mt-0.5">
-              Valid until: <strong className="text-slate-200">{currentPeriod.endDate}</strong> • Price: <strong className="text-cyan-300">${price.toFixed(0)} USD</strong> / term
+              Valid until: <strong className="text-slate-200">{currentPeriod.endDate}</strong> · Price: <strong className="text-cyan-300 font-mono">${price.toFixed(0)} USD</strong> / term
             </p>
           </div>
         </div>
 
         {/* Tabs: Activation Code vs EcoCash */}
-        <div className="grid grid-cols-2 gap-2 mb-5 p-1 bg-slate-900 rounded-xl border border-slate-800">
+        <div className="grid grid-cols-2 gap-1 p-1 bg-slate-900/80 rounded-xl border border-white/[0.08]">
           <button
             onClick={() => setActiveTab('code')}
-            className={`py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
+            className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'code'
-                ? 'bg-cyan-500 text-slate-950 glow-cyan-sm'
+                ? 'bg-cyan-500 text-slate-950 font-bold shadow'
                 : 'text-slate-400 hover:text-white'
             }`}
           >
@@ -140,9 +142,9 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
           </button>
           <button
             onClick={() => setActiveTab('ecocash')}
-            className={`py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
+            className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
               activeTab === 'ecocash'
-                ? 'bg-cyan-500 text-slate-950 glow-cyan-sm'
+                ? 'bg-cyan-500 text-slate-950 font-bold shadow'
                 : 'text-slate-400 hover:text-white'
             }`}
           >
@@ -152,9 +154,9 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
 
         {/* Tab 1: Offline Activation Code */}
         {activeTab === 'code' && (
-          <div className="space-y-4">
+          <div className="space-y-3 pt-1">
             <div>
-              <label className="block text-xs font-bold text-slate-300 mb-1.5">
+              <label className="block text-xs font-medium text-slate-300 mb-1.5">
                 Enter Daily Action / Activation Code:
               </label>
               <input
@@ -164,11 +166,11 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
                   setActivationCode(e.target.value);
                   setCodeError(null);
                 }}
-                placeholder="e.g. 272026031001161996"
-                className="w-full bg-[#0d1424] border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 rounded-xl px-4 py-3 text-sm font-mono placeholder:text-slate-600 outline-none"
+                placeholder="e.g. 272026031001161996 or ZEXA-PREMIUM"
+                className="w-full bg-slate-900/90 border border-white/[0.08] focus:border-cyan-400 focus:outline-none text-slate-100 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-mono placeholder:text-slate-600 transition-colors"
               />
               {codeError && (
-                <p className="text-xs text-red-400 mt-1 flex items-center gap-1">
+                <p className="text-xs text-red-400 mt-1.5 flex items-center gap-1">
                   <AlertCircle className="w-3.5 h-3.5" /> {codeError}
                 </p>
               )}
@@ -176,7 +178,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
 
             <button
               onClick={handleValidateCode}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm shadow-md glow-cyan-sm active:scale-98 transition-all"
+              className="w-full py-3 rounded-xl btn-primary-gradient text-slate-950 font-bold text-xs shadow-md transition-all active:scale-[0.98]"
             >
               Activate Premium Now
             </button>
@@ -185,17 +187,17 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
 
         {/* Tab 2: EcoCash USSD Instructions */}
         {activeTab === 'ecocash' && (
-          <div className="space-y-4 text-xs text-slate-300">
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+          <div className="space-y-3 pt-1 text-xs text-slate-300">
+            <div className="p-4 rounded-xl glass-panel space-y-2">
               <h4 className="font-bold text-white text-sm flex items-center gap-1.5">
                 <Phone className="w-4 h-4 text-cyan-400" /> Complete Payment via EcoCash
               </h4>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-slate-300">
                 1. Dial <span className="font-mono text-cyan-300 font-bold">*151*2*2#</span> on your Econet phone.
                 <br />
                 2. Merchant Code: <strong className="font-mono text-white">304918</strong> (ZEXA Education)
                 <br />
-                3. Amount: <strong className="text-cyan-300 font-bold">${price.toFixed(0)} USD</strong>
+                3. Amount: <strong className="text-cyan-300 font-mono font-bold">${price.toFixed(0)} USD</strong>
                 <br />
                 4. Reference: <strong className="font-mono text-amber-300 font-bold">ZEXA-{Date.now().toString().slice(-6)}</strong>
               </p>
@@ -204,7 +206,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
             <button
               onClick={handleSimulateEcoCash}
               disabled={isProcessing}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-extrabold text-sm shadow-md active:scale-98 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs shadow-md active:scale-[0.98] transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {isProcessing ? (
                 <span>Checking EcoCash Transaction...</span>
@@ -221,3 +223,4 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
     </div>
   );
 };
+

@@ -59,6 +59,125 @@ export class KnowledgeStore {
       keywords: ['english grammar', 'parts of speech', 'nouns', 'verbs', 'adjectives', 'adverbs', 'punctuation', 'primary']
     },
     {
+      id: 'g7_eng_collective_nouns',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Collective Nouns for People, Animals, and Objects',
+      content: `In ZIMSEC Grade 7 English Language (Syllabus 7010), collective nouns name a group or collection of people, animals, or things considered as a single unit:
+1. Animals: A pride of lions, a troop of baboons/monkeys, a swarm of bees/locusts, a herd of cattle/elephants, a flock of sheep/birds, a pack of wolves/dogs, a litter of puppies/kittens, a gaggle of geese, a school/pod of whales/fish.
+2. People: A choir of singers, a congregation of worshippers, a crowd of spectators, a panel of judges/doctors, a crew of sailors, a band of musicians, a staff of teachers, a bench of magistrates, a team of players.
+3. Objects: A fleet of ships/cars/buses, a suite of furniture/rooms, a bouquet of flowers, a bunch of keys/bananas, a bale of cotton/tobacco, a stack of books, a chest of drawers, a range of mountains.
+*Exam Rule:* Collective nouns take a singular verb when acting as one unit: 'The choir is singing harmoniously.'`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['collective nouns', 'pride of lions', 'flock of birds', 'swarm of bees', 'herd of cattle', 'choir of singers', 'fleet of ships', 'bale of cotton', 'english grammar']
+    },
+    {
+      id: 'g7_eng_prepositions_collocations',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Prepositions, Collocations, and Fixed Phrases',
+      content: `Prepositions show relationships between nouns/pronouns and other sentence parts:
+1. Fixed Prepositions with Adjectives:
+- Afraid OF, Accused OF, Ashamed OF, Aware OF, Proud OF, Jealous OF, Fond OF.
+- Good AT, Bad AT, Clever AT (He is good at mathematics - NEVER good in).
+- Angry WITH a person (angry with Tendai); Angry AT a situation/thing.
+- Congratulate ON (congratulate on winning - NEVER for).
+- Insist ON, Depend ON, Rely ON, Keen ON.
+2. Core ZIMSEC Traps:
+- Prefer ... TO: 'I prefer tea to coffee' (NEVER 'prefer than').
+- Superior TO, Inferior TO, Senior TO, Junior TO (NEVER than).
+- Died OF a disease ('died of malaria'); Died FROM wounds/bleeding.
+- Divide BETWEEN two; Divide AMONG three or more.
+- Prevent FROM, Married TO (married to a doctor - NEVER with), Belong TO.
+3. Prepositions of Time:
+- AT (at 6 o'clock, at noon), ON (on Monday, on 18 April), IN (in May, in 2026, in the morning), BETWEEN ... AND (between 2 pm and 4 pm - NOT to).`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['prepositions', 'prefer to', 'congratulate on', 'good at', 'afraid of', 'died of', 'between and', 'senior to', 'divide among']
+    },
+    {
+      id: 'g7_eng_concord_rules',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Subject-Verb Agreement (Concord) Rules',
+      content: `Rules of Concord in Grade 7 ZIMSEC English:
+1. Basic Rule: Singular subject takes singular verb (ends in -s); plural subject takes plural verb.
+2. Intervening Phrases: Phrases like 'as well as', 'together with', 'accompanied by', 'along with' do not change the subject:
+   - 'The teacher, as well as the pupils, was present.' (teacher is singular -> was).
+   - 'The cattle, together with the shepherd, were caught in the storm.' (cattle is plural -> were).
+3. 'Either ... or' and 'Neither ... nor': The verb agrees with the subject CLOSER to it:
+   - 'Neither the teacher nor the students were present.'
+   - 'Neither the students nor the teacher was present.'
+4. Indefinite Pronouns: 'Each', 'everyone', 'everybody', 'anyone', 'nobody', 'one of' ALWAYS take a singular verb:
+   - 'Each of the pupils was given a book.' (NOT were).
+   - 'One of the cows has calved.'
+5. Distance, Money, and Time take singular verbs: 'Ten kilometres is a long walk.' 'Fifty dollars was spent.'`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['concord', 'subject verb agreement', 'neither nor', 'either or', 'each of the', 'one of the', 'as well as', 'english grammar']
+    },
+    {
+      id: 'g7_eng_direct_indirect_speech',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Direct and Indirect (Reported) Speech Transformation',
+      content: `Transforming Direct Speech into Indirect (Reported) Speech:
+1. Tense Backshift Rules (when reporting in past: said, told):
+- Simple Present -> Simple Past: 'I walk' -> he walked.
+- Present Continuous -> Past Continuous: 'We are weeding' -> they were weeding.
+- Present Perfect -> Past Perfect: 'She has eaten' -> she had eaten.
+- Simple Past -> Past Perfect: 'The dog barked' -> the dog had barked.
+- Will -> would, Can -> could, May -> might, Must -> had to.
+2. Adverbs of Time and Place:
+- now -> then, today -> that day, yesterday -> the previous day / the day before, tomorrow -> the next day / following day, here -> there, this -> that, ago -> before.
+3. Questions:
+- Yes/No questions use 'if' or 'whether': He asked if I had seen his pen.
+- WH-questions keep question word with statement order (Subject before Verb): She asked where I lived (NOT 'where did I live').`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['direct speech', 'indirect speech', 'reported speech', 'said that', 'tense backshift', 'reporting questions', 'english grammar']
+    },
+    {
+      id: 'g7_eng_question_tags',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Question Tags: Rules and Exceptions',
+      content: `Rules of Question Tags in Grade 7 ZIMSEC English:
+1. Golden Rule:
+- POSITIVE statement takes a NEGATIVE tag: 'She is a student, isn't she?' 'He works hard, doesn't he?' 'They arrived early, didn't they?'
+- NEGATIVE statement takes a POSITIVE tag: 'You aren't tired, are you?' 'They don't know, do they?' 'He cannot swim, can he?'
+2. Auxiliary Verbs: Repeat the auxiliary: 'The bus was late, wasn't it?' 'We should leave, shouldn't we?'
+3. No Auxiliary: Use DO, DOES, or DID: 'They play soccer, don't they?' 'Simba loves reading, doesn't he?' 'She cooked sadza, didn't she?'
+4. Special Irregular Tags:
+- 'I am' takes 'aren't I?': 'I am correct, aren't I?'
+- 'Let's' takes 'shall we?': 'Let us go to school, shall we?'
+- Imperatives/Commands take 'will you?': 'Close the door, will you?'
+- Negative words ('nobody', 'never', 'hardly', 'scarcely') take a POSITIVE tag: 'Nobody called, did they?' 'He never lies, does he?'`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['question tags', "aren't I", 'shall we', 'will you', 'grammar rules', 'primary english']
+    },
+    {
+      id: 'g7_eng_paper2_letters_reports',
+      level: 'Primary',
+      subject: 'English',
+      topic: 'Paper 2 Composition: Informal Letter, Formal Letter, and Report Layouts',
+      content: `ZIMSEC Grade 7 English Paper 2 Composition Layouts:
+1. Informal / Friendly Letter:
+- Top right: Sender's address and date (e.g. Stand 45, Glen View 2, Harare / 24 October 2026).
+- Left margin: Salutation (Dear Chipo,).
+- Body: Paragraph 1 (greeting & reason), Paragraphs 2-3 (detailed news/event), Paragraph 4 (warm closing wishes).
+- Sign-off: Your loving friend, / Your cousin, followed by First Name only (Tatenda).
+2. Formal / Official Letter:
+- Top right: Sender's address and date.
+- Left margin: Recipient's Title and Full Address (e.g. The Headmaster, Goromonzi High School, P.O. Box 10, Goromonzi).
+- Salutation: Dear Sir, / Dear Madam,.
+- Subject Line: Capitalized and underlined (APPLICATION FOR A FORM ONE PLACE).
+- Formal body: Polite, strictly factual, NO contractions (use 'do not', NOT 'don't').
+- Sign-off: 'Yours faithfully,' (if recipient name unknown) or 'Yours sincerely,' (if named) + Signature + Full Name printed.
+3. Report Writing:
+- Title at the top: REPORT ON THE INTER-HOUSE ATHLETICS COMPETITIONS.
+- Subheadings, factual tone, passive voice, conclusion, signed by Reporter with title and date.`,
+      source: 'ZIMSEC Grade 7 English Language Syllabus 7010',
+      keywords: ['composition', 'informal letter', 'formal letter', 'report writing', 'paper 2 english', 'friendly letter layout']
+    },
+    {
       id: 'g7_sci_photosynthesis',
       level: 'Primary',
       subject: 'Agric, Science & Tech',
@@ -186,6 +305,47 @@ Key Primary Math Operations:
       keywords: ['national flag', 'zimbabwe bird', 'hungwe', 'national anthem', 'heroes acre', 'great zimbabwe', 'social science']
     },
     {
+      id: 'g7_history_today_zig_republic',
+      level: 'Primary',
+      subject: 'Social Science',
+      topic: 'Zimbabwe History to Today: Liberation, Unity Accord, Land Reform, and ZiG Currency',
+      content: `Key historical milestones of Zimbabwe tested in Grade 7 Social Science:
+1. The Liberation Struggle (First & Second Chimurenga):
+   - First Chimurenga (1896-1897): Led by brave spirit mediums Mbuya Nehanda ("Mapfupa angu achamuka") and Sekuru Kaguvi against BSAC colonial rule.
+   - Second Chimurenga (1966-1979): Began with the Battle of Chinhoyi on 28 April 1966. Heroic freedom fighters (ZANLA and ZIPRA) liberated the country.
+   - Independence Day: Celebrated on 18 April 1980 at Rufaro Stadium.
+2. Building the Nation:
+   - Unity Accord: Signed on 22 December 1987 between Cde Robert Mugabe and Dr. Joshua Nkomo, celebrated every year as National Unity Day.
+   - Third Chimurenga / Land Reform (2000): Returned land to the indigenous people through A1 (smallholder) and A2 (commercial) farming schemes.
+3. Modern Zimbabwe & Second Republic:
+   - Second Republic Vision 2030: Promoting infrastructure (roads, modern Beitbridge border post, dams like Lake Gwayi-Shangani), food security through Pfumvudza/Intwasa, and Heritage-Based Education 5.0.
+   - Zimbabwe Gold (ZiG) Currency: Introduced in April 2024 by the Reserve Bank of Zimbabwe, fully backed by gold and foreign currency reserves to ensure economic stability.
+   - 16 Official Languages: Recognized in the 2013 Constitution ensuring cultural equality for all.`,
+      source: 'ZIMSEC Grade 7 Social Science Syllabus 7050',
+      keywords: ['history of zimbabwe', 'chimurenga', 'nehanda', 'chinhoyi', 'unity accord', 'land reform', 'second republic', 'zig currency', 'social science']
+    },
+    {
+      id: 'g7_history_bio_mugabe',
+      level: 'Primary',
+      subject: 'Social Science',
+      topic: 'Cde Robert Gabriel Mugabe: Biography and Role in Zimbabwe History',
+      content: `In Grade 7 Social Science, Cde Robert Gabriel Mugabe (1924–2019) is a major historical figure:
+1. Who was Robert Mugabe?
+   - The first Prime Minister of independent Zimbabwe (1980–1987) and first Executive President (1987–2017).
+   - Born at Kutama Mission in Zvimba, Mashonaland West.
+2. Liberation War Leader:
+   - Co-founded ZANU in 1963.
+   - Led the liberation movement and freedom fighters (ZANLA) from Mozambique during the Second Chimurenga.
+   - Co-led the Patriotic Front delegation to the Lancaster House Conference in 1979, which brought national independence on 18 April 1980.
+3. Major Achievements for Zimbabwe:
+   - Universal Free Education: Built thousands of primary and secondary schools across rural Zimbabwe, creating the highest literacy rate in Africa (>90%).
+   - Signed the historic Unity Accord on 22 December 1987 with Dr. Joshua Nkomo, uniting ZANU and PF-ZAPU into ZANU-PF and bringing national peace.
+   - Land Reform (2000): Returned agricultural land to indigenous Zimbabwean families.
+   - Declared a National Hero.`,
+      source: 'ZIMSEC Grade 7 Social Science Syllabus 7050',
+      keywords: ['mugabe', 'robert mugabe', 'cde mugabe', 'who is mugabe', 'who was mugabe', 'prime minister', 'president', 'social science']
+    },
+    {
       id: 'g7_social_unhu_family',
       level: 'Primary',
       subject: 'Social Science',
@@ -311,6 +471,30 @@ Limiting Factors: Light intensity, atmospheric carbon dioxide concentration (~0.
       keywords: ['great zimbabwe', 'mutapa', 'dry-stone', 'stone walling', 'hungwe', 'masvingo', 'decline', 'trade', 'history']
     },
     {
+      id: 'hist_zulu_shaka_mfecane',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'The Zulu Kingdom under Shaka, Mfecane Wars, and King Mzilikazi Migration',
+      content: `The Zulu Kingdom, Mfecane/Difaqane, and the Foundation of the Ndebele State (ZIMSEC History 2167/9155):
+1. Rise of Shaka Zulu (1816–1828):
+   - Transformed the small Zulu chiefdom into a mighty centralized empire in Nguniland.
+   - Military Innovations: Short stabbing spear (iklwa), cow-horn encirclement formation (izimpondo), discarding sandals for speed, and permanent military regimental camps (amabutho).
+2. The Mfecane / Difaqane (The Crushing / Scattering):
+   - Widespread period of warfare, migration, and state reconstitution across Southern Africa in the 1820s.
+   - Causes: Population pressure, competition for grazing and water, severe drought (Madlathule famine), and race to control Portuguese ivory trade at Delagoa Bay.
+3. King Mzilikazi Khumalo and Ndebele Migration:
+   - Mzilikazi, an outstanding general of Shaka, defied the Zulu King in 1822 over captured cattle.
+   - Migrated northwards across the Highveld with his followers, assimilating Sotho and Tswana communities.
+   - Established temporary bases at Ekupumuleni and Mosega before Boer conflicts pushed them across the Limpopo River (1838–1840).
+   - Founded the Ndebele Kingdom in Matabeleland with headquarters at Gibixhegu (near Bulawayo).
+4. Social Structure of the Ndebele State:
+   - Zansi: Aristocratic class of original Nguni descent.
+   - Enhla: Sotho and Tswana incorporated during migration.
+   - Hole: Indigenous Kalanga and Shona communities assimilated in Zimbabwe.`,
+      source: 'ZIMSEC History & Heritage Studies Syllabus 2167 / 9155',
+      keywords: ['zulu', 'shaka', 'shaka zulu', 'mfecane', 'difaqane', 'mzilikazi', 'ndebele', 'zansi', 'enhla', 'hole', 'nguni', 'bulawayo', 'history']
+    },
+    {
       id: 'math_quadratic_formula',
       level: 'O-Level',
       subject: 'Mathematics',
@@ -341,6 +525,105 @@ Rules of Debit and Credit:
 - Revenue/Income: Increase = CREDIT.`,
       source: 'ZIMSEC Principles of Accounts Syllabus 4051',
       keywords: ['accounting', 'double entry', 'debit', 'credit', 'ledger', 'trial balance']
+    },
+    {
+      id: 'hist_bio_mugabe_seed',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'Cde Robert Gabriel Mugabe: Biography, Liberation Struggle, Prime Minister, President, and Historical Legacy',
+      content: `Cde Robert Gabriel Mugabe (21 February 1924 – 6 September 2019) was a founding father of Zimbabwe, co-founder of ZANU, first Prime Minister of Zimbabwe (1980–1987), and first Executive President (1987–2017).
+1. Early Life & Political Rise:
+   - Born at Kutama Mission in Zvimba; attended Kutama College and Fort Hare University (BA 1951). Taught in Ghana (1958–1960), heavily inspired by Kwame Nkrumah.
+   - Publicity Secretary of NDP (1960), co-founder of ZAPU (1961), and co-founder/Secretary-General of ZANU in Highfield (August 1963).
+2. Detention & Liberation Struggle (Second Chimurenga):
+   - Detained for 10 years without trial by the Rhodesian regime (1964–1974); obtained multiple external law and economics degrees.
+   - Crossed to Mozambique in 1975 with Edgar Tekere; endorsed by ZANLA commanders in the Mgagao Declaration (1975); confirmed ZANU President at Chimoio (1977).
+   - Co-led the Patriotic Front alliance with Dr. Joshua Nkomo at Lancaster House (1979).
+3. Post-Independence Leadership:
+   - Won 1980 elections, sworn in as Prime Minister on 18 April 1980; announced the National Reconciliation policy ("turn swords into ploughshares").
+   - Transformed education and healthcare, achieving Africa's highest literacy rate (>90%).
+   - Signed the 22 December 1987 Unity Accord with Dr. Joshua Nkomo, becoming Executive President.
+   - Launched the Third Chimurenga / Fast-Track Land Reform Programme in 2000 under A1 and A2 models.
+   - Resigned November 2017 under Section 96 of the Constitution; declared a National Hero.`,
+      source: 'ZIMSEC History Syllabus 2167 / 9155',
+      keywords: ['mugabe', 'robert mugabe', 'cde mugabe', 'who is mugabe', 'who was mugabe', 'president mugabe', 'prime minister mugabe', 'zanu', 'zanla', 'history']
+    },
+    {
+      id: 'hist_third_chimurenga_seed',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'The Third Chimurenga: Fast-Track Land Reform Programme (FTLRP 2000)',
+      content: `The Fast-Track Land Reform Programme (Third Chimurenga) was launched in 2000 to correct colonial land inequalities created by the Land Apportionment Act (1930):
+1. Background and Catalysts:
+   - Exhaustion of the Lancaster House 10-year willing-buyer willing-seller clause (1980-1990).
+   - 1997 refusal of British Blair administration to fund land purchases.
+   - Svosve and war-veteran farm occupations leading to constitutional amendment Section 16A.
+2. Two Resettlement Models:
+   - A1 Model (Smallholder/Villagized Scheme): Decongested rural communal areas, granting plots of 5-6 hectares for crop farming plus communal grazing. Over 160,000 households resettled.
+   - A2 Model (Commercial Small-to-Medium Farming): Self-contained farming units designed for commercial agricultural production (tobacco, grain, livestock, horticulture).
+3. International Geopolitical Impact:
+   - Western sanctions: US Zimbabwe Democracy and Economic Recovery Act (ZDERA 2001) and EU restrictive measures.
+4. Long-Term Agricultural Renaissance:
+   - Historic records achieved in tobacco production (>290 million kg) and wheat self-sufficiency under indigenous farmers.`,
+      source: 'ZIMSEC History Syllabus 2167 / 9155',
+      keywords: ['third chimurenga', 'land reform', 'fast track land reform', 'a1 model', 'a2 model', 'zdera', 'land apportionment act', 'svosve', 'history']
+    },
+    {
+      id: 'hist_unity_accord_seed',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'The Unity Accord of 22 December 1987 and National Unity Day',
+      content: `The historic Unity Accord was signed on 22 December 1987 between ZANU (led by Cde Robert Mugabe) and PF-ZAPU (led by Dr. Joshua Mqabuko Nkomo):
+1. Historical Context:
+   - Ended post-independence civil disturbances in Matabeleland and the Midlands provinces.
+   - Preserved Zimbabwean sovereignty, territorial integrity, and national cohesion.
+2. Key Provisions of the Accord:
+   - Merger of ZANU and PF-ZAPU into one united political party: ZANU-PF.
+   - Creation of the Executive Presidency with two Vice Presidents (Dr. Joshua Nkomo and Simon Muzenda).
+   - Total integration of political and social structures.
+3. Heritage Significance:
+   - 22 December is commemorated annually as a national public holiday: National Unity Day, reinforcing the national motto "Unity, Peace, and Development".`,
+      source: 'ZIMSEC History Syllabus 2167 / 9155',
+      keywords: ['unity accord', '1987', 'joshua nkomo', 'robert mugabe', 'national unity day', 'zanu', 'zapu', 'history']
+    },
+    {
+      id: 'hist_second_republic_zig_seed',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'The Second Republic, Vision 2030, and the Zimbabwe Gold (ZiG) Currency (2024)',
+      content: `The Second Republic, ushered in following Operation Restore Legacy in November 2017 under President Emmerson Dambudzo Mnangagwa:
+1. Vision 2030 and NDS1:
+   - National Development Strategy 1 (NDS1) aims for an Upper-Middle-Income Economy by 2030.
+   - Core national philosophies: "Nyika inovakwa nevene vayo / Ilizwe lakhiwa ngabaninilo" (A nation is built by its own people) and "Leaving no one and no place behind".
+2. Strategic Infrastructure & Agricultural Revolution:
+   - Modernization of the Beitbridge Border Post and Harare-Beitbridge Highway.
+   - Hwange Thermal Power Station Expansion (Units 7 & 8 adding 600 MW).
+   - Lake Gwayi-Shangani Dam construction to solve Bulawayo water shortages.
+   - Pfumvudza/Intwasa climate-proofed agriculture achieving national food security and record winter wheat harvest.
+3. Zimbabwe Gold (ZiG) Currency (Introduced 5 April 2024):
+   - Structured local currency backed by foreign exchange reserves and physical gold/precious minerals held by the Reserve Bank of Zimbabwe (RBZ).
+   - Designed to eliminate currency volatility, anchor price stability, and restore faith in legal tender.
+4. Education 5.0 and Heritage-Based Curriculum:
+   - Shift from theoretical education to Teaching, Research, Community Service, Innovation, and Industrialization.`,
+      source: 'ZIMSEC History & Heritage Studies 2167 / 9155',
+      keywords: ['second republic', 'vision 2030', 'nds1', 'zig currency', 'zimbabwe gold', 'pfumvudza', 'education 5.0', 'nyika inovakwa nevene vayo', 'history']
+    },
+    {
+      id: 'hist_constitution_2013_seed',
+      level: 'O-Level',
+      subject: 'History',
+      topic: 'The 2013 Constitution and the 16 Officially Recognized Languages',
+      content: `The Constitution of Zimbabwe was enacted on 22 May 2013 following a historic national referendum:
+1. Constitutional Foundations:
+   - Replaced the Lancaster House Constitution (1979) with a homegrown supreme legal charter.
+   - Comprehensive Declaration of Rights (Chapter 4) enshrining civil, political, economic, social, and cultural rights.
+2. The 16 Officially Recognized Languages (Section 6):
+   - Chewa, Chibarwe, English, Kalanga, Koisan, Nambya, Ndau, Ndebele, Shangani, Shona, sign language, Sotho, Tonga, Tswana, Venda, and Xhosa.
+   - State obligation to advance and promote the use of all indigenous languages in schools, courts, and government business.
+3. National Institutions:
+   - Independent Commissions Supporting Democracy: Zimbabwe Electoral Commission (ZEC), Zimbabwe Human Rights Commission (ZHRC), National Peace and Reconciliation Commission (NPRC), and Zimbabwe Gender Commission (ZGC).`,
+      source: 'ZIMSEC History & Heritage Studies 2167 / 9155',
+      keywords: ['constitution 2013', '16 languages', 'official languages', 'declaration of rights', 'referendum', 'history']
     }
   ];
 
@@ -397,6 +680,13 @@ Rules of Debit and Credit:
       try {
         // Fetch primary specific JSON curriculum notes
         const primaryFiles = [
+          'zimsec_history_heritage_comprehensive_archive.json',
+          'zimsec_history_heritage_full_depth.json',
+          'zimsec_primary_heritage_grade7.json',
+          'zimsec_heritage_social_studies.json',
+          'zimsec_heritage_studies_grade7_topics1-3.json',
+          'zimsec_heritage_primary.json',
+          'zimsec_grade7_frme.json',
           'zimsec_mathematics_grade7.json',
           'zimsec_primary_math_full_depth.json',
           'zimsec_science_technology_full_depth.json',
@@ -406,9 +696,6 @@ Rules of Debit and Credit:
           'zimsec_chishona_g7_full_notes.json',
           'zimsec_chishona_g7_studyguide.json',
           'zimsec_ndebele_grade7.json',
-          'zimsec_heritage_studies_grade7_topics1-3.json',
-          'zimsec_heritage_primary.json',
-          'zimsec_grade7_frme.json',
           'zimsec_primary_pe_grade7.json',
           'zimsec_ict_grade7.json'
         ];
@@ -418,28 +705,14 @@ Rules of Debit and Credit:
             const res = await fetch(`/assets/${encodeURIComponent(fileName)}`);
             if (res.ok) {
               const data = await res.json();
-              if (Array.isArray(data)) {
-                for (let i = 0; i < data.length; i++) {
-                  const item = data[i];
-                  if (item.topic && item.content) {
-                    const uniqueId = item.id ? `${fileName}_${item.id}` : `${fileName}_${i}`;
-                    if (!seenIds.has(uniqueId)) {
-                      seenIds.add(uniqueId);
-                      this.chunks.push({
-                        id: uniqueId,
-                        level: 'Primary',
-                        subject: this.standardizePrimarySubject(item.subject || 'General'),
-                        topic: item.topic,
-                        content: item.content,
-                        source: item.source || 'ZIMSEC Grade 7 Primary Curriculum',
-                        keywords: Array.isArray(item.keywords)
-                          ? item.keywords.map((k: string) => k.toLowerCase())
-                          : [item.topic.toLowerCase(), (item.subject || '').toLowerCase()]
-                      });
-                    }
-                  }
-                }
-              }
+              this.extractChunksUniversal(
+                data,
+                'Agric, Science & Tech',
+                'Primary',
+                'ZIMSEC Grade 7 Primary Curriculum',
+                fileName,
+                seenIds
+              );
             }
           } catch {
             // Skip if file missing
@@ -448,58 +721,42 @@ Rules of Debit and Credit:
 
         // Fetch O-Level files
         const oLevelFiles = [
-          'zimsec_mathematics_olevel.json',
-          'zimsec_combined_science_o_level_100k_detailed.json',
-          'zimsec_olevel_english_language.json',
-          'zimsec_shona_o_level_4007_study_pack.json',
-          'zimsec_geography_o_level_full_study_pack.json',
-          'zimsec_history_olevel_paper1_topic1_precolonial_states.json',
-          'zimsec_history_olevel_paper1_topics2-7.json',
-          'zimsec_commerce_4049_o_level_FULL_DEPTH_FINAL.json',
-          'zimsec_computer_science_4021_o_level_FULL_DEPTH_FINAL.json',
-          'zimsec_accounting_4051_o_level_final.json',
-          'zimsec_agriculture_4001_o_level_full_study_pack.json',
-          'zimsec_biology_4025_o_level_full_study_pack.json',
-          'zimsec_chemistry_o_level_full_study_pack.json',
-          'zimsec_physics_4023_o_level_FULL_DEPTH_FINAL_310KB.json',
-          'zimsec_geography_secondary.json',
-          'zimsec_history_secondary.json',
-          'zimsec_biology_v1.json',
-          'zimsec_physics_v1.json',
-          'zimsec_chemistry_v1.json'
+          { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'History' },
+          { f: 'zimsec_history_heritage_full_depth.json', s: 'History' },
+          { f: 'zimsec_history_olevel_paper1_topic1_precolonial_states.json', s: 'History' },
+          { f: 'zimsec_history_olevel_paper1_topics2-7.json', s: 'History' },
+          { f: 'zimsec_history_secondary.json', s: 'History' },
+          { f: 'zimsec_mathematics_olevel.json', s: 'Mathematics' },
+          { f: 'zimsec_combined_science_o_level_100k_detailed.json', s: 'Combined Science' },
+          { f: 'zimsec_olevel_english_language.json', s: 'English Language' },
+          { f: 'zimsec_shona_o_level_4007_study_pack.json', s: 'Shona' },
+          { f: 'zimsec_geography_o_level_full_study_pack.json', s: 'Geography' },
+          { f: 'zimsec_commerce_4049_o_level_FULL_DEPTH_FINAL.json', s: 'Commerce' },
+          { f: 'zimsec_computer_science_4021_o_level_FULL_DEPTH_FINAL.json', s: 'Computer Science' },
+          { f: 'zimsec_accounting_4051_o_level_final.json', s: 'Principles of Accounts' },
+          { f: 'zimsec_agriculture_4001_o_level_full_study_pack.json', s: 'Agriculture' },
+          { f: 'zimsec_biology_4025_o_level_full_study_pack.json', s: 'Biology' },
+          { f: 'zimsec_chemistry_o_level_full_study_pack.json', s: 'Chemistry' },
+          { f: 'zimsec_physics_4023_o_level_FULL_DEPTH_FINAL_310KB.json', s: 'Physics' },
+          { f: 'zimsec_geography_secondary.json', s: 'Geography' },
+          { f: 'zimsec_biology_v1.json', s: 'Biology' },
+          { f: 'zimsec_physics_v1.json', s: 'Physics' },
+          { f: 'zimsec_chemistry_v1.json', s: 'Chemistry' }
         ];
 
-        for (const fileName of oLevelFiles) {
+        for (const item of oLevelFiles) {
           try {
-            const res = await fetch(`/assets/${encodeURIComponent(fileName)}`);
+            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
             if (res.ok) {
               const data = await res.json();
-              const items = Array.isArray(data)
-                ? data
-                : data && Array.isArray(data.chunks)
-                ? data.chunks
-                : [];
-
-              for (let i = 0; i < items.length; i++) {
-                const item = items[i];
-                if (item.topic && item.content) {
-                  const uniqueId = item.id ? `${fileName}_${item.id}` : `${fileName}_${i}`;
-                  if (!seenIds.has(uniqueId)) {
-                    seenIds.add(uniqueId);
-                    this.chunks.push({
-                      id: uniqueId,
-                      level: 'O-Level',
-                      subject: item.subject || 'Combined Science',
-                      topic: item.topic,
-                      content: item.content,
-                      source: item.source || 'ZIMSEC O-Level Curriculum',
-                      keywords: Array.isArray(item.keywords)
-                        ? item.keywords.map((k: string) => k.toLowerCase())
-                        : [item.topic.toLowerCase(), (item.subject || '').toLowerCase()]
-                    });
-                  }
-                }
-              }
+              this.extractChunksUniversal(
+                data,
+                item.s,
+                'O-Level',
+                'ZIMSEC O-Level Curriculum',
+                item.f,
+                seenIds
+              );
             }
           } catch {
             // Skip if missing
@@ -508,52 +765,36 @@ Rules of Debit and Credit:
 
         // Fetch A-Level files
         const aLevelFiles = [
-          'zimsec_a_level_pure_mathematics_6042_full_final.json',
-          'zimsec_a_level_biology_full_final.json',
-          'zimsec_a_level_history_9155_extensive_study_pack.json',
-          'zimsec_a_level_geography_full_syllabus.json',
-          'zimsec_a_level_english_literature_9153_full_expanded.json',
-          'zimsec_a_level_divinity_full_syllabus.json',
-          'zimsec_a_level_shona_9145_full_expanded.json',
-          'zimsec_accounting_a_level_2024_2030_expanded.json',
-          'zimsec_business_studies_a_level_2024_2030_expanded.json',
-          'zimsec_chemistry_a_level_full.json',
-          'zimsec_economics_a_level_2024_2030_expanded.json',
-          'zimsec_physics_a_level_2024_2030_expanded.json',
-          'zimsec_statistics_a_level_6046_study_pack.json'
+          { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'History' },
+          { f: 'zimsec_history_heritage_full_depth.json', s: 'History' },
+          { f: 'zimsec_a_level_pure_mathematics_6042_full_final.json', s: 'Pure Mathematics' },
+          { f: 'zimsec_a_level_biology_full_final.json', s: 'Biology' },
+          { f: 'zimsec_a_level_history_9155_extensive_study_pack.json', s: 'History' },
+          { f: 'zimsec_a_level_geography_full_syllabus.json', s: 'Geography' },
+          { f: 'zimsec_a_level_english_literature_9153_full_expanded.json', s: 'Literature in English' },
+          { f: 'zimsec_a_level_divinity_full_syllabus.json', s: 'Divinity' },
+          { f: 'zimsec_a_level_shona_9145_full_expanded.json', s: 'Shona' },
+          { f: 'zimsec_accounting_a_level_2024_2030_expanded.json', s: 'Accounting' },
+          { f: 'zimsec_business_studies_a_level_2024_2030_expanded.json', s: 'Business Studies' },
+          { f: 'zimsec_chemistry_a_level_full.json', s: 'Chemistry' },
+          { f: 'zimsec_economics_a_level_2024_2030_expanded.json', s: 'Economics' },
+          { f: 'zimsec_physics_a_level_2024_2030_expanded.json', s: 'Physics' },
+          { f: 'zimsec_statistics_a_level_6046_study_pack.json', s: 'Statistics' }
         ];
 
-        for (const fileName of aLevelFiles) {
+        for (const item of aLevelFiles) {
           try {
-            const res = await fetch(`/assets/${encodeURIComponent(fileName)}`);
+            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
             if (res.ok) {
               const data = await res.json();
-              const items = Array.isArray(data)
-                ? data
-                : data && Array.isArray(data.chunks)
-                ? data.chunks
-                : [];
-
-              for (let i = 0; i < items.length; i++) {
-                const item = items[i];
-                if (item.topic && item.content) {
-                  const uniqueId = item.id ? `${fileName}_${item.id}` : `${fileName}_${i}`;
-                  if (!seenIds.has(uniqueId)) {
-                    seenIds.add(uniqueId);
-                    this.chunks.push({
-                      id: uniqueId,
-                      level: 'A-Level',
-                      subject: item.subject || 'Advanced Level',
-                      topic: item.topic,
-                      content: item.content,
-                      source: item.source || 'ZIMSEC Advanced Level Curriculum',
-                      keywords: Array.isArray(item.keywords)
-                        ? item.keywords.map((k: string) => k.toLowerCase())
-                        : [item.topic.toLowerCase(), (item.subject || '').toLowerCase()]
-                    });
-                  }
-                }
-              }
+              this.extractChunksUniversal(
+                data,
+                item.s,
+                'A-Level',
+                'ZIMSEC Advanced Level Curriculum',
+                item.f,
+                seenIds
+              );
             }
           } catch {
             // Skip if missing
@@ -568,6 +809,125 @@ Rules of Debit and Credit:
     })();
 
     return this.loadPromise;
+  }
+
+  /**
+   * Universal chunk extractor that handles arrays, object chunks, and hierarchical form/term/topic/subtopic structures.
+   */
+  private static extractChunksUniversal(
+    data: any,
+    defaultSubject: string,
+    defaultLevel: string,
+    defaultSource: string,
+    fileName: string,
+    seenIds: Set<string>
+  ): void {
+    if (!data) return;
+
+    // Case 1: Direct array of chunks
+    if (Array.isArray(data)) {
+      for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        if (item && item.topic && item.content) {
+          const uniqueId = item.id ? `${fileName}_${item.id}` : `${fileName}_${i}`;
+          if (!seenIds.has(uniqueId)) {
+            seenIds.add(uniqueId);
+            const levelSubject = defaultLevel === 'Primary'
+              ? this.standardizePrimarySubject(item.subject || defaultSubject)
+              : (item.subject || defaultSubject);
+            this.chunks.push({
+              id: uniqueId,
+              level: defaultLevel,
+              subject: levelSubject,
+              topic: item.topic,
+              content: item.content,
+              source: item.source || defaultSource,
+              keywords: Array.isArray(item.keywords)
+                ? item.keywords.map((k: string) => String(k).toLowerCase())
+                : [item.topic.toLowerCase(), levelSubject.toLowerCase()]
+            });
+          }
+        }
+      }
+      return;
+    }
+
+    // Case 2: Object with chunks array
+    if (Array.isArray(data.chunks)) {
+      this.extractChunksUniversal(data.chunks, defaultSubject, defaultLevel, defaultSource, fileName, seenIds);
+      return;
+    }
+
+    // Case 3: Object with nested structure array (Form -> Terms -> Topics -> Subtopics)
+    if (Array.isArray(data.structure)) {
+      let counter = 0;
+      const processTopics = (topics: any[], prefix = '') => {
+        if (!Array.isArray(topics)) return;
+        for (const t of topics) {
+          const topicTitle = t.title || t.topic || prefix;
+          if (t.content && typeof t.content === 'string' && t.content.trim()) {
+            const uniqueId = `${fileName}_struct_${counter++}`;
+            if (!seenIds.has(uniqueId)) {
+              seenIds.add(uniqueId);
+              this.chunks.push({
+                id: uniqueId,
+                level: defaultLevel,
+                subject: defaultSubject,
+                topic: topicTitle,
+                content: t.content,
+                source: defaultSource,
+                keywords: [topicTitle.toLowerCase(), defaultSubject.toLowerCase()]
+              });
+            }
+          }
+          if (Array.isArray(t.subtopics)) {
+            for (const sub of t.subtopics) {
+              const subTitle = sub.title || sub.subtopic || topicTitle;
+              const fullTitle = `${topicTitle}: ${subTitle}`;
+              let subContent = sub.content || '';
+              if (Array.isArray(sub.key_terms) && sub.key_terms.length > 0) {
+                subContent += '\n\nKey Terms:\n' + sub.key_terms.map((kt: any) =>
+                  typeof kt === 'object' && kt.term ? `- **${kt.term}:** ${kt.definition || ''}` : `- ${kt}`
+                ).join('\n');
+              }
+              if (subContent.trim()) {
+                const uniqueId = `${fileName}_struct_${counter++}`;
+                if (!seenIds.has(uniqueId)) {
+                  seenIds.add(uniqueId);
+                  this.chunks.push({
+                    id: uniqueId,
+                    level: defaultLevel,
+                    subject: defaultSubject,
+                    topic: fullTitle,
+                    content: subContent,
+                    source: defaultSource,
+                    keywords: [
+                      fullTitle.toLowerCase(),
+                      topicTitle.toLowerCase(),
+                      subTitle.toLowerCase(),
+                      defaultSubject.toLowerCase()
+                    ]
+                  });
+                }
+              }
+            }
+          }
+        }
+      };
+
+      for (const item of data.structure) {
+        if (Array.isArray(item.topics)) {
+          processTopics(item.topics);
+        }
+        if (Array.isArray(item.terms)) {
+          for (const term of item.terms) {
+            if (Array.isArray(term.topics)) {
+              processTopics(term.topics);
+            }
+          }
+        }
+      }
+    }
   }
 
   /**
@@ -646,19 +1006,30 @@ Rules of Debit and Credit:
       return this.cache.get(cacheKey)!;
     }
 
+    // Extract preferred subject prefix if present (e.g. "Combined Science: Explain...")
+    let preferredSubject = '';
+    let coreQuery = query.trim();
+    const prefixMatch = coreQuery.match(/^([A-Za-z0-9,\s&–-]+):\s*(.+)$/);
+    if (prefixMatch && prefixMatch[1].length < 35) {
+      preferredSubject = prefixMatch[1].trim().toLowerCase();
+      coreQuery = prefixMatch[2].trim();
+    }
+
     const stopWords = new Set([
       'what', 'when', 'where', 'which', 'who', 'whom', 'whose', 'why', 'how',
-      'the', 'and', 'for', 'with', 'from', 'that', 'this', 'these', 'those', 'is', 'are', 'in', 'of'
+      'the', 'and', 'for', 'with', 'from', 'that', 'this', 'these', 'those', 'is', 'are', 'in', 'of',
+      'explain', 'describe', 'discuss', 'state', 'identify', 'name', 'outline', 'detail', 'solve',
+      'calculate', 'using', 'between', 'give', 'list', 'show', 'acts', 'much', 'about', 'your'
     ]);
 
-    const words = query
+    const words = coreQuery
       .toLowerCase()
       .split(/[^a-zA-Z0-9]+/)
       .filter((w) => w.length > 2 && !stopWords.has(w));
 
     const effectiveWords = words.length > 0
       ? words
-      : query.toLowerCase().split(/[^a-zA-Z0-9]+/).filter((w) => w.length > 2);
+      : coreQuery.toLowerCase().split(/[^a-zA-Z0-9]+/).filter((w) => w.length > 2);
 
     if (effectiveWords.length === 0) {
       return { results: [], queryWords: [] };
@@ -690,6 +1061,9 @@ Rules of Debit and Credit:
 
     const scored: ScoredChunk[] = [];
 
+    const qLower = coreQuery.toLowerCase();
+    const isPersonQuery = qLower.includes('who') || qLower.includes('biography') || qLower.includes('profile') || qLower.includes('about');
+
     for (const chunk of candidates) {
       let score = 0;
       const matchedWords = new Set<string>();
@@ -698,16 +1072,28 @@ Rules of Debit and Credit:
       const contentLower = chunk.content.toLowerCase();
       const kwLower = chunk.keywords.map((k) => k.toLowerCase());
 
+      // Subject preference boost if prefix was provided
+      if (preferredSubject && (subjectLower.includes(preferredSubject) || preferredSubject.includes(subjectLower))) {
+        score += 60;
+      }
+
+      // Demote generic syllabus scope and meta overviews so specific factual topics win
+      if (topicLower.includes('syllabus scope') || topicLower.includes('study guide') || topicLower.includes('scheme of work')) {
+        score -= 150;
+      }
+
       for (const word of effectiveWords) {
         const stemmed = this.stem(word);
         let wordMatched = false;
 
+        // Direct topic match is the highest relevance signal
         if (topicLower.includes(word) || topicLower.includes(stemmed)) {
-          score += 50;
+          score += 140;
           wordMatched = true;
+          if (topicLower.startsWith(word) || topicLower.endsWith(word)) score += 30;
         }
         if (kwLower.some((k) => k === word || (word.length >= 4 && k.includes(word)))) {
-          score += 45;
+          score += 60;
           wordMatched = true;
         }
         if (contentLower.includes(word)) {
@@ -720,6 +1106,15 @@ Rules of Debit and Credit:
         }
 
         if (wordMatched) matchedWords.add(word);
+      }
+
+      // Exact biographical query boost for historical and national figures
+      if (isPersonQuery && (topicLower.includes('biography') || topicLower.includes('profile') || topicLower.includes('cde ') || topicLower.includes('king '))) {
+        for (const word of effectiveWords) {
+          if (topicLower.includes(word)) {
+            score += 150;
+          }
+        }
       }
 
       const threshold = effectiveWords.length <= 2 ? 1 : Math.max(1, Math.floor(effectiveWords.length * 0.4));
