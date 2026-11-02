@@ -20,6 +20,79 @@ export class KnowledgeStore {
   // Primary Education Seed Chunks (Aligned with ZIMSEC Official Grade 7 6-Subject Curriculum Format)
   private static readonly PRIMARY_SEED_CHUNKS: KnowledgeChunk[] = [
     {
+      id: 'g7_curriculum_six_subjects',
+      level: 'Primary',
+      subject: 'General / Curriculum',
+      topic: 'ZIMSEC Grade 7 Six Official Subjects & Examination Structure',
+      content: `The official ZIMSEC Grade Seven curriculum consists of exactly 6 examinable subjects under the Competency-Based / Heritage-Based Education Curriculum:
+1. ENGLISH LANGUAGE (Syllabus 7010):
+   - Paper 1: Multiple Choice (50 questions covering comprehension, grammar, concord, prepositions, vocabulary).
+   - Paper 2: Free Response (Guided Composition: informal letters, formal letters, reports, narrative; Reading Comprehension with short-answer questions and summary).
+2. MATHEMATICS (Syllabus 7020):
+   - Paper 1: Multiple Choice (50 items on number operations, fractions, decimals, percentages, money, measures, perimeter, area, volume, data handling).
+   - Paper 2: Structured Problem Solving (Compulsory multi-step questions and word problems with full workings shown).
+3. AGRICULTURE, SCIENCE & TECHNOLOGY - AST (Syllabus 7030):
+   - Integrates Agriculture, Natural Science, and ICT.
+   - Topics: Crops, soils, animals, tools, human body systems (digestive, circulatory, respiratory), disease prevention, water cycle, weather instruments, machines, electricity, computer hardware and software.
+   - Paper 1: 50 Multiple Choice questions.
+   - Paper 2: Structured theory, diagrams, and experiments.
+4. INDIGENOUS LANGUAGES (ChiShona 7040 / IsiNdebele 7041 / Tshivenda / Kalanga / Shangani / Tonga):
+   - Paper 1: Multiple Choice (Nzwisiso/Comprehension, Zvirevo, Tsumo, Madimikira, Zviera, Ukama, Tsika dzeUnhu/Ubuntu).
+   - Paper 2: Rondedzero (Composition) and structured comprehension.
+5. SOCIAL SCIENCE (Syllabus 7050):
+   - Combines Heritage and Social Studies (HSS), Family and Religious Studies (FAREME), and Guidance.
+   - Topics: Family, national symbols (Flag, Bird, Coat of Arms), governance and 3 arms of government, liberation struggle (First and Second Chimurenga), pre-colonial states (Great Zimbabwe, Mutapa, Rozvi, Zulu/Ndebele under Mzilikazi and Lobengula), transport, disaster management.
+   - Paper 1: 50 Multiple Choice questions.
+   - Paper 2: Structured short-answer questions.
+6. PHYSICAL EDUCATION & ARTS - PEA (Syllabus 7130 / 7060):
+   - Combines Physical Education, Visual Arts, Performing Arts (Music, Dance, Theatre), and Mass Displays.
+   - Topics: Athletics, gymnastics, indigenous games (pada, tsoro, nhodo), drawing, shading, painting, pottery, traditional musical instruments (mbira, hosho, ngoma), traditional dances (jerusarema/mbende, mbakumba, muchongoyo, isitshikitsha).
+   - Paper 1: Multiple Choice.
+   - Paper 2: Structured creative, visual, and performance design questions.`,
+      source: 'ZIMSEC Official Primary School Examination Framework',
+      keywords: [
+        'grade 7 subjects', 'zimsec subjects', 'primary subjects', 'how many subjects', 'six subjects', '6 subjects',
+        'what are the subjects in grade 7', 'grade 7 curriculum', 'subjects in grade 7', 'zimsec grade 7 subjects',
+        'english', 'mathematics', 'agric science tech', 'shona', 'ndebele', 'social science', 'physical edu arts'
+      ]
+    },
+    {
+      id: 'g7_curriculum_grading_system_units',
+      level: 'Primary',
+      subject: 'General / Curriculum',
+      topic: 'ZIMSEC Grade 7 Grading System: Units 1 to 9 & Results Slip Explanation',
+      content: `The ZIMSEC Grade Seven grading system uses a Units scale ranging from 1 to 9:
+1. Grading Scale (Units):
+   - Unit 1: Distinction (Highest possible grade in each subject, marks ~80% - 100%).
+   - Unit 2: Distinction (Marks ~70% - 79%).
+   - Unit 3: Merit (Marks ~65% - 69%).
+   - Unit 4: Credit (Marks ~60% - 64%).
+   - Unit 5: Credit (Marks ~55% - 59%).
+   - Unit 6: Pass (Marks ~50% - 54% - Minimum standard passing grade).
+   - Unit 7: Weak Pass (Marks ~45% - 49%).
+   - Unit 8: Weak (Marks ~40% - 44%).
+   - Unit 9: Ungraded / Fail (Marks below 40%).
+2. Aggregate Calculation (Total Units):
+   - The total aggregate is the SUM of the unit grades across all 6 subjects: Total Units = Unit(English) + Unit(Math) + Unit(AST) + Unit(Indigenous) + Unit(Social Science) + Unit(PEA).
+   - The LOWER the aggregate, the BETTER the performance!
+   - 6 Units (6 points): Perfect score across all 6 subjects (Unit 1 in English, Math, AST, Shona/Ndebele, Social Science, and PEA: 1+1+1+1+1+1 = 6).
+   - Highest possible aggregate (lowest mark) is 54 units (9 x 6 = 54).
+3. Provisional Results Slip Layout:
+   - Header: Zimbabwe School Examinations Council Grade Seven Provisional Results for the November Examinations.
+   - Columns: Subject, Result (the numeric unit grade, e.g., 6, 5, 3), Status, Explanation (the word form, e.g., "(SIX)", "(FIVE)", "(THREE)").
+   - Number of subjects: 6.
+4. Form 1 Secondary School Selection:
+   - Prestigious boarding schools (e.g., Goromonzi, Kutama, St Ignatius, Marist Nyanga, St George's, Monte Cassino, Gokomere, Fletcher) generally require aggregates of 6 to 10 units.
+   - General secondary schools require Unit 6 or better in core subjects, particularly English and Mathematics.`,
+      source: 'ZIMSEC Official Grading Regulations & Provisional Results Framework',
+      keywords: [
+        'grade 7 grading system', 'grading scale', 'units in grade 7', 'unit 1', 'unit 6', 'unit 9', 'aggregate 6',
+        'six units', 'pass mark in grade 7', 'provisional results', 'results slip', 'provisional results slip',
+        'zimsec result slip', 'status', 'explanation', 'six', 'five', 'three', 'seven', 'what does unit 6 mean',
+        'what does unit 1 mean', 'how does grading work in grade 7'
+      ]
+    },
+    {
       id: 'g7_eng_reading_comprehension',
       level: 'Primary',
       subject: 'English',
@@ -98,7 +171,7 @@ export class KnowledgeStore {
       id: 'g7_eng_concord_rules',
       level: 'Primary',
       subject: 'English',
-      topic: 'Subject-Verb Agreement (Concord) Rules',
+      topic: 'Concord and Subject-Verb Agreement Rules in English Grammar',
       content: `Rules of Concord in Grade 7 ZIMSEC English:
 1. Basic Rule: Singular subject takes singular verb (ends in -s); plural subject takes plural verb.
 2. Intervening Phrases: Phrases like 'as well as', 'together with', 'accompanied by', 'along with' do not change the subject:
@@ -237,48 +310,503 @@ export class KnowledgeStore {
       keywords: ['farm tools', 'badza', 'hoe', 'shovel', 'spade', 'maintenance', 'safety', 'simple machines']
     },
     {
-      id: 'g7_math_fractions',
+      id: 'g7_math_place_value_rounding',
       level: 'Primary',
       subject: 'Mathematics',
-      topic: 'Common Fractions, Decimals, and Percentages',
-      content: `Fractions represent equal parts of a whole:
-- Numerator (top number): Shows how many parts are taken.
-- Denominator (bottom number): Shows the total equal parts the whole is divided into.
-
-Key Primary Math Operations:
-1. Adding & Subtracting Fractions:
-   Find the Common Denominator (LCM). Example: 1/4 + 2/4 = 3/4.
-   For 1/2 + 1/3: Common denominator is 6 -> 3/6 + 2/6 = 5/6.
-2. Converting Fractions to Decimals & Percentages:
-   - 1/2 = 0.5 = 50%
-   - 1/4 = 0.25 = 25%
-   - 3/4 = 0.75 = 75%
-   - 1/5 = 0.20 = 20%
-   - 1/10 = 0.10 = 10%
-3. Word Problems:
-   Always read whether you are sharing or finding a remaining portion.`,
+      topic: 'Place Value, Expanded Notation, and Rounding Off',
+      content: `In ZIMSEC Grade 7 Mathematics (Syllabus 7020), learners work with whole numbers up to and beyond 1 000 000:
+1. Place Value Columns: Millions (M), Hundred Thousands (HTh), Ten Thousands (TTh), Thousands (Th), Hundreds (H), Tens (T), Units (U).
+   Example in 4 738 219: 4 is in Millions (4 000 000), 7 in HTh (700 000), 3 in TTh (30 000), 8 in Th (8 000), 2 in H (200), 1 in T (10), 9 in U (9).
+   Expanded Notation: 4 738 219 = 4 000 000 + 700 000 + 30 000 + 8 000 + 200 + 10 + 9.
+2. Rounding Off Rules:
+   Look at the digit immediately to the right of the target place value:
+   - If 5 or more (5, 6, 7, 8, 9) -> Round UP (add 1 to target digit).
+   - If less than 5 (0, 1, 2, 3, 4) -> Round DOWN (keep target digit the same).
+   - All digits to the right become zeros.
+   Examples for 3 847:
+   - Nearest 10: 3 850 (look at 7 -> round up)
+   - Nearest 100: 3 800 (look at 4 -> round down)
+   - Nearest 1 000: 4 000 (look at 8 -> round up)
+3. Roman Numerals: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000. (e.g. XLVII = 47, XCIV = 94).`,
       source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
-      keywords: ['math', 'fractions', 'decimals', 'percentage', 'numerator', 'denominator', 'primary mathematics']
+      keywords: ['place value', 'expanded notation', 'rounding off', 'nearest ten', 'nearest hundred', 'nearest thousand', 'roman numerals', 'primary math']
     },
     {
-      id: 'g7_math_perimeter_area',
+      id: 'g7_math_operations_bodmas',
       level: 'Primary',
       subject: 'Mathematics',
-      topic: 'Perimeter and Area of 2D Shapes',
-      content: `Measurement in Grade 7 ZIMSEC Mathematics:
-1. Perimeter: The total distance around the outside edge of a shape.
-   - Rectangle: Perimeter = 2 × (Length + Width) or (L + W + L + W).
-     Example: Length = 8cm, Width = 5cm -> Perimeter = 2 × (8 + 5) = 26cm.
-   - Square: Perimeter = 4 × Side (4s).
-   - Triangle: Add all three sides (a + b + c).
-
-2. Area: The amount of flat surface space covered inside the boundary:
-   - Rectangle: Area = Length × Width (measured in cm² or m²).
-     Example: 8cm × 5cm = 40cm².
-   - Square: Area = Side × Side (s²).
-   - Right-angled Triangle: Area = 1/2 × Base × Height.`,
+      topic: 'Order of Operations (BODMAS) and Four Operations',
+      content: `BODMAS governs the order in which multi-step operations must be calculated in ZIMSEC Mathematics:
+- B: Brackets first (perform calculations inside brackets first)
+- O: Of / Orders (powers, roots, or fraction 'of' a quantity, e.g. 1/2 of 50 = 25)
+- D: Division (left to right)
+- M: Multiplication (left to right)
+- A: Addition (left to right)
+- S: Subtraction (left to right)
+Worked Examples:
+1. 12 + 6 × 3 - 4 = 12 + 18 - 4 = 30 - 4 = 26 (multiplication done before addition/subtraction).
+2. (8 + 2) × (15 ÷ 3) = 10 × 5 = 50 (brackets first).
+3. 40 - 20 ÷ 4 + 3 = 40 - 5 + 3 = 35 + 3 = 38.
+*Exam Tip:* Never perform addition before division or multiplication just because it appears first on the left!`,
       source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
-      keywords: ['perimeter', 'area', 'rectangle', 'square', 'distance', 'length', 'width', 'primary math']
+      keywords: ['bodmas', 'order of operations', 'brackets', 'multiplication', 'division', 'addition', 'subtraction', 'primary math']
+    },
+    {
+      id: 'g7_math_factors_hcf_lcm',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Number Theory: Factors, Multiples, Prime Numbers, HCF and LCM',
+      content: `Number Theory concepts tested in ZIMSEC Grade 7 Papers 1 & 2:
+1. Factors: Numbers that divide into a given number exactly without remainder.
+   - Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.
+2. Prime Numbers: Numbers with EXACTLY TWO factors (1 and itself).
+   - Prime numbers under 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.
+   *Note:* 1 is NOT a prime number (has only 1 factor). 2 is the ONLY even prime number.
+3. Highest Common Factor (HCF):
+   The largest factor shared by two or more numbers.
+   - To find HCF of 18 and 24:
+     Factors of 18: 1, 2, 3, 6, 9, 18.
+     Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.
+     Common factors: 1, 2, 3, 6 -> HCF = 6.
+4. Lowest Common Multiple (LCM):
+   The smallest non-zero multiple shared by two or more numbers.
+   - Multiples of 4: 4, 8, 12, 16, 20, 24...
+   - Multiples of 6: 6, 12, 18, 24...
+   - Common multiples: 12, 24... -> LCM = 12.
+   *Application:* LCM is used to find the Common Denominator when adding or subtracting fractions!`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['factors', 'multiples', 'prime numbers', 'hcf', 'lcm', 'highest common factor', 'lowest common multiple', 'primary math']
+    },
+    {
+      id: 'g7_math_fractions_operations',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Fractions: Types, Conversions, and Four Operations',
+      content: `Rules for operating on common fractions in Grade 7 ZIMSEC:
+1. Types of Fractions:
+   - Proper: Numerator < Denominator (e.g. 3/5, value < 1).
+   - Improper: Numerator ≥ Denominator (e.g. 9/4, value ≥ 1).
+   - Mixed Number: Whole number + fraction (e.g. 2 1/4).
+2. Adding and Subtracting Fractions:
+   Find the Lowest Common Multiple (LCM) of denominators first:
+   - Example: 2/3 + 1/4 -> LCM of 3 and 4 is 12.
+     (2 × 4)/12 + (1 × 3)/12 = 8/12 + 3/12 = 11/12.
+3. Multiplying Fractions:
+   Multiply numerators together, and denominators together; simplify to lowest terms:
+   - Example: 3/5 × 2/7 = (3 × 2) / (5 × 7) = 6/35.
+   - Mixed numbers: Convert to improper fractions first! (1 1/2 × 2/3 = 3/2 × 2/3 = 6/6 = 1).
+4. Dividing Fractions (The Reciprocal Rule):
+   Multiply by the reciprocal (turn the second fraction upside down):
+   - Example: 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 = 1 7/8.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['fractions', 'adding fractions', 'subtracting fractions', 'multiplying fractions', 'dividing fractions', 'reciprocal', 'lcm', 'proper improper']
+    },
+    {
+      id: 'g7_math_decimals_percentages',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Decimals, Percentages, and Conversions',
+      content: `Conversions and operations across Decimals and Percentages:
+1. Place Value of Decimals: Units . Tenths (1/10) Hundredths (1/100) Thousandths (1/1000).
+   Example: In 47.386, 3 = 3/10, 8 = 8/100, 6 = 6/1000.
+2. Conversion Triad:
+   - Fraction to Decimal: Divide numerator by denominator (3/8 = 3 ÷ 8 = 0.375).
+   - Decimal to Percentage: Multiply by 100% (0.45 × 100% = 45%).
+   - Percentage to Fraction: Put over 100 and simplify (35% = 35/100 = 7/20).
+   - Fraction to Percentage: Multiply fraction by 100% (3/4 × 100% = 75%).
+3. Percentage of a Quantity:
+   - Find 15% of $240: (15 / 100) × 240 = 3600 / 100 = $36.
+4. Percentage Change:
+   - Percentage Increase / Decrease = (Actual Change / Original Amount) × 100%.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['decimals', 'percentages', 'fraction to percentage', 'percentage of quantity', 'conversions', 'primary math']
+    },
+    {
+      id: 'g7_math_commercial_arithmetic_money',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Commercial Arithmetic: Profit, Loss, Discount, and Simple Interest',
+      content: `Commercial mathematics applied in Zimbabwean commerce and exams:
+1. Profit and Loss:
+   - Profit = Selling Price (SP) - Cost Price (CP)  [when SP > CP]
+   - Loss = Cost Price (CP) - Selling Price (SP)    [when CP > SP]
+   - Percentage Profit = (Profit / Cost Price) × 100%
+   - Percentage Loss = (Loss / Cost Price) × 100%
+   Example: An item bought for $40 is sold for $50.
+   Profit = $50 - $40 = $10. Percentage Profit = (10 / 40) × 100% = 25%.
+2. Discount and VAT:
+   - Discount = Marked Price × Discount Rate.
+   - Selling Price = Marked Price - Discount.
+3. Simple Interest (SI):
+   - Formula: Simple Interest = (Principal × Rate × Time) / 100   [I = (P × R × T) / 100]
+   - Total Amount = Principal + Simple Interest
+   Example: $500 invested at 6% per annum for 3 years:
+   I = (500 × 6 × 3) / 100 = 9000 / 100 = $90. Total Amount = $500 + $90 = $590.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['commercial arithmetic', 'profit', 'loss', 'discount', 'simple interest', 'cost price', 'selling price', 'principal rate time']
+    },
+    {
+      id: 'g7_math_ratio_rate_speed',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Ratio, Rate, and Speed-Distance-Time',
+      content: `Ratios, rates, and kinematic formulas in Grade 7 ZIMSEC:
+1. Simplifying Ratios:
+   Divide all terms by their HCF. Convert to the same units first:
+   - Example: 250g to 2kg -> 250g : 2000g = 1 : 8.
+2. Sharing in a Given Ratio:
+   Step 1: Add ratio parts to find total shares.
+   Step 2: Divide total quantity by total shares to find 1 share.
+   Step 3: Multiply 1 share by each person's ratio number.
+   Example: Share $360 in the ratio 4 : 5.
+   Total parts = 4 + 5 = 9. Value of 1 part = $360 ÷ 9 = $40.
+   Shares: 4 × $40 = $160; 5 × $40 = $200 (Check: 160 + 200 = 360).
+3. Speed, Distance, and Time Formulas:
+   - Speed = Distance / Time (measured in km/h or m/s)
+   - Distance = Speed × Time
+   - Time = Distance / Speed
+   Example: A bus travels 240 km in 4 hours.
+   Average Speed = 240 km ÷ 4 h = 60 km/h.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['ratio', 'rate', 'speed', 'distance', 'time', 'sharing in ratio', 'average speed', 'primary math']
+    },
+    {
+      id: 'g7_math_measures_perimeter_area',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Measures: Perimeter and Area of 2D Shapes',
+      content: `Formulas for Perimeter and Area in Grade 7 ZIMSEC:
+1. Metric Length Conversions:
+   10 mm = 1 cm | 100 cm = 1 m | 1 000 m = 1 km.
+2. Perimeter (Total boundary distance):
+   - Rectangle: P = 2 × (Length + Width) = 2(l + w)
+   - Square: P = 4 × side = 4s
+   - Triangle: P = a + b + c (sum of all three sides)
+   - Circle (Circumference): C = 2πr = πd (using π ≈ 22/7 or 3.14)
+3. Area (Flat surface space covered):
+   - Rectangle: Area = Length × Width (cm² or m²)
+   - Square: Area = side × side = s²
+   - Triangle: Area = 1/2 × Base × Perpendicular Height = 1/2(b × h)
+   - Circle: Area = π × radius² = πr² (Example: r = 7m -> 22/7 × 7 × 7 = 154 m²)
+4. Farmland Units:
+   1 Hectare (ha) = 10 000 m².`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['perimeter', 'area', 'rectangle', 'square', 'triangle', 'circumference', 'circle', 'hectare', 'primary math']
+    },
+    {
+      id: 'g7_math_measures_volume_capacity_mass',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Measures: Mass, Capacity, and Volume',
+      content: `Standard units of Mass, Capacity, and Volume:
+1. Mass Conversions:
+   1 000 mg = 1 g | 1 000 g = 1 kg | 1 000 kg = 1 tonne (t).
+   Example: 3.5 tonnes = 3 500 kg.
+2. Capacity Conversions:
+   1 000 ml = 1 litre (l).
+   Example: 2.5 litres = 2 500 ml.
+3. Volume of 3D Solids:
+   - Cuboid: Volume = Length × Width × Height = l × w × h (cm³ or m³).
+   - Cube: Volume = side³ = s × s × s.
+   Example: A box measuring 12 cm × 8 cm × 5 cm has Volume = 12 × 8 × 5 = 480 cm³.
+4. Bridge between Volume and Capacity:
+   1 cm³ = 1 ml  and  1 000 cm³ = 1 litre.
+   Example: A water tank of 480 000 cm³ holds 480 litres.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['mass', 'capacity', 'volume', 'litres', 'millilitres', 'grams', 'kilograms', 'tonnes', 'cuboid volume']
+    },
+    {
+      id: 'g7_math_time_clocks_calendars',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Measures: Time, Clocks, Timetables, and Calendars',
+      content: `Time systems, duration calculations, and calendars:
+1. 12-Hour vs 24-Hour Time:
+   - 12-hour uses am (morning) and pm (afternoon/evening).
+   - 24-hour uses 4 digits (00:00 to 23:59). To convert pm to 24-hour, add 12 to hours (3:15 pm -> 15:15; 11:30 pm -> 23:30; 12:00 am midnight -> 00:00).
+2. Calculating Journey Duration:
+   Subtract departure from arrival time. Borrow 60 minutes when needed:
+   - Example: Bus leaves at 08:35 and arrives at 13:10.
+     13h 10m - 08h 35m -> borrow 1h (60m): 12h 70m - 08h 35m = 4 hours 35 minutes.
+3. Calendar Facts:
+   - 60 seconds = 1 minute | 60 minutes = 1 hour | 24 hours = 1 day | 7 days = 1 week.
+   - Months: 30 days has September, April, June, and November. All the rest have 31, except February with 28 days (29 in a leap year).
+   - Leap years occur every 4 years (divisible by 4). Year = 365 days (366 in leap year).`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['time', '24 hour clock', '12 hour clock', 'duration', 'calendar', 'leap year', 'timetables', 'primary math']
+    },
+    {
+      id: 'g7_math_geometry_angles_polygons',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Geometry: Angles, Triangles, Quadrilaterals, and Polygons',
+      content: `Geometric properties of angles and 2D shapes:
+1. Angle Types:
+   - Acute: < 90°
+   - Right Angle: Exactly 90°
+   - Obtuse: 90° < angle < 180°
+   - Straight Angle: Exactly 180°
+   - Reflex Angle: 180° < angle < 360°
+   - Revolution / Full Turn: 360°
+2. Key Angle Rules:
+   - Angles on a straight line add up to 180°.
+   - Angles at a point add up to 360°.
+   - Vertically opposite angles are equal.
+   - Complementary angles sum to 90°. Supplementary angles sum to 180°.
+3. Polygons and Angle Sums:
+   - Interior angles of any triangle always add up to 180°.
+   - Interior angles of any quadrilateral always add up to 360°.
+   - Sum of interior angles of any n-sided polygon = (n - 2) × 180°.
+     * Pentagon (5 sides): (5 - 2) × 180° = 540°.
+     * Hexagon (6 sides): (6 - 2) × 180° = 720°.
+     * Octagon (8 sides): (8 - 2) × 180° = 1 080°.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['angles', 'acute obtuse reflex', 'triangle angle sum', 'quadrilateral', 'polygon angle sum', 'complementary supplementary', 'geometry']
+    },
+    {
+      id: 'g7_math_geometry_3d_solids_euler',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Geometry: 3D Solids, Nets, and Euler\'s Formula',
+      content: `Properties of 3D solids and nets in Grade 7 ZIMSEC:
+1. Faces, Edges, and Vertices:
+   - Cube: 6 square faces, 12 edges, 8 vertices.
+   - Cuboid (Rectangular Prism): 6 rectangular faces, 12 edges, 8 vertices.
+   - Square-based Pyramid: 5 faces (1 square base, 4 triangular faces), 8 edges, 5 vertices.
+   - Triangular Prism: 5 faces (2 triangular, 3 rectangular), 9 edges, 6 vertices.
+   - Cylinder: 3 faces (2 flat circular, 1 curved), 2 curved edges, 0 vertices.
+   - Cone: 2 faces (1 flat circular, 1 curved), 1 edge, 1 vertex (apex).
+   - Sphere: 1 curved face, 0 edges, 0 vertices.
+2. Euler's Formula for Polyhedra:
+   Faces + Vertices - Edges = 2  (F + V - E = 2).
+   Check for Cube: 6 + 8 - 12 = 2.
+3. Surface Area:
+   - Cube with side s: Surface Area = 6 × s².
+   - Cuboid: Surface Area = 2(lw + lh + wh).`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['3d shapes', 'solids', 'cube', 'cuboid', 'pyramid', 'cylinder', 'cone', 'euler formula', 'faces edges vertices', 'surface area']
+    },
+    {
+      id: 'g7_math_statistics_averages',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Statistics: Mean, Median, Mode, Range, and Graphs',
+      content: `Measures of Central Tendency and Data Representation:
+1. Mean (Average):
+   Mean = (Sum of all values) ÷ (Total count of values).
+   Example: Marks 12, 15, 9, 18, 11 -> Sum = 65. Count = 5. Mean = 65 ÷ 5 = 13.
+2. Median (Middle Value):
+   Arrange numbers in ascending order from smallest to largest.
+   - Odd count: The single middle number.
+     Example: 4, 9, 2, 15, 7 -> Ordered: 2, 4, 7, 9, 15 -> Median = 7.
+   - Even count: The average of the two middle numbers.
+     Example: 6, 10, 3, 8 -> Ordered: 3, 6, 8, 10 -> Median = (6 + 8) / 2 = 7.
+3. Mode:
+   The value that occurs most frequently.
+   Example: 5, 7, 5, 9, 5, 3, 7 -> Mode = 5 (occurs 3 times).
+4. Range (Spread):
+   Range = Highest Value - Lowest Value.
+   Example: 23, 45, 12, 38, 19 -> Range = 45 - 12 = 33.
+5. Pie Chart Sector Angles:
+   Sector Angle = (Frequency / Total) × 360°.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['statistics', 'mean', 'median', 'mode', 'range', 'averages', 'pie chart angle', 'frequency', 'primary math']
+    },
+    {
+      id: 'g7_math_probability',
+      level: 'Primary',
+      subject: 'Mathematics',
+      topic: 'Probability: Chance, Likelihood, and Simple Outcomes',
+      content: `Probability measures how likely an event is to occur:
+1. Probability Scale:
+   - 0 = Impossible
+   - 0.5 = Even chance (50% or 1/2, e.g. tossing heads on a fair coin)
+   - 1 = Certain
+2. Theoretical Probability Formula:
+   P(Event) = (Number of favourable outcomes) ÷ (Total number of possible outcomes).
+   Examples:
+   - Rolling an even number on a 6-sided die: Favourable {2, 4, 6} (3 outcomes).
+     P(even) = 3/6 = 1/2 (0.5 or 50%).
+   - Picking a blue marble from 5 red, 3 blue, 2 green (total 10):
+     P(blue) = 3/10 (0.3 or 30%).
+3. Complementary Rule:
+   P(Event does NOT happen) = 1 - P(Event happens).
+   Example: If P(rain) = 0.35, then P(no rain) = 1 - 0.35 = 0.65.`,
+      source: 'ZIMSEC Grade 7 Mathematics Syllabus 7020',
+      keywords: ['probability', 'chance', 'likelihood', 'probability scale', 'sample space', 'favourable outcomes', 'primary math']
+    },
+    {
+      id: 'g7_ast_pfumvudza_intwasa_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Pfumvudza / Intwasa Climate-Proofed Agriculture (ZIMSEC 7030)',
+      content: `Pfumvudza / Intwasa is Zimbabwe's climate-proofed conservation agriculture concept:
+1. Three Core Principles:
+   - Minimum / zero soil disturbance (digging basins only, no ploughing).
+   - Permanent soil cover (mulching with crop residues or veld grass).
+   - Crop rotation (alternating cereals with legumes to fix nitrogen).
+2. Standard Plot Dimensions (ZIMSEC Exam Facts):
+   - Plot size: 39 m long × 16 m wide = 624 m² (1/16th hectare).
+   - Rows: 28 rows with 52 basins each = 1,456 planting basins per plot.
+   - Basin size: 15 cm length × 15 cm width × 15 cm depth.
+   - Spacing: 60 cm between basins within rows, 75 cm between rows.
+3. Planting & Fertilizer Micro-Dosing:
+   - Basal: 1 handful manure or 1 matchbox of Compound D per basin.
+   - Seed: 3 maize seeds planted per basin, thinned to 2 plants after germination (yields 2,912 plants per plot, yielding ~1 tonne grain).
+   - Top dressing: 1 matchbox of Ammonium Nitrate (AN) at knee height (4-6 weeks).`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['pfumvudza', 'intwasa', 'conservation agriculture', 'planting basins', 'mulch', 'mulching', 'micro dosing', 'zero tillage', 'primary agriculture']
+    },
+    {
+      id: 'g7_ast_soil_science_erosion_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Soil Science: Soil Types, Fertility, and Erosion Control',
+      content: `Soil components, properties, and erosion management:
+1. Soil Types:
+   - Sandy: Large particles, rapid drainage, low water holding, leaches easily, easy to dig.
+   - Clay: Very fine particles, high water retention, poorly drained, sticky when wet, cracks deeply when dry, rich in nutrients.
+   - Loam: Balanced mix of sand, silt, clay, rich in humus; best for most crops.
+2. Soil Erosion Types:
+   - Splash: Raindrops hit bare ground.
+   - Sheet: Uniform removal of topsoil by surface runoff.
+   - Rill: Small shallow channels that can be smoothed by ploughing.
+   - Gully: Deep wide ravines (dongas) that cannot be crossed by tractors.
+3. Soil Conservation Methods:
+   - Contour ridges across slopes, vetiver grass hedgerows, terracing on hillsides, mulching, check dams in gullies, afforestation.
+4. Fertilizers:
+   - Compound D (N:P:K 7:14:7) used as basal dressing at planting for root development.
+   - Ammonium Nitrate / AN (34.5% N) used as top dressing at knee-height for leafy growth.
+   - Agricultural lime reduces soil acidity (raises soil pH).`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['soil types', 'clay', 'sand', 'loam', 'soil erosion', 'contour ridges', 'vetiver grass', 'gully', 'compound d', 'ammonium nitrate', 'primary agriculture']
+    },
+    {
+      id: 'g7_ast_crop_protection_pests_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Crop Husbandry: Pests, Diseases, and Problem Weeds',
+      content: `Pest and disease management in primary agriculture:
+1. Major Crop Pests:
+   - Fall Armyworm: Attacks maize funnel and cobs; identified by inverted 'Y' on head and 4 dots on 8th segment.
+   - Maize Stalk Borer: Bores into stem causing 'dead heart' and falling stems.
+   - Cutworms: Cut young seedlings at soil level at night.
+   - Aphids: Suck sap, transmit viral diseases (maize streak, groundnut rosette).
+   - Red Spider Mites: Fine webs under tomato leaves causing leaf bronzing.
+2. Plant Diseases:
+   - Blight (early/late): Fungal, dark lesions and white mold on tomatoes/potatoes; controlled by copper oxychloride or Dithane M45.
+   - Maize Streak Virus: Thin yellow stripes along veins, spread by leafhoppers.
+   - Damping-off: Seedlings collapse at soil level in over-watered nursery beds.
+3. Weeds:
+   - Blackjack (Tsine): Barbed seeds sticking to clothing and animal fur.
+   - Witchweed (Striga): Parasitic weed attaching to maize roots.
+   - Wandering Jew: Spreads by root fragments and seeds.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['crop pests', 'fall armyworm', 'stalk borer', 'cutworms', 'aphids', 'blight', 'blackjack', 'striga', 'weeds', 'primary agriculture']
+    },
+    {
+      id: 'g7_ast_livestock_breeds_diseases_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Animal Husbandry: Livestock Breeds and Disease Control',
+      content: `Livestock management and disease control in Zimbabwe:
+1. Breeds:
+   - Beef Cattle: Mashona (indigenous, hardy, tick/drought resistant), Tuli, Brahman.
+   - Dairy Cattle: Friesian (highest milk yield), Jersey (rich creamy milk high in butterfat).
+   - Poultry: Broilers (meat, 5-6 weeks), Layers (eggs, start laying at 18-20 weeks), Roadrunners (indigenous, hardy).
+2. The "Big Four" Tick-Borne Cattle Diseases:
+   - Heartwater: Transmitted by Bont tick; fluid around heart, high fever, nervous symptoms.
+   - Redwater (Babesiosis): Transmitted by Blue tick; red/coffee-colored urine, anemia, fever.
+   - Gall Sickness (Anaplasmosis): Transmitted by Blue tick; anemia, constipation, jaundice.
+   - January Disease (Theileriosis): Transmitted by Brown ear tick; swollen lymph nodes, high summer mortality; controlled by 5-5-4 dipping interval.
+3. Anthrax:
+   - Fatal bacterial disease. Dark tarry un-clotted blood oozes from openings.
+   - NEVER open or skin carcass! Bury at least 2 m deep with quicklime or burn completely.
+4. Newcastle Disease:
+   - Viral poultry disease. Twisted neck (torticollis), greenish diarrhea, high mortality. Prevented by Hitchner B1 and LaSota vaccination.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['livestock', 'cattle breeds', 'mashona', 'friesian', 'heartwater', 'redwater', 'gall sickness', 'january disease', 'anthrax', 'newcastle disease', 'dipping', 'primary agriculture']
+    },
+    {
+      id: 'g7_ast_simple_machines_levers_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Simple Machines: Levers, Pulleys, and Farm Tools',
+      content: `Simple machines make work easier by multiplying force or speed:
+1. Three Classes of Levers:
+   - Class 1 (Fulcrum in Middle - L-F-E): Crowbar, scissors, pliers, see-saw, claw hammer.
+   - Class 2 (Load in Middle - F-L-E): Wheelbarrow, nutcracker, bottle opener. Always a force multiplier.
+   - Class 3 (Effort in Middle - F-E-L): Spade/shovel (when lifting dirt), broom, fishing rod, tongs, tweezers. Multiplies speed and distance.
+2. Other Machines:
+   - Inclined Plane (Ramp): Sloping plane to load heavy bags onto scotch carts or lorries.
+   - Wheel and Axle: Large wheel turning small axle (windlass over well, screwdriver, steering wheel).
+   - Pulley: Fixed pulley changes direction (hoisting flag); movable pulley system halves effort.
+3. Hand Tools & Maintenance:
+   - Hoe (Badza): Digging, weeding, ridging.
+   - Spade (digging edges) vs Shovel (scooping loose dirt/manure).
+   - Maintenance: Wash off dirt, dry with cloth, oil metal blades to stop rust, sharpen cutting edges, store on racks in tool shed.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['simple machines', 'levers', 'class 1 lever', 'class 2 lever', 'class 3 lever', 'wheelbarrow', 'crowbar', 'pulley', 'farm tools', 'badza', 'primary science']
+    },
+    {
+      id: 'g7_ast_human_body_systems_diseases_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Human Body Systems and Major Communicable Diseases',
+      content: `Human anatomy, physiology, and health in Science:
+1. Body Systems:
+   - Digestive: Mouth (saliva/ptyalin), stomach (acid & pepsin), small intestine (villi absorb nutrients into blood), large intestine (water absorption), rectum/anus.
+   - Circulatory: Heart has 4 chambers (Right Atrium/Ventricle pump deoxygenated blood to lungs; Left Atrium/Ventricle pump oxygenated blood to body). Arteries carry blood away from heart under high pressure; veins carry blood back to heart with valves.
+   - Respiratory: Trachea, bronchi, alveoli (gas exchange: oxygen in, CO₂ out).
+2. Major Diseases in Zimbabwe:
+   - Malaria: Caused by Plasmodium, spread by female Anopheles mosquito. Prevention: treated mosquito nets (ITNs), residual spraying, clearing bushes and puddles.
+   - Cholera: Caused by Vibrio cholerae bacteria in contaminated water/food. Painless 'rice-water' stool, severe dehydration. Emergency ORS: 1 litre boiled water + 6 level teaspoons sugar + 1/2 teaspoon salt.
+   - Bilharzia (Schistosomiasis): Caused by Schistosoma flatworm, freshwater snail vector. Symptoms: blood in urine (haematuria). Avoid wading in stagnant water; treat with praziquantel.
+   - HIV/AIDS: Attacks CD4 white blood cells. Managed with daily Antiretroviral Therapy (ART).`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['human body', 'digestive system', 'heart', 'circulation', 'malaria', 'cholera', 'bilharzia', 'ors', 'hiv aids', 'primary science']
+    },
+    {
+      id: 'g7_ast_weather_instruments_water_cycle_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Weather Instruments, Climate, and the Water Cycle',
+      content: `Meteorology and hydrology in Primary Science:
+1. Weather Instruments:
+   - Rain Gauge: Measures rainfall in millimetres (mm). Installed 30 cm above ground away from trees.
+   - Six's Maximum & Minimum Thermometer: Measures highest day and lowest night temperatures in °C. Placed in a wooden Stevenson Screen with louvered sides.
+   - Wind Vane: Points to direction wind is blowing FROM.
+   - Anemometer: Measures wind speed in km/h or knots using rotating cups.
+   - Barometer: Measures atmospheric pressure in mb / hPa. Falling pressure indicates rain/storm.
+   - Hygrometer: Measures relative humidity using wet and dry bulbs.
+2. Water Cycle:
+   - Evaporation (water to vapor by solar heat).
+   - Transpiration (water loss from plant stomata).
+   - Condensation (vapor cools into cloud droplets).
+   - Precipitation (rain, hail falling to earth).
+   - Percolation / Infiltration (water soaking into groundwater tables).`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['weather instruments', 'rain gauge', 'thermometer', 'anemometer', 'wind vane', 'barometer', 'water cycle', 'evaporation', 'condensation', 'primary science']
+    },
+    {
+      id: 'g7_ast_ict_hardware_software_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'ICT: Computer Hardware, Software, and Cyber Hygiene',
+      content: `Information and Communication Technology in Primary Education:
+1. Hardware Classification:
+   - Input: Keyboard, mouse, microphone, scanner, webcam.
+   - Output: Monitor, printer (laser/inkjet), speakers, projector.
+   - Processing: CPU (Central Processing Unit) - contains ALU (Arithmetic Logic Unit) and Control Unit (CU).
+   - Memory: RAM (temporary, volatile working memory) vs ROM (permanent boot instructions/firmware).
+   - Storage: Hard drives (HDD/SSD), USB flash drives, memory cards.
+2. Software:
+   - System Software: Operating Systems (Windows, Android, Linux, iOS).
+   - Application Software: Word processors (typing documents), Spreadsheets (calculating and graphs), Presentation (slide decks).
+3. Cyber Safety:
+   - Keep passwords private; do not share personal details with strangers; avoid clicking unknown links; report online bullying.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030',
+      keywords: ['ict', 'hardware', 'software', 'input devices', 'output devices', 'cpu', 'ram', 'rom', 'operating system', 'cyber safety', 'primary science']
     },
     {
       id: 'g7_heritage_national_symbols',
@@ -679,38 +1207,58 @@ Rules of Debit and Credit:
 
       try {
         // Fetch primary specific JSON curriculum notes
+        // Fetch primary specific JSON curriculum notes with accurate subject mappings
         const primaryFiles = [
-          'zimsec_history_heritage_comprehensive_archive.json',
-          'zimsec_history_heritage_full_depth.json',
-          'zimsec_primary_heritage_grade7.json',
-          'zimsec_heritage_social_studies.json',
-          'zimsec_heritage_studies_grade7_topics1-3.json',
-          'zimsec_heritage_primary.json',
-          'zimsec_grade7_frme.json',
-          'zimsec_mathematics_grade7.json',
-          'zimsec_primary_math_full_depth.json',
-          'zimsec_science_technology_full_depth.json',
-          'zimsec_grade_7_agriculture_full_expanded.json',
-          'zimsec_agriculture_7grade.json',
-          'zimsec_english_junior_grades_3to7.json',
-          'zimsec_chishona_g7_full_notes.json',
-          'zimsec_chishona_g7_studyguide.json',
-          'zimsec_ndebele_grade7.json',
-          'zimsec_primary_pe_grade7.json',
-          'zimsec_ict_grade7.json'
+          { f: 'zimsec_supplement_civics_primary.json', s: 'Social Science' },
+          { f: 'zimsec_general_knowledge_current_affairs.json', s: 'Social Science' },
+          { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'Social Science' },
+          { f: 'zimsec_history_heritage_full_depth.json', s: 'Social Science' },
+          { f: 'zimsec_primary_heritage_grade7.json', s: 'Social Science' },
+          { f: 'zimsec_heritage_social_studies.json', s: 'Social Science' },
+          { f: 'zimsec_heritage_studies_grade7_topics1-3.json', s: 'Social Science' },
+          { f: 'zimsec_heritage_primary.json', s: 'Social Science' },
+          { f: 'zimsec primary_social_studies_syllabus.json', s: 'Social Science' },
+          { f: 'zimsec primary_social_studies 2.json', s: 'Social Science' },
+          { f: 'zimsec_grade7_frme.json', s: 'Social Science' },
+          { f: 'zimsec_fareme primary.json', s: 'Social Science' },
+          { f: 'zimsec_fareme.json', s: 'Social Science' },
+          { f: 'zimsec_mathematics_grade7.json', s: 'Mathematics' },
+          { f: 'zimsec_primary_math_full_depth.json', s: 'Mathematics' },
+          { f: 'zimsec_science_technology_full_depth.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_science_and_technology.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_primary_expansion_v2.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_agriculture_science_tech_grade7.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_grade_7_agriculture_full_expanded.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_agriculture_7grade.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_agriculture Primary.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_ict_grade7.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_ict primary.json', s: 'Agric, Science & Tech' },
+          { f: 'zimsec_english_junior_grades_3to7.json', s: 'English' },
+          { f: 'zimsec_grade7_english_paper1_exam_bank_150.json', s: 'English' },
+          { f: 'zimsec_grade7_english_paper2_exam_bank_150.json', s: 'English' },
+          { f: 'zimsec_chishona_g7_full_notes.json', s: 'Shona' },
+          { f: 'zimsec_chishona_g7_studyguide.json', s: 'Shona' },
+          { f: 'zimsec_chishona primary 2.json', s: 'Shona' },
+          { f: 'zimsec_ndebele_grade7.json', s: 'Shona' },
+          { f: 'zimsec_isindebele primary.json', s: 'Shona' },
+          { f: 'zimsec_isindebele Primary 1.json', s: 'Shona' },
+          { f: 'zimsec_primary_pe_grade7.json', s: 'Physical Edu & Arts' },
+          { f: 'zimsec primary _health_creative_performing_arts_syllabus.json', s: 'Physical Edu & Arts' },
+          { f: 'zimsec_pe_sport_mass_displays.json', s: 'Physical Edu & Arts' },
+          { f: 'zimsec_visual_performing_arts.json', s: 'Physical Edu & Arts' }
         ];
 
-        for (const fileName of primaryFiles) {
+        for (const item of primaryFiles) {
           try {
-            const res = await fetch(`/assets/${encodeURIComponent(fileName)}`);
+            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
             if (res.ok) {
               const data = await res.json();
               this.extractChunksUniversal(
                 data,
-                'Agric, Science & Tech',
+                item.s,
                 'Primary',
                 'ZIMSEC Grade 7 Primary Curriculum',
-                fileName,
+                item.f,
                 seenIds
               );
             }
@@ -1055,6 +1603,9 @@ Rules of Debit and Credit:
       }
       if (normLevel === 'tertiary') {
         return cLevel === 'tertiary';
+      }
+      if (normLevel === 'all') {
+        return true;
       }
       return cLevel === normLevel;
     });
