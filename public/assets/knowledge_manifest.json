@@ -1,5 +1,21 @@
 [
   {
+    "file": "zimsec_grade7_hbc_notes.json",
+    "type": "flat",
+    "count": 58,
+    "subjects": [
+      "Mathematics",
+      "Agric, Science & Tech",
+      "Social Science",
+      "Physical Edu & Arts",
+      "English",
+      "Shona"
+    ],
+    "levels": [
+      "Primary"
+    ]
+  },
+  {
     "file": "zimsec primary _health_creative_performing_arts_syllabus.json",
     "type": "nested",
     "subject": "General",

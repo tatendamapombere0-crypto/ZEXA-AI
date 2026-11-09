@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "ZEXA AI - ZIMSEC Revision & Offline AI Tutor",
+  "short_name": "ZEXA AI",
+  "description": "Zimbabwe's intelligent ZIMSEC curriculum study assistant, past exam paper bank, and offline AI revision tutor for Primary, O-Level, and A-Level students.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080d1a",
+  "theme_color": "#080d1a",
+  "icons": [
+    {
+      "src": "/assets/zexa_favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/zexa_logo_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/zexa_logo_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

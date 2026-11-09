@@ -12,7 +12,8 @@ import {
   Languages,
   Zap,
   HelpCircle,
-  Lightbulb
+  Lightbulb,
+  Bell
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus, ChatMessage } from '../types';
 import { AIEngine } from '../lib/aiEngine';
@@ -28,6 +29,7 @@ interface ChatViewProps {
   dailyLimit: number;
   onQueriesUpdated: () => void;
   onOpenPremium: () => void;
+  onOpenNotifications?: () => void;
   activeExamPrompt?: { question: string; hint?: string } | null;
   onClearActiveExamPrompt?: () => void;
 }
@@ -108,18 +110,64 @@ const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUse
       return;
     }
 
-    // 1. Heading (### Title or ## Title)
+    // Horizontal divider
+    if (line === '---' || line === '***' || line === '___') {
+      elements.push(<hr key={`hr_${index}`} className="border-t border-slate-700/60 my-2.5" />);
+      return;
+    }
+
+    // 1. Heading (### Title or ## Title vs #### Subheading)
     if (line.startsWith('#')) {
-      const headingText = line.replace(/^#+\s*/, '').replace(/\*\*/g, '');
-      elements.push(
-        <div
-          key={`head_${index}`}
-          className="font-bold text-white text-sm sm:text-base tracking-tight pt-1 pb-1.5 mb-2 border-b border-white/[0.08] flex items-center gap-2"
-        >
-          <span className="w-1.5 h-3.5 bg-cyan-400 rounded-full shrink-0" />
-          <span>{headingText}</span>
-        </div>
-      );
+      const headingLevel = (line.match(/^#+/) || ['#'])[0].length;
+      let headingText = line.replace(/^#+\s*/, '').replace(/\*\*/g, '').trim();
+
+      // Clean retrieval/syllabus prefixes (e.g. "Primary Science & Technology (ZIMSEC 7030): Osmosis" -> "Osmosis")
+      if (headingText.includes(':') && !headingText.toLowerCase().startsWith('note:')) {
+        const colonIdx = headingText.indexOf(':');
+        const prefix = headingText.slice(0, colonIdx).toLowerCase();
+        if (
+          prefix.includes('zimsec') ||
+          prefix.includes('science') ||
+          prefix.includes('biology') ||
+          prefix.includes('physics') ||
+          prefix.includes('chemistry') ||
+          prefix.includes('primary') ||
+          prefix.includes('secondary') ||
+          prefix.includes('math') ||
+          prefix.includes('english') ||
+          prefix.includes('heritage') ||
+          prefix.includes('geography') ||
+          prefix.includes('commerce') ||
+          prefix.includes('syllabus') ||
+          prefix.includes('curriculum')
+        ) {
+          headingText = headingText.slice(colonIdx + 1).trim();
+        }
+      }
+
+      if (headingLevel >= 4) {
+        // Sub-heading (e.g. #### 1. What is Osmosis?)
+        elements.push(
+          <div
+            key={`subhead_${index}`}
+            className="font-bold text-cyan-300 text-xs sm:text-[14px] tracking-tight pt-2 pb-1 flex items-center gap-1.5"
+          >
+            <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full shrink-0" />
+            <span>{headingText}</span>
+          </div>
+        );
+      } else {
+        // Main topic header (### Title)
+        elements.push(
+          <div
+            key={`head_${index}`}
+            className="font-bold text-white text-sm sm:text-base tracking-tight pt-1 pb-1.5 mb-2 border-b border-white/[0.08] flex items-center gap-2"
+          >
+            <span className="w-1.5 h-3.5 bg-cyan-400 rounded-full shrink-0" />
+            <span>{headingText}</span>
+          </div>
+        );
+      }
       return;
     }
 
@@ -143,10 +191,14 @@ const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUse
 
     // 3. Bullet list item (- or *)
     if (line.startsWith('- ') || line.startsWith('* ')) {
+      const isIndented = rawLine.startsWith('   ') || rawLine.startsWith('\t');
       const content = line.slice(2);
       elements.push(
-        <div key={`bullet_${index}`} className="flex items-start gap-2.5 my-1 text-xs sm:text-[13.5px] leading-relaxed text-slate-200 pl-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 shrink-0" />
+        <div
+          key={`bullet_${index}`}
+          className={`flex items-start gap-2 my-1 text-xs sm:text-[13.5px] leading-relaxed text-slate-200 ${isIndented ? 'pl-6 text-slate-300' : 'pl-1.5'}`}
+        >
+          <span className={`rounded-full shrink-0 ${isIndented ? 'w-1 h-1 bg-cyan-300/70 mt-2.5' : 'w-1.5 h-1.5 bg-cyan-400 mt-2'}`} />
           <div className="flex-1">{renderInline(content)}</div>
         </div>
       );
@@ -192,6 +244,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
   dailyLimit,
   onQueriesUpdated,
   onOpenPremium,
+  onOpenNotifications,
   activeExamPrompt,
   onClearActiveExamPrompt
 }) => {
@@ -254,11 +307,24 @@ export const ChatView: React.FC<ChatViewProps> = ({
     StorageManager.recordQueryUsed();
     onQueriesUpdated();
 
+    // Build multi-turn conversation history for context continuity
+    const conversationHistory = messages
+      .filter((m) => m.text && m.text.trim().length > 0)
+      .slice(-6)
+      .reduce<Array<{ question: string; answer: string }>>((acc, m, idx, arr) => {
+        if (m.isUser && arr[idx + 1] && !arr[idx + 1].isUser && arr[idx + 1].text) {
+          acc.push({ question: m.text, answer: arr[idx + 1].text });
+        }
+        return acc;
+      }, []);
+
     setIsGenerating(true);
 
     await AIEngine.generate(text, {
       level: contentLevel,
       hint,
+      history: conversationHistory,
+      engineType: 'zexa-instant',
       onToken: (token) => {
         setMessages((prev) =>
           prev.map((m) => (m.id === aiMsgId ? { ...m, text: m.text + token } : m))
@@ -452,9 +518,36 @@ export const ChatView: React.FC<ChatViewProps> = ({
             <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight mb-2">
               {levelInfo.title}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl mx-auto mb-6">
+            <p className="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl mx-auto mb-5">
               {levelInfo.desc}
             </p>
+
+            {/* Daily Harare Study Notification Card */}
+            <div className="max-w-2xl mx-auto mb-6 p-3.5 rounded-2xl bg-gradient-to-r from-cyan-950/60 via-slate-900/80 to-blue-950/60 border border-cyan-500/30 text-left flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-lg shadow-cyan-950/20">
+              <div className="flex items-start gap-2.5">
+                <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 shrink-0 mt-0.5 border border-cyan-500/20">
+                  <Bell className="w-4 h-4 animate-bounce" />
+                </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-bold text-white tracking-tight flex items-center gap-1.5">
+                    <span>Have you done your study today? Let's begin!</span>
+                  </h4>
+                  <p className="text-[11px] text-slate-300 mt-0.5 leading-snug">
+                    Daily revision hints sent to your device at <strong className="text-cyan-300">6:00 AM</strong>, <strong className="text-cyan-300">12:00 PM</strong>, and <strong className="text-cyan-300">6:00 PM</strong> Harare Time (CAT).
+                  </p>
+                </div>
+              </div>
+              {onOpenNotifications && (
+                <button
+                  type="button"
+                  onClick={onOpenNotifications}
+                  className="px-3 py-1.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/40 text-cyan-300 font-semibold text-xs whitespace-nowrap transition-all active:scale-95 flex items-center justify-center gap-1 self-start sm:self-center"
+                >
+                  <Bell className="w-3.5 h-3.5" />
+                  <span>Alert Settings</span>
+                </button>
+              )}
+            </div>
 
             {/* Categorized Question Starter Cards (Silicon Valley Grid) */}
             <div className="text-left max-w-2xl mx-auto space-y-2.5">
@@ -527,59 +620,22 @@ export const ChatView: React.FC<ChatViewProps> = ({
                 </div>
               )}
 
-              {/* Bot Meta Footer: Source, Speed, Copy */}
+              {/* Clean Action Footer: Copy Button Only */}
               {!msg.isUser && msg.text && (
-                <div className="mt-3 pt-2 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 font-mono">
-                  <div className="flex flex-wrap items-center gap-2">
-                    {msg.source && (
-                      <span className="text-cyan-400/90 font-medium">
-                        {msg.source}
-                      </span>
-                    )}
-                    {msg.source && msg.metrics && (
-                      <span className="text-slate-600">·</span>
-                    )}
-                    {msg.metrics && (
-                      <span className="text-slate-400">
-                        {msg.metrics}
-                      </span>
-                    )}
-                  </div>
-
+                <div className="mt-2 pt-1 flex items-center justify-end">
                   <button
                     onClick={() => copyToClipboard(msg.text, msg.id)}
-                    className="p-1 rounded-md hover:bg-white/[0.06] text-slate-400 hover:text-slate-200 transition-colors ml-auto"
+                    className="p-1 rounded-md hover:bg-white/[0.06] text-slate-400 hover:text-slate-200 transition-colors"
                     title="Copy Answer to Clipboard"
                   >
                     {copiedId === msg.id ? (
-                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <span className="flex items-center gap-1 text-[11px] text-emerald-400 font-sans">
+                        <Check className="w-3.5 h-3.5" /> Copied
+                      </span>
                     ) : (
                       <Copy className="w-3.5 h-3.5" />
                     )}
                   </button>
-                </div>
-              )}
-
-              {/* Interactive Follow-up Suggestion Chips (Perplexity Style) */}
-              {!msg.isUser && msg.suggestions && msg.suggestions.length > 0 && !isGenerating && (
-                <div className="mt-3 pt-2.5 border-t border-white/[0.06] space-y-1.5">
-                  <p className="text-[11px] font-mono text-cyan-400 font-semibold flex items-center gap-1">
-                    <Sparkles className="w-3 h-3 text-cyan-400" />
-                    <span>Follow-up exploration:</span>
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {msg.suggestions.map((sug, sIdx) => (
-                      <button
-                        key={sIdx}
-                        type="button"
-                        onClick={() => handleSendMessage(sug)}
-                        className="text-xs text-left px-3 py-1.5 rounded-xl bg-white/[0.03] hover:bg-cyan-500/10 border border-white/[0.08] hover:border-cyan-500/40 text-cyan-200 hover:text-white transition-all active:scale-98 shadow-sm flex items-center gap-1.5 group"
-                      >
-                        <span>{sug}</span>
-                        <ArrowUpRight className="w-3 h-3 text-slate-500 group-hover:text-cyan-400 transition-colors shrink-0" />
-                      </button>
-                    ))}
-                  </div>
                 </div>
               )}
             </div>
@@ -657,6 +713,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
           </form>
         </div>
       </div>
+
 
     </div>
   );

@@ -13,7 +13,8 @@ import {
   Cpu, 
   RotateCcw,
   CheckCircle2,
-  Crown
+  Crown,
+  Bell
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
 import { StorageManager } from '../lib/storage';
@@ -29,6 +30,7 @@ interface SettingsModalProps {
   dailyLimit: number;
   onOpenLevelSelect: () => void;
   onOpenPremium: () => void;
+  onOpenNotifications?: () => void;
   onResetQueries: () => void;
   onClearChat: () => void;
   onLogout: () => void;
@@ -44,6 +46,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   dailyLimit,
   onOpenLevelSelect,
   onOpenPremium,
+  onOpenNotifications,
   onResetQueries,
   onClearChat,
   onLogout
@@ -294,7 +297,39 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </div>
         </div>
 
-        {/* 5. ACADEMIC CALENDAR */}
+        {/* 5. DAILY STUDY REMINDERS (HARARE TIME: 6:00 AM, 12:00 PM, 6:00 PM) */}
+        <div className="p-4 rounded-2xl glass-panel space-y-2.5">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
+              <Bell className="w-4 h-4" /> Daily Study Reminders
+            </div>
+            {onOpenNotifications && (
+              <button
+                type="button"
+                onClick={onOpenNotifications}
+                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/60 transition-all flex items-center gap-1"
+              >
+                <span>Manage Alerts</span>
+              </button>
+            )}
+          </div>
+          <p className="text-xs text-slate-300">
+            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> Harare Time (CAT).
+          </p>
+          <div className="flex flex-wrap gap-2 pt-0.5">
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
+              🌅 06:00 CAT
+            </span>
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
+              ☀️ 12:00 CAT
+            </span>
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
+              🌙 18:00 CAT
+            </span>
+          </div>
+        </div>
+
+        {/* 6. ACADEMIC CALENDAR */}
         <div className="p-4 rounded-2xl glass-panel space-y-1.5">
           <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
             <Calendar className="w-4 h-4" /> Academic Calendar Status

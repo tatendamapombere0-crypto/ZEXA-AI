@@ -10,6 +10,8 @@ export type ContentLevel = 'Primary' | 'O-Level' | 'A-Level' | 'Tertiary';
 
 export type SubscriptionStatus = 'FREE' | 'PREMIUM' | 'HOLIDAY_FREE';
 
+export type AIEngineType = 'zexa-instant';
+
 export interface KnowledgeChunk {
   id: string;
   level: string;
@@ -18,6 +20,11 @@ export interface KnowledgeChunk {
   content: string;
   source: string;
   keywords: string[];
+  summary?: string;
+  hasVisual?: boolean;
+  diagramId?: string | null;
+  visualTitle?: string | null;
+  visualCaption?: string | null;
 }
 
 export interface ExamOption {

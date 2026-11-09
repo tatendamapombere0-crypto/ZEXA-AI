@@ -1,308 +1,1056 @@
 {
-  "subject": "Science and Technology (Environmental Science)",
-  "curriculum": "Zimbabwe Ministry of Primary and Secondary Education (MoPSE) - Junior Grade 3-7 / Infant ECD-Grade 2",
-  "confidence_flag": "IMPORTANT: Unlike the Mathematics and English Language files, this file's grade-by-grade placement and exact syllabus wording could NOT be verified against the official MoPSE Science and Technology Junior (Grade 3-7) scope-and-sequence document - that PDF was not accessible via search or fetch (JS-gated ZIMSEC site, login-walled Scribd, binary CourseHero). The SUBJECT NAME, its known strand structure (Living Things, Materials, Energy and Forces, Earth and Space, Technology/ICT, Health and Hygiene), and its place in the Junior curriculum are confirmed from multiple independent sources. The underlying SCIENCE FACTS in each chunk are accurate, standard curriculum content and safe to use for answering student questions. What is NOT verified: which exact grade each topic is first introduced at in Zimbabwe specifically, and the precise official wording/sequencing. Treat grade labels here as reasonable estimates based on common junior-science progression (simple/concrete concepts in Grade 3, building to more abstract/quantitative treatment by Grade 7), not as confirmed MoPSE placements. Swap this file for a verified one once the official PDF is obtained.",
-  "generated": "2026-08-22",
+  "subject": "Agriculture, Science and Technology",
+  "curriculum": "ZIMSEC Grade 7 Primary Heritage-Based Curriculum (Syllabus 7030)",
+  "confidence_flag": "HIGH_VERIFIED",
+  "generated": "2026-11-05",
+  "total_topics": 52,
   "chunks": [
     {
-      "id": "sci-living-001",
-      "strand": "Living Things",
-      "topic": "Living vs Non-Living Things",
-      "grade_estimate": "Grade 3",
-      "content": "Living things share seven key life processes, often remembered by the acronym MRS GREN: Movement, Respiration, Sensitivity (responding to surroundings), Growth, Reproduction, Excretion (getting rid of waste), and Nutrition (taking in food/energy). A thing is classified as living if it can do all of these over its lifetime. Non-living things (rocks, water, a chair, a car) may show one or two of these features (a car 'moves' and 'excretes' exhaust) but not all seven, and they do not grow, reproduce, or respond to stimuli on their own the way living organisms do.",
-      "learning_activities": [
-        "Sorting picture cards of objects into living and non-living groups",
-        "Testing objects in the local environment against the MRS GREN criteria",
-        "Discussing borderline cases such as seeds or dormant organisms"
-      ],
-      "keywords": ["living things", "non-living things", "MRS GREN", "life processes", "grade 3"]
+      "id": "sci-respiratory-system-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Respiratory System: Parts, Functions, Diseases & Air Pollution",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Body:\n1. Parts of the Respiratory System:\n   - Nose / Nasal Cavity: Warms, moistens, and filters incoming air using mucus and microscopic hairs (cilia).\n   - Pharynx & Larynx: Throat passage and voice box containing vocal cords that vibrate to produce sound.\n   - Trachea (Windpipe): Strong tube reinforced with C-shaped rings of cartilage that prevent it from collapsing during inhalation.\n   - Bronchi (singular: Bronchus): Two main branches leading from the trachea into the right and left lungs.\n   - Bronchioles: Smaller branching tubes within the lungs distributing air to all areas.\n   - Alveoli (Air Sacs): Millions of microscopic, thin-walled, moist air sacs surrounded by blood capillaries where gas exchange takes place by diffusion.\n   - Diaphragm: Large, dome-shaped sheet of muscle separating the chest cavity from the abdomen.\n   - Ribs and Intercostal Muscles: Bone cage and muscles that move upward and outward during inhalation to expand chest volume.\n\n2. Functions of Respiratory Parts:\n   - Gas Exchange in Alveoli: Oxygen diffuses from alveoli into red blood cells (binding with hemoglobin); carbon dioxide and water vapor diffuse from blood into alveoli to be exhaled.\n   - Adaptations of Alveoli for Gas Exchange:\n     * Enormous total surface area (over 100 square meters in adults).\n     * Extremely thin walls (only one cell thick) providing a short diffusion distance.\n     * Dense network of surrounding blood capillaries.\n     * Moist inner lining allowing gases to dissolve before diffusing.\n\n3. Respiratory Diseases:\n   - Asthma: Chronic allergic inflammation causing airways (bronchioles) to swell, narrow, and produce excess sticky mucus; triggered by dust, cold air, smoke, and pollen.\n   - Bronchitis: Inflammation of the mucous membrane in the bronchial tubes, causing persistent coughing and phlegm.\n   - Pneumonia: Severe bacterial or viral infection causing fluid and pus to fill the alveoli in one or both lungs.\n   - Tuberculosis (TB): Bacterial infection caused by Mycobacterium tuberculosis, causing chronic cough, blood-stained sputum, fever, night sweats, and weight loss.\n   - Influenza (Flu) & Common Cold: Viral infections causing sore throat, runny nose, sneezing, and fever.\n\n4. Effects of Air Pollution on the Respiratory System:\n   - Smoke, dust, and particulate soot paralyze and destroy cilia in the trachea, preventing the clearance of mucus and trapped germs.\n   - Sulfur dioxide (SO2) and nitrogen oxides (NOx) irritate respiratory linings and trigger severe asthma attacks.\n   - Carbon monoxide (CO) binds irreversibly to blood hemoglobin, blocking oxygen transport to the brain and body cells, causing dizziness, suffocation, and death in enclosed rooms (such as sleeping with a burning charcoal brazier / mbaura).\n   - Long-term exposure to polluted air causes chronic obstructive pulmonary disease (COPD) and lung cancer.",
+      "keywords": [
+        "respiratory system",
+        "parts of the respiratory system",
+        "functions of parts of the respiratory system",
+        "respiratory diseases",
+        "effects of air pollution to the respiratory system",
+        "lungs",
+        "alveoli",
+        "trachea",
+        "bronchi",
+        "bronchioles",
+        "diaphragm",
+        "gas exchange",
+        "asthma",
+        "pneumonia",
+        "bronchitis",
+        "tuberculosis"
+      ]
     },
     {
-      "id": "sci-living-002",
-      "strand": "Living Things",
-      "topic": "Classifying Plants and Animals",
-      "grade_estimate": "Grade 3 to Grade 4",
-      "content": "Living things are broadly classified into the plant kingdom and animal kingdom. Animals are further grouped into vertebrates (with a backbone: mammals, birds, reptiles, amphibians, fish) and invertebrates (without a backbone: insects, spiders, worms, molluscs). Plants are grouped into flowering plants and non-flowering plants (such as ferns and mosses). Classification is based on shared observable characteristics: mammals have fur/hair and feed young on milk; birds have feathers and lay hard-shelled eggs; reptiles have dry scaly skin; amphibians live both in water and on land and have moist skin; fish live in water and breathe through gills.",
-      "learning_activities": [
-        "Sorting local animals into vertebrate groups by their features",
-        "Building a simple classification key for plants and animals found around the school",
-        "Comparing an insect (6 legs, 3 body parts) with a spider (8 legs, 2 body parts)"
-      ],
-      "keywords": ["classification", "vertebrates", "invertebrates", "mammals", "birds", "reptiles", "amphibians", "fish", "insects"]
+      "id": "sci-circulatory-system-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Circulatory System: Heart, Blood Vessels & Double Circulation",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Body:\n1. Parts of the Circulatory System:\n   - The Heart: A muscular, four-chambered pumping organ located in the chest cavity, tilted slightly to the left.\n     * Right Atrium: Receives deoxygenated blood from the body through the vena cava.\n     * Right Ventricle: Pumps deoxygenated blood to the lungs through the pulmonary artery.\n     * Left Atrium: Receives freshly oxygenated blood from the lungs through the pulmonary vein.\n     * Left Ventricle: Pumps oxygen-rich blood under high pressure to the entire body through the aorta (has the thickest muscular wall).\n     * Valves: Tricuspid, bicuspid, and semi-lunar valves prevent backflow of blood.\n     * Septum: Central muscular wall separating the left and right sides of the heart to prevent mixing of oxygenated and deoxygenated blood.\n   - Blood Vessels:\n     * Arteries: Carry blood AWAY from the heart; have thick, elastic, muscular walls; transport blood under high pressure; do not have valves.\n     * Veins: Carry blood TOWARDS the heart; have thinner walls and wide lumen; carry blood under low pressure; contain semi-lunar valves to prevent backflow.\n     * Capillaries: Microscopic vessels connecting arteries to veins; walls are only one cell thick to allow rapid exchange of oxygen, glucose, and waste products with body tissues.\n   - Blood Components:\n     * Red Blood Cells: Biconcave discs with no nucleus containing hemoglobin to carry oxygen.\n     * White Blood Cells: Defend the body by engulfing pathogens (phagocytes) or producing antibodies (lymphocytes).\n     * Platelets: Cell fragments that initiate blood clotting to stop bleeding at wounds.\n     * Plasma: Liquid portion (90% water) carrying dissolved nutrients, urea, carbon dioxide, hormones, and heat.\n\n2. Explanation of the Circulatory System (Double Circulation):\n   - Humans have a double circulatory system: blood passes through the heart TWICE during each complete circuit of the body.\n   - Pulmonary Circulation: The right ventricle pumps deoxygenated blood to the lungs; gas exchange occurs (absorbs O2, releases CO2); oxygenated blood returns to the left atrium.\n   - Systemic Circulation: The left ventricle pumps oxygenated blood under high pressure through the aorta to the rest of the body cells for respiration; deoxygenated blood returns via the vena cava to the right atrium.",
+      "keywords": [
+        "circulatory system",
+        "naming the parts of the circulatory system",
+        "explain the circulatory system",
+        "heart",
+        "blood vessels",
+        "arteries",
+        "veins",
+        "capillaries",
+        "double circulation",
+        "red blood cells",
+        "white blood cells",
+        "platelets",
+        "plasma",
+        "aorta",
+        "pulmonary artery",
+        "pulmonary vein",
+        "vena cava"
+      ]
     },
     {
-      "id": "sci-living-003",
-      "strand": "Living Things",
-      "topic": "Parts of a Flowering Plant and Their Functions",
-      "grade_estimate": "Grade 3 to Grade 4",
-      "content": "A typical flowering plant has roots (anchor the plant and absorb water and minerals from the soil), a stem (supports the plant and transports water/nutrients between roots and leaves), leaves (make food through photosynthesis, using sunlight, water and carbon dioxide to produce glucose and oxygen), and flowers (the reproductive part, containing male parts - stamens producing pollen - and female parts - the pistil/carpel, which develops into fruit containing seeds after fertilisation).",
-      "learning_activities": [
-        "Dissecting a flower to identify and label its parts",
-        "Growing bean seeds and observing root, stem and leaf development",
-        "Diagramming water's path from roots to leaves"
-      ],
-      "keywords": ["plant parts", "roots", "stem", "leaves", "flowers", "photosynthesis", "pollination"]
+      "id": "sci-food-safety-handling",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Food Safety: Safe Food Handling Practices and Importance",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Food Safety:\n1. Definition of Food Safety:\n   - Food safety refers to the scientific handling, preparation, and storage of food in ways that prevent foodborne illness, contamination, and food poisoning.\n\n2. Importance of Food Safety:\n   - Protects human health by preventing infection by disease-causing pathogens (bacteria, viruses, fungi, parasites).\n   - Prevents outbreaks of foodborne illnesses such as cholera, salmonellosis, dysentery, and typhoid.\n   - Prevents nutrient degradation and food spoilage, reducing family and national food waste.\n   - Ensures food maintains its nutritional value, taste, and freshness.\n\n3. Safe Food Handling Practices:\n   - Cleanliness: Wash hands with clean running water and soap before touching food, after using the toilet, and after handling raw meat. Wash all kitchen utensils, chopping boards, and work surfaces with detergent.\n   - Prevent Cross-Contamination: Keep raw meat, poultry, and fish completely separate from cooked food and fresh vegetables. Use separate cutting boards and knives for raw meat and ready-to-eat foods.\n   - Thorough Cooking: Cook food thoroughly, especially meat, poultry, and seafood, ensuring the core temperature reaches at least 70°C to kill harmful bacteria. Reheat previously cooked food until steaming hot throughout.\n   - Safe Temperature Storage: Keep food cold below 5°C (in a refrigerator) or very hot above 60°C. Never leave cooked food at room temperature for more than 2 hours (the temperature danger zone is 5°C to 60°C, where bacteria multiply rapidly).\n   - Safe Water and Raw Materials: Use clean, treated or boiled water for cooking and washing fruits. Check expiry dates and never use swollen, dented, or rusted food cans.",
+      "keywords": [
+        "food safety",
+        "define food safety",
+        "outline the importance of food safety",
+        "explain safe food handling practices",
+        "food hygiene",
+        "cross-contamination",
+        "safe temperature",
+        "food handling"
+      ]
     },
     {
-      "id": "sci-living-004",
-      "strand": "Living Things",
-      "topic": "Photosynthesis",
-      "grade_estimate": "Grade 4 to Grade 5",
-      "content": "Photosynthesis is the process by which green plants make their own food. Using chlorophyll (the green pigment in leaves) to capture energy from sunlight, plants combine carbon dioxide (taken in from the air through tiny pores called stomata) with water (absorbed by the roots) to produce glucose (a sugar used for energy and growth) and oxygen (released back into the air as a by-product). The word equation is: carbon dioxide + water --(sunlight, chlorophyll)--> glucose + oxygen. This process is essential for nearly all life on Earth, since it is the primary source of atmospheric oxygen and the base of most food chains.",
-      "learning_activities": [
-        "Testing a leaf for starch (a product of photosynthesis) using iodine solution",
-        "Demonstrating that a plant kept in the dark makes less starch than one in sunlight",
-        "Drawing and labelling the photosynthesis word equation"
-      ],
-      "keywords": ["photosynthesis", "chlorophyll", "carbon dioxide", "oxygen", "glucose", "stomata", "sunlight"]
+      "id": "sci-noise-pollution-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Environmental Health: Noise Pollution Sources, Effects & Reduction",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Definition of Noise Pollution:\n   - Noise pollution is the presence of excessive, disturbing, or unwanted sound in the environment that causes discomfort, stress, or harm to human health and wildlife.\n\n2. Sources of Noise Pollution:\n   - Transportation: Honking horns, screeching brakes, revving vehicle engines, aeroplanes taking off and landing, trains.\n   - Industrial and Commercial: Grinding mills (chigayo), diesel generators, metal fabrication workshops, factory machinery.\n   - Construction and Mining: Rock blasting, jackhammers, earthmoving bulldozers, concrete mixers.\n   - Social and Domestic: High-volume open-air loudspeakers at religious gatherings, music systems in beerhalls, barking dogs, lawnmowers.\n\n3. Effects of Noise Pollution:\n   - Human Health Effects:\n     * Hearing impairment, partial deafness, and temporary or permanent tinnitus (ringing in the ears).\n     * High blood pressure (hypertension) and elevated heart rates caused by constant noise stress.\n     * Sleep disturbance (insomnia), fatigue, mental agitation, and irritability.\n     * Decreased concentration and poor academic performance in schoolchildren whose schools are near busy roads.\n   - Environmental and Animal Effects: Disorients animals, interferes with bird mating calls, and drives wildlife away from their natural habitats.\n\n4. Ways of Reducing Noise Pollution:\n   - Legislation: Enforcing local council municipal by-laws against excessive noise and playing loud music at night.\n   - Engineering Solutions: Installing noise silencers on vehicle exhaust pipes and diesel generator units; soundproofing factory walls.\n   - Urban Planning: Planting belts of green trees and dense hedges along highways and around schools to act as natural acoustic buffers that absorb sound waves.\n   - Personal Protection: Wearing earplugs or earmuffs when operating noisy machines (e.g. lawnmowers, grinding mills).\n   - Social Discipline: Keeping volume on household radios, televisions, and party speakers at moderate levels.",
+      "keywords": [
+        "noise pollution",
+        "define noise pollution",
+        "list sources of noise pollution",
+        "explain effects of noise pollution",
+        "list ways of reducing noise pollution",
+        "hearing loss",
+        "sound buffers"
+      ]
     },
     {
-      "id": "sci-living-005",
-      "strand": "Living Things",
-      "topic": "Life Cycles",
-      "grade_estimate": "Grade 3 to Grade 5",
-      "content": "Living things go through a life cycle - a series of stages from birth/germination to death, often including reproduction. A butterfly's life cycle has four stages: egg, larva (caterpillar), pupa (chrysalis), and adult butterfly - a process called complete metamorphosis. A frog's life cycle (also metamorphosis) goes egg, tadpole (with gills, living in water), tadpole growing legs, and adult frog (with lungs, living on land and water). A flowering plant's life cycle goes seed, germination, seedling, mature plant, flowering, pollination and fertilisation, and seed production, which restarts the cycle.",
-      "learning_activities": [
-        "Sequencing picture cards of the butterfly or frog life cycle",
-        "Growing and recording the germination and growth stages of a bean plant",
-        "Comparing complete metamorphosis (butterfly) with incomplete metamorphosis (grasshopper, which has no pupa stage)"
-      ],
-      "keywords": ["life cycle", "metamorphosis", "germination", "tadpole", "caterpillar", "pupa", "pollination"]
+      "id": "sci-emotional-intelligence-health",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Emotional Intelligence and Emotional Health",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Health & Unhu/Ubuntu:\n1. Definition of Emotional Intelligence (EQ):\n   - Emotional Intelligence is the ability to recognize, understand, express, and constructively manage one's own emotions, while also recognizing and responding empathetically to the emotions of others.\n\n2. Components of Emotional Intelligence:\n   - Self-Awareness: Recognizing one's own emotions, strengths, limitations, values, and how one's moods affect others.\n   - Self-Regulation: The ability to manage impulsive feelings and behaviors, stay calm under provocation, adapt to change, and think before acting.\n   - Motivation: An internal drive to learn, improve, set goals, and persevere through difficulties without giving up easily.\n   - Empathy: Understanding and sharing the feelings, perspectives, and experiences of other people (feeling compassion).\n   - Social Skills: The ability to communicate clearly, resolve conflicts amicably, build positive friendships, and cooperate in teams.\n\n3. Demonstrating Social Skills:\n   - Practicing polite respectful communication (greeting elders and peers according to cultural values of Unhu/Ubuntu).\n   - Active listening without interrupting when someone else is speaking.\n   - Apologizing sincerely when wrong and accepting constructive feedback gracefully.\n   - Resolving peer disagreements through discussion and compromise rather than physical violence or insults.\n\n4. Self-Awareness and Self-Regulation in Everyday Situations:\n   - Definition of Self-Awareness: Conscious knowledge of one's own character, feelings, motives, and desires.\n   - Importance of Self-Awareness: Helps a learner understand their emotional triggers (e.g. what makes them angry or anxious), enabling them to make responsible choices.\n   - Reacting to Challenging Situations: Stop, take a deep breath, assess the situation calmly, and choose a peaceful constructive response.\n   - Definition of Self-Regulation: The practice of controlling one's thoughts, emotional outbursts, and actions in stressful moments.\n   - Techniques for Self-Regulation: Deep diaphragmatic breathing (counting to 10), walking away from heated arguments to cool down, positive self-talk, and speaking to a trusted counsellor, parent, or teacher.\n\n5. Emotional Health and Coping Mechanisms:\n   - Definition: A state of emotional well-being where an individual can navigate stress, express feelings appropriately, and maintain positive relationships.\n   - Signs of Emotional Health: High self-esteem, optimistic outlook, capacity to handle setbacks, strong social connections.\n   - Factors Influencing Emotional Health: Family environment, peer relationships, school pressure, physical health, sleep quality.\n   - Coping Mechanisms: Engaging in sports and games, creative arts (drawing, singing), writing feelings in a journal, prayer or meditation, and seeking guidance when overwhelmed.",
+      "keywords": [
+        "emotional intelligence",
+        "discuss components of emotional intelligence",
+        "demonstrate social skills",
+        "define emotional intelligence",
+        "explain various emotions",
+        "define self- awareness",
+        "importance of self- awareness",
+        "how to react to various situations",
+        "define self-regulation",
+        "importance of self- regulation",
+        "self- regulation techniques",
+        "emotional health",
+        "define emotional health",
+        "signs of emotional health",
+        "factors influencing emotional health",
+        "emotional health copying mechanisms",
+        "unhu",
+        "ubuntu"
+      ]
     },
     {
-      "id": "sci-living-006",
-      "strand": "Living Things",
-      "topic": "Human Body Systems",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "The human body is organised into systems that work together. The skeletal system (bones) supports the body and protects internal organs (e.g. the skull protects the brain, the ribcage protects the heart and lungs). The muscular system works with bones to produce movement. The digestive system (mouth, oesophagus, stomach, small and large intestines) breaks down food into nutrients the body can absorb and use. The circulatory system (heart, blood vessels, blood) pumps blood around the body to deliver oxygen and nutrients and remove waste. The respiratory system (nose, trachea, lungs) takes in oxygen and removes carbon dioxide through breathing. The nervous system (brain, spinal cord, nerves) controls and coordinates the body's actions and senses.",
-      "learning_activities": [
-        "Labelling a diagram of the human skeleton and naming major bones",
-        "Measuring pulse rate before and after exercise to observe the circulatory system at work",
-        "Tracing the path of food through the digestive system on a diagram"
-      ],
-      "keywords": ["human body", "skeletal system", "muscular system", "digestive system", "circulatory system", "respiratory system", "nervous system"]
+      "id": "sci-chronic-diseases-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Chronic Diseases: Types, Causes, Prevention and Management",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Health and Diseases:\n1. Definition of Chronic Diseases:\n   - Chronic diseases are long-lasting medical conditions that develop gradually over time, persist for months, years, or a lifetime, are non-communicable (cannot spread from one person to another), and require ongoing medical care and healthy lifestyle management.\n\n2. Types of Chronic Diseases in Zimbabwe:\n   - Hypertension (High Blood Pressure): Chronic pressure of blood against artery walls consistently above 140/90 mmHg; known as the \"silent killer\" because it has no early symptoms.\n   - Diabetes Mellitus: Chronic metabolic disorder where the pancreas produces insufficient insulin (or cells become resistant to insulin), causing abnormally high blood glucose levels.\n   - Asthma: Chronic inflammatory condition of the airways (bronchi/bronchioles) characterized by wheezing, chest tightness, and breathing difficulty.\n   - Cancer: Uncontrolled division and multiplication of abnormal body cells that form tumors and destroy surrounding healthy tissues (e.g. cervical cancer, breast cancer, prostate cancer, lung cancer).\n   - Sickle Cell Anaemia: Inherited genetic chronic blood disorder where red blood cells become crescent/sickle-shaped, fragile, and block capillaries, causing severe pain and anemia.\n   - Cardiovascular / Heart Diseases: Narrowing of coronary blood vessels due to fatty deposits (cholesterol), increasing the risk of heart attacks and strokes.\n\n3. Causes and Risk Factors of Chronic Diseases:\n   - Unhealthy Diet: High intake of processed foods rich in refined sugars, excessive table salt, and saturated/trans fats.\n   - Physical Inactivity: Sedentary lifestyle with little or no daily exercise.\n   - Obesity: Excess body fat placing strain on the heart, joints, and pancreas.\n   - Tobacco and Alcohol Abuse: Cigarette smoking damages blood vessels and lung tissue; alcohol harms the liver and raises blood pressure.\n   - Genetics and Family History: Inherited predispositions to diabetes, cancer, or hypertension.\n   - Environmental Toxins: Prolonged exposure to toxic industrial fumes, asbestos, and pesticide chemicals.\n\n4. Prevention and Management of Chronic Diseases:\n   - Prevention:\n     * Eat a balanced, heritage-rich diet featuring traditional whole grains (sorghum, rapoko, mhunga), fresh green leafy vegetables (muriwo wetsunga, mufushwa), and legumes.\n     * Engage in at least 30 to 60 minutes of moderate physical activity daily (walking, running, sports, gardening).\n     * Avoid smoking tobacco, shisha, and abusing alcohol.\n     * Drastically reduce table salt intake to prevent hypertension and cut sugary foods/drinks to prevent diabetes.\n   - Management:\n     * Take prescribed medications regularly without skipping (e.g. daily antihypertensive tablets, insulin injections for diabetes, bronchodilator inhalers for asthma).\n     * Routine medical check-ups to monitor blood pressure, blood glucose levels, and body mass index (BMI).\n     * Stress management through relaxation, counselling, and restful sleep.",
+      "keywords": [
+        "chronic diseases",
+        "define chronic diseases",
+        "identify types of chronic diseases",
+        "explain causes of chronic diseases",
+        "discuss prevention and management",
+        "hypertension",
+        "diabetes",
+        "asthma",
+        "cancer",
+        "sickle cell",
+        "non-communicable diseases"
+      ]
     },
     {
-      "id": "sci-living-007",
-      "strand": "Living Things",
-      "topic": "Food Chains and Food Webs",
-      "grade_estimate": "Grade 5 to Grade 6",
-      "content": "A food chain shows how energy passes from one living thing to another, starting with a producer (a green plant, which makes its own food via photosynthesis), then to a primary consumer (herbivore, which eats plants), then a secondary consumer (carnivore/omnivore, which eats the herbivore), and sometimes a tertiary consumer (top predator). Arrows in a food chain point in the direction energy flows (e.g. grass -> grasshopper -> frog -> snake -> eagle). A food web shows how multiple food chains in an ecosystem interconnect, since most animals eat and are eaten by more than one other species. Decomposers (bacteria, fungi) break down dead organisms and waste, returning nutrients to the soil.",
-      "learning_activities": [
-        "Constructing a food chain from a set of local plants and animals",
-        "Building a food web by connecting several overlapping food chains",
-        "Discussing what happens to a food chain/web if one species is removed"
-      ],
-      "keywords": ["food chain", "food web", "producer", "consumer", "predator", "prey", "decomposer", "ecosystem"]
+      "id": "sci-epidemic-diseases-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Epidemic Diseases: Types, Causes, Prevention and Control",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Disease Control:\n1. Definition of Epidemic Diseases:\n   - An epidemic disease is an infectious disease that rapidly spreads among a large number of people within a specific community, region, or population in an unusually short period of time. (When it spreads worldwide across multiple continents, it is termed a Pandemic).\n\n2. Types of Epidemic Diseases in Zimbabwe and Africa:\n   - Cholera: Acute, severe bacterial infection of the gut caused by Vibrio cholerae, causing profuse painless watery diarrhea (\"rice-water stools\") and rapid fatal dehydration.\n   - Typhoid Fever: Severe bacterial infection caused by Salmonella typhi, causing prolonged high fever, abdominal pain, headache, and rose-colored spots.\n   - Measles (Gwirikwiti): Highly contagious viral respiratory illness causing high fever, cough, red watery eyes, and a generalized red blotchy skin rash.\n   - COVID-19: Severe respiratory illness caused by the SARS-CoV-2 coronavirus, causing fever, dry cough, loss of smell/taste, and shortness of breath.\n   - Malaria: Mosquito-borne infectious disease caused by Plasmodium parasites transmitted by female Anopheles mosquitoes, causing recurrent chills, fever, and sweating.\n   - Dysentery: Bacterial or amoebic intestinal infection causing severe diarrhea accompanied by blood and mucus in the stool.\n\n3. Causes and Modes of Transmission:\n   - Contaminated Water and Food: Ingesting water or food contaminated with human feces containing bacteria (cholera, typhoid, dysentery).\n   - Airborne Droplets: Inhaling respiratory droplets released when an infected person coughs, sneezes, or talks (measles, COVID-19, influenza).\n   - Vector Transmission: Being bitten by infected insect vectors (female Anopheles mosquitoes for malaria).\n   - Poor Sanitation & Overcrowding: Lack of safe Blair toilets, open defecation, burst sewer pipes, and crowded living conditions.\n\n4. Prevention and Control Measures:\n   - Safe Water Supply: Treat drinking water by boiling for at least 1 minute or using water treatment chemicals (e.g. WaterGuard, chlorine tablets).\n   - Sanitation and Waste Disposal: Construct and use ventilated improved pit (Blair) latrines; repair burst sewer lines immediately; stop open defecation.\n   - Mass Immunization: Vaccinating all infants and children against measles, polio, and COVID-19 to build herd immunity.\n   - Vector Control: Sleeping under insecticide-treated mosquito nets (ITNs), indoor residual spraying (IRS), and clearing stagnant water around homes to destroy mosquito breeding sites.\n   - Isolation and Contact Tracing: Rapidly isolate infected individuals in specialized treatment clinics to prevent transmission to family and community members.\n   - Public Health Education: Teach handwashing with clean running water and soap before meals and after visiting the toilet.",
+      "keywords": [
+        "epidemic diseases",
+        "define epidemic diseases",
+        "identify types of epidemic diseases",
+        "explain causes of epidemic diseases",
+        "suggest ways of preventing and controlling epidemic diseases",
+        "cholera",
+        "typhoid",
+        "measles",
+        "covid-19",
+        "malaria",
+        "isolation",
+        "sanitation"
+      ]
     },
     {
-      "id": "sci-living-008",
-      "strand": "Living Things",
-      "topic": "Health, Hygiene and Nutrition",
-      "grade_estimate": "Grade 3 to Grade 7 (progressive)",
-      "content": "A balanced diet includes carbohydrates (energy, e.g. sadza, rice, bread), proteins (growth and repair, e.g. meat, beans, fish, eggs), fats (energy storage and insulation), vitamins and minerals (regulating body processes, e.g. from fruits and vegetables), and water. Good personal hygiene practices - regular hand washing (especially before eating and after using the toilet), bathing, brushing teeth, and keeping nails short and clean - prevent the spread of disease-causing germs (bacteria, viruses, fungi, parasites). Common ways diseases spread include contaminated water and food, unwashed hands, insect bites (e.g. malaria from mosquitoes), and contact with an infected person.",
-      "learning_activities": [
-        "Sorting foods into a balanced-diet food group chart",
-        "Demonstrating correct handwashing technique and explaining why it matters",
-        "Discussing how common local diseases (e.g. malaria, diarrhoea) spread and can be prevented"
-      ],
-      "keywords": ["balanced diet", "nutrition", "hygiene", "handwashing", "disease prevention", "carbohydrates", "proteins", "vitamins"]
+      "id": "sci-human-reproductive-system-puberty",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Human Reproductive System, Gestation, Puberty & Personal Hygiene",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Growth and Reproduction:\n1. Parts of the Human Reproductive System:\n   - Male Reproductive System:\n     * Testes (singular: Testis): Paired organs located inside the scrotum that produce male gametes (sperm cells) and the male hormone testosterone.\n     * Scrotum: External sac of skin holding the testes at a temperature slightly cooler than body temperature (around 35°C), which is optimal for sperm production.\n     * Sperm Duct (Vas Deferens): Tube carrying mature sperm from the testes to the urethra.\n     * Prostate Gland and Seminal Vesicles: Produce nutrient-rich seminal fluid that nourishes and activates sperm (forming semen).\n     * Urethra: Tube running through the penis that carries both semen and urine out of the body (at different times).\n     * Penis: Organ that delivers semen into the female vagina during sexual intercourse.\n   - Female Reproductive System:\n     * Ovaries: Paired organs that store and release female gametes (ova / egg cells) and produce estrogen and progesterone hormones.\n     * Fallopian Tubes (Oviducts): Tubes connecting ovaries to the uterus; the normal site of fertilization where sperm meets the ovum.\n     * Uterus (Womb): Pear-shaped muscular organ where a fertilized egg implants and develops into a baby during pregnancy.\n     * Cervix: Lower muscular neck of the uterus connecting to the vagina; dilates during childbirth.\n     * Vagina (Birth Canal): Muscular canal receiving the penis during intercourse and serving as the passage for the baby during birth and menstrual flow.\n\n2. Gestation Period in Humans:\n   - Definition: The gestation period is the time between fertilization of the ovum by a sperm cell and the birth of the baby.\n   - Duration in Humans: Approximately 9 calendar months, 40 weeks, or 280 days.\n   - Stages: Fertilization -> Zygote -> Embryo (first 8 weeks, organs form) -> Foetus (from 9 weeks until birth, growth and maturation). The developing baby receives oxygen and nutrients from the mother's blood through the placenta and umbilical cord.\n\n3. Puberty and Physical Changes:\n   - Definition of Puberty: The developmental stage during adolescence (usually ages 10 to 16) when the reproductive organs mature and the body becomes capable of sexual reproduction.\n   - Physical Changes in Boys:\n     * Voice deepens (\"breaks\") as the larynx enlarges.\n     * Growth of facial hair (beard, mustache), underarm hair, and pubic hair.\n     * Broadening of the shoulders and chest; muscle development.\n     * Enlargement of the testes, scrotum, and penis.\n     * Occurrence of nocturnal emissions (\"wet dreams\").\n   - Physical Changes in Girls:\n     * Enlargement and development of breasts.\n     * Widening and rounding of the hips.\n     * Growth of underarm and pubic hair.\n     * Onset of Menstruation (monthly shedding of the uterine lining, known as periods).\n     * Growth spurt and accumulation of subcutaneous body fat.\n\n4. Hygiene Practices at Puberty and Importance of Personal Hygiene:\n   - Daily Bathing: Bathe at least once daily using clean water and mild soap, washing the armpits, groin, and external genitalia thoroughly to remove accumulated sweat, bacteria, and dead skin cells.\n   - Menstrual Hygiene for Girls:\n     * Use clean, absorbent sanitary pads or cotton cloths.\n     * Change sanitary pads frequently (every 4 to 6 hours) to prevent unpleasant odors, bacterial breeding, and toxic shock syndrome.\n     * Dispose of used pads hygienically by wrapping them in newspaper and placing them in a bin or pit latrine (NEVER flush down a water toilet).\n     * Wash hands with soap before and after changing sanitary wear.\n   - Undergarment Hygiene: Wear clean cotton underwear and wash undergarments daily, drying them in direct sunlight to kill bacteria.\n   - Deodorant and Skin Care: Wash face regularly with water to manage increased oil production and prevent acne (pimples).",
+      "keywords": [
+        "human reproductive system",
+        "identify human reproductive parts",
+        "draw reproductive parts",
+        "gestation period in humans",
+        "describe the process of puberty and physical changes",
+        "hygiene practices at puberty stage",
+        "importance of personal hygiene",
+        "testes",
+        "ovaries",
+        "uterus",
+        "fallopian tubes",
+        "menstruation",
+        "puberty",
+        "gestation"
+      ]
     },
     {
-      "id": "sci-matter-001",
-      "strand": "Materials (Matter)",
-      "topic": "States of Matter",
-      "grade_estimate": "Grade 3 to Grade 4",
-      "content": "Matter exists in three common states: solid (has a fixed shape and volume; particles are tightly packed and vibrate in place, e.g. wood, rock, ice), liquid (has a fixed volume but takes the shape of its container; particles are close together but can move past each other, e.g. water, oil), and gas (has no fixed shape or volume, spreading to fill its container; particles are far apart and move freely, e.g. air, steam). Matter can change state: melting (solid to liquid, by heating), freezing (liquid to solid, by cooling), evaporation (liquid to gas, by heating), condensation (gas to liquid, by cooling), and sublimation (solid directly to gas, e.g. dry ice).",
-      "learning_activities": [
-        "Observing and recording ice melting into water and water boiling into steam",
-        "Sorting classroom objects by state of matter",
-        "Drawing a diagram of the water cycle showing the state changes involved"
-      ],
-      "keywords": ["states of matter", "solid", "liquid", "gas", "melting", "freezing", "evaporation", "condensation"]
+      "id": "sci-foodborne-diseases-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Foodborne Diseases: Signs, Symptoms, Prevention & Control",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Food Safety:\n1. Definition of Foodborne Diseases:\n   - Foodborne diseases (commonly called food poisoning) are illnesses caused by consuming food or drinks that are contaminated with pathogenic microorganisms (such as bacteria, viruses, parasites, or fungi) or toxic chemicals.\n\n2. Common Causes:\n   - Bacterial toxins produced by Staphylococcus aureus in unrefrigerated food.\n   - Salmonella bacteria from undercooked poultry, raw eggs, or unpasteurized milk.\n   - Escherichia coli (E. coli) from contaminated beef or irrigation water.\n   - Clostridium botulinum in improperly canned foods.\n\n3. Signs and Symptoms of Foodborne Diseases:\n   - Severe abdominal pain and stomach cramps.\n   - Nausea and frequent vomiting.\n   - Watery diarrhea (sometimes containing blood or mucus).\n   - High body temperature (fever) and chills.\n   - Headache, general muscle aches, and extreme fatigue.\n   - Dehydration (dry mouth, sunken eyes, dark urine, extreme thirst).\n\n4. Prevention and Control of Foodborne Diseases:\n   - Practice Good Personal Hygiene: Food handlers must wash hands thoroughly with soap before preparing meals and after using the toilet.\n   - Cook Thoroughly: Ensure meat, chicken, pork, and eggs are cooked all the way through to kill live bacteria.\n   - Avoid Cross-Contamination: Use separate knives and chopping boards for raw meats and ready-to-eat foods like salads.\n   - Safe Food Storage: Store perishable foods in a refrigerator below 5°C; do not leave cooked food standing at room temperature for over 2 hours.\n   - Boil Drinking Water: Use only clean, safe, or boiled water for food preparation and washing vegetables.\n   - Exclude Sick Handlers: Anyone suffering from diarrhea, vomiting, or skin boils must not handle or prepare food for others.",
+      "keywords": [
+        "foodborne diseases",
+        "define foodborne diseases",
+        "state the signs and symptoms of foodborne diseases",
+        "discuss prevention and control of foodborne diseases",
+        "food poisoning",
+        "salmonella",
+        "e. coli",
+        "stomach cramps"
+      ]
     },
     {
-      "id": "sci-matter-002",
-      "strand": "Materials (Matter)",
-      "topic": "Properties of Materials",
-      "grade_estimate": "Grade 3 to Grade 5",
-      "content": "Materials are chosen for particular uses based on their properties: strength (resists breaking, e.g. steel for construction), hardness (resists scratching, e.g. diamond, stone), flexibility (bends without breaking, e.g. rubber, some plastics), transparency (lets light through, e.g. glass), conductivity (allows heat or electricity to pass through, e.g. metals conduct well; wood, plastic and rubber are insulators that resist the flow of heat/electricity), absorbency (soaks up liquid, e.g. cloth, paper), and waterproofing (resists water, e.g. plastic, some fabrics treated with wax). Materials can be natural (wood, cotton, wool, clay) or man-made/synthetic (plastic, nylon, glass).",
-      "learning_activities": [
-        "Testing a set of materials for strength, flexibility and water absorbency",
-        "Sorting materials into natural and man-made groups",
-        "Matching materials to appropriate uses based on their properties (e.g. why umbrellas are waterproof)"
-      ],
-      "keywords": ["properties of materials", "strength", "conductivity", "insulators", "natural materials", "synthetic materials"]
+      "id": "sci-land-pollution-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Environmental Hygiene: Land Pollution Types, Effects & Reduction",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Definition of Land Pollution:\n   - Land pollution is the degradation and destruction of the Earth's land surfaces and soil quality directly or indirectly as a result of human activities, improper disposal of waste, and chemical contamination.\n\n2. Types of Land Pollution:\n   - Solid Domestic Waste: Plastic bags (kaylite, carrier bags), plastic bottles, scrap metal, old car tires, broken glass, and household garbage dumped indiscriminately.\n   - Agricultural Chemical Pollution: Excessive use of synthetic chemical fertilizers, pesticides, herbicides, and fungicides that destroy beneficial soil microorganisms.\n   - Industrial and Hazardous Waste: Factory toxic chemicals, heavy metals (mercury, lead, cadmium), used motor oil, and batteries dumped on the ground.\n   - Mining and Quarrying Degradation: Open-cast mining pits, spoil dumps, cyanide and mercury residues from gold panning (chikorokoza), causing severe land scarring.\n\n3. Effects of Land Pollution:\n   - Destroys soil fertility, stunting crop growth and reducing national food harvests.\n   - Discarded plastic bags kill domestic livestock (cattle, goats) when ingested, causing fatal rumen compaction.\n   - Hazardous chemicals seep into the ground, polluting underground water tables and nearby wells.\n   - Open garbage dumps breed disease vectors such as rats, flies, and mosquitoes.\n   - Spoils the aesthetic beauty of communities and tourist destinations.\n\n4. Ways to Reduce Land Pollution:\n   - The 3Rs Principle:\n     * Reduce: Minimize packaging waste and single-use plastic carrier bags.\n     * Reuse: Repurpose glass jars, plastic tubs, and containers for household storage.\n     * Recycle: Collect plastic bottles, scrap metal, paper, and glass to be melted down into new products.\n   - Organic Composting: Convert vegetable peelings, garden weeds, and livestock dung into rich compost manure for farming instead of throwing them away.\n   - Sanitary Landfills: Construct planned, lined municipal landfills to contain solid waste safely without leaching.\n   - Afforestation and Reclamation: Plant trees and refill abandoned mining pits (land reclamation).\n   - Strict Environmental Laws: Enforce Environmental Management Agency (EMA) regulations against littering and illegal dumping.",
+      "keywords": [
+        "land pollution",
+        "define land pollution",
+        "identify types of land pollution",
+        "explain effects of land pollution",
+        "discuss ways to reduce land pollution",
+        "3Rs",
+        "recycling",
+        "composting",
+        "EMA"
+      ]
     },
     {
-      "id": "sci-matter-003",
-      "strand": "Materials (Matter)",
-      "topic": "Mixtures and Separation Techniques",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "A mixture is formed when two or more substances are combined without a chemical reaction, so each substance keeps its own properties and can usually be separated again. Common separation techniques include: filtration (separating an insoluble solid from a liquid using a filter, e.g. sand from water), evaporation (separating a dissolved solid from a liquid by heating off the liquid, e.g. salt from salty water), sieving (separating solids of different particle sizes, e.g. stones from sand), magnetism (separating magnetic materials like iron filings from a mixture), and decanting (carefully pouring off a liquid from a settled solid). A solution is a special mixture where one substance (the solute) fully dissolves in another (the solvent), such as sugar dissolved in water.",
-      "learning_activities": [
-        "Separating a mixture of sand and water by filtration",
-        "Separating salt from salty water by evaporation",
-        "Using a magnet to separate iron filings from a sand-iron mixture"
-      ],
-      "keywords": ["mixtures", "separation techniques", "filtration", "evaporation", "sieving", "solution", "solute", "solvent"]
+      "id": "sci-hiv-aids-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "HIV and AIDS: Definition, Transmission, Prevention & Management",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Health & Hygiene:\n1. Definition of HIV and AIDS:\n   - HIV (Human Immunodeficiency Virus): A virus that attacks and gradually destroys the body's immune system, specifically targeting CD4 white blood cells that fight diseases.\n   - AIDS (Acquired Immune Deficiency Syndrome): The advanced medical condition that occurs when the immune system has been severely weakened by HIV, leaving the body unable to defend itself against opportunistic infections (such as TB, pneumonia, and fungal infections).\n\n2. Transmission of HIV:\n   - How HIV IS Transmitted:\n     * Unprotected sexual intercourse with an infected person.\n     * Mother-to-Child Transmission (MTCT) during pregnancy, childbirth, or breastfeeding.\n     * Sharing unsterilized sharps, razor blades, needles, or syringes contaminated with infected blood.\n     * Receiving blood transfusions of unscreened blood (rare due to mandatory blood screening by NBSZ).\n   - How HIV is NOT Transmitted (Debunking Myths):\n     * HIV CANNOT be transmitted through shaking hands, hugging, coughing, sneezing, or sharing toilets.\n     * HIV CANNOT be transmitted through mosquito bites or insect stings.\n     * HIV CANNOT be transmitted through sharing cups, plates, spoons, or swimming in the same pool.\n\n3. Prevention of HIV:\n   - Abstinence: Choosing to abstain from sexual intercourse (the safest and most reliable choice for youth and school pupils).\n   - Being Faithful: Mutual fidelity between two uninfected partners in a marriage.\n   - Condom Use: Correct and consistent use of male or female condoms during every sexual encounter.\n   - Prevention of Mother-to-Child Transmission (PMTCT): Pregnant mothers take antiretroviral medication to ensure their babies are born HIV-free.\n   - Blood Safety & Sterile Sharps: Use only new, sterile, disposable needles and avoid sharing razor blades.\n   - Voluntary Medical Male Circumcision (VMMC): Reduces the risk of female-to-male sexual transmission of HIV by approximately 60%.\n\n4. Management and Care of People Living with HIV:\n   - Antiretroviral Therapy (ART / ARVs): Lifelong daily medications that suppress the multiplication of HIV in the blood, allowing the immune system to rebuild and preventing progression to AIDS.\n   - Healthy Nutrition: Consuming a balanced diet rich in proteins, small grains, vegetables, and vitamins to boost energy and immune function.\n   - Treating Opportunistic Infections: Prompt medical treatment of TB, diarrhea, and skin infections.\n   - Psychosocial Support: Fostering a supportive, caring family and school environment free from stigma, fear, and discrimination (*Unhu/Ubuntu*).",
+      "keywords": [
+        "hiv and aids",
+        "define hiv/aids",
+        "discuss how hiv/aids can be transmitted",
+        "describe how hiv/aids can be prevented",
+        "discuss how hiv/aids infected persons can be managed",
+        "arvs",
+        "art",
+        "pmtct",
+        "cd4",
+        "unhu",
+        "ubuntu"
+      ]
     },
     {
-      "id": "sci-energy-001",
-      "strand": "Energy and Forces",
-      "topic": "Forms of Energy",
-      "grade_estimate": "Grade 4 to Grade 6",
-      "content": "Energy exists in many forms: kinetic energy (movement energy, e.g. a moving car), potential energy (stored energy due to position or condition, e.g. water behind a dam, a stretched rubber band), heat/thermal energy, light energy, sound energy, electrical energy, and chemical energy (stored in food and fuels). Energy can be transformed from one form to another but, according to the law of conservation of energy, it cannot be created or destroyed - only changed in form. For example, a torch converts chemical energy (from the battery) into electrical energy, then into light and some heat energy.",
-      "learning_activities": [
-        "Identifying energy transformations in everyday devices (torch, radio, car)",
-        "Demonstrating potential energy becoming kinetic energy with a ball rolling down a ramp",
-        "Discussing renewable (solar, wind, hydro) versus non-renewable (coal, oil, gas) energy sources"
-      ],
-      "keywords": ["forms of energy", "kinetic energy", "potential energy", "energy transformation", "renewable energy", "non-renewable energy"]
+      "id": "sci-digestive-system-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Digestive System: Parts and Functions of the Alimentary Canal",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Body:\n1. Parts of the Human Digestive System (Alimentary Canal):\n   - Mouth (Oral Cavity): Includes teeth, tongue, and salivary glands.\n   - Oesophagus (Gullet): Muscular tube connecting the mouth to the stomach.\n   - Stomach: J-shaped muscular sac located in the upper left abdomen.\n   - Small Intestine: Long, narrow coiled tube consisting of the duodenum (first part) and ileum (main absorptive part).\n   - Associated Glands:\n     * Liver: Produces bile (stored in the gall bladder) to emulsify fats.\n     * Pancreas: Produces pancreatic juice containing digestive enzymes.\n   - Large Intestine: Consists of the colon and rectum.\n   - Anus: Muscular sphincter at the end of the digestive tract.\n\n2. Functions of Each Part of the Digestive System:\n   - Mouth:\n     * Teeth chew and grind food mechanically into smaller pieces (mastication).\n     * Saliva moistens food into a slippery ball (bolus); salivary amylase enzyme begins breaking down cooked starch into maltose sugar.\n     * Tongue rolls the bolus and pushes it to the back of the throat for swallowing.\n   - Oesophagus:\n     * Moves food down into the stomach through rhythmic wave-like muscular contractions called **peristalsis**.\n   - Stomach:\n     * Churns food mechanically with strong muscular contractions into a liquid mixture called chyme.\n     * Secretes gastric juice containing Hydrochloric Acid (kills bacteria and creates an acidic medium) and Pepsin enzyme (digests proteins into peptides).\n   - Small Intestine (Duodenum & Ileum):\n     * Duodenum: Bile from the liver neutralizes stomach acid and breaks fats into tiny droplets (emulsification); pancreatic enzymes digest carbohydrates, proteins, and fats.\n     * Ileum: Completes chemical digestion. Lined with millions of microscopic finger-like projections called **villi** that provide a massive surface area to absorb soluble nutrients (glucose, amino acids, fatty acids, vitamins) directly into blood capillaries.\n   - Large Intestine (Colon & Rectum):\n     * Colon: Absorbs water and dissolved mineral salts from indigestible food residues.\n     * Rectum: Temporarily stores semi-solid waste matter (faeces).\n   - Anus:\n     * Expels faeces from the body through the process of **egestion** (defaecation).",
+      "keywords": [
+        "digestive system",
+        "identify parts of the digestive system",
+        "state the functions of parts of the digestive system",
+        "mouth",
+        "oesophagus",
+        "stomach",
+        "small intestine",
+        "large intestine",
+        "colon",
+        "rectum",
+        "villi",
+        "peristalsis"
+      ]
     },
     {
-      "id": "sci-energy-002",
-      "strand": "Energy and Forces",
-      "topic": "Simple Machines",
-      "grade_estimate": "Grade 5 to Grade 6",
-      "content": "Simple machines make work easier by changing the size or direction of a force. The six classical simple machines are: the lever (a rigid bar that pivots on a fulcrum, e.g. a see-saw, crowbar, scissors), the wheel and axle (e.g. a doorknob, a bicycle wheel), the pulley (a wheel with a rope/chain, used to lift loads, e.g. a well bucket system, a flagpole), the inclined plane (a sloped surface that makes it easier to move a load up or down, e.g. a ramp), the wedge (two inclined planes joined back to back, used to split or cut, e.g. an axe, a knife), and the screw (an inclined plane wrapped around a cylinder, e.g. a bolt, a jar lid).",
-      "learning_activities": [
-        "Identifying examples of each simple machine in the classroom or home",
-        "Building a simple lever and testing how the fulcrum's position affects the force needed",
-        "Comparing the effort needed to lift a load directly versus using a ramp"
-      ],
-      "keywords": ["simple machines", "lever", "wheel and axle", "pulley", "inclined plane", "wedge", "screw", "fulcrum"]
+      "id": "sci-eating-habits-disorders",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Unhealthy Eating Habits, Eating Disorders & Healthy Lifestyle",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Nutrition and Health:\n1. Definition of Unhealthy Eating Habits:\n   - Unhealthy eating habits refer to poor dietary behaviors such as skipping breakfast, irregular meal timing, overeating junk foods high in refined sugars, salt, and trans fats, and failing to consume a balanced diet.\n\n2. Common Eating Disorders:\n   - Anorexia Nervosa: A severe psychological eating disorder characterized by self-starvation, an intense and irrational fear of gaining weight, and a distorted body image where the individual views themselves as overweight despite being dangerously thin.\n   - Bulimia Nervosa: An eating disorder characterized by recurrent episodes of binge-eating large quantities of food followed by guilt and compensatory purging (forced vomiting, excessive use of laxatives, or extreme exercise).\n   - Binge-Eating Disorder: Frequently consuming abnormally large amounts of food in secret, accompanied by feelings of losing control and deep distress, without regular purging.\n\n3. Consequences of Unhealthy Eating Habits and Disorders:\n   - Physical Health Consequences: Severe weight loss, muscle wasting, chronic malnutrition, vitamin deficiencies, stunted physical growth in children, tooth decay and enamel erosion (from stomach acid during purging), chronic fatigue, heart failure, and death.\n   - Emotional Consequences: Low self-esteem, intense anxiety, social isolation, and clinical depression.\n   - Overnutrition Consequences: Obesity, high cholesterol, type 2 diabetes, high blood pressure, and joint problems from carrying excess weight.\n\n4. Activities That Promote a Healthy Lifestyle:\n   - Eat regular balanced meals comprising all three essential food groups (body-building proteins, energy-giving carbohydrates, and protective fruits/vegetables).\n   - Drink 6 to 8 glasses of clean safe water daily instead of sugary sodas and artificial juices.\n   - Engage in daily physical exercise (sports, running, walking, dancing, gardening).\n   - Build a healthy body image based on self-acceptance, character, and wellness rather than unrealistic media portrayals.",
+      "keywords": [
+        "unhealthy eating habits",
+        "eating disorders",
+        "define unhealthy eating habits",
+        "identify eating disorders",
+        "explain consequences of unhealthy eating habits",
+        "engage in activities that promote healthy lifestyle",
+        "anorexia",
+        "bulimia",
+        "binge eating",
+        "healthy lifestyle"
+      ]
     },
     {
-      "id": "sci-energy-003",
-      "strand": "Energy and Forces",
-      "topic": "Types of Forces",
-      "grade_estimate": "Grade 4 to Grade 6",
-      "content": "A force is a push or pull that can change an object's speed, direction, or shape. Key types include: gravity (pulls objects towards the Earth's centre, giving them weight), friction (resists motion between two surfaces in contact, e.g. why a ball rolling on grass slows faster than on a smooth floor), magnetism (attraction or repulsion between magnetic materials, e.g. iron, nickel; like poles repel, unlike poles attract), and air resistance/water resistance (a form of friction that slows objects moving through air or water, e.g. why a parachute falls slowly). Forces are measured in newtons (N).",
-      "learning_activities": [
-        "Testing how different surfaces (grass, tile, sand) affect friction using a toy car",
-        "Investigating magnetic attraction and repulsion between bar magnets",
-        "Discussing why gravity keeps objects on the ground and pulls falling objects downward"
-      ],
-      "keywords": ["forces", "gravity", "friction", "magnetism", "air resistance", "newtons"]
+      "id": "sci-water-pollution-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Environmental Hygiene: Water Pollution Causes, Effects & Reduction",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Definition of Water Pollution:\n   - Water pollution is the contamination of natural water bodies (rivers, streams, lakes, dams, wetlands, and underground aquifers) by harmful substances, chemicals, or sewage, making the water unsafe for drinking, domestic use, and aquatic life.\n\n2. Causes of Water Pollution:\n   - Discharge of untreated domestic municipal sewage and burst sewer pipes directly into rivers (e.g. Manyame and Mukuvisi rivers in Harare).\n   - Industrial chemical effluent released by factories, textile mills, and chemical manufacturing plants.\n   - Agricultural runoff carrying toxic synthetic pesticides, herbicides, and excess chemical fertilizers into water streams.\n   - Artisanal gold panning and mining using lethal chemicals like mercury and cyanide along riverbanks.\n   - Dumping domestic solid litter, plastics, and animal carcasses into drainage channels and streams.\n\n3. Effects of Water Pollution:\n   - Outbreaks of deadly waterborne epidemics such as cholera, typhoid, and amoebic dysentery.\n   - Eutrophication: Excess agricultural fertilizer runoff causes rapid explosive growth of algae; when algae die and rot, bacteria consume dissolved oxygen, causing suffocation and death of fish (fish kills).\n   - Bioaccumulation: Toxic heavy metals (mercury, lead) enter the aquatic food chain and poison humans who eat fish from polluted rivers.\n   - Shortage of safe potable drinking water, increasing local municipal water purification costs.\n\n4. Measures to Reduce Water Pollution and Water Treatment:\n   - Enforce industrial effluent standards: Factories must treat all wastewater in settling and neutralization ponds before discharge.\n   - Upgrade and regularly maintain municipal sewage treatment works to prevent raw sewer overflows.\n   - Stop gold panning along riverbeds and ban mercury usage in artisanal mining.\n   - Maintain 30-metre buffer zones of natural grass and trees along riverbanks to filter agricultural runoff.\n   - Methods of Water Treatment at Home:\n     * Boiling: Bring water to a rolling boil for at least 1 minute to kill all bacteria, viruses, and parasites.\n     * Chlorination / WaterGuard: Add chlorine tablets or WaterGuard solution according to instructions to disinfect drinking water.\n     * Filtration: Pass turbid water through a sand and charcoal filter or clean cloth before boiling.",
+      "keywords": [
+        "water pollution",
+        "define water pollution",
+        "identify the causes of water pollution",
+        "state the effects of water pollution",
+        "discuss the measures of reducing water pollution",
+        "water treatment",
+        "eutrophication",
+        "cholera",
+        "waterguard",
+        "boiling water"
+      ]
     },
     {
-      "id": "sci-energy-004",
-      "strand": "Energy and Forces",
-      "topic": "Electricity and Simple Circuits",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "Electricity flows through a complete, unbroken loop called a circuit. A simple circuit needs a power source (e.g. a battery), a conductor (wire, usually made of a metal like copper, which allows electric current to flow), and a component such as a bulb or buzzer. A switch can open (break) or close (complete) the circuit to turn the component off or on. In a series circuit, components are connected in a single loop, so if one bulb fails the whole circuit breaks; in a parallel circuit, components are connected on separate branches, so each operates independently of the others. Insulators (rubber, plastic, wood) do not allow current to flow and are used to make electrical equipment safe to handle.",
-      "learning_activities": [
-        "Building a simple circuit with a battery, wire and bulb to light it up",
-        "Comparing series and parallel circuits by building both and observing bulb behaviour",
-        "Testing which everyday materials are conductors and which are insulators"
-      ],
-      "keywords": ["electricity", "circuit", "conductor", "insulator", "series circuit", "parallel circuit", "battery"]
+      "id": "sci-stis-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Sexually Transmitted Infections (STIs): Types, Symptoms & Prevention",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Health & Hygiene:\n1. Definition of Sexually Transmitted Infections (STIs):\n   - STIs are infectious communicable diseases that are spread predominantly through sexual contact (vaginal, oral, or anal) with an infected person, caused by bacteria, viruses, or parasites.\n\n2. Common Sexually Transmitted Infections:\n   - Syphilis (caused by Treponema pallidum bacterium).\n   - Gonorrhea (caused by Neisseria gonorrhoeae bacterium).\n   - Chlamydia (caused by Chlamydia trachomatis bacterium).\n   - Chancroid (causes painful genital ulcers).\n   - Genital Herpes (caused by Herpes Simplex Virus - HSV).\n   - Human Papillomavirus (HPV - causes genital warts and cervical cancer).\n   - Trichomoniasis (caused by a protozoan parasite).\n   - HIV (Human Immunodeficiency Virus).\n\n3. Signs and Symptoms of STIs:\n   - Abnormal, foul-smelling, thick, yellow or green discharge from the penis or vagina.\n   - Painful sores, blisters, ulcers, or warts on or around the genitals, anus, or mouth.\n   - Burning pain or severe stinging sensation during urination.\n   - Swelling, pain, or lumps in the groin area (swollen lymph nodes / mabandi).\n   - Severe lower abdominal pain in females.\n   - Itching, redness, or rash around the reproductive organs.\n\n4. Prevention and Control of STIs:\n   - Sexual Abstinence: Remaining abstinent before marriage is the 100% effective guarantee against sexually transmitted infections for school pupils and adolescents.\n   - Mutual Fidelity: Being mutually faithful to one uninfected long-term partner.\n   - Condom Use: Correct and consistent use of latex condoms during every sexual encounter.\n   - Prompt Medical Treatment: Both sexual partners must seek immediate medical attention and complete the full prescribed course of antibiotics/antivirals to prevent reinfection.\n   - Avoid Self-Medication: Never purchase unverified street medications for genital sores.",
+      "keywords": [
+        "sexually transmitted infections",
+        "define sexually transmitted infections",
+        "stis",
+        "list stis",
+        "identify signs and symptoms of stis",
+        "state stis prevention measures",
+        "syphilis",
+        "gonorrhea",
+        "chlamydia",
+        "abstinence"
+      ]
     },
     {
-      "id": "sci-earth-001",
-      "strand": "Earth and Space",
-      "topic": "Weather and Climate",
-      "grade_estimate": "Grade 3 to Grade 5",
-      "content": "Weather is the day-to-day state of the atmosphere in a place (e.g. today it is hot and rainy), while climate is the average weather pattern of a region over many years (e.g. Zimbabwe has a subtropical climate with a distinct rainy season, roughly November to March, and a dry season for the rest of the year). Weather elements measured include temperature (using a thermometer), rainfall (using a rain gauge), wind speed and direction (using an anemometer and wind vane), and cloud cover. Zimbabwe's seasons are typically described as the warm/rainy season (roughly November-March), the cool/dry season (April-August), and the hot/dry season before the rains (September-October).",
-      "learning_activities": [
-        "Recording daily weather observations (temperature, rainfall, cloud cover) over a week or month",
-        "Making a simple rain gauge and measuring rainfall",
-        "Comparing Zimbabwe's seasons and their typical weather patterns"
-      ],
-      "keywords": ["weather", "climate", "seasons", "rainfall", "temperature", "thermometer", "rain gauge"]
+      "id": "sci-dental-health-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Dental Health: Types of Teeth, Functions, Tooth Decay & Prevention",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Body:\n1. Types of Teeth in Humans:\n   - Incisors: Chisel-shaped front teeth with sharp, flat horizontal edges (8 total: 4 upper, 4 lower).\n   - Canines: Sharp, pointed, dagger-like teeth located next to incisors (4 total: 2 upper, 2 lower).\n   - Premolars: Broad teeth with two raised cusps on the biting surface (8 total: 4 upper, 4 lower).\n   - Molars: Large, broad, flat-topped teeth located at the back of the mouth with multiple roots (12 total in adults, including 4 wisdom teeth).\n   - Note on Dentition: Humans have two sets of teeth in their lifetime:\n     * Milk / Deciduous Teeth: 20 teeth (appear in infancy, shed during childhood).\n     * Permanent Teeth: 32 teeth in a complete adult set.\n\n2. Functions of the Different Types of Teeth:\n   - Incisors: Used for biting, cutting, and slicing off pieces of food.\n   - Canines: Used for gripping, tearing, and ripping tough fibrous food (especially meat).\n   - Premolars: Used for crushing, chewing, and breaking food into smaller particles.\n   - Molars: Used for heavy grinding and chewing food into a fine paste ready for swallowing.\n\n3. Causes of Tooth Decay (Dental Caries) and Gum Disease:\n   - Sticky sugary foods (sweets, cakes, chocolates, sodas) leave sugary residues on teeth.\n   - Bacteria naturally living in the mouth feed on the sugar and form a sticky colorless film called **dental plaque**.\n   - Plaque bacteria ferment the sugar, producing strong acids.\n   - The acid dissolves the hard outer mineral protective layer of the tooth (**enamel**) and then attacks the underlying softer layer (**dentine**).\n   - A hole (cavity) forms; if untreated, bacteria reach the sensitive inner **pulp cavity** containing blood vessels and nerves, causing severe toothache, infection, and abscesses.\n\n4. Methods of Preventing Tooth Decay:\n   - Brush teeth thoroughly at least twice daily (in the morning after breakfast and before going to sleep at night) using a soft toothbrush and fluoride toothpaste.\n   - Use clean dental floss daily to remove trapped food debris between teeth where toothbrushes cannot reach.\n   - Rinse the mouth with clean water after eating snacks or meals.\n   - Limit the consumption of sugary foods, candies, and carbonated soft drinks.\n   - Eat calcium-rich foods (milk, small fish / kapenta with bones) and crunchy fruits/vegetables (carrots, apples) that stimulate gums and clean teeth naturally.\n   - Visit a dental clinic for regular dental check-ups at least once a year.",
+      "keywords": [
+        "dental",
+        "name the different types of teeth",
+        "identify different types of teeth",
+        "state the functions of the different teeth",
+        "describe causes of tooth decay",
+        "outline methods of preventing teeth decay",
+        "incisors",
+        "canines",
+        "premolars",
+        "molars",
+        "enamel",
+        "dentine",
+        "cavities",
+        "plaque"
+      ]
     },
     {
-      "id": "sci-earth-002",
-      "strand": "Earth and Space",
-      "topic": "The Water Cycle",
-      "grade_estimate": "Grade 4 to Grade 5",
-      "content": "The water cycle describes how water continuously moves between the Earth's surface and the atmosphere. Key stages: evaporation (the sun heats water in oceans, rivers and lakes, turning it into water vapour that rises into the air), transpiration (water vapour released from plant leaves, often grouped with evaporation as 'evapotranspiration'), condensation (water vapour cools high in the atmosphere and turns back into tiny water droplets, forming clouds), precipitation (water falls back to Earth as rain, hail, sleet or snow), and collection/runoff (water flows into rivers, lakes and oceans, or soaks into the ground as groundwater, ready to evaporate again and repeat the cycle).",
-      "learning_activities": [
-        "Drawing and labelling a water cycle diagram with all stages",
-        "Setting up a simple evaporation-condensation demonstration with a covered cup of water in the sun",
-        "Discussing how the water cycle connects to rainfall patterns and water conservation"
-      ],
-      "keywords": ["water cycle", "evaporation", "condensation", "precipitation", "transpiration", "groundwater"]
+      "id": "sci-air-pollution-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Environmental Hygiene: Air Pollution Causes, Pollutants & Control",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Definition of Air Pollution:\n   - Air pollution is the contamination of the atmosphere by harmful gases, dust, smoke, and chemical vapors that pose a threat to the health of humans, animals, plants, and the global environment.\n\n2. Causes of Air Pollution:\n   - Burning of fossil fuels (coal, petrol, diesel) in power stations and vehicle engines.\n   - Emissions from industrial manufacturing factories, brick kilns, and smelters.\n   - Uncontrolled veld fires, bush burning, and clearing farm fields with fire on windy days.\n   - Burning domestic waste and plastics in backyard rubbish pits.\n   - Indoor burning of firewood, charcoal, and coal braziers (*mbaura*) in poorly ventilated homes.\n\n3. Major Air Pollutants:\n   - Carbon Monoxide (CO): Colorless, odorless, deadly toxic gas released from incomplete combustion of fuels.\n   - Sulfur Dioxide (SO2): Choking gas released from burning coal at power stations.\n   - Nitrogen Oxides (NOx): Released from motor vehicle exhaust pipes and high-temperature furnaces.\n   - Particulate Matter (PM10 and PM2.5): Tiny suspended soot, dust, and smoke particles.\n   - Carbon Dioxide (CO2): Greenhouse gas driving global warming.\n   - Lead Compounds: Released from industrial paints and leaded fuels.\n\n4. Effects of Air Pollution:\n   - Health Effects: Irritates eyes, nose, and throat; triggers asthma attacks; causes bronchitis, pneumonia, reduced lung capacity, and lung cancer.\n   - Acid Rain: Sulfur dioxide and nitrogen oxides dissolve in rainwater forming sulfuric and nitric acids, which kill fish in lakes, damage crops, and corrode metal roofs and stone statues.\n   - Smog and Reduced Visibility: Smoke and fog combine to form smog, causing traffic accidents and flight delays.\n   - Climate Change: Buildup of greenhouse gases traps heat in the atmosphere, driving global warming, severe droughts, and violent storms.\n\n5. Measures to Reduce Air Pollution:\n   - Use clean, renewable energy sources such as solar power, wind energy, and hydroelectricity instead of burning coal and firewood.\n   - Fit catalytic converters on car exhausts and smoke scrubbers/filters on factory chimneys.\n   - Regularly service vehicle engines so they burn fuel completely and cleanly.\n   - Stop open burning of household plastics and garden refuse; practice composting instead.\n   - Plant more trees (afforestation) because green leaves absorb carbon dioxide and release clean oxygen.\n   - Construct standard 9-meter fireguards around homesteads and farms to prevent veld fires.",
+      "keywords": [
+        "air pollution",
+        "define air pollution",
+        "identify the causes of air pollution",
+        "list air pollutants",
+        "explain the effects of air pollution",
+        "outline measures to reduce air pollution",
+        "carbon monoxide",
+        "sulfur dioxide",
+        "acid rain",
+        "smog",
+        "greenhouse gases"
+      ]
     },
     {
-      "id": "sci-earth-003",
-      "strand": "Earth and Space",
-      "topic": "Soil Types and Formation",
-      "grade_estimate": "Grade 4 to Grade 6",
-      "content": "Soil forms over long periods through the weathering (physical and chemical breakdown) of rocks, combined with decomposed organic matter (humus) from dead plants and animals. Main soil types by particle size are: sandy soil (large particles, drains water quickly, holds few nutrients), clay soil (very fine particles, holds water well but drains poorly and can become waterlogged), and loamy soil (a balanced mixture of sand, silt and clay, generally considered the most fertile for farming as it retains both moisture and nutrients while still draining adequately). Soil layers (horizons) typically include topsoil (richest in organic matter, best for plant growth), subsoil, and bedrock at the base.",
-      "learning_activities": [
-        "Testing local soil samples for texture (sandy, clay, loamy) by feel and a simple settling test in water",
-        "Comparing how quickly water drains through different soil types",
-        "Discussing why loamy soil is generally preferred for crop farming"
-      ],
-      "keywords": ["soil types", "sandy soil", "clay soil", "loamy soil", "weathering", "humus", "topsoil"]
+      "id": "sci-mental-wellness-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Mental Health and Mental Wellness in School and Community",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Mental Wellness:\n1. Definition of Mental Wellness:\n   - Mental wellness is a state of psychological, emotional, and social well-being in which an individual realizes their own abilities, can cope with the normal stresses of life, works and learns productively, and contributes meaningfully to their family and community.\n\n2. Activities That Promote Mental Wellness:\n   - Engaging in physical sports, outdoor games (pada, football, athletics), and aerobic exercise to release mood-boosting endorphins.\n   - Getting 8 to 10 hours of restful, uninterrupted sleep every night.\n   - Expressing creativity through art, music, storytelling, and traditional dance.\n   - Spending quality time socializing with supportive friends, peers, and family members.\n   - Practicing mindfulness, quiet reflection, and deep breathing exercises during stressful moments.\n   - Confiding in trusted adults, teachers, school counsellors, or church leaders when facing emotional distress or bullying.\n\n3. Importance of Mental Wellness:\n   - Enhances concentration, memory retention, problem-solving skills, and academic performance in school.\n   - Builds emotional resilience, enabling pupils to bounce back from failure, disappointment, or grief.\n   - Fosters self-confidence, empathy, and positive interpersonal relationships (*Unhu/Ubuntu*).\n   - Reduces the risk of developing clinical depression, panic attacks, anxiety disorders, and self-harm.\n   - Promotes overall physical health by strengthening the body's immune system.",
+      "keywords": [
+        "mental health",
+        "define mental wellness",
+        "identify activities that promote mental wellness",
+        "explain the importance of mental wellness",
+        "demonstrate activities that promote mental wellness",
+        "emotional wellness",
+        "resilience",
+        "unhu",
+        "ubuntu"
+      ]
     },
     {
-      "id": "sci-earth-004",
-      "strand": "Earth and Space",
-      "topic": "The Solar System",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "The solar system consists of the Sun (a star, at the centre, providing light and heat through nuclear fusion) and the objects that orbit it: eight planets (in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune), their moons, dwarf planets (such as Pluto), asteroids, and comets. Earth is the third planet from the Sun and the only known planet to support life, due to its distance from the Sun (allowing liquid water), its atmosphere, and its magnetic field. Earth rotates on its axis once approximately every 24 hours, causing day and night, and orbits the Sun once approximately every 365.25 days, causing the year and (combined with Earth's tilted axis) the seasons.",
-      "learning_activities": [
-        "Ordering the eight planets from the Sun and comparing their relative sizes",
-        "Modelling day and night using a torch (Sun) and a rotating globe (Earth)",
-        "Discussing why Earth's tilt causes the seasons to change through the year"
-      ],
-      "keywords": ["solar system", "sun", "planets", "earth's rotation", "earth's orbit", "day and night", "seasons"]
+      "id": "sci-immunization-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Immunization and Child-Killer Diseases",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Child Health:\n1. Definition of Immunization (Vaccination):\n   - Immunization is the process whereby a person is protected against an infectious disease through the administration of a vaccine. Vaccines contain dead, weakened, or harmless parts of disease-causing organisms that stimulate the body's immune system to produce protective **antibodies** without causing the actual disease. If the person is exposed to the real pathogen in the future, their immune memory immediately destroys it.\n\n2. The Major Child-Killer Diseases:\n   - Measles (Gwirikwiti): Viral illness causing high fever, cough, red eyes, and a full-body rash; can cause fatal pneumonia or permanent blindness.\n   - Polio (Poliomyelitis): Viral disease attacking the nervous system, causing sudden irreversible muscle paralysis (usually in the legs) and death from respiratory failure.\n   - Tuberculosis (TB): Bacterial lung infection causing chronic cough, blood-stained sputum, and wasting.\n   - Diphtheria: Bacterial throat infection forming a thick grey membrane across the windpipe that causes severe breathing obstruction and heart failure.\n   - Pertussis (Whooping Cough): Highly contagious bacterial infection causing severe uncontrollable coughing fits followed by a high-pitched \"whooping\" gasp for breath.\n   - Tetanus (Lockjaw): Bacterial infection caused by Clostridium tetani entering wounds from soil, causing painful, violent muscle spasms and locking of the jaw.\n   - Other Key Childhood Vaccines in Zimbabwe: Hepatitis B, Haemophilus influenzae type b (Hib), Pneumococcal Conjugate Vaccine (PCV for pneumonia), Rotavirus (prevents severe infant diarrhea), and HPV vaccine (for Grade 5 girls against cervical cancer).\n\n3. Importance of Immunization:\n   - Saves millions of children's lives every year by preventing fatal infant diseases.\n   - Prevents permanent lifelong physical disabilities (such as paralysis caused by polio).\n   - Creates **herd immunity** in the community, protecting vulnerable newborns and sick children who cannot be vaccinated.\n   - Monitored and recorded on the child's **Child Health Card** (Road to Health Card) at local clinics.",
+      "keywords": [
+        "immunization",
+        "identify child-killer diseases",
+        "explain immunization",
+        "outline the importance of immunisation",
+        "measles",
+        "polio",
+        "tuberculosis",
+        "diphtheria",
+        "tetanus",
+        "whooping cough",
+        "vaccines",
+        "antibodies"
+      ]
     },
     {
-      "id": "sci-earth-005",
-      "strand": "Earth and Space",
-      "topic": "Natural Resources and Conservation",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "Natural resources are materials or substances occurring in nature that people use, classified as renewable (can replenish naturally within a human lifetime, e.g. water, forests, sunlight, wind, soil if managed well) or non-renewable (form over millions of years and are used up faster than they form, e.g. coal, oil, natural gas, minerals). Conservation practices to protect natural resources include afforestation/reforestation (planting trees), avoiding overgrazing and deforestation, water conservation (avoiding waste, protecting water sources from pollution), recycling and reducing waste, and sustainable farming practices (crop rotation, contour ploughing to prevent soil erosion). Environmental issues connected to poor resource management include soil erosion, deforestation, water pollution, and loss of biodiversity.",
-      "learning_activities": [
-        "Sorting local natural resources into renewable and non-renewable categories",
-        "Investigating causes and effects of soil erosion in the local area and possible solutions",
-        "Planning a simple school conservation project such as a tree-planting or recycling initiative"
-      ],
-      "keywords": ["natural resources", "renewable resources", "non-renewable resources", "conservation", "deforestation", "soil erosion", "sustainability"]
+      "id": "sci-internal-body-parts-detail",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Internal Body Parts: Location, Identification & Functions",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Human Body:\n1. Major Internal Body Parts and Their Locations:\n   - Brain: Located inside the cranium (skull) in the head.\n   - Heart: Located in the center of the chest cavity (thorax) between the lungs, tilted slightly to the left.\n   - Lungs: Paired spongy organs located inside the chest cavity, protected by the rib cage.\n   - Stomach: Located in the upper left section of the abdominal cavity below the diaphragm.\n   - Liver: The largest internal organ, located in the upper right section of the abdominal cavity, directly below the diaphragm.\n   - Kidneys: Pair of bean-shaped organs located in the back of the abdomen on either side of the spine, below the ribcage.\n   - Skeleton: Framework of 206 bones located throughout the entire body beneath muscles and skin.\n\n2. Functions of Internal Body Parts:\n   - Brain: The central control center of the nervous system; controls voluntary thoughts, speech, and movement; regulates involuntary bodily functions (heart rate, breathing, digestion); processes sensory information (sight, hearing, touch, taste, smell).\n   - Heart: Continuously pumps blood throughout the body to supply tissues with oxygen and nutrients and remove metabolic wastes.\n   - Lungs: Takes in oxygen from the air during inhalation and expels carbon dioxide and water vapor during exhalation (gas exchange across alveoli).\n   - Stomach: Acts as a food storage reservoir; churns food with gastric acid and digestive enzymes to begin protein digestion.\n   - Liver: Produces bile to break down (emulsify) dietary fats; detoxifies harmful chemicals and drugs; stores excess glucose as glycogen; synthesizes blood proteins.\n   - Kidneys: Filter waste products (especially toxic urea and excess mineral salts) from the blood; regulate water balance (osmoregulation) and produce urine.\n   - Skeleton:\n     * Provides structural shape and support for the body.\n     * Protects vital delicate organs (skull protects brain, ribcage protects heart and lungs, vertebrae protect the spinal cord).\n     * Works with attached skeletal muscles to produce movement.\n     * Produces red blood cells and white blood cells inside bone marrow.\n     * Stores essential minerals such as calcium and phosphorus.",
+      "keywords": [
+        "internal body parts",
+        "state the internal body parts",
+        "identify internal body parts",
+        "label internal body parts",
+        "describe the location of internal body parts",
+        "explain the functions of internal body parts",
+        "brain",
+        "heart",
+        "lungs",
+        "stomach",
+        "liver",
+        "kidneys",
+        "skeleton"
+      ]
     },
     {
-      "id": "sci-tech-001",
-      "strand": "Technology",
-      "topic": "Technology and Everyday Problem-Solving",
-      "grade_estimate": "Grade 3 to Grade 7 (progressive)",
-      "content": "Technology is the application of scientific knowledge to solve practical problems and meet human needs, ranging from simple tools (a hoe, a wheelbarrow) to complex systems (computers, the internet, mobile phones). The technology/design process typically follows: identifying a problem or need, researching and generating possible solutions, designing and planning (including sketches or models), making/building the solution, testing it, and evaluating and improving it based on results. Information and Communication Technology (ICT) - computers, tablets, mobile phones, the internet - is increasingly integrated into science learning for research, data recording, simulations and communication.",
-      "learning_activities": [
-        "Working through the design process to solve a simple local problem (e.g. designing a water carrier)",
-        "Building and testing a simple model (e.g. a bridge from straws, a simple water filter)",
-        "Using ICT tools to research a science topic or record experimental data"
-      ],
-      "keywords": ["technology", "design process", "problem-solving", "ICT integration", "invention"]
+      "id": "sci-environmental-waste-management",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Environmental Hygiene: Community Waste Sources, Impacts & Disposal",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Sources of Environmental Waste in the Community:\n   - Domestic / Household Waste: Vegetable and food peelings, plastic carrier bags, food packaging, tin cans, glass bottles, old clothing, wood ash.\n   - Commercial Waste: Cardboard boxes, paper, packaging materials from shops, markets, and supermarkets.\n   - Agricultural Waste: Crop stalks, weeds, animal manure, empty pesticide containers, fertilizer sacks.\n   - Industrial and Mining Waste: Scrap metal, factory chemical by-products, gold mine tailings, discarded engine oil.\n   - Clinical / Medical Waste: Used syringes, bandages, expired medicines from local clinics and hospitals.\n\n2. Impacts of Improper Waste Disposal in the Community:\n   - Discarded plastics and litter block storm drains, causing localized flash flooding during the rainy season.\n   - Piles of uncollected garbage attract and breed disease vectors such as houseflies, rats, and mosquitoes, spreading cholera, typhoid, and dysentery.\n   - Grazing domestic animals (cattle, goats, sheep) ingest plastic bags, leading to fatal digestive blockages.\n   - Rotting waste produces foul, nauseating odors and releases greenhouse gases like methane.\n   - Sharp glass, open tin cans, and rusty nails cause serious physical injuries and tetanus infections.\n\n3. Demonstrating Proper Waste Disposal in the Community:\n   - The 3Rs Waste Hierarchy:\n     * Reduce: Minimize the amount of waste generated (e.g. carry reusable woven shopping bags instead of collecting plastic carrier bags).\n     * Reuse: Use sturdy containers, jars, and bottles multiple times before discarding.\n     * Recycle: Separate paper, plastics, glass, and metal so they can be processed into new manufactured goods.\n   - Composting: Dig compost pits to turn organic waste (food scraps, dry leaves, cattle dung) into rich organic fertilizer for garden crops.\n   - Sanitary Pit Disposal: Dispose of non-recyclable household waste in designated sanitary refuse pits and cover regularly with soil to prevent fly breeding.\n   - Community Cleanup Campaigns: Participate actively in national cleanup days (held on the first Friday of every month in Zimbabwe) to keep streets, schoolgrounds, and public places spotless.",
+      "keywords": [
+        "environmental waste",
+        "sources of environmental waste in the community",
+        "recognise the impact of waste in the community",
+        "demonstrate proper waste disposal in the community",
+        "3Rs",
+        "reduce",
+        "reuse",
+        "recycle",
+        "composting",
+        "refuse pit"
+      ]
     },
     {
-      "id": "sci-tech-003",
-      "strand": "Technology",
-      "topic": "Digital Devices and ICT Tools",
-      "grade_estimate": "Grade 3 to Grade 7",
-      "content": "Under the Heritage-Based Curriculum, learners study various digital devices and ICT tools used in daily life. This includes personal computers (desktops and laptops), mobile devices (smartphones and tablets), and peripheral devices like printers, scanners, and digital cameras. Key skills involve identifying these tools, understanding their functions (input, process, output, storage), and using them responsibly. Digital devices help in searching for information, creating documents, and communicating with others. Awareness of basic software, file management, and internet safety (cyber-wellness) is essential for modern learners.",
-      "learning_activities": [
-        "Identifying and naming parts of a computer system",
-        "Practising basic typing and mouse skills",
-        "Discussing the uses of smartphones and tablets in the community",
-        "Learning to stay safe online and protecting personal information"
-      ],
-      "keywords": ["digital devices", "ICT tools", "computers", "smartphones", "internet safety", "technology"]
+      "id": "sci-waterborne-diseases-sss",
+      "strand": "Environmental Hygiene & Health",
+      "topic": "Waterborne Diseases and Preparation of Sugar-Salt Solution (SSS)",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Health & Diseases:\n1. Definition of Waterborne Diseases:\n   - Waterborne diseases are illnesses caused by microscopic pathogenic microorganisms (bacteria, viruses, or parasites) that are transmitted to humans through drinking or coming into contact with contaminated water.\n\n2. Major Waterborne Diseases in Zimbabwe:\n   - Cholera: Caused by Vibrio cholerae bacteria. Causes massive painless watery diarrhea (\"rice-water stools\") and vomiting, leading to fatal dehydration in hours if untreated.\n   - Typhoid Fever: Caused by Salmonella typhi bacteria. Causes prolonged high fever, severe headache, dry cough, stomach pain, constipation or diarrhea.\n   - Bilharzia (Schistosomiasis): Caused by parasitic blood flukes (Schistosoma). Transmitted when larvae swimming in freshwater rivers bore through the skin of people swimming or wading; causes blood in urine (hematuria) or stool, abdominal pain, and liver damage.\n   - Dysentery (Bacterial & Amoebic): Severe inflammation of the intestines causing frequent stools mixed with blood and mucus, accompanied by painful abdominal cramps.\n\n3. Ways of Preventing Waterborne Diseases:\n   - Boil all drinking water for at least 1 minute or treat with water purification tablets (WaterGuard).\n   - Construct and use ventilated improved pit (Blair) latrines situated at least 30 meters away from water sources.\n   - Wash hands thoroughly with clean running water and soap before handling food and after visiting the toilet.\n   - Avoid swimming, washing, or wading barefoot in slow-moving rivers and dams infested with freshwater snails (to prevent bilharzia).\n   - Wash raw fruits and vegetables with clean safe water before eating.\n\n4. Preparation of Sugar-Salt Solution (SSS / Home-made ORS):\n   - Purpose: Oral Rehydration Solution (SSS) is an emergency first-aid home treatment that replaces lost water and essential mineral electrolytes in patients suffering from diarrhea and vomiting, preventing deadly dehydration before reaching a clinic.\n   - Step-by-Step Recipe:\n     * Step 1: Wash hands thoroughly with clean running water and soap.\n     * Step 2: Measure **1 litre** (approx. 4 cups) of clean, safe water (boiled and cooled) into a clean container.\n     * Step 3: Add **6 level teaspoons of sugar** (provides instant glucose energy and aids sodium absorption in the gut).\n     * Step 4: Add **half (½) level teaspoon of salt** (restores essential sodium and chloride electrolytes lost in stool).\n     * Step 5: Stir the mixture thoroughly until both sugar and salt dissolve completely.\n     * Administration: Give the solution in small frequent sips to the sick child or adult after every loose stool. Prepare a fresh solution every 24 hours.",
+      "keywords": [
+        "waterborne diseases",
+        "state various water diseases",
+        "discuss ways of preventing water borne diseases",
+        "prepare salt and sugar solution",
+        "sss",
+        "sugar salt solution",
+        "ors",
+        "cholera",
+        "typhoid",
+        "bilharzia",
+        "dehydration"
+      ]
     },
     {
-      "id": "sci-tech-002",
-      "strand": "Technology",
-      "topic": "Safety Signs and Laboratory Safety",
-      "grade_estimate": "Grade 5 to Grade 7",
-      "content": "Safety signs use standard shapes and colours to convey their meaning at a glance: red circles with a diagonal line indicate prohibition (something not allowed); yellow triangles indicate warning/caution (a hazard to be aware of); blue circles indicate mandatory action (something that must be done, e.g. wear protective equipment); green squares/rectangles indicate safe conditions or emergency information (e.g. exit routes, first aid). In science activities, basic safety practices include not tasting or smelling unknown substances, handling sharp or hot objects with care, washing hands after experiments, and telling a teacher immediately about spills or breakages.",
-      "learning_activities": [
-        "Matching safety sign shapes and colours to their meanings",
-        "Identifying safety signs found around the school and community",
-        "Discussing safe practices to follow during a simple science experiment"
-      ],
-      "keywords": ["safety signs", "laboratory safety", "hazard symbols", "prohibition sign", "warning sign"]
+      "id": "sci-food-sources-nutrients",
+      "strand": "Food and Nutrition",
+      "topic": "Food Sources, Nutrient Classification and Importance of Nutrients",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Food and Nutrition:\n1. Sources of Food and Classification:\n   - Plant Origin Sources:\n     * Cereal Grains: Maize, sorghum (mapfunde), finger millet (rapoko/zviyo), pearl millet (mhunga), wheat, rice.\n     * Legumes (Pulses): Groundnuts (nzungu), roundnuts (nyimo), cowpeas (nyemba), beans, soya beans.\n     * Vegetables: Cabbage, spinach, rape, covo, tsunga, pumpkin leaves (muboora), wild spinach (derere), okra.\n     * Fruits: Oranges, mangoes, bananas, guavas, wild fruits (mazhanje, matamba, masawu, mauyu).\n     * Tubers & Roots: Sweet potatoes (mbambaira), cassava, yams, potatoes.\n   - Animal Origin Sources:\n     * Meat: Beef, goat meat, mutton, pork.\n     * Poultry: Chicken, guinea fowl, turkey, ducks.\n     * Dairy & Eggs: Fresh milk, sour milk (mukaka wakakora), cheese, chicken eggs.\n     * Aquatic: Fish (bream, kapenta/matemba).\n     * Edible Insects: Mopane worms (madora/macimbi), winged termites (ishwa), crickets (makurwe), stinkbugs (harurwa).\n\n2. The Six Essential Food Nutrients and Their Functions:\n   - Carbohydrates:\n     * Function: The body's primary and quickest source of energy for daily muscular work, sports, and body warmth.\n     * Sources: Sadza, bread, potatoes, rice, small grains (sorghum, rapoko).\n   - Proteins:\n     * Function: Body-building nutrient required for growth, repair of worn-out cells/tissues, and production of enzymes, hormones, and antibodies.\n     * Sources: Meat, beans, eggs, milk, fish, groundnuts, mopane worms (madora).\n   - Fats and Oils:\n     * Function: Provides concentrated energy (twice as much energy as carbohydrates), insulates the body against cold, and protects delicate internal organs.\n     * Sources: Cooking oil, butter, groundnut butter (dovi), avocados, animal fat.\n   - Vitamins:\n     * Function: Protective foods required in small amounts to maintain health and fight off diseases.\n     * Vitamin A: Healthy vision and skin (carrots, pumpkins, mangoes, liver).\n     * Vitamin B: Energy release and nerve health (whole grains, beans, yeast).\n     * Vitamin C: Healthy gums, skin, and immune resistance (oranges, guavas, lemons).\n     * Vitamin D: Strong bones and teeth (sunlight, egg yolk, fish liver oil).\n   - Mineral Salts:\n     * Calcium & Phosphorus: Strong bones and teeth (milk, small fish eaten with bones / matemba).\n     * Iron: Formation of hemoglobin in red blood cells to transport oxygen (liver, red meat, green leafy vegetables).\n     * Iodine: Proper thyroid function to prevent goitre (iodized table salt).\n   - Dietary Fibre (Roughage):\n     * Function: Adds bulk to food, aids peristalsis in the intestines, and prevents constipation.\n     * Sources: Whole-grain maize meal (mugayiwa), fruits with peels, vegetables.\n   - Water:\n     * Function: Transports nutrients and waste products, regulates body temperature through sweating, and acts as a solvent for bodily biochemical reactions.",
+      "keywords": [
+        "sources of food",
+        "classify food according to plant and animal origin",
+        "list food nutrients",
+        "group food according to their nutrients",
+        "discuss the importance of food nutrients",
+        "carbohydrates",
+        "proteins",
+        "fats",
+        "vitamins",
+        "minerals",
+        "fibre",
+        "water"
+      ]
+    },
+    {
+      "id": "sci-food-preparation-indigenous-balanced-diet",
+      "strand": "Food and Nutrition",
+      "topic": "Food Preparation, Indigenous Meals and Balanced Diet",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Food Preparation:\n1. Definition of a Balanced Diet:\n   - A balanced diet is a diet that contains all the essential nutrients (carbohydrates, proteins, fats, vitamins, minerals, dietary fibre, and water) in the correct and adequate proportions needed for healthy growth, daily energy, and disease prevention.\n\n2. Components of a Balanced Diet in an Indigenous Zimbabwean Meal:\n   - Energy-Giving Component: Sadza rezviyo (finger millet) or sadza remhunga (pearl millet) rich in complex carbohydrates and dietary fibre.\n   - Body-Building Component: Stewed free-range indigenous chicken (huku yechibhoyi), roasted groundnuts (nzungu), dried beef with peanut butter (chimukuyu chine dovi), or stewed cowpeas (nyemba).\n   - Protective Component: Cooked pumpkin leaves (muboora), wild cleome (nyevhe/tsunga), or dried leafy greens (mufushwa) rich in vitamins A and C and iron.\n   - Health Benefits of Indigenous Foods:\n     * Small grains (sorghum, rapoko) have a low glycemic index, preventing and managing diabetes and hypertension.\n     * High dietary fibre content prevents constipation, colon cancer, and obesity.\n     * Rich in natural minerals (iron and calcium) that prevent anemia and bone weakness.\n     * Organic, free from harmful chemical preservatives and artificial flavorings.\n\n3. Indigenous vs Modern Cooking Methods and Utensils:\n   - Cooking Methods:\n     * Boiling: Cooking food in boiling water (e.g. preparing sadza, boiling cowpeas / nyemba).\n     * Stewing: Slow cooking in a small amount of liquid with lid closed (e.g. beef or chicken stew).\n     * Roasting: Cooking food over hot charcoal or dry pan without oil (e.g. roasting maize cobs or groundnuts).\n     * Steaming: Cooking food using rising steam (e.g. steaming pumpkin or sweet potatoes).\n   - Traditional Utensils:\n     * Clay pots (Hari): Hari yehuswa (for beer), Tsambakonzi (for cooking sadza), Rongo (for carrying water).\n     * Wooden Cooking Sticks: Mugoti (flat wooden stick for stirring sadza), Musika (for whisking milk or soup).\n     * Grinding Stones: Guwo and Huyo (flat stone and rounded hand stone for grinding grain and groundnuts into peanut butter).\n     * Woven Baskets: Rusero (winnowing basket for separating chaff from grain), Dengu (large storage basket).",
+      "keywords": [
+        "food preparation",
+        "list different indigenous and modern meals",
+        "name various food ingredients",
+        "describe how to prepare a meal",
+        "balanced diet",
+        "components of a balanced diet in an indigenous meal",
+        "health benefits of indigenous foods",
+        "sadza",
+        "mufushwa",
+        "dovi",
+        "hari",
+        "mugoti"
+      ]
+    },
+    {
+      "id": "sci-nutrient-deficiency-excess",
+      "strand": "Food and Nutrition",
+      "topic": "Nutrient Deficiency and Nutrient Excess: Diseases & Prevention",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Nutrition:\n1. Definition of Nutrient Deficiency:\n   - Nutrient deficiency is a state of health that occurs when the body does not receive or absorb an adequate amount of an essential nutrient over an extended period.\n\n2. Major Nutrient Deficiency Diseases:\n   - Kwashiorkor: Caused by severe lack of **protein** in the diet.\n     * Signs: Oedema (swollen belly, puffy feet and face), thin reddish-brown brittle hair that pulls out easily, peeling flaky skin (\"flaky paint dermatitis\"), irritability, misery.\n     * Cure: Feed with protein-rich foods (eggs, milk, beans, kapenta, beef, peanut butter porridge / nhopi).\n   - Marasmus: Caused by severe total starvation (lack of **both energy/carbohydrates and proteins**).\n     * Signs: Extreme muscle wasting, \"skin and bones\" appearance, wrinkled \"old person's face\", ribs prominently visible, ravenously hungry and alert.\n     * Cure: Gradually reintroduce balanced, energy-dense foods and fluids.\n   - Scurvy: Caused by deficiency of **Vitamin C**.\n     * Signs: Bleeding swollen gums, loose teeth, slow-healing wounds, joint pain.\n     * Cure: Eat fresh citrus fruits (oranges, lemons, guavas) and raw tomatoes.\n   - Rickets: Caused by deficiency of **Vitamin D or Calcium**.\n     * Signs: Soft weak bones, bow-legs (bandy legs), knock-knees, pigeon chest in growing children.\n     * Cure: Exposure to early morning sunlight, drinking milk, eating eggs and fish.\n   - Goitre: Caused by deficiency of **Iodine**.\n     * Signs: Swelling of the thyroid gland at the front of the neck, fatigue, mental sluggishness.\n     * Cure: Use iodized table salt and consume seafood.\n   - Anaemia: Caused by lack of **Iron**.\n     * Signs: Pale inner eyelids, pale tongue and fingernails, constant fatigue, shortness of breath, dizziness.\n     * Cure: Eat liver, red meat, and dark green leafy vegetables.\n   - Night Blindness: Caused by lack of **Vitamin A**.\n     * Signs: Difficulty seeing in dim light or at dusk.\n     * Cure: Eat carrots, pumpkins, yellow sweet potatoes, liver, and mangoes.\n\n3. Nutrient Excess (Overnutrition) and Its Effects:\n   - Definition: A condition resulting from consuming excessive amounts of certain nutrients (especially refined carbohydrates, saturated fats, and sodium) beyond what the body requires.\n   - Effects of Nutrient Excess:\n     * Excess Fats and Carbohydrates: Leads to **Obesity**, high blood cholesterol, fatty liver, and increased risk of **Type 2 Diabetes** and heart attacks.\n     * Excess Sodium (Table Salt): Causes fluid retention and chronic **Hypertension (High Blood Pressure)**, leading to strokes and kidney failure.\n     * Excess Protein: Places excessive metabolic strain on the kidneys and liver to excrete urea.\n   - Importance of Nutrient Moderation: Eating diverse, moderate portions of natural foods ensures healthy energy balance, prevents chronic metabolic diseases, and promotes longevity.",
+      "keywords": [
+        "nutrient deficiency",
+        "nutrient excess",
+        "kwashiorkor",
+        "marasmus",
+        "scurvy",
+        "rickets",
+        "goitre",
+        "anaemia",
+        "night blindness",
+        "obesity",
+        "nutrient moderation",
+        "deficiency diseases"
+      ]
+    },
+    {
+      "id": "sci-food-preservation-storage",
+      "strand": "Food and Nutrition",
+      "topic": "Food Preservation and Storage: Traditional and Modern Methods",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Food Preservation:\n1. Definition of Food Preservation:\n   - Food preservation is the process of treating and handling food to stop, slow down, or prevent spoilage, decay, and loss of nutritional value caused by microorganisms and enzymes.\n\n2. Importance of Food Preservation:\n   - Prevents the growth of food-spoiling and disease-causing bacteria, molds, and yeasts.\n   - Ensures food availability and security during dry seasons, droughts, and winter months.\n   - Reduces food waste during harvest gluts.\n   - Allows long-distance transport and trade of perishable foods.\n\n3. Causes of Food Spoilage:\n   - Microorganisms: Bacteria, molds, and yeasts multiplying on food.\n   - Natural Food Enzymes: Chemical substances in food that cause it to over-ripen and rot.\n   - Moisture and Heat: Warm, moist conditions accelerate microbial growth.\n   - Pests: Weevils, rodents, and insects infesting stored grains.\n\n4. Methods of Food Preservation:\n   - Traditional Indigenous Methods:\n     * Sun-Drying: Removing moisture so microorganisms cannot grow. Used for vegetables (mufushwa) and meat strips (chimukuyu / biltong).\n     * Smoking: Meat and fish are hung over wood smoke; heat dries the food while smoke chemicals act as natural antimicrobials.\n     * Salting: High salt concentration draws water out of food and bacterial cells by **osmosis**, killing bacteria.\n     * Traditional Granaries (Dura / Isiphala): Raised wooden storage huts treated with wood ash to store maize, sorghum, and millet free from weevils and moisture.\n   - Modern Methods:\n     * Refrigeration & Freezing: Low temperatures (below 5°C in fridge, -18°C in freezer) slow down or completely halt bacterial activity.\n     * Canning: Food is sealed in airtight tin cans and heated to kill all microorganisms and spores.\n     * Pasteurization: Heating liquids (such as milk) to 72°C for 15 seconds followed by rapid cooling to kill pathogens without destroying flavor.\n     * Chemical Preservatives: Adding safe preservatives such as vinegar, sodium benzoate, or citric acid to inhibit microbial growth.\n     * Vacuum Packaging: Removing all air from plastic pouches before sealing, starving aerobic bacteria and fungi of oxygen.",
+      "keywords": [
+        "food preservation",
+        "define food preservation",
+        "state the importance of food preservation",
+        "methods of preserving food in the home",
+        "food storage",
+        "sun drying",
+        "mufushwa",
+        "chimukuyu",
+        "salting",
+        "canning",
+        "freezing",
+        "pasteurization",
+        "dura"
+      ]
+    },
+    {
+      "id": "sci-photosynthesis-starch-test",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Photosynthesis and Testing a Green Leaf for Starch",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Plant Science:\n1. Definition and Process of Photosynthesis:\n   - Photosynthesis is the biochemical process by which green plants manufacture their own food (glucose) using carbon dioxide and water in the presence of sunlight trapped by chlorophyll.\n   - Word Equation:\n     Carbon Dioxide + Water --(Sunlight & Chlorophyll)--> Glucose + Oxygen\n   - Inputs (Raw Materials):\n     * Water: Absorbed from soil by root hair cells through osmosis and transported through xylem vessels.\n     * Carbon Dioxide: Taken in from the atmosphere through microscopic leaf pores called **stomata**.\n   - Conditions Necessary:\n     * Sunlight: The light energy source.\n     * Chlorophyll: The green pigment in chloroplasts that absorbs solar energy.\n   - Outputs (Products):\n     * Glucose: Sugar used immediately for plant respiration or converted into insoluble **starch** for storage.\n     * Oxygen: By-product released into the atmosphere through stomata for living organisms to breathe.\n\n2. Step-by-Step Experiment: Testing a Green Leaf for Starch:\n   - Step 1: Pluck a green leaf from a plant that has been exposed to sunlight for several hours.\n   - Step 2: **Boil the leaf in water for 1 to 2 minutes** to kill the leaf cells and break down cell membranes.\n   - Step 3: Turn off the Bunsen burner flame! Place the leaf into a boiling tube containing **methylated spirit (alcohol)** and stand the tube in a beaker of hot water (a water bath).\n     * Reason: Alcohol dissolves and removes the green **chlorophyll** pigment, making the leaf pale white so color changes can be seen clearly. (A water bath is used because alcohol is highly flammable).\n   - Step 4: Dip the pale brittle leaf back into hot water for a few seconds to soften it.\n   - Step 5: Spread the leaf flat on a white tile and add a few drops of yellow-brown **iodine solution**.\n   - Observation and Conclusion:\n     * If starch is present, the leaf turns **blue-black**.\n     * If starch is absent, the iodine remains **yellow-brown**.\n     * Conclusion: Blue-black coloration proves that the leaf carried out photosynthesis and stored glucose as starch.",
+      "keywords": [
+        "photosynthesis",
+        "describe the process of photosynthesis",
+        "test a leaf for starch",
+        "factors necessary for photosynthesis to take place",
+        "chlorophyll",
+        "stomata",
+        "iodine solution",
+        "blue-black",
+        "starch test",
+        "water bath"
+      ]
+    },
+    {
+      "id": "sci-germination-conditions-stages",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Seed Germination: Conditions, Stages and Experiments",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Plant Growth:\n1. Definition of Germination:\n   - Germination is the process by which a dormant seed begins to sprout and develop into a young seedling when provided with suitable environmental conditions.\n\n2. Essential Conditions Necessary for Germination (Remember WOW):\n   - **Water (Moisture):** Softens the hard outer seed coat (testa) and activates enzymes that break down stored food in the cotyledons.\n   - **Oxygen (Air):** Essential for cellular respiration to release energy for cell division and growth.\n   - **Warmth (Suitable Temperature):** Activates plant enzymes; optimal temperature for most seeds is 20°C to 30°C (seeds do not germinate in freezing cold).\n   - *Note:* Soil and sunlight are **NOT** required for germination to begin (seeds can germinate on moist cotton wool in the dark because they live off stored food in their cotyledons).\n\n3. Stages of Seed Germination:\n   - Stage 1: Imbibition - The seed absorbs water through a tiny pore called the micropyle, swelling and splitting the seed coat (testa).\n   - Stage 2: The **Radicle** (embryonic root) emerges first and grows downward into the soil to absorb water and anchor the seedling.\n   - Stage 3: The **Plumule** (embryonic shoot) emerges next and grows upward toward light to develop the first true green leaves.\n   - Types of Germination:\n     * Epigeal Germination: Cotyledons are pushed above the ground (e.g. bean seeds).\n     * Hypogeal Germination: Cotyledons remain below the ground (e.g. maize seeds).\n\n4. Experiment to Prove Conditions for Germination:\n   - Tube A (Complete conditions): Moist cotton wool, air, warm room -> Seeds germinate successfully.\n   - Tube B (No water): Dry cotton wool, air, warm room -> No germination (proves water is needed).\n   - Tube C (No oxygen): Seeds in boiled cooled water covered with a layer of cooking oil -> No germination (proves oxygen is needed).\n   - Tube D (No warmth): Moist cotton wool, air, placed inside a refrigerator at 2°C -> No germination (proves warmth is needed).",
+      "keywords": [
+        "germination",
+        "define germination",
+        "conditions necessary for germination",
+        "describe germination stages",
+        "carry out an experiment on seed germination",
+        "radicle",
+        "plumule",
+        "cotyledon",
+        "water oxygen warmth",
+        "epigeal",
+        "hypogeal"
+      ]
+    },
+    {
+      "id": "sci-plant-nutrients-deficiency",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Plant Nutrients, Deficiency Signs and Remedies (NPK)",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Agriculture:\n1. Essential Plant Nutrients:\n   - Plants absorb dissolved mineral nutrients from the soil through root hairs.\n   - Major Nutrients (Macronutrients - NPK):\n     * Nitrogen (N): Promotes vegetative growth, leaf and stem development, and gives leaves their dark green color (component of chlorophyll and proteins).\n     * Phosphorus (P): Promotes early root development, flowering, seed formation, and energy transfer.\n     * Potassium (K): Strengthens plant stems, improves disease and drought resistance, and regulates stomata.\n   - Secondary and Micronutrients: Calcium (cell wall strength), Magnesium (core element of chlorophyll), Sulfur, Iron, Zinc, Boron.\n\n2. Plant Nutrient Deficiency Signs:\n   - Nitrogen Deficiency: Stunted plant growth; leaves turn pale yellow starting from older lower leaves (**chlorosis**); thin, weak stems.\n   - Phosphorus Deficiency: Poor root system; purplish or reddish discoloration along leaf veins and edges; delayed maturity.\n   - Potassium Deficiency: Premature yellowing and browning/scorching of leaf margins and tips (\"leaf burn\"); weak stems prone to falling over (**lodging**).\n\n3. Ways to Curb Plant Nutrient Deficiency:\n   - Apply well-rotted livestock manure (cattle, poultry, goat dung) or organic compost to restore natural humus and nutrients.\n   - Practice **Crop Rotation** with leguminous crops (beans, cowpeas, groundnuts) whose root nodules harbor Rhizobium bacteria that fix atmospheric nitrogen into the soil.\n   - Apply balanced synthetic chemical fertilizers (such as Compound D at planting for basal nutrition, and Ammonium Nitrate - AN for nitrogen top-dressing).\n   - Practice agroforestry by planting nitrogen-fixing trees (e.g. Acacia / Faidherbia albida) in crop fields.",
+      "keywords": [
+        "plant nutrients",
+        "plant nutrient deficiency",
+        "npk",
+        "nitrogen",
+        "phosphorus",
+        "potassium",
+        "chlorosis",
+        "stunted growth",
+        "compost",
+        "rhizobium",
+        "crop rotation"
+      ]
+    },
+    {
+      "id": "sci-predator-prey-food-web",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Predator-Prey Relationships, Food Chains and Food Webs",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Ecosystems:\n1. Predator-Prey Relationships:\n   - Definition: A biological interaction where one organism, the **predator**, hunts, kills, and eats another organism, the **prey**.\n   - Examples: Lion (predator) and Zebra (prey); Eagle (predator) and Mouse (prey); Frog (predator) and Locust (prey).\n   - Adaptations of Predators: Sharp eyesight, acute hearing, powerful claws/talons, sharp teeth (canines), stealth camouflage, and fast running speeds.\n   - Adaptations of Prey: Eyes on the sides of the head for wide panoramic vision, keen sense of smell, protective camouflage (spots/stripes), speed and agility, living in herds for group safety, defensive thorns or horns.\n   - Importance of Balance in an Ecosystem:\n     * Predators prevent prey populations from exploding and overgrazing pasture.\n     * Keeps prey herds healthy by hunting the old, weak, and sick individuals.\n     * If predators are eliminated, prey overpopulate, exhaust vegetation, and experience mass starvation.\n\n2. Food Chains and Food Webs:\n   - Food Chain: A linear sequence showing how energy passes from one organism to another:\n     * Producer (Grass) -> Primary Consumer (Grasshopper) -> Secondary Consumer (Frog) -> Tertiary Consumer (Snake) -> Apex Predator (Eagle).\n   - Food Web: A complex network of interconnected food chains representing the true feeding relationships within an ecosystem.\n   - Trophic Levels:\n     * Producers (Autotrophs): Green plants that manufacture food by photosynthesis using sunlight.\n     * Primary Consumers: Herbivores that eat plants (e.g. impala, cattle, caterpillars).\n     * Secondary Consumers: Carnivores or omnivores that eat herbivores.\n     * Decomposers (Fungi and Bacteria): Break down dead plant and animal matter, recycling nutrients back into the soil.",
+      "keywords": [
+        "predator-prey relationship",
+        "food web",
+        "food chain",
+        "ecological pyramid",
+        "producers",
+        "consumers",
+        "herbivores",
+        "carnivores",
+        "ecosystem balance",
+        "decomposers"
+      ]
+    },
+    {
+      "id": "sci-animal-reproduction-gestation",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Animal Reproduction and Comparative Gestation Periods",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Animal Science:\n1. Animal Reproduction:\n   - Mating: The physical union of male and female animals of the same species during which the male introduces sperm into the female's reproductive tract to fertilize her ova.\n   - Fertilization: The fusion of the nucleus of a male gamete (sperm) with the nucleus of a female gamete (egg/ovum) to form a single-celled **zygote**.\n   - Definition of Gestation Period: The time period from successful fertilization and conception to the birth of the offspring (parturition).\n\n2. Comparative Gestation Periods for Domestic Animals and Humans:\n   - **Cow (Cattle):** Approximately **9 months / 280 to 283 days** (similar to humans).\n   - **Sheep (Ewe):** Approximately **5 months / 147 to 150 days**.\n   - **Goat (Doe):** Approximately **5 months / 150 days**.\n   - **Pig (Sow):** Remember the easy rule: **3 months, 3 weeks, and 3 days (approx. 114 to 115 days)**.\n   - **Horse (Mare):** Approximately **11 months / 336 to 340 days**.\n   - **Donkey:** Approximately **12 months / 365 days**.\n   - **Dog (Bitch):** Approximately **2 months / 63 days**.\n   - **Cat (Queen):** Approximately **2 months / 63 to 65 days**.\n   - **Rabbit (Doe):** Approximately **1 month / 30 to 32 days**.\n   - **Human:** Approximately **9 calendar months / 40 weeks / 280 days**.",
+      "keywords": [
+        "animal reproduction",
+        "gestation period",
+        "compare the gestation periods for domestic animals",
+        "mating",
+        "cow gestation",
+        "pig gestation",
+        "sheep gestation",
+        "goat gestation",
+        "dog gestation"
+      ]
+    },
+    {
+      "id": "sci-crops-rotation-pests",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Crops, Crop Rotation Principles and Pest Management",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Crop Science:\n1. Definition and Principles of Crop Rotation:\n   - Crop rotation is the practice of growing a planned sequence of different crop families on the same piece of land across consecutive seasons.\n   - Core Principles of 4-Cycle Crop Rotation:\n     * Year 1: Legumes (Beans, cowpeas, groundnuts) -> Fix atmospheric nitrogen into the soil using root nodule bacteria.\n     * Year 2: Leaf Crops (Cabbage, rape, spinach, maize) -> Heavy nitrogen feeders that utilize the nitrogen fixed by legumes.\n     * Year 3: Fruit Crops (Tomatoes, peppers, pumpkins) -> Require moderate nutrients and high potassium/phosphorus.\n     * Year 4: Root Crops (Carrots, beetroot, sweet potatoes) -> Deep roots draw nutrients from deep in the soil and break up hard soil pans; do not require heavy nitrogen.\n   - Benefits: Controls crop-specific pests and soil diseases, improves soil structure, balances soil nutrient extraction, prevents soil exhaustion.\n\n2. Common Crop Pests in Zimbabwe:\n   - Maize Stalk Borer: Caterpillars bore into maize stems and cobs, causing \"dead heart\" and snapped stems.\n   - Fall Armyworm: Aggressive caterpillars that destroy leaves, tassels, and ears of maize crops.\n   - Aphids: Tiny sap-sucking insects that transmit plant viruses and secrete sticky honeydew that fosters black sooty mold.\n   - Red Spider Mite: Attacks tomatoes and beans, causing yellow mottling on leaves.\n   - Cutworms: Caterpillars that cut down young crop seedlings at ground level at night.\n\n3. Methods of Controlling Pests (Integrated Pest Management):\n   - Cultural Control: Crop rotation, early planting, handpicking large pests, removing and burning crop residues after harvest.\n   - Biological Control: Introducing natural predators (e.g. ladybird beetles eating aphids, birds eating caterpillars).\n   - Chemical Control: Careful, targeted application of approved pesticides (e.g. carbaryl, dipterex) using protective knapsack sprayers.",
+      "keywords": [
+        "crop rotation",
+        "define crop rotation",
+        "name pests that affect crops",
+        "explain ways of controlling pests",
+        "stalk borer",
+        "armyworm",
+        "aphids",
+        "ipm",
+        "legumes"
+      ]
+    },
+    {
+      "id": "sci-vertebrates-invertebrates",
+      "strand": "Crops, Plants and Animals",
+      "topic": "Vertebrates and Invertebrates: Classification, Characteristics & Habitats",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Animal Diversity:\n1. Distinction Between Vertebrates and Invertebrates:\n   - Vertebrates: Animals that possess a backbone / vertebral column and an internal bony skeleton.\n   - Invertebrates: Animals that DO NOT have a backbone (many have a hard outer protective shell called an exoskeleton).\n\n2. Five Classes of Vertebrates:\n   - Mammals: Have hair/fur on skin; warm-blooded (endothermic); give birth to live young (viviparous); mothers nurse young with milk from mammary glands (e.g. humans, cows, lions, whales, bats).\n   - Birds: Bodies covered with feathers; have beaks/bills and wings; lay hard-shelled eggs; warm-blooded (e.g. eagles, chickens, ostriches).\n   - Reptiles: Cold-blooded (ectothermic); dry skin covered with horny scales; breathe through lungs; lay leathery-shelled eggs on land (e.g. snakes, crocodiles, lizards, tortoises).\n   - Amphibians: Cold-blooded; smooth moist skin with no scales; live dual lives (part in water with gills as tadpoles, part on land with lungs/skin as adults); lay jelly-coated eggs in water (e.g. frogs, toads, salamanders).\n   - Fish: Cold-blooded; live entirely in water; breathe using **gills**; have fins for swimming and balance; bodies usually covered in wet slimy scales; lay eggs in water (e.g. bream, trout, kapenta).\n\n3. Major Groups of Invertebrates:\n   - Insects: Body divided into 3 parts (head, thorax, abdomen); 3 pairs of jointed legs (6 legs); 1 pair of antennae; usually 1 or 2 pairs of wings (e.g. housefly, mosquito, grasshopper, bee).\n   - Arachnids: Body divided into 2 parts (cephalothorax and abdomen); 4 pairs of legs (8 legs); no wings; no antennae (e.g. spiders, scorpions, ticks).\n   - Molluscs: Soft-bodied animals, often protected by a hard calcium shell; have a muscular foot (e.g. snails, slugs, clams).\n   - Annelids (Segmented Worms): Bodies divided into ring-like segments; no legs; moist skin (e.g. earthworms).",
+      "keywords": [
+        "vertebrates and invertebrates",
+        "classify vertebrates into five groups",
+        "describe the characteristics of vertebrates and invertebrates",
+        "mammals",
+        "birds",
+        "reptiles",
+        "amphibians",
+        "fish",
+        "insects",
+        "arachnids",
+        "exoskeleton",
+        "backbone"
+      ]
+    },
+    {
+      "id": "sci-weather-climate-instruments",
+      "strand": "Environment",
+      "topic": "Weather and Climate: Elements, Instruments and Forecasting",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Weather and Climate:\n1. Difference Between Weather and Climate:\n   - Weather: The day-to-day atmospheric conditions of a specific place over a short period of time (hours or days).\n   - Climate: The average weather pattern of a region recorded over a long period of time (at least 30 to 35 years).\n\n2. Weather Elements and Their Measuring Instruments:\n   - Temperature: Measured using a **Thermometer** (Six's Maximum and Minimum Thermometer) kept inside a **Stevenson Screen**; units are degrees Celsius (°C).\n   - Rainfall: Measured using a **Rain Gauge** (placed in an open space away from trees/buildings); units are millimeters (mm).\n   - Wind Direction: Indicated by a **Wind Vane**; points toward the direction the wind is blowing FROM (e.g. Easterly wind).\n   - Wind Speed: Measured using a rotating cup **Anemometer**; units are km/h or knots.\n   - Atmospheric Pressure: Measured using a **Barometer** (Mercury or Aneroid barometer); units are millibars (mb) or hectopascals (hPa).\n   - Humidity (Moisture in Air): Measured using a **Hygrometer** (Wet and Dry Bulb Thermometer); units are percentage (%).\n   - Sunshine: Measured using a **Campbell-Stokes Sunshine Recorder**; units are hours per day.\n\n3. The Stevenson Screen:\n   - A white-painted wooden louvered box mounted on legs 1.2 meters above the ground.\n   - White paint reflects direct solar heat; louvered sides allow free air circulation; 1.2m height prevents ground heat from affecting readings.\n\n4. Weather Forecasting and Importance:\n   - Definition: Predicting future atmospheric conditions using scientific data collected from weather stations, radar, and satellites.\n   - Importance: Helps farmers decide when to plant, weed, and harvest; alerts communities to impending natural hazards (cyclones, floods, frost); helps aviation pilots and ship captains navigate safely.",
+      "keywords": [
+        "weather elements",
+        "identify weather instruments",
+        "define weather forecasting",
+        "state the importance of weather forecast",
+        "thermometer",
+        "rain gauge",
+        "wind vane",
+        "anemometer",
+        "barometer",
+        "hygrometer",
+        "stevenson screen",
+        "climate"
+      ]
+    },
+    {
+      "id": "sci-soil-components-ecosystem",
+      "strand": "Environment",
+      "topic": "Soil: Components, Soil as an Ecosystem and Uses of Soil",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Soil Science:\n1. Four Main Components of Soil:\n   - Mineral Particles (approx. 45%): Sand, silt, and clay particles derived from the weathering of parent rocks. Provides anchorage for roots and minerals.\n   - Organic Matter / Humus (approx. 5%): Dark, decomposed remains of dead plants and animals. Binds soil particles, retains moisture, and supplies plant nutrients.\n   - Soil Water (approx. 25%): Moisture held in capillary spaces between soil particles; dissolves nutrients so plant roots can absorb them.\n   - Soil Air (approx. 25%): Air rich in oxygen held in non-capillary pore spaces; vital for root respiration and soil organism survival.\n\n2. Soil as a Living Ecosystem:\n   - Living Organisms in the Soil: Earthworms, termites, ants, beetles, nematodes, burrowing rodents, fungi, and nitrogen-fixing bacteria.\n   - How Soil is Enriched by Living Organisms:\n     * Earthworms burrow through soil, creating channels that improve aeration and water infiltration; their castings are rich in plant nutrients.\n     * Fungi and bacteria decompose dead plant leaves and animal carcasses into rich dark **humus**.\n     * Rhizobium bacteria in legume root nodules fix atmospheric nitrogen directly into soil nitrates.\n\n3. Three Main Types of Soil:\n   - Sandy Soil: Large gritty particles, large pore spaces; drains water very quickly; low nutrient holding capacity; easy to cultivate.\n   - Clay Soil: Extremely fine particles, tightly packed; holds water tightly (poor drainage, easily waterlogged); sticky when wet, hard when dry; rich in mineral nutrients.\n   - Loam Soil: Balanced mixture of sand, clay, and plenty of humus; optimal water retention and drainage; fertile and easiest to cultivate (ideal agricultural soil).\n\n4. Uses of Soil in Zimbabwe:\n   - Agricultural Foundation: Anchors plant roots and provides water and nutrients to grow crops.\n   - Construction: Molding bricks (adobe and fired bricks), plastering traditional round huts (*dzimba dzeuswa*), building road foundations.\n   - Pottery and Crafting: Modeling clay pots (*hari*), plates, and ceramic art.\n   - Water Filtration: Naturally filters rainwater as it percolates down into underground aquifers.",
+      "keywords": [
+        "soil components",
+        "four components of soil",
+        "soil as an ecosystem",
+        "organisms living in the soil",
+        "uses of soil",
+        "humus",
+        "loam",
+        "sandy",
+        "clay",
+        "earthworms"
+      ]
+    },
+    {
+      "id": "sci-soil-erosion-control",
+      "strand": "Environment",
+      "topic": "Soil Erosion: Agents, Types, Causes and Control Measures",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Soil Conservation:\n1. Definition of Soil Erosion:\n   - Soil erosion is the washing away, blowing away, or physical removal of fertile topsoil from the land surface by natural agents such as running water, wind, and animals.\n\n2. Agents of Soil Erosion:\n   - Running Water: Heavy rainfall and surface runoff carry away loose soil.\n   - Wind: Strong gale winds sweep away dry, bare, unprotected topsoil.\n   - Animals and Humans: Overgrazing livestock and human deforestation expose bare ground.\n\n3. Four Main Types of Soil Erosion:\n   - Splash Erosion: Raindrops strike bare soil directly, dislodging soil particles and scattering them.\n   - Sheet Erosion: Rainwater flows as a wide, uniform sheet over bare sloping ground, stripping off the top layer of fertile soil evenly (difficult to notice initially).\n   - Rill Erosion: Surface runoff concentrates into small, visible, finger-like shallow channels or grooves on the soil surface.\n   - Gully Erosion: Severe, advanced erosion where rills widen and deepen into massive steep-sided trenches (dongas) that cannot be crossed by farm machinery.\n\n4. Causes of Soil Erosion:\n   - Deforestation: Cutting down trees for firewood, tobacco curing, or land clearing removes root anchors and canopy protection.\n   - Overgrazing: Keeping too many cattle/goats in one paddock strips all vegetative grass cover.\n   - Ploughing up and down steep slopes instead of across the contour.\n   - Veld fires destroying grass ground cover before the rainy season.\n\n5. Ways of Controlling and Preventing Soil Erosion:\n   - **Contour Ridges:** Digging earth ridges and storm drains along the contour lines of sloping lands to slow down runoff.\n   - **Terracing:** Constructing step-like flat terraces on steep hillsides.\n   - **Mulching:** Covering bare soil around crops with dry grass, straw, or leaves to cushion raindrop impact and conserve moisture.\n   - **Afforestation and Reforestation:** Planting new trees and replacing cut ones so tree roots bind soil particles firmly.\n   - **Planting Vetiver Grass:** Planting dense rows of deep-rooted vetiver grass along waterways and gullies to trap silt.\n   - **Rotational Grazing (Paddocking):** Moving cattle periodically between paddocks to allow grass to regenerate.",
+      "keywords": [
+        "soil erosion",
+        "define soil erosion",
+        "list agents of soil erosion",
+        "explain causes of soil erosion",
+        "state ways of controlling soil erosion",
+        "splash erosion",
+        "sheet erosion",
+        "rill erosion",
+        "gully erosion",
+        "contour ridges",
+        "mulching",
+        "afforestation"
+      ]
+    },
+    {
+      "id": "sci-water-cycle-detail",
+      "strand": "Environment",
+      "topic": "Water Cycle, Changes of State and Groundwater Extraction",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Science:\n1. Three States of Water and Changes of State:\n   - Solid (Ice): Rigid, fixed shape; water molecules closely packed.\n   - Liquid (Water): Flows freely, takes the shape of its container.\n   - Gas (Water Vapor / Steam): Invisible vapor dispersed freely in the air.\n   - Processes of State Changes:\n     * Melting: Solid ice heated -> Liquid water.\n     * Evaporation: Liquid water heated -> Gas (water vapor).\n     * Condensation: Water vapor cools -> Liquid water droplets (forms clouds).\n     * Freezing: Liquid water cooled below 0°C -> Solid ice.\n\n2. Explanation of the Water (Hydrological) Cycle:\n   - Solar Evaporation: Sun heats water in oceans, lakes, and rivers, turning it into invisible water vapor that rises into the atmosphere.\n   - Transpiration: Green plants release water vapor into the air through microscopic leaf pores (stomata).\n   - Condensation: Rising water vapor cools at high altitude and condenses around microscopic dust particles into billions of water droplets, forming **clouds**.\n   - Precipitation: When cloud water droplets become too heavy to remain suspended, they fall to earth as **rain**, hail, or snow.\n   - Surface Runoff and Infiltration: Rainwater flows over land as runoff into rivers, dams, and lakes, while some water soaks (**infiltrates**) deep into the soil to replenish groundwater aquifers.\n\n3. Groundwater Extraction and Conservation:\n   - Importance of Groundwater: Natural reservoir of pure filtered water that supplies rural communities, schools, and irrigation boreholes.\n   - Extraction Methods:\n     * Hand-dug Wells: Shallow wells dug into the water table, fitted with buckets or windlasses.\n     * Machine-drilled Boreholes: Deep pipes drilled deep into rock aquifers, fitted with manual **Bush Pumps** or electric/solar submersible pumps.\n   - Conservation: Protecting wetlands (mapani/dambos), preventing chemical pollution near boreholes, and rainwater harvesting to recharge underground aquifers.",
+      "keywords": [
+        "water cycle",
+        "identify states of water",
+        "demonstrate changes in water states",
+        "explain the water cycle",
+        "evaporation",
+        "condensation",
+        "precipitation",
+        "transpiration",
+        "ground water extraction",
+        "boreholes",
+        "wetlands"
+      ]
+    },
+    {
+      "id": "sci-weathering-rocks-detail",
+      "strand": "Environment",
+      "topic": "Weathering of Rocks: Physical, Chemical and Biological Types",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Earth Science:\n1. Definition of Weathering:\n   - Weathering is the breaking down, disintegration, and chemical decay of rocks into smaller particles *in situ* (in their original place) at or near the Earth's surface through the action of weather elements and living organisms.\n   - *Key Distinction:* Weathering happens **in situ** (without transport); **erosion** is the carrying away of loosened rock fragments by water, wind, or ice.\n\n2. The Three Main Types of Weathering:\n   - **Physical (Mechanical) Weathering:**\n     * Disintegration of rocks into smaller rock fragments without any change in their chemical composition.\n     * **Exfoliation (Onion-Skin Peeling):** Common in arid and semi-arid areas of Zimbabwe (e.g. granite kopjes in Domboshava and Matobo Hills). High daytime solar heat causes outer rock layers to expand; cold nighttime temperatures cause rapid contraction. Repeated expansion and contraction creates stress fractures, causing outer curved layers to peel off like onion skins.\n     * **Freeze-Thaw (Frost Action):** Water seeps into cracks in rocks. When temperature drops below 0°C, the water freezes and expands by ~9%, exerting tremendous pressure that wedges the crack wider until the rock shatters.\n   - **Chemical Weathering:**\n     * Decomposition of rock minerals caused by chemical reactions with water, oxygen, and acidic gases.\n     * **Carbonation:** Rainwater absorbs carbon dioxide from the air to form weak carbonic acid, which dissolves calcium carbonate rocks (limestone/marble) to form caves (e.g. Chinhoyi Caves).\n     * **Oxidation (Rusting):** Iron minerals in rocks react with dissolved oxygen in water, turning rocks reddish-brown and crumbly.\n     * **Hydration:** Minerals absorb water and swell, weakening the rock structure.\n   - **Biological Weathering:**\n     * Disintegration of rocks caused by living organisms.\n     * Plant roots grow into small rock fissures and widen them as roots thicken.\n     * Burrowing animals (termites, rodents, earthworms) expose rocks to air and moisture.\n     * Lichens and mosses growing on rock surfaces secrete organic acids that corrode minerals.",
+      "keywords": [
+        "weathering",
+        "state the three types of weathering",
+        "describe different types of weathering",
+        "physical weathering",
+        "chemical weathering",
+        "biological weathering",
+        "exfoliation",
+        "freeze-thaw",
+        "carbonation",
+        "domboshava",
+        "chinhoyi caves"
+      ]
+    },
+    {
+      "id": "sci-soil-profile-detail",
+      "strand": "Environment",
+      "topic": "Soil Profile: Horizons O, A, B, C, R and Importance",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Soil Science:\n1. Definition of Soil Profile:\n   - A soil profile is a vertical cross-section of the soil from the ground surface down through all its successive layers to the underlying parent bedrock, showing distinct horizontal layers known as **soil horizons**.\n\n2. The Soil Horizons (From Top to Bottom):\n   - **Horizon O (Organic Layer):**\n     * The uppermost surface layer composed of fresh and partially decomposed organic matter (fallen leaves, plant twigs, animal waste, and dark rich humus).\n   - **Horizon A (Topsoil):**\n     * The most fertile mineral layer directly beneath Horizon O.\n     * Characterized by a dark brown or black color due to abundant humus.\n     * Contains the highest concentration of plant roots, earthworms, and soil microorganisms.\n     * Crucial for crop farming because it holds available plant nutrients and moisture.\n   - **Horizon B (Subsoil):**\n     * Layer lying beneath the topsoil, lighter in color (often reddish, yellowish, or brown clay).\n     * Zone of accumulation (illuviation) where clay particles and leached minerals washed down from the topsoil accumulate.\n     * More compact and dense, with fewer roots and less organic matter.\n   - **Horizon C (Weathered Parent Material):**\n     * Layer composed of partially weathered, broken, and fractured rock fragments derived from the underlying bedrock.\n     * Contains no organic matter and cannot support plant roots.\n   - **Horizon R (Solid Bedrock):**\n     * The unweathered solid continuous parent rock layer (granite, basalt, or limestone) forming the geological base of the soil.\n\n3. Importance of the Soil Profile:\n   - Helps farmers determine soil fertility, effective root depth, and suitability for specific crops.\n   - Indicates water drainage capacity and helps prevent soil erosion.\n   - Guides civil engineers in assessing soil stability for building foundations, bridges, and dams.",
+      "keywords": [
+        "soil profile",
+        "define soil profile",
+        "identify the layers of the soil profile",
+        "discuss the importance of the soil profile",
+        "horizon o",
+        "horizon a",
+        "horizon b",
+        "horizon c",
+        "horizon r",
+        "topsoil",
+        "subsoil",
+        "bedrock"
+      ]
+    },
+    {
+      "id": "sci-climate-change-mitigation",
+      "strand": "Environment",
+      "topic": "Climate Change: Causes, Effects, Mitigation and Adaptation",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Health:\n1. Definition of Climate Change:\n   - Climate change refers to long-term shifts in global or regional temperatures and precipitation patterns, primarily driven by human activities that increase concentrations of greenhouse gases in the atmosphere.\n\n2. Causes of Climate Change:\n   - Burning of fossil fuels (coal, oil, petrol, diesel) for industrial electricity and transportation, releasing large amounts of carbon dioxide (CO2).\n   - Deforestation: Widespread cutting down of forests reduces the planet's capacity to absorb CO2 through photosynthesis.\n   - Agriculture and Livestock: Cattle enteric fermentation releases methane (CH4); nitrogen fertilizers emit nitrous oxide (N2O).\n   - Industrial Manufacturing: Releasing industrial greenhouse gases and chemical pollutants.\n\n3. Effects of Climate Change in Zimbabwe and Southern Africa:\n   - More frequent and prolonged severe agricultural droughts (frequently triggered by El Niño weather phenomena).\n   - Increased frequency and intensity of destructive tropical cyclones (e.g. Cyclone Idai in 2019 causing deadly floods and landslides in Chimanimani and Chipinge).\n   - Shift in rainfall seasons: Delayed start of rainy seasons and erratic rainfall distribution causing crop failures.\n   - Water scarcity: Drying up of seasonal rivers, dams, and receding groundwater tables.\n   - Threat to biodiversity and wildlife in national parks due to extreme heat and drying waterholes.\n\n4. Mitigation and Adaptation Strategies:\n   - Mitigation (Reducing Greenhouse Gas Emissions):\n     * Transition to clean renewable energy (rooftop solar power, wind, hydro, and biogas).\n     * Afforestation and reforestation: Planting millions of trees annually to serve as carbon sinks.\n     * Stopping uncontrolled veld fires and banning open burning of plastic waste.\n   - Adaptation (Learning to Cope with Changing Climate):\n     * Planting drought-tolerant indigenous small grains (sorghum, rapoko, mhunga) instead of thirsty hybrid maize.\n     * Practicing **Pfumvudza / Intwasa** conservation agriculture (minimum tillage, permanent planting basins, heavy mulching to conserve soil moisture).\n     * Rainwater harvesting from roofs and constructing community weir dams.\n     * Installing efficient drip irrigation systems instead of flood irrigation.",
+      "keywords": [
+        "climate change",
+        "define climate change",
+        "identify cause of climate change",
+        "explain effects of climate change",
+        "discuss mitigation measures",
+        "greenhouse effect",
+        "cyclone idai",
+        "drought",
+        "pfumvudza",
+        "intwasa",
+        "renewable energy"
+      ]
+    },
+    {
+      "id": "sci-farm-implements-machinery",
+      "strand": "Tools and Equipment",
+      "topic": "Farm Implements and Machinery: Types, Safety and Maintenance",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Tools and Machinery:\n1. Types of Farm Implements and Machinery:\n   - Hand Tools:\n     * Badza (Hoe): Used for digging planting basins, weeding, and earthing up crops.\n     * Spade & Shovel: Used for scooping and moving soil, sand, and compost manure.\n     * Sickle: Curved serrated blade used for harvesting small grains and cutting thatch grass.\n     * Pickaxe: Heavy T-shaped tool for breaking hard compacted rocky ground.\n     * Rake: Leveling garden seedbeds and collecting dry trash.\n   - Animal-Drawn Implements:\n     * Mouldboard Plough: Ox-drawn implement used for primary tillage; cuts, lifts, and turns over the soil slice to bury weeds.\n     * Spike-Tooth / Disc Harrow: Secondary tillage implement used to break large soil clods and create a fine seedbed.\n     * Cultivator: Used for inter-row weeding and loosening soil between crop rows without damaging crop roots.\n     * Planter: Automatically meters seeds and fertilizers into furrows at uniform depth and spacing.\n     * Scotch Cart: Ox-drawn two-wheeled transport cart for carrying harvested produce, manure, and firewood.\n   - Motorized Machinery:\n     * Tractor: Powerful multi-purpose motorized farm vehicle used to pull heavy implements (ploughs, harrows, trailers).\n     * Combine Harvester: Complex self-propelled machine that cuts, threshes, and winnows grain crops (wheat, maize) in a single continuous operation.\n     * Knapsack Sprayer: Portable pressure sprayer used to apply herbicides, pesticides, and liquid foliar fertilizers to crops.\n\n2. Safety Procedures When Operating Farm Implements:\n   - Wear appropriate Personal Protective Equipment (PPE) such as sturdy gumboots, leather gloves, and eye goggles.\n   - When using chemical sprayers, wear a protective face mask and waterproof suit, and NEVER spray against the direction of the wind.\n   - Keep animals and small children away from working machinery and moving ox-spans.\n   - Never stand directly behind a running tractor or beneath raised hydraulic implements.\n\n3. Maintenance of Farm Equipment:\n   - Cleaning: Wash off all soil, mud, and plant residues immediately after use to prevent corrosion.\n   - Sharpening: Sharpen cutting edges of hoes, ploughshares, sickles, and blades regularly using a bastard mill file or grindstone.\n   - Oiling and Greasing: Apply grease to moving bearings, wheels, and chains; wipe metal parts with used oil to prevent rusting.\n   - Storage: Store farm tools and implements neatly in a dry, covered toolshed out of rain and direct sunlight.",
+      "keywords": [
+        "farm implements",
+        "identify farm implements",
+        "explain safety procedures for operating farm implements",
+        "describe maintenance procedures",
+        "farm machinery",
+        "mouldboard plough",
+        "harrow",
+        "cultivator",
+        "tractor",
+        "knapsack sprayer",
+        "badza",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "sci-digital-devices-tools-ict",
+      "strand": "Tools and Equipment",
+      "topic": "Digital Devices, Servers, Spreadsheets and ICT Careers",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • ICT:\n1. Digital Devices and Servers:\n   - Digital Devices: Electronic tools that generate, process, store, and communicate digital data (smartphones, tablets, laptops, desktop computers, digital cameras).\n   - Definition of a Server: A specialized, high-capacity central computer system that provides resources, services, and data to other computers (called clients) over a network or the Internet.\n   - Types of Servers:\n     * File Server: Stores and manages central files and documents for network users.\n     * Web Server: Delivers web pages and websites over the Internet using HTTP/HTTPS protocols.\n     * Mail Server: Manages, receives, and routes electronic mail (email).\n     * Database Server: Stores, manages, and retrieves structured records in databases.\n   - Global Positioning System (GPS): A space-based satellite navigation system that provides accurate geographic location (latitude and longitude) and time information anywhere on Earth. Used in mapping, road navigation, search and rescue, and precision farming.\n\n2. Digital Tools: Spreadsheets and Databases:\n   - Spreadsheet (e.g. Microsoft Excel, Google Sheets):\n     * A grid of columns (letters A, B, C...) and rows (numbers 1, 2, 3...) forming cells where numerical data and labels are entered.\n     * Using Formulas: All spreadsheet formulas begin with an equal sign (=).\n       - Addition: `=SUM(A1:A10)`\n       - Average: `=AVERAGE(B1:B10)`\n       - Highest value: `=MAX(C1:C10)`\n     * Data Visualization: Generating bar charts, pie charts, and line graphs to interpret data patterns visually.\n     * Sorting and Filtering: Ordering records alphabetically or numerically; filtering data to view records meeting specific criteria.\n   - Database Tables:\n     * Storing structured data in tables consisting of fields (columns) and records (rows).\n     * Sorting and running queries to retrieve specific answers.\n\n3. Career Opportunities in ICT:\n   - Software Engineer / Programmer: Designs, writes, tests, and maintains computer code, mobile apps, and video games.\n   - Cybersecurity Specialist: Protects computer networks, servers, and sensitive data from hackers, malware, and digital theft.\n   - Database Administrator: Manages, organizes, and secures institutional data records.\n   - Network Engineer: Installs, configures, and maintains internet connections, Wi-Fi routers, switches, and communication lines.\n   - Web Designer / Developer: Builds, designs, and updates websites and online educational platforms.",
+      "keywords": [
+        "digital devices",
+        "define servers",
+        "list different types of servers",
+        "explain uses of servers",
+        "gps",
+        "digital tools",
+        "spreadsheet",
+        "database",
+        "career opportunities in ict",
+        "excel formulas",
+        "software engineer",
+        "cybersecurity"
+      ]
+    },
+    {
+      "id": "sci-measuring-tools-length-mass-vol",
+      "strand": "Tools and Equipment",
+      "topic": "Measuring Tools: Temperature, Mass, Volume and Length",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Measurement:\n1. Scientific Measurement and Standard Units (SI Units):\n   - Measurement is the process of finding a quantitative number for a physical property using standard scientific instruments.\n\n2. Physical Properties, Measuring Instruments and Units:\n   - **Temperature:**\n     * Instrument: **Thermometer** (Liquid-in-glass thermometer containing mercury or colored alcohol; digital thermometer).\n     * Unit: Degrees Celsius (**°C**). Normal human body temperature is approximately **37°C**. Boiling point of pure water is **100°C**; freezing point is **0°C**.\n   - **Mass:**\n     * Instrument: **Beam Balance**, **Triple Beam Balance**, or **Electronic Digital Scale**.\n     * Unit: Grams (**g**) and Kilograms (**kg**). (1 kg = 1 000 g; 1 tonne = 1 000 kg).\n   - **Volume (Liquids & Irregular Solids):**\n     * Instrument: **Measuring Cylinder**, **Graduated Beaker**, **Pipette**, or **Burette**.\n     * Unit: Millilitres (**ml**) and Litres (**l**). (1 litre = 1 000 ml = 1 000 cm³).\n     * Meniscus Rule: When reading liquid volume in a glass cylinder, read the scale at the **bottom of the curved meniscus** at eye level to prevent parallax error.\n     * Displacement Method: To measure volume of an irregular stone: Record initial water volume in cylinder ($V_1$), gently submerge stone, record new water volume ($V_2$). Stone Volume = $V_2 - V_1$.\n   - **Length:**\n     * Instrument: **Ruler** (for short lengths), **Measuring Tape** (for field and fabric measurements), **Vernier Caliper** (for precise thickness and internal/external diameters).\n     * Unit: Millimetres (**mm**), Centimetres (**cm**), Metres (**m**), Kilometres (**km**). (1 m = 100 cm = 1 000 mm; 1 km = 1 000 m).",
+      "keywords": [
+        "measuring tools",
+        "identify the tools used for measuring temperature, mass and volume",
+        "measure mass and volume",
+        "thermometer",
+        "beam balance",
+        "measuring cylinder",
+        "ruler",
+        "measuring tape",
+        "meniscus",
+        "displacement method"
+      ]
+    },
+    {
+      "id": "sci-forms-energy-conversion",
+      "strand": "Energy and Fuels",
+      "topic": "Forms of Energy, Energy Conversion and the Conservation Law",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Energy:\n1. Forms of Energy:\n   - Kinetic Energy: Energy possessed by an object due to its motion (e.g. running person, rolling ball, flowing river water, wind).\n   - Potential Energy: Stored energy waiting to be released.\n     * Gravitational Potential Energy: Stored in an object raised above the ground (e.g. water held behind Kariba Dam wall).\n     * Chemical Potential Energy: Stored in chemical bonds of food, dry battery cells, wood, and fossil fuels.\n     * Elastic Potential Energy: Stored in stretched rubber bands, catapults, and compressed springs.\n   - Electrical Energy: Energy produced by the flow of electric charges (electrons) through a conductor.\n   - Thermal (Heat) Energy: Energy resulting from the internal microscopic kinetic motion of particles.\n   - Light (Radiant) Energy: Visible electromagnetic energy emitted by luminous sources (Sun, candle, electric bulb).\n   - Sound Energy: Energy produced by mechanical vibrations transmitted through material mediums in compression waves.\n\n2. The Law of Conservation of Energy:\n   - The Law of Conservation of Energy states that **energy cannot be created nor destroyed, but can only be converted (transformed) from one form into another**. The total amount of energy in the universe remains constant.\n\n3. Examples of Energy Conversion:\n   - Torch / Flashlight: Chemical energy (battery) -> Electrical energy -> Light & Thermal (heat) energy.\n   - Kariba Hydroelectric Power Station: Gravitational potential energy (dam water) -> Kinetic energy (falling water) -> Mechanical energy (spinning turbines) -> Electrical energy (generators).\n   - Human Body Running: Chemical energy (digested food) -> Mechanical/Kinetic energy (contracting muscles) + Thermal energy (body heat).\n   - Electric Iron: Electrical energy -> Thermal energy.\n   - Solar Photovoltaic Panel: Solar light energy -> Electrical energy.\n   - Photosynthesis in Plants: Solar light energy -> Stored chemical potential energy in glucose.",
+      "keywords": [
+        "forms of energy",
+        "identify forms of energy",
+        "describe forms of energy",
+        "demonstrate kinetic energy",
+        "energy conversion",
+        "law of conservation of energy",
+        "potential energy",
+        "kinetic energy",
+        "kariba dam",
+        "chemical energy"
+      ]
+    },
+    {
+      "id": "sci-fuels-fire-safety",
+      "strand": "Energy and Fuels",
+      "topic": "Fuels, Conditions for Burning (Fire Triangle) and Safety Hazards",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Energy and Fuels:\n1. Definition of Fuel:\n   - A fuel is any combustible material that can be burned to release useful heat and light energy.\n\n2. Conditions Necessary for Fuel to Burn (The Fire Triangle):\n   - For any fire or combustion to take place and sustain itself, three essential components must be present simultaneously:\n     * **Fuel:** The combustible substance that burns (wood, coal, gas, petrol, paraffin).\n     * **Oxygen (Air):** The chemical oxidizer supporting combustion (air contains ~21% oxygen).\n     * **Heat (Ignition Temperature):** Sufficient thermal energy to ignite the fuel.\n   - Extinguishing Fires: Removing ANY ONE of the three components immediately puts out the fire:\n     * Pouring water removes **Heat** (cools the fire below ignition temperature).\n     * Throwing sand, using a fire blanket, or discharging a carbon dioxide/foam extinguisher cuts off **Oxygen**.\n     * Creating a fireguard or shutting off a gas valve removes the **Fuel**.\n\n3. Fuel Hazards and Safety Precautions:\n   - Carbon Monoxide (CO) Poisoning: Burning charcoal, wood, or coal in enclosed rooms (*mbaura*) with closed windows releases lethal, odorless, colorless carbon monoxide gas. Never sleep in a closed room with a burning brazier!\n   - Explosions and Flash Fires: Petrol and LP gas are volatile and vaporize rapidly; keep naked flames away from fuel containers and gas cylinders.\n   - Burns and Scalds: Always light matches away from your face; keep small children away from open stoves and boiling pots.\n   - Storage Safety: Store flammable liquid fuels (paraffin, petrol) in clearly labeled, airtight metal containers locked away from children; never store petrol in soft drink bottles!",
+      "keywords": [
+        "fuels",
+        "conditions necessary for fuel to burn",
+        "identify fuel hazards",
+        "suggest safety precautions when using fuel",
+        "fire triangle",
+        "fuel oxygen heat",
+        "carbon monoxide",
+        "mbaura",
+        "extinguishing fires"
+      ]
+    },
+    {
+      "id": "sci-renewable-nonrenewable-fuels",
+      "strand": "Energy and Fuels",
+      "topic": "Renewable and Non-Renewable Fuels: Types, Pros, Cons & Conservation",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Energy:\n1. Renewable vs Non-Renewable Fuels:\n   - Renewable Energy / Fuels:\n     * Energy resources derived from natural sources that replenish themselves naturally over a short period and will never run out.\n     * Examples: Solar energy, Wind energy, Hydroelectric power (flowing water), Biogas (from cow dung), Biomass / Firewood (when sustainably replanted).\n   - Non-Renewable Fuels:\n     * Finite fossil fuels that took millions of years to form under the Earth and will eventually be depleted.\n     * Examples: Coal (mined at Hwange), Crude oil / Petroleum (petrol, diesel, paraffin), LP gas.\n\n2. Advantages and Disadvantages:\n   - Renewable Energy:\n     * Advantages: Clean, produces zero greenhouse gas emissions (eco-friendly), free natural source, sustainable indefinitely.\n     * Disadvantages: High initial cost of solar panels and batteries, dependent on weather (solar doesn't generate at night; wind is intermittent).\n   - Non-Renewable Energy:\n     * Advantages: Reliable continuous base-load power, high energy density, well-established infrastructure.\n     * Disadvantages: Causes heavy air pollution, produces greenhouse gases driving global warming, releases sulfur dioxide causing acid rain, will run out.\n\n3. Importance of Fuel Conservation:\n   - Extends the lifespan of finite fossil fuel reserves.\n   - Reduces household electricity and fuel costs.\n   - Mitigates air pollution and combats global climate change.\n   - Protects indigenous forests from rapid deforestation.\n   - Fuel-Saving Practices: Using fuel-efficient wood stoves (chingwa / tsotso stoves), turning off lights and electrical appliances when not in use, switching to solar water heaters, carpooling.",
+      "keywords": [
+        "renewable and non- renewable fuels",
+        "discuss renewable and non-renewable fuels",
+        "explain the importance of fuel conservation",
+        "state the advantages and disadvantages of renewable and non- renewable fuels",
+        "solar energy",
+        "biogas",
+        "coal",
+        "fossil fuels",
+        "fuel conservation"
+      ]
+    },
+    {
+      "id": "sci-electrical-circuits-detail",
+      "strand": "Energy and Fuels",
+      "topic": "Electrical Circuits: Components, Series vs Parallel & Circuit Design",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Electricity:\n1. Components of an Electrical Circuit:\n   - Cell / Battery: The source of electrical energy (chemical potential energy converted to electrical voltage).\n   - Conducting Wires: Copper wires covered in insulating plastic that provide a continuous low-resistance path for electric current.\n   - Switch: A control device used to complete (close) or break (open) the electrical circuit.\n   - Load (Bulb / Buzzer / Motor): The device that converts electrical energy into light, sound, or mechanical motion.\n\n2. Series vs Parallel Electrical Circuits:\n   - **Series Circuit:**\n     * All components are connected one after another in a single closed loop.\n     * Electric current flows through only one single path.\n     * If one bulb burns out or is removed, the entire circuit is broken and all other bulbs turn off immediately.\n     * Adding more bulbs makes all bulbs noticeably dimmer because total electrical resistance increases and voltage is shared.\n   - **Parallel Circuit:**\n     * Components are connected on separate individual branches.\n     * Electric current splits across multiple pathways.\n     * If one bulb burns out, the other bulbs remain shining brightly on their independent branches.\n     * Bulbs stay equally bright regardless of how many are added because each branch receives full battery voltage.\n     * Household Wiring: Homes and schools are always wired in parallel so that turning off a bedroom light does not shut off the refrigerator or television.",
+      "keywords": [
+        "electrical circuits",
+        "identify components of an electrical circuit",
+        "discuss types of electrical circuits",
+        "create an electrical circuit",
+        "series circuit",
+        "parallel circuit",
+        "cell",
+        "switch",
+        "bulb",
+        "copper wire"
+      ]
+    },
+    {
+      "id": "sci-sound-energy-detail",
+      "strand": "Energy and Fuels",
+      "topic": "Sound Energy: Production, Mediums, Vacuum Rule, Pitch & Echoes",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Sound:\n1. How Sound is Produced:\n   - Sound is generated whenever an object **vibrates** back and forth rapidly (e.g. plucking a guitar string, beating a drum skin / ngoma, vocal cords vibrating in the throat).\n\n2. Transmission of Sound Through Different Mediums:\n   - Sound travels in longitudinal compression waves and **MUST have a material medium (solid, liquid, or gas)** containing particles to vibrate.\n   - Speed of Sound in Different Media:\n     * **Solids (Fastest - approx. 5 000 m/s in steel):** Molecules are packed closely together in rigid contact, allowing vibrations to pass from particle to particle almost instantly.\n     * **Liquids (Intermediate - approx. 1 500 m/s in water):** Particles are close but free to move.\n     * **Gases / Air (Slowest - approx. 330 to 340 m/s):** Gas molecules are spaced far apart.\n   - **The Vacuum Rule:** Sound **CANNOT travel through a vacuum (empty space)** because a vacuum contains no molecules or matter to collide and pass vibrations along. (In outer space, there is absolute silence).\n\n3. Pitch vs Loudness:\n   - **Pitch (Frequency):** How high, shrill, or deep a sound is. Determined by **frequency** (number of vibrations per second, measured in Hertz, Hz). High frequency = high pitch (whistle, child's voice); Low frequency = deep bass pitch (drum, adult male voice).\n   - **Loudness (Volume / Amplitude):** The strength of sound. Determined by **amplitude** (amount of energy in the vibration). Striking a drum harder creates larger amplitude and louder sound.\n\n4. Echoes:\n   - An echo is a reflected sound wave that bounces back from a hard, flat barrier (such as a rock cliff, cave wall, or building).\n   - Minimum Distance Rule: The reflecting surface must be at least **17 meters away** for the human ear to distinguish the reflected sound as a separate echo (because the human brain requires at least 0.1s to separate two sound pulses).",
+      "keywords": [
+        "sound energy",
+        "demonstrate that sound travels through air, solids and water",
+        "illustrate different ways of producing sound",
+        "pitch",
+        "loudness",
+        "vibrations",
+        "vacuum rule",
+        "echoes",
+        "speed of sound",
+        "hertz"
+      ]
+    },
+    {
+      "id": "sci-wildfires-fireguards-detail",
+      "strand": "Energy and Fuels",
+      "topic": "Veld Fires: Causes, Effects and Standard 9-Metre Fireguard",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Environmental Hazards:\n1. Causes of Veld Fires (Wildfires) in Zimbabwe:\n   - Careless disposal of burning cigarette butts along highways.\n   - Uncontrolled fires lit by honey hunters to smoke bees out of hollow trees.\n   - Farmers burning dry crop stalks and clearing land with fire on hot, windy days.\n   - Poachers using fires to encircle and drive wild game animals into traps.\n   - Children playing with matches and fireworks unattended.\n   - Natural causes: Summer convective lightning strikes hitting dry grass.\n\n2. Damaging Effects of Veld Fires:\n   - Destroys thousands of hectares of livestock grazing pastures, leading to cattle starvation.\n   - Burns down homesteads, farm granaries (*dura*), and commercial timber plantations.\n   - Destroys natural wildlife habitats, killing slow-moving animals (tortoises, small mammals, nesting birds).\n   - Strips soil of organic ground cover, accelerating severe soil erosion and desertification.\n   - Releases heavy clouds of smoke and carbon dioxide, causing severe air pollution and climate change.\n\n3. Ways of Controlling Veld Fires & The 9-Metre Fireguard Standard:\n   - **The Standard 9-Metre Fireguard:**\n     * A fireguard is a clean, ploughed or cleared perimeter strip of land at least **9 meters wide** surrounding all farms, homesteads, and plantations.\n     * All combustible dry grass, bushes, and litter are completely removed.\n     * Approaching fire flames cannot cross the 9-meter bare strip because there is no fuel to burn.\n   - Establishing trained community fire-fighting brigades equipped with fire beaters and water bowsers.\n   - Observing the National Fire Restriction Season (July 31 to October 31 in Zimbabwe) during which lighting open-air fires is illegal.\n   - Reporting outbreaks immediately to the Environmental Management Agency (EMA) and local police.",
+      "keywords": [
+        "wild fires",
+        "causes of wild fires and their effects",
+        "suggest ways of controlling wild fires",
+        "veld fires",
+        "fireguards",
+        "9-metre fireguard",
+        "ema",
+        "fire restrictions"
+      ]
+    },
+    {
+      "id": "sci-disaster-risk-mgmt-detail",
+      "strand": "Disaster Risk Management",
+      "topic": "Disasters, Natural Hazards, Preparedness, Evacuations and Responders",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Disaster Management:\n1. Definition of Disasters and Hazards:\n   - Hazard: A dangerous natural phenomenon or human activity that has the potential to cause harm, injury, or destruction.\n   - Disaster: A sudden catastrophic event that causes widespread human casualties, damage to property, and destruction to the environment, exceeding the community's capacity to cope using its own resources.\n\n2. Classification of Disasters:\n   - **Natural Disasters:**\n     * Tropical Cyclones: Intense revolving oceanic storm systems bringing destructive hurricane winds, torrential rains, and landslides (e.g. **Cyclone Idai** in 2019 in Manicaland, Cyclone Eline in 2000).\n     * Droughts: Extended periods of severe rainfall deficiency leading to dried rivers, failed harvests, and widespread famine.\n     * Floods: Rivers overflowing and submerging low-lying settlements (e.g. Muzarabani in Zambezi Valley, Middle Sabi, Tsholotsho).\n     * Lightning Strikes: Zimbabwe experiences one of the world's highest lightning fatality rates due to high-altitude granite formations and convective summer storms.\n     * Earthquakes / Tremors: Sudden shaking of the Earth's crust along fault lines (felt around Kariba and Chipinge).\n   - **Man-Made Disasters:**\n     * Veld fires caused by human negligence destroying villages and forests.\n     * Mining collapses: Abandoned or unregulated artisanal mining shafts (*makorokoza*) collapsing in rainy seasons.\n     * Traffic collisions involving fuel tankers, buses, or chemical cargo trucks.\n     * Industrial chemical leaks and toxic spills into public rivers.\n\n3. Emergency Preparedness and Essential Emergency Supplies:\n   - Emergency Response Plan: Planned escape routes, designated community evacuation assembly points, and emergency communication channels.\n   - Essential Emergency Survival Kit (Go-Bag):\n     * Clean bottled drinking water (at least 3 liters per person per day).\n     * Non-perishable canned foods and dry energy biscuits.\n     * First Aid Kit (bandages, antiseptic, painkillers, burn cream).\n     * Battery-powered or crank radio to receive official weather warnings.\n     * Flashlights/torches and spare batteries.\n     * Whistle to signal for help to search-and-rescue teams.\n     * Waterproof matches, multi-purpose knife, warm blankets, and copies of important family identity documents in a sealed plastic pouch.\n\n4. Lightning Safety Procedures (ZIMSEC Standard):\n   - Indoor Safety: Stay indoors inside a substantial permanent building or a fully enclosed metal-bodied motor vehicle (car/bus); avoid plumbing, landline phones, and electrical appliances.\n   - Dangerous Outdoor Places to Avoid: NEVER shelter under tall isolated trees, open thatched gazebos, or near metal wire fences, railway lines, or bodies of water.\n   - **The Emergency Lightning Crouch:** If caught in an open field with no shelter:\n     * Crouch down immediately on the balls of your feet with heels touching.\n     * Tuck your head between your knees and cover your ears with your hands.\n     * Minimize contact with the ground; **NEVER LIE FLAT ON THE GROUND** because deadly ground electrical currents will pass through your body!\n   - Lightning Conductors: Install pointed copper rods on roof peaks connected to thick copper earth wires buried deep in moist ground.\n\n5. Emergency Responders and Psycho-Emotional Support:\n   - Emergency Responders:\n     * Civil Protection Unit (CPU / Department of Civil Protection): Coordinates all national disaster relief and evacuation efforts.\n     * Zimbabwe Republic Police (ZRP) and Defence Forces: Maintain public security, conduct helicopter air rescues, and transport relief.\n     * Fire Brigade and Ambulance Services: Extinguish blazes and provide emergency medical trauma care.\n     * Zimbabwe Red Cross Society: Provides tents, emergency food, clean water, blankets, and tracing missing family members.\n   - Psycho-Emotional Support:\n     * Providing psychological first aid, trauma counselling, safe child-friendly spaces, and restoring dignity to disaster victims who have lost homes and loved ones.",
+      "keywords": [
+        "disasters",
+        "identify different types of disasters",
+        "discuss the impacts of disasters",
+        "hazards preparedness",
+        "natural hazards",
+        "safety and evacuations",
+        "lightning safety",
+        "lightning crouch",
+        "emergency professionals",
+        "psycho-emotional support",
+        "cyclone idai",
+        "cpu"
+      ]
+    },
+    {
+      "id": "sci-emerging-tech-ai-robotics",
+      "strand": "Educational Technology & Innovation",
+      "topic": "Artificial Intelligence, Coding and Robotics in Everyday Life",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • EdTech:\n1. Definition and Concepts of Artificial Intelligence (AI):\n   - Artificial Intelligence (AI) refers to computer software, algorithms, or machines programmed to simulate human cognitive intelligence—such as learning from data, reasoning, recognizing speech and images, and solving complex problems.\n   - Applications of AI in Everyday Life:\n     * Voice Recognition Assistants: Siri, Google Assistant, Alexa recognizing natural spoken language.\n     * Smart Agriculture in Zimbabwe: Automated agricultural drones carrying out camera crop scouting to detect pests and plant diseases; AI sensors automating drip irrigation.\n     * Healthcare: AI diagnostic scanners analyzing X-rays and medical records to help rural clinic nurses detect diseases early.\n     * Education: Offline intelligent curriculum tutoring engines (such as **ZEXA AI**) that provide instant, personalized textbook-grade answers to schoolchildren without requiring internet data.\n     * Autonomous Vehicles: Self-driving cars using computer vision sensors to navigate roads safely.\n\n2. Coding and Computational Thinking:\n   - Definition of Coding: The process of writing precise step-by-step instructions in a programming language that a computer can read and execute.\n   - Definition of an Algorithm: A clear, ordered sequence of instructions or rules designed to accomplish a specific task or solve a problem.\n   - Block-Based Coding (e.g. Scratch, Blockly):\n     * Beginner-friendly visual coding platforms where children snap graphical puzzle-like instruction blocks together to create animations, interactive stories, and games.\n   - Text-Based Coding (e.g. Python, HTML, JavaScript):\n     * Writing typed commands and syntax to build real-world software applications and websites.\n\n3. Robotics and Engineering Principles:\n   - Definition of a Robot: An automated, programmable machine designed to perform physical tasks autonomously or under remote control.\n   - Three Core Components of Any Robot:\n     * **Sensors (The Senses):** Devices that collect data from the environment (e.g. ultrasonic distance sensors, infrared light sensors, temperature sensors).\n     * **Controller / Processor (The Brain):** The computer chip / microprocessor running code that processes sensor inputs and decides what action to take.\n     * **Actuators / Motors (The Muscles):** Electric motors, pistons, and wheels that convert electrical signals into physical movement.\n   - Robotics Design Process:\n     * 1. Identify the Problem -> 2. Brainstorm and Design -> 3. Build Prototype -> 4. Program / Code -> 5. Test and Debug -> 6. Refine.\n   - Ethics in Robotics: Ensuring robots are safe, respect human dignity, and do not cause physical harm or unnecessary job loss.",
+      "keywords": [
+        "artificial intelligence",
+        "define artificial intelligence",
+        "coding and robotics",
+        "robotics",
+        "algorithm",
+        "sensors and actuators",
+        "block- based coding",
+        "scratch",
+        "zexa ai",
+        "drones",
+        "smart farming"
+      ]
+    },
+    {
+      "id": "sci-cybersecurity-malware-online-safety",
+      "strand": "Educational Technology & Innovation",
+      "topic": "Cybersecurity, Malware Types, Hacking and Online Safety Rules",
+      "grade_estimate": "Grade 7",
+      "content": "ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Cyber Wellness:\n1. Definition of Cybersecurity:\n   - Cybersecurity is the practice of protecting computer systems, mobile networks, digital devices, and sensitive private data from digital attacks, damage, and unauthorized access.\n\n2. Hacking and Types of Hackers:\n   - Definition of Hacking: Gaining unauthorized access to computer systems, digital accounts, or networks to view, alter, or steal data.\n   - Types of Hackers:\n     * Black Hat Hackers (Malicious): Criminals who illegally break into computer systems to steal money, personal identity information, or damage networks.\n     * White Hat Hackers (Ethical Hackers): Cybersecurity security professionals who test computer systems with permission to find vulnerabilities and fix them.\n     * Grey Hat Hackers: Individuals who find security flaws without malicious intent but without official authorization.\n\n3. Malware (Malicious Software) Types:\n   - Definition: Harmful software intentionally designed to damage, disrupt, or gain unauthorized access to computer systems.\n   - Types of Malware:\n     * Virus: Program attached to clean files that replicates itself and corrupts or deletes computer data.\n     * Worm: Self-replicating malware that spreads across computer networks without human action, clogging internet bandwidth.\n     * Trojan Horse: Harmful program disguised as legitimate, harmless software (e.g. a free game) that secretly creates backdoors for hackers.\n     * Ransomware: Malicious software that locks and encrypts a user's files and demands payment of money (ransom) to restore access.\n     * Spyware: Secretly monitors and records user keystrokes, passwords, and browsing habits.\n\n4. Defense and Cyber Wellness Rules for Schoolchildren:\n   - Antivirus Software: Programs (such as Windows Defender, Avast, Kaspersky) that scan, detect, quarantine, and eliminate malware. Keep antivirus definitions updated daily.\n   - Firewalls: Digital security barriers that monitor incoming and outgoing network traffic, blocking unauthorized access.\n   - Strong Passwords: Create complex passwords with at least 8 to 12 characters combining uppercase letters, lowercase letters, numbers, and symbols (e.g. `Zim#Sec2026!`). Never share passwords with friends!\n   - Online Safety Rules:\n     * NEVER share personal private information (full home address, school name, phone numbers, parents' banking details) with strangers online.\n     * NEVER agree to meet an online stranger in the physical world without parents' knowledge and presence.\n     * Avoid clicking suspicious links or downloading attachments from unknown email senders.\n     * Practice cyber-wellness and kindness; immediately report online cyberbullying to parents or teachers.",
+      "keywords": [
+        "cyber security",
+        "define hacking",
+        "find out on types of hackers",
+        "identify the effects of hacking",
+        "malware",
+        "types of malwares",
+        "antivirus software",
+        "firewalls",
+        "online safety rules",
+        "passwords",
+        "cyber wellness",
+        "viruses",
+        "ransomware"
+      ]
     }
   ]
 }

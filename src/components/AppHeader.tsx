@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, Settings, Plus, ChevronDown, BookOpen, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Crown, Settings, Plus, ChevronDown, BookOpen, Sparkles, CheckCircle2, Bell } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
 
 interface AppHeaderProps {
@@ -11,6 +11,7 @@ interface AppHeaderProps {
   onOpenLevelSelect: () => void;
   onOpenPremium: () => void;
   onOpenSettings: () => void;
+  onOpenNotifications: () => void;
   onNewChat: () => void;
 }
 
@@ -23,6 +24,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
   onOpenLevelSelect,
   onOpenPremium,
   onOpenSettings,
+  onOpenNotifications,
   onNewChat
 }) => {
   const isPremium = subscriptionStatus === 'PREMIUM';
@@ -51,15 +53,6 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
                 <span className="font-extrabold text-base tracking-tight text-white group-hover:text-cyan-300 transition-colors">
                   ZEXA <span className="text-cyan-400">AI</span>
                 </span>
-                <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-cyan-950/90 border border-cyan-500/30 text-cyan-300 font-semibold tracking-wider">
-                  v2.8
-                </span>
-              </div>
-              <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="font-mono text-[10px] tracking-wide text-slate-400">
-                  ZEXA 2.5/3.8 · 100% Offline
-                </span>
               </div>
             </div>
           </button>
@@ -82,7 +75,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
                 : contentLevel === 'A-Level'
                 ? 'A-Level (Forms 5-6)'
                 : contentLevel === 'Primary'
-                ? 'Primary (Grade 1-7)'
+                ? 'Primary'
                 : 'Tertiary'}
             </span>
             <ChevronDown className="w-3.5 h-3.5 text-slate-400 ml-0.5" />
@@ -121,6 +114,16 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
             title="Start New Chat Session"
           >
             <Plus className="w-4 h-4" />
+          </button>
+
+          {/* Daily Study Notifications Trigger (6 AM, 12 PM, 6 PM Harare Time) */}
+          <button
+            onClick={onOpenNotifications}
+            className="p-2 rounded-xl bg-white/[0.04] hover:bg-cyan-500/10 border border-white/[0.08] hover:border-cyan-500/40 text-slate-300 hover:text-cyan-300 transition-all active:scale-95 relative"
+            title="Daily Study Reminders (6:00 AM • 12:00 PM • 6:00 PM Harare Time)"
+          >
+            <Bell className="w-4 h-4" />
+            <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
           </button>
 
           {/* Settings Trigger */}

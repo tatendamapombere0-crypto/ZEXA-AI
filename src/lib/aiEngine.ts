@@ -4,6 +4,7 @@ export interface GenerationOptions {
   level: string;
   hint?: string;
   history?: Array<{ question: string; answer: string }>;
+  engineType?: 'zexa-instant';
   onToken: (token: string) => void;
   onComplete: (metrics: string, source?: string, suggestions?: string[]) => void;
   onError: (error: string) => void;
@@ -89,7 +90,7 @@ export class AIEngine {
       return true;
     }
 
-    // 4. Standalone authentic ChiShona keywords (excluding common loan terms and historical entities like chimurenga, mambo, unhu, lobola)
+    // 4. Standalone authentic ChiShona keywords
     const authenticShonaKeywords = [
       'ndiani', 'vaive ani', 'chii', 'tsanangura', 'zvakakonzera', 'zvikonzero',
       'zvirwere', 'zvirimwa', 'nhoroondo', 'madimikira', 'tsumo', 'bvunzo',
@@ -104,78 +105,206 @@ export class AIEngine {
     });
   }
 
+  /**
+   * Resolves conversational follow-ups and pronoun references by analyzing preceding turns in history.
+   * e.g., "Who led it?" after "What caused the First Chimurenga?" -> "First Chimurenga leaders"
+   */
+  public static resolveContextualQuery(
+    currentQuery: string,
+    history?: Array<{ question: string; answer: string }>
+  ): { resolvedQuery: string; previousTopic: string; isFollowUp: boolean } {
+    const q = currentQuery.trim().toLowerCase();
+    if (!history || history.length === 0) {
+      return { resolvedQuery: currentQuery, previousTopic: '', isFollowUp: false };
+    }
+
+    const lastTurn = history[history.length - 1];
+    const prevQ = (lastTurn.question || '').toLowerCase();
+    const prevA = (lastTurn.answer || '').slice(0, 300).toLowerCase();
+
+    // Identify previous subject/topic anchor
+    let topicAnchor = '';
+    if (prevQ.includes('first chimurenga') || prevQ.includes('1st chimurenga') || prevA.includes('first chimurenga')) {
+      topicAnchor = 'First Chimurenga';
+    } else if (prevQ.includes('second chimurenga') || prevQ.includes('2nd chimurenga') || prevQ.includes('chinhoyi') || prevA.includes('second chimurenga')) {
+      topicAnchor = 'Second Chimurenga';
+    } else if (prevQ.includes('photosynthesis') || prevA.includes('photosynthesis')) {
+      topicAnchor = 'Photosynthesis';
+    } else if (prevQ.includes('mugabe') || prevQ.includes('mufabe')) {
+      topicAnchor = 'Robert Mugabe';
+    } else if (prevQ.includes('nkomo') || prevQ.includes('father zimbabwe')) {
+      topicAnchor = 'Joshua Nkomo';
+    } else if (prevQ.includes('great zimbabwe') || prevA.includes('great zimbabwe')) {
+      topicAnchor = 'Great Zimbabwe';
+    } else if (prevQ.includes('mutapa') || prevA.includes('mutapa')) {
+      topicAnchor = 'Mutapa Kingdom';
+    } else if (prevQ.includes('rozvi') || prevA.includes('rozvi')) {
+      topicAnchor = 'Rozvi Empire';
+    } else if (prevQ.includes('lobengula') || prevA.includes('lobengula')) {
+      topicAnchor = 'King Lobengula';
+    } else if (prevQ.includes('mzilikazi') || prevA.includes('mzilikazi')) {
+      topicAnchor = 'King Mzilikazi';
+    } else if (prevQ.includes('soil erosion') || prevA.includes('soil erosion')) {
+      topicAnchor = 'Soil erosion';
+    } else if (prevQ.includes('water cycle') || prevA.includes('water cycle')) {
+      topicAnchor = 'Water cycle';
+    } else if (prevQ.includes('bodmas') || prevA.includes('bodmas')) {
+      topicAnchor = 'BODMAS order of operations';
+    } else if (prevQ.includes('ohms law') || prevQ.includes("ohm's law")) {
+      topicAnchor = "Ohm's Law";
+    } else {
+      const words = prevQ.split(/[^a-zA-Z0-9]+/).filter(
+        (w) => w.length > 3 && !['what', 'when', 'where', 'which', 'explain', 'describe', 'about', 'cause', 'caused', 'tell'].includes(w)
+      );
+      if (words.length > 0) {
+        topicAnchor = words.slice(0, 3).join(' ');
+      }
+    }
+
+    if (!topicAnchor) {
+      return { resolvedQuery: currentQuery, previousTopic: '', isFollowUp: false };
+    }
+
+    // Check if current query is a conversational follow-up
+    const isPronounFollowUp = /\b(it|they|them|she|he|her|his|that|this|these|those)\b/i.test(q);
+    const isShortQuestion =
+      q.length < 55 &&
+      (q.startsWith('who') ||
+        q.startsWith('why') ||
+        q.startsWith('where') ||
+        q.startsWith('when') ||
+        q.startsWith('what happened') ||
+        q.startsWith('tell me more') ||
+        q.startsWith('explain') ||
+        q.startsWith('how') ||
+        q.includes('results') ||
+        q.includes('effects') ||
+        q.includes('leaders') ||
+        q.includes('leader') ||
+        q.includes('causes'));
+
+    if (isPronounFollowUp || isShortQuestion) {
+      let resolved = `${topicAnchor} ${currentQuery}`;
+      if (q.includes('who led') || q.includes('who was the leader') || q.includes('who were the leaders') || q.includes('leaders')) {
+        resolved = `${topicAnchor} leaders spirit mediums command`;
+      } else if (q.includes('lose') || q.includes('lost') || q.includes('defeat') || q.includes('fail') || q.includes('crush') || q.includes('suppress')) {
+        resolved = `${topicAnchor} reasons for defeat failure maxim guns`;
+      } else if (q.includes('effect') || q.includes('result') || q.includes('consequence') || q.includes('what happened after')) {
+        resolved = `${topicAnchor} effects results outcomes consequences`;
+      } else if (q.includes('why') || q.includes('cause')) {
+        resolved = `${topicAnchor} causes reasons`;
+      } else if (q.includes('when') || q.includes('date') || q.includes('year')) {
+        resolved = `${topicAnchor} dates years timeline`;
+      } else if (q.includes('where')) {
+        resolved = `${topicAnchor} location places battle`;
+      }
+      return { resolvedQuery: resolved, previousTopic: topicAnchor, isFollowUp: true };
+    }
+
+    return { resolvedQuery: currentQuery, previousTopic: topicAnchor, isFollowUp: false };
+  }
+
+  /**
+  /**
+   * Main generation entry point powered exclusively by ZEXA Local Brain
+   * Delivers sub-second, 100% offline curriculum answers with multi-turn memory
+   */
   static async generate(question: string, options: GenerationOptions): Promise<void> {
     this.isCancelled = false;
-    const startTime = performance.now();
-    let firstTokenTime = 0;
-
     const trimmedQuestion = question.trim();
     if (!trimmedQuestion) {
       options.onError('Please enter a question');
       return;
     }
 
+    // Pure ZEXA Local Brain with Multi-Turn Memory & Instant Syllabus Retrieval
+    await this.generateLocal(trimmedQuestion, options);
+  }
+
+  /**
+   * Executes the instant, multi-turn aware ZEXA Local Brain
+   */
+  private static async generateLocal(
+    trimmedQuestion: string,
+    options: GenerationOptions,
+    metricSuffix?: string
+  ): Promise<void> {
+    const startTime = performance.now();
+    let firstTokenTime = 0;
+
     try {
-      // 1. RAG search in syllabus knowledge base (strictly filtered by level)
+      // 1. Multi-turn conversational query resolution
+      const contextual = this.resolveContextualQuery(trimmedQuestion, options.history);
+      const searchEffectiveQuery = contextual.isFollowUp ? contextual.resolvedQuery : trimmedQuestion;
+
+      // 2. RAG search in syllabus knowledge base (strictly filtered by level)
       let matchedChunk: any = null;
       let matchedScore = 0;
 
       if (!options.hint) {
-        let searchResult = await KnowledgeStore.searchScored(trimmedQuestion, options.level);
-        if (searchResult.results.length > 0) {
-          const top = searchResult.results[0];
-          matchedChunk = top.chunk;
-          matchedScore = top.score;
+        let searchResult = await KnowledgeStore.searchScored(searchEffectiveQuery, options.level);
+        if (searchResult.results.length > 0 && searchResult.results[0].score >= 350) {
+          matchedChunk = searchResult.results[0].chunk;
+          matchedScore = searchResult.results[0].score;
         } else {
-          // Cross-level fallback: if not found in current level, check all curriculum chunks
-          const fallbackSearch = await KnowledgeStore.searchScored(trimmedQuestion, 'all');
-          if (fallbackSearch.results.length > 0) {
-            const top = fallbackSearch.results[0];
-            matchedChunk = top.chunk;
-            matchedScore = top.score;
+          // Cross-level fallback: if top score in current level is low or empty, check all curriculum chunks!
+          const fallbackSearch = await KnowledgeStore.searchScored(searchEffectiveQuery, 'all');
+          if (fallbackSearch.results.length > 0 && (searchResult.results.length === 0 || fallbackSearch.results[0].score > (searchResult.results[0]?.score || 0))) {
+            matchedChunk = fallbackSearch.results[0].chunk;
+            matchedScore = fallbackSearch.results[0].score;
+          } else if (searchResult.results.length > 0) {
+            matchedChunk = searchResult.results[0].chunk;
+            matchedScore = searchResult.results[0].score;
           }
         }
       }
 
-      // 2. Synthesize conversational, question-tailored response text
+      // 3. Synthesize conversational, question-tailored response text
       const rawResult = this.synthesizeResponse(
-        trimmedQuestion,
+        searchEffectiveQuery,
         options.level,
         matchedChunk,
         matchedScore,
-        options.hint
+        options.hint,
+        options.history
       );
 
       const cleanedText = this.cleanSymbols(rawResult.text);
 
-      // 3. Stream tokens to UI with realistic offline speed
+      // 4. Stream tokens to UI with realistic offline speed
       const tokens = this.tokenizeText(cleanedText);
       let currentIndex = 0;
 
-      const streamNext = () => {
-        if (this.isCancelled) {
-          options.onComplete('Cancelled by user');
-          return;
-        }
+      return new Promise<void>((resolve) => {
+        const streamNext = () => {
+          if (this.isCancelled) {
+            options.onComplete('Cancelled by user');
+            resolve();
+            return;
+          }
 
-        if (currentIndex < tokens.length) {
-          if (firstTokenTime === 0) firstTokenTime = performance.now();
-          const token = tokens[currentIndex++];
-          options.onToken(token);
+          if (currentIndex < tokens.length) {
+            if (firstTokenTime === 0) firstTokenTime = performance.now();
+            const token = tokens[currentIndex++];
+            options.onToken(token);
 
-          // Variable streaming speed for natural offline feel
-          const delay = Math.min(20, Math.max(4, token.length * 2));
-          setTimeout(streamNext, delay);
-        } else {
-          const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
-          const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.1';
-          const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ZEXA Local Brain`;
-          options.onComplete(metrics, rawResult.sourceTag, rawResult.suggestions);
-        }
-      };
+            // Variable streaming speed for natural offline feel
+            const delay = Math.min(20, Math.max(4, token.length * 2));
+            setTimeout(streamNext, delay);
+          } else {
+            const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
+            const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.1';
+            const label = metricSuffix ? `ZEXA Local Brain • ${metricSuffix}` : 'ZEXA Local Brain';
+            const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ${label}`;
+            // Clean textbook-grade output: no interactive study action command buttons in chat
+            options.onComplete(metrics, rawResult.sourceTag, []);
+            resolve();
+          }
+        };
 
-      // Slight initial processing delay
-      setTimeout(streamNext, 40);
+        // Slight initial processing delay (0.04s)
+        setTimeout(streamNext, 40);
+      });
 
     } catch (err: any) {
       options.onError(err.message || 'Error processing response');
@@ -240,15 +369,231 @@ export class AIEngine {
 
   private static tokenizeText(text: string): string[] {
     const parts: string[] = [];
-    const words = text.split(/(\s+|\n+)/);
-    for (const word of words) {
-      if (word.length > 8) {
-        parts.push(word.slice(0, 4), word.slice(4));
-      } else if (word) {
-        parts.push(word);
+    const lines = text.split('\n');
+    for (let li = 0; li < lines.length; li++) {
+      const line = lines[li];
+      if (line === '') {
+        parts.push('\n');
+        continue;
+      }
+      const words = line.split(/(\s+)/);
+      for (const word of words) {
+        if (!word) continue;
+        if (word.length > 10) {
+          parts.push(word.slice(0, 5), word.slice(5));
+        } else {
+          parts.push(word);
+        }
+      }
+      if (li < lines.length - 1) {
+        parts.push('\n');
       }
     }
     return parts;
+  }
+
+  /**
+   * Decomposes questions into specific structural components
+   * e.g. "what is osmosis and Give the process of osmosis" -> asksDefinition: true, asksProcess: true
+   */
+  public static decomposeQuestion(question: string) {
+    const q = question.toLowerCase().trim();
+
+    const hasSubtopicSpecifier =
+      q.includes('causes of') ||
+      q.includes('cause of') ||
+      q.includes('types of') ||
+      q.includes('type of') ||
+      q.includes('kinds of') ||
+      q.includes('classes of') ||
+      q.includes('functions of') ||
+      q.includes('function of') ||
+      q.includes('uses of') ||
+      q.includes('use of') ||
+      q.includes('importance of') ||
+      q.includes('role of') ||
+      q.includes('roles of') ||
+      q.includes('effects of') ||
+      q.includes('effect of') ||
+      q.includes('impacts of') ||
+      q.includes('impact of') ||
+      q.includes('symptoms of') ||
+      q.includes('signs of') ||
+      q.includes('process of') ||
+      q.includes('steps of') ||
+      q.includes('stages of') ||
+      q.includes('ways of') ||
+      q.includes('ways to') ||
+      q.includes('sources of') ||
+      q.includes('examples of') ||
+      q.includes('measures of') ||
+      q.includes('measures to') ||
+      q.includes('solutions to') ||
+      q.includes('methods of') ||
+      q.includes('how to');
+
+    const asksExplicitDefinition =
+      q.includes('define') ||
+      q.includes('definition of') ||
+      q.includes('meaning of') ||
+      q.includes('what is meant by') ||
+      q.includes('concept of') ||
+      q.includes('chinonzi chii') ||
+      q.includes('zvinorevei');
+
+    const asksPureWhatIs =
+      (q.startsWith('what is ') || q.startsWith('what are ') || q.includes('what is ') || q.includes('what are ')) &&
+      !hasSubtopicSpecifier;
+
+    const asksProcess =
+      q.includes('process') ||
+      q.includes('steps') ||
+      q.includes('stages') ||
+      q.includes('mechanism') ||
+      q.includes('how does') ||
+      q.includes('how it works') ||
+      q.includes('explain how') ||
+      q.includes('describe how') ||
+      q.includes('how to prepare') ||
+      q.includes('give the process') ||
+      q.includes('tsanangura maitikiro');
+
+    const asksTypes =
+      q.includes('type') ||
+      q.includes('types') ||
+      q.includes('kinds') ||
+      q.includes('classes') ||
+      q.includes('categories') ||
+      q.includes('forms of') ||
+      q.includes('marudzi');
+
+    const asksCauses =
+      q.includes('cause') ||
+      q.includes('causes') ||
+      q.includes('caused by') ||
+      q.includes('sources of') ||
+      q.includes('source of') ||
+      q.includes('reasons') ||
+      q.includes('reason for') ||
+      q.includes('why does') ||
+      q.includes('why is') ||
+      q.includes('zvikonzero');
+
+    const asksEffects =
+      q.includes('effect') ||
+      q.includes('effects') ||
+      q.includes('impact') ||
+      q.includes('impacts') ||
+      q.includes('consequence') ||
+      q.includes('consequences') ||
+      q.includes('results of') ||
+      q.includes('what happens') ||
+      q.includes('mhedzisiro');
+
+    const asksSymptoms =
+      q.includes('symptom') ||
+      q.includes('symptoms') ||
+      q.includes('signs') ||
+      q.includes('signs and symptoms') ||
+      q.includes('zviratidzo');
+
+    const asksPreventionOrManagement =
+      q.includes('prevent') ||
+      q.includes('prevention') ||
+      q.includes('control') ||
+      q.includes('manage') ||
+      q.includes('management') ||
+      q.includes('reduce') ||
+      q.includes('reducing') ||
+      q.includes('reduction') ||
+      q.includes('curb') ||
+      q.includes('curbing') ||
+      q.includes('solutions to') ||
+      q.includes('solution') ||
+      q.includes('cure') ||
+      q.includes('treatment') ||
+      q.includes('rules') ||
+      q.includes('safety');
+
+    const asksFunctionsOrUses =
+      q.includes('function') ||
+      q.includes('functions') ||
+      q.includes('use') ||
+      q.includes('uses') ||
+      q.includes('importance') ||
+      q.includes('role') ||
+      q.includes('roles') ||
+      q.includes('basa ra');
+
+    const asksDifference =
+      q.includes('difference') ||
+      q.includes('differences') ||
+      q.includes('compare') ||
+      q.includes('contrast') ||
+      q.includes('distinguish') ||
+      q.includes('versus') ||
+      q.includes(' vs ') ||
+      q.includes('kusiyana');
+
+    const asksExamples =
+      q.includes('example') ||
+      q.includes('examples') ||
+      q.includes('instance') ||
+      q.includes('mienzaniso');
+
+    const asksEquation =
+      q.includes('equation') ||
+      q.includes('equations') ||
+      q.includes('formula') ||
+      q.includes('word equation') ||
+      q.includes('chemical equation');
+
+    const hasAnySpecific =
+      asksProcess ||
+      asksTypes ||
+      asksCauses ||
+      asksEffects ||
+      asksSymptoms ||
+      asksPreventionOrManagement ||
+      asksFunctionsOrUses ||
+      asksDifference ||
+      asksExamples ||
+      asksEquation;
+
+    const asksDefinition = asksExplicitDefinition || asksPureWhatIs || !hasAnySpecific;
+
+    const asksOnlyDefinition = (asksExplicitDefinition || asksPureWhatIs) && !hasAnySpecific;
+    const asksOnlyCauses = asksCauses && !asksExplicitDefinition && !asksPureWhatIs && !asksEffects && !asksPreventionOrManagement && !asksTypes && !asksFunctionsOrUses && !asksProcess;
+    const asksOnlyEffects = asksEffects && !asksExplicitDefinition && !asksPureWhatIs && !asksCauses && !asksPreventionOrManagement && !asksTypes && !asksFunctionsOrUses && !asksProcess;
+    const asksOnlyTypes = asksTypes && !asksExplicitDefinition && !asksPureWhatIs && !asksCauses && !asksEffects && !asksPreventionOrManagement && !asksFunctionsOrUses && !asksProcess;
+    const asksOnlyFunctions = asksFunctionsOrUses && !asksExplicitDefinition && !asksPureWhatIs && !asksCauses && !asksEffects && !asksPreventionOrManagement && !asksTypes && !asksProcess;
+    const asksOnlyPrevention = asksPreventionOrManagement && !asksExplicitDefinition && !asksPureWhatIs && !asksCauses && !asksEffects && !asksTypes && !asksFunctionsOrUses && !asksProcess;
+    const asksOnlyProcess = asksProcess && !asksExplicitDefinition && !asksPureWhatIs && !asksCauses && !asksEffects && !asksTypes && !asksFunctionsOrUses && !asksPreventionOrManagement;
+
+    return {
+      asksDefinition,
+      asksExplicitDefinition,
+      asksPureWhatIs,
+      asksProcess,
+      asksTypes,
+      asksCauses,
+      asksEffects,
+      asksSymptoms,
+      asksPreventionOrManagement,
+      asksFunctionsOrUses,
+      asksDifference,
+      asksExamples,
+      asksEquation,
+      asksOnlyDefinition,
+      asksOnlyCauses,
+      asksOnlyEffects,
+      asksOnlyTypes,
+      asksOnlyFunctions,
+      asksOnlyPrevention,
+      asksOnlyProcess,
+      hasAnySpecific,
+      rawQuestion: question
+    };
   }
 
   /**
@@ -406,7 +751,8 @@ export class AIEngine {
     level: string,
     matchedChunk: any,
     matchedScore: number,
-    hint?: string
+    hint?: string,
+    history?: Array<{ question: string; answer: string }>
   ): SynthesisResult {
     // 1. Exam hint override
     if (hint) {
@@ -441,6 +787,18 @@ export class AIEngine {
     }
 
     // 4. Targeted Domain Handlers (History, Science, Math, Geography, Accounts, Grade 7 Curriculum)
+    // Dedicated Grade 7 Heritage-Based Curriculum (HBC) Line-by-Line Question Resolver
+    const hbcLineResult = this.handleGrade7HbcLineByLineQuery(question, level, intent);
+    if (hbcLineResult) {
+      return hbcLineResult;
+    }
+
+    // Dedicated Cambridge & ZIMSEC O-Level Biology Past Paper & Notes Question Resolver
+    const bioPastPaperResult = this.handleOLevelBiologyPastPaperQuery(question, level, intent);
+    if (bioPastPaperResult) {
+      return bioPastPaperResult;
+    }
+
     // ZIMSEC Grade 7 Examination Structure, The 6 Official Subjects, Grading System (Units 1-9) & Results Slips
     const grade7OverviewResult = this.handleZimsecGradeSevenOverviewAndGradingQuery(question, level, intent);
     if (grade7OverviewResult) {
@@ -486,8 +844,48 @@ export class AIEngine {
       return this.handleLobengulaQuery(question, level, intent);
     }
 
-    // First Chimurenga / Umvukela (1896 - 1897) & Nehanda
+    // Second Chimurenga / National Liberation Struggle (1966 – 1979), Chinhoyi Battle, Lancaster House, UDI, ZANLA & ZIPRA
     if (
+      qLower.includes('second chimurenga') ||
+      qLower.includes('2nd chimurenga') ||
+      qLower.includes('chimurenga 2') ||
+      qLower.includes('chinhoyi') ||
+      qLower.includes('zanla') ||
+      qLower.includes('zipra') ||
+      qLower.includes('lancaster house') ||
+      qLower.includes('land apportionment') ||
+      qLower.includes('land tenure act') ||
+      qLower.includes('nyadzonia') ||
+      qLower.includes('chimoio') ||
+      (qLower.includes('chimurenga') && (
+        qLower.includes('second') ||
+        qLower.includes('2nd') ||
+        qLower.includes('1966') ||
+        qLower.includes('1979') ||
+        qLower.includes('1980') ||
+        qLower.includes('smith') ||
+        qLower.includes('liberation')
+      )) ||
+      (qLower.includes('liberation') && (qLower.includes('war') || qLower.includes('struggle') || qLower.includes('cause')))
+    ) {
+      return this.handleSecondChimurengaQuery(question, level, intent);
+    }
+
+    // First Chimurenga / Umvukela (1896 - 1897) & Nehanda
+    // STRICT GUARD: Must NOT intercept Second Chimurenga or 1966-1980 liberation queries!
+    const isExplicitlySecondChimurenga =
+      qLower.includes('second') ||
+      qLower.includes('2nd') ||
+      qLower.includes('chinhoyi') ||
+      qLower.includes('1966') ||
+      qLower.includes('1979') ||
+      qLower.includes('1980') ||
+      qLower.includes('zanla') ||
+      qLower.includes('zipra') ||
+      qLower.includes('lancaster') ||
+      qLower.includes('smith');
+
+    if (!isExplicitlySecondChimurenga && (
       qLower.includes('1896') ||
       qLower.includes('1897') ||
       qLower.includes('first chimurenga') ||
@@ -508,10 +906,9 @@ export class AIEngine {
         qLower.includes('uprising') ||
         qLower.includes('rebellion') ||
         qLower.includes('revolt') ||
-        qLower.includes('war') ||
         qLower.includes('who')
       ))
-    ) {
+    )) {
       return this.handleFirstChimurengaQuery(question, level, intent);
     }
 
@@ -519,6 +916,26 @@ export class AIEngine {
     const heroesResult = this.handleNationalHeroesQuery(question, level, intent);
     if (heroesResult) {
       return heroesResult;
+    }
+
+    // Respiration & Cellular Energetics (Cellular Respiration, Aerobic & Anaerobic, Breathing vs Respiration, Respiratory System)
+    if (
+      qLower.includes('respiration') ||
+      qLower.includes('respiratory') ||
+      qLower.includes('aerobic') ||
+      qLower.includes('anaerobic') ||
+      qLower.includes('fermentation') ||
+      (qLower.includes('breathing') && (
+        qLower.includes('respiration') ||
+        qLower.includes('difference') ||
+        qLower.includes('what is') ||
+        qLower.includes('mechanism') ||
+        qLower.includes('process') ||
+        qLower.includes('compare') ||
+        qLower.includes('vs')
+      ))
+    ) {
+      return this.handleRespirationQuery(question, level, intent);
     }
 
     // Human Body Systems, Plant Biology & Diseases (Digestive, Circulatory, Respiratory, Deficiency & Infectious Diseases)
@@ -533,6 +950,18 @@ export class AIEngine {
       (qLower.includes('light') && qLower.includes('dark') && qLower.includes('reaction'))
     ) {
       return this.handlePhotosynthesisQuery(question, level, intent);
+    }
+
+    // Osmosis, Diffusion, Active Transport & Cell Biology
+    if (
+      qLower.includes('osmosis') ||
+      qLower.includes('diffusion') ||
+      qLower.includes('active transport') ||
+      qLower.includes('plasmolysis') ||
+      qLower.includes('turgid') ||
+      (qLower.includes('cell') && (qLower.includes('transport') || qLower.includes('membrane')))
+    ) {
+      return this.handleOsmosisAndCellTransportQuery(question, level, intent);
     }
 
     // Natural Farming Regions & Chiredzi
@@ -580,6 +1009,13 @@ export class AIEngine {
     // Zimbabwe Gold (ZiG) Currency
     if (qLower.includes('zig') || qLower.includes('currency') || qLower.includes('zimbabwe gold')) {
       return this.handleZiGQuery(question, level, intent);
+    }
+
+    // Universal Curriculum Glossary & Terminology (Across All Education Levels: Primary, O-Level, A-Level)
+    // Direct single-intent term resolution from the 2,640+ uploaded syllabus terms. Returns the concise, exact definition without dumping multi-paragraph module chunks.
+    const glossaryResult = this.handleUniversalGlossaryQuery(question, level, intent);
+    if (glossaryResult) {
+      return glossaryResult;
     }
 
     // Primary & Junior English Language Curriculum (ZIMSEC 7010)
@@ -940,7 +1376,7 @@ Feel free to ask your next question whenever you are ready.`,
       (q.includes('leader') && !q.includes('first'))
     ) {
       return {
-        text: `### Governance & Heritage: President of the Republic of Zimbabwe
+        text: `### President of the Republic of Zimbabwe
 
 **Direct Answer:** The current President of Zimbabwe is **His Excellency Cde Emmerson Dambudzo Mnangagwa**, who has served as the Head of State, Head of Government, and Commander-in-Chief of the Zimbabwe Defence Forces since **24 November 2017**.
 
@@ -1453,17 +1889,24 @@ In ZIMSEC History (Syllabus 2167), King Lobengula Khumalo\'s reign (1870–1894)
       ? 'Social Science 7050 • First Chimurenga / Umvukela (Topic 4)'
       : 'History 2167/9155 • The First Chimurenga / Umvukela (1896–1897)';
 
-    // Sub-Intent 1: Mbuya Nehanda & Spiritual Mediums (Kaguvi, Mkwati, Gorzi, etc.)
+    // Sub-Intent 1: Mbuya Nehanda & Spiritual Mediums (Kaguvi, Mkwati, Gorzi, etc.) / Leaders
     if (
       q.includes('nehanda') ||
       (q.includes('kaguvi') && !q.includes('cause')) ||
       q.includes('spirit medium') ||
       q.includes('svikiro') ||
       q.includes('mkwati') ||
-      q.includes('mukwati')
+      q.includes('mukwati') ||
+      q.includes('leader') ||
+      q.includes('leadership') ||
+      q.includes('who led') ||
+      q.includes('who was the leader') ||
+      q.includes('who were the leaders') ||
+      q.includes('heroes') ||
+      q.includes('organizer')
     ) {
       return {
-        text: `### History & Heritage: Spiritual Leadership in the First Chimurenga (1896 – 1897)
+        text: `### Spiritual Leadership in the First Chimurenga (1896 – 1897)
 
 **Direct Answer:** In both ZIMSEC Primary Social Science (7050) and Secondary History (2167/9155), spirit mediums (*mhondoro* and *svikiro*) were the chief mobilizers and spiritual coordinators of the 1896–1897 uprisings across Mashonaland and Matabeleland.
 
@@ -1591,6 +2034,147 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
         'Why were Africans defeated in the First Chimurenga?',
         'What was the Jameson Raid and how did it trigger the uprising?',
         'Compare the First Chimurenga with the Second Chimurenga'
+      ]
+    };
+  }
+
+  /**
+   * Second Chimurenga / National Liberation War (1966 – 1979)
+   * Fact-checked against official ZIMSEC Grade 7 Social Science (7050) & O-Level History (2167) / A-Level (9155)
+   */
+  private static handleSecondChimurengaQuery(question: string, level: string, intent: QuestionIntent): SynthesisResult {
+    const q = question.toLowerCase();
+    const isPrimary = level.toLowerCase().includes('primary') || level.toLowerCase().includes('grade');
+    const sourceTag = isPrimary
+      ? 'Social Science 7050 • Second Chimurenga & Independence (Topic 4)'
+      : 'History 2167/9155 • The Second Chimurenga (1966–1979)';
+
+    // Sub-Intent 1: Battle of Chinhoyi (28 April 1966)
+    if (q.includes('chinhoyi') || q.includes('seven heroes') || q.includes('chinhoyi 7')) {
+      return {
+        text: `### History: The Battle of Chinhoyi (28 April 1966) – The Spark of the Second Chimurenga
+
+**Direct Answer:** The **Battle of Chinhoyi on 28 April 1966** was the historic military clash that officially ignited the **Second Chimurenga** (armed liberation struggle) in Zimbabwe.
+
+1. The Chinhoyi Seven (ZANLA Heroes):
+- Seven courageous ZANLA freedom fighters infiltrated Rhodesia from Zambia:
+  1. **David Guzuzu**
+  2. **Simon Chimbodza (Nyandoro)**
+  3. **Christopher Chatambudza**
+  4. **Arthur Maramba**
+  5. **Godwin Manyerenyere**
+  6. **Chubby Savanhu**
+  7. **Ephraim Shenjere**
+
+2. The Battle:
+- The 7 cadres were surrounded by Rhodesian security forces armed with jet bombers, helicopters, and heavily armed infantry.
+- The freedom fighters fought valiantly for an entire day, refusing to surrender and killing scores of settler soldiers before running out of ammunition and making the ultimate sacrifice.
+
+3. Significance in Zimbabwean History:
+- Shattered the myth of white settler military invincibility.
+- Marked the decisive shift from peaceful political petitions to armed revolutionary struggle.
+- Commemorated nationally every year on **National Heroes Day** (in August).`,
+        sourceTag,
+        suggestions: [
+          'What were the causes of the Second Chimurenga?',
+          'What was the role of ZANLA and ZIPRA?',
+          'Who was General Josiah Magama Tongogara?'
+        ]
+      };
+    }
+
+    // Sub-Intent 2: Lancaster House Conference (1979) & Independence (1980)
+    if (q.includes('lancaster') || q.includes('independence') || q.includes('18 april') || q.includes('rufaro')) {
+      return {
+        text: `### History: The Lancaster House Conference (1979) and Zimbabwe Independence (1980)
+
+**Direct Answer:** The **Lancaster House Conference (September – December 1979)** was held in London to negotiate the ceasefire and the constitution that ended the Second Chimurenga and led to the birth of independent Zimbabwe on **18 April 1980**.
+
+1. Key Delegations & Leaders:
+- **The Patriotic Front (PF Alliance):** Co-led by **Cde Robert Gabriel Mugabe** (ZANU) and **Dr. Joshua Mqabuko Nkomo** (ZAPU).
+- **Rhodesian / Internal Settlement Delegation:** Bishop Abel Muzorewa and Ian Douglas Smith.
+- **British Government (Chair):** Chaired by British Foreign Secretary **Lord Carrington**.
+
+2. Crucial Points of Negotiation:
+- **The Land Question:** The Patriotic Front insisted on the unconditional return of ancestral lands to the black majority. A compromise was struck: a 10-year "willing-buyer, willing-seller" clause, with Britain and the US promising financial aid to purchase commercial farms.
+- **Democratic Majority Rule:** Universal adult suffrage (one person, one vote) with 20 guaranteed parliamentary seats reserved for the white minority for 7 years.
+- **Ceasefire:** Monitored by the Commonwealth Ceasefire Monitoring Force.
+
+3. The 1980 Historic Elections & Independence Day:
+- Held in February 1980: ZANU (PF) won a landslide victory with 57 seats; PF-ZAPU won 20 seats.
+- **Independence Midnight (17/18 April 1980):** The Union Jack was lowered and the new **Zimbabwe National Flag** was raised at **Rufaro Stadium** in Harare, with Cde Robert Mugabe sworn in as the first Prime Minister.`,
+        sourceTag,
+        suggestions: [
+          'What were the causes of the Second Chimurenga?',
+          'What was the 1987 Unity Accord?',
+          'What was the role of the Patriotic Front?'
+        ]
+      };
+    }
+
+    // Sub-Intent 3: Land Apportionment Act (1930) & Land Tenure Act (1969)
+    if (q.includes('land apportionment') || q.includes('land tenure') || q.includes('land act')) {
+      return {
+        text: `### History: Colonial Land Laws: The Land Apportionment Act (1930) and Land Tenure Act (1969)
+
+**Direct Answer:** Colonial land laws were the chief structural grievance and primary economic cause of the Second Chimurenga, systematically dispossessing the indigenous African majority of fertile land.
+
+1. The Land Apportionment Act (1930):
+- Recommended by the Morris Carter Commission (1925) and enacted in 1930.
+- Formally partitioned the country along strict racial lines:
+  * **European Area:** ~49 million acres (51% of the country's best fertile land on the high plateau) reserved for ~50,000 white settlers.
+  * **Native Reserves (Tribal Trust Lands):** ~21 million acres of poor, rocky, semi-arid land for over 1 million Africans.
+  * **Native Purchase Areas:** ~7 million acres where wealthy blacks could purchase small farms.
+- Africans were forbidden from owning land in commercial and urban areas.
+
+2. The Land Tenure Act (1969):
+- Enacted by Ian Smith's Rhodesian Front to entrench racial segregation.
+- Divided Rhodesia into two equal halves: **44.9 million acres for Europeans** and **44.9 million acres for Africans**, despite black Africans outnumbering whites by more than 20 to 1.
+
+3. Consequences:
+- Severe overcrowding, erosion, and poverty in the reserves.
+- Forced thousands of young Africans to join **ZANLA** and **ZIPRA** to fight for the reclaim of their ancestral heritage (*ivhu revhu*).`,
+        sourceTag,
+        suggestions: [
+          'What were the other causes of the Second Chimurenga?',
+          'What was the Fast Track Land Reform of 2000?',
+          'Compare the Land Apportionment Act with the Land Tenure Act'
+        ]
+      };
+    }
+
+    // Sub-Intent 4: Causes of the Second Chimurenga (Default & Core Intent)
+    return {
+      text: `### History: Causes of the Second Chimurenga (1966 – 1979)
+
+**Direct Answer:** The Second Chimurenga was the protracted armed national liberation struggle waged by nationalist forces (**ZANLA** and **ZIPRA**) against Ian Smith's white minority regime to overthrow colonial oppression and establish majority rule.
+
+In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History 2167/9155), the causes are grouped into four fundamental pillars:
+
+1. Land Alienation & Dispossession:
+- The **Land Apportionment Act (1930)** and **Land Tenure Act (1969)** stripped Africans of their ancestral fertile lands, crowding millions into infertile, drought-prone Native Reserves (Tribal Trust Lands).
+- Overcrowding led to severe poverty, soil degradation, and destitution, creating the central revolutionary slogan: *"Tora gidi uzvitonge, ivhu kuvanhu"* (Take the gun and free yourself, return land to the people).
+
+2. Unilateral Declaration of Independence (UDI, 11 November 1965):
+- British decolonization policy required "No Independence Before Majority African Rule" (NIBMAR).
+- To prevent black majority rule, Prime Minister **Ian Douglas Smith** illegally declared Rhodesia independent from Britain, defiantly declaring: *"No black majority rule in my lifetime, not in a thousand years"*.
+- UDI slammed the door on constitutional progress, convincing African leaders that armed warfare was the only remaining option.
+
+3. Banning of Nationalist Parties & Mass Detentions:
+- The colonial government banned every peaceful African political organization: the ANC (1959), NDP (1961), ZAPU (1962), and ZANU (1964).
+- Nationalist leaders—including **Dr. Joshua Nkomo**, **Cde Robert Mugabe**, **Leopold Takawira**, and **Ndabaningi Sithole**—were arrested and detained in isolated camps (Gonakudzingwa, Sikombela, and Whawha) for over 10 years without trial.
+
+4. Racial Segregation & Economic Exploitation:
+- **Denial of the Right to Vote:** High property, income, and educational voting qualifications disenfranchised over 95% of Africans.
+- **Discriminatory Labour Laws:** The **Industrial Conciliation Act (1934)** barred black workers from forming recognized trade unions or entering skilled artisan jobs.
+- **Pass Laws:** Under the Native Registration Act, Africans were forced to carry passes (*chitupa*) to move in urban centers and white areas.
+- **Segregated Education & Healthcare:** Vast disparities in government spending, with white schools receiving up to twenty times more funding per child than black schools.`,
+      sourceTag,
+      suggestions: [
+        'What was the Battle of Chinhoyi (1966)?',
+        'What was the role of ZANLA and ZIPRA?',
+        'Describe the 1979 Lancaster House Conference',
+        'Who was General Josiah Magama Tongogara?'
       ]
     };
   }
@@ -1741,6 +2325,272 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
   }
 
   /**
+   * Respiration & Cellular Energetics (ZIMSEC Primary AST 7030 & Secondary 4003 / Biology 4025)
+   * High-precision, zero-hallucination answers structured specifically to what was asked.
+   */
+  private static handleRespirationQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    const q = question.toLowerCase();
+    const decomp = this.decomposeQuestion(question);
+    const isPrimary = level.toLowerCase().includes('grade') || level.toLowerCase().includes('primary');
+
+    const asksBreathingDiff = (q.includes('breathing') && (q.includes('difference') || q.includes('compare') || q.includes('vs'))) ||
+      (q.includes('respiration') && q.includes('breathing'));
+    const asksPhotosynthesisDiff = q.includes('photosynthesis') && (q.includes('difference') || q.includes('compare') || q.includes('vs'));
+    const asksAnaerobic = q.includes('anaerobic') || q.includes('fermentation') || q.includes('lactic acid') || (q.includes('yeast') && q.includes('respiration'));
+    const asksAerobic = q.includes('aerobic') && !q.includes('anaerobic');
+    const asksRespiratoryOrgans = (q.includes('respiratory system') || q.includes('breathing mechanism') || q.includes('lungs') || q.includes('alveoli') || q.includes('inhalation') || q.includes('exhalation')) && !q.includes('what is respiration') && !q.includes('process of respiration');
+    const asksTypes = (q.includes('types of respiration') || q.includes('two types') || q.includes('forms of respiration') || (q.includes('aerobic') && q.includes('anaerobic'))) && !asksBreathingDiff;
+    const asksEquation = q.includes('equation') || q.includes('formula');
+
+    // 1. Respiration vs Breathing
+    if (asksBreathingDiff) {
+      return {
+        text: `### Respiration vs Breathing
+
+#### Key Differences Between Respiration and Breathing
+- **Nature of the Process:**
+  * **Breathing (Ventilation):** A **physical / mechanical process** involving muscular movements of the diaphragm, ribs, and lungs to move air in and out.
+  * **Respiration:** A **chemical / biochemical process** occurring inside living cells where glucose is broken down to release energy (ATP).
+- **Site of Occurrence:**
+  * **Breathing:** Occurs in the **respiratory organs** (nose, trachea, bronchi, lungs, and alveoli).
+  * **Respiration:** Occurs inside **microscopic cells** (specifically the cytoplasm and mitochondria).
+- **Energy Release:**
+  * **Breathing:** Does **not produce energy**; in fact, it consumes energy for muscle contraction.
+  * **Respiration:** **Releases vital energy (ATP)** required by the organism to stay alive.
+- **Enzyme Involvement:**
+  * **Breathing:** Does not involve enzymes.
+  * **Respiration:** Controlled by a series of **respiratory enzymes**.`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiration vs Breathing' : 'Combined Science 4003 • Respiration vs Breathing',
+        suggestions: [
+          'What is the word equation for respiration?',
+          'What is the difference between aerobic and anaerobic respiration?',
+          'What are the parts of the human respiratory system?'
+        ]
+      };
+    }
+
+    // 2. Respiration vs Photosynthesis
+    if (asksPhotosynthesisDiff) {
+      return {
+        text: `### Respiration vs Photosynthesis
+
+#### Comparison Between Respiration and Photosynthesis
+- **Purpose:**
+  * **Respiration:** Breaks down food (glucose) to **release energy (ATP)** for life processes.
+  * **Photosynthesis:** Uses light energy to **synthesize food (glucose)** from inorganic materials.
+- **Where It Occurs:**
+  * **Respiration:** In **all living cells** of plants and animals (in mitochondria and cytoplasm).
+  * **Photosynthesis:** Only in **green plant cells** containing chlorophyll (in chloroplasts).
+- **When It Happens:**
+  * **Respiration:** Occurs **continuously day and night (24/7)**.
+  * **Photosynthesis:** Occurs **only during the daytime** in the presence of sunlight.
+- **Raw Materials (Inputs):**
+  * **Respiration:** Glucose and Oxygen.
+  * **Photosynthesis:** Carbon dioxide and Water.
+- **End Products (Outputs):**
+  * **Respiration:** Carbon dioxide, Water, and Energy.
+  * **Photosynthesis:** Glucose and Oxygen.`,
+        sourceTag: 'Combined Science 4003 • Respiration vs Photosynthesis',
+        suggestions: [
+          'What is the chemical equation for respiration?',
+          'What is aerobic respiration?',
+          'What is photosynthesis?'
+        ]
+      };
+    }
+
+    // 3. Anaerobic Respiration Specifically
+    if (asksAnaerobic) {
+      const sections: string[] = [];
+      sections.push(`### Anaerobic Respiration`);
+
+      sections.push(`#### 1. What is Anaerobic Respiration?
+**Anaerobic respiration** is the breakdown of glucose to release energy **in the absence of oxygen** (or when oxygen supply is insufficient). It takes place entirely in the **cytoplasm** and yields much less energy than aerobic respiration (only ~2 ATP molecules per glucose).`);
+
+      sections.push(`#### 2. The Two Forms of Anaerobic Respiration
+1. **In Human Muscles (Lactic Acid Fermentation):**
+   - Occurs during vigorous, strenuous exercise (e.g. sprinting) when blood cannot deliver oxygen fast enough to muscles.
+   - **Equation:** Glucose → Lactic Acid + Energy (ATP)
+   - **Consequences:** Accumulation of toxic **lactic acid** causes muscle fatigue, pain, and severe muscle cramps.
+   - **Oxygen Debt:** The volume of extra oxygen required after exercise to oxidize and clear accumulated lactic acid in the liver back into glucose.
+2. **In Yeast and Plant Cells (Alcoholic Fermentation):**
+   - Occurs when yeast respires anaerobically without oxygen.
+   - **Equation:** Glucose → Ethanol (Alcohol) + Carbon Dioxide + Energy (ATP)
+   - **Practical Uses in Zimbabwe:**
+     * **Brewing Industry:** Production of alcohol in traditional opaque beer (*chibuku / doro remasese*) and clear lager beers.
+     * **Baking Industry:** Carbon dioxide bubbles expand and get trapped in dough, causing bread to rise softly.`);
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Combined Science 4003 • Anaerobic Respiration',
+        suggestions: [
+          'What is oxygen debt and how is it repaid?',
+          'What is the difference between aerobic and anaerobic respiration?',
+          'What is aerobic respiration?'
+        ]
+      };
+    }
+
+    // 4. Respiratory System & Breathing Mechanism (Organs, Inhalation, Exhalation)
+    if (asksRespiratoryOrgans) {
+      return {
+        text: `### The Human Respiratory System
+
+#### 1. Organs of the Respiratory System
+- **Nose / Nasal Cavity:** Traps dust using tiny hairs (*cilia*) and mucus, while warming and moistening incoming air.
+- **Trachea (Windpipe):** Reinforced with C-shaped rings of cartilage that keep the airway permanently open.
+- **Bronchi & Bronchioles:** Subdivisions branching deep into the right and left lungs.
+- **Alveoli (Air Sacs):** Microscopic air sacs where gas exchange happens. Adaptations:
+  * Huge total surface area.
+  * Very thin walls (one cell thick).
+  * Dense network of blood capillaries.
+  * Moist lining for oxygen to dissolve easily.
+
+#### 2. Mechanism of Breathing (Ventilation)
+1. **Inhalation (Breathing In):**
+   - External intercostal muscles contract, pulling ribs **up and outward**.
+   - Diaphragm contracts and **flattens downwards**.
+   - Volume of the chest cavity (thorax) increases, decreasing internal lung pressure below atmospheric pressure.
+   - Air rushes into the lungs from the higher outside pressure.
+2. **Exhalation (Breathing Out):**
+   - Intercostal muscles relax, ribs move **down and inward**.
+   - Diaphragm relaxes, curving back into a **dome shape**.
+   - Volume of thorax decreases, increasing lung pressure above atmospheric pressure.
+   - Air is forced out of the lungs.`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiratory System' : 'Combined Science 4003 • Respiratory System',
+        suggestions: [
+          'What is the difference between respiration and breathing?',
+          'How are alveoli adapted for gas exchange?',
+          'What is respiration?'
+        ]
+      };
+    }
+
+    // 5. Types of Respiration (Aerobic vs Anaerobic)
+    if (asksTypes) {
+      return {
+        text: `### Types of Respiration
+
+#### The Two Main Types of Respiration
+1. **Aerobic Respiration:**
+   - **Oxygen:** Requires oxygen ($O_2$).
+   - **Site:** Starts in the cytoplasm and is completed inside **mitochondria**.
+   - **Breakdown:** Complete breakdown of glucose.
+   - **Equation:** Glucose + Oxygen → Carbon Dioxide + Water + Energy (36–38 ATP)
+   - **Energy Yield:** Very high energy release (~2880 kJ / 36–38 ATP per glucose molecule).
+2. **Anaerobic Respiration:**
+   - **Oxygen:** Occurs **without oxygen**.
+   - **Site:** Takes place strictly in the **cytoplasm**.
+   - **Breakdown:** Incomplete breakdown of glucose.
+   - **Products:**
+     * In human muscles: **Lactic acid** + small energy (causes muscle cramps).
+     * In yeast: **Ethanol (alcohol)** + **Carbon dioxide** + small energy (fermentation).
+   - **Energy Yield:** Very low energy release (~150 kJ / only 2 ATP per glucose molecule).`,
+        sourceTag: 'ZIMSEC Combined Science 4003 • Types of Respiration',
+        suggestions: [
+          'What is anaerobic respiration in human muscles?',
+          'What is the difference between respiration and breathing?',
+          'Give the process of aerobic respiration'
+        ]
+      };
+    }
+
+    // 6. Respiration Query (Laser-focused to user intent)
+    // 6A. Only Definition Asked
+    if (decomp.asksOnlyDefinition) {
+      const def = isPrimary
+        ? '**Respiration** is the chemical process by which living cells break down digested food (glucose) using oxygen to **release energy** needed for life processes, producing carbon dioxide and water as waste products.'
+        : '**Respiration** is the biochemical process occurring inside living cells whereby organic food substances (primarily glucose) are broken down through enzymatic reactions to **release energy in the form of ATP (adenosine triphosphate)** for cellular work.';
+
+      return {
+        text: `### Respiration\n\n${def}`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiration' : 'Combined Science 4003 • Cellular Respiration',
+        suggestions: [
+          'Give the process of respiration',
+          'What is the word equation for respiration?',
+          'What is the difference between respiration and breathing?'
+        ]
+      };
+    }
+
+    // 6B. Only Process Asked
+    if (decomp.asksOnlyProcess) {
+      const procText = isPrimary
+        ? `1. **Absorption of Glucose:** Digested food (glucose) from the small intestine is absorbed into the bloodstream and delivered to body cells.\n2. **Inhalation of Oxygen:** Oxygen inhaled into the lungs diffuses across the alveoli into red blood cells and is carried to cells.\n3. **Chemical Reaction Inside Cells:** Inside every cell, oxygen reacts with glucose to break it down and unlock stored chemical energy.\n4. **Energy Release:** Energy is released to keep the body warm, build new cells, repair damaged tissues, and power muscle movement.\n5. **Removal of Waste Products:** Carbon dioxide and water vapor produced as by-products are carried by blood back to the lungs and exhaled.`
+        : `1. **Glycolysis (Cytoplasm):** Glucose (6-carbon) is split in the cell cytoplasm into two molecules of pyruvate (3-carbon), producing an initial 2 ATP molecules without requiring oxygen.\n2. **Krebs Cycle / Citric Acid Cycle (Mitochondrial Matrix):** Pyruvate enters the mitochondria and is oxidized, releasing carbon dioxide ($CO_2$) and producing high-energy hydrogen carriers (NADH, $FADH_2$).\n3. **Oxidative Phosphorylation / Electron Transport Chain (Inner Mitochondrial Membrane):** Hydrogen electrons pass along the chain to oxygen, producing water ($H_2O$) and yielding approximately 32–34 ATP molecules.\n4. **Energy Utilization:** ATP powers cellular work including active transport, muscle contraction, and synthesis.`;
+
+      return {
+        text: `### Process of Respiration\n\n${procText}`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiration' : 'Combined Science 4003 • Cellular Respiration',
+        suggestions: [
+          'What is respiration?',
+          'What is the word equation for respiration?',
+          'What is the difference between aerobic and anaerobic respiration?'
+        ]
+      };
+    }
+
+    // 6C. Only Equation Asked
+    if (asksEquation && !decomp.asksDefinition && !decomp.asksProcess) {
+      const eqText = isPrimary
+        ? `**Glucose + Oxygen → Carbon Dioxide + Water + Energy**\n\n- **Raw Materials (Reactants):** Glucose (from food) and Oxygen (from air).\n- **Products (Outputs):** Energy (used by the body), Carbon dioxide (waste gas exhaled), and Water.`
+        : `* **Word Equation:**\n  Glucose + Oxygen → Carbon Dioxide + Water + Energy (ATP)\n* **Balanced Chemical Equation:**\n  $$C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + 2880\\text{ kJ (36-38 ATP)}$$`;
+
+      return {
+        text: `### Equation for Respiration\n\n${eqText}`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiration' : 'Combined Science 4003 • Cellular Respiration',
+        suggestions: [
+          'What is respiration?',
+          'Give the process of respiration',
+          'What is the difference between aerobic and anaerobic respiration?'
+        ]
+      };
+    }
+
+    // 6D. Compound or Explicit Multi-part Query (Include ONLY requested sections)
+    const sections: string[] = [`### Respiration`];
+
+    if (decomp.asksDefinition) {
+      const def = isPrimary
+        ? '**Respiration** is the chemical process by which living cells break down digested food (glucose) using oxygen to **release energy** needed for life processes, producing carbon dioxide and water as waste products.'
+        : '**Respiration** is the biochemical process occurring inside living cells whereby organic food substances (primarily glucose) are broken down through enzymatic reactions to **release energy in the form of ATP (adenosine triphosphate)** for cellular work.';
+      sections.push(`#### 1. What is Respiration?\n${def}`);
+    }
+
+    if (decomp.asksProcess) {
+      const headingNum = sections.length;
+      if (isPrimary) {
+        sections.push(`#### ${headingNum}. The Process of Respiration\n1. **Absorption of Glucose:** Digested food (glucose) from the small intestine is absorbed into the bloodstream and delivered to body cells.\n2. **Inhalation of Oxygen:** Oxygen inhaled into the lungs diffuses across the alveoli into red blood cells and is carried to cells.\n3. **Chemical Reaction Inside Cells:** Inside every cell, oxygen reacts with glucose to break it down and unlock stored chemical energy.\n4. **Energy Release:** Energy is released to keep the body warm, build new cells, repair damaged tissues, and power muscle movement.\n5. **Removal of Waste Products:** Carbon dioxide and water vapor produced as by-products are carried by blood back to the lungs and exhaled.`);
+      } else {
+        sections.push(`#### ${headingNum}. The Process of Cellular Respiration\n1. **Glycolysis (Cytoplasm):** Glucose is split into pyruvate, yielding 2 ATP without oxygen.\n2. **Krebs Cycle (Mitochondria):** Pyruvate is oxidized, releasing $CO_2$ and generating NADH/$FADH_2$.\n3. **Electron Transport Chain:** Hydrogen electrons produce $H_2O$ and ~32-34 ATP.\n4. **Energy Utilization:** ATP powers cellular work.`);
+      }
+    }
+
+    if (asksEquation) {
+      const headingNum = sections.length;
+      if (isPrimary) {
+        sections.push(`#### ${headingNum}. Word Equation for Respiration\n**Glucose + Oxygen → Carbon Dioxide + Water + Energy**\n\n- **Reactants:** Glucose and Oxygen.\n- **Products:** Energy, Carbon dioxide, and Water.`);
+      } else {
+        sections.push(`#### ${headingNum}. Equations for Aerobic Respiration\n* **Word Equation:** Glucose + Oxygen → Carbon Dioxide + Water + Energy (ATP)\n* **Balanced Chemical Equation:** $$C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + 2880\\text{ kJ}$$`);
+      }
+    }
+
+    return {
+      text: sections.join('\n\n'),
+      sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Respiration' : 'Combined Science 4003 • Cellular Respiration',
+      suggestions: [
+        'What is the difference between respiration and breathing?',
+        'Compare aerobic and anaerobic respiration',
+        'What happens during anaerobic respiration in muscles?'
+      ]
+    };
+  }
+
+  /**
    * Authoritative handler for Human Body Systems, Plant Biology, and Diseases
    * Eliminates hallucinations for primary and junior secondary science questions
    */
@@ -1761,7 +2611,7 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
       q.includes('alimentary canal')
     ) {
       return {
-        text: `### Science & Biology: The Human Digestive System
+        text: `### The Human Digestive System
 
 **Direct Answer:** The human digestive system breaks down large, insoluble food molecules into small, soluble nutrients that can be absorbed into the bloodstream.
 
@@ -1802,7 +2652,7 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
       q.includes('red blood cells')
     ) {
       return {
-        text: `### Science & Biology: The Human Circulatory System & Blood
+        text: `### The Human Circulatory System & Blood
 
 **Direct Answer:** The circulatory system transports oxygen, nutrients, hormones, and waste products (like carbon dioxide and urea) throughout the human body using the heart, blood vessels, and blood.
 
@@ -1831,46 +2681,17 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
       };
     }
 
-    // 3. Respiratory System & Lungs
+    // 3. Respiratory System & Respiration
     if (
-      q.includes('respiratory system') ||
+      q.includes('respiration') ||
+      q.includes('respiratory') ||
       q.includes('breathing') ||
       q.includes('lungs') ||
       q.includes('alveoli') ||
       q.includes('gas exchange') ||
       q.includes('inhalation')
     ) {
-      return {
-        text: `### Science & Biology: The Human Respiratory System
-
-**Direct Answer:** The respiratory system facilitates the exchange of gases between the organism and its environment—supplying oxygen for cellular respiration and removing carbon dioxide waste.
-
-1. Pathway of Air into the Body:
-- **Nose / Nasal Cavity:** Air is warmed, moistened, and filtered by mucus and tiny hairs (*cilia*).
-- **Trachea (Windpipe):** Reinforced with C-shaped rings of cartilage to prevent collapse during inhalation.
-- **Bronchi & Bronchioles:** The trachea branches into two bronchi (one to each lung), which subdivide into smaller bronchioles.
-- **Alveoli (Air Sacs):** The sites of gas exchange. Adaptations for diffusion:
-  * Millions of tiny sacs providing a massive surface area.
-  * Very thin walls (one cell thick).
-  * Rich network of surrounding blood capillaries.
-  * Moist surface to dissolve gases.
-
-2. Mechanism of Breathing (Ventilation):
-- **Inhalation (Breathing In):**
-  * External intercostal muscles contract, pulling ribs **up and out**.
-  * Diaphragm muscles contract, flattening the diaphragm **downwards**.
-  * Thorax volume increases -> lung pressure decreases below atmospheric pressure -> air rushes in.
-- **Exhalation (Breathing Out):**
-  * Intercostal muscles relax, ribs move **down and in**.
-  * Diaphragm relaxes, curving into a **dome shape**.
-  * Thorax volume decreases -> pressure increases -> air is forced out.`,
-        sourceTag: 'ZIMSEC Combined Science 4003 / Primary 7030 • Respiratory System',
-        suggestions: [
-          'What is the difference between respiration and breathing?',
-          'Explain the digestive system organs',
-          'What are deficiency diseases in children?'
-        ]
-      };
+      return this.handleRespirationQuery(question, level, intent);
     }
 
     // 4. Deficiency Diseases (Nutrition)
@@ -1883,41 +2704,150 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
       q.includes('goitre') ||
       q.includes('malnutrition')
     ) {
+      if (q.includes('kwashiorkor')) {
+        return {
+          text: `### Kwashiorkor
+
+#### 1. What is Kwashiorkor?
+**Kwashiorkor** is a severe nutritional deficiency disease in young children caused by a **lack of protein** in their diet.
+
+#### 2. Causes
+- Diet predominantly composed of carbohydrates (like plain maize porridge) with little or no protein.
+- Common during early childhood weaning when breast milk is replaced with low-protein starchy foods.
+
+#### 3. Signs and Symptoms
+- **Oedema (Swollen Potbelly and Puffy Feet):** Fluid buildup causing a distended belly and swollen feet/face.
+- **Hair Changes:** Thin, dry, brittle reddish-brown or yellowish hair that easily plucks out.
+- **Skin Changes:** Dark, peeling or flaky skin patches (*flaky paint dermatitis*).
+- **Behavioural Symptoms:** Apathy, constant misery, irritability, and loss of appetite.
+
+#### 4. Treatment and Prevention
+- Feeding the child protein-rich foods: beans, fresh cow milk, eggs, groundnuts (*nzungu*), roundnuts (*nyimo*), kapenta (*matemba*), fish, and meat.
+- Traditional high-protein porridges (*nhopi* or *bota rine dovi*).`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
+          suggestions: [
+            'What is the difference between kwashiorkor and marasmus?',
+            'What are the symptoms and causes of scurvy?',
+            'What foods belong to the body-building food group?'
+          ]
+        };
+      }
+
+      if (q.includes('marasmus')) {
+        return {
+          text: `### Marasmus
+
+#### 1. What is Marasmus?
+**Marasmus** is a severe deficiency disease caused by a **total deficiency of all food nutrients and energy (starvation)**.
+
+#### 2. Causes
+- Severe shortage of food energy (calories, carbohydrates, fats, and proteins).
+- Chronic starvation, early cessation of breastfeeding, or severe recurrent diarrhea.
+
+#### 3. Signs and Symptoms
+- **Extreme Muscle Wasting:** Severe loss of muscle and body fat; ribs are prominent ("skin and bone").
+- **Old Person's Face:** Wrinkled, hollow facial appearance like an elderly person.
+- **Alert and Ravenously Hungry:** Unlike kwashiorkor children, marasmic children are eager to eat.
+
+#### 4. Treatment and Prevention
+- Gradual feeding of a balanced, energy-dense diet with carbohydrates, fats, and proteins, combined with oral rehydration.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
+          suggestions: [
+            'What is the difference between kwashiorkor and marasmus?',
+            'What causes rickets in children?',
+            'What are the three main food groups?'
+          ]
+        };
+      }
+
+      if (q.includes('scurvy')) {
+        return {
+          text: `### Scurvy
+
+#### 1. What is Scurvy?
+**Scurvy** is a deficiency disease caused by a severe lack of **Vitamin C (Ascorbic Acid)** in the diet.
+
+#### 2. Symptoms
+- Swollen, bleeding gums and loosened teeth.
+- Slow healing of wounds and cuts.
+- Painful swollen joints and bleeding under the skin.
+
+#### 3. Prevention and Cure
+- Consuming fresh citrus fruits (oranges, lemons, tangerines), guavas, mangoes, tomatoes, and fresh leafy greens.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
+          suggestions: [
+            'What are the symptoms of rickets?',
+            'What causes kwashiorkor?',
+            'What is a balanced diet?'
+          ]
+        };
+      }
+
+      if (q.includes('rickets')) {
+        return {
+          text: `### Rickets
+
+#### 1. What is Rickets?
+**Rickets** is a deficiency disease in children caused by a lack of **Vitamin D or Calcium**, leading to soft, weak bones.
+
+#### 2. Symptoms
+- Soft, pliable bones that bend outward under body weight resulting in **bow legs** or **knock-knees**.
+- Swollen wrists and ankles; delayed tooth formation.
+
+#### 3. Prevention and Cure
+- Regular exposure to morning sunlight (which activates Vitamin D synthesis in the skin).
+- Consuming milk, dairy products, eggs, and fish liver oil.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
+          suggestions: [
+            'How is Vitamin D synthesized in human skin?',
+            'What causes kwashiorkor and marasmus?',
+            'What are the protective foods in nutrition?'
+          ]
+        };
+      }
+
+      if (q.includes('goitre')) {
+        return {
+          text: `### Goitre
+
+#### 1. What is Goitre?
+**Goitre** is a deficiency condition caused by a lack of the mineral **Iodine** in the diet.
+
+#### 2. Symptoms
+- Abnormal enlargement or swelling of the **thyroid gland** located at the front base of the neck.
+- Difficulty swallowing or breathing in advanced cases.
+
+#### 3. Prevention
+- Consuming **iodised kitchen salt** and saltwater fish/seafood.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
+          suggestions: [
+            'Why is iodised salt important in cooking?',
+            'What causes anaemia in children?',
+            'What are deficiency diseases?'
+          ]
+        };
+      }
+
+      // General Deficiency Diseases Overview
       return {
-        text: `### Health & Nutrition: Deficiency Diseases (ZIMSEC Core Syllabus)
+        text: `### Nutritional Deficiency Diseases
 
-**Direct Answer:** Deficiency diseases are illnesses caused by the lack of essential nutrients (proteins, vitamins, or minerals) in a person's diet over an extended period.
+#### 1. What are Deficiency Diseases?
+**Deficiency diseases** are illnesses caused by a long-term lack of specific essential nutrients (proteins, vitamins, or minerals) in a person's diet.
 
-1. Common Nutritional Deficiency Diseases:
-- **1. Kwashiorkor:**
-  * **Cause:** Severe deficiency of **protein** in the diet.
-  * **Symptoms:** Swollen belly (*edema*), reddish/brown thin hair, peeling skin, swollen feet and face, underweight.
-  * **Prevention/Cure:** Foods rich in protein (eggs, beans, milk, meat, groundnuts, soya beans).
-- **2. Marasmus:**
-  * **Cause:** Severe shortage of **all food nutrients (energy/calories and protein)**.
-  * **Symptoms:** Extreme wasting of muscles ("skin and bones"), ribs clearly visible, wrinkled "old man" face, constant hunger.
-  * **Prevention:** Balanced diet with sufficient carbohydrates, fats, and proteins.
-- **3. Scurvy:**
-  * **Cause:** Lack of **Vitamin C (Ascorbic acid)**.
-  * **Symptoms:** Bleeding and swollen gums, slow wound healing, joint pains.
-  * **Prevention:** Citrus fruits (oranges, lemons, guavas, mangoes, green vegetables).
-- **4. Rickets:**
-  * **Cause:** Lack of **Vitamin D or Calcium**.
-  * **Symptoms:** Weak, soft bones; bow legs or knock knees; dental deformities.
-  * **Prevention:** Sunlight exposure, milk, fish liver oil, eggs.
-- **5. Goitre:**
-  * **Cause:** Deficiency of the mineral **Iodine**.
-  * **Symptoms:** Swelling of the thyroid gland in the neck.
-  * **Prevention:** Using iodized table salt and eating saltwater seafood.
-- **6. Anaemia:**
-  * **Cause:** Deficiency of **Iron**.
-  * **Symptoms:** Paleness of lips/fingernails, extreme tiredness, dizziness, shortness of breath.
-  * **Prevention:** Dark green leafy vegetables (*muriwo*), liver, red meat, beans.`,
+#### 2. Common Deficiency Diseases Tested in ZIMSEC
+1. **Kwashiorkor:** Lack of **protein**; causes swollen belly (oedema), peeling skin, and reddish-yellow hair.
+2. **Marasmus:** Shortage of **total food energy/calories**; causes severe muscle wasting ("skin and bone").
+3. **Scurvy:** Lack of **Vitamin C**; causes bleeding gums and loose teeth.
+4. **Rickets:** Lack of **Vitamin D / Calcium**; causes soft bones resulting in bow legs.
+5. **Goitre:** Lack of **Iodine**; causes swelling of the thyroid gland in the neck.
+6. **Anaemia:** Lack of **Iron**; causes extreme tiredness, dizziness, and pale skin.
+7. **Night Blindness:** Lack of **Vitamin A**; causes poor vision in dim light.`,
         sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Health & Nutrition',
         suggestions: [
-          'What are the 6 basic food nutrients?',
-          'What are the causes and symptoms of malaria and cholera?',
-          'Explain the parts of a green plant'
+          'What is the difference between kwashiorkor and marasmus?',
+          'What are the symptoms and causes of scurvy?',
+          'What is a balanced diet?'
         ]
       };
     }
@@ -1931,41 +2861,112 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
       q.includes('typhoid') ||
       q.includes('waterborne disease')
     ) {
+      if (q.includes('malaria')) {
+        return {
+          text: `### Health & Science: Malaria
+
+#### 1. What is Malaria?
+**Malaria** is a life-threatening infectious disease caused by the protozoan parasite **Plasmodium**, transmitted to humans through the bites of infected female mosquitoes.
+
+#### 2. Transmission Vector
+- **Vector:** Female **Anopheles mosquito**, which feeds on human blood primarily between dusk and dawn.
+
+#### 3. Signs and Symptoms
+- Recurring high fevers accompanied by intense shivering and chills.
+- Profuse sweating as the fever breaks.
+- Severe headaches, muscle aches, nausea, vomiting, and anaemia.
+
+#### 4. Prevention and Control
+- **Sleeping under Insecticide-Treated Nets (ITNs)** every night.
+- **Indoor Residual Spraying (IRS):** Spraying interior walls with approved insecticides.
+- **Environmental Management:** Clearing tall grass and draining stagnant water puddles near homes to destroy mosquito breeding grounds.
+- Seeking immediate medical testing and treatment with artemisinin-based combination therapies (ACTs).`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Malaria',
+          suggestions: [
+            'What is the life cycle of a mosquito?',
+            'How is cholera spread and prevented?',
+            'What are the symptoms of bilharzia?'
+          ]
+        };
+      }
+
+      if (q.includes('cholera')) {
+        return {
+          text: `### Health & Science: Cholera
+
+#### 1. What is Cholera?
+**Cholera** is an acute, highly contagious waterborne bacterial disease caused by infection of the intestine with **Vibrio cholerae**.
+
+#### 2. Transmission
+- Ingesting water or food contaminated with human feces containing cholera bacteria.
+- Poor sanitation, broken sewage pipes, and drinking from untreated shallow wells.
+
+#### 3. Signs and Symptoms
+- Sudden onset of profuse, painless watery diarrhea resembling **"rice-water"**.
+- Severe vomiting and rapid loss of body fluids.
+- Extreme dehydration, sunken eyes, muscle cramps, and rapid collapse if untreated.
+
+#### 4. Prevention and Control
+- **Safe Water:** Boiling all drinking water vigorously or treating with chlorine tablets (WaterGuard).
+- **Hand Hygiene:** Washing hands thoroughly with soap and running water before handling food and after using the toilet.
+- **Safe Sanitation:** Disposing of human excreta safely in Ventilated Improved Pit (Blair VIP) latrines.
+- **Immediate First Aid:** Administering Oral Rehydration Solution (ORS) immediately while seeking urgent clinic care.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Cholera',
+          suggestions: [
+            'What is Oral Rehydration Solution (ORS) and how is it made?',
+            'How does a Blair VIP latrine prevent flies and smell?',
+            'What are the causes and symptoms of malaria?'
+          ]
+        };
+      }
+
+      if (q.includes('bilharzia') || q.includes('schistosomiasis')) {
+        return {
+          text: `### Health & Science: Bilharzia (Schistosomiasis)
+
+#### 1. What is Bilharzia?
+**Bilharzia** is a parasitic disease caused by blood flukes (parasitic flatworms called **Schistosoma**).
+
+#### 2. Transmission & Intermediate Host
+- **Intermediate Host:** **Freshwater snails** living in slow-moving rivers, dams, and irrigation canals.
+- Cercariae larvae leave the snails, swim in water, and burrow through human skin when people bathe, swim, or wade in contaminated water.
+
+#### 3. Signs and Symptoms
+- **Urinary Bilharzia:** Blood in urine (*haematuria*) and painful urination.
+- **Intestinal Bilharzia:** Blood in stool, abdominal pain, diarrhea, and fatigue.
+- Stunted physical growth and learning difficulties in children.
+
+#### 4. Prevention and Control
+- Avoiding swimming, bathing, or washing in slow-moving rivers, dams, or canals.
+- Wearing gumboots and protective clothing when working in marshy irrigation schemes.
+- Community mass drug administration using **praziquantel** tablets.`,
+          sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Bilharzia',
+          suggestions: [
+            'What role do freshwater snails play in spreading bilharzia?',
+            'What are waterborne diseases?',
+            'How is cholera prevented in communities?'
+          ]
+        };
+      }
+
+      // General Infectious Diseases
       return {
         text: `### Health & Science: Infectious Diseases in Zimbabwe
 
-**Direct Answer:** Infectious diseases are caused by pathogenic microorganisms (bacteria, viruses, protozoa, or parasitic worms) and can be transmitted between humans or through insect vectors and contaminated water.
+#### 1. What are Infectious Diseases?
+**Infectious diseases** are illnesses caused by pathogenic microorganisms (such as bacteria, viruses, protozoa, or parasites) that spread from person to person, through contaminated water and food, or via insect vectors.
 
-1. Malaria:
-- **Causative Organism:** Protozoan parasite (*Plasmodium*).
-- **Vector:** Female **Anopheles mosquito** (bites at night).
-- **Symptoms:** High recurring fever, shivering/chills, sweating, severe headache, vomiting.
-- **Prevention & Control:**
-  * Sleeping under insecticide-treated mosquito nets (ITNs).
-  * Indoor residual spraying (IRS).
-  * Clearing bushes and draining stagnant water puddles to destroy mosquito breeding sites.
-  * Applying mosquito repellents.
-
-2. Cholera (Waterborne):
-- **Causative Organism:** Bacterium (*Vibrio cholerae*).
-- **Transmission:** Drinking water or eating food contaminated with human feces.
-- **Symptoms:** Sudden, painless watery diarrhea ("rice-water stools"), severe vomiting, rapid dehydration, muscle cramps.
-- **Prevention & Control:**
-  * Boiling drinking water or treating with water guard / chlorine tablets.
-  * Washing hands with soap and running water before eating and after using the toilet.
-  * Proper sanitation and disposing of sewage safely in Blair ventilated improved pit (VIP) latrines.
-  * Administering Oral Rehydration Solution (ORS) immediately.
-
-3. Bilharzia (Schistosomiasis):
-- **Causative Organism:** Parasitic blood fluke (*Schistosoma* worm).
-- **Intermediate Host:** **Freshwater snails** in slow-moving rivers, dams, and streams.
-- **Symptoms:** Blood in urine (*hematuria*) or stool, abdominal pain, fatigue, stunted growth in children.
-- **Prevention:** Avoiding swimming, bathing, or washing in unprotected rivers or dams; wearing gumboots in marshy irrigation areas; treating infected people with praziquantel.`,
-        sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Diseases & Health',
+#### 2. Major Infectious Diseases in Zimbabwe
+1. **Malaria:** Caused by *Plasmodium* parasites transmitted by female *Anopheles* mosquitoes.
+2. **Cholera:** Waterborne bacterial infection (*Vibrio cholerae*) causing rice-water diarrhea and severe dehydration.
+3. **Bilharzia:** Parasitic worm disease transmitted in freshwater through snail hosts; causes blood in urine.
+4. **Typhoid:** Bacterial infection (*Salmonella typhi*) spread through contaminated food and water.
+5. **Tuberculosis (TB):** Airborne bacterial infection (*Mycobacterium tuberculosis*) affecting lungs; spread by coughing.`,
+        sourceTag: 'ZIMSEC Primary Science 7030 / Combined Science 4003 • Infectious Diseases',
         suggestions: [
-          'What are deficiency diseases like Kwashiorkor and Marasmus?',
-          'How does the human digestive system work?',
-          'What are the 3 main soil types in agriculture?'
+          'What are the symptoms and prevention of malaria?',
+          'How is cholera spread and prevented?',
+          'What are the symptoms of bilharzia?'
         ]
       };
     }
@@ -1977,29 +2978,258 @@ In official ZIMSEC examinations (Primary Social Science 7050 & O/A-Level History
    * Photosynthesis: Light & Dark Reactions
    */
   private static handlePhotosynthesisQuery(question: string, level: string, intent: QuestionIntent): SynthesisResult {
+    const q = question.toLowerCase();
+    const decomp = this.decomposeQuestion(question);
+    const isPrimary = level.toLowerCase().includes('grade') || level.toLowerCase().includes('primary');
+
+    if (isPrimary) {
+      const sections: string[] = [];
+      sections.push(`### Photosynthesis`);
+
+      sections.push(`#### 1. What is Photosynthesis?
+**Photosynthesis** is the process by which green plants manufacture their own food (glucose) from carbon dioxide and water using sunlight trapped by chlorophyll in their leaves.`);
+
+      sections.push(`#### 2. Requirements and Products of Photosynthesis
+* **Raw Materials (Inputs):**
+  - **Water (H₂O):** Absorbed from the soil by root hair cells through osmosis.
+  - **Carbon Dioxide (CO₂):** Taken in from the atmosphere through tiny leaf pores called **stomata**.
+* **Energy Source & Trap:**
+  - **Sunlight:** Trapped by the green pigment **chlorophyll** found inside chloroplasts.
+* **End Products (Outputs):**
+  - **Glucose (Sugar):** Used for plant energy or converted into stored starch.
+  - **Oxygen (O₂):** Released into the atmosphere through stomata for living organisms to breathe.`);
+
+      sections.push(`#### 3. Word Equation for Photosynthesis
+Carbon Dioxide + Water → Glucose + Oxygen (in the presence of sunlight and chlorophyll)`);
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Grade 7 Science and Technology 7030 • Photosynthesis',
+        suggestions: [
+          'What is the word equation for photosynthesis?',
+          'What is the role of chlorophyll in plants?',
+          'How do you test a green leaf for starch using iodine?'
+        ]
+      };
+    }
+
+    // Secondary / O-Level & A-Level
+    const asksStages = q.includes('light') || q.includes('dark') || q.includes('calvin') || q.includes('thylakoid') || q.includes('photolysis');
+
+    const sections: string[] = [];
+    sections.push(`### Photosynthesis`);
+
+    sections.push(`#### 1. What is Photosynthesis?
+**Photosynthesis** is the biochemical process by which green plants synthesize organic nutrients (glucose) from inorganic raw materials (carbon dioxide and water) using light energy trapped by chlorophyll.`);
+
+    if (asksStages) {
+      sections.push(`#### 2. The Two Stages of Photosynthesis
+1. **Light-Dependent Stage (Light Reactions):**
+   - **Site:** Thylakoid membranes (grana) inside chloroplasts.
+   - **Photolysis of Water:** Solar energy splits water molecules into hydrogen ions, electrons, and oxygen gas:
+     2H₂O → 4H⁺ + 4e⁻ + O₂
+   - **Products:** Oxygen gas (O₂) released as a byproduct; energy carriers ATP and reduced NADP (NADPH) are synthesized.
+2. **Light-Independent Stage (Dark Reactions / Calvin Cycle):**
+   - **Site:** Stroma (liquid matrix) of the chloroplast.
+   - **Carbon Fixation:** Carbon dioxide (CO₂) combines with ribulose bisphosphate (RuBP), catalyzed by RuBisCO.
+   - **Reduction & Glucose Synthesis:** Hydrogen from NADPH, powered by ATP, reduces fixed carbon to form glucose.`);
+    } else {
+      sections.push(`#### 2. Chemical Equation & Process
+6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in the presence of light and chlorophyll)
+
+- **Inputs:** Carbon dioxide (from air via stomata) and water (from soil via xylem).
+- **Energy Source:** Absorbed by chlorophyll in chloroplasts.
+- **Outputs:** Glucose (stored as starch or used in respiration) and oxygen.`);
+    }
+
     return {
-      text: `### Combined Science: Light and Dark Reactions of Photosynthesis
-
-Photosynthesis is the biochemical process by which green plants manufacture glucose from carbon dioxide and water using sunlight trapped by chlorophyll:
-
-1. Light-Dependent Stage (Light Reactions):
-- Location: Thylakoid membranes (grana) inside chloroplasts.
-- Photolysis of Water: Solar energy splits water molecules into hydrogen ions, electrons, and oxygen gas:
-  2H₂O → 4H⁺ + 4e⁻ + O₂
-- Products: Oxygen gas (O₂) is released through leaf stomata as a by-product; chemical energy carriers ATP and NADPH are synthesized.
-
-2. Light-Independent Stage (Dark Reactions / Calvin Cycle):
-- Location: Stroma (fluid matrix) of the chloroplast.
-- Carbon Fixation: Carbon dioxide (CO₂) combines with ribulose bisphosphate (RuBP), catalyzed by the enzyme RuBisCO.
-- Glucose Synthesis: Hydrogen ions and electrons from NADPH, powered by ATP, reduce the fixed carbon to form glucose (C₆H₁₂O₆).
-
-Chemical Equation:
-6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in the presence of light and chlorophyll)`,
+      text: sections.join('\n\n'),
       sourceTag: 'Combined Science 4003 • Biology: Photosynthesis',
       suggestions: [
         'How do you test a green leaf for starch using iodine?',
         'What are the limiting factors of photosynthesis?',
-        'What is the structural difference between thylakoid and stroma?'
+        'Compare the light-dependent and light-independent stages'
+      ]
+    };
+  }
+
+  /**
+   * Cell Biology & Transport Mechanisms: Osmosis, Diffusion & Active Transport
+   */
+  private static handleOsmosisAndCellTransportQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    const q = question.toLowerCase();
+    const decomp = this.decomposeQuestion(question);
+    const isPrimary = level.toLowerCase().includes('grade') || level.toLowerCase().includes('primary');
+
+    const asksDiffusion = q.includes('diffusion') && !q.includes('osmosis');
+    const asksActiveTransport = q.includes('active transport');
+
+    // 1. Diffusion
+    if (asksDiffusion) {
+      const sections: string[] = [];
+      sections.push(`### Diffusion`);
+
+      if (decomp.asksDefinition) {
+        sections.push(`#### 1. What is Diffusion?
+**Diffusion** is the net movement of particles from a region of higher concentration to a region of lower concentration down a concentration gradient as a result of their random kinetic motion.`);
+      }
+
+      if (decomp.asksProcess || (!decomp.asksDefinition && !decomp.asksExamples)) {
+        const h = decomp.asksDefinition ? '#### 2. Factors Affecting the Rate of Diffusion' : '#### Factors Affecting the Rate of Diffusion';
+        sections.push(`${h}
+- **Concentration Gradient:** A steeper difference in concentration increases the rate of diffusion.
+- **Temperature:** Higher temperature gives particles more kinetic energy, making them move faster.
+- **Surface Area:** A larger membrane surface area allows more particles to diffuse at the same time.
+- **Diffusion Distance:** A thinner membrane or shorter distance speeds up diffusion.`);
+      }
+
+      if (decomp.asksExamples) {
+        const h = sections.length > 1 ? `#### ${sections.length}. Key Biological Examples` : '#### Key Biological Examples';
+        sections.push(`${h}
+- **In Human Lungs:** Oxygen diffuses from alveoli into blood capillaries; carbon dioxide diffuses from blood into alveoli.
+- **In Plant Leaves:** Carbon dioxide diffuses into leaf cells through open stomata; oxygen diffuses out.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Diffusion' : 'Combined Science 4003 • Diffusion',
+        suggestions: [
+          'What is osmosis and give the process of osmosis?',
+          'What are the factors affecting diffusion rate?',
+          'Compare diffusion and active transport'
+        ]
+      };
+    }
+
+    // 2. Active Transport
+    if (asksActiveTransport) {
+      const sections: string[] = [];
+      sections.push(`### Active Transport`);
+
+      if (decomp.asksDefinition) {
+        sections.push(`#### 1. What is Active Transport?
+**Active Transport** is the movement of particles through a cell membrane from a region of lower concentration to a region of higher concentration (against a concentration gradient) using energy from cellular respiration (ATP) and carrier proteins.`);
+      }
+
+      if (decomp.asksProcess || (!decomp.asksDefinition && !decomp.asksExamples)) {
+        const h = decomp.asksDefinition ? '#### 2. Key Features of Active Transport' : '#### Key Features of Active Transport';
+        sections.push(`${h}
+- **Direction:** Moves particles **against** the concentration gradient (from low to high concentration).
+- **Energy Requirement:** Requires **cellular energy (ATP)** produced by mitochondria during respiration.
+- **Carrier Proteins:** Membrane proteins bind to specific particles and actively pump them across.`);
+      }
+
+      if (decomp.asksExamples) {
+        const h = sections.length > 1 ? `#### ${sections.length}. Biological Examples` : '#### Biological Examples';
+        sections.push(`${h}
+- **In Plants:** Root hair cells absorb mineral ions (nitrates, potassium) from low soil concentrations.
+- **In Humans:** Small intestine epithelial cells absorb glucose against a concentration gradient.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Active Transport' : 'Combined Science 4003 • Active Transport',
+        suggestions: [
+          'Why do active transport cells contain many mitochondria?',
+          'What is the difference between osmosis and active transport?',
+          'What is osmosis and give the process of osmosis?'
+        ]
+      };
+    }
+
+    // 3. Difference Between Osmosis and Diffusion
+    if (decomp.asksDifference) {
+      return {
+        text: `### Comparison of Osmosis and Diffusion
+
+#### Key Differences Between Osmosis and Diffusion
+- **Substance Moving:**
+  * **Diffusion:** Any gas, liquid, or dissolved solute particles (e.g. oxygen, carbon dioxide, glucose).
+  * **Osmosis:** **Water molecules only** (solvent).
+- **Membrane Requirement:**
+  * **Diffusion:** Does not require a membrane (occurs freely in air or liquids).
+  * **Osmosis:** **Must pass through a partially permeable (semi-permeable) membrane**.
+- **Direction of Movement:**
+  * **Diffusion:** Down a concentration gradient (from higher solute concentration to lower solute concentration).
+  * **Osmosis:** Down a water potential gradient (from higher water potential / dilute solution to lower water potential / concentrated solution).
+- **Energy (ATP) Requirement:**
+  * Both are **passive processes** requiring no cellular energy (ATP).`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science 7030 • Osmosis vs Diffusion' : 'Combined Science 4003 • Osmosis vs Diffusion',
+        suggestions: [
+          'What is osmosis and give the process of osmosis?',
+          'What are the effects of osmosis on plant cells?',
+          'What is active transport?'
+        ]
+      };
+    }
+
+    // 4. Osmosis (Strictly tailored to user intent)
+    // 4A. Only Definition Asked
+    if (decomp.asksOnlyDefinition) {
+      const def = isPrimary
+        ? '**Osmosis** is the movement of water molecules from a region where there is more water (a dilute solution) to a region where there is less water (a concentrated solution) through a **partially permeable (semi-permeable) membrane**.'
+        : '**Osmosis** is the net movement of water molecules from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution) through a **partially permeable membrane** down a water potential gradient.';
+
+      return {
+        text: `### Osmosis\n\n${def}`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science and Technology 7030 • Osmosis' : 'ZIMSEC Combined Science 4003 • Osmosis',
+        suggestions: [
+          'Give the process of osmosis',
+          'What is the difference between osmosis and diffusion?',
+          'What are the effects of osmosis on plant cells?'
+        ]
+      };
+    }
+
+    // 4B. Only Process Asked
+    if (decomp.asksOnlyProcess) {
+      return {
+        text: `### Process of Osmosis\n\n1. **Membrane Barrier:** Two solutions of different solute concentrations are separated by a partially permeable cell membrane containing microscopic pores.\n2. **Water Molecule Distribution:** The dilute solution (or pure water) has a higher concentration of free water molecules, while the concentrated solution has fewer free water molecules clustered around solute particles.\n3. **Random Molecular Movement:** Water molecules on both sides constantly move with kinetic energy and pass through the membrane pores in both directions.\n4. **Net Flow of Water:** Because there are more free water molecules on the dilute side, more water molecules pass into the concentrated solution than in reverse.\n5. **Dynamic Equilibrium:** Water continues to move until concentrations balance or until cell wall turgor pressure halts further net movement.`,
+        sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science and Technology 7030 • Osmosis' : 'ZIMSEC Combined Science 4003 • Osmosis',
+        suggestions: [
+          'What is osmosis?',
+          'What is the difference between osmosis and diffusion?',
+          'What are the effects of osmosis on plant cells?'
+        ]
+      };
+    }
+
+    // 4C. Compound or Multi-part Query (Include ONLY requested sections)
+    const sections: string[] = [`### Osmosis`];
+
+    if (decomp.asksDefinition) {
+      const def = isPrimary
+        ? '**Osmosis** is the movement of water molecules from a region where there is more water (a dilute solution) to a region where there is less water (a concentrated solution) through a **partially permeable (semi-permeable) membrane**.'
+        : '**Osmosis** is the net movement of water molecules from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution) through a **partially permeable membrane** down a water potential gradient.';
+      sections.push(`#### 1. What is Osmosis?\n${def}`);
+    }
+
+    if (decomp.asksProcess) {
+      const headingNum = sections.length;
+      sections.push(`#### ${headingNum}. The Process of Osmosis\n1. **Membrane Barrier:** Two solutions of different solute concentrations are separated by a partially permeable cell membrane containing microscopic pores.\n2. **Water Molecule Distribution:** The dilute solution (or pure water) has a higher concentration of free water molecules, while the concentrated solution has fewer free water molecules clustered around solute particles.\n3. **Random Molecular Movement:** Water molecules on both sides constantly move with kinetic energy and pass through the membrane pores in both directions.\n4. **Net Flow of Water:** Because there are more free water molecules on the dilute side, more water molecules pass into the concentrated solution than in reverse.\n5. **Dynamic Equilibrium:** Water continues to move until concentrations balance or until cell wall turgor pressure halts further net movement.`);
+    }
+
+    if (decomp.asksEffects) {
+      const headingNum = sections.length;
+      sections.push(`#### ${headingNum}. Effects of Osmosis on Living Cells\n* **In Plant Cells:**\n  - *In Dilute Water (Hypotonic):* Water enters the central vacuole. The cell becomes **turgid**, which supports soft stems and leaves. The strong cellulose cell wall prevents bursting.\n  - *In Concentrated Solution (Hypertonic):* Water leaves the vacuole. The cytoplasm pulls away from the cell wall (**plasmolysis**), causing the plant to **wilt**.\n* **In Animal Cells (e.g. Red Blood Cells):**\n  - *In Pure Water:* Water enters by osmosis. Lacking a cell wall, the cell swells and bursts (**haemolysis / lysis**).\n  - *In Concentrated Solution:* Water leaves the cell; red blood cells shrink and wrinkle (**crenation**).`);
+    }
+
+    if (decomp.asksExamples && !decomp.asksProcess) {
+      const headingNum = sections.length;
+      sections.push(`#### ${headingNum}. Everyday Examples in Zimbabwe\n- **Plant Root Absorption:** Root hair cells absorb soil water down a water potential gradient via osmosis.\n- **Traditional Food Preservation:** Coarse salt on meat strips (*mukonde / biltong*) draws water out of bacterial cells by osmosis, killing bacteria and preventing spoilage.`);
+    }
+
+    return {
+      text: sections.join('\n\n'),
+      sourceTag: isPrimary ? 'ZIMSEC Grade 7 Science and Technology 7030 • Osmosis' : 'ZIMSEC Combined Science 4003 • Osmosis',
+      suggestions: [
+        'What is the difference between osmosis and diffusion?',
+        'What are the effects of osmosis on plant cells?',
+        'Why do plant cells not burst in pure water while animal cells do?'
       ]
     };
   }
@@ -2009,7 +3239,7 @@ Chemical Equation:
    */
   private static handleFarmingRegionsQuery(question: string, level: string, intent: QuestionIntent): SynthesisResult {
     return {
-      text: `### Geography & Agriculture: Natural Farming Regions of Zimbabwe
+      text: `### Natural Farming Regions of Zimbabwe
 
 Zimbabwe is divided into five Natural Agro-Ecological Farming Regions based on rainfall, temperature, altitude, and agricultural suitability:
 
@@ -2094,7 +3324,7 @@ x = 3  or  x = -0.5`,
    */
   private static handleNewtonQuery(question: string, level: string, intent: QuestionIntent): SynthesisResult {
     return {
-      text: `### Physics & Combined Science: Newton's Three Laws of Motion
+      text: `### Newton's Three Laws of Motion
 
 1. Newton's First Law of Motion (The Law of Inertia):
 - Statement: An object will remain at rest or continue to move at a constant velocity in a straight line unless acted upon by a resultant external force.
@@ -2151,7 +3381,7 @@ Assets = Capital + Liabilities
    */
   private static handleZiGQuery(question: string, level: string, intent: QuestionIntent): SynthesisResult {
     return {
-      text: `### Commerce & Heritage Studies: The Zimbabwe Gold (ZiG) Currency
+      text: `### The Zimbabwe Gold (ZiG) Currency
 
 1. Overview and Introduction:
 - The Reserve Bank of Zimbabwe (RBZ) officially launched Zimbabwe Gold (ZiG) on 5 April 2024 as the new legal tender currency of Zimbabwe.
@@ -2219,7 +3449,7 @@ Assets = Capital + Liabilities
       else if (q.includes('key') || q.includes('banana') || q.includes('grape')) directAnswer = 'A collection of keys or bananas is called a **bunch** (a bunch of keys).';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Collective Nouns
+        text: `### Collective Nouns
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 In ZIMSEC English, collective nouns refer to a group of persons, animals, or objects spoken of as a single whole:
 
@@ -2294,7 +3524,7 @@ In ZIMSEC English, collective nouns refer to a group of persons, animals, or obj
       else if (q.includes('senior') || q.includes('junior') || q.includes('superior') || q.includes('inferior')) directAnswer = 'These Latin comparatives take **to**: senior **to**, junior **to**, superior **to**, inferior **to** (NEVER say "than").';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Prepositions & Fixed Collocations
+        text: `### Prepositions & Fixed Collocations
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Prepositions show relationships between nouns or pronouns and other words in a sentence. ZIMSEC tests these fixed preposition pairs in Paper 1:
 
@@ -2356,7 +3586,7 @@ Prepositions show relationships between nouns or pronouns and other words in a s
       else if (q.includes('crisis')) directAnswer = 'The plural of crisis is **crises**.';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Plurals of Nouns
+        text: `### Plurals of Nouns
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 In ZIMSEC English, nouns form plurals through specific morphological rules:
 
@@ -2429,7 +3659,7 @@ In ZIMSEC English, nouns form plurals through specific morphological rules:
       }
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Subject-Verb Agreement (Concord)
+        text: `### Subject-Verb Agreement (Concord)
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Concord requires that a singular subject takes a singular verb, and a plural subject takes a plural verb. ZIMSEC tests these core rules:
 
@@ -2473,7 +3703,7 @@ Concord requires that a singular subject takes a singular verb, and a plural sub
       q.includes('change to reported')
     ) {
       return {
-        text: `### Primary English (ZIMSEC 7010): Direct and Indirect (Reported) Speech
+        text: `### Direct and Indirect (Reported) Speech
 
 In ZIMSEC English, converting direct speech into indirect speech involves three systematic transformations:
 
@@ -2528,7 +3758,7 @@ In ZIMSEC English, converting direct speech into indirect speech involves three 
       q.includes('turn into passive')
     ) {
       return {
-        text: `### Primary English (ZIMSEC 7010): Active and Passive Voice
+        text: `### Active and Passive Voice
 
 1. Core Transformation Formula:
 - Active: Subject (doer) + Verb + Object (receiver)
@@ -2583,7 +3813,7 @@ In ZIMSEC English, converting direct speech into indirect speech involves three 
       else if (q.includes('nobody') || q.includes('never') || q.includes('hardly')) directAnswer = 'Statements containing negative words like "nobody" or "never" take a **positive tag** (e.g. "Nobody called, **did they?**", "He never lies, **does he?**").';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Rules of Question Tags
+        text: `### Rules of Question Tags
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Question tags are short questions attached to the end of a sentence to seek agreement:
 
@@ -2649,7 +3879,7 @@ Question tags are short questions attached to the end of a sentence to seek agre
       else if (q.includes('where there is a will')) directAnswer = '"Where there is a will, there is a way" means **if you have sufficient determination, you can overcome any obstacle to succeed**.';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): English Proverbs & Similes
+        text: `### English Proverbs & Similes
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 1. Common ZIMSEC Proverbs and their Meanings:
 - 'A stitch in time saves nine': Dealing with a small problem immediately prevents it from turning into a major catastrophe.
@@ -2712,7 +3942,7 @@ ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
       else if (q.includes('rabbit')) directAnswer = 'The home of a rabbit is a **burrow**, **warren**, or **hutch**.';
 
       return {
-        text: `### Primary English (ZIMSEC 7010): Animal Young, Sounds, and Homes
+        text: `### Animal Young, Sounds, and Homes
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 In ZIMSEC English, biological naming of animals, their young, sounds, and homes is tested in Paper 1:
 
@@ -2781,7 +4011,7 @@ In ZIMSEC English, biological naming of animals, their young, sounds, and homes 
       q.includes('how to write a report')
     ) {
       return {
-        text: `### Primary English (ZIMSEC 7010): Paper 2 Composition & Functional Writing
+        text: `### Paper 2 Composition & Functional Writing
 
 ZIMSEC Grade 7 English Paper 2 tests continuous writing carrying 20 marks:
 
@@ -2852,7 +4082,7 @@ ZIMSEC Grade 7 English Paper 2 tests continuous writing carrying 20 marks:
     ) {
       let directAnswer = 'BODMAS dictates the order of calculation: **B**rackets first, then **O**f (orders/powers), **D**ivision and **M**ultiplication (left-to-right), followed by **A**ddition and **S**ubtraction (left-to-right).';
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Order of Operations (BODMAS)
+        text: `### Order of Operations (BODMAS)
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 In ZIMSEC Grade 7 Mathematics Paper 1 and Paper 2, multi-operation expressions must strictly follow the BODMAS rule:
 
@@ -2907,7 +4137,7 @@ In ZIMSEC Grade 7 Mathematics Paper 1 and Paper 2, multi-operation expressions m
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Factors, Multiples, HCF & LCM
+        text: `### Factors, Multiples, HCF & LCM
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Key concepts tested in ZIMSEC Number Theory:
 
@@ -2964,7 +4194,7 @@ Key concepts tested in ZIMSEC Number Theory:
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Fractions & Four Operations
+        text: `### Fractions & Four Operations
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Fractions represent equal parts of a whole. ZIMSEC tests all four operations and conversions:
 
@@ -3018,7 +4248,7 @@ Fractions represent equal parts of a whole. ZIMSEC tests all four operations and
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Commercial Arithmetic & Money
+        text: `### Commercial Arithmetic & Money
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Commercial mathematics questions carry high marks in ZIMSEC Grade 7 Paper 2:
 
@@ -3057,18 +4287,18 @@ Commercial mathematics questions carry high marks in ZIMSEC Grade 7 Paper 2:
       q.includes('speed') ||
       q.includes('distance') ||
       q.includes('average speed') ||
-      q.includes('ratio') ||
+      /\bratios?\b/i.test(q) ||
       q.includes('proportion')
     ) {
       let directAnswer = '';
       if (q.includes('speed') || q.includes('distance') || q.includes('km/h')) {
         directAnswer = 'The Speed-Distance-Time triangle formulas are: **Speed = Distance ÷ Time**, **Distance = Speed × Time**, and **Time = Distance ÷ Speed**. Average Speed = Total Distance ÷ Total Time.';
-      } else if (q.includes('ratio') || q.includes('share')) {
+      } else if (/\bratios?\b/i.test(q) || q.includes('share')) {
         directAnswer = 'To share in a ratio (e.g. 2 : 3): 1) Add ratio parts ($2 + 3 = 5$ parts); 2) Divide total quantity by total parts to find value of 1 part; 3) Multiply 1 part by each ratio number.';
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Speed, Distance, Time & Ratio
+        text: `### Speed, Distance, Time & Ratio
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Key mechanics tested in ZIMSEC motion and ratio word problems:
 
@@ -3109,7 +4339,7 @@ Key mechanics tested in ZIMSEC motion and ratio word problems:
       q.includes('circumference') ||
       q.includes('radius') ||
       q.includes('diameter') ||
-      q.includes('pi') ||
+      /\bpi\b/i.test(q) ||
       q.includes('22/7') ||
       q.includes('hectare')
     ) {
@@ -3125,7 +4355,7 @@ Key mechanics tested in ZIMSEC motion and ratio word problems:
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Perimeter, Area & Circumference
+        text: `### Perimeter, Area & Circumference
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Formulas and measurement units required in ZIMSEC Grade 7 geometry:
 
@@ -3178,7 +4408,7 @@ Formulas and measurement units required in ZIMSEC Grade 7 geometry:
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Volume, Capacity & Mass
+        text: `### Volume, Capacity & Mass
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 1. Volume Formulas:
 - **Volume of a Cuboid:**
@@ -3221,7 +4451,7 @@ ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
     ) {
       let directAnswer = '**Euler\'s Formula** for polyhedra is **Faces + Vertices - Edges = 2** ($F + V - E = 2$). A cube or cuboid has **6 faces, 12 edges, and 8 vertices** ($6 + 8 - 12 = 2$).';
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): 3D Solids & Euler's Formula
+        text: `### 3D Solids & Euler's Formula
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 In ZIMSEC Grade 7 geometry, 3D solids are classified by their faces ($F$), edges ($E$), and vertices ($V$):
 
@@ -3275,7 +4505,7 @@ In ZIMSEC Grade 7 geometry, 3D solids are classified by their faces ($F$), edges
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Angles & Polygons
+        text: `### Angles & Polygons
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Key geometric principles tested in ZIMSEC Grade 7:
 
@@ -3310,15 +4540,35 @@ Key geometric principles tested in ZIMSEC Grade 7:
       };
     }
 
-    // 10. Statistics: Mean, Median, Mode, Range, and Pie Charts
-    if (
-      q.includes('mean') ||
-      q.includes('median') ||
-      q.includes('mode') ||
-      q.includes('range') ||
-      q.includes('average') ||
-      q.includes('pie chart')
-    ) {
+    // 10. Statistics: Mean, Median, Mode, Range, and Pie Charts (Strict math query checks to avoid matching English verbs like "what does it mean" or "modes of transport")
+    const isMathStats =
+      !q.includes('symbol') &&
+      !q.includes('symptom') &&
+      !q.includes('flag') &&
+      !q.includes('anthem') &&
+      !q.includes('bird') &&
+      !q.includes('coat of arms') &&
+      !q.includes('transport') &&
+      !q.includes('transmission') &&
+      !q.includes('mountain') &&
+      !q.includes('what do') &&
+      !q.includes('what does') &&
+      !q.includes('meaning') &&
+      (
+        q.includes('calculate the mean') ||
+        q.includes('find the mean') ||
+        q.includes('arithmetic mean') ||
+        q.includes('what is the mean of') ||
+        /\bmean\s+(of|score|mark|value|temperature|rainfall|number|height|weight)\b/.test(q) ||
+        (/\bmean\b/.test(q) && (q.includes('median') || q.includes('mode') || q.includes('statistics') || q.includes('data') || q.includes('frequency'))) ||
+        q.includes('median') ||
+        (q.includes('mode') && (q.includes('median') || q.includes('mean') || q.includes('frequency') || q.includes('most common') || q.includes('most frequent'))) ||
+        (q.includes('range') && (q.includes('highest') || q.includes('lowest') || q.includes('spread') || q.includes('measures of central'))) ||
+        (q.includes('average') && (q.includes('calculate') || q.includes('find') || q.includes('score') || q.includes('mark') || q.includes('speed') || q.includes('number'))) ||
+        q.includes('pie chart')
+      );
+
+    if (isMathStats) {
       let directAnswer = '';
       if (q.includes('mean') || q.includes('average')) {
         directAnswer = '**Mean = (Sum of all values) ÷ (Total count of values)**.';
@@ -3333,7 +4583,7 @@ Key geometric principles tested in ZIMSEC Grade 7:
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Statistics & Averages
+        text: `### Statistics & Averages
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Data handling measures tested in Grade 7 ZIMSEC:
 
@@ -3382,7 +4632,7 @@ Data handling measures tested in Grade 7 ZIMSEC:
     ) {
       let directAnswer = 'The probability formula is **$P(\\text{Event}) = \\frac{\\text{Number of favourable outcomes}}{\\text{Total number of possible outcomes}}$**. Probability values always lie between **0 (impossible)** and **1 (certain)**.';
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Probability
+        text: `### Probability
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Probability measures how likely an event is to happen:
 
@@ -3431,7 +4681,7 @@ Probability measures how likely an event is to happen:
       }
 
       return {
-        text: `### Primary Mathematics (ZIMSEC 7020): Time & Calendars
+        text: `### Time & Calendars
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 1. 12-Hour vs 24-Hour Clocks:
 - **Morning (a.m.):** Keep hours unchanged, use 4 digits.
@@ -3478,381 +4728,802 @@ ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
     intent: QuestionIntent
   ): SynthesisResult | null {
     const q = question.toLowerCase();
+    const decomp = this.decomposeQuestion(question);
 
-    // 1. Pfumvudza / Intwasa Climate-Proofed Agriculture
+    // =========================================================================
+    // DIRECT PRIMARY SCIENCE & TECHNOLOGY HANDLERS (ZIMSEC 7030 HBC)
+    // Laser-focused: Returns ONLY the exact answer asked without paragraph dumping
+    // =========================================================================
+
+    // 1. Sugar and Salt Solution (SSS / ORS)
+    if (
+      q.includes('sugar and salt') ||
+      q.includes('salt and sugar') ||
+      q.includes('sugar-salt') ||
+      q.includes('salt-sugar') ||
+      (q.includes('sss') && (q.includes('solution') || q.includes('prepare') || q.includes('recipe') || q.includes('make') || q.includes('oral') || q.includes('salt'))) ||
+      q.includes('oral rehydration')
+    ) {
+      const asksRecipe = q.includes('recipe') || q.includes('ingredient') || q.includes('quantity') || q.includes('quantities') || q.includes('measurement');
+      const asksPrep = decomp.asksProcess || q.includes('prepare') || q.includes('preparation') || q.includes('make') || q.includes('mix') || q.includes('how to');
+
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Sugar and Salt Solution (SSS / ORS)\n\n**Sugar and Salt Solution (SSS)**, also known as **Oral Rehydration Solution (ORS)**, is a life-saving home-made drink used to treat dehydration and restore lost body water and essential mineral salts (*electrolytes*) caused by severe diarrhea and vomiting (e.g. from cholera, dysentery, or typhoid).\n\n- **Sugar:** Provides quick energy and enables the intestines to absorb water and sodium.\n- **Salt:** Replaces lost essential sodium and chloride electrolytes.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['How do you prepare sugar and salt solution?', 'What is the recipe for sugar and salt solution?', 'What are waterborne diseases?']
+        };
+      }
+
+      if (asksRecipe && !asksPrep && !decomp.asksDefinition) {
+        return {
+          text: `### Recipe for Sugar and Salt Solution (SSS)\n\n- **1 Litre** of clean, safe water (boiled and cooled).\n- **6 level teaspoons** of sugar.\n- **½ level teaspoon** of salt.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['How do you prepare sugar and salt solution?', 'What is sugar and salt solution used for?', 'What are the symptoms of cholera?']
+        };
+      }
+
+      if (decomp.asksOnlyProcess || (asksPrep && !decomp.asksDefinition && !asksRecipe)) {
+        return {
+          text: `### How to Prepare Sugar and Salt Solution (SSS)\n\n1. **Wash hands:** Wash your hands thoroughly with clean running water and soap.\n2. **Measure water:** Measure exactly **1 litre of clean boiled and cooled water** into a clean jug or container.\n3. **Add Sugar:** Add **6 level teaspoons of sugar** to the water.\n4. **Add Salt:** Add **½ level teaspoon of salt** (do not exceed ½ teaspoon as excess salt is dangerous to infants).\n5. **Dissolve:** Stir the mixture well with a clean spoon until all sugar and salt crystals completely dissolve.\n6. **Taste Test:** Taste the solution — it should taste no saltier than human tears.\n7. **Administration:** Give small sips frequently to the patient, especially after every loose stool.\n8. **Storage Rule:** Any unused solution must be thrown away after **24 hours** and a fresh batch prepared.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What is the recipe for sugar and salt solution?', 'What is sugar and salt solution?', 'What are waterborne diseases?']
+        };
+      }
+
+      const sections: string[] = [`### Sugar and Salt Solution (SSS / Oral Rehydration Solution)`];
+      if (decomp.asksDefinition) {
+        sections.push(`#### 1. What is Sugar and Salt Solution (SSS)?\n**Sugar and Salt Solution (SSS)** is a life-saving home-made drink used to treat dehydration and restore lost body water and electrolytes caused by severe diarrhea and vomiting.\n- **Sugar:** Provides energy and facilitates water absorption in the intestines.\n- **Salt:** Replaces lost essential sodium and chloride electrolytes.`);
+      }
+      if (asksRecipe || asksPrep) {
+        sections.push(`#### ${sections.length}. Exact Recipe & Ingredients\n- **1 Litre** of clean, safe water (boiled and cooled).\n- **6 level teaspoons** of sugar.\n- **½ level teaspoon** of salt.`);
+      }
+      if (asksPrep) {
+        sections.push(`#### ${sections.length}. Step-by-Step Preparation Method\n1. Wash hands thoroughly with soap and running water.\n2. Measure exactly 1 litre of clean boiled and cooled water into a clean jug.\n3. Add 6 level teaspoons of sugar and ½ level teaspoon of salt.\n4. Stir until completely dissolved.\n5. Administer small sips frequently; discard unused solution after 24 hours.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+        suggestions: ['What are the symptoms of cholera?', 'What are waterborne diseases?', 'What are the 6 child-killer diseases?']
+      };
+    }
+
+    // 2. Noise Pollution
+    if (q.includes('noise pollution') || (q.includes('pollution') && q.includes('noise'))) {
+      const asksSources = decomp.asksCauses || q.includes('source') || q.includes('sources');
+      const asksEffects = decomp.asksEffects || q.includes('effect') || q.includes('effects') || q.includes('impact');
+      const asksReduction = decomp.asksPreventionOrManagement || q.includes('reduc') || q.includes('control') || q.includes('ways of') || q.includes('prevent');
+
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Noise Pollution\n\n**Noise pollution** is the presence of unwanted, excessive, or disruptive sound in the environment that causes discomfort, stress, hearing impairment, or health hazards to humans and animals. It is measured in **decibels (dB)**; sounds consistently above 85 dB damage human hearing.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the sources of noise pollution?', 'What are the effects of noise pollution?', 'How can noise pollution be reduced?']
+        };
+      }
+
+      if (decomp.asksOnlyCauses || (asksSources && !asksEffects && !asksReduction && !decomp.asksExplicitDefinition && !decomp.asksPureWhatIs)) {
+        return {
+          text: `### Sources of Noise Pollution\n\n1. **Transportation:** Heavy road traffic, noisy exhaust pipes, honking horns, trains, and low-flying aeroplanes.\n2. **Industrial & Mining:** Heavy factory machines, pneumatic drills, metal workshops, and mine rock blasting.\n3. **Commercial & Social:** Loudspeakers at shopping centres, night clubs, beer halls, and religious gatherings.\n4. **Domestic:** Loud radios/televisions, petrol generators during power outages, and power lawnmowers.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the effects of noise pollution?', 'How can noise pollution be reduced?', 'What is noise pollution?']
+        };
+      }
+
+      if (decomp.asksOnlyEffects || (asksEffects && !asksSources && !asksReduction && !decomp.asksExplicitDefinition && !decomp.asksPureWhatIs)) {
+        return {
+          text: `### Effects of Noise Pollution\n\n- **Hearing Damage:** Prolonged exposure causes temporary or permanent hearing loss and ringing in the ears (*tinnitus*).\n- **Sleep Disturbance & Fatigue:** Causes insomnia, restlessness, and constant fatigue.\n- **Mental Stress & Irritability:** Triggers headaches, anxiety, lack of concentration in school, and aggressive behavior.\n- **Cardiovascular Health:** Elevates stress hormones (adrenaline), leading to high blood pressure (*hypertension*) and heart strain.\n- **Animal Disruption:** Scares domestic livestock and interferes with wildlife communication.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['How can noise pollution be reduced?', 'What are the sources of noise pollution?', 'What is noise pollution?']
+        };
+      }
+
+      if (decomp.asksOnlyPrevention || (asksReduction && !asksSources && !asksEffects && !decomp.asksExplicitDefinition && !decomp.asksPureWhatIs)) {
+        return {
+          text: `### Ways of Reducing Noise Pollution\n\n1. **Silencers & Mufflers:** Fitting and maintaining effective silencers on vehicle exhausts, generators, and industrial machinery.\n2. **Tree Barriers (Acoustic Buffers):** Planting rows of dense trees and hedges around schools, hospitals, and homes to absorb sound waves.\n3. **Personal Protective Equipment (PPE):** Factory workers and miners wearing earplugs or earmuffs.\n4. **Legislation & Enforcing Curfews:** Enforcing municipal bye-laws that restrict high-volume sound at night.\n5. **Town Planning:** Situating airports, heavy industries, and railway lines far away from residential suburbs.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the sources of noise pollution?', 'What are the effects of noise pollution?', 'What is noise pollution?']
+        };
+      }
+
+      const sections: string[] = [`### Noise Pollution`];
+      if (decomp.asksDefinition) {
+        sections.push(`#### 1. What is Noise Pollution?\n**Noise pollution** is the presence of unwanted, excessive, or disruptive sound in the environment that causes discomfort, stress, hearing impairment, or health hazards.`);
+      }
+      if (asksSources) {
+        sections.push(`#### ${sections.length}. Sources of Noise Pollution\n1. **Transportation:** Traffic, horns, train whistles, aeroplanes.\n2. **Industry & Mining:** Heavy machines, rock blasting.\n3. **Social:** Loudspeakers, open-air religious services, music venues.\n4. **Domestic:** Generators, high-volume stereos.`);
+      }
+      if (asksEffects) {
+        sections.push(`#### ${sections.length}. Effects of Noise Pollution\n- Hearing loss and tinnitus.\n- Sleep disturbance, fatigue, and headaches.\n- Lack of concentration in school and high blood pressure.`);
+      }
+      if (asksReduction) {
+        sections.push(`#### ${sections.length}. Ways of Reducing Noise Pollution\n1. Fitting silencers on exhausts and generators.\n2. Planting tree belts as noise barriers.\n3. Wearing protective earplugs in loud workplaces.\n4. Enforcing council noise bylaws.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+        suggestions: ['What are the sources of noise pollution?', 'What are the effects of noise pollution?', 'How can noise pollution be reduced?']
+      };
+    }
+
+    // 3. Child-Killer Diseases and Immunization
+    if (
+      q.includes('child killer') ||
+      q.includes('child-killer') ||
+      q.includes('childkiller') ||
+      ((q.includes('immuniz') || q.includes('immunis')) && (q.includes('disease') || q.includes('child') || q.includes('baby') || q.includes('importance') || q.includes('what is') || q.includes('define') || q.includes('outline')))
+    ) {
+      const asksDiseases = q.includes('disease') || q.includes('killer') || q.includes('identify') || q.includes('name') || q.includes('list');
+      const asksImportance = decomp.asksOnlyFunctions || q.includes('importance') || q.includes('why');
+
+      if (decomp.asksOnlyDefinition && !asksDiseases) {
+        return {
+          text: `### Immunization\n\n**Immunization** (vaccination) is the medical process of protecting an individual against specific infectious diseases by administering a **vaccine** (weakened or dead pathogens, or their antigens), which stimulates the body's immune system to produce **antibodies** and immunological memory.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What are the 6 child-killer diseases?', 'What is the importance of immunization?', 'What are the symptoms of measles?']
+        };
+      }
+
+      if (asksDiseases && !asksImportance && !decomp.asksOnlyDefinition) {
+        return {
+          text: `### The Six Major Child-Killer Diseases\n\n1. **Measles (Gwirikwiti):** Caused by a virus; symptoms include high fever, runny nose, red watery eyes, and a widespread blotchy red skin rash.\n2. **Polio (Poliomyelitis):** Caused by poliovirus through contaminated food/water; causes fever, stiff neck, and sudden permanent limb paralysis.\n3. **Tuberculosis (TB):** Caused by *Mycobacterium tuberculosis*; causes persistent cough (>2 weeks), coughing blood, night sweats, and weight loss.\n4. **Tetanus (Lockjaw):** Caused by *Clostridium tetani* entering dirty cuts or wounds; causes severe painful muscle spasms and locked jaw muscles.\n5. **Whooping Cough (Pertussis):** Caused by *Bordetella pertussis*; causes severe uncontrollable coughing bouts ending in a high-pitched "whoop".\n6. **Diphtheria:** Caused by *Corynebacterium diphtheriae*; forms a thick grey membrane across the throat that obstructs breathing.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What is immunization?', 'What is the importance of immunization?', 'What is sugar and salt solution?']
+        };
+      }
+
+      if (asksImportance && !asksDiseases) {
+        return {
+          text: `### Importance of Immunization\n\n- **Child Survival:** Protects infants and vulnerable children from deadly preventable diseases and permanent disabilities (such as paralysis from polio).\n- **Disease Eradication:** Completely wipes out lethal infections across the country (e.g. smallpox eradicated, polio near eradication).\n- **Herd Immunity:** When the majority of children in Zimbabwe are vaccinated, infectious pathogens cannot spread, protecting even children who cannot be vaccinated due to medical reasons.\n- **Saves Healthcare Costs:** Reduces national hospital admissions and medical expenses for families.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What are the 6 child-killer diseases?', 'What is immunization?', 'What is tuberculosis?']
+        };
+      }
+
+      const sections: string[] = [`### Immunization and the 6 Child-Killer Diseases`];
+      if (decomp.asksDefinition) {
+        sections.push(`#### 1. What is Immunization?\n**Immunization** is the process of giving a vaccine to stimulate the body's immune system to produce antibodies against specific deadly infections.`);
+      }
+      sections.push(`#### ${sections.length}. The Six Major Child-Killer Diseases\n1. **Measles:** High fever, runny nose, red skin rash.\n2. **Polio:** Fever, sudden permanent limb paralysis.\n3. **Tuberculosis (TB):** Persistent bloody cough, night sweats, weight loss.\n4. **Tetanus:** Muscle spasms and jaw stiffness from dirty wounds.\n5. **Whooping Cough:** Uncontrollable coughing ending with a whoop.\n6. **Diphtheria:** Thick grey membrane blocking the throat.`);
+      if (asksImportance) {
+        sections.push(`#### ${sections.length}. Importance of Immunization\n- Protects children against death and permanent disability.\n- Builds community herd immunity.\n- Saves families and the Ministry of Health expensive hospital treatment costs.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+        suggestions: ['What are the symptoms of measles and tuberculosis?', 'What is the importance of immunization?', 'What is sugar and salt solution?']
+      };
+    }
+
+    // 4. Teeth & Dental Health
+    if (
+      (q.includes('teeth') || q.includes('tooth')) &&
+      (q.includes('type') || q.includes('types') || q.includes('function') || q.includes('decay') || q.includes('prevent') || q.includes('incisor') || q.includes('canine') || q.includes('molar') || q.includes('premolar') || q.includes('dental'))
+    ) {
+      const asksDef = decomp.asksDefinition || q.includes('what is tooth decay') || q.includes('define tooth decay') || q.includes('meaning of tooth decay') || q === 'tooth decay';
+      const asksCauses = (decomp.asksCauses || q.includes('cause') || q.includes('causes') || q.includes('why do teeth decay') || q.includes('why does tooth decay')) && !asksDef;
+      const asksPrevention = decomp.asksPreventionOrManagement || q.includes('prevent') || q.includes('care') || q.includes('protect');
+      const asksTypes = decomp.asksTypes || decomp.asksFunctionsOrUses || q.includes('type') || q.includes('incisor') || q.includes('canine');
+
+      if (asksDef) {
+        return {
+          text: `### Tooth Decay (Dental Caries)\n\n**Tooth decay** (dental caries) is the damage, breakdown, and destruction of dental enamel and underlying tooth structure caused by acids produced when plaque bacteria in the mouth ferment dietary sugars.\n\n- **Primary Mechanism:** Mouth bacteria in plaque feed on sugary residues, producing corrosive acid that dissolves the protective enamel, forming holes (cavities).\n- **Prevention:** Regular brushing twice daily with fluoride toothpaste, reducing sugary treats, rinsing after eating, and routine dental visits.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Dental Health',
+          suggestions: ['What causes tooth decay?', 'How do you prevent tooth decay?', 'What are the four types of teeth and their functions?']
+        };
+      }
+
+      if (asksCauses && !asksTypes && !asksPrevention) {
+        return {
+          text: `### Causes of Tooth Decay (Dental Caries)\n\n1. **Sugar Accumulation:** Sugary sweets, sodas, and sticky snacks leave residues trapped between teeth.\n2. **Plaque Formation:** Mouth bacteria feed on these sugars and form a sticky colorless film called **plaque** on tooth surfaces.\n3. **Acid Production:** Bacteria in plaque ferment sugar into **acid**.\n4. **Enamel Erosion:** The acid slowly dissolves the outer protective **enamel** layer, forming holes called **cavities**. If decay reaches the sensitive inner pulp and nerve, severe toothache occurs.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Dental Health',
+          suggestions: ['How do you prevent tooth decay?', 'What are the four types of teeth and their functions?', 'What is the difference between milk teeth and permanent teeth?']
+        };
+      }
+
+      if (asksPrevention && !asksTypes && !asksCauses) {
+        return {
+          text: `### Methods of Preventing Tooth Decay\n\n1. **Regular Brushing:** Brush teeth thoroughly at least twice daily (after breakfast and before going to bed) using a soft toothbrush and fluoride toothpaste.\n2. **Proper Technique:** Brush all surfaces (outer, inner, and chewing surfaces) using gentle circular motions for at least 2 minutes.\n3. **Dietary Control:** Limit sugary snacks, candies, and fizzy drinks. Eat calcium-rich foods (milk, small fish/kapenta, dark leafy greens) to build strong teeth.\n4. **Rinsing & Flossing:** Rinse the mouth with clean water after eating and floss daily to remove food particles trapped between teeth.\n5. **Dental Check-ups:** Visit a dental clinic regularly for examination.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Dental Health',
+          suggestions: ['What causes tooth decay?', 'What are the four types of teeth and their functions?', 'What is the function of canines?']
+        };
+      }
+
+      if (asksTypes && !asksCauses && !asksPrevention) {
+        return {
+          text: `### The Four Types of Teeth and Their Functions\n\n1. **Incisors (8 total - 4 upper, 4 lower):**\n   - **Shape:** Chisel-shaped with sharp, straight cutting edges.\n   - **Function:** **Biting and cutting** pieces of food.\n2. **Canines (4 total - 2 upper, 2 lower):**\n   - **Shape:** Pointed, dagger-shaped and sharp.\n   - **Function:** **Tearing** tough food and meat.\n3. **Premolars (8 total - 4 upper, 4 lower):**\n   - **Shape:** Flat surfaces with two raised cusps (bicuspid).\n   - **Function:** **Crushing and grinding** food into smaller particles.\n4. **Molars (12 total - 6 upper, 6 lower):**\n   - **Shape:** Broad, large flat surfaces with multiple cusps.\n   - **Function:** **Fine grinding and chewing** food before swallowing.\n\n- **Dentition Sets:** **20 milk teeth** in young children (no premolars); **32 permanent teeth** in adults.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Dental Health',
+          suggestions: ['What causes tooth decay?', 'How do you prevent tooth decay?', 'What is the function of canines?']
+        };
+      }
+
+      const sections: string[] = [`### Human Teeth and Dental Health`];
+      if (asksTypes) {
+        sections.push(`#### 1. The Four Types of Teeth\n- **Incisors (8):** Biting and cutting food.\n- **Canines (4):** Tearing meat and tough food.\n- **Premolars (8):** Crushing and grinding food.\n- **Molars (12):** Fine chewing and grinding.`);
+      }
+      if (asksCauses) {
+        sections.push(`#### ${sections.length}. Causes of Tooth Decay\nBacteria in dental plaque feed on sugary food residues, producing acids that corrode tooth enamel and create cavities.`);
+      }
+      if (asksPrevention) {
+        sections.push(`#### ${sections.length}. Prevention of Tooth Decay\nBrush teeth twice daily with fluoride toothpaste, reduce sugary foods, rinse after meals, and visit dental clinics.`);
+      }
+
+      return {
+        text: sections.join('\n\n'),
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Dental Health',
+        suggestions: ['What causes tooth decay?', 'What are the four types of teeth and their functions?', 'How do you prevent tooth decay?']
+      };
+    }
+
+    // 5. Reproduction & Gestation Periods
+    if (
+      q.includes('gestation') ||
+      (q.includes('reproduction') && (q.includes('animal') || q.includes('domestic')) && (q.includes('period') || q.includes('mating'))) ||
+      (q.includes('mating') && q.includes('gestation'))
+    ) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Gestation Period\n\nThe **gestation period** (pregnancy) is the length of time an embryo or fetus develops inside the female mother's uterus (womb) from fertilization (conception) until birth (*parturition*).\n\n- **Fertilization:** The fusion of a male sperm cell and a female egg (*ovum*) to form a zygote.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops, Plants & Animals',
+          suggestions: ['What is the gestation period of a cow, pig, and sheep?', 'What is the human gestation period?', 'What is seed germination?']
+        };
+      }
+
+      return {
+        text: `### Gestation Periods of Animals and Humans\n\n| Animal / Species | Gestation Period in Months | Gestation Period in Days |\n| :--- | :--- | :--- |\n| **Human** | **9 months** | **~280 days (40 weeks)** |\n| **Cow (Cattle)** | **9 months** | **~280 – 283 days** |\n| **Horse (Mare)** | **11 months** | **~336 days** |\n| **Sheep (Ewe)** | **5 months** | **~145 – 150 days** |\n| **Goat (Doe)** | **5 months** | **~150 days** |\n| **Pig (Sow)** | **3 months, 3 weeks, 3 days** | **~114 days** |\n| **Dog (Bitch)** | **2 months** | **~60 – 63 days** |\n| **Cat (Queen)** | **2 months** | **~60 – 65 days** |\n| **Rabbit (Doe)** | **1 month** | **~30 – 31 days** |\n| **Elephant** | **22 months** | **~660 days (Longest)** |\n\n- **Key Syllabus Rule:** A sow's gestation is easily remembered as **"3 months, 3 weeks, and 3 days"** (114 days). Larger mammals have longer gestation periods.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops, Plants & Animals',
+        suggestions: ['What is gestation period?', 'What are the parts of the human reproductive system?', 'What is seed germination?']
+      };
+    }
+
+    // 6. Emotional Intelligence, Self-Awareness, Self-Regulation & Emotional Health
+    if (
+      q.includes('emotional intelligence') ||
+      q.includes('self-awareness') ||
+      q.includes('self awareness') ||
+      q.includes('self-regulation') ||
+      q.includes('self regulation') ||
+      (q.includes('emotional health') && !q.includes('physical health'))
+    ) {
+      if (q.includes('self-awareness') || q.includes('self awareness')) {
+        return {
+          text: `### Self-Awareness\n\n**Self-awareness** is the conscious ability to recognize and understand your own emotions, thoughts, personal strengths, weaknesses, values, and how your actions affect other people around you.\n\n- **Importance of Self-Awareness:**\n  * Helps pupils make sound, independent decisions and resist negative peer pressure.\n  * Builds realistic self-confidence and a strong sense of personal identity.\n  * Enables learners to recognize emotional triggers (e.g. what triggers anger or anxiety) before reacting impulsively.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Emotional Health & Wellness',
+          suggestions: ['What is self-regulation?', 'What are the components of emotional intelligence?', 'What is emotional health?']
+        };
+      }
+
+      if (q.includes('self-regulation') || q.includes('self regulation')) {
+        return {
+          text: `### Self-Regulation\n\n**Self-regulation** is the ability to monitor and control your own emotions, impulses, reactions, and behaviors constructively, especially during stressful, frustrating, or provocative situations.\n\n- **Importance of Self-Regulation:**\n  * Prevents violent fights, bullying, and reckless outbursts.\n  * Allows pupils to calm down, think critically, and choose peaceful solutions (*Unhu/Ubuntu*).\n  * Enhances classroom concentration and academic performance.\n\n- **Self-Regulation Techniques:**\n  1. **Deep Breathing:** Inhale slowly through the nose for 4 counts, hold, and exhale through the mouth to reduce heart rate.\n  2. **Count to 10:** Silently count to 10 before reacting when provoked or angry.\n  3. **Time-Out:** Walk away from a heated conflict until strong emotions subside.\n  4. **Positive Self-Talk:** Reassure yourself with calm thoughts (e.g. "I can handle this peacefully").\n  5. **Calm Expression:** Use polite "I-feel" statements instead of shouting or hurling insults.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Emotional Health & Wellness',
+          suggestions: ['What is self-awareness?', 'What are the components of emotional intelligence?', 'What is emotional health?']
+        };
+      }
+
+      return {
+        text: `### Emotional Intelligence & Emotional Health\n\n**Emotional Intelligence (EQ)** is the capacity to identify, understand, manage, and constructively express your own emotions, while empathetically recognizing and positively interacting with the emotions of others.\n\n- **Five Core Components of Emotional Intelligence:**\n  1. **Self-Awareness:** Recognizing your personal feelings, moods, strengths, and limits.\n  2. **Self-Regulation:** Controlling impulsive feelings and managing emotional reactions peacefully.\n  3. **Motivation:** Striving toward personal and school goals with resilience and optimism.\n  4. **Empathy:** Understanding, respecting, and caring about the feelings of other people.\n  5. **Social Skills:** Communicating clearly, collaborating in teams, resolving disputes peacefully, and displaying *Unhu/Ubuntu*.\n\n- **Signs of Emotional Health:** Emotional balance, self-respect, resilience after setbacks, and healthy relationships.\n- **Healthy Coping Mechanisms:** Talking to trusted parents/teachers, participating in sports/arts, getting 8 hours of sleep, and avoiding harmful habits.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Emotional Health & Wellness',
+        suggestions: ['What is self-awareness?', 'What is self-regulation and what are its techniques?', 'What is mental wellness?']
+      };
+    }
+
+    // 7. Sexually Transmitted Infections (STIs) & HIV/AIDS
+    if (
+      q.includes('sexually transmitted') ||
+      (/stis?/i.test(q) && (q.includes('disease') || q.includes('infection') || q.includes('what is') || q.includes('define') || q.includes('prevent') || q.includes('sign') || q.includes('symptom') || q.includes('list'))) ||
+      (/hiv/i.test(q) || /aids/i.test(q))
+    ) {
+      if (q.includes('hiv') || q.includes('aids')) {
+        return {
+          text: `### HIV and AIDS\n\n- **Definition:** **HIV (Human Immunodeficiency Virus)** is a virus that attacks the body's immune system, specifically white blood cells called **CD4 cells**. **AIDS (Acquired Immune Deficiency Syndrome)** is the advanced stage of HIV infection where the immune system is severely damaged, leaving the body vulnerable to opportunistic infections (e.g. TB, pneumonia).\n\n- **Modes of Transmission:**\n  1. Unprotected sexual intercourse with an infected partner.\n  2. Mother-to-child transmission during pregnancy, childbirth, or breastfeeding.\n  3. Sharing unsterilized needles, razor blades, or skin-piercing tools.\n  4. Transfusion of unscreened, infected blood.\n\n- **Prevention:** Abstinence (for youth), mutual faithfulness, consistent condom use, PMTCT (Prevention of Mother-To-Child Transmission) medications, and avoiding sharing sharp objects.\n\n- **Management of Infected Persons:**\n  1. **Antiretroviral Therapy (ART):** Taking daily prescribed ARV medication to suppress viral load.\n  2. **Healthy Nutrition:** Eating balanced meals rich in proteins, small grains, and vitamins.\n  3. **Treating Infections Promptly:** Seeking early medical care for opportunistic diseases like TB.\n  4. **Psychosocial Support:** Showing love, empathy, and eliminating discrimination and stigma (*Unhu/Ubuntu*).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What are STIs and what are their symptoms?', 'What is the difference between HIV and AIDS?', 'What are the methods of preventing STIs?']
+        };
+      }
+
+      // STIs
+      return {
+        text: `### Sexually Transmitted Infections (STIs)\n\n**Sexually Transmitted Infections (STIs)** are infectious diseases passed from one person to another primarily through unprotected sexual contact, caused by bacteria, viruses, or parasites.\n\n- **Common STIs in the Syllabus:**\n  1. **Gonorrhoea:** Bacterial infection; causes yellow/green discharge and burning pain during urination.\n  2. **Syphilis:** Bacterial infection; produces painless sores (*chancres*), skin rash, and organ damage if untreated.\n  3. **Chlamydia:** Bacterial infection that can cause pelvic pain and infertility.\n  4. **Genital Herpes:** Viral infection; produces painful clusters of recurring blisters.\n  5. **Human Papillomavirus (HPV):** Viral infection linked to genital warts and cervical cancer.\n\n- **General Signs & Symptoms:** Unusual discharge from genitals, burning pain during urination, sores or blisters around private parts, persistent itching, lower abdominal pain.\n\n- **Prevention:** Abstinence (100% effective for pupils), mutual faithfulness, correct and consistent condom use, prompt medical treatment of both partners, avoiding sharing sharp objects.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+        suggestions: ['What is HIV and AIDS?', 'What are the signs and symptoms of STIs?', 'How are STIs prevented?']
+      };
+    }
+
+    // 8. Internal Body Parts and Their Functions
+    if (
+      q.includes('internal body part') ||
+      q.includes('internal body parts') ||
+      q.includes('internal organs') ||
+      q.includes('internal body organs') ||
+      (q.includes('internal') && q.includes('parts') && (q.includes('body') || q.includes('human')))
+    ) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Internal Body Parts\n\n**Internal body parts** (organs) are vital anatomical structures located inside the human body cavities (cranial, chest/thoracic, abdominal, and pelvic cavities) that carry out essential physiological life processes required for survival.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+          suggestions: ['What are the functions of the liver and kidneys?', 'What are the functions of internal body parts?', 'What are the parts of the digestive system?']
+        };
+      }
+
+      return {
+        text: `### Internal Body Parts and Their Functions\n\n1. **Brain (Cranial Cavity / Head):** The master control centre of the nervous system; interprets sensory information, controls thought, memory, emotions, speech, and voluntary/involuntary movements.\n2. **Heart (Chest Cavity):** Muscular 4-chambered pump that continuously pumps oxygenated blood to the body and deoxygenated blood to the lungs.\n3. **Lungs (Chest Cavity):** Responsible for gas exchange; absorbs oxygen from inhaled air into blood capillaries and expels carbon dioxide during exhalation.\n4. **Stomach (Upper Abdomen):** Muscular organ that churns food and secretes hydrochloric acid (kills germs) and pepsin to digest proteins.\n5. **Liver (Upper Right Abdomen):** The largest internal organ; produces bile to emulsify fats, detoxifies harmful chemicals and drugs, and stores excess glucose as glycogen.\n6. **Kidneys (Lower Back / Posterior Abdomen):** Two bean-shaped organs that filter metabolic wastes (urea, toxins, excess salts) from blood to produce **urine**.\n7. **Small Intestine (Abdomen):** Long coiled tube where digestion is completed and nutrients are absorbed into the bloodstream through microscopic **villi**.\n8. **Large Intestine (Abdomen):** Absorbs water and mineral salts from indigestible residues, compacting waste into feces.\n9. **Skeleton & Bones:** Provides structural framework, protects fragile organs (skull protects brain, rib cage protects heart and lungs), and produces blood cells in bone marrow.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+        suggestions: ['What are the functions of the liver and kidneys?', 'What is the function of the heart?', 'What are the parts of the respiratory system?']
+      };
+    }
+
+    // 9. Puberty, Human Reproductive System & Personal Hygiene
+    if (
+      q.includes('puberty') ||
+      (q.includes('reproductive') && (q.includes('part') || q.includes('system') || q.includes('human') || q.includes('puberty') || q.includes('hygiene')))
+    ) {
+      const asksChanges = q.includes('change') || q.includes('physical');
+      const asksHygiene = q.includes('hygiene');
+      const asksParts = q.includes('part') || q.includes('organ') || q.includes('male') || q.includes('female');
+
+      if (decomp.asksOnlyDefinition && !asksChanges && !asksHygiene && !asksParts) {
+        return {
+          text: `### Puberty\n\n**Puberty** is the transitional developmental stage during adolescence (usually between ages 10 and 16) when the human reproductive organs mature, the pituitary gland releases sex hormones (testosterone in boys, oestrogen and progesterone in girls), and secondary sexual characteristics develop, making biological reproduction possible.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Development',
+          suggestions: ['What are the physical changes during puberty in boys and girls?', 'What hygiene practices should be observed at puberty?', 'What are the human reproductive parts?']
+        };
+      }
+
+      if (asksChanges && !asksHygiene && !asksParts) {
+        return {
+          text: `### Physical Changes During Puberty\n\n- **Physical Changes in Boys:**\n  * Voice deepens ("breaks") as the larynx (Adam's apple) enlarges.\n  * Growth of facial hair, underarm hair, and pubic hair.\n  * Enlargement of the testes, scrotum, and penis; production of sperm begins.\n  * Broadening of chest and shoulders; rapid muscle development.\n  * Occurrence of wet dreams (*nocturnal emissions*).\n\n- **Physical Changes in Girls:**\n  * Enlargement and development of breasts.\n  * Widening and rounding of hips and pelvis.\n  * Growth of underarm and pubic hair.\n  * Onset of menstruation (*monthly periods* / menarche).\n  * Increased subcutaneous fat deposits resulting in feminine curves.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Development',
+          suggestions: ['What hygiene practices are important at puberty?', 'What is puberty?', 'What are the human reproductive parts?']
+        };
+      }
+
+      if (asksHygiene && !asksChanges && !asksParts) {
+        return {
+          text: `### Personal Hygiene Practices at Puberty\n\n1. **Daily Bathing:** Bathing the entire body daily with clean water and mild soap, paying special attention to the armpits, groin, and genital areas to wash away sweat and prevent body odor.\n2. **Clean Underwear:** Wearing clean cotton underwear every day; washing and drying clothes thoroughly in sunlight.\n3. **Deodorants:** Using mild roll-on or deodorant to manage increased sweat production from developing sweat and apocrine glands.\n4. **Menstrual Hygiene for Girls:**\n   - Changing sanitary pads regularly every 4 to 6 hours.\n   - Wrapping used disposable pads securely in waste paper and discarding them in a pit latrine or incinerator bin (never flush them down flush toilets).\n   - Washing hands with soap and water before and after changing pads.\n5. **Importance:** Prevents bacterial and fungal infections, eliminates body odor, and boosts self-esteem and confidence.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Development',
+          suggestions: ['What are the physical changes during puberty?', 'What is puberty?', 'What are the human reproductive parts?']
+        };
+      }
+
+      if (asksParts) {
+        return {
+          text: `### Human Reproductive Parts and Functions\n\n- **Male Reproductive System:**\n  1. **Testes (Testicles):** Paired organs that produce sperm cells and the male hormone testosterone.\n  2. **Scrotum:** Pouch of skin holding testes outside the abdominal cavity to maintain a cooler temperature (2–3°C below body temperature) necessary for sperm production.\n  3. **Sperm Duct (Vas Deferens):** Muscular tube that carries sperm from the testes to the urethra.\n  4. **Urethra:** Tube running through the penis that conveys semen during ejaculation and urine during excretion.\n  5. **Penis:** External organ that deposits sperm into the female vagina during mating.\n\n- **Female Reproductive System:**\n  1. **Ovaries:** Paired organs that produce female ova (eggs) and hormones (oestrogen and progesterone).\n  2. **Fallopian Tubes (Oviducts):** Ciliated tubes where fertilization occurs; carries ovum to uterus.\n  3. **Uterus (Womb):** Pear-shaped muscular organ where the fertilized embryo implants and develops during the 9-month gestation period.\n  4. **Cervix:** The lower neck of the uterus connecting to the vagina.\n  5. **Vagina (Birth Canal):** Muscular passage that receives the penis during mating and through which a baby is born.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+          suggestions: ['What is puberty?', 'What are the physical changes during puberty?', 'What is the gestation period in humans?']
+        };
+      }
+
+      return {
+        text: `### Puberty and Human Reproductive System\n\n**Puberty** is the adolescent developmental stage when sex organs mature and secondary sexual characteristics appear under the influence of hormones.\n\n- **Changes in Boys:** Voice breaks, facial/pubic hair grows, sperm production begins, shoulders broaden.\n- **Changes in Girls:** Breasts enlarge, hips widen, pubic hair grows, menstruation starts.\n- **Hygiene:** Daily body washing, clean cotton underwear, changing sanitary pads every 4-6 hours.\n- **Gestation:** Human gestation lasts approximately **9 months (40 weeks / ~280 days)** in the mother's uterus.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Development',
+        suggestions: ['What are the physical changes during puberty?', 'What hygiene practices should be observed at puberty?', 'What are the parts of the human reproductive system?']
+      };
+    }
+
+    // 10. Food Safety, Safe Handling Practices & Foodborne Diseases
+    if (
+      q.includes('food safety') ||
+      q.includes('food handling') ||
+      q.includes('foodborne') ||
+      q.includes('food borne') ||
+      q.includes('food contamination') ||
+      q.includes('food spoilage')
+    ) {
+      const asksFoodborne = q.includes('foodborne') || q.includes('food borne') || q.includes('food poisoning');
+
+      if (asksFoodborne) {
+        return {
+          text: `### Foodborne Diseases\n\n**Foodborne diseases** (food poisoning) are illnesses contracted from eating food or drinking water contaminated with pathogenic microorganisms (bacteria, viruses, parasites) or toxic chemical substances.\n\n- **Signs and Symptoms:**\n  * Nausea and sudden violent vomiting.\n  * Severe abdominal stomach cramps and pain.\n  * Frequent watery or bloody diarrhea.\n  * Fever, chills, and headache.\n  * Dehydration, dry mouth, and weakness.\n\n- **Prevention and Control:**\n  1. Wash hands thoroughly with soap before preparing or eating food.\n  2. Drink clean, safe or boiled water.\n  3. Cook foods thoroughly (especially meat, poultry, and eggs) above 70°C.\n  4. Keep food covered to prevent contamination by flies and pests.\n  5. Avoid eating expired canned goods or food with foul odors or mold.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Food & Nutrition',
+          suggestions: ['What is food safety and why is it important?', 'What are safe food handling practices?', 'How do you prepare sugar and salt solution?']
+        };
+      }
+
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Food Safety\n\n**Food safety** refers to the scientific practices and hygiene routines observed during food handling, preparation, and storage to prevent food contamination, spoilage, and **foodborne diseases** (such as cholera, typhoid, and food poisoning).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Food & Nutrition',
+          suggestions: ['What is the importance of food safety?', 'What are safe food handling practices?', 'What are foodborne diseases?']
+        };
+      }
+
+      return {
+        text: `### Food Safety and Safe Handling Practices\n\n**Food safety** is the practice of handling, preparing, and storing food in ways that prevent foodborne illnesses.\n\n- **Importance of Food Safety:**\n  * Prevents deadly foodborne diseases (cholera, salmonella, food poisoning).\n  * Reduces household food spoilage and financial wastage.\n  * Preserves the nutritional value and fresh quality of food.\n\n- **Four Core Safe Food Handling Practices (The 4 Cs):**\n  1. **Cleaning:** Wash hands with soap and water before handling food and after visiting the toilet. Wash chopping boards, knives, and counters thoroughly.\n  2. **Cross-Contamination Prevention:** Keep raw meat, poultry, and fish separate from cooked food and fresh salads. Never use the same unwashed board or knife for raw meat and bread/vegetables.\n  3. **Cooking Thoroughly:** Cook foods to safe temperatures (above 70°C) to kill harmful bacteria. Reheat leftovers until steaming hot throughout.\n  4. **Chilling & Temperature Control:** Refrigerate perishable food promptly below 5°C. Never leave cooked food at room temperature for more than 2 hours; keep food covered to protect from houseflies.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Food & Nutrition',
+        suggestions: ['What are foodborne diseases and their symptoms?', 'What is food safety?', 'What are the methods of food preservation?']
+      };
+    }
+
+    // 11. Environmental Hygiene: Land Pollution & Environmental Waste
+    if (
+      q.includes('land pollution') ||
+      q.includes('soil pollution') ||
+      (q.includes('environmental waste') || (q.includes('waste') && (q.includes('disposal') || q.includes('community'))))
+    ) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Land Pollution\n\n**Land pollution** is the contamination, destruction, and degradation of the Earth's land surfaces and soil caused by the dumping of solid or liquid waste, hazardous industrial chemicals, mining tailings, and non-biodegradable materials (like plastic bags).\n\n- **Environmental Waste:** Any discarded unwanted material generated by domestic homes, schools, businesses, or industries that can contaminate the surroundings.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the types and sources of land pollution?', 'What are the effects of land pollution?', 'What are the ways to reduce land pollution?']
+        };
+      }
+
+      return {
+        text: `### Land Pollution and Community Waste Disposal\n\n**Land pollution** is the degradation of the Earth's soil and land surfaces by improper waste disposal and chemicals.\n\n- **Sources of Environmental Waste in the Community:**\n  * **Domestic Waste:** Plastic carrier bags (*kaylite*), tin cans, broken glass, disposable diapers, and rotting food scraps thrown in open spaces.\n  * **Agricultural Chemicals:** Excessive chemical fertilizers, herbicides, and pesticides leaching into soil.\n  * **Mining Activities:** Artisanal gold panning (*chikorokoza*) residues, open-cast pits, and toxic chemicals (mercury and cyanide).\n  * **Industrial & Commercial Waste:** Discarded scrap metal, scrap tires, chemical sludge, and battery acids.\n\n- **Impact of Waste in the Community:**\n  * Destroys soil fertility and agricultural productivity.\n  * Creates breeding grounds for disease vectors (houseflies, mosquitoes, rats).\n  * Ingestion of plastic carrier bags chokes and kills grazing cattle, goats, and sheep.\n  * Leaches toxic chemicals into underground aquifers and drinking boreholes.\n\n- **Proper Waste Disposal Measures (The 3Rs):**\n  1. **Reduce:** Cut down on single-use plastics and packaging.\n  2. **Reuse:** Reuse glass containers, plastic buckets, and shopping bags.\n  3. **Recycle:** Collect scrap paper, plastics, and scrap metal for factory remanufacturing.\n  4. **Composting:** Digging compost pits to convert biodegradable vegetable and food waste into organic manure.\n  5. **Designated Landfills:** Disposing non-biodegradable waste in municipal designated bins and sanitary landfills.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+        suggestions: ['What are the 3Rs of waste management?', 'What are the effects of plastic waste on livestock?', 'What is water pollution?']
+      };
+    }
+
+    // 12. Environmental Hygiene: Water Pollution & Waterborne Diseases
+    if (
+      q.includes('water pollution') ||
+      q.includes('waterborne') ||
+      q.includes('water-borne') ||
+      q.includes('water disease')
+    ) {
+      if (decomp.asksOnlyDefinition && !q.includes('waterborne') && !q.includes('water-borne')) {
+        return {
+          text: `### Water Pollution\n\n**Water pollution** is the contamination of natural water bodies (rivers, dams, lakes, streams, and underground aquifers) with harmful chemicals, untreated sewage, or toxic waste, making the water hazardous for human consumption, agriculture, and aquatic life.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the causes of water pollution?', 'What are the effects of water pollution?', 'What are waterborne diseases?']
+        };
+      }
+
+      return {
+        text: `### Water Pollution & Waterborne Diseases\n\n**Water pollution** is the introduction of harmful substances into rivers, dams, and boreholes.\n\n- **Causes of Water Pollution:**\n  1. **Raw Untreated Sewage:** Burst sewer pipes discharging human excreta directly into rivers (e.g. Mukuvisi River feeding Lake Chivero in Harare).\n  2. **Industrial Effluent:** Factories discharging untreated acids, dyes, detergents, and heavy metals.\n  3. **Agricultural Runoff:** Rain washing synthetic fertilizers and chemical pesticides into dams, causing **eutrophication** (excessive algae blooms that suffocate fish).\n  4. **Mining Contamination:** Stream-bank cultivation causing river siltation, and toxic mercury or cyanide used in gold panning.\n\n- **Effects of Water Pollution:**\n  * Outbreaks of deadly waterborne epidemics (cholera, typhoid, bilharzia, dysentery).\n  * Death of aquatic fish and loss of biodiversity.\n  * Massive municipal water purification costs for urban cities.\n\n- **Common Waterborne Diseases:**\n  * **Cholera:** Caused by *Vibrio cholerae* bacteria in contaminated water/food; causes sudden painless watery ("rice-water") diarrhea and rapid fatal dehydration (treated with Sugar and Salt Solution, SSS).\n  * **Typhoid:** Caused by *Salmonella typhi*; causes high fever, severe headache, and abdominal pain.\n  * **Bilharzia (Schistosomiasis):** Caused by *Schistosoma* flatworm parasites hosted by freshwater aquatic snails; symptom is blood in urine (*haematuria*).\n\n- **Measures to Reduce Water Pollution:** Enforce Environmental Management Agency (EMA) fines on polluters; upgrade sewage treatment plants; ban stream-bank cultivation within 30 metres of river banks; boil or chlorinate all drinking water.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+        suggestions: ['How do you prepare sugar and salt solution?', 'What are the symptoms and causes of cholera?', 'What is bilharzia?']
+      };
+    }
+
+    // 13. Environmental Hygiene: Air Pollution
+    if (q.includes('air pollution')) {
+      const asksCauses = decomp.asksCauses || q.includes('cause') || q.includes('source') || q.includes('pollutant');
+      const asksEffects = decomp.asksEffects || q.includes('effect') || q.includes('respiratory') || q.includes('impact');
+      const asksReduction = decomp.asksPreventionOrManagement || q.includes('reduc') || q.includes('control') || q.includes('prevent') || q.includes('measure');
+
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Air Pollution\n\n**Air pollution** is the release of harmful substances, toxic gases, smoke, particulate matter, and chemicals into the Earth's atmosphere at concentrations that endanger human respiratory health, animal life, and the environment.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the causes of air pollution?', 'What are the effects of air pollution on the respiratory system?', 'How can air pollution be reduced?']
+        };
+      }
+
+      if (asksCauses && !asksEffects && !asksReduction) {
+        return {
+          text: `### Causes and Pollutants of Air Pollution\n\n- **Causes / Sources:**\n  1. **Motor Vehicle Emissions:** Exhaust fumes from cars, buses, and haulage trucks burning petrol and diesel.\n  2. **Industrial Chimneys:** Thermal power stations (like Hwange) and factories burning coal and emitting thick black smoke.\n  3. **Domestic Firewood & Charcoal:** Open cooking fires and burning braziers (*mbaura*).\n  4. **Agricultural & Veld Fires:** Burning dry grass, crop stalks, and trash.\n\n- **Major Air Pollutants:**\n  * **Carbon Monoxide (CO):** Poisonous gas that displaces oxygen in the blood.\n  * **Sulfur Dioxide ($SO_2$) & Nitrogen Oxides ($NO_x$):** Cause respiratory irritation and acid rain.\n  * **Particulate Matter (Soot, Smoke & Dust):** Clogs respiratory airways.\n  * **Carbon Dioxide ($CO_2$):** Greenhouse gas driving climate change.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the effects of air pollution on the respiratory system?', 'How can air pollution be reduced?', 'What is air pollution?']
+        };
+      }
+
+      if (asksEffects && !asksCauses && !asksReduction) {
+        return {
+          text: `### Effects of Air Pollution on the Human Respiratory System\n\n1. **Aggravates Asthma Attacks:** Inhaling smoke, soot, and chemical gases inflames sensitive bronchial airways, triggering acute asthma attacks.\n2. **Causes Chronic Bronchitis:** Constant irritation by airborne soot and sulfur dioxide leads to persistent coughing and excess mucus production in the bronchi.\n3. **Damages Cilia in Airways:** Smoke and toxic fumes paralyze and destroy the microscopic cilia lining the trachea, preventing the body from clearing dust and bacteria from the lungs.\n4. **Reduces Lung Capacity:** Fine particulate matter ($PM_{2.5}$) penetrates deep into lung alveoli, causing tissue scarring and emphysema.\n5. **Carbon Monoxide Poisoning:** Binds tightly with blood haemoglobin, depriving vital organs (brain and heart) of oxygen, which can cause asphyxiation and death in closed rooms (*mbaura*).\n6. **Environmental Impact:** Acid rain damages forests and aquatic life; greenhouse gases cause global warming.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+          suggestions: ['What are the causes of air pollution?', 'How can air pollution be reduced?', 'What are the parts of the respiratory system?']
+        };
+      }
+
+      return {
+        text: `### Air Pollution: Causes, Effects, and Solutions\n\n**Air pollution** is the contamination of the atmosphere by toxic gases, smoke, and particulate matter.\n\n- **Causes & Pollutants:** Exhaust emissions from vehicles, factory chimneys burning coal, veld fires, and unvented braziers. Pollutants include carbon monoxide, sulfur dioxide, nitrogen oxides, soot, and smoke.\n- **Effects on Respiratory System:** Inflames bronchial airways, triggers asthma attacks, causes bronchitis, clogs lung alveoli, and causes carbon monoxide asphyxiation.\n- **Measures to Reduce Air Pollution:**\n  1. Planting trees (afforestation) to absorb atmospheric carbon dioxide.\n  2. Transitioning to clean renewable energy (solar, wind, biogas) instead of burning coal and firewood.\n  3. Fitting vehicle exhausts with catalytic converters and maintaining vehicle engines.\n  4. Fitting industrial smokestacks with electrostatic precipitators and filters.\n  5. Enforcing Environmental Management Agency (EMA) emissions standards.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Environmental Health',
+        suggestions: ['What are the effects of air pollution on the respiratory system?', 'What are the parts of the respiratory system?', 'What is the fire triangle?']
+      };
+    }
+
+    // 14. Respiratory System
+    if (
+      q.includes('respiratory system') ||
+      (q.includes('respiratory') && (q.includes('part') || q.includes('function') || q.includes('disease') || q.includes('lung') || q.includes('trachea') || q.includes('alveoli')))
+    ) {
+      const asksParts = q.includes('part') || q.includes('name') || q.includes('identify') || q.includes('label');
+      const asksFunctions = decomp.asksFunctionsOrUses || q.includes('function');
+      const asksDiseases = q.includes('disease') || q.includes('illness');
+
+      if (decomp.asksOnlyDefinition && !asksParts && !asksFunctions && !asksDiseases) {
+        return {
+          text: `### The Respiratory System\n\nThe **respiratory system** is the biological organ system in humans and animals responsible for **gas exchange**—taking in life-giving oxygen ($O_2$) from the atmosphere during inhalation and expelling metabolic waste carbon dioxide ($CO_2$) and water vapor during exhalation.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Human Biology',
+          suggestions: ['What are the parts of the respiratory system?', 'Explain the functions of parts of the respiratory system', 'What are respiratory diseases?']
+        };
+      }
+
+      if (asksDiseases && !asksParts && !asksFunctions) {
+        return {
+          text: `### Respiratory Diseases\n\n1. **Asthma:** Chronic inflammatory condition causing temporary swelling, constriction of bronchial airways, and excess mucus production; triggered by dust, pollen, and cold air.\n2. **Tuberculosis (TB):** Highly contagious bacterial infection (*Mycobacterium tuberculosis*) that destroys lung tissue; symptoms include persistent coughing (>2 weeks), coughing blood, night sweats, and weight loss.\n3. **Pneumonia:** Acute infection of one or both lungs caused by bacteria or viruses; alveoli become filled with pus and fluid, causing fever, chills, and difficulty breathing.\n4. **Bronchitis:** Inflammation of the bronchial tube lining resulting in persistent coughing with thick discolored phlegm.\n5. **Influenza (Flu):** Viral infection causing sore throat, runny nose, body aches, and fever.\n6. **Lung Cancer:** Malignant tumor growth in lung tissue, predominantly caused by tobacco smoking.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Human Biology',
+          suggestions: ['What are the parts of the respiratory system?', 'What are the effects of air pollution on the respiratory system?', 'What is the difference between respiration and breathing?']
+        };
+      }
+
+      if (asksParts && !asksDiseases) {
+        return {
+          text: `### Parts of the Human Respiratory System and Their Functions\n\n1. **Nose and Nasal Cavity:** Lined with hairs and moist mucus to warm, moisten, and filter dust and bacteria from incoming air.\n2. **Pharynx (Throat):** Common passageway connecting the nasal cavity and mouth to the larynx.\n3. **Larynx (Voice Box):** Contains vocal cords that vibrate to produce speech; covered by the **epiglottis** during swallowing to prevent food from entering the windpipe.\n4. **Trachea (Windpipe):** Main airway tube reinforced with **C-shaped cartilage rings** to prevent collapse; lined with ciliated epithelial cells and mucus that sweep trapped dirt up toward the throat.\n5. **Bronchi (Left and Right Bronchus):** Two main branches of the trachea that direct air into the left and right lungs.\n6. **Bronchioles:** Narrow branching network of smaller tubes distributing air throughout lung lobes.\n7. **Alveoli (Air Sacs):** Millions of microscopic, thin-walled, moist air sacs surrounded by dense capillary networks where **gas exchange takes place** (oxygen diffuses into blood; carbon dioxide diffuses into alveoli).\n8. **Lungs:** The two spongy respiratory organs housed inside the chest cavity.\n9. **Diaphragm:** Large dome-shaped muscle at the floor of the chest that contracts and flattens during inhalation and relaxes during exhalation.\n10. **Intercostal Muscles:** Muscles between the ribs that move the ribcage up and out during breathing in.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Human Biology',
+          suggestions: ['What are respiratory diseases?', 'What is the difference between respiration and breathing?', 'What are the effects of air pollution on the respiratory system?']
+        };
+      }
+
+      return {
+        text: `### The Human Respiratory System\n\nThe **respiratory system** facilitates gaseous exchange between the human body and the environment.\n\n- **Key Parts:** Nose, Trachea (windpipe with cartilage rings), Bronchi, Bronchioles, Alveoli (site of gas exchange), Lungs, Diaphragm, and Ribs.\n- **Functions:** Warms, moistens, and filters air; diffuses oxygen into blood; removes carbon dioxide waste.\n- **Common Diseases:** Asthma, Tuberculosis (TB), Bronchitis, Pneumonia, and Influenza.\n- **Breathing Mechanism:** Inhalation (diaphragm contracts and flattens, ribs move up/out, lung volume increases, air enters); Exhalation (diaphragm relaxes into dome, ribs move down/in, air is forced out).`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Human Biology',
+        suggestions: ['What are the parts of the respiratory system?', 'What are respiratory diseases?', 'What are the effects of air pollution on the respiratory system?']
+      };
+    }
+
+    // 15. Circulatory System
+    if (
+      q.includes('circulatory system') ||
+      (q.includes('circulatory') && (q.includes('part') || q.includes('heart') || q.includes('blood') || q.includes('vessel'))) ||
+      (q.includes('chambers of the heart') || (q.includes('arteries') && q.includes('veins')))
+    ) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### The Circulatory System\n\nThe **circulatory system** (cardiovascular system) is the organ system responsible for transporting oxygen, digested food nutrients, hormones, antibodies, and metabolic waste products (like carbon dioxide and urea) throughout the body via blood pumped continuously by the heart.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+          suggestions: ['What are the parts of the circulatory system?', 'Explain the circulatory system and double circulation', 'What is the difference between arteries and veins?']
+        };
+      }
+
+      return {
+        text: `### The Circulatory System\n\n**The circulatory system** pumps and transports blood throughout the entire body.\n\n- **The Three Main Parts:**\n  1. **The Heart (Muscular Pump):**\n     * A 4-chambered muscular organ: **Right Atrium**, **Right Ventricle**, **Left Atrium**, **Left Ventricle**.\n     * The **Left Ventricle** has the thickest muscular wall because it pumps oxygenated blood under high pressure to the entire body through the aorta.\n  2. **Blood Vessels (Tubular Network):**\n     * **Arteries:** Carry oxygenated blood **AWAY** from the heart under high pressure (thick, elastic muscular walls; no valves; e.g. Aorta). *Exception: Pulmonary artery carries deoxygenated blood to lungs.*\n     * **Veins:** Carry deoxygenated blood **BACK TO** the heart under low pressure (thinner walls; contain **valves** to prevent backflow; e.g. Vena Cava). *Exception: Pulmonary vein carries oxygenated blood from lungs.*\n     * **Capillaries:** Microscopic, 1-cell thick blood vessels connecting arteries to veins; site of diffusion for oxygen, nutrients, and waste products.\n  3. **Blood (Transport Fluid):**\n     * **Red Blood Cells (Erythrocytes):** Disc-shaped, contain **haemoglobin** to transport oxygen.\n     * **White Blood Cells (Leukocytes):** Fight infections and destroy pathogens.\n     * **Platelets:** Fragments that enable blood clotting to prevent excessive bleeding from cuts.\n     * **Plasma:** Yellowish liquid transporting dissolved nutrients, hormones, and carbon dioxide.\n\n- **Double Circulation:** Blood passes through the heart **twice** during one complete circuit:\n  1. **Pulmonary Circulation:** Right Ventricle -> Pulmonary Artery -> Lungs (oxygenated) -> Pulmonary Vein -> Left Atrium.\n  2. **Systemic Circulation:** Left Ventricle -> Aorta -> Body organs & tissues -> Vena Cava -> Right Atrium.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+        suggestions: ['What is the difference between arteries and veins?', 'What are the parts of the respiratory system?', 'What are the functions of the liver and kidneys?']
+      };
+    }
+
+    // 16. Digestive System
+    if (
+      q.includes('digestive system') ||
+      (q.includes('digestive') && (q.includes('part') || q.includes('function') || q.includes('organ') || q.includes('mouth') || q.includes('stomach') || q.includes('peristalsis') || q.includes('villi')))
+    ) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### The Digestive System\n\nThe **digestive system** is the organ system responsible for breaking down large, insoluble food molecules into small, soluble nutrient molecules that can be absorbed across the intestinal wall into the bloodstream to provide energy, tissue growth, and repair.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+          suggestions: ['What are the parts of the digestive system?', 'What are the functions of parts of the digestive system?', 'What are the four types of teeth?']
+        };
+      }
+
+      return {
+        text: `### Parts of the Digestive System and Their Functions\n\n1. **Mouth (Teeth & Tongue):**\n   - Mechanical digestion: Teeth cut, tear, and grind food into small pieces (*bolus*).\n   - Chemical digestion: Salivary glands secrete saliva containing **salivary amylase**, which breaks down cooked starch into maltose.\n2. **Esophagus (Gullet):**\n   - Transports food from the mouth to the stomach via **peristalsis** (rhythmic wave-like muscular contractions of the canal wall).\n3. **Stomach:**\n   - J-shaped muscular pouch that churns food into a liquid mixture (*chyme*).\n   - Secretes **hydrochloric acid** (kills bacteria) and **pepsin** enzyme (begins protein digestion).\n4. **Small Intestine (Duodenum and Ileum):**\n   - **Duodenum:** Receives **bile** from the liver (which emulsifies fats and neutralizes stomach acid) and pancreatic juice containing digestive enzymes.\n   - **Ileum:** Completes digestion and absorbs soluble nutrients into blood capillaries through millions of tiny, finger-like projections called **villi** (which provide a massive surface area).\n5. **Large Intestine (Colon):**\n   - Reabsorbs water, mineral salts, and vitamins from indigestible food matter, forming semi-solid feces.\n6. **Rectum:**\n   - Temporarily stores feces until defecation.\n7. **Anus:**\n   - Muscular sphincter ring through which feces are expelled (*egestion*).\n\n- **Accessory Organs:** **Liver** (produces bile), **Gallbladder** (stores bile), and **Pancreas** (secretes digestive enzymes and insulin).`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Human Biology',
+        suggestions: ['What are the four types of teeth and their functions?', 'What is peristalsis?', 'What are the functions of the liver and kidneys?']
+      };
+    }
+
+    // 17. Unhealthy Eating Habits, Eating Disorders & Physical Health
+    if (
+      q.includes('unhealthy eating') ||
+      q.includes('eating disorder') ||
+      q.includes('eating disorders') ||
+      q.includes('anorexia') ||
+      q.includes('bulimia') ||
+      q.includes('physical health activities')
+    ) {
+      if (q.includes('eating disorder') || q.includes('anorexia') || q.includes('bulimia')) {
+        return {
+          text: `### Eating Disorders\n\n**Eating disorders** are serious mental and physical health conditions characterized by severe, persistent disturbances in eating behaviors, body image perception, and relationship with food.\n\n- **Common Types in the Syllabus:**\n  1. **Anorexia Nervosa:** An eating disorder characterized by self-starvation, severe food restriction, and an intense fear of gaining weight, leading to extreme emaciation, organ failure, and malnutrition.\n  2. **Bulimia Nervosa:** A cycle of binge eating (consuming abnormally large amounts of food in secret) followed by compensatory purging (forced vomiting, misusing laxatives, or excessive fasting).\n  3. **Binge Eating Disorder:** Repeated episodes of uncontrolled overeating without purging, leading to obesity, diabetes, and guilt.\n\n- **Consequences:** Severe malnutrition, stunted bone development, heart arrhythmias, tooth enamel erosion (from stomach acid during vomiting), and psychological distress.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Health & Nutrition',
+          suggestions: ['What are unhealthy eating habits?', 'What are the benefits of physical health activities?', 'What is a balanced diet?']
+        };
+      }
+
+      return {
+        text: `### Unhealthy Eating Habits and Physical Health\n\n- **Unhealthy Eating Habits:**\n  * Skipping essential meals (especially breakfast).\n  * Consuming excessive junk food, refined sugar, and sugary fizzy sodas.\n  * Eating excessive table salt, deep-fried snacks, and saturated fats.\n  * Inadequate intake of dietary fiber (roughage), vegetables, and clean water.\n\n- **Consequences of Unhealthy Eating:**\n  * Malnutrition (deficiency diseases like scurvy, rickets, kwashiorkor).\n  * Childhood obesity, chronic fatigue, and poor academic concentration.\n  * Dental cavities and early risk of hypertension and Type 2 diabetes.\n\n- **Physical Health Activities and Their Importance:**\n  * **Activities:** Daily brisk walking, running, rope skipping, playing football, swimming, netball, and traditional indigenous games (pada, nhodo).\n  * **Importance:** Strengthens heart and lung endurance; builds strong bones and muscles; helps burn excess calories to maintain healthy weight; improves mental wellness and sleep quality.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Health & Nutrition',
+        suggestions: ['What are eating disorders?', 'What is a balanced diet?', 'What are the components of physical fitness?']
+      };
+    }
+
+    // 18. Chronic Diseases & Epidemic Diseases
+    if (
+      q.includes('chronic disease') ||
+      q.includes('chronic diseases') ||
+      q.includes('epidemic disease') ||
+      q.includes('epidemic diseases') ||
+      q.includes('diabetes') ||
+      q.includes('hypertension') ||
+      q.includes('asthma')
+    ) {
+      if (q.includes('epidemic')) {
+        return {
+          text: `### Epidemic Diseases\n\n**Epidemic diseases** are infectious illnesses that spread rapidly and affect a large number of people within a community, region, or country over a short period of time.\n\n- **Major Examples in Zimbabwe:**\n  1. **Cholera:** Waterborne bacterial epidemic caused by *Vibrio cholerae*; spreads via contaminated municipal water and unhygienic food.\n  2. **Typhoid Fever:** Bacterial epidemic spread through contaminated water and unwashed food.\n  3. **Measles:** Highly contagious airborne viral infection causing fever and skin rash in unvaccinated children.\n  4. **COVID-19 / Influenza:** Airborne respiratory viral epidemics spreading through breathing droplets.\n\n- **Causes:** Poor municipal sewage disposal, drinking untreated water, overcrowding, unhygienic food handling, and low immunization coverage.\n\n- **Prevention & Control:** Boiling or chlorinating all drinking water; practicing thorough handwashing with soap; isolating infected patients; vaccinating children; and maintaining proper sanitation (VIP latrines).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 1: Health & Hygiene',
+          suggestions: ['What are chronic diseases?', 'What is sugar and salt solution?', 'What are the 6 child-killer diseases?']
+        };
+      }
+
+      if (q.includes('diabetes')) {
+        return {
+          text: `### Diabetes Mellitus\n\n**Diabetes Mellitus** is a chronic non-communicable metabolic disorder where the pancreas fails to produce enough **insulin** (or body cells cannot use insulin), resulting in dangerously high levels of glucose (sugar) in the bloodstream.\n\n- **Symptoms:** Excessive unquenchable thirst, frequent urination (especially at night), extreme hunger, unexplained weight loss, constant fatigue, and slow-healing sores.\n\n- **Management:** Eating traditional unrefined whole grains (sorghum, rapoko, finger millet) rather than refined sugars; regular daily aerobic exercise; routine blood glucose monitoring; and prescribed oral medication or insulin injections.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Chronic Diseases',
+          suggestions: ['What is hypertension?', 'What are chronic diseases?', 'What is asthma?']
+        };
+      }
+
+      if (q.includes('hypertension') || q.includes('high blood pressure')) {
+        return {
+          text: `### Hypertension (High Blood Pressure)\n\n**Hypertension** is a chronic medical condition where the circulating blood exerts persistently abnormally high pressure against the walls of the arteries (consistently above 140/90 mmHg). It is known as the **"silent killer"** because it rarely shows early warning symptoms.\n\n- **Causes & Risk Factors:** Excessive dietary salt intake, lack of physical exercise, obesity, chronic stress, smoking, alcohol abuse, and genetic family history.\n\n- **Complications:** If left unmanaged, hypertension damages blood vessels and causes heart attacks, strokes, and kidney failure.\n\n- **Prevention & Management:** Minimizing salt and salty snacks; eating fresh fruits and vegetables; exercising for at least 30 minutes daily; maintaining healthy body weight; and taking prescribed anti-hypertensive medication.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Chronic Diseases',
+          suggestions: ['Why is hypertension called the silent killer?', 'What is diabetes?', 'What are chronic diseases?']
+        };
+      }
+
+      return {
+        text: `### Chronic Diseases\n\n**Chronic diseases** are long-term, non-communicable medical conditions that develop gradually over time, persist for months or an entire lifetime, cannot be spread from person to person, and require ongoing medical care and healthy lifestyle management.\n\n- **Major Types in Zimbabwe:**\n  1. **Hypertension (High Blood Pressure):** Excessive pressure in arteries; can lead to strokes and heart attacks.\n  2. **Diabetes Mellitus:** Pancreatic insulin deficiency causing elevated blood sugar.\n  3. **Asthma:** Chronic inflammation and narrowing of the bronchial airways with wheezing and shortness of breath.\n  4. **Cancer:** Uncontrolled division of abnormal cells forming tumors (e.g. cervical cancer).\n  5. **Sickle Cell Disease:** Inherited genetic blood disorder causing crescent-shaped red blood cells.\n\n- **Causes & Risk Factors:** Unhealthy diets high in refined sugars and salts, lack of physical activity, smoking, alcohol abuse, environmental pollution, and genetics.\n\n- **Prevention and Management:** Eating heritage unrefined small grains (mhunga, rapoko) and fresh vegetables; exercising daily; reducing salt intake; avoiding smoking/alcohol; and following medical prescriptions.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Chronic Diseases',
+        suggestions: ['What is diabetes?', 'What is hypertension?', 'What are epidemic diseases?']
+      };
+    }
+
+    // 19. Food and Nutrition: Nutrients, Balanced Diet, Deficiency & Excess, Preservation
+    if (
+      q.includes('balanced diet') ||
+      q.includes('food nutrient') ||
+      q.includes('food nutrients') ||
+      q.includes('deficiency disease') ||
+      q.includes('deficiency diseases') ||
+      q.includes('kwashiorkor') ||
+      q.includes('marasmus') ||
+      q.includes('scurvy') ||
+      q.includes('rickets') ||
+      q.includes('goitre') ||
+      q.includes('food preservation') ||
+      q.includes('food preservation methods') ||
+      q.includes('meal planning') ||
+      q.includes('budgeting')
+    ) {
+      if (q.includes('kwashiorkor')) {
+        return {
+          text: `### Kwashiorkor\n\n**Kwashiorkor** is a severe nutritional deficiency disease in young children caused by a severe **lack of protein** in their diet, even when they consume sufficient carbohydrate energy.\n\n- **Key Signs & Symptoms:**\n  * **Oedema (Swollen Belly & Puffy Feet):** Water retention causing swelling in the abdomen, lower legs, and face.\n  * **Hair Discolouration:** Hair becomes thin, brittle, yellowish or reddish-brown, and plucks out easily without pain.\n  * **Skin Changes:** Dark, peeling or flaky skin patches (*flaky paint dermatitis*).\n  * **Behavioral:** Child becomes miserable, apathetic, irritable, and refuses to eat.\n\n- **Prevention & Treatment:** Provide protein-rich meals: milk, eggs, beans, fish, kapenta (*matemba*), groundnuts (*nzungu*), and peanut butter porridge (*nhopi / bota rine dovi*).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 2: Food & Nutrition',
+          suggestions: ['What is marasmus?', 'What is the difference between kwashiorkor and marasmus?', 'What are the food nutrients?']
+        };
+      }
+
+      if (q.includes('marasmus')) {
+        return {
+          text: `### Marasmus\n\n**Marasmus** is a severe form of malnutrition caused by a **total deficiency of all food nutrients and energy (total starvation)**.\n\n- **Key Signs & Symptoms:**\n  * **Severe Muscle Wasting:** Extreme loss of fat and muscle tissue; ribs and bones are clearly visible under the skin ("skin and bone").\n  * **Old Person's Face:** Loose, wrinkled facial skin giving the child the appearance of a tiny elderly person.\n  * **Alert & Voraciously Hungry:** Unlike kwashiorkor, the child remains alert, watchful, and intensely hungry.\n  * **Persistent Diarrhea and Dehydration.**\n\n- **Prevention & Management:** Gradual reintroduction of energy-dense, balanced meals with proteins, healthy fats, carbohydrates, and clean rehydration fluids.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 2: Food & Nutrition',
+          suggestions: ['What is kwashiorkor?', 'What is the difference between kwashiorkor and marasmus?', 'What are the food nutrients?']
+        };
+      }
+
+      if (q.includes('food preservation') || q.includes('food storage') || q.includes('preserve food')) {
+        return {
+          text: `### Food Preservation Methods\n\n**Food preservation** is the process of treating and handling food to stop or slow down spoilage caused by microorganisms (bacteria and fungi) and enzymes, while maintaining nutritional value.\n\n- **Why Food is Preserved:** Prevents food wastage, ensures food security during winter and dry seasons, and prevents foodborne illnesses.\n\n- **Traditional Methods in Zimbabwe:**\n  1. **Sun Drying:** Dehydrating leafy vegetables into dried greens (*mufushwa*) and sliced fresh meat into dried strips (*chimukuyu / biltong*). Moisture removal prevents bacterial growth.\n  2. **Smoking:** Hanging fish and meat over wood smoke; heat dries the food while smoke deposits antimicrobial chemicals.\n  3. **Salting:** Coarse salt draws water out of bacterial and food cells via **osmosis**, dehydrating and killing bacteria.\n  4. **Granaries (*Dura / Isiphala*):** Raised wooden storage huts treated with wood ash to store harvested maize, sorghum, and millet free from weevils.\n\n- **Modern Preservation Methods:** Refrigeration & freezing, canning in airtight tins, and pasteurization of milk.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 2: Food & Nutrition',
+          suggestions: ['How does salting preserve meat using osmosis?', 'What are the food nutrients?', 'What is a balanced diet?']
+        };
+      }
+
+      if (q.includes('budgeting') || q.includes('meal planning')) {
+        return {
+          text: `### Meal Planning and Budgeting\n\n- **What is Budgeting?** **Budgeting** is the process of creating a planned financial estimate of household income and allocating it wisely across food, shelter, school fees, and savings to avoid overspending and ensure financial stability.\n\n- **Benefits of Meal Planning:**\n  * Ensures family meals are nutritionally balanced (including energy-giving, body-building, and protective foods).\n  * Saves money by buying seasonal and local indigenous ingredients in bulk.\n  * Reduces household food waste and saves daily cooking time.\n\n- **Sample Balanced Indigenous Family Meal Plan:**\n  * Sadza rezviyo / mapfunde (unrefined finger millet / sorghum carbohydrates).\n  * Mufushwa une dovi (dried indigenous greens in peanut butter: vitamins, minerals, and healthy fats).\n  * Roadrunner chicken or stewed beans (lean proteins).\n  * Fresh indigenous fruit: *mazhanje* or *matohwe* (vitamin C and dietary roughage).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Food & Nutrition',
+          suggestions: ['What is a balanced diet?', 'What are the 6 food nutrients?', 'What are traditional food preservation methods?']
+        };
+      }
+
+      // Default Food Nutrients & Balanced Diet
+      return {
+        text: `### Food Nutrients, Balanced Diet & Deficiency Diseases\n\n- **What is a Balanced Diet?** A **balanced diet** contains all essential nutrients—carbohydrates, proteins, fats, vitamins, minerals, dietary fibre (roughage), and clean water—in the correct proportions required for energy, growth, tissue repair, and immunity.\n\n- **The Six Core Food Nutrients:**\n  1. **Carbohydrates:** Provide daily energy (sadza, bread, rice, potatoes, sweet potatoes, small grains).\n  2. **Proteins:** Body-building, growth, and tissue repair (beans, meat, fish, eggs, milk, roundnuts / nyimo).\n  3. **Fats & Oils:** Concentrated energy and thermal insulation (cooking oil, butter, groundnuts, avocado).\n  4. **Vitamins:** Immune defense and health (Vitamin A for eyes in carrots; Vitamin C for gums in oranges; Vitamin D for bones in sunlight/milk).\n  5. **Minerals:** Calcium (strong bones/teeth in milk/fish); Iron (haemoglobin for blood in liver/greens); Iodine (prevents goitre in iodized salt).\n  6. **Dietary Fiber (Roughage) & Clean Water:** Prevents constipation and assists peristalsis.\n\n- **Nutritional Deficiency Diseases:**\n  * **Kwashiorkor:** Protein deficiency; swollen belly (oedema), thin reddish hair.\n  * **Marasmus:** Total starvation / calorie-protein lack; severe muscle wasting ("skin & bone").\n  * **Scurvy:** Vitamin C deficiency; bleeding, swollen gums and loose teeth.\n  * **Rickets:** Vitamin D or Calcium deficiency; soft bones, bowed legs.\n  * **Goitre:** Iodine deficiency; swollen thyroid gland in the neck.\n- **Nutrient Excess:** Excess sugar and fat cause obesity and Type 2 diabetes; excess salt causes hypertension.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 2: Food & Nutrition',
+        suggestions: ['What is kwashiorkor?', 'What is marasmus?', 'What are the methods of food preservation?']
+      };
+    }
+
+    // 20. Photosynthesis & Seed Germination
+    if (
+      q.includes('photosynthesis') ||
+      q.includes('germination') ||
+      q.includes('germinate') ||
+      q.includes('test a leaf for starch') ||
+      q.includes('starch test')
+    ) {
+      if (q.includes('germination') || q.includes('germinate')) {
+        return {
+          text: `### Seed Germination\n\n**Germination** is the process by which a dormant viable seed resumes active growth and develops into a young seedling when exposed to favorable environmental conditions.\n\n- **Three Essential Conditions for Germination (The "WOW" Rule):**\n  1. **Water (Moisture):** Softens the tough outer seed coat (*testa*) and activates dormant enzymes to break down stored food in cotyledons.\n  2. **Oxygen:** Essential for **aerobic respiration** to release energy for cell division and growth of the embryo.\n  3. **Warmth (Suitable Temperature, 20°C–30°C):** Activates metabolic enzymes.\n  *(Note: Soil and sunlight are **not** needed for seed germination; seeds germinate readily on moist cotton wool in darkness).*\n\n- **Stages of Germination:**\n  1. **Imbibition:** The seed absorbs water through the micropyle, swells, and the testa bursts open.\n  2. **Radicle Emergence:** The embryonic root (**radicle**) grows downward into the soil to absorb water and anchor the seedling.\n  3. **Plumule Emergence:** The embryonic shoot (**plumule**) grows upward towards light to develop green foliage leaves.\n  4. **Photosynthesis Begins:** The seedling produces its own food as cotyledon reserves are exhausted.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops, Plants & Animals',
+          suggestions: ['What is photosynthesis?', 'What three conditions are necessary for seed germination?', 'How do you test a leaf for starch?']
+        };
+      }
+
+      // Photosynthesis
+      return {
+        text: `### Photosynthesis and Testing a Leaf for Starch\n\n**Photosynthesis** is the biological process by which green plants manufacture their own food (**glucose**) from carbon dioxide and water using radiant solar energy trapped by **chlorophyll**, releasing oxygen as a byproduct.\n\n- **Word Equation:**\n  $$\\text{Carbon Dioxide} + \\text{Water} \\xrightarrow{\\text{Sunlight, Chlorophyll}} \\text{Glucose} + \\text{Oxygen}$$\n- **Chemical Equation:**\n  $$6CO_2 + 6H_2O \\xrightarrow{\\text{Sunlight, Chlorophyll}} C_6H_{12}O_6 + 6O_2$$\n\n- **Four Factors Necessary for Photosynthesis:**\n  1. **Chlorophyll:** Green pigment in chloroplasts that absorbs light energy.\n  2. **Sunlight:** Provides radiant energy to split water molecules.\n  3. **Carbon Dioxide ($CO_2$):** Diffuses into leaves from air through tiny pores called **stomata**.\n  4. **Water ($H_2O$):** Absorbed from soil by root hair cells and carried up through xylem vessels.\n\n- **Step-by-Step Procedure: Testing a Leaf for Starch:**\n  1. **Boil leaf in water for 2 minutes:** Kills leaf cells and stops all chemical reactions.\n  2. **Boil leaf in ethanol (alcohol) using a water bath:** Dissolves and removes green chlorophyll (leaf turns white). *Safety: Never heat ethanol over an open flame as it is highly flammable!*\n  3. **Dip leaf in warm water:** Softens the brittle leaf.\n  4. **Spread leaf on a white tile and add Iodine solution drops:**\n     * If starch is present: Leaf turns **blue-black**.\n     * If starch is absent: Iodine solution stays **yellowish-brown**.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops, Plants & Animals',
+        suggestions: ['What three conditions are necessary for seed germination?', 'What is the word equation for photosynthesis?', 'Why is ethanol boiled in a water bath?']
+      };
+    }
+
+    // 21. Crops, Plant & Animal Nutrients, Uses & Predator-Prey
+    if (
+      q.includes('predator-prey') ||
+      q.includes('predator prey') ||
+      q.includes('food pyramid') ||
+      q.includes('plant nutrient deficiency') ||
+      q.includes('uses of plants') ||
+      q.includes('uses of animals') ||
+      (q.includes('plant') && q.includes('nutrient') && q.includes('deficiency'))
+    ) {
+      if (q.includes('predator') || q.includes('pyramid')) {
+        return {
+          text: `### Predator-Prey Relationships and Food Pyramids\n\n- **Predator:** An animal that actively hunts, kills, and feeds on other animals (e.g. lion, leopard, eagle, hawk).\n- **Prey:** An animal that is hunted and eaten by a predator (e.g. zebra, impala, mouse, hare).\n- **Balance of Nature:** Predators control prey numbers, preventing herbivores from overgrazing pastures and causing land degradation; prey availability regulates predator populations.\n\n- **The Ecological Food Pyramid (Trophic Levels):**\n  1. **Producers (Base - Level 1):** Green plants (grass, trees) that manufacture food via photosynthesis. Holds the **largest total biomass and energy**.\n  2. **Primary Consumers (Level 2):** Herbivores that eat plants (cattle, impalas, grasshoppers).\n  3. **Secondary Consumers (Level 3):** Carnivores and insectivores eating primary consumers (jackals, frogs).\n  4. **Tertiary Consumers (Apex - Level 4):** Top carnivores at the peak with the smallest biomass (lions, eagles).\n- **The 10% Energy Rule:** Only approximately **10%** of energy transfers from one trophic level to the next; 90% is lost through heat, respiration, and movement.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Ecosystems & Ecology',
+          suggestions: ['What is photosynthesis?', 'What are the uses of plants and animals?', 'What are plant nutrient deficiencies?']
+        };
+      }
+
+      if (q.includes('deficiency')) {
+        return {
+          text: `### Plant Nutrient Deficiencies\n\nPlants require three primary macronutrients (NPK) absorbed from the soil:\n\n1. **Nitrogen (N):**\n   - **Role:** Leaf growth, vegetative development, and chlorophyll synthesis.\n   - **Deficiency Signs:** Stunted growth; older lower leaves turn pale yellow (**chlorosis**).\n2. **Phosphorus (P):**\n   - **Role:** Root establishment, early growth, flowering, and seed production.\n   - **Deficiency Signs:** Poor root development; dull bluish-green leaves with purple or reddish tints.\n3. **Potassium (K):**\n   - **Role:** Disease resistance, water regulation, and fruit development.\n   - **Deficiency Signs:** Scorched, burnt brown leaf edges and curled leaf margins.\n\n- **Ways to Curb Plant Nutrient Deficiencies:** Applying organic cattle manure and compost; practicing crop rotation with legumes (beans, groundnuts that fix nitrogen); applying synthetic fertilizers (Compound D for basal roots; Ammonium Nitrate / AN for top dressing).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops & Agriculture',
+          suggestions: ['What are the specifications of a Pfumvudza plot?', 'What are the three essential conditions for seed germination?', 'What is soil erosion?']
+        };
+      }
+
+      return {
+        text: `### Uses of Plants and Animals\n\n- **Uses of Plants:**\n  1. **Food & Nutrition:** Grains (maize, sorghum), legumes (beans, roundnuts), fruits, and vegetables.\n  2. **Medicine & Health:** Traditional herbs (*muringa, mubvamaropa, gavakava / aloe vera*) used for healing ailments.\n  3. **Shelter & Construction:** Timber for roofing poles, grass for thatching huts, timber for furniture.\n  4. **Ecological:** Plants generate oxygen, prevent soil erosion with roots, and act as windbreaks.\n\n- **Uses of Animals:**\n  1. **Food & Nutrition:** Meat (beef, goat, poultry), fresh milk, eggs, honey.\n  2. **Clothing & Textiles:** Cowhide leather for shoes/belts, sheep wool for jerseys and blankets.\n  3. **Draught Power & Transport:** Oxen and donkeys used for ploughing crop fields and pulling scotch-carts.\n  4. **Companionship & Security:** Dogs for guarding homesteads and hunting; cats for controlling rodent pests.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Crops, Plants & Animals',
+        suggestions: ['What is photosynthesis?', 'What are plant nutrient deficiencies?', 'What is seed germination?']
+      };
+    }
+
+    // 22. Pfumvudza / Intwasa Conservation Agriculture & Soils
     if (
       q.includes('pfumvudza') ||
       q.includes('intwasa') ||
       q.includes('planting basin') ||
       q.includes('conservation agriculture') ||
-      q.includes('zero tillage') ||
-      q.includes('minimum tillage')
-    ) {
-      let directAnswer = 'Pfumvudza / Intwasa is Zimbabwe\'s climate-proofed conservation agriculture concept based on **minimum soil disturbance** (digging planting basins only), **permanent soil cover (mulching)**, and **crop rotation**. A standard plot measures **39 m × 16 m** (624 m²) with **28 rows of 52 basins** (1 456 basins total); each basin measures **15 cm × 15 cm × 15 cm**.';
-      return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Pfumvudza / Intwasa
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Pfumvudza (ChiShona) / Intwasa (IsiNdebele) is Zimbabwe's national climate-smart agriculture programme:
-
-1. The Three Core Principles of Conservation Agriculture:
-- **Minimum Soil Disturbance (Zero Tillage):** Only planting basins are dug; no whole-field ploughing, which protects soil structure and preserves beneficial organisms like earthworms.
-- **Permanent Soil Cover (Mulching):** Covering at least 30% to 100% of the ground with dry grass, leaves, or crop residues to conserve soil moisture, stop weed growth, and lower soil temperatures.
-- **Crop Rotation:** Alternating cereal grains (maize, sorghum, millet) with leguminous crops (groundnuts, cowpeas, beans) to replenish soil nitrogen through root nodule bacteria (*Rhizobium*).
-
-2. Standard Plot Dimensions (ZIMSEC Exam Facts):
-- **Plot Dimensions:** 39 metres long × 16 metres wide = 624 m² (1/16th of a hectare).
-- **Basin Dimensions:** 15 cm length × 15 cm width × 15 cm depth.
-- **Row & Basin Count:** 28 rows with 52 basins each = **1 456 planting basins** per standard plot.
-- **Spacing:** 60 cm between basins within a row; 75 cm between rows.
-
-3. Planting and Fertilizer Micro-Dosing:
-- **Basal Dressing:** 1 handful of well-rotted cattle manure or 1 matchbox of Compound D fertilizer placed in the bottom of each basin before planting and covered with a 2 cm layer of soil.
-- **Seeding & Thinning:** 3 maize seeds planted per basin at onset of rains; thinned to **2 plants per basin** 2–3 weeks after emergence (giving 2 912 maize plants per standard plot, yielding ~1 tonne of grain).
-- **Top Dressing:** 1 matchbox of Ammonium Nitrate (AN) applied per basin when maize is knee-high (4–6 weeks after emergence), placed 5 cm from stems.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Pfumvudza',
-        suggestions: [
-          'What are the causes and types of soil erosion?',
-          'What are the "Big Four" tick-borne diseases in cattle?',
-          'What are the three classes of levers?'
-        ]
-      };
-    }
-
-    // 2. Soil Science, Soil Types, Erosion, and Fertilizers
-    if (
       q.includes('soil erosion') ||
-      q.includes('types of soil') ||
-      q.includes('clay soil') ||
-      q.includes('sandy soil') ||
-      q.includes('loam soil') ||
-      q.includes('contour ridge') ||
-      q.includes('gully erosion') ||
-      q.includes('rill erosion') ||
-      q.includes('sheet erosion') ||
-      q.includes('splash erosion') ||
-      q.includes('vetiver grass') ||
-      q.includes('compound d') ||
-      q.includes('ammonium nitrate') ||
-      q.includes('top dressing') ||
-      q.includes('basal dressing')
+      q.includes('soil type')
     ) {
-      let directAnswer = '';
-      if (q.includes('erosion') || q.includes('gully') || q.includes('contour')) {
-        directAnswer = 'The 4 types of water erosion are **splash, sheet, rill, and gully erosion**. Gully erosion is the most severe and forms deep ravines (dongas); it is controlled by **contour ridges, vetiver grass hedgerows, terracing, and stone check dams**.';
-      } else if (q.includes('soil type') || q.includes('clay') || q.includes('sand') || q.includes('loam')) {
-        directAnswer = '**Loam soil** is the best soil for growing crops because it has a balanced mixture of sand, silt, clay, and organic humus. **Clay** has the highest water retention but drains poorly; **sand** drains very rapidly and leaches nutrients easily.';
-      } else if (q.includes('fertilizer') || q.includes('compound d') || q.includes('ammonium nitrate')) {
-        directAnswer = '**Compound D (7:14:7)** is applied as **basal dressing** at planting to stimulate strong root development; **Ammonium Nitrate / AN (34.5% N)** is applied as **top dressing** at knee-height (4–6 weeks) for rapid green leaf growth.';
+      if (q.includes('erosion')) {
+        return {
+          text: `### Soil Erosion and Conservation\n\n**Soil erosion** is the detachment and washing or blowing away of fertile topsoil by water or wind.\n\n- **Types of Water Erosion:**\n  1. **Splash Erosion:** Raindrops batter bare soil, dislodging fine soil particles.\n  2. **Sheet Erosion:** Surface runoff removes a thin, uniform top layer of fertile soil across an entire field.\n  3. **Rill Erosion:** Small, shallow finger-like rivulets carved into sloping soil by running water.\n  4. **Gully Erosion:** Deep, wide steep-sided ravines (*makoronga*) carved by violent torrents of water.\n\n- **Methods of Controlling Soil Erosion:**\n  * Constructing contour ridges and storm drains to safely divert runoff.\n  * Mulching bare ground with crop stover (as in Pfumvudza).\n  * Planting vetiver grass along slopes and practicing terracing.\n  * Planting trees (afforestation and reforestation).\n  * Practicing crop rotation and avoiding overgrazing in communal pastures.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Agriculture & Soil',
+          suggestions: ['What are the specifications of a Pfumvudza plot?', 'What are the three main types of soil?', 'What is weathering?']
+        };
       }
 
       return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Soil Science & Erosion
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key soil science principles tested in ZIMSEC Grade 7:
-
-1. Comparison of Soil Types:
-- **Sandy Soil:** Large coarse particles, gritty feel, large pore spaces, rapid drainage, low water-holding capacity, easily leached of nutrients, warms up quickly, easy to cultivate.
-- **Clay Soil:** Very fine microscopic particles, sticky and smooth when wet, tiny pores, high water retention, easily waterlogged, cracks deeply when dry, rich in plant nutrients, heavy and difficult to plough.
-- **Loam Soil:** Ideal mixture of sand, silt, and clay rich in organic humus; good aeration and optimal water-holding capacity; best for virtually all agricultural crops.
-
-2. Types of Soil Erosion:
-- **Splash Erosion:** Direct impact of falling raindrops blasting soil particles out of position.
-- **Sheet Erosion:** Uniform stripping away of a thin top layer of soil by shallow surface runoff.
-- **Rill Erosion:** Runoff carves small, finger-like channels that can still be smoothed out by normal ploughing.
-- **Gully Erosion:** Rills deepen and widen into deep ditches (dongas) that cannot be crossed by ordinary tractors or ploughs.
-
-3. Methods of Soil Conservation:
-- **Contour Ridges:** Earth banks built across the slope to intercept runoff and divert water gently into a grass waterway.
-- **Vetiver Grass Hedgerows:** Dense grass clumps planted along contours that filter soil and slow water runoff.
-- **Terracing:** Stepped flat beds built on steep slopes.
-- **Mulching:** Covering bare ground with plant matter to absorb the kinetic energy of raindrops.
-- **Check Dams:** Wire mesh or stone barriers placed across gullies to trap silt.
-
-4. Fertilizers & Plant Nutrition:
-- **Compound D (N:P:K = 7:14:7):** High in Phosphorus (P) for root establishment; applied as **basal dressing** at or before planting.
-- **Ammonium Nitrate (AN - 34.5% Nitrogen):** Applied as **top dressing** at knee-height for leafy growth and chlorophyll formation.
-- **Agricultural Lime:** Used to correct soil acidity (raises soil pH).`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Soil Management',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the "Big Four" tick-borne diseases in cattle?',
-          'What are the three classes of levers?'
-        ]
+        text: `### Pfumvudza / Intwasa Climate-Proofed Agriculture\n\n**Pfumvudza / Intwasa** is Zimbabwe's national climate-smart conservation agriculture concept designed to maximize crop yields per unit area through precise moisture conservation.\n\n- **The Three Core Principles:**\n  1. **Minimum Soil Disturbance:** Tillage is restricted strictly to digging small planting basins, leaving inter-row soil structure undisturbed.\n  2. **Permanent Soil Cover (Mulching):** Covering the field with crop residue, dry grass, or stover to conserve soil moisture, suppress weed growth, and reduce soil temperatures.\n  3. **Crop Rotation:** Alternating cereal grains (maize, sorghum) with leguminous crops (beans, groundnuts, cowpeas) to replenish nitrogen and break pest cycles.\n\n- **Standard Plot Specifications (ZIMSEC Exam Standards):**\n  * **Plot Dimensions:** **39 metres × 16 metres** (Total area = **624 m²** = 1/16th of a hectare).\n  * **Basin Layout:** **28 rows** spaced **75 cm apart**.\n  * **Basins per Row:** **52 planting basins** spaced **60 cm apart**.\n  * **Total Basins per Standard Plot:** **1 456 basins** ($28 \\times 52$).\n  * **Basin Measurements:** Length: **15 cm**, Width: **15 cm**, Depth: **15 cm**.\n  * **Plant Population:** 3 seeds planted per basin, thinned to **2 plants per basin** (Total = 2 912 maize plants per plot yielding 1 tonne of grain).`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 3: Agriculture',
+        suggestions: ['What are the three core principles of Pfumvudza?', 'How do you control soil erosion?', 'What are the three main types of soil?']
       };
     }
 
-    // 3. Crop Pests, Diseases, and Problem Weeds
+    // 23. Weathering of Rocks & Soil Profile
     if (
-      q.includes('fall armyworm') ||
-      q.includes('stalk borer') ||
-      q.includes('cutworm') ||
-      q.includes('cutworms') ||
-      q.includes('aphid') ||
-      q.includes('aphids') ||
-      q.includes('red spider mite') ||
-      q.includes('blight') ||
-      q.includes('maize streak') ||
-      q.includes('damping off') ||
-      q.includes('blackjack') ||
-      q.includes('witchweed') ||
-      q.includes('striga') ||
-      q.includes('wandering jew')
+      q.includes('weathering') ||
+      q.includes('soil profile') ||
+      q.includes('soil horizons')
     ) {
-      let directAnswer = '';
-      if (q.includes('fall armyworm')) {
-        directAnswer = 'The **Fall Armyworm** attacks maize funnels, leaves, and cobs. It is identified by an **inverted "Y" mark on its head** and **4 raised spots arranged in a square on the 8th segment** of its abdomen.';
-      } else if (q.includes('stalk borer')) {
-        directAnswer = 'The **Maize Stalk Borer** larva tunnels inside the maize stem, causing **"dead heart"** (drying up of central leaves) and weakened stems that snap easily.';
-      } else if (q.includes('cutworm')) {
-        directAnswer = '**Cutworms** hide under the soil during the day and come out at night to **cut young crop seedlings off at ground level**.';
-      } else if (q.includes('striga') || q.includes('witchweed')) {
-        directAnswer = '**Witchweed (Striga / Isona)** is a **parasitic weed** whose roots attach directly to maize and sorghum roots, sucking nutrients and water and stunting crop growth.';
-      } else if (q.includes('blight')) {
-        directAnswer = '**Late and Early Blight** are destructive fungal diseases affecting tomatoes and potatoes, causing dark water-soaked spots on leaves and stems and white mold underneath during humid weather.';
+      if (q.includes('soil profile') || q.includes('horizon')) {
+        return {
+          text: `### The Soil Profile\n\nA **soil profile** is a vertical cross-section of soil from the surface down to the underlying parent bedrock, displaying distinct horizontal layers called **horizons**:\n\n- **Horizon O (Organic Layer):** Fresh and decaying plant litter, dry leaves, and dark rich humus.\n- **Horizon A (Topsoil):** The darkest, most fertile mineral layer; rich in humus, earthworms, plant roots, and beneficial microorganisms. Seed germination and nutrient uptake occur here.\n- **Horizon B (Subsoil):** Compact, lighter-colored layer rich in clay and minerals leached down from topsoil; poorer aeration.\n- **Horizon C (Weathered Parent Rock):** Broken, fractured rock pieces with no organic content; transition between bedrock and soil.\n- **Horizon R (Solid Bedrock):** Unweathered, solid parent rock forming the base.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 4: Environment',
+          suggestions: ['What is weathering of rocks?', 'What is the difference between weathering and erosion?', 'What are the three types of soil?']
+        };
       }
 
       return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Crop Pests & Diseases
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key crop protection knowledge tested in ZIMSEC Grade 7:
-
-1. Major Crop Pests:
-- **Fall Armyworm (*Spodoptera frugiperda*):** Feeds inside maize funnels, shredding leaves and boring into cobs. Identification: inverted 'Y' on head, 4 black dots in a square on the 8th abdominal segment.
-- **Maize Stalk Borer (*Busseola fusca*):** Larva bores into the growing stem, producing sawdust-like frass and causing "dead heart". Controlled by Carbaryl or Dipterex granules dropped into funnels.
-- **Cutworms:** Smooth grey/black caterpillars that curl into a 'C' shape when disturbed. They cut seedling stems at the soil surface at night.
-- **Aphids:** Small sap-sucking insects that cause leaf curling, excrete sticky honeydew, and transmit viral diseases (e.g. Groundnut rosette virus).
-- **Red Spider Mites:** Spin fine webbings under tomato/cotton leaves under hot, dry conditions, causing leaves to turn bronze and drop.
-
-2. Plant Diseases:
-- **Early & Late Blight (Fungal):** Attacks tomatoes and potatoes; leaves turn brown/black with white fuzzy mold underneath in damp weather. Controlled by Copper Oxychloride or Mancozeb/Dithane M45.
-- **Maize Streak Virus:** Spread by leafhoppers; causes thin continuous yellow streaks along leaf veins and severe plant stunting. Prevented by planting certified resistant seed varieties.
-- **Damping-Off:** Fungal infection causing tender vegetable seedlings in nursery seedbeds to rot and collapse at ground level. Prevented by avoiding over-watering and sterilizing soil.
-
-3. Problem Weeds:
-- **Blackjack (*Tsine* / *Uqhume*):** Annual weed with barbed needle-like seeds that cling to animal coats and clothing.
-- **Witchweed (*Striga asiatica* / *Isona*):** Parasitic weed that attaches to cereal roots and steals water and nutrients.
-- **Wandering Jew (*Commelina benghalensis*):** Creeping weed with blue flowers that regenerates aggressively from root and stem pieces.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Crop Protection',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the "Big Four" tick-borne diseases in cattle?',
-          'What are the three classes of levers?'
-        ]
+        text: `### Weathering of Rocks\n\n**Weathering** is the breaking down, crumbling, and chemical decomposition of rocks *in situ* (in their original place on the Earth's surface) without transport by water, wind, or ice.\n\n- **The Three Main Types of Weathering:**\n  1. **Physical (Mechanical) Weathering:** Rocks disintegrate without altering their chemical composition:\n     * **Exfoliation (Onion-skin peeling):** Daytime sun heats and expands rock outer layers; cold nights contract them. Outer curved shells peel off (seen on granite kopjes at Domboshava and Matobo Hills).\n     * **Freeze-Thaw (Frost Action):** Water in rock cracks freezes below 0°C, expands by 9%, and wedges fissures wider until rocks split.\n  2. **Chemical Weathering:** Rock minerals react chemically with water and air:\n     * **Carbonation:** Rainwater dissolves atmospheric $CO_2$ forming weak carbonic acid, which dissolves limestone (forming Chinhoyi Caves).\n     * **Oxidation (Rusting):** Oxygen in air/water reacts with iron in rocks, turning them crumbly and reddish-brown.\n  3. **Biological Weathering:** Breakdown caused by living organisms:\n     * **Tree Roots:** Roots grow into rock crevices, exerting outward wedge pressure that splits boulders.\n     * **Burrowing Animals & Lichens:** Termites and moles loosen soil; lichens release acids that etch rock surfaces.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Topic 4: Environment',
+        suggestions: ['What is the difference between weathering and erosion?', 'What are the horizons of a soil profile?', 'What are the types of soil?']
       };
     }
 
-    // 4. Animal Husbandry, Cattle Breeds, and Livestock Diseases
-    if (
-      q.includes('mashona cattle') ||
-      q.includes('brahman') ||
-      q.includes('tuli') ||
-      q.includes('friesian') ||
-      q.includes('jersey') ||
-      q.includes('broiler') ||
-      q.includes('layer') ||
-      q.includes('roadrunner') ||
-      q.includes('heartwater') ||
-      q.includes('redwater') ||
-      q.includes('gall sickness') ||
-      q.includes('january disease') ||
-      q.includes('theileriosis') ||
-      q.includes('tick-borne') ||
-      q.includes('cattle dipping') ||
-      q.includes('anthrax') ||
-      q.includes('newcastle disease') ||
-      q.includes('carcass')
-    ) {
-      let directAnswer = '';
-      if (q.includes('anthrax')) {
-        directAnswer = '**Anthrax** is a deadly bacterial disease. Symptoms: sudden death with **dark, tarry, un-clotted blood oozing from body openings**. **CRITICAL RULE:** **NEVER open, skin, or eat the carcass!** It must be buried at least 2 metres deep with quicklime or completely incinerated.';
-      } else if (q.includes('newcastle')) {
-        directAnswer = '**Newcastle Disease** is a highly fatal viral poultry disease. Symptoms include **twisted neck (torticollis)**, greenish watery diarrhea, coughing, and sudden high death rate. It is prevented by **Hitchner B1 and LaSota vaccination**.';
-      } else if (q.includes('heartwater')) {
-        directAnswer = '**Heartwater** is transmitted by the **Bont tick**. It causes fluid accumulation in the pericardial sac around the heart, high fever, and nervous symptoms like high-stepping gait and chewing movements.';
-      } else if (q.includes('redwater')) {
-        directAnswer = '**Redwater (Babesiosis)** is transmitted by the **Blue tick**. Symptoms include **red/coffee-colored urine (haemoglobinuria)**, high fever, and severe anemia.';
-      } else if (q.includes('january disease') || q.includes('theileriosis')) {
-        directAnswer = '**January Disease (Theileriosis)** is transmitted by the **Brown ear tick** during rainy summer months. Symptoms include swollen lymph nodes, fever, and fluid in the lungs. Controlled by the **5-5-4 dipping interval**.';
-      } else if (q.includes('mashona')) {
-        directAnswer = '**Mashona cattle** are an indigenous Zimbabwean beef breed known for exceptional **hardiness, tick and disease resistance, drought tolerance, and high fertility** on natural veld.';
-      } else if (q.includes('friesian') || q.includes('dairy')) {
-        directAnswer = '**Friesian / Holstein** (black and white) produces the highest volume of milk; **Jersey** cattle produce milk with the highest butterfat (cream) content.';
-      }
-
-      return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Livestock & Disease Control
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key livestock management principles tested in ZIMSEC Grade 7:
-
-1. Livestock Breeds in Zimbabwe:
-- **Beef Cattle:** Mashona (indigenous, hardy, high tick/drought resistance), Tuli (indigenous, polled, good beef conversion), Brahman (heat-tolerant with hump and loose skin), Hereford, Aberdeen Angus.
-- **Dairy Cattle:** Friesian / Holstein (highest milk yield), Jersey (smaller fawn body, richest creamy milk high in butterfat), Guernsey.
-- **Poultry:**
-  * Broilers (Cobb, Ross): Reared for meat; reach 1.8–2.2 kg in 5–6 weeks on Starter, Grower, and Finisher feeds.
-  * Layers (Hy-Line, Lohmann): Reared for eggs; begin laying at 18–20 weeks; produce 280–320 eggs per year.
-  * Indigenous Roadrunners: Free-range, highly disease-resistant, hardy scavengers.
-
-2. The "Big Four" Tick-Borne Cattle Diseases:
-- **Heartwater:** Transmitted by **Bont tick** (*Amblyomma hebraeum*). Symptoms: fluid in heart sac, nervous convulsions, high-stepping gait.
-- **Redwater (Babesiosis):** Transmitted by **Blue tick** (*Rhipicephalus decoloratus*). Symptoms: red/dark coffee urine, pale gums, fever.
-- **Gall Sickness (Anaplasmosis):** Transmitted by **Blue tick**. Symptoms: yellow eyes/gums (jaundice), severe constipation with hard dry dung.
-- **January Disease (Theileriosis):** Transmitted by **Brown ear tick** (*Rhipicephalus appendiculatus*). Swollen lymph nodes behind ears and shoulders, respiratory distress. Controlled by intensive summer dipping (5-5-4 dipping interval).
-
-3. Anthrax (*Bacillus anthracis*):
-- Deadly bacterial disease affecting livestock and humans (zoonotic).
-- Symptoms: Sudden unexplained death; bloated carcass; dark un-clotted blood oozing from mouth, nostrils, and anus; no rigor mortis.
-- **ZIMSEC Golden Rule:** **NEVER cut open or consume an anthrax carcass!** Spores contaminate the soil for over 50 years. Bury at least 2 m deep covered with quicklime.
-
-4. Newcastle Disease:
-- Viral disease of poultry causing twisted neck, greenish watery droppings, and mass deaths. Prevented through regular vaccination.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Animal Husbandry',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the three classes of levers?',
-          'What causes malaria and cholera?'
-        ]
-      };
-    }
-
-    // 5. Simple Machines, Levers, and Farm Tools
-    if (
-      q.includes('lever') ||
-      q.includes('levers') ||
-      q.includes('first class lever') ||
-      q.includes('second class lever') ||
-      q.includes('third class lever') ||
-      q.includes('fulcrum') ||
-      q.includes('wheelbarrow') ||
-      q.includes('pulley') ||
-      q.includes('inclined plane') ||
-      q.includes('wheel and axle') ||
-      q.includes('badza') ||
-      q.includes('farm tools') ||
-      q.includes('hoe and spade')
-    ) {
-      let directAnswer = '';
-      if (q.includes('first class')) {
-        directAnswer = 'In a **First Class Lever**, the **Fulcrum is in the middle** between the Load and the Effort (L - F - E). Examples: **crowbar, scissors, pliers, see-saw, claw hammer pulling a nail**.';
-      } else if (q.includes('second class') || q.includes('wheelbarrow')) {
-        directAnswer = 'In a **Second Class Lever**, the **Load is in the middle** between the Fulcrum and the Effort (F - L - E). Examples: **wheelbarrow, nutcracker, bottle opener**. It always acts as a force multiplier.';
-      } else if (q.includes('third class') || q.includes('spade') || q.includes('shovel')) {
-        directAnswer = 'In a **Third Class Lever**, the **Effort is in the middle** between the Fulcrum and the Load (F - E - L). Examples: **spade/shovel lifting dirt, broom, fishing rod, braai tongs, tweezers**.';
-      } else if (q.includes('pulley')) {
-        directAnswer = 'A **fixed pulley** changes the direction of force (e.g. hoisting a flag); a **movable pulley system (block and tackle)** halves the effort required to lift heavy weights.';
-      }
-
-      return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Simple Machines & Farm Tools
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Simple machines make work easier by multiplying force, distance, or changing direction:
-
-1. The Three Classes of Levers (ZIMSEC Exam Identification):
-- **Class 1 (Fulcrum in the Middle - L - F - E):**
-  * The pivot point sits between the Load and Effort.
-  * Examples: **Crowbar, scissors, pliers, see-saw, claw hammer pulling a nail**.
-- **Class 2 (Load in the Middle - F - L - E):**
-  * The Load sits between the Fulcrum and Effort.
-  * Examples: **Wheelbarrow, nutcracker, bottle opener**.
-  * Advantage: Always multiplies force because the effort arm is longer than the load arm.
-- **Class 3 (Effort in the Middle - F - E - L):**
-  * The Effort is applied between the Fulcrum and Load.
-  * Examples: **Spade/shovel (when lifting soil), broom sweeping, fishing rod, braai tongs, tweezers, human bicep forearm**.
-  * Advantage: Increases speed and distance moved.
-
-2. Other Simple Machines:
-- **Inclined Plane (Ramp):** Sloping surface to push heavy bags/drums onto a lorry or scotch cart.
-- **Wheel and Axle:** Large wheel turning a smaller axle (e.g. windlass over a well, screwdriver, steering wheel).
-- **Pulleys:** Grooved wheel with a rope. Fixed pulley changes direction; movable pulley halves effort.
-- **Screw:** Inclined plane wound around a cylinder (e.g. car screw jack).
-
-3. Farm Hand Tools & Maintenance:
-- **Hoe (*Badza*):** Digging planting basins, weeding, earthing up crops.
-- **Spade:** Straight flat blade for digging neat trench edges and slicing roots.
-- **Shovel:** Curved blade with raised sides for scooping loose soil, sand, or manure.
-- **Garden Fork:** Loosening hard compacted soil and aerating compost heaps.
-- **Rake:** Leveling fine seedbeds and gathering trash.
-- **Tool Maintenance:** Wash off dirt, dry thoroughly, apply used engine oil to metal parts to prevent rust, sharpen cutting edges with a file, store hanging in a dry tool shed.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Simple Machines',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the "Big Four" tick-borne diseases in cattle?',
-          'What causes malaria and cholera?'
-        ]
-      };
-    }
-
-    // 6. Human Body Systems & Communicable Diseases
-    if (
-      q.includes('digestive system') ||
-      q.includes('peristalsis') ||
-      q.includes('villi') ||
-      q.includes('circulatory system') ||
-      q.includes('chambers of the heart') ||
-      q.includes('arteries and veins') ||
-      q.includes('respiratory system') ||
-      q.includes('alveoli') ||
-      q.includes('gas exchange') ||
-      q.includes('malaria') ||
-      q.includes('anopheles') ||
-      q.includes('cholera') ||
-      q.includes('oral rehydration') ||
-      q.includes('ors') ||
-      q.includes('bilharzia') ||
-      q.includes('schistosoma') ||
-      q.includes('haematuria') ||
-      q.includes('blood in urine') ||
-      q.includes('hiv') ||
-      q.includes('aids')
-    ) {
-      let directAnswer = '';
-      if (q.includes('cholera') || q.includes('ors') || q.includes('oral rehydration')) {
-        directAnswer = '**Cholera** is a waterborne bacterial disease (*Vibrio cholerae*) causing profuse painless **"rice-water" diarrhea** and vomiting. Emergency **Oral Rehydration Solution (ORS)** recipe: **1 litre clean boiled water + 6 level teaspoons sugar + 1/2 level teaspoon salt**.';
-      } else if (q.includes('malaria')) {
-        directAnswer = '**Malaria** is caused by the microscopic parasite ***Plasmodium***, transmitted by the bite of an infected **female *Anopheles* mosquito** (active at night). Prevented by insecticide-treated nets (ITNs) and clearing stagnant puddles.';
-      } else if (q.includes('bilharzia') || q.includes('schistosoma') || q.includes('blood in urine')) {
-        directAnswer = '**Bilharzia (Schistosomiasis)** is caused by a parasitic flatworm (*Schistosoma*) using **freshwater aquatic snails** as intermediate hosts. Symptoms include **blood in urine (haematuria)** after wading in slow-moving or stagnant water.';
-      } else if (q.includes('heart') || q.includes('circulatory') || q.includes('arteries')) {
-        directAnswer = 'The human heart has **4 chambers** (Right Atrium, Right Ventricle, Left Atrium, Left Ventricle). **Arteries** carry oxygenated blood away from the heart under high pressure; **veins** return deoxygenated blood to the heart and contain valves.';
-      } else if (q.includes('digestive') || q.includes('villi') || q.includes('peristalsis')) {
-        directAnswer = '**Peristalsis** is the wave-like muscular contraction that pushes food down the gullet. Digested nutrients are absorbed into the bloodstream in the small intestine through millions of tiny finger-like projections called **villi**.';
-      }
-
-      return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Human Health & Diseases
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key human biology and health topics in ZIMSEC Grade 7:
-
-1. Human Body Systems:
-- **Digestive System:**
-  * Mouth: Chewing and saliva (amylase enzyme breaks down cooked starch).
-  * Esophagus (Gullet): Peristalsis moves food bolus to stomach.
-  * Stomach: Secretes hydrochloric acid (kills germs) and pepsin (protein digestion).
-  * Small Intestine: Digestion completed with bile and pancreatic enzymes; nutrients absorbed into blood through **villi**.
-  * Large Intestine: Absorbs excess water, forming feces stored in rectum.
-- **Circulatory System:**
-  * 4 Chambers: Right Atrium -> Right Ventricle (pumps blood to lungs); Left Atrium -> Left Ventricle (thick muscular wall pumps blood through aorta to whole body).
-  * Arteries: Carry blood AWAY from heart under high pressure (thick elastic walls).
-  * Veins: Return blood TO heart under low pressure (contain valves to prevent backflow).
-  * Capillaries: Microscopic 1-cell thick walls for gas/nutrient exchange.
-- **Respiratory System:**
-  * Trachea -> Bronchi -> Bronchioles -> Alveoli.
-  * Gas exchange occurs in the alveoli: Oxygen diffuses into red blood cells, carbon dioxide diffuses out to be exhaled.
-
-2. Major Communicable Diseases:
-- **Malaria:** Caused by *Plasmodium* parasite; spread by female *Anopheles* mosquito. Prevention: insecticide-treated bed nets, draining stagnant water.
-- **Cholera:** Caused by *Vibrio cholerae* bacteria in contaminated water/food. Symptoms: rice-water diarrhea, rapid dehydration. Emergency ORS: 1 L boiled water + 6 level tsp sugar + 1/2 level tsp salt.
-- **Bilharzia:** Caused by *Schistosoma* flatworm from freshwater aquatic snails (*Bulinus* / *Biomphalaria*). Symptom: blood in urine (*haematuria*). Prevented by avoiding wading in stagnant pools.
-- **HIV/AIDS:** Attacks immune CD4 cells. Prevented by abstinence, faithfulness, safe hygiene; managed with daily Antiretroviral Therapy (ART).`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Human Health',
-        suggestions: [
-          'What are the weather instruments and their uses?',
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the three classes of levers?'
-        ]
-      };
-    }
-
-    // 7. Weather Instruments & Water Cycle
+    // 24. Weather Instruments & Water Cycle
     if (
       q.includes('weather instrument') ||
       q.includes('rain gauge') ||
@@ -3861,115 +5532,192 @@ Key human biology and health topics in ZIMSEC Grade 7:
       q.includes('barometer') ||
       q.includes('hygrometer') ||
       q.includes('stevenson screen') ||
-      q.includes('water cycle') ||
-      q.includes('transpiration') ||
-      q.includes('condensation') ||
-      q.includes('precipitation')
+      q.includes('water cycle')
     ) {
-      let directAnswer = '';
-      if (q.includes('rain gauge')) {
-        directAnswer = 'A **rain gauge** measures rainfall in **millimetres (mm)**. It is installed in an open area at least **30 cm above ground level** (to avoid splash) and twice the distance away from tall trees or buildings.';
-      } else if (q.includes('anemometer') || q.includes('wind speed')) {
-        directAnswer = 'An **anemometer** measures **wind speed** in km/h or knots using rotating hemispherical cups.';
-      } else if (q.includes('wind vane') || q.includes('wind direction')) {
-        directAnswer = 'A **wind vane** shows **wind direction**; the arrow points to the direction the wind is blowing **FROM**.';
-      } else if (q.includes('barometer')) {
-        directAnswer = 'A **barometer** measures **atmospheric pressure** in millibars (mb) or hectopascals (hPa). Falling pressure indicates an approaching storm or rain.';
-      } else if (q.includes('water cycle') || q.includes('evaporation') || q.includes('transpiration')) {
-        directAnswer = 'The **water cycle** consists of **evaporation** (water to vapor), **transpiration** (loss of water vapor from leaf stomata), **condensation** (vapor cools to form clouds), **precipitation** (rain/hail), and **percolation** into groundwater.';
+      if (q.includes('water cycle')) {
+        return {
+          text: `### The Water Cycle (Hydrological Cycle)\n\nThe **water cycle** is the continuous movement of water from the Earth's surface into the atmosphere and back through physical phase changes:\n\n1. **Evaporation:** The sun heats surface water in oceans, lakes, and rivers, transforming liquid water into invisible **water vapor** that rises into the atmosphere.\n2. **Transpiration:** Plant leaves release water vapor into the air through microscopic leaf pores called **stomata**.\n3. **Condensation:** Rising water vapor cools down at higher altitudes, condensing into tiny liquid water droplets around dust particles to form **clouds**.\n4. **Precipitation:** As cloud droplets merge and grow too heavy to remain suspended in air, they fall back to the ground as **rain, drizzle, hail, or snow**.\n5. **Percolation & Infiltration:** Rainwater soaks into the ground to recharge groundwater aquifers and boreholes, while excess water forms surface runoff returning to rivers and dams.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Weather & Climate',
+          suggestions: ['What are the weather instruments and their functions?', 'What is a rain gauge?', 'What is a Stevenson Screen?']
+        };
       }
 
       return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): Weather & Water Cycle
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key meteorology principles in ZIMSEC Grade 7:
-
-1. Weather Instruments and their Functions:
-- **Rain Gauge:** Measures rainfall in millimetres (mm). Installed 30 cm above ground in an open space twice the distance from obstacles.
-- **Six's Maximum & Minimum Thermometer:** Records highest day and lowest night temperatures in °C. Housed in a wooden Stevenson Screen with louvered sides for shaded ventilation.
-- **Wind Vane:** Shows the direction the wind is blowing FROM.
-- **Anemometer:** Measures wind speed in km/h using revolving cups.
-- **Barometer:** Measures atmospheric air pressure in mb or hPa.
-- **Hygrometer (Wet and Dry Bulb Thermometer):** Measures relative humidity (% moisture in air).
-
-2. Stages of the Water Cycle:
-- **Evaporation:** Solar heat turns surface water into invisible water vapor.
-- **Transpiration:** Plants release water vapor into the air through microscopic leaf pores called **stomata**.
-- **Condensation:** Rising water vapor cools and condenses into tiny liquid droplets, forming **clouds**.
-- **Precipitation:** Condensed droplets merge, become heavy, and fall as rain or hail.
-- **Percolation / Infiltration:** Rainwater soaks into deep soil layers to recharge groundwater aquifers feeding wells and boreholes.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Weather',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the three classes of levers?',
-          'What are computer input and output devices?'
-        ]
+        text: `### Weather Instruments and Their Functions\n\n1. **Rain Gauge:** Measures rainfall in **millimetres (mm)**. Sited in an open space twice the distance from tall trees/buildings, with its rim **30 cm above ground** to prevent splash-in.\n2. **Six's Maximum & Minimum Thermometer:** Records the highest daytime and lowest nighttime temperatures in **degrees Celsius (°C)**. Housed in a **Stevenson Screen** (a white, double-louvered wooden box raised 1.2m above ground to allow shade and free air circulation).\n3. **Wind Vane:** Shows **wind direction**; the arrow points in the direction the wind is blowing **FROM**.\n4. **Anemometer:** Measures **wind speed** in **kilometres per hour (km/h)** or knots using revolving hemispherical cups.\n5. **Barometer:** Measures **atmospheric pressure** in millibars (mb) or hectopascals (hPa). Rapidly falling pressure warns of an approaching storm.\n6. **Hygrometer (Wet & Dry Bulb Thermometer):** Measures **relative humidity** (the amount of water vapor in the air as a percentage).`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Weather & Climate',
+        suggestions: ['What is the water cycle?', 'Why is a Stevenson Screen painted white?', 'What does an anemometer measure?']
       };
     }
 
-    // 8. ICT Hardware, Software, and Cyber Safety
+    // 25. Energy, Sound Energy, Transformations & Fuels
     if (
-      q.includes('hardware') ||
-      q.includes('software') ||
+      q.includes('sound energy') ||
+      q.includes('energy conversion') ||
+      q.includes('energy transformation') ||
+      q.includes('pitch and loudness') ||
+      q.includes('vacuum') ||
+      q.includes('impact of fuel') ||
+      q.includes('impacts of fuels') ||
+      q.includes('carbon monoxide')
+    ) {
+      if (q.includes('carbon monoxide') || q.includes('mbaura') || q.includes('fuel')) {
+        return {
+          text: `### Environmental and Health Impacts of Fuels\n\n- **Carbon Monoxide (CO) Poisoning:** Burning coal, charcoal, or firewood in enclosed rooms (*mbaura*) with closed windows releases odorless, colorless **carbon monoxide gas**. CO binds irreversibly with blood haemoglobin, blocking oxygen transport to the brain and causing death by asphyxiation.\n- **Acid Rain:** Burning coal in thermal power stations (Hwange) releases sulfur dioxide ($SO_2$) and nitrogen oxides, which dissolve in rain clouds to form sulfuric and nitric acids that damage forests and kill fish in rivers.\n- **Deforestation:** Cutting down trees for firewood and tobacco curing accelerates soil erosion and destroys natural habitats.\n- **Global Warming:** Carbon dioxide emissions trap solar heat in the atmosphere, driving droughts and violent cyclones.\n- **Clean Green Solutions:** Rooftop solar energy, rural biogas digesters using cow dung, and fuel-efficient wood stoves (*tsotso stoves*).`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Energy & Fuels',
+          suggestions: ['Why is sleeping with a burning brazier (mbaura) dangerous?', 'How does sound travel?', 'What is the law of conservation of energy?']
+        };
+      }
+
+      return {
+        text: `### Sound Energy & Energy Transformations\n\n- **Sound Energy Fundamentals:**\n  * Sound is produced by **vibrating objects** (e.g. vocal cords, plucked guitar strings, struck drum skin).\n  * Sound travels as longitudinal compression waves through material media (solids, liquids, and gases).\n  * **The Vacuum Rule:** Sound **CANNOT travel through a vacuum** (empty space) because there are no molecules to vibrate and transmit energy.\n  * **Speed of Sound:** Fastest in solids (~5 000 m/s in steel), medium in liquids (~1 500 m/s in water), slowest in air (~330–340 m/s).\n  * **Pitch vs Loudness:** **Pitch** depends on **frequency** (vibrations per second, in Hertz; high frequency = high pitch); **Loudness** depends on **amplitude** (vibration wave height).\n  * **Echo:** A reflected sound wave bouncing off a hard flat surface at least **17 metres away**.\n\n- **Law of Conservation of Energy:** Energy cannot be created or destroyed; it only transforms from one form to another:\n  * **Solar Panel:** Light energy -> Electrical energy.\n  * **Kariba Hydroelectric Dam:** Potential energy of dam water -> Kinetic energy of falling water -> Mechanical energy of turbines -> Electrical energy.\n  * **Torch:** Chemical energy (battery) -> Electrical energy -> Light and Heat.\n  * **Electric Iron:** Electrical energy -> Thermal (heat) energy.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Energy & Fuels',
+        suggestions: ['Why can sound not travel through a vacuum?', 'What is the danger of carbon monoxide in closed rooms?', 'Explain energy conversions at Kariba Dam']
+      };
+    }
+
+    // 26. Disaster Risk Management, Lightning & Fireguards
+    if (
+      q.includes('disaster') ||
+      q.includes('disasters') ||
+      q.includes('cyclone idai') ||
+      q.includes('cyclone') ||
+      q.includes('lightning safety') ||
+      q.includes('lightning crouch') ||
+      q.includes('lightning conductor') ||
+      q.includes('fireguard') ||
+      q.includes('fire guard') ||
+      q.includes('fire triangle') ||
+      q.includes('veld fire')
+    ) {
+      if (q.includes('fireguard') || q.includes('fire guard') || q.includes('fire triangle') || q.includes('veld fire')) {
+        return {
+          text: `### The Fire Triangle, Veld Fires & Fireguards\n\n- **The Fire Triangle:** Three elements needed for fire to burn: **Fuel** (dry grass, wood, petrol), **Heat** (spark, match, lightning), and **Oxygen** (air). Removing any **one** element immediately extinguishes the fire (e.g. water removes heat; fire blankets or sand cut off oxygen).\n\n- **Veld Fires (Wildfires):** Uncontrolled bush fires caused by reckless cigarette butts, clearing fields by burning, hunting, or honey harvesting; they kill wildlife, destroy grazing pastures, and burn homesteads.\n\n- **The 9-Metre Fireguard Rule (EMA Standards):**\n  * A **fireguard** is a cleared perimeter strip of land where all dry grass, bushes, and combustible materials are ploughed, hoed, or graded away.\n  * **Standard Width:** In Zimbabwe, the Environmental Management Agency (EMA) legally mandates a minimum width of **at least 9 metres**.\n  * **Purpose:** Deprives approaching flames of fuel, preventing veld fires from jumping across property boundaries and homesteads.\n  * **Deadline:** Must be constructed **before 31 July** every year before the dry fire season begins.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Disaster Risk Management',
+          suggestions: ['What are lightning safety rules?', 'What caused the devastation during Cyclone Idai?', 'What is a disaster?']
+        };
+      }
+
+      if (q.includes('lightning')) {
+        return {
+          text: `### Lightning Safety Rules\n\nZimbabwe has one of the world's highest lightning strike death rates due to high-altitude granite kopjes and intense summer convective thunderstorms.\n\n- **Indoor Safety Rules:**\n  * Stay inside a substantial building or an enclosed metal-bodied vehicle.\n  * Avoid touching corded electrical appliances, metal plumbing pipes, and landline phones.\n  * Stay away from open windows and doors.\n\n- **Outdoor Safety (Places to Avoid):**\n  * NEVER shelter under tall, isolated trees or open thatched sheds.\n  * Avoid open sports fields, hilltops, golf courses, and swimming pools/rivers.\n  * Stay away from metal wire fences, railway tracks, tractors, and bicycles.\n\n- **The Emergency Lightning Crouch:** If trapped in an open field with no shelter nearby:\n  * Crouch down low on the balls of your feet with heels touching.\n  * Tuck your head between your knees and cover your ears with your hands.\n  * Minimize your contact area with the ground; **NEVER LIE FLAT** because ground currents will flow through your body!\n\n- **Lightning Conductors:** Pointed copper rods installed on building rooftops connected to thick copper earth wires buried deep in damp soil to safely conduct electrical strikes into the ground.`,
+          sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Disaster Risk Management',
+          suggestions: ['What is the 9-metre fireguard rule?', 'What was Tropical Cyclone Idai?', 'What is a disaster?']
+        };
+      }
+
+      return {
+        text: `### Disaster Risk Management: Natural and Man-Made Disasters\n\n**A disaster** is a sudden, calamitous event causing widespread destruction of property, loss of human life, and environmental degradation that overwhelms a community's capacity to cope.\n\n- **Natural Disasters in Zimbabwe:**\n  1. **Tropical Cyclones:** Intense revolving Indian Ocean storm systems bringing violent gale-force winds and torrential rains. Example: **Cyclone Idai (March 2019)** caused catastrophic flash floods, landslides, and loss of life in Chimanimani and Chipinge (Manicaland).\n  2. **Droughts:** Prolonged periods of deficient rainfall (often linked to El Niño), resulting in dried rivers, failed maize crops, livestock deaths, and food insecurity.\n  3. **Floods:** River overflows submerging settlements (e.g. Muzarabani in Zambezi Valley, Middle Sabi, Tsholotsho). Golden rule: **NEVER attempt to walk or drive across flooded bridges or rivers**!\n  4. **Lightning Strikes:** Electrical cloud-to-ground discharges during summer storms.\n\n- **Man-Made Disasters:** Veld fires, mine shaft collapses in illegal gold panning (*makorokoza*), and highway fuel tanker explosions.\n\n- **Disaster Preparedness:** Early warning weather broadcasts, EMA fireguards, and community evacuation drills.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Disaster Risk Management',
+        suggestions: ['What are lightning safety rules?', 'What is the 9-metre fireguard rule?', 'What are the causes and effects of veld fires?']
+      };
+    }
+
+    // 27. Simple Machines & Levers
+    if (
+      q.includes('simple machine') ||
+      q.includes('simple machines') ||
+      q.includes('lever') ||
+      q.includes('levers') ||
+      q.includes('first class lever') ||
+      q.includes('second class lever') ||
+      q.includes('third class lever') ||
+      q.includes('fulcrum')
+    ) {
+      return {
+        text: `### Simple Machines and the Three Classes of Levers\n\n**A simple machine** is a mechanical device that changes the direction or magnitude of a force, making work easier (acting as a force multiplier or distance multiplier).\n\n- **The Three Components of a Lever:** **Fulcrum (Pivot, F)**, **Load (Resistance, L)**, and **Effort (Applied Force, E)**.\n\n- **The "FLE" Rule for Classes of Levers:**\n  1. **First Class Lever (Fulcrum in the Middle - F):**\n     * The Fulcrum lies between the Effort and the Load (Effort - **Fulcrum** - Load).\n     * **Examples:** Crowbar, pair of scissors, claw hammer removing a nail, pliers, and a playground seesaw.\n  2. **Second Class Lever (Load in the Middle - L):**\n     * The Load lies between the Fulcrum and the Effort (Fulcrum - **Load** - Effort).\n     * Acts as a powerful **force multiplier**.\n     * **Examples:** Wheelbarrow, bottle opener, nutcracker, and paper guillotine.\n  3. **Third Class Lever (Effort in the Middle - E):**\n     * The Effort lies between the Fulcrum and the Load (Fulcrum - **Effort** - Load).\n     * Acts as a **distance and speed multiplier**.\n     * **Examples:** Garden shovel / spade, fishing rod, braai tongs, tweezers, and the human forearm curling a weight.`,
+        sourceTag: 'ZIMSEC Grade 7 Science & Technology 7030 • Simple Machines',
+        suggestions: ['What is the difference between a first class and second class lever?', 'What are simple machines?', 'What is work in science?']
+      };
+    }
+
+    // 28. ICT, Computer Hardware, Software, AI, Coding & Robotics
+    if (
+      q.includes('digital device') ||
+      q.includes('digital devices') ||
+      q.includes('computer hardware') ||
       q.includes('input device') ||
       q.includes('output device') ||
       q.includes('storage device') ||
       q.includes('cpu') ||
       q.includes('ram and rom') ||
       q.includes('operating system') ||
-      q.includes('word processor') ||
+      q.includes('word process') ||
       q.includes('spreadsheet') ||
+      q.includes('presentation software') ||
+      q.includes('powerpoint') ||
+      q.includes('excel') ||
+      q.includes('internet and web') ||
+      q.includes('internet vs web') ||
+      q.includes('malware') ||
+      q.includes('antivirus') ||
       q.includes('cyber safety') ||
-      q.includes('cybersecurity')
+      q.includes('artificial intelligence') ||
+      q.includes('what is ai') ||
+      q.includes('coding') ||
+      q.includes('algorithm') ||
+      q.includes('robotics') ||
+      q.includes('robot') ||
+      q.includes('ict career') ||
+      q.includes('ict careers')
     ) {
-      let directAnswer = '';
-      if (q.includes('cpu')) {
-        directAnswer = 'The **CPU (Central Processing Unit)** is the "brain" of the computer that carries out instructions. It consists of the **ALU (Arithmetic Logic Unit)** for calculations and the **Control Unit (CU)** for coordinating operations.';
-      } else if (q.includes('input') || q.includes('output')) {
-        directAnswer = '**Input devices** enter data into the computer (keyboard, mouse, scanner, microphone); **output devices** display or deliver processed data (monitor, printer, speakers, projector).';
-      } else if (q.includes('ram') || q.includes('rom')) {
-        directAnswer = '**RAM (Random Access Memory)** is volatile temporary working memory cleared when switched off; **ROM (Read Only Memory)** is non-volatile permanent memory holding boot instructions (BIOS).';
+      if (q.includes('ai') || q.includes('artificial intelligence')) {
+        return {
+          text: `### Artificial Intelligence (AI)\n\n**Artificial Intelligence (AI)** refers to computer systems, algorithms, and machines programmed to simulate human cognitive intelligence—such as learning from data, reasoning, understanding spoken language, recognizing visual images, and making autonomous decisions.\n\n- **Applications in Zimbabwe:**\n  1. **Smart Agriculture:** AI-powered camera drones scan maize fields to identify fall armyworm infestations; automated soil sensors trigger drip irrigation valves.\n  2. **Healthcare:** Automated diagnostic systems assist rural clinic nurses in interpreting medical scans.\n  3. **Education:** Intelligent offline curriculum tutors (such as **ZEXA AI**) that provide instant, syllabus-grounded learning without internet data.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • AI & Innovation',
+          suggestions: ['What is an algorithm?', 'What are the parts of a robot?', 'What are input and output devices?']
+        };
       }
 
+      if (q.includes('algorithm') || q.includes('coding')) {
+        return {
+          text: `### Algorithms and Computer Coding\n\n- **What is an Algorithm?** An **algorithm** is a precise, unambiguous, step-by-step sequence of instructions or rules designed to accomplish a specific task or solve a computational problem.\n  * *Example:* Algorithm to calculate the perimeter of a garden: *Step 1: Measure Length. Step 2: Measure Width. Step 3: Add Length and Width. Step 4: Multiply by 2.*\n\n- **What is Coding?** **Coding** is the process of writing algorithms in a computer programming language (e.g. Scratch block coding, Python) that a computer processor can execute.\n\n- **Core Coding Building Blocks:**\n  1. **Sequence:** Executing instructions in exact sequential order from top to bottom.\n  2. **Selection (Conditionals):** Making decisions based on "IF-THEN-ELSE" criteria (*IF soil moisture < 20%, THEN turn on pump; ELSE turn off pump*).\n  3. **Iteration (Loops):** Repeating a set of instructions until a goal is reached (*REPEAT 10 times: step forward*).\n  4. **Debugging:** The systematic process of finding, analyzing, and fixing bugs or syntax errors in code.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Coding & Robotics',
+          suggestions: ['What are the three parts of a robot?', 'What is artificial intelligence?', 'What are the career paths in ICT?']
+        };
+      }
+
+      if (q.includes('robot') || q.includes('robotics')) {
+        return {
+          text: `### Robotics: Parts and Functions of a Robot\n\n**A robot** is an automated, programmable electromechanical machine capable of carrying out a complex series of physical actions automatically.\n\n- **The Three Main Parts of a Robot:**\n  1. **Sensors (Input / Senses):** Electronic components that detect changes in the physical environment:\n     * *Ultrasonic sensors:* Measure distance using sound waves.\n     * *Light-dependent resistors (LDR):* Detect light intensity.\n     * *Moisture and temperature sensors:* Measure soil moisture and heat.\n  2. **Controller (Brain / Processor):** A microcontroller (e.g. micro:bit, Arduino, or onboard microprocessor) that runs the code and processes sensor inputs to make decisions.\n  3. **Actuators (Output / Muscles):** Electric motors, servo motors, hydraulic pistons, robotic arms, and buzzer alarms that execute physical motion and work.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Coding & Robotics',
+          suggestions: ['What is an algorithm in computer coding?', 'What is artificial intelligence?', 'What are input and output devices?']
+        };
+      }
+
+      if (q.includes('cpu') || q.includes('ram') || q.includes('rom')) {
+        return {
+          text: `### Computer Hardware: CPU, RAM, and ROM\n\n1. **The CPU (Central Processing Unit):**\n   - The "brain" of the computer that interprets and executes all instructions.\n   - **ALU (Arithmetic Logic Unit):** Performs mathematical calculations (+, -, ×, ÷) and logical comparisons.\n   - **Control Unit (CU):** Directs and coordinates data flow between all hardware components.\n\n2. **RAM (Random Access Memory):**\n   - **Volatile, temporary working memory** used by the CPU to store data and software currently in active use.\n   - All data in RAM is wiped clean when the computer is turned off.\n\n3. **ROM (Read-Only Memory):**\n   - **Non-volatile, permanent memory** containing permanent factory startup firmware (BIOS) required to boot up the computer.\n   - Data in ROM is retained even when power is disconnected.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Hardware',
+          suggestions: ['What are input and output devices?', 'What is an operating system?', 'What is an algorithm?']
+        };
+      }
+
+      if (q.includes('word process') || q.includes('spreadsheet') || q.includes('presentation')) {
+        return {
+          text: `### Productivity Software: Word Processing, Spreadsheets, and Presentations\n\n1. **Word Processing Software (e.g. Microsoft Word, Google Docs):**\n   - Used for typing, formatting, and printing text documents (letters, school essays, reports).\n   - Key features: Font styling, text alignment, margins, spell checker, inserting tables and pictures.\n\n2. **Spreadsheet Software (e.g. Microsoft Excel, Google Sheets):**\n   - Used for organizing numerical data in a grid of **rows (numbered)** and **columns (lettered)** forming **cells** (e.g. Cell A1).\n   - Performs automated calculations using formulas starting with an equals sign (e.g. =SUM(A1:A10), =AVERAGE(B1:B5)) and creates graphs and charts.\n\n3. **Presentation Software (e.g. Microsoft PowerPoint, Google Slides):**\n   - Used for creating visual slide shows combining text, images, animations, and slide transitions for public talks and class presentations.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Software',
+          suggestions: ['What is the difference between RAM and ROM?', 'What is cyber safety?', 'What are input and output devices?']
+        };
+      }
+
+      if (q.includes('career') || q.includes('careers')) {
+        return {
+          text: `### Career Paths in Information and Communication Technology (ICT)\n\n1. **Software Developer / Computer Programmer:** Writes and tests code to build software applications, games, and mobile apps.\n2. **Network Engineer / Administrator:** Installs, configures, and maintains computer networks, routers, and school/office Wi-Fi.\n3. **Cybersecurity Specialist:** Protects computer systems, networks, and confidential data from hacker attacks and malware.\n4. **Database Administrator (DBA):** Manages, secures, and organizes large company databases and records.\n5. **Web Designer / Developer:** Designs and builds functional, responsive websites on the internet.\n6. **Computer Hardware Technician:** Repairs, cleans, upgrades, and troubleshoots physical computer hardware components.\n7. **Robotics & AI Engineer:** Designs smart automated machines and robots for agriculture and industry.`,
+          sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Careers',
+          suggestions: ['What is coding and what is an algorithm?', 'What are the parts of a robot?', 'What is artificial intelligence?']
+        };
+      }
+
+      // General ICT Hardware, Digital Devices & Cyber Safety
       return {
-        text: `### Primary Agriculture & Science (ZIMSEC 7030): ICT & Computer Systems
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key ICT fundamentals in the Grade 7 syllabus:
-
-1. Computer Hardware Classification:
-- **Input Devices:** Keyboard, mouse, scanner, microphone, webcam, barcode reader.
-- **Output Devices:** Monitor/screen, printer (laser, inkjet), speakers, headphones, multimedia projector.
-- **Processing Unit (CPU):**
-  * The Central Processing Unit is the "brain" of the computer.
-  * **ALU (Arithmetic Logic Unit):** Performs arithmetic (+, -, ×, ÷) and logical comparisons.
-  * **Control Unit (CU):** Directs traffic and supervises execution of instructions.
-- **Memory & Storage:**
-  * **RAM:** Volatile temporary memory for currently open apps.
-  * **ROM:** Permanent non-volatile memory storing startup boot firmware.
-  * **Secondary Storage:** Hard drives (HDD/SSD), USB flash drives, memory cards, CDs/DVDs.
-
-2. Computer Software:
-- **System Software (Operating System):** Windows, Android, Linux, Apple iOS.
-- **Application Software:** Word processors (typing essays/letters), Spreadsheets (calculating and graphs), Presentation software (creating slides).
-
-3. Cyber Safety Rules:
-- Keep passwords secret; never share personal details (address, school) online with strangers; do not open suspicious links or downloads.`,
-        sourceTag: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • ICT',
-        suggestions: [
-          'What are the specifications of a Pfumvudza plot?',
-          'What are the three classes of levers?',
-          'What are the weather instruments?'
-        ]
+        text: `### ICT Fundamentals: Hardware, Software & Cyber Safety\n\n- **Classification of Computer Hardware:**\n  1. **Input Devices:** Enter data into the computer (Keyboard, Mouse, Optical Scanner, Microphone, Webcam, Barcode Reader).\n  2. **Output Devices:** Display or deliver processed data (Screen/Monitor, Laser/Inkjet Printer, Speakers, Multimedia Projector).\n  3. **Processing:** Central Processing Unit (CPU) with ALU and Control Unit.\n  4. **Storage Devices:** Secondary storage that retains data permanently (Hard Disk Drives/SSDs, USB Flash Drives, SD Memory Cards).\n\n- **Caring for Digital Devices:**\n  * Clean screens and keyboards with a soft, dry, lint-free cloth.\n  * Keep devices away from liquids, food crumbs, extreme dust, and direct hot sunlight.\n  * Always shut down properly through the operating system; use surge protectors to prevent power-spike damage.\n\n- **Internet vs World Wide Web (WWW):**\n  * **Internet:** The vast global physical network of billions of interconnected computers and cables.\n  * **World Wide Web (Web):** The collection of interlinked multimedia web pages and documents accessed through internet browsers using URLs.\n\n- **Cyber Safety & Malware Protection:**\n  * Create strong passwords (at least 8 characters with uppercase, lowercase, numbers, and symbols).\n  * Never reveal personal information (full name, address, school) to strangers online.\n  * **Malware:** Malicious software (viruses, worms, trojans, ransomware) that damages computers.\n  * **Antivirus Software:** Scans, identifies, quarantines, and deletes malware threats.`,
+        sourceTag: 'ZIMSEC Grade 7 ICT & Educational Technology 7030 • Hardware & Security',
+        suggestions: ['What is the difference between RAM and ROM?', 'What is an algorithm and what is coding?', 'What are the three parts of a robot?']
       };
     }
 
     return null;
   }
-
-  /**
-   * Primary & Junior Indigenous Languages Curriculum: ChiShona (ZIMSEC 7040) & IsiNdebele (ZIMSEC 7041)
-   * High-accuracy, zero-hallucination engine covering Tsumo, Mitupo, Ukama, Madimikira, Nyaudzosingwi, Zvirahwe, Izaga, and Uhlelo Lolimi
-   */
   private static handlePrimaryIndigenousLanguagesQuery(
     question: string,
     level: string,
@@ -4009,7 +5757,7 @@ Key ICT fundamentals in the Grade 7 syllabus:
       }
 
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7040): Tsumo dzeChiShona
+        text: `### Tsumo dzeChiShona
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 MuChiShona, tsumo mashoko akadzama anotaura nezveupenyu, unhu, uye kurudziro:
 
@@ -4065,7 +5813,7 @@ MuChiShona, tsumo mashoko akadzama anotaura nezveupenyu, unhu, uye kurudziro:
       }
 
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7040): Mitupo neZvidau
+        text: `### Mitupo neZvidau
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Mutupo chiratidzo chedzinza neukama muChiShona, uye chidau izita rekuremekedza nekutenda munhu wepa mutupo iwoyo:
 
@@ -4115,7 +5863,7 @@ Mutupo chiratidzo chedzinza neukama muChiShona, uye chidau izita rekuremekedza n
       else if (q.includes('tezvara')) directAnswer = '**Tezvara** baba vemukadzi wako (father-in-law).';
 
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7040): Ukama neMazita eMhuri
+        text: `### Ukama neMazita eMhuri
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Ukama muChiShona hune mazita chaiwo anotsanangura hukama hwevanhu mumhuri:
 
@@ -4168,7 +5916,7 @@ Ukama muChiShona hune mazita chaiwo anotsanangura hukama hwevanhu mumhuri:
       }
 
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7040): Madimikira eChiShona
+        text: `### Madimikira eChiShona
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 Madimikira mashoko anotaura pfungwa yakavanzika isina kuenzana nemashoko anoverengwa:
 
@@ -4204,7 +5952,7 @@ Madimikira mashoko anotaura pfungwa yakavanzika isina kuenzana nemashoko anovere
     ) {
       let directAnswer = '**Nyaudzosingwi** mazwi anotsanangura chiito kana ruzha zvakajeka, anowanzotangirwa neshoko rokuti "kuti" (semuenzaniso: akati **zii** kureva kunyarara; akati **dzvi** kureva kumira; akati **mwiro** kureva kunyarara uchiyeuka). **Mutemo weZIMSEC:** Nyaudzosingwi dzakadzokororwa **hadzina hyphen** (semuenzaniso: "kota kota", "piti piti", KWETE "kota-kota").';
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7040): Nyaudzosingwi
+        text: `### Nyaudzosingwi
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 1. Mhando dzeNyaudzosingwi dzinonyanya Kubvunzwa:
 - **Akati zii:** Kunyarara kwakakwana (complete silence).
@@ -4255,7 +6003,7 @@ ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
       }
 
       return {
-        text: `### Primary Indigenous Languages (ZIMSEC 7041): IsiNdebele
+        text: `### IsiNdebele
 ${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
 KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
 
@@ -4294,9 +6042,299 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
     level: string,
     intent: QuestionIntent
   ): SynthesisResult | null {
-    const q = question.toLowerCase();
+    const q = question.toLowerCase().trim();
+    const decomp = this.decomposeQuestion(question);
 
-    // 1. National Symbols of Zimbabwe (Flag, Bird, Anthem, Coat of Arms, Heroes Acre)
+    // 1. National School Pledge
+    if (q.includes('school pledge') || q.includes('national pledge') || q.includes('pledge of zimbabwe')) {
+      if (q.includes('importance') || q.includes('why') || decomp.asksOnlyFunctions) {
+        return {
+          text: `### Importance of the National School Pledge\n\n1. **Inculcates Patriotism:** Instills national pride, love, and loyalty to Zimbabwe among school children.\n2. **Honours Liberation Heroes:** Reminds learners of the supreme sacrifices made by heroes of the First and Second Chimurenga to liberate the country.\n3. **Promotes National Values (*Unhu/Ubuntu*):** Encourages honesty, integrity, discipline, respect for national resources, and dedication to hard work.\n4. **Fosters National Unity:** Recited in unison by school pupils of all ethnic groups, building unity and shared national aspirations.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+          suggestions: ['Read the National School Pledge', 'What are the national symbols of Zimbabwe?', 'What are the values of Unhu/Ubuntu?']
+        };
+      }
+      return {
+        text: `### The National School Pledge of Zimbabwe\n\n*"Almighty God, in whose hands our future lies,\nI salute the national flag,\nI respect the brave fathers and mothers who lost lives in the Chimurenga/Umvukela.\nWe are proud inheritors of the richness of our natural resources.\nWe are proud inheritors of the richness of our history.\nI promise to be true and faithful to my country,\nI promise to uphold our national values and aspirations.\nI promise to serve my country through hard work,\nAnd to contribute towards the development of our nation.\nSo help me God."*`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+        suggestions: ['Explain the importance of the National School Pledge', 'What are the colours of the Zimbabwe National Flag?', 'What does the Zimbabwe Bird represent?']
+      };
+    }
+
+    // 2. Totem System (Mitupo / Izibongo)
+    if (q.includes('totem') || q.includes('mitupo') || q.includes('mutupo') || q.includes('izibongo')) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### The Totem System (*Mutupo* / *Isibongo*)\n\nA **totem** (*Mutupo* in Shona, *Isibongo* in Ndebele) is an animal, bird, plant, or natural element adopted by an African clan or family as their sacred emblem, symbolizing common ancestral origin, identity, and kinship (e.g. *Shumba/Sibanda* - Lion, *Soko/Ncube* - Monkey, *Mhofu/Mpofu* - Eland, *Hungwe* - Fish Eagle, *Dziva* - Water/Pool).`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Culture & Heritage',
+          suggestions: ['What is the importance of the totem system?', 'What happens if people of the same totem marry?', 'What is a praise name (Chidau)?']
+        };
+      }
+      if (decomp.asksOnlyFunctions || q.includes('importance') || q.includes('purpose') || q.includes('role')) {
+        return {
+          text: `### Importance of the Totem System\n\n1. **Prevents Incest (*Makunakuna*):** People sharing the same totem are considered biological relatives; intermarriage within the same totem is strictly forbidden, preserving healthy family genetics.\n2. **Wildlife and Environmental Conservation:** Cultural taboos strictly forbid clan members from hunting, harming, or eating their totem animal, ensuring natural wildlife protection.\n3. **Preserves Identity and Kinship:** Establishes social belonging, lineage roots, and unites clan members across distant regions.\n4. **Expresses Cultural Praise and Gratitude (*Zvidau*):** Reciting clan praise poetry (*Kudetembwa kwemutupo*) shows deep respect, honor, and appreciation after good deeds.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Culture & Heritage',
+          suggestions: ['Define a totem', 'List common totems in Zimbabwe', 'What are the principles of Unhu/Ubuntu?']
+        };
+      }
+      return {
+        text: `### Purpose and Importance of the Totem System\n\n#### 1. What is a Totem?\nA **totem** (*Mutupo* / *Isibongo*) is an animal, bird, plant, or natural element adopted by a family or clan as their sacred emblem, symbolizing common ancestry and cultural identity.\n\n#### 2. Key Importance\n- **Prevents Incest (*Makunakuna*):** Prohibits marriage between individuals sharing the same totem.\n- **Wildlife Conservation:** Cultural taboo against killing or eating one's totem animal protects species from extinction.\n- **Clan Kinship:** Unites related families and reinforces social solidarity.\n- **Praise Poetry (*Zvidau*):** Used to express gratitude, courtesy, and respect.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Culture & Heritage',
+        suggestions: ['Define a totem', 'Explain the importance of the totem system', 'What are indigenous norms and values?']
+      };
+    }
+
+    // 3. Family Disintegration
+    if (q.includes('family disintegration') || q.includes('disintegration of family') || (q.includes('family') && (q.includes('breakdown') || q.includes('disintegrate')))) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Family Disintegration\n\n**Family disintegration** (family breakdown) is the breakdown of family unity, stability, and structure resulting from divorce, separation, desertion, or death of parents, leading to the disruption of normal family functions and relationships.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['What are the causes of family disintegration?', 'What are the effects of family disintegration on identity?', 'How can family disintegration be curbed?']
+        };
+      }
+      if (decomp.asksOnlyCauses || (decomp.asksCauses && !decomp.asksEffects && !decomp.asksPreventionOrManagement)) {
+        return {
+          text: `### Causes of Family Disintegration\n\n1. **Marital Infidelity:** Cheating by either spouse leading to broken trust, conflict, and divorce.\n2. **Domestic Violence and Abuse:** Physical, emotional, or financial abuse between parents.\n3. **Severe Economic Hardship:** Prolonged unemployment, extreme poverty, and migration (diaspora) separating spouses.\n4. **Alcohol and Substance Abuse:** Leading to neglect of family obligations, financial squandering, and fights.\n5. **Death of Parents:** Terminal illnesses (e.g. HIV/AIDS) resulting in orphaned children and child-headed families.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['What are the effects of family disintegration?', 'Suggest ways of curbing family disintegration', 'Define family disintegration']
+        };
+      }
+      if (decomp.asksOnlyEffects || (decomp.asksEffects && !decomp.asksCauses && !decomp.asksPreventionOrManagement)) {
+        return {
+          text: `### Effects of Family Disintegration on Identity and Children\n\n- **Loss of Cultural Identity:** Children grow up detached from their paternal roots, totems, and ancestral lineage.\n- **Emotional Trauma:** Children experience depression, anxiety, feeling unloved, and low self-esteem.\n- **School Dropout & Child Labour:** Inability to pay school fees forces children out of school and into street vending.\n- **Social Vices:** Increased vulnerability to drug abuse, juvenile crime, and early child marriages.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['Suggest ways of curbing family disintegration', 'What are the causes of family disintegration?', 'Define family disintegration']
+        };
+      }
+      if (decomp.asksOnlyPrevention || q.includes('curb') || q.includes('curbing') || q.includes('prevent')) {
+        return {
+          text: `### Ways of Curbing Family Disintegration\n\n1. **Pre-Marital and Marital Counselling:** Seeking wise guidance from extended family elders (*Tete* and *Sekuru*), church pastors, or certified marriage counselors.\n2. **Effective Communication & Dialogue:** Resolving marital disagreements peacefully through mutual respect rather than violence.\n3. **Faithfulness and Fidelity:** Committing to mutual love, respect, and trust in marriage.\n4. **Community and Social Welfare Support:** Providing government assistance (BEAM, food relief) and community care for vulnerable families.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['What causes family disintegration?', 'Define family disintegration', 'What are the characteristics of ideal marital relationships?']
+        };
+      }
+      return {
+        text: `### Family Disintegration\n\n#### 1. What is Family Disintegration?\n**Family disintegration** is the breakdown of family unity, stability, and structure resulting from divorce, separation, desertion, or death of parents.\n\n#### 2. Causes\n- Marital infidelity, domestic violence, severe poverty, alcohol abuse, and parental death.\n\n#### 3. Effects on Identity\n- Loss of clan identity and totems, emotional trauma, school dropouts, and vulnerability to street life.\n\n#### 4. Ways to Curb It\n- Family counseling by *Tete* and *Sekuru*, peaceful conflict resolution, and social welfare support.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+        suggestions: ['What are the causes of family disintegration?', 'What are the effects of family disintegration?', 'Suggest ways of curbing family disintegration']
+      };
+    }
+
+    // 4. Marital Relationships and Disputes
+    if (q.includes('marital relationship') || q.includes('marital dispute') || q.includes('marriage dispute')) {
+      if (q.includes('characteristic') || q.includes('ideal')) {
+        return {
+          text: `### Characteristics of Ideal Marital Relationships\n\n1. **Mutual Respect and Trust:** Partners value each other, maintain honesty, and stay faithful.\n2. **Effective Communication:** Openly discussing family finances, children's upbringing, and challenges without verbal abuse.\n3. **Shared Responsibility:** Cooperating in earning a living, household duties, and child guidance.\n4. **Forgiveness and Patience:** Resolving disagreements calmly through dialogue and empathy.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['What are the causes and effects of marital disputes?', 'Suggest solutions to marital disputes', 'What is family disintegration?']
+        };
+      }
+      if (decomp.asksCauses || q.includes('causes of marital disputes')) {
+        return {
+          text: `### Causes and Effects of Marital Disputes\n\n- **Causes:** Infidelity (cheating), financial distress and poverty, domestic violence, alcohol abuse, lack of communication, and unwanted interference by in-laws.\n- **Effects:** Domestic violence, emotional stress, neglect of children, separation, divorce, and family disintegration.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+          suggestions: ['Suggest solutions to marital disputes', 'What are the characteristics of ideal marital relationships?', 'What is family disintegration?']
+        };
+      }
+      return {
+        text: `### Solutions to Marital Disputes\n\n1. **Indigenous Family Counselling:** Seeking wise mediation from the paternal aunt (*Tete*) and maternal uncle (*Sekuru*).\n2. **Professional Marriage Counselling:** Consulting certified marriage counselors, church pastors, or social workers.\n3. **Open and Calm Dialogue:** Discussing grievances truthfully without insults or physical violence.\n4. **Legal Protection Orders:** Utilizing the Domestic Violence Act through Magistrates' Courts to stop violence while seeking resolution.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 1: Family',
+        suggestions: ['What are the characteristics of ideal marital relationships?', 'What causes marital disputes?', 'What is family disintegration?']
+      };
+    }
+
+    // 5. Early People of Zimbabwe (Khoisan and Bantu)
+    if (q.includes('khoisan') || (q.includes('bantu') && (q.includes('early') || q.includes('people') || q.includes('migration') || q.includes('contribution') || q.includes('way of life')))) {
+      if (q.includes('khoisan') && !q.includes('bantu')) {
+        return {
+          text: `### The Khoisan (Late Stone Age Early People of Zimbabwe)\n\n1. **Way of Life:** The Khoisan (San/Bushmen) were nomadic hunter-gatherers who lived in Zimbabwe thousands of years ago.\n2. **Hunting & Gathering:** Men hunted wild animals using bows and arrows tipped with natural plant/snake poison. Women gathered wild fruits, roots, and tubers using weighted digging sticks.\n3. **Shelter:** Lived in rock shelters and natural caves; they did not build permanent houses.\n4. **Rock Art:** Painted magnificent rock art on cave walls (Matobo Hills, Domboshava) depicting animals and rituals using charcoal, ochre, animal blood, and egg whites.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Early Societies',
+          suggestions: ['Describe the way of life of the Bantu people', 'What were the contributions of the Bantu to national heritage?', 'Compare the Khoisan and Bantu people']
+        };
+      }
+      if (q.includes('contribution') || (q.includes('bantu') && !q.includes('khoisan') && !q.includes('way of life'))) {
+        return {
+          text: `### Contributions of the Bantu to the National Heritage of Zimbabwe\n\n1. **Agriculture and Food Production:** Introduced crop cultivation (sorghum, millet, beans) and cattle/goat domestication, securing permanent food supplies.\n2. **Iron Smelting & Metallurgy:** Smelted iron ore in clay furnaces to manufacture hoes for farming, spears and arrows for defense, and axes for clearing land.\n3. **Permanent Settlements:** Built permanent pole-and-daga huts thatched with grass, forming organized villages.\n4. **Stone Architecture:** Founded monumental dry-stone wall construction (Great Zimbabwe, Khami).\n5. **Cultural Philosophy:** Established clan totems, extended family structures, and *Unhu/Ubuntu/Vumunhu*.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Early Societies',
+          suggestions: ['Describe the way of life of the Khoisan', 'What were the pre-colonial kingdoms of Zimbabwe?', 'What is the totem system?']
+        };
+      }
+      return {
+        text: `### The Early People of Zimbabwe: The Khoisan and Bantu\n\n#### 1. The Khoisan (Late Stone Age Hunter-Gatherers)\n- Nomadic lifestyle living in caves and rock shelters.\n- Used stone tools, bows, and poisoned arrows to hunt wild game; women gathered wild plants.\n- Famous for ancient rock art paintings on granite walls (e.g. Matobo Hills, Domboshava).\n\n#### 2. The Bantu (Early Iron Age Farmers)\n- Migrated from central Africa, introducing iron smelting and agriculture.\n- Grew crops (sorghum, millet), raised cattle, and lived in permanent pole-and-daga huts.\n- Established clan totems, trade, and stone masonry (Great Zimbabwe, Mutapa, Rozvi).`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Early Societies',
+        suggestions: ['What were the contributions of the Bantu to national heritage?', 'Describe the way of life of the Khoisan', 'What were the pre-colonial kingdoms of Zimbabwe?']
+      };
+    }
+
+    // 6. Rules, Laws, and By-Laws
+    if (q.includes('by-law') || q.includes('by law') || q.includes('by-laws') || q.includes('bylaws') || q.includes('rules and laws') || (q.includes('law') && (q.includes('importance of observing') || q.includes('enforcing the law') || q.includes('breaking the law')))) {
+      if (q.includes('by-law') || q.includes('by law') || q.includes('by-laws') || q.includes('bylaws')) {
+        return {
+          text: `### By-Laws\n\n**By-laws** are local laws and regulations enacted by local government authorities (Urban Councils or Rural District Councils) to govern conduct, maintain public health, and ensure order within a specific local community or municipality.\n\n#### Examples of By-Laws in Zimbabwe:\n- Anti-littering and waste disposal by-laws.\n- Vending and informal trade regulations in designated zones.\n- Noise pollution and nightclub curfew regulations.\n- Dog licensing and livestock control by-laws.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Governance & Law',
+          suggestions: ['What is the difference between national laws and by-laws?', 'What are the consequences of breaking the law?', 'What is the role of the police and courts?']
+        };
+      }
+      if (q.includes('consequences') || q.includes('breaking')) {
+        return {
+          text: `### Consequences of Breaking the Law\n\n1. **Arrest and Prosecution:** Being arrested by the Zimbabwe Republic Police (ZRP) and tried in court.\n2. **Fines and Community Service:** Being ordered to pay monetary fines or perform compulsory community service.\n3. **Imprisonment:** Loss of personal freedom through custodial jail sentences for serious crimes.\n4. **Criminal Record:** Gaining a permanent criminal record that ruins future employment and travel opportunities.\n5. **Social Dishonour:** Bringing shame and disgrace upon oneself and family (*Kunyadzisa mhuri*).`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Governance & Law',
+          suggestions: ['What are the roles of the police and courts in enforcing the law?', 'Explain the importance of observing laws', 'Define by-laws']
+        };
+      }
+      return {
+        text: `### Observing Laws and Law Enforcement\n\n#### 1. Importance of Observing Laws\nObserving laws ensures peaceful coexistence, protects human lives and private property, maintains public safety, and prevents anarchy and crime.\n\n#### 2. Roles in Enforcing the Law\n- **Individual:** Voluntarily obeying the law and reporting crimes.\n- **Community:** Forming neighbourhood watch committees and protecting community infrastructure.\n- **Police (ZRP):** Investigating crimes, arresting offenders, and preserving peace.\n- **Courts (Judiciary):** Impartially interpreting laws and punishing lawbreakers.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Governance & Law',
+        suggestions: ['Define by-laws', 'What are the consequences of breaking the law?', 'What is the indigenous court system?']
+      };
+    }
+
+    // 7. Indigenous Court System (*Dare*)
+    if (q.includes('indigenous court') || q.includes('traditional court') || q.includes('dare remusha') || q.includes('dare rasadunhu') || q.includes('dare ramambo')) {
+      return {
+        text: `### The Indigenous Court System (*Dare* / *Inkundla*)\n\nTraditional justice in Zimbabwe focuses on **restorative justice**, aiming to repair relationships, promote reconciliation, and award restitution (*kuripa*) rather than imprisonment.\n\n1. **Dare reMusha (Village Head's Court):**\n   - **Presiding Leader:** The **Village Head (*Sabhuku* / *Umlisa*)** assisted by village elders.\n   - **Jurisdiction:** Minor disputes within the village, such as petty boundary quarrels, family misunderstandings, and stray poultry.\n\n2. **Dare reSadunhu (Headman's Court):**\n   - **Presiding Leader:** The **Headman (*Sadunhu*)**.\n   - **Jurisdiction:** Appeals from village heads, communal grazing disputes, and land allocation issues across several villages.\n\n3. **Dare raMambo (Paramount Chief's Court - *Dare Guru*):**\n   - **Presiding Leader:** The **Paramount Chief (*Mambo* / *Induna*)** assisted by traditional assessors (*Machinda*).\n   - **Jurisdiction:** The highest customary court. Judged serious offenses like incest (*makunakuna*), desecrating sacred shrines, witchcraft claims, and inter-clan land disputes. Penalties require compensation in cattle or goats.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Indigenous Governance',
+        suggestions: ['What are the roles of chiefs and headmen?', 'What is restorative justice?', 'What are the three arms of the central government?']
+      };
+    }
+
+    // 8. Systems of Governance & Arms of Central Government
+    if (q.includes('systems of governance') || q.includes('democracy and autocracy') || q.includes('arms of government') || q.includes('legislature') || q.includes('judiciary') || (q.includes('executive') && q.includes('government'))) {
+      if (q.includes('democracy') || q.includes('autocracy') || q.includes('systems of governance')) {
+        return {
+          text: `### Systems of Governance: Democracy vs Autocracy\n\n- **Democracy:** Government of the people, by the people, and for the people. Citizens elect their leaders through regular, free, and fair elections; multiple political parties exist; the Constitution and human rights are respected.\n- **Autocracy:** A system of government where absolute power is concentrated in the hands of a single ruler or dictator without citizen participation or constitutional checks and balances.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Governance',
+          suggestions: ['What are the three arms of government?', 'Explain the functions of the Legislature, Executive, and Judiciary', 'What is local government?']
+        };
+      }
+      return {
+        text: `### The Three Arms of the Central Government of Zimbabwe\n\n1. **The Legislature (Parliament):**\n   - Composed of the **Senate** and the **National Assembly**.\n   - **Function:** Debates national issues, scrutinizes government budgets, and makes/passes national laws.\n\n2. **The Executive:**\n   - Composed of the **President**, **Vice Presidents**, and the **Cabinet (Ministers)**.\n   - **Function:** Formulates national policies, runs government ministries, and executes/enforces laws passed by Parliament.\n\n3. **The Judiciary:**\n   - Composed of the **Chief Justice**, judges, and magistrates operating in the Constitutional Court, Supreme Court, High Court, and Magistrates' Courts.\n   - **Function:** Impartially interprets laws, resolves legal disputes, and administers justice.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Governance',
+        suggestions: ['Compare democracy and autocracy', 'What is the role of local government?', 'What are the national symbols of Zimbabwe?']
+      };
+    }
+
+    // 9. Age of Consent, Courtship & Marriage Counsellors
+    if (q.includes('age of consent') || q.includes('marriage counsellor') || (q.includes('courtship') && q.includes('marriage'))) {
+      if (q.includes('age of consent')) {
+        return {
+          text: `### Age of Consent to Sex and Marriage in Zimbabwe\n\n- Under Section 78 of the Constitution of Zimbabwe and the **Marriages Act of 2022**, the legal minimum age of consent to sex and marriage is **18 years**.\n- **Child Marriage Prohibition:** Any sexual relations or marriage involving a child below 18 years is a serious criminal offense punishable by long imprisonment.\n- **Importance:** Protects children from physical abuse, exploitation, and early health risks; ensures children complete primary and secondary education.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Courtship & Family Law',
+          suggestions: ['What is the role of Tete and Sekuru in courtship?', 'What are indigenous marriage practices?', 'What are rites of passage?']
+        };
+      }
+      return {
+        text: `### Indigenous Courtship and Marriage Counsellors\n\n1. **Tete (Paternal Aunt):**\n   - The primary counsellor for girls; educates them on womanhood, personal hygiene, marital respect, and resolving domestic challenges.\n2. **Sekuru (Maternal Uncle):**\n   - The primary mentor for boys; advises them on manhood, family responsibilities, earning a living, and marriage conduct.\n3. **Munyai (Marriage Emissary / Go-Between):**\n   - An impartial family representative sent by the groom's family to lead respectful bride-price negotiations (*Roora/Lobola*).`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Courtship & Family Law',
+        suggestions: ['What is the legal age of consent to marriage in Zimbabwe?', 'What are the traditional marriage practices?', 'What is the totem system?']
+      };
+    }
+
+    // 10. Drug and Substance Abuse
+    if (q.includes('drug and substance') || q.includes('drug abuse') || q.includes('substance abuse') || q.includes('mutoriro') || q.includes('broncleer') || q.includes('mbanje')) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Drug and Substance Abuse\n\n**Drug and substance abuse** is the harmful, habitual, or excessive use of illicit substances or the misuse of legal medications and chemicals for non-medical intoxication, leading to severe physical, mental, and social damage.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Health & Social Issues',
+          suggestions: ['What drugs are commonly abused in Zimbabwe?', 'What are the effects of drug abuse on youth?', 'How can drug abuse be avoided?']
+        };
+      }
+      if (decomp.asksOnlyCauses || q.includes('why young people')) {
+        return {
+          text: `### Reasons Young People Abuse Drugs and Substances\n\n1. **Negative Peer Pressure:** Wanting to fit in with friends or look "cool".\n2. **Stress and Depression:** Attempting to escape family problems, poverty, or emotional grief.\n3. **Boredom and Unemployment:** Lack of constructive recreational facilities and jobs.\n4. **Ignorance:** Misjudging the addictive power and deadly health dangers of substances.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Health & Social Issues',
+          suggestions: ['What are the effects of drug abuse?', 'What substances are commonly abused in Zimbabwe?', 'How can young people avoid drug abuse?']
+        };
+      }
+      if (decomp.asksOnlyEffects || q.includes('effects of drug')) {
+        return {
+          text: `### Effects of Drug and Substance Abuse\n\n- **Health Damage:** Brain damage, permanent mental psychosis (madness), liver and kidney failure, addiction, and overdose death.\n- **Academic & Social:** School dropouts, violent crime, family conflicts, theft, and homelessness.\n- **Transmission of Diseases:** Sharing unsterilized injection needles spreads HIV/AIDS and Hepatitis.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Health & Social Issues',
+          suggestions: ['How can drug abuse be avoided?', 'What drugs are commonly abused in Zimbabwe?', 'Define drug abuse']
+        };
+      }
+      return {
+        text: `### Drug and Substance Abuse in Zimbabwe\n\n#### 1. Commonly Abused Substances\n- **Crystal Meth (*Mutoriro* / *Guka* / *Dombo*):** Highly addictive, dangerous stimulant.\n- **Cough Syrups Containing Codeine (*Broncleer* / *Bronco*):** Misused for sedative intoxication.\n- **Cannabis (*Mbanje* / Marijuana):** Hallucinogenic drug.\n- **Illicit Alcohol:** High-proof crude spirits (*Kachasu*, *Musombodhiya*).\n\n#### 2. Prevention & Support Systems\n- Firmly resisting negative peer pressure and saying **NO**.\n- Engaging in productive sports, arts, and youth clubs.\n- Seeking medical rehabilitation at specialized psychiatric units (e.g. Sally Mugabe Central Hospital, Ingutsheni Central Hospital).`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Health & Social Issues',
+        suggestions: ['What are the causes of drug abuse?', 'What are the effects of drug abuse?', 'Define drug and substance abuse']
+      };
+    }
+
+    // 11. First Aid in Emergencies
+    if (q.includes('first aid') || (q.includes('emergency') && (q.includes('steps') || q.includes('drabc') || q.includes('precautions')))) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### First Aid\n\n**First Aid** is the immediate, temporary assistance and medical care given to an injured or suddenly ill person using readily available materials before professional medical personnel or an ambulance arrives.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Safety & First Aid',
+          suggestions: ['What are the steps in dealing with an emergency (DRABC)?', 'What are the aims of First Aid?', 'What are emergency telephone numbers in Zimbabwe?']
+        };
+      }
+      return {
+        text: `### First Aid and Dealing with Emergencies\n\n#### 1. Aims of First Aid (The 3 Ps)\n1. **Preserve Life:** Keep the victim alive.\n2. **Prevent Condition from Worsening:** Avoid further injuries, infection, or bleeding.\n3. **Promote Recovery:** Relieve pain and reassure the patient.\n\n#### 2. Steps in an Emergency (The DRABC Plan)\n1. **D – Danger:** Check for danger to yourself and the victim (fire, falling objects, traffic).\n2. **R – Response:** Tap the victim\'s shoulders and ask loudly, "Are you okay?".\n3. **A – Airway:** Gently tilt the head back and lift the chin to open the airway.\n4. **B – Breathing:** Look, listen, and feel for breathing for 10 seconds.\n5. **C – Circulation:** Check pulse and apply firm direct pressure to control severe bleeding.\n\n#### 3. Emergency Contacts in Zimbabwe\n- **Police Emergency:** 995 / 999\n- **Ambulance:** 994\n- **Fire Brigade:** 993`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Safety & First Aid',
+        suggestions: ['Define First Aid', 'What are the 3 Ps of First Aid?', 'What precautions should be taken when helping an injured person?']
+      };
+    }
+
+    // 12. Topic 13 Religion: Indigenous Religion, Christianity, Islam, and Judaism
+    if (
+      q.includes('indigenous religion') ||
+      q.includes('christianity') ||
+      q.includes('islam') ||
+      q.includes('judaism') ||
+      q.includes('sacred day') ||
+      q.includes('sacred place') ||
+      q.includes('five pillars') ||
+      q.includes('ten commandments') ||
+      q.includes('religious artefact') ||
+      q.includes('religious attire')
+    ) {
+      if (q.includes('five pillars') || (q.includes('pillars') && q.includes('islam'))) {
+        return {
+          text: `### The Five Pillars of Islam\n\n1. **Shahada:** Declaration of faith (*There is no god but Allah, and Muhammad is His messenger*).\n2. **Salah:** Performing five compulsory ritual prayers every day facing Mecca.\n3. **Zakat:** Giving compulsory charity to the poor and needy.\n4. **Sawm:** Fasting from dawn to sunset during the holy month of Ramadan.\n5. **Hajj:** Pilgrimage to the Holy City of Mecca at least once in a lifetime for those who are physically and financially able.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 13: Religion',
+          suggestions: ['What are the sacred days in Islam, Christianity, and Judaism?', 'What are the Ten Commandments?', 'What are the sacred places in Indigenous religion?']
+        };
+      }
+      if (q.includes('sacred day') || q.includes('sacred days')) {
+        return {
+          text: `### Sacred Days in the Four Major Religions\n\n- **Indigenous Religion:** **Chisi** (traditional resting day during which cultivating crops or digging soil is strictly prohibited out of reverence for the land and spirits).\n- **Christianity:** **Sunday** (or **Saturday** for Seventh-day Adventists) dedicated to congregational worship, prayer, and rest.\n- **Islam:** **Friday (*Jummah*)** when Muslims gather at the mosque for special afternoon congregational prayers and sermon.\n- **Judaism:** **Shabbat (Sabbath)** from Friday sunset to Saturday night, dedicated to rest, family meals, and synagogue worship.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 13: Religion',
+          suggestions: ['What are sacred places in the four religions?', 'What are the food laws in the four religions?', 'What are the Five Pillars of Islam?']
+        };
+      }
+      if (q.includes('sacred place') || q.includes('sacred places')) {
+        return {
+          text: `### Sacred Places in the Four Major Religions\n\n- **Indigenous Religion:** **Njelele Shrine** in Matobo Hills, sacred mountains, sacred pools, and natural caves.\n- **Christianity:** Churches, cathedrals, and **Jerusalem** (where Jesus lived, died, and resurrected).\n- **Islam:** **Mecca (The Kaaba)**, Medina, and local Mosques (*Masjid*).\n- **Judaism:** The **Western Wall** in Jerusalem and local Synagogues (*Shul*).`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 13: Religion',
+          suggestions: ['What are the sacred days in the four religions?', 'What are the religious artefacts in the four religions?', 'What are the food laws in the four religions?']
+        };
+      }
+      return {
+        text: `### Overview of the Four Major Religions in Zimbabwe\n\n1. **Indigenous Religion:** Belief in one Supreme Creator (**Mwari / uMlimu**); sacred day is **Chisi**; sacred place is **Njelele**; ceremonies include **Mukwerera** (rainmaking) and **Kurova Guva**; teachings center on **Unhu/Ubuntu** and respecting ancestors.\n2. **Christianity:** Belief in One God in Trinity; sacred day is **Sunday** (or Saturday); sacred place is **Church**; holy book is the **Bible**; founded on Jesus Christ and the **Ten Commandments**.\n3. **Islam:** Belief in **Allah**; Prophet Muhammad (PBUH); sacred day is **Friday (*Jummah*)**; holy book is the **Quran**; guided by the **Five Pillars of Islam**; food law is **Halal**.\n4. **Judaism:** Belief in One God (**Yahweh**); sacred day is **Shabbat**; holy book is the **Torah**; place of worship is the **Synagogue**; food law is **Kosher**.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 13: Religion',
+        suggestions: ['What are the Five Pillars of Islam?', 'What are the sacred days in the four religions?', 'What are the food laws in the four religions?']
+      };
+    }
+
+    // 13. Voluntary Work and Social Services
+    if (q.includes('voluntary work') || q.includes('volunteerism') || q.includes('humanitarian') || q.includes('jairos jiri') || q.includes('social services in zimbabwe') || q.includes('social welfare')) {
+      if (decomp.asksOnlyDefinition) {
+        return {
+          text: `### Voluntary Work (Volunteerism)\n\n**Voluntary work** is the selfless service of offering one's time, skills, and labor to assist needy, vulnerable, or disadvantaged people in the community without expecting monetary pay or material reward.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 14: Social Services',
+          suggestions: ['Identify prominent humanitarian organisations in Zimbabwe', 'What are the benefits of voluntary work?', 'What is the role of the Department of Social Welfare?']
+        };
+      }
+      return {
+        text: `### Voluntary and Humanitarian Organisations in Zimbabwe\n\n1. **The Zimbabwe Red Cross Society:** Provides first aid training, emergency disaster relief (cyclones, floods), and community healthcare.\n2. **Jairos Jiri Association:** Founded by philanthropist Jairos Jiri in Bulawayo in 1950; provides vocational skills, education, and shelter for persons with physical and intellectual disabilities.\n3. **Matthew Rusike Children's Home:** Founded in Epworth by Methodist Minister Rev. Matthew Rusike; cares for orphaned and abandoned children.\n4. **Childline Zimbabwe:** A free, confidential 24-hour telephone helpline protecting children against abuse and neglect.\n5. **Government Social Welfare:** Distributes drought relief food and funds school fees through BEAM (Basic Education Assistance Module).`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Topic 14: Social Services',
+        suggestions: ['Define voluntary work', 'What are the benefits of volunteerism?', 'Who founded the Jairos Jiri Association?']
+      };
+    }
+
+    // 14. National Symbols of Zimbabwe
     if (
       q.includes('national flag') ||
       q.includes('flag of zimbabwe') ||
@@ -4306,243 +6344,50 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
       q.includes('hungwe') ||
       q.includes('national anthem') ||
       q.includes('coat of arms') ||
-      q.includes('national symbols')
+      q.includes('national symbols') ||
+      q.includes('national symbol')
     ) {
-      let directAnswer = '';
-      if (q.includes('flag') || q.includes('colours') || q.includes('colors')) {
-        directAnswer = 'The Zimbabwe National Flag has 5 colours: **Green** (vegetation & agriculture), **Yellow/Gold** (mineral wealth), **Red** (blood shed during the liberation struggle/Chimurenga), **Black** (the indigenous black majority), and **White triangle** (peace and tranquility). The **Red Star** represents national aspirations, and the **Zimbabwe Bird (Hungwe)** is the national emblem.';
-      } else if (q.includes('bird') || q.includes('hungwe')) {
-        directAnswer = 'The **Zimbabwe Bird (Hungwe / Bateleur Eagle)** is the national emblem of Zimbabwe, originally carved out of soapstone at **Great Zimbabwe**; it represents historical heritage, sovereignty, and identity.';
-      } else if (q.includes('anthem')) {
-        directAnswer = 'The National Anthem is "**Simudzai Mureza Wedu weZimbabwe**" (ChiShona) / "**Kalibusiswe Ilizwe leZimbabwe**" (IsiNdebele) / "Blessed be the Land of Zimbabwe", written by **Professor Fred Mutswairo** and composed by **Solomon Mutswairo**.';
-      } else if (q.includes('coat of arms')) {
-        directAnswer = 'The Zimbabwe Coat of Arms features two **Kudus** (unity of diverse ethnic groups), a **hoe and rifle** (transition from war to peace and agricultural production), and the national motto: "**Unity, Freedom, Work**".';
+      if (q.includes('flag') && !q.includes('all') && !q.includes('symbols')) {
+        return {
+          text: `### The National Flag of Zimbabwe\n\nThe Zimbabwe National Flag has 5 colours:\n- **Green:** Agriculture, lush vegetation, and rich arable land.\n- **Yellow / Gold:** Mineral wealth (gold, platinum, chrome, diamonds).\n- **Red:** The blood of gallant heroes shed during the First and Second Chimurenga.\n- **Black:** The indigenous African black majority.\n- **White Triangle:** Peace, tranquility, and national harmony.\n- **Red Star:** High national aspirations and international peace.\n- **Zimbabwe Bird (Hungwe):** National emblem representing sovereignty and ancestral origin at Great Zimbabwe.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+          suggestions: ['What does the Zimbabwe Bird represent?', 'What is the National Anthem of Zimbabwe?', 'What is the motto on the Coat of Arms?']
+        };
       }
-
+      if (q.includes('bird') || q.includes('hungwe')) {
+        return {
+          text: `### The Zimbabwe Bird (Hungwe)\n\nThe **Zimbabwe Bird (Hungwe / Bateleur Eagle)** is the official national emblem of Zimbabwe. Originally carved out of soapstone at **Great Zimbabwe**, it represents national sovereignty, ancestral history, and cultural heritage.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+          suggestions: ['What are the colours of the Zimbabwe National Flag?', 'What is the National Anthem of Zimbabwe?', 'What is the motto on the Coat of Arms?']
+        };
+      }
+      if (q.includes('anthem')) {
+        return {
+          text: `### The National Anthem of Zimbabwe\n\nThe National Anthem is "**Simudzai Mureza Wedu weZimbabwe**" (ChiShona) / "**Kalibusiswe Ilizwe leZimbabwe**" (IsiNdebele) / "Blessed be the Land of Zimbabwe". It was composed by **Professor Solomon Mutswairo** and is sung standing at attention as a mark of national honor.`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+          suggestions: ['What are the colours of the Zimbabwe National Flag?', 'What does the Zimbabwe Bird represent?', 'What is the motto on the Coat of Arms?']
+        };
+      }
+      if (q.includes('coat of arms')) {
+        return {
+          text: `### The Zimbabwe Coat of Arms\n\n- Supported by two **Kudus** (symbolizing the unity of Zimbabwe\'s diverse ethnic groups).\n- Features a **hoe and automatic rifle** crossed behind the shield (symbolizing the transition from war to agricultural production and defense of sovereignty).\n- National Motto: "**Unity, Freedom, Work**".`,
+          sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+          suggestions: ['What are the colours of the National Flag?', 'What does the Zimbabwe Bird represent?', 'What is the National Anthem?']
+        };
+      }
       return {
-        text: `### Primary Social Sciences (ZIMSEC 7050): National Symbols of Zimbabwe
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-National symbols represent the sovereignty, heritage, and unity of the Zimbabwean nation:
-
-1. The National Flag:
-- **Green:** Agriculture, lush vegetation, and rich arable land.
-- **Yellow / Gold:** The country's vast mineral wealth (gold, platinum, chrome, lithium).
-- **Red:** The blood of gallant heroes and heroines shed during the First and Second Chimurenga.
-- **Black:** The indigenous African black majority.
-- **White Triangle:** Peace, freedom, and national tranquility.
-- **Red Star:** High national aspirations, socialism, and peace.
-- **Zimbabwe Bird (Hungwe):** National emblem representing heritage, sovereignty, and origin at Great Zimbabwe.
-
-2. The National Anthem:
-- "Simudzai Mureza Wedu weZimbabwe" / "Kalibusiswe Ilizwe leZimbabwe".
-- Written by Professor Solomon Mutswairo. Sung with utmost respect and standing at attention.
-
-3. The National Coat of Arms:
-- Supported by two Kudus standing on an earth mound with wheat, cotton, and maize.
-- Hoe and Automatic Rifle crossed behind the shield, signifying peace through production and defense of national sovereignty.
-- Motto: **Unity, Freedom, Work**.
-
-4. National Monuments & Heritage Sites:
-- **Great Zimbabwe (Masvingo):** Medieval stone city built by ancestors of the Shona without mortar.
-- **National Heroes Acre (Harare):** National monument honoring departed gallant freedom fighters.
-- **Victoria Falls (Mosi-oa-Tunya):** One of the Seven Natural Wonders of the World.`,
-        sourceTag: 'ZIMSEC Grade 7 Social Science Syllabus 7050 • National Symbols',
-        suggestions: [
-          'What were the causes of the First and Second Chimurenga?',
-          'What is the Unity Accord of 1987?',
-          'What are the core values of Unhu/Ubuntu?'
-        ]
+        text: `### National Symbols of Zimbabwe\n\n1. **The National Flag:** Green (vegetation), Yellow (minerals), Red (blood of liberation heroes), Black (indigenous majority), White triangle (peace), Red Star (aspirations), and Zimbabwe Bird.\n2. **The Zimbabwe Bird (Hungwe):** National emblem carved from soapstone at Great Zimbabwe.\n3. **The National Anthem:** "*Simudzai Mureza Wedu weZimbabwe*" written by Prof. Solomon Mutswairo.\n4. **The Coat of Arms:** Supported by two Kudus, featuring a hoe and rifle under the motto: "*Unity, Freedom, Work*".`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • National Symbols',
+        suggestions: ['Explain the colours of the National Flag', 'What is the National School Pledge?', 'What are the national celebrations in Zimbabwe?']
       };
     }
 
-    // 2. Liberation Struggle (First & Second Chimurenga, Chinhoyi, Heroes, Independence)
-    if (
-      q.includes('first chimurenga') ||
-      q.includes('umvukela') ||
-      q.includes('nehanda') ||
-      q.includes('kaguvi') ||
-      q.includes('second chimurenga') ||
-      q.includes('chinhoyi') ||
-      q.includes('zanla') ||
-      q.includes('zipra') ||
-      q.includes('independence day') ||
-      q.includes('18 april 1980') ||
-      q.includes('heroes acre')
-    ) {
-      let directAnswer = '';
-      if (q.includes('first chimurenga') || q.includes('nehanda') || q.includes('kaguvi')) {
-        directAnswer = 'The **First Chimurenga / Umvukela (1896–1897)** was an anti-colonial uprising led by spirit mediums **Mbuya Nehanda** and **Sekuru Kaguvi** against the British South Africa Company (BSAC). Mbuya Nehanda\'s famous dying prophecy was: "**Mapfupa angu achamuka**" (My bones shall surely rise).';
-      } else if (q.includes('second chimurenga') || q.includes('chinhoyi')) {
-        directAnswer = 'The **Second Chimurenga** was sparked by the historic **Battle of Chinhoyi on 28 April 1966**, where 7 heroic ZANLA freedom fighters fought valiantly against the Rhodesian security forces. Zimbabwe attained independence on **18 April 1980**.';
-      } else if (q.includes('independence')) {
-        directAnswer = 'Zimbabwe gained independence on **18 April 1980** at **Rufaro Stadium** in Harare, ending colonial rule with Cde Robert Mugabe as first Prime Minister.';
-      }
-
+    // 15. Unhu / Ubuntu / Vumunhu Philosophy
+    if (q.includes('unhu') || q.includes('ubuntu') || q.includes('vumunhu')) {
       return {
-        text: `### Primary Social Sciences (ZIMSEC 7050): The Liberation Struggle
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key historical milestones of Zimbabwe's liberation path:
-
-1. The First Chimurenga / Umvukela (1896 – 1897):
-- **Causes:** Oppressive BSAC colonial rule, seizure of fertile land, cattle confiscation, the Hut Tax (1894), and forced labor (*chibharo*).
-- **Leaders:** Spirit mediums Mbuya Nehanda, Sekuru Kaguvi, and chiefs like Chingaira and Mashayamombe in Mashonaland; King Lobengula's commanders in Matabeleland.
-- **Significance:** Mbuya Nehanda was executed in 1898; her famous prophecy "**Mapfupa angu achamuka**" inspired the Second Chimurenga decades later.
-
-2. The Second Chimurenga (1966 – 1979):
-- **Ignition:** The **Battle of Chinhoyi on 28 April 1966**, where 7 brave ZANLA cadres fought courageously against Rhodesian forces.
-- **Liberation Wings:** **ZANLA** (military wing of ZANU, led by Cde Robert Mugabe and Josiah Tongogara from Mozambique) and **ZIPRA** (military wing of ZAPU, led by Dr. Joshua Nkomo and Lookout Masuku from Zambia).
-- **Major External Bases & Massacres:** Nyadzonia (1976) and Chimoio (1977) where Rhodesian forces bombed refugee and training camps.
-- **Lancaster House Conference (1979):** Co-led by the Patriotic Front alliance (Mugabe & Nkomo), culminating in democratic elections.
-- **Independence Day:** 18 April 1980 celebrated at Rufaro Stadium.`,
-        sourceTag: 'ZIMSEC Grade 7 Social Science Syllabus 7050 • Liberation Struggle',
-        suggestions: [
-          'What is the Unity Accord of 22 December 1987?',
-          'What are the 16 official languages of Zimbabwe?',
-          'What are the colors of the Zimbabwe National Flag?'
-        ]
-      };
-    }
-
-    // 3. Unity Accord, Land Reform, Second Republic, and ZiG Currency
-    if (
-      q.includes('unity accord') ||
-      q.includes('land reform') ||
-      q.includes('third chimurenga') ||
-      q.includes('second republic') ||
-      q.includes('zig currency') ||
-      q.includes('zimbabwe gold') ||
-      q.includes('vision 2030') ||
-      q.includes('16 official languages')
-    ) {
-      let directAnswer = '';
-      if (q.includes('unity accord')) {
-        directAnswer = 'The **Unity Accord was signed on 22 December 1987** between Cde Robert Gabriel Mugabe (ZANU) and Dr. Joshua Mqabuko Nkomo (PF-ZAPU), uniting the parties into ZANU-PF and ending civil conflict. Celebrated annually as **National Unity Day**.';
-      } else if (q.includes('zig') || q.includes('currency')) {
-        directAnswer = '**Zimbabwe Gold (ZiG)** is Zimbabwe\'s sovereign currency introduced in **April 2024** by the Reserve Bank of Zimbabwe, fully backed by gold reserves, precious minerals, and foreign exchange reserves.';
-      } else if (q.includes('land reform') || q.includes('third chimurenga')) {
-        directAnswer = 'The **Fast-Track Land Reform Programme (Third Chimurenga)** began in **2000** to redistribute commercial agricultural land to indigenous black Zimbabweans under **Model A1 (smallholder)** and **Model A2 (commercial farming)**.';
-      } else if (q.includes('16') || q.includes('official languages')) {
-        directAnswer = 'The **2013 Constitution recognizes 16 official languages** in Zimbabwe: Chewa, Chibarwe, English, Kalanga, Koisan, Nambya, Ndau, Ndebele, Shangani, Shona, Sign Language, Sotho, Tonga, Tswana, Venda, and Xhosa.';
-      }
-
-      return {
-        text: `### Primary Social Sciences (ZIMSEC 7050): Nation Building & Modern Zimbabwe
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key post-independence achievements and socio-economic milestones:
-
-1. The Historic Unity Accord (22 December 1987):
-- Signed between Cde Robert Mugabe and Dr. Joshua Nkomo to forge national unity, peace, and political stability.
-- Formed a single unified party: ZANU-PF, with Cde Mugabe as Executive President and Dr. Nkomo as Vice President.
-- Commemorated every 22 December as **National Unity Day**.
-
-2. The Third Chimurenga / Fast-Track Land Reform (2000):
-- Reclaimed ancestral arable lands that had been partitioned under the colonial Land Apportionment Act (1930).
-- **Model A1:** Villagized smallholder farming plots (5–6 ha per family plus communal grazing) to decongest rural areas.
-- **Model A2:** Commercial small-to-medium scale farms for market-oriented production.
-
-3. The Second Republic & Vision 2030:
-- Philosophy: "*Nyika inovakwa nevene vayo / Ilizwe lakhiwa ngabaninilo*" (A nation is built by its own owners).
-- Focus: Food security (Pfumvudza/Intwasa), modern highways (Harare-Beitbridge), dams (Lake Gwayi-Shangani), and Heritage-Based Education 5.0.
-- **Zimbabwe Gold (ZiG):** Backed by vault-stored gold and hard currency reserves to maintain monetary stability.
-
-4. 16 Officially Recognized Languages (2013 Constitution):
-- Chewa, Chibarwe, English, Kalanga, Koisan, Nambya, Ndau, Ndebele, Shangani, Shona, Sign Language, Sotho, Tonga, Tswana, Venda, and Xhosa.`,
-        sourceTag: 'ZIMSEC Grade 7 Social Science Syllabus 7050 • Modern Zimbabwe',
-        suggestions: [
-          'What are the national symbols of Zimbabwe?',
-          'What are the core values of Unhu/Ubuntu?',
-          'What are the world religions taught in FAREME?'
-        ]
-      };
-    }
-
-    // 4. Unhu/Ubuntu Values and Traditional Governance (Dare, Chiefs)
-    if (
-      q.includes('unhu') ||
-      q.includes('ubuntu') ||
-      q.includes('dare') ||
-      q.includes('traditional leaders') ||
-      q.includes('chiefs') ||
-      q.includes('headmen') ||
-      q.includes('village head')
-    ) {
-      let directAnswer = '**Unhu / Ubuntu** is the foundational African philosophy that "**a person is a person through other people**" (*Munhu munhu nevanhu / Umuntu ngumuntu ngabantu*). Key values are **respect (tsika/kuremekedza), honesty (kutendeka), hospitality, and community solidarity**.';
-      return {
-        text: `### Primary Social Sciences (ZIMSEC 7050): Unhu / Ubuntu & Governance
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-1. Core Pillars of Unhu / Ubuntu / Vumunhu:
-- **Ruremekedzo / Inhlonipho (Respect):** Greeting elders with clapping or kneeling; listening attentively; honoring peers and guests.
-- **Kutendeka (Honesty & Integrity):** Telling the truth, avoiding theft, and being dependable.
-- **Kubatsirana (Communal Solidarity):** Helping neighbors during bereavement, planting, or weeding (*Nhimbe / Ilima*).
-- **Kugamuchira Vaenzi (Hospitality):** Welcoming strangers and sharing food generously.
-
-2. Traditional Leadership Hierarchy:
-- **Chief (*Ishe* / *Induna*):** Highest traditional authority presiding over a chieftainship; custodian of culture, land, and heritage.
-- **Headman (*Sadunhu*):** Assists the chief and presides over a sub-district (*dunhu*).
-- **Village Head (*Sabhuku* / *Umlisa*):** Leads an individual village (*musha*), maintains village tax registers (*bhuku*), and allocates homestead sites.
-- **The Traditional Court (*Dare* / *Inkundla*):** Community court where disputes are resolved amicably through consensus and restorative justice.`,
-        sourceTag: 'ZIMSEC Grade 7 Social Science Syllabus 7050 • Unhu & Governance',
-        suggestions: [
-          'What are the national symbols of Zimbabwe?',
-          'What is the Unity Accord of 1987?',
-          'What are the world religions in FAREME?'
-        ]
-      };
-    }
-
-    // 5. FAREME (Family, Religion and Moral Education: Christianity, Indigenous Religion, Islam)
-    if (
-      q.includes('fareme') ||
-      q.includes('religion') ||
-      q.includes('indigenous religion') ||
-      q.includes('christianity') ||
-      q.includes('islam') ||
-      q.includes('five pillars') ||
-      q.includes('ten commandments') ||
-      q.includes('mukwerera') ||
-      q.includes('rainmaking ceremony')
-    ) {
-      let directAnswer = '';
-      if (q.includes('five pillars') || q.includes('islam')) {
-        directAnswer = 'The **Five Pillars of Islam** are: **1. Shahada** (faith in one God Allah and Prophet Muhammad), **2. Salah** (5 daily prayers), **3. Zakat** (giving alms/charity to the poor), **4. Sawm** (fasting during Ramadan), and **5. Hajj** (pilgrimage to Mecca).';
-      } else if (q.includes('mukwerera') || q.includes('rainmaking') || q.includes('indigenous religion')) {
-        directAnswer = '**Mukwerera (or Mutoro)** is a traditional Zimbabwean indigenous **rainmaking ceremony** held before the rainy season at sacred shrines (e.g. Matobo Hills / Njelele) to ask Mwari/Musikavanhu for rain through spirit mediums.';
-      } else if (q.includes('christianity') || q.includes('ten commandments')) {
-        directAnswer = 'In **Christianity**, the holy book is the **Bible**; followers worship God through **Jesus Christ** and adhere to the **Ten Commandments** (centered on loving God and loving one\'s neighbor).';
-      }
-
-      return {
-        text: `### Primary Social Sciences (ZIMSEC 7050): FAREME & World Religions
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Family, Religion and Moral Education (FAREME) covers indigenous traditions and major world religions:
-
-1. Indigenous Religion in Zimbabwe:
-- Belief in Supreme Creator: **Mwari / Musikavanhu / uMlimu**.
-- Communication occurs through ancestral spirits (*Vadzimu / Amadlozi*) and regional spirit mediums (*Mhondoro*).
-- **Mukwerera / Mutoro:** Traditional rainmaking ceremony held under sacred trees (e.g. *Muhacha*) or at shrines like **Njelele** in Matobo.
-- **Kurova Guva / Umbondo:** Memorial ceremony bringing the spirit of a deceased elder back home to protect the family.
-
-2. Christianity:
-- Holy Book: **The Holy Bible** (Old and New Testaments).
-- Central Figure: **Jesus Christ**, the Son of God and Savior.
-- Moral Guide: **The Ten Commandments** given to Moses on Mount Sinai, and the Golden Rule: "*Love your neighbor as yourself*".
-- Places of Worship: Church, Chapel, Cathedral.
-
-3. Islam:
-- Holy Book: **The Holy Quran**, revealed to Prophet Muhammad (Peace Be Upon Him).
-- The Five Pillars of Islam:
-  * **Shahada:** Declaration of faith (There is no god but Allah, and Muhammad is His messenger).
-  * **Salah:** Five compulsory daily prayers facing Mecca.
-  * **Zakat:** Compulsory charity to the poor and needy.
-  * **Sawm:** Fasting from dawn to sunset during the holy month of Ramadan.
-  * **Hajj:** Pilgrimage to the Holy City of Mecca at least once in a lifetime for those who are able.
-- Place of Worship: Mosque (*Masjid*).`,
-        sourceTag: 'ZIMSEC Grade 7 Social Science Syllabus 7050 • FAREME',
-        suggestions: [
-          'What are the national symbols of Zimbabwe?',
-          'What is Unhu/Ubuntu in Zimbabwean culture?',
-          'What happened during the First and Second Chimurenga?'
-        ]
+        text: `### Unhu / Ubuntu / Vumunhu\n\n**Unhu / Ubuntu** is the foundational African philosophy and moral code that asserts: "**A person is a person through other people**" (*Munhu munhu nevanhu* / *Umuntu ngumuntu ngabantu*).\n\n#### Core Principles of Unhu / Ubuntu:\n1. **Ruremekedzo / Inhlonipho (Respect):** Showing utmost respect to parents, elders, teachers, and peers.\n2. **Kutendeka (Honesty and Integrity):** Being truthful, reliable, and refraining from theft or deception.\n3. **Kubatsirana (Communal Solidarity):** Helping neighbours in times of bereavement, farming (*Nhimbe / Ilima*), or distress.\n4. **Kugamuchira Vaenzi (Hospitality):** Welcoming strangers and sharing food generously.\n5. **Kunyara (Decency and Self-Discipline):** Dressing decently, using polite language, and avoiding shameful misconduct.`,
+        sourceTag: 'ZIMSEC Grade 7 Heritage and Social Studies 7050 • Culture & Values',
+        suggestions: ['What is the totem system?', 'What are the characteristics of ideal marital relationships?', 'What is the National School Pledge?']
       };
     }
 
@@ -4559,213 +6404,287 @@ Family, Religion and Moral Education (FAREME) covers indigenous traditions and m
     intent: QuestionIntent
   ): SynthesisResult | null {
     const q = question.toLowerCase();
+    const decomp = this.decomposeQuestion(question);
 
-    // 1. Traditional Zimbabwean Games (Pada, Nhodo, Tsoro)
-    if (
-      q.includes('pada') ||
-      q.includes('nhodo') ||
-      q.includes('tsoro') ||
-      q.includes('traditional games') ||
-      q.includes('indigenous games')
-    ) {
-      let directAnswer = '';
-      if (q.includes('pada')) {
-        directAnswer = '**Pada (Hopscotch)** is a traditional game where players hop on one foot across numbered grid squares drawn on the ground; it develops **balance, hopping stamina, spatial awareness, and agility**.';
-      } else if (q.includes('nhodo')) {
-        directAnswer = '**Nhodo** is a traditional stone-catching game played around a shallow circular pit (*chikomba*); it develops **hand-eye coordination, reaction speed, and counting skills**.';
-      } else if (q.includes('tsoro')) {
-        directAnswer = '**Tsoro Yemutwve** is an ancient strategic board game played with stones or seeds in 4 rows of holes; it develops **mental arithmetic, forward planning, and problem-solving**.';
-      }
-
+    // 1. Pada (Traditional Hopscotch)
+    if (q.includes('pada')) {
       return {
-        text: `### Primary Physical Education & Arts (ZIMSEC 7130): Traditional Games
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Indigenous games form a vital part of Zimbabwe's cultural heritage and physical education:
-
-1. Pada (Traditional Hopscotch):
-- **How it is played:** A grid of numbered boxes is drawn on flat soil or concrete. Players throw a stone (*chidonha*) into a box and hop on one foot through the grid without touching the lines.
-- **Physical Benefits:** Improves single-leg balance, lower limb strength, coordination, and agility.
-
-2. Nhodo (Stone Catching Game):
-- **How it is played:** Played around a small pit in the ground containing 10–20 small round stones (*nhodo*). A player throws a larger gora stone into the air, scoops out specific pebbles from the pit with one hand, and catches the falling gora before it hits the ground.
-- **Physical Benefits:** Sharpens hand-eye coordination, rapid finger reflexes, and mental counting.
-
-3. Tsoro Yemutwve (Strategic Board Game):
-- **How it is played:** Played on 4 rows of holes with pebbles. Players capture opponents' pebbles through strategic moves.
-- **Cognitive Benefits:** Known as African Chess; builds critical thinking, mathematical calculation, and patience.`,
+        text: `### Pada (Traditional Hopscotch)\n\n**Pada** is an indigenous Zimbabwean hopping game where a player tosses a marker (*chidonha*) into numbered grid boxes drawn on flat ground and hops on one foot through the courts without stepping on the boundary lines.\n\n- **Physical Benefits:** Improves single-leg balance, lower limb strength, spatial awareness, and motor coordination.`,
         sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Games',
-        suggestions: [
-          'What are the traditional dances of Zimbabwe?',
-          'What are the components of physical fitness and why do we warm up?',
-          'What is Shona stone sculpture?'
-        ]
+        suggestions: ['What is Nhodo and how is it played?', 'What is Tsoro Yemutwve?', 'What are the traditional dances of Zimbabwe?']
       };
     }
 
-    // 2. Traditional Dances of Zimbabwe (Mbende, Muchongoyo, Isitshikitsha, Amabhiza, Mhande)
-    if (
-      q.includes('mbende') ||
-      q.includes('jerusarema') ||
-      q.includes('muchongoyo') ||
-      q.includes('isitshikitsha') ||
-      q.includes('amabhiza') ||
-      q.includes('mhande') ||
-      q.includes('traditional dance') ||
-      q.includes('indigenous dance')
-    ) {
-      let directAnswer = '';
-      if (q.includes('mbende') || q.includes('jerusarema')) {
-        directAnswer = '**Mbende / Jerusarema** is a celebratory dance of the Zezuru people of **Mashonaland East (Murehwa and UMP)** characterized by rapid acrobatic movements and drumming; it is proclaimed a **UNESCO Masterpiece of Intangible Cultural Heritage**.';
-      } else if (q.includes('muchongoyo')) {
-        directAnswer = '**Muchongoyo** is a military war and victory dance of the **Ndau people of Chipinge (Manicaland)**; dancers hold shields (*zvinhoo*) and sticks and stamp their feet forcefully in rhythm with the drum.';
-      } else if (q.includes('isitshikitsha')) {
-        directAnswer = '**Isitshikitsha** is a traditional ceremonial and royal dance of the **Ndebele people of Matabeleland**, characterized by rhythmic hand clapping, foot stamping, and choral harmony.';
-      } else if (q.includes('amabhiza')) {
-        directAnswer = '**Amabhiza** is a traditional dance of the **Kalanga people of Matabeleland South** that mimics the graceful movements of galloping horses, often performed at rainmaking ceremonies.';
-      } else if (q.includes('mhande')) {
-        directAnswer = '**Mhande** is a sacred rainmaking dance of the **Karanga people of the Midlands and Masvingo**, performed with leg rattles (*magagada*) during the Mutoro ceremony.';
-      }
-
+    // 2. Nhodo (Stone Catching Game)
+    if (q.includes('nhodo')) {
       return {
-        text: `### Primary Physical Education & Arts (ZIMSEC 7130): Traditional Dances of Zimbabwe
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Traditional dances celebrate milestones, history, harvest, and spirituality across Zimbabwe's provinces:
+        text: `### Nhodo (Stone-Catching Game)\n\n**Nhodo** is an indigenous Zimbabwean game played around a shallow circular pit (*chikomba*) containing 10–20 small round pebbles. A player tosses a larger stone (*gora*) upward into the air, scoops out the required number of pebbles from the pit with one hand, and catches the falling gora before it hits the ground.\n\n- **Physical & Cognitive Benefits:** Develops hand-eye coordination, rapid finger reflexes, concentration, and mental counting skills.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Games',
+        suggestions: ['What is Pada and how is it played?', 'What is Tsoro Yemutwve?', 'What are the traditional dances of Zimbabwe?']
+      };
+    }
 
-1. Mbende / Jerusarema Dance (Mashonaland East - Murehwa & UMP):
-- **Origin & Culture:** Zezuru people of Mashonaland East.
-- **Style:** Vigorous acrobatic leaps, sensual hip movements, and polyrhythmic drumming using the *ngoma* drum and wooden clappers.
-- **Heritage Status:** Proclaimed by UNESCO in 2005 as a Masterpiece of Oral and Intangible Heritage of Humanity.
+    // 3. Tsoro Yemutwve (Strategic Board Game)
+    if (q.includes('tsoro')) {
+      return {
+        text: `### Tsoro Yemutwve (Traditional Board Game)\n\n**Tsoro Yemutwve** is an ancient indigenous Zimbabwean strategy board game (African Chess) played on 4 parallel rows of holes scooped into the ground or carved on a wooden board, using pebbles or seeds as playing counters.\n\n- **Cognitive Benefits:** Sharpens mental arithmetic, logical reasoning, forward strategic planning, and patience.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Games',
+        suggestions: ['What is Nhodo?', 'What is Pada?', 'What are the traditional dances of Zimbabwe?']
+      };
+    }
 
-2. Muchongoyo Dance (Manicaland - Chipinge):
-- **Origin & Culture:** Ndau and Shangani people.
-- **Style:** Military war and victory dance performed by men and women holding cowhide shields and knobkerries, stamping feet forcefully in unison.
-
-3. Isitshikitsha Dance (Matabeleland - Bulawayo):
-- **Origin & Culture:** Ndebele royal court dance.
-- **Style:** Performed at weddings, royal installations, and celebrations, featuring rhythmic hand clapping, singing, and graceful body swaying.
-
-4. Amabhiza Dance (Matabeleland South - Plumtree / Bulilima):
-- **Origin & Culture:** Kalanga people.
-- **Style:** Dancers wear horse-tail regalia and mimic the majestic galloping and trotting of horses.
-
-5. Mhande Dance (Midlands & Masvingo):
-- **Origin & Culture:** Karanga people.
-- **Style:** Performed during the *Mutoro* rainmaking ceremony; dancers wear dried gourd leg rattles (*magagada*) that rustle with each step.`,
+    // 4. Mbende / Jerusarema Dance
+    if (q.includes('mbende') || q.includes('jerusarema')) {
+      return {
+        text: `### Mbende / Jerusarema Dance\n\n**Mbende / Jerusarema** is a celebratory traditional dance of the Zezuru Shona people originating from **Murehwa and Uzumba-Maramba-Pfungwe (UMP)** in Mashonaland East.\n\n- **Characteristics:** Fast-paced polyrhythmic drumming (*ngoma*), wooden clappers, acrobatic leaps, and energetic sensual hip movements.\n- **UNESCO Status:** Proclaimed a **UNESCO Masterpiece of the Oral and Intangible Heritage of Humanity** in 2005.`,
         sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Dance',
-        suggestions: [
-          'What are the traditional games of Zimbabwe?',
-          'What is Shona stone sculpture?',
-          'Why is warming up and cooling down important in sports?'
-        ]
+        suggestions: ['What is the Muchongoyo dance?', 'What is Isitshikitsha dance?', 'What is Shona stone sculpture?']
       };
     }
 
-    // 3. Visual Arts & Crafts (Shona Stone Sculpture, Pottery, Basketry)
+    // 5. Muchongoyo Dance
+    if (q.includes('muchongoyo')) {
+      return {
+        text: `### Muchongoyo Dance\n\n**Muchongoyo** is a traditional military war and victory dance of the **Ndau and Shangani people of Chipinge and Chiredzi (Manicaland and Masvingo)**.\n\n- **Characteristics:** Dancers hold cowhide shields (*zvinhoo*) and knobkerries, stamping their feet forcefully on the ground in unison to heavy drumbeats.\n- **Purpose:** Historically performed to prepare warriors for battle and celebrate battlefield victories; now performed at major cultural festivals and national celebrations.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Dance',
+        suggestions: ['What is the Mbende / Jerusarema dance?', 'What is Isitshikitsha dance?', 'What is the Mhande dance?']
+      };
+    }
+
+    // 6. Isitshikitsha Dance
+    if (q.includes('isitshikitsha')) {
+      return {
+        text: `### Isitshikitsha Dance\n\n**Isitshikitsha** is a traditional royal and ceremonial dance of the **Ndebele people of Matabeleland (Bulawayo)**.\n\n- **Characteristics:** Rhythmic hand-clapping, graceful foot stamping, choral harmonies, and sweeping arm gestures.\n- **Occasions:** Performed at weddings, royal installations, first-fruit ceremonies (*Inxwala*), and community celebrations.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Dance',
+        suggestions: ['What is the Amabhiza dance?', 'What is the Muchongoyo dance?', 'What is Mbende / Jerusarema?']
+      };
+    }
+
+    // 7. Amabhiza Dance
+    if (q.includes('amabhiza')) {
+      return {
+        text: `### Amabhiza Dance\n\n**Amabhiza** is a traditional dance of the **Kalanga people of Matabeleland South (Plumtree and Bulilima-Mangwe)**.\n\n- **Characteristics:** Dancers wear horse-tail regalia and mimic the galloping, trotting, and high-stepping movements of horses to fast-tempo drumming.\n- **Occasions:** Performed during rainmaking ceremonies (*Mayile*) and cultural harvest celebrations.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Dance',
+        suggestions: ['What is Isitshikitsha dance?', 'What is Mhande dance?', 'What is the Muchongoyo dance?']
+      };
+    }
+
+    // 8. Mhande Dance
+    if (q.includes('mhande')) {
+      return {
+        text: `### Mhande Dance\n\n**Mhande** is a sacred rainmaking ritual dance of the **Karanga people of Masvingo and the Midlands provinces**.\n\n- **Characteristics:** Performed with dried gourd leg rattles (*magagada*) strapped to dancers\' shins that rustle with each slow, solemn step.\n- **Occasions:** Performed during the *Mutoro* ceremony to petition God (*Mwari*) and ancestral spirits for rainfall and fertile harvests.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Traditional Dance',
+        suggestions: ['What is Mbende / Jerusarema?', 'What is Muchongoyo dance?', 'What are traditional musical instruments of Zimbabwe?']
+      };
+    }
+
+    // 9. Traditional Indigenous Musical Instruments
     if (
-      q.includes('shona sculpture') ||
-      q.includes('stone sculpture') ||
-      q.includes('pottery') ||
-      q.includes('basketry') ||
-      q.includes('visual arts') ||
-      q.includes('crafts') ||
-      q.includes('chirongo') ||
-      q.includes('gate') ||
-      q.includes('binga basket')
+      q.includes('indigenous musical instruments') ||
+      q.includes('traditional musical instruments') ||
+      q.includes('traditional instruments') ||
+      q.includes('mbira') ||
+      q.includes('hosho') ||
+      q.includes('ngoma') ||
+      q.includes('chipendani')
     ) {
-      let directAnswer = '';
-      if (q.includes('sculpture')) {
-        directAnswer = '**Shona stone sculpture** is an internationally acclaimed art form where Zimbabwean artists carve serpentine, springstone, and soapstone into expressive human and spiritual forms (centered at **Chitungwiza Arts Centre** and **Tengenenge**).';
-      } else if (q.includes('pottery') || q.includes('chirongo')) {
-        directAnswer = 'In traditional pottery, clay pots (*hari*) include the **Chirongo** (for fetching and storing cool drinking water), the **Gate** (large pot for brewing traditional beer), and the **Hadjana** (for cooking meat or vegetable relish).';
-      } else if (q.includes('basket') || q.includes('binga')) {
-        directAnswer = '**Tonga / Binga baskets** are famous geometric woven baskets made from wild **ilala palm leaves** by Tonga women in Binga (Matabeleland North), traditionally used for winnowing grain (*tswanda*).';
+      if (decomp.asksOnlyDefinition && q.includes('mbira')) {
+        return {
+          text: `### Mbira (Thumb Piano)\n\n**Mbira** is a sacred Zimbabwean musical instrument consisting of metal keys (lamellae) affixed to a hardwood soundboard, placed inside a dried calabash gourd resonator (*deze*) lined with bottle tops or shells to produce a buzzing sound. It is played at spiritual ceremonies (*Bira*) and national celebrations.`,
+          sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Music',
+          suggestions: ['What is the Hosho?', 'What are the traditional dances of Zimbabwe?', 'Name indigenous musical instruments of Zimbabwe']
+        };
       }
 
       return {
-        text: `### Primary Physical Education & Arts (ZIMSEC 7130): Visual Arts & Crafts
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Visual arts preserve Zimbabwean heritage through sculpture, craft, and functional tools:
+        text: `### Indigenous Musical Instruments of Zimbabwe\n\n1. **Mbira (Thumb Piano):** Sacred plucked lamellophone with metal keys mounted on wood and resonated in a calabash (*deze*); played at *Bira* ceremonies.\n2. **Hosho (Gourd Rattles):** Dried hollow gourds filled with wild canna seeds (*hota*) that provide the rhythmic driving pulse for mbira music.\n3. **Ngoma (Traditional Drums):** Carved hollow wooden drums covered with cowhide or goat skin, played with bare hands or drumsticks.\n4. **Chipendani & Mukube (Mouth Bows):** Single-string musical bows using the player\'s mouth cavity as an acoustic resonator.\n5. **Magagada / Magavhu (Leg Rattles):** Dried seed pods tied around dancers\' ankles that rustle rhythmically with footsteps.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Music',
+        suggestions: ['What is the Mbira?', 'What is the Mbende / Jerusarema dance?', 'What is Shona stone sculpture?']
+      };
+    }
 
-1. Shona Stone Sculpture:
-- **Materials:** Local geological rocks including **Serpentine, Springstone, Leopard Rock, and Soapstone**.
-- **Techniques:** Carving with chisels and hammers, smoothing with water-paper, heating and applying beeswax to produce a deep polished shine.
-- **Notable Centres:** Tengenenge Sculpture Community (Guruve) and Chitungwiza Arts Centre. Pioneers include Nicholas Mukomberanwa and Bernard Matemera.
-
-2. Traditional Pottery (*Kuumba Hari*):
-- Made by molding natural clay, sun-drying, and firing in an open-pit kiln.
-- **Hari Types:**
-  * **Chirongo:** Slender neck and rounded body; keeps drinking water cold.
-  * **Gate:** Huge wide-mouthed pot used for fermenting traditional seven-day sorghum beer.
-  * **Hadjana / Tsambakonzi:** Small to medium pot for cooking relish (*muriwo / nyama*).
-  * **Rongo / Pfuko:** Serving calabash for sweet mahewu.
-
-3. Indigenous Basketry & Weaving:
-- **Tonga (Binga) Baskets:** Woven from ilala palm fronds with intricate brown and cream geometric spider-web patterns; used for winnowing grain (*kufesa*).
-- **Mat Weaving (*Rupasa / Rukukwe*):** Made from river reeds (*tsanga*) tied with tree bark fiber (*rwodzi*).`,
+    // 10. Shona Stone Sculpture
+    if (q.includes('shona sculpture') || q.includes('stone sculpture')) {
+      return {
+        text: `### Shona Stone Sculpture\n\n**Shona stone sculpture** is an internationally acclaimed Zimbabwean art movement where artists hand-carve local metamorphic rocks into expressive human, spiritual, and animal forms.\n\n- **Rocks Used:** Serpentine, Springstone, Opal stone, Soapstone, and Leopard rock.\n- **Famous Centres:** Chitungwiza Arts Centre and Tengenenge Sculpture Community (Guruve).\n- **Pioneering Sculptors:** Nicholas Mukomberanwa, Bernard Matemera, Henry Munyaradzi, and Dominic Benhura.`,
         sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Visual Arts',
-        suggestions: [
-          'What are the traditional dances of Zimbabwe?',
-          'What are the traditional games of Zimbabwe?',
-          'Why do athletes warm up before exercise?'
-        ]
+        suggestions: ['What is traditional pottery in Zimbabwe?', 'What are Tonga Binga baskets?', 'What are the traditional dances of Zimbabwe?']
       };
     }
 
-    // 4. Physical Fitness, Health, and Safety (Warm-Up, Cool-Down, Muscles)
-    if (
-      q.includes('warm-up') ||
-      q.includes('warm up') ||
-      q.includes('cool-down') ||
-      q.includes('cool down') ||
-      q.includes('components of fitness') ||
-      q.includes('physical fitness') ||
-      q.includes('water safety') ||
-      q.includes('swimming safety')
-    ) {
-      let directAnswer = '';
-      if (q.includes('warm')) {
-        directAnswer = '**Warming up** before exercise gradually raises body temperature and heart rate, increases blood flow to muscles, lubricates joints with synovial fluid, and **prevents muscle tears, strains, and cramps**.';
-      } else if (q.includes('cool')) {
-        directAnswer = '**Cooling down** after exercise gradually lowers heart rate and breathing back to resting levels, **removes lactic acid from muscles**, and prevents blood pooling and dizziness.';
-      } else if (q.includes('fitness')) {
-        directAnswer = 'The 4 major components of physical fitness are: **cardiovascular endurance** (aerobic stamina), **muscular strength**, **muscular endurance**, and **flexibility**.';
-      }
-
+    // 11. Traditional Pottery (Hari)
+    if (q.includes('pottery') || q.includes('chirongo') || q.includes('gate') || q.includes('hari')) {
       return {
-        text: `### Primary Physical Education & Arts (ZIMSEC 7130): Fitness & Safety
-${directAnswer ? `\n**Direct Answer:** ${directAnswer}\n` : ''}
-Key principles of exercise physiology and safety in primary sports:
+        text: `### Traditional Zimbabwean Pottery (*Kuumba Hari*)\n\nTraditional clay pots (*hari*) are molded by hand from natural clay, smoothed, sun-dried, and fired in open kilns:\n\n1. **Chirongo:** A slender-necked clay pot designed to keep drinking water naturally cool.\n2. **Gate:** A very large, wide-mouthed clay pot used for brewing and fermenting traditional seven-day sorghum beer (*doro remukwerera*).\n3. **Hadjana / Tsambakonzi:** Medium-sized pot used for cooking meat or vegetable relishes (*muriwo / usavi*).\n4. **Pfuko / Rongo:** Small pot with a spout used for storing and drinking sweet non-alcoholic mahewu.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Visual Arts & Crafts',
+        suggestions: ['What is Shona stone sculpture?', 'What are Tonga Binga baskets?', 'What is Pada?']
+      };
+    }
 
-1. Importance of Warm-Up (Before Exercise):
-- Gradually increases core body temperature and heart rate.
-- Dilates blood vessels to supply oxygen to working muscles.
-- Lubricates joints with synovial fluid, improving flexibility and range of motion.
-- **Prevents injury:** Protects against pulled muscles, tendon sprains, and cramps.
+    // 12. Tonga (Binga) Baskets
+    if (q.includes('basket') || q.includes('binga')) {
+      return {
+        text: `### Tonga (Binga) Baskets\n\n**Tonga / Binga baskets** are famous hand-woven traditional baskets made by Tonga women in Binga (Matabeleland North) using stripped wild **ilala palm fronds**.\n\n- **Patterns & Function:** Featuring distinctive cream and brown geometric spider-web patterns, they were traditionally used as winnowing baskets (*tswanda*) to separate grain from chaff and are now celebrated globally as wall art.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Visual Arts & Crafts',
+        suggestions: ['What is traditional pottery in Zimbabwe?', 'What is Shona stone sculpture?', 'What is Isitshikitsha dance?']
+      };
+    }
 
-2. Importance of Cool-Down (After Exercise):
-- Gradually restores breathing and heart rate to normal resting levels.
-- Flushes out waste products (especially **lactic acid**) from muscles to reduce muscle soreness.
-- Prevents blood from pooling in the lower legs, preventing post-exercise fainting and dizziness.
+    // 13. Warm-Up in Sports & PE
+    if (q.includes('warm-up') || q.includes('warm up')) {
+      return {
+        text: `### Importance of Warming Up Before Exercise\n\n**Warming up** is a series of light physical exercises and stretches performed before strenuous athletic activity.\n\n- **Why Warming Up is Important:**\n  1. **Increases Blood Circulation:** Dilates blood vessels, pumping oxygen-rich blood to active muscles.\n  2. **Raises Core Temperature:** Warms muscles, making them more pliable and elastic.\n  3. **Lubricates Joints:** Stimulates synovial fluid production, increasing joint flexibility and range of motion.\n  4. **Prevents Injuries:** Dramatically reduces the risk of muscle tears, ligament sprains, and cramps.\n  5. **Mental Readiness:** Focuses the athlete\'s mind on the upcoming sporting task.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Education Syllabus 7130 • Fitness & Safety',
+        suggestions: ['Why is cooling down important after exercise?', 'What are the four components of physical fitness?', 'What is water safety?']
+      };
+    }
 
-3. Components of Physical Fitness:
-- **Cardiovascular Endurance:** Ability of heart and lungs to supply oxygen during sustained exercise (tested by long-distance running).
-- **Muscular Strength:** Maximum force a muscle can exert against resistance (e.g. shot put).
-- **Flexibility:** Range of motion around a joint (e.g. gymnastics stretch).
-- **Coordination & Balance:** Ability to execute smooth motor movements (e.g. tennis, football).
+    // 14. Cool-Down in Sports & PE
+    if (q.includes('cool-down') || q.includes('cool down')) {
+      return {
+        text: `### Importance of Cooling Down After Exercise\n\n**Cooling down** is a period of gentle aerobic exercise (like slow jogging or walking) followed by static stretching performed immediately after vigorous physical exertion.\n\n- **Why Cooling Down is Important:**\n  1. **Removes Lactic Acid:** Gradually flushes out waste lactic acid from tired muscles, preventing post-exercise muscle stiffness and soreness.\n  2. **Prevents Blood Pooling & Dizziness:** Keeps blood circulating so it does not pool in the lower extremities, preventing fainting and dizziness.\n  3. **Restores Resting Heart Rate:** Gradually brings heart rate and breathing back down to resting baseline levels.\n  4. **Calms the Nervous System:** Relaxes contracted muscles and restores muscle length.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Education Syllabus 7130 • Fitness & Safety',
+        suggestions: ['Why is warming up important before sports?', 'What are the components of physical fitness?', 'What is water safety in swimming?']
+      };
+    }
 
-4. Water Safety & Swimming:
-- Always swim with adult supervision; never dive into shallow or murky water.
-- Avoid stagnant rivers/dams to prevent bilharzia and crocodile hazards.`,
-        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Fitness & Safety',
-        suggestions: [
-          'What are the traditional games of Zimbabwe?',
-          'What are the traditional dances of Zimbabwe?',
-          'What is Shona stone sculpture?'
-        ]
+    // 15. Components of Physical Fitness
+    if (q.includes('components of fitness') || q.includes('physical fitness')) {
+      return {
+        text: `### Components of Physical Fitness\n\n1. **Cardiovascular Endurance:** The ability of the heart and lungs to supply oxygen to working muscles during sustained exercise (tested by long-distance running).\n2. **Muscular Strength:** The maximal force a muscle or muscle group can exert against a resistance in a single effort (e.g. shot put, weight lifting).\n3. **Muscular Endurance:** The ability of muscles to perform repeated contractions over a prolonged period without fatigue (e.g. push-ups, sit-ups).\n4. **Flexibility:** The range of motion available around a joint or group of joints (e.g. gymnastics, hurdling stretch).\n5. **Coordination & Agility:** The ability to change body direction rapidly and smoothly under control (e.g. football dribbling, tennis).`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Education Syllabus 7130 • Fitness & Health',
+        suggestions: ['Why is warming up important?', 'Why is cooling down important?', 'What are the traditional games of Zimbabwe?']
+      };
+    }
+
+    // 16. Body Organs Storing and Transporting Food, Air, and Blood
+    if (
+      (q.includes('storing') || q.includes('transporting') || q.includes('store') || q.includes('transport')) &&
+      (q.includes('food') || q.includes('air') || q.includes('blood'))
+    ) {
+      return {
+        text: `### Body Organs Storing and Transporting Food, Air, and Blood\n\n1. **Organs Storing and Transporting Food:**\n   - **Stomach:** Temporarily stores ingested food for 2 to 4 hours while churning and digesting it with gastric acid.\n   - **Esophagus (Gullet):** Transports food boluses from the mouth to the stomach via peristalsis.\n   - **Small & Large Intestines:** Transport digesting food and absorb soluble nutrients and water into the blood.\n\n2. **Organs Storing and Transporting Air:**\n   - **Trachea (Windpipe) & Bronchi:** Tubes that transport inhaled oxygen into the lungs and exhaled carbon dioxide out.\n   - **Lungs & Alveoli:** The lungs store air temporarily during inhalation; alveoli transfer oxygen into blood capillaries and receive carbon dioxide.\n\n3. **Organs Storing and Transporting Blood:**\n   - **Heart:** Muscular 4-chambered pump that continuously circulates blood throughout the body.\n   - **Arteries, Veins & Capillaries:** Blood vessels that transport blood to and from organs (arteries carry blood away from heart; veins return blood to heart).\n   - **Spleen:** Stores a reserve of blood cells for release during emergencies.`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Education Syllabus 7130 • Human Anatomy & Physiology',
+        suggestions: ['What is the circulatory system?', 'What are the parts of the respiratory system?', 'What are the parts of the digestive system?']
+      };
+    }
+
+    // 17. Theatre, Blocking & Stage Areas
+    if (q.includes('blocking') || q.includes('stage areas') || q.includes('theatre') || q.includes('stage positions')) {
+      return {
+        text: `### Theatre: Stage Areas and Blocking\n\n- **What is Blocking?** **Blocking** is the precise staging and recorded positioning of actors on stage by the theatre director to ensure clear sightlines and dramatic focus.\n\n- **The Nine Standard Stage Areas (Actor\'s Perspective Facing the Audience):**\n  1. **Upstage (US):** The back of the stage away from the audience.\n  2. **Downstage (DS):** The front of the stage closest to the audience.\n  3. **Center Stage (CS):** The exact middle of the acting area.\n  4. **Stage Left (SL):** The actor\'s left side when facing the audience.\n  5. **Stage Right (SR):** The actor\'s right side when facing the audience.\n  6. **Upstage Left (USL), Upstage Right (USR), Downstage Left (DSL), Downstage Right (DSR).`,
+        sourceTag: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130 • Theatre & Drama',
+        suggestions: ['What is Shona stone sculpture?', 'What are traditional dances of Zimbabwe?', 'What is Pada?']
       };
     }
 
     return null;
+  }
+
+  /**
+   * Dedicated Grade 7 Heritage-Based Curriculum (HBC) Line-by-Line Handler
+   * Directly resolves questions matching any line or objective in the Grade 7 HBC syllabus
+   */
+  private static handleGrade7HbcLineByLineQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult | null {
+    const qLower = question.toLowerCase().trim();
+
+    // Do not intercept if question is asking for detailed multi-step comparison or math calculation
+    if (
+      qLower.includes('calculate') ||
+      qLower.includes('solve') ||
+      qLower.includes('how many subjects') ||
+      qLower.includes('units 1 to 9') ||
+      qLower.includes('grading system')
+    ) {
+      return null;
+    }
+
+    const entry = KnowledgeStore.lookupGrade7HbcQuestion(question);
+    if (!entry) return null;
+
+    return {
+      text: entry.answer,
+      sourceTag: `ZIMSEC Grade 7 HBC • ${entry.section}`,
+      suggestions: [
+        `What are the key points to remember about ${entry.topic}?`,
+        `How is ${entry.topic} examined in Grade 7 ZIMSEC?`,
+        `Give an example of a past exam question on this topic`
+      ]
+    };
+  }
+
+  /**
+   * Directly resolves questions matching the Cambridge IGCSE / ZIMSEC O-Level Biology (0610 / 4025) Past Papers & Notes
+   * Covers all 10 core & extension chapters from the official 112-page document.
+   */
+  private static handleOLevelBiologyPastPaperQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult | null {
+    const entry = KnowledgeStore.lookupOLevelBiologyQuestion(question);
+    if (!entry) return null;
+
+    return {
+      text: entry.answer,
+      sourceTag: `Cambridge (0610) & ZIMSEC O-Level Biology • ${entry.topic}`,
+      suggestions: [
+        `What are other past paper questions on ${entry.topic}?`,
+        `Explain the key experimental procedure for this topic`,
+        `How is this examined in Paper 1 and Paper 2?`
+      ]
+    };
+  }
+
+  /**
+   * Universal Glossary & Terminology Dispatcher
+   * Provides laser-focused single-intent definitions across all education levels (Primary, O-Level, A-Level)
+   * Prevents syllabus dumping; returns precisely what was asked.
+   */
+  private static handleUniversalGlossaryQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult | null {
+    const qLower = question.toLowerCase().trim();
+
+    // Do not intercept if question is asking for detailed multi-step comparison, math calculation, or exam breakdown
+    if (
+      qLower.includes('difference between') ||
+      qLower.includes(' versus ') ||
+      qLower.includes(' vs ') ||
+      qLower.includes('calculate') ||
+      qLower.includes('solve') ||
+      qLower.includes('how many subjects') ||
+      qLower.includes('units 1 to 9') ||
+      qLower.includes('grading system')
+    ) {
+      return null;
+    }
+
+    const entry = KnowledgeStore.lookupGlossaryTerm(question);
+    if (!entry) return null;
+
+    const heading = entry.term;
+    const subjectBadge = entry.subject && !entry.subject.startsWith('Section') && entry.subject !== 'General'
+      ? ` [${entry.subject}]`
+      : '';
+
+    const text = `### ${heading}${subjectBadge}\n\n${entry.definition}`;
+
+    return {
+      text,
+      sourceTag: `ZIMSEC ${level} Curriculum Glossary`,
+      suggestions: [
+        `Give an example of ${entry.canonicalName}`,
+        `What are the key points to remember about ${entry.canonicalName}?`,
+        `How is ${entry.canonicalName} examined in ZIMSEC?`
+      ]
+    };
   }
 
   /**
@@ -4778,6 +6697,12 @@ Key principles of exercise physiology and safety in primary sports:
     matchedChunk?: any
   ): SynthesisResult {
     const qLower = question.toLowerCase();
+
+    // 0. Universal Glossary check for ChiShona terms and definitions (e.g., Chiito, Chipauro, Tsumo, Madimikira, etc.)
+    const shonaGlossaryResult = this.handleUniversalGlossaryQuery(question, level, intent);
+    if (shonaGlossaryResult) {
+      return shonaGlossaryResult;
+    }
 
     // Mutungamiri weZimbabwe / Hurumende (Emmerson Mnangagwa, Canaan Banana, Robert Mugabe)
     if (
@@ -5015,50 +6940,171 @@ Pachidzidzo ichi cheZIMSEC:
    * Cleans raw boilerplate and summarizes matched JSON chunks into concise points,
    * extracting a targeted direct answer to the student's question first
    */
+  /**
+   * Intelligently restructures retrieved syllabus notes to directly answer what was asked.
+   * Strips administrative curriculum boilerplate and builds structured, point-by-point outputs.
+   */
   private static restructureSyllabusChunk(
     question: string,
     level: string,
     matchedChunk: any,
     intent: QuestionIntent
   ): SynthesisResult {
-    let content = matchedChunk.content || '';
+    const rawContent = matchedChunk.content || '';
+    const topicTitle = matchedChunk.topic || 'Syllabus Topic';
+    const subject = matchedChunk.subject || level;
 
-    // Remove raw syllabus checklists, checklists, and revision footers
-    content = content.replace(/REVISION CHECKLIST[\s\S]*?(?=KEY SEARCH TERMS|APPLICATION QUESTIONS|EXAM MASTERY|RAPID REVISION|$)/gi, '');
-    content = content.replace(/APPLICATION QUESTIONS[\s\S]*?(?=RAPID REVISION|EXAM MASTERY|$)/gi, '');
-    content = content.replace(/KEY SEARCH TERMS[\s\S]*?(?=EXAM MASTERY|APPLICATION QUESTIONS|RAPID REVISION|$)/gi, '');
-    content = content.replace(/EXAM MASTERY[\s\S]*?(?=APPLICATION QUESTIONS|RAPID REVISION|$)/gi, '');
-    content = content.replace(/RAPID REVISION[\s\S]*$/gi, '');
-    content = content.trim();
+    // 0. Universal Glossary direct formatting (prevents paragraph dumping)
+    if (matchedChunk.id && (String(matchedChunk.id).startsWith('glossary_') || matchedChunk.source === 'ZIMSEC Universal Curriculum Knowledge Base')) {
+      const colonIdx = rawContent.indexOf(':');
+      const termTitle = colonIdx !== -1 ? rawContent.slice(0, colonIdx).trim() : topicTitle;
+      const termDef = colonIdx !== -1 ? rawContent.slice(colonIdx + 1).trim() : rawContent;
+      return {
+        text: `### ${termTitle}\n\n${termDef}`,
+        sourceTag: `ZIMSEC ${level} Curriculum Glossary`,
+        suggestions: [
+          `Give an example of ${topicTitle}`,
+          `What are the key points to remember about ${topicTitle}?`,
+          `How is ${topicTitle} examined in ZIMSEC?`
+        ]
+      };
+    }
 
-    // Extract targeted direct answer line if it specifically matches question keywords
-    const qWords = question.toLowerCase().split(/[^a-z0-9]+/).filter((w: string) => w.length >= 3 && !['what', 'when', 'where', 'which', 'who', 'how', 'the', 'is', 'are', 'for', 'with', 'about', 'tell'].includes(w));
-    let directLine = '';
-    const allLines = content.split('\n').map((l: string) => l.trim()).filter((l: string) => l.length > 5);
-    for (const line of allLines) {
-      const lineLower = line.toLowerCase();
-      let matchCount = 0;
-      for (const w of qWords) {
-        if (lineLower.includes(w)) matchCount++;
-      }
-      if (matchCount >= Math.min(2, Math.max(1, qWords.length)) && !line.startsWith('#')) {
-        directLine = line.replace(/^[-*•\d.]+\s*/, '');
+    // 1. Strip raw syllabus administrative / curriculum framework boilerplate
+    let clean = rawContent
+      .replace(/### Grade 7 [^\n]+/g, '')
+      .replace(/\*\*Curriculum Context:\*\*.*?\n/gi, '')
+      .replace(/#### Official ZIMSEC HBC Learning Objectives.*?\n/gi, '')
+      .replace(/- \*\*Learner Competency:\*\*.*?\n/gi, '')
+      .replace(/##### Subtopic:.*?\n/gi, '')
+      .replace(/FORM OF ASSESSMENT[\s\S]*?(?=\n\n|$)/gi, '')
+      .replace(/School Based Continuous Assessment[\s\S]*?(?=\n\n|$)/gi, '')
+      .replace(/REVISION CHECKLIST[\s\S]*?(?=KEY SEARCH TERMS|APPLICATION QUESTIONS|EXAM MASTERY|RAPID REVISION|$)/gi, '')
+      .replace(/APPLICATION QUESTIONS[\s\S]*?(?=RAPID REVISION|EXAM MASTERY|$)/gi, '')
+      .replace(/KEY SEARCH TERMS[\s\S]*?(?=EXAM MASTERY|APPLICATION QUESTIONS|RAPID REVISION|$)/gi, '')
+      .replace(/EXAM MASTERY[\s\S]*?(?=APPLICATION QUESTIONS|RAPID REVISION|$)/gi, '')
+      .replace(/RAPID REVISION[\s\S]*$/gi, '')
+      .replace(/DETAILED STUDY AND EXAMINATION NOTES[\s\S]*?(?=Core terminology|Understanding relationships|$)/gi, '')
+      .replace(/Revision checklist:[\s\S]*$/gi, '')
+      .replace(/Common errors to avoid:[\s\S]*?(?=Revision checklist|$)/gi, '')
+      .trim();
+
+    const qLower = question.toLowerCase();
+
+    // 2. Detect what is specifically being asked
+    const asksProcess = qLower.includes('process') || qLower.includes('steps') || qLower.includes('stages') || qLower.includes('mechanism') || qLower.includes('how does') || qLower.includes('explain how') || qLower.includes('how it works');
+    const asksTypes = qLower.includes('type') || qLower.includes('types') || qLower.includes('kinds') || qLower.includes('classes') || qLower.includes('forms') || qLower.includes('three types') || qLower.includes('classification');
+    const asksCauses = qLower.includes('cause') || qLower.includes('causes') || qLower.includes('reasons') || qLower.includes('why');
+    const asksEffects = qLower.includes('effect') || qLower.includes('effects') || qLower.includes('impact') || qLower.includes('consequence') || qLower.includes('results');
+    const asksFunctions = qLower.includes('function') || qLower.includes('functions') || qLower.includes('uses') || qLower.includes('importance') || qLower.includes('role');
+    const asksPrevention = qLower.includes('prevent') || qLower.includes('prevention') || qLower.includes('control') || qLower.includes('management') || qLower.includes('safety');
+    const asksDifference = qLower.includes('difference') || qLower.includes('compare') || qLower.includes('distinguish') || qLower.includes('versus') || qLower.includes(' vs ');
+
+    // 3. Extract key definition sentence
+    const lines = clean.split('\n').map((l: string) => l.trim()).filter(Boolean);
+    let definitionSentence = '';
+    for (const line of lines) {
+      const lLower = line.toLowerCase();
+      if ((lLower.includes('is defined as') || lLower.includes('is the') || lLower.includes('refers to') || lLower.includes('means')) && !line.startsWith('#') && !line.startsWith('1.') && !line.startsWith('2.')) {
+        definitionSentence = line.replace(/^[-*•\d.]+\s*/, '').replace(/^\*\*[^:]+:\*\*\s*/, '');
         break;
       }
     }
+    if (!definitionSentence) {
+      const firstGood = lines.find((l: string) => !l.startsWith('#') && l.length > 25 && !l.includes('Objectives') && !l.includes('Context'));
+      if (firstGood) definitionSentence = firstGood.replace(/^[-*•\d.]+\s*/, '');
+    }
+    if (definitionSentence.length > 200) {
+      definitionSentence = definitionSentence.slice(0, 200).replace(/[,;]\s*[^,;]*$/, '') + '.';
+    }
 
-    // Limit to concise paragraphs/points (max ~350 words) to avoid wall of text
-    const paragraphs = content.split(/\n\s*\n/).filter((p: string) => p.trim().length > 0);
-    const conciseText = paragraphs.slice(0, 4).join('\n\n');
+    // 4. Extract structured items (numbered points, sub-bullets, and paragraphs)
+    const numberedItems: string[] = [];
+    const bulletItems: string[] = [];
+    const generalParagraphs: string[] = [];
 
-    const topicTitle = matchedChunk.topic || 'Syllabus Topic';
-    const subject = matchedChunk.subject || level;
-    const directHeader = directLine ? `**Direct Answer:** ${directLine}\n\n` : '';
+    for (const line of lines) {
+      if (/^\d+\.\s+/.test(line)) {
+        numberedItems.push(line);
+      } else if (/^[-*•]\s+/.test(line)) {
+        bulletItems.push(line);
+      } else if (!line.startsWith('#') && line.length > 20) {
+        generalParagraphs.push(line);
+      }
+    }
+
+    // 5. Build laser-focused structured answer according to the exact question
+    let structuredOutput = '';
+    const decomp = this.decomposeQuestion(question);
+
+    const processItems = numberedItems.length > 0 
+      ? numberedItems.slice(0, 5).join('\n') 
+      : (bulletItems.length > 0 ? bulletItems.slice(0, 5).join('\n') : generalParagraphs.slice(0, 3).map((p: string, i: number) => `${i + 1}. ${p}`).join('\n'));
+
+    const typeItems = numberedItems.length > 0
+      ? numberedItems.slice(0, 6).join('\n')
+      : (bulletItems.length > 0 ? bulletItems.slice(0, 6).join('\n') : generalParagraphs.slice(0, 4).map((p: string, i: number) => `${i + 1}. **Type ${i + 1}:** ${p}`).join('\n'));
+
+    const relevantPoints = (bulletItems.length > 0 ? bulletItems : numberedItems).slice(0, 6).join('\n') || generalParagraphs.slice(0, 4).map((p: string) => `- ${p}`).join('\n');
+    const funcItems = (bulletItems.length > 0 ? bulletItems : numberedItems).slice(0, 5).join('\n') || generalParagraphs.slice(0, 3).map((p: string) => `- ${p}`).join('\n');
+
+    // Case 1: ONLY definition requested
+    if (decomp.asksOnlyDefinition) {
+      structuredOutput = `### ${topicTitle}\n\n${definitionSentence || `${topicTitle} is an essential curriculum topic in the ZIMSEC ${subject} syllabus.`}`;
+    }
+    // Case 2: ONLY process/steps requested
+    else if (decomp.asksOnlyProcess) {
+      structuredOutput = `### ${topicTitle}: Process and Steps\n\n${processItems || '1. Initial stage and preparation\n2. Active interaction of components\n3. Progressive transformation\n4. Reaching outcome or equilibrium.'}`;
+    }
+    // Case 3: ONLY types requested
+    else if (decomp.asksOnlyTypes) {
+      structuredOutput = `### ${topicTitle}: Types and Classification\n\n${typeItems}`;
+    }
+    // Case 4: ONLY causes requested
+    else if (decomp.asksOnlyCauses) {
+      structuredOutput = `### ${topicTitle}: Causes and Factors\n\n${relevantPoints}`;
+    }
+    // Case 5: ONLY effects requested
+    else if (decomp.asksOnlyEffects) {
+      structuredOutput = `### ${topicTitle}: Effects and Impacts\n\n${relevantPoints}`;
+    }
+    // Case 6: ONLY functions requested
+    else if (decomp.asksOnlyFunctions) {
+      structuredOutput = `### ${topicTitle}: Functions and Importance\n\n${funcItems}`;
+    }
+    // Case 7: ONLY prevention/management/reduction requested
+    else if (decomp.asksOnlyPrevention) {
+      structuredOutput = `### ${topicTitle}: Prevention, Management, and Solutions\n\n${relevantPoints}`;
+    }
+    // Case 8: Compound or multi-part question (e.g. "what is X and give the process of X")
+    else {
+      const parts: string[] = [`### ${topicTitle}`];
+      if (decomp.asksDefinition) {
+        parts.push(`#### 1. What is ${topicTitle}?\n${definitionSentence || `${topicTitle} is a core subject area in the ZIMSEC ${subject} syllabus.`}`);
+      }
+      if (decomp.asksProcess) {
+        parts.push(`#### ${parts.length}. The Process and Mechanism\n${processItems}`);
+      }
+      if (decomp.asksTypes) {
+        parts.push(`#### ${parts.length}. The Main Types and Classification\n${typeItems}`);
+      }
+      if (decomp.asksCauses) {
+        parts.push(`#### ${parts.length}. Key Causes and Factors\n${relevantPoints}`);
+      }
+      if (decomp.asksEffects) {
+        parts.push(`#### ${parts.length}. Key Effects and Impacts\n${relevantPoints}`);
+      }
+      if (decomp.asksFunctionsOrUses) {
+        parts.push(`#### ${parts.length}. Core Functions and Importance\n${funcItems}`);
+      }
+      if (decomp.asksPreventionOrManagement) {
+        parts.push(`#### ${parts.length}. Prevention and Solutions\n${relevantPoints}`);
+      }
+      structuredOutput = parts.join('\n\n');
+    }
 
     return {
-      text: `### ${subject}: ${topicTitle}
-
-${directHeader}${conciseText}`,
+      text: structuredOutput.trim(),
       sourceTag: `${topicTitle} • ${matchedChunk.source || 'ZIMSEC Syllabus'}`,
       suggestions: [
         `What are common exam questions on ${topicTitle}?`,
@@ -5069,105 +7115,454 @@ ${directHeader}${conciseText}`,
   }
 
   /**
-   * Verified curriculum-grounded response for questions beyond indexed chunks
+   * Verified curriculum-grounded response for questions beyond indexed chunks.
+   * Provides deep, factual, mark-targeted answers across all ZIMSEC subject domains.
    */
   private static synthesizeGeneralCurriculumResponse(
     question: string,
     level: string,
     intent: QuestionIntent
   ): SynthesisResult {
-    const qLower = question.toLowerCase().trim();
+    const q = question.toLowerCase().trim();
 
-    // Detect Subject Domain
-    let subject = 'General Curriculum Studies';
+    // 1. Scramble for Africa & Berlin Conference (1884–1885)
+    if (q.includes('scramble') || q.includes('berlin conference') || (q.includes('partition') && q.includes('africa'))) {
+      return {
+        text: `### History: The Scramble for Africa and the Berlin Conference (1884 – 1885)
 
-    if (
-      qLower.includes('war') || qLower.includes('king') || qLower.includes('treaty') ||
-      qLower.includes('shaka') || qLower.includes('zulu') || qLower.includes('mzilikazi') ||
-      qLower.includes('rhodes') || qLower.includes('chimurenga') || qLower.includes('mutapa') ||
-      qLower.includes('rozvi') || qLower.includes('colonial') || qLower.includes('concession') ||
-      qLower.includes('constitution') || qLower.includes('rebellion') || qLower.includes('nehanda') ||
-      qLower.includes('hero') || qLower.includes('revolution') || qLower.includes('scramble') ||
-      qLower.includes('mugabe') || qLower.includes('nkomo')
-    ) {
-      subject = 'History & Heritage Studies';
-    } else if (
-      qLower.includes('cell') || qLower.includes('photosynthesis') || qLower.includes('digestive') ||
-      qLower.includes('blood') || qLower.includes('heart') || qLower.includes('leaf') ||
-      qLower.includes('plant') || qLower.includes('animal') || qLower.includes('organ') ||
-      qLower.includes('respirat') || qLower.includes('osmosis') || qLower.includes('diffusion') ||
-      qLower.includes('enzyme') || qLower.includes('reproduction') || qLower.includes('disease') ||
-      qLower.includes('genetics') || qLower.includes('dna') || qLower.includes('bacteria')
-    ) {
-      subject = 'Biology & Life Sciences';
-    } else if (
-      qLower.includes('acid') || qLower.includes('base') || qLower.includes('atom') ||
-      qLower.includes('element') || qLower.includes('periodic') || qLower.includes('reaction') ||
-      qLower.includes('compound') || qLower.includes('metal') || qLower.includes('salt') ||
-      qLower.includes('bonding') || qLower.includes('electron') || qLower.includes('gas') ||
-      qLower.includes('solution') || qLower.includes('ph') || qLower.includes('mole')
-    ) {
-      subject = 'Chemistry & Physical Science';
-    } else if (
-      qLower.includes('force') || qLower.includes('speed') || qLower.includes('velocity') ||
-      qLower.includes('motion') || qLower.includes('energy') || qLower.includes('power') ||
-      qLower.includes('work') || qLower.includes('electricity') || qLower.includes('circuit') ||
-      qLower.includes('ohm') || qLower.includes('magnet') || qLower.includes('wave') ||
-      qLower.includes('sound') || qLower.includes('light') || qLower.includes('gravity') ||
-      qLower.includes('pressure')
-    ) {
-      subject = 'Physics & Applied Science';
-    } else if (
-      qLower.includes('solve') || qLower.includes('equation') || qLower.includes('calculate') ||
-      qLower.includes('formula') || qLower.includes('angle') || qLower.includes('area') ||
-      qLower.includes('volume') || qLower.includes('factor') || qLower.includes('graph') ||
-      qLower.includes('probability') || qLower.includes('trigonometry') || qLower.includes('matrix') ||
-      qLower.includes('fraction') || qLower.includes('percent')
-    ) {
-      subject = 'Mathematics 4004';
-    } else if (
-      qLower.includes('weather') || qLower.includes('climate') || qLower.includes('rain') ||
-      qLower.includes('river') || qLower.includes('erosion') || qLower.includes('soil') ||
-      qLower.includes('rock') || qLower.includes('mountain') || qLower.includes('tectonic') ||
-      qLower.includes('mining') || qLower.includes('crop') || qLower.includes('farm') ||
-      qLower.includes('population') || qLower.includes('settlement')
-    ) {
-      subject = 'Geography & Environmental Science';
-    } else if (
-      qLower.includes('debit') || qLower.includes('credit') || qLower.includes('money') ||
-      qLower.includes('bank') || qLower.includes('account') || qLower.includes('ledger') ||
-      qLower.includes('business') || qLower.includes('trade') || qLower.includes('profit') ||
-      qLower.includes('loss') || qLower.includes('capital') || qLower.includes('inflation') ||
-      qLower.includes('currency') || qLower.includes('tax')
-    ) {
-      subject = 'Commerce & Principles of Accounts';
+**Direct Answer:** The Scramble for Africa was the rapid invasion, occupation, and colonization of African territory by European powers between 1881 and 1914, formalized at the **Berlin Conference (1884–1885)** convened by German Chancellor Otto von Bismarck.
+
+1. Causes of the Scramble for Africa:
+- **Economic Motives (Primary Driver):** The Industrial Revolution created massive demand for raw materials (rubber, cotton, copper, palm oil, gold) and new overseas markets to sell manufactured European goods.
+- **Strategic Rivalry & Prestige:** European powers (Britain, France, Germany, Portugal, Belgium, Italy) competed for imperial prestige and naval coaling stations.
+- **The "Civilizing Mission" & Christianity:** Rationalized under the guise of the "Three Cs" (Commerce, Christianity, and Civilization) and the abolition of the slave trade.
+
+2. The Berlin Conference (1884–1885):
+- Convened by **Otto von Bismarck** in Berlin, attended by 14 European powers (no African leaders were invited).
+- **The Principle of Effective Occupation:** A colonial power could only claim sovereignty over an African territory if it had established administrative presence, police, and treaties on the ground.
+- Declared freedom of navigation on the Niger and Congo Rivers.
+
+3. Impact on Zimbabwe and Southern Africa:
+- Sparked Cecil John Rhodes' northward expansion to establish the "Cape to Cairo" British red line.
+- Led directly to British concession-seekers pressuring King Lobengula (Rudd Concession 1888) and the colonial occupation of Zimbabwe in 1890.`,
+        sourceTag: `ZIMSEC ${level} History • Scramble for Africa & Colonisation`,
+        suggestions: [
+          'What was the Rudd Concession (1888)?',
+          'What was the role of the Pioneer Column in 1890?',
+          'What were the causes of the 1893 Anglo-Ndebele War?'
+        ]
+      };
     }
+
+    // 2. Pioneer Column (1890) & Occupation of Mashonaland
+    if (q.includes('pioneer column') || (q.includes('occupation') && q.includes('1890')) || q.includes('fort salisbury')) {
+      return {
+        text: `### History: The Pioneer Column and the Occupation of Mashonaland (1890)
+
+**Direct Answer:** The Pioneer Column was an armed expeditionary force of European settlers, prospectors, and mounted police dispatched by Cecil Rhodes' British South Africa Company (BSAC) in 1890 to invade and colonize Mashonaland.
+
+1. Composition & Key Figures:
+- **Organizer:** Cecil John Rhodes and the BSAC under the British Royal Charter (1889).
+- **Commander:** Major Frank Johnson (contracted for £89,000 to recruit, equip, and guide the column).
+- **Guide:** Frederick Courteney Selous, a renowned hunter with deep geographic knowledge of the terrain.
+- **Troops:** Approximately 200 volunteer settlers (promised 3,000 acres of fertile farmland and 15 gold claims each) escorted by 500 armed British South Africa Company Police (BSACP) under Lt. Col. Edward Pennefather.
+
+2. The Route & Settlement:
+- Marched north from Macloutsie (Botswana) through Tuli, intentionally skirting the borders of the Ndebele kingdom to avoid direct confrontation with Lobengula's warriors.
+- Established fortresses along the path: Fort Victoria (Masvingo), Fort Charter (Chivhu), and reached their destination at Harare Kopje.
+- On **12 September 1890**, the column raised the British Union Jack at **Fort Salisbury** (modern Harare), marking the formal beginning of colonial rule in Zimbabwe.`,
+        sourceTag: `ZIMSEC ${level} History • The Pioneer Column & Occupation`,
+        suggestions: [
+          'What was the Rudd Concession (1888)?',
+          'What caused the 1893 Anglo-Ndebele War?',
+          'What caused the First Chimurenga (1896-1897)?'
+        ]
+      };
+    }
+
+    // 3. Great Zimbabwe (Decline, Trade, Architecture)
+    if (q.includes('great zimbabwe')) {
+      if (q.includes('decline') || q.includes('fall') || q.includes('collapse') || q.includes('abandon')) {
+        return {
+          text: `### History: Reasons for the Decline of Great Zimbabwe (mid-15th Century)
+
+**Direct Answer:** Great Zimbabwe flourished between 1200 and 1450 AD near modern Masvingo before declining due to severe ecological exhaustion, population pressure, trade shifts, and political fragmentation.
+
+1. Ecological Factors & Environmental Exhaustion:
+- **Depletion of Firewood & Timber:** Centuries of continuous settlement stripped the surrounding savanna of all trees for fuel, cooking, and gold smelting.
+- **Overgrazing & Soil Exhaustion:** Massive cattle herds exhausted local pasture lands, and arable land suffered nutrient depletion from continuous monoculture.
+- **Salt Shortages:** Acute salt shortages forced large populations to migrate northwards towards the Dande and Zambezi Valley.
+
+2. Economic & Trade Shifts:
+- Gold and ivory deposits in the immediate hinterland became depleted.
+- Arab and Swahili long-distance trade routes shifted northwards toward the Zambezi River valley, directly enriching the emerging **Mutapa State** founded by Nyatsimba Mutota.
+
+3. Civil Strife & Succession Disputes:
+- Internal dynastic rivalries among the ruling elite weakened centralized control over tribute payments.
+- Prince **Nyatsimba Mutota** led a massive migration northward around 1450 AD, founding the Mutapa Empire.`,
+          sourceTag: `ZIMSEC ${level} History • Pre-Colonial Dynasties: Great Zimbabwe`,
+          suggestions: [
+            'Who was Nyatsimba Mutota and how did he found the Mutapa State?',
+            'Describe the dry-stone architecture of Great Zimbabwe',
+            'What goods were traded between Great Zimbabwe and Sofala?'
+          ]
+        };
+      }
+
+      return {
+        text: `### History: The Great Zimbabwe State (1200 – 1450 AD)
+
+**Direct Answer:** Great Zimbabwe was a medieval African empire located near Masvingo that reached its peak between 1200 and 1450 AD, famous for its dry-stone architectural monuments and extensive international trade.
+
+1. Architectural Divisions:
+- **Hill Complex:** Oldest sector, serving as the spiritual sanctuary and royal residence of the King.
+- **Great Enclosure:** Features massive curved granite walls built completely without mortar (up to 11m high and 6m thick) and the iconic **Conical Tower** (symbolizing food security and royal granaries).
+- **Valley Enclosure:** Residential quarters for royal wives, nobility, and specialized craftsmen.
+
+2. Economic Pillars:
+- **Pastoralism:** Massive herds of cattle were the primary foundation of wealth, diet (*amasi*), social hierarchy, and bride price (*roora*).
+- **Agriculture:** Cultivation of sorghum, pearl millet, groundnuts, and cowpeas.
+- **International Trade:** Traded gold, ivory, iron tools, and copper through the Indian Ocean port of **Sofala** (Mozambique) with Arab, Persian, and Chinese merchants in exchange for glass beads, glazed ceramics, and cloth.
+
+3. Religious Authority:
+- Center of the **Mwari Cult**. The King served as the divine link between the ancestors (*Vadzimu*) and the living.
+- Soapstone carved **Zimbabwe Birds** (*Hungwe* / Bateleur eagle) symbolized royal and spiritual authority and now form Zimbabwe's national emblem.`,
+        sourceTag: `ZIMSEC ${level} History • Great Zimbabwe`,
+        suggestions: [
+          'Why did Great Zimbabwe decline in the 15th century?',
+          'Who was Nyatsimba Mutota?',
+          'Describe the social and political structure of Great Zimbabwe'
+        ]
+      };
+    }
+
+    // 4. Mutapa State & Rozvi State
+    if (q.includes('mutapa') || q.includes('nyatsimba mutota') || q.includes('munhumutapa')) {
+      return {
+        text: `### History: The Mutapa State (c. 1450 – 1890)
+
+**Direct Answer:** The Mutapa State was founded around 1450 AD by **Prince Nyatsimba Mutota**, who migrated northwards from Great Zimbabwe to the fertile Dande region in search of salt, fertile soils, and trade routes.
+
+1. Rise & Expansion:
+- Mutota conquered local Tavara and Tonga communities, earning the praise title **Munhumutapa** ("The Great Pillager" / "Lord of the Conquered Lands").
+- His successor, **Matope**, expanded the empire from the Kalahari to the Indian Ocean (Mozambique).
+
+2. Political Organization:
+- **The King (Munhumutapa):** Supreme ruler, commander-in-chief, and chief judge.
+- **Advisory Council:** Composed of royal wives (e.g. *Mazvimbakupa*), the army commander (*Mukomohasha*), chief priest, and hereditary provincial governors.
+
+3. Portuguese Infiltration & Decline:
+- In the 16th century, Portuguese traders established trading posts (*feiras*) at Luanze, Masapa, and Dambarare.
+- Portuguese introduced the *prazo* system (feudal agricultural estates), raised private armies (*chikunda*), and manipulated royal succession, culminating in the puppet treaties of Mavhura (1629).
+- Portuguese dominance was shattered in 1693 by the Rozvi King **Changamire Dombo**.`,
+        sourceTag: `ZIMSEC ${level} History • The Mutapa State`,
+        suggestions: [
+          'Who was Changamire Dombo and how did he defeat the Portuguese?',
+          'What was the role of the Portuguese in the decline of Mutapa?',
+          'Compare the Mutapa State with the Rozvi State'
+        ]
+      };
+    }
+
+    if (q.includes('rozvi') || q.includes('changamire') || q.includes('dombo')) {
+      return {
+        text: `### History: The Rozvi State and Changamire Dombo (1684 – 1830s)
+
+**Direct Answer:** The Rozvi State was a powerful military empire founded by **Changamire Dombo I** around 1684, famous for driving Portuguese colonialists out of the Zimbabwean plateau.
+
+1. Changamire Dombo's Military Triumphs:
+- Dombo was a former cattle keeper in Mutapa who organized a formidable, highly disciplined standing army.
+- **Battle of Maungwe (1684):** Decisively defeated Portuguese forces using the cow-horn encirclement formation, mystical night maneuvers, and poisoned arrows.
+- **1693 Campaign:** Completely expelled the Portuguese from the Zimbabwean interior, burning down Portuguese *feiras* (trading markets) at Dambarare and Masapa.
+
+2. Architecture & Capital:
+- Capital headquarters located at **Danamombe** (Dhlodhlo), **Naletale**, and **Khami**, featuring exquisite decorated dry-stone walling (checkered, cord, and chevron patterns).
+
+3. Decline (1830s):
+- In the 1830s, the Rozvi State was destroyed by migrating Nguni groups fleeing the **Mfecane** in South Africa: first attacked by Zwangendaba's Ngoni, then Nxaba, and finally absorbed into the Ndebele State under **King Mzilikazi Khumalo** (1838–1840).`,
+        sourceTag: `ZIMSEC ${level} History • The Rozvi State`,
+        suggestions: [
+          'What military tactics did Changamire Dombo use?',
+          'Why did the Rozvi State decline in the 1830s?',
+          'How did King Mzilikazi establish the Ndebele State?'
+        ]
+      };
+    }
+
+    // 5. National Symbols, Constitution & 3 Arms of Government
+    if (q.includes('arm of government') || q.includes('arms of government') || q.includes('judiciary') || q.includes('legislature') || q.includes('executive')) {
+      return {
+        text: `### Heritage & Civics: The Three Arms of Government in Zimbabwe
+
+**Direct Answer:** Under the Constitution of Zimbabwe, state power is separated into **three distinct arms** to maintain checks and balances and prevent abuse of authority:
+
+1. The Executive:
+- **Head:** The President of Zimbabwe (Head of State, Head of Government, and Commander-in-Chief of the Defence Forces), assisted by two Vice Presidents and Cabinet Ministers.
+- **Function:** Formulates national policies, signs parliamentary bills into law, enforces legislation, and administers government ministries.
+
+2. The Legislature (Parliament of Zimbabwe):
+- **Bicameral Structure:**
+  * **National Assembly:** 270 Members of Parliament (210 directly elected from constituencies + 60 women's quota).
+  * **Senate:** 80 Senators (including traditional chiefs and representatives of persons with disabilities).
+- **Function:** Debates national issues, approves the national budget, and enacts laws.
+
+3. The Judiciary (The Courts):
+- **Hierarchy:** Constitutional Court (highest for constitutional matters), Supreme Court (highest court of appeal), High Court, Specialized Courts (Labour, Administrative), and Magistrates' Courts.
+- **Head:** Chief Justice of Zimbabwe.
+- **Function:** Interprets the law, adjudicates legal disputes, and protects citizens' constitutional rights.`,
+        sourceTag: `ZIMSEC ${level} Social Science / Heritage • Governance & Constitution`,
+        suggestions: [
+          'What are the 16 official languages of Zimbabwe?',
+          'What are the national symbols of Zimbabwe?',
+          'What are the functions of the President of Zimbabwe?'
+        ]
+      };
+    }
+
+    if (q.includes('national symbol') || q.includes('coat of arms') || (q.includes('flag') && q.includes('color'))) {
+      return {
+        text: `### Heritage & Civics: National Symbols of Zimbabwe
+
+**Direct Answer:** Zimbabwe's national symbols represent sovereignty, national identity, cultural heritage, and the sacrifices made during the First and Second Chimurenga.
+
+1. The National Flag of Zimbabwe:
+- **Green:** The country's rich agricultural vegetation and rural resources.
+- **Yellow / Gold:** The rich mineral wealth beneath Zimbabwe's soil (gold, platinum, chrome, lithium).
+- **Red:** The blood of gallant heroes and heroines shed during the liberation struggles (First and Second Chimurenga).
+- **Black:** The indigenous African majority population and cultural heritage.
+- **White Triangle:** National peace, tranquility, and progress.
+- **Red Star:** Socialist aspirations, nation-building, and international solidarity.
+- **The Great Zimbabwe Bird (*Hungwe*):** The national emblem representing ancestral heritage and sovereignty.
+
+2. The Coat of Arms:
+- Supported by two **Kudus** (representing wildlife diversity and unity).
+- The **Hoe and Rifle:** Symbolizes the transition from war to agricultural production and peaceful nation-building.
+- The **Motto:** *"Unity, Freedom, Work"* (*Kubatana, Rusununguko, Basa / Ukubambana, Inkululeko, Umsebenzi*).`,
+        sourceTag: `ZIMSEC ${level} Social Science • National Symbols`,
+        suggestions: [
+          'What are the 16 official languages of Zimbabwe?',
+          'Explain the 3 arms of government',
+          'What was the 1987 Unity Accord?'
+        ]
+      };
+    }
+
+    // 6. Diseases: Malaria, Cholera, Bilharzia, Typhoid, TB, Deficiency Diseases
+    if (q.includes('malaria') || q.includes('anopheles') || q.includes('plasmodium')) {
+      return {
+        text: `### Science & Health: Malaria – Causes, Symptoms, and Prevention
+
+**Direct Answer:** Malaria is a life-threatening protozoan infection caused by the **Plasmodium** parasite, transmitted to humans through the bite of an infected **female Anopheles mosquito**.
+
+1. Transmission & Vector:
+- The female Anopheles mosquito requires blood meals to develop eggs; when biting, it injects Plasmodium sporozoites into the human bloodstream, which travel to the liver and infect red blood cells.
+
+2. Signs & Symptoms:
+- Recurrent high fever with violent shivering (chills) and profuse sweating.
+- Severe headaches, joint pains, nausea, vomiting, and fatigue.
+- Severe cases cause anaemia (destruction of red blood cells), cerebral malaria, and coma.
+
+3. Prevention & Vector Control:
+- **Destruction of Breeding Sites:** Draining stagnant water pools where mosquito larvae hatch.
+- **Physical Barriers:** Sleeping under insecticide-treated mosquito nets (ITNs).
+- **Chemical Control:** Indoor Residual Spraying (IRS) of walls with insecticides to kill adult mosquitoes.
+- **Treatment:** Artemisinin-based Combination Therapy (ACT), commonly Coartem.`,
+        sourceTag: `ZIMSEC ${level} Science • Communicable Diseases`,
+        suggestions: [
+          'What causes cholera and how is it prevented?',
+          'What is bilharzia (schistosomiasis) and its vector?',
+          'Explain deficiency diseases: kwashiorkor vs marasmus'
+        ]
+      };
+    }
+
+    if (q.includes('cholera') || q.includes('vibrio cholerae')) {
+      return {
+        text: `### Science & Health: Cholera – Transmission, Symptoms, and Control
+
+**Direct Answer:** Cholera is an acute, severe diarrheal infection caused by ingestion of food or water contaminated with the bacterium **Vibrio cholerae**.
+
+1. Transmission:
+- Drinking untreated water contaminated with sewage or human feces.
+- Eating unwashed fruits, raw vegetables, or food handled with contaminated hands.
+
+2. Symptoms:
+- Sudden onset of profuse, watery diarrhea ("rice-water stools").
+- Rapid, severe vomiting and muscle cramps.
+- Lethal dehydration and hypovolemic shock within hours if left untreated.
+
+3. Treatment & Control:
+- **Oral Rehydration Therapy (ORT / ORS):** Immediate replenishment of water and vital electrolytes (1 liter clean boiled water + 6 teaspoons sugar + 1/2 teaspoon salt).
+- **Water Sanitation:** Boiling drinking water or treating with water purification tablets (WaterGuard / Aquatabs).
+- **Hygiene:** Strict handwashing with soap before eating and after using the toilet; proper sewage and refuse disposal.`,
+        sourceTag: `ZIMSEC ${level} Science • Communicable Diseases`,
+        suggestions: [
+          'What causes malaria and how is it prevented?',
+          'What is bilharzia (schistosomiasis)?',
+          'What is the difference between infectious and deficiency diseases?'
+        ]
+      };
+    }
+
+    if (q.includes('bilharzia') || q.includes('schistosomiasis') || q.includes('water snail')) {
+      return {
+        text: `### Science & Health: Bilharzia (Schistosomiasis)
+
+**Direct Answer:** Bilharzia (Schistosomiasis) is a water-borne parasitic disease caused by blood flukes (flatworms) of the genus **Schistosoma**, utilizing **freshwater water snails** as intermediate hosts.
+
+1. Life Cycle & Infection:
+- Parasite eggs in human urine or feces enter freshwater streams and hatch into miracidia that infect freshwater snails.
+- Snails release thousands of free-swimming larvae (**cercariae**), which penetrate human skin when people swim, bathe, or wash in slow-moving or stagnant water.
+
+2. Symptoms:
+- **Urinary Bilharzia (*S. haematobium*):** **Hematuria** (painless passing of blood in urine), painful urination, and lower abdominal pain.
+- **Intestinal Bilharzia (*S. mansoni*):** Blood in stool, chronic diarrhea, and enlarged liver and spleen.
+
+3. Prevention & Treatment:
+- Avoid swimming, bathing, or wading barefoot in untreated, slow-moving rivers and dams.
+- Provide clean borehole water and piped water in rural schools and communities.
+- **Treatment:** Single-dose oral medication with **Praziquantel**.`,
+        sourceTag: `ZIMSEC ${level} Science • Parasitic Diseases`,
+        suggestions: [
+          'What causes malaria and how is it treated?',
+          'What are the symptoms of cholera?',
+          'Describe the life cycle of the female Anopheles mosquito'
+        ]
+      };
+    }
+
+    if (q.includes('kwashiorkor') || q.includes('marasmus') || q.includes('deficiency disease')) {
+      return {
+        text: `### Science & Nutrition: Nutritional Deficiency Diseases: Kwashiorkor vs Marasmus
+
+**Direct Answer:** Nutritional deficiency diseases occur when the body lacks essential nutrients, vitamins, or minerals in the daily diet:
+
+1. Kwashiorkor (Protein Deficiency):
+- **Cause:** Diet containing carbohydrates (e.g. sadza) but lacking essential proteins (milk, eggs, meat, beans, groundnuts).
+- **Signs & Symptoms:**
+  * **Oedema:** Swollen abdomen (pot belly) and puffy feet/face due to fluid accumulation.
+  * Discolored, brittle, reddish-brown thinning hair.
+  * Peeling, flaky "enamel paint" skin lesions and apathy.
+- **Cure:** High-protein diet with beans, soya, eggs, milk, and groundnuts.
+
+2. Marasmus (Total Calorie & Starvation Deficiency):
+- **Cause:** Severe shortage of both calories (energy foods) and proteins.
+- **Signs & Symptoms:**
+  * Severe muscle wasting; skin and bones appearance.
+  * Shriveled, wrinkled "old person's face" (*facies senilis*).
+  * Prominent rib cage, sunken eyes, and insatiable hunger.
+- **Cure:** Balanced diet high in energy-rich foods and proteins.
+
+3. Other Key ZIMSEC Deficiency Diseases:
+- **Scurvy (Vitamin C):** Bleeding gums, slow wound healing (eat citrus fruits, guavas).
+- **Rickets (Vitamin D / Calcium):** Soft, bow-shaped leg bones in children (sunlight, milk).
+- **Goitre (Iodine):** Swollen thyroid gland in neck (iodized salt, seafood).
+- **Anaemia (Iron):** Pale tongue/eyelids, fatigue (green vegetables, liver, red meat).
+- **Night Blindness (Vitamin A):** Poor vision in dim light (carrots, yellow fruits, liver).`,
+        sourceTag: `ZIMSEC ${level} Science • Nutrition & Deficiency Diseases`,
+        suggestions: [
+          'What are the 7 classes of food and their functions?',
+          'What causes kwashiorkor and how is it treated?',
+          'Explain the human digestive system'
+        ]
+      };
+    }
+
+    // 7. Agriculture: Pfumvudza, Soils, Crops, Farm Tools
+    if (q.includes('pfumvudza') || q.includes('intwasa')) {
+      return {
+        text: `### Agriculture: The Pfumvudza / Intwasa Conservation Agriculture Model
+
+**Direct Answer:** **Pfumvudza** (ChiShona) or **Intwasa** (IsiNdebele) is Zimbabwe's national climate-smart conservation agriculture program designed to maximize crop productivity on small plots of land using minimal water and input resources.
+
+1. Three Core Principles of Conservation Agriculture:
+- **Minimum Soil Disturbance:** Digging precise planting stations (basins) instead of conventional destructive ploughing that degrades soil structure.
+- **Permanent Soil Cover (Mulching):** Covering planting beds with dry grass, crop residue, or leaves to conserve moisture, prevent evaporation, and suppress weed growth.
+- **Crop Rotation:** Alternating cereal grains (maize, sorghum) with nitrogen-fixing legumes (groundnuts, cowpeas, sugar beans) to enhance soil fertility and disrupt pest cycles.
+
+2. Technical Specifications of a Standard Pfumvudza Plot:
+- Standard plot size: **39 meters by 16 meters** (approximately 1/16th of a hectare), holding exactly **1,456 planting holes**.
+- Hole dimensions: **15 cm long × 15 cm wide × 15 cm deep**.
+- Inter-row spacing: **75 cm** between rows; in-row spacing: **60 cm** between holes.
+- Application: Placement of organic manure/compost and basal fertilizer directly into the hole, covered with a thin soil layer before seed placement.
+
+3. National Impact:
+- Guarantees household food self-sufficiency (*Gwara reMhuri*) even during drought years (e.g. El Niño weather patterns).`,
+        sourceTag: `ZIMSEC ${level} Agriculture • Climate-Smart Agriculture`,
+        suggestions: [
+          'What are the 3 main soil types in Zimbabwe?',
+          'What are the 5 Natural Farming Regions of Zimbabwe?',
+          'Explain crop rotation and its advantages'
+        ]
+      };
+    }
+
+    if (q.includes('soil type') || q.includes('soil conservation') || q.includes('soil erosion') || (q.includes('soil') && q.includes('sand'))) {
+      return {
+        text: `### Agriculture: Soil Types, Characteristics, and Conservation
+
+**Direct Answer:** Soil is the loose upper layer of the Earth's crust composed of mineral particles, organic matter (humus), air, water, and living microorganisms that supports plant growth.
+
+1. The Three Main Soil Types:
+- **1. Sandy Soil:** Large, coarse particles; large air spaces; rapid drainage; very low water and nutrient retention; easy to cultivate but poor fertility.
+- **2. Clay Soil:** Extremely fine particles; tiny air spaces; high water retention; sticky when wet, cracks when dry; rich in mineral nutrients but prone to waterlogging and difficult to cultivate.
+- **3. Loam Soil (Ideal Farming Soil):** A balanced mixture of sand, silt, and clay with rich organic humus; retains adequate moisture while draining excess water; fertile and easy to work.
+
+2. Soil Erosion Types:
+- **Splash Erosion:** Raindrops striking bare soil, dislodging particles.
+- **Sheet Erosion:** Uniform removal of the thin topsoil layer by surface runoff.
+- **Rill Erosion:** Small, visible channels carved by flowing water.
+- **Gully Erosion:** Deep, wide trenches caused by intense water runoff (cannot be smoothed by ordinary ploughing).
+
+3. Soil Conservation Methods in Zimbabwe:
+- **Contour Ridges:** Earth banks built across hill slopes to slow down runoff.
+- **Terracing:** Converting steep slopes into stepped horizontal flat benches.
+- **Mulching:** Covering bare ground with plant residues to break raindrop impact and conserve moisture.
+- **Planting Vetiver Grass:** Dense root systems binding soil along contours.`,
+        sourceTag: `ZIMSEC ${level} Agriculture • Soil Science`,
+        suggestions: [
+          'What is Pfumvudza / Intwasa agriculture?',
+          'What are the 5 Natural Farming Regions of Zimbabwe?',
+          'What is soil pH and how is it corrected by liming?'
+        ]
+      };
+    }
+
+    // 8. General Subject Router with Deep Factual Synthesis
+    let subject = 'General Curriculum Studies';
+    if (q.includes('history') || q.includes('war') || q.includes('treaty') || q.includes('rudd') || q.includes(' Rhodes')) subject = 'History 2167/9155';
+    else if (q.includes('science') || q.includes('cell') || q.includes('organ') || q.includes('blood') || q.includes('plant')) subject = 'Combined Science 4003';
+    else if (q.includes('math') || q.includes('solve') || q.includes('calculate') || q.includes('angle') || q.includes('triangle')) subject = 'Mathematics 4004';
+    else if (q.includes('agri') || q.includes('crop') || q.includes('farm') || q.includes('cattle') || q.includes('fertilizer')) subject = 'Agriculture 5038';
+    else if (q.includes('geography') || q.includes('rainfall') || q.includes('river') || q.includes('climate') || q.includes('mining')) subject = 'Geography 2248';
+    else if (q.includes('account') || q.includes('commerce') || q.includes('debit') || q.includes('credit') || q.includes('bank')) subject = 'Principles of Accounts 7110';
+    else if (q.includes('english') || q.includes('concord') || q.includes('verb') || q.includes('noun') || q.includes('letter')) subject = 'English Language 1122';
 
     const cleanedTopic = question.charAt(0).toUpperCase() + question.slice(1);
 
     return {
       text: `### ${subject}: ${cleanedTopic}
 
-1. Key Concept & Syllabus Overview:
-- This topic is examined in **ZIMSEC ${level} ${subject}**.
-- To obtain full marks in Paper 1 and Paper 2, candidates must define terms accurately, state direct facts concisely, and substantiate explanations with standard syllabus examples.
+**Direct Answer:** In the ZIMSEC ${level} curriculum, **${cleanedTopic}** is tested on precision of definition, factual explanation, and practical application.
 
-2. Factual Analysis & Core Syllabus Points:
-- **Definition & Core Meaning:** Focus directly on the question—*${question}*—by identifying the essential principles, key agents, scientific mechanisms, or historical dates involved.
-- **Key Characteristics & Properties:** Organize answers in structured, numbered points. Each point should open with a clear factual statement followed by supporting explanation.
-- **Application & Working:** For scientific processes or mathematical problems, state governing laws or formulas, show step-by-step working, and include appropriate SI units or standard notation.
+1. Core Definition & Fundamental Concepts:
+- **Definition:** Clearly states the central scientific mechanism, mathematical law, historical timeline, or geographic principle.
+- **Key Agents & Elements:** Identify the critical components, interacting variables, or historical parties involved.
 
-3. Zimbabwean Heritage & Practical Context:
-- Connect the concept to local Zimbabwean contexts where applicable: agro-ecological regions (Regions I to V), national heritage monuments, Zimbabwean industries, or natural resource management.
+2. Detailed Breakdown & Step-by-Step Analysis:
+- **Mechanism / Sequence:** Follows a logical, chronological, or procedural order from cause to effect.
+- **Supporting Evidence & Units:** Ensure standard scientific SI units, accurate chemical/mathematical formulas, or exact historical dates are stated.
 
-4. ZIMSEC Exam Technique:
-- **Command Words:** Note the difference between "State/List" (requires brief, direct facts), "Describe" (requires characteristics and sequence), and "Explain/Discuss" (requires reasons, evidence, and balanced evaluation).`,
+3. Zimbabwean Syllabus Application & Exam Guidance:
+- **Local Application:** Grounded in Zimbabwean environmental, agricultural, or national historical contexts.
+- **Exam Technique:** For "State/List" questions, provide direct bulleted facts; for "Describe/Explain", include supporting reasons, mechanisms, and consequences to attain full marks.`,
       sourceTag: `ZIMSEC ${level} • ${subject}`,
       suggestions: [
-        `Explain the key principles of this topic`,
+        `Explain the key principles of ${cleanedTopic}`,
         `What are common ZIMSEC exam questions on this topic?`,
         `Give practical Zimbabwean examples for this topic`
       ]
     };
   }
 }
+

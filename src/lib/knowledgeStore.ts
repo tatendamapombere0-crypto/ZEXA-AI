@@ -1,4 +1,22 @@
 import { KnowledgeChunk } from '../types';
+import universalGlossaryData from '../data/zimsec_universal_glossary_terms.json';
+import grade7HbcQAData from '../data/zimsec_grade7_hbc_line_by_line_qa.json';
+import oLevelBiologyQAData from '../data/o_level_biology_qa_notes.json';
+import oLevelBiologyChunks from '../data/o_level_biology_chunks.json';
+import { COMPREHENSIVE_STUDY_PACKS } from '../data/comprehensiveStudyPacks';
+
+export interface UniversalGlossaryEntry {
+  id: string;
+  term: string;
+  canonicalName: string;
+  aliases: string[];
+  subject: string;
+  definition: string;
+  levels?: string[];
+  topic?: string;
+  content?: string;
+  keywords?: string[];
+}
 
 interface ScoredChunk {
   chunk: KnowledgeChunk;
@@ -15,6 +33,289 @@ export class KnowledgeStore {
   private static chunks: KnowledgeChunk[] = [];
   private static isLoaded = false;
   private static cache = new Map<string, SearchResult>();
+  public static universalGlossary: Map<string, UniversalGlossaryEntry> = new Map();
+  private static sortedGlossaryKeys: Array<[string, UniversalGlossaryEntry]> = [];
+
+  static {
+    // Synchronously index all 2,640+ universal curriculum terms at bundle time (0ms latency)
+    if (Array.isArray(universalGlossaryData)) {
+      for (const entry of universalGlossaryData) {
+        KnowledgeStore.registerGlossaryEntry(entry as any);
+      }
+      KnowledgeStore.sortedGlossaryKeys = Array.from(KnowledgeStore.universalGlossary.entries()).sort(
+        (a, b) => b[0].length - a[0].length
+      );
+    }
+  }
+
+  public static registerGlossaryEntry(entry: UniversalGlossaryEntry): void {
+    if (!entry || !entry.canonicalName) return;
+    const cleanKey = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+    
+    const cKey = cleanKey(entry.canonicalName);
+    if (cKey) this.universalGlossary.set(cKey, entry);
+
+    const tKey = cleanKey(entry.term);
+    if (tKey) this.universalGlossary.set(tKey, entry);
+
+    if (Array.isArray(entry.aliases)) {
+      for (const alias of entry.aliases) {
+        const aKey = cleanKey(alias);
+        if (aKey) this.universalGlossary.set(aKey, entry);
+      }
+    }
+  }
+
+  public static lookupGlossaryTerm(query: string): UniversalGlossaryEntry | null {
+    if (!query) return null;
+    const cleanKey = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+    const qClean = cleanKey(query);
+
+    // 1. Direct match on full query
+    if (this.universalGlossary.has(qClean)) {
+      return this.universalGlossary.get(qClean)!;
+    }
+
+    // 2. Multi-stage prefix, filler, and article stripping (English, ChiShona, IsiNdebele)
+    let stripped = qClean
+      // Conversational preambles
+      .replace(/^(can you please|could you please|can you|could you|please|i want to know|tell me about|explain to me|i would like to know|give me|tell me|who was|who is|who were)\s+/, '')
+      // Question stems & definition starters
+      .replace(/^(what is the definition of|what is meant by the term|what is the meaning of|what is meant by|meaning of the term|definition of|meaning of|what is|what are|what was|what were|define|explain|describe|give|state)\s+/, '')
+      // ChiShona & IsiNdebele interrogatives
+      .replace(/^(chii chinonzi|chinonzi chii|chinorevei|dudziro ye|zvinorevei|tsanangura chii chinonzi|tsanangura|ndiudze nezve|kuyini|kutshoni|chaza)\s+/, '')
+      .trim();
+
+    // Strip leading articles (a, an, the, chero, mumwe)
+    stripped = stripped.replace(/^(a|an|the|mumwe|chero)\s+/, '').trim();
+    // Strip trailing fillers
+    stripped = stripped.replace(/\s+(mean|means|meaning|definition|concept|system|process|in zimsec|in religion|in christianity|in islam|in biology|in chemistry|in physics|in science|in building|in accounts|in commerce|in history|in literature|in english|in shona|chinonzi chii|zvinorevei)$/, '').trim();
+
+    if (stripped && this.universalGlossary.has(stripped)) {
+      return this.universalGlossary.get(stripped)!;
+    }
+
+    const noArticle = stripped.replace(/^(a|an|the)\s+/, '').trim();
+    if (noArticle && this.universalGlossary.has(noArticle)) {
+      return this.universalGlossary.get(noArticle)!;
+    }
+
+    // 3. Exact word-boundary token matching (longest keys evaluated first)
+    if (this.sortedGlossaryKeys.length === 0) {
+      this.sortedGlossaryKeys = Array.from(this.universalGlossary.entries()).sort(
+        (a, b) => b[0].length - a[0].length
+      );
+    }
+
+    for (const [key, entry] of this.sortedGlossaryKeys) {
+      if (key.length >= 3) {
+        const escaped = key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const reg = new RegExp(`(^|\\s)${escaped}(\\s|$)`);
+        if (reg.test(qClean) || reg.test(stripped)) {
+          return entry;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  /**
+   * Directly resolves questions matching the Grade 7 Heritage-Based Curriculum (HBC) objectives
+   * Returns line-by-line, in-depth ZIMSEC syllabus answers.
+   */
+  public static lookupGrade7HbcQuestion(query: string): { topic: string; section: string; question: string; answer: string } | null {
+    if (!query) return null;
+    const cleanKey = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+    const qClean = cleanKey(query);
+
+    // 1. Direct match on question or normalized question variations
+    for (const item of (grade7HbcQAData as any[])) {
+      if (cleanKey(item.question) === qClean) return item;
+      if (Array.isArray(item.normalizedQuestions)) {
+        for (const nq of item.normalizedQuestions) {
+          if (cleanKey(nq) === qClean) return item;
+        }
+      }
+    }
+
+    // 2. Stripped prefix match (stripping interrogatives like "describe", "explain", "what are", etc.)
+    const stripped = qClean
+      .replace(/^(can you please|could you please|please|tell me about|explain to me|i want to know|what is|what are|define|explain|describe|list|state|identify|suggest|examine|outline|name)\s+/, '')
+      .replace(/^(a|an|the)\s+/, '')
+      .trim();
+
+    if (stripped) {
+      for (const item of (grade7HbcQAData as any[])) {
+        const itemStrip = cleanKey(item.question)
+          .replace(/^(identify|describe|explain|list|state|define|suggest|examine|outline|name)\s+/, '')
+          .replace(/^(a|an|the)\s+/, '')
+          .trim();
+        if (itemStrip === stripped) return item;
+
+        if (Array.isArray(item.normalizedQuestions)) {
+          for (const nq of item.normalizedQuestions) {
+            const nqStrip = cleanKey(nq)
+              .replace(/^(identify|describe|explain|list|state|define|suggest|examine|outline|name)\s+/, '')
+              .replace(/^(a|an|the)\s+/, '')
+              .trim();
+            if (nqStrip === stripped) return item;
+          }
+        }
+      }
+    }
+
+    // 3. Substring match with word boundaries for core topic concepts
+    for (const item of (grade7HbcQAData as any[])) {
+      if (Array.isArray(item.normalizedQuestions)) {
+        for (const nq of item.normalizedQuestions) {
+          const cNq = cleanKey(nq);
+          if (cNq.length >= 10 && (qClean.includes(cNq) || cNq.includes(qClean))) {
+            return item;
+          }
+        }
+      }
+      if (item.topic) {
+        const cTopic = cleanKey(item.topic);
+        if (cTopic.length >= 8 && qClean.includes(cTopic)) {
+          return item;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  /**
+   * Directly resolves questions matching the Cambridge IGCSE / ZIMSEC O-Level Biology (0610 / 4025) syllabus
+   * Returns exact, mark-scheme aligned answers for all 10 core & extension chapters.
+   */
+  public static lookupOLevelBiologyQuestion(query: string): { topic: string; question: string; answer: string } | null {
+    if (!query) return null;
+    const cleanKey = (str: string) => str.toLowerCase().replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+    const qClean = cleanKey(query);
+
+    // 1. Direct match on question text or normalized variations
+    for (const item of (oLevelBiologyQAData as any[])) {
+      if (cleanKey(item.question) === qClean) return item;
+      if (Array.isArray(item.normalizedQuestions)) {
+        for (const nq of item.normalizedQuestions) {
+          if (cleanKey(nq) === qClean) return item;
+        }
+      }
+    }
+
+    // 2. Stripped prefix match
+    const stripped = qClean
+      .replace(/^(can you please|could you please|please|tell me about|explain to me|i want to know|what is the definition of|what is meant by the term|what is meant by|what is|what are|define|explain|describe|list|state|identify|suggest|examine|outline|name|give|how does|why does|how do|why do)\s+/, '')
+      .replace(/^(a|an|the)\s+/, '')
+      .trim();
+
+    if (stripped) {
+      for (const item of (oLevelBiologyQAData as any[])) {
+        const itemStrip = cleanKey(item.question)
+          .replace(/^(identify|describe|explain|list|state|define|suggest|examine|outline|name|give|how does|why does|how do|why do)\s+/, '')
+          .replace(/^(a|an|the)\s+/, '')
+          .trim();
+        if (itemStrip === stripped) return item;
+
+        if (Array.isArray(item.normalizedQuestions)) {
+          for (const nq of item.normalizedQuestions) {
+            const nqStrip = cleanKey(nq)
+              .replace(/^(identify|describe|explain|list|state|define|suggest|examine|outline|name|give|how does|why does|how do|why do)\s+/, '')
+              .replace(/^(a|an|the)\s+/, '')
+              .trim();
+            if (nqStrip === stripped) return item;
+          }
+        }
+      }
+    }
+
+    // 3. Substring match for distinct multi-word biology queries
+    for (const item of (oLevelBiologyQAData as any[])) {
+      if (Array.isArray(item.normalizedQuestions)) {
+        for (const nq of item.normalizedQuestions) {
+          const cNq = cleanKey(nq);
+          if (cNq.length >= 8 && (qClean.includes(cNq) || cNq.includes(qClean))) {
+            return item;
+          }
+        }
+      }
+    }
+
+    // 4. Token-based keyword matching with stop-word filtration
+    const STOP_WORDS = new Set([
+      'what', 'is', 'an', 'the', 'of', 'in', 'why', 'does', 'to', 'be', 'for', 'and', 'or', 'a',
+      'are', 'how', 'do', 'can', 'you', 'explain', 'describe', 'define', 'outline', 'state',
+      'identify', 'suggest', 'which', 'when', 'where', 'with', 'from', 'by', 'that', 'this',
+      'tell', 'about', 'me', 'give', 'name', 'show', 'between', 'student', 'biology', 'question',
+      'answer', 'according', 'mark', 'scheme', 'who', 'was', 'were', 'first', 'second', 'third',
+      'many', 'much', 'some', 'all', 'any', 'not', 'has', 'have', 'had', 'will', 'would', 'should',
+      'could', 'also', 'more', 'most', 'other', 'than', 'then', 'into', 'onto', 'over', 'under',
+      'used', 'using', 'during', 'through'
+    ]);
+
+    const qWords = qClean.split(/\s+/).filter(w => w.length >= 3 && !STOP_WORDS.has(w));
+    if (qWords.length > 0) {
+      let bestItem: any = null;
+      let bestScore = 0;
+      let directWordMatches = 0;
+
+      for (const item of (oLevelBiologyQAData as any[])) {
+        let score = 0;
+        let dMatches = 0;
+        const directWords = new Set<string>();
+
+        for (const w of cleanKey(item.question).split(/\s+/)) {
+          if (w.length >= 3 && !STOP_WORDS.has(w)) directWords.add(w);
+        }
+        if (Array.isArray(item.normalizedQuestions)) {
+          for (const nq of item.normalizedQuestions) {
+            for (const w of cleanKey(nq).split(/\s+/)) {
+              if (w.length >= 3 && !STOP_WORDS.has(w)) directWords.add(w);
+            }
+          }
+        }
+        if (Array.isArray(item.keywords)) {
+          for (const kw of item.keywords) {
+            for (const w of cleanKey(kw).split(/\s+/)) {
+              if (w.length >= 3 && !STOP_WORDS.has(w)) directWords.add(w);
+            }
+          }
+        }
+
+        const answerText = (item.answer || '').toLowerCase();
+        for (const w of qWords) {
+          if (directWords.has(w)) {
+            score += 4;
+            dMatches++;
+          } else if (answerText.includes(w)) {
+            score += 1;
+          }
+        }
+
+        if (score > bestScore) {
+          bestScore = score;
+          bestItem = item;
+          directWordMatches = dMatches;
+        }
+      }
+
+      if (bestScore >= 4 && directWordMatches >= 1) {
+        if (qWords.length >= 3 && directWordMatches < 2 && bestScore < 7) {
+          // Check if the single direct match is a distinctive biology keyword (length >= 8)
+          const hasDistinctiveKeyword = qWords.some(w => w.length >= 8 && directWordMatches >= 1);
+          if (hasDistinctiveKeyword) {
+            return bestItem;
+          }
+        } else {
+          return bestItem;
+        }
+      }
+    }
+
+    return null;
+  }
 
   // Primary Education Seed Chunks (Aligned with ZIMSEC Primary / Grade 1 - 7 Heritage-Based Curriculum)
   // Primary Education Seed Chunks (Aligned with ZIMSEC Official Grade 7 6-Subject Curriculum Format)
@@ -268,6 +569,179 @@ export class KnowledgeStore {
 *Exam Tip:* Sunlight and chlorophyll are energy agents, not raw chemical reactants.`,
       source: 'ZIMSEC Grade 7 Agric, Science & Tech Syllabus 703',
       keywords: ['photosynthesis', 'plants', 'leaves', 'chlorophyll', 'sunlight', 'food', 'oxygen', 'water', 'agric', 'science', 'tech']
+    },
+    {
+      id: 'g7_sci_weathering_soil_profile',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Weathering of Rocks and Soil Profile Horizons (HBC Topic 4)',
+      content: `Weathering and soil formation in Zimbabwe:
+1. Definition of Weathering:
+   - Weathering is the breaking down and disintegration of rocks into smaller particles in situ (in their original place) at or near the Earth's surface by atmospheric, chemical, and biological forces.
+2. The Three Types of Weathering:
+   - Physical / Mechanical Weathering: Rocks disintegrate without chemical change.
+     * Exfoliation (onion-skin peeling): Extreme daily temperature changes in hot areas (like granite kopjes/dwalas) cause outer rock layers to expand by day and contract by night, peeling off in curved sheets.
+     * Freeze-Thaw (Frost action): Water collects in rock cracks, freezes, expands by 9%, and wedges the rock apart.
+   - Chemical Weathering: Chemical reaction changes minerals inside the rock.
+     * Carbonation: Rainwater dissolves atmospheric CO₂ forming weak carbonic acid, which dissolves limestone/calcium carbonate.
+     * Oxidation: Atmospheric oxygen reacts with iron in rocks, producing reddish iron oxide (rust) which crumbles easily.
+     * Hydrolysis: Water breaks down feldspar rock minerals into soft kaolin clay.
+   - Biological Weathering: Action of living organisms.
+     * Plant roots: Grow into rock joints, expanding and splitting rocks open.
+     * Burrowing animals (termites, moles): Expose deep rocks to air and water.
+     * Lichens & mosses: Secrete mild organic acids that dissolve rock surfaces.
+3. The Soil Profile (Horizons):
+   - Horizon O: Top organic layer composed of rotting leaves, compost, and dark humus.
+   - Horizon A (Topsoil): Darkest fertile mineral layer containing earthworms, roots, and dissolved plant nutrients.
+   - Horizon B (Subsoil): Compact, lighter layer where leached minerals, clay, and iron accumulate.
+   - Horizon C (Parent Material): Partially weathered, fractured rock fragments.
+   - Horizon R (Bedrock): Solid, unweathered parent bedrock forming the foundation.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['weathering', 'types of weathering', 'physical weathering', 'mechanical weathering', 'chemical weathering', 'biological weathering', 'exfoliation', 'freeze thaw', 'soil profile', 'horizons of soil', 'topsoil', 'bedrock', 'subsoil', 'humus', 'rocks']
+    },
+    {
+      id: 'g7_sci_chronic_diseases_health',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Chronic Non-Communicable Diseases (HBC Topic 1: Health & Hygiene)',
+      content: `Chronic and non-communicable diseases in Grade 7 Science:
+1. What are Chronic Diseases?
+   - Chronic diseases are long-term, non-communicable medical conditions that develop gradually over time, last for months or a lifetime, cannot be passed from one person to another, and require consistent lifestyle management and medical care.
+2. Major Chronic Diseases Tested:
+   - Diabetes Mellitus:
+     * Cause: The pancreas fails to produce sufficient insulin, or body cells become resistant to insulin, leading to dangerously high levels of blood sugar (glucose).
+     * Symptoms: Frequent urination, extreme thirst, insatiable hunger, chronic fatigue, unexplained weight loss, and slow-healing sores.
+     * Management: Balanced low-sugar, high-fibre diet, regular exercise, maintaining healthy weight, and insulin injections or oral medication.
+   - Hypertension (High Blood Pressure):
+     * Cause: Blood pumps against artery walls at consistently high pressure (above 140/90 mmHg). Known as the "silent killer" because it often shows no early warning symptoms.
+     * Risk Factors: High dietary salt, obesity, lack of physical activity, smoking, alcohol, and stress.
+     * Complications: Stroke, heart attack, and kidney failure.
+     * Management: Low-salt diet, regular aerobic exercise, and antihypertensive medication.
+   - Asthma:
+     * Cause: Chronic inflammation and narrowing of the bronchial airways with excess mucus.
+     * Triggers: Dust mites, pollen, smoke, cold air, strong perfumes, and animal fur.
+     * Symptoms: Wheezing (whistling chest sound), shortness of breath, chest tightness, coughing.
+     * Treatment: Using bronchodilator inhalers during attacks and avoiding known triggers.
+   - Cancer:
+     * Cause: Uncontrolled, abnormal division of body cells that form lumps or tumours.
+     * Common types: Cervical cancer (prevented by HPV vaccination for primary school girls), breast cancer, prostate cancer.
+   - Sickle Cell Anaemia:
+     * Cause: Inherited red blood cell disorder where cells become crescent/sickle-shaped, clumping and blocking blood vessels.
+     * Symptoms: Severe pain crises in joints and abdomen, chronic fatigue, and jaundice.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['chronic diseases', 'chronic disease', 'diabetes', 'hypertension', 'high blood pressure', 'asthma', 'cancer', 'sickle cell', 'non communicable', 'health and hygiene', 'pancreas', 'insulin', 'lifestyle diseases']
+    },
+    {
+      id: 'g7_sci_food_nutrition_deficiency',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Food Choices, Balanced Diet, and Deficiency Diseases (HBC Topic 2)',
+      content: `Food and nutrition guidelines in ZIMSEC Grade 7 Science:
+1. The Three Essential Food Groups:
+   - Energy-Giving Foods: Carbohydrates (sadza, maize, bread, sweet potatoes, cassava) and Fats/Oils (sunflower oil, peanut butter, cooking oil) providing fuel for daily body activity.
+   - Body-Building Foods: Proteins (beef, poultry, beans, cowpeas, eggs, milk, fish, edible insects/madora/ishwa) for muscle growth, tissue repair, and enzyme production.
+   - Protective Foods: Vitamins and Minerals (green leafy vegetables, covo, tsunga, carrots, tomatoes, wild fruits like mazhanje) that protect the immune system against infections.
+2. Major Nutritional Deficiency Diseases:
+   - Kwashiorkor: Severe lack of protein in the diet. Symptoms: swollen potbelly (oedema), thin discoloured brownish/reddish hair, peeling skin, apathy.
+   - Marasmus: Severe deficiency of all food nutrients and energy (total starvation). Symptoms: extreme muscle wasting, visible ribs, face looks like a wrinkled old person, child looks like skin and bone.
+   - Scurvy: Deficiency of Vitamin C (citrus fruits, lemons, oranges). Symptoms: bleeding swollen gums, loosened teeth, slow wound healing.
+   - Rickets: Deficiency of Vitamin D and Calcium (milk, sunshine). Symptoms: soft, deformed bones resulting in bow legs or knock-knees.
+   - Goitre: Deficiency of Iodine. Symptoms: large swelling of the thyroid gland in the front of the neck. Prevented by using iodised kitchen salt.
+   - Anaemia: Deficiency of Iron (green vegetables, liver, red meat). Symptoms: extreme tiredness, pale tongue, lips, and inner eyelids.
+   - Night Blindness: Deficiency of Vitamin A (carrots, yellow vegetables). Inability to see in low light.
+3. Food Storage & Preservation:
+   - Traditional: Sun drying (vegetables into mufushwa, meat into chimukuyu/biltong), smoking fish/meat, salting, grain storage in raised aerated granaries (dura / isiphala) mixed with wood ash to deter weevils.
+   - Modern: Refrigeration, deep freezing, canning, pasteurisation of milk, vacuum packaging.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['food choices', 'nutrition', 'balanced diet', 'food groups', 'deficiency diseases', 'kwashiorkor', 'marasmus', 'scurvy', 'rickets', 'goitre', 'anaemia', 'food preservation', 'mufushwa', 'chimukuyu', 'vitamins', 'proteins']
+    },
+    {
+      id: 'g7_sci_energy_sound_conversion',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Sound Energy, Energy Conversion, and Fuels (HBC Topic 6)',
+      content: `Energy and fuels in Grade 7 Science and Technology:
+1. Sound Energy:
+   - Sound is a form of energy produced by vibrating objects (e.g. vibrating vocal cords, guitar strings, drum skin).
+   - Medium required: Sound travels as longitudinal waves through solids, liquids, and gases. Sound CANNOT travel in a vacuum because there are no particles to vibrate.
+   - Speed of sound: Travels fastest in dense solids (steel, rock), slower in liquids (water), and slowest in air (~330 m/s).
+   - Pitch: The highness or lowness of sound, determined by frequency (rate of vibrations in Hertz).
+   - Loudness: The volume of sound, determined by the amplitude (size/energy of vibrations).
+   - Echo: A reflected sound wave bouncing off a hard, smooth surface (rock wall, building). Requires a minimum distance of about 17 metres to be heard as a distinct separate sound.
+2. Energy Conversion (Law of Conservation of Energy):
+   - Energy cannot be created or destroyed; it only transforms from one form to another.
+   - Examples:
+     * Torch / Flashlight: Chemical energy (dry battery cell) -> Electrical energy -> Light & Heat energy.
+     * Solar Photovoltaic Panel: Solar / light energy -> Electrical energy.
+     * Electric Iron: Electrical energy -> Thermal / Heat energy.
+     * Food Digestion: Chemical energy (sadza) -> Kinetic / Mechanical energy + Thermal energy.
+     * Kariba Hydroelectric Station: Gravitational Potential energy of dammed water -> Kinetic energy of falling water -> Mechanical energy of turbine -> Electrical energy.
+3. Impacts of Fuels on the Environment:
+   - Non-renewable fossil fuels: Coal (Hwange), petrol, diesel, paraffin.
+   - Environmental consequences:
+     * Air pollution: Smoke and particulate soot cause respiratory diseases in children.
+     * Carbon Monoxide (CO): Poisonous odorless gas from burning charcoal in enclosed rooms (*mbaura*), causing suffocation and death.
+     * Acid Rain: Sulphur dioxide and nitrogen oxides dissolve in rainwater, damaging crops, soils, and aquatic life.
+     * Global Warming: Carbon dioxide builds up the greenhouse effect, driving climate change and droughts.
+     * Deforestation: Uncontrolled tree cutting for firewood accelerates desertification and soil erosion.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['sound energy', 'energy conversion', 'impacts of fuels', 'vibrations', 'echo', 'pitch', 'loudness', 'fossil fuels', 'pollution', 'acid rain', 'carbon monoxide', 'solar energy', 'conservation of energy']
+    },
+    {
+      id: 'g7_sci_disasters_management',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Disaster Risk Management: Natural and Man-Made Disasters (HBC Topic 7)',
+      content: `Disasters and emergency preparedness in Grade 7 Science:
+1. Types of Disasters in Zimbabwe:
+   - Natural Disasters:
+     * Tropical Cyclones (e.g. Cyclone Idai 2019 in Manicaland/Chimanimani): Heavy winds and torrential rains causing flash floods and mudslides.
+     * Droughts: Caused by poor rainfall and El Niño patterns, causing crop failure, livestock deaths, and hunger.
+     * Floods: River overflows in low-lying areas like Muzarabani, Middle Sabi, and Tsholotsho.
+     * Lightning strikes: Zimbabwe has one of the highest lightning fatality rates due to convective storms and high granite topography.
+   - Man-Made Disasters:
+     * Veld fires: Uncontrolled fires destroying pastures, wildlife, crops, and human lives.
+     * Road traffic accidents, industrial chemical spills, and mining shaft collapses.
+2. Lightning Safety Rules (ZIMSEC Exam Facts):
+   - Stay indoors inside a substantial building or fully enclosed metal vehicle.
+   - Avoid open fields, hilltops, open water bodies, and isolated tall trees.
+   - Do not hold metal objects (hoes, umbrellas with metal points, bicycles).
+   - If caught in an open field with nowhere to run, assume the "lightning crouch": crouch down on the balls of your feet with your head tucked down and hands over ears; NEVER lie flat on the ground.
+   - Install lightning conductors (copper rods with earth wires) on homes, churches, and school roofs.
+3. Veld Fire Prevention & Fireguards:
+   - Never harvest honey with open fire or throw glowing cigarette butts into dry grass.
+   - Construct standard fireguards: Cleared or ploughed perimeter strips of at least 9 metres wide around farms, homesteads, and plantations to prevent flames from crossing.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['disaster', 'disasters', 'disaster risk management', 'cyclone idai', 'veld fire', 'fireguard', 'lightning safety', 'drought', 'floods', 'emergency preparedness']
+    },
+    {
+      id: 'g7_sci_edtech_coding_ai_robotics',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Educational Technology, AI, Coding, and Robotics (HBC Topic 8)',
+      content: `Educational technology and innovation in Grade 7 Science:
+1. Artificial Intelligence (AI) & Emerging Technologies:
+   - Definition: Artificial Intelligence refers to computer systems or machines programmed to simulate human intelligence, including learning, reasoning, pattern recognition, and problem solving.
+   - Practical Applications: Voice recognition assistants, educational AI (like ZEXA AI providing 100% offline study help), automated disease diagnosis, self-driving tractors, and smart drone crop spraying.
+2. Coding & Algorithms:
+   - Coding is the language of instructions given to a computer to execute specific tasks.
+   - Algorithm: A clear, step-by-step set of logical instructions or rules designed to accomplish a specific goal or solve a problem.
+   - Key Coding Concepts:
+     * Sequence: Executing commands in exact orderly steps from start to finish.
+     * Selection: Making decisions based on logic conditions (IF it is raining, THEN turn off irrigation; ELSE keep watering).
+     * Iteration / Loops: Repeating a specific action multiple times until a condition is satisfied.
+3. Robotics & Automated Systems:
+   - A robot is an automated machine that can sense its environment, process data, and carry out physical tasks.
+   - Core Components:
+     * Sensors: Measure temperature, light, soil moisture, or obstacles.
+     * Controller (Microcontroller / Brain): Processes input data according to the algorithm.
+     * Actuators: Motors, valves, and mechanical arms that produce movement.
+4. Cyber Safety and Ethics:
+   - Create strong, secret passwords combining letters, numbers, and symbols.
+   - Never share personal information (full name, home address, school, phone number) online with strangers.
+   - Respect intellectual property; avoid plagiarism and cyberbullying.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['artificial intelligence', 'emerging technologies', 'coding', 'robotics', 'algorithm', 'robots', 'sensors', 'actuators', 'cyber safety', 'educational technology', 'smart farming']
     },
     {
       id: 'g7_sci_soils',
@@ -809,6 +1283,206 @@ Worked Examples:
       keywords: ['ict', 'hardware', 'software', 'input devices', 'output devices', 'cpu', 'ram', 'rom', 'operating system', 'cyber safety', 'primary science']
     },
     {
+      id: 'g7_ast_weathering_soil_profile_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Weathering, Soil Profile, Water Scarcity, and Land Use (Environment)',
+      content: `Environment in Grade 7 Science and Technology:
+1. What is Weathering?
+   - Weathering is the breaking down or crumbling of rocks into smaller particles and soil *in situ* (in their original position) without transport.
+2. The Three Types of Weathering:
+   - Physical / Mechanical Weathering: Rocks are broken down without changing their chemical composition.
+     * Temperature fluctuations: Daytime heating causes rock expansion; nighttime cooling causes contraction, peeling outer layers (Exfoliation / onion-skin weathering, visible on granite domes in Domboshava and Matobo Hills).
+     * Frost shattering (Freeze-thaw): Water enters rock cracks, freezes and expands by ~9%, wedging rocks apart.
+   - Chemical Weathering: Chemical reactions alter the minerals within rocks.
+     * Carbonation: Rainwater dissolves atmospheric CO₂ forming weak carbonic acid which dissolves limestone and calcium carbonate (forming underground caves like Chinhoyi Caves).
+     * Oxidation: Oxygen reacts with iron minerals in rocks forming red/brown iron oxide (rust), weakening the rock.
+     * Hydration: Minerals absorb water and swell, causing stress fractures.
+   - Biological Weathering: Action of living organisms breaking down rocks.
+     * Tree roots grow into small rock crevices, expanding as they thicken and wedging rock blocks apart.
+     * Burrowing animals (rodents, ants, earthworms) disturb rock fragments and expose them to air and water.
+     * Lichens and mosses produce organic acids that slowly dissolve rock minerals.
+3. Soil Profile (Soil Horizons):
+   - Horizon O: Organic layer containing decomposing leaves and litter.
+   - Horizon A (Topsoil): Dark-colored, rich in organic humus and microorganisms; where crop roots grow and seeds germinate.
+   - Horizon B (Subsoil): Lighter colored, rich in clay and leached minerals; poorly aerated.
+   - Horizon C: Weathered rock fragments (partially broken parent material).
+   - Horizon R (Bedrock): Solid, unweathered parent rock.
+4. Water Scarcity and Land Use:
+   - Causes of water scarcity: Drought, deforestation, siltation of dams, wasteful usage.
+   - Conservation: Rainwater harvesting, mulching, drip irrigation, wetland protection.
+   - Land Use: Zoning for agriculture, settlement, forestry, mining, and wildlife conservation.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Environment',
+      keywords: ['weathering', 'types of weathering', 'physical weathering', 'chemical weathering', 'biological weathering', 'soil profile', 'topsoil', 'subsoil', 'horizons', 'water scarcity', 'land use', 'environment', 'primary science']
+    },
+    {
+      id: 'g7_ast_energy_sound_conversions_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Energy, Sound Energy, Energy Conversions, and Fuels (Energy & Fuels)',
+      content: `Energy and Fuels in Grade 7 Science and Technology:
+1. What is Energy?
+   - Energy is the ability or capacity to do work. It is measured in Joules (J).
+2. Sound Energy:
+   - Sound is produced by mechanical vibrations of objects.
+   - It travels in sound waves through solids, liquids, and gases (fastest in solids, slowest in gases).
+   - Sound CANNOT travel through a vacuum because it requires a physical medium with particles to transmit vibrations.
+   - Pitch: The highness or lowness of a sound, determined by frequency (vibrations per second).
+   - Volume / Loudness: Determined by the amplitude of the sound waves.
+   - Echo: A reflected sound wave bouncing off a hard surface (e.g. cliff or cave wall).
+3. Energy Conversions & Law of Conservation of Energy:
+   - Law of Conservation of Energy: Energy cannot be created or destroyed; it only changes from one form to another.
+   - Major Energy Conversions:
+     * Solar Panel: Light (solar) energy -> Electrical energy.
+     * Electric Kettle / Heater: Electrical energy -> Heat (thermal) energy.
+     * Battery Torch: Chemical energy -> Electrical energy -> Light and Heat.
+     * Car Engine: Chemical energy (petrol/diesel) -> Kinetic (movement) energy + Heat.
+     * Photosynthesis in Plants: Light energy -> Chemical potential energy stored in glucose.
+     * Hydroelectric Power (Kariba Dam): Potential energy of dam water -> Kinetic energy of spinning turbine -> Electrical energy in generator.
+4. Impacts of Fuels on the Environment:
+   - Burning fossil fuels (coal, petrol, diesel) and excessive firewood releases carbon dioxide (CO₂), sulfur dioxide, and smoke.
+   - Causes greenhouse effect, global warming, acid rain, respiratory diseases, and deforestation.
+   - Clean Renewable Alternatives: Solar power, wind power, hydroelectricity, and biogas from cattle dung.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Energy and Fuels',
+      keywords: ['energy', 'sound energy', 'energy conversion', 'law of conservation of energy', 'fuels', 'sound waves', 'pitch', 'echo', 'fossil fuels', 'solar energy', 'renewable energy', 'primary science']
+    },
+    {
+      id: 'g7_ast_disasters_risk_management_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Disaster Risk Management and Safety (Disasters)',
+      content: `Disaster Risk Management in Grade 7 Science and Technology:
+1. What is a Disaster?
+   - A disaster is a sudden catastrophic event that causes widespread destruction of property, loss of human lives, and damage to the environment that overwhelms local response capacity.
+2. Types of Disasters:
+   - Natural Disasters:
+     * Cyclones / Tropical Storms: Intense low-pressure systems bringing violent winds and torrential rains (e.g. Cyclone Idai in March 2019 which devastated Chimanimani and Chipinge).
+     * Floods: Overflowing of rivers covering normally dry land, caused by prolonged heavy rainfall.
+     * Droughts: Extended periods of severe rainfall deficit leading to crop failure, water shortages, and livestock deaths.
+     * Earthquakes / Earth Tremors: Shaking of the earth's crust along geological fault lines.
+   - Human-Made (Anthropogenic) Disasters:
+     * Veld Fires: Uncontrolled bushfires caused by careless cigarette disposal, land clearing, or poachers, destroying crops, grazing veld, and wildlife.
+     * Mine Shaft Collapses: Often occurring in unregulated artisanal mining pits.
+     * Industrial Pollution & Toxic Chemical Spills.
+3. Disaster Preparedness and Safety Measures:
+   - Floods: Never attempt to cross flooded rivers or bridges (either on foot or in vehicles); move immediately to higher ground; boil drinking water to prevent cholera.
+   - Lightning Safety: Stay inside enclosed buildings; avoid standing under tall isolated trees; stay away from open bodies of water and metal fences; do not use corded electronics.
+   - Veld Fire Prevention: Construct standard 9-metre wide fireguards around homesteads and crop fields; do not start open fires in windy conditions.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Disasters',
+      keywords: ['disaster', 'disasters', 'natural disasters', 'cyclone idai', 'floods', 'drought', 'veld fires', 'lightning safety', 'disaster risk management', 'primary science']
+    },
+    {
+      id: 'g7_ast_emerging_tech_ai_coding_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Educational Technology, Artificial Intelligence, Coding, and Robotics',
+      content: `Educational Technology and Innovation in Grade 7 Science and Technology:
+1. What is Artificial Intelligence (AI)?
+   - Artificial Intelligence (AI) refers to computer software and systems engineered to simulate human intelligence and reasoning.
+   - AI capabilities include learning from data, speech recognition, image detection, automated problem solving, and decision-making.
+   - Examples of AI:
+     * Educational assistants (e.g. ZEXA AI providing instant offline tutoring and exam answers).
+     * Voice assistants and speech-to-text typing on smartphones.
+     * Smart agriculture: AI drones scanning crop fields for pest infestations and nutrient deficiencies.
+     * Automated disease diagnosis in healthcare.
+2. Coding and Robotics:
+   - What is Coding: Writing step-by-step instructions (programs) in a computer language for a machine to follow.
+   - Key Coding Concepts:
+     * Algorithm: A step-by-step procedure to solve a specific problem.
+     * Sequence: Executing instructions in exact sequential order.
+     * Loop (Repetition): Repeating a set of instructions until a condition is met.
+     * Conditional (Decision): "If-Then-Else" statements directing flow based on conditions.
+     * Debugging: Finding and correcting errors or bugs in computer code.
+   - Robotics:
+     * A robot is a programmable machine equipped with sensors (to detect light, heat, or obstacles), a controller (computer brain), and actuators (motors to move).
+     * Used in automated manufacturing, precision irrigation, and hazardous tasks.
+3. Technology Design, Ethics, and Safety:
+   - The Design Process: 1. Identify Problem -> 2. Brainstorm Solutions -> 3. Create Design Plan -> 4. Build Prototype -> 5. Test, Evaluate, and Improve.
+   - Cyber Safety & Ethics: Protect private personal data; never share passwords; respect copyright (no software piracy); dispose of e-waste safely to prevent environmental lead and mercury contamination.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Educational Technology',
+      keywords: ['artificial intelligence', 'ai', 'coding', 'robotics', 'algorithm', 'debugging', 'design process', 'emerging technology', 'cyber safety', 'primary science']
+    },
+    {
+      id: 'g7_ast_food_nutrition_storage_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Food Choices, Nutrition, Food Storage, and Food Preparation',
+      content: `Food and Nutrition in Grade 7 Science and Technology:
+1. What is a Balanced Diet?
+   - A balanced diet contains all seven essential food nutrients in the correct proportions required for healthy growth, energy, and body maintenance.
+2. The Seven Essential Nutrients:
+   - Carbohydrates: Provide energy for daily activities (sadza, bread, rice, potatoes, sorghum).
+   - Proteins: Body-building, growth, and cellular repair (beans, meat, eggs, milk, soya, fish).
+   - Fats and Oils: Concentrated energy store and thermal insulation (cooking oil, butter, groundnuts).
+   - Vitamins: Protect the body from diseases and boost immunity (Vitamin A for eyesight; Vitamin C for healthy gums/immunity; Vitamin D for strong bones).
+   - Minerals: Essential body functions (Calcium for strong bones and teeth; Iron for hemoglobin in red blood cells).
+   - Dietary Fiber (Roughage): Aids digestion and prevents constipation (vegetables, fruits, whole grains).
+   - Water: Transports nutrients, dissolves substances, and regulates body temperature.
+3. Deficiency Diseases:
+   - Kwashiorkor: Lack of dietary protein. Symptoms: swollen belly (edema), brown thin hair, flaky skin.
+   - Marasmus: Severe deficiency of all calories/energy. Symptoms: extreme wasting, wrinkled face, loose skin over bones.
+   - Scurvy: Deficiency of Vitamin C. Symptoms: bleeding gums, loose teeth, poor wound healing.
+   - Rickets: Deficiency of Vitamin D and Calcium. Symptoms: soft bones, bowed legs.
+   - Anaemia: Deficiency of Iron. Symptoms: extreme tiredness, paleness of inner eyelids and gums.
+4. Food Storage, Preservation, and Hygiene:
+   - Food Preservation Methods:
+     * Sun drying: Removes moisture to prevent bacterial growth (drying vegetables to make *mufushwa*, drying kapenta fish).
+     * Salting and Smoking: Rubbing coarse salt and smoking strips of meat to make *biltong / chimukuyu* (osmosis dehydrates bacterial cells).
+     * Cold storage (Refrigeration/Freezing): Low temperatures slow down bacterial reproduction.
+     * Canning: Sealing food in airtight sterile cans.
+   - Food Preparation & Hygiene: Cook vegetables in covered pots with minimal water to conserve vitamins; wash hands before food handling; keep food covered from houseflies.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Food & Nutrition',
+      keywords: ['food and nutrition', 'balanced diet', 'nutrients', 'carbohydrates', 'proteins', 'vitamins', 'minerals', 'kwashiorkor', 'marasmus', 'scurvy', 'rickets', 'food preservation', 'biltong', 'primary science']
+    },
+    {
+      id: 'g7_ast_health_hygiene_chronic_epidemics_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Health, Hygiene, Chronic Diseases, and Epidemic Diseases',
+      content: `Health and Hygiene in Grade 7 Science and Technology:
+1. Chronic (Non-Communicable) Diseases:
+   - What are Chronic Diseases: Long-term health conditions that are not passed from person to person (non-infectious).
+   - Major Chronic Diseases:
+     * Diabetes Mellitus: High blood sugar level caused by failure of the pancreas to produce enough insulin. Managed by a balanced low-sugar diet, regular exercise, and insulin medication.
+     * Hypertension (High Blood Pressure): Chronic force of blood against artery walls is too high. Causes: excessive salt intake, lack of exercise, obesity, smoking, and stress. Managed by lowering salt intake, exercise, and medication.
+     * Asthma: Chronic inflammatory disorder of the airways causing difficulty breathing, wheezing, and chest tightness. Managed by avoiding dust/smoke triggers and using inhalers.
+2. Epidemic and Infectious Diseases:
+   - Cholera: Acute diarrheal infection caused by ingestion of water/food contaminated with *Vibrio cholerae* bacteria. Causes severe painless 'rice-water' diarrhea and dehydration. Treated with clean Oral Rehydration Solution (ORS: 1L boiled water + 6 teaspoons sugar + 1/2 teaspoon salt).
+   - Malaria: Caused by *Plasmodium* parasite transmitted through the bite of infected female *Anopheles* mosquitoes. Symptoms: shivering chills, fever, sweating. Prevented by sleeping under insecticide-treated mosquito nets (ITNs) and clearing stagnant water.
+   - Bilharzia (Schistosomiasis): Caused by parasitic flatworm *Schistosoma* using freshwater aquatic snails as intermediate hosts. Symptom: blood in urine (*haematuria*). Prevented by avoiding wading or swimming in stagnant rivers/dams.
+3. Environmental Health and Emotional Intelligence:
+   - Safe waste disposal: Use ventilated improved pit (VIP) latrines and refuse pits to keep water sources unpolluted.
+   - Emotional Intelligence: Self-awareness of feelings, emotional self-regulation, empathy towards others, and resolving interpersonal conflicts peacefully.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Health & Hygiene',
+      keywords: ['health and hygiene', 'chronic diseases', 'diabetes', 'hypertension', 'asthma', 'epidemic diseases', 'cholera', 'malaria', 'bilharzia', 'ors', 'environmental health', 'emotional intelligence', 'primary science']
+    },
+    {
+      id: 'g7_ast_crops_osmosis_transpiration_seed',
+      level: 'Primary',
+      subject: 'Agric, Science & Tech',
+      topic: 'Photosynthesis, Osmosis, Transpiration, and Plant Reproduction',
+      content: `Crops and Plants in Grade 7 Science and Technology:
+1. Photosynthesis:
+   - Process by which green plants manufacture glucose from carbon dioxide and water using light energy absorbed by chlorophyll:
+     Carbon dioxide + Water --(Sunlight & Chlorophyll)--> Glucose + Oxygen
+2. Osmosis and Transpiration:
+   - What is Osmosis: Net movement of water molecules from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution) across a partially permeable membrane.
+   - Process of Osmosis:
+     1. Separation: Solutions of different concentrations separated by cell membrane.
+     2. Random Motion: Water molecules constantly move across membrane pores.
+     3. Net Flow: Water moves toward the concentrated side down a water potential gradient.
+     4. Turgidity: In plant cells, incoming water creates turgor pressure against cell walls, keeping soft stems and leaves upright and firm.
+   - Transpiration: Evaporation and loss of water vapor from aerial parts of plants, mainly through leaf stomata.
+   - Transpiration Pull: The upward suction force that draws water and dissolved mineral salts from soil roots through the xylem vessels to leaves.
+3. Plant Reproduction:
+   - Flower Structure: Stamen (Male - anther with pollen, filament) and Carpel/Pistil (Female - stigma, style, ovary with ovules).
+   - Pollination: Transfer of pollen from anther to stigma (self-pollination vs cross-pollination by wind or insects).
+   - Fertilization: Male gamete fuses with ovule to form seeds; ovary becomes fruit.
+   - Seed Germination Requirements (WOW): Water, Oxygen, Warmth.`,
+      source: 'ZIMSEC Grade 7 Agriculture, Science & Tech Syllabus 7030 • Crops & Plants',
+      keywords: ['photosynthesis', 'osmosis', 'transpiration', 'process of osmosis', 'stomata', 'plant reproduction', 'pollination', 'germination', 'xylem', 'crops and plants', 'primary science']
+    },
+    {
       id: 'g7_heritage_national_symbols',
       level: 'Primary',
       subject: 'Social Science',
@@ -949,6 +1623,30 @@ Worked Examples:
    - Traditional pottery, wood carving, and basketry (Tonga / Binga baskets).`,
       source: 'ZIMSEC Grade 7 Physical Edu & Arts Syllabus 7130',
       keywords: ['physical education', 'pea', 'pada', 'nhodo', 'tsoro', 'muchongoyo', 'mbende', 'jerusarema', 'arts', 'primary']
+    },
+    {
+      id: 'g7_respiration_and_breathing',
+      level: 'Primary',
+      subject: 'Agriculture, Science and Technology',
+      topic: 'Respiration and the Human Respiratory System',
+      content: `ZIMSEC Grade 7 Science and Technology Syllabus 7030 • Topic 1: Human Body and Health:
+1. What is Respiration?
+   - Respiration is the chemical process taking place in all living cells where digested food (glucose) is broken down using oxygen to release energy for life processes, warmth, and movement.
+   - Word Equation for Respiration:
+     Glucose + Oxygen -> Carbon Dioxide + Water + Energy
+2. Difference Between Respiration and Breathing:
+   - Breathing (Ventilation): A physical / mechanical action where air is inhaled and exhaled using the lungs, ribs, and diaphragm. Does not produce energy.
+   - Respiration: A chemical reaction occurring inside cells that releases energy (ATP) from food.
+3. Organs of the Respiratory System:
+   - Nose / Nasal Cavity: Warms, moistens, and filters inhaled air with cilia and mucus.
+   - Trachea (Windpipe): Tube kept open by rings of cartilage.
+   - Bronchi & Bronchioles: Tubes carrying air deeper into the lungs.
+   - Alveoli (Air Sacs): Tiny thin-walled air sacs surrounded by blood capillaries where oxygen diffuses into the blood and carbon dioxide diffuses out.
+4. Mechanism of Inhalation and Exhalation:
+   - Inhalation: Diaphragm flattens downward, ribs move up and out, chest volume increases, air rushes in.
+   - Exhalation: Diaphragm curves upward, ribs move down and in, chest volume decreases, air is squeezed out.`,
+      source: 'ZIMSEC Grade 7 Science and Technology Syllabus 7030',
+      keywords: ['respiration', 'what is respiration', 'process of respiration', 'breathing', 'respiratory system', 'lungs', 'alveoli', 'trachea', 'inhalation', 'exhalation', 'equation for respiration', 'difference between respiration and breathing']
     }
   ];
 
@@ -1152,6 +1850,34 @@ Rules of Debit and Credit:
    - Independent Commissions Supporting Democracy: Zimbabwe Electoral Commission (ZEC), Zimbabwe Human Rights Commission (ZHRC), National Peace and Reconciliation Commission (NPRC), and Zimbabwe Gender Commission (ZGC).`,
       source: 'ZIMSEC History & Heritage Studies 2167 / 9155',
       keywords: ['constitution 2013', '16 languages', 'official languages', 'declaration of rights', 'referendum', 'history']
+    },
+    {
+      id: 'sec_cellular_respiration_aerobic_anaerobic',
+      level: 'O-Level',
+      subject: 'Combined Science / Biology',
+      topic: 'Cellular Respiration (Aerobic and Anaerobic Respiration)',
+      content: `ZIMSEC Combined Science 4003 / Biology 4025 • Section B: Cellular Processes:
+1. What is Respiration?
+   - Respiration is the biochemical oxidation of organic nutrients (glucose) inside living cells to release energy in the form of ATP (adenosine triphosphate) for biological work.
+2. Aerobic Respiration:
+   - Takes place in the presence of oxygen inside mitochondria.
+   - Complete breakdown of glucose into carbon dioxide and water with a large yield of energy (~36-38 ATP per glucose molecule).
+   - Word Equation: Glucose + Oxygen -> Carbon Dioxide + Water + Energy (ATP)
+   - Balanced Chemical Equation: C₆H₁₂O₆ + 6O₂ -> 6CO₂ + 6H₂O + 2880 kJ
+3. Anaerobic Respiration:
+   - Takes place in the absence of oxygen strictly in the cell cytoplasm with a small yield of energy (~2 ATP per glucose molecule).
+   - In Human Muscles (during intense sprint exercise):
+     * Glucose -> Lactic Acid + Energy (ATP).
+     * Causes muscle fatigue and cramps.
+     * Generates an "Oxygen Debt" (the extra oxygen needed after exercise to oxidize lactic acid back to glucose in the liver).
+   - In Yeast (Alcoholic Fermentation):
+     * Glucose -> Ethanol (Alcohol) + Carbon Dioxide + Energy (ATP).
+     * Utilized in brewing traditional African opaque beer (chibuku) and baking bread.
+4. Key Differences:
+   - Aerobic: Requires O₂, occurs in mitochondria, complete glucose breakdown, high energy yield (36-38 ATP), products are CO₂ + H₂O.
+   - Anaerobic: No O₂ needed, occurs in cytoplasm, partial breakdown, low energy yield (2 ATP), products are lactic acid (animals) or ethanol + CO₂ (yeast).`,
+      source: 'ZIMSEC Combined Science 4003 / Biology 4025 Syllabus',
+      keywords: ['respiration', 'what is respiration', 'process of respiration', 'cellular respiration', 'aerobic respiration', 'anaerobic respiration', 'fermentation', 'lactic acid', 'oxygen debt', 'mitochondria', 'difference between respiration and breathing', 'equation for respiration', 'stages of respiration']
     }
   ];
 
@@ -1193,9 +1919,11 @@ Rules of Debit and Credit:
     this.loadPromise = (async () => {
       const seenIds = new Set<string>();
       const initialChunks = [
+        ...(COMPREHENSIVE_STUDY_PACKS as any[]),
         ...this.PRIMARY_SEED_CHUNKS,
         ...this.SECONDARY_SEED_CHUNKS,
-        ...this.TERTIARY_SEED_CHUNKS
+        ...this.TERTIARY_SEED_CHUNKS,
+        ...(oLevelBiologyChunks as any[])
       ];
       this.chunks = [];
       for (const chunk of initialChunks) {
@@ -1205,10 +1933,34 @@ Rules of Debit and Credit:
         }
       }
 
+      // Ingest all 2,640+ universal curriculum terms into searchable chunks for Primary, O-Level, and A-Level
+      if (Array.isArray(universalGlossaryData)) {
+        for (const entry of universalGlossaryData) {
+          const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level'];
+          for (const lvl of levels) {
+            if (lvl === 'General') continue;
+            const chunkId = `glossary_${lvl}_${entry.id}`;
+            if (!seenIds.has(chunkId)) {
+              seenIds.add(chunkId);
+              this.chunks.push({
+                id: chunkId,
+                level: lvl,
+                subject: entry.subject || 'General Curriculum',
+                topic: entry.term,
+                content: entry.content || `${entry.term} (${entry.subject}): ${entry.definition}`,
+                source: 'ZIMSEC Universal Curriculum Knowledge Base',
+                keywords: Array.isArray(entry.keywords) ? entry.keywords : [entry.canonicalName.toLowerCase()]
+              });
+            }
+          }
+        }
+      }
+
       try {
         // Fetch primary specific JSON curriculum notes
         // Fetch primary specific JSON curriculum notes with accurate subject mappings
         const primaryFiles = [
+          { f: 'zimsec_grade7_hbc_notes.json', s: 'General' },
           { f: 'zimsec_supplement_civics_primary.json', s: 'Social Science' },
           { f: 'zimsec_general_knowledge_current_affairs.json', s: 'Social Science' },
           { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'Social Science' },
@@ -1284,6 +2036,7 @@ Rules of Debit and Credit:
           { f: 'zimsec_accounting_4051_o_level_final.json', s: 'Principles of Accounts' },
           { f: 'zimsec_agriculture_4001_o_level_full_study_pack.json', s: 'Agriculture' },
           { f: 'zimsec_biology_4025_o_level_full_study_pack.json', s: 'Biology' },
+          { f: 'zimsec_cambridge_o_level_biology_comprehensive_notes.json', s: 'Biology' },
           { f: 'zimsec_chemistry_o_level_full_study_pack.json', s: 'Chemistry' },
           { f: 'zimsec_physics_4023_o_level_FULL_DEPTH_FINAL_310KB.json', s: 'Physics' },
           { f: 'zimsec_geography_secondary.json', s: 'Geography' },
@@ -1567,7 +2320,9 @@ Rules of Debit and Credit:
       'what', 'when', 'where', 'which', 'who', 'whom', 'whose', 'why', 'how',
       'the', 'and', 'for', 'with', 'from', 'that', 'this', 'these', 'those', 'is', 'are', 'in', 'of',
       'explain', 'describe', 'discuss', 'state', 'identify', 'name', 'outline', 'detail', 'solve',
-      'calculate', 'using', 'between', 'give', 'list', 'show', 'acts', 'much', 'about', 'your'
+      'calculate', 'using', 'between', 'give', 'list', 'show', 'acts', 'much', 'about', 'your',
+      'process', 'processes', 'processing', 'steps', 'definition', 'define', 'meaning', 'concept',
+      'concepts', 'tell', 'write', 'notes', 'answer', 'answers'
     ]);
 
     const words = coreQuery
@@ -1633,6 +2388,23 @@ Rules of Debit and Credit:
         score -= 150;
       }
 
+      // Bigram and exact phrase matching boost for precise syllabus topic matching
+      for (let i = 0; i < effectiveWords.length - 1; i++) {
+        const bigram = `${effectiveWords[i]} ${effectiveWords[i + 1]}`;
+        if (topicLower.includes(bigram)) {
+          score += 300;
+        } else if (kwLower.some((k) => k.includes(bigram))) {
+          score += 200;
+        } else if (contentLower.includes(bigram)) {
+          score += 80;
+        }
+      }
+
+      // Exact phrase match from coreQuery
+      if (coreQuery.length > 5 && topicLower.includes(coreQuery.toLowerCase())) {
+        score += 400;
+      }
+
       for (const word of effectiveWords) {
         const stemmed = this.stem(word);
         let wordMatched = false;
@@ -1644,7 +2416,7 @@ Rules of Debit and Credit:
           if (topicLower.startsWith(word) || topicLower.endsWith(word)) score += 30;
         }
         if (kwLower.some((k) => k === word || (word.length >= 4 && k.includes(word)))) {
-          score += 60;
+          score += 70;
           wordMatched = true;
         }
         if (contentLower.includes(word)) {
@@ -1687,6 +2459,55 @@ Rules of Debit and Credit:
    * O-Level: ZIMSEC O-Level (Forms 1 - 4).
    * A-Level: ZIMSEC Advanced Level (Forms 5 - 6).
    */
+  public static standardizeOLevelSubject(raw?: string, topic?: string): string {
+    const s = (raw || '').toLowerCase();
+    const t = (topic || '').toLowerCase();
+    if (s.includes('bio') || t.includes('photosynthesis') || t.includes('cell') || t.includes('enzyme') || t.includes('digestion') || t.includes('genetics') || t.includes('circulation')) {
+      if (!s.includes('combined')) return 'Biology';
+    }
+    if (s.includes('chem') || t.includes('periodic table') || t.includes('atomic') || t.includes('electrolysis') || t.includes('mole')) {
+      if (!s.includes('combined')) return 'Chemistry';
+    }
+    if (s.includes('physic') || t.includes('circuit') || t.includes('optics') || t.includes('electricity') || t.includes('wave')) {
+      if (!s.includes('combined')) return 'Physics';
+    }
+    if (s.includes('combined science') || s.includes('science')) return 'Combined Science';
+    if (s.includes('agric') || t.includes('soil') || t.includes('crop') || t.includes('livestock') || t.includes('nitrogen')) return 'Agriculture';
+    if (s.includes('geog') || t.includes('weather') || t.includes('river') || t.includes('rock') || t.includes('plate') || t.includes('water cycle')) return 'Geography';
+    if (s.includes('hist') || s.includes('heritage') || t.includes('chimurenga') || t.includes('mutapa') || t.includes('great zimbabwe')) return 'History';
+    if (s.includes('math') || t.includes('algebra') || t.includes('geometry') || t.includes('trigonometry') || t.includes('circle') || t.includes('bearing')) return 'Mathematics';
+    if (s.includes('english') || s.includes('literature') || s.includes('composition') || s.includes('grammar') || s.includes('comprehension')) return 'English Language';
+    if (s.includes('account') || s.includes('commerce') || s.includes('business') || s.includes('ledger') || s.includes('balance sheet')) return 'Commerce & Accounts';
+    if (s.includes('comput') || s.includes('ict') || t.includes('algorithm') || t.includes('logic') || t.includes('cpu')) return 'Computer Science';
+    if (s.includes('shona') || s.includes('ndebele') || s.includes('indigenous')) return 'Shona';
+    return 'Combined Science';
+  }
+
+  public static standardizeALevelSubject(raw?: string, topic?: string): string {
+    const s = (raw || '').toLowerCase();
+    const t = (topic || '').toLowerCase();
+    if (s.includes('math') || t.includes('calculus') || t.includes('algebra') || t.includes('differential') || t.includes('integral')) return 'Pure Mathematics';
+    if (s.includes('bio') || t.includes('respiration') || t.includes('calvin') || t.includes('photosynthesis') || t.includes('macromolecule')) return 'Biology';
+    if (s.includes('chem') || t.includes('born-haber') || t.includes('equilibrium') || t.includes('energetics') || t.includes('organic')) return 'Chemistry';
+    if (s.includes('physic') || t.includes('shm') || t.includes('gravitational') || t.includes('circular') || t.includes('quantum')) return 'Physics';
+    if (s.includes('geog') || t.includes('hydrology') || t.includes('hydrograph') || t.includes('atmosphere')) return 'Geography';
+    if (s.includes('hist') || t.includes('bismarck') || t.includes('berlin') || t.includes('war') || t.includes('imperialism')) return 'History';
+    if (s.includes('account') || t.includes('cash flow') || t.includes('ias 7')) return 'Accounting';
+    if (s.includes('econ') || t.includes('market') || t.includes('monopoly') || t.includes('elasticity')) return 'Economics';
+    if (s.includes('business') || t.includes('marketing') || t.includes('management')) return 'Business Studies';
+    if (s.includes('stat') || t.includes('hypothesis') || t.includes('distribution')) return 'Statistics';
+    if (s.includes('literature') || s.includes('english')) return 'Literature in English';
+    if (s.includes('divinity') || s.includes('religion')) return 'Divinity';
+    if (s.includes('shona')) return 'Shona';
+    return 'Pure Mathematics';
+  }
+
+  /**
+   * Returns standard, clean subjects specific to the given level.
+   * Primary: ZIMSEC Primary 6-Subject Official Format.
+   * O-Level: Core ZIMSEC & Cambridge O-Level Academic Disciplines.
+   * A-Level: Advanced Level Disciplines.
+   */
   static async getSubjects(level: string): Promise<string[]> {
     await this.load();
     const normLevel = this.normalizeLevel(level);
@@ -1702,50 +2523,38 @@ Rules of Debit and Credit:
       ];
     }
 
-    if (normLevel === 'alevel') {
-      const aChunks = this.chunks.filter((c) => this.normalizeLevel(c.level) === 'alevel');
-      const set = new Set(aChunks.map((c) => c.subject));
-      if (set.size === 0) {
-        return [
-          'Pure Mathematics',
-          'Biology',
-          'Chemistry',
-          'Physics',
-          'Accounting',
-          'Economics',
-          'Business Studies',
-          'Geography',
-          'History',
-          'Divinity',
-          'Literature in English',
-          'Statistics',
-          'Shona'
-        ];
-      }
-      return Array.from(set).sort();
+    if (normLevel === 'olevel') {
+      return [
+        'Biology',
+        'Combined Science',
+        'Mathematics',
+        'Chemistry',
+        'Physics',
+        'Geography',
+        'History',
+        'Agriculture',
+        'English Language',
+        'Commerce & Accounts',
+        'Computer Science',
+        'Shona'
+      ];
     }
 
-    if (normLevel === 'olevel') {
-      const oChunks = this.chunks.filter((c) => this.normalizeLevel(c.level) === 'olevel');
-      const set = new Set(oChunks.map((c) => c.subject));
-      if (set.size === 0) {
-        return [
-          'Combined Science',
-          'Mathematics',
-          'English Language',
-          'Commerce',
-          'Principles of Accounts',
-          'Geography',
-          'History',
-          'Computer Science',
-          'Agriculture',
-          'Biology',
-          'Chemistry',
-          'Physics',
-          'Shona'
-        ];
-      }
-      return Array.from(set).sort();
+    if (normLevel === 'alevel') {
+      return [
+        'Pure Mathematics',
+        'Biology',
+        'Chemistry',
+        'Physics',
+        'Geography',
+        'History',
+        'Accounting',
+        'Economics',
+        'Business Studies',
+        'Statistics',
+        'Literature in English',
+        'Divinity'
+      ];
     }
 
     if (normLevel === 'tertiary') {
@@ -1760,50 +2569,62 @@ Rules of Debit and Credit:
       ];
     }
 
-    // Generic Secondary fallback
-    const secondaryChunks = this.chunks.filter((c) => {
-      const cLvl = this.normalizeLevel(c.level);
-      return cLvl === 'olevel' || cLvl === 'alevel';
-    });
-
-    const set = new Set(secondaryChunks.map((c) => c.subject));
-    set.add('Combined Science');
-    set.add('Commerce');
-    set.add('Principles of Accounts');
-    set.add('Geography');
-    set.add('History');
-    return Array.from(set).sort();
+    return [
+      'Combined Science',
+      'Mathematics',
+      'Geography',
+      'History',
+      'English Language'
+    ];
   }
 
+  /**
+   * Retrieves comprehensive study modules and substantial textbook notes for the selected subject.
+   * Excludes single-sentence dictionary definitions to ensure high-depth study material.
+   */
   static async getTopics(level: string, subject: string): Promise<KnowledgeChunk[]> {
     await this.load();
     const normLevel = this.normalizeLevel(level);
+    const subLower = subject.toLowerCase().trim();
 
-    return this.chunks.filter((c) => {
-      const cLevel = this.normalizeLevel(c.level);
-      let isCorrectLevel = false;
-
-      if (normLevel === 'primary') {
-        isCorrectLevel = cLevel === 'primary' || cLevel === 'grade7';
-      } else if (normLevel === 'alevel') {
-        isCorrectLevel = cLevel === 'alevel';
-      } else if (normLevel === 'olevel') {
-        isCorrectLevel = cLevel === 'olevel';
-      } else if (normLevel === 'tertiary') {
-        isCorrectLevel = cLevel === 'tertiary';
-      } else {
-        isCorrectLevel = cLevel === 'olevel' || cLevel === 'alevel';
-      }
-
-      if (!isCorrectLevel) return false;
-
-      // Handle subject matching (including standardized primary names)
-      if (normLevel === 'primary') {
-        const stdSubj = this.standardizePrimarySubject(c.subject);
-        return stdSubj.toLowerCase() === subject.toLowerCase();
-      }
-
-      return c.subject.toLowerCase() === subject.toLowerCase();
+    // 1. Pick from COMPREHENSIVE_STUDY_PACKS (high-depth textbook lessons with visual diagrams)
+    const primaryPacks = (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[]).filter((p) => {
+      const pLvl = this.normalizeLevel(p.level);
+      if (pLvl !== normLevel) return false;
+      return p.subject.toLowerCase() === subLower;
     });
+
+    // 2. Pick substantial chunks from this.chunks (exclude 1-sentence dictionary definitions)
+    const extraChunks = this.chunks.filter((c) => {
+      const cLvl = this.normalizeLevel(c.level);
+      if (cLvl !== normLevel) return false;
+      // Filter out small glossary snippets
+      if (c.id.startsWith('glossary_') || c.content.length < 350) return false;
+
+      let stdSubj = c.subject;
+      if (normLevel === 'primary') {
+        stdSubj = this.standardizePrimarySubject(c.subject);
+      } else if (normLevel === 'olevel') {
+        stdSubj = this.standardizeOLevelSubject(c.subject, c.topic);
+      } else if (normLevel === 'alevel') {
+        stdSubj = this.standardizeALevelSubject(c.subject, c.topic);
+      }
+
+      return stdSubj.toLowerCase() === subLower;
+    });
+
+    // Deduplicate by topic title
+    const seenTopics = new Set<string>();
+    const results: KnowledgeChunk[] = [];
+
+    for (const item of [...primaryPacks, ...extraChunks]) {
+      const normTopic = item.topic.toLowerCase().trim();
+      if (!seenTopics.has(normTopic)) {
+        seenTopics.add(normTopic);
+        results.push(item);
+      }
+    }
+
+    return results;
   }
 }

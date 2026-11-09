@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { EducationLevel, SubscriptionStatus, ChatMessage } from './types';
 import { StorageManager, mapEducationToContentLevel } from './lib/storage';
+import { KnowledgeStore } from './lib/knowledgeStore';
 import { AppHeader } from './components/AppHeader';
 import { BottomNav, NavTab } from './components/BottomNav';
 import { ChatView } from './components/ChatView';
@@ -10,8 +11,53 @@ import { LevelSelectModal } from './components/LevelSelectModal';
 import { PremiumModal } from './components/PremiumModal';
 import { SettingsModal } from './components/SettingsModal';
 import { OnboardingFlow } from './components/OnboardingFlow';
+import { StudyNotificationModal } from './components/StudyNotificationModal';
+import { InAppNotificationToast } from './components/InAppNotificationToast';
+import { NotificationManager, StudyReminderPayload } from './lib/notificationManager';
 
 export const App: React.FC = () => {
+  // Warm up offline knowledge store & initialize Harare 6am/12pm/6pm study reminders
+  useEffect(() => {
+    KnowledgeStore.load();
+    NotificationManager.initScheduler();
+
+    // Check URL parameters for notification click actions
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('action') === 'premium') {
+        setIsPremiumModalOpen(true);
+      } else if (params.get('question')) {
+        const q = decodeURIComponent(params.get('question') || '');
+        if (q) {
+          setActiveExamPrompt({ question: q });
+          setActiveTab('chat');
+        }
+      }
+
+      // Listen for Service Worker notification click messages
+      const handleSwMessage = (event: MessageEvent) => {
+        if (event.data?.type === 'ZEXA_NOTIFICATION_CLICK') {
+          if (event.data.action === 'ACTIVATE_PREMIUM') {
+            setIsPremiumModalOpen(true);
+          } else if (event.data.question) {
+            setActiveExamPrompt({ question: event.data.question });
+            setActiveTab('chat');
+          }
+        }
+      };
+
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.addEventListener('message', handleSwMessage);
+      }
+
+      return () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.removeEventListener('message', handleSwMessage);
+        }
+      };
+    }
+  }, []);
+
   // Session authentication state (Login -> Education Level -> AI Brain -> Dashboard)
   const [isSessionActive, setIsSessionActive] = useState<boolean>(() =>
     StorageManager.isSessionLoggedIn() && StorageManager.isBrainInitialized()
@@ -42,12 +88,32 @@ export const App: React.FC = () => {
   const [isLevelModalOpen, setIsLevelModalOpen] = useState(false);
   const [isPremiumModalOpen, setIsPremiumModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+  const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+  const [currentNotification, setCurrentNotification] = useState<StudyReminderPayload | null>(null);
 
   // Cross-screen interaction: Asking ZEXA about an exam question or topic
   const [activeExamPrompt, setActiveExamPrompt] = useState<{
     question: string;
     hint?: string;
   } | null>(null);
+
+  // Subscribe to study reminder notifications
+  useEffect(() => {
+    const unsubscribe = NotificationManager.onNotification((payload) => {
+      setCurrentNotification(payload);
+    });
+    return unsubscribe;
+  }, []);
+
+  const handleNotificationAction = (payload: StudyReminderPayload) => {
+    setCurrentNotification(null);
+    if (payload.type === 'ACTIVATE_PREMIUM') {
+      setIsPremiumModalOpen(true);
+    } else if (payload.question) {
+      setActiveExamPrompt({ question: payload.question });
+      setActiveTab('chat');
+    }
+  };
 
   const refreshQueries = () => {
     setQueriesUsedToday(StorageManager.getDailyQueriesUsed());
@@ -119,6 +185,7 @@ export const App: React.FC = () => {
         onOpenLevelSelect={() => setIsLevelModalOpen(true)}
         onOpenPremium={() => setIsPremiumModalOpen(true)}
         onOpenSettings={() => setIsSettingsModalOpen(true)}
+        onOpenNotifications={() => setIsNotificationModalOpen(true)}
         onNewChat={handleNewChat}
       />
 
@@ -135,6 +202,7 @@ export const App: React.FC = () => {
             dailyLimit={dailyLimit}
             onQueriesUpdated={refreshQueries}
             onOpenPremium={() => setIsPremiumModalOpen(true)}
+            onOpenNotifications={() => setIsNotificationModalOpen(true)}
             activeExamPrompt={activeExamPrompt}
             onClearActiveExamPrompt={() => setActiveExamPrompt(null)}
           />
@@ -162,6 +230,13 @@ export const App: React.FC = () => {
         educationLevel={educationLevel}
       />
 
+      {/* Real-time In-App Notification Toast */}
+      <InAppNotificationToast
+        notification={currentNotification}
+        onDismiss={() => setCurrentNotification(null)}
+        onAction={handleNotificationAction}
+      />
+
       {/* Modals */}
       <LevelSelectModal
         isOpen={isLevelModalOpen}
@@ -180,6 +255,20 @@ export const App: React.FC = () => {
         onActivated={refreshQueries}
       />
 
+      <StudyNotificationModal
+        isOpen={isNotificationModalOpen}
+        onClose={() => setIsNotificationModalOpen(false)}
+        onOpenPremium={() => {
+          setIsNotificationModalOpen(false);
+          setIsPremiumModalOpen(true);
+        }}
+        onAskQuestion={(q) => {
+          setIsNotificationModalOpen(false);
+          setActiveExamPrompt({ question: q });
+          setActiveTab('chat');
+        }}
+      />
+
       <SettingsModal
         isOpen={isSettingsModalOpen}
         onClose={() => setIsSettingsModalOpen(false)}
@@ -195,6 +284,10 @@ export const App: React.FC = () => {
         onOpenPremium={() => {
           setIsSettingsModalOpen(false);
           setIsPremiumModalOpen(true);
+        }}
+        onOpenNotifications={() => {
+          setIsSettingsModalOpen(false);
+          setIsNotificationModalOpen(true);
         }}
         onResetQueries={refreshQueries}
         onClearChat={() => {

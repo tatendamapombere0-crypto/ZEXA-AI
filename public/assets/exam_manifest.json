@@ -1,5 +1,15 @@
 [
   {
+    "id": "exam_bank_biology_o_level_cambridge_past_papers",
+    "file": "exam_bank_biology_o_level_cambridge_past_papers.json",
+    "subject": "Biology",
+    "level": "O-Level",
+    "paperCode": "0610 / 4025",
+    "paperName": "Cambridge & ZIMSEC O-Level Biology (0610) Past Paper Questions & Answers",
+    "paperType": "Official Past Paper Questions & Mark Schemes (10 Core & Extension Topics)",
+    "questionCount": 150
+  },
+  {
     "id": "exam_bank_agriculture_4001_1",
     "file": "exam_bank_agriculture_4001_1.json",
     "subject": "Agriculture",
@@ -15,7 +25,7 @@
     "subject": "Agriculture",
     "level": "A-Level",
     "paperCode": "Agriculture Paper 1",
-    "paperName": "Agriculture A-Level Paper 1 — Exam Mode",
+    "paperName": "Agriculture A-Level Paper 1 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -25,7 +35,7 @@
     "subject": "Agriculture",
     "level": "A-Level",
     "paperCode": "Agriculture Paper 2",
-    "paperName": "Agriculture A-Level Paper 2 — Exam Mode",
+    "paperName": "Agriculture A-Level Paper 2 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -55,7 +65,7 @@
     "subject": "Agriculture",
     "level": "O-Level",
     "paperCode": "Agriculture Paper 1",
-    "paperName": "Agriculture O-Level Paper 1 — Exam Mode",
+    "paperName": "Agriculture O-Level Paper 1 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -65,7 +75,7 @@
     "subject": "Agriculture",
     "level": "O-Level",
     "paperCode": "Agriculture Paper 2",
-    "paperName": "Agriculture O-Level Paper 2 — Exam Mode",
+    "paperName": "Agriculture O-Level Paper 2 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -115,7 +125,7 @@
     "subject": "Economics",
     "level": "A Level",
     "paperCode": "6073/1",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "multiple_choice",
     "questionCount": 150
   },
@@ -295,7 +305,7 @@
     "subject": "Mathematics",
     "level": "A-Level",
     "paperCode": "9154/1",
-    "paperName": "Mathematics A-Level Paper 1 — Exam Mode",
+    "paperName": "Mathematics A-Level Paper 1 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -305,7 +315,7 @@
     "subject": "Mathematics",
     "level": "A-Level",
     "paperCode": "9154/2",
-    "paperName": "Mathematics A-Level Paper 2 — Exam Mode",
+    "paperName": "Mathematics A-Level Paper 2 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -325,7 +335,7 @@
     "subject": "Mathematics",
     "level": "O-Level",
     "paperCode": "4028/1",
-    "paperName": "Mathematics O-Level Paper 1 — Exam Mode",
+    "paperName": "Mathematics O-Level Paper 1 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -335,7 +345,7 @@
     "subject": "Mathematics",
     "level": "O-Level",
     "paperCode": "4028/2",
-    "paperName": "Mathematics O-Level Paper 2 — Exam Mode",
+    "paperName": "Mathematics O-Level Paper 2 \u2014 Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
     "questionCount": 150
   },
@@ -445,7 +455,7 @@
     "subject": "Accounting",
     "level": "A Level",
     "paperCode": "6001/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "multiple_choice",
     "questionCount": 150
   },
@@ -455,7 +465,7 @@
     "subject": "Accounting",
     "level": "A Level",
     "paperCode": "6001/02",
-    "paperName": "Paper 2 – Structured Questions",
+    "paperName": "Paper 2 \u2013 Structured Questions",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -465,7 +475,7 @@
     "subject": "Accounting",
     "level": "A Level",
     "paperCode": "6001/03",
-    "paperName": "Paper 3 – Problem Solving",
+    "paperName": "Paper 3 \u2013 Problem Solving",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -475,7 +485,7 @@
     "subject": "Accounting",
     "level": "O Level",
     "paperCode": "4051/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "multiple_choice",
     "questionCount": 150
   },
@@ -485,7 +495,7 @@
     "subject": "Accounting",
     "level": "O Level",
     "paperCode": "4051/02",
-    "paperName": "Paper 2 – Structured Questions",
+    "paperName": "Paper 2 \u2013 Structured Questions",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -495,7 +505,7 @@
     "subject": "Biology",
     "level": "A Level",
     "paperCode": "BIO/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "multiple_choice",
     "questionCount": 150
   },
@@ -505,7 +515,7 @@
     "subject": "Biology",
     "level": "A Level",
     "paperCode": "BIO/02",
-    "paperName": "Paper 2 – Structured Theory",
+    "paperName": "Paper 2 \u2013 Structured Theory",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -515,7 +525,7 @@
     "subject": "Business Studies",
     "level": "A Level",
     "paperCode": "6025/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "multiple_choice",
     "questionCount": 150
   },
@@ -525,7 +535,7 @@
     "subject": "Business Studies",
     "level": "A Level",
     "paperCode": "6025/02",
-    "paperName": "Paper 2 – Structured Questions",
+    "paperName": "Paper 2 \u2013 Structured Questions",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -605,7 +615,7 @@
     "subject": "Commerce",
     "level": "O Level",
     "paperCode": "4049/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "Multiple Choice",
     "questionCount": 150
   },
@@ -615,7 +625,7 @@
     "subject": "Commerce",
     "level": "O Level",
     "paperCode": "4049/02",
-    "paperName": "Paper 2 – Structured / Theory",
+    "paperName": "Paper 2 \u2013 Structured / Theory",
     "paperType": "Structured",
     "questionCount": 150
   },
@@ -625,7 +635,7 @@
     "subject": "Computer Science",
     "level": "O Level",
     "paperCode": "4021/01",
-    "paperName": "Paper 1 – Multiple Choice",
+    "paperName": "Paper 1 \u2013 Multiple Choice",
     "paperType": "Multiple Choice",
     "questionCount": 150
   },
@@ -635,7 +645,7 @@
     "subject": "Computer Science",
     "level": "O Level",
     "paperCode": "4021/02",
-    "paperName": "Paper 2 – Theory / Structured",
+    "paperName": "Paper 2 \u2013 Theory / Structured",
     "paperType": "Structured Theory",
     "questionCount": 150
   },
@@ -645,7 +655,7 @@
     "subject": "Computer Science",
     "level": "O Level",
     "paperCode": "4021/03",
-    "paperName": "Paper 3 – Practical",
+    "paperName": "Paper 3 \u2013 Practical",
     "paperType": "Practical / Programming Tasks",
     "questionCount": 150
   },
@@ -655,7 +665,7 @@
     "subject": "Divinity",
     "level": "A Level",
     "paperCode": "9154/01",
-    "paperName": "Paper 1 – Prophets of the Old Testament",
+    "paperName": "Paper 1 \u2013 Prophets of the Old Testament",
     "paperType": "essay",
     "questionCount": 150
   },
@@ -665,7 +675,7 @@
     "subject": "Divinity",
     "level": "A Level",
     "paperCode": "9154/02",
-    "paperName": "Paper 2 – The Gospels",
+    "paperName": "Paper 2 \u2013 The Gospels",
     "paperType": "essay",
     "questionCount": 150
   },
@@ -675,7 +685,7 @@
     "subject": "Economics",
     "level": "A Level",
     "paperCode": "6073/2",
-    "paperName": "Paper 2 – Data Response",
+    "paperName": "Paper 2 \u2013 Data Response",
     "paperType": "data_response",
     "questionCount": 150
   },
@@ -705,7 +715,7 @@
     "subject": "English Literature",
     "level": "A Level",
     "paperCode": "6039/01",
-    "paperName": "Paper 1 – Literature in English",
+    "paperName": "Paper 1 \u2013 Literature in English",
     "paperType": "essay",
     "questionCount": 150
   },
@@ -715,7 +725,7 @@
     "subject": "English Literature",
     "level": "A Level",
     "paperCode": "6039/02",
-    "paperName": "Paper 2 – Zimbabwean Literature",
+    "paperName": "Paper 2 \u2013 Zimbabwean Literature",
     "paperType": "essay",
     "questionCount": 150
   },
@@ -725,7 +735,7 @@
     "subject": "Geography",
     "level": "A-Level",
     "paperCode": "6037/01",
-    "paperName": "Geography Paper 1 — Physical Geography",
+    "paperName": "Geography Paper 1 \u2014 Physical Geography",
     "paperType": "Structured Free-Response/Data Response",
     "questionCount": 150
   },
@@ -735,7 +745,7 @@
     "subject": "Geography",
     "level": "A-Level",
     "paperCode": "6037/02",
-    "paperName": "Geography Paper 2 — Human Geography",
+    "paperName": "Geography Paper 2 \u2014 Human Geography",
     "paperType": "Structured Free-Response/Data Response",
     "questionCount": 150
   },
@@ -745,7 +755,7 @@
     "subject": "Geography",
     "level": "O-Level",
     "paperCode": "4022/01",
-    "paperName": "Geography Paper 1 — Multiple Choice",
+    "paperName": "Geography Paper 1 \u2014 Multiple Choice",
     "paperType": "Multiple Choice",
     "questionCount": 150
   },
@@ -755,7 +765,7 @@
     "subject": "Geography",
     "level": "O-Level",
     "paperCode": "4022/02",
-    "paperName": "Geography Paper 2 — Structured",
+    "paperName": "Geography Paper 2 \u2014 Structured",
     "paperType": "Structured Free-Response/Data Response",
     "questionCount": 150
   },
@@ -765,7 +775,7 @@
     "subject": "Pure Mathematics",
     "level": "A Level",
     "paperCode": "6042/01",
-    "paperName": "Paper 1 – Short Answer",
+    "paperName": "Paper 1 \u2013 Short Answer",
     "paperType": "short_answer",
     "questionCount": 150
   },
@@ -775,7 +785,7 @@
     "subject": "Pure Mathematics",
     "level": "A Level",
     "paperCode": "6042/02",
-    "paperName": "Paper 2 – Short and Long Answer",
+    "paperName": "Paper 2 \u2013 Short and Long Answer",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -805,7 +815,7 @@
     "subject": "Shona",
     "level": "A Level",
     "paperCode": "SHO/01",
-    "paperName": "Paper 1 – Language and Literature",
+    "paperName": "Paper 1 \u2013 Language and Literature",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -815,7 +825,7 @@
     "subject": "Shona",
     "level": "A Level",
     "paperCode": "SHO/02",
-    "paperName": "Paper 2 – Literature and Analysis",
+    "paperName": "Paper 2 \u2013 Literature and Analysis",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -825,7 +835,7 @@
     "subject": "Shona",
     "level": "O Level",
     "paperCode": "4007/01",
-    "paperName": "Paper 1 – Language",
+    "paperName": "Paper 1 \u2013 Language",
     "paperType": "Multiple Choice",
     "questionCount": 150
   },
@@ -835,7 +845,7 @@
     "subject": "Shona",
     "level": "O Level",
     "paperCode": "4007/02",
-    "paperName": "Paper 2 – Language / Composition",
+    "paperName": "Paper 2 \u2013 Language / Composition",
     "paperType": "Structured",
     "questionCount": 150
   },
@@ -845,7 +855,7 @@
     "subject": "Statistics",
     "level": "A Level",
     "paperCode": "6046/1",
-    "paperName": "Paper 1 – Structured Questions",
+    "paperName": "Paper 1 \u2013 Structured Questions",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -855,7 +865,7 @@
     "subject": "Statistics",
     "level": "A Level",
     "paperCode": "6046/2",
-    "paperName": "Paper 2 – Structured Questions",
+    "paperName": "Paper 2 \u2013 Structured Questions",
     "paperType": "structured",
     "questionCount": 150
   },
@@ -865,7 +875,7 @@
     "subject": "Textile Technology and Design",
     "level": "O Level",
     "paperCode": "4058/01",
-    "paperName": "Paper 1 – Theory",
+    "paperName": "Paper 1 \u2013 Theory",
     "paperType": "Multiple Choice",
     "questionCount": 150
   },
@@ -875,7 +885,7 @@
     "subject": "Textile Technology and Design",
     "level": "O Level",
     "paperCode": "4058/02",
-    "paperName": "Paper 2 – Practical Test",
+    "paperName": "Paper 2 \u2013 Practical Test",
     "paperType": "Practical Test / Structured Tasks",
     "questionCount": 150
   },

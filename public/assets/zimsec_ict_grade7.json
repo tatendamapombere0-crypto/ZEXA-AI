@@ -373,5 +373,76 @@
       "mailbox",
       "ict optional grade 7"
     ]
+  },
+  {
+    "id": "ict_g7_digital_devices_hardware_software",
+    "level": "Primary",
+    "subject": "Agric, Science & Tech",
+    "topic": "Digital Devices, Hardware, and Software",
+    "source": "ZIMSEC Grade 7 ICT Syllabus 7030 • Computer Systems",
+    "keywords": [
+      "digital devices",
+      "hardware",
+      "software",
+      "input devices",
+      "output devices",
+      "cpu",
+      "ram",
+      "storage"
+    ],
+    "content": "### Digital Devices, Hardware, and Software\n\n#### 1. Digital Devices\nA digital device is an electronic tool that processes data using microprocessors and digital binary signals (0s and 1s). Examples include smartphones, laptops, desktop computers, tablets, smartwatches, and automated teller machines (ATMs).\n\n#### 2. Input Devices vs Output Devices\n- **Input Devices:** Hardware used to enter raw data and instructions into a computer.\n  * Examples: **Keyboard** (typing text), **Mouse** (pointing and clicking), **Microphone** (sound input), **Webcam** (video capture), **Scanner** (converting paper into digital images), and **Barcode Reader** (scanning supermarket products).\n- **Output Devices:** Hardware that presents processed information to the user.\n  * Examples: **Monitor/Screen** (visual display), **Printer** (hard-copy paper printouts), **Speakers/Headphones** (audio output), and **Projector** (large wall display).\n\n#### 3. Main Internal Parts of a Computer\n1. **Central Processing Unit (CPU):** The \"brain\" of the computer that carries out arithmetic calculations, controls operations, and executes instructions.\n2. **Random Access Memory (RAM):** Temporary, fast volatile working memory that holds currently running programs and data. Its contents are lost when power is switched off.\n3. **Storage (HDD / SSD / Flash Drive):** Permanent, non-volatile storage that retains files, programs, and operating systems even when the computer is turned off.\n\n#### 4. Hardware vs Software\n- **Hardware:** The physical, touchable parts of a computer system (e.g. monitor, keyboard, motherboard, wires).\n- **Software:** The intangible set of computer instructions, programs, and data that tell the hardware how to work (e.g. Windows OS, Microsoft Word, web browsers)."
+  },
+  {
+    "id": "ict_g7_word_processing_spreadsheets_presentations",
+    "level": "Primary",
+    "subject": "Agric, Science & Tech",
+    "topic": "Productivity Tools: Word Processing, Spreadsheets, and Presentations",
+    "source": "ZIMSEC Grade 7 ICT Syllabus 7030 • Productivity Software",
+    "keywords": [
+      "word processing",
+      "spreadsheets",
+      "presentations",
+      "powerpoint",
+      "excel",
+      "word",
+      "formulas",
+      "formatting"
+    ],
+    "content": "### Productivity Tools: Word Processing, Spreadsheets, and Presentations\n\n#### 1. Word Processing (e.g. Microsoft Word, Google Docs)\n- **Purpose:** Creating, editing, formatting, saving, and printing text documents (letters, school reports, essays).\n- **Key Features:**\n  * **Text Formatting:** Changing font type, font size, bold (**B**), italic (*I*), underline (<u>U</u>), font color, and text alignment (left, center, right, justified).\n  * **Editing Tools:** Cut, copy, paste, undo, redo, spell-check, and find-and-replace.\n  * **Saving and Printing:** Saving work into appropriate folders and printing hard copies.\n\n#### 2. Spreadsheets (e.g. Microsoft Excel, Google Sheets)\n- **Purpose:** Organizing, calculating, analyzing, and graphing numerical data in tables.\n- **Key Concepts:**\n  * **Rows:** Horizontal lines identified by numbers (1, 2, 3...).\n  * **Columns:** Vertical lines identified by letters (A, B, C...).\n  * **Cells:** The intersection of a row and a column (e.g. cell **B4** is column B, row 4).\n  * **Formulas:** Calculations that always begin with an equals sign ($=$):\n    - Addition: `=A1+B1`\n    - Sum of a range: `=SUM(C1:C10)`\n    - Average of a range: `=AVERAGE(D1:D10)`\n  * **Charts:** Creating visual bar graphs, line graphs, and pie charts to present data clearly.\n\n#### 3. Presentation Software (e.g. Microsoft PowerPoint, Google Slides)\n- **Purpose:** Designing visual slide shows to present information clearly to an audience.\n- **Key Features:** Adding slides, typing bulleted text, inserting pictures, applying slide transitions, and rehearsing slide shows."
+  },
+  {
+    "id": "ict_g7_internet_malware_cyber_safety",
+    "level": "Primary",
+    "subject": "Agric, Science & Tech",
+    "topic": "The Internet, Malware, and Online Safety",
+    "source": "ZIMSEC Grade 7 ICT Syllabus 7030 • Internet & Cyber Hygiene",
+    "keywords": [
+      "internet",
+      "world wide web",
+      "malware",
+      "virus",
+      "antivirus",
+      "passwords",
+      "cyberbullying",
+      "privacy"
+    ],
+    "content": "### The Internet, Malware, and Online Safety\n\n#### 1. The Internet vs The World Wide Web\n- **The Internet:** A massive global network of interconnected computer networks enabling computers worldwide to communicate with each other.\n- **The World Wide Web (WWW):** A collection of digital web pages, documents, videos, and images stored on internet servers and accessed using a web browser via hyperlinks.\n\n#### 2. Computer Malware and Antivirus\n- **What is Malware?** Malicious software designed to damage, disrupt, or gain unauthorized access to computer systems (e.g. viruses, worms, Trojan horses, spyware).\n- **Computer Virus:** A program that attaches itself to files and multiplies, deleting data or slowing down the device.\n- **How Viruses Spread:** Through infected USB flash drives, downloading suspicious files, and opening infected email attachments.\n- **Protection:** Installing and regularly updating reputable **antivirus software** and enabling a **firewall**.\n\n#### 3. Safe Online Behaviour and Cyberbullying\n- **Strong Passwords:** Create passwords with at least 8 characters combining uppercase, lowercase, numbers, and symbols. Keep passwords private and log out of shared computers.\n- **Privacy and Personal Data:** Never share your full name, home address, phone number, school location, or photos with strangers on the internet.\n- **Cyberbullying:** Bullying, insulting, or threatening someone online. Always report cyberbullying immediately to parents or teachers, block the bully, and never retaliate."
+  },
+  {
+    "id": "ict_g7_ai_algorithms_robotics",
+    "level": "Primary",
+    "subject": "Agric, Science & Tech",
+    "topic": "Artificial Intelligence, Algorithms, Block Coding, and Robotics",
+    "source": "ZIMSEC Grade 7 ICT Syllabus 7030 • Emerging Technologies",
+    "keywords": [
+      "artificial intelligence",
+      "ai",
+      "algorithms",
+      "block coding",
+      "scratch",
+      "robotics",
+      "ict careers"
+    ],
+    "content": "### Artificial Intelligence, Algorithms, Block Coding, and Robotics\n\n#### 1. Artificial Intelligence (AI)\n- **What is AI?** Artificial Intelligence is the capability of a computer system or machine to mimic human intelligence, learning from data patterns to perform tasks such as problem-solving, image recognition, and decision-making.\n- **Ordinary Programs vs AI:** Ordinary programs follow fixed rigid instructions; AI programs learn, adapt, and improve their accuracy based on training data.\n- **Everyday Applications in Zimbabwe:**\n  * **Agriculture:** Drones scanning crops to diagnose diseases and identify nutrient deficiencies.\n  * **Healthcare:** Smart diagnostics analyzing patient symptoms in rural clinics.\n  * **Education:** Offline personalized tutoring assistants (like ZEXA AI).\n- **Responsible Use:** Checking AI responses for accuracy and never sharing private confidential data.\n\n#### 2. Algorithms and Block Coding\n- **Algorithm:** A finite, step-by-step sequence of clear instructions designed to solve a specific problem or complete a task (like a cooking recipe).\n- **Block Coding (e.g. Scratch):** Visual programming where learners snap together graphical puzzle blocks to code animations and games without writing complex syntax.\n  * **Events:** Triggering actions (e.g. \"when green flag clicked\").\n  * **Loops:** Repeating actions (e.g. \"repeat 10 times\" or \"forever\").\n  * **Conditionals:** Making decisions (e.g. \"if touching edge, bounce\").\n  * **Variables:** Storing changeable values (e.g. \"Score\").\n\n#### 3. Robotics\n- **What is a Robot?** A programmable mechanical machine capable of carrying out complex actions automatically or by remote control.\n- **Three Core Parts of a Robot:**\n  1. **Sensors (Input):** Detect light, obstacles, sound, or temperature.\n  2. **Controller/Brain (Processing):** Microcontroller that processes sensor data according to programmed algorithms.\n  3. **Actuators/Motors (Output):** Motors and mechanical arms that produce movement and physical work.\n\n#### 4. ICT Careers in Zimbabwe\n- **Software Developer / Programmer:** Creates computer applications and games.\n- **Cybersecurity Specialist:** Protects computer systems and networks against hackers.\n- **Network Engineer:** Designs and maintains internet and communication connections.\n- **Data Analyst:** Analyzes trends to help businesses make informed decisions."
   }
 ]

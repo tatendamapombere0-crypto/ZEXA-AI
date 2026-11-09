@@ -18,7 +18,10 @@ const STORAGE_KEYS = {
   SESSION_LOGGED_IN: 'zexa_session_logged_in',
   SESSION_USER_EMAIL: 'zexa_session_user_email',
   BRAIN_INITIALIZED: 'zexa_brain_initialized',
-  PREFERRED_LANGUAGE: 'zexa_preferred_language'
+  PREFERRED_LANGUAGE: 'zexa_preferred_language',
+  HAS_USED_AI_EVER: 'zexa_has_used_ai_ever',
+  NOTIFICATIONS_ENABLED: 'zexa_notifications_enabled',
+  LAST_NOTIFICATION_SLOT: 'zexa_last_notification_slot'
 };
 
 export const LEVEL_PRICES: Record<EducationLevel, number> = {
@@ -152,6 +155,7 @@ export class StorageManager {
   }
 
   static recordQueryUsed(): void {
+    localStorage.setItem(STORAGE_KEYS.HAS_USED_AI_EVER, 'true');
     const status = this.getSubscriptionStatus();
     if (status === 'PREMIUM' || status === 'HOLIDAY_FREE') return;
 
@@ -159,6 +163,30 @@ export class StorageManager {
     const today = this.getTodayString();
     localStorage.setItem(STORAGE_KEYS.OFFLINE_QUERY_COUNT, String(used + 1));
     localStorage.setItem(STORAGE_KEYS.LAST_QUERY_DATE, today);
+  }
+
+  static hasUsedAiEver(): boolean {
+    if (localStorage.getItem(STORAGE_KEYS.HAS_USED_AI_EVER) === 'true') return true;
+    if (this.getDailyQueriesUsed() > 0) return true;
+    const messages = this.getChatMessages();
+    return messages.length > 0;
+  }
+
+  static areNotificationsEnabled(): boolean {
+    const val = localStorage.getItem(STORAGE_KEYS.NOTIFICATIONS_ENABLED);
+    return val === null ? true : val === 'true';
+  }
+
+  static setNotificationsEnabled(enabled: boolean): void {
+    localStorage.setItem(STORAGE_KEYS.NOTIFICATIONS_ENABLED, enabled ? 'true' : 'false');
+  }
+
+  static getLastNotificationSlot(): string {
+    return localStorage.getItem(STORAGE_KEYS.LAST_NOTIFICATION_SLOT) || '';
+  }
+
+  static setLastNotificationSlot(slot: string): void {
+    localStorage.setItem(STORAGE_KEYS.LAST_NOTIFICATION_SLOT, slot);
   }
 
   static resetDailyLimitForTesting(): void {
