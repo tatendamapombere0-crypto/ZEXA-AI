@@ -1,24 +1,23 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_religious_studies_o_level_4047_paper1_150",
+    "file": "exam_bank_zimsec_religious_studies_o_level_4047_paper1_150.json",
     "subject": "Family and Religious Studies",
     "level": "O Level",
     "paperCode": "4047/01",
     "paperName": "Family and Religious Studies Paper 1",
     "paperType": "Theory/Objective Practice",
-    "questionCount": 150,
-    "sourceFile": "ZIMSEC_Religious_Studies_O_Level_4047_Paper1_150.json",
-    "copyrightNote": "Original practice questions synthesized from syllabus themes and recurring ZIMSEC-style patterns; not verbatim reproduction of past papers.",
-    "sourceBasis": "ZIMSEC O-Level Family and Religious Studies 4047/01 listing and syllabus themes."
+    "questionCount": 35
   },
   "questions": [
     {
-      "id": "q001",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "The primary purpose of a religious initiation ceremony is to",
       "options": [
         {
           "letter": "A",
-          "text": "Mark an important transition in life"
+          "text": "Prevent all disagreements"
         },
         {
           "letter": "B",
@@ -30,22 +29,22 @@
         },
         {
           "letter": "D",
-          "text": "Prevent all disagreements"
+          "text": "Mark an important transition in life"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Rites of passage often mark movement from one stage of life to another.",
       "answerConfidence": "high",
       "topic": "Rites of passage"
     },
     {
-      "id": "q002",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
       "options": [
         {
           "letter": "A",
-          "text": "Greed"
+          "text": "Compassion"
         },
         {
           "letter": "B",
@@ -57,16 +56,16 @@
         },
         {
           "letter": "D",
-          "text": "Compassion"
+          "text": "Greed"
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
       "answerConfidence": "high",
       "topic": "Family values"
     },
     {
-      "id": "q003",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "A family is best described as",
       "options": [
@@ -76,24 +75,24 @@
         },
         {
           "letter": "B",
-          "text": "A religious building"
+          "text": "A social unit based on relationships and responsibilities"
         },
         {
           "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
+          "text": "A religious building"
         },
         {
           "letter": "D",
           "text": "Any group of people in one classroom"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Families may take different forms but involve relationships and responsibilities.",
       "answerConfidence": "high",
       "topic": "Family"
     },
     {
-      "id": "q004",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "Which practice is most likely to strengthen family communication?",
       "options": [
@@ -103,30 +102,30 @@
         },
         {
           "letter": "B",
-          "text": "Regular open discussion"
+          "text": "Avoiding all difficult topics"
         },
         {
           "letter": "C",
-          "text": "Avoiding all difficult topics"
+          "text": "Regular open discussion"
         },
         {
           "letter": "D",
           "text": "Using threats"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Open discussion allows concerns and expectations to be shared.",
       "answerConfidence": "high",
       "topic": "Family communication"
     },
     {
-      "id": "q005",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "A religious text is often used by believers to",
       "options": [
         {
           "letter": "A",
-          "text": "Guide belief and conduct"
+          "text": "Predict every event exactly"
         },
         {
           "letter": "B",
@@ -138,22 +137,22 @@
         },
         {
           "letter": "D",
-          "text": "Predict every event exactly"
+          "text": "Guide belief and conduct"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
       "answerConfidence": "high",
       "topic": "Religious texts"
     },
     {
-      "id": "q006",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Which action best demonstrates forgiveness?",
       "options": [
         {
           "letter": "A",
-          "text": "Seeking revenge"
+          "text": "Choosing to release resentment after wrongdoing"
         },
         {
           "letter": "B",
@@ -165,16 +164,16 @@
         },
         {
           "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
+          "text": "Seeking revenge"
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
       "answerConfidence": "high",
       "topic": "Ethics"
     },
     {
-      "id": "q007",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "A major responsibility of parents or guardians is to",
       "options": [
@@ -184,24 +183,24 @@
         },
         {
           "letter": "B",
-          "text": "Give children unlimited money"
+          "text": "Provide care, guidance and protection"
         },
         {
           "letter": "C",
-          "text": "Provide care, guidance and protection"
+          "text": "Give children unlimited money"
         },
         {
           "letter": "D",
           "text": "Prevent children from learning"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Care and guidance are central responsibilities of parenting.",
       "answerConfidence": "high",
       "topic": "Parenting"
     },
     {
-      "id": "q008",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "Which is an example of responsible decision-making?",
       "options": [
@@ -211,30 +210,30 @@
         },
         {
           "letter": "B",
-          "text": "Considering consequences before acting"
+          "text": "Following pressure without thinking"
         },
         {
           "letter": "C",
-          "text": "Following pressure without thinking"
+          "text": "Considering consequences before acting"
         },
         {
           "letter": "D",
           "text": "Hiding relevant facts"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Responsible decisions consider evidence, consequences and values.",
       "answerConfidence": "high",
       "topic": "Decision making"
     },
     {
-      "id": "q009",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Religious diversity means",
       "options": [
         {
           "letter": "A",
-          "text": "Different religions or beliefs exist within society"
+          "text": "Only one denomination may worship"
         },
         {
           "letter": "B",
@@ -246,22 +245,22 @@
         },
         {
           "letter": "D",
-          "text": "Only one denomination may worship"
+          "text": "Different religions or beliefs exist within society"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Diversity recognizes the presence of different beliefs and practices.",
       "answerConfidence": "high",
       "topic": "Religious diversity"
     },
     {
-      "id": "q010",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "Which principle is most useful in resolving a family conflict?",
       "options": [
         {
           "letter": "A",
-          "text": "Insults"
+          "text": "Respectful dialogue"
         },
         {
           "letter": "B",
@@ -273,3793 +272,688 @@
         },
         {
           "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q011",
-      "questionNumber": 11,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent all disagreements"
-        },
-        {
-          "letter": "C",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q012",
-      "questionNumber": 12,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q013",
-      "questionNumber": 13,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q014",
-      "questionNumber": 14,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q015",
-      "questionNumber": 15,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q016",
-      "questionNumber": 16,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q017",
-      "questionNumber": 17,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q018",
-      "questionNumber": 18,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q019",
-      "questionNumber": 19,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q020",
-      "questionNumber": 20,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
           "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
       "answerConfidence": "high",
       "topic": "Conflict resolution"
     },
     {
-      "id": "q021",
-      "questionNumber": 21,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
+      "id": "frs4047_1_x1",
+      "questionText": "In Zimbabwean Indigenous Religion, what is the primary role of a mudzimu (ancestral spirit)?",
       "options": [
         {
           "letter": "A",
-          "text": "Mark an important transition in life"
+          "text": "To replace Mwari as Supreme Creator"
         },
         {
           "letter": "B",
-          "text": "Provide entertainment only"
+          "text": "To act as intermediary protecting the family and interceding with Mwari"
         },
         {
           "letter": "C",
-          "text": "Replace family relationships"
+          "text": "To promote witchcraft"
         },
         {
           "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q022",
-      "questionNumber": 22,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q023",
-      "questionNumber": 23,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q024",
-      "questionNumber": 24,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
+          "text": "To prohibit harvest festivals"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
+      "explanation": "Ancestral spirits guard family morality and mediate between living descendants and Musikavanhu (Mwari).",
       "answerConfidence": "high",
-      "topic": "Family communication"
+      "topic": "Indigenous Religion",
+      "questionNumber": 11
     },
     {
-      "id": "q025",
-      "questionNumber": 25,
-      "questionText": "A religious text is often used by believers to",
+      "id": "frs4047_1_x2",
+      "questionText": "What is the traditional Shona ceremony held roughly a year after burial to bring the deceased parent's spirit back home to protect the family?",
       "options": [
         {
           "letter": "A",
-          "text": "Guide belief and conduct"
+          "text": "Nhimbe"
         },
         {
           "letter": "B",
-          "text": "Replace every civil law"
+          "text": "Mukwerera"
         },
         {
           "letter": "C",
-          "text": "Guarantee wealth"
+          "text": "Kurova guva / Umbuyiso"
         },
         {
           "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q026",
-      "questionNumber": 26,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q027",
-      "questionNumber": 27,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
+          "text": "Roora"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
+      "explanation": "Kurova guva (Umbuyiso in Ndebele) integrates the ancestor safely into the family homestead.",
       "answerConfidence": "high",
-      "topic": "Parenting"
+      "topic": "Indigenous Religion",
+      "questionNumber": 12
     },
     {
-      "id": "q028",
-      "questionNumber": 28,
-      "questionText": "Which is an example of responsible decision-making?",
+      "id": "frs4047_1_x3",
+      "questionText": "Why is eating or marrying someone of the same totem (mutupo) traditionally taboo in Shona and Ndebele cultures?",
       "options": [
         {
           "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
+          "text": "It wastes cattle"
         },
         {
           "letter": "B",
-          "text": "Considering consequences before acting"
+          "text": "It is forbidden only for chiefs"
         },
         {
           "letter": "C",
-          "text": "Following pressure without thinking"
+          "text": "It brings winter hailstorms"
         },
         {
           "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q029",
-      "questionNumber": 29,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q030",
-      "questionNumber": 30,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
+          "text": "People sharing a totem are regarded as blood kin/siblings"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
+      "explanation": "Shared totems signify common ancestry, preventing incest and preserving clan solidarity.",
       "answerConfidence": "high",
-      "topic": "Conflict resolution"
+      "topic": "Culture & Ethics",
+      "questionNumber": 13
     },
     {
-      "id": "q031",
-      "questionNumber": 31,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
+      "id": "frs4047_1_x4",
+      "questionText": "In Judaism, which annual festival celebrates the liberation of the Israelites from slavery in Egypt?",
       "options": [
         {
           "letter": "A",
-          "text": "Replace family relationships"
+          "text": "Passover (Pesach)"
         },
         {
           "letter": "B",
-          "text": "Prevent all disagreements"
+          "text": "Yom Kippur"
         },
         {
           "letter": "C",
-          "text": "Mark an important transition in life"
+          "text": "Hanukkah"
         },
         {
           "letter": "D",
-          "text": "Provide entertainment only"
+          "text": "Purim"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Pesach commemorates the Exodus from Egypt.",
+      "answerConfidence": "high",
+      "topic": "Judaism",
+      "questionNumber": 14
+    },
+    {
+      "id": "frs4047_1_x5",
+      "questionText": "Which covenant sign did God give to Abraham in Judaism?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Water baptism"
+        },
+        {
+          "letter": "B",
+          "text": "Circumcision of male infants on the eighth day"
+        },
+        {
+          "letter": "C",
+          "text": "Fasting during Ramadan"
+        },
+        {
+          "letter": "D",
+          "text": "Lighting Diwali lamps"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Circumcision (Brit Milah) marks the Abrahamic covenant in Genesis 17.",
+      "answerConfidence": "high",
+      "topic": "Judaism",
+      "questionNumber": 15
+    },
+    {
+      "id": "frs4047_1_x6",
+      "questionText": "What is the Bar Mitzvah ceremony in Judaism?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A burial ritual"
+        },
+        {
+          "letter": "B",
+          "text": "A marriage contract"
+        },
+        {
+          "letter": "C",
+          "text": "A coming-of-age ceremony when a 13-year-old boy becomes responsible for keeping Torah commandments"
+        },
+        {
+          "letter": "D",
+          "text": "A harvest sacrifice"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
+      "explanation": "At 13 (12 for girls: Bat Mitzvah), Jewish youth assume adult religious responsibility.",
       "answerConfidence": "high",
-      "topic": "Rites of passage"
+      "topic": "Judaism",
+      "questionNumber": 16
     },
     {
-      "id": "q032",
-      "questionNumber": 32,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
+      "id": "frs4047_1_x7",
+      "questionText": "In Christianity, what does the parable of the Good Samaritan primarily teach?",
       "options": [
         {
           "letter": "A",
-          "text": "Dishonesty"
+          "text": "Only attend Sabbath worship"
         },
         {
           "letter": "B",
-          "text": "Compassion"
+          "text": "Refuse to pay taxes"
         },
         {
           "letter": "C",
-          "text": "Greed"
+          "text": "Save money in banks"
         },
         {
           "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q033",
-      "questionNumber": 33,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q034",
-      "questionNumber": 34,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
+          "text": "Show practical compassion and neighbourly love regardless of ethnic or religious barriers"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
+      "explanation": "Jesus defined \"neighbour\" broadly across social/ethnic divisions through active mercy.",
       "answerConfidence": "high",
-      "topic": "Family communication"
+      "topic": "Christianity",
+      "questionNumber": 17
     },
     {
-      "id": "q035",
-      "questionNumber": 35,
-      "questionText": "A religious text is often used by believers to",
+      "id": "frs4047_1_x8",
+      "questionText": "Which Christian sacrament uses bread and wine (or grape juice) to commemorate Jesus' Last Supper?",
       "options": [
         {
           "letter": "A",
-          "text": "Guarantee wealth"
+          "text": "Holy Communion (Eucharist)"
         },
         {
           "letter": "B",
-          "text": "Predict every event exactly"
+          "text": "Confirmation"
         },
         {
           "letter": "C",
-          "text": "Guide belief and conduct"
+          "text": "Ordination"
         },
         {
           "letter": "D",
-          "text": "Replace every civil law"
+          "text": "Anointing of the sick"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Eucharist / Lord's Supper recalls Christ's sacrifice.",
+      "answerConfidence": "high",
+      "topic": "Christianity",
+      "questionNumber": 18
+    },
+    {
+      "id": "frs4047_1_x9",
+      "questionText": "In Islam, what does \"Zakat\" require of financially able Muslims?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Praying five times daily"
+        },
+        {
+          "letter": "B",
+          "text": "Giving a fixed annual proportion (~2.5%) of surplus wealth to the poor and needy"
+        },
+        {
+          "letter": "C",
+          "text": "Making pilgrimage to Jerusalem"
+        },
+        {
+          "letter": "D",
+          "text": "Wearing white robes every Friday"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Zakat is obligatory charitable almsgiving purifying wealth and assisting the poor.",
+      "answerConfidence": "high",
+      "topic": "Islam",
+      "questionNumber": 19
+    },
+    {
+      "id": "frs4047_1_x10",
+      "questionText": "Which city do Muslims face during Salah (daily ritual prayers)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Medina"
+        },
+        {
+          "letter": "B",
+          "text": "Cairo"
+        },
+        {
+          "letter": "C",
+          "text": "Mecca (towards the Kaaba)"
+        },
+        {
+          "letter": "D",
+          "text": "Bethlehem"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
+      "explanation": "The Qibla directs prayer towards the Kaaba in Mecca.",
       "answerConfidence": "high",
-      "topic": "Religious texts"
+      "topic": "Islam",
+      "questionNumber": 20
     },
     {
-      "id": "q036",
-      "questionNumber": 36,
-      "questionText": "Which action best demonstrates forgiveness?",
+      "id": "frs4047_1_x11",
+      "questionText": "What is the core African philosophical ethic \"Unhu / Ubuntu\" best summarised as?",
       "options": [
         {
           "letter": "A",
-          "text": "Refusing every reconciliation attempt"
+          "text": "\"Survival of the strongest\""
         },
         {
           "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
+          "text": "\"Avoid all community duties\""
         },
         {
           "letter": "C",
-          "text": "Seeking revenge"
+          "text": "\"Individual wealth above family\""
         },
         {
           "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q037",
-      "questionNumber": 37,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q038",
-      "questionNumber": 38,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
+          "text": "\"I am because we are\" — humanity expressed through mutual care, respect, and community solidarity"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
+      "explanation": "Ubuntu/Unhu emphasises relational dignity, hospitality, honesty, and shared humanity.",
       "answerConfidence": "high",
-      "topic": "Decision making"
+      "topic": "Ethics & Unhu",
+      "questionNumber": 21
     },
     {
-      "id": "q039",
-      "questionNumber": 39,
-      "questionText": "Religious diversity means",
+      "id": "frs4047_1_x12",
+      "questionText": "Under Zimbabwe's Constitution and religious teaching on child protection, child marriage (under age 18) is:",
       "options": [
         {
           "letter": "A",
-          "text": "Religion has no cultural influence"
+          "text": "Legally prohibited and a violation of children's rights and dignity"
         },
         {
           "letter": "B",
-          "text": "Only one denomination may worship"
+          "text": "Encouraged for dowry"
         },
         {
           "letter": "C",
-          "text": "Different religions or beliefs exist within society"
+          "text": "Mandatory in rural districts"
         },
         {
           "letter": "D",
-          "text": "Everyone follows one identical tradition"
+          "text": "Restricted to Sundays"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Zimbabwean law strictly prohibits marriage under 18 to protect education, health, and child rights.",
+      "answerConfidence": "high",
+      "topic": "Religion & Human Rights",
+      "questionNumber": 22
+    },
+    {
+      "id": "frs4047_1_x13",
+      "questionText": "In Indigenous Religion, what is the purpose of \"Chisi\" (sacred rest day)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To allow miners to blast rocks"
+        },
+        {
+          "letter": "B",
+          "text": "To honour ancestral/territorial spirits, rest farmers/oxen, and promote ecological conservation"
+        },
+        {
+          "letter": "C",
+          "text": "To hold football finals"
+        },
+        {
+          "letter": "D",
+          "text": "To pay colonial taxes"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Observing Chisi ensures communal rest and respect for Mwari and land guardian spirits (mhondoro).",
+      "answerConfidence": "high",
+      "topic": "Indigenous Religion",
+      "questionNumber": 23
+    },
+    {
+      "id": "frs4047_1_x14",
+      "questionText": "Which sacred scripture is believed by Muslims to be the final literal revelation of Allah given to Prophet Muhammad (PBUH)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The Talmud"
+        },
+        {
+          "letter": "B",
+          "text": "The Psalms"
+        },
+        {
+          "letter": "C",
+          "text": "The Qur'an"
+        },
+        {
+          "letter": "D",
+          "text": "The Acts of the Apostles"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
+      "explanation": "The Qur'an is Islam's central revealed scripture.",
       "answerConfidence": "high",
-      "topic": "Religious diversity"
+      "topic": "Islam",
+      "questionNumber": 24
     },
     {
-      "id": "q040",
-      "questionNumber": 40,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
+      "id": "frs4047_1_x15",
+      "questionText": "Which religious response is most constructive in addressing HIV and AIDS in Zimbabwean communities?",
       "options": [
         {
           "letter": "A",
-          "text": "Silent punishment"
+          "text": "Stigmatising patients as cursed"
         },
         {
           "letter": "B",
-          "text": "Respectful dialogue"
+          "text": "Discouraging hospital treatment"
         },
         {
           "letter": "C",
-          "text": "Insults"
+          "text": "Banning patients from church halls"
         },
         {
           "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q041",
-      "questionNumber": 41,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q042",
-      "questionNumber": 42,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
+          "text": "Providing compassionate home-based care, accurate testing/ART encouragement, and moral support"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
+      "explanation": "Faith communities play a vital role fighting stigma and supporting holistic care alongside medical treatment.",
       "answerConfidence": "high",
-      "topic": "Family values"
+      "topic": "Religion & Health",
+      "questionNumber": 25
     },
     {
-      "id": "q043",
-      "questionNumber": 43,
-      "questionText": "A family is best described as",
+      "id": "frs4047_1_x16",
+      "questionText": "What does \"monotheism\" mean?",
       "options": [
         {
           "letter": "A",
-          "text": "Only people living in the same country"
+          "text": "Belief in and worship of one Supreme God"
         },
         {
           "letter": "B",
-          "text": "A religious building"
+          "text": "Worship of nature spirits only"
         },
         {
           "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
+          "text": "Denial of all spiritual existence"
         },
         {
           "letter": "D",
-          "text": "Any group of people in one classroom"
+          "text": "Belief in ancestral reincarnation only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Judaism, Christianity, Islam, and Indigenous belief in Mwari affirm one Supreme Creator.",
+      "answerConfidence": "high",
+      "topic": "Comparative Religion",
+      "questionNumber": 26
+    },
+    {
+      "id": "frs4047_1_x17",
+      "questionText": "In traditional Shona courtship, what is the symbolic role of \"roora/lobola\" when practised responsibly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buying a spouse as property"
+        },
+        {
+          "letter": "B",
+          "text": "Covenant token of appreciation uniting two families and thanking the bride's parents"
+        },
+        {
+          "letter": "C",
+          "text": "A fine paid to the village head"
+        },
+        {
+          "letter": "D",
+          "text": "An annual tax"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Traditionally, roora cements kinship bonds between two families—not commercial sale.",
+      "answerConfidence": "high",
+      "topic": "Family & Marriage",
+      "questionNumber": 27
+    },
+    {
+      "id": "frs4047_1_x18",
+      "questionText": "Which Old Testament figure is honoured across Judaism, Christianity, and Islam as a model of faith and obedience?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Goliath"
+        },
+        {
+          "letter": "B",
+          "text": "Herod"
+        },
+        {
+          "letter": "C",
+          "text": "Abraham (Ibrahim)"
+        },
+        {
+          "letter": "D",
+          "text": "Nebuchadnezzar"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
+      "explanation": "All three Abrahamic faiths trace spiritual heritage to Abraham.",
       "answerConfidence": "high",
-      "topic": "Family"
+      "topic": "Comparative Religion",
+      "questionNumber": 28
     },
     {
-      "id": "q044",
-      "questionNumber": 44,
-      "questionText": "Which practice is most likely to strengthen family communication?",
+      "id": "frs4047_1_x19",
+      "questionText": "In environmental stewardship across world religions, how should humans treat forests, water, and wildlife?",
       "options": [
         {
           "letter": "A",
-          "text": "Ignoring younger members"
+          "text": "Exploit them recklessly for short-term profit"
         },
         {
           "letter": "B",
-          "text": "Regular open discussion"
+          "text": "Ignore pollution"
         },
         {
           "letter": "C",
-          "text": "Avoiding all difficult topics"
+          "text": "Destroy sacred groves"
         },
         {
           "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q045",
-      "questionNumber": 45,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q046",
-      "questionNumber": 46,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
+          "text": "Act as responsible caretakers/stewards preserving creation for future generations"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
+      "explanation": "Sacred groves/totems in ATR and stewardship teachings in Bible/Qur'an command careful conservation.",
       "answerConfidence": "high",
-      "topic": "Ethics"
+      "topic": "Religion & Environment",
+      "questionNumber": 29
     },
     {
-      "id": "q047",
-      "questionNumber": 47,
-      "questionText": "A major responsibility of parents or guardians is to",
+      "id": "frs4047_1_x20",
+      "questionText": "How does interfaith dialogue strengthen national cohesion in a pluralistic Zimbabwe?",
       "options": [
         {
           "letter": "A",
-          "text": "Avoid all discipline"
+          "text": "By building mutual respect, dispelling prejudice, and uniting faiths on charity and peacebuilding"
         },
         {
           "letter": "B",
-          "text": "Give children unlimited money"
+          "text": "By forcing everyone into one denomination"
         },
         {
           "letter": "C",
-          "text": "Provide care, guidance and protection"
+          "text": "By banning public worship"
         },
         {
           "letter": "D",
-          "text": "Prevent children from learning"
+          "text": "By ignoring moral education"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Interfaith dialogue fosters peace and shared civic action across denominations.",
+      "answerConfidence": "high",
+      "topic": "Conflict & Peace",
+      "questionNumber": 30
+    },
+    {
+      "id": "frs4047_1_x21",
+      "questionText": "What is \"Sawm\" in the Five Pillars of Islam?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pilgrimage to Mecca"
+        },
+        {
+          "letter": "B",
+          "text": "Fasting from dawn to sunset during the month of Ramadan"
+        },
+        {
+          "letter": "C",
+          "text": "Daily ritual washing (Wudu)"
+        },
+        {
+          "letter": "D",
+          "text": "Friday sermon"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sawm builds self-discipline, spiritual devotion, and empathy for the hungry.",
+      "answerConfidence": "high",
+      "topic": "Islam",
+      "questionNumber": 31
+    },
+    {
+      "id": "frs4047_1_x22",
+      "questionText": "Which Christian Beatitude promises blessing to \"the peacemakers\"?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They shall inherit only gold"
+        },
+        {
+          "letter": "B",
+          "text": "They shall rule empires"
+        },
+        {
+          "letter": "C",
+          "text": "They shall be called children of God"
+        },
+        {
+          "letter": "D",
+          "text": "They need not forgive enemies"
         }
       ],
       "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
+      "explanation": "Matthew 5:9 — \"Blessed are the peacemakers, for they shall be called children of God.\"",
       "answerConfidence": "high",
-      "topic": "Parenting"
+      "topic": "Christianity",
+      "questionNumber": 32
     },
     {
-      "id": "q048",
-      "questionNumber": 48,
-      "questionText": "Which is an example of responsible decision-making?",
+      "id": "frs4047_1_x23",
+      "questionText": "In Zimbabwean Indigenous Religion, \"Mhondoro\" are:",
       "options": [
         {
           "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
+          "text": "Small household spoons"
         },
         {
           "letter": "B",
-          "text": "Considering consequences before acting"
+          "text": "Musical instruments only"
         },
         {
           "letter": "C",
-          "text": "Following pressure without thinking"
+          "text": "Foreign colonial soldiers"
         },
         {
           "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q049",
-      "questionNumber": 49,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q050",
-      "questionNumber": 50,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
+          "text": "Senior territorial/royal spirits guarding whole chieftaincies, rainfall, and land fertility"
         }
       ],
       "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
+      "explanation": "Mhondoro spirits oversee rainfall (mukwerera), chieftaincy legitimacy, and communal wellbeing.",
       "answerConfidence": "high",
-      "topic": "Conflict resolution"
+      "topic": "Indigenous Religion",
+      "questionNumber": 33
     },
     {
-      "id": "q051",
-      "questionNumber": 51,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
+      "id": "frs4047_1_x24",
+      "questionText": "Why do religious teachings discourage corruption and bribery in public institutions?",
       "options": [
         {
           "letter": "A",
-          "text": "Replace family relationships"
+          "text": "Because corruption violates honesty, justice, and harms the poor and vulnerable"
         },
         {
           "letter": "B",
-          "text": "Prevent all disagreements"
+          "text": "Because bribery lowers government fines"
         },
         {
           "letter": "C",
-          "text": "Mark an important transition in life"
+          "text": "Because only private firms face ethics"
         },
         {
           "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q052",
-      "questionNumber": 52,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q053",
-      "questionNumber": 53,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
+          "text": "Because paper receipts get lost"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
+      "explanation": "All major faiths demand fairness, accountability, and protection of the powerless.",
       "answerConfidence": "high",
-      "topic": "Family"
+      "topic": "Ethics & Citizenship",
+      "questionNumber": 34
     },
     {
-      "id": "q054",
-      "questionNumber": 54,
-      "questionText": "Which practice is most likely to strengthen family communication?",
+      "id": "frs4047_1_x25",
+      "questionText": "In Judaism, the weekly day of rest and worship observed from Friday sunset to Saturday nightfall is called:",
       "options": [
         {
           "letter": "A",
-          "text": "Avoiding all difficult topics"
+          "text": "Lent"
         },
         {
           "letter": "B",
-          "text": "Using threats"
+          "text": "Shabbat (Sabbath)"
         },
         {
           "letter": "C",
-          "text": "Ignoring younger members"
+          "text": "Eid al-Fitr"
         },
         {
           "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q055",
-      "questionNumber": 55,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q056",
-      "questionNumber": 56,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
+          "text": "Pentecost"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
+      "explanation": "Shabbat commemorates creation rest and liberation from bondage.",
       "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q057",
-      "questionNumber": 57,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q058",
-      "questionNumber": 58,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q059",
-      "questionNumber": 59,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q060",
-      "questionNumber": 60,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
-          "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q061",
-      "questionNumber": 61,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q062",
-      "questionNumber": 62,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q063",
-      "questionNumber": 63,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q064",
-      "questionNumber": 64,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q065",
-      "questionNumber": 65,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q066",
-      "questionNumber": 66,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q067",
-      "questionNumber": 67,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q068",
-      "questionNumber": 68,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "B",
-          "text": "Considering consequences before acting"
-        },
-        {
-          "letter": "C",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q069",
-      "questionNumber": 69,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q070",
-      "questionNumber": 70,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q071",
-      "questionNumber": 71,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent all disagreements"
-        },
-        {
-          "letter": "C",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q072",
-      "questionNumber": 72,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q073",
-      "questionNumber": 73,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q074",
-      "questionNumber": 74,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q075",
-      "questionNumber": 75,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q076",
-      "questionNumber": 76,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q077",
-      "questionNumber": 77,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q078",
-      "questionNumber": 78,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q079",
-      "questionNumber": 79,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q080",
-      "questionNumber": 80,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
-          "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q081",
-      "questionNumber": 81,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q082",
-      "questionNumber": 82,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q083",
-      "questionNumber": 83,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q084",
-      "questionNumber": 84,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q085",
-      "questionNumber": 85,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q086",
-      "questionNumber": 86,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q087",
-      "questionNumber": 87,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q088",
-      "questionNumber": 88,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "B",
-          "text": "Considering consequences before acting"
-        },
-        {
-          "letter": "C",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q089",
-      "questionNumber": 89,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q090",
-      "questionNumber": 90,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q091",
-      "questionNumber": 91,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent all disagreements"
-        },
-        {
-          "letter": "C",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q092",
-      "questionNumber": 92,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q093",
-      "questionNumber": 93,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q094",
-      "questionNumber": 94,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q095",
-      "questionNumber": 95,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q096",
-      "questionNumber": 96,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q097",
-      "questionNumber": 97,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q098",
-      "questionNumber": 98,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q099",
-      "questionNumber": 99,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q100",
-      "questionNumber": 100,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
-          "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q101",
-      "questionNumber": 101,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q102",
-      "questionNumber": 102,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q103",
-      "questionNumber": 103,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q104",
-      "questionNumber": 104,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q105",
-      "questionNumber": 105,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q106",
-      "questionNumber": 106,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q107",
-      "questionNumber": 107,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q108",
-      "questionNumber": 108,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "B",
-          "text": "Considering consequences before acting"
-        },
-        {
-          "letter": "C",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q109",
-      "questionNumber": 109,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q110",
-      "questionNumber": 110,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q111",
-      "questionNumber": 111,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent all disagreements"
-        },
-        {
-          "letter": "C",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q112",
-      "questionNumber": 112,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q113",
-      "questionNumber": 113,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q114",
-      "questionNumber": 114,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q115",
-      "questionNumber": 115,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q116",
-      "questionNumber": 116,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q117",
-      "questionNumber": 117,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q118",
-      "questionNumber": 118,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q119",
-      "questionNumber": 119,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q120",
-      "questionNumber": 120,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
-          "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q121",
-      "questionNumber": 121,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q122",
-      "questionNumber": 122,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q123",
-      "questionNumber": 123,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q124",
-      "questionNumber": 124,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q125",
-      "questionNumber": 125,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q126",
-      "questionNumber": 126,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q127",
-      "questionNumber": 127,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q128",
-      "questionNumber": 128,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "B",
-          "text": "Considering consequences before acting"
-        },
-        {
-          "letter": "C",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q129",
-      "questionNumber": 129,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q130",
-      "questionNumber": 130,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q131",
-      "questionNumber": 131,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent all disagreements"
-        },
-        {
-          "letter": "C",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "D",
-          "text": "Provide entertainment only"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q132",
-      "questionNumber": 132,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "B",
-          "text": "Compassion"
-        },
-        {
-          "letter": "C",
-          "text": "Greed"
-        },
-        {
-          "letter": "D",
-          "text": "Exclusion"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q133",
-      "questionNumber": 133,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "B",
-          "text": "Any group of people in one classroom"
-        },
-        {
-          "letter": "C",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "D",
-          "text": "A religious building"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q134",
-      "questionNumber": 134,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "B",
-          "text": "Using threats"
-        },
-        {
-          "letter": "C",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "D",
-          "text": "Regular open discussion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q135",
-      "questionNumber": 135,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "B",
-          "text": "Predict every event exactly"
-        },
-        {
-          "letter": "C",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "D",
-          "text": "Replace every civil law"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q136",
-      "questionNumber": 136,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "B",
-          "text": "Choosing to release resentment after wrongdoing"
-        },
-        {
-          "letter": "C",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "D",
-          "text": "Spreading rumours"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q137",
-      "questionNumber": 137,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "B",
-          "text": "Prevent children from learning"
-        },
-        {
-          "letter": "C",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "D",
-          "text": "Give children unlimited money"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q138",
-      "questionNumber": 138,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "B",
-          "text": "Hiding relevant facts"
-        },
-        {
-          "letter": "C",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "D",
-          "text": "Considering consequences before acting"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q139",
-      "questionNumber": 139,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "B",
-          "text": "Only one denomination may worship"
-        },
-        {
-          "letter": "C",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "D",
-          "text": "Everyone follows one identical tradition"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q140",
-      "questionNumber": 140,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "B",
-          "text": "Respectful dialogue"
-        },
-        {
-          "letter": "C",
-          "text": "Insults"
-        },
-        {
-          "letter": "D",
-          "text": "Threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
-    },
-    {
-      "id": "q141",
-      "questionNumber": 141,
-      "questionText": "The primary purpose of a religious initiation ceremony is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Mark an important transition in life"
-        },
-        {
-          "letter": "B",
-          "text": "Provide entertainment only"
-        },
-        {
-          "letter": "C",
-          "text": "Replace family relationships"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent all disagreements"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Rites of passage often mark movement from one stage of life to another.",
-      "answerConfidence": "high",
-      "topic": "Rites of passage"
-    },
-    {
-      "id": "q142",
-      "questionNumber": 142,
-      "questionText": "Which value is most directly promoted by caring for vulnerable family members?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Greed"
-        },
-        {
-          "letter": "B",
-          "text": "Exclusion"
-        },
-        {
-          "letter": "C",
-          "text": "Dishonesty"
-        },
-        {
-          "letter": "D",
-          "text": "Compassion"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Care for vulnerable people expresses compassion and social responsibility.",
-      "answerConfidence": "high",
-      "topic": "Family values"
-    },
-    {
-      "id": "q143",
-      "questionNumber": 143,
-      "questionText": "A family is best described as",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only people living in the same country"
-        },
-        {
-          "letter": "B",
-          "text": "A religious building"
-        },
-        {
-          "letter": "C",
-          "text": "A social unit based on relationships and responsibilities"
-        },
-        {
-          "letter": "D",
-          "text": "Any group of people in one classroom"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Families may take different forms but involve relationships and responsibilities.",
-      "answerConfidence": "high",
-      "topic": "Family"
-    },
-    {
-      "id": "q144",
-      "questionNumber": 144,
-      "questionText": "Which practice is most likely to strengthen family communication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ignoring younger members"
-        },
-        {
-          "letter": "B",
-          "text": "Regular open discussion"
-        },
-        {
-          "letter": "C",
-          "text": "Avoiding all difficult topics"
-        },
-        {
-          "letter": "D",
-          "text": "Using threats"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Open discussion allows concerns and expectations to be shared.",
-      "answerConfidence": "high",
-      "topic": "Family communication"
-    },
-    {
-      "id": "q145",
-      "questionNumber": 145,
-      "questionText": "A religious text is often used by believers to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Guide belief and conduct"
-        },
-        {
-          "letter": "B",
-          "text": "Replace every civil law"
-        },
-        {
-          "letter": "C",
-          "text": "Guarantee wealth"
-        },
-        {
-          "letter": "D",
-          "text": "Predict every event exactly"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Sacred texts commonly provide teachings and guidance for conduct.",
-      "answerConfidence": "high",
-      "topic": "Religious texts"
-    },
-    {
-      "id": "q146",
-      "questionNumber": 146,
-      "questionText": "Which action best demonstrates forgiveness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Seeking revenge"
-        },
-        {
-          "letter": "B",
-          "text": "Spreading rumours"
-        },
-        {
-          "letter": "C",
-          "text": "Refusing every reconciliation attempt"
-        },
-        {
-          "letter": "D",
-          "text": "Choosing to release resentment after wrongdoing"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Forgiveness involves letting go of resentment and seeking restoration where appropriate.",
-      "answerConfidence": "high",
-      "topic": "Ethics"
-    },
-    {
-      "id": "q147",
-      "questionNumber": 147,
-      "questionText": "A major responsibility of parents or guardians is to",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Avoid all discipline"
-        },
-        {
-          "letter": "B",
-          "text": "Give children unlimited money"
-        },
-        {
-          "letter": "C",
-          "text": "Provide care, guidance and protection"
-        },
-        {
-          "letter": "D",
-          "text": "Prevent children from learning"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "Care and guidance are central responsibilities of parenting.",
-      "answerConfidence": "high",
-      "topic": "Parenting"
-    },
-    {
-      "id": "q148",
-      "questionNumber": 148,
-      "questionText": "Which is an example of responsible decision-making?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Choosing the fastest option regardless of harm"
-        },
-        {
-          "letter": "B",
-          "text": "Considering consequences before acting"
-        },
-        {
-          "letter": "C",
-          "text": "Following pressure without thinking"
-        },
-        {
-          "letter": "D",
-          "text": "Hiding relevant facts"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Responsible decisions consider evidence, consequences and values.",
-      "answerConfidence": "high",
-      "topic": "Decision making"
-    },
-    {
-      "id": "q149",
-      "questionNumber": 149,
-      "questionText": "Religious diversity means",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Different religions or beliefs exist within society"
-        },
-        {
-          "letter": "B",
-          "text": "Everyone follows one identical tradition"
-        },
-        {
-          "letter": "C",
-          "text": "Religion has no cultural influence"
-        },
-        {
-          "letter": "D",
-          "text": "Only one denomination may worship"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Diversity recognizes the presence of different beliefs and practices.",
-      "answerConfidence": "high",
-      "topic": "Religious diversity"
-    },
-    {
-      "id": "q150",
-      "questionNumber": 150,
-      "questionText": "Which principle is most useful in resolving a family conflict?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Insults"
-        },
-        {
-          "letter": "B",
-          "text": "Threats"
-        },
-        {
-          "letter": "C",
-          "text": "Silent punishment"
-        },
-        {
-          "letter": "D",
-          "text": "Respectful dialogue"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Respectful dialogue can identify concerns and support reconciliation.",
-      "answerConfidence": "high",
-      "topic": "Conflict resolution"
+      "topic": "Judaism",
+      "questionNumber": 35
     }
   ]
 }

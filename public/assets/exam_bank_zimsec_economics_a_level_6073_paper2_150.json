@@ -1,1516 +1,195 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_economics_a_level_6073_paper2_150",
+    "file": "exam_bank_zimsec_economics_a_level_6073_paper2_150.json",
     "subject": "Economics",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "6073/2",
-    "paperName": "Paper 2 – Data Response",
-    "paperType": "data_response",
+    "paperName": "Economics A-Level Paper 2 — Data Response & Structured Essays",
+    "paperType": "Data Response & Essays",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Economics_A_Level_6073_Paper2_150.json",
-    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6 syllabus",
-    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus/specimen structure and recurring exam themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+    "totalQuestions": 20
   },
   "questions": [
     {
-      "id": "DEM-001",
+      "id": "ec6073_2_q1",
       "questionNumber": 1,
-      "questionText": "Demand and supply data: A market has price $21 and quantity 1005 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Data Response: In Country Z, an indirect specific tax of $0.40/litre is imposed on sugary soft drinks whose PED is −0.35 and PES is +1.4. (a) Draw/explain the tax incidence split between consumers and producers [6]. (b) Evaluate whether taxation or nutrition education is better for correcting the negative consumption externality of obesity [14].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
+      "explanation": "### Mark Scheme [20 marks]\n- **(a) Incidence [6]:** Because |PED| (0.35) < PES (1.4), demand is much more inelastic than supply → **consumers bear the majority (~80%)** of the $0.40 tax via higher retail price, while producers bear ~20% via lower net price received.\n- **(b) Policy Evaluation [14]:** Pigouvian tax internalises external healthcare cost, raises fiscal revenue (earmarkable for clinics), and works quickly; however, regressive impact on low-income households and limited short-run demand drop due to low PED. Education/labelling shifts long-run preferences sustainably without regressivity, though slow. **Judgement:** Combine targeted sugar tax with public health education and subsidy for clean fruit/water alternatives.",
+      "answerConfidence": "high"
     },
     {
-      "id": "ELA-002",
+      "id": "ec6073_2_q2",
       "questionNumber": 2,
-      "questionText": "Elasticity calculations: A market has price $22 and quantity 1010 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Evaluate the extent to which privatisation of state-owned enterprises (parastatals) improves economic efficiency and consumer welfare in developing economies. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
+      "explanation": "### Mark Scheme [25 marks]\n- **Arguments FOR:** Profit incentive & shareholder discipline drive productive and X-efficiency, eliminate fiscal bailouts draining taxpayers, attract modern capital/technology [10 marks].\n- **Arguments AGAINST:** Simply converting a public monopoly into an unregulated private monopoly harms allocative efficiency (higher prices, under-serving unprofitable rural routes, job losses) [9 marks].\n- **Evaluation:** Works well in competitive sectors (telecoms/manufacturing), but natural monopolies (electricity grids, water, rail) require strong independent price-cap regulation or PPP concessions [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "COS-003",
+      "id": "ec6073_2_q3",
       "questionNumber": 3,
-      "questionText": "Costs and revenue: A market has price $23 and quantity 1015 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Discuss whether a central bank should prioritise low, stable inflation over rapid short-term economic growth when formulating monetary policy. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
+      "explanation": "### Mark Scheme [25 marks]\n- **Case for Price Stability Priority:** Protects purchasing power & savings, encourages long-term investment certainty, prevents currency depreciation & wage-price spirals, preserves export competitiveness [10 marks].\n- **Trade-offs (Short-run Growth/Jobs):** Aggressive interest-rate hikes & tight liquidity squeeze SMEs, raise unemployment (movement along SRPC), and worsen fiscal debt service [9 marks].\n- **Evaluation:** Low predictable inflation is the prerequisite for durable long-term growth; however, during deep supply shocks, rigid tight money must be coordinated with targeted productive-sector credit and fiscal prudence [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAR-004",
+      "id": "ec6073_2_q4",
       "questionNumber": 4,
-      "questionText": "Market structure: A market has price $24 and quantity 1020 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Evaluate the view that \"Protectionism is rarely justified in theory, yet remains widely practised by both developing and industrialised nations.\" [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
+      "explanation": "### Mark Scheme [25 marks]\n- **Free Trade Case (Theory):** Comparative advantage maximises global output, economies of scale, consumer choice, and lowers input costs [8 marks].\n- **Arguments for Protectionism:** Infant industry development (e.g., local textile/steel processing until scale efficiency is reached), anti-dumping defence, strategic food/energy security, short-term BoP relief [10 marks].\n- **Evaluation:** Infant protection easily breeds permanent complacency & retaliation unless strictly time-bound and linked to export performance benchmarks [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "NAT-005",
+      "id": "ec6073_2_q5",
       "questionNumber": 5,
-      "questionText": "National income: A market has price $25 and quantity 1025 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Using appropriate diagrams, compare the equilibrium output, pricing, and efficiency of a Profit-Maximising Monopoly versus a Perfectly Competitive Industry. Are monopolies ever beneficial? [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
+      "explanation": "### Mark Scheme [25 marks]\n- **Static Comparison:** Monopoly sets MR = MC at lower Q_m and higher P_m > MC (allocative inefficiency + deadweight welfare loss triangle; produces above min AC = productive inefficiency; earns sustained supernormal profit) vs Perfect Competition (P = MC = min AC) [12 marks].\n- **Dynamic Benefits (Schumpeter):** Supernormal profits fund heavy R&D and innovation (\"creative destruction\"); natural monopolies exploit huge economies of scale reducing AC below what fragmented competition can achieve [8 marks].\n- **Evaluation:** Beneficial only if dynamic R&D/scale gains outweigh static deadweight losses under effective competition regulation [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "INF-006",
+      "id": "ec6073_2_q6",
       "questionNumber": 6,
-      "questionText": "Inflation and unemployment: A market has price $26 and quantity 1030 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Distinguish between Economic Growth and Economic Development, and evaluate three policies Zimbabwe can adopt to achieve inclusive, sustainable development. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
+      "explanation": "### Mark Scheme [25 marks]\n- **Distinction:** Growth = quantitative rise in Real GDP; Development = structural qualitative improvement in living standards, HDI, poverty reduction, institutions, and sustainability [8 marks].\n- **Policies:** (1) Agro-industrial & mineral value-addition/beneficiation (moves up value chain + formal jobs); (2) Investment in rural irrigation, clinics & STEM skills (human capital + inequality reduction); (3) Macroeconomic stability, property-rights certainty & renewable energy grid [12 marks].\n- **Evaluation:** Prioritise energy reliability & governance certainty as multipliers for all private investment [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "FIS-007",
+      "id": "ec6073_2_q7",
       "questionNumber": 7,
-      "questionText": "Fiscal and monetary policy: A market has price $27 and quantity 1035 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Explain the causes of Balance of Payments (Current Account) deficits in primary-commodity exporting countries and evaluate expenditure-switching versus expenditure-reducing policies to correct them. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
+      "explanation": "### Mark Scheme [25 marks]\n- **Causes:** Volatile raw commodity prices, adverse Terms of Trade, heavy reliance on imported fuel/machinery, high external debt service, overvalued real exchange rate [9 marks].\n- **Expenditure-Reducing (Deflationary fiscal/monetary):** Cuts aggregate demand and imports quickly, but causes painful recession and unemployment [6 marks].\n- **Expenditure-Switching (Devaluation, tariffs, supply-side competitiveness):** Shifts spending from imports to domestic goods; requires Marshall-Lerner |PED_x|+|PED_m|>1 and domestic spare capacity to avoid pure inflation [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "EXC-008",
+      "id": "ec6073_2_q8",
       "questionNumber": 8,
-      "questionText": "Exchange rates: A market has price $28 and quantity 1040 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Analyse how the Price Mechanism allocates scarce resources through its signalling, incentive, and rationing functions, and explain three reasons why markets fail. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
+      "explanation": "### Mark Scheme [20 marks]\n- **Three Functions:** Signalling (rising prices signal scarcity to producers/consumers), Incentive (higher prices raise profit motivating greater supply), Rationing (higher prices choke off lower-valued demand) [9 marks].\n- **Market Failures:** Externalities (divergence of social & private costs/benefits), Public goods (missing markets due to free-riders), Information asymmetry / Monopoly power / Factor immobility [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "BAL-009",
+      "id": "ec6073_2_q9",
       "questionNumber": 9,
-      "questionText": "Balance of payments: A market has price $29 and quantity 1045 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Evaluate the role of Multinational Corporations (MNCs) in promoting industrialisation and technology transfer in developing SADC economies. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
+      "explanation": "### Mark Scheme [25 marks]\n- **Benefits:** FDI inflows filling savings/forex gaps, formal job creation, management/technical skills transfer, tax revenues, global export access [10 marks].\n- **Costs:** Profit repatriation draining financial accounts, transfer-pricing tax avoidance, crowding out local SMEs, environmental/labour exploitation, enclave mining with weak local linkages [10 marks].\n- **Evaluation:** Net benefit depends on strong host-country local-content policies, beneficiation incentives, and tax-treaty enforcement [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "TRA-010",
+      "id": "ec6073_2_q10",
       "questionNumber": 10,
-      "questionText": "Trade and protection: A market has price $20 and quantity 1050 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Discuss the factors determining Wage Differentials across occupations in Zimbabwe and evaluate whether a statutory National Minimum Wage helps or harms low-paid workers. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
+      "explanation": "### Mark Scheme [25 marks]\n- **Wage Determination:** Marginal Revenue Productivity (MRP) of labour, elasticity of labour demand, supply scarcity/training length, trade union bargaining, discrimination/informality [10 marks].\n- **Minimum Wage Impact:** Classical model predicts unemployment if set above equilibrium W*; however, under monopsony or efficiency-wage effects, modest minimum wages raise productivity, reduce poverty, and boost worker retention [10 marks].\n- **Evaluation:** Impact hinges on setting levels realistic relative to productivity so firms do not informalise or mechanise jobs [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ECO-011",
+      "id": "ec6073_2_q11",
       "questionNumber": 11,
-      "questionText": "Economic growth and development: A market has price $21 and quantity 1055 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Compare Monetary Policy and Fiscal Policy in their effectiveness for lifting an economy out of a recessionary deflationary gap. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
+      "explanation": "### Mark Scheme [25 marks]\n- **Fiscal Policy:** Government spending injections & targeted tax cuts act directly on AD (G + C) with immediate multiplier impact and remain vital inside a liquidity trap; lags in parliament approval and debt crowding-out risks exist [11 marks].\n- **Monetary Policy:** Lowering policy rates & liquidity ratios operates quickly via central bank meetings, but suffers long 12–18 month transmission lags and fails if business confidence is depressed (\"pushing on a string\") [9 marks].\n- **Evaluation:** Coordinated counter-cyclical policy mix—targeted infrastructure fiscal stimulus plus accommodative credit [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "PUB-012",
+      "id": "ec6073_2_q12",
       "questionNumber": 12,
-      "questionText": "Public finance: A market has price $22 and quantity 1060 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Explain the causes and consequences of Rapid Urbanisation and High Youth Unemployment in sub-Saharan Africa, recommending two practical economic remedies. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
+      "explanation": "### Mark Scheme [20 marks]\n- **Causes:** Rural-urban wage/service gap, land pressure, rapid demographic youth bulge, mismatch between academic curricula and industrial/technical jobs [8 marks].\n- **Consequences:** Informal underemployment, strained municipal housing/water, lost tax base, outward brain drain [6 marks].\n- **Remedies:** Rural agro-value hubs/irrigation to lift rural incomes + TVET apprenticeship partnerships & SME micro-credit [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "LAB-013",
+      "id": "ec6073_2_q13",
       "questionNumber": 13,
-      "questionText": "Labour markets: A market has price $23 and quantity 1065 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Assess the merits and disadvantages of a Floating Exchange Rate regime compared with a Fixed Exchange Rate regime for a small open economy. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
+      "explanation": "### Mark Scheme [25 marks]\n- **Floating:** Automatic Current Account adjustment, no need for massive central bank forex reserves, independent domestic monetary policy; drawback is exchange-rate volatility harming trade/investment certainty [10 marks].\n- **Fixed:** Eliminates exchange uncertainty for traders and anchors inflation expectations; drawbacks are loss of monetary autonomy, costly reserve defence, and speculative currency attacks if overvalued [10 marks].\n- **Evaluation:** Managed float or credible reserve-backed currency board depending on institutional credibility and trade openness [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ENV-014",
+      "id": "ec6073_2_q14",
       "questionNumber": 14,
-      "questionText": "Environmental policy: A market has price $24 and quantity 1070 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Using Indifference Curve analysis, show how a fall in the price of a good decomposes into a Substitution Effect and an Income Effect for (a) a Normal good and (b) a Giffen good. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
+      "explanation": "### Mark Scheme [20 marks]\n- **Budget line pivot:** Pivots outward as Pₓ falls, letting consumer reach higher indifference curve [4 marks].\n- **Normal good:** Compensated parallel shift isolates Substitution Effect (+ΔQ as X is relatively cheaper) AND Income Effect (+ΔQ as real purchasing power rises) reinforcing each other [8 marks].\n- **Giffen good:** Inferior good whose negative Income Effect (buying less X as real income rises) is larger in magnitude than the positive Substitution Effect, resulting in upward-sloping demand [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZIM-015",
+      "id": "ec6073_2_q15",
       "questionNumber": 15,
-      "questionText": "Zimbabwe economic data: A market has price $25 and quantity 1075 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Evaluate the economic case for Progressive Taxation versus Indirect VAT Taxes when a government seeks both revenue mobilisation and reduced income inequality. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
+      "explanation": "### Mark Scheme [20 marks]\n- **Progressive Income Tax:** Promotes vertical equity (Laffer/redistribution), automatic stabiliser in booms; drawbacks include administrative complexity in large informal economies and potential work/enterprise disincentives at top marginal rates [9 marks].\n- **Indirect VAT:** Broad tax base capturing informal spending, harder to evade, encourages saving; drawback is regressivity (low-income households spend higher income share) unless basic staples are zero-rated [8 marks].\n- **Evaluation:** Balanced mix with zero-rated staple foods to shield poor households [3 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "DEM-016",
+      "id": "ec6073_2_q16",
       "questionNumber": 16,
-      "questionText": "Demand and supply data: A market has price $26 and quantity 1080 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Explain how Oligopolists compete via Non-Price Competition and Game Theory (Prisoner's Dilemma), discussing why cartels frequently collapse. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
+      "explanation": "### Mark Scheme [20 marks]\n- **Non-Price Strategies:** Branding, loyalty programmes, product bundling, 24/7 customer support avoid destructive price wars [6 marks].\n- **Prisoner's Dilemma & Cartels:** Collusion yields joint monopoly profit, but each member faces strong dominant incentive to secretly cheat (shave prices/exceed quotas) to capture extra market share; monitoring costs, varying cost structures, and antitrust fines break cartels [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ELA-017",
+      "id": "ec6073_2_q17",
       "questionNumber": 17,
-      "questionText": "Elasticity calculations: A market has price $27 and quantity 1085 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Assess the role of Regional Economic Integration (such as SADC Free Trade Area and AfCFTA) using Viner's concepts of Trade Creation and Trade Diversion. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
+      "explanation": "### Mark Scheme [20 marks]\n- **Trade Creation:** Removing internal tariffs shifts imports from high-cost domestic producers to lower-cost regional partners—welfare gain [6 marks].\n- **Trade Diversion:** Common external tariff diverts imports from lowest-cost global producers to higher-cost regional members—welfare loss [6 marks].\n- **Evaluation:** Dynamic gains (larger market size, cross-border value chains, economies of scale) can outweigh static trade diversion if external tariffs stay low and non-tariff border delays are cut [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "COS-018",
+      "id": "ec6073_2_q18",
       "questionNumber": 18,
-      "questionText": "Costs and revenue: A market has price $28 and quantity 1090 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Evaluate the view that Economic Growth is inherently incompatible with Environmental Sustainability. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
+      "explanation": "### Mark Scheme [20 marks]\n- **Conflict View:** Traditional industrial growth consumes finite resources, accelerates deforestation, carbon emissions, and pollution [7 marks].\n- **Compatibility / Green Growth View:** Environmental Kuznets Curve & technological innovation (solar, precision agriculture, circular recycling) decouple GDP growth from emissions; carbon pricing and tradable permits align incentives [9 marks].\n- **Evaluation:** Growth is compatible ONLY with deliberate green regulation and clean-energy transition [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAR-019",
+      "id": "ec6073_2_q19",
       "questionNumber": 19,
-      "questionText": "Market structure: A market has price $29 and quantity 1095 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Explain the Credit Creation process in a multi-bank commercial banking system and identify four leakages that limit actual credit expansion in practice. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
+      "explanation": "### Mark Scheme [20 marks]\n- **Process:** Initial new deposit D allows banks to hold reserve ratio rD and lend (1−r)D, which circulates as re-deposits across the banking system up to ΔM = D × (1/r) [10 marks].\n- **Real-world Leakages:** Cash/currency drain held outside banks, banks holding precautionary excess reserves above statutory minimum, weak creditworthy loan demand during recessions, central bank open-market tightening [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "NAT-020",
+      "id": "ec6073_2_q20",
       "questionNumber": 20,
-      "questionText": "National income: A market has price $20 and quantity 1100 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
+      "questionText": "Analyse why Governments provide Merit Goods (education, preventive healthcare) free or subsidised at point of delivery rather than leaving them solely to the private market. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-021",
-      "questionNumber": 21,
-      "questionText": "Inflation and unemployment: A market has price $21 and quantity 1105 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-022",
-      "questionNumber": 22,
-      "questionText": "Fiscal and monetary policy: A market has price $22 and quantity 1110 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-023",
-      "questionNumber": 23,
-      "questionText": "Exchange rates: A market has price $23 and quantity 1115 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-024",
-      "questionNumber": 24,
-      "questionText": "Balance of payments: A market has price $24 and quantity 1120 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-025",
-      "questionNumber": 25,
-      "questionText": "Trade and protection: A market has price $25 and quantity 1125 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-026",
-      "questionNumber": 26,
-      "questionText": "Economic growth and development: A market has price $26 and quantity 1130 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-027",
-      "questionNumber": 27,
-      "questionText": "Public finance: A market has price $27 and quantity 1135 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-028",
-      "questionNumber": 28,
-      "questionText": "Labour markets: A market has price $28 and quantity 1140 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-029",
-      "questionNumber": 29,
-      "questionText": "Environmental policy: A market has price $29 and quantity 1145 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-030",
-      "questionNumber": 30,
-      "questionText": "Zimbabwe economic data: A market has price $20 and quantity 1150 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-031",
-      "questionNumber": 31,
-      "questionText": "Demand and supply data: A market has price $21 and quantity 1155 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-032",
-      "questionNumber": 32,
-      "questionText": "Elasticity calculations: A market has price $22 and quantity 1160 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-033",
-      "questionNumber": 33,
-      "questionText": "Costs and revenue: A market has price $23 and quantity 1165 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-034",
-      "questionNumber": 34,
-      "questionText": "Market structure: A market has price $24 and quantity 1170 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-035",
-      "questionNumber": 35,
-      "questionText": "National income: A market has price $25 and quantity 1175 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-036",
-      "questionNumber": 36,
-      "questionText": "Inflation and unemployment: A market has price $26 and quantity 1180 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-037",
-      "questionNumber": 37,
-      "questionText": "Fiscal and monetary policy: A market has price $27 and quantity 1185 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-038",
-      "questionNumber": 38,
-      "questionText": "Exchange rates: A market has price $28 and quantity 1190 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-039",
-      "questionNumber": 39,
-      "questionText": "Balance of payments: A market has price $29 and quantity 1195 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-040",
-      "questionNumber": 40,
-      "questionText": "Trade and protection: A market has price $20 and quantity 1200 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-041",
-      "questionNumber": 41,
-      "questionText": "Economic growth and development: A market has price $21 and quantity 1205 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-042",
-      "questionNumber": 42,
-      "questionText": "Public finance: A market has price $22 and quantity 1210 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-043",
-      "questionNumber": 43,
-      "questionText": "Labour markets: A market has price $23 and quantity 1215 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-044",
-      "questionNumber": 44,
-      "questionText": "Environmental policy: A market has price $24 and quantity 1220 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-045",
-      "questionNumber": 45,
-      "questionText": "Zimbabwe economic data: A market has price $25 and quantity 1225 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-046",
-      "questionNumber": 46,
-      "questionText": "Demand and supply data: A market has price $26 and quantity 1230 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-047",
-      "questionNumber": 47,
-      "questionText": "Elasticity calculations: A market has price $27 and quantity 1235 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-048",
-      "questionNumber": 48,
-      "questionText": "Costs and revenue: A market has price $28 and quantity 1240 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-049",
-      "questionNumber": 49,
-      "questionText": "Market structure: A market has price $29 and quantity 1245 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-050",
-      "questionNumber": 50,
-      "questionText": "National income: A market has price $20 and quantity 1250 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-051",
-      "questionNumber": 51,
-      "questionText": "Inflation and unemployment: A market has price $21 and quantity 1255 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-052",
-      "questionNumber": 52,
-      "questionText": "Fiscal and monetary policy: A market has price $22 and quantity 1260 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-053",
-      "questionNumber": 53,
-      "questionText": "Exchange rates: A market has price $23 and quantity 1265 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-054",
-      "questionNumber": 54,
-      "questionText": "Balance of payments: A market has price $24 and quantity 1270 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-055",
-      "questionNumber": 55,
-      "questionText": "Trade and protection: A market has price $25 and quantity 1275 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-056",
-      "questionNumber": 56,
-      "questionText": "Economic growth and development: A market has price $26 and quantity 1280 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-057",
-      "questionNumber": 57,
-      "questionText": "Public finance: A market has price $27 and quantity 1285 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-058",
-      "questionNumber": 58,
-      "questionText": "Labour markets: A market has price $28 and quantity 1290 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-059",
-      "questionNumber": 59,
-      "questionText": "Environmental policy: A market has price $29 and quantity 1295 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-060",
-      "questionNumber": 60,
-      "questionText": "Zimbabwe economic data: A market has price $20 and quantity 1300 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-061",
-      "questionNumber": 61,
-      "questionText": "Demand and supply data: A market has price $21 and quantity 1305 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-062",
-      "questionNumber": 62,
-      "questionText": "Elasticity calculations: A market has price $22 and quantity 1310 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-063",
-      "questionNumber": 63,
-      "questionText": "Costs and revenue: A market has price $23 and quantity 1315 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-064",
-      "questionNumber": 64,
-      "questionText": "Market structure: A market has price $24 and quantity 1320 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-065",
-      "questionNumber": 65,
-      "questionText": "National income: A market has price $25 and quantity 1325 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-066",
-      "questionNumber": 66,
-      "questionText": "Inflation and unemployment: A market has price $26 and quantity 1330 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-067",
-      "questionNumber": 67,
-      "questionText": "Fiscal and monetary policy: A market has price $27 and quantity 1335 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-068",
-      "questionNumber": 68,
-      "questionText": "Exchange rates: A market has price $28 and quantity 1340 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-069",
-      "questionNumber": 69,
-      "questionText": "Balance of payments: A market has price $29 and quantity 1345 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-070",
-      "questionNumber": 70,
-      "questionText": "Trade and protection: A market has price $20 and quantity 1350 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-071",
-      "questionNumber": 71,
-      "questionText": "Economic growth and development: A market has price $21 and quantity 1355 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-072",
-      "questionNumber": 72,
-      "questionText": "Public finance: A market has price $22 and quantity 1360 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-073",
-      "questionNumber": 73,
-      "questionText": "Labour markets: A market has price $23 and quantity 1365 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-074",
-      "questionNumber": 74,
-      "questionText": "Environmental policy: A market has price $24 and quantity 1370 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-075",
-      "questionNumber": 75,
-      "questionText": "Zimbabwe economic data: A market has price $25 and quantity 1375 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-076",
-      "questionNumber": 76,
-      "questionText": "Demand and supply data: A market has price $26 and quantity 1380 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-077",
-      "questionNumber": 77,
-      "questionText": "Elasticity calculations: A market has price $27 and quantity 1385 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-078",
-      "questionNumber": 78,
-      "questionText": "Costs and revenue: A market has price $28 and quantity 1390 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-079",
-      "questionNumber": 79,
-      "questionText": "Market structure: A market has price $29 and quantity 1395 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-080",
-      "questionNumber": 80,
-      "questionText": "National income: A market has price $20 and quantity 1400 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-081",
-      "questionNumber": 81,
-      "questionText": "Inflation and unemployment: A market has price $21 and quantity 1405 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-082",
-      "questionNumber": 82,
-      "questionText": "Fiscal and monetary policy: A market has price $22 and quantity 1410 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-083",
-      "questionNumber": 83,
-      "questionText": "Exchange rates: A market has price $23 and quantity 1415 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-084",
-      "questionNumber": 84,
-      "questionText": "Balance of payments: A market has price $24 and quantity 1420 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-085",
-      "questionNumber": 85,
-      "questionText": "Trade and protection: A market has price $25 and quantity 1425 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-086",
-      "questionNumber": 86,
-      "questionText": "Economic growth and development: A market has price $26 and quantity 1430 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-087",
-      "questionNumber": 87,
-      "questionText": "Public finance: A market has price $27 and quantity 1435 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-088",
-      "questionNumber": 88,
-      "questionText": "Labour markets: A market has price $28 and quantity 1440 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-089",
-      "questionNumber": 89,
-      "questionText": "Environmental policy: A market has price $29 and quantity 1445 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-090",
-      "questionNumber": 90,
-      "questionText": "Zimbabwe economic data: A market has price $20 and quantity 1450 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-091",
-      "questionNumber": 91,
-      "questionText": "Demand and supply data: A market has price $21 and quantity 1455 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-092",
-      "questionNumber": 92,
-      "questionText": "Elasticity calculations: A market has price $22 and quantity 1460 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-093",
-      "questionNumber": 93,
-      "questionText": "Costs and revenue: A market has price $23 and quantity 1465 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-094",
-      "questionNumber": 94,
-      "questionText": "Market structure: A market has price $24 and quantity 1470 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-095",
-      "questionNumber": 95,
-      "questionText": "National income: A market has price $25 and quantity 1475 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-096",
-      "questionNumber": 96,
-      "questionText": "Inflation and unemployment: A market has price $26 and quantity 1480 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-097",
-      "questionNumber": 97,
-      "questionText": "Fiscal and monetary policy: A market has price $27 and quantity 1485 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-098",
-      "questionNumber": 98,
-      "questionText": "Exchange rates: A market has price $28 and quantity 1490 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-099",
-      "questionNumber": 99,
-      "questionText": "Balance of payments: A market has price $29 and quantity 1495 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-100",
-      "questionNumber": 100,
-      "questionText": "Trade and protection: A market has price $20 and quantity 1500 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-101",
-      "questionNumber": 101,
-      "questionText": "Economic growth and development: A market has price $21 and quantity 1505 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-102",
-      "questionNumber": 102,
-      "questionText": "Public finance: A market has price $22 and quantity 1510 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-103",
-      "questionNumber": 103,
-      "questionText": "Labour markets: A market has price $23 and quantity 1515 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-104",
-      "questionNumber": 104,
-      "questionText": "Environmental policy: A market has price $24 and quantity 1520 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-105",
-      "questionNumber": 105,
-      "questionText": "Zimbabwe economic data: A market has price $25 and quantity 1525 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-106",
-      "questionNumber": 106,
-      "questionText": "Demand and supply data: A market has price $26 and quantity 1530 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-107",
-      "questionNumber": 107,
-      "questionText": "Elasticity calculations: A market has price $27 and quantity 1535 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-108",
-      "questionNumber": 108,
-      "questionText": "Costs and revenue: A market has price $28 and quantity 1540 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-109",
-      "questionNumber": 109,
-      "questionText": "Market structure: A market has price $29 and quantity 1545 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-110",
-      "questionNumber": 110,
-      "questionText": "National income: A market has price $20 and quantity 1550 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-111",
-      "questionNumber": 111,
-      "questionText": "Inflation and unemployment: A market has price $21 and quantity 1555 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-112",
-      "questionNumber": 112,
-      "questionText": "Fiscal and monetary policy: A market has price $22 and quantity 1560 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-113",
-      "questionNumber": 113,
-      "questionText": "Exchange rates: A market has price $23 and quantity 1565 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-114",
-      "questionNumber": 114,
-      "questionText": "Balance of payments: A market has price $24 and quantity 1570 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-115",
-      "questionNumber": 115,
-      "questionText": "Trade and protection: A market has price $25 and quantity 1575 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-116",
-      "questionNumber": 116,
-      "questionText": "Economic growth and development: A market has price $26 and quantity 1580 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-117",
-      "questionNumber": 117,
-      "questionText": "Public finance: A market has price $27 and quantity 1585 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-118",
-      "questionNumber": 118,
-      "questionText": "Labour markets: A market has price $28 and quantity 1590 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-119",
-      "questionNumber": 119,
-      "questionText": "Environmental policy: A market has price $29 and quantity 1595 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-120",
-      "questionNumber": 120,
-      "questionText": "Zimbabwe economic data: A market has price $20 and quantity 1600 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-121",
-      "questionNumber": 121,
-      "questionText": "Demand and supply data: A market has price $21 and quantity 1605 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-122",
-      "questionNumber": 122,
-      "questionText": "Elasticity calculations: A market has price $22 and quantity 1610 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-123",
-      "questionNumber": 123,
-      "questionText": "Costs and revenue: A market has price $23 and quantity 1615 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-124",
-      "questionNumber": 124,
-      "questionText": "Market structure: A market has price $24 and quantity 1620 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-125",
-      "questionNumber": 125,
-      "questionText": "National income: A market has price $25 and quantity 1625 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-126",
-      "questionNumber": 126,
-      "questionText": "Inflation and unemployment: A market has price $26 and quantity 1630 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-127",
-      "questionNumber": 127,
-      "questionText": "Fiscal and monetary policy: A market has price $27 and quantity 1635 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-128",
-      "questionNumber": 128,
-      "questionText": "Exchange rates: A market has price $28 and quantity 1640 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-129",
-      "questionNumber": 129,
-      "questionText": "Balance of payments: A market has price $29 and quantity 1645 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-130",
-      "questionNumber": 130,
-      "questionText": "Trade and protection: A market has price $20 and quantity 1650 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-131",
-      "questionNumber": 131,
-      "questionText": "Economic growth and development: A market has price $21 and quantity 1655 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-132",
-      "questionNumber": 132,
-      "questionText": "Public finance: A market has price $22 and quantity 1660 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-133",
-      "questionNumber": 133,
-      "questionText": "Labour markets: A market has price $23 and quantity 1665 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-134",
-      "questionNumber": 134,
-      "questionText": "Environmental policy: A market has price $24 and quantity 1670 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-135",
-      "questionNumber": 135,
-      "questionText": "Zimbabwe economic data: A market has price $25 and quantity 1675 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
-    },
-    {
-      "id": "DEM-136",
-      "questionNumber": 136,
-      "questionText": "Demand and supply data: A market has price $26 and quantity 1680 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Demand and supply data"
-    },
-    {
-      "id": "ELA-137",
-      "questionNumber": 137,
-      "questionText": "Elasticity calculations: A market has price $27 and quantity 1685 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Elasticity calculations"
-    },
-    {
-      "id": "COS-138",
-      "questionNumber": 138,
-      "questionText": "Costs and revenue: A market has price $28 and quantity 1690 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Costs and revenue"
-    },
-    {
-      "id": "MAR-139",
-      "questionNumber": 139,
-      "questionText": "Market structure: A market has price $29 and quantity 1695 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Market structure"
-    },
-    {
-      "id": "NAT-140",
-      "questionNumber": 140,
-      "questionText": "National income: A market has price $20 and quantity 1700 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-141",
-      "questionNumber": 141,
-      "questionText": "Inflation and unemployment: A market has price $21 and quantity 1705 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Inflation and unemployment"
-    },
-    {
-      "id": "FIS-142",
-      "questionNumber": 142,
-      "questionText": "Fiscal and monetary policy: A market has price $22 and quantity 1710 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Fiscal and monetary policy"
-    },
-    {
-      "id": "EXC-143",
-      "questionNumber": 143,
-      "questionText": "Exchange rates: A market has price $23 and quantity 1715 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "BAL-144",
-      "questionNumber": 144,
-      "questionText": "Balance of payments: A market has price $24 and quantity 1720 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "TRA-145",
-      "questionNumber": 145,
-      "questionText": "Trade and protection: A market has price $25 and quantity 1725 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Trade and protection"
-    },
-    {
-      "id": "ECO-146",
-      "questionNumber": 146,
-      "questionText": "Economic growth and development: A market has price $26 and quantity 1730 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Economic growth and development"
-    },
-    {
-      "id": "PUB-147",
-      "questionNumber": 147,
-      "questionText": "Public finance: A market has price $27 and quantity 1735 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Public finance"
-    },
-    {
-      "id": "LAB-148",
-      "questionNumber": 148,
-      "questionText": "Labour markets: A market has price $28 and quantity 1740 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "ENV-149",
-      "questionNumber": 149,
-      "questionText": "Environmental policy: A market has price $29 and quantity 1745 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental policy"
-    },
-    {
-      "id": "ZIM-150",
-      "questionNumber": 150,
-      "questionText": "Zimbabwe economic data: A market has price $20 and quantity 1750 units. A policy or market change alters these values. (a) Calculate the percentage change in the relevant variable if the new value is 10% higher. (b) Explain what the change could imply using an appropriate economic concept. (c) Give one limitation of making a conclusion from the data alone.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A percentage change is calculated relative to the original value. Interpretation should use the relevant economic concept, while recognising that a single dataset may not establish causation or capture all contextual factors.",
-      "answerConfidence": "unverified",
-      "topic": "Zimbabwe economic data"
+      "explanation": "### Mark Scheme [20 marks]\n- **Information Failure:** Consumers underestimate long-term private benefits (vaccination, schooling) resulting in under-consumption [7 marks].\n- **Positive Externalities:** Educated, healthy citizens lift societal productivity and reduce epidemic transmission (MSB > MPB) [7 marks].\n- **Equity:** Free/subsidised provision prevents low ability-to-pay from locking poor families out of human capital development [6 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

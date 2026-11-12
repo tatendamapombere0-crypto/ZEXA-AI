@@ -1,1516 +1,240 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_shona_a_level_paper1_150",
+    "file": "exam_bank_zimsec_shona_a_level_paper1_150.json",
     "subject": "Shona",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "SHO/01",
-    "paperName": "Paper 1 – Language and Literature",
-    "paperType": "structured",
+    "paperName": "Shona A-Level Paper 1 — Mutauro, Fonetiki, Moforoji & Rondedzero",
+    "paperType": "Structured Language & Linguistics",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Shona_A_Level_Paper1_150.json",
-    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6",
-    "copyrightNote": "Original practice questions synthesized from syllabus/specimen structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC A-Level Shona syllabus themes and examination-style practice."
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "MUT-001",
+      "id": "sho9145_1_q1",
       "questionNumber": 1,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura mutsauko uripo pakati pe**mubatanidzwa wenzvovera newevabatanidzwa (vowels & consonants)** muChiShona, uchipa mienzaniso yemavara anobuda nepakati pemiromo (bilabials) neanorira muzvikwambo zvemhino (nasals). [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Nzwovera (Vowels):** /a, e, i, o, u/ — mweya unobuda wakasununguka pasina chivharo mukanwa; dzinogadzira izwi dzakazvimirira [6 marks].\n- **Zvivharamukanwa (Consonants):** Mweya unombovharwa kana kumanikidzwa; **Bilabials (miromo miviri):** /p, b, bh, m, v/; **Nasals (mhino):** /m, n, ny, n'/ (sezviri muna *mama, nana, nyama, n'anga*) [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "NHE-002",
+      "id": "sho9145_1_q2",
       "questionNumber": 2,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Nyora pasi mipanda yemazita (Noun Classes 1–10) yemuChiShona uchiita chivakashure (prefix) chechimwe nechimwe uye muenzaniso wezita muushoma nemuuwandu. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Mupanda 1/2 (mu-/va-):** munhu / vanhu [2]\n- **Mupanda 1a/2a (Ø/va-):** baba / vababa [2]\n- **Mupanda 3/4 (mu-/mi-):** muti / miti [2]\n- **Mupanda 5/6 (ri-/ma-):** badza / mapadza [2]\n- **Mupanda 7/8 (chi-/zvi-):** chigaro / zvigaro [2]\n- **Mupanda 9/10 (N-/N-):** mombe / mombe [2]\n- **Mupanda 11/10 (ru-/dzin-):** ruoko / maoko kana rwizi / nzizi [4]\n- **Mupanda 12/13 (ka-/tu-), 14 (hu-), 15 (ku-), 16–18 (pa-, ku-, mu-):** kutaurwa zvakanaka [4]",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZVI-003",
+      "id": "sho9145_1_q3",
       "questionNumber": 3,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ratidza mashandiro ezvivakazwi zvinoenderana nemudzi wechiito (**verb extensions**): *-ir-/-er-* (applied), *-is-/-es-* (causative), *-an-* (reciprocal), ne*-w-/-iw-* (passive) pachishandiswa mudzi wekuti **-bik-** kana **-tor-**. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Applied (-ir-/-er-):** *bikira* / *torera* — kuita basa uchimirira mumwe munhu kana pachinhu chakati (e.g., *Amai vanobikira vaeni sadza*) [5 marks].\n- **Causative (-is-/-es-):** *bikisa* / *toresa* — kukonzera kuti mumwe aite chiito [5 marks].\n- **Reciprocal (-an-):** *bikirana* / *torana* — kuitirana basa pamwe chete [5 marks].\n- **Passive (-w-/-iw-):** *bikwa* / *torwa* — chiito chinoitwa pamusoro pechinhu (*Sadza rakabikwa naTinashe*) [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZVI-004",
+      "id": "sho9145_1_q4",
       "questionNumber": 4,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura basa rinoshandwa ne**zvisazitasingwi (pronouns)** ne**zvipauro (qualificatives)** mukugadzira mutsara wakanaka weChiShona, uchipa mienzaniso mitatu yeimwe neimwe. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **Zvisazitasingwi (Demonstratives, Possessives, Absolute pronouns):** *iye, uyu, vaye, wangu* — zvinomirira kana kunongedza zita risina kududzwa patsva [7 marks].\n- **Zvipauro (Adjectives, Enumeratives, Relatives):** *murefu, vaviri, vanoshanda* — zvinotsanangura chimiro, huwandu kana maitiro ezita muwirirano yemupanda [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAB-005",
+      "id": "sho9145_1_q5",
       "questionNumber": 5,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ipai mutsauko uripo pakati pe**zviito zvinoratidza nguva dzakasiyana (tenses)** uye **kushanduka kweizwi (tone — High/Low)** mumazwi maviri akanyorwa zvakafanana sa**guru** (big vs tripe/cave) uye **kurova** (hit vs disappear). [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **Kukwirira nekudzikira kweizwi (Tonology):** MuChiShona mutauro une izwi (tonal language): *gúrù* (H-L = huru/big) vs *gùrù* (L-L = bwiro/den kana guru remombe); *kúròvà* vs *kùróvà* (kushaikwa / kurova munhu) [9 marks].\n- **Nguva dzechiito:** *Ndakabika* (kare), *Ndiri kubika* (izvozvi), *Ndichabika* (mangwana), *Ndinozobika* [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "TSI-006",
+      "id": "sho9145_1_q6",
       "questionNumber": 6,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Nyora **pfupiso (summary)** isingapfuure mazwi 100 inotsanangura matambudziko anotarisana nevechidiki mumaguta ekupedzisira, uchishandisa mutauro wakanaka weChiShona chisina kusanganiswa neChirungu. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Pfungwa Huru [12 marks]:** Kushaya mabasa, kushandisa zvinodhaka, kukwira kwerendi, kutsvaga dzidzo yepamusoro, uye kusvika kwehupenyu hwemadhorobha hunoda mari zuva nezuva.\n- **Mutauro & Kutevedzera Mazwi [8 marks]:** Zvirevo zvipfupi zvakajeka, chisina \"ChiRungu chemunzira\", kuverenga mazwi ari pasi pe100.",
+      "answerConfidence": "high"
     },
     {
-      "id": "NHO-007",
+      "id": "sho9145_1_q7",
       "questionNumber": 7,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ongorora mashandisirwo emitemo ye**Standard Shona Orthography (Zvimiso neKunyora Kwakarurama)** mumitsara inotevera uchigadzirisa zvikanganiso: (a) \"Ndino enda kuchikoro mangwana.\" (b) \"Mwana wa amai vangu auya.\" (c) \"Vana ve chikoro vari kutamba bhora mu munda.\" (d) \"Ndinoda kudya sa dza.\" [12 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
+      "explanation": "### Kugadzirisa [12 marks]\n- **(a)** *Ndinoenda kuchikoro mangwana.* (Conjunctive writing — chibatanidzwa chechiito chinosungirirwa) [3 marks].\n- **(b)** *Mwana waamai vangu auya.* (Kureba kwenyora kana kunyora zvimwe chete pasina kupatsanura chitaridzi chebato) [3 marks].\n- **(c)** *Vana vechikoro vari kutamba bhora mumunda.* (Zvibatanidzwa zvechivakashure *ve-* na*mu-* zvinonyorwa pamwe chete nezita) [3 marks].\n- **(d)** *Ndinoda kudya sadza.* (Zita rimwe chete) [3 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAI-008",
+      "id": "sho9145_1_q8",
       "questionNumber": 8,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura mutsauko uripo pakati pe**dzitsi rezita (noun stem)**, **chivakashure (noun prefix)**, ne**chigumisiro (terminative)** mumazwi anoti *mukomana, chikoro, zvibage, vatema*. [16 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
+      "explanation": "### Kupatsanura Mazwi (Morphological Analysis) [16 marks]\n- *mukomana:* `mu-` (prefix cl.1) + `-koman-` (stem) + `-a` [4]\n- *chikoro:* `chi-` (prefix cl.7) + `-koro` (loan stem from English/Afrikaans) [4]\n- *zvibage:* `zvi-` (prefix cl.8) + `-bage` (stem) [4]\n- *vatema:* `va-` (prefix cl.2) + `-tem-` (stem) + `-a` [4]",
+      "answerConfidence": "high"
     },
     {
-      "id": "MOR-009",
+      "id": "sho9145_1_q9",
       "questionNumber": 9,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura kushandiswa kwe**nyaudzosingwi (ideophones)** nemaitiro adzo pakusimudzira chimiro chemutauro mumabuku ekunyora nhetembo kana nyaya pfupi. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **Tsananguro:** Nyaudzosingwi mazwi anoburitsa chiitiko, ruzha, ruvara kana kunzwa zvakazara panguva imwe (e.g., *kwii, tsvaa, zii, bha, tande*) [5 marks].\n- **Basa reMutauro:** Dzinoisa mufananidzo wakajeka mupfungwa dzemuvengi (*vivid imagery*), dzinomhanyisa mutinhimira wenyaya, uye dzinosimbisa manzwiro emutambi [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "SIV-010",
+      "id": "sho9145_1_q10",
       "questionNumber": 10,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Rongedza tsumo shanu (5) dzeChiShona dzine chekuita ne**kushanda nesimba nekushingirira**, uchitsanangura zvinoreva imwe neimwe mukurera vechidiki. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
+      "explanation": "### Muganhu weMakisi [15 marks]\n1. *Badza guru kupa murimi* / *Chara chimwe hachitswanyi inda* (kubatana pabasa)\n2. *Chitsva chiri murutsoka* (kubuda kushanda kunounza kubudirira)\n3. *Kugara nhaka huona dzevamwe* (kudzidza kubva kune vakamboshanda)\n4. *Mbudzi kudya mufenje hufananyina* (kutevedzera kushanda kwevabereki)\n5. *Shungu dzinokunda simba* / *Chakafukidza dzimba matenga* — makisi matatu patsumo imwe neimwe (1 = tsumo chaiyo, 2 = tsananguro yakadzama) [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MIT-011",
+      "id": "sho9145_1_q11",
       "questionNumber": 11,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Nyora **rondedzero yekupikisa kana kutsigira (Argumentative Essay)** pamusoro pechirevo chinoti: *\"Kudzidza mitauro yechinyakare saChiShona kumayunivhesiti kunobatsira budiriro yenyika pane kudzidza masvomhu nesainzi chete.\"* [30 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
+      "explanation": "### Muganhu weMakisi [30 marks]\n- **Kurongeka (Introduction, Body Paragraphs, Balanced Counter-argument, Conclusion) [10 marks]**\n- **Pfungwa [12 marks]:** Koshesa kuchengetedza tsika, kuturikira mutemo nemishonga kuvanhu vekumaruwa, midzi yeUnhu, nekurangarira masvomhu/tekinoroji sezvinoenderana zvose pamwe chete.\n- **Unyanzvi hweMutauro [8 marks]:** Kushandisa tsumo, madimikira, zvirahwe zvinokodzera, uye zvimiso zvakakwana.",
+      "answerConfidence": "high"
     },
     {
-      "id": "KUS-012",
+      "id": "sho9145_1_q12",
       "questionNumber": 12,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Cherechedza **kuyambuka kwemazwi kubva mune mimwe mitauro (Borrowing & Loanword Adaptation)** sa*bhasikoro, chikoro, dhorobha, terevhizheni*, uchitsanangura mitemo yehuShona (phonological nativisation) inotevedzerwa. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
+      "explanation": "### Mitemo yeKunyorwa kweMazwi Akakweretwa [15 marks]\n1. **Kuvhura chivharamukanwa nenzozvera (Open syllables CV):** Hapana shoko reChiShona rinoperera neconsonant (*school → chi-ko-ro*, *town/dorp → dho-ro-bha*) [6 marks].\n2. **Kupatsanura zvibatanidzwa zvakaoma (Cluster breaking):** *bicycle → bha-si-ko-ro* [5 marks].\n3. **Kupinza mumipanda yemazita (Noun-class assignment):** *chi-koro* muClass 7, *ma-bhuku* muClass 6 [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "KUD-013",
+      "id": "sho9145_1_q13",
       "questionNumber": 13,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura **mitauro yehuShona (Shona Dialects — Zezuru, Karanga, Manyika, Korekore, Ndau)**, uchiratidza zvinhu zviviri zvinoita kuti Standard Shona ive mutauro unobatanidza vanhu vose. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **Mapoka Makuru:** Zezuru (pakati), Karanga (kuchamhembe/Masvingo), Manyika (kumabvazuva/Manicaland), Korekore (kumaodzanyemba), Ndau (Chipinge/Chimanimani) — mutsauko uri pamazwi nemataurirwo maduku (e.g., *sadza / chima / ibvu*) [9 marks].\n- **Kubatanidzwa naDoke (1931):** Mitemo yegrama yakafanana (mipanda yemazita, zviito) inobvumira kunzwisisana kwevose mubhuku nepanhepfenyuro [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "PFU-014",
+      "id": "sho9145_1_q14",
       "questionNumber": 14,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Shandura ndima yeChirungu inotevera uchiiisa muChiShona chakanaka (Translation): *\"Sustainable agriculture requires farmers to protect topsoil, plant drought-tolerant small grains, and share rainwater harvesting knowledge across generations.\"* [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
+      "explanation": "### Kuturikira Kwakarurama [15 marks]\n- *\"Kurima kunogara kuchienderera mberi kunoda kuti varimi vachengetedze ivhu repamusoro, vadyare zviyo zviduku zvinotsungirira zuva nezvakaoma zvakaita semapfunde nemhunga, uye vapangane ruzivo rwekutamba nekuchengetedza mvura yemudenga kubva kune chimwe chizvarwa kuenda kune chimwe.\"* (Makisi anopiwa pakutaurwa kwechokwadi pasina kutadza zvinoreva Chirungu) [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "KUO-015",
+      "id": "sho9145_1_q15",
       "questionNumber": 15,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura zvinoreva **madimikira (idioms)** mashanu aya: (a) *Kuita meso meso* (b) *Kurova bembera* (c) *Kudya marasha* (d) *Kubata hana* (e) *Kusungira dzinza*. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **(a) Kuita meso meso:** Kutsvaga zvinhu zvakawanda kana kusavimbika murudo [3].\n- **(b) Kurova bembera:** Kutaura nyaya uchireva mumwe munhu aripo pasina kudoma zita rake [3].\n- **(c) Kudya marasha:** Kutambura zvikuru kana kupindwa nekushaya kukuru / hasha dzakanyanya [3].\n- **(d) Kubata hana:** Kuvhunduka kana kunzwa kutya kukuru [3].\n- **(e) Kusungira dzinza:** Kutora matanho ekuchengetedza hukama kana mbiri yemhuri/rudzi [3].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MUT-016",
+      "id": "sho9145_1_q16",
       "questionNumber": 16,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ongorora mashandiro e**chirevo chakareba (Complex Sentence)** muChiShona uchiratidza mutsauko uripo pakati pechirevo chikuru (main clause) nechirevo chinotevera (subordinate clause). [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
+      "explanation": "### Kupatsanura Zvirevo (Syntax) [15 marks]\n- **Muenzaniso:** *\"Kana mvura ikanaya zvakanaka, varimi vekumaruwa vachakohwa zviyo zvakawanda.\"* [5 marks]\n- **Chirevo chinotevera (Subordinate clause):** *Kana mvura ikanaya zvakanaka* — hachikwanise kumira choga sechirevo chakazara.\n- **Chirevo chikuru (Main clause):** *varimi vekumaruwa vachakohwa zviyo zvakawanda* — chinopa pfungwa huru yakazara [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "NHE-017",
+      "id": "sho9145_1_q17",
       "questionNumber": 17,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Nyora **tsamba yepamutemo (Formal Letter)** kuna Sachigaro weKanzuru yedhorobha rako uchikumbira kuti pave nemabini akawanda uye mvura yakachena munharaunda yenyu. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
+      "explanation": "### Muganhu weMakisi [25 marks]\n- **Chimiro cheTsamba yePamutemo:** Kero mbiri, zuva, *Wadiwa Changamire / Mai*, musoro wenyaya wakasimba (*CHIKUMBISO CHEKUGADZIRISWA KWETSANANGURO YEMVURA NEMABINI*), mhedziso (*Wenyu akatendeka* + siginicha nezita) [8 marks].\n- **Zvirimo & Mutauro:** Zvikonzero zveutano (kudzivirira cholera/typhoid), mutauro weruremekedzo usinganyombi [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZVI-018",
+      "id": "sho9145_1_q18",
       "questionNumber": 18,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura **kusanganiswa kwemazita ezviito (Compound Nouns & Nominalisation)** muChiShona uchipa mienzaniso mipfumbamwe kubva pazviito zvakasiyana. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
+      "explanation": "### Kugadzirwa kwemazita kubva kuZviito [15 marks]\n- *ku- + rima → murimi* (agent noun cl.1); *mubiki, mudzidzisi, mutungamiriri* [6 marks].\n- *Zita remubatanidzwa (Compound nouns):* *muchekacheka, chigaramapfeni, mudyandigere, mufushwa-nyemba* — kuratidza mashandiro emipanda nezvivakazwi pakuumba mazita matsva [9 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZVI-019",
+      "id": "sho9145_1_q19",
       "questionNumber": 19,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura **basa reZviverengero neZvishandiso zveNguva (Temporal & Aspectual Markers)** sa*-ri*, *-cha-*, *-aka-*, *-nga-* muChiShona, uchipa mutsara mumwe pamutambo woga woga. [16 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
+      "explanation": "### Muganhu weMakisi [16 marks]\n- **`-ri` (Progressive):** *Tiri kudzidza ChiShona* — chiito chiri kuitika panguva iyoyo [4].\n- **`-cha-` (Future/Persistive):** *Ndichaenda kuBulawayo* / *Acharova basa* [4].\n- **`-aka-` (Remote Past):** *Vakaenda kumusha gore rapera* [4].\n- **`-nga-` (Conditional/Potential):** *Ungaita basa iri kana ukashanda nesimba* [4].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAB-020",
+      "id": "sho9145_1_q20",
       "questionNumber": 20,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura mutsauko uripo pakati pe**zviito zvinoda chinhu (Transitive verbs)** ne**zviito zvisingade chinhu (Intransitive verbs)**, uchipa mienzaniso mitatu yeimwe neimwe. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
+      "explanation": "### Transitive vs Intransitive Verbs [15 marks]\n- **Transitive (zvinotambira chinobatwa / object):** *-tem-* (*Mwana akatema muti*), *-vereng-* (*Tafadzwa anoverenga bhuku*), *-bik-* [7 marks].\n- **Intransitive (zvinogona kumira zvoga pasina object):** *-far-* (*Sekuru vakafara*), *-mhany-* (*Imbwa yakamhanya*), *-rar-* (*Mwana akarara*) [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "TSI-021",
+      "id": "sho9145_1_q21",
       "questionNumber": 21,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ongorora mashandisirwo e**chivakazwi chekuzvidavirira (Reflexive prefix *-zvi-*)** ne**zvivakashure zvekudzokorora (Reduplication)** sa*famba-famba*, *taura-taura* mumutauro weChiShona. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **`-zvi-` (Reflexive):** Munhu anozviitira chiito iye pachake (*Akazvikuvadza pabasa*; *Tinofanira kuzvibata zvakanaka*) [7 marks].\n- **Reduplication (Kudzokorora mudzi):** Kunoratidza kuita chinhu zvishoma nezvishoma, kakawanda, kana pasina chinangwa chakadzama (*kufamba-famba, kunwa-nwa, kubata-bata*) [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "NHO-022",
+      "id": "sho9145_1_q22",
       "questionNumber": 22,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Nyora **hurukuro (Dialogue)** pakati pemudzimai mukuru nemuzukuru wake vachikurukura nezve**kukosha kwechikafu chechinyakare (zviyo, nyimo, derere, mutakura)** pakurwisa zvirwere zvemazuva ano. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
+      "explanation": "### Muganhu weMakisi [25 marks]\n- **Chimiro cheHurukuro:** Mazita evatauri kuruboshwe nekoroni (*Ambuya:* / *Rudo:*), mhinduro dzinopindirana zvine ruremekedzo netsika yeUnhu [7 marks].\n- **Zvirimo:** Kudzivirira shuga, BP, kushaya simba; kuchengeta mhodzi dzechinyakare; kushandisa zvirungamutauro zvinonwisa mvura [18 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAI-023",
+      "id": "sho9145_1_q23",
       "questionNumber": 23,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura **nzira dzekurairidza netsika dzeUnhu** dzinowanikwa mune zvemitauro ye**zvirahwe (riddles)** ne**mitupo/zvidao (totems & praise poetry)** dzevaShona. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Zvirahwe:** Zvinokudza kufunga kwakadzama, kuyeuka zvisikwa, uye kugara pamwe chete semhuri pameso pemoto manheru [10 marks].\n- **Mitupo neZvidao:** Zvinoomesa hukama hweropa (kudzivira kuroorana kwehama), zvinochengetedza mhuka/nhengo dzesango (conservation taboos), uye zvinopa chiremerera pavanhu (*Maita Shava*, *Maita Mhofu*) [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "MOR-024",
+      "id": "sho9145_1_q24",
       "questionNumber": 24,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Ongorora dambudziko re**kusanganiswa kwemitauro (Code-switching / \"Shonglish\")** pakati pevechidiki nhasi uye tsanangura nzira ina dzekuchengetedza nekukudza ChiShona chakanaka muzvikoro nemumagazini. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
+      "explanation": "### Muganhu weMakisi [20 marks]\n- **Zvikonzero zveShonglish:** Tekinoroji, midhiya, kurerukirwa mukutaura kwemumadhorobha, nekushaya mazwi matsva ezvekombiyuta mumaruwa [8 marks].\n- **Nzira dzeKukudza ChiShona:** Kugadzira duramazwi retekinoroji reChiShona, makwikwi ekunyora mabhuku/nhetembo, kudzidzisa zvidzidzo zvevanhu vose muChiShona, uye kushandisa ChiShona chitsvene panhepfenyuro [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "SIV-025",
+      "id": "sho9145_1_q25",
       "questionNumber": 25,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
+      "questionText": "Tsanangura zvinoreva **nhepfenyuro yekufananidza (Simile — *kufanana na-* / *se-*)** ne**enenzaniso chaiyo (Metaphor)** uchipa mienzaniso mina yega yega mukurumbidza munhu kana kunyora rondedzero. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-026",
-      "questionNumber": 26,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-027",
-      "questionNumber": 27,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-028",
-      "questionNumber": 28,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-029",
-      "questionNumber": 29,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-030",
-      "questionNumber": 30,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-031",
-      "questionNumber": 31,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-032",
-      "questionNumber": 32,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-033",
-      "questionNumber": 33,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-034",
-      "questionNumber": 34,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-035",
-      "questionNumber": 35,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-036",
-      "questionNumber": 36,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-037",
-      "questionNumber": 37,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-038",
-      "questionNumber": 38,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-039",
-      "questionNumber": 39,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-040",
-      "questionNumber": 40,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-041",
-      "questionNumber": 41,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-042",
-      "questionNumber": 42,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-043",
-      "questionNumber": 43,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-044",
-      "questionNumber": 44,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-045",
-      "questionNumber": 45,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-046",
-      "questionNumber": 46,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-047",
-      "questionNumber": 47,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-048",
-      "questionNumber": 48,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-049",
-      "questionNumber": 49,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-050",
-      "questionNumber": 50,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-051",
-      "questionNumber": 51,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-052",
-      "questionNumber": 52,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-053",
-      "questionNumber": 53,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-054",
-      "questionNumber": 54,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-055",
-      "questionNumber": 55,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-056",
-      "questionNumber": 56,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-057",
-      "questionNumber": 57,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-058",
-      "questionNumber": 58,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-059",
-      "questionNumber": 59,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-060",
-      "questionNumber": 60,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-061",
-      "questionNumber": 61,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-062",
-      "questionNumber": 62,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-063",
-      "questionNumber": 63,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-064",
-      "questionNumber": 64,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-065",
-      "questionNumber": 65,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-066",
-      "questionNumber": 66,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-067",
-      "questionNumber": 67,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-068",
-      "questionNumber": 68,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-069",
-      "questionNumber": 69,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-070",
-      "questionNumber": 70,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-071",
-      "questionNumber": 71,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-072",
-      "questionNumber": 72,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-073",
-      "questionNumber": 73,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-074",
-      "questionNumber": 74,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-075",
-      "questionNumber": 75,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-076",
-      "questionNumber": 76,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-077",
-      "questionNumber": 77,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-078",
-      "questionNumber": 78,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-079",
-      "questionNumber": 79,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-080",
-      "questionNumber": 80,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-081",
-      "questionNumber": 81,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-082",
-      "questionNumber": 82,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-083",
-      "questionNumber": 83,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-084",
-      "questionNumber": 84,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-085",
-      "questionNumber": 85,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-086",
-      "questionNumber": 86,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-087",
-      "questionNumber": 87,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-088",
-      "questionNumber": 88,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-089",
-      "questionNumber": 89,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-090",
-      "questionNumber": 90,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-091",
-      "questionNumber": 91,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-092",
-      "questionNumber": 92,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-093",
-      "questionNumber": 93,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-094",
-      "questionNumber": 94,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-095",
-      "questionNumber": 95,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-096",
-      "questionNumber": 96,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-097",
-      "questionNumber": 97,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-098",
-      "questionNumber": 98,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-099",
-      "questionNumber": 99,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-100",
-      "questionNumber": 100,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-101",
-      "questionNumber": 101,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-102",
-      "questionNumber": 102,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-103",
-      "questionNumber": 103,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-104",
-      "questionNumber": 104,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-105",
-      "questionNumber": 105,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-106",
-      "questionNumber": 106,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-107",
-      "questionNumber": 107,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-108",
-      "questionNumber": 108,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-109",
-      "questionNumber": 109,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-110",
-      "questionNumber": 110,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-111",
-      "questionNumber": 111,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-112",
-      "questionNumber": 112,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-113",
-      "questionNumber": 113,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-114",
-      "questionNumber": 114,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-115",
-      "questionNumber": 115,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-116",
-      "questionNumber": 116,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-117",
-      "questionNumber": 117,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-118",
-      "questionNumber": 118,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-119",
-      "questionNumber": 119,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-120",
-      "questionNumber": 120,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-121",
-      "questionNumber": 121,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-122",
-      "questionNumber": 122,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-123",
-      "questionNumber": 123,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-124",
-      "questionNumber": 124,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-125",
-      "questionNumber": 125,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-126",
-      "questionNumber": 126,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-127",
-      "questionNumber": 127,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-128",
-      "questionNumber": 128,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-129",
-      "questionNumber": 129,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-130",
-      "questionNumber": 130,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-131",
-      "questionNumber": 131,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-132",
-      "questionNumber": 132,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-133",
-      "questionNumber": 133,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-134",
-      "questionNumber": 134,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-135",
-      "questionNumber": 135,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
-    },
-    {
-      "id": "MUT-136",
-      "questionNumber": 136,
-      "questionText": "Mutauro nemadimikira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mutauro nemadimikira"
-    },
-    {
-      "id": "NHE-137",
-      "questionNumber": 137,
-      "questionText": "Nhetembo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhetembo"
-    },
-    {
-      "id": "ZVI-138",
-      "questionNumber": 138,
-      "questionText": "Zvirevo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvirevo"
-    },
-    {
-      "id": "ZVI-139",
-      "questionNumber": 139,
-      "questionText": "Zvidavado: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Zvidavado"
-    },
-    {
-      "id": "MAB-140",
-      "questionNumber": 140,
-      "questionText": "Mabhuku anoverengwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mabhuku anoverengwa"
-    },
-    {
-      "id": "TSI-141",
-      "questionNumber": 141,
-      "questionText": "Tsika nemagariro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Tsika nemagariro"
-    },
-    {
-      "id": "NHO-142",
-      "questionNumber": 142,
-      "questionText": "Nhoroondo yemitauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Nhoroondo yemitauro"
-    },
-    {
-      "id": "MAI-143",
-      "questionNumber": 143,
-      "questionText": "Maitiro ekutaura: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Maitiro ekutaura"
-    },
-    {
-      "id": "MOR-144",
-      "questionNumber": 144,
-      "questionText": "Morfoloji: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Morfoloji"
-    },
-    {
-      "id": "SIV-145",
-      "questionNumber": 145,
-      "questionText": "Sivhesheni: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Sivhesheni"
-    },
-    {
-      "id": "MIT-146",
-      "questionNumber": 146,
-      "questionText": "Mitsara nemagadzirirwo: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Mitsara nemagadzirirwo"
-    },
-    {
-      "id": "KUS-147",
-      "questionNumber": 147,
-      "questionText": "Kushandiswa kwemutauro: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kushandiswa kwemutauro"
-    },
-    {
-      "id": "KUD-148",
-      "questionNumber": 148,
-      "questionText": "Kududzira: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kududzira"
-    },
-    {
-      "id": "PFU-149",
-      "questionNumber": 149,
-      "questionText": "Pfupiso: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Pfupiso"
-    },
-    {
-      "id": "KUO-150",
-      "questionNumber": 150,
-      "questionText": "Kuongorora zvinyorwa: Tsanangura pfungwa huru dzine chekuita nenyaya iyi, ratidza mashandisirwo emutauro kana humbowo huri muchinyorwa, woongorora kukosha kwazvo pakunzwisisa Shona nemagariro eZimbabwe. Shandisa mienzaniso yakakodzera.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Mhinduro yakanaka inofanira kuratidza ruzivo rwakadzama, kushandisa mienzaniso, kuongorora mutauro nemagariro, uye kupa mhedziso ine hwaro.",
-      "answerConfidence": "unverified",
-      "topic": "Kuongorora zvinyorwa"
+      "explanation": "### Muganhu weMakisi [15 marks]\n- **Simile (Enzaniso):** Inoshandisa *se-, sa-, kunge* (*Anomhanya seshumba*; *Anopenya kunge zuva*) [7 marks].\n- **Metaphor (Dimikira reufananidzi):** Inodoma chinhu chacho zvakananga kuti chive chimwe (*Baba ndimambo mumba*; *Vana ava ishumba pabasa*) — inopa simba rakadzama kupfuura simile [8 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

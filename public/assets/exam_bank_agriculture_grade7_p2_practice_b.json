@@ -1,101 +1,264 @@
 {
   "paperInfo": {
+    "id": "exam_bank_agriculture_grade7_p2_practice_b",
+    "file": "exam_bank_agriculture_grade7_p2_practice_b.json",
     "subject": "Agriculture",
     "level": "Primary",
     "paperCode": "G7-AGRIC-2B",
     "paperName": "Grade 7 Agriculture Paper 2 - Practice Set B (original questions, real Ministry/ZIMSEC-style format)",
-    "paperType": "Practice Paper (original questions, written in the real Grade 7 Agriculture Paper 2 structure/format, grounded in a verified real mark scheme)"
+    "paperType": "Practice Paper (original questions, written in the real Grade 7 Agriculture Paper 2 structure/format, grounded in a verified real mark scheme)",
+    "questionCount": 25
   },
   "questions": [
     {
-      "id": "g7_agric_p2_practice2_q1",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "SECTION A (30 marks - answer ALL questions, about 75 minutes). Question 1 (5 marks): (a) What does the term 'agriculture' mean? [1]. (b) Give any two types of farming scale practised in Zimbabwe [2]. (c) Give any one horticultural cash crop grown in Zimbabwe [1]. (d) State one way in which agriculture is important to a country's economy [1]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer, original content in the real ZIMSEC/Ministry Grade 7 Agriculture Paper 2 structured format (not copied from any real paper). (a) Agriculture is the growing of crops and the rearing/keeping of livestock for food, income or other use. (b) Any two: subsistence farming, small-scale commercial farming, large-scale commercial farming, co-operative farming. (c) Any one: paprika, coffee, citrus fruit, flowers (any valid horticultural cash crop). (d) Any one: it earns foreign currency through exports, it creates employment, it provides food security, it supplies raw materials to industry.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q2",
+      "id": "q_2",
       "questionNumber": 2,
-      "questionText": "Question 2 (5 marks): (a) Give any two reasons why farmers add fertiliser to their soil [2]. (b) State three nutrients needed by plants in large amounts (macronutrients) [3]",
+      "questionText": "(5 marks): (a) Give any two reasons why farmers add fertiliser to their soil [2]. (b) State three nutrients needed by plants in large amounts (macronutrients) [3]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) Any two: to replace nutrients removed by previous crops, to boost plant growth and yield, to correct nutrient deficiencies shown by poor plant growth, to improve the quality of the harvest. (b) Nitrogen, phosphorus, potassium (the three macronutrients needed by plants in large amounts).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q3",
+      "id": "q_3",
       "questionNumber": 3,
-      "questionText": "Question 3 (5 marks): (a) Give any three causes of soil pollution [3]. (b) The diagram below shows a simplified water cycle. Label the processes marked A and B: Clouds form and grow heavy, then release rain that falls to the ground (process A - the falling of moisture from clouds to the ground); the sun heats water on the ground/rivers/lakes, turning it into water vapour that rises into the air (process B - water turning into vapour and rising). Name process A and process B [2]",
+      "questionText": "(5 marks): (a) Give any three causes of soil pollution [3]. (b) The diagram below shows a simplified water cycle. Label the processes marked A and B: Clouds form and grow heavy, then release rain that falls to the ground (process A - the falling of moisture from clouds to the ground); the sun heats water on the ground/rivers/lakes, turning it into water vapour that rises into the air (process B - water turning into vapour and rising). Name process A and process B [2]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) Any three: dumping of rubbish/litter, chemical/pesticide spills, use of non-biodegradable plastics, improper disposal of industrial waste, over-application of agro-chemicals. (b) Process A is precipitation (rain/moisture falling from clouds to the ground). Process B is evaporation (water turning into vapour and rising into the air due to the sun's heat).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q4",
+      "id": "q_4",
       "questionNumber": 4,
-      "questionText": "Question 4 (5 marks): A farmer is growing a crop with a tall central stem, long narrow leaves, a tassel at the top, and cobs growing partway up the stem, with fibrous roots at the base. (a)(i) Which crop is being described? [1]. (ii) What is the function of the tassel at the top of the plant? [1]. (iii) Give one function of the fibrous roots [1]. (b) In Zimbabwe, this crop is normally grown in which season? [2]",
+      "questionText": "(5 marks): A farmer is growing a crop with a tall central stem, long narrow leaves, a tassel at the top, and cobs growing partway up the stem, with fibrous roots at the base. (a)(i) Which crop is being described? [1]. (ii) What is the function of the tassel at the top of the plant? [1]. (iii) Give one function of the fibrous roots [1]. (b) In Zimbabwe, this crop is normally grown in which season? [2]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a)(i) Maize. (ii) The tassel produces pollen, which is needed to pollinate the female flowers (silks) on the cob so that kernels can form. (iii) Any one: the roots absorb water and nutrients from the soil, anchor/hold the plant firmly in the ground, and help prevent soil erosion. (b) Summer, during the rainy/wet season (typically planted around November).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q5",
+      "id": "q_5",
       "questionNumber": 5,
-      "questionText": "Question 5 (5 marks): (a) List the two classes of farm animals based on where they are kept/how they are managed [2]. (b) Mr Chikwanha keeps goats on his farm. (i) His female goats are producing very little milk. Which nutrient class should be increased in their feed to boost milk production? [1]. (ii) Give one reason why goats are important to Mr Chikwanha's household [1]. Total: give one more general reason livestock are valued in rural Zimbabwean households [1]",
+      "questionText": "(5 marks): (a) List the two classes of farm animals based on where they are kept/how they are managed [2]. (b) Mr Chikwanha keeps goats on his farm. (i) His female goats are producing very little milk. Which nutrient class should be increased in their feed to boost milk production? [1]. (ii) Give one reason why goats are important to Mr Chikwanha's household [1]. Total: give one more general reason livestock are valued in rural Zimbabwean households [1]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) Domestic (home-kept) animals and wild animals. (b)(i) Proteins (a protein-rich supplement helps boost milk production). (ii) Any one: goats provide meat, milk, income from sale, manure for the fields. Additional general reason: livestock can also be used for paying lobola/bride price, as collateral security for loans, or as a form of savings/investment for the family.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q6",
+      "id": "q_6",
       "questionNumber": 6,
-      "questionText": "Question 6 (5 marks): (a) Where on a farm should equipment and machinery be stored when not in use? [1]. (b) Name any two hand tools commonly used on a farm [2]. (c) To keep track of tools on the farm, a farmer should keep a ___________ [1]. (d) How can a farmer maintain a tool with moving/rotating parts, such as a wheelbarrow or plough disc? [1]",
+      "questionText": "(5 marks): (a) Where on a farm should equipment and machinery be stored when not in use? [1]. (b) Name any two hand tools commonly used on a farm [2]. (c) To keep track of tools on the farm, a farmer should keep a ___________ [1]. (d) How can a farmer maintain a tool with moving/rotating parts, such as a wheelbarrow or plough disc? [1]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) In a storeroom or shed, kept dry and secure. (b) Any two: hoe, spade, rake, slasher, pick, axe, sickle. (c) An inventory/equipment register (record book). (d) By regularly greasing/oiling the moving parts to reduce friction and prevent rusting.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q7",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "SECTION B (20 marks - answer any TWO of Questions 7 to 10, about 45 minutes). Question 7 (10 marks): Choose ONE leaf vegetable crop and describe how it is grown, using the following headings. (a) Name of the crop [1]. (b) Land preparation (two steps) [2]. (c) Planting (two steps) [2]. (d) Weeding (two methods) [2]. (e) Harvesting (two steps) [2]. (f) Give one pest that attacks this crop [1]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer, using rape as the example (any valid leaf crop is acceptable). (a) Rape. (b) Land preparation: clear the land of weeds/debris, then dig/till and level the seedbed, and apply manure/compost. (c) Planting: sow seeds thinly in rows on the prepared bed, then water the bed regularly to aid germination. (d) Weeding: hand-weeding/hoeing between rows to remove competing weeds, and applying a suitable herbicide where necessary. (e) Harvesting: pluck the outer, mature leaves individually by hand, leaving the growing point intact so the plant continues producing, then tie the leaves into bundles for market. (f) Any one: diamondback moth, aphids, cutworms.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q8",
+      "id": "q_8",
       "questionNumber": 8,
-      "questionText": "Question 8 (10 marks): Describe the production of poultry (broilers) under the following headings. (a) Name of the bird being reared [2]. (b) Care of the bird (two aspects) [4]. (c) List any two products, and any two by-products, obtained from this bird [4]",
+      "questionText": "(10 marks): Describe the production of poultry (broilers) under the following headings. (a) Name of the bird being reared [2]. (b) Care of the bird (two aspects) [4]. (c) List any two products, and any two by-products, obtained from this bird [4]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) Broiler chicken. (b) Any two aspects, described: providing a well-ventilated, draught-free house with adequate lighting; maintaining good hygiene (regular cleaning of litter/bedding) to prevent disease; providing enough clean water and correctly formulated feed (starter, then grower, then finisher mash) at each growth stage; vaccinating the birds according to schedule. (c) Products: meat, eggs. By-products: manure (used as organic fertiliser), feathers (can be processed into feather meal).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q9",
+      "id": "q_9",
       "questionNumber": 9,
-      "questionText": "Question 9 (10 marks): The diagram shows a layered compost heap, with alternating layers of plant/animal waste materials. (a) Write any three materials used to make a compost heap [3]. (b) Give one reason why the top of the compost heap should be kept moist/covered [1]. (c) State any two ways (besides composting) of increasing soil fertility [2]. (d) Name any two materials that make up soil [2]. (e) Give one visible sign of soil erosion [1]. (f) What is the importance of using compost on a farm? [1]",
+      "questionText": "(10 marks): The diagram shows a layered compost heap, with alternating layers of plant/animal waste materials. (a) Write any three materials used to make a compost heap [3]. (b) Give one reason why the top of the compost heap should be kept moist/covered [1]. (c) State any two ways (besides composting) of increasing soil fertility [2]. (d) Name any two materials that make up soil [2]. (e) Give one visible sign of soil erosion [1]. (f) What is the importance of using compost on a farm? [1]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer. (a) Any three: dry grass, crop residues/maize stalks, animal dung, kitchen vegetable waste, wood ash, soil. (b) Keeping the top moist helps the micro-organisms that break down the material to survive and work effectively, speeding up decomposition (drying out slows or stops decomposition). (c) Any two: applying manure, practising crop rotation, ploughing under crop residues, applying agricultural lime to correct soil acidity, applying chemical fertiliser. (d) Any two: organic matter, water, air, mineral/rock particles. (e) Any one: gullies, exposed plant roots, small pedestals of soil left standing (soil pedestals), muddy/silty runoff water after rain. (f) Compost improves soil fertility and structure cheaply and sustainably by returning organic matter and nutrients to the soil, reducing the farmer's dependence on expensive chemical fertiliser.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
     },
     {
-      "id": "g7_agric_p2_practice2_q10",
+      "id": "q_10",
       "questionNumber": 10,
-      "questionText": "Question 10 (10 marks): (a) Give any three reasons why agriculture is considered a business [3]. (b) The table below shows a farmer's trading record for March. Complete the table by calculating the missing values A, B and C, then find the total income (D), total expenditure (E), and the profit or loss made. INCOME: 25 trays of eggs = $150,00 | Butternuts = $70,00 | 15kg tomatoes = $45,00 | 80 heads of cabbage at 60c per head = $A | 30kg carrots = $60,00 | 40 broilers = $280,00 | 15 trays of eggs = $90,00 | 50 heads of rape at 40c per head = $B. EXPENDITURE: Chick starter mesh = $110,00 | 5 bags of grower mesh at $28,00 per bag = $C | Tomato seed = $65,00 | Fertiliser = $95,00 | Pesticides = $140,00 | Bean seed = $55,00. (i) Calculate A, B, C, total income (D) and total expenditure (E) [7 marks - 5 for the table values, allocated across the calculation]. (ii) Calculate the profit or loss made [part of the 10 marks, combined with (i)]",
+      "questionText": "(10 marks): (a) Give any three reasons why agriculture is considered a business [3]. (b) The table below shows a farmer's trading record for March. Complete the table by calculating the missing values A, B and C, then find the total income (D), total expenditure (E), and the profit or loss made. INCOME: 25 trays of eggs = $150,00 | Butternuts = $70,00 | 15kg tomatoes = $45,00 | 80 heads of cabbage at 60c per head = $A | 30kg carrots = $60,00 | 40 broilers = $280,00 | 15 trays of eggs = $90,00 | 50 heads of rape at 40c per head = $B. EXPENDITURE: Chick starter mesh = $110,00 | 5 bags of grower mesh at $28,00 per bag = $C | Tomato seed = $65,00 | Fertiliser = $95,00 | Pesticides = $140,00 | Bean seed = $55,00. (i) Calculate A, B, C, total income (D) and total expenditure (E) [7 marks - 5 for the table values, allocated across the calculation]. (ii) Calculate the profit or loss made [part of the 10 marks, combined with (i)]",
       "options": [],
       "correctAnswer": null,
       "explanation": "Model answer, fully verified by calculation. A = 80 heads x $0,60 = $48,00. B = 50 heads x $0,40 = $20,00. C = 5 bags x $28,00 = $140,00. Total Income (D) = 150 + 70 + 45 + 48 + 60 + 280 + 90 + 20 = $763,00. Total Expenditure (E) = 110 + 140 + 65 + 95 + 140 + 55 = $605,00. Profit = Total Income - Total Expenditure = 763 - 605 = $158,00 PROFIT. (a) Any three reasons agriculture is a business: it requires budgeting/planning of costs, it involves record-keeping of income and expenditure, it aims to make a profit, it involves buying inputs and selling produce/livestock like any other business, it can earn foreign currency through exports.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Agriculture Structured Theory"
+    },
+    {
+      "id": "agrisci703_2_q21",
+      "questionNumber": 11,
+      "questionText": "A learner compares transparent, translucent and opaque materials.\n- (a) Define transparent. [1 mark]\n- (b) Give one example of an opaque material. [1 mark]\n- (c) Explain how shadows form. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) A material that allows almost all light to pass through clearly (e.g., clear glass) [1 mark]. (b) Wood / metal / brick wall [1 mark]. (c) Light travels in straight lines; when an opaque object blocks light, a dark shadow forms behind it [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q22",
+      "questionNumber": 12,
+      "questionText": "A family wants to reduce electricity use.\n- (a) State two ways of saving electricity. [2 marks]\n- (b) Name one renewable energy source. [1 mark]\n- (c) Explain one advantage of renewable energy. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Switch off lights/appliances when not in use; use energy-saving LED bulbs or solar water heaters [2 marks]. (b) Solar energy / hydroelectricity / wind energy [1 mark]. (c) Renewable energy does not run out and produces little or no greenhouse gas pollution [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q23",
+      "questionNumber": 13,
+      "questionText": "A learner investigates friction by moving objects over different surfaces.\n- (a) Define friction. [1 mark]\n- (b) State one useful effect. [1 mark]\n- (c) State one harmful effect. [1 mark]\n- (d) Explain how surface texture affects friction. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) A contact force that opposes motion between two surfaces sliding against each other [1 mark]. (b) Enables walking without slipping / car brakes to stop vehicles [1 mark]. (c) Causes wear and tear of machine parts or wastes energy as heat [1 mark]. (d) Rough surfaces create greater interlocking and higher friction than smooth or lubricated surfaces [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q24",
+      "questionNumber": 14,
+      "questionText": "A learner studies a food chain in a grassland.\n- (a) Name the producer. [1 mark]\n- (b) Name one consumer. [1 mark]\n- (c) Explain the direction of energy transfer. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Grass / green plants [1 mark]. (b) Grasshopper / zebra / impala / lion [1 mark]. (c) Energy flows in one direction from the sun to producers, then to herbivores (primary consumers) and carnivores, with heat lost at each level [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q25",
+      "questionNumber": 15,
+      "questionText": "A pond becomes polluted with waste.\n- (a) Name one pollutant. [1 mark]\n- (b) State two effects on organisms. [2 marks]\n- (c) Suggest two ways to reduce the pollution. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Raw sewage / plastic litter / chemical fertilisers / oil [1 mark]. (b) Depletes dissolved oxygen killing fish; poisons aquatic animals and spreads waterborne disease [2 marks]. (c) Proper waste disposal/recycling bins; prevent effluent/chemical runoff into water bodies [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q26",
+      "questionNumber": 16,
+      "questionText": "A learner studies the human digestive system.\n- (a) Name the organ where digestion begins. [1 mark]\n- (b) State one function of the stomach. [1 mark]\n- (c) Explain why the small intestine is important. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) The mouth [1 mark]. (b) Churns food with hydrochloric acid and enzymes (pepsin) to kill germs and begin protein digestion [1 mark]. (c) Completes chemical digestion and absorbs digested nutrients into the bloodstream through villi [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q27",
+      "questionNumber": 17,
+      "questionText": "A learner investigates disease prevention.\n- (a) Name one communicable disease. [1 mark]\n- (b) State two ways of reducing transmission. [2 marks]\n- (c) Explain why handwashing is important. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Cholera / malaria / tuberculosis / influenza / COVID-19 [1 mark]. (b) Regular handwashing with soap; safe sanitation, immunisation, or wearing masks when ill [2 marks]. (c) Removes pathogens from hands before eating or preparing food, breaking oral-faecal transmission [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Science"
+    },
+    {
+      "id": "agrisci703_2_q28",
+      "questionNumber": 18,
+      "questionText": "A learner observes day and night.\n- (a) Name the movement responsible for day and night. [1 mark]\n- (b) State the approximate time Earth takes to complete one rotation. [1 mark]\n- (c) Explain why different places experience different times of day. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Rotation of the Earth on its axis [1 mark]. (b) 24 hours (1 day) [1 mark]. (c) As Earth rotates, different longitudes face the Sun at different times, creating time zones around the globe [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Earth and space"
+    },
+    {
+      "id": "agrisci703_2_q29",
+      "questionNumber": 19,
+      "questionText": "A class investigates water changing state.\n- (a) Name the change from liquid to gas. [1 mark]\n- (b) Name the change from gas to liquid. [1 mark]\n- (c) Give one example of each change in everyday life. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Evaporation (or boiling) [1 mark]. (b) Condensation [1 mark]. (c) Evaporation: wet clothes drying on a line. Condensation: water droplets forming on a cold bottle or lid of a boiling pot [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Matter"
+    },
+    {
+      "id": "agrisci703_2_q30",
+      "questionNumber": 20,
+      "questionText": "A learner uses a microscope to observe a specimen.\n- (a) State the purpose of a microscope. [1 mark]\n- (b) Give one rule for handling it safely. [1 mark]\n- (c) Explain why very small structures can be studied with it. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Magnifies tiny objects or cells too small to see with the naked eye [1 mark]. (b) Carry with two hands (one on arm, one under base) and clean lenses only with lens tissue [1 mark]. (c) Objective and eyepiece lenses bend light to produce a highly enlarged, detailed image of microscopic structures [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Scientific tools"
+    },
+    {
+      "id": "agrisci703_2_q31",
+      "questionNumber": 21,
+      "questionText": "A class tests a hypothesis by changing one factor at a time.\n- (a) Define hypothesis. [1 mark]\n- (b) Why should other relevant conditions be controlled? [2 marks]\n- (c) State one way of recording results. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) A testable scientific prediction/educated guess about the outcome of an experiment [1 mark]. (b) Keeping other variables constant ensures a fair test so only the factor being tested causes any observed change [2 marks]. (c) Tables, bar/line graphs, or labelled observation logs [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Scientific method"
+    },
+    {
+      "id": "agrisci703_2_q32",
+      "questionNumber": 22,
+      "questionText": "A learner finds that an iron nail rusts faster in a wet place.\n- (a) Name the change taking place. [1 mark]\n- (b) State two conditions that encourage rusting. [2 marks]\n- (c) Suggest one method of preventing rust. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Rusting (oxidation of iron) [1 mark]. (b) Moisture (water) and oxygen (air) [2 marks]. (c) Painting, oiling/greasing, galvanising (zinc coating), or keeping dry [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Changes"
+    },
+    {
+      "id": "agrisci703_2_q33",
+      "questionNumber": 23,
+      "questionText": "A learner studies magnets.\n- (a) Name one material attracted by a magnet. [1 mark]\n- (b) What happens when like poles are brought together? [1 mark]\n- (c) State one use of magnets. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Iron / steel / nickel / cobalt [1 mark]. (b) They repel each other (N-N or S-S push apart) [1 mark]. (c) Magnetic compasses, fridge doors, electric motors, or loudspeakers [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Magnetism"
+    },
+    {
+      "id": "agrisci703_2_q34",
+      "questionNumber": 24,
+      "questionText": "A family wants to reduce household waste.\n- (a) Define recycling. [1 mark]\n- (b) Give two materials that can be recycled. [2 marks]\n- (c) Explain one environmental benefit. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Processing used waste materials into new usable products [1 mark]. (b) Plastic bottles, glass, paper/cardboard, aluminium/scrap metal [2 marks]. (c) Reduces landfill waste, saves raw materials/energy, and reduces litter pollution [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Environment"
+    },
+    {
+      "id": "agrisci703_2_q35",
+      "questionNumber": 25,
+      "questionText": "A school uses computers for research and presentations.\n- (a) Name one input device. [1 mark]\n- (b) Name one output device. [1 mark]\n- (c) State one benefit of ICT in learning. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Keyboard / mouse / scanner / microphone [1 mark]. (b) Monitor / printer / speaker / projector [1 mark]. (c) Enables access to interactive educational resources, e-books, typing assignments, and visual simulations [2 marks].",
+      "answerConfidence": "high",
+      "topic": "ICT"
     }
   ]
 }

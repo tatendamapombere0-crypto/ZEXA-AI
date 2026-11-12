@@ -1,10 +1,12 @@
 import { KnowledgeStore } from './knowledgeStore';
+import { ExamBankMatcher } from './examBankMatcher';
+import { QwenEngine } from './qwenEngine';
 
 export interface GenerationOptions {
   level: string;
   hint?: string;
   history?: Array<{ question: string; answer: string }>;
-  engineType?: 'zexa-instant';
+  engineType?: 'zexa-instant' | 'qwen-neural';
   onToken: (token: string) => void;
   onComplete: (metrics: string, source?: string, suggestions?: string[]) => void;
   onError: (error: string) => void;
@@ -36,6 +38,7 @@ export class AIEngine {
 
   static stopGeneration(): void {
     this.isCancelled = true;
+    QwenEngine.stopGeneration();
   }
 
   /**
@@ -205,9 +208,11 @@ export class AIEngine {
   }
 
   /**
-  /**
-   * Main generation entry point powered exclusively by ZEXA Local Brain
-   * Delivers sub-second, 100% offline curriculum answers with multi-turn memory
+   * Main generation entry point:
+   * 1. Retrieves authoritative ZIMSEC JSON RAG bundle (Exam Banks + 8,260+ Syllabus Topics + Glossary).
+   * 2. If Qwen 2.5 (0.5B Q4_K_M GGUF) is loaded and engineType is not explicitly 'zexa-instant',
+   *    grounds Qwen strictly in the verified RAG context for super-intelligent synthesis.
+   * 3. Automatically fails over to deterministic ZEXA RAG if GGUF is awaiting upload, aborted, or times out.
    */
   static async generate(question: string, options: GenerationOptions): Promise<void> {
     this.isCancelled = false;
@@ -217,50 +222,148 @@ export class AIEngine {
       return;
     }
 
-    // Pure ZEXA Local Brain with Multi-Turn Memory & Instant Syllabus Retrieval
-    await this.generateLocal(trimmedQuestion, options);
+    const startTime = performance.now();
+
+    try {
+      const bundle = await this.retrieveGroundedBundle(trimmedQuestion, options);
+      if (this.isCancelled) {
+        options.onComplete('Cancelled by user');
+        return;
+      }
+
+      const useQwenNeural =
+        !bundle.isConversationalFastPath &&
+        options.engineType !== 'zexa-instant' &&
+        QwenEngine.isReady();
+
+      if (useQwenNeural) {
+        let streamedAnyToken = false;
+
+        const qwenFailedBeforeOutput = await new Promise<boolean>((resolve) => {
+          QwenEngine.generate(trimmedQuestion, {
+            level: options.level,
+            contextSnippet: bundle.contextSnippet,
+            sourceTag: bundle.rawResult.sourceTag,
+            history: options.history,
+            onToken: (token) => {
+              if (this.isCancelled) return;
+              streamedAnyToken = true;
+              options.onToken(token);
+            },
+            onComplete: (metrics, source) => {
+              options.onComplete(metrics, source || bundle.rawResult.sourceTag, []);
+              resolve(false);
+            },
+            onError: (_err) => {
+              if (!streamedAnyToken && !this.isCancelled) {
+                resolve(true);
+              } else {
+                options.onComplete('Stopped by user', bundle.rawResult.sourceTag, []);
+                resolve(false);
+              }
+            }
+          });
+        });
+
+        if (!qwenFailedBeforeOutput || this.isCancelled) {
+          return;
+        }
+        // Failover seamlessly to deterministic verified RAG output
+        await this.streamResult(bundle.rawResult, options, startTime, 'JSON RAG Failover');
+        return;
+      }
+
+      await this.streamResult(bundle.rawResult, options, startTime);
+    } catch (err: any) {
+      options.onError(err?.message || 'Error processing response');
+    }
   }
 
   /**
-   * Executes the instant, multi-turn aware ZEXA Local Brain
+   * Builds a hallucination-proof grounded context bundle across ExamBankMatcher,
+   * KnowledgeStore (all 127 JSON files / 8,260+ topics), and deterministic synthesis.
    */
-  private static async generateLocal(
+  private static async retrieveGroundedBundle(
     trimmedQuestion: string,
-    options: GenerationOptions,
-    metricSuffix?: string
-  ): Promise<void> {
-    const startTime = performance.now();
-    let firstTokenTime = 0;
+    options: GenerationOptions
+  ): Promise<{
+    rawResult: SynthesisResult;
+    contextSnippet: string;
+    isConversationalFastPath: boolean;
+  }> {
+    // Fast conversational path for greetings/identity/gratitude (0ms latency)
+    const fastIntent = !options.hint ? this.detectIntent(trimmedQuestion) : 'GENERAL';
+    if (fastIntent === 'GREETING' || fastIntent === 'IDENTITY' || fastIntent === 'GRATITUDE') {
+      const fastResult = this.synthesizeResponse(
+        trimmedQuestion,
+        options.level,
+        null,
+        0,
+        options.hint,
+        options.history
+      );
+      return {
+        rawResult: fastResult,
+        contextSnippet: fastResult.text,
+        isConversationalFastPath: true
+      };
+    }
 
-    try {
-      // 1. Multi-turn conversational query resolution
-      const contextual = this.resolveContextualQuery(trimmedQuestion, options.history);
-      const searchEffectiveQuery = contextual.isFollowUp ? contextual.resolvedQuery : trimmedQuestion;
+    // 1. Multi-turn conversational query resolution
+    const contextual = this.resolveContextualQuery(trimmedQuestion, options.history);
+    const searchEffectiveQuery = contextual.isFollowUp ? contextual.resolvedQuery : trimmedQuestion;
 
-      // 2. RAG search in syllabus knowledge base (strictly filtered by level)
-      let matchedChunk: any = null;
-      let matchedScore = 0;
+    // 2. Always query KnowledgeStore across indexed 127 JSON files (with cross-level fallback)
+    let matchedChunk: any = null;
+    let matchedScore = 0;
+    let extraChunks: any[] = [];
 
-      if (!options.hint) {
-        let searchResult = await KnowledgeStore.searchScored(searchEffectiveQuery, options.level);
-        if (searchResult.results.length > 0 && searchResult.results[0].score >= 350) {
-          matchedChunk = searchResult.results[0].chunk;
-          matchedScore = searchResult.results[0].score;
-        } else {
-          // Cross-level fallback: if top score in current level is low or empty, check all curriculum chunks!
-          const fallbackSearch = await KnowledgeStore.searchScored(searchEffectiveQuery, 'all');
-          if (fallbackSearch.results.length > 0 && (searchResult.results.length === 0 || fallbackSearch.results[0].score > (searchResult.results[0]?.score || 0))) {
-            matchedChunk = fallbackSearch.results[0].chunk;
-            matchedScore = fallbackSearch.results[0].score;
-          } else if (searchResult.results.length > 0) {
-            matchedChunk = searchResult.results[0].chunk;
-            matchedScore = searchResult.results[0].score;
-          }
-        }
+    if (!options.hint) {
+      const primarySearch = await KnowledgeStore.searchScored(searchEffectiveQuery, options.level);
+      const fallbackSearch =
+        primarySearch.results.length > 0 && primarySearch.results[0].score >= 350
+          ? null
+          : await KnowledgeStore.searchScored(searchEffectiveQuery, 'all');
+
+      const merged = [
+        ...(primarySearch.results || []),
+        ...(fallbackSearch?.results || [])
+      ].sort((a, b) => b.score - a.score);
+
+      const seenTopics = new Set<string>();
+      const uniqueScored = merged.filter((r) => {
+        const key = `${(r.chunk.topic || '').toLowerCase()}::${(r.chunk.subject || '').toLowerCase()}`;
+        if (seenTopics.has(key)) return false;
+        seenTopics.add(key);
+        return true;
+      });
+
+      if (uniqueScored.length > 0) {
+        matchedChunk = uniqueScored[0].chunk;
+        matchedScore = uniqueScored[0].score;
+        extraChunks = uniqueScored.slice(0, 3).map((r) => r.chunk);
       }
+    }
 
-      // 3. Synthesize conversational, question-tailored response text
-      const rawResult = this.synthesizeResponse(
+    // 3. Check ExamBankMatcher (past exam marking schemes & ZIMSEC questions)
+    let rawResult: SynthesisResult | null = null;
+    if (!options.hint) {
+      const examMatch = await ExamBankMatcher.matchQuestion(searchEffectiveQuery, options.level);
+      if (examMatch) {
+        rawResult = {
+          text: examMatch.formattedResponse,
+          sourceTag: `ZIMSEC ${examMatch.level} ${examMatch.subject} (${examMatch.paperCode || 'Exam Bank'})`,
+          suggestions: [
+            'What are the key ZIMSEC marking points for this question?',
+            'Give another practice question on this topic',
+            'How would a Level 4 candidate evaluate this?'
+          ]
+        };
+      }
+    }
+
+    if (!rawResult) {
+      rawResult = this.synthesizeResponse(
         searchEffectiveQuery,
         options.level,
         matchedChunk,
@@ -268,47 +371,72 @@ export class AIEngine {
         options.hint,
         options.history
       );
-
-      const cleanedText = this.cleanSymbols(rawResult.text);
-
-      // 4. Stream tokens to UI with realistic offline speed
-      const tokens = this.tokenizeText(cleanedText);
-      let currentIndex = 0;
-
-      return new Promise<void>((resolve) => {
-        const streamNext = () => {
-          if (this.isCancelled) {
-            options.onComplete('Cancelled by user');
-            resolve();
-            return;
-          }
-
-          if (currentIndex < tokens.length) {
-            if (firstTokenTime === 0) firstTokenTime = performance.now();
-            const token = tokens[currentIndex++];
-            options.onToken(token);
-
-            // Variable streaming speed for natural offline feel
-            const delay = Math.min(20, Math.max(4, token.length * 2));
-            setTimeout(streamNext, delay);
-          } else {
-            const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
-            const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.1';
-            const label = metricSuffix ? `ZEXA Local Brain • ${metricSuffix}` : 'ZEXA Local Brain';
-            const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ${label}`;
-            // Clean textbook-grade output: no interactive study action command buttons in chat
-            options.onComplete(metrics, rawResult.sourceTag, []);
-            resolve();
-          }
-        };
-
-        // Slight initial processing delay (0.04s)
-        setTimeout(streamNext, 40);
-      });
-
-    } catch (err: any) {
-      options.onError(err.message || 'Error processing response');
     }
+
+    // 4. Construct concise grounded context window (<= 2,350 chars for crisp 0.5B attention)
+    const contextParts: string[] = [];
+    if (rawResult.text) {
+      contextParts.push(`[VERIFIED PRIMARY REFERENCE]\n${this.cleanSymbols(rawResult.text).slice(0, 1450)}`);
+    }
+
+    for (const chunk of extraChunks) {
+      if (!chunk?.content) continue;
+      const header = `[SYLLABUS ASSET: ${chunk.subject} • ${chunk.topic} (${chunk.source || 'JSON'})]`;
+      const body = this.cleanSymbols(String(chunk.content)).slice(0, 650);
+      const currentTotal = contextParts.join('\n\n').length;
+      if (currentTotal + header.length + body.length < 2350) {
+        contextParts.push(`${header}\n${body}`);
+      }
+    }
+
+    return {
+      rawResult,
+      contextSnippet: contextParts.join('\n\n').slice(0, 2400),
+      isConversationalFastPath: false
+    };
+  }
+
+  /**
+   * Streams deterministic RAG response tokens to the UI when Qwen GGUF is awaiting upload or disabled.
+   */
+  private static async streamResult(
+    rawResult: SynthesisResult,
+    options: GenerationOptions,
+    startTime: number,
+    metricSuffix?: string
+  ): Promise<void> {
+    let firstTokenTime = 0;
+    const cleanedText = this.cleanSymbols(rawResult.text);
+    const tokens = this.tokenizeText(cleanedText);
+    let currentIndex = 0;
+
+    return new Promise<void>((resolve) => {
+      const streamNext = () => {
+        if (this.isCancelled) {
+          options.onComplete('Cancelled by user');
+          resolve();
+          return;
+        }
+
+        if (currentIndex < tokens.length) {
+          if (firstTokenTime === 0) firstTokenTime = performance.now();
+          const token = tokens[currentIndex++];
+          options.onToken(token);
+
+          const delay = Math.min(20, Math.max(4, token.length * 2));
+          setTimeout(streamNext, delay);
+        } else {
+          const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
+          const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.1';
+          const label = metricSuffix ? `ZEXA JSON RAG • ${metricSuffix}` : 'ZEXA JSON RAG';
+          const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ${label}`;
+          options.onComplete(metrics, rawResult.sourceTag, []);
+          resolve();
+        }
+      };
+
+      setTimeout(streamNext, 40);
+    });
   }
 
   /**
@@ -786,6 +914,12 @@ export class AIEngine {
       return this.generateShonaResponse(question, level, intent, matchedChunk);
     }
 
+    // Dedicated Comparison & Difference Query Resolver (RAM vs ROM, Mitosis vs Meiosis, etc.)
+    const comparisonResult = this.handleComparisonQuery(question, level, intent);
+    if (comparisonResult) {
+      return comparisonResult;
+    }
+
     // 4. Targeted Domain Handlers (History, Science, Math, Geography, Accounts, Grade 7 Curriculum)
     // Dedicated Grade 7 Heritage-Based Curriculum (HBC) Line-by-Line Question Resolver
     const hbcLineResult = this.handleGrade7HbcLineByLineQuery(question, level, intent);
@@ -1007,8 +1141,93 @@ export class AIEngine {
     }
 
     // Zimbabwe Gold (ZiG) Currency
-    if (qLower.includes('zig') || qLower.includes('currency') || qLower.includes('zimbabwe gold')) {
+    if (qLower.includes('zig') || (qLower.includes('currency') && qLower.includes('zimbabwe')) || qLower.includes('zimbabwe gold')) {
       return this.handleZiGQuery(question, level, intent);
+    }
+
+    // Heritage-Based Curriculum (2024-2030), CALA Scrap, School-Based Projects (SBP), 5 O-Level Core Subjects
+    if (
+      qLower.includes('cala') ||
+      qLower.includes('heritage based curriculum') ||
+      qLower.includes('heritage-based curriculum') ||
+      qLower.includes('school based project') ||
+      qLower.includes('school-based project') ||
+      qLower.includes('sbp') ||
+      qLower.includes('two route') ||
+      qLower.includes('two-route') ||
+      (qLower.includes('compulsory') && qLower.includes('subject'))
+    ) {
+      return this.handleHeritageBasedCurriculumAndCalaQuery(question, level, intent);
+    }
+
+    // Circle Theorems (O-Level & A-Level Mathematics)
+    if (
+      qLower.includes('circle theorem') ||
+      qLower.includes('cyclic quad') ||
+      qLower.includes('alternate segment') ||
+      (qLower.includes('angle') && qLower.includes('semicircle')) ||
+      (qLower.includes('angle') && qLower.includes('centre') && qLower.includes('circumference'))
+    ) {
+      return this.handleCircleTheoremsQuery(question, level, intent);
+    }
+
+    // Earth Geometry (O-Level & A-Level Mathematics)
+    if (
+      qLower.includes('earth geometry') ||
+      qLower.includes('nautical mile') ||
+      qLower.includes('great circle') ||
+      qLower.includes('small circle') ||
+      (qLower.includes('parallel of latitude') && (qLower.includes('distance') || qLower.includes('calculate')))
+    ) {
+      return this.handleEarthGeometryQuery(question, level, intent);
+    }
+
+    // Mining in Zimbabwe & The Great Dyke (Geography & Heritage Studies)
+    if (
+      qLower.includes('great dyke') ||
+      (qLower.includes('mining') && (qLower.includes('zimbabwe') || qLower.includes('problem') || qLower.includes('impact') || qLower.includes('makorokoza') || qLower.includes('artisanal'))) ||
+      qLower.includes('makorokoza')
+    ) {
+      return this.handleMiningAndGreatDykeQuery(question, level, intent);
+    }
+
+    // Macroeconomic Policies: Fiscal Policy vs Monetary Policy (Economics, Business, Commerce)
+    if (
+      qLower.includes('fiscal policy') ||
+      qLower.includes('monetary policy') ||
+      (qLower.includes('reserve bank') && qLower.includes('inflation')) ||
+      (qLower.includes('policy') && (qLower.includes('inflation') || qLower.includes('rbz')))
+    ) {
+      return this.handleFiscalAndMonetaryPolicyQuery(question, level, intent);
+    }
+
+    // Genetics, Punnett Squares & Monohybrid Inheritance (Combined Science & Biology)
+    if (
+      qLower.includes('punnett') ||
+      qLower.includes('monohybrid') ||
+      (qLower.includes('homozygous') && qLower.includes('heterozygous')) ||
+      (qLower.includes('genotype') && qLower.includes('phenotype')) ||
+      (qLower.includes('allele') && qLower.includes('dominant'))
+    ) {
+      return this.handleGeneticsAndInheritanceQuery(question, level, intent);
+    }
+
+    // Explicit definition/state queries: Prioritize exact glossary law/definition match
+    if (
+      qLower.startsWith('state ') ||
+      qLower.startsWith('define ') ||
+      qLower.startsWith('what is the definition of') ||
+      qLower.startsWith('give the definition of') ||
+      qLower.startsWith('what is the law of')
+    ) {
+      const explicitGlossary = this.handleUniversalGlossaryQuery(question, level, intent);
+      if (explicitGlossary) return explicitGlossary;
+    }
+
+    // High-confidence curriculum asset match (from the 5,928 topics across all 125 syllabus JSON files)
+    // Takes precedence over 1-sentence dictionary lookups so full detailed explanations with steps/points are delivered
+    if (matchedChunk && matchedScore >= 180) {
+      return this.restructureSyllabusChunk(question, level, matchedChunk, intent);
     }
 
     // Universal Curriculum Glossary & Terminology (Across All Education Levels: Primary, O-Level, A-Level)
@@ -1162,6 +1381,7 @@ Official Curriculum Subjects Covered:
       q === 'subjects in grade 7' ||
       q.includes('grade seven subjects') ||
       q.includes('grade 7 subject') ||
+      (q.includes('subject') && (q.includes('grade 7') || q.includes('grade seven') || q.includes('primary') || q.includes('examinable') || q.includes('six') || q.includes('6'))) ||
       (q.includes('curriculum') && (q.includes('primary') || q.includes('grade 7')));
 
     // 2. Detect inquiries about Grading System, Units (1 to 9), Aggregate 6, Results slip, Pass mark
@@ -3398,6 +3618,382 @@ Assets = Capital + Liabilities
         'What is a structured currency?',
         'How does gold backing stabilize purchasing power?',
         'What are the primary functions of money in commerce?'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Zimbabwe Heritage-Based Curriculum (2024–2030), CALA Scrap & School-Based Projects
+   */
+  private static handleHeritageBasedCurriculumAndCalaQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    const q = question.toLowerCase();
+
+    // Specific sub-inquiries
+    if (q.includes('cala') && (q.includes('remove') || q.includes('scrap') || q.includes('replace') || q.includes('what happened') || q.includes('still there') || q.includes('gone'))) {
+      return {
+        text: `### The Scrapping of CALA & Introduction of School-Based Projects (SBP)
+
+**Direct Answer:** **Continuous Assessment Learning Activities (CALA) were officially scrapped** by the Ministry of Primary and Secondary Education and the Government of Zimbabwe in April 2024. They have been replaced by **School-Based Projects (SBPs)** under the **Heritage-Based Curriculum (2024–2030)**.
+
+---
+
+### 1. Why Was CALA Removed?
+- **High Financial Cost:** Pupils and parents complained about excessive printing, photocopying, and materials expenses.
+- **Curriculum & Workload Overload:** Learners had to complete multiple bulky research portfolios per subject, causing extreme stress and fatigue.
+- **Academic Dishonesty:** Due to complex tasks beyond age levels, parents or third-party paid services frequently completed projects for pupils rather than pupils doing real learning.
+- **Lack of Rural Infrastructure:** Many rural students lacked internet access, printers, and research materials required by the old CALA guidelines.
+
+---
+
+### 2. How Do the New School-Based Projects (SBPs) Work?
+1. **Conducted Inside the School:** Projects are hands-on, practical investigations executed during regular school hours under teacher supervision—eliminating commercial homework assistance.
+2. **Drastically Reduced Volume:** Instead of dozens of portfolio components, learners complete focused practical projects integrated directly into learning areas.
+3. **Community Problem Solving:** Projects emphasize local Zimbabwean needs, e.g., organic fertilizers in Agriculture, water conservation, community history documentation, or simple software coding.
+4. **Contribution to ZIMSEC:** School-Based Project marks are verified by school clusters and ZIMSEC monitors and contribute directly to the candidate's final examination score.`,
+        sourceTag: 'ZIMSEC & MoPSE Curriculum Policy • Heritage-Based Curriculum 2024–2030',
+        suggestions: [
+          'What are the 5 compulsory O-Level subjects?',
+          'How does the two-route system work?',
+          'What is the goal of the Heritage-Based Curriculum?'
+        ]
+      };
+    }
+
+    if (q.includes('compulsory') || q.includes('core subject') || q.includes('5 subjects') || q.includes('five subjects')) {
+      return {
+        text: `### The 5 Compulsory Core Subjects at ZIMSEC O-Level (Heritage-Based Curriculum)
+
+**Direct Answer:** Under the **Heritage-Based Curriculum (2024–2030)**, all secondary school candidates in Zimbabwe must sit for **5 compulsory core subjects**:
+
+1. **ENGLISH LANGUAGE:** Universal national medium of instruction, communication, and formal business.
+2. **MATHEMATICS:** Foundational numeracy, problem solving, algebraic thinking, and quantitative reasoning.
+3. **INDIGENOUS LANGUAGE:** ChiShona, IsiNdebele, or officially recognized local language (Kalanga, Tonga, Venda, Shangani, Nambya) fostering mother-tongue mastery and linguistic preservation.
+4. **COMBINED SCIENCE:** Integrated physical, chemical, and biological sciences equipping all students with foundational scientific literacy.
+5. **HERITAGE STUDIES:** Compulsory across all academic, science, and commercial streams to foster national identity, sovereignty awareness, patriotism, constitutional rights, and the ethical philosophy of *Unhu/Ubuntu*.
+
+---
+
+### Elective Pathways
+In addition to the 5 compulsory core subjects, learners select **2 to 3 elective subjects** aligned with their desired career pathway (e.g., Geography, History, Commerce, Accounts, Computer Science, Agriculture, Building, Technical Graphics, Food & Nutrition), typically writing a total of **7 to 8 subjects** at Form 4.`,
+        sourceTag: 'ZIMSEC & MoPSE Policy • Secondary Education Framework',
+        suggestions: [
+          'What happened to CALA?',
+          'What is the Two-Route System?',
+          'What are the 6 Grade 7 examinable subjects?'
+        ]
+      };
+    }
+
+    // General Heritage-Based Curriculum overview
+    return {
+      text: `### The Zimbabwe Heritage-Based Curriculum (2024–2030) Overview
+
+**Direct Answer:** The **Heritage-Based Curriculum (HBC 2024–2030)** is Zimbabwe's national primary and secondary education framework designed to anchor learning in Zimbabwe's natural resources, cultural heritage, history, and industrial development (**Education 5.0** thrust).
+
+---
+
+### 1. Core Pillars of the Curriculum
+- **National Identity & Unhu/Ubuntu:** Emphasizing cultural ethics, social responsibility, integrity, and patriotism.
+- **Science, Technology, Engineering & Innovation (STEM):** Equipping learners with practical problem-solving skills to convert natural resources into finished goods.
+- **Technical & Vocational Training (TVET):** Producing graduates capable of job creation and entrepreneurship rather than just job-seeking.
+
+---
+
+### 2. Key Structural Upgrades
+1. **Scrapping of CALA:** Replaced by practical, school-supervised **School-Based Projects (SBPs)** that eliminate expensive home printing and parental homework burdens.
+2. **Curriculum Streamlining:** Reduced the total number of learning areas to eliminate pupil overload (condensed down to 6 subjects at Grade 7 and 5 core compulsory subjects at O-Level).
+3. **The Two-Route High School System:**
+   - **Academic Route:** For learners proceeding to conventional universities and professional academic careers.
+   - **Vocational Route:** For learners focusing on skilled industrial trades (Building, Carpentry, Automotive, Electrical, Fashion, Commercial Agriculture) certified under national trade test qualifications.`,
+      sourceTag: 'Ministry of Primary & Secondary Education • Curriculum Framework 2024–2030',
+      suggestions: [
+        'What happened to CALA?',
+        'What are the 5 compulsory O-Level subjects?',
+        'How are Grade 7 exams graded?'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Circle Theorems (O-Level & A-Level Mathematics)
+   */
+  private static handleCircleTheoremsQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    return {
+      text: `### ZIMSEC O-Level & A-Level Mathematics: Circle Theorems
+
+**Direct Answer:** Circle theorems are geometric rules describing the angle and line properties of circles. In ZIMSEC Mathematics Paper 2, candidates **must write the exact theorem reason** alongside their calculations to receive full marks.
+
+---
+
+### 1. The 8 Examinable Circle Theorems & Official Reasons
+
+#### 1. Angle at Centre Theorem
+- **Rule:** The angle subtended by an arc at the centre of a circle is twice the angle subtended by it at any point on the circumference.
+- **Formula:** $\\angle AOB = 2 \\times \\angle APB$.
+- **ZIMSEC Marking Reason:** *$\\angle$ at centre is twice $\\angle$ at circumference*.
+
+#### 2. Angle in a Semicircle
+- **Rule:** The angle subtended by a diameter at the circumference is a right angle ($90^\\circ$).
+- **Formula:** If $AB$ is a diameter, $\\angle APB = 90^\\circ$.
+- **ZIMSEC Marking Reason:** *$\\angle$ in a semicircle $= 90^\\circ$*.
+
+#### 3. Angles in the Same Segment
+- **Rule:** Angles subtended by the same chord or arc in the same segment of a circle are equal.
+- **Formula:** $\\angle APB = \\angle AQB$.
+- **ZIMSEC Marking Reason:** *$\\angle$s in same segment are equal*.
+
+#### 4. Opposite Angles of a Cyclic Quadrilateral
+- **Rule:** The opposite angles of a cyclic quadrilateral (a four-sided figure whose four vertices lie on the circumference) sum to $180^\\circ$ (supplementary).
+- **Formula:** $\\angle A + \\angle C = 180^\\circ$ and $\\angle B + \\angle D = 180^\\circ$.
+- **ZIMSEC Marking Reason:** *opp $\\angle$s of cyclic quad $= 180^\\circ$*.
+
+#### 5. Exterior Angle of a Cyclic Quadrilateral
+- **Rule:** The exterior angle of a cyclic quadrilateral is equal to the interior opposite angle.
+- **ZIMSEC Marking Reason:** *ext $\\angle$ of cyclic quad $=$ int opp $\\angle$*.
+
+#### 6. Radius-Tangent Perpendicularity
+- **Rule:** A tangent to a circle forms a $90^\\circ$ right angle with the radius at the point of contact.
+- **Formula:** $OT \\perp PT \\implies \\angle OTP = 90^\\circ$.
+- **ZIMSEC Marking Reason:** *tangent $\\perp$ radius*.
+
+#### 7. Tangents from an External Point
+- **Rule:** Tangents drawn to a circle from the same external point are equal in length and form congruent right-angled triangles.
+- **Formula:** $TA = TB$.
+- **ZIMSEC Marking Reason:** *tangents from common external point are equal*.
+
+#### 8. The Alternate Segment Theorem
+- **Rule:** The angle between a tangent and a chord drawn through the point of contact is equal to the angle subtended by the chord in the alternate segment.
+- **Formula:** $\\angle TAB = \\angle ACB$.
+- **ZIMSEC Marking Reason:** *$\\angle$ in alternate segment*.`,
+      sourceTag: 'ZIMSEC Mathematics (4004/2 & 6042) • Circle Geometry',
+      suggestions: [
+        'How to solve Earth Geometry in Maths Paper 2',
+        'State the Quadratic Formula with an example',
+        'State the Sine Rule and Cosine Rule'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Earth Geometry (O-Level & A-Level Mathematics)
+   */
+  private static handleEarthGeometryQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    return {
+      text: `### ZIMSEC O-Level Mathematics: Earth Geometry (Paper 2)
+
+**Direct Answer:** Earth Geometry models the Earth as a sphere of radius $R = 6400\\text{ km}$ (or $R = 3437\\text{ nautical miles}$) to calculate distances, flight times, and navigational coordinates.
+
+---
+
+### 1. Great Circles vs Small Circles
+- **Great Circle:** Any circle whose plane passes through the **centre of the Earth**.
+  - *Examples:* The **Equator** ($0^\\circ$) and **all meridians of longitude** (e.g. Greenwich Meridian $0^\\circ$, $180^\\circ$).
+  - *Significance:* The shortest distance between any two points on a sphere is along the arc of a great circle.
+- **Small Circle:** Any circle on the sphere whose plane does **not** pass through the centre of the Earth.
+  - *Examples:* All **parallels of latitude** except the Equator (e.g., $20^\\circ\\text{S}$, $60^\\circ\\text{N}$).
+
+---
+
+### 2. Core Distance Formulae
+
+#### A. Distance Along a Great Circle (Same Longitude / Equator)
+When two points lie on the same meridian of longitude with an angular latitude difference of $\\theta^\\circ$:
+$$\\text{Distance } (D) = \\frac{\\theta}{360} \\times 2\\pi R \\quad (\\text{in kilometres, where } R = 6400\\text{ km})$$
+$$\\text{Distance } (D) = 60 \\times \\theta \\quad (\\text{in nautical miles, nm})$$
+*(Because $1^\\circ$ of arc along any great circle equals exactly $60\\text{ nautical miles}$)*.
+
+#### B. Distance Along a Parallel of Latitude (Small Circle)
+When two points lie on the **same latitude $\\alpha^\\circ$** with a longitudinal difference of $\\theta^\\circ$:
+$$\\text{Distance } (d) = \\frac{\\theta}{360} \\times 2\\pi R \\cos\\alpha \\quad (\\text{in kilometres})$$
+$$\\text{Distance } (d) = 60 \\times \\theta \\cos\\alpha \\quad (\\text{in nautical miles, nm})$$
+
+---
+
+### 3. Navigation, Speed & Time Calculations
+- **Knots:** Speed in navigation is measured in **knots** ($1\\text{ knot} = 1\\text{ nautical mile per hour}$).
+  $$\\text{Time (hours)} = \\frac{\\text{Distance in nautical miles}}{\\text{Speed in knots}}$$
+- **Longitude and Solar Time:** The Earth rotates $360^\\circ$ in 24 hours:
+  - $15^\\circ \\text{ longitude} = 1\\text{ hour}$ ($60\\text{ minutes}$).
+  - $1^\\circ \\text{ longitude} = 4\\text{ minutes}$.
+  - Points to the **East** are **ahead in time**; points to the **West** are **behind in time** (*East gain, West lose*).`,
+      sourceTag: 'ZIMSEC Mathematics (4004/2) • Earth Geometry & Navigation',
+      suggestions: [
+        'State the Circle Theorems and reasons',
+        'State the Sine Rule and Cosine Rule',
+        'How to calculate bearings in Mathematics'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Mining in Zimbabwe & The Great Dyke (Geography & Heritage Studies)
+   */
+  private static handleMiningAndGreatDykeQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    return {
+      text: `### Mining in Zimbabwe & The Great Dyke Geological Formation
+
+**Direct Answer:** Mining is the primary driver of Zimbabwe's industrial economy, accounting for over **60% to 70% of national export earnings**. The central geological anchor of Zimbabwe's mineral wealth is **The Great Dyke**.
+
+---
+
+### 1. What is The Great Dyke?
+- **Geological Structure:** A linear layered igneous intrusion stretching approximately **550 kilometres** from north-north-east to south-south-west through the heart of Zimbabwe, with widths varying between 4 and 11 kilometres.
+- **Strategic Minerals:**
+  - **Platinum Group Metals (PGMs):** Zimbabwe holds the **second-largest platinum reserves in the world** (after South Africa's Bushveld Complex). Major operations include **Zimplats (Ngezi/Selous)**, **Mimosa (Zvishavane)**, and **Unki (Shurugwi)**.
+  - **Chromite (Chrome):** Extensive stratiform seams extracted along the dyke (e.g., Mutorashanga and Shurugwi).
+  - **Nickel, Copper, and Cobalt:** Extracted as valuable co-products during PGM and base-metal refining.
+
+---
+
+### 2. Economic Contributions of Mining in Zimbabwe
+1. **Foreign Exchange Generation:** Primary exporter of gold, PGMs, lithium (e.g. Bikita Minerals, Arcadia Lithium), and diamonds (Chiadzwa/Marange).
+2. **Employment:** Provides direct livelihood to over 100,000 formal miners and an estimated 500,000+ artisanal/small-scale miners.
+3. **Infrastructure Development:** Spurred construction of heavy rail corridors, road networks, housing estates, and thermal/hydro power stations (e.g. Hwange Power Station).
+
+---
+
+### 3. Environmental & Social Problems of Artisanal Mining (*Makorokoza*)
+In ZIMSEC Geography Paper 2 exam questions, candidates must identify key negative externalities:
+- **River Siltation:** Illegal alluvial gold panning directly inside river channels (e.g. Mazowe, Runde, Save) chokes waterways with sand and sediment.
+- **Toxic Heavy Metal Contamination:** Uncontrolled use of **mercury and cyanide** to extract gold contaminates drinking water reservoirs, causing bioaccumulation and poisoning aquatic ecosystems.
+- **Open Trenches & Land Degradation:** Panners dig deep shafts without backfilling, leaving death traps for livestock and destroying valuable arable soil.
+- **Deforestation:** Cutting down surrounding forests for timber to support underground shafts and for firewood.
+- **Shaft Collapses:** Frequent fatal entrapments during rainy seasons due to poor structural reinforcement.`,
+      sourceTag: 'ZIMSEC Geography (2248/2 & 6037) • Economic Geography & Mining',
+      suggestions: [
+        'What are the 5 Natural Farming Regions of Zimbabwe?',
+        'Explain the causes of rural-urban migration',
+        'Explain river meander and oxbow lake formation'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Macroeconomic Policies (Fiscal vs Monetary Policy in Zimbabwe)
+   */
+  private static handleFiscalAndMonetaryPolicyQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    return {
+      text: `### Macroeconomic Stabilization in Zimbabwe: Fiscal Policy vs Monetary Policy
+
+**Direct Answer:** Governments use two primary policy tools to manage macroeconomic performance, curb inflation, and foster economic growth: **Fiscal Policy** (taxation and government spending) and **Monetary Policy** (money supply, interest rates, and currency management).
+
+---
+
+### 1. Fiscal Policy (Ministry of Finance)
+Fiscal policy involves decisions made by the **Ministry of Finance, Economic Development and Investment Promotion** regarding taxation and public expenditure.
+
+- **Expansionary Fiscal Policy:**
+  - *Actions:* Decreasing taxes (income tax, VAT) and increasing government capital expenditure (infrastructure, dam construction, road rehabilitation).
+  - *Goal:* Stimulate aggregate demand ($AD = C + I + G + (X - M)$), encourage business investment, and reduce unemployment.
+- **Contractionary Fiscal Policy:**
+  - *Actions:* Raising taxes and trimming government spending.
+  - *Goal:* Reduce budget deficits and curb demand-pull inflationary pressures.
+
+---
+
+### 2. Monetary Policy (Reserve Bank of Zimbabwe - RBZ)
+Monetary policy is managed exclusively by the **Reserve Bank of Zimbabwe (RBZ)** to preserve currency purchasing power and exchange rate stability.
+
+- **Key RBZ Instruments:**
+  1. **Policy Interest Rate:** Dictates the cost of borrowing for commercial banks. Raising rates discourages speculative borrowing and curbs inflation.
+  2. **Statutory Reserve Requirements:** The percentage of client deposits commercial banks are legally mandated to keep at the central bank, controlling bank lending capacity.
+  3. **Open Market Operations (OMO):** The buying or selling of Treasury Bills (T-Bills) to absorb or inject liquidity into the banking system.
+  4. **The Zimbabwe Gold (ZiG) Anchor:** Ensuring currency in circulation is backed by certified physical gold bullion and foreign reserves in the central bank vault.
+
+---
+
+### 3. Comparison Summary Table
+
+| Feature | Fiscal Policy | Monetary Policy |
+| :--- | :--- | :--- |
+| **Authority** | Ministry of Finance | Reserve Bank of Zimbabwe (RBZ) |
+| **Main Tools** | Taxation (direct/indirect) & Government Spending | Interest rates, money supply, reserve ratios, OMO |
+| **Target Areas** | Public services, infrastructure, income redistribution | Inflation, exchange rate stability, banking liquidity |
+| **Implementation** | Annual National Budget Speech & Finance Bills | Periodic Monetary Policy Statements (MPS) |`,
+      sourceTag: 'ZIMSEC Economics (6073) & Commerce (4049) • Macroeconomics',
+      suggestions: [
+        'What is consumer surplus and producer surplus?',
+        'How is the Zimbabwe Gold (ZiG) currency backed?',
+        'What are the advantages of a private limited company?'
+      ]
+    };
+  }
+
+  /**
+   * Dedicated Handler: Genetics, Punnett Squares & Monohybrid Cross (Science & Biology)
+   */
+  private static handleGeneticsAndInheritanceQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult {
+    return {
+      text: `### ZIMSEC Combined Science & Biology: Genetics, Punnett Squares & Inheritance
+
+**Direct Answer:** Genetics is the study of heredity and the variation of inherited characteristics. In ZIMSEC examinations, candidates are frequently required to state genetic definitions and set out full **monohybrid genetic crosses**.
+
+---
+
+### 1. Essential ZIMSEC Genetic Definitions
+- **Gene:** A length of DNA on a chromosome that codes for a specific protein or phenotypic trait.
+- **Allele:** An alternative version of a gene (e.g. $T$ for tall allele, $t$ for dwarf allele).
+- **Dominant Allele:** An allele that expresses itself in the phenotype whether in homozygous or heterozygous condition ($T$).
+- **Recessive Allele:** An allele that is only expressed in the phenotype when homozygous ($t$).
+- **Homozygous:** Having two identical alleles for a particular gene (e.g. $TT$ homozygous dominant, $tt$ homozygous recessive).
+- **Heterozygous:** Having two different alleles for a particular gene (e.g. $Tt$).
+- **Genotype:** The genetic composition of an organism (the alleles present, e.g. $Bb$).
+- **Phenotype:** The observable physical or physiological appearance of an organism resulting from genotype and environmental interaction (e.g. Brown eyes).
+
+---
+
+### 2. Standard Monohybrid Genetic Cross Format
+*Question Example: Show the cross between two heterozygous tall pea plants ($Tt \\times Tt$)*:
+
+1. **Parental Phenotypes:** Tall plant $\\times$ Tall plant
+2. **Parental Genotypes:** $Tt \\times Tt$
+3. **Gametes:** $(T)$, $(t) \\times (T)$, $(t)$
+4. **Punnett Square:**
+
+| | **T** | **t** |
+| :---: | :---: | :---: |
+| **T** | **TT** (Tall) | **Tt** (Tall) |
+| **t** | **Tt** (Tall) | **tt** (Dwarf/Short) |
+
+5. **Offspring Genotypic Ratio:** $1\\ TT : 2\\ Tt : 1\\ tt$ ($1:2:1$)
+6. **Offspring Phenotypic Ratio:** $3\\ \\text{Tall} : 1\\ \\text{Short}$ ($3:1$)
+
+---
+
+### 3. Sex Determination in Humans
+- Humans have 23 pairs of chromosomes (46 total): 22 pairs of autosomes and 1 pair of **sex chromosomes**.
+- **Female Genotype:** $XX$ (produces only $X$ eggs).
+- **Male Genotype:** $XY$ (produces 50% $X$ sperm and 50% $Y$ sperm).
+- **Inheritance Rule:** The father's sperm determines the biological sex of the child. When an $X$ egg is fertilized by a $Y$ sperm $\\rightarrow$ Boy ($XY$). When an $X$ egg is fertilized by an $X$ sperm $\\rightarrow$ Girl ($XX$). There is always a **$50\\% : 50\\%$ (1:1)** probability at fertilization.`,
+      sourceTag: 'ZIMSEC Combined Science (4003) & Biology (4025/6030) • Genetics',
+      suggestions: [
+        'Explain the process of photosynthesis',
+        'What is the difference between mitosis and meiosis?',
+        'Explain diffusion, osmosis, and active transport'
       ]
     };
   }
@@ -6591,6 +7187,12 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
     intent: QuestionIntent
   ): SynthesisResult | null {
     const qLower = question.toLowerCase().trim();
+    const normLevel = (level || '').toLowerCase();
+
+    // Guard: Do not intercept O-Level or A-Level questions with Primary Grade 7 HBC answers unless explicitly asked
+    if ((normLevel.includes('olevel') || normLevel.includes('alevel')) && !qLower.includes('grade 7') && !qLower.includes('primary')) {
+      return null;
+    }
 
     // Do not intercept if question is asking for detailed multi-step comparison or math calculation
     if (
@@ -6626,6 +7228,15 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
     level: string,
     intent: QuestionIntent
   ): SynthesisResult | null {
+    const normLevel = (level || '').toLowerCase();
+    const qLower = question.toLowerCase().trim();
+
+    // Guard: Do not intercept Primary or A-Level questions with O-Level Biology unless query explicitly relates to biology
+    if (normLevel.includes('primary') || normLevel.includes('alevel')) {
+      const isBioQuery = qLower.includes('bio') || qLower.includes('cell') || qLower.includes('enzyme') || qLower.includes('photosynthesis') || qLower.includes('osmosis') || qLower.includes('respiration') || qLower.includes('digestion');
+      if (!isBioQuery) return null;
+    }
+
     const entry = KnowledgeStore.lookupOLevelBiologyQuestion(question);
     if (!entry) return null;
 
@@ -6660,8 +7271,14 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
       qLower.includes('calculate') ||
       qLower.includes('solve') ||
       qLower.includes('how many subjects') ||
+      qLower.includes('six examinable subjects') ||
       qLower.includes('units 1 to 9') ||
-      qLower.includes('grading system')
+      qLower.includes('grading system') ||
+      qLower.includes('formation of') ||
+      qLower.includes('components of') ||
+      qLower.includes('process of') ||
+      qLower.includes('how does') ||
+      qLower.includes('surplus')
     ) {
       return null;
     }
@@ -6685,6 +7302,273 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
         `How is ${entry.canonicalName} examined in ZIMSEC?`
       ]
     };
+  }
+
+  /**
+   * Dedicated Comparison & Difference Resolver for standard ZIMSEC curriculum comparisons
+   */
+  private static handleComparisonQuery(
+    question: string,
+    level: string,
+    intent: QuestionIntent
+  ): SynthesisResult | null {
+    const q = question.toLowerCase();
+    const isComparison =
+      intent === 'COMPARISON' ||
+      q.includes('difference between') ||
+      q.includes('compare') ||
+      q.includes('versus') ||
+      q.includes(' vs ') ||
+      q.includes('kusiyana');
+
+    if (!isComparison) return null;
+
+    // 1. RAM vs ROM
+    if ((q.includes('ram') && q.includes('rom')) || (q.includes('random access') && q.includes('read only'))) {
+      return {
+        text: `### Computer Science: Difference Between RAM and ROM
+
+**Direct Answer:** **RAM (Random Access Memory)** is volatile, high-speed temporary working memory used while programs are active, whereas **ROM (Read-Only Memory)** is non-volatile, permanent memory containing factory boot instructions (BIOS).
+
+1. Key Comparison Points:
+- **Volatility:** RAM is volatile (its contents are completely erased when power is lost); ROM is non-volatile (retains data permanently without power).
+- **Read / Write:** RAM supports high-speed reading and writing; ROM is read-only during normal operation.
+- **Function:** RAM holds active apps, operating system tasks, and current student data; ROM holds the initial bootstrap program (BIOS) needed to power on the computer.
+- **Capacity:** RAM typically ranges from 4GB to 32GB; ROM is much smaller (typically 4MB to 8MB).
+
+2. Summary Comparison Table:
+| Feature | RAM (Random Access Memory) | ROM (Read-Only Memory) |
+| :--- | :--- | :--- |
+| **Data Retention** | Volatile (lost on power-off) | Non-volatile (permanent) |
+| **Operation** | Read and Write enabled | Read Only |
+| **Main Content** | Active software & data | Startup BIOS firmware |
+| **Speed & Size** | Faster, larger capacity | Slower, smaller capacity |`,
+        sourceTag: `ZIMSEC ${level} Computer Science • Hardware & Memory`,
+        suggestions: [
+          'What are the main functions of the CPU?',
+          'What is the difference between primary and secondary storage?',
+          'Explain the fetch-decode-execute cycle'
+        ]
+      };
+    }
+
+    // 2. Consumer Surplus vs Producer Surplus
+    if (q.includes('surplus') && (q.includes('consumer') || q.includes('producer'))) {
+      return {
+        text: `### Economics: Consumer Surplus vs Producer Surplus
+
+**Direct Answer:** **Consumer Surplus** is the economic benefit gained by buyers when they pay less than what they were willing to pay, whereas **Producer Surplus** is the benefit gained by sellers when they receive a market price higher than the minimum cost they were willing to accept.
+
+1. Consumer Surplus (Buyer Benefit):
+- **Definition:** The difference between the maximum price consumers are willing and able to pay for a good and the actual equilibrium market price they pay.
+- **Graphical Area:** Represented on a supply and demand diagram as the triangular area **below the demand curve and above the market equilibrium price**.
+- **Impact of Price Changes:** When market price falls, consumer surplus increases.
+
+2. Producer Surplus (Seller Benefit):
+- **Definition:** The difference between the actual price producers receive for a good and the minimum supply price at which they were willing to sell it (their marginal cost).
+- **Graphical Area:** Represented as the triangular area **above the supply curve and below the market equilibrium price**.
+- **Impact of Price Changes:** When market price rises, producer surplus increases.
+
+3. Total Economic Welfare & Market Equilibrium:
+- **Total Social Welfare = Consumer Surplus + Producer Surplus.**
+- Maximized at free market equilibrium without government price controls or deadweight loss.`,
+        sourceTag: `ZIMSEC ${level} Economics • Microeconomics & Price Theory`,
+        suggestions: [
+          'What is deadweight loss in economics?',
+          'How does a price ceiling affect consumer surplus?',
+          'Explain price elasticity of demand'
+        ]
+      };
+    }
+
+    // 3. Respiration vs Breathing
+    if ((q.includes('respiration') && q.includes('breathing')) || (q.includes('respiration') && q.includes('ventilation'))) {
+      return {
+        text: `### Biology: Difference Between Respiration and Breathing
+
+**Direct Answer:** **Breathing (Ventilation)** is a mechanical/physical process of inhaling and exhaling air into and out of the lungs, whereas **Respiration** is a biochemical cellular process occurring in all living cells to release energy (ATP) from glucose.
+
+1. Core Comparison Points:
+- **Nature of Process:** Breathing is physical/mechanical; respiration is biochemical/cellular.
+- **Location:** Breathing occurs in respiratory organs (lungs, gills, spiracles); respiration occurs inside the cytoplasm and mitochondria of every cell.
+- **Energy:** Breathing consumes energy for muscular contraction (diaphragm and intercostal muscles); respiration produces energy in the form of ATP.
+- **Enzymes:** Breathing does not use enzymes; cellular respiration is controlled by a sequence of intracellular enzymes.`,
+        sourceTag: `ZIMSEC ${level} Biology • Gaseous Exchange & Energy`,
+        suggestions: [
+          'What is the difference between aerobic and anaerobic respiration?',
+          'Describe the mechanism of inhalation and exhalation',
+          'Write the balanced equation for aerobic respiration'
+        ]
+      };
+    }
+
+    // 4. Aerobic vs Anaerobic Respiration
+    if (q.includes('aerobic') && q.includes('anaerobic')) {
+      return {
+        text: `### Biology: Aerobic vs Anaerobic Respiration
+
+**Direct Answer:** **Aerobic respiration** is the breakdown of glucose in the presence of oxygen to release a large amount of energy (36–38 ATP), producing carbon dioxide and water; **Anaerobic respiration** is the breakdown of glucose without oxygen, yielding much less energy (2 ATP) and producing lactic acid (in humans) or ethanol and CO₂ (in yeast).
+
+1. Summary Comparison:
+| Feature | Aerobic Respiration | Anaerobic Respiration |
+| :--- | :--- | :--- |
+| **Oxygen Required?** | Yes | No |
+| **Location** | Cytoplasm & Mitochondria | Cytoplasm only |
+| **Energy Yield** | High (~38 ATP per glucose) | Low (2 ATP per glucose) |
+| **End Products (Mammals)** | Carbon dioxide (CO₂) + Water (H₂O) | Lactic acid (causes muscle fatigue) |
+| **End Products (Yeast)** | CO₂ + H₂O | Ethanol + CO₂ (fermentation) |
+| **Word Equation** | Glucose + Oxygen → Carbon dioxide + Water + Energy | Glucose → Lactic acid + Energy (muscles) |`,
+        sourceTag: `ZIMSEC ${level} Biology • Respiration & Metabolism`,
+        suggestions: [
+          'What is oxygen debt and how is it repaid?',
+          'Describe an experiment to show that germinating seeds produce heat',
+          'Explain the industrial uses of yeast fermentation'
+        ]
+      };
+    }
+
+    // 5. Mitosis vs Meiosis
+    if (q.includes('mitosis') && q.includes('meiosis')) {
+      return {
+        text: `### Biology: Difference Between Mitosis and Meiosis
+
+**Direct Answer:** **Mitosis** is a type of cell division that produces two genetically identical diploid daughter cells for growth and tissue repair; **Meiosis** is a reduction division that produces four genetically diverse haploid daughter cells (gametes) for sexual reproduction.
+
+1. Comparison Table:
+| Feature | Mitosis | Meiosis |
+| :--- | :--- | :--- |
+| **Purpose** | Growth, tissue repair, asexual reproduction | Production of gametes (sperm & ova) |
+| **Location** | Somatic (body) cells | Gonads (testes & ovaries) |
+| **Divisions** | 1 nuclear division | 2 successive nuclear divisions |
+| **Daughter Cells** | 2 daughter cells | 4 daughter cells |
+| **Chromosome Number** | Diploid (2n) — unchanged | Haploid (n) — halved |
+| **Genetic Variation** | Identical clones (no crossing over) | Genetically diverse (crossing over & independent assortment) |`,
+        sourceTag: `ZIMSEC ${level} Biology • Genetics & Cell Division`,
+        suggestions: [
+          'What happens during crossing over in meiosis?',
+          'Outline the stages of mitosis (PMAT)',
+          'What are the advantages of sexual vs asexual reproduction?'
+        ]
+      };
+    }
+
+    // 6. Kwashiorkor vs Marasmus
+    if (q.includes('kwashiorkor') && q.includes('marasmus')) {
+      return {
+        text: `### Science: Difference Between Kwashiorkor and Marasmus
+
+**Direct Answer:** **Kwashiorkor** is caused specifically by a severe deficiency of protein in the diet despite adequate carbohydrates; **Marasmus** is caused by a severe deficiency of all nutrients and calories (total starvation).
+
+1. Clinical Comparison:
+| Feature | Kwashiorkor | Marasmus |
+| :--- | :--- | :--- |
+| **Primary Cause** | Severe protein deficiency | Overall calorie & protein starvation |
+| **Appearance** | Swollen belly (oedema), swollen ankles | Severely wasted, "skin and bones", old man face |
+| **Oedema (Fluid retention)** | Present (potbelly, swollen feet) | Absent |
+| **Hair Changes** | Discoloured (reddish/brown), thin, brittle | Normal colour or slightly dry |
+| **Subcutaneous Fat** | Reduced but present | Completely absent |
+| **Appetite** | Poor appetite, irritable, miserable | Ravenously hungry |`,
+        sourceTag: `ZIMSEC ${level} Science • Nutrition & Health`,
+        suggestions: [
+          'What foods prevent kwashiorkor in children?',
+          'What are the main deficiency diseases and their causes?',
+          'Describe the three essential food groups'
+        ]
+      };
+    }
+
+    // 7. Weathering vs Erosion
+    if (q.includes('weathering') && q.includes('erosion')) {
+      return {
+        text: `### Geography: Difference Between Weathering and Erosion
+
+**Direct Answer:** **Weathering** is the breaking down and disintegration of rocks in situ (on site) at or near the Earth's surface without movement, whereas **Erosion** involves the detachment and active transport of weathered rock materials from one place to another by natural agents (running water, wind, ice, waves).
+
+1. Core Distinctions:
+- **Movement:** Weathering occurs in situ with NO transport; erosion fundamentally requires transportation of sediments.
+- **Agents:** Weathering is driven by temperature fluctuations, freeze-thaw, plant roots, and acid rain; erosion is driven by moving kinetic agents like flowing rivers, blowing winds, and glaciers.
+- **Processes:** Weathering breaks large boulders into gravel and soil; erosion carves valleys, transports silt, and deposits sediments downstream.`,
+        sourceTag: `ZIMSEC ${level} Geography • Geomorphology & Landscape Processes`,
+        suggestions: [
+          'What are the three main types of weathering?',
+          'Explain the formation of a river delta',
+          'Describe freeze-thaw / frost shattering in rocks'
+        ]
+      };
+    }
+
+    // 8. Arteries vs Veins
+    if ((q.includes('arteries') && q.includes('veins')) || (q.includes('artery') && q.includes('vein'))) {
+      return {
+        text: `### Biology: Difference Between Arteries and Veins
+
+**Direct Answer:** **Arteries** carry oxygenated blood away from the heart under high pressure (except the pulmonary artery); **Veins** carry deoxygenated blood back toward the heart under low pressure (except the pulmonary vein).
+
+1. Structural and Functional Comparison:
+| Feature | Arteries | Veins |
+| :--- | :--- | :--- |
+| **Direction of Flow** | Away from the heart | Toward the heart |
+| **Pressure** | High pressure, pulsing | Low pressure, smooth flow |
+| **Wall Thickness** | Thick, muscular, elastic walls | Thinner, less muscular walls |
+| **Lumen Size** | Narrow lumen | Wide lumen |
+| **Internal Valves** | Absent (except semilunar at heart exit) | Present (prevent backflow of blood) |
+| **Oxygenation** | Oxygenated (except Pulmonary Artery) | Deoxygenated (except Pulmonary Vein) |`,
+        sourceTag: `ZIMSEC ${level} Biology • Circulatory System`,
+        suggestions: [
+          'Explain the double circulation system in humans',
+          'What is the function of capillaries?',
+          'Describe the structure and function of the human heart'
+        ]
+      };
+    }
+
+    // 9. Diffusion vs Osmosis
+    if (q.includes('diffusion') && q.includes('osmosis')) {
+      return {
+        text: `### Biology: Difference Between Diffusion and Osmosis
+
+**Direct Answer:** **Diffusion** is the net movement of particles (solutes or gases) from a region of higher concentration to a region of lower concentration down a concentration gradient; **Osmosis** is a specialized form of diffusion involving ONLY water molecules moving from a region of higher water potential to lower water potential through a partially permeable membrane.
+
+1. Key Comparison Points:
+| Feature | Diffusion | Osmosis |
+| :--- | :--- | :--- |
+| **Substance Moving** | Any solute, liquid, or gas particles | Water molecules ONLY |
+| **Membrane Required?** | No membrane required | Requires a partially permeable membrane |
+| **Concentration Gradient** | Down solute concentration gradient | Down water potential gradient |
+| **Example** | Oxygen diffusing into alveoli blood | Water entering root hair cells from soil |`,
+        sourceTag: `ZIMSEC ${level} Biology • Movement In and Out of Cells`,
+        suggestions: [
+          'What is active transport and how does it differ from diffusion?',
+          'What happens to plant cells in a concentrated sugar solution?',
+          'Explain turgidity and plasmolysis in plant cells'
+        ]
+      };
+    }
+
+    // 10. Cash Discount vs Trade Discount
+    if (q.includes('cash discount') && q.includes('trade discount')) {
+      return {
+        text: `### Principles of Accounts: Cash Discount vs Trade Discount
+
+**Direct Answer:** **Trade discount** is a reduction in the catalogue price given by a wholesaler to a retailer for bulk buying or trade customer status; **Cash discount** is a discount given to encourage prompt payment within an agreed credit period.
+
+1. Accounting Comparison:
+| Feature | Trade Discount | Cash Discount |
+| :--- | :--- | :--- |
+| **Purpose** | Encourage bulk buying / trade loyalty | Encourage prompt / early debt settlement |
+| **Time of Allowance** | At time of purchase / sale | When payment is made within credit terms |
+| **Invoice Record** | Deducted directly on the invoice | Shown as a condition (e.g. "2% 10 days") |
+| **Ledger Entry** | NEVER entered into ledger accounts | Recorded in Cash Book and Discount Allowed / Received accounts |`,
+        sourceTag: `ZIMSEC ${level} Principles of Accounts • Discounts & Source Documents`,
+        suggestions: [
+          'What is the difference between discount allowed and discount received?',
+          'How is a three-column cash book balanced?',
+          'What source document records returns inwards?'
+        ]
+      };
+    }
+
+    return null;
   }
 
   /**
@@ -7003,19 +7887,36 @@ Pachidzidzo ichi cheZIMSEC:
     // 3. Extract key definition sentence
     const lines = clean.split('\n').map((l: string) => l.trim()).filter(Boolean);
     let definitionSentence = '';
-    for (const line of lines) {
+    const qKeywords = question.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !['what', 'state', 'explain', 'describe', 'define', 'which', 'where', 'how', 'the', 'and', 'for'].includes(w));
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
       const lLower = line.toLowerCase();
-      if ((lLower.includes('is defined as') || lLower.includes('is the') || lLower.includes('refers to') || lLower.includes('means')) && !line.startsWith('#') && !line.startsWith('1.') && !line.startsWith('2.')) {
-        definitionSentence = line.replace(/^[-*•\d.]+\s*/, '').replace(/^\*\*[^:]+:\*\*\s*/, '');
-        break;
+      if (qKeywords.some(kw => lLower.includes(kw))) {
+        if (lLower.includes('is defined as') || lLower.includes('states that') || lLower.includes('proportional') || lLower.includes('refers to') || lLower.includes('is the') || lLower.includes('means')) {
+          definitionSentence = line.replace(/^[-*•\d.]+\s*/, '').replace(/^\*\*[^:]+:\*\*\s*/, '');
+          break;
+        }
+        if (i + 1 < lines.length && lines[i + 1].length > 20 && !lines[i + 1].startsWith('#')) {
+          definitionSentence = lines[i + 1].replace(/^[-*•\d.]+\s*/, '').replace(/^\*\*[^:]+:\*\*\s*/, '');
+          break;
+        }
+      }
+    }
+    if (!definitionSentence) {
+      for (const line of lines) {
+        const lLower = line.toLowerCase();
+        if ((lLower.includes('is defined as') || lLower.includes('is the') || lLower.includes('refers to') || lLower.includes('means')) && !line.startsWith('#') && !line.startsWith('1.') && !line.startsWith('2.')) {
+          definitionSentence = line.replace(/^[-*•\d.]+\s*/, '').replace(/^\*\*[^:]+:\*\*\s*/, '');
+          break;
+        }
       }
     }
     if (!definitionSentence) {
       const firstGood = lines.find((l: string) => !l.startsWith('#') && l.length > 25 && !l.includes('Objectives') && !l.includes('Context'));
       if (firstGood) definitionSentence = firstGood.replace(/^[-*•\d.]+\s*/, '');
     }
-    if (definitionSentence.length > 200) {
-      definitionSentence = definitionSentence.slice(0, 200).replace(/[,;]\s*[^,;]*$/, '') + '.';
+    if (definitionSentence.length > 280) {
+      definitionSentence = definitionSentence.slice(0, 280).replace(/[,;]\s*[^,;]*$/, '') + '.';
     }
 
     // 4. Extract structured items (numbered points, sub-bullets, and paragraphs)
@@ -7099,6 +8000,20 @@ Pachidzidzo ichi cheZIMSEC:
       }
       if (decomp.asksPreventionOrManagement) {
         parts.push(`#### ${parts.length}. Prevention and Solutions\n${relevantPoints}`);
+      }
+      if (parts.length <= 2) {
+        if (parts.length === 1 && definitionSentence) {
+          parts.push(`**Direct Core Answer:** ${definitionSentence}`);
+        }
+        if (numberedItems.length > 0) {
+          parts.push(`#### Key Syllabus Breakdown:\n${numberedItems.slice(0, 10).join('\n')}`);
+        }
+        if (bulletItems.length > 0) {
+          parts.push(`#### Core Concepts & Details:\n${bulletItems.slice(0, 10).join('\n')}`);
+        }
+        if (numberedItems.length === 0 && bulletItems.length === 0 && generalParagraphs.length > 0) {
+          parts.push(generalParagraphs.slice(0, 6).join('\n\n'));
+        }
       }
       structuredOutput = parts.join('\n\n');
     }

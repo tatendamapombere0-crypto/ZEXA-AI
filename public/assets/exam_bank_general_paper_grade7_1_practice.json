@@ -1,14 +1,17 @@
 {
   "paperInfo": {
+    "id": "exam_bank_general_paper_grade7_1_practice",
+    "file": "exam_bank_general_paper_grade7_1_practice.json",
     "subject": "General Paper",
     "level": "Primary",
     "paperCode": "G7-GENPAPER-1",
     "paperName": "Grade 7 General Paper 1 - Practice Set (original questions, real ZIMSEC-style MCQ format)",
-    "paperType": "Practice Paper (original questions, written in the real Grade 7 General Paper 1 MCQ structure/format)"
+    "paperType": "Practice Paper (original questions, written in the real Grade 7 General Paper 1 MCQ structure/format)",
+    "questionCount": 200
   },
   "questions": [
     {
-      "id": "g7_genpaper1_q1",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "To which mountain did Moses go up to receive the Ten Commandments from God?",
       "options": [
@@ -18,23 +21,24 @@
         },
         {
           "letter": "B",
-          "text": "Mount Sinai"
+          "text": "Mount Zion"
         },
         {
           "letter": "C",
-          "text": "Mount Zion"
+          "text": "Mount Sinai"
         },
         {
           "letter": "D",
           "text": "Mount of Olives"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Moses received the Ten Commandments from God on Mount Sinai, as recorded in the book of Exodus.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q2",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "The Bible teaches that we should forgive others because",
       "options": [
@@ -44,7 +48,7 @@
         },
         {
           "letter": "B",
-          "text": "God has forgiven us and expects us to forgive others too."
+          "text": "the law requires it."
         },
         {
           "letter": "C",
@@ -52,25 +56,26 @@
         },
         {
           "letter": "D",
-          "text": "the law requires it."
+          "text": "God has forgiven us and expects us to forgive others too."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "A central Christian teaching is that believers should forgive others just as God has forgiven them.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q3",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "The Bible teaches that Jesus rose from the dead on the",
       "options": [
         {
           "letter": "A",
-          "text": "first day after his burial."
+          "text": "third day after his burial."
         },
         {
           "letter": "B",
-          "text": "third day after his burial."
+          "text": "first day after his burial."
         },
         {
           "letter": "C",
@@ -81,12 +86,13 @@
           "text": "fortieth day after his burial."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Christian teaching holds that Jesus rose from the dead on the third day after his crucifixion and burial.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q4",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "\"Behold the Lamb of God, who takes away the sin of the world!\" Who said these words about Jesus?",
       "options": [
@@ -109,10 +115,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "John the Baptist said these words when he saw Jesus approaching, as recorded in the Gospel of John.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q5",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "Most religions found in Zimbabwe agree that we must",
       "options": [
@@ -122,23 +129,24 @@
         },
         {
           "letter": "B",
-          "text": "honour and care for our parents and elders."
+          "text": "only pray inside a building."
         },
         {
           "letter": "C",
-          "text": "only pray inside a building."
+          "text": "honour and care for our parents and elders."
         },
         {
           "letter": "D",
           "text": "fast during a specific month only."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Respect and care for parents/elders is a value shared broadly across the different religious and cultural traditions practised in Zimbabwe.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q6",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Among the following pairs of Jesus' disciples, who were brothers?",
       "options": [
@@ -148,7 +156,7 @@
         },
         {
           "letter": "B",
-          "text": "James and John"
+          "text": "Bartholomew and Simon"
         },
         {
           "letter": "C",
@@ -156,21 +164,22 @@
         },
         {
           "letter": "D",
-          "text": "Bartholomew and Simon"
+          "text": "James and John"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "James and John, sons of Zebedee, were brothers among Jesus' twelve disciples.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q7",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "Which Roman governor questioned Jesus and eventually allowed him to be crucified?",
       "options": [
         {
           "letter": "A",
-          "text": "Herod"
+          "text": "Pilate"
         },
         {
           "letter": "B",
@@ -178,19 +187,20 @@
         },
         {
           "letter": "C",
-          "text": "Pilate"
+          "text": "Herod"
         },
         {
           "letter": "D",
           "text": "Nicodemus"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Pontius Pilate was the Roman governor who questioned Jesus and ultimately handed him over to be crucified.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q8",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "What does the parable of the Good Samaritan teach us?",
       "options": [
@@ -213,16 +223,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "The parable of the Good Samaritan teaches that we should show kindness and compassion to anyone in need, regardless of who they are.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q9",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "African Traditional Religion teaches that",
       "options": [
         {
           "letter": "A",
-          "text": "ancestors can act as intermediaries between the living and God."
+          "text": "only ancestors should be worshipped, and God is not important."
         },
         {
           "letter": "B",
@@ -230,19 +241,20 @@
         },
         {
           "letter": "C",
-          "text": "only ancestors should be worshipped, and God is not important."
+          "text": "ancestors can act as intermediaries between the living and God."
         },
         {
           "letter": "D",
           "text": "there are many different gods, one for each family."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "A central belief in African Traditional Religion is that ancestral spirits (vadzimu/abezimu) can intercede or communicate between the living and the Supreme Being/God.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q10",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "Child neglect and abandonment would be reduced if people believed that",
       "options": [
@@ -252,7 +264,7 @@
         },
         {
           "letter": "B",
-          "text": "every child's life has value and deserves love and care."
+          "text": "the government alone is responsible for children."
         },
         {
           "letter": "C",
@@ -260,15 +272,16 @@
         },
         {
           "letter": "D",
-          "text": "the government alone is responsible for children."
+          "text": "every child's life has value and deserves love and care."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The belief that every child's life has inherent value and deserves love and care is what discourages neglect or abandonment.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q11",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "A bira/umbuyiso ceremony is held by African Traditional Religion followers mainly to",
       "options": [
@@ -291,20 +304,21 @@
       ],
       "correctAnswer": "A",
       "explanation": "A bira (or umbuyiso in Ndebele culture) is a traditional ceremony held to communicate with, honour and appease the ancestral spirits.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q12",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "David showed loyalty to his friend Jonathan by",
       "options": [
         {
           "letter": "A",
-          "text": "caring for Jonathan's son Mephibosheth after Jonathan's death."
+          "text": "killing Goliath."
         },
         {
           "letter": "B",
-          "text": "killing Goliath."
+          "text": "caring for Jonathan's son Mephibosheth after Jonathan's death."
         },
         {
           "letter": "C",
@@ -315,18 +329,19 @@
           "text": "marrying into Jonathan's family."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "David honoured his covenant of friendship with Jonathan by showing kindness to Jonathan's disabled son, Mephibosheth, after Jonathan died.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q13",
+      "id": "q_13",
       "questionNumber": 13,
       "questionText": "A good leader is one who",
       "options": [
         {
           "letter": "A",
-          "text": "serves and leads by good example."
+          "text": "enriches himself using public resources."
         },
         {
           "letter": "B",
@@ -334,19 +349,20 @@
         },
         {
           "letter": "C",
-          "text": "enriches himself using public resources."
+          "text": "serves and leads by good example."
         },
         {
           "letter": "D",
           "text": "avoids listening to others."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "A good leader serves their followers and leads by setting a positive example, rather than ruling through fear or self-enrichment.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q14",
+      "id": "q_14",
       "questionNumber": 14,
       "questionText": "Which of the following religions celebrates the festival of Eid al-Fitr?",
       "options": [
@@ -360,29 +376,30 @@
         },
         {
           "letter": "C",
-          "text": "Islam"
+          "text": "Judaism"
         },
         {
           "letter": "D",
-          "text": "Judaism"
+          "text": "Islam"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Eid al-Fitr is an Islamic festival marking the end of the fasting month of Ramadan.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q15",
+      "id": "q_15",
       "questionNumber": 15,
       "questionText": "The Second Chimurenga/Umvukela is generally considered to have begun with the Battle of",
       "options": [
         {
           "letter": "A",
-          "text": "Chimoio."
+          "text": "Chinhoyi."
         },
         {
           "letter": "B",
-          "text": "Chinhoyi."
+          "text": "Chimoio."
         },
         {
           "letter": "C",
@@ -393,12 +410,13 @@
           "text": "Mazoe."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The Battle of Chinhoyi in April 1966 is widely regarded as marking the start of the Second Chimurenga/Umvukela.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q16",
+      "id": "q_16",
       "questionNumber": 16,
       "questionText": "During the ceasefire period leading to Zimbabwe's independence, freedom fighters gathered at designated",
       "options": [
@@ -408,23 +426,24 @@
         },
         {
           "letter": "B",
-          "text": "rest camps."
+          "text": "assembly points."
         },
         {
           "letter": "C",
-          "text": "assembly points."
+          "text": "rest camps."
         },
         {
           "letter": "D",
           "text": "growth points."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Freedom fighters gathered at designated Assembly Points during the ceasefire period ahead of the 1980 elections.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q17",
+      "id": "q_17",
       "questionNumber": 17,
       "questionText": "The San people traditionally used _______ to store and carry water.",
       "options": [
@@ -434,23 +453,24 @@
         },
         {
           "letter": "B",
-          "text": "ostrich egg shells"
+          "text": "plastic containers"
         },
         {
           "letter": "C",
-          "text": "plastic containers"
+          "text": "ostrich egg shells"
         },
         {
           "letter": "D",
           "text": "metal tins"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The San (Bushmen) traditionally used hollowed-out ostrich egg shells as portable water containers, especially in dry desert regions.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q18",
+      "id": "q_18",
       "questionNumber": 18,
       "questionText": "Which Ndebele king signed the Rudd Concession in 1888?",
       "options": [
@@ -464,29 +484,30 @@
         },
         {
           "letter": "C",
-          "text": "Lobengula"
+          "text": "Kaguvi"
         },
         {
           "letter": "D",
-          "text": "Kaguvi"
+          "text": "Lobengula"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "King Lobengula signed the Rudd Concession in 1888, granting mining rights to agents of Cecil Rhodes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q19",
+      "id": "q_19",
       "questionNumber": 19,
       "questionText": "Which group is generally credited with building the Great Zimbabwe Ruins?",
       "options": [
         {
           "letter": "A",
-          "text": "The Rozvi"
+          "text": "The Shona (ancestors of the Shona, likely the Gokomere/Karanga peoples)"
         },
         {
           "letter": "B",
-          "text": "The Shona (ancestors of the Shona, likely the Gokomere/Karanga peoples)"
+          "text": "The Rozvi"
         },
         {
           "letter": "C",
@@ -497,12 +518,13 @@
           "text": "The Tonga"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Archaeological and historical evidence generally credits the ancestors of the Shona people (the Karanga/Gokomere builders) with constructing the Great Zimbabwe Ruins between roughly the 11th and 15th centuries.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q20",
+      "id": "q_20",
       "questionNumber": 20,
       "questionText": "People who build homes on land without legal permission are called",
       "options": [
@@ -525,10 +547,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Squatters are people who occupy and build on land without legal ownership or permission.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q21",
+      "id": "q_21",
       "questionNumber": 21,
       "questionText": "Which of the following is a root crop?",
       "options": [
@@ -538,29 +561,30 @@
         },
         {
           "letter": "B",
-          "text": "Sweet potato"
+          "text": "Tomato"
         },
         {
           "letter": "C",
-          "text": "Tomato"
+          "text": "Sweet potato"
         },
         {
           "letter": "D",
           "text": "Pea"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "A sweet potato is a root crop - the edible part grows underground as a swollen root, unlike cabbage (leaf), tomato (fruit) or pea (seed/pod).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q22",
+      "id": "q_22",
       "questionNumber": 22,
       "questionText": "_______ is a nutrient found mainly in body-building foods.",
       "options": [
         {
           "letter": "A",
-          "text": "Protein"
+          "text": "Fibre"
         },
         {
           "letter": "B",
@@ -572,15 +596,16 @@
         },
         {
           "letter": "D",
-          "text": "Fibre"
+          "text": "Protein"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Protein is the main nutrient in body-building foods, needed for growth and repair of body tissues.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q23",
+      "id": "q_23",
       "questionNumber": 23,
       "questionText": "On a map of Zimbabwe, a town marked in the far northwest, near the Zambezi River and Zambia's border, close to a major hydro-electric dam, is most likely to be",
       "options": [
@@ -603,10 +628,11 @@
       ],
       "correctAnswer": "A",
       "explanation": "Victoria Falls is located in the far northwest of Zimbabwe, on the Zambezi River near the Zambian border, close to major hydro-electric power generation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q24",
+      "id": "q_24",
       "questionNumber": 24,
       "questionText": "Which of the following is a pair of disease vectors (animals that spread disease)?",
       "options": [
@@ -629,10 +655,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Mosquitoes (which spread malaria) and tsetse flies (which spread sleeping sickness) are both disease vectors - animals that transmit disease-causing organisms.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q25",
+      "id": "q_25",
       "questionNumber": 25,
       "questionText": "A rondavel (traditional round hut) is typically built using",
       "options": [
@@ -642,23 +669,24 @@
         },
         {
           "letter": "B",
-          "text": "mud and thatch."
+          "text": "glass."
         },
         {
           "letter": "C",
-          "text": "glass."
+          "text": "mud and thatch."
         },
         {
           "letter": "D",
           "text": "steel."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "A traditional rondavel is typically built with mud (or brick) walls and a thatched grass roof.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q26",
+      "id": "q_26",
       "questionNumber": 26,
       "questionText": "What type of buildings would you expect to find mostly in a residential area?",
       "options": [
@@ -672,25 +700,26 @@
         },
         {
           "letter": "C",
-          "text": "Houses"
+          "text": "Power stations"
         },
         {
           "letter": "D",
-          "text": "Power stations"
+          "text": "Houses"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "A residential area is mainly made up of houses/homes where people live, unlike an industrial area which has factories and warehouses.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q27",
+      "id": "q_27",
       "questionNumber": 27,
       "questionText": "Very tall multi-storey buildings commonly found in a city centre are called",
       "options": [
         {
           "letter": "A",
-          "text": "hotels."
+          "text": "skyscrapers."
         },
         {
           "letter": "B",
@@ -698,19 +727,20 @@
         },
         {
           "letter": "C",
-          "text": "skyscrapers."
+          "text": "hotels."
         },
         {
           "letter": "D",
           "text": "warehouses."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Very tall multi-storey buildings, especially common in city centres, are called skyscrapers.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q28",
+      "id": "q_28",
       "questionNumber": 28,
       "questionText": "When there is not enough money circulating in an economy, leading to reduced spending and slower economic activity, this is called",
       "options": [
@@ -733,10 +763,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Deflation refers to a general fall in prices/reduced money circulation in an economy, often linked to reduced spending and slower economic activity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q29",
+      "id": "q_29",
       "questionNumber": 29,
       "questionText": "Large wild animals such as elephants and lions would most likely be found in a Zimbabwean",
       "options": [
@@ -746,23 +777,24 @@
         },
         {
           "letter": "B",
-          "text": "national park."
+          "text": "industrial area."
         },
         {
           "letter": "C",
-          "text": "industrial area."
+          "text": "national park."
         },
         {
           "letter": "D",
           "text": "central business district."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "National parks (such as Hwange or Mana Pools) are protected areas set aside for wildlife such as elephants and lions to live undisturbed.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q30",
+      "id": "q_30",
       "questionNumber": 30,
       "questionText": "Exchanging goods directly for other goods, without using money, is called",
       "options": [
@@ -772,7 +804,7 @@
         },
         {
           "letter": "B",
-          "text": "barter trade."
+          "text": "export trade."
         },
         {
           "letter": "C",
@@ -780,21 +812,22 @@
         },
         {
           "letter": "D",
-          "text": "export trade."
+          "text": "barter trade."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Barter trade is the direct exchange of goods or services for other goods or services, without using money.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q31",
+      "id": "q_31",
       "questionNumber": 31,
       "questionText": "Ice is water in what state?",
       "options": [
         {
           "letter": "A",
-          "text": "Gas"
+          "text": "Solid"
         },
         {
           "letter": "B",
@@ -802,19 +835,20 @@
         },
         {
           "letter": "C",
-          "text": "Solid"
+          "text": "Gas"
         },
         {
           "letter": "D",
           "text": "Vapour"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Ice is the solid state of water, formed when water freezes at or below 0 degrees Celsius.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q32",
+      "id": "q_32",
       "questionNumber": 32,
       "questionText": "The process in which water changes from a liquid to a gas (vapour) is called",
       "options": [
@@ -837,10 +871,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Evaporation is the process by which liquid water changes into water vapour (gas), usually due to heating.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q33",
+      "id": "q_33",
       "questionNumber": 33,
       "questionText": "In a typical flower, the colourful part that attracts insects for pollination is called the",
       "options": [
@@ -850,23 +885,24 @@
         },
         {
           "letter": "B",
-          "text": "petal."
+          "text": "root."
         },
         {
           "letter": "C",
-          "text": "root."
+          "text": "petal."
         },
         {
           "letter": "D",
           "text": "stalk."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The petal is the often brightly coloured part of a flower that helps attract insects and other pollinators.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q34",
+      "id": "q_34",
       "questionNumber": 34,
       "questionText": "You can help stop a veld fire from spreading by",
       "options": [
@@ -876,7 +912,7 @@
         },
         {
           "letter": "B",
-          "text": "building firebreaks."
+          "text": "ignoring small fires."
         },
         {
           "letter": "C",
@@ -884,21 +920,22 @@
         },
         {
           "letter": "D",
-          "text": "ignoring small fires."
+          "text": "building firebreaks."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Firebreaks (cleared strips of land without vegetation) help stop the spread of veld fires by removing fuel the fire needs to keep burning.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q35",
+      "id": "q_35",
       "questionNumber": 35,
       "questionText": "The gradual breaking down of rocks into smaller particles to eventually form soil is called",
       "options": [
         {
           "letter": "A",
-          "text": "erosion."
+          "text": "weathering."
         },
         {
           "letter": "B",
@@ -906,29 +943,30 @@
         },
         {
           "letter": "C",
-          "text": "weathering."
+          "text": "erosion."
         },
         {
           "letter": "D",
           "text": "deposition."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Weathering is the process by which rocks are gradually broken down (by water, temperature changes, plant roots, etc.) into smaller particles that eventually form soil.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q36",
+      "id": "q_36",
       "questionNumber": 36,
       "questionText": "Animals that feed mainly on grass close to the ground are called",
       "options": [
         {
           "letter": "A",
-          "text": "grazers."
+          "text": "browsers."
         },
         {
           "letter": "B",
-          "text": "browsers."
+          "text": "grazers."
         },
         {
           "letter": "C",
@@ -939,12 +977,13 @@
           "text": "omnivores."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Grazers (such as zebra and cattle) feed mainly on grass close to the ground, while browsers (such as giraffes and kudu) feed on leaves and shoots from trees and shrubs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q37",
+      "id": "q_37",
       "questionNumber": 37,
       "questionText": "What sweet, thick by-product do we get from processing sugarcane, sometimes used to feed cattle?",
       "options": [
@@ -954,23 +993,24 @@
         },
         {
           "letter": "B",
-          "text": "Molasses"
+          "text": "Fodder"
         },
         {
           "letter": "C",
-          "text": "Fodder"
+          "text": "Molasses"
         },
         {
           "letter": "D",
           "text": "Refined sugar"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Molasses is a thick, sweet by-product of sugar processing from sugarcane, and is commonly used as a supplement to feed cattle.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q38",
+      "id": "q_38",
       "questionNumber": 38,
       "questionText": "The best way to avoid sexually transmitted diseases (STDs) is to",
       "options": [
@@ -980,7 +1020,7 @@
         },
         {
           "letter": "B",
-          "text": "practise safe sex, including abstinence or correct condom use."
+          "text": "avoid wearing borrowed clothes."
         },
         {
           "letter": "C",
@@ -988,21 +1028,22 @@
         },
         {
           "letter": "D",
-          "text": "avoid wearing borrowed clothes."
+          "text": "practise safe sex, including abstinence or correct condom use."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "STDs are spread mainly through sexual contact, so abstinence or correctly using protection (such as condoms) are the most effective ways to avoid them.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q39",
+      "id": "q_39",
       "questionNumber": 39,
       "questionText": "Which weather station instrument is used to measure the amount of rainfall?",
       "options": [
         {
           "letter": "A",
-          "text": "A thermometer"
+          "text": "A rain gauge"
         },
         {
           "letter": "B",
@@ -1010,19 +1051,20 @@
         },
         {
           "letter": "C",
-          "text": "A rain gauge"
+          "text": "A thermometer"
         },
         {
           "letter": "D",
           "text": "A barometer"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "A rain gauge is the instrument specifically used to measure and collect the amount of rainfall at a weather station.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q40",
+      "id": "q_40",
       "questionNumber": 40,
       "questionText": "Changing the type of crop grown on the same piece of land each season, to help maintain soil fertility, is called",
       "options": [
@@ -1032,7 +1074,7 @@
         },
         {
           "letter": "B",
-          "text": "monocropping."
+          "text": "crop rotation."
         },
         {
           "letter": "C",
@@ -1040,15 +1082,16 @@
         },
         {
           "letter": "D",
-          "text": "crop rotation."
+          "text": "monocropping."
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "Crop rotation is the practice of changing the type of crop grown on a piece of land from season to season, helping to maintain soil fertility and reduce pest/disease build-up.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q41",
+      "id": "q_41",
       "questionNumber": 41,
       "questionText": "Electricity generated from the energy of falling or flowing water is called",
       "options": [
@@ -1071,10 +1114,11 @@
       ],
       "correctAnswer": "C",
       "explanation": "Hydro-electric power (or hydro power) is electricity generated using the energy of falling or fast-flowing water, such as at Kariba Dam.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q42",
+      "id": "q_42",
       "questionNumber": 42,
       "questionText": "The joining of a male sex cell (sperm) and a female sex cell (egg) is called",
       "options": [
@@ -1084,7 +1128,7 @@
         },
         {
           "letter": "B",
-          "text": "fertilisation."
+          "text": "reproduction only."
         },
         {
           "letter": "C",
@@ -1092,15 +1136,16 @@
         },
         {
           "letter": "D",
-          "text": "reproduction only."
+          "text": "fertilisation."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Fertilisation is the specific term for the joining/fusion of a male sex cell and a female sex cell to form a new life.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q43",
+      "id": "q_43",
       "questionNumber": 43,
       "questionText": "The rotation of the Earth on its own axis causes",
       "options": [
@@ -1123,10 +1168,11 @@
       ],
       "correctAnswer": "A",
       "explanation": "The Earth's rotation on its own axis (taking about 24 hours) causes the cycle of day and night, as different parts face towards or away from the sun.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q44",
+      "id": "q_44",
       "questionNumber": 44,
       "questionText": "It is dangerous to keep swimming when a thunderstorm approaches mainly because",
       "options": [
@@ -1149,10 +1195,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Water is a good conductor of electricity, so it can attract or conduct lightning strikes, making swimming during a thunderstorm dangerous.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q45",
+      "id": "q_45",
       "questionNumber": 45,
       "questionText": "Rainfall is measured in which unit?",
       "options": [
@@ -1162,29 +1209,30 @@
         },
         {
           "letter": "B",
-          "text": "Millimetres"
+          "text": "Kilometres"
         },
         {
           "letter": "C",
-          "text": "Kilometres"
+          "text": "Millimetres"
         },
         {
           "letter": "D",
           "text": "Degrees"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Rainfall is measured in millimetres (mm), representing the depth of water that would collect on a flat surface.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q46",
+      "id": "q_46",
       "questionNumber": 46,
       "questionText": "What is the correct recipe for making an Oral Rehydration Solution (Sugar-Salt Solution) at home?",
       "options": [
         {
           "letter": "A",
-          "text": "750ml of clean water, 6 teaspoons of sugar, and 1/2 teaspoon of salt."
+          "text": "750ml of clean water, equal amounts of sugar and salt."
         },
         {
           "letter": "B",
@@ -1196,25 +1244,26 @@
         },
         {
           "letter": "D",
-          "text": "750ml of clean water, equal amounts of sugar and salt."
+          "text": "750ml of clean water, 6 teaspoons of sugar, and 1/2 teaspoon of salt."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "The standard home-made Sugar-Salt Solution (SSS) for treating dehydration is 750ml (about a large bottle) of clean water, 6 level teaspoons of sugar, and 1/2 a level teaspoon of salt.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q47",
+      "id": "q_47",
       "questionNumber": 47,
       "questionText": "From which of the following foods do we mainly get carbohydrates?",
       "options": [
         {
           "letter": "A",
-          "text": "Beef and pork"
+          "text": "Sadza and bread"
         },
         {
           "letter": "B",
-          "text": "Sadza and bread"
+          "text": "Beef and pork"
         },
         {
           "letter": "C",
@@ -1225,22 +1274,23 @@
           "text": "Milk and eggs"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Sadza (made from maize meal) and bread are both starchy, energy-giving foods that are rich sources of carbohydrates.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q48",
+      "id": "q_48",
       "questionNumber": 48,
       "questionText": "After using the toilet, you should always",
       "options": [
         {
           "letter": "A",
-          "text": "wash your hands thoroughly with clean water and soap."
+          "text": "wipe your hands on your clothes."
         },
         {
           "letter": "B",
-          "text": "wipe your hands on your clothes."
+          "text": "wash your hands thoroughly with clean water and soap."
         },
         {
           "letter": "C",
@@ -1251,12 +1301,13 @@
           "text": "use the same water for drinking."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Washing hands thoroughly with clean water and soap after using the toilet is essential to prevent the spread of germs and disease.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q49",
+      "id": "q_49",
       "questionNumber": 49,
       "questionText": "Eggs can be boiled, fried or",
       "options": [
@@ -1279,10 +1330,11 @@
       ],
       "correctAnswer": "C",
       "explanation": "Scrambling is a common way of cooking eggs, alongside boiling and frying.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
     },
     {
-      "id": "g7_genpaper1_q50",
+      "id": "q_50",
       "questionNumber": 50,
       "questionText": "Which of the following statements is TRUE?",
       "options": [
@@ -1292,7 +1344,7 @@
         },
         {
           "letter": "B",
-          "text": "Overcooking vegetables for too long can destroy some of their nutrients."
+          "text": "Undercooked meat is always safe to eat."
         },
         {
           "letter": "C",
@@ -1300,12 +1352,4063 @@
         },
         {
           "letter": "D",
-          "text": "Undercooked meat is always safe to eat."
+          "text": "Overcooking vegetables for too long can destroy some of their nutrients."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Overcooking, especially vegetables, can break down and destroy heat-sensitive nutrients such as vitamin C, reducing the food's nutritional value.",
+      "answerConfidence": "high",
+      "topic": "General Paper Examination Practice"
+    },
+    {
+      "id": "g7_general_p1_001",
+      "questionNumber": 51,
+      "questionText": "Which site is famous for its ancient stone walls and is an important heritage site in Zimbabwe?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Great Zimbabwe"
+        },
+        {
+          "letter": "B",
+          "text": "Victoria Falls Airport"
+        },
+        {
+          "letter": "C",
+          "text": "Kariba Dam"
+        },
+        {
+          "letter": "D",
+          "text": "Hwange Town"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Great Zimbabwe is a major archaeological and cultural heritage site.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_002",
+      "questionNumber": 52,
+      "questionText": "Which material was commonly used by traditional builders to make strong walls in Great Zimbabwe?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plastic sheets"
+        },
+        {
+          "letter": "B",
+          "text": "Granite stone"
+        },
+        {
+          "letter": "C",
+          "text": "Aluminium cans"
+        },
+        {
+          "letter": "D",
+          "text": "Glass"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Overcooking, especially vegetables, can break down and destroy heat-sensitive nutrients such as vitamin C, reducing the food's nutritional value.",
-      "answerConfidence": "high"
+      "explanation": "Granite blocks were used in the dry-stone construction.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_003",
+      "questionNumber": 53,
+      "questionText": "Why should communities protect cultural heritage sites?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To prevent children from learning history"
+        },
+        {
+          "letter": "B",
+          "text": "To stop all tourism"
+        },
+        {
+          "letter": "C",
+          "text": "To preserve history and identity"
+        },
+        {
+          "letter": "D",
+          "text": "To replace old buildings with shops"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Heritage sites help preserve history, culture and identity.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_004",
+      "questionNumber": 54,
+      "questionText": "Which activity best demonstrates respect for a community's cultural heritage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Burning traditional records"
+        },
+        {
+          "letter": "B",
+          "text": "Damaging old monuments"
+        },
+        {
+          "letter": "C",
+          "text": "Removing artefacts without permission"
+        },
+        {
+          "letter": "D",
+          "text": "Protecting important historical places"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Protecting heritage ensures it is available for future generations.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_005",
+      "questionNumber": 55,
+      "questionText": "What is an artefact?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An object made or used by people in the past"
+        },
+        {
+          "letter": "B",
+          "text": "A type of rainfall"
+        },
+        {
+          "letter": "C",
+          "text": "A modern traffic sign"
+        },
+        {
+          "letter": "D",
+          "text": "A farm animal"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Artefacts are objects that provide evidence about past human life.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_006",
+      "questionNumber": 56,
+      "questionText": "Which practice helps pass indigenous knowledge from one generation to another?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Destroying old records"
+        },
+        {
+          "letter": "B",
+          "text": "Storytelling by elders"
+        },
+        {
+          "letter": "C",
+          "text": "Ignoring community elders"
+        },
+        {
+          "letter": "D",
+          "text": "Avoiding traditional activities"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oral storytelling is an important way of transmitting knowledge.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_007",
+      "questionNumber": 57,
+      "questionText": "Which of the following is a tangible form of cultural heritage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A weather forecast"
+        },
+        {
+          "letter": "B",
+          "text": "A person's opinion"
+        },
+        {
+          "letter": "C",
+          "text": "A traditional building"
+        },
+        {
+          "letter": "D",
+          "text": "A school timetable"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A traditional building is a physical heritage resource.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_008",
+      "questionNumber": 58,
+      "questionText": "Which item is most closely associated with traditional music?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compass"
+        },
+        {
+          "letter": "B",
+          "text": "Calculator"
+        },
+        {
+          "letter": "C",
+          "text": "Thermometer"
+        },
+        {
+          "letter": "D",
+          "text": "Drum"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Drums are widely used in traditional music and ceremonies.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_009",
+      "questionNumber": 59,
+      "questionText": "Why are traditional ceremonies important to communities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They can strengthen identity and social bonds"
+        },
+        {
+          "letter": "B",
+          "text": "They always replace school lessons"
+        },
+        {
+          "letter": "C",
+          "text": "They prevent cooperation"
+        },
+        {
+          "letter": "D",
+          "text": "They make history disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ceremonies can reinforce identity, values and community relationships.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_010",
+      "questionNumber": 60,
+      "questionText": "Which action is most appropriate when visiting a heritage monument?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Write names on the walls"
+        },
+        {
+          "letter": "B",
+          "text": "Follow the site's rules and avoid damaging it"
+        },
+        {
+          "letter": "C",
+          "text": "Remove stones as souvenirs"
+        },
+        {
+          "letter": "D",
+          "text": "Climb restricted structures"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Following rules protects the monument.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_011",
+      "questionNumber": 61,
+      "questionText": "A family keeps photographs, letters and objects belonging to grandparents. These items can help children to:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Measure rainfall"
+        },
+        {
+          "letter": "B",
+          "text": "Predict tomorrow's weather"
+        },
+        {
+          "letter": "C",
+          "text": "Learn about their family history"
+        },
+        {
+          "letter": "D",
+          "text": "Grow crops"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Family records provide evidence about previous generations.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_012",
+      "questionNumber": 62,
+      "questionText": "Which person is most likely to preserve oral history in a community?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A calculator"
+        },
+        {
+          "letter": "B",
+          "text": "A traffic light"
+        },
+        {
+          "letter": "C",
+          "text": "A river"
+        },
+        {
+          "letter": "D",
+          "text": "An elder who remembers past events"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Elders often carry memories and stories of community history.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_013",
+      "questionNumber": 63,
+      "questionText": "What is the main purpose of a museum?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To preserve and display objects of historical or cultural value"
+        },
+        {
+          "letter": "B",
+          "text": "To sell vegetables only"
+        },
+        {
+          "letter": "C",
+          "text": "To repair roads"
+        },
+        {
+          "letter": "D",
+          "text": "To issue driving licences"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Museums preserve and display collections for learning.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_014",
+      "questionNumber": 64,
+      "questionText": "Which behaviour shows respect for another community's culture?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mocking its traditions"
+        },
+        {
+          "letter": "B",
+          "text": "Learning about it without insulting its practices"
+        },
+        {
+          "letter": "C",
+          "text": "Destroying its symbols"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading false stories about it"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Respectful learning promotes understanding and cooperation.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_015",
+      "questionNumber": 65,
+      "questionText": "Why should children learn local history?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes farming impossible"
+        },
+        {
+          "letter": "B",
+          "text": "It prevents them from reading"
+        },
+        {
+          "letter": "C",
+          "text": "It helps them understand their community and identity"
+        },
+        {
+          "letter": "D",
+          "text": "It removes the need for citizenship"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Local history connects learners with their community and heritage.",
+      "answerConfidence": "high",
+      "topic": "Heritage Studies"
+    },
+    {
+      "id": "g7_general_p1_016",
+      "questionNumber": 66,
+      "questionText": "Which household practice best promotes cooperation among family members?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ignoring household needs"
+        },
+        {
+          "letter": "B",
+          "text": "Giving all work to one person"
+        },
+        {
+          "letter": "C",
+          "text": "Refusing to help others"
+        },
+        {
+          "letter": "D",
+          "text": "Sharing suitable chores"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sharing suitable duties promotes teamwork.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_017",
+      "questionNumber": 67,
+      "questionText": "Why is it important to listen when another person is speaking?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It shows respect and helps communication"
+        },
+        {
+          "letter": "B",
+          "text": "It always ends disagreements immediately"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents learning"
+        },
+        {
+          "letter": "D",
+          "text": "It makes people unable to cooperate"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Listening helps people understand one another.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_018",
+      "questionNumber": 68,
+      "questionText": "Which is an example of a community service?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Damaging a clinic"
+        },
+        {
+          "letter": "B",
+          "text": "Cleaning a public area together"
+        },
+        {
+          "letter": "C",
+          "text": "Stealing from neighbours"
+        },
+        {
+          "letter": "D",
+          "text": "Blocking a water source"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Community service involves useful work for the common good.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_019",
+      "questionNumber": 69,
+      "questionText": "A good friend is most likely to:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Spread private information"
+        },
+        {
+          "letter": "B",
+          "text": "Encourage dangerous behaviour"
+        },
+        {
+          "letter": "C",
+          "text": "Give honest and helpful advice"
+        },
+        {
+          "letter": "D",
+          "text": "Refuse to help in every situation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A good friend supports others responsibly.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_020",
+      "questionNumber": 70,
+      "questionText": "Which action can help resolve a disagreement peacefully?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Destroying property"
+        },
+        {
+          "letter": "B",
+          "text": "Using violence"
+        },
+        {
+          "letter": "C",
+          "text": "Spreading rumours"
+        },
+        {
+          "letter": "D",
+          "text": "Discussing the problem calmly"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Calm discussion allows people to seek a fair solution.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_021",
+      "questionNumber": 71,
+      "questionText": "Why should boys and girls be given equal opportunities to learn?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both can develop their abilities and contribute to society"
+        },
+        {
+          "letter": "B",
+          "text": "Only boys can learn"
+        },
+        {
+          "letter": "C",
+          "text": "Only girls can work"
+        },
+        {
+          "letter": "D",
+          "text": "Education is unnecessary"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Equal educational opportunity supports fairness and development.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_022",
+      "questionNumber": 72,
+      "questionText": "Which behaviour shows responsibility at home?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leaving rubbish everywhere"
+        },
+        {
+          "letter": "B",
+          "text": "Completing an agreed household task"
+        },
+        {
+          "letter": "C",
+          "text": "Breaking household items deliberately"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring younger children who need help"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Responsibility includes carrying out agreed duties.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_023",
+      "questionNumber": 73,
+      "questionText": "What is one benefit of working together in a community?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resources are always wasted"
+        },
+        {
+          "letter": "B",
+          "text": "Everyone becomes isolated"
+        },
+        {
+          "letter": "C",
+          "text": "Problems can be solved using shared effort"
+        },
+        {
+          "letter": "D",
+          "text": "Communication stops"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Cooperation combines skills and effort.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_024",
+      "questionNumber": 74,
+      "questionText": "Which person is usually responsible for helping a child learn acceptable behaviour at home?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A television set"
+        },
+        {
+          "letter": "B",
+          "text": "A traffic sign"
+        },
+        {
+          "letter": "C",
+          "text": "A river"
+        },
+        {
+          "letter": "D",
+          "text": "Parents or guardians"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Parents and guardians play an important role in guidance and socialisation.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_025",
+      "questionNumber": 75,
+      "questionText": "Why should family members respect one another's belongings?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It protects trust and reduces conflict"
+        },
+        {
+          "letter": "B",
+          "text": "It encourages theft"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents cooperation"
+        },
+        {
+          "letter": "D",
+          "text": "It makes property worthless"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Respect for property supports trust and peaceful relationships.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_026",
+      "questionNumber": 76,
+      "questionText": "Which action is most helpful when a neighbour is facing a temporary problem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Laugh at the neighbour"
+        },
+        {
+          "letter": "B",
+          "text": "Offer reasonable assistance"
+        },
+        {
+          "letter": "C",
+          "text": "Spread the problem around"
+        },
+        {
+          "letter": "D",
+          "text": "Make the situation worse"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reasonable assistance strengthens community support.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_027",
+      "questionNumber": 77,
+      "questionText": "A community meeting is most useful when residents want to:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Destroy public facilities"
+        },
+        {
+          "letter": "B",
+          "text": "Prevent communication"
+        },
+        {
+          "letter": "C",
+          "text": "Discuss shared problems and possible solutions"
+        },
+        {
+          "letter": "D",
+          "text": "Stop all cooperation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Meetings allow communities to identify issues and agree on action.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_028",
+      "questionNumber": 78,
+      "questionText": "Which is an example of fair sharing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Refusing to share resources"
+        },
+        {
+          "letter": "B",
+          "text": "Giving every task to the youngest child"
+        },
+        {
+          "letter": "C",
+          "text": "Allowing one person to take everything"
+        },
+        {
+          "letter": "D",
+          "text": "Dividing work according to ability and agreed responsibilities"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Fair sharing considers responsibilities and circumstances.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_029",
+      "questionNumber": 79,
+      "questionText": "Why is keeping promises important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It builds trust"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees wealth"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents education"
+        },
+        {
+          "letter": "D",
+          "text": "It removes responsibility"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keeping promises helps others rely on us.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_030",
+      "questionNumber": 80,
+      "questionText": "Which action can strengthen unity in a community?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Insulting people with different views"
+        },
+        {
+          "letter": "B",
+          "text": "Respecting differences while working toward common goals"
+        },
+        {
+          "letter": "C",
+          "text": "Refusing to cooperate"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading rumours"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Respectful cooperation strengthens unity.",
+      "answerConfidence": "high",
+      "topic": "Family and Community"
+    },
+    {
+      "id": "g7_general_p1_031",
+      "questionNumber": 81,
+      "questionText": "Which quality is commonly associated with a trustworthy person?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cruelty"
+        },
+        {
+          "letter": "B",
+          "text": "Deceit"
+        },
+        {
+          "letter": "C",
+          "text": "Honesty"
+        },
+        {
+          "letter": "D",
+          "text": "Carelessness"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Honesty helps people trust one another.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_032",
+      "questionNumber": 82,
+      "questionText": "Why do many religions teach people to help those in need?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes kindness unnecessary"
+        },
+        {
+          "letter": "B",
+          "text": "It encourages selfishness"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents community support"
+        },
+        {
+          "letter": "D",
+          "text": "It promotes compassion and responsibility"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Helping others expresses compassion and social responsibility.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_033",
+      "questionNumber": 83,
+      "questionText": "Which action best demonstrates forgiveness?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Choosing to stop seeking revenge after an apology"
+        },
+        {
+          "letter": "B",
+          "text": "Planning revenge"
+        },
+        {
+          "letter": "C",
+          "text": "Spreading insults"
+        },
+        {
+          "letter": "D",
+          "text": "Damaging property"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Forgiveness involves letting go of the desire for revenge.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_034",
+      "questionNumber": 84,
+      "questionText": "Which is a Christian holy book?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The Qur'an"
+        },
+        {
+          "letter": "B",
+          "text": "The Bible"
+        },
+        {
+          "letter": "C",
+          "text": "The Vedas"
+        },
+        {
+          "letter": "D",
+          "text": "The Tripitaka"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Bible is the sacred text of Christianity.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_035",
+      "questionNumber": 85,
+      "questionText": "Which is the holy book of Islam?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The Torah only"
+        },
+        {
+          "letter": "B",
+          "text": "The Bible"
+        },
+        {
+          "letter": "C",
+          "text": "The Qur'an"
+        },
+        {
+          "letter": "D",
+          "text": "The Book of Proverbs only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Qur'an is the central holy scripture of Islam.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_036",
+      "questionNumber": 86,
+      "questionText": "Why is prayer important to many believers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It guarantees that no problems will occur"
+        },
+        {
+          "letter": "B",
+          "text": "It is a form of farming"
+        },
+        {
+          "letter": "C",
+          "text": "It replaces every school subject"
+        },
+        {
+          "letter": "D",
+          "text": "It provides a way to communicate with and worship God"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Prayer is a form of worship and spiritual communication.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_037",
+      "questionNumber": 87,
+      "questionText": "Which behaviour demonstrates respect for another person's beliefs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Allowing them to practise peacefully"
+        },
+        {
+          "letter": "B",
+          "text": "Insulting their worship"
+        },
+        {
+          "letter": "C",
+          "text": "Destroying their religious objects"
+        },
+        {
+          "letter": "D",
+          "text": "Preventing all discussion"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Respect means allowing others to hold and practise their beliefs peacefully.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_038",
+      "questionNumber": 88,
+      "questionText": "What is the moral lesson in returning a lost item to its owner?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Greed"
+        },
+        {
+          "letter": "B",
+          "text": "Honesty and responsibility"
+        },
+        {
+          "letter": "C",
+          "text": "Dishonesty"
+        },
+        {
+          "letter": "D",
+          "text": "Wastefulness"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Returning lost property demonstrates honesty.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_039",
+      "questionNumber": 89,
+      "questionText": "Which action shows self-control?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Breaking furniture"
+        },
+        {
+          "letter": "B",
+          "text": "Hitting someone immediately"
+        },
+        {
+          "letter": "C",
+          "text": "Walking away from an argument before becoming violent"
+        },
+        {
+          "letter": "D",
+          "text": "Shouting insults"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Self-control helps a person manage strong emotions.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_040",
+      "questionNumber": 90,
+      "questionText": "Why are religious festivals often important to believers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They have no cultural meaning"
+        },
+        {
+          "letter": "B",
+          "text": "They are only for buying clothes"
+        },
+        {
+          "letter": "C",
+          "text": "They prevent families from meeting"
+        },
+        {
+          "letter": "D",
+          "text": "They provide opportunities for worship, remembrance and community"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Festivals often combine worship, remembrance and community activities.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_041",
+      "questionNumber": 91,
+      "questionText": "Which value is demonstrated when a learner admits making a mistake?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Honesty"
+        },
+        {
+          "letter": "B",
+          "text": "Pride"
+        },
+        {
+          "letter": "C",
+          "text": "Deception"
+        },
+        {
+          "letter": "D",
+          "text": "Irresponsibility"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Admitting a mistake is an honest and responsible action.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_042",
+      "questionNumber": 92,
+      "questionText": "What should a learner do after accidentally hurting a friend?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Blame someone else"
+        },
+        {
+          "letter": "B",
+          "text": "Apologise sincerely and try to make things right"
+        },
+        {
+          "letter": "C",
+          "text": "Laugh at the friend"
+        },
+        {
+          "letter": "D",
+          "text": "Repeat the behaviour"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A sincere apology and corrective action can repair relationships.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_043",
+      "questionNumber": 93,
+      "questionText": "Which action best shows compassion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mocking the injury"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring the classmate"
+        },
+        {
+          "letter": "C",
+          "text": "Helping an injured classmate get assistance"
+        },
+        {
+          "letter": "D",
+          "text": "Taking the classmate's belongings"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Compassion means recognising suffering and responding with care.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_044",
+      "questionNumber": 94,
+      "questionText": "Why is truthfulness important in examinations?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes cheating acceptable"
+        },
+        {
+          "letter": "B",
+          "text": "It guarantees every learner the highest mark"
+        },
+        {
+          "letter": "C",
+          "text": "It removes the need to study"
+        },
+        {
+          "letter": "D",
+          "text": "It maintains fairness and trust"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Truthfulness supports fairness and trust in assessment.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_045",
+      "questionNumber": 95,
+      "questionText": "Which value helps people live peacefully despite differences?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tolerance"
+        },
+        {
+          "letter": "B",
+          "text": "Hatred"
+        },
+        {
+          "letter": "C",
+          "text": "Dishonesty"
+        },
+        {
+          "letter": "D",
+          "text": "Bullying"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tolerance allows people to coexist respectfully.",
+      "answerConfidence": "high",
+      "topic": "Religion and Moral Education"
+    },
+    {
+      "id": "g7_general_p1_046",
+      "questionNumber": 96,
+      "questionText": "Which practice is most effective for reducing the spread of germs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sharing used towels"
+        },
+        {
+          "letter": "B",
+          "text": "Washing hands with soap and clean water"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving food uncovered"
+        },
+        {
+          "letter": "D",
+          "text": "Avoiding bathing"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Handwashing removes many germs and reduces transmission.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_047",
+      "questionNumber": 97,
+      "questionText": "Why should drinking water be kept in a clean, covered container?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To increase dust"
+        },
+        {
+          "letter": "B",
+          "text": "To make it sweeter"
+        },
+        {
+          "letter": "C",
+          "text": "To reduce contamination"
+        },
+        {
+          "letter": "D",
+          "text": "To change its colour"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Covering and cleaning containers helps protect water from contamination.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_048",
+      "questionNumber": 98,
+      "questionText": "Which is a healthy personal hygiene practice?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Avoiding handwashing"
+        },
+        {
+          "letter": "B",
+          "text": "Sharing toothbrushes"
+        },
+        {
+          "letter": "C",
+          "text": "Keeping wounds dirty"
+        },
+        {
+          "letter": "D",
+          "text": "Bathing regularly and wearing clean clothes"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Regular bathing and clean clothing support personal hygiene.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_049",
+      "questionNumber": 99,
+      "questionText": "What should a person do before preparing food?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Wash hands thoroughly"
+        },
+        {
+          "letter": "B",
+          "text": "Touch rubbish first"
+        },
+        {
+          "letter": "C",
+          "text": "Leave hands dirty"
+        },
+        {
+          "letter": "D",
+          "text": "Share a dirty cloth"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Clean hands reduce contamination of food.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_050",
+      "questionNumber": 100,
+      "questionText": "Which food-storage practice is safest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leave cooked food uncovered for days"
+        },
+        {
+          "letter": "B",
+          "text": "Keep food covered and store perishable food appropriately"
+        },
+        {
+          "letter": "C",
+          "text": "Store food beside rubbish"
+        },
+        {
+          "letter": "D",
+          "text": "Mix clean and spoiled food"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Safe storage reduces contamination and spoilage.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_051",
+      "questionNumber": 101,
+      "questionText": "Why is a balanced diet important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents all diseases"
+        },
+        {
+          "letter": "B",
+          "text": "It removes the need for water"
+        },
+        {
+          "letter": "C",
+          "text": "It supplies a variety of nutrients needed by the body"
+        },
+        {
+          "letter": "D",
+          "text": "It means eating one food only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A balanced diet provides different nutrients for growth and health.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_052",
+      "questionNumber": 102,
+      "questionText": "Which activity helps maintain physical fitness?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Eating without activity"
+        },
+        {
+          "letter": "B",
+          "text": "Sleeping all day"
+        },
+        {
+          "letter": "C",
+          "text": "Avoiding movement"
+        },
+        {
+          "letter": "D",
+          "text": "Regular exercise"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Regular physical activity supports fitness.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_053",
+      "questionNumber": 103,
+      "questionText": "What is one safe action when a person gets a minor cut?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Clean it and protect it with a suitable dressing"
+        },
+        {
+          "letter": "B",
+          "text": "Rub soil into it"
+        },
+        {
+          "letter": "C",
+          "text": "Leave it contaminated"
+        },
+        {
+          "letter": "D",
+          "text": "Share a used dressing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cleaning and covering a minor wound helps prevent infection.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_054",
+      "questionNumber": 104,
+      "questionText": "Why should toilets be kept clean?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To increase insects"
+        },
+        {
+          "letter": "B",
+          "text": "To reduce disease-causing germs and unpleasant conditions"
+        },
+        {
+          "letter": "C",
+          "text": "To waste water deliberately"
+        },
+        {
+          "letter": "D",
+          "text": "To make food unsafe"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Clean sanitation facilities reduce health risks.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_055",
+      "questionNumber": 105,
+      "questionText": "Which habit helps protect teeth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Never cleaning the mouth"
+        },
+        {
+          "letter": "B",
+          "text": "Eating sweets continuously"
+        },
+        {
+          "letter": "C",
+          "text": "Brushing teeth regularly with toothpaste"
+        },
+        {
+          "letter": "D",
+          "text": "Sharing toothbrushes"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Regular brushing helps remove plaque and protect teeth.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_056",
+      "questionNumber": 106,
+      "questionText": "What should a learner do if they feel seriously ill at school?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ignore severe symptoms"
+        },
+        {
+          "letter": "B",
+          "text": "Hide the illness from everyone"
+        },
+        {
+          "letter": "C",
+          "text": "Take unknown medicine"
+        },
+        {
+          "letter": "D",
+          "text": "Tell a responsible adult and seek appropriate help"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Adults can help the learner obtain appropriate care.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_057",
+      "questionNumber": 107,
+      "questionText": "Why is adequate sleep important for children?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It supports growth, rest and concentration"
+        },
+        {
+          "letter": "B",
+          "text": "It makes food unnecessary"
+        },
+        {
+          "letter": "C",
+          "text": "It replaces exercise"
+        },
+        {
+          "letter": "D",
+          "text": "It prevents all illness"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sleep supports physical recovery, growth and mental functioning.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_058",
+      "questionNumber": 108,
+      "questionText": "Which practice helps prevent mosquito breeding near homes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keeping containers full of stagnant water"
+        },
+        {
+          "letter": "B",
+          "text": "Removing standing water"
+        },
+        {
+          "letter": "C",
+          "text": "Blocking drains with rubbish"
+        },
+        {
+          "letter": "D",
+          "text": "Leaving tyres filled with rainwater"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mosquitoes can breed in standing water.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_059",
+      "questionNumber": 109,
+      "questionText": "What is the safest response to an unknown medicine found at home?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Give it to a friend"
+        },
+        {
+          "letter": "B",
+          "text": "Taste it first"
+        },
+        {
+          "letter": "C",
+          "text": "Do not take it and tell a responsible adult"
+        },
+        {
+          "letter": "D",
+          "text": "Mix it with food"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Unknown medicines should not be taken without appropriate guidance.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_060",
+      "questionNumber": 110,
+      "questionText": "Why should food be protected from flies?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Flies remove all bacteria"
+        },
+        {
+          "letter": "B",
+          "text": "Flies make food more nutritious"
+        },
+        {
+          "letter": "C",
+          "text": "Flies cool food safely"
+        },
+        {
+          "letter": "D",
+          "text": "Flies can carry germs to food"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Flies can transfer harmful microorganisms and contaminants.",
+      "answerConfidence": "high",
+      "topic": "Health and Personal Hygiene"
+    },
+    {
+      "id": "g7_general_p1_061",
+      "questionNumber": 111,
+      "questionText": "Which practice helps conserve soil on sloping land?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Terracing"
+        },
+        {
+          "letter": "B",
+          "text": "Removing all vegetation"
+        },
+        {
+          "letter": "C",
+          "text": "Overgrazing"
+        },
+        {
+          "letter": "D",
+          "text": "Burning every plant"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Terracing slows runoff and reduces soil erosion.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_062",
+      "questionNumber": 112,
+      "questionText": "What is recycling?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Burning every type of waste"
+        },
+        {
+          "letter": "B",
+          "text": "Processing used materials so they can be used again"
+        },
+        {
+          "letter": "C",
+          "text": "Throwing rubbish into rivers"
+        },
+        {
+          "letter": "D",
+          "text": "Leaving waste on roads"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Recycling recovers materials for further use.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_063",
+      "questionNumber": 113,
+      "questionText": "Why are trees important to the environment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They stop all rainfall"
+        },
+        {
+          "letter": "B",
+          "text": "They create plastic"
+        },
+        {
+          "letter": "C",
+          "text": "They provide habitats, help protect soil and take in carbon dioxide"
+        },
+        {
+          "letter": "D",
+          "text": "They make rivers disappear"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Trees provide ecological services including habitat and soil protection.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_064",
+      "questionNumber": 114,
+      "questionText": "Which action is most likely to pollute a river?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using a proper waste facility"
+        },
+        {
+          "letter": "B",
+          "text": "Planting vegetation beside it"
+        },
+        {
+          "letter": "C",
+          "text": "Keeping rubbish out of it"
+        },
+        {
+          "letter": "D",
+          "text": "Dumping untreated waste into it"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Untreated waste can contaminate water.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_065",
+      "questionNumber": 115,
+      "questionText": "What is deforestation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The large-scale removal of trees"
+        },
+        {
+          "letter": "B",
+          "text": "The planting of new forests"
+        },
+        {
+          "letter": "C",
+          "text": "The cleaning of a classroom"
+        },
+        {
+          "letter": "D",
+          "text": "The protection of wetlands"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Deforestation means removal or clearing of forests.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_066",
+      "questionNumber": 116,
+      "questionText": "Which practice can reduce household waste?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Throw away reusable items immediately"
+        },
+        {
+          "letter": "B",
+          "text": "Reuse suitable containers and materials"
+        },
+        {
+          "letter": "C",
+          "text": "Buy unnecessary single-use items"
+        },
+        {
+          "letter": "D",
+          "text": "Burn plastics indoors"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reuse reduces the amount of waste requiring disposal.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_067",
+      "questionNumber": 117,
+      "questionText": "Why should wetlands be protected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They prevent all farming"
+        },
+        {
+          "letter": "B",
+          "text": "They are useful only for dumping rubbish"
+        },
+        {
+          "letter": "C",
+          "text": "They support biodiversity and help regulate water"
+        },
+        {
+          "letter": "D",
+          "text": "They have no ecological value"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Wetlands provide habitats and important water-related functions.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_068",
+      "questionNumber": 118,
+      "questionText": "Which energy source is renewable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Petrol"
+        },
+        {
+          "letter": "B",
+          "text": "Coal"
+        },
+        {
+          "letter": "C",
+          "text": "Diesel"
+        },
+        {
+          "letter": "D",
+          "text": "Solar energy"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Solar energy is naturally replenished.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_069",
+      "questionNumber": 119,
+      "questionText": "What causes soil erosion most directly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Removal of protective vegetation combined with wind or water action"
+        },
+        {
+          "letter": "B",
+          "text": "Planting grass"
+        },
+        {
+          "letter": "C",
+          "text": "Mulching"
+        },
+        {
+          "letter": "D",
+          "text": "Terracing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Bare soil is more vulnerable to erosion by wind and water.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_070",
+      "questionNumber": 120,
+      "questionText": "Which action helps conserve water at home?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leaving taps running"
+        },
+        {
+          "letter": "B",
+          "text": "Repairing leaking taps"
+        },
+        {
+          "letter": "C",
+          "text": "Washing one item under running water for hours"
+        },
+        {
+          "letter": "D",
+          "text": "Ignoring broken pipes"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fixing leaks reduces unnecessary water loss.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_071",
+      "questionNumber": 121,
+      "questionText": "Why should rubbish not be burned in enclosed spaces?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It creates drinking water"
+        },
+        {
+          "letter": "B",
+          "text": "It always produces clean air"
+        },
+        {
+          "letter": "C",
+          "text": "Smoke can pollute indoor air and harm health"
+        },
+        {
+          "letter": "D",
+          "text": "It removes all toxic substances"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Smoke and harmful substances can accumulate in enclosed spaces.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_072",
+      "questionNumber": 122,
+      "questionText": "Which item is biodegradable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plastic spoon"
+        },
+        {
+          "letter": "B",
+          "text": "Glass bottle"
+        },
+        {
+          "letter": "C",
+          "text": "Aluminium can"
+        },
+        {
+          "letter": "D",
+          "text": "Fruit peel"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Organic fruit peel can decompose naturally.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_073",
+      "questionNumber": 123,
+      "questionText": "What is conservation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Wise protection and management of natural resources"
+        },
+        {
+          "letter": "B",
+          "text": "Using resources without limits"
+        },
+        {
+          "letter": "C",
+          "text": "Destroying habitats"
+        },
+        {
+          "letter": "D",
+          "text": "Polluting water sources"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Conservation means protecting and managing resources sustainably.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_074",
+      "questionNumber": 124,
+      "questionText": "Which practice can protect a riverbank from erosion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Removing all grass"
+        },
+        {
+          "letter": "B",
+          "text": "Maintaining vegetation along the bank"
+        },
+        {
+          "letter": "C",
+          "text": "Digging the bank unnecessarily"
+        },
+        {
+          "letter": "D",
+          "text": "Dumping soil into the river"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Vegetation helps hold soil and reduce runoff.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_075",
+      "questionNumber": 125,
+      "questionText": "Why should communities plant trees after cutting mature trees for approved uses?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To reduce habitats"
+        },
+        {
+          "letter": "B",
+          "text": "To increase soil erosion"
+        },
+        {
+          "letter": "C",
+          "text": "To replace some of the lost vegetation"
+        },
+        {
+          "letter": "D",
+          "text": "To stop all farming"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Replanting supports continued vegetation cover and resource sustainability.",
+      "answerConfidence": "high",
+      "topic": "Environment and Conservation"
+    },
+    {
+      "id": "g7_general_p1_076",
+      "questionNumber": 126,
+      "questionText": "Which soil property is especially important for healthy crop growth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only stones"
+        },
+        {
+          "letter": "B",
+          "text": "Permanent dryness"
+        },
+        {
+          "letter": "C",
+          "text": "Complete absence of air"
+        },
+        {
+          "letter": "D",
+          "text": "Adequate nutrients and moisture"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Crops need nutrients, water and air around their roots.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_077",
+      "questionNumber": 127,
+      "questionText": "Why are seeds selected before planting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To choose healthy, viable seeds likely to germinate well"
+        },
+        {
+          "letter": "B",
+          "text": "To make seeds heavier"
+        },
+        {
+          "letter": "C",
+          "text": "To remove all water from soil"
+        },
+        {
+          "letter": "D",
+          "text": "To stop germination"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good seed selection improves establishment and crop performance.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_078",
+      "questionNumber": 128,
+      "questionText": "Which practice helps improve soil fertility using plant material?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Removing all organic matter"
+        },
+        {
+          "letter": "B",
+          "text": "Adding suitable compost"
+        },
+        {
+          "letter": "C",
+          "text": "Leaving soil bare"
+        },
+        {
+          "letter": "D",
+          "text": "Pouring used engine oil on the field"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Compost adds organic matter and nutrients.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_079",
+      "questionNumber": 129,
+      "questionText": "What is weeding?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Harvesting ripe crops"
+        },
+        {
+          "letter": "B",
+          "text": "Planting seeds"
+        },
+        {
+          "letter": "C",
+          "text": "Removing unwanted plants from a crop field"
+        },
+        {
+          "letter": "D",
+          "text": "Watering animals"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Weeding removes plants that compete with crops.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_080",
+      "questionNumber": 130,
+      "questionText": "Why should farmers avoid overgrazing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes soil permanently fertile"
+        },
+        {
+          "letter": "B",
+          "text": "It always improves pasture"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all droughts"
+        },
+        {
+          "letter": "D",
+          "text": "It can damage vegetation and increase soil erosion"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Overgrazing removes protective vegetation and can degrade land.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_081",
+      "questionNumber": 131,
+      "questionText": "Which animal product is commonly obtained from cattle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Milk"
+        },
+        {
+          "letter": "B",
+          "text": "Silk"
+        },
+        {
+          "letter": "C",
+          "text": "Honey"
+        },
+        {
+          "letter": "D",
+          "text": "Wool only"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cattle are commonly kept for milk, among other products.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_082",
+      "questionNumber": 132,
+      "questionText": "What is crop rotation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Growing one crop forever"
+        },
+        {
+          "letter": "B",
+          "text": "Growing different crops on the same land in planned seasons"
+        },
+        {
+          "letter": "C",
+          "text": "Harvesting crops every day"
+        },
+        {
+          "letter": "D",
+          "text": "Keeping all fields unused"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Crop rotation changes crops across seasons to help manage soil and pests.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_083",
+      "questionNumber": 133,
+      "questionText": "Why is mulching useful around crops?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It increases evaporation"
+        },
+        {
+          "letter": "B",
+          "text": "It removes all nutrients"
+        },
+        {
+          "letter": "C",
+          "text": "It can conserve soil moisture and suppress weeds"
+        },
+        {
+          "letter": "D",
+          "text": "It guarantees no pests"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mulch can reduce evaporation and weed growth.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_084",
+      "questionNumber": 134,
+      "questionText": "Which is a good practice when storing harvested grain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leave it exposed to rain"
+        },
+        {
+          "letter": "B",
+          "text": "Store it in a wet place"
+        },
+        {
+          "letter": "C",
+          "text": "Mix it with rubbish"
+        },
+        {
+          "letter": "D",
+          "text": "Keep it dry and protected from pests"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Dry, protected storage reduces spoilage and pest damage.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_085",
+      "questionNumber": 135,
+      "questionText": "Which tool is commonly used to loosen soil by hand?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hoe"
+        },
+        {
+          "letter": "B",
+          "text": "Spoon"
+        },
+        {
+          "letter": "C",
+          "text": "Ruler"
+        },
+        {
+          "letter": "D",
+          "text": "Paintbrush"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A hoe is a common hand tool for cultivating soil.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_086",
+      "questionNumber": 136,
+      "questionText": "Why should farmers control crop pests?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pests always increase harvests"
+        },
+        {
+          "letter": "B",
+          "text": "Pests can reduce crop yield and quality"
+        },
+        {
+          "letter": "C",
+          "text": "Pests make soil richer"
+        },
+        {
+          "letter": "D",
+          "text": "Pests prevent all diseases"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pests may damage plants and reduce production.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_087",
+      "questionNumber": 137,
+      "questionText": "Which practice helps reduce damage from water erosion on a field?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Making straight channels down a steep slope"
+        },
+        {
+          "letter": "B",
+          "text": "Removing all vegetation"
+        },
+        {
+          "letter": "C",
+          "text": "Planting across the slope or using contours"
+        },
+        {
+          "letter": "D",
+          "text": "Overgrazing"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Contour-based practices can slow water movement.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_088",
+      "questionNumber": 138,
+      "questionText": "What is harvesting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Building a road"
+        },
+        {
+          "letter": "B",
+          "text": "Preparing a school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "Cleaning a classroom"
+        },
+        {
+          "letter": "D",
+          "text": "Collecting mature crops or useful plant parts"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Harvesting is the collection of mature agricultural produce.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_089",
+      "questionNumber": 139,
+      "questionText": "Why should farm tools be cleaned and stored properly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It helps keep them usable and reduces damage"
+        },
+        {
+          "letter": "B",
+          "text": "It makes them disappear"
+        },
+        {
+          "letter": "C",
+          "text": "It prevents all farming"
+        },
+        {
+          "letter": "D",
+          "text": "It increases rust deliberately"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cleaning and proper storage extend tool life.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_090",
+      "questionNumber": 140,
+      "questionText": "Which practice helps protect young seedlings after planting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Uprooting them frequently"
+        },
+        {
+          "letter": "B",
+          "text": "Watering appropriately and controlling weeds"
+        },
+        {
+          "letter": "C",
+          "text": "Walking over them"
+        },
+        {
+          "letter": "D",
+          "text": "Leaving them without protection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Appropriate water and weed control help seedlings establish.",
+      "answerConfidence": "high",
+      "topic": "Agriculture"
+    },
+    {
+      "id": "g7_general_p1_091",
+      "questionNumber": 141,
+      "questionText": "Which organ pumps blood around the human body?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stomach"
+        },
+        {
+          "letter": "B",
+          "text": "Lung"
+        },
+        {
+          "letter": "C",
+          "text": "Heart"
+        },
+        {
+          "letter": "D",
+          "text": "Kidney"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The heart pumps blood through the circulatory system.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_092",
+      "questionNumber": 142,
+      "questionText": "Which gas do humans need for normal respiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Helium"
+        },
+        {
+          "letter": "B",
+          "text": "Carbon dioxide only"
+        },
+        {
+          "letter": "C",
+          "text": "Hydrogen only"
+        },
+        {
+          "letter": "D",
+          "text": "Oxygen"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Oxygen is required for aerobic respiration.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_093",
+      "questionNumber": 143,
+      "questionText": "What happens when water is heated to its boiling point under normal conditions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It changes from liquid to gas"
+        },
+        {
+          "letter": "B",
+          "text": "It becomes a solid"
+        },
+        {
+          "letter": "C",
+          "text": "It disappears permanently"
+        },
+        {
+          "letter": "D",
+          "text": "It becomes soil"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Boiling changes liquid water into water vapour.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_094",
+      "questionNumber": 144,
+      "questionText": "Which force pulls objects toward the Earth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Magnetism only"
+        },
+        {
+          "letter": "B",
+          "text": "Gravity"
+        },
+        {
+          "letter": "C",
+          "text": "Friction only"
+        },
+        {
+          "letter": "D",
+          "text": "Electricity only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Gravity attracts objects toward Earth.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_095",
+      "questionNumber": 145,
+      "questionText": "Which simple machine is a seesaw an example of?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Screw only"
+        },
+        {
+          "letter": "B",
+          "text": "Pulley only"
+        },
+        {
+          "letter": "C",
+          "text": "Lever"
+        },
+        {
+          "letter": "D",
+          "text": "Wheelbarrow only"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A seesaw works as a lever.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_096",
+      "questionNumber": 146,
+      "questionText": "Which material is a good conductor of electricity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plastic"
+        },
+        {
+          "letter": "B",
+          "text": "Rubber"
+        },
+        {
+          "letter": "C",
+          "text": "Dry wood"
+        },
+        {
+          "letter": "D",
+          "text": "Copper"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Copper conducts electricity well.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_097",
+      "questionNumber": 147,
+      "questionText": "Why are insulators used around electrical wires?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To reduce the risk of electric shock"
+        },
+        {
+          "letter": "B",
+          "text": "To increase electric shocks"
+        },
+        {
+          "letter": "C",
+          "text": "To make wires disappear"
+        },
+        {
+          "letter": "D",
+          "text": "To make electricity stop existing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Insulating materials help prevent current from reaching people.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_098",
+      "questionNumber": 148,
+      "questionText": "Which part of a plant absorbs most water and minerals from the soil?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Flowers"
+        },
+        {
+          "letter": "B",
+          "text": "Roots"
+        },
+        {
+          "letter": "C",
+          "text": "Fruits"
+        },
+        {
+          "letter": "D",
+          "text": "Seeds only"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Roots absorb water and mineral nutrients.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_099",
+      "questionNumber": 149,
+      "questionText": "What is evaporation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The change of solid into liquid only"
+        },
+        {
+          "letter": "B",
+          "text": "The change of gas into solid"
+        },
+        {
+          "letter": "C",
+          "text": "The change of a liquid into a gas at its surface"
+        },
+        {
+          "letter": "D",
+          "text": "The formation of soil"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Evaporation is a liquid-to-gas change at the surface.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_100",
+      "questionNumber": 150,
+      "questionText": "Which instrument measures temperature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compass"
+        },
+        {
+          "letter": "B",
+          "text": "Barometer"
+        },
+        {
+          "letter": "C",
+          "text": "Ruler"
+        },
+        {
+          "letter": "D",
+          "text": "Thermometer"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A thermometer measures temperature.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_101",
+      "questionNumber": 151,
+      "questionText": "What is a habitat?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The place where an organism normally lives"
+        },
+        {
+          "letter": "B",
+          "text": "A type of machine"
+        },
+        {
+          "letter": "C",
+          "text": "A school subject"
+        },
+        {
+          "letter": "D",
+          "text": "A measuring unit"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A habitat provides the conditions in which an organism lives.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_102",
+      "questionNumber": 152,
+      "questionText": "Which technology can help farmers receive weather information quickly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cooking pot"
+        },
+        {
+          "letter": "B",
+          "text": "A mobile phone or internet-enabled device"
+        },
+        {
+          "letter": "C",
+          "text": "A wooden stool"
+        },
+        {
+          "letter": "D",
+          "text": "A hand broom"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Digital devices can provide access to weather information.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_103",
+      "questionNumber": 153,
+      "questionText": "Why should electrical appliances be kept away from water?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Water always improves insulation"
+        },
+        {
+          "letter": "B",
+          "text": "Water makes every appliance safer"
+        },
+        {
+          "letter": "C",
+          "text": "Water can increase the risk of electric shock"
+        },
+        {
+          "letter": "D",
+          "text": "Water prevents all faults"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Water can conduct electricity and increase shock risk.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_104",
+      "questionNumber": 154,
+      "questionText": "Which change is reversible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rusting iron"
+        },
+        {
+          "letter": "B",
+          "text": "Burning paper"
+        },
+        {
+          "letter": "C",
+          "text": "Cooking an egg"
+        },
+        {
+          "letter": "D",
+          "text": "Melting ice and freezing the water again"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Ice can melt and the water can freeze again.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_105",
+      "questionNumber": 155,
+      "questionText": "What is the main function of the lungs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gas exchange during breathing"
+        },
+        {
+          "letter": "B",
+          "text": "Pumping blood"
+        },
+        {
+          "letter": "C",
+          "text": "Digesting food"
+        },
+        {
+          "letter": "D",
+          "text": "Filtering urine"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lungs exchange oxygen and carbon dioxide.",
+      "answerConfidence": "high",
+      "topic": "Science and Technology"
+    },
+    {
+      "id": "g7_general_p1_106",
+      "questionNumber": 156,
+      "questionText": "Why should pedestrians use a designated crossing where one is available?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes vehicles disappear"
+        },
+        {
+          "letter": "B",
+          "text": "It helps them cross more safely"
+        },
+        {
+          "letter": "C",
+          "text": "It guarantees no accidents can ever happen"
+        },
+        {
+          "letter": "D",
+          "text": "It increases road speed"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Designated crossings help organise safer pedestrian movement.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_107",
+      "questionNumber": 157,
+      "questionText": "What should a passenger do when travelling in a vehicle fitted with seat belts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lean out of the window"
+        },
+        {
+          "letter": "B",
+          "text": "Stand on the seat"
+        },
+        {
+          "letter": "C",
+          "text": "Wear the seat belt correctly"
+        },
+        {
+          "letter": "D",
+          "text": "Ignore the belt"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Seat belts reduce injury risk during sudden stops or crashes.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_108",
+      "questionNumber": 158,
+      "questionText": "Why is speeding dangerous?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents braking"
+        },
+        {
+          "letter": "B",
+          "text": "It always improves safety"
+        },
+        {
+          "letter": "C",
+          "text": "It makes roads wider"
+        },
+        {
+          "letter": "D",
+          "text": "It reduces the time available to react and can increase crash severity"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Higher speed can reduce reaction time and increase collision energy.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_109",
+      "questionNumber": 159,
+      "questionText": "Which action is safest when approaching a road?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stop, look carefully and cross when it is safe"
+        },
+        {
+          "letter": "B",
+          "text": "Run without looking"
+        },
+        {
+          "letter": "C",
+          "text": "Close your eyes"
+        },
+        {
+          "letter": "D",
+          "text": "Follow another person blindly"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Careful observation and safe crossing reduce risk.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_110",
+      "questionNumber": 160,
+      "questionText": "What is one danger of driving after drinking alcohol?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Improved concentration"
+        },
+        {
+          "letter": "B",
+          "text": "Reduced judgement and slower reactions"
+        },
+        {
+          "letter": "C",
+          "text": "Better vision"
+        },
+        {
+          "letter": "D",
+          "text": "Faster safe decision-making"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Alcohol can impair judgement, coordination and reaction time.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_111",
+      "questionNumber": 161,
+      "questionText": "Which road user should be especially careful around a zebra crossing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only passengers at home"
+        },
+        {
+          "letter": "B",
+          "text": "Only shopkeepers"
+        },
+        {
+          "letter": "C",
+          "text": "Drivers and pedestrians"
+        },
+        {
+          "letter": "D",
+          "text": "Only cyclists in fields"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Both drivers and pedestrians need to use crossings carefully.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_112",
+      "questionNumber": 162,
+      "questionText": "Why should bicycles be maintained properly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It makes helmets unnecessary"
+        },
+        {
+          "letter": "B",
+          "text": "Maintenance makes accidents certain"
+        },
+        {
+          "letter": "C",
+          "text": "It removes the need for road rules"
+        },
+        {
+          "letter": "D",
+          "text": "Faulty brakes or tyres can cause accidents"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Safe brakes, tyres and other parts reduce mechanical risk.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_113",
+      "questionNumber": 163,
+      "questionText": "Which behaviour is unsafe on a moving bus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Standing in a dangerous position or leaning outside"
+        },
+        {
+          "letter": "B",
+          "text": "Sitting properly"
+        },
+        {
+          "letter": "C",
+          "text": "Holding a safe handrail"
+        },
+        {
+          "letter": "D",
+          "text": "Following the driver's instructions"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unsafe movement can cause falls or serious injury.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_114",
+      "questionNumber": 164,
+      "questionText": "What does a red traffic light normally mean for vehicles?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Speed up"
+        },
+        {
+          "letter": "B",
+          "text": "Stop"
+        },
+        {
+          "letter": "C",
+          "text": "Turn without looking"
+        },
+        {
+          "letter": "D",
+          "text": "Overtake everyone"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A red light signals that vehicles should stop.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_115",
+      "questionNumber": 165,
+      "questionText": "Why should children avoid playing on roads?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vehicles always stop automatically"
+        },
+        {
+          "letter": "B",
+          "text": "Roads are designed as playgrounds"
+        },
+        {
+          "letter": "C",
+          "text": "Roads are used by moving vehicles and can be dangerous"
+        },
+        {
+          "letter": "D",
+          "text": "Traffic signs do not matter"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Moving traffic presents significant danger to children.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_116",
+      "questionNumber": 166,
+      "questionText": "Which emergency number should a person use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "No number"
+        },
+        {
+          "letter": "B",
+          "text": "A random number from an advert"
+        },
+        {
+          "letter": "C",
+          "text": "A friend's number only"
+        },
+        {
+          "letter": "D",
+          "text": "An appropriate local emergency service number"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Emergency services should be contacted using the appropriate local number.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_117",
+      "questionNumber": 167,
+      "questionText": "What is the safest place to wait for a bus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A designated or safe waiting area away from moving traffic"
+        },
+        {
+          "letter": "B",
+          "text": "The middle of the road"
+        },
+        {
+          "letter": "C",
+          "text": "Behind a moving vehicle"
+        },
+        {
+          "letter": "D",
+          "text": "On the roadway"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Waiting away from traffic reduces the risk of being struck.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_118",
+      "questionNumber": 168,
+      "questionText": "Why are reflective materials useful at night?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They make roads shorter"
+        },
+        {
+          "letter": "B",
+          "text": "They make a person more visible to drivers"
+        },
+        {
+          "letter": "C",
+          "text": "They stop all vehicles"
+        },
+        {
+          "letter": "D",
+          "text": "They replace road signs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reflective materials can improve visibility in low light.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_119",
+      "questionNumber": 169,
+      "questionText": "Which action helps reduce road accidents?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Driving while distracted"
+        },
+        {
+          "letter": "B",
+          "text": "Ignoring signs"
+        },
+        {
+          "letter": "C",
+          "text": "Following speed limits and traffic rules"
+        },
+        {
+          "letter": "D",
+          "text": "Overtaking dangerously"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Following road rules reduces predictable risks.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_120",
+      "questionNumber": 170,
+      "questionText": "What should a learner do if they see a serious road accident?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Take risks in the roadway"
+        },
+        {
+          "letter": "B",
+          "text": "Run into traffic"
+        },
+        {
+          "letter": "C",
+          "text": "Touch injured people unnecessarily"
+        },
+        {
+          "letter": "D",
+          "text": "Move to a safe place and alert an appropriate adult or emergency service"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Safety comes first, followed by getting appropriate assistance.",
+      "answerConfidence": "high",
+      "topic": "Transport and Safety"
+    },
+    {
+      "id": "g7_general_p1_121",
+      "questionNumber": 171,
+      "questionText": "Which element of art describes how light or dark something appears?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tone"
+        },
+        {
+          "letter": "B",
+          "text": "Pitch"
+        },
+        {
+          "letter": "C",
+          "text": "Tempo"
+        },
+        {
+          "letter": "D",
+          "text": "Balance"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tone refers to lightness or darkness in visual art.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_122",
+      "questionNumber": 172,
+      "questionText": "What does tempo describe in music?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The colour of a painting"
+        },
+        {
+          "letter": "B",
+          "text": "The speed of the beat"
+        },
+        {
+          "letter": "C",
+          "text": "The size of a sculpture"
+        },
+        {
+          "letter": "D",
+          "text": "The shape of a football"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tempo is the speed at which music is performed.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_123",
+      "questionNumber": 173,
+      "questionText": "Which instrument belongs to the percussion family?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Violin"
+        },
+        {
+          "letter": "B",
+          "text": "Flute"
+        },
+        {
+          "letter": "C",
+          "text": "Drum"
+        },
+        {
+          "letter": "D",
+          "text": "Trumpet"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A drum produces sound by being struck.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_124",
+      "questionNumber": 174,
+      "questionText": "Why is warming up important before vigorous exercise?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It guarantees victory"
+        },
+        {
+          "letter": "B",
+          "text": "It makes muscles weaker"
+        },
+        {
+          "letter": "C",
+          "text": "It removes the need for water"
+        },
+        {
+          "letter": "D",
+          "text": "It prepares the body for activity and may reduce injury risk"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A suitable warm-up prepares muscles and the body for activity.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_125",
+      "questionNumber": 175,
+      "questionText": "Which quality is important in team sport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cooperation"
+        },
+        {
+          "letter": "B",
+          "text": "Cheating"
+        },
+        {
+          "letter": "C",
+          "text": "Ignoring teammates"
+        },
+        {
+          "letter": "D",
+          "text": "Deliberately breaking rules"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Teamwork requires cooperation.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_126",
+      "questionNumber": 176,
+      "questionText": "What is rhythm in music?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The colour of a wall"
+        },
+        {
+          "letter": "B",
+          "text": "A pattern of beats or durations"
+        },
+        {
+          "letter": "C",
+          "text": "The height of a tree"
+        },
+        {
+          "letter": "D",
+          "text": "The weight of a ball"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rhythm is the organisation of beats and durations.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_127",
+      "questionNumber": 177,
+      "questionText": "Which activity is an example of visual art?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Singing"
+        },
+        {
+          "letter": "B",
+          "text": "Running"
+        },
+        {
+          "letter": "C",
+          "text": "Drawing"
+        },
+        {
+          "letter": "D",
+          "text": "Swimming"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Drawing is a visual art activity.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_128",
+      "questionNumber": 178,
+      "questionText": "Why should players follow the rules of a game?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rules stop teamwork"
+        },
+        {
+          "letter": "B",
+          "text": "Rules make skill unnecessary"
+        },
+        {
+          "letter": "C",
+          "text": "Rules guarantee one team wins"
+        },
+        {
+          "letter": "D",
+          "text": "Rules promote fairness and safety"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Rules establish fair and safe play.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_129",
+      "questionNumber": 179,
+      "questionText": "Which item can be used to make a simple musical shaker?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sealed container with dry seeds"
+        },
+        {
+          "letter": "B",
+          "text": "A broken glass bottle held loosely"
+        },
+        {
+          "letter": "C",
+          "text": "A live electrical wire"
+        },
+        {
+          "letter": "D",
+          "text": "A sharp metal blade"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A safely sealed container with dry seeds can produce a shaking sound.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_130",
+      "questionNumber": 180,
+      "questionText": "What does fair play mean in sport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Winning by cheating"
+        },
+        {
+          "letter": "B",
+          "text": "Playing honestly and respecting opponents and officials"
+        },
+        {
+          "letter": "C",
+          "text": "Ignoring officials"
+        },
+        {
+          "letter": "D",
+          "text": "Injuring opponents"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fair play involves honesty and respect.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_131",
+      "questionNumber": 181,
+      "questionText": "Which colour is made by mixing red and yellow paint?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Purple"
+        },
+        {
+          "letter": "B",
+          "text": "Green"
+        },
+        {
+          "letter": "C",
+          "text": "Orange"
+        },
+        {
+          "letter": "D",
+          "text": "Black"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Red and yellow combine to make orange.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_132",
+      "questionNumber": 182,
+      "questionText": "Why should sports equipment be checked before use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It guarantees a win"
+        },
+        {
+          "letter": "B",
+          "text": "It makes equipment heavier"
+        },
+        {
+          "letter": "C",
+          "text": "It removes the need for rules"
+        },
+        {
+          "letter": "D",
+          "text": "Damaged equipment can cause injury"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Checking equipment can identify hazards before play.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_133",
+      "questionNumber": 183,
+      "questionText": "Which body part is most directly used to kick a football?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Foot"
+        },
+        {
+          "letter": "B",
+          "text": "Elbow"
+        },
+        {
+          "letter": "C",
+          "text": "Shoulder"
+        },
+        {
+          "letter": "D",
+          "text": "Ear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The foot is used to kick the ball.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_134",
+      "questionNumber": 184,
+      "questionText": "What is a sketch?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A type of musical instrument"
+        },
+        {
+          "letter": "B",
+          "text": "A quick drawing used to develop or communicate an idea"
+        },
+        {
+          "letter": "C",
+          "text": "A road sign"
+        },
+        {
+          "letter": "D",
+          "text": "A farming tool"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A sketch is often a quick drawing used to explore an idea.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_135",
+      "questionNumber": 185,
+      "questionText": "Which quality is useful for an athlete during training?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carelessness"
+        },
+        {
+          "letter": "B",
+          "text": "Dishonesty"
+        },
+        {
+          "letter": "C",
+          "text": "Discipline"
+        },
+        {
+          "letter": "D",
+          "text": "Refusal to practise"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Discipline helps athletes train consistently and safely.",
+      "answerConfidence": "high",
+      "topic": "Arts, Music and Sport"
+    },
+    {
+      "id": "g7_general_p1_136",
+      "questionNumber": 186,
+      "questionText": "What is citizenship?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A farming method"
+        },
+        {
+          "letter": "B",
+          "text": "Ownership of every building"
+        },
+        {
+          "letter": "C",
+          "text": "A type of weather"
+        },
+        {
+          "letter": "D",
+          "text": "Membership of a country with rights and responsibilities"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Citizenship involves belonging to a country and having rights and duties.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_137",
+      "questionNumber": 187,
+      "questionText": "Why are national symbols important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They represent aspects of a nation's identity"
+        },
+        {
+          "letter": "B",
+          "text": "They are only used for decoration"
+        },
+        {
+          "letter": "C",
+          "text": "They prevent citizens from cooperating"
+        },
+        {
+          "letter": "D",
+          "text": "They have no meaning"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "National symbols represent national identity and values.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_138",
+      "questionNumber": 188,
+      "questionText": "Which is a responsibility of a good citizen?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Destroying public property"
+        },
+        {
+          "letter": "B",
+          "text": "Respecting laws and contributing positively to the community"
+        },
+        {
+          "letter": "C",
+          "text": "Ignoring all rules"
+        },
+        {
+          "letter": "D",
+          "text": "Spreading violence"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Responsible citizenship includes respecting laws and contributing to society.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_139",
+      "questionNumber": 189,
+      "questionText": "Why is voting important in a democratic society?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents public discussion"
+        },
+        {
+          "letter": "B",
+          "text": "It makes laws unnecessary"
+        },
+        {
+          "letter": "C",
+          "text": "It allows eligible citizens to participate in choosing leaders"
+        },
+        {
+          "letter": "D",
+          "text": "It removes all responsibilities"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Voting is a way for eligible citizens to participate in governance.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_140",
+      "questionNumber": 190,
+      "questionText": "Which institution is primarily associated with making national laws?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A private farm"
+        },
+        {
+          "letter": "B",
+          "text": "A sports club"
+        },
+        {
+          "letter": "C",
+          "text": "A primary school class"
+        },
+        {
+          "letter": "D",
+          "text": "Parliament"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Parliament is a key law-making institution.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_141",
+      "questionNumber": 191,
+      "questionText": "Why should public property be protected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It serves the community and may be expensive to replace"
+        },
+        {
+          "letter": "B",
+          "text": "It belongs to nobody"
+        },
+        {
+          "letter": "C",
+          "text": "Damaging it improves services"
+        },
+        {
+          "letter": "D",
+          "text": "It has no value"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Public property is provided for community use.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_142",
+      "questionNumber": 192,
+      "questionText": "Which value supports peaceful citizenship?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Violence"
+        },
+        {
+          "letter": "B",
+          "text": "Respect"
+        },
+        {
+          "letter": "C",
+          "text": "Dishonesty"
+        },
+        {
+          "letter": "D",
+          "text": "Intolerance"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Respect supports peaceful relationships and responsible participation.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_143",
+      "questionNumber": 193,
+      "questionText": "What is the purpose of a national constitution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It lists only sports results"
+        },
+        {
+          "letter": "B",
+          "text": "It is a school timetable"
+        },
+        {
+          "letter": "C",
+          "text": "It provides the fundamental framework for governance and rights"
+        },
+        {
+          "letter": "D",
+          "text": "It is a weather chart"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A constitution establishes fundamental rules for governance and rights.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_144",
+      "questionNumber": 194,
+      "questionText": "Which action demonstrates responsible use of public resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leaving taps running deliberately"
+        },
+        {
+          "letter": "B",
+          "text": "Destroying equipment"
+        },
+        {
+          "letter": "C",
+          "text": "Stealing supplies"
+        },
+        {
+          "letter": "D",
+          "text": "Using facilities carefully and reporting damage"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Careful use protects resources for everyone.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_145",
+      "questionNumber": 195,
+      "questionText": "Why should historical records be preserved?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They provide evidence about the past"
+        },
+        {
+          "letter": "B",
+          "text": "They prevent future learning"
+        },
+        {
+          "letter": "C",
+          "text": "They have no educational value"
+        },
+        {
+          "letter": "D",
+          "text": "They make history disappear"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Records help future generations understand past events.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_146",
+      "questionNumber": 196,
+      "questionText": "Which is an example of a human right?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The right to damage others"
+        },
+        {
+          "letter": "B",
+          "text": "The right to education"
+        },
+        {
+          "letter": "C",
+          "text": "The right to steal"
+        },
+        {
+          "letter": "D",
+          "text": "The right to ignore every law"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Education is recognised as an important human right.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_147",
+      "questionNumber": 197,
+      "questionText": "Why is national unity important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents cooperation"
+        },
+        {
+          "letter": "B",
+          "text": "It requires everyone to have identical opinions"
+        },
+        {
+          "letter": "C",
+          "text": "It helps people work together despite differences"
+        },
+        {
+          "letter": "D",
+          "text": "It encourages discrimination"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Unity helps citizens cooperate toward common goals.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_148",
+      "questionNumber": 198,
+      "questionText": "Which action shows respect for democratic discussion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using violence"
+        },
+        {
+          "letter": "B",
+          "text": "Threatening people who disagree"
+        },
+        {
+          "letter": "C",
+          "text": "Preventing anyone else from speaking"
+        },
+        {
+          "letter": "D",
+          "text": "Listening to different views and responding peacefully"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Democratic discussion requires peaceful exchange and respect.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_149",
+      "questionNumber": 199,
+      "questionText": "What can a learner do to contribute positively to school life?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Follow rules, help others and care for school property"
+        },
+        {
+          "letter": "B",
+          "text": "Damage desks"
+        },
+        {
+          "letter": "C",
+          "text": "Bullying classmates"
+        },
+        {
+          "letter": "D",
+          "text": "Refuse every responsibility"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Positive participation includes responsibility, care and cooperation.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
+    },
+    {
+      "id": "g7_general_p1_150",
+      "questionNumber": 200,
+      "questionText": "Why should citizens learn about national history?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It prevents responsible citizenship"
+        },
+        {
+          "letter": "B",
+          "text": "It helps them understand how their society developed"
+        },
+        {
+          "letter": "C",
+          "text": "It makes laws unnecessary"
+        },
+        {
+          "letter": "D",
+          "text": "It stops cultural learning"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "History helps citizens understand national development and identity.",
+      "answerConfidence": "high",
+      "topic": "Zimbabwean History and Citizenship"
     }
   ]
 }

@@ -5,1512 +5,208 @@
     "paperCode": "6042/02",
     "paperName": "Paper 2 – Short and Long Answer",
     "paperType": "structured",
-    "questionCount": 150,
-    "sourceFile": "ZIMSEC_Pure_Mathematics_A_Level_6042_Paper2_150.json",
-    "curriculum": "ZIMSEC Advanced Level / Heritage-Based Curriculum-aligned practice",
-    "copyrightNote": "Original practice questions synthesized from syllabus and examination structure; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+    "questionCount": 20
   },
   "questions": [
     {
-      "id": "Q001",
-      "questionNumber": 1,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_1",
+      "questionText": "Implicit Differentiation & Normals:\nA curve has equation x² + 3xy + 2y² = 12.\n(a) Show that dy/dx = -(2x + 3y)/(3x + 4y). [3 marks]\n(b) Find the equation of the normal to the curve at the point (2, 1). [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
+      "explanation": "(a) Differentiate w.r.t. x: 2x + 3y + 3x(dy/dx) + 4y(dy/dx) = 0 -> (3x + 4y)dy/dx = -(2x + 3y) -> dy/dx = -(2x + 3y)/(3x + 4y) [3].\n(b) At (2, 1): gradient of tangent = -(4 + 3)/(6 + 4) = -7/10 -> normal gradient = 10/7 [1.5]. Normal: y - 1 = (10/7)(x - 2) -> 7y - 10x + 13 = 0 [1.5].",
+      "answerConfidence": "high",
+      "topic": "Calculus",
+      "questionNumber": 1
     },
     {
-      "id": "Q002",
-      "questionNumber": 2,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_2",
+      "questionText": "3D Vectors — Lines & Planes:\nLine L₁ passes through A(1, -2, 3) with direction d₁ = (2, 1, -1). Plane Π has equation 3x - 2y + z = 14.\n(a) Find the coordinates where L₁ intersects plane Π. [4 marks]\n(b) Calculate the acute angle between L₁ and plane Π. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
+      "explanation": "(a) L₁: r = (1+2t, -2+t, 3-t). Sub into Π: 3(1+2t) - 2(-2+t) + (3-t) = 14 -> 3+6t+4-2t+3-t = 14 -> 3t = 4 -> t = 4/3 [2.5]. Point = (11/3, -2/3, 5/3) [1.5].\n(b) Normal n = (3, -2, 1). sin α = |d₁·n| / (|d₁||n|) = |6 - 2 - 1| / (√6 × √14) = 3 / √84 -> α = 19.1° [3].",
+      "answerConfidence": "high",
+      "topic": "3D Vectors",
+      "questionNumber": 2
     },
     {
-      "id": "Q003",
-      "questionNumber": 3,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_3",
+      "questionText": "First-Order Linear Differential Equations:\nSolve the differential equation dy/dx + 2y tan x = sin x, given y = 0 when x = 0, giving y explicitly in terms of cos x. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
+      "explanation": "Integrating factor IF = e^(∫ 2 tan x dx) = e^(-2 ln cos x) = sec² x [2].\nMultiply through: d/dx(y sec² x) = sin x sec² x = sec x tan x [2].\nIntegrate: y sec² x = sec x + C. At x=0, y=0 -> 0 = 1 + C -> C = -1 [1].\ny = cos² x (sec x - 1) = cos x - cos² x [1].",
+      "answerConfidence": "high",
+      "topic": "Differential Equations",
+      "questionNumber": 3
     },
     {
-      "id": "Q004",
-      "questionNumber": 4,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_4",
+      "questionText": "Volume of Revolution:\nThe finite region bounded by y = √x, the x-axis, and lines x = 1 and x = 4 is rotated through 2π radians about the x-axis. Calculate the exact volume of the solid generated. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
+      "explanation": "V = π ∫₁⁴ y² dx = π ∫₁⁴ x dx = π [x²/2]₁⁴ = π (8 - 1/2) = (15/2)π cubic units [4].",
+      "answerConfidence": "high",
+      "topic": "Integration Applications",
+      "questionNumber": 4
     },
     {
-      "id": "Q005",
-      "questionNumber": 5,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_5",
+      "questionText": "Complex Loci in the Argand Diagram:\nOn an Argand diagram, sketch and describe the loci satisfying:\n(a) |z - (2 - 3i)| = 4 [2 marks]\n(b) |z - 1| = |z - 5i| [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
+      "explanation": "(a) A circle centred at (2, -3) with radius 4 [2].\n(b) The perpendicular bisector of the line segment joining (1, 0) and (0, 5): midpoint (1/2, 5/2), slope of join = -5 -> bisector gradient = 1/5 -> y - 2.5 = 0.2(x - 0.5) => 5y = x + 12 [3].",
+      "answerConfidence": "high",
+      "topic": "Complex Numbers",
+      "questionNumber": 5
     },
     {
-      "id": "Q006",
-      "questionNumber": 6,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_6",
+      "questionText": "Integration by Substitution:\nUse the substitution u = 1 + √x (so x = (u - 1)²) to find the exact value of ∫₁⁴ 1 / (1 + √x) dx. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
+      "explanation": "x = (u - 1)² -> dx = 2(u - 1) du. Limits: x=1 -> u=2; x=4 -> u=3 [2].\n∫₂³ 2(u - 1)/u du = 2 ∫₂³ (1 - 1/u) du = 2 [u - ln u]₂³ = 2[(3 - ln 3) - (2 - ln 2)] = 2 - 2 ln(3/2) [3].",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "questionNumber": 6
     },
     {
-      "id": "Q007",
-      "questionNumber": 7,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_7",
+      "questionText": "Trigonometric Proofs & Equations:\nProve the identity (sin 3θ / sin θ) - (cos 3θ / cos θ) ≡ 2, where defined. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
+      "explanation": "LHS = (sin 3θ cos θ - cos 3θ sin θ) / (sin θ cos θ) [2] = sin(3θ - θ) / (½ sin 2θ) [2] = sin 2θ / (½ sin 2θ) = 2 (RHS) [1].",
+      "answerConfidence": "high",
+      "topic": "Trigonometry",
+      "questionNumber": 7
     },
     {
-      "id": "Q008",
-      "questionNumber": 8,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_8",
+      "questionText": "Series — Method of Differences:\nUse partial fractions to express 1 / [r(r + 2)] cleanly and hence find ∑_{r=1}^n 1 / [r(r + 2)] in simplified form, stating its limit as n → ∞. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
+      "explanation": "1/[r(r+2)] = ½[1/r - 1/(r+2)] [2]. Telescoping sum leaves first two positive and last two negative terms: ½[1 + 1/2 - 1/(n+1) - 1/(n+2)] = 3/4 - ½[1/(n+1) + 1/(n+2)] [3]. As n → ∞, sum → 3/4 [1].",
+      "answerConfidence": "high",
+      "topic": "Series",
+      "questionNumber": 8
     },
     {
-      "id": "Q009",
-      "questionNumber": 9,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_9",
+      "questionText": "Matrices & Eigenvalues/Linear Systems:\nDetermine all values of k for which the system x + y + z = 3, 2x - y + 3z = 4, 3x + ky + 4z = 7 does NOT have a unique solution. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
+      "explanation": "Coefficient determinant = 0: 1(-4 - 3k) - 1(8 - 9) + 1(2k + 3) = 0 [2] -> -4 - 3k + 1 + 2k + 3 = 0 -> -k = 0 -> k = 0 [2].",
+      "answerConfidence": "high",
+      "topic": "Matrices",
+      "questionNumber": 9
     },
     {
-      "id": "Q010",
-      "questionNumber": 10,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_10",
+      "questionText": "Roots of Polynomials (Vieta's Relations):\nCubic x³ - 4x² + 7x - 2 = 0 has roots α, β, γ. Find the exact values of (a) α + β + γ, (b) α² + β² + γ², and (c) 1/α + 1/β + 1/γ. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
+      "explanation": "(a) α + β + γ = 4 [1]. (Given αβ + βγ + γα = 7, αβγ = 2).\n(b) α² + β² + γ² = (α+β+γ)² - 2(αβ+βγ+γα) = 16 - 14 = 2 [2].\n(c) 1/α + 1/β + 1/γ = (αβ+βγ+γα)/(αβγ) = 7/2 [2].",
+      "answerConfidence": "high",
+      "topic": "Polynomials",
+      "questionNumber": 10
     },
     {
-      "id": "Q011",
-      "questionNumber": 11,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_11",
+      "questionText": "Curve Sketching & Turning Points:\nFind the coordinates and nature of all stationary points of y = x + 4/x (x ≠ 0), state its vertical and oblique asymptotes. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
+      "explanation": "dy/dx = 1 - 4/x² = 0 -> x = ±2 -> points (2, 4) and (-2, -4) [2]. d²y/dx² = 8/x³ -> at x=2 (>0 local min (2, 4)); at x=-2 (<0 local max (-2, -4)) [2]. Vertical asymptote x = 0; oblique asymptote y = x [1].",
+      "answerConfidence": "high",
+      "topic": "Curve Sketching",
+      "questionNumber": 11
     },
     {
-      "id": "Q012",
-      "questionNumber": 12,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_12",
+      "questionText": "Differential Equation Growth Model:\nA bacterial culture grows at rate proportional to population P: dP/dt = kP. Initially P = 500; after 3 hours P = 2,000. Find P after 5 hours. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
+      "explanation": "P(t) = 500 e^(kt) [2]. 2000 = 500 e^(3k) -> e^(3k) = 4 -> k = (ln 4)/3 [1.5]. At t = 5: P = 500 × 4^(5/3) ≈ 5,040 bacteria [1.5].",
+      "answerConfidence": "high",
+      "topic": "Differential Equations",
+      "questionNumber": 12
     },
     {
-      "id": "Q013",
-      "questionNumber": 13,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_13",
+      "questionText": "Circle & Tangents:\nFind the equations of the two tangents drawn from the origin (0, 0) to the circle (x - 5)² + y² = 9. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
+      "explanation": "Centre C(5, 0), radius r = 3. Line through origin y = mx -> mx - y = 0. Perpendicular distance from C to line = r -> |5m - 0|/√(m² + 1) = 3 [3] -> 25m² = 9m² + 9 -> 16m² = 9 -> m = ±3/4. Tangents: y = (3/4)x and y = -(3/4)x [2].",
+      "answerConfidence": "high",
+      "topic": "Coordinate Geometry",
+      "questionNumber": 13
     },
     {
-      "id": "Q014",
-      "questionNumber": 14,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_14",
+      "questionText": "Reduction Formula / Trigonometric Integration:\nShow that ∫₀^(π/2) cos²(x) dx = π/4 and ∫₀^(π/2) sin³(x) cos²(x) dx = 2/15. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
+      "explanation": "cos² x = ½(1 + cos 2x) -> ∫₀^(π/2) ½(1 + cos 2x) dx = ½[x + ½ sin 2x]₀^(π/2) = π/4 [2].\nFor ∫ sin³x cos²x dx = ∫ (1 - cos²x) cos²x sin x dx; let u = cos x (-du = sin x dx): ∫₀¹ (u² - u⁴) du = [u³/3 - u⁵/5]₀¹ = 1/3 - 1/5 = 2/15 [3].",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "questionNumber": 14
     },
     {
-      "id": "Q015",
-      "questionNumber": 15,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_15",
+      "questionText": "Hyperbolic / Exponential Equation:\nSolve 4^(x+1) - 9(2^x) + 2 = 0 cleanly for all real x. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
+      "explanation": "Write 4^(x+1) = 4·(2^x)². Let u = 2^x (>0): 4u² - 9u + 2 = 0 -> (4u - 1)(u - 2) = 0 [2]. u = 1/4 or u = 2 -> 2^x = 2⁻² or 2¹ -> x = -2 or x = 1 [2].",
+      "answerConfidence": "high",
+      "topic": "Exponentials",
+      "questionNumber": 15
     },
     {
-      "id": "Q016",
-      "questionNumber": 16,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_16",
+      "questionText": "Factor Theorem & Complex Roots:\nGiven z = 1 + 2i is a root of z³ - 5z² + 11z - 15 = 0 with real coefficients, find all other roots. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
+      "explanation": "Conjugate z* = 1 - 2i is also a root [1]. Quadratic factor: (z - (1+2i))(z - (1-2i)) = (z - 1)² + 4 = z² - 2z + 5 [1.5]. Polynomial division gives (z² - 2z + 5)(z - 3) = 0 -> real root z = 3. Roots: 1 + 2i, 1 - 2i, 3 [1.5].",
+      "answerConfidence": "high",
+      "topic": "Complex Roots",
+      "questionNumber": 16
     },
     {
-      "id": "Q017",
-      "questionNumber": 17,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_17",
+      "questionText": "Binomial Approximation:\nExpand (1 - 2x)^(-1/2) in ascending powers of x up to x³ and use x = 0.01 to approximate 1/√0.98 to 6 decimal places. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
+      "explanation": "1 + (-1/2)(-2x) + (-1/2)(-3/2)/2 (-2x)² + (-1/2)(-3/2)(-5/2)/6 (-2x)³ = 1 + x + (3/2)x² + (5/2)x³ [3]. At x = 0.01: 1 + 0.01 + 0.00015 + 0.0000025 = 1.010153 [2].",
+      "answerConfidence": "high",
+      "topic": "Binomial Series",
+      "questionNumber": 17
     },
     {
-      "id": "Q018",
-      "questionNumber": 18,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_18",
+      "questionText": "Proof by Contradiction:\nProve by contradiction that √2 is an irrational number. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
+      "explanation": "Suppose √2 = a/b where a, b are coprime integers (hcf(a,b)=1) [1]. Squaring: 2b² = a² -> a² is even -> a is even -> write a = 2k [1]. Then 2b² = 4k² -> b² = 2k² -> b² even -> b is even [1]. Thus a and b share factor 2, contradicting hcf(a,b)=1. Hence √2 is irrational [1].",
+      "answerConfidence": "high",
+      "topic": "Mathematical Proof",
+      "questionNumber": 18
     },
     {
-      "id": "Q019",
-      "questionNumber": 19,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_19",
+      "questionText": "Optimisation:\nAn open-topped rectangular box with a square base of side x cm has total external surface area 300 cm². Express its volume V in terms of x and find the maximum volume. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
+      "explanation": "x² + 4xh = 300 -> h = (300 - x²)/(4x). V = x²h = 75x - x³/4 [2]. dV/dx = 75 - (3/4)x² = 0 -> x² = 100 -> x = 10 cm [2]. d²V/dx² = -3x/2 < 0 (max). V_max = 75(10) - 1000/4 = 500 cm³ [1].",
+      "answerConfidence": "high",
+      "topic": "Optimisation",
+      "questionNumber": 19
     },
     {
-      "id": "Q020",
-      "questionNumber": 20,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
+      "id": "pm6042_2_20",
+      "questionText": "Area Between Curves:\nFind the area enclosed between the parabola y = x² and the line y = 2x + 3. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q021",
-      "questionNumber": 21,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q022",
-      "questionNumber": 22,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q023",
-      "questionNumber": 23,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q024",
-      "questionNumber": 24,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q025",
-      "questionNumber": 25,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q026",
-      "questionNumber": 26,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q027",
-      "questionNumber": 27,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q028",
-      "questionNumber": 28,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q029",
-      "questionNumber": 29,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q030",
-      "questionNumber": 30,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q031",
-      "questionNumber": 31,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q032",
-      "questionNumber": 32,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q033",
-      "questionNumber": 33,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q034",
-      "questionNumber": 34,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q035",
-      "questionNumber": 35,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q036",
-      "questionNumber": 36,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q037",
-      "questionNumber": 37,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q038",
-      "questionNumber": 38,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q039",
-      "questionNumber": 39,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q040",
-      "questionNumber": 40,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q041",
-      "questionNumber": 41,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q042",
-      "questionNumber": 42,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q043",
-      "questionNumber": 43,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q044",
-      "questionNumber": 44,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q045",
-      "questionNumber": 45,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q046",
-      "questionNumber": 46,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q047",
-      "questionNumber": 47,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q048",
-      "questionNumber": 48,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q049",
-      "questionNumber": 49,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q050",
-      "questionNumber": 50,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q051",
-      "questionNumber": 51,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q052",
-      "questionNumber": 52,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q053",
-      "questionNumber": 53,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q054",
-      "questionNumber": 54,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q055",
-      "questionNumber": 55,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q056",
-      "questionNumber": 56,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q057",
-      "questionNumber": 57,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q058",
-      "questionNumber": 58,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q059",
-      "questionNumber": 59,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q060",
-      "questionNumber": 60,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q061",
-      "questionNumber": 61,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q062",
-      "questionNumber": 62,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q063",
-      "questionNumber": 63,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q064",
-      "questionNumber": 64,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q065",
-      "questionNumber": 65,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q066",
-      "questionNumber": 66,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q067",
-      "questionNumber": 67,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q068",
-      "questionNumber": 68,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q069",
-      "questionNumber": 69,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q070",
-      "questionNumber": 70,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q071",
-      "questionNumber": 71,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q072",
-      "questionNumber": 72,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q073",
-      "questionNumber": 73,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q074",
-      "questionNumber": 74,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q075",
-      "questionNumber": 75,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q076",
-      "questionNumber": 76,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q077",
-      "questionNumber": 77,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q078",
-      "questionNumber": 78,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q079",
-      "questionNumber": 79,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q080",
-      "questionNumber": 80,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q081",
-      "questionNumber": 81,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q082",
-      "questionNumber": 82,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q083",
-      "questionNumber": 83,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q084",
-      "questionNumber": 84,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q085",
-      "questionNumber": 85,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q086",
-      "questionNumber": 86,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q087",
-      "questionNumber": 87,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q088",
-      "questionNumber": 88,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q089",
-      "questionNumber": 89,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q090",
-      "questionNumber": 90,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q091",
-      "questionNumber": 91,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q092",
-      "questionNumber": 92,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q093",
-      "questionNumber": 93,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q094",
-      "questionNumber": 94,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q095",
-      "questionNumber": 95,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q096",
-      "questionNumber": 96,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q097",
-      "questionNumber": 97,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q098",
-      "questionNumber": 98,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q099",
-      "questionNumber": 99,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q100",
-      "questionNumber": 100,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q101",
-      "questionNumber": 101,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q102",
-      "questionNumber": 102,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q103",
-      "questionNumber": 103,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q104",
-      "questionNumber": 104,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q105",
-      "questionNumber": 105,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q106",
-      "questionNumber": 106,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q107",
-      "questionNumber": 107,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q108",
-      "questionNumber": 108,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q109",
-      "questionNumber": 109,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q110",
-      "questionNumber": 110,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q111",
-      "questionNumber": 111,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q112",
-      "questionNumber": 112,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q113",
-      "questionNumber": 113,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q114",
-      "questionNumber": 114,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q115",
-      "questionNumber": 115,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q116",
-      "questionNumber": 116,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q117",
-      "questionNumber": 117,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q118",
-      "questionNumber": 118,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q119",
-      "questionNumber": 119,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q120",
-      "questionNumber": 120,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q121",
-      "questionNumber": 121,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q122",
-      "questionNumber": 122,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q123",
-      "questionNumber": 123,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q124",
-      "questionNumber": 124,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q125",
-      "questionNumber": 125,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q126",
-      "questionNumber": 126,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q127",
-      "questionNumber": 127,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q128",
-      "questionNumber": 128,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q129",
-      "questionNumber": 129,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q130",
-      "questionNumber": 130,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q131",
-      "questionNumber": 131,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q132",
-      "questionNumber": 132,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q133",
-      "questionNumber": 133,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q134",
-      "questionNumber": 134,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q135",
-      "questionNumber": 135,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
-    },
-    {
-      "id": "Q136",
-      "questionNumber": 136,
-      "questionText": "Pure Mathematics Paper 2 — Algebra and functions: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Algebra and functions"
-    },
-    {
-      "id": "Q137",
-      "questionNumber": 137,
-      "questionText": "Pure Mathematics Paper 2 — Sequences and series: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Sequences and series"
-    },
-    {
-      "id": "Q138",
-      "questionNumber": 138,
-      "questionText": "Pure Mathematics Paper 2 — Trigonometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Trigonometry"
-    },
-    {
-      "id": "Q139",
-      "questionNumber": 139,
-      "questionText": "Pure Mathematics Paper 2 — Coordinate geometry: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Coordinate geometry"
-    },
-    {
-      "id": "Q140",
-      "questionNumber": 140,
-      "questionText": "Pure Mathematics Paper 2 — Calculus: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Calculus"
-    },
-    {
-      "id": "Q141",
-      "questionNumber": 141,
-      "questionText": "Pure Mathematics Paper 2 — Differentiation applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differentiation applications"
-    },
-    {
-      "id": "Q142",
-      "questionNumber": 142,
-      "questionText": "Pure Mathematics Paper 2 — Integration applications: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Integration applications"
-    },
-    {
-      "id": "Q143",
-      "questionNumber": 143,
-      "questionText": "Pure Mathematics Paper 2 — Differential equations: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Differential equations"
-    },
-    {
-      "id": "Q144",
-      "questionNumber": 144,
-      "questionText": "Pure Mathematics Paper 2 — Numerical methods: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Numerical methods"
-    },
-    {
-      "id": "Q145",
-      "questionNumber": 145,
-      "questionText": "Pure Mathematics Paper 2 — Vectors: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Vectors"
-    },
-    {
-      "id": "Q146",
-      "questionNumber": 146,
-      "questionText": "Pure Mathematics Paper 2 — Complex numbers: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Complex numbers"
-    },
-    {
-      "id": "Q147",
-      "questionNumber": 147,
-      "questionText": "Pure Mathematics Paper 2 — Proof: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Proof"
-    },
-    {
-      "id": "Q148",
-      "questionNumber": 148,
-      "questionText": "Pure Mathematics Paper 2 — Parametric curves: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Parametric curves"
-    },
-    {
-      "id": "Q149",
-      "questionNumber": 149,
-      "questionText": "Pure Mathematics Paper 2 — Modelling: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Modelling"
-    },
-    {
-      "id": "Q150",
-      "questionNumber": 150,
-      "questionText": "Pure Mathematics Paper 2 — Mixed problem solving: Solve the following extended problem. Show all essential working, state restrictions or assumptions, justify important steps, and give an exact answer where possible. Where a numerical approximation is required, state an appropriate degree of accuracy and verify the result.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Full-credit solutions should show logical working, appropriate mathematical notation, justified methods, and a checked final result.",
-      "answerConfidence": "unverified",
-      "topic": "Mixed problem solving"
+      "explanation": "Intersections: x² = 2x + 3 -> x² - 2x - 3 = 0 -> (x - 3)(x + 1) = 0 -> x = -1, 3 [1.5]. Area = ∫₋₁³ (2x + 3 - x²) dx = [x² + 3x - x³/3]₋₁³ = (9 + 9 - 9) - (1 - 3 + 1/3) = 9 - (-5/3) = 32/3 = 10⅔ units² [2.5].",
+      "answerConfidence": "high",
+      "topic": "Integration",
+      "questionNumber": 20
     }
   ]
 }

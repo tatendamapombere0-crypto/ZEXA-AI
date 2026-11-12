@@ -5,1512 +5,208 @@
     "paperCode": "BIO/02",
     "paperName": "Paper 2 – Structured Theory",
     "paperType": "structured",
-    "questionCount": 150,
-    "sourceFile": "ZIMSEC_Biology_A_Level_Paper2_150.json",
-    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6",
-    "copyrightNote": "Original practice questions synthesized from syllabus/specimen structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC Forms 5–6 Biology syllabus/specimen structure."
+    "questionCount": 20
   },
   "questions": [
     {
-      "id": "CEL-001",
-      "questionNumber": 1,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_1",
+      "questionText": "Cell Membranes & Fluid Mosaic Model:\n(a) Describe the roles of phospholipids, cholesterol, and glycoproteins in the plasma membrane. [5 marks]\n(b) Contrast facilitated diffusion with active transport across membranes. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
+      "explanation": "(a) Phospholipid bilayer provides hydrophobic barrier to water-soluble ions; cholesterol regulates membrane fluidity/mechanical stability across temperatures; glycoproteins act as cell-recognition antigens and hormone receptors [5].\n(b) Facilitated diffusion is passive down a concentration gradient via channel/carrier proteins requiring no ATP; active transport pumps molecules against their gradient using ATP energy [3].",
+      "answerConfidence": "high",
+      "topic": "Membranes",
+      "questionNumber": 1
     },
     {
-      "id": "BIO-002",
-      "questionNumber": 2,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_2",
+      "questionText": "Enzyme Kinetics:\nExplain how substrate concentration, pH extremes, and non-competitive inhibitors alter the shape of a Michaelis-Menten rate curve (V_max and K_m). [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
+      "explanation": "Increasing [S] raises rate linearly until all active sites saturate at plateau V_max [2]. Extreme pH alters R-group ionisation breaking ionic/H-bonds and denaturing the active site [2]. Non-competitive inhibitors bind allosteric sites permanently changing active-site shape, lowering V_max without changing apparent K_m [2].",
+      "answerConfidence": "high",
+      "topic": "Enzymes",
+      "questionNumber": 2
     },
     {
-      "id": "GEN-003",
-      "questionNumber": 3,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_3",
+      "questionText": "Protein Synthesis (Transcription & Translation):\nOutline the sequence of events by which the base sequence of a gene on DNA produces a functional polypeptide on a ribosome. [8 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
+      "explanation": "RNA polymerase binds promoter, unzips DNA H-bonds, and joins complementary RNA nucleotides (A-U, G-C) on the template strand forming pre-mRNA/mRNA [3]. Introns are spliced out and mRNA exits via nuclear pore to ribosome [1]. tRNAs carrying specific amino acids pair complementary anticodons to mRNA codons at P/A sites; peptidyl transferase forms peptide bonds as ribosome shifts codon-by-codon until a stop codon releases the folding polypeptide [4].",
+      "answerConfidence": "high",
+      "topic": "Molecular Biology",
+      "questionNumber": 3
     },
     {
-      "id": "EVO-004",
-      "questionNumber": 4,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_4",
+      "questionText": "Mammalian Cardiac Cycle & Coordination:\nDescribe how the SAN, AVN, Bundle of His, and Purkinje fibres coordinate atrial and ventricular contraction during one heartbeat. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
+      "explanation": "Myogenic SAN (pacemaker in right atrium wall) sends wave of excitation over both atria causing atrial systole [2]. Non-conducting fibrous ring delays impulse at AVN (~0.1 s) ensuring ventricles fill completely before contracting [2]. Excitation conducts rapidly down Bundle of His to apex and upward via Purkinje fibres so ventricles contract upward cleanly from apex to arteries [2].",
+      "answerConfidence": "high",
+      "topic": "Transport in Mammals",
+      "questionNumber": 4
     },
     {
-      "id": "PLA-005",
-      "questionNumber": 5,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_5",
+      "questionText": "Immunity & Vaccination:\nExplain why measles vaccination confers long-term active artificial immunity, whereas injecting antivenom serum confers short-term passive artificial immunity. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
+      "explanation": "Vaccines introduce harmless weakened/antigenic pathogens stimulating clonal B and T memory cells so secondary exposure triggers fast massive antibody synthesis (long-term active immunity) [3]. Antivenom supplies ready-made antibodies from another animal without activating the patient's B-memory cells; antibodies degrade over weeks giving short-term passive immunity [2].",
+      "answerConfidence": "high",
+      "topic": "Immunity",
+      "questionNumber": 5
     },
     {
-      "id": "ANI-006",
-      "questionNumber": 6,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_6",
+      "questionText": "Homeostasis — Osmoregulation by ADH:\nDescribe the negative feedback mechanism by which osmoreceptors, pituitary gland, ADH, and kidney collecting ducts respond when a marathon runner becomes dehydrated. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
+      "explanation": "Dehydration lowers blood water potential -> detected by hypothalamic osmoreceptors [1.5]. Posterior pituitary secretes more ADH into blood [1]. ADH binds collecting-duct receptors, triggering cAMP insertion of aquaporin water channels into luminal membranes [2]. More water reabsorbs osmotically into hypertonic medulla, yielding small volume of concentrated urine and restoring normal blood water potential [1.5].",
+      "answerConfidence": "high",
+      "topic": "Homeostasis",
+      "questionNumber": 6
     },
     {
-      "id": "HOM-007",
-      "questionNumber": 7,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_7",
+      "questionText": "Synaptic Transmission:\nExplain how an action potential arriving at a presynaptic knob triggers excitatory depolarisation in a cholinergic postsynaptic neurone, and why transmission is unidirectional. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
+      "explanation": "Depolarisation opens voltage-gated Ca²⁺ channels; Ca²⁺ influx makes synaptic vesicles fuse with presynaptic membrane releasing acetylcholine by exocytosis [2.5]. ACh diffuses across cleft, binds Na⁺-gated postsynaptic receptors generating an EPSP (action potential if threshold reached) before acetylcholinesterase recycles it [2.5]. Unidirectional because vesicles exist only in presynaptic knob and receptors only on postsynaptic membrane [1].",
+      "answerConfidence": "high",
+      "topic": "Nervous System",
+      "questionNumber": 7
     },
     {
-      "id": "COO-008",
-      "questionNumber": 8,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_8",
+      "questionText": "Photosynthesis — Light-Dependent Reactions (Z-Scheme):\nCompare cyclic and non-cyclic photophosphorylation in chloroplast thylakoids, listing reactants and products of each. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
+      "explanation": "Non-cyclic uses PSII and PSI: photolysis of water splits H₂O → 2H⁺ + 2e⁻ + ½O₂, electrons pass down ETC pumping H⁺ to drive chemiosmotic ATP synthesis, and reduce NADP⁺ → NADPH + H⁺ [4]. Cyclic uses only PSI: excited electrons cycle back down ETC generating ATP only (no photolysis, no O₂, no NADPH) [2].",
+      "answerConfidence": "high",
+      "topic": "Photosynthesis",
+      "questionNumber": 8
     },
     {
-      "id": "REP-009",
-      "questionNumber": 9,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_9",
+      "questionText": "Cellular Respiration — Chemiosmosis:\nExplain how NADH and FADH₂ generated in the Krebs cycle drive ATP synthesis across the inner mitochondrial membrane. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
+      "explanation": "NADH/FADH₂ donate high-energy electrons to inner-membrane electron carriers; energy released as electrons pass down redox carriers actively pumps H⁺ from matrix into the intermembrane space creating an electrochemical proton gradient [3]. H⁺ ions diffuse back into matrix through ATP synthase stalked particles, rotating its catalytic head to combine ADP + Pᵢ → ATP, while oxygen receives final electrons forming water [3].",
+      "answerConfidence": "high",
+      "topic": "Respiration",
+      "questionNumber": 9
     },
     {
-      "id": "ECO-010",
-      "questionNumber": 10,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_10",
+      "questionText": "Genetics — Sex Linkage & Chi-Squared Test:\nIn humans, haemophilia is X-linked recessive (Xᴴ / Xʰ). A carrier mother (XᴴXʰ) and an unaffected father (XᴴY) have children.\n(a) Use a genetic diagram to show expected genotypes/phenotypes and probabilities. [4 marks]\n(b) State why males express X-linked recessive conditions more frequently than females. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
+      "explanation": "(a) Gametes: Mother Xᴴ, Xʰ; Father Xᴴ, Y. Offspring: XᴴXᴴ (normal girl), XᴴXʰ (carrier girl), XᴴY (normal boy), XʰY (haemophiliac boy) -> 25% chance overall (50% of sons affected) [4].\n(b) Males are hemizygous (XY) having only one X chromosome, so a single recessive allele cannot be masked by a normal allele on Y [2].",
+      "answerConfidence": "high",
+      "topic": "Inherited Change",
+      "questionNumber": 10
     },
     {
-      "id": "BIO-011",
-      "questionNumber": 11,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_11",
+      "questionText": "Recombinant DNA & PCR:\nOutline how the human insulin gene can be isolated, inserted into a bacterial plasmid vector, and verified using marker genes. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
+      "explanation": "Extract pancreatic β-cell mRNA and convert to cDNA via reverse transcriptase [1.5]. Cut cDNA and plasmid with the SAME restriction endonuclease creating complementary sticky ends, anneal and seal with DNA ligase [2]. Transform E. coli via Ca²⁺ heat-shock; identify successful recombinant colonies using antibiotic-resistance / fluorescent GFP / lacZ blue-white replica-plating markers [2.5].",
+      "answerConfidence": "high",
+      "topic": "Genetic Engineering",
+      "questionNumber": 11
     },
     {
-      "id": "IMM-012",
-      "questionNumber": 12,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_12",
+      "questionText": "Natural Selection & Antibiotic Resistance:\nExplain using Darwinian principles how overuse of antibiotics in clinics leads to widespread MRSA resistance in bacterial populations. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
+      "explanation": "Pre-existing random DNA mutation creates a rare resistant bacterium in the population [1.5]. Antibiotic acts as a strong selective pressure killing susceptible bacteria while resistant mutants survive and reproduce rapidly by binary fission [2]. Over generations, the resistance allele frequency rises sharply across the population [1.5].",
+      "answerConfidence": "high",
+      "topic": "Evolution",
+      "questionNumber": 12
     },
     {
-      "id": "BIO-013",
-      "questionNumber": 13,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_13",
+      "questionText": "Transport in Plants — Xerophyte Adaptations:\nExplain five structural adaptations of xerophytic plants (such as marram grass or cactus/acacia in arid Region V) that reduce excessive transpiration. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
+      "explanation": "1. Thick waxy cuticle cuts cuticular evaporation. 2. Sunken stomata trap humid still air reducing water-potential gradient. 3. Rolled/needle leaves cut exposed surface area. 4. Leaf hairs (trichomes) maintain moist boundary layer. 5. Deep taproots or shallow widespread roots capture scarce rainfall [5].",
+      "answerConfidence": "high",
+      "topic": "Plant Physiology",
+      "questionNumber": 13
     },
     {
-      "id": "GEN-014",
-      "questionNumber": 14,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_14",
+      "questionText": "Control of Blood Glucose:\nDescribe how pancreatic Islets of Langerhans (α and β cells), insulin, and glucagon maintain blood glucose homeostasis between meals and after a high-carbohydrate meal. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
+      "explanation": "High blood glucose: β-cells secrete insulin -> liver/muscle cells increase GLUT4 uptake, activate glycogenesis (glucose → glycogen), and boost respiration lowering blood sugar [3]. Low glucose: α-cells secrete glucagon -> activates glycogenolysis (glycogen → glucose) and gluconeogenesis in hepatocytes raising blood sugar [3].",
+      "answerConfidence": "high",
+      "topic": "Mammalian Coordination",
+      "questionNumber": 14
     },
     {
-      "id": "EXP-015",
-      "questionNumber": 15,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_15",
+      "questionText": "Plant Growth Regulators — Gibberellins in Germination:\nOutline the biochemical role of gibberellins (GA) in triggering barley seed germination when water enters the embryo. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
+      "explanation": "Water imbibition activates embryo to synthesise gibberellin [1]. GA diffuses to aleurone layer and activates transcription/translation of hydrolytic enzyme genes including α-amylase [2]. α-Amylase diffuses into endosperm hydrolysing insoluble starch into soluble maltose/glucose, which fuels embryo respiration and radicle/plumule growth [2].",
+      "answerConfidence": "high",
+      "topic": "Plant Hormones",
+      "questionNumber": 15
     },
     {
-      "id": "CEL-016",
-      "questionNumber": 16,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_16",
+      "questionText": "Biodiversity Sampling — Simpson's Index & Capture-Mark-Recapture:\n(a) State the formula for Simpson's Index of Diversity (D) and interpret a value close to 1 vs 0. [3 marks]\n(b) State three assumptions required for the Lincoln Index mark-release-recapture method to be valid. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
+      "explanation": "(a) D = 1 - Σ(n/N)². Values near 1 indicate high species richness and evenness (stable resilient ecosystem); near 0 indicates low diversity [3].\n(b) Marks do not harm survival or increase predation; marked individuals mix thoroughly back into population; population is closed (negligible births/deaths/migration between samples) [3].",
+      "answerConfidence": "high",
+      "topic": "Ecology & Biodiversity",
+      "questionNumber": 16
     },
     {
-      "id": "BIO-017",
-      "questionNumber": 17,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_17",
+      "questionText": "Meiosis & Genetic Variation:\nExplain how crossing over in Prophase I, independent assortment in Metaphase I, and random fertilisation generate genetic variation without altering chromosome number. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
+      "explanation": "Crossing over at chiasmata exchanges alleles between non-sister chromatids of homologous bivalents creating recombinant chromosomes [2]. Independent assortment aligns maternal/paternal homologues randomly on Metaphase I equator (2ⁿ combinations) [2]. Fusion of any random sperm with any ovum further multiplies unique diploid zygotes while meiosis halves ploidy to preserve 2n across generations [2].",
+      "answerConfidence": "high",
+      "topic": "Cell Division",
+      "questionNumber": 17
     },
     {
-      "id": "GEN-018",
-      "questionNumber": 18,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_18",
+      "questionText": "Nitrogen Cycle in Agriculture:\nIdentify the roles of (a) Rhizobium bacteria, (b) Nitrosomonas & Nitrobacter, and (c) Pseudomonas denitrifying bacteria in soil nitrogen cycling. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
+      "explanation": "(a) Rhizobium in legume root nodules fixes N₂ gas into ammonium/amino acids [2]. (b) Nitrosomonas oxidises NH₄⁺ → NO₂⁻ and Nitrobacter oxidises NO₂⁻ → NO₃⁻ under aerobic soil conditions (nitrification) [2]. (c) Denitrifiers convert nitrates back to atmospheric N₂ gas in waterlogged anaerobic soils [1].",
+      "answerConfidence": "high",
+      "topic": "Ecology",
+      "questionNumber": 18
     },
     {
-      "id": "EVO-019",
-      "questionNumber": 19,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_19",
+      "questionText": "Mammalian Gas Exchange — Chloride Shift:\nExplain how most carbon dioxide from respiring tissues is transported in venous blood back to the lungs, including the role of carbonic anhydrase and the chloride shift. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
+      "explanation": "CO₂ enters erythrocytes where carbonic anhydrase catalyses CO₂ + H₂O ⇌ H₂CO₃, dissociating to H⁺ + HCO₃⁻ [2.5]. H⁺ binds haemoglobin forming haemoglobinic acid (buffering pH) [1.5]. HCO₃⁻ diffuses out into plasma while Cl⁻ ions move inward (chloride shift) to maintain electrical neutrality [2].",
+      "answerConfidence": "high",
+      "topic": "Gas Exchange",
+      "questionNumber": 19
     },
     {
-      "id": "PLA-020",
-      "questionNumber": 20,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
+      "id": "bioA_2_20",
+      "questionText": "Genetic Screening & Gene Therapy:\nDiscuss two potential benefits and two ethical/technical challenges of somatic gene therapy for recessive genetic disorders such as cystic fibrosis. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-021",
-      "questionNumber": 21,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-022",
-      "questionNumber": 22,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-023",
-      "questionNumber": 23,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-024",
-      "questionNumber": 24,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-025",
-      "questionNumber": 25,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-026",
-      "questionNumber": 26,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-027",
-      "questionNumber": 27,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-028",
-      "questionNumber": 28,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-029",
-      "questionNumber": 29,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-030",
-      "questionNumber": 30,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-031",
-      "questionNumber": 31,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-032",
-      "questionNumber": 32,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-033",
-      "questionNumber": 33,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-034",
-      "questionNumber": 34,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-035",
-      "questionNumber": 35,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-036",
-      "questionNumber": 36,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-037",
-      "questionNumber": 37,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-038",
-      "questionNumber": 38,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-039",
-      "questionNumber": 39,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-040",
-      "questionNumber": 40,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-041",
-      "questionNumber": 41,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-042",
-      "questionNumber": 42,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-043",
-      "questionNumber": 43,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-044",
-      "questionNumber": 44,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-045",
-      "questionNumber": 45,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-046",
-      "questionNumber": 46,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-047",
-      "questionNumber": 47,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-048",
-      "questionNumber": 48,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-049",
-      "questionNumber": 49,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-050",
-      "questionNumber": 50,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-051",
-      "questionNumber": 51,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-052",
-      "questionNumber": 52,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-053",
-      "questionNumber": 53,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-054",
-      "questionNumber": 54,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-055",
-      "questionNumber": 55,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-056",
-      "questionNumber": 56,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-057",
-      "questionNumber": 57,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-058",
-      "questionNumber": 58,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-059",
-      "questionNumber": 59,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-060",
-      "questionNumber": 60,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-061",
-      "questionNumber": 61,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-062",
-      "questionNumber": 62,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-063",
-      "questionNumber": 63,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-064",
-      "questionNumber": 64,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-065",
-      "questionNumber": 65,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-066",
-      "questionNumber": 66,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-067",
-      "questionNumber": 67,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-068",
-      "questionNumber": 68,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-069",
-      "questionNumber": 69,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-070",
-      "questionNumber": 70,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-071",
-      "questionNumber": 71,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-072",
-      "questionNumber": 72,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-073",
-      "questionNumber": 73,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-074",
-      "questionNumber": 74,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-075",
-      "questionNumber": 75,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-076",
-      "questionNumber": 76,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-077",
-      "questionNumber": 77,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-078",
-      "questionNumber": 78,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-079",
-      "questionNumber": 79,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-080",
-      "questionNumber": 80,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-081",
-      "questionNumber": 81,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-082",
-      "questionNumber": 82,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-083",
-      "questionNumber": 83,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-084",
-      "questionNumber": 84,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-085",
-      "questionNumber": 85,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-086",
-      "questionNumber": 86,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-087",
-      "questionNumber": 87,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-088",
-      "questionNumber": 88,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-089",
-      "questionNumber": 89,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-090",
-      "questionNumber": 90,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-091",
-      "questionNumber": 91,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-092",
-      "questionNumber": 92,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-093",
-      "questionNumber": 93,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-094",
-      "questionNumber": 94,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-095",
-      "questionNumber": 95,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-096",
-      "questionNumber": 96,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-097",
-      "questionNumber": 97,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-098",
-      "questionNumber": 98,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-099",
-      "questionNumber": 99,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-100",
-      "questionNumber": 100,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-101",
-      "questionNumber": 101,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-102",
-      "questionNumber": 102,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-103",
-      "questionNumber": 103,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-104",
-      "questionNumber": 104,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-105",
-      "questionNumber": 105,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-106",
-      "questionNumber": 106,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-107",
-      "questionNumber": 107,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-108",
-      "questionNumber": 108,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-109",
-      "questionNumber": 109,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-110",
-      "questionNumber": 110,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-111",
-      "questionNumber": 111,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-112",
-      "questionNumber": 112,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-113",
-      "questionNumber": 113,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-114",
-      "questionNumber": 114,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-115",
-      "questionNumber": 115,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-116",
-      "questionNumber": 116,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-117",
-      "questionNumber": 117,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-118",
-      "questionNumber": 118,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-119",
-      "questionNumber": 119,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-120",
-      "questionNumber": 120,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-121",
-      "questionNumber": 121,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-122",
-      "questionNumber": 122,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-123",
-      "questionNumber": 123,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-124",
-      "questionNumber": 124,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-125",
-      "questionNumber": 125,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-126",
-      "questionNumber": 126,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-127",
-      "questionNumber": 127,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-128",
-      "questionNumber": 128,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-129",
-      "questionNumber": 129,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-130",
-      "questionNumber": 130,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-131",
-      "questionNumber": 131,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-132",
-      "questionNumber": 132,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-133",
-      "questionNumber": 133,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-134",
-      "questionNumber": 134,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-135",
-      "questionNumber": 135,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
-    },
-    {
-      "id": "CEL-136",
-      "questionNumber": 136,
-      "questionText": "Cell biology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Cell biology"
-    },
-    {
-      "id": "BIO-137",
-      "questionNumber": 137,
-      "questionText": "Biochemistry: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biochemistry"
-    },
-    {
-      "id": "GEN-138",
-      "questionNumber": 138,
-      "questionText": "Genetics: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetics"
-    },
-    {
-      "id": "EVO-139",
-      "questionNumber": 139,
-      "questionText": "Evolution: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Evolution"
-    },
-    {
-      "id": "PLA-140",
-      "questionNumber": 140,
-      "questionText": "Plant physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Plant physiology"
-    },
-    {
-      "id": "ANI-141",
-      "questionNumber": 141,
-      "questionText": "Animal physiology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Animal physiology"
-    },
-    {
-      "id": "HOM-142",
-      "questionNumber": 142,
-      "questionText": "Homeostasis: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Homeostasis"
-    },
-    {
-      "id": "COO-143",
-      "questionNumber": 143,
-      "questionText": "Coordination: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Coordination"
-    },
-    {
-      "id": "REP-144",
-      "questionNumber": 144,
-      "questionText": "Reproduction: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Reproduction"
-    },
-    {
-      "id": "ECO-145",
-      "questionNumber": 145,
-      "questionText": "Ecology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Ecology"
-    },
-    {
-      "id": "BIO-146",
-      "questionNumber": 146,
-      "questionText": "Biodiversity: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biodiversity"
-    },
-    {
-      "id": "IMM-147",
-      "questionNumber": 147,
-      "questionText": "Immunity and disease: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Immunity and disease"
-    },
-    {
-      "id": "BIO-148",
-      "questionNumber": 148,
-      "questionText": "Biotechnology: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Biotechnology"
-    },
-    {
-      "id": "GEN-149",
-      "questionNumber": 149,
-      "questionText": "Genetic engineering: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Genetic engineering"
-    },
-    {
-      "id": "EXP-150",
-      "questionNumber": 150,
-      "questionText": "Experimental methods: A-level structured problem. Describe the relevant biological process, explain the mechanisms involved, analyse the factors affecting it, and evaluate how experimental evidence could be used to support a conclusion. Where appropriate, include labelled diagrams, calculations, controls and limitations.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should use accurate biological terminology, linked explanations, relevant evidence, appropriate calculations or diagrams, and evaluation of limitations.",
-      "answerConfidence": "unverified",
-      "topic": "Experimental methods"
+      "explanation": "Benefits: Targets root faulty CFTR gene restoring normal mucus clearance; relieves severe lifelong symptoms without repeated transplants [2.5]. Challenges: Short-lived non-dividing airway cells require repeated liposome/viral vector doses; viral vectors risk immune inflammation or insertional mutagenesis, plus high treatment cost [2.5].",
+      "answerConfidence": "high",
+      "topic": "Biotechnology",
+      "questionNumber": 20
     }
   ]
 }

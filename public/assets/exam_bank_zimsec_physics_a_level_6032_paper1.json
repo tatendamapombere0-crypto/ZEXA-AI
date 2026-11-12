@@ -1,0 +1,822 @@
+{
+  "paperInfo": {
+    "subject": "Physics",
+    "level": "A-Level",
+    "paperCode": "6032/01",
+    "paperName": "Physics Paper 1 — Multiple Choice",
+    "paperType": "Multiple Choice",
+    "questionCount": 30
+  },
+  "questions": [
+    {
+      "id": "phy6032_1_1",
+      "questionText": "Which pair gives the correct SI base units of the Planck constant h?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "kg·m²·s⁻²"
+        },
+        {
+          "letter": "B",
+          "text": "kg·m²·s⁻¹"
+        },
+        {
+          "letter": "C",
+          "text": "kg·m·s⁻¹"
+        },
+        {
+          "letter": "D",
+          "text": "kg·m²·s⁻³"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "From E = hf, h = E/f -> J·s = (kg·m²·s⁻²)·s = kg·m²·s⁻¹.",
+      "answerConfidence": "high",
+      "topic": "Physical Quantities & Units",
+      "questionNumber": 1
+    },
+    {
+      "id": "phy6032_1_2",
+      "questionText": "A student measures diameter d = 2.00 ± 0.04 mm and calculates cross-sectional area A = πd²/4. What is the percentage uncertainty in A?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1%"
+        },
+        {
+          "letter": "B",
+          "text": "2%"
+        },
+        {
+          "letter": "C",
+          "text": "4%"
+        },
+        {
+          "letter": "D",
+          "text": "8%"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "%Δd = (0.04/2.00)×100% = 2%. Since A ∝ d², %ΔA = 2 × 2% = 4%.",
+      "answerConfidence": "high",
+      "topic": "Uncertainties",
+      "questionNumber": 2
+    },
+    {
+      "id": "phy6032_1_3",
+      "questionText": "A projectile is launched horizontally at 30 m/s from a 45 m cliff (g = 10 m/s²). Neglecting air resistance, what is its horizontal range before hitting level ground?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 m"
+        },
+        {
+          "letter": "B",
+          "text": "60 m"
+        },
+        {
+          "letter": "C",
+          "text": "135 m"
+        },
+        {
+          "letter": "D",
+          "text": "90 m"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Vertical fall: 45 = ½(10)t² -> t = 3.0 s. Horizontal range = 30 × 3.0 = 90 m.",
+      "answerConfidence": "high",
+      "topic": "Kinematics",
+      "questionNumber": 3
+    },
+    {
+      "id": "phy6032_1_4",
+      "questionText": "Two trolleys of masses 2.0 kg (moving at +4.0 m/s) and 3.0 kg (stationary) collide and stick together. What is their common velocity after collision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.6 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "2.0 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "2.4 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "4.0 m/s"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Momentum conservation: 2.0(4.0) + 0 = (2.0 + 3.0)v -> v = 8.0/5.0 = 1.6 m/s.",
+      "answerConfidence": "high",
+      "topic": "Momentum",
+      "questionNumber": 4
+    },
+    {
+      "id": "phy6032_1_5",
+      "questionText": "A car rounds a flat circular bend of radius 50 m at constant speed 15 m/s. What is the magnitude of its centripetal acceleration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.30 m/s²"
+        },
+        {
+          "letter": "B",
+          "text": "4.5 m/s²"
+        },
+        {
+          "letter": "C",
+          "text": "3.33 m/s²"
+        },
+        {
+          "letter": "D",
+          "text": "75 m/s²"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "a = v²/r = 15² / 50 = 225 / 50 = 4.5 m/s².",
+      "answerConfidence": "high",
+      "topic": "Circular Motion",
+      "questionNumber": 5
+    },
+    {
+      "id": "phy6032_1_6",
+      "questionText": "Satellite X orbits Earth at radius R with period T. Satellite Y orbits at radius 4R. What is the orbital period of Y?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2T"
+        },
+        {
+          "letter": "B",
+          "text": "4T"
+        },
+        {
+          "letter": "C",
+          "text": "8T"
+        },
+        {
+          "letter": "D",
+          "text": "16T"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Kepler's 3rd law: T² ∝ r³ -> (T_Y/T)² = (4)³ = 64 -> T_Y = 8T.",
+      "answerConfidence": "high",
+      "topic": "Gravitation",
+      "questionNumber": 6
+    },
+    {
+      "id": "phy6032_1_7",
+      "questionText": "A body executes Simple Harmonic Motion with amplitude 0.040 m and angular frequency ω = 10 rad/s. What is its maximum speed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.040 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "250 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "0.40 m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "v_max = ωx₀ = 10 × 0.040 = 0.40 m/s.",
+      "answerConfidence": "high",
+      "topic": "Oscillations",
+      "questionNumber": 7
+    },
+    {
+      "id": "phy6032_1_8",
+      "questionText": "Monochromatic light of wavelength 600 nm strikes a diffraction grating with 500 lines/mm. What is the angle θ of the first-order diffraction maximum?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17.5°"
+        },
+        {
+          "letter": "B",
+          "text": "30.0°"
+        },
+        {
+          "letter": "C",
+          "text": "36.9°"
+        },
+        {
+          "letter": "D",
+          "text": "53.1°"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "d = 10⁻³ m / 500 = 2.0 × 10⁻⁶ m. sin θ = nλ/d = (600×10⁻⁹)/(2.0×10⁻⁶) = 0.30 -> θ = arcsin(0.30) = 17.5°.",
+      "answerConfidence": "high",
+      "topic": "Waves & Diffraction",
+      "questionNumber": 8
+    },
+    {
+      "id": "phy6032_1_9",
+      "questionText": "Stationary waves are formed on a stretched string of length 0.80 m vibrating in its 3rd harmonic (3 loops). What is the wavelength of the progressive waves?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.27 m"
+        },
+        {
+          "letter": "B",
+          "text": "0.53 m"
+        },
+        {
+          "letter": "C",
+          "text": "0.40 m"
+        },
+        {
+          "letter": "D",
+          "text": "1.60 m"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "3 × (λ/2) = 0.80 m -> λ = 1.60 / 3 = 0.533 m.",
+      "answerConfidence": "high",
+      "topic": "Superposition",
+      "questionNumber": 9
+    },
+    {
+      "id": "phy6032_1_10",
+      "questionText": "What happens to the root-mean-square speed c_rms of ideal gas molecules if the absolute Kelvin temperature is quadrupled (4T)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Unchanged"
+        },
+        {
+          "letter": "B",
+          "text": "Quadruples (4×)"
+        },
+        {
+          "letter": "C",
+          "text": "Doubles (2×)"
+        },
+        {
+          "letter": "D",
+          "text": "Halves"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "½m<c²> = (3/2)kT -> c_rms ∝ √T, so √4 = 2×.",
+      "answerConfidence": "high",
+      "topic": "Ideal Gases",
+      "questionNumber": 10
+    },
+    {
+      "id": "phy6032_1_11",
+      "questionText": "In the first law of thermodynamics ΔU = q + w, an ideal gas expands adiabatically doing 300 J of external work. What is ΔU?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+300 J"
+        },
+        {
+          "letter": "B",
+          "text": "+600 J"
+        },
+        {
+          "letter": "C",
+          "text": "0 J"
+        },
+        {
+          "letter": "D",
+          "text": "-300 J"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Adiabatic -> q = 0; gas does work ON surroundings -> w = -300 J; therefore ΔU = -300 J (temperature falls).",
+      "answerConfidence": "high",
+      "topic": "Thermodynamics",
+      "questionNumber": 11
+    },
+    {
+      "id": "phy6032_1_12",
+      "questionText": "Two point charges +Q and +4Q are separated by distance d. At what distance from +Q between them is the resultant electric field zero?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "d / 3"
+        },
+        {
+          "letter": "B",
+          "text": "d / 4"
+        },
+        {
+          "letter": "C",
+          "text": "d / 5"
+        },
+        {
+          "letter": "D",
+          "text": "d / 2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "kQ/x² = k(4Q)/(d - x)² -> (d - x)/x = 2 -> d - x = 2x -> x = d/3.",
+      "answerConfidence": "high",
+      "topic": "Electric Fields",
+      "questionNumber": 12
+    },
+    {
+      "id": "phy6032_1_13",
+      "questionText": "Three identical capacitors each of capacitance 6.0 µF are connected in series. What is their combined capacitance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 µF"
+        },
+        {
+          "letter": "B",
+          "text": "2.0 µF"
+        },
+        {
+          "letter": "C",
+          "text": "3.0 µF"
+        },
+        {
+          "letter": "D",
+          "text": "9.0 µF"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "1/C = 1/6 + 1/6 + 1/6 = 3/6 = 1/2 -> C = 2.0 µF.",
+      "answerConfidence": "high",
+      "topic": "Capacitance",
+      "questionNumber": 13
+    },
+    {
+      "id": "phy6032_1_14",
+      "questionText": "A capacitor of 470 µF discharges through a 20 kΩ resistor. What is the time constant τ of the circuit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.94 s"
+        },
+        {
+          "letter": "B",
+          "text": "23.5 s"
+        },
+        {
+          "letter": "C",
+          "text": "9.4 s"
+        },
+        {
+          "letter": "D",
+          "text": "94 s"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "τ = RC = (20 × 10³)(470 × 10⁻⁶) = 9.4 s.",
+      "answerConfidence": "high",
+      "topic": "Capacitance",
+      "questionNumber": 14
+    },
+    {
+      "id": "phy6032_1_15",
+      "questionText": "A copper wire of cross-sectional area 1.0 × 10⁻⁶ m² carries 3.2 A. Free electron number density n = 8.0 × 10²⁸ m⁻³ (e = 1.6 × 10⁻¹⁹ C). Find drift velocity v.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.0 × 10³ m/s"
+        },
+        {
+          "letter": "B",
+          "text": "4.0 × 10⁻³ m/s"
+        },
+        {
+          "letter": "C",
+          "text": "1.6 × 10⁻² m/s"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 × 10⁻⁴ m/s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "I = nAvq -> v = 3.2 / (8.0×10²⁸ × 1.0×10⁻⁶ × 1.6×10⁻¹⁹) = 3.2 / 12,800 = 2.5 × 10⁻⁴ m/s.",
+      "answerConfidence": "high",
+      "topic": "Current of Electricity",
+      "questionNumber": 15
+    },
+    {
+      "id": "phy6032_1_16",
+      "questionText": "A battery of EMF 12 V and internal resistance 1.0 Ω supplies a 5.0 Ω load resistor. What is the terminal potential difference across the load?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10.0 V"
+        },
+        {
+          "letter": "B",
+          "text": "2.0 V"
+        },
+        {
+          "letter": "C",
+          "text": "12.0 V"
+        },
+        {
+          "letter": "D",
+          "text": "9.6 V"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "I = 12/(5+1) = 2.0 A. V = IR = 2.0 × 5.0 = 10.0 V.",
+      "answerConfidence": "high",
+      "topic": "D.C. Circuits",
+      "questionNumber": 16
+    },
+    {
+      "id": "phy6032_1_17",
+      "questionText": "An electron enters a uniform magnetic field B = 0.20 T at speed 5.0 × 10⁶ m/s perpendicular to B (e = 1.6 × 10⁻¹⁹ C). What magnetic force acts on it?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.6 × 10⁻¹² N"
+        },
+        {
+          "letter": "B",
+          "text": "1.6 × 10⁻¹³ N"
+        },
+        {
+          "letter": "C",
+          "text": "8.0 × 10⁻¹⁴ N"
+        },
+        {
+          "letter": "D",
+          "text": "Zero"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "F = Bqv = 0.20 × 1.6×10⁻¹⁹ × 5.0×10⁶ = 1.6 × 10⁻¹³ N.",
+      "answerConfidence": "high",
+      "topic": "Electromagnetism",
+      "questionNumber": 17
+    },
+    {
+      "id": "phy6032_1_18",
+      "questionText": "Lenz's law is a direct consequence of which fundamental conservation principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conservation of electric charge"
+        },
+        {
+          "letter": "B",
+          "text": "Conservation of linear momentum"
+        },
+        {
+          "letter": "C",
+          "text": "Conservation of energy"
+        },
+        {
+          "letter": "D",
+          "text": "Conservation of baryon number"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Induced EMF opposes the flux change causing it; otherwise mechanical/electrical energy would be created from nothing.",
+      "answerConfidence": "high",
+      "topic": "Electromagnetic Induction",
+      "questionNumber": 18
+    },
+    {
+      "id": "phy6032_1_19",
+      "questionText": "An alternating current has peak value I₀ = 10 A. What is the root-mean-square current I_rms?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5.0 A"
+        },
+        {
+          "letter": "B",
+          "text": "14.1 A"
+        },
+        {
+          "letter": "C",
+          "text": "10.0 A"
+        },
+        {
+          "letter": "D",
+          "text": "7.07 A"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "I_rms = I₀ / √2 = 10 / 1.414 = 7.07 A.",
+      "answerConfidence": "high",
+      "topic": "Alternating Currents",
+      "questionNumber": 19
+    },
+    {
+      "id": "phy6032_1_20",
+      "questionText": "Light photons of energy 4.2 eV strike a clean sodium metal surface whose work function φ = 2.3 eV. What is the maximum kinetic energy of emitted photoelectrons?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.9 eV"
+        },
+        {
+          "letter": "B",
+          "text": "4.2 eV"
+        },
+        {
+          "letter": "C",
+          "text": "2.3 eV"
+        },
+        {
+          "letter": "D",
+          "text": "6.5 eV"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "hf = φ + KE_max -> KE_max = 4.2 - 2.3 = 1.9 eV.",
+      "answerConfidence": "high",
+      "topic": "Quantum Physics",
+      "questionNumber": 20
+    },
+    {
+      "id": "phy6032_1_21",
+      "questionText": "What is the de Broglie wavelength of an electron (m = 9.11 × 10⁻³¹ kg) moving at 2.0 × 10⁶ m/s? (h = 6.63 × 10⁻³⁴ J·s)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.82 × 10⁻¹⁰ m"
+        },
+        {
+          "letter": "B",
+          "text": "3.64 × 10⁻¹⁰ m"
+        },
+        {
+          "letter": "C",
+          "text": "7.28 × 10⁻¹⁰ m"
+        },
+        {
+          "letter": "D",
+          "text": "1.21 × 10⁻⁹ m"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "λ = h/(mv) = 6.63×10⁻³⁴ / (9.11×10⁻³¹ × 2.0×10⁶) = 3.64 × 10⁻¹⁰ m.",
+      "answerConfidence": "high",
+      "topic": "Quantum Physics",
+      "questionNumber": 21
+    },
+    {
+      "id": "phy6032_1_22",
+      "questionText": "Which nuclear quantity determines the stability/binding energy per nucleon of an atomic nucleus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Total mass divided by charge"
+        },
+        {
+          "letter": "B",
+          "text": "Half-life divided by decay constant"
+        },
+        {
+          "letter": "C",
+          "text": "Mass defect Δm multiplied by c² divided by nucleon number A"
+        },
+        {
+          "letter": "D",
+          "text": "Proton number alone"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Binding energy per nucleon = Δmc² / A; peaks around Fe-56.",
+      "answerConfidence": "high",
+      "topic": "Nuclear Physics",
+      "questionNumber": 22
+    },
+    {
+      "id": "phy6032_1_23",
+      "questionText": "A nuclide has decay constant λ = 2.0 × 10⁻⁴ s⁻¹. Calculate its half-life t_½.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6.93 × 10³ s"
+        },
+        {
+          "letter": "B",
+          "text": "5.00 × 10³ s"
+        },
+        {
+          "letter": "C",
+          "text": "1.39 × 10⁻⁴ s"
+        },
+        {
+          "letter": "D",
+          "text": "3.47 × 10³ s"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "t_½ = ln 2 / λ = 0.6931 / (2.0 × 10⁻⁴) = 3,466 s = 3.47 × 10³ s.",
+      "answerConfidence": "high",
+      "topic": "Radioactive Decay",
+      "questionNumber": 23
+    },
+    {
+      "id": "phy6032_1_24",
+      "questionText": "In a diagnostic X-ray tube, what determines the minimum wavelength (maximum photon energy) of continuous Bremsstrahlung X-rays?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accelerating anode voltage V_a (since hc/λ_min = eV_a)"
+        },
+        {
+          "letter": "B",
+          "text": "Target metal atomic number only"
+        },
+        {
+          "letter": "C",
+          "text": "Filament heater current only"
+        },
+        {
+          "letter": "D",
+          "text": "Tube cooling oil"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Maximum X-ray photon energy equals full kinetic energy eV_a of electrons hitting the target.",
+      "answerConfidence": "high",
+      "topic": "Medical Imaging",
+      "questionNumber": 24
+    },
+    {
+      "id": "phy6032_1_25",
+      "questionText": "In medical ultrasound imaging, why is coupling gel applied between the transducer probe and the patient's skin?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To lower sound frequency"
+        },
+        {
+          "letter": "B",
+          "text": "To expel air and match acoustic impedance so ultrasound is not reflected at the skin surface"
+        },
+        {
+          "letter": "C",
+          "text": "To conduct high voltage into tissues"
+        },
+        {
+          "letter": "D",
+          "text": "To absorb X-rays"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Air has very low acoustic impedance compared with skin (~99.9% reflection); gel matches impedance for transmission.",
+      "answerConfidence": "high",
+      "topic": "Medical Imaging",
+      "questionNumber": 25
+    },
+    {
+      "id": "phy6032_1_26",
+      "questionText": "A steel wire of length 2.0 m and cross-sectional area 1.0 mm² stretches by 1.0 mm under a 100 N load. Calculate Young modulus E of steel.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.0 × 10¹⁰ Pa"
+        },
+        {
+          "letter": "B",
+          "text": "1.0 × 10¹¹ Pa"
+        },
+        {
+          "letter": "C",
+          "text": "2.0 × 10¹¹ Pa"
+        },
+        {
+          "letter": "D",
+          "text": "5.0 × 10¹⁰ Pa"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Stress = 100 / 10⁻⁶ = 10⁸ Pa. Strain = 10⁻³ / 2.0 = 5 × 10⁻⁴. E = 10⁸ / (5×10⁻⁴) = 2.0 × 10¹¹ Pa.",
+      "answerConfidence": "high",
+      "topic": "Deformation of Solids",
+      "questionNumber": 26
+    },
+    {
+      "id": "phy6032_1_27",
+      "questionText": "In an ideal operational amplifier (op-amp) used as an inverting amplifier with R_in = 10 kΩ and R_f = 50 kΩ, what is the closed-loop voltage gain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+5.0"
+        },
+        {
+          "letter": "B",
+          "text": "-0.20"
+        },
+        {
+          "letter": "C",
+          "text": "+6.0"
+        },
+        {
+          "letter": "D",
+          "text": "-5.0"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Inverting gain A_v = -R_f / R_in = -50 / 10 = -5.0.",
+      "answerConfidence": "high",
+      "topic": "Electronics",
+      "questionNumber": 27
+    },
+    {
+      "id": "phy6032_1_28",
+      "questionText": "When a transverse wave reflects from a denser/fixed boundary, what phase change occurs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "π rad (180° inversion)"
+        },
+        {
+          "letter": "B",
+          "text": "π/2 rad"
+        },
+        {
+          "letter": "C",
+          "text": "0 rad"
+        },
+        {
+          "letter": "D",
+          "text": "2π rad"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Reflection at a rigid fixed boundary causes a π rad (180°) phase reversal.",
+      "answerConfidence": "high",
+      "topic": "Waves",
+      "questionNumber": 28
+    },
+    {
+      "id": "phy6032_1_29",
+      "questionText": "In Young's double-slit experiment with slit separation a = 0.50 mm and screen distance D = 2.0 m using λ = 500 nm, find fringe separation x.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.50 mm"
+        },
+        {
+          "letter": "B",
+          "text": "2.0 mm"
+        },
+        {
+          "letter": "C",
+          "text": "1.0 mm"
+        },
+        {
+          "letter": "D",
+          "text": "4.0 mm"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "x = λD/a = (500×10⁻⁹ × 2.0) / (0.50×10⁻³) = 2.0 × 10⁻³ m = 2.0 mm.",
+      "answerConfidence": "high",
+      "topic": "Interference",
+      "questionNumber": 29
+    },
+    {
+      "id": "phy6032_1_30",
+      "questionText": "An ideal gas at pressure p has density ρ. Which kinetic theory expression gives <c²>?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "p / (3ρ)"
+        },
+        {
+          "letter": "B",
+          "text": "pρ / 3"
+        },
+        {
+          "letter": "C",
+          "text": "3p / ρ"
+        },
+        {
+          "letter": "D",
+          "text": "√(3p/ρ)"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "From p = (1/3)ρ<c²>, rearranging yields <c²> = 3p / ρ.",
+      "answerConfidence": "high",
+      "topic": "Kinetic Theory",
+      "questionNumber": 30
+    }
+  ]
+}

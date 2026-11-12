@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Sparkles, Brain, Download, CheckCircle2, ChevronRight, Lock, Mail, ArrowRight, ShieldCheck, BookOpen, Layers, Cpu } from 'lucide-react';
 import { EducationLevel } from '../types';
 import { StorageManager } from '../lib/storage';
+import { KnowledgeStore } from '../lib/knowledgeStore';
+import { QwenEngine } from '../lib/qwenEngine';
 
 interface OnboardingFlowProps {
   onComplete: (level: EducationLevel, email?: string) => void;
@@ -75,34 +77,38 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
     setCurrentStep('ai-brain');
   };
 
-  // Step 3 handlers: AI Brain download/load
-  const handleLoadBrain = () => {
+  // Step 3 handlers: Real KnowledgeStore + Qwen 2.5 (0.5B Q4_K_M GGUF) initialization
+  const handleLoadBrain = async () => {
     if (isDownloading || isBrainReady) return;
     setIsDownloading(true);
-    setDownloadProgress(12);
-    setDownloadStage('Verifying local ZEXA 3.8-27B neural weights...');
+    setDownloadProgress(15);
+    setDownloadStage('Mounting 8,260+ ZIMSEC JSON topics & 4,360+ verified exam questions...');
 
-    const interval = setInterval(() => {
-      setDownloadProgress((prev) => {
-        if (prev < 38) {
-          setDownloadStage('Allocating offline neural cache & 32K context...');
-          return prev + 16;
-        } else if (prev < 72) {
-          setDownloadStage('Mounting ZIMSEC syllabus knowledge pack (1,250+ topics)...');
-          return prev + 18;
-        } else if (prev < 95) {
-          setDownloadStage('Activating bilingual ChiShona & English tutor engine...');
-          return prev + 14;
-        } else {
-          clearInterval(interval);
-          setDownloadStage('ZEXA AI Brain Loaded & Ready (100% Offline Mode Active)!');
-          setIsDownloading(false);
-          setIsBrainReady(true);
-          StorageManager.setBrainInitialized(true);
-          return 100;
-        }
-      });
-    }, 260);
+    await KnowledgeStore.load();
+
+    setDownloadProgress(35);
+    setDownloadStage('Scanning /public/assets/ for qwen2.5-0.5b-instruct-q4_k_m.gguf...');
+
+    const ggufLoaded = await QwenEngine.loadModel((state) => {
+      if (state.status === 'loading') {
+        setDownloadProgress(Math.max(40, state.progress));
+        setDownloadStage(state.statusText);
+      } else if (state.status === 'ready') {
+        setDownloadProgress(100);
+        setDownloadStage('Qwen 2.5 (0.5B GGUF) + JSON RAG Pipeline Connected!');
+      }
+    });
+
+    if (!ggufLoaded) {
+      setDownloadProgress(100);
+      setDownloadStage(
+        'Offline JSON RAG Ready (Drop qwen2.5-0.5b-instruct-q4_k_m.gguf in /public/assets/ to activate GGUF neural synthesis)'
+      );
+    }
+
+    setIsDownloading(false);
+    setIsBrainReady(true);
+    StorageManager.setBrainInitialized(true);
   };
 
   const handleStartChat = () => {
@@ -353,20 +359,20 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                     className="w-10 h-9 object-contain animate-brain-glow shrink-0"
                   />
                   <div>
-                    <h3 className="font-bold text-sm text-white">ZEXA 3.8-27B Offline Brain</h3>
-                    <p className="text-xs text-slate-400">Zimbabwe Curriculum Edition (GGUF)</p>
+                    <h3 className="font-bold text-sm text-white">Qwen 2.5 (0.5B) + ZIMSEC RAG</h3>
+                    <p className="text-xs text-slate-400">qwen2.5-0.5b-instruct-q4_k_m.gguf</p>
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 font-bold border border-emerald-500/30">
-                  Pre-Installed
+                  100% Offline
                 </span>
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-[11px] font-mono text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-white/[0.05]">
-                <div>• Architecture: ZEXA 2.5/3.8</div>
-                <div>• Inference: 100% Offline</div>
-                <div>• Languages: English &amp; ChiShona</div>
-                <div>• Context: 32K tokens</div>
+                <div>• Engine: Qwen 2.5 Q4_K_M GGUF</div>
+                <div>• Runtime: Local WASM + JSON</div>
+                <div>• Knowledge: 8,260+ Topics</div>
+                <div>• Exam Bank: 4,360+ Verified Qs</div>
               </div>
 
               {/* Download / Progress Bar */}

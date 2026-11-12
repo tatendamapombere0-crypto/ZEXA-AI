@@ -1,0 +1,957 @@
+{
+  "paperInfo": {
+    "subject": "Physics",
+    "level": "O-Level",
+    "paperCode": "4023/1",
+    "paperName": "Physics Paper 1 — Multiple Choice",
+    "paperType": "Original ZIMSEC-aligned Practice Bank",
+    "questionCount": 35
+  },
+  "questions": [
+    {
+      "id": "phy4023_1_1",
+      "questionText": "Which instrument measures the external diameter of a thin copper wire to the nearest 0.01 mm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Metre rule"
+        },
+        {
+          "letter": "B",
+          "text": "Micrometer screw gauge"
+        },
+        {
+          "letter": "C",
+          "text": "Vernier calipers"
+        },
+        {
+          "letter": "D",
+          "text": "Measuring tape"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A micrometer screw gauge has a precision of 0.01 mm, suitable for thin wires; vernier calipers read to 0.1 mm (0.01 cm).",
+      "answerConfidence": "high",
+      "topic": "Measurement",
+      "questionNumber": 1
+    },
+    {
+      "id": "phy4023_1_2",
+      "questionText": "Which pair contains ONLY scalar quantities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Force and velocity"
+        },
+        {
+          "letter": "B",
+          "text": "Acceleration and displacement"
+        },
+        {
+          "letter": "C",
+          "text": "Mass and energy"
+        },
+        {
+          "letter": "D",
+          "text": "Weight and momentum"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mass and energy have magnitude only (scalars); force, velocity, acceleration, displacement, weight, and momentum are vectors.",
+      "answerConfidence": "high",
+      "topic": "Scalars & Vectors",
+      "questionNumber": 2
+    },
+    {
+      "id": "phy4023_1_3",
+      "questionText": "A car accelerates uniformly from rest to 24 m/s in 8.0 s. Calculate its acceleration.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.33 m/s²"
+        },
+        {
+          "letter": "B",
+          "text": "192 m/s²"
+        },
+        {
+          "letter": "C",
+          "text": "16 m/s²"
+        },
+        {
+          "letter": "D",
+          "text": "3.0 m/s²"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "a = (v - u) / t = (24 - 0) / 8.0 = 3.0 m/s².",
+      "answerConfidence": "high",
+      "topic": "Kinematics",
+      "questionNumber": 3
+    },
+    {
+      "id": "phy4023_1_4",
+      "questionText": "On a speed–time graph, what does the area under the graph represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Total distance travelled"
+        },
+        {
+          "letter": "B",
+          "text": "Average velocity"
+        },
+        {
+          "letter": "C",
+          "text": "Acceleration"
+        },
+        {
+          "letter": "D",
+          "text": "Resultant force"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The area under a speed–time graph equals distance travelled; the gradient gives acceleration.",
+      "answerConfidence": "high",
+      "topic": "Kinematics",
+      "questionNumber": 4
+    },
+    {
+      "id": "phy4023_1_5",
+      "questionText": "An object of mass 4.0 kg has weight of 40 N on Earth (g = 10 N/kg). Taken to the Moon where g = 1.6 N/kg, its mass and weight are:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mass 0.64 kg, weight 6.4 N"
+        },
+        {
+          "letter": "B",
+          "text": "Mass 4.0 kg, weight 6.4 N"
+        },
+        {
+          "letter": "C",
+          "text": "Mass 4.0 kg, weight 40 N"
+        },
+        {
+          "letter": "D",
+          "text": "Mass 6.4 kg, weight 4.0 N"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mass is constant (4.0 kg); weight W = mg = 4.0 × 1.6 = 6.4 N.",
+      "answerConfidence": "high",
+      "topic": "Mass & Weight",
+      "questionNumber": 5
+    },
+    {
+      "id": "phy4023_1_6",
+      "questionText": "According to Hooke's law, within the limit of proportionality, the extension of a spring is directly proportional to:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Its original length"
+        },
+        {
+          "letter": "B",
+          "text": "Its cross-sectional area"
+        },
+        {
+          "letter": "C",
+          "text": "The stretching load applied"
+        },
+        {
+          "letter": "D",
+          "text": "Its final density"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hooke's law states F = ke within the proportional limit.",
+      "answerConfidence": "high",
+      "topic": "Deformation",
+      "questionNumber": 6
+    },
+    {
+      "id": "phy4023_1_7",
+      "questionText": "A block of mass 500 g has a volume of 200 cm³. What is its density?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4 g/cm³"
+        },
+        {
+          "letter": "B",
+          "text": "100,000 g/cm³"
+        },
+        {
+          "letter": "C",
+          "text": "10.0 g/cm³"
+        },
+        {
+          "letter": "D",
+          "text": "2.5 g/cm³"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Density ρ = m / V = 500 / 200 = 2.5 g/cm³.",
+      "answerConfidence": "high",
+      "topic": "Density",
+      "questionNumber": 7
+    },
+    {
+      "id": "phy4023_1_8",
+      "questionText": "A uniform metre rule is balanced at its 50 cm mark. A 4 N weight hangs at the 20 cm mark. Where must a 6 N weight hang to balance the rule?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "70 cm mark"
+        },
+        {
+          "letter": "B",
+          "text": "80 cm mark"
+        },
+        {
+          "letter": "C",
+          "text": "60 cm mark"
+        },
+        {
+          "letter": "D",
+          "text": "90 cm mark"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Anticlockwise moment = 4 N × (50 - 20) = 120 N·cm. Clockwise: 6 N × d = 120 -> d = 20 cm to the right of pivot -> 50 + 20 = 70 cm mark.",
+      "answerConfidence": "high",
+      "topic": "Moments",
+      "questionNumber": 8
+    },
+    {
+      "id": "phy4023_1_9",
+      "questionText": "A hydraulic press has a small piston of area 4 cm² and a large piston of area 100 cm². If a force of 20 N pushes the small piston, what load is lifted by the large piston?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "80 N"
+        },
+        {
+          "letter": "B",
+          "text": "500 N"
+        },
+        {
+          "letter": "C",
+          "text": "2000 N"
+        },
+        {
+          "letter": "D",
+          "text": "8000 N"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pressure P = 20 / 4 = 5 N/cm². Force on large piston = P × A = 5 × 100 = 500 N.",
+      "answerConfidence": "high",
+      "topic": "Pressure & Hydraulics",
+      "questionNumber": 9
+    },
+    {
+      "id": "phy4023_1_10",
+      "questionText": "A crane lifts a 600 kg crate vertically through 12 m in 30 s (g = 10 m/s²). Calculate its useful power output.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "240 W"
+        },
+        {
+          "letter": "B",
+          "text": "7,200 W"
+        },
+        {
+          "letter": "C",
+          "text": "2,400 W"
+        },
+        {
+          "letter": "D",
+          "text": "72,000 W"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Work = mgh = 600 × 10 × 12 = 72,000 J. Power = W / t = 72,000 / 30 = 2,400 W.",
+      "answerConfidence": "high",
+      "topic": "Work Energy Power",
+      "questionNumber": 10
+    },
+    {
+      "id": "phy4023_1_11",
+      "questionText": "Which heat transfer method can occur across the vacuum of space from the Sun to the Earth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Conduction"
+        },
+        {
+          "letter": "B",
+          "text": "Convection"
+        },
+        {
+          "letter": "C",
+          "text": "Evaporation"
+        },
+        {
+          "letter": "D",
+          "text": "Radiation"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Infrared thermal radiation is an electromagnetic wave and travels through a vacuum without particles.",
+      "answerConfidence": "high",
+      "topic": "Thermal Physics",
+      "questionNumber": 11
+    },
+    {
+      "id": "phy4023_1_12",
+      "questionText": "Why are white roofs often preferred on buildings in hot Zimbabwean summers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "White surfaces are poor absorbers and good reflectors of infrared radiation"
+        },
+        {
+          "letter": "B",
+          "text": "White surfaces are good absorbers of heat"
+        },
+        {
+          "letter": "C",
+          "text": "White surfaces conduct heat rapidly"
+        },
+        {
+          "letter": "D",
+          "text": "White surfaces increase convection"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Light/shiny white surfaces reflect most incoming solar radiation and absorb very little.",
+      "answerConfidence": "high",
+      "topic": "Thermal Physics",
+      "questionNumber": 12
+    },
+    {
+      "id": "phy4023_1_13",
+      "questionText": "Fixed mass of gas at constant temperature occupies 60 cm³ at pressure 100 kPa. What volume does it occupy at 150 kPa?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "90 cm³"
+        },
+        {
+          "letter": "B",
+          "text": "40 cm³"
+        },
+        {
+          "letter": "C",
+          "text": "25 cm³"
+        },
+        {
+          "letter": "D",
+          "text": "120 cm³"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Boyle's Law: P₁V₁ = P₂V₂ -> 100 × 60 = 150 × V₂ -> V₂ = 40 cm³.",
+      "answerConfidence": "high",
+      "topic": "Gas Laws",
+      "questionNumber": 13
+    },
+    {
+      "id": "phy4023_1_14",
+      "questionText": "A wave has frequency 250 Hz and wavelength 1.36 m. Calculate its speed.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "183.8 m/s"
+        },
+        {
+          "letter": "B",
+          "text": "251.4 m/s"
+        },
+        {
+          "letter": "C",
+          "text": "340 m/s"
+        },
+        {
+          "letter": "D",
+          "text": "0.005 m/s"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "v = fλ = 250 × 1.36 = 340 m/s.",
+      "answerConfidence": "high",
+      "topic": "Waves",
+      "questionNumber": 14
+    },
+    {
+      "id": "phy4023_1_15",
+      "questionText": "Which statement correctly describes sound waves in air?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They are transverse and travel through a vacuum"
+        },
+        {
+          "letter": "B",
+          "text": "Their frequency determines loudness"
+        },
+        {
+          "letter": "C",
+          "text": "They travel faster in air than in steel"
+        },
+        {
+          "letter": "D",
+          "text": "They are longitudinal and require a medium"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sound waves are longitudinal mechanical waves requiring particles (amplitude determines loudness, frequency determines pitch).",
+      "answerConfidence": "high",
+      "topic": "Sound",
+      "questionNumber": 15
+    },
+    {
+      "id": "phy4023_1_16",
+      "questionText": "Total internal reflection occurs when light travels:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "From a denser to a less dense medium with angle of incidence greater than critical angle"
+        },
+        {
+          "letter": "B",
+          "text": "From air into glass at any angle"
+        },
+        {
+          "letter": "C",
+          "text": "From a less dense to a denser medium at 90°"
+        },
+        {
+          "letter": "D",
+          "text": "Through a plane mirror"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Total internal reflection requires n₁ > n₂ and i > c.",
+      "answerConfidence": "high",
+      "topic": "Light & Optics",
+      "questionNumber": 16
+    },
+    {
+      "id": "phy4023_1_17",
+      "questionText": "Which electromagnetic wave is used in hospital sterilisation of surgical equipment and detecting forged banknotes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Microwaves"
+        },
+        {
+          "letter": "B",
+          "text": "Ultraviolet"
+        },
+        {
+          "letter": "C",
+          "text": "Infrared"
+        },
+        {
+          "letter": "D",
+          "text": "Radio waves"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ultraviolet (UV) light kills bacteria/sterilises and causes fluorescent ink on genuine notes to glow.",
+      "answerConfidence": "high",
+      "topic": "EM Spectrum",
+      "questionNumber": 17
+    },
+    {
+      "id": "phy4023_1_18",
+      "questionText": "A 12 Ω resistor and a 6 Ω resistor are connected in parallel. What is their combined resistance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 Ω"
+        },
+        {
+          "letter": "B",
+          "text": "9 Ω"
+        },
+        {
+          "letter": "C",
+          "text": "4 Ω"
+        },
+        {
+          "letter": "D",
+          "text": "2 Ω"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "1/R = 1/12 + 1/6 = 3/12 = 1/4 -> R = 4 Ω.",
+      "answerConfidence": "high",
+      "topic": "Current Electricity",
+      "questionNumber": 18
+    },
+    {
+      "id": "phy4023_1_19",
+      "questionText": "A current of 2.5 A flows through an electric kettle connected to a 240 V supply for 2 minutes. How much electrical energy is converted?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1,200 J"
+        },
+        {
+          "letter": "B",
+          "text": "19,200 J"
+        },
+        {
+          "letter": "C",
+          "text": "600 J"
+        },
+        {
+          "letter": "D",
+          "text": "72,000 J"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "E = VIt = 240 × 2.5 × (2 × 60) = 72,000 J (72 kJ).",
+      "answerConfidence": "high",
+      "topic": "Electrical Energy",
+      "questionNumber": 19
+    },
+    {
+      "id": "phy4023_1_20",
+      "questionText": "In a Zimbabwean 3-pin mains plug, to which wire must the fuse and switch always be connected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Live wire (brown)"
+        },
+        {
+          "letter": "B",
+          "text": "Earth wire (green/yellow)"
+        },
+        {
+          "letter": "C",
+          "text": "Neutral wire (blue)"
+        },
+        {
+          "letter": "D",
+          "text": "Plastic casing"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Connecting the fuse and switch on the Live wire isolates the appliance from high mains voltage when blown or switched off.",
+      "answerConfidence": "high",
+      "topic": "Mains Electricity",
+      "questionNumber": 20
+    },
+    {
+      "id": "phy4023_1_21",
+      "questionText": "Which material is best suited for the core of an electromagnet in a scrapyard crane?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hard steel"
+        },
+        {
+          "letter": "B",
+          "text": "Soft iron"
+        },
+        {
+          "letter": "C",
+          "text": "Copper"
+        },
+        {
+          "letter": "D",
+          "text": "Aluminium"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Soft iron magnetises strongly when current flows and loses magnetism immediately when switched off.",
+      "answerConfidence": "high",
+      "topic": "Magnetism",
+      "questionNumber": 21
+    },
+    {
+      "id": "phy4023_1_22",
+      "questionText": "An ideal step-down transformer has 1,000 turns on its primary coil connected to 240 V a.c., and 50 turns on its secondary coil. Find the secondary voltage.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4,800 V"
+        },
+        {
+          "letter": "B",
+          "text": "24 V"
+        },
+        {
+          "letter": "C",
+          "text": "12 V"
+        },
+        {
+          "letter": "D",
+          "text": "48 V"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Vs/Vp = Ns/Np -> Vs = 240 × (50 / 1000) = 12 V.",
+      "answerConfidence": "high",
+      "topic": "Transformers",
+      "questionNumber": 22
+    },
+    {
+      "id": "phy4023_1_23",
+      "questionText": "Why are alternating voltages stepped up to very high voltages (e.g. 330 kV) on Zimbabwe's ZESA national grid transmission lines?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To increase current and lower safety"
+        },
+        {
+          "letter": "B",
+          "text": "To eliminate magnetic fields"
+        },
+        {
+          "letter": "C",
+          "text": "Because transformers only work on d.c."
+        },
+        {
+          "letter": "D",
+          "text": "To reduce current and minimise I²R heat energy losses in cables"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "At high voltage V, P = VI means smaller current I, slashing I²R resistive heating loss in overhead cables.",
+      "answerConfidence": "high",
+      "topic": "Transmission",
+      "questionNumber": 23
+    },
+    {
+      "id": "phy4023_1_24",
+      "questionText": "Which radiation consists of fast-moving electrons emitted from an atomic nucleus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Beta (β⁻) particles"
+        },
+        {
+          "letter": "B",
+          "text": "Alpha (α) particles"
+        },
+        {
+          "letter": "C",
+          "text": "Gamma (γ) rays"
+        },
+        {
+          "letter": "D",
+          "text": "X-rays"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Beta-minus particles are high-speed electrons from neutron-to-proton nuclear decay.",
+      "answerConfidence": "high",
+      "topic": "Radioactivity",
+      "questionNumber": 24
+    },
+    {
+      "id": "phy4023_1_25",
+      "questionText": "A radioactive isotope has a half-life of 6 hours. Starting with 80 g, what mass remains undecayed after 18 hours?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "40 g"
+        },
+        {
+          "letter": "B",
+          "text": "10 g"
+        },
+        {
+          "letter": "C",
+          "text": "20 g"
+        },
+        {
+          "letter": "D",
+          "text": "5 g"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "18 hours = 3 half-lives. 80 → 40 → 20 → 10 g.",
+      "answerConfidence": "high",
+      "topic": "Radioactivity",
+      "questionNumber": 25
+    },
+    {
+      "id": "phy4023_1_26",
+      "questionText": "What prevents liquid-in-glass clinical thermometers from falling back immediately when removed from a patient's mouth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thick glass bulb"
+        },
+        {
+          "letter": "B",
+          "text": "Mercury's high boiling point"
+        },
+        {
+          "letter": "C",
+          "text": "A narrow constriction above the bulb"
+        },
+        {
+          "letter": "D",
+          "text": "Vacuum above the liquid"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The narrow constriction prevents mercury flowing back into the bulb until shaken down.",
+      "answerConfidence": "high",
+      "topic": "Temperature",
+      "questionNumber": 26
+    },
+    {
+      "id": "phy4023_1_27",
+      "questionText": "In a logic gate circuit, an AND gate outputs HIGH (1) only when:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Either input is 1"
+        },
+        {
+          "letter": "B",
+          "text": "Both inputs are 0"
+        },
+        {
+          "letter": "C",
+          "text": "Inputs are opposite"
+        },
+        {
+          "letter": "D",
+          "text": "Both inputs are 1"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "An AND gate outputs 1 if and only if A = 1 AND B = 1.",
+      "answerConfidence": "high",
+      "topic": "Electronics",
+      "questionNumber": 27
+    },
+    {
+      "id": "phy4023_1_28",
+      "questionText": "When light passes from air into glass, which property does NOT change?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Frequency"
+        },
+        {
+          "letter": "B",
+          "text": "Wavelength"
+        },
+        {
+          "letter": "C",
+          "text": "Speed"
+        },
+        {
+          "letter": "D",
+          "text": "Direction (at oblique angle)"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Frequency of a wave is fixed by its source and stays constant during refraction; speed and wavelength decrease in denser glass.",
+      "answerConfidence": "high",
+      "topic": "Optics",
+      "questionNumber": 28
+    },
+    {
+      "id": "phy4023_1_29",
+      "questionText": "A stone is dropped from rest and falls freely for 3.0 s (g = 10 m/s²). How far does it fall?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 m"
+        },
+        {
+          "letter": "B",
+          "text": "45 m"
+        },
+        {
+          "letter": "C",
+          "text": "30 m"
+        },
+        {
+          "letter": "D",
+          "text": "90 m"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "s = ut + ½gt² = 0 + ½ × 10 × 3² = 45 m.",
+      "answerConfidence": "high",
+      "topic": "Free Fall",
+      "questionNumber": 29
+    },
+    {
+      "id": "phy4023_1_30",
+      "questionText": "An electric heater rated 2.0 kW runs for 3.5 hours. If electricity costs $0.12 per kWh, what is the cost?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0.24"
+        },
+        {
+          "letter": "B",
+          "text": "$2.40"
+        },
+        {
+          "letter": "C",
+          "text": "$0.84"
+        },
+        {
+          "letter": "D",
+          "text": "$7.00"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Energy = 2.0 kW × 3.5 h = 7.0 kWh. Cost = 7.0 × $0.12 = $0.84.",
+      "answerConfidence": "high",
+      "topic": "Electrical Cost",
+      "questionNumber": 30
+    },
+    {
+      "id": "phy4023_1_31",
+      "questionText": "Which force keeps planets in circular/elliptical orbits around the Sun?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electrostatic attraction"
+        },
+        {
+          "letter": "B",
+          "text": "Magnetic repulsion"
+        },
+        {
+          "letter": "C",
+          "text": "Nuclear strong force"
+        },
+        {
+          "letter": "D",
+          "text": "Gravitational attraction (acting as centripetal force)"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Gravity provides the inward centripetal force maintaining orbital motion.",
+      "answerConfidence": "high",
+      "topic": "Circular Motion & Gravity",
+      "questionNumber": 31
+    },
+    {
+      "id": "phy4023_1_32",
+      "questionText": "What happens to the resistance of a metallic conductor when its temperature rises significantly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It increases due to more frequent lattice collisions"
+        },
+        {
+          "letter": "B",
+          "text": "It remains strictly constant"
+        },
+        {
+          "letter": "C",
+          "text": "It decreases to zero"
+        },
+        {
+          "letter": "D",
+          "text": "It becomes negative"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "In metals, hotter vibrating lattice ions scatter conduction electrons more frequently, increasing resistance.",
+      "answerConfidence": "high",
+      "topic": "Resistance",
+      "questionNumber": 32
+    },
+    {
+      "id": "phy4023_1_33",
+      "questionText": "In Fleming's left-hand rule for motors, the thumb, first finger, and second finger represent respectively:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Current, Force, Field"
+        },
+        {
+          "letter": "B",
+          "text": "Motion/Force, Magnetic Field, Current"
+        },
+        {
+          "letter": "C",
+          "text": "Field, Motion, Current"
+        },
+        {
+          "letter": "D",
+          "text": "Voltage, Current, Resistance"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Thumb = Motion (Thrust/Force), First finger = Field (N→S), Second finger = Current (+→−).",
+      "answerConfidence": "high",
+      "topic": "Electromagnetism",
+      "questionNumber": 33
+    },
+    {
+      "id": "phy4023_1_34",
+      "questionText": "Specific latent heat of fusion of ice is 334 J/g. How much heat melts 50 g of ice at 0°C without temperature rise?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6.68 J"
+        },
+        {
+          "letter": "B",
+          "text": "384 J"
+        },
+        {
+          "letter": "C",
+          "text": "16,700 J"
+        },
+        {
+          "letter": "D",
+          "text": "33,400 J"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Q = mL = 50 × 334 = 16,700 J.",
+      "answerConfidence": "high",
+      "topic": "Thermal Physics",
+      "questionNumber": 34
+    },
+    {
+      "id": "phy4023_1_35",
+      "questionText": "A converging lens of focal length 10 cm forms a sharp, real, inverted, same-size image of a candle when the candle is placed at:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 cm from lens"
+        },
+        {
+          "letter": "B",
+          "text": "10 cm from lens"
+        },
+        {
+          "letter": "C",
+          "text": "Infinity"
+        },
+        {
+          "letter": "D",
+          "text": "20 cm from lens"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "At distance u = 2f = 20 cm, a convex lens produces a real, inverted image of equal size at 2f.",
+      "answerConfidence": "high",
+      "topic": "Lenses",
+      "questionNumber": 35
+    }
+  ]
+}

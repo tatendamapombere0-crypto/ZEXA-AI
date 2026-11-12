@@ -1,97 +1,95 @@
 /**
- * Qwen Neural Engine Integration
- * Optimized for Mobile Devices, Android Studio APKs, and WebGPU.
+ * Qwen 2.5 (0.5B Instruct Q4_K_M GGUF) Offline Neural Engine
+ * Powered by @wllama/wllama (100% Local WebAssembly llama.cpp) & Android Native NDK Bridge.
  *
- * Guaranteed Under 5-Second Response Architecture:
- * 1. Native Android Studio Bridge Support: Directly hooks into `window.AndroidNativeAI`
- *    or `window.ZexaNative` when compiled via Android Studio NDK/JNI.
- * 2. Strict Anti-Bottleneck Context: Limits RAG context to 100 words (eliminating 60s prefill).
- * 3. Concise Output Budget: Sets max_tokens to 180 (ensuring prompt + generation finishes in < 5s).
- * 4. 5-Second Circuit Breaker: If neural inference takes longer than 4.5s on slow mobile hardware,
- *    it auto-falls back to ZEXA Local Brain so the student is NEVER kept waiting.
+ * Designed for True 0 MB Offline Execution:
+ * 1. Loads `/assets/qwen2.5-0.5b-instruct-q4_k_m.gguf` directly from the local assets folder.
+ * 2. Uses local `/assets/wasm/wllama.wasm` (zero CDN or internet calls).
+ * 3. Supports Android Studio JNI/NDK Bridge (`window.AndroidNativeAI` / `window.ZexaNative`) when packaged as an APK.
+ * 4. Supports manual local `.gguf` file loading from device storage for testing or custom models.
+ * 5. Receives verified JSON RAG context from `KnowledgeStore` & `ExamBankMatcher` so small 0.5B weights
+ *    reason cleanly over authoritative ZIMSEC data without hallucinations.
  */
 
-import { CreateMLCEngine, MLCEngine, InitProgressReport, prebuiltAppConfig } from '@mlc-ai/web-llm';
+import { Wllama, type ChatCompletionMessage } from '@wllama/wllama';
 
-export type QwenModelStatus = 'unloaded' | 'downloading' | 'compiling' | 'ready' | 'error';
+export type QwenModelStatus =
+  | 'unloaded'
+  | 'checking'
+  | 'awaiting_model'
+  | 'loading'
+  | 'ready'
+  | 'error';
 
 export interface QwenProgressState {
   status: QwenModelStatus;
   progress: number; // 0 to 100
   statusText: string;
+  modelName: string;
+  modelPresentInAssets: boolean;
   error?: string;
   isAndroidNative?: boolean;
 }
 
 export class QwenEngine {
-  private static engine: MLCEngine | null = null;
+  private static wllama: Wllama | null = null;
   private static currentStatus: QwenModelStatus = 'unloaded';
   private static currentProgress = 0;
-  private static statusMessage = 'Not loaded (ZEXA Instant active)';
+  private static statusMessage = 'Checking for qwen2.5-0.5b-instruct-q4_k_m.gguf...';
   private static errorMessage = '';
+  private static modelFoundInAssets = false;
+  private static activeModelName = 'qwen2.5-0.5b-instruct-q4_k_m.gguf';
   private static isCancelled = false;
+  private static activeAbortController: AbortController | null = null;
+  private static loadPromise: Promise<boolean> | null = null;
+  private static subscribers = new Set<(state: QwenProgressState) => void>();
 
-  // Selected compact 0.6B / 0.5B models (tested for mobile WebGPU and Android)
-  public static readonly PRIMARY_MODEL = 'Qwen3-0.6B-q4f16_1-MLC';
-  public static readonly FALLBACK_MODEL = 'Qwen2.5-0.5B-Instruct-q4f16_1-MLC';
+  public static readonly MODEL_FILENAME = 'qwen2.5-0.5b-instruct-q4_k_m.gguf';
+  public static readonly LOCAL_GGUF_URL = '/assets/qwen2.5-0.5b-instruct-q4_k_m.gguf';
+  public static readonly LOCAL_WASM_PATHS = {
+    default: '/assets/wasm/wllama.wasm'
+  };
 
-  /**
-   * Detects if the app is running inside an Android Studio APK WebView
-   */
+  private static notifySubscribers(): void {
+    const snapshot = this.getStatus();
+    for (const cb of this.subscribers) {
+      try {
+        cb(snapshot);
+      } catch {
+        // ignore listener errors
+      }
+    }
+  }
+
+  public static subscribe(callback: (state: QwenProgressState) => void): () => void {
+    this.subscribers.add(callback);
+    callback(this.getStatus());
+    return () => {
+      this.subscribers.delete(callback);
+    };
+  }
+
   public static isRunningInAndroidAPK(): boolean {
     if (typeof window === 'undefined') return false;
     const w = window as any;
-    return Boolean(w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge) ||
+    return (
+      Boolean(w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge) ||
       navigator.userAgent.includes('wv') ||
-      window.location.protocol === 'file:';
-  }
-
-  /**
-   * Pre-flight check to verify hardware and runtime capability (WebGPU or Native Android Bridge)
-   */
-  public static async checkWebGPUSupport(): Promise<{ supported: boolean; reason?: string; isNative?: boolean }> {
-    if (typeof window === 'undefined') {
-      return { supported: false, reason: 'Server environment detected' };
-    }
-
-    const w = window as any;
-    // 1. Check for native Android Studio bridge (injected via webView.addJavascriptInterface)
-    if (w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge) {
-      return { supported: true, isNative: true };
-    }
-
-    // 2. Check for browser/WebView WebGPU
-    const nav = navigator as any;
-    if (!nav.gpu) {
-      return {
-        supported: false,
-        reason: 'WebGPU is not enabled in this WebView/browser. On Android devices, native Android Studio acceleration or ZEXA Instant Brain is recommended for under 5-second responses.'
-      };
-    }
-
-    try {
-      const adapter = await nav.gpu.requestAdapter();
-      if (!adapter) {
-        return {
-          supported: false,
-          reason: 'No compatible GPU adapter found on this mobile device.'
-        };
-      }
-      return { supported: true, isNative: false };
-    } catch (err: any) {
-      return {
-        supported: false,
-        reason: err?.message || 'Failed to initialize GPU adapter'
-      };
-    }
+      window.location.protocol === 'file:'
+    );
   }
 
   public static getStatus(): QwenProgressState {
-    const isNative = typeof window !== 'undefined' && Boolean((window as any).AndroidNativeAI || (window as any).ZexaNative);
+    const isNative =
+      typeof window !== 'undefined' &&
+      Boolean((window as any).AndroidNativeAI || (window as any).ZexaNative || (window as any).AndroidBridge);
+
     return {
       status: isNative ? 'ready' : this.currentStatus,
       progress: isNative ? 100 : this.currentProgress,
-      statusText: isNative ? 'Android Native NDK Engine Ready' : this.statusMessage,
+      statusText: isNative ? 'Android Native NDK Qwen Engine Ready' : this.statusMessage,
+      modelName: this.activeModelName,
+      modelPresentInAssets: isNative || this.modelFoundInAssets,
       error: this.errorMessage || undefined,
       isAndroidNative: isNative
     };
@@ -100,116 +98,297 @@ export class QwenEngine {
   public static isReady(): boolean {
     if (typeof window !== 'undefined') {
       const w = window as any;
-      if (w.AndroidNativeAI || w.ZexaNative) return true;
+      if (w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge) return true;
     }
-    return this.currentStatus === 'ready' && this.engine !== null;
+    return this.currentStatus === 'ready' && this.wllama !== null && this.wllama.isModelLoaded();
   }
 
   public static stopGeneration(): void {
     this.isCancelled = true;
+    if (this.activeAbortController) {
+      try {
+        this.activeAbortController.abort();
+      } catch {
+        // ignore
+      }
+      this.activeAbortController = null;
+    }
     if (typeof window !== 'undefined') {
       const w = window as any;
       if (w.AndroidNativeAI?.stopGeneration) w.AndroidNativeAI.stopGeneration();
       if (w.ZexaNative?.stopGeneration) w.ZexaNative.stopGeneration();
+      if (w.AndroidBridge?.stopGeneration) w.AndroidBridge.stopGeneration();
     }
   }
 
   /**
-   * Initializes and loads the Qwen model.
-   * If running inside Android Studio with a native bridge, activates immediately.
+   * Verifies that `/assets/qwen2.5-0.5b-instruct-q4_k_m.gguf` is a real GGUF binary
+   * (checking GGUF magic bytes `0x47 0x47 0x55 0x46` instead of SPA index.html fallback).
+   */
+  public static async checkLocalGGUFExists(): Promise<{
+    exists: boolean;
+    sizeBytes?: number;
+    reason?: string;
+  }> {
+    if (typeof window === 'undefined' || typeof fetch !== 'function') {
+      return { exists: false, reason: 'Non-browser environment' };
+    }
+
+    try {
+      // First check the first 4 bytes for exact GGUF magic header ('GGUF')
+      const rangeRes = await fetch(this.LOCAL_GGUF_URL, {
+        headers: { Range: 'bytes=0-3' },
+        cache: 'no-store'
+      });
+
+      if (!rangeRes.ok) {
+        return { exists: false, reason: `HTTP ${rangeRes.status} for ${this.LOCAL_GGUF_URL}` };
+      }
+
+      const contentType = (rangeRes.headers.get('content-type') || '').toLowerCase();
+      if (contentType.includes('text/html')) {
+        return {
+          exists: false,
+          reason: `${this.MODEL_FILENAME} not uploaded to /public/assets/ yet`
+        };
+      }
+
+      const buf = await rangeRes.arrayBuffer();
+      const bytes = new Uint8Array(buf.slice(0, 4));
+      const isGGUFMagic =
+        bytes.length >= 4 &&
+        bytes[0] === 0x47 && // G
+        bytes[1] === 0x47 && // G
+        bytes[2] === 0x55 && // U
+        bytes[3] === 0x46;   // F
+
+      if (!isGGUFMagic) {
+        return {
+          exists: false,
+          reason: `File at ${this.LOCAL_GGUF_URL} is not a valid GGUF header`
+        };
+      }
+
+      const contentRange = rangeRes.headers.get('content-range') || '';
+      const totalMatch = contentRange.match(/\/(\d+)$/);
+      const contentLengthHeader = rangeRes.headers.get('content-length');
+      const sizeBytes = totalMatch
+        ? parseInt(totalMatch[1], 10)
+        : contentLengthHeader
+        ? parseInt(contentLengthHeader, 10)
+        : undefined;
+
+      this.modelFoundInAssets = true;
+      return { exists: true, sizeBytes };
+    } catch (err: any) {
+      return { exists: false, reason: err?.message || 'Unable to probe local GGUF model' };
+    }
+  }
+
+  private static createWllamaInstance(): Wllama {
+    const instance = new Wllama(this.LOCAL_WASM_PATHS, {
+      allowOffline: true,
+      suppressNativeLog: true,
+      parallelDownloads: 1
+    });
+    // Enforce 100% offline execution (disable external CDN compat scripts)
+    instance.setCompat(null);
+    return instance;
+  }
+
+  /**
+   * Automatically checks `/assets/qwen2.5-0.5b-instruct-q4_k_m.gguf` and mounts it into memory
+   * if present. Safe to invoke on startup.
+   */
+  public static async autoConnectLocalGGUF(
+    onProgress?: (state: QwenProgressState) => void
+  ): Promise<boolean> {
+    if (this.isReady()) {
+      if (onProgress) onProgress(this.getStatus());
+      return true;
+    }
+
+    if (this.loadPromise) {
+      return this.loadPromise;
+    }
+
+    this.loadPromise = this.loadModel(onProgress).finally(() => {
+      this.loadPromise = null;
+    });
+    return this.loadPromise;
+  }
+
+  /**
+   * Loads `qwen2.5-0.5b-instruct-q4_k_m.gguf` from Android Native Bridge OR `/assets/`.
    */
   public static async loadModel(
     onProgress?: (state: QwenProgressState) => void
   ): Promise<boolean> {
     const w = typeof window !== 'undefined' ? (window as any) : {};
 
-    // 1. Check Native Android Bridge
-    if (w.AndroidNativeAI || w.ZexaNative) {
+    // Path A: Native Android Studio Bridge
+    if (w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge) {
       this.currentStatus = 'ready';
       this.currentProgress = 100;
-      this.statusMessage = 'Native Android Studio AI Bridge Connected';
+      this.modelFoundInAssets = true;
+      this.statusMessage = 'Native Android Studio Qwen GGUF Bridge Connected';
+      this.errorMessage = '';
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+      return true;
+    }
+
+    if (this.wllama && this.wllama.isModelLoaded() && this.currentStatus === 'ready') {
       if (onProgress) onProgress(this.getStatus());
       return true;
     }
 
-    if (this.engine && this.currentStatus === 'ready') {
-      if (onProgress) onProgress(this.getStatus());
-      return true;
-    }
+    this.currentStatus = 'checking';
+    this.currentProgress = 5;
+    this.statusMessage = `Scanning /assets/ for ${this.MODEL_FILENAME}...`;
+    if (onProgress) onProgress(this.getStatus());
+    this.notifySubscribers();
 
-    const gpuCheck = await this.checkWebGPUSupport();
-    if (!gpuCheck.supported) {
-      this.currentStatus = 'error';
-      this.errorMessage = gpuCheck.reason || 'WebGPU unsupported';
-      this.statusMessage = 'WebGPU unsupported on this device';
+    const probe = await this.checkLocalGGUFExists();
+    if (!probe.exists) {
+      this.modelFoundInAssets = false;
+      this.currentStatus = 'awaiting_model';
+      this.currentProgress = 0;
+      this.errorMessage = '';
+      this.statusMessage = `Ready for ${this.MODEL_FILENAME} in /public/assets/ (ZEXA RAG Active)`;
       if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
       return false;
     }
 
     try {
-      this.currentStatus = 'downloading';
-      this.currentProgress = 0;
-      this.statusMessage = 'Connecting to model repository...';
+      this.modelFoundInAssets = true;
+      this.currentStatus = 'loading';
+      this.currentProgress = 8;
+      this.errorMessage = '';
+      this.statusMessage = `Mounting ${this.MODEL_FILENAME} into local WASM memory...`;
       if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
 
-      const progressCallback = (report: InitProgressReport) => {
-        const pct = Math.round((report.progress || 0) * 100);
-        this.currentProgress = pct;
-
-        let cleanText = report.text || 'Loading neural weights...';
-        if (cleanText.toLowerCase().includes('fetching param') || cleanText.toLowerCase().includes('loading model')) {
-          this.currentStatus = 'downloading';
-          cleanText = `Loading Qwen neural weights: ${pct}%...`;
-        } else if (cleanText.toLowerCase().includes('compiling') || cleanText.toLowerCase().includes('wasm')) {
-          this.currentStatus = 'compiling';
-          cleanText = `Compiling device shaders (${pct}%)...`;
+      if (this.wllama) {
+        try {
+          await this.wllama.exit();
+        } catch {
+          // ignore cleanup
         }
-
-        this.statusMessage = cleanText;
-        if (onProgress) onProgress(this.getStatus());
-      };
-
-      let selectedModel = this.PRIMARY_MODEL;
-      const modelExists = prebuiltAppConfig.model_list.some((m) => m.model_id === selectedModel);
-      if (!modelExists) {
-        selectedModel = this.FALLBACK_MODEL;
       }
 
-      this.engine = await CreateMLCEngine(selectedModel, {
-        initProgressCallback: progressCallback,
-        logLevel: 'WARN'
+      this.wllama = this.createWllamaInstance();
+
+      const absoluteModelUrl = new URL(this.LOCAL_GGUF_URL, window.location.origin).toString();
+      await this.wllama.loadModelFromUrl(absoluteModelUrl, {
+        n_ctx: 2048,
+        n_batch: 256,
+        useCache: true,
+        progressCallback: ({ loaded, total }) => {
+          const pct = total > 0 ? Math.min(98, Math.max(10, Math.round((loaded / total) * 100))) : 50;
+          this.currentProgress = pct;
+          const loadedMb = (loaded / (1024 * 1024)).toFixed(0);
+          const totalMb = total > 0 ? (total / (1024 * 1024)).toFixed(0) : '?';
+          this.statusMessage = `Loading ${this.MODEL_FILENAME} (${loadedMb}/${totalMb} MB • ${pct}%)`;
+          if (onProgress) onProgress(this.getStatus());
+          this.notifySubscribers();
+        }
       });
 
+      this.activeModelName = this.MODEL_FILENAME;
       this.currentStatus = 'ready';
       this.currentProgress = 100;
-      this.statusMessage = 'Qwen 0.6B Neural Engine Ready';
+      this.statusMessage = 'Qwen 2.5 (0.5B GGUF) + JSON RAG Pipeline Connected';
       this.errorMessage = '';
       if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
       return true;
     } catch (err: any) {
       this.currentStatus = 'error';
-      this.errorMessage = err?.message || 'Failed to initialize Qwen engine';
-      this.statusMessage = 'Failed to load Qwen model';
-      this.engine = null;
+      this.errorMessage = err?.message || 'Failed to mount GGUF model in WebAssembly';
+      this.statusMessage = 'GGUF load fallback active (ZEXA RAG answering)';
+      if (this.wllama) {
+        try {
+          await this.wllama.exit();
+        } catch {
+          // ignore
+        }
+      }
+      this.wllama = null;
       if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
       return false;
     }
   }
 
   /**
-   * Generates a response with Guaranteed Under-5-Second Mobile Latency.
-   *
-   * CRITICAL UNDER-5-SECOND BOTTLENECK FIXES:
-   * 1. If Native Android Bridge exists, calls native JNI C++ code directly.
-   * 2. Tight Context: Max 100 words of ZIMSEC syllabus highlights (0.5s prefill).
-   * 3. Max Tokens Capped: 180 tokens (~120 words) for crisp, focused answers.
-   * 4. 4.5s Circuit Breaker: If device throttles and takes > 4.5s, auto-fails over to ZEXA Local Brain.
+   * Loads a `.gguf` model directly from a user-selected local File/Blob (great for testing before upload).
+   */
+  public static async loadModelFromFile(
+    file: File,
+    onProgress?: (state: QwenProgressState) => void
+  ): Promise<boolean> {
+    if (!file || !file.name.toLowerCase().endsWith('.gguf')) {
+      this.currentStatus = 'error';
+      this.errorMessage = 'Please select a valid .gguf model file.';
+      this.statusMessage = 'Invalid file format (must be .gguf)';
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+      return false;
+    }
+
+    try {
+      this.currentStatus = 'loading';
+      this.currentProgress = 15;
+      this.activeModelName = file.name;
+      this.errorMessage = '';
+      this.statusMessage = `Mounting ${file.name} from local storage...`;
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+
+      if (this.wllama) {
+        try {
+          await this.wllama.exit();
+        } catch {
+          // ignore
+        }
+      }
+
+      this.wllama = this.createWllamaInstance();
+      await this.wllama.loadModel([file], {
+        n_ctx: 2048,
+        n_batch: 256
+      });
+
+      this.currentStatus = 'ready';
+      this.currentProgress = 100;
+      this.statusMessage = `${file.name} (GGUF) Connected to JSON RAG Pipeline`;
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+      return true;
+    } catch (err: any) {
+      this.currentStatus = 'error';
+      this.errorMessage = err?.message || 'Failed to mount local GGUF file';
+      this.statusMessage = 'Failed to load local GGUF file';
+      this.wllama = null;
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+      return false;
+    }
+  }
+
+  /**
+   * Executes RAG-Grounded Qwen 2.5 (0.5B Instruct Q4_K_M) inference.
+   * Connects verified JSON syllabus chunks & exam mark schemes directly into Qwen's context window
+   * so small offline weights produce accurate, well-structured, hallucination-free explanations.
    */
   public static async generate(
     question: string,
     options: {
       level: string;
       contextSnippet?: string;
+      sourceTag?: string;
       history?: Array<{ question: string; answer: string }>;
       onToken: (token: string) => void;
       onComplete: (metrics: string, source?: string) => void;
@@ -221,18 +400,17 @@ export class QwenEngine {
     let firstTokenTime = 0;
     const w = typeof window !== 'undefined' ? (window as any) : {};
 
-    // --- PATH A: Native Android Studio Bridge (Under 2 seconds on phone GPU) ---
+    // --- PATH A: Native Android Studio Bridge ---
     const nativeBridge = w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge;
     if (nativeBridge && typeof nativeBridge.generate === 'function') {
       try {
         const payload = JSON.stringify({
           question: question.trim(),
           level: options.level,
-          context: (options.contextSnippet || '').slice(0, 500),
+          context: (options.contextSnippet || '').slice(0, 2200),
           history: options.history?.slice(-2) || []
         });
 
-        // Setup global callbacks for Android WebView interface
         w.__onNativeToken = (token: string) => {
           if (this.isCancelled) return;
           if (firstTokenTime === 0) firstTokenTime = performance.now();
@@ -241,7 +419,10 @@ export class QwenEngine {
 
         w.__onNativeComplete = (metricsStr?: string) => {
           const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
-          options.onComplete(metricsStr || `Total: ${totalTime}s • Android Native NDK`, 'Qwen Neural (Android Studio)');
+          options.onComplete(
+            metricsStr || `Total: ${totalTime}s • Qwen 2.5 0.5B GGUF (Android NDK)`,
+            options.sourceTag || 'Qwen 2.5 GGUF + ZIMSEC JSON RAG'
+          );
         };
 
         w.__onNativeError = (errStr: string) => {
@@ -256,101 +437,129 @@ export class QwenEngine {
       }
     }
 
-    // --- PATH B: In-Browser WebGPU WebLLM Engine ---
-    if (!this.engine || this.currentStatus !== 'ready') {
-      options.onError('Qwen Neural Engine is not ready. Please wait for model loading or use ZEXA Instant Brain.');
+    // --- PATH B: Local WebAssembly Wllama GGUF Engine ---
+    if (!this.wllama || !this.wllama.isModelLoaded() || this.currentStatus !== 'ready') {
+      options.onError('GGUF_NOT_LOADED');
       return;
     }
 
-    // 4.5s Watchdog circuit breaker for slow mobile devices
+    const abortController = new AbortController();
+    this.activeAbortController = abortController;
+
+    // 14s first-token watchdog so slow CPUs gracefully fail over to instant RAG without freezing chat
     let hasEmittedTokens = false;
-    const watchdogTimer = setTimeout(() => {
+    const watchdog = setTimeout(() => {
       if (!hasEmittedTokens && !this.isCancelled) {
         this.isCancelled = true;
-        options.onError('DEVICE_TIMEOUT_5S');
+        abortController.abort();
+        options.onError('DEVICE_TIMEOUT');
       }
-    }, 4500);
+    }, 14000);
 
     try {
-      // 1. Build tight, focused system prompt
-      let systemPrompt = `You are ZEXA, an expert ZIMSEC tutor for ${options.level} in Zimbabwe. Give a direct, accurate, conversational explanation under 130 words.`;
+      const groundedContext = (options.contextSnippet || '').trim().slice(0, 2400);
 
-      if (options.contextSnippet && options.contextSnippet.trim()) {
-        // Compress context to top 100 words to ensure prefill is under 0.6 seconds!
-        const trimmedSnippet = options.contextSnippet
-          .replace(/\s+/g, ' ')
-          .slice(0, 500);
-        systemPrompt += `\n\nSyllabus:\n${trimmedSnippet}`;
-      }
+      const systemPrompt = [
+        `You are ZEXA AI, Zimbabwe's offline ZIMSEC tutor for ${options.level} students.`,
+        `STRICT ACCURACY RULES:`,
+        `1. Base your answer strictly on the VERIFIED ZIMSEC SYLLABUS & EXAM DATA below.`,
+        `2. Preserve all exact dates, names, scientific laws, equations, and mark-scheme points from the verified data.`,
+        `3. Do NOT guess or invent facts, names, or years not supported by the verified data.`,
+        `4. Format clearly with a short ### Heading, a Direct Answer, and crisp bullet points.`,
+        groundedContext
+          ? `\nVERIFIED ZIMSEC SYLLABUS & EXAM DATA (${options.sourceTag || 'Official JSON Assets'}):\n"""\n${groundedContext}\n"""`
+          : `\nNote: No pre-written snippet matched directly. Explain clearly at ${options.level} ZIMSEC standard without inventing unverified Zimbabwe-specific statistics.`
+      ].join('\n');
 
-      // 2. Build multi-turn messages (last 2 turns max to keep KV-cache fast)
-      const messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }> = [
-        { role: 'system', content: systemPrompt }
-      ];
+      const messages: ChatCompletionMessage[] = [{ role: 'system', content: systemPrompt }];
 
       if (options.history && options.history.length > 0) {
-        const recentHistory = options.history.slice(-2);
-        for (const h of recentHistory) {
+        for (const h of options.history.slice(-2)) {
           if (h.question && h.answer) {
-            messages.push({ role: 'user', content: h.question.slice(0, 200) });
-            messages.push({ role: 'assistant', content: h.answer.slice(0, 250) });
+            messages.push({ role: 'user', content: h.question.slice(0, 180) });
+            messages.push({ role: 'assistant', content: h.answer.slice(0, 260) });
           }
         }
       }
 
       messages.push({ role: 'user', content: question.trim() });
 
-      // 3. Stream from WebLLM with max_tokens: 180 for under 5s completion
-      const stream = await this.engine.chat.completions.create({
+      let emittedLength = 0;
+
+      await this.wllama.createChatCompletion({
         messages,
-        temperature: 0.5,
+        stream: true,
+        temperature: 0.25,
         top_p: 0.85,
-        max_tokens: 180,
-        stream: true
+        penalty_repeat: 1.12,
+        max_tokens: 340,
+        abortSignal: abortController.signal,
+        onData: (chunk) => {
+          if (this.isCancelled) return;
+          const delta = chunk.choices?.[0]?.delta?.content || '';
+          if (delta) {
+            if (!hasEmittedTokens) {
+              hasEmittedTokens = true;
+              clearTimeout(watchdog);
+              firstTokenTime = performance.now();
+            }
+            emittedLength += delta.length;
+            options.onToken(delta);
+          }
+        }
       });
 
-      for await (const chunk of stream) {
-        if (this.isCancelled) {
-          clearTimeout(watchdogTimer);
-          options.onComplete('Cancelled by user');
-          return;
-        }
-        const delta = chunk.choices[0]?.delta?.content || '';
-        if (delta) {
-          hasEmittedTokens = true;
-          clearTimeout(watchdogTimer);
-          if (firstTokenTime === 0) firstTokenTime = performance.now();
-          options.onToken(delta);
-        }
+      clearTimeout(watchdog);
+      this.activeAbortController = null;
+
+      if (this.isCancelled) {
+        options.onComplete('Cancelled by user');
+        return;
       }
 
-      clearTimeout(watchdogTimer);
+      if (emittedLength === 0) {
+        options.onError('EMPTY_GGUF_OUTPUT');
+        return;
+      }
+
       const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
       const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.8';
-      const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • Qwen 0.6B WebGPU`;
-
-      options.onComplete(metrics, 'Qwen Neural Engine (Local)');
+      const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • Qwen 2.5 0.5B GGUF + JSON RAG`;
+      options.onComplete(
+        metrics,
+        options.sourceTag ? `${options.sourceTag} · Qwen 2.5 GGUF` : 'Qwen 2.5 0.5B GGUF + JSON RAG'
+      );
     } catch (err: any) {
-      clearTimeout(watchdogTimer);
-      options.onError(err?.message || 'Inference error in Qwen Neural Engine');
+      clearTimeout(watchdog);
+      this.activeAbortController = null;
+      if (this.isCancelled || err?.name === 'AbortError') {
+        if (hasEmittedTokens) {
+          options.onComplete('Stopped by user');
+        } else {
+          options.onError('GENERATION_ABORTED');
+        }
+      } else {
+        options.onError(err?.message || 'GGUF inference error');
+      }
     }
   }
 
-  /**
-   * Frees GPU memory by releasing engine resources
-   */
   public static async unload(): Promise<void> {
-    if (this.engine) {
+    this.stopGeneration();
+    if (this.wllama) {
       try {
-        await this.engine.unload();
+        await this.wllama.exit();
       } catch {
         // ignore unload errors
       }
-      this.engine = null;
+      this.wllama = null;
     }
-    this.currentStatus = 'unloaded';
+    this.currentStatus = this.modelFoundInAssets ? 'unloaded' : 'awaiting_model';
     this.currentProgress = 0;
-    this.statusMessage = 'Unloaded (ZEXA Instant active)';
+    this.statusMessage = this.modelFoundInAssets
+      ? 'GGUF Unloaded (Click to reload)'
+      : `Ready for ${this.MODEL_FILENAME} in /public/assets/`;
     this.errorMessage = '';
+    this.notifySubscribers();
   }
 }

@@ -1,1514 +1,240 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_geography_a_level_6037_paper1_150",
+    "file": "exam_bank_zimsec_geography_a_level_6037_paper1_150.json",
     "subject": "Geography",
     "level": "A-Level",
     "paperCode": "6037/01",
-    "paperName": "Geography Paper 1 — Physical Geography",
+    "paperName": "Geography A-Level Paper 1 — Physical Geography",
     "paperType": "Structured Free-Response/Data Response",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC 6037/01; MoPSE Heritage-Based Geography Forms 5–6 syllabus 2024–2030; ZIMSEC specimen/past-paper patterns.",
-    "copyrightNote": "Original practice questions synthesized from the ZIMSEC syllabus and publicly accessible specimen/past-paper patterns; not a verbatim reproduction of past papers."
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "geo_alevel_p1_001",
+      "id": "geo6037_1_q1",
       "questionNumber": 1,
-      "questionText": "Explain the processes involved in GIS and remote sensing. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Compare a Flashy Storm Hydrograph with a Subdued (Attenuated) Storm Hydrograph in a drainage basin and explain four physical and human basin factors controlling lag time and peak discharge. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
+      "explanation": "### Mark Scheme [25 marks]\n- **Hydrograph Contrast:** Flashy shows short lag time, steep rising limb, high peak discharge; Subdued shows long lag time, gentle rising limb, broad low peak [7 marks].\n- **Controlling Factors:** (1) Permeability/rock type (granite/clay boosts overland flow vs porous sandstone percolation); (2) Rainfall intensity vs infiltration capacity (Hortonian overland flow); (3) Basin shape & slope (circular steep basins concentrate flow fast); (4) Land use (urban tarmac/deforestation lowers interception vs dense savanna woodland) [18 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_002",
+      "id": "geo6037_1_q2",
       "questionNumber": 2,
-      "questionText": "Explain the processes involved in Geo-statistical analysis. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Explain the Hjulström Curve relationship between river velocity and sediment particle size for erosion, transportation, and deposition, highlighting the anomalous behaviour of clay and silt. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
+      "explanation": "### Mark Scheme [15 marks]\n- **Curves:** Critical erosion velocity vs settling/deposition velocity against log particle size (0.001 mm – 100 mm) [5 marks].\n- **Sand vs Clay Anomaly:** Medium sand (0.1–1 mm) erodes at lowest velocity (~20 cm/s); finer clay/silt particles require unexpectedly HIGH erosion velocities due to strong electrochemical cohesion and smooth bed surface [6 marks]. Once suspended, clay stays transported down to near-zero velocities [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_003",
+      "id": "geo6037_1_q3",
       "questionNumber": 3,
-      "questionText": "Explain the processes involved in Environmental management. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Describe the Tricellular Model of global atmospheric circulation (Hadley, Ferrel, and Polar cells) and explain how seasonal shifts of the Inter-Tropical Convergence Zone (ITCZ) drive Zimbabwe's wet and dry seasons. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
+      "explanation": "### Mark Scheme [25 marks]\n- **Tricellular Model:** Thermal Hadley ascent at equator (0°), subtropical descent (~30° N/S creating Kalahari/Sahara arid belts), Ferrel mid-latitude westerlies, Polar easterlies + Coriolis deflection [13 marks].\n- **ITCZ over Zimbabwe:** In austral summer (Nov–Mar), overhead sun shifts south to Tropic of Capricorn, drawing warm moist Congo Air and NE/SE trade convergence over Zimbabwe (convectional rain). In winter (May–Aug), Botswana/Subtropical High dominance brings dry stable descending air [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_004",
+      "id": "geo6037_1_q4",
       "questionNumber": 4,
-      "questionText": "Explain the processes involved in Atmospheric processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Explain the formation, vertical structure, and destructive hazards of Tropical Cyclones (e.g., Cyclone Idai, March 2019), and assess how their intensity dissipates inland over eastern Zimbabwe. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
+      "explanation": "### Mark Scheme [20 marks]\n- **Formation:** Sea surface temperatures ≥ 26.5°C, Coriolis force (≥ 5° from equator), low wind shear, latent heat release fueling deep cumulonimbus eyewall around calm subsiding eye [10 marks].\n- **Inland Impact & Decay:** Orographic uplift against Chimanimani/Eastern Highlands triggers catastrophic rainfall, landslides, and flash floods before loss of warm ocean moisture and surface friction weaken the storm [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_005",
+      "id": "geo6037_1_q5",
       "questionNumber": 5,
-      "questionText": "Explain the processes involved in Hydrology and fluvial processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Explain how El Niño–Southern Oscillation (ENSO) events alter Walker Circulation over the Pacific and trigger severe agricultural droughts across Southern Africa. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
+      "explanation": "### Mark Scheme [15 marks]\n- **Normal vs El Niño Walker Cell:** Trade winds weaken/reverse; warm sea surface anomalies shift to central/eastern Pacific, displacing convective ascent eastward [8 marks].\n- **Zimbabwe Impact:** Teleconnections strengthen high-pressure subsidence over Southern Africa during peak summer (Dec–Feb), suppressing ITCZ cloud bands and causing mid-season dry spells and crop failure [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_006",
+      "id": "geo6037_1_q6",
       "questionNumber": 6,
-      "questionText": "Explain the processes involved in Biogeography. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "With reference to Peltier's weathering diagram, analyse how temperature and precipitation regimes govern chemical versus physical weathering, with specific reference to granite bornhardts (dwalas) and tors in Zimbabwe. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
+      "explanation": "### Mark Scheme [20 marks]\n- **Climate Controls (Peltier):** Chemical weathering (hydrolysis, carbonation, oxidation) dominates in hot, humid climates (doubles rate per +10°C—van't Hoff); physical freeze-thaw/insolation dominates in cold or arid regimes [8 marks].\n- **Zimbabwe Granite Landforms (Matobo/Domboshava):** Deep subsurface chemical etching along rectangular joints during humid Tertiary phases followed by stripping of regolith (exhumation/pressure-release sheeting) exposes dome-shaped bornhardts and joint-controlled castle kopjes/tors [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_007",
+      "id": "geo6037_1_q7",
       "questionNumber": 7,
-      "questionText": "Explain the processes involved in Geomorphology. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Outline Plate Tectonics theory and compare the landforms and hazards produced at Constructive, Destructive (Subduction), and Collision margins, referencing the East African Rift Valley. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
+      "explanation": "### Mark Scheme [25 marks]\n- **Mechanisms:** Slab pull, ridge push, mantle convection driving lithospheric plates [5 marks].\n- **Margins:** Constructive (Mid-Atlantic Ridge / East African Rift horst & graben normal faults, basaltic volcanism); Destructive (ocean trench, Benioff-zone explosive andesitic volcanoes, tsunamis); Collision (Himalayan fold mountains, shallow high-magnitude quakes) [15 marks].\n- **East African Rift:** Divergent continental rifting with Lake Tanganyika/Malawi grabens and shield/stratovolcanoes [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_008",
+      "id": "geo6037_1_q8",
       "questionNumber": 8,
-      "questionText": "Explain the processes involved in Natural hazards. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Compare Wood's (1942) four-element Slope Profile Model with Young's/King's Pediplanation theory in tropical savanna landscapes. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
+      "explanation": "### Mark Scheme [15 marks]\n- **Four Slope Elements:** Waxing/convex summit (soil creep), Free face/rock cliff (rockfall/joint control), Constant/debris slope (angle of repose), Waning concave pediment (sheetwash) [8 marks].\n- **King's Pediplanation:** Parallel scarp retreat maintains constant steep free-face angle leaving expanding gently concave pediments coalescing into a pediplain dotted with residual inselbergs [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_009",
+      "id": "geo6037_1_q9",
       "questionNumber": 9,
-      "questionText": "Explain the processes involved in Climate change. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Explain the Gersmehl Nutrient Cycle model and contrast nutrient store sizes and transfer rates between a Tropical Rainforest and a Tropical Savanna (Miombo Woodland) ecosystem. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
+      "explanation": "### Mark Scheme [20 marks]\n- **Gersmehl Stores & Flows:** Biomass, Litter, Soil stores linked by uptake, fallout, decomposition, leaching, weathering [8 marks].\n- **Comparison:** Tropical Rainforest holds huge Biomass store with rapid decomposition & intense leaching (thin ferralsols). Miombo Savanna holds much smaller Biomass, larger relative Litter/Soil nutrient retention during dry season, and regular fire mineral-ash recycling [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_010",
+      "id": "geo6037_1_q10",
       "questionNumber": 10,
-      "questionText": "Explain the processes involved in Geographical fieldwork. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
+      "questionText": "Define a Soil Catena and explain how topography and drainage create predictable soil property sequences down a Zimbabwean granitic slope (from crest to vlei/dambo). [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
+      "explanation": "### Mark Scheme [15 marks]\n- **Crest/Upper Slope:** Eluviation, thin coarse sandy well-drained red/brown fersiallitic soils [5 marks].\n- **Mid-Slope:** Throughflow moves bases & clay downslope; thicker loam profiles [5 marks].\n- **Lower Vlei/Dambo:** Illuviation accumulates fine dark vertisol/hydromorphic clay (gleying, anaerobic iron reduction mottling) with high seasonal water table [5 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_011",
+      "id": "geo6037_1_q11",
       "questionNumber": 11,
-      "questionText": "Evaluate the relationship between physical and human factors in GIS and remote sensing. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Distinguish between River Braiding and River Meandering in alluvial channels, explaining the flow hydraulics (helicoidal flow, thalweg) behind pools, riffles, and point bars. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
+      "explanation": "### Mark Scheme [20 marks]\n- **Braided Channels:** High seasonal sediment load, easily erodible banks, and fluctuating discharge split flow around shifting eyot gravel/sand bars [8 marks].\n- **Meanders & Hydraulics:** Pool-and-riffle sequences initiate sinuous thalweg; centrifugal pressure sets up secondary helicoidal corkscrew currents eroding outer river cliffs and depositing sorted inner point bars [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_012",
+      "id": "geo6037_1_q12",
       "questionNumber": 12,
-      "questionText": "Evaluate the relationship between physical and human factors in Geo-statistical analysis. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Explain how karst limestone landscapes (such as Chinhoyi Caves) develop through carbonation weathering and fluctuating phreatic water tables. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
+      "explanation": "### Mark Scheme [15 marks]\n- **Carbonation Chemistry:** Rainwater absorbs CO₂ forming weak carbonic acid (H₂CO₃), dissolving insoluble CaCO₃ into soluble calcium hydrogen carbonate Ca(HCO₃)₂ along bedding planes and vertical joints [8 marks].\n- **Landforms:** Limestone pavements, dolines, sinkholes, subterranean caverns below the water table later drained by base-level lowering, and speleothems (stalactites/stalagmites) [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_013",
+      "id": "geo6037_1_q13",
       "questionNumber": 13,
-      "questionText": "Evaluate the relationship between physical and human factors in Environmental management. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Assess the physical causes of Coastal Erosion and Deposition, explaining the formation of a headland-and-bay sequence, wave-cut platform, and spit. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
+      "explanation": "### Mark Scheme [20 marks]\n- **Erosion Processes:** Hydraulic action, abrasion, attrition, solution + wave refraction concentrating energy on resistant headlands [8 marks].\n- **Landforms:** Cliff recession leaves intertidal wave-cut platform; longshore drift transports sediment past coastline bends forming hooked sand spits and salt-marsh lagoons behind them [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_014",
+      "id": "geo6037_1_q14",
       "questionNumber": 14,
-      "questionText": "Evaluate the relationship between physical and human factors in Atmospheric processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Explain atmospheric stability, instability, and conditional instability using Environmental Lapse Rate (ELR), Dry Adiabatic Lapse Rate (DALR), and Saturated Adiabatic Lapse Rate (SALR). [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
+      "explanation": "### Mark Scheme [15 marks]\n- **Rates:** DALR (~9.8°C/km) for unsaturated rising parcels; SALR (~5–6°C/km) above lifting condensation level due to latent heat release [5 marks].\n- **Cases:** Absolute stability (ELR < SALR: resists uplift, stratus/fog/inversions); Absolute instability (ELR > DALR: buoyant towering cumulonimbus storms); Conditional instability (SALR < ELR < DALR) [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_015",
+      "id": "geo6037_1_q15",
       "questionNumber": 15,
-      "questionText": "Evaluate the relationship between physical and human factors in Hydrology and fluvial processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Evaluate the role of Geographic Information Systems (GIS) and Satellite Remote Sensing (NDVI, thermal bands) in monitoring drought, deforestation, and flood hazards in Zimbabwe. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
+      "explanation": "### Mark Scheme [20 marks]\n- **Remote Sensing Capabilities:** Multi-spectral NDVI tracks seasonal vegetation stress/famine early warning; radar/SAR penetrates cloud cover to map Zambezi/Save flood extents; Landsat time-series quantify woodland clearing [10 marks].\n- **GIS Integration & Limits:** Overlays elevation DEMs, population density, and road access to target emergency aid; constrained by cloud cover in optical sensors, high-res licensing costs, and ground-truthing needs [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_016",
+      "id": "geo6037_1_q16",
       "questionNumber": 16,
-      "questionText": "Evaluate the relationship between physical and human factors in Biogeography. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Contrast Urban Heat Island (UHI) microclimates with surrounding rural areas and explain how urban design alters wind, precipitation, and air quality. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
+      "explanation": "### Mark Scheme [15 marks]\n- **Causes of UHI:** Low albedo dark asphalt/roofs, high thermal capacity brick/concrete, lack of evapotranspiration vegetation, anthropogenic vehicle/AC waste heat [8 marks].\n- **Effects:** 2–5°C warmer nocturnal minima, enhanced afternoon convection/downwind storms, canyon street gusts vs overall friction slowdown, photochemical smog inversions [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_017",
+      "id": "geo6037_1_q17",
       "questionNumber": 17,
-      "questionText": "Evaluate the relationship between physical and human factors in Geomorphology. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Explain Plagioclimax and Secondary Succession in ecosystems, using Zimbabwean fire-climax savanna grasslands and abandoned farmland as examples. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
+      "explanation": "### Mark Scheme [15 marks]\n- **Secondary Succession:** Recolonisation of disturbed land retaining soil/seedbank (pioneer grasses → shrubs → acacia/miombo canopy) [7 marks].\n- **Plagioclimax:** Ecosystem arrested from reaching climatic climax by repeated human/biotic disturbance such as annual dry-season burning, grazing, or woodcutting, favouring fire-resistant grasses and thick-barked trees [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_018",
+      "id": "geo6037_1_q18",
       "questionNumber": 18,
-      "questionText": "Evaluate the relationship between physical and human factors in Natural hazards. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Assess the physical causes of Mass Movement (rotational slumping, mudflows, rockfalls) and evaluate two slope-stabilisation engineering measures. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
+      "explanation": "### Mark Scheme [20 marks]\n- **Shear Stress vs Shear Strength:** Heavy rainfall adds pore-water pressure reducing friction, undercutting toes by rivers/roads increases slope angle, seismic shocks/deforestation remove root cohesion [10 marks].\n- **Engineering Measures:** Weep-hole sub-surface drainage pipes (reduce pore pressure), rock bolts/gabion retaining walls/shotcrete/terrace grading—evaluate high cost vs effectiveness on Chimanimani mountain highways [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_019",
+      "id": "geo6037_1_q19",
       "questionNumber": 19,
-      "questionText": "Evaluate the relationship between physical and human factors in Climate change. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Explain Darcy's Law and distinguish between Confined and Unconfined Aquifers, assessing threats to groundwater sustainability around Harare and Chitungwiza. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
+      "explanation": "### Mark Scheme [15 marks]\n- **Aquifers:** Unconfined receives direct surface recharge; confined lies trapped beneath impermeable aquiclude creating artesian pressure; Darcy's Law Q = K·A·(dh/dl) [7 marks].\n- **Threats:** Uncontrolled urban borehole drilling causing cone-of-depression drawdown, paved surfaces blocking recharge, pit-latrine/industrial leachate contamination [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_020",
+      "id": "geo6037_1_q20",
       "questionNumber": 20,
-      "questionText": "Evaluate the relationship between physical and human factors in Geographical fieldwork. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
+      "questionText": "Evaluate the natural versus anthropogenic drivers of Pleistocene Glacial/Interglacial cycles (Milankovitch orbital forcing) compared with modern Enhanced Greenhouse Global Warming. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
+      "explanation": "### Mark Scheme [20 marks]\n- **Natural Drivers:** Eccentricity (100 kyr), Axial Tilt/Obliquity (41 kyr), Precession (23 kyr), solar variation, volcanic aerosols [8 marks].\n- **Anthropogenic Drivers & Evaluation:** Rapid post-industrial rise in CO₂ (>420 ppm), CH₄, and N₂O outpaces natural orbital timescales by orders of magnitude, amplifying positive albedo and permafrost feedbacks [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_021",
+      "id": "geo6037_1_q21",
       "questionNumber": 21,
-      "questionText": "Design a geographical investigation of GIS and remote sensing. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
+      "questionText": "Explain how Soil Erosion (splash, sheet, rill, and gully erosion) occurs on communal arable slopes and evaluate biological versus mechanical conservation methods. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
+      "explanation": "### Mark Scheme [20 marks]\n- **Mechanisms:** Raindrop detachment (splash) on bare crusted soil → overland sheet flow → concentrated rills → incised headward-advancing dongas/gullies [8 marks].\n- **Conservation:** Mechanical (contour ridges, storm drains, gabion check-dams) vs Biological (vetiver grass strips, zero-tillage mulching, agroforestry cover crops) [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_022",
+      "id": "geo6037_1_q22",
       "questionNumber": 22,
-      "questionText": "Design a geographical investigation of Geo-statistical analysis. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
+      "questionText": "Compare Aeolian landforms in hot arid deserts (barchans, seif dunes, yardangs, zeugen) and explain the processes of deflation, saltation, and abrasion. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
+      "explanation": "### Mark Scheme [15 marks]\n- **Wind Processes:** Deflation hollows out fine dust leaving desert lag pavement; Saltation bounces sand <1.5 m causing basal sandblasting abrasion on mushroom pedestals [7 marks].\n- **Landforms:** Crescentic barchans (unidirectional wind, limited sand) vs long linear seif dunes (bimodal winds); streamlined yardangs vs caprock zeugen [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_023",
+      "id": "geo6037_1_q23",
       "questionNumber": 23,
-      "questionText": "Design a geographical investigation of Environmental management. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
+      "questionText": "Explain the Water Balance Equation (P = Q + E ± ΔS) and show how seasonal soil moisture budget graphs identify periods of soil moisture surplus, utilisation, deficit, and recharge. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
+      "explanation": "### Mark Scheme [15 marks]\n- **Equation:** Precipitation = Runoff + Evapotranspiration ± Soil/Groundwater Storage change [5 marks].\n- **Four Phases:** When P > PE (rainy season) soil recharges to field capacity then generates runoff surplus; when PE > P (dry season) plants utilise stored moisture until deficit limits growth [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_024",
+      "id": "geo6037_1_q24",
       "questionNumber": 24,
-      "questionText": "Design a geographical investigation of Atmospheric processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
+      "questionText": "Evaluate the effectiveness of Early Warning Systems, Floodplain Zoning, and Dam Reservoirs (e.g., Tokwe-Mukosi / Kariba) in mitigating fluvial flood hazards. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
+      "explanation": "### Mark Scheme [20 marks]\n- **Hard Engineering (Dams/Levees):** Controls downstream peak flows and generates hydro/irrigation, though expensive, traps silt, and creates catastrophic dam-breach risk if overwhelmed [9 marks].\n- **Soft Management (Zoning & Forecasts):** Keeps high-value assets off floodplains and saves lives via early SMS evacuation alerts, though informal settlement enforcement is hard [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p1_025",
+      "id": "geo6037_1_q25",
       "questionNumber": 25,
-      "questionText": "Design a geographical investigation of Hydrology and fluvial processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
+      "questionText": "Using Spearman's Rank Correlation or Chi-Square concepts in Physical Geography fieldwork, explain how a student tests whether river pebble roundness increases significantly with distance downstream. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_026",
-      "questionNumber": 26,
-      "questionText": "Design a geographical investigation of Biogeography. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_027",
-      "questionNumber": 27,
-      "questionText": "Design a geographical investigation of Geomorphology. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_028",
-      "questionNumber": 28,
-      "questionText": "Design a geographical investigation of Natural hazards. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_029",
-      "questionNumber": 29,
-      "questionText": "Design a geographical investigation of Climate change. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_030",
-      "questionNumber": 30,
-      "questionText": "Design a geographical investigation of Geographical fieldwork. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_031",
-      "questionNumber": 31,
-      "questionText": "Analyse how spatial and temporal variation in GIS and remote sensing can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_032",
-      "questionNumber": 32,
-      "questionText": "Analyse how spatial and temporal variation in Geo-statistical analysis can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_033",
-      "questionNumber": 33,
-      "questionText": "Analyse how spatial and temporal variation in Environmental management can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_034",
-      "questionNumber": 34,
-      "questionText": "Analyse how spatial and temporal variation in Atmospheric processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_035",
-      "questionNumber": 35,
-      "questionText": "Analyse how spatial and temporal variation in Hydrology and fluvial processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_036",
-      "questionNumber": 36,
-      "questionText": "Analyse how spatial and temporal variation in Biogeography can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_037",
-      "questionNumber": 37,
-      "questionText": "Analyse how spatial and temporal variation in Geomorphology can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_038",
-      "questionNumber": 38,
-      "questionText": "Analyse how spatial and temporal variation in Natural hazards can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_039",
-      "questionNumber": 39,
-      "questionText": "Analyse how spatial and temporal variation in Climate change can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_040",
-      "questionNumber": 40,
-      "questionText": "Analyse how spatial and temporal variation in Geographical fieldwork can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_041",
-      "questionNumber": 41,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of GIS and remote sensing. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_042",
-      "questionNumber": 42,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geo-statistical analysis. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_043",
-      "questionNumber": 43,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Environmental management. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_044",
-      "questionNumber": 44,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Atmospheric processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_045",
-      "questionNumber": 45,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Hydrology and fluvial processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_046",
-      "questionNumber": 46,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Biogeography. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_047",
-      "questionNumber": 47,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geomorphology. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_048",
-      "questionNumber": 48,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Natural hazards. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_049",
-      "questionNumber": 49,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Climate change. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_050",
-      "questionNumber": 50,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geographical fieldwork. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_051",
-      "questionNumber": 51,
-      "questionText": "Explain the processes involved in GIS and remote sensing. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_052",
-      "questionNumber": 52,
-      "questionText": "Explain the processes involved in Geo-statistical analysis. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_053",
-      "questionNumber": 53,
-      "questionText": "Explain the processes involved in Environmental management. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_054",
-      "questionNumber": 54,
-      "questionText": "Explain the processes involved in Atmospheric processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_055",
-      "questionNumber": 55,
-      "questionText": "Explain the processes involved in Hydrology and fluvial processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_056",
-      "questionNumber": 56,
-      "questionText": "Explain the processes involved in Biogeography. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_057",
-      "questionNumber": 57,
-      "questionText": "Explain the processes involved in Geomorphology. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_058",
-      "questionNumber": 58,
-      "questionText": "Explain the processes involved in Natural hazards. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_059",
-      "questionNumber": 59,
-      "questionText": "Explain the processes involved in Climate change. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_060",
-      "questionNumber": 60,
-      "questionText": "Explain the processes involved in Geographical fieldwork. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_061",
-      "questionNumber": 61,
-      "questionText": "Evaluate the relationship between physical and human factors in GIS and remote sensing. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_062",
-      "questionNumber": 62,
-      "questionText": "Evaluate the relationship between physical and human factors in Geo-statistical analysis. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_063",
-      "questionNumber": 63,
-      "questionText": "Evaluate the relationship between physical and human factors in Environmental management. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_064",
-      "questionNumber": 64,
-      "questionText": "Evaluate the relationship between physical and human factors in Atmospheric processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_065",
-      "questionNumber": 65,
-      "questionText": "Evaluate the relationship between physical and human factors in Hydrology and fluvial processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_066",
-      "questionNumber": 66,
-      "questionText": "Evaluate the relationship between physical and human factors in Biogeography. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_067",
-      "questionNumber": 67,
-      "questionText": "Evaluate the relationship between physical and human factors in Geomorphology. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_068",
-      "questionNumber": 68,
-      "questionText": "Evaluate the relationship between physical and human factors in Natural hazards. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_069",
-      "questionNumber": 69,
-      "questionText": "Evaluate the relationship between physical and human factors in Climate change. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_070",
-      "questionNumber": 70,
-      "questionText": "Evaluate the relationship between physical and human factors in Geographical fieldwork. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_071",
-      "questionNumber": 71,
-      "questionText": "Design a geographical investigation of GIS and remote sensing. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_072",
-      "questionNumber": 72,
-      "questionText": "Design a geographical investigation of Geo-statistical analysis. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_073",
-      "questionNumber": 73,
-      "questionText": "Design a geographical investigation of Environmental management. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_074",
-      "questionNumber": 74,
-      "questionText": "Design a geographical investigation of Atmospheric processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_075",
-      "questionNumber": 75,
-      "questionText": "Design a geographical investigation of Hydrology and fluvial processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_076",
-      "questionNumber": 76,
-      "questionText": "Design a geographical investigation of Biogeography. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_077",
-      "questionNumber": 77,
-      "questionText": "Design a geographical investigation of Geomorphology. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_078",
-      "questionNumber": 78,
-      "questionText": "Design a geographical investigation of Natural hazards. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_079",
-      "questionNumber": 79,
-      "questionText": "Design a geographical investigation of Climate change. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_080",
-      "questionNumber": 80,
-      "questionText": "Design a geographical investigation of Geographical fieldwork. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_081",
-      "questionNumber": 81,
-      "questionText": "Analyse how spatial and temporal variation in GIS and remote sensing can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_082",
-      "questionNumber": 82,
-      "questionText": "Analyse how spatial and temporal variation in Geo-statistical analysis can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_083",
-      "questionNumber": 83,
-      "questionText": "Analyse how spatial and temporal variation in Environmental management can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_084",
-      "questionNumber": 84,
-      "questionText": "Analyse how spatial and temporal variation in Atmospheric processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_085",
-      "questionNumber": 85,
-      "questionText": "Analyse how spatial and temporal variation in Hydrology and fluvial processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_086",
-      "questionNumber": 86,
-      "questionText": "Analyse how spatial and temporal variation in Biogeography can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_087",
-      "questionNumber": 87,
-      "questionText": "Analyse how spatial and temporal variation in Geomorphology can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_088",
-      "questionNumber": 88,
-      "questionText": "Analyse how spatial and temporal variation in Natural hazards can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_089",
-      "questionNumber": 89,
-      "questionText": "Analyse how spatial and temporal variation in Climate change can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_090",
-      "questionNumber": 90,
-      "questionText": "Analyse how spatial and temporal variation in Geographical fieldwork can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_091",
-      "questionNumber": 91,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of GIS and remote sensing. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_092",
-      "questionNumber": 92,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geo-statistical analysis. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_093",
-      "questionNumber": 93,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Environmental management. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_094",
-      "questionNumber": 94,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Atmospheric processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_095",
-      "questionNumber": 95,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Hydrology and fluvial processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_096",
-      "questionNumber": 96,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Biogeography. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_097",
-      "questionNumber": 97,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geomorphology. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_098",
-      "questionNumber": 98,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Natural hazards. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_099",
-      "questionNumber": 99,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Climate change. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_100",
-      "questionNumber": 100,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geographical fieldwork. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_101",
-      "questionNumber": 101,
-      "questionText": "Explain the processes involved in GIS and remote sensing. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_102",
-      "questionNumber": 102,
-      "questionText": "Explain the processes involved in Geo-statistical analysis. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_103",
-      "questionNumber": 103,
-      "questionText": "Explain the processes involved in Environmental management. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_104",
-      "questionNumber": 104,
-      "questionText": "Explain the processes involved in Atmospheric processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_105",
-      "questionNumber": 105,
-      "questionText": "Explain the processes involved in Hydrology and fluvial processes. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_106",
-      "questionNumber": 106,
-      "questionText": "Explain the processes involved in Biogeography. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_107",
-      "questionNumber": 107,
-      "questionText": "Explain the processes involved in Geomorphology. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_108",
-      "questionNumber": 108,
-      "questionText": "Explain the processes involved in Natural hazards. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_109",
-      "questionNumber": 109,
-      "questionText": "Explain the processes involved in Climate change. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_110",
-      "questionNumber": 110,
-      "questionText": "Explain the processes involved in Geographical fieldwork. Use a labelled diagram or appropriate geographical model where useful, and assess the significance of the process in Zimbabwe or southern Africa. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_111",
-      "questionNumber": 111,
-      "questionText": "Evaluate the relationship between physical and human factors in GIS and remote sensing. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_112",
-      "questionNumber": 112,
-      "questionText": "Evaluate the relationship between physical and human factors in Geo-statistical analysis. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_113",
-      "questionNumber": 113,
-      "questionText": "Evaluate the relationship between physical and human factors in Environmental management. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_114",
-      "questionNumber": 114,
-      "questionText": "Evaluate the relationship between physical and human factors in Atmospheric processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_115",
-      "questionNumber": 115,
-      "questionText": "Evaluate the relationship between physical and human factors in Hydrology and fluvial processes. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_116",
-      "questionNumber": 116,
-      "questionText": "Evaluate the relationship between physical and human factors in Biogeography. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_117",
-      "questionNumber": 117,
-      "questionText": "Evaluate the relationship between physical and human factors in Geomorphology. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_118",
-      "questionNumber": 118,
-      "questionText": "Evaluate the relationship between physical and human factors in Natural hazards. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_119",
-      "questionNumber": 119,
-      "questionText": "Evaluate the relationship between physical and human factors in Climate change. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_120",
-      "questionNumber": 120,
-      "questionText": "Evaluate the relationship between physical and human factors in Geographical fieldwork. Use evidence, distinguish description from explanation, and reach a reasoned conclusion. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_121",
-      "questionNumber": 121,
-      "questionText": "Design a geographical investigation of GIS and remote sensing. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_122",
-      "questionNumber": 122,
-      "questionText": "Design a geographical investigation of Geo-statistical analysis. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_123",
-      "questionNumber": 123,
-      "questionText": "Design a geographical investigation of Environmental management. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_124",
-      "questionNumber": 124,
-      "questionText": "Design a geographical investigation of Atmospheric processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_125",
-      "questionNumber": 125,
-      "questionText": "Design a geographical investigation of Hydrology and fluvial processes. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_126",
-      "questionNumber": 126,
-      "questionText": "Design a geographical investigation of Biogeography. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_127",
-      "questionNumber": 127,
-      "questionText": "Design a geographical investigation of Geomorphology. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_128",
-      "questionNumber": 128,
-      "questionText": "Design a geographical investigation of Natural hazards. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_129",
-      "questionNumber": 129,
-      "questionText": "Design a geographical investigation of Climate change. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_130",
-      "questionNumber": 130,
-      "questionText": "Design a geographical investigation of Geographical fieldwork. State a hypothesis, sampling strategy, variables, data collection methods, presentation methods and one limitation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_131",
-      "questionNumber": 131,
-      "questionText": "Analyse how spatial and temporal variation in GIS and remote sensing can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_132",
-      "questionNumber": 132,
-      "questionText": "Analyse how spatial and temporal variation in Geo-statistical analysis can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_133",
-      "questionNumber": 133,
-      "questionText": "Analyse how spatial and temporal variation in Environmental management can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_134",
-      "questionNumber": 134,
-      "questionText": "Analyse how spatial and temporal variation in Atmospheric processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_135",
-      "questionNumber": 135,
-      "questionText": "Analyse how spatial and temporal variation in Hydrology and fluvial processes can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_136",
-      "questionNumber": 136,
-      "questionText": "Analyse how spatial and temporal variation in Biogeography can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_137",
-      "questionNumber": 137,
-      "questionText": "Analyse how spatial and temporal variation in Geomorphology can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_138",
-      "questionNumber": 138,
-      "questionText": "Analyse how spatial and temporal variation in Natural hazards can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_139",
-      "questionNumber": 139,
-      "questionText": "Analyse how spatial and temporal variation in Climate change can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_140",
-      "questionNumber": 140,
-      "questionText": "Analyse how spatial and temporal variation in Geographical fieldwork can be measured. Explain suitable statistics, maps, graphs or GIS techniques and evaluate their usefulness. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
-    },
-    {
-      "id": "geo_alevel_p1_141",
-      "questionNumber": 141,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of GIS and remote sensing. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS and remote sensing"
-    },
-    {
-      "id": "geo_alevel_p1_142",
-      "questionNumber": 142,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geo-statistical analysis. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geo-statistical analysis"
-    },
-    {
-      "id": "geo_alevel_p1_143",
-      "questionNumber": 143,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Environmental management. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Environmental management"
-    },
-    {
-      "id": "geo_alevel_p1_144",
-      "questionNumber": 144,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Atmospheric processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Atmospheric processes"
-    },
-    {
-      "id": "geo_alevel_p1_145",
-      "questionNumber": 145,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Hydrology and fluvial processes. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Hydrology and fluvial processes"
-    },
-    {
-      "id": "geo_alevel_p1_146",
-      "questionNumber": 146,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Biogeography. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Biogeography"
-    },
-    {
-      "id": "geo_alevel_p1_147",
-      "questionNumber": 147,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geomorphology. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_alevel_p1_148",
-      "questionNumber": 148,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Natural hazards. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Natural hazards"
-    },
-    {
-      "id": "geo_alevel_p1_149",
-      "questionNumber": 149,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Climate change. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Climate change"
-    },
-    {
-      "id": "geo_alevel_p1_150",
-      "questionNumber": 150,
-      "questionText": "Using a named Zimbabwean, African or global example, assess the causes, impacts and management of Geographical fieldwork. Your answer should include a justified judgement. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Geographical fieldwork"
+      "explanation": "### Mark Scheme [15 marks]\n- **Sampling & Measurement:** Systematic downstream sample sites (10+ sites); random/stratified selection of 20–30 pebbles/site measured on Powers Roundness Scale + Cailleux index [6 marks].\n- **Statistical Test (Spearman's rₛ):** Rank distance (x) and mean roundness (y), compute rₛ = 1 − [6Σd² / (n³−n)], compare against critical values at p=0.05/0.01 to accept/reject H₀, noting lithological/tributary caveats [9 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

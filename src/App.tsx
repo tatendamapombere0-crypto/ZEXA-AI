@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { EducationLevel, SubscriptionStatus, ChatMessage } from './types';
 import { StorageManager, mapEducationToContentLevel } from './lib/storage';
 import { KnowledgeStore } from './lib/knowledgeStore';
+import { QwenEngine } from './lib/qwenEngine';
 import { AppHeader } from './components/AppHeader';
 import { BottomNav, NavTab } from './components/BottomNav';
 import { ChatView } from './components/ChatView';
@@ -12,13 +13,13 @@ import { PremiumModal } from './components/PremiumModal';
 import { SettingsModal } from './components/SettingsModal';
 import { OnboardingFlow } from './components/OnboardingFlow';
 import { StudyNotificationModal } from './components/StudyNotificationModal';
-import { InAppNotificationToast } from './components/InAppNotificationToast';
-import { NotificationManager, StudyReminderPayload } from './lib/notificationManager';
+import { NotificationManager } from './lib/notificationManager';
 
 export const App: React.FC = () => {
-  // Warm up offline knowledge store & initialize Harare 6am/12pm/6pm study reminders
+  // Warm up offline knowledge store, auto-connect local Qwen GGUF if present, & initialize Harare reminders
   useEffect(() => {
     KnowledgeStore.load();
+    QwenEngine.autoConnectLocalGGUF();
     NotificationManager.initScheduler();
 
     // Check URL parameters for notification click actions
@@ -89,31 +90,12 @@ export const App: React.FC = () => {
   const [isPremiumModalOpen, setIsPremiumModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
-  const [currentNotification, setCurrentNotification] = useState<StudyReminderPayload | null>(null);
 
   // Cross-screen interaction: Asking ZEXA about an exam question or topic
   const [activeExamPrompt, setActiveExamPrompt] = useState<{
     question: string;
     hint?: string;
   } | null>(null);
-
-  // Subscribe to study reminder notifications
-  useEffect(() => {
-    const unsubscribe = NotificationManager.onNotification((payload) => {
-      setCurrentNotification(payload);
-    });
-    return unsubscribe;
-  }, []);
-
-  const handleNotificationAction = (payload: StudyReminderPayload) => {
-    setCurrentNotification(null);
-    if (payload.type === 'ACTIVATE_PREMIUM') {
-      setIsPremiumModalOpen(true);
-    } else if (payload.question) {
-      setActiveExamPrompt({ question: payload.question });
-      setActiveTab('chat');
-    }
-  };
 
   const refreshQueries = () => {
     setQueriesUsedToday(StorageManager.getDailyQueriesUsed());
@@ -228,13 +210,6 @@ export const App: React.FC = () => {
         activeTab={activeTab}
         onTabChange={setActiveTab}
         educationLevel={educationLevel}
-      />
-
-      {/* Real-time In-App Notification Toast */}
-      <InAppNotificationToast
-        notification={currentNotification}
-        onDismiss={() => setCurrentNotification(null)}
-        onAction={handleNotificationAction}
       />
 
       {/* Modals */}

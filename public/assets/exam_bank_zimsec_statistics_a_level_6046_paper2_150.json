@@ -3,1514 +3,210 @@
     "subject": "Statistics",
     "level": "A Level",
     "paperCode": "6046/2",
-    "paperName": "Paper 2 – Structured Questions",
+    "paperName": "Paper 2 – Inference & Hypothesis Testing",
     "paperType": "structured",
-    "questionCount": 150,
-    "sourceFile": "ZIMSEC_Statistics_A_Level_6046_Paper2_150.json",
-    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6 syllabus",
-    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus/specimen structure and recurring exam themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+    "questionCount": 20
   },
   "questions": [
     {
-      "id": "SAM-001",
-      "questionNumber": 1,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_1",
+      "questionText": "Hypothesis Testing (Mean — Known Variance):\nBags of sugar are labelled 2.00 kg with σ = 0.06 kg. A random sample of 36 bags has mean x̄ = 1.975 kg. Test at the 5% significance level (two-tailed, critical z = ±1.96) whether the packing machine is miscalibrated. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
+      "explanation": "H₀: μ = 2.00; H₁: μ ≠ 2.00 [1]. SE = 0.06/√36 = 0.01 [1]. z = (1.975 - 2.00)/0.01 = -2.50 [2]. Since |-2.50| > 1.96, reject H₀: significant evidence at 5% level that mean weight differs from 2.00 kg [1].",
+      "answerConfidence": "high",
+      "topic": "Hypothesis Testing",
+      "questionNumber": 1
     },
     {
-      "id": "PRO-002",
-      "questionNumber": 2,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_2",
+      "questionText": "Student's t-Test (Small Sample, Unknown σ):\nFive battery lifetimes (hours) are: 18, 21, 16, 20, 20. Test at the 5% level (one-tailed, df=4, t_crit = 2.132) if mean life μ exceeds 17 hours. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
+      "explanation": "H₀: μ = 17, H₁: μ > 17 [1]. Sample x̄ = 95/5 = 19.0; s² = [(1+4+9+1+1)]/4 = 4.0 -> s = 2.0 [2]. t = (19.0 - 17)/(2.0/√5) = 2 / 0.8944 = 2.236 [2]. Since 2.236 > 2.132, reject H₀: evidence supports μ > 17 h [1].",
+      "answerConfidence": "high",
+      "topic": "t-Test",
+      "questionNumber": 2
     },
     {
-      "id": "DIS-003",
-      "questionNumber": 3,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_3",
+      "questionText": "95% Confidence Interval for Population Mean & Proportion:\nIn a survey of 200 voters, 130 support a new policy. Construct an approximate 95% confidence interval (z = 1.96) for the true population proportion p. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
+      "explanation": "p̂ = 130/200 = 0.65 [1]. SE = √(0.65×0.35/200) = 0.03373 [1]. CI = 0.65 ± 1.96(0.03373) = 0.65 ± 0.066 -> (0.584, 0.716) [2].",
+      "answerConfidence": "high",
+      "topic": "Confidence Intervals",
+      "questionNumber": 3
     },
     {
-      "id": "CON-004",
-      "questionNumber": 4,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_4",
+      "questionText": "Chi-Squared Test of Independence:\nA 2×2 contingency table compares Study Method (Visual vs Audio) against Pass/Fail across 100 learners: Visual Pass 36, Visual Fail 14; Audio Pass 24, Audio Fail 26. Test for association at 5% significance (df = 1, χ²_crit = 3.841). [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
+      "explanation": "H₀: Study method and exam result are independent [1]. Row totals 50, 50; Col totals 60, 40 -> Expected: E_Pass = 30, E_Fail = 20 in both rows [2]. χ² = (6²/30)+(6²/20)+(6²/30)+(6²/20) = 1.2+1.8+1.2+1.8 = 6.00 [2]. Since 6.00 > 3.841, reject H₀: significant association exists [1].",
+      "answerConfidence": "high",
+      "topic": "Chi-Squared Test",
+      "questionNumber": 4
     },
     {
-      "id": "NOR-005",
-      "questionNumber": 5,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_5",
+      "questionText": "Goodness-of-Fit Chi-Squared (Poisson):\nAccidents per week over 50 weeks were: 0 (20 weeks), 1 (18 weeks), 2 (9 weeks), ≥3 (3 weeks), total accidents = 46. Test fit to Po(0.92) at 5% level, explaining why last classes combine. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
+      "explanation": "Expected freqs (50 × e^(-0.92) 0.92^k/k!): E(0)=19.93, E(1)=18.33, E(2)=8.43, E(≥3)=3.31 (last combined so E≥5 where needed; df = k - 1 - 1 = 2 since λ estimated) [3]. χ² ≈ 0.0002 + 0.006 + 0.038 + 0.029 = 0.073 << 5.991 -> do not reject H₀: Poisson fits well [3].",
+      "answerConfidence": "high",
+      "topic": "Goodness of Fit",
+      "questionNumber": 5
     },
     {
-      "id": "COR-006",
-      "questionNumber": 6,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_6",
+      "questionText": "Linear Regression & Correlation:\nFor 6 observations: Σx = 30, Σy = 72, Σx² = 190, Σy² = 944, Σxy = 414.\n(a) Compute Pearson's r. [3 marks]\n(b) Find the least-squares regression line y on x and predict y at x = 7. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
+      "explanation": "S_xx = 190 - 900/6 = 40; S_yy = 944 - 5184/6 = 80; S_xy = 414 - (30×72)/6 = 54 [1.5].\n(a) r = 54 / √(40×80) = 54 / 56.57 = +0.955 [1.5].\n(b) b = 54/40 = 1.35; a = 12 - 1.35(5) = 5.25 -> y = 5.25 + 1.35x -> at x=7, y = 14.7 [3].",
+      "answerConfidence": "high",
+      "topic": "Regression",
+      "questionNumber": 6
     },
     {
-      "id": "TIM-007",
-      "questionNumber": 7,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_7",
+      "questionText": "Type I & Type II Errors:\nDefine Type I error, Type II error, and Power of a statistical test, illustrating with a hypothesis test of H₀: p = 0.10 against H₁: p > 0.10 for X ~ B(20, p) with rejection region X ≥ 5. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
+      "explanation": "Type I (α): rejecting H₀ when true = P(X ≥ 5 | p=0.10) = 0.0432 [2]. Type II (β): failing to reject H₀ when H₁ is true (e.g., if true p=0.25, β = P(X ≤ 4 | p=0.25) = 0.4148) [2]. Power = 1 - β = 0.5852 (probability of correctly detecting genuine effect) [2].",
+      "answerConfidence": "high",
+      "topic": "Errors & Power",
+      "questionNumber": 7
     },
     {
-      "id": "IND-008",
-      "questionNumber": 8,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_8",
+      "questionText": "Testing Difference Between Two Population Means:\nSample A (n₁=40): x̄₁ = 78.2, s₁ = 6.0; Sample B (n₂=50): x̄₂ = 74.0, s₂ = 8.0. Test H₀: μ₁ = μ₂ vs H₁: μ₁ ≠ μ₂ at 1% level (z_crit = ±2.576). [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
+      "explanation": "SE = √(36/40 + 64/50) = √(0.90 + 1.28) = √2.18 = 1.476 [2]. z = (78.2 - 74.0) / 1.476 = 2.845 [2]. Since 2.845 > 2.576, reject H₀ at 1% level [1].",
+      "answerConfidence": "high",
+      "topic": "Two-Sample Tests",
+      "questionNumber": 8
     },
     {
-      "id": "EST-009",
-      "questionNumber": 9,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_9",
+      "questionText": "Hypothesis Test for Binomial Proportion:\nA seed packet claims 80% germination. Out of 20 planted seeds, only 11 germinate. Perform a two-tailed test at 5% level (or compute p-value) to test the claim. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
+      "explanation": "H₀: p = 0.80, H₁: p ≠ 0.80 [1]. Under B(20, 0.80), P(X ≤ 11) = 0.00998 < 0.025 (2.5% upper/lower tail) [3]. Reject H₀: strong evidence germination rate is below 80% [1].",
+      "answerConfidence": "high",
+      "topic": "Binomial Test",
+      "questionNumber": 9
     },
     {
-      "id": "CON-010",
-      "questionNumber": 10,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_10",
+      "questionText": "Hypothesis Test for Poisson Rate:\nRoad junction historically averages 4.0 accidents/month. After installing traffic lights, 1 accident occurs in the next month. Test at 5% level (one-tailed) whether lights reduced accidents. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
+      "explanation": "H₀: λ = 4.0, H₁: λ < 4.0 [1]. P(X ≤ 1 | Po(4.0)) = e⁻⁴(1 + 4) = 5 × 0.0183 = 0.0916 [2]. Since 0.0916 > 0.05, do not reject H₀ (insufficient evidence yet at 5%) [1].",
+      "answerConfidence": "high",
+      "topic": "Poisson Test",
+      "questionNumber": 10
     },
     {
-      "id": "HYP-011",
-      "questionNumber": 11,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_11",
+      "questionText": "Paired t-Test:\nSix learners took a pre-test and post-test; score differences (Post - Pre) were: +5, +8, -1, +6, +9, +3. Test at 5% level (one-tailed, df=5, t_crit = 2.015) whether revision improved scores. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
+      "explanation": "d̄ = 30/6 = +5.0; Σd² = 25+64+1+36+81+9 = 216; s_d² = (216 - 30²/6)/5 = 66/5 = 13.2 -> s_d = 3.633 [3]. t = 5.0 / (3.633/√6) = 3.37 [2]. Since 3.37 > 2.015, reject H₀: significant improvement [1].",
+      "answerConfidence": "high",
+      "topic": "Paired t-Test",
+      "questionNumber": 11
     },
     {
-      "id": "CHI-012",
-      "questionNumber": 12,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_12",
+      "questionText": "Wilcoxon Signed-Rank Non-Parametric Test:\nExplain when to prefer the Wilcoxon signed-rank test over a paired t-test, and state the test statistic T calculation rule. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
+      "explanation": "Use Wilcoxon when paired differences are heavily skewed, ordinal, or contain extreme outliers violating normality needed for small-sample t-tests [2]. Rank |d_i| (ignoring 0s), attach signs back, and take T = min(ΣR⁺, ΣR⁻) comparing against critical table [2].",
+      "answerConfidence": "high",
+      "topic": "Non-Parametric Tests",
+      "questionNumber": 12
     },
     {
-      "id": "STA-013",
-      "questionNumber": 13,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_13",
+      "questionText": "Residuals & Extrapolation Dangers in Regression:\nIn a linear regression y = 10 + 2.5x fitted over x ∈ [2, 12], explain (a) why predicting y at x = 40 is dangerous, and (b) how a residual plot detects non-linearity or heteroscedasticity. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
+      "explanation": "(a) x = 40 lies far outside observed data (extrapolation) where linear relationship may break down completely [2]. (b) Curved U/∩ patterns in residual (y - ŷ) plots expose non-linearity, while fanning spread reveals non-constant variance [2].",
+      "answerConfidence": "high",
+      "topic": "Regression Diagnostics",
+      "questionNumber": 13
     },
     {
-      "id": "SAM-014",
-      "questionNumber": 14,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_14",
+      "questionText": "Maximum Likelihood Estimation (Conceptual & Applied):\nFor a sample x₁,...,xₙ from Po(λ), derive the Maximum Likelihood Estimator (MLE) λ̂ by differentiating the log-likelihood function. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
+      "explanation": "L(λ) = ∏ (e^(-λ) λ^(xᵢ) / xᵢ!) -> ln L(λ) = -nλ + (Σxᵢ) ln λ - Σ ln(xᵢ!) [2]. Differentiate: d(ln L)/dλ = -n + (Σxᵢ)/λ = 0 -> λ̂ = (Σxᵢ)/n = x̄ [2].",
+      "answerConfidence": "high",
+      "topic": "Estimation Theory",
+      "questionNumber": 14
     },
     {
-      "id": "PRO-015",
-      "questionNumber": 15,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_15",
+      "questionText": "ANOVA Concepts / Comparing >2 Means:\nExplain why performing multiple separate pairwise t-tests across 5 treatments inflates family-wise Type I error, and how One-Way ANOVA solves this using Within-Group vs Between-Group variance (F-ratio). [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
+      "explanation": "10 pairwise tests at α=0.05 inflate overall false-positive risk to ~40% [2]. ANOVA tests H₀: μ₁=...=μ₅ in one step via F = MS_Between / MS_Within [2].",
+      "answerConfidence": "high",
+      "topic": "ANOVA",
+      "questionNumber": 15
     },
     {
-      "id": "DIS-016",
-      "questionNumber": 16,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_16",
+      "questionText": "Queueing / Poisson-Exponential Link:\nCustomers arrive at a bank teller as a Poisson process with mean 12 per hour. What distribution models inter-arrival waiting times T (in minutes), and what is P(T > 10 minutes)? [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
+      "explanation": "Rate λ = 12/60 = 0.2 per minute; inter-arrival times follow Exponential Exp(0.2) [2]. P(T > 10) = e^(-0.2 × 10) = e⁻² = 0.1353 [2].",
+      "answerConfidence": "high",
+      "topic": "Stochastic Processes",
+      "questionNumber": 16
     },
     {
-      "id": "CON-017",
-      "questionNumber": 17,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_17",
+      "questionText": "Quality Control Charts:\nOn an x̄ statistical process control chart (target μ = 500 g, σ = 12 g, sample size n = 9), calculate the 3σ upper and lower Action Limits and 2σ Warning Limits. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
+      "explanation": "SE = 12/√9 = 4.0 g. Warning limits = 500 ± 2(4) = 492 g and 508 g [2]. Action limits = 500 ± 3(4) = 488 g and 512 g [2].",
+      "answerConfidence": "high",
+      "topic": "Quality Control",
+      "questionNumber": 17
     },
     {
-      "id": "NOR-018",
-      "questionNumber": 18,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_18",
+      "questionText": "Pooled Two-Sample t-Test:\nSamples from two soil treatments: n₁ = 6, x̄₁ = 42, s₁² = 10; n₂ = 8, x̄₂ = 37, s₂² = 14. Calculate the pooled variance s_p² and t-statistic (df = 12). [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
+      "explanation": "s_p² = [(5×10) + (7×14)] / (6 + 8 - 2) = 148 / 12 = 12.33 [2]. SE = √[12.33(1/6 + 1/8)] = √3.597 = 1.897. t = (42 - 37)/1.897 = 2.636 [2].",
+      "answerConfidence": "high",
+      "topic": "t-Test",
+      "questionNumber": 18
     },
     {
-      "id": "COR-019",
-      "questionNumber": 19,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_19",
+      "questionText": "Covariance & Correlation of Transformed Variables:\nGiven r(X, Y) = 0.80, explain the exact effect on r if U = 3X + 10 and V = -2Y + 5. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
+      "explanation": "Linear scaling preserves magnitude of correlation, while negative multiplier (-2) flips the sign: r(U, V) = -0.80 [3].",
+      "answerConfidence": "high",
+      "topic": "Correlation",
+      "questionNumber": 19
     },
     {
-      "id": "TIM-020",
-      "questionNumber": 20,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
+      "id": "st6046_2_20",
+      "questionText": "P-Value Interpretation:\nA researcher obtains p-value = 0.031 for a one-tailed test. State the conclusion at (a) α = 5% and (b) α = 1%, and warn against interpreting p = 0.031 as \"probability H₀ is true\". [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-021",
-      "questionNumber": 21,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-022",
-      "questionNumber": 22,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-023",
-      "questionNumber": 23,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-024",
-      "questionNumber": 24,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-025",
-      "questionNumber": 25,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-026",
-      "questionNumber": 26,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-027",
-      "questionNumber": 27,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-028",
-      "questionNumber": 28,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-029",
-      "questionNumber": 29,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-030",
-      "questionNumber": 30,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-031",
-      "questionNumber": 31,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-032",
-      "questionNumber": 32,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-033",
-      "questionNumber": 33,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-034",
-      "questionNumber": 34,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-035",
-      "questionNumber": 35,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-036",
-      "questionNumber": 36,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-037",
-      "questionNumber": 37,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-038",
-      "questionNumber": 38,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-039",
-      "questionNumber": 39,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-040",
-      "questionNumber": 40,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-041",
-      "questionNumber": 41,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-042",
-      "questionNumber": 42,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-043",
-      "questionNumber": 43,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-044",
-      "questionNumber": 44,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-045",
-      "questionNumber": 45,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-046",
-      "questionNumber": 46,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-047",
-      "questionNumber": 47,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-048",
-      "questionNumber": 48,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-049",
-      "questionNumber": 49,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-050",
-      "questionNumber": 50,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-051",
-      "questionNumber": 51,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-052",
-      "questionNumber": 52,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-053",
-      "questionNumber": 53,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-054",
-      "questionNumber": 54,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-055",
-      "questionNumber": 55,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-056",
-      "questionNumber": 56,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-057",
-      "questionNumber": 57,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-058",
-      "questionNumber": 58,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-059",
-      "questionNumber": 59,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-060",
-      "questionNumber": 60,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-061",
-      "questionNumber": 61,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-062",
-      "questionNumber": 62,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-063",
-      "questionNumber": 63,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-064",
-      "questionNumber": 64,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-065",
-      "questionNumber": 65,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-066",
-      "questionNumber": 66,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-067",
-      "questionNumber": 67,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-068",
-      "questionNumber": 68,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-069",
-      "questionNumber": 69,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-070",
-      "questionNumber": 70,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-071",
-      "questionNumber": 71,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-072",
-      "questionNumber": 72,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-073",
-      "questionNumber": 73,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-074",
-      "questionNumber": 74,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-075",
-      "questionNumber": 75,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-076",
-      "questionNumber": 76,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-077",
-      "questionNumber": 77,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-078",
-      "questionNumber": 78,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-079",
-      "questionNumber": 79,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-080",
-      "questionNumber": 80,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-081",
-      "questionNumber": 81,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-082",
-      "questionNumber": 82,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-083",
-      "questionNumber": 83,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-084",
-      "questionNumber": 84,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-085",
-      "questionNumber": 85,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-086",
-      "questionNumber": 86,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-087",
-      "questionNumber": 87,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-088",
-      "questionNumber": 88,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-089",
-      "questionNumber": 89,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-090",
-      "questionNumber": 90,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-091",
-      "questionNumber": 91,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-092",
-      "questionNumber": 92,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-093",
-      "questionNumber": 93,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-094",
-      "questionNumber": 94,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-095",
-      "questionNumber": 95,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-096",
-      "questionNumber": 96,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-097",
-      "questionNumber": 97,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-098",
-      "questionNumber": 98,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-099",
-      "questionNumber": 99,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-100",
-      "questionNumber": 100,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-101",
-      "questionNumber": 101,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-102",
-      "questionNumber": 102,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-103",
-      "questionNumber": 103,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-104",
-      "questionNumber": 104,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-105",
-      "questionNumber": 105,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-106",
-      "questionNumber": 106,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-107",
-      "questionNumber": 107,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-108",
-      "questionNumber": 108,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-109",
-      "questionNumber": 109,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-110",
-      "questionNumber": 110,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-111",
-      "questionNumber": 111,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-112",
-      "questionNumber": 112,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-113",
-      "questionNumber": 113,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-114",
-      "questionNumber": 114,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-115",
-      "questionNumber": 115,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-116",
-      "questionNumber": 116,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-117",
-      "questionNumber": 117,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-118",
-      "questionNumber": 118,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-119",
-      "questionNumber": 119,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-120",
-      "questionNumber": 120,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-121",
-      "questionNumber": 121,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-122",
-      "questionNumber": 122,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-123",
-      "questionNumber": 123,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-124",
-      "questionNumber": 124,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-125",
-      "questionNumber": 125,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-126",
-      "questionNumber": 126,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-127",
-      "questionNumber": 127,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-128",
-      "questionNumber": 128,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-129",
-      "questionNumber": 129,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-130",
-      "questionNumber": 130,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-131",
-      "questionNumber": 131,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-132",
-      "questionNumber": 132,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-133",
-      "questionNumber": 133,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-134",
-      "questionNumber": 134,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-135",
-      "questionNumber": 135,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-136",
-      "questionNumber": 136,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 21 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-137",
-      "questionNumber": 137,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 22 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
-    },
-    {
-      "id": "IND-138",
-      "questionNumber": 138,
-      "questionText": "Index numbers: A study records a quantitative variable with sample mean 23 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Index numbers"
-    },
-    {
-      "id": "EST-139",
-      "questionNumber": 139,
-      "questionText": "Estimation: A study records a quantitative variable with sample mean 24 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Estimation"
-    },
-    {
-      "id": "CON-140",
-      "questionNumber": 140,
-      "questionText": "Confidence intervals: A study records a quantitative variable with sample mean 25 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Confidence intervals"
-    },
-    {
-      "id": "HYP-141",
-      "questionNumber": 141,
-      "questionText": "Hypothesis tests: A study records a quantitative variable with sample mean 26 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Hypothesis tests"
-    },
-    {
-      "id": "CHI-142",
-      "questionNumber": 142,
-      "questionText": "Chi-square applications: A study records a quantitative variable with sample mean 27 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Chi-square applications"
-    },
-    {
-      "id": "STA-143",
-      "questionNumber": 143,
-      "questionText": "Statistical decision making: A study records a quantitative variable with sample mean 28 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Statistical decision making"
-    },
-    {
-      "id": "SAM-144",
-      "questionNumber": 144,
-      "questionText": "Sampling and data presentation: A study records a quantitative variable with sample mean 29 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Sampling and data presentation"
-    },
-    {
-      "id": "PRO-145",
-      "questionNumber": 145,
-      "questionText": "Probability models: A study records a quantitative variable with sample mean 30 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Probability models"
-    },
-    {
-      "id": "DIS-146",
-      "questionNumber": 146,
-      "questionText": "Discrete distributions: A study records a quantitative variable with sample mean 31 and standard deviation 4. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Discrete distributions"
-    },
-    {
-      "id": "CON-147",
-      "questionNumber": 147,
-      "questionText": "Continuous distributions: A study records a quantitative variable with sample mean 32 and standard deviation 5. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Continuous distributions"
-    },
-    {
-      "id": "NOR-148",
-      "questionNumber": 148,
-      "questionText": "Normal approximation: A study records a quantitative variable with sample mean 33 and standard deviation 6. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Normal approximation"
-    },
-    {
-      "id": "COR-149",
-      "questionNumber": 149,
-      "questionText": "Correlation and regression: A study records a quantitative variable with sample mean 34 and standard deviation 7. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Correlation and regression"
-    },
-    {
-      "id": "TIM-150",
-      "questionNumber": 150,
-      "questionText": "Time series: A study records a quantitative variable with sample mean 20 and standard deviation 3. (a) State a suitable statistic for summarising the centre. (b) Explain how the standard deviation describes variation. (c) Describe one condition that should be considered before drawing an inference from the sample.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The mean is a measure of central tendency; standard deviation measures spread around the mean; inference requires appropriate sampling, model assumptions and context.",
-      "answerConfidence": "unverified",
-      "topic": "Time series"
+      "explanation": "(a) 0.031 < 0.05 -> reject H₀. (b) 0.031 > 0.01 -> fail to reject H₀ [2]. P-value is P(data this extreme OR more | H₀ true), NOT the probability that H₀ is true [2].",
+      "answerConfidence": "high",
+      "topic": "Inference",
+      "questionNumber": 20
     }
   ]
 }

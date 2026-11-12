@@ -1,3925 +1,1514 @@
 {
   "paperInfo": {
     "id": "exam_bank_biology_o_level_cambridge_past_papers",
+    "file": "exam_bank_biology_o_level_cambridge_past_papers.json",
     "subject": "Biology",
     "level": "O-Level",
-    "paperCode": "BIO-0610-PAST-PAPERS",
-    "paperName": "Cambridge IGCSE & O-Level Biology (0610) Past Paper Questions & Answers (10 Topics)",
-    "paperType": "Official Past Paper Questions & Mark Schemes (Cambridge / ZIMSEC O-Level Aligned)",
-    "totalQuestions": 150,
-    "topicsCovered": [
-      "1. Cells and cell processes",
-      "2. Animal nutrition",
-      "3. Plant nutrition and transport",
-      "4. Respiration and the human transport system",
-      "5. Coordination, response and homeostasis",
-      "6. Reproduction in plants",
-      "7. Human reproduction",
-      "8. Inheritance and evolution",
-      "9. Organisms and environment",
-      "10. Human influences on the environment"
-    ]
+    "paperCode": "0610 / 4025",
+    "paperName": "Cambridge & ZIMSEC O-Level Biology (0610) Past Paper Questions & Answers",
+    "paperType": "Official Past Paper Questions & Mark Schemes (10 Core & Extension Topics)",
+    "questionCount": 150
   },
   "questions": [
     {
-      "id": "bio_0610_q001",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "Which three characteristics are shared by all living organisms alongside nutrition and respiration?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Growth, movement, and irritability (sensitivity)"
-        },
-        {
-          "letter": "B",
-          "text": "Locomotion, ingestion, and coloration"
-        },
-        {
-          "letter": "C",
-          "text": "Photosynthesis, pollination, and heartbeat"
-        },
-        {
-          "letter": "D",
-          "text": "Egestion, lactation, and gestation"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "According to the official mark scheme, the characteristics of living organisms (MRS GREN) include Growth, Movement, Irritability/Sensitivity, Excretion, and Reproduction.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q002",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "Name the biological process by which green plants produce carbohydrates using light energy.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Photosynthesis"
-        },
-        {
-          "letter": "B",
-          "text": "Cellular respiration"
-        },
-        {
-          "letter": "C",
-          "text": "Translocation"
-        },
-        {
-          "letter": "D",
-          "text": "Chemosynthesis"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Photosynthesis is the process by which green plants synthesize carbohydrates from carbon dioxide and water using sunlight energy trapped by chlorophyll.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q003",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "Which term describes the characteristic of living organisms involving 'getting rid of toxic waste chemicals made in metabolism'?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Excretion"
-        },
-        {
-          "letter": "B",
-          "text": "Egestion"
-        },
-        {
-          "letter": "C",
-          "text": "Defecation"
-        },
-        {
-          "letter": "D",
-          "text": "Secretion"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Excretion is the removal from organisms of toxic materials and waste products of metabolism. Egestion is the passing out of undigested food as faeces via the anus.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q004",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "Which two cellular structures are present in BOTH a red blood cell and a root hair cell?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cell membrane and cytoplasm"
-        },
-        {
-          "letter": "B",
-          "text": "Cell wall and large central vacuole"
-        },
-        {
-          "letter": "C",
-          "text": "Nucleus and chloroplasts"
-        },
-        {
-          "letter": "D",
-          "text": "Mitochondria and cellulose wall"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Both red blood cells and root hair cells contain a cell membrane and cytoplasm. Red blood cells lack a cell wall, vacuole, and nucleus (when mature), while root hair cells lack chloroplasts.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q005",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "Which organelle is typical of many plant cells (such as palisade mesophyll) but is completely ABSENT from root hair cells?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Chloroplast"
-        },
-        {
-          "letter": "B",
-          "text": "Mitochondrion"
-        },
-        {
-          "letter": "C",
-          "text": "Cellulose cell wall"
-        },
-        {
-          "letter": "D",
-          "text": "Permanent sap vacuole"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Root hair cells are located underground in the soil where there is no light, so they do not develop chloroplasts.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q006",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "How is a mature mammalian red blood cell structurally adapted to carry out its major function?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Biconcave shape increases surface area and lack of nucleus allows more haemoglobin space"
-        },
-        {
-          "letter": "B",
-          "text": "Possesses flagella to swim quickly through blood vessels"
-        },
-        {
-          "letter": "C",
-          "text": "Has a thick cellulose wall to resist bursting under osmotic pressure"
-        },
-        {
-          "letter": "D",
-          "text": "Has multiple lobed nuclei to synthesize large quantities of antibodies"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Red blood cells have a biconcave disc shape to maximize the surface-area-to-volume ratio for rapid gas exchange, contain haemoglobin to bind oxygen, and lack a nucleus to allow more space for haemoglobin.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q007",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "What is the primary function of a plant root hair cell and its key structural adaptation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Uptake of water and mineral ions; adapted by a long cytoplasmic extension increasing surface area"
-        },
-        {
-          "letter": "B",
-          "text": "Anchoring the tree firmly in rock; adapted by extensive lignin deposits"
-        },
-        {
-          "letter": "C",
-          "text": "Performing photosynthesis; adapted by having numerous chloroplasts"
-        },
-        {
-          "letter": "D",
-          "text": "Transporting sucrose to leaves; adapted by having perforated sieve plates"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The primary function is the absorption of water (by osmosis) and mineral ions (by active transport/diffusion). The extension provides a very large surface-area-to-volume ratio.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q008",
+      "id": "q_8",
       "questionNumber": 8,
-      "questionText": "In an experiment investigating potato strips placed in different concentrations of sucrose solution, what happens to strips in distilled water (0.0 mol/dm\u00b3)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Water enters cells by osmosis, causing cells to become turgid and the strip to increase in length"
-        },
-        {
-          "letter": "B",
-          "text": "Sucrose moves into the cells by active transport, dissolving the cell wall"
-        },
-        {
-          "letter": "C",
-          "text": "Water leaves the cells by osmosis, causing the strip to become flaccid and shrink"
-        },
-        {
-          "letter": "D",
-          "text": "The strip length remains exactly constant because plant cell walls prevent any water movement"
-        }
-      ],
-      "correctAnswer": "A",
+      "questionText": "In an experiment investigating potato strips placed in different concentrations of sucrose solution, what happens to strips in distilled water (0.0 mol/dm³)?",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Water potential outside is higher than inside the cell sap. Water moves into the potato cells down the water potential gradient by osmosis. The cells swell, become turgid, and the strip increases in length.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q009",
+      "id": "q_9",
       "questionNumber": 9,
-      "questionText": "What conclusion is drawn when a potato strip is submerged in a concentrated sucrose solution (1.0 mol/dm\u00b3)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Water moves out of the cells by osmosis, causing the cells to undergo plasmolysis and the strip to decrease in length"
-        },
-        {
-          "letter": "B",
-          "text": "Sucrose molecules diffuse rapidly into the cell vacuole, expanding the cytoplasm"
-        },
-        {
-          "letter": "C",
-          "text": "Water and sucrose enter in equal volumes, keeping the length unchanged"
-        },
-        {
-          "letter": "D",
-          "text": "The cell walls burst due to extreme turgor pressure"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Water potential inside the cell sap is higher than in the 1.0 mol/dm\u00b3 sucrose solution. Water leaves by osmosis, the cytoplasm pulls away from the cell wall (plasmolysis), and the strip shrinks.",
-      "answerConfidence": "high"
+      "questionText": "What conclusion is drawn when a potato strip is submerged in a concentrated sucrose solution (1.0 mol/dm³)?",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Water potential inside the cell sap is higher than in the 1.0 mol/dm³ sucrose solution. Water leaves by osmosis, the cytoplasm pulls away from the cell wall (plasmolysis), and the strip shrinks.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q010",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "Which statement best defines an enzyme?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A biological catalyst made of protein that speeds up chemical reactions by lowering activation energy"
-        },
-        {
-          "letter": "B",
-          "text": "An inorganic hormone produced in glands that regulates body temperature"
-        },
-        {
-          "letter": "C",
-          "text": "A carbohydrate molecule that stores energy inside plant seeds"
-        },
-        {
-          "letter": "D",
-          "text": "A lipid substance that emulsifies fats in the duodenum"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "An enzyme is a protein that acts as a biological catalyst in living organisms, accelerating metabolic reactions without being consumed in the process.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q011",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "Under which conditions do human digestive enzymes typically exhibit their maximum activity?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "At an optimum temperature around 37\u00b0C and their specific optimum pH"
-        },
-        {
-          "letter": "B",
-          "text": "In completely dry conditions at temperatures above 80\u00b0C"
-        },
-        {
-          "letter": "C",
-          "text": "In freezing conditions (0\u00b0C) with neutral pH only"
-        },
-        {
-          "letter": "D",
-          "text": "In strong acids below pH 1 at 100\u00b0C"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Enzymes require a liquid medium, an optimum temperature (around 37\u00b0C in humans, where kinetic energy and substrate collision frequency are maximized without denaturation), and their specific optimum pH.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Enzymes require a liquid medium, an optimum temperature (around 37°C in humans, where kinetic energy and substrate collision frequency are maximized without denaturation), and their specific optimum pH.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q012",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "What vital role is played by amylase during the germination of starchy seeds?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Breaks down insoluble stored starch into soluble maltose/sugar for embryo respiration and growth"
-        },
-        {
-          "letter": "B",
-          "text": "Synthesizes chlorophyll directly from carbon dioxide in the soil"
-        },
-        {
-          "letter": "C",
-          "text": "Absorbs nitrogen gas from air pockets in the soil to form protein"
-        },
-        {
-          "letter": "D",
-          "text": "Hardens the seed coat to prevent water entry"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In germinating seeds, amylase digests insoluble starch stored in the endosperm or cotyledons into soluble sugars (maltose/glucose), which are transported to the growing radicle and plumule for cellular respiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q013",
+      "id": "q_13",
       "questionNumber": 13,
       "questionText": "Why are specific proteases included in biological washing powders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To digest insoluble protein stains (e.g. blood, egg) into soluble amino acids and peptides that wash away"
-        },
-        {
-          "letter": "B",
-          "text": "To bleach coloured pigments by releasing chlorine gas"
-        },
-        {
-          "letter": "C",
-          "text": "To dissolve the cellulose fibres of cotton garments"
-        },
-        {
-          "letter": "D",
-          "text": "To raise the temperature of the wash water automatically"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Biological detergents use proteases to break down protein-based stains into soluble peptides and amino acids, allowing them to dissolve easily in lukewarm water.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q014",
+      "id": "q_14",
       "questionNumber": 14,
       "questionText": "Which white blood cell type possesses a lobed nucleus and engulfs bacteria by phagocytosis?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Phagocyte (neutrophil / monocyte)"
-        },
-        {
-          "letter": "B",
-          "text": "Lymphocyte"
-        },
-        {
-          "letter": "C",
-          "text": "Erythrocyte"
-        },
-        {
-          "letter": "D",
-          "text": "Platelet (thrombocyte)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Phagocytes have a lobed nucleus and granular cytoplasm; they can squeeze through capillary walls and engulf foreign bacteria, digesting them with lysosomal enzymes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q015",
+      "id": "q_15",
       "questionNumber": 15,
       "questionText": "Which white blood cells possess a large rounded nucleus and are responsible for producing specific antibodies and memory cells?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Lymphocytes"
-        },
-        {
-          "letter": "B",
-          "text": "Phagocytes"
-        },
-        {
-          "letter": "C",
-          "text": "Basophils"
-        },
-        {
-          "letter": "D",
-          "text": "Erythrocytes"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Lymphocytes have a large rounded nucleus and produce antibodies that bind specifically to pathogen antigens, clumping them and providing long-term immunity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q016",
+      "id": "q_16",
       "questionNumber": 16,
       "questionText": "Why must large macromolecular food substances be digested before the body can use them?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To break large insoluble molecules into small, soluble molecules that can be absorbed through the gut wall into the blood"
-        },
-        {
-          "letter": "B",
-          "text": "To convert proteins directly into glycogen in the mouth"
-        },
-        {
-          "letter": "C",
-          "text": "To destroy all mineral ions so they do not cause toxicity in cells"
-        },
-        {
-          "letter": "D",
-          "text": "To remove water so food can be transported in arteries as solid pellets"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Most food molecules are insoluble and too large to cross the selectively permeable membranes of the ileum epithelial cells. Digestion breaks them into small, soluble molecules capable of diffusion and active uptake into the bloodstream.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q017",
+      "id": "q_17",
       "questionNumber": 17,
       "questionText": "How does peristalsis move a bolus of food along the oesophagus towards the stomach?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Circular muscles contract behind the bolus while longitudinal muscles relax, creating rhythmic muscular waves"
-        },
-        {
-          "letter": "B",
-          "text": "Gravity pulls food downward into the stomach without muscular action"
-        },
-        {
-          "letter": "C",
-          "text": "Cilia in the oesophagus beat in unison to sweep the food downward"
-        },
-        {
-          "letter": "D",
-          "text": "Hydrostatic pressure generated by the lungs pushes food along"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Peristalsis is the rhythmic wave of muscular contractions. Contraction of circular muscles behind the food bolus narrows the lumen and forces it forward, independent of gravity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q018",
+      "id": "q_18",
       "questionNumber": 18,
       "questionText": "Which observation disproves the common misconception that food falls into the stomach solely under gravity?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Humans can swallow food and drink while standing on their head or in zero gravity in space"
-        },
-        {
-          "letter": "B",
-          "text": "Food takes over 24 hours to pass through the stomach"
-        },
-        {
-          "letter": "C",
-          "text": "Gastric juice is secreted before food enters the mouth"
-        },
-        {
-          "letter": "D",
-          "text": "Teeth grind food into small particles before swallowing"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "People can swallow while hanging upside down or in space where there is zero gravity; quadrupeds have horizontal oesophagi, and ruminants regurgitate food against gravity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q019",
+      "id": "q_19",
       "questionNumber": 19,
       "questionText": "Where in the human digestive system is hydrochloric acid (HCl) produced and what is its primary function?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stomach; provides an acidic pH (~2) to kill pathogens and activate pepsin"
-        },
-        {
-          "letter": "B",
-          "text": "Liver; neutralises bile salts before entering the duodenum"
-        },
-        {
-          "letter": "C",
-          "text": "Pancreas; digests starch into maltose"
-        },
-        {
-          "letter": "D",
-          "text": "Salivary glands; moistens food and protects tooth enamel"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Hydrochloric acid is secreted by parietal cells in the gastric glands of the stomach. It creates an optimum acidic pH for pepsin and destroys harmful bacteria ingested with food.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q020",
+      "id": "q_20",
       "questionNumber": 20,
       "questionText": "What are the four main chemical elements present in all protein molecules?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Carbon, hydrogen, oxygen, and nitrogen"
-        },
-        {
-          "letter": "B",
-          "text": "Carbon, hydrogen, oxygen, and phosphorus only"
-        },
-        {
-          "letter": "C",
-          "text": "Calcium, potassium, iron, and sulfur only"
-        },
-        {
-          "letter": "D",
-          "text": "Carbon, chlorine, sodium, and magnesium"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "All proteins are made of amino acids, which contain carbon, hydrogen, oxygen, and nitrogen (some also contain sulfur).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q021",
+      "id": "q_21",
       "questionNumber": 21,
       "questionText": "How is a food sample safely tested for the presence of reducing sugars (such as glucose)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Add Benedict's reagent and heat in a boiling water bath; look for a colour change from blue to brick-red"
-        },
-        {
-          "letter": "B",
-          "text": "Add iodine solution at room temperature; look for a blue-black colour"
-        },
-        {
-          "letter": "C",
-          "text": "Add biuret reagent; look for a colour change from blue to purple"
-        },
-        {
-          "letter": "D",
-          "text": "Mix with ethanol and pour into water; look for a milky white emulsion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The Benedict's test requires adding Benedict's solution to the food liquid and heating safely in a water bath at 80-100\u00b0C. Reducing sugars produce an orange or brick-red precipitate.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "The Benedict's test requires adding Benedict's solution to the food liquid and heating safely in a water bath at 80-100°C. Reducing sugars produce an orange or brick-red precipitate.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q022",
+      "id": "q_22",
       "questionNumber": 22,
       "questionText": "What is the primary physiological benefit of including adequate dietary fibre (roughage) in the diet?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Adds bulk to food in the gut, stimulating peristalsis and preventing constipation and bowel disorders"
-        },
-        {
-          "letter": "B",
-          "text": "Provides the main source of amino acids for muscle growth"
-        },
-        {
-          "letter": "C",
-          "text": "Supplies quick metabolic energy during sprinting"
-        },
-        {
-          "letter": "D",
-          "text": "Dissolves lipid plaques in coronary arteries"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Dietary fibre (mainly plant cellulose) is indigestible by human enzymes. It retains water and adds bulk to the digesta, stimulating peristaltic muscle contractions and reducing the transit time of wastes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q023",
+      "id": "q_23",
       "questionNumber": 23,
       "questionText": "Which vitamin is abundantly found in citrus fruits and green vegetables, and what deficiency disease results from its absence?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Vitamin C (ascorbic acid); deficiency causes scurvy (bleeding gums and poor wound healing)"
-        },
-        {
-          "letter": "B",
-          "text": "Vitamin D; deficiency causes rickets"
-        },
-        {
-          "letter": "C",
-          "text": "Vitamin A; deficiency causes night blindness"
-        },
-        {
-          "letter": "D",
-          "text": "Vitamin K; deficiency causes hemophilia"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Vitamin C is found in oranges, lemons, and green vegetables. It is vital for maintaining connective tissues and collagen. Deficiency leads to scurvy.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q024",
+      "id": "q_24",
       "questionNumber": 24,
       "questionText": "What are the dual digestive functions of the liver and pancreas in the digestion of fats?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Liver produces bile to emulsify fats; pancreas secretes lipase to digest fats into fatty acids and glycerol"
-        },
-        {
-          "letter": "B",
-          "text": "Liver secretes lipase to digest fats; pancreas secretes hydrochloric acid to dissolve lipids"
-        },
-        {
-          "letter": "C",
-          "text": "Liver absorbs fatty acids directly; pancreas converts fats into glycogen"
-        },
-        {
-          "letter": "D",
-          "text": "Liver produces insulin to digest lipids; pancreas produces bile salts to acidify the intestine"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Bile produced by the liver emulsifies large fat globules into tiny droplets (increasing surface area) and neutralises stomach acid. Pancreatic lipase chemically hydrolyses fats into fatty acids and glycerol.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q025",
+      "id": "q_25",
       "questionNumber": 25,
       "questionText": "How is the ethanol emulsion test performed to confirm the presence of fats/lipids in a food sample?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Chop food, dissolve in ethanol, decant liquid into a tube of cold water; a cloudy white emulsion confirms fats"
-        },
-        {
-          "letter": "B",
-          "text": "Boil food in Benedict's solution until a brick-red precipitate forms"
-        },
-        {
-          "letter": "C",
-          "text": "Add dilute hydrochloric acid followed by barium chloride; look for white precipitate"
-        },
-        {
-          "letter": "D",
-          "text": "Add sodium hydroxide and copper sulfate; look for a violet colour"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Lipids dissolve in absolute alcohol (ethanol). When the solution is poured into water, the lipids precipitate out of solution as microscopic suspended droplets, producing a milky white emulsion.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q026",
+      "id": "q_26",
       "questionNumber": 26,
       "questionText": "Which health complications are strongly linked to high dietary intake of saturated animal fats and cholesterol?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Obesity, atherosclerosis (fatty plaques narrowing arteries), and coronary heart disease"
-        },
-        {
-          "letter": "B",
-          "text": "Scurvy, night blindness, and rickets"
-        },
-        {
-          "letter": "C",
-          "text": "Kwashiorkor, marasmus, and anemia"
-        },
-        {
-          "letter": "D",
-          "text": "Type 1 diabetes and osteoporosis"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Excess saturated fat and cholesterol lead to elevated blood LDL levels, formation of atheroma in arterial walls, high blood pressure, and increased risk of thrombosis and heart attacks.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q027",
+      "id": "q_27",
       "questionNumber": 27,
       "questionText": "What is the main complex storage carbohydrate in plant tissues compared to animal tissues?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Starch in plants; glycogen in animals"
-        },
-        {
-          "letter": "B",
-          "text": "Cellulose in plants; starch in animals"
-        },
-        {
-          "letter": "C",
-          "text": "Glucose in plants; sucrose in animals"
-        },
-        {
-          "letter": "D",
-          "text": "Glycogen in plants; chitin in animals"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Plants store glucose as insoluble starch (and use cellulose for cell walls), whereas animals store carbohydrate in liver and muscle cells as glycogen.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q028",
+      "id": "q_28",
       "questionNumber": 28,
       "questionText": "Why is reducing daily dietary salt (sodium chloride) intake to around 3g recommended by health professionals?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "High salt intake causes water retention, increasing blood volume and causing hypertension (high blood pressure)"
-        },
-        {
-          "letter": "B",
-          "text": "High salt directly destroys digestive enzymes in the duodenum"
-        },
-        {
-          "letter": "C",
-          "text": "Excess salt leads to tooth enamel erosion and dental caries"
-        },
-        {
-          "letter": "D",
-          "text": "Salt converts blood glucose into lactic acid"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Excess sodium intake causes fluid retention in the circulatory system, raising arterial blood pressure (hypertension) and increasing the strain on the heart and kidneys.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q029",
+      "id": "q_29",
       "questionNumber": 29,
       "questionText": "State three major biological advantages of feeding a newborn baby with human breast milk rather than formula milk.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contains maternal antibodies, correct nutrient proportions for easy digestion, and is sterile and at body temperature"
-        },
-        {
-          "letter": "B",
-          "text": "Has higher saturated fat, contains cow antibodies, and lasts for months without refrigeration"
-        },
-        {
-          "letter": "C",
-          "text": "Contains iron supplements, eliminates the need for water, and speeds up teeth eruption"
-        },
-        {
-          "letter": "D",
-          "text": "Prevents all bacterial infections permanently and replaces childhood immunizations"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Breast milk provides passive immunity via maternal antibodies, has optimal whey protein to casein ratios, is sterile (reducing gastroenteritis), requires no preparation, and promotes maternal-infant bonding.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q030",
+      "id": "q_30",
       "questionNumber": 30,
       "questionText": "How are absorbed amino acids assimilated from the small intestine into active muscle tissue?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Absorbed through villi epithelium into blood capillaries, transported in plasma via hepatic portal vein, and synthesized into muscle proteins"
-        },
-        {
-          "letter": "B",
-          "text": "Absorbed into lacteals, transported directly to bones, and converted into calcium phosphate"
-        },
-        {
-          "letter": "C",
-          "text": "Filtered by kidneys, passed into urine, and absorbed through the bladder wall into muscles"
-        },
-        {
-          "letter": "D",
-          "text": "Converted into glycogen in the stomach and carried by red blood cells to muscles"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Amino acids are absorbed by active transport and diffusion through the microvilli of the ileum into blood capillaries, transported via the hepatic portal vein to the liver and systemic circulation, and taken up by muscle cells for protein synthesis (actin, myosin).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q031",
+      "id": "q_31",
       "questionNumber": 31,
-      "questionText": "Complete the balanced chemical equation for photosynthesis: 6CO2 + 6H2O \u2192 ... + 6O2",
-      "options": [
-        {
-          "letter": "A",
-          "text": "C6H12O6 (glucose)"
-        },
-        {
-          "letter": "B",
-          "text": "2C2H5OH (ethanol)"
-        },
-        {
-          "letter": "C",
-          "text": "6CH4 (methane)"
-        },
-        {
-          "letter": "D",
-          "text": "C12H22O11 (sucrose)"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The chemical formula for glucose produced in photosynthesis is C6H12O6: 6CO2 + 6H2O \u2192 C6H12O6 + 6O2.",
-      "answerConfidence": "high"
+      "questionText": "Complete the balanced chemical equation for photosynthesis: 6CO2 + 6H2O → ... + 6O2",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "The chemical formula for glucose produced in photosynthesis is C6H12O6: 6CO2 + 6H2O → C6H12O6 + 6O2.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q032",
+      "id": "q_32",
       "questionNumber": 32,
       "questionText": "Which mineral ion is specifically absorbed by roots to synthesize the green pigment chlorophyll?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Magnesium ion (Mg2+)"
-        },
-        {
-          "letter": "B",
-          "text": "Sodium ion (Na+)"
-        },
-        {
-          "letter": "C",
-          "text": "Calcium ion (Ca2+)"
-        },
-        {
-          "letter": "D",
-          "text": "Chloride ion (Cl-)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Magnesium is the central metallic ion in the chlorophyll molecule. Deficiency prevents chlorophyll synthesis, causing chlorosis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q033",
+      "id": "q_33",
       "questionNumber": 33,
       "questionText": "Through which vascular plant tissue is manufactured sucrose transported to storage organs and growing shoots?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Phloem (sieve tubes)"
-        },
-        {
-          "letter": "B",
-          "text": "Xylem vessels"
-        },
-        {
-          "letter": "C",
-          "text": "Sclerenchyma fibres"
-        },
-        {
-          "letter": "D",
-          "text": "Epidermal cuticle"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Sucrose and amino acids are translocated through the living sieve tube elements of the phloem tissue.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q034",
+      "id": "q_34",
       "questionNumber": 34,
       "questionText": "Why do photosynthetic plants convert manufactured soluble sugars into insoluble starch for storage?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Starch is insoluble, exerts no osmotic effect on plant cells, and cannot diffuse out of storage cells"
-        },
-        {
-          "letter": "B",
-          "text": "Starch attracts pollinating insects inside the stem"
-        },
-        {
-          "letter": "C",
-          "text": "Starch dissolves easily in xylem sap to pull water upwards"
-        },
-        {
-          "letter": "D",
-          "text": "Starch speeds up the rate of transpiration through stomata"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "If plants stored high concentrations of soluble glucose, water would continually enter by osmosis, disrupting cellular water balance. Starch is insoluble, chemically inert, and exerts zero osmotic pressure.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q035",
+      "id": "q_35",
       "questionNumber": 35,
       "questionText": "Which structural carbohydrate is synthesized from glucose to build the rigid cell walls of plant cells?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cellulose"
-        },
-        {
-          "letter": "B",
-          "text": "Glycogen"
-        },
-        {
-          "letter": "C",
-          "text": "Chitin"
-        },
-        {
-          "letter": "D",
-          "text": "Peptidoglycan"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Cellulose is a polysaccharide of unbranched beta-glucose chains that form microfibrils with high tensile strength to construct plant cell walls.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q036",
+      "id": "q_36",
       "questionNumber": 36,
       "questionText": "Why does the rate of water loss from plant leaves rise steeply between 07:00 and 12:00 hours on a sunny day?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Light intensity increases, stomata open, temperature rises, and the evaporation rate increases"
-        },
-        {
-          "letter": "B",
-          "text": "Roots stop absorbing water, forcing water out of leaves"
-        },
-        {
-          "letter": "C",
-          "text": "Atmospheric humidity reaches 100%, causing water to condense on leaves"
-        },
-        {
-          "letter": "D",
-          "text": "Guard cells lose all turgor and close the stomatal apertures completely"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In morning daylight, light stimulates guard cells to open stomata, and increasing temperature provides latent heat to evaporate water from mesophyll cell surfaces, accelerating transpiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q037",
+      "id": "q_37",
       "questionNumber": 37,
       "questionText": "What is the predicted effect on a plant's transpiration rate if a sudden heavy rainstorm occurs at midday?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Transpiration rate decreases steeply because atmospheric humidity rises, reducing the diffusion gradient for water vapour"
-        },
-        {
-          "letter": "B",
-          "text": "Transpiration increases tenfold because water droplets force stomata wider open"
-        },
-        {
-          "letter": "C",
-          "text": "Transpiration remains unchanged because rain only affects the soil"
-        },
-        {
-          "letter": "D",
-          "text": "Photosynthesis ceases permanently because rain washes out chlorophyll"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Heavy rain saturates the surrounding air with water vapour (humidity ~100%). This reduces the water potential gradient between the moist air spaces inside the leaf and the external air, drastically reducing transpiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q038",
+      "id": "q_38",
       "questionNumber": 38,
       "questionText": "In a respirometer containing germinating seeds, what chemical is placed in the tube to absorb released carbon dioxide gas?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Potassium hydroxide / sodium hydroxide / soda lime"
-        },
-        {
-          "letter": "B",
-          "text": "Pure distilled water"
-        },
-        {
-          "letter": "C",
-          "text": "Concentrated glucose solution"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride solution"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Potassium hydroxide (KOH) or soda lime absorbs CO2 produced by seed respiration. As oxygen is consumed, the volume of gas decreases, drawing the indicator liquid along the scale.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q039",
+      "id": "q_39",
       "questionNumber": 39,
       "questionText": "Which apparatus is used to measure the rate of water uptake by a cut leafy shoot under varying external conditions?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Potometer"
-        },
-        {
-          "letter": "B",
-          "text": "Respirometer"
-        },
-        {
-          "letter": "C",
-          "text": "Clinostat"
-        },
-        {
-          "letter": "D",
-          "text": "Spirometer"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "A potometer measures the rate of water uptake by a leafy shoot as a bubble moves along a capillary tube, which closely reflects the rate of transpiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q040",
+      "id": "q_40",
       "questionNumber": 40,
       "questionText": "In an experiment measuring bubbles of gas released by waterweed (Elodea) in bright light, what is the gas produced?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Oxygen (O2)"
-        },
-        {
-          "letter": "B",
-          "text": "Carbon dioxide (CO2)"
-        },
-        {
-          "letter": "C",
-          "text": "Nitrogen (N2)"
-        },
-        {
-          "letter": "D",
-          "text": "Hydrogen (H2)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Green water plants carry out photosynthesis in the presence of light, producing oxygen gas bubbles which can be collected and tested with a glowing splint.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q041",
+      "id": "q_41",
       "questionNumber": 41,
       "questionText": "Why was there NO colour change on cobalt chloride paper attached to leaves of both plant species at night?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stomata are closed in the dark, so virtually no water vapour is lost by transpiration"
-        },
-        {
-          "letter": "B",
-          "text": "Cobalt chloride paper only functions in bright sunlight"
-        },
-        {
-          "letter": "C",
-          "text": "The plant switches from photosynthesis to fermentation at night"
-        },
-        {
-          "letter": "D",
-          "text": "Leaves shed all their water into the soil at dusk"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In the absence of light, guard cells lose turgor and stomata close, halting stomatal transpiration. Dry cobalt chloride paper remains blue.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q042",
+      "id": "q_42",
       "questionNumber": 42,
       "questionText": "Which physical forces account for the movement of water up through xylem vessels to the leaf canopy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Transpiration pull, cohesive forces between water molecules, adhesion to xylem walls, and root pressure"
-        },
-        {
-          "letter": "B",
-          "text": "Peristalsis in the phloem and gravity pulling down on the stem"
-        },
-        {
-          "letter": "C",
-          "text": "Active transport pumping water through dead vessel elements"
-        },
-        {
-          "letter": "D",
-          "text": "Osmotic expansion of leaf cuticle cells pushing water downward"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The transpiration pull exerts tension on the water column. Cohesion (hydrogen bonds between water molecules) and adhesion (to hydrophilic lignin vessel walls) maintain a continuous, unbroken transpiration stream.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q043",
+      "id": "q_43",
       "questionNumber": 43,
       "questionText": "What visible changes happen to plant cells placed into a sugar solution more concentrated than their cell sap?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The sap vacuole shrinks, water leaves by osmosis, and the cytoplasm pulls away from the cell wall (plasmolysis)"
-        },
-        {
-          "letter": "B",
-          "text": "The cell wall stretches and bursts due to excess water intake"
-        },
-        {
-          "letter": "C",
-          "text": "Chloroplasts multiply rapidly and cell volume doubles"
-        },
-        {
-          "letter": "D",
-          "text": "The nucleus enlarges and forces sucrose into the cell wall"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Water moves out of the vacuole and cytoplasm into the hypertonic sugar solution down the water potential gradient. The vacuole shrinks and the protoplast detaches from the cell wall (plasmolysis).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q044",
+      "id": "q_44",
       "questionNumber": 44,
       "questionText": "How does the systemic insecticide applied to plant leaves kill aphids feeding exclusively on the stem?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It is absorbed by leaf mesophyll cells and translocated in the phloem sap, which the aphids ingest through their stylets"
-        },
-        {
-          "letter": "B",
-          "text": "It evaporates into toxic fumes that enter the aphids' spiracles from the air"
-        },
-        {
-          "letter": "C",
-          "text": "It coats the outside of the stem, preventing aphids from landing"
-        },
-        {
-          "letter": "D",
-          "text": "It enters the roots and blocks soil water absorption completely"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Systemic pesticides are absorbed into plant tissues and translocated via the phloem stream to all parts of the plant. When aphids insert their piercing mouthparts to suck phloem sap, they ingest the poison.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q045",
+      "id": "q_45",
       "questionNumber": 45,
       "questionText": "In an aquatic plant experiment, why does plant mass in container A (250W bulb) begin to decline after week 5?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Essential mineral nutrients in the water become depleted and overcrowding limits carbon dioxide and light"
-        },
-        {
-          "letter": "B",
-          "text": "The bulb becomes cooler over time, halting photosynthesis"
-        },
-        {
-          "letter": "C",
-          "text": "The plant switches from autotrophic to heterotrophic nutrition"
-        },
-        {
-          "letter": "D",
-          "text": "Excess oxygen in the water poisons the chlorophyll pigment"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Rapid initial growth exhausts dissolved nitrates and phosphates in the water, space becomes overcrowded, and self-shading reduces effective photosynthesis, causing plants to die and lose biomass.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q046",
+      "id": "q_46",
       "questionNumber": 46,
       "questionText": "What gas exchange occurs in green plants kept in complete darkness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Carbon dioxide is released and oxygen is absorbed (cellular respiration continues while photosynthesis stops)"
-        },
-        {
-          "letter": "B",
-          "text": "Oxygen is released and carbon dioxide is absorbed"
-        },
-        {
-          "letter": "C",
-          "text": "Both oxygen and carbon dioxide are released in equal volumes"
-        },
-        {
-          "letter": "D",
-          "text": "No gas exchange takes place in plants at night"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In the dark, plants cannot carry out photosynthesis to produce oxygen, but their living cells continue cellular respiration 24 hours a day, taking in O2 and releasing CO2.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q047",
+      "id": "q_47",
       "questionNumber": 47,
       "questionText": "Human blood groups (A, B, AB, O) provide a classic example of which type of variation, and why?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Discontinuous variation, because individuals fall into distinct, clear-cut categories with no intermediate phenotypes"
-        },
-        {
-          "letter": "B",
-          "text": "Continuous variation, because blood groups change gradually with age and diet"
-        },
-        {
-          "letter": "C",
-          "text": "Environmental variation, because blood type depends on climate and elevation"
-        },
-        {
-          "letter": "D",
-          "text": "Polygenic variation, because blood groups show a normal bell-curve distribution"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Discontinuous variation features distinct phenotypic classes with no intermediates (e.g. blood groups, tongue rolling, sex), controlled by single genes and unaffected by environmental influences.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q048",
+      "id": "q_48",
       "questionNumber": 48,
       "questionText": "In the human heart, why is the muscular wall of the left ventricle significantly thicker than that of the right ventricle?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The left ventricle must generate much higher hydrostatic pressure to pump blood around the entire systemic body, while the right ventricle only pumps to the nearby lungs"
-        },
-        {
-          "letter": "B",
-          "text": "The left ventricle contains deoxygenated blood which is heavier than oxygenated blood"
-        },
-        {
-          "letter": "C",
-          "text": "The left ventricle stores blood during diastole, requiring thicker elastic walls"
-        },
-        {
-          "letter": "D",
-          "text": "The right ventricle receives blood directly from the coronary arteries"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The right ventricle only pumps blood through the low-resistance pulmonary circuit to the lungs, whereas the left ventricle must pump blood throughout the high-resistance systemic circuit to all body tissues.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q049",
+      "id": "q_49",
       "questionNumber": 49,
       "questionText": "What is the medical consequence of an occluding blood clot (thrombus) lodged in a coronary artery?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Blood flow carrying oxygen and glucose is cut off from cardiac muscle, causing muscle death and a myocardial infarction (heart attack)"
-        },
-        {
-          "letter": "B",
-          "text": "Blood pressure in the lungs drops to zero, causing alveoli to collapse"
-        },
-        {
-          "letter": "C",
-          "text": "The tricuspid valve reverses direction, pumping blood into the liver"
-        },
-        {
-          "letter": "D",
-          "text": "Urea accumulates in the pericardial cavity, destroying red blood cells"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Coronary arteries deliver oxygen and nutrients to heart muscle cells. A blockage starves the downstream myocardium of oxygen, halting aerobic respiration and causing tissue death (heart attack).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q050",
+      "id": "q_50",
       "questionNumber": 50,
       "questionText": "Which organ produces urea, and which organ is primarily responsible for excreting it from the human body?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Liver produces urea; kidneys excrete it"
-        },
-        {
-          "letter": "B",
-          "text": "Kidneys produce urea; bladder excretes it"
-        },
-        {
-          "letter": "C",
-          "text": "Stomach produces urea; lungs excrete it"
-        },
-        {
-          "letter": "D",
-          "text": "Pancreas produces urea; skin pores excrete it"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Urea is synthesized in the liver by deamination of excess amino acids. It is carried in the bloodstream to the kidneys, where it is filtered out and excreted in urine.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q051",
+      "id": "q_51",
       "questionNumber": 51,
       "questionText": "Trace the correct circulatory pathway taken by a molecule of urea from its site of formation in the liver to the kidneys:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Liver \u2192 Hepatic vein \u2192 Vena cava \u2192 Right heart \u2192 Lungs \u2192 Left heart \u2192 Aorta \u2192 Renal artery \u2192 Kidney"
-        },
-        {
-          "letter": "B",
-          "text": "Liver \u2192 Bile duct \u2192 Small intestine \u2192 Renal vein \u2192 Kidney"
-        },
-        {
-          "letter": "C",
-          "text": "Liver \u2192 Hepatic portal vein \u2192 Stomach \u2192 Aorta \u2192 Kidney"
-        },
-        {
-          "letter": "D",
-          "text": "Liver \u2192 Pulmonary artery \u2192 Left ventricle \u2192 Ureter \u2192 Kidney"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Urea leaves the liver in the hepatic vein \u2192 inferior vena cava \u2192 right atrium and ventricle \u2192 pulmonary artery \u2192 lungs \u2192 pulmonary vein \u2192 left atrium and ventricle \u2192 aorta \u2192 renal artery \u2192 kidney nephrons.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Urea leaves the liver in the hepatic vein → inferior vena cava → right atrium and ventricle → pulmonary artery → lungs → pulmonary vein → left atrium and ventricle → aorta → renal artery → kidney nephrons.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q052",
+      "id": "q_52",
       "questionNumber": 52,
       "questionText": "In an experiment counting gas bubbles released by yeast in glucose solution, what physiological process is occurring and what gas is released?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Anaerobic respiration (fermentation); releases carbon dioxide gas"
-        },
-        {
-          "letter": "B",
-          "text": "Aerobic respiration; releases pure nitrogen gas"
-        },
-        {
-          "letter": "C",
-          "text": "Photosynthesis; releases oxygen gas"
-        },
-        {
-          "letter": "D",
-          "text": "Hydrolysis; releases hydrogen gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Yeast ferments glucose anaerobically to produce ethanol and carbon dioxide gas: C6H12O6 \u2192 2C2H5OH + 2CO2 + energy.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Yeast ferments glucose anaerobically to produce ethanol and carbon dioxide gas: C6H12O6 → 2C2H5OH + 2CO2 + energy.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q053",
+      "id": "q_53",
       "questionNumber": 53,
-      "questionText": "Why does the number of bubbles released per minute by yeast increase when temperature is raised from 25\u00b0C to 35\u00b0C?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Molecules gain kinetic energy, increasing the collision frequency between enzymes and glucose substrates"
-        },
-        {
-          "letter": "B",
-          "text": "Glucose molecules double in mass at higher temperatures"
-        },
-        {
-          "letter": "C",
-          "text": "Water in the tube begins to boil, releasing steam bubbles"
-        },
-        {
-          "letter": "D",
-          "text": "The yeast cells switch to aerobic respiration in warm water"
-        }
-      ],
-      "correctAnswer": "A",
+      "questionText": "Why does the number of bubbles released per minute by yeast increase when temperature is raised from 25°C to 35°C?",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Higher temperature increases the kinetic energy of reactant molecules, causing more frequent successful collisions between active sites of yeast enzymes and glucose substrates.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q054",
+      "id": "q_54",
       "questionNumber": 54,
       "questionText": "What chemical reagent is used to confirm that the gas evolved during yeast fermentation is carbon dioxide?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Limewater (calcium hydroxide solution), which turns milky white / cloudy"
-        },
-        {
-          "letter": "B",
-          "text": "Benedict's solution, which turns brick-red"
-        },
-        {
-          "letter": "C",
-          "text": "Iodine solution, which turns blue-black"
-        },
-        {
-          "letter": "D",
-          "text": "Ethanol, which forms a cloudy white emulsion"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Carbon dioxide reacts with limewater (calcium hydroxide) to precipitate insoluble calcium carbonate, turning the clear liquid cloudy/milky white.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q055",
+      "id": "q_55",
       "questionNumber": 55,
       "questionText": "What is the function of the tricuspid atrioventricular valve located in the right side of the heart?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Prevents backflow of deoxygenated blood from the right ventricle into the right atrium during ventricular systole"
-        },
-        {
-          "letter": "B",
-          "text": "Pumps blood at high pressure into the aorta"
-        },
-        {
-          "letter": "C",
-          "text": "Prevents blood from the pulmonary vein entering the left atrium"
-        },
-        {
-          "letter": "D",
-          "text": "Filters out blood clots before blood enters the lungs"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The tricuspid valve has three cusps anchored by chordae tendineae. When the right ventricle contracts, the valve closes tightly to ensure blood can only exit via the pulmonary artery.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q056",
+      "id": "q_56",
       "questionNumber": 56,
       "questionText": "State three lifestyle measures that help maintain a healthy heart and prevent coronary heart disease.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Engage in regular aerobic exercise, eat a diet low in saturated fat and salt, and avoid smoking"
-        },
-        {
-          "letter": "B",
-          "text": "Consume high cholesterol meals, avoid exercise, and take sleeping pills daily"
-        },
-        {
-          "letter": "C",
-          "text": "Drink sugar-sweetened beverages, avoid green vegetables, and sleep under 4 hours"
-        },
-        {
-          "letter": "D",
-          "text": "Restrict water intake, increase sodium intake, and take antibiotics weekly"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Preventative measures include regular cardiovascular exercise (strengthens heart muscle and reduces blood pressure), a balanced diet low in saturated fat/cholesterol and salt, maintaining a healthy body weight, avoiding tobacco smoke, and managing stress.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q057",
+      "id": "q_57",
       "questionNumber": 57,
       "questionText": "Why does an athlete's breathing rate remain elevated for several minutes AFTER finishing an intense sprint race?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To provide oxygen to repay the oxygen debt by breaking down accumulated lactic acid in the liver"
-        },
-        {
-          "letter": "B",
-          "text": "To cool down the vocal cords after shouting"
-        },
-        {
-          "letter": "C",
-          "text": "Because the heart ceases beating immediately after exercise"
-        },
-        {
-          "letter": "D",
-          "text": "To replace all the nitrogen that evaporated from the blood"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "During the sprint, muscles respired anaerobically, generating lactic acid. Post-exercise deep breathing supplies extra oxygen (the oxygen debt) to aerobically oxidize lactic acid into CO2 and water in the liver.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q058",
+      "id": "q_58",
       "questionNumber": 58,
       "questionText": "What physiological changes are triggered in an athlete's body by an increased secretion of adrenaline before a race?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Increased heart rate, increased breathing rate, conversion of liver glycogen to glucose, and increased alertness"
-        },
-        {
-          "letter": "B",
-          "text": "Decreased blood pressure, constriction of pupils, and slowed breathing"
-        },
-        {
-          "letter": "C",
-          "text": "Rapid storage of blood glucose into glycogen and sleepiness"
-        },
-        {
-          "letter": "D",
-          "text": "Immediate production of digestive enzymes and increased gut motility"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Adrenaline prepares the body for 'fight or flight' by speeding heart rate, dilating bronchioles, mobilizing blood glucose from glycogen stores, and prioritizing blood flow to active muscles.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q059",
+      "id": "q_59",
       "questionNumber": 59,
       "questionText": "How does vasodilation of skin arterioles help cool the body when an athlete overheats?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Arterioles dilate, increasing blood flow through surface capillaries so more heat is lost by radiation and convection"
-        },
-        {
-          "letter": "B",
-          "text": "Arterioles constrict completely, trapping blood in deep internal organs"
-        },
-        {
-          "letter": "C",
-          "text": "Blood vessels open onto the skin surface to leak blood outwards"
-        },
-        {
-          "letter": "D",
-          "text": "Capillaries shrink to prevent warm blood from touching the skin"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Smooth muscles in the walls of arterioles relax (vasodilation), increasing blood flow through superficial capillary networks in the skin dermis, facilitating heat loss to the cooler environment by radiation and convection.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q060",
+      "id": "q_60",
       "questionNumber": 60,
       "questionText": "How does the evaporation of sweat secreted onto the skin surface lower body temperature?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Water in sweat absorbs latent heat of vaporisation from the skin tissues as it evaporates into air"
-        },
-        {
-          "letter": "B",
-          "text": "Sweat dissolves hair follicles, allowing cool air to penetrate into veins"
-        },
-        {
-          "letter": "C",
-          "text": "Sweat contains cold enzymes that freeze surface capillary blood"
-        },
-        {
-          "letter": "D",
-          "text": "Salt crystals in sweat reflect 100% of incoming sunlight"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Water has a high latent heat of vaporisation. As sweat evaporates from the warm skin surface, it absorbs large quantities of thermal energy, cooling the skin and underlying blood.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q061",
+      "id": "q_61",
       "questionNumber": 61,
       "questionText": "Which term describes the maintenance of a constant internal environment in the human body?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Homeostasis"
-        },
-        {
-          "letter": "B",
-          "text": "Thermodynamics"
-        },
-        {
-          "letter": "C",
-          "text": "Osmoregulation"
-        },
-        {
-          "letter": "D",
-          "text": "Metabolism"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Homeostasis is the maintenance of a constant internal environment (e.g. core temperature, blood glucose, water potential, ion concentrations) within narrow physiological limits.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q062",
+      "id": "q_62",
       "questionNumber": 62,
       "questionText": "Which tube carries urine from the urinary bladder to the outside of the human body?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Urethra"
-        },
-        {
-          "letter": "B",
-          "text": "Ureter"
-        },
-        {
-          "letter": "C",
-          "text": "Renal vein"
-        },
-        {
-          "letter": "D",
-          "text": "Renal artery"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The ureters connect the kidneys to the urinary bladder. The urethra is the single duct that carries urine from the bladder to the exterior of the body.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q063",
+      "id": "q_63",
       "questionNumber": 63,
       "questionText": "Besides removing nitrogenous urea, what is the other major homeostatic function of the kidneys?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Osmoregulation (regulating water and mineral salt balance of blood plasma)"
-        },
-        {
-          "letter": "B",
-          "text": "Secreting bile salts into the duodenum"
-        },
-        {
-          "letter": "C",
-          "text": "Producing insulin to lower blood glucose"
-        },
-        {
-          "letter": "D",
-          "text": "Synthesizing digestive enzymes for the ileum"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The kidneys control the water potential of body fluids by adjusting the volume and concentration of urine produced (osmoregulation), maintaining blood pressure and cellular integrity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q064",
+      "id": "q_64",
       "questionNumber": 64,
       "questionText": "Name two chemical substances, other than excess amino acids, that are detoxified or broken down by the liver.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Alcohol and medicinal drugs (or hormones/toxins)"
-        },
-        {
-          "letter": "B",
-          "text": "Starch and dietary cellulose"
-        },
-        {
-          "letter": "C",
-          "text": "Calcium carbonate and sodium chloride"
-        },
-        {
-          "letter": "D",
-          "text": "Keratin and collagen"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The liver breaks down alcohol, prescription drugs, circulating hormones (e.g. adrenaline, insulin), and bacterial toxins to render them harmless before excretion.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q065",
+      "id": "q_65",
       "questionNumber": 65,
       "questionText": "When a student accidentally pricks a finger on a sharp nail and pulls the hand away instantly, what is the effector?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Arm muscle (e.g. biceps muscle)"
-        },
-        {
-          "letter": "B",
-          "text": "Pain receptor in the skin"
-        },
-        {
-          "letter": "C",
-          "text": "Sensory neurone in the arm"
-        },
-        {
-          "letter": "D",
-          "text": "Spinal cord interneurone"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In a reflex arc, the effector is the muscle or gland that carries out the response. Here, the arm muscle (biceps) contracts to withdraw the hand.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q066",
+      "id": "q_66",
       "questionNumber": 66,
       "questionText": "Which type of nerve cell transmits electrical impulses directly from the central nervous system to an effector muscle?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Motor neurone"
-        },
-        {
-          "letter": "B",
-          "text": "Sensory neurone"
-        },
-        {
-          "letter": "C",
-          "text": "Relay neurone"
-        },
-        {
-          "letter": "D",
-          "text": "Receptor cell"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Motor (efferent) neurones carry action potentials from the CNS (brain or spinal cord) to effectors (muscles or glands).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q067",
+      "id": "q_67",
       "questionNumber": 67,
       "questionText": "Why do skeletal muscles controlling limb movements occur in antagonistic pairs?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Muscles can only contract and pull; they cannot actively push, so an opposing muscle is required to return the limb"
-        },
-        {
-          "letter": "B",
-          "text": "One muscle produces heat while the other cools the joint"
-        },
-        {
-          "letter": "C",
-          "text": "One muscle is made of protein while the other is made of lipid"
-        },
-        {
-          "letter": "D",
-          "text": "Dual muscles prevent nerve impulses from travelling in reverse"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Skeletal muscles exert force only during contraction (shortening). To extend or return a joint to its original position, an antagonistic muscle pulling in the opposite direction must contract.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q068",
+      "id": "q_68",
       "questionNumber": 68,
       "questionText": "Why are the connective tissue fibres (tendons) connecting muscle to the skeleton non-elastic?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To transmit all the tension and pulling force of the muscle directly to the bone without wasting energy stretching"
-        },
-        {
-          "letter": "B",
-          "text": "To allow bones to slide past each other without friction"
-        },
-        {
-          "letter": "C",
-          "text": "To store oxygen for anaerobic muscle respiration"
-        },
-        {
-          "letter": "D",
-          "text": "To absorb electrical impulses from motor neurones"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "If tendons were elastic, they would stretch when the muscle contracted, absorbing energy and delaying or weakening bone movement. Inelastic collagen ensures immediate, efficient mechanical movement.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q069",
+      "id": "q_69",
       "questionNumber": 69,
       "questionText": "In a plant gravitropism experiment using a rotating clinostat, why do roots of seedlings on the rotating disc grow straight?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rotation exposes all sides of the root equally to gravity, preventing auxin from accumulating on any one side"
-        },
-        {
-          "letter": "B",
-          "text": "Centrifugal force cancels out the effect of water potential"
-        },
-        {
-          "letter": "C",
-          "text": "The seedlings are shielded from all forms of light"
-        },
-        {
-          "letter": "D",
-          "text": "Rotation stops root cell division completely"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "On a slowly rotating horizontal clinostat, gravitational stimulus is evenly distributed all around the root axis, so auxin concentration remains uniform and cells elongate equally, producing straight root growth.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q070",
+      "id": "q_70",
       "questionNumber": 70,
       "questionText": "What response do roots of stationary horizontal seedlings show after two days, and what is the biological name of this response?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Roots curve downward towards gravity; positive gravitropism (geotropism)"
-        },
-        {
-          "letter": "B",
-          "text": "Roots curve upward towards light; negative phototropism"
-        },
-        {
-          "letter": "C",
-          "text": "Roots grow horizontally; thigmotropism"
-        },
-        {
-          "letter": "D",
-          "text": "Roots coil into tight spirals; hydrotropism"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In stationary horizontal seedlings, auxin accumulates on the lower side of the root tip. High auxin concentrations inhibit root cell elongation, so upper cells elongate faster, bending the root tip downward (positive gravitropism).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q071",
+      "id": "q_71",
       "questionNumber": 71,
       "questionText": "What is the pupillary reflex when the human eye is exposed to sudden bright light?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Circular muscles of the iris contract and radial muscles relax, constricting the pupil to protect the retina"
-        },
-        {
-          "letter": "B",
-          "text": "Radial muscles contract, dilating the pupil to absorb more light"
-        },
-        {
-          "letter": "C",
-          "text": "The ciliary muscles contract, rounding the crystalline lens"
-        },
-        {
-          "letter": "D",
-          "text": "The cornea flattens to reflect light away from the fovea"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In bright light, autonomic motor impulses cause circular iris muscles to contract and radial muscles to relax. The pupil constricts, limiting the light intensity reaching delicate photoreceptors.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q072",
+      "id": "q_72",
       "questionNumber": 72,
       "questionText": "Distinguish between rods and cones in the human retina regarding function and distribution.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cones detect color and fine detail and are concentrated in the fovea; rods detect dim light in black/white and are spread over the retina"
-        },
-        {
-          "letter": "B",
-          "text": "Rods detect red, green, and blue light; cones only detect shadows"
-        },
-        {
-          "letter": "C",
-          "text": "Cones are located in the blind spot; rods are concentrated in the cornea"
-        },
-        {
-          "letter": "D",
-          "text": "Rods operate in bright daylight; cones only function at night"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Cones provide high-acuity colour vision (three types: red, green, blue) in bright light, concentrated at the fovea. Rods are distributed peripherally, sensitive to low light intensity, providing monochromatic night vision.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q073",
+      "id": "q_73",
       "questionNumber": 73,
       "questionText": "How does a cataract in the human eye result in impaired vision or blindness?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The normally clear crystalline lens becomes cloudy or opaque, preventing light from passing through to the retina"
-        },
-        {
-          "letter": "B",
-          "text": "The optic nerve becomes detached from the spinal cord"
-        },
-        {
-          "letter": "C",
-          "text": "The cornea dries out and becomes permeable to air"
-        },
-        {
-          "letter": "D",
-          "text": "The fovea produces excess vitreous humour, squashing cones"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "A cataract is an opacification or clouding of the protein fibres within the lens, scattering light and preventing sharp focused images from forming on the retina.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q074",
+      "id": "q_74",
       "questionNumber": 74,
       "questionText": "What is the biological difference between excretion and egestion?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Excretion removes metabolic waste products made by cells; egestion removes undigested food as faeces via the anus"
-        },
-        {
-          "letter": "B",
-          "text": "Excretion is only done by plants; egestion is only done by mammals"
-        },
-        {
-          "letter": "C",
-          "text": "Excretion releases useful hormones; egestion removes excess nitrogen gas"
-        },
-        {
-          "letter": "D",
-          "text": "Excretion occurs through the lungs; egestion occurs through the kidneys"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Excretion is the removal of toxic wastes of cellular metabolism (urea, CO2, bile pigments). Egestion is the expulsion of undigested, unabsorbed material (dietary fibre) that never passed into body cells.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q075",
+      "id": "q_75",
       "questionNumber": 75,
       "questionText": "What chemical conversion occurs during deamination of excess amino acids in the liver?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Removal of the amino group to form ammonia, which is rapidly converted into urea"
-        },
-        {
-          "letter": "B",
-          "text": "Conversion of amino acids into fatty acids and bile salts"
-        },
-        {
-          "letter": "C",
-          "text": "Direct transformation of amino acids into glucose and insulin"
-        },
-        {
-          "letter": "D",
-          "text": "Oxidation of amino acids into carbon monoxide and water"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The liver deaminates excess amino acids: the nitrogen-containing amino group is removed to form toxic ammonia, which is immediately combined with CO2 into soluble urea for safe excretion by kidneys.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q076",
+      "id": "q_76",
       "questionNumber": 76,
       "questionText": "Name three environmental factors that could cause seedlings developing from seeds of a single plant to exhibit very different heights.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Sunlight availability, soil moisture/water supply, and soil mineral nutrients"
-        },
-        {
-          "letter": "B",
-          "text": "The colour of nearby flowers, wind direction, and soil plastic content"
-        },
-        {
-          "letter": "C",
-          "text": "Atmospheric nitrogen gas, moon phases, and leaf surface area"
-        },
-        {
-          "letter": "D",
-          "text": "Frequency of honeybee visits, soil salinity, and pollen grain size"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Variations in environmental factors such as sunlight intensity, water availability, soil mineral ion concentration (nitrates/magnesium), pH, and competition for rooting space cause differences in seedling height.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q077",
+      "id": "q_77",
       "questionNumber": 77,
       "questionText": "Even under identical environmental conditions, seedlings from a single mother plant show inherited differences. What accounts for this genetic variation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Meiosis during gamete formation and cross-pollination involving pollen from different male parents"
-        },
-        {
-          "letter": "B",
-          "text": "Mitosis in root hair cells duplicating chromosomes identically"
-        },
-        {
-          "letter": "C",
-          "text": "Changes in atmospheric humidity altering the DNA sequence"
-        },
-        {
-          "letter": "D",
-          "text": "Differences in the amount of water absorbed by seed coats"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Sexual reproduction produces genetic variation through meiosis (independent assortment and crossing over in ovules and pollen) and fertilization of ovules by pollen from different father plants.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q078",
+      "id": "q_78",
       "questionNumber": 78,
       "questionText": "In a typical insect-pollinated flower (such as a bean flower), what is the function of large, brightly coloured petals with nectar guides?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Attract pollinating insects and provide a landing platform directing them toward the nectary"
-        },
-        {
-          "letter": "B",
-          "text": "Protect developing seeds from fungal spores in the soil"
-        },
-        {
-          "letter": "C",
-          "text": "Perform the main photosynthetic sugar production for the root"
-        },
-        {
-          "letter": "D",
-          "text": "Store water to prevent the flower bud from drying out"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Showy petals visual guide insects toward the flower's centre where nectaries produce sweet nectar. As insects feed, they brush against anthers and stigmas, transferring pollen.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q079",
+      "id": "q_79",
       "questionNumber": 79,
       "questionText": "What sequence of events takes place after pollination that results in the formation of seeds?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Pollen tube grows down style into ovary, male nucleus fuses with ovum (fertilisation), zygote becomes embryo, ovule becomes seed"
-        },
-        {
-          "letter": "B",
-          "text": "Pollen grains are digested by style enzymes to provide energy for fruit swelling"
-        },
-        {
-          "letter": "C",
-          "text": "Petals close tightly and transform directly into a fleshy seed coat"
-        },
-        {
-          "letter": "D",
-          "text": "Ovary divides by meiosis to produce four seeds without fertilisation"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Pollen germinates on the stigma, a pollen tube grows down the style into the ovule micropyle, male gamete fuses with female egg cell nucleus (fertilisation), zygote develops into plant embryo, and the ovule matures into a seed.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q080",
+      "id": "q_80",
       "questionNumber": 80,
       "questionText": "Distinguish scientifically between the biological terms 'growth' and 'development' in plants.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Growth is a permanent, irreversible increase in size and dry mass; development is an increase in cellular complexity and differentiation"
-        },
-        {
-          "letter": "B",
-          "text": "Growth refers to flower production; development refers to water uptake"
-        },
-        {
-          "letter": "C",
-          "text": "Growth is temporary and reversible; development is permanent"
-        },
-        {
-          "letter": "D",
-          "text": "Growth occurs only at night; development occurs during daylight"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Growth is a permanent, quantitative increase in size, cell number, or dry mass caused by cell division and expansion. Development is a qualitative increase in complexity as cells differentiate into specialized tissues and organs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q081",
+      "id": "q_81",
       "questionNumber": 81,
       "questionText": "What key cellular event occurs in the apical meristem region (region of cell division) of a root tip?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Undifferentiated cells divide rapidly by mitosis to produce new daughter cells"
-        },
-        {
-          "letter": "B",
-          "text": "Cells absorb large amounts of water and expand horizontally"
-        },
-        {
-          "letter": "C",
-          "text": "Cells develop thick lignified walls and die to form xylem vessels"
-        },
-        {
-          "letter": "D",
-          "text": "Root hairs grow out to absorb soil minerals"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The apical meristem just behind the root cap is the zone of active mitotic cell division, where new cells are constantly produced with identical chromosome complements.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q082",
+      "id": "q_82",
       "questionNumber": 82,
       "questionText": "How does the enlargement of cells in the zone of elongation cause the root tip to grow deeper into the soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cells absorb water by osmosis into vacuoles and expand vertically, pushing the protected root tip downward"
-        },
-        {
-          "letter": "B",
-          "text": "Cells lose water, causing the root to shrink and pull downward"
-        },
-        {
-          "letter": "C",
-          "text": "Cell walls dissolve completely, allowing cytoplasm to flow into soil cracks"
-        },
-        {
-          "letter": "D",
-          "text": "Cells divide by meiosis, quadrupling the number of root hairs"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Cells take in water by osmosis, turgor pressure increases, and cells elongate longitudinally against the anchored upper root tissues, thrusting the root cap and meristem deeper into the earth.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q083",
+      "id": "q_83",
       "questionNumber": 83,
       "questionText": "Which cell wall component prevents plant cells in the elongation zone from bursting as they absorb water?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cellulose microfibrils"
-        },
-        {
-          "letter": "B",
-          "text": "Starch granules"
-        },
-        {
-          "letter": "C",
-          "text": "Phospholipid bilayer"
-        },
-        {
-          "letter": "D",
-          "text": "Keratin fibres"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The cellulose cell wall is rigid and possesses immense tensile strength. It exerts wall pressure opposing internal osmotic turgor, preventing cytolysis (bursting).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q084",
+      "id": "q_84",
       "questionNumber": 84,
       "questionText": "Define the biological term 'tissue' and give an example found in plant roots.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A group of cells with similar structure working together to perform a shared function; e.g. xylem tissue"
-        },
-        {
-          "letter": "B",
-          "text": "An organ that produces hormones; e.g. apical bud"
-        },
-        {
-          "letter": "C",
-          "text": "A single specialized cell; e.g. root hair cell"
-        },
-        {
-          "letter": "D",
-          "text": "A collection of different organ systems in a plant"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "A tissue is a group of similar cells that collaborate to carry out a specific function, such as xylem (transporting water/minerals and mechanical support) or phloem (translocating sugars).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q085",
+      "id": "q_85",
       "questionNumber": 85,
       "questionText": "What is the definition of 'pollination'?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The transfer of pollen grains from an anther to a stigma"
-        },
-        {
-          "letter": "B",
-          "text": "The fusion of male and female gamete nuclei to form a zygote"
-        },
-        {
-          "letter": "C",
-          "text": "The dispersal of ripe seeds away from the parent plant"
-        },
-        {
-          "letter": "D",
-          "text": "The germination of a pollen grain on the petal surface"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Pollination is specifically the transfer of pollen grains from the male anther to the female receptive stigma of a flower.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q086",
+      "id": "q_86",
       "questionNumber": 86,
       "questionText": "How does cross-pollination contribute to phenotypic variation within a plant species?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It combines alleles from two genetically distinct parent plants, creating novel genotypes in offspring"
-        },
-        {
-          "letter": "B",
-          "text": "It causes somatic mutations in the petals of the recipient flower"
-        },
-        {
-          "letter": "C",
-          "text": "It guarantees that all offspring are genetically identical to the mother plant"
-        },
-        {
-          "letter": "D",
-          "text": "It doubles the chromosome number in each successive generation"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Cross-pollination mixes genetic material from two different plants. Independent assortment and new allele combinations produce offspring with varied phenotypes, enhancing adaptability to changing environments.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q087",
+      "id": "q_87",
       "questionNumber": 87,
       "questionText": "How has modern agricultural technology increased crop production worldwide?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use of synthetic fertilizers, chemical pesticides, selective breeding, genetic modification, and farm machinery"
-        },
-        {
-          "letter": "B",
-          "text": "Replacing all crop fields with concrete greenhouses"
-        },
-        {
-          "letter": "C",
-          "text": "Eliminating all natural soil microbes using bleach"
-        },
-        {
-          "letter": "D",
-          "text": "Decreasing water irrigation to force plants into drought dormancy"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Modern technologies include chemical fertilizers supplying nitrogen and minerals, pesticides reducing pest damage, selective breeding and GM crops for high yields and drought resistance, and mechanization cultivating vast areas.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q088",
+      "id": "q_88",
       "questionNumber": 88,
       "questionText": "Why does a deficiency of magnesium ions in soil lead to stunted plant growth?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Magnesium is required to make chlorophyll; without it, leaves become chlorotic (yellow) and photosynthesis decreases"
-        },
-        {
-          "letter": "B",
-          "text": "Magnesium forms the cell membrane bilayer"
-        },
-        {
-          "letter": "C",
-          "text": "Magnesium is the primary sugar transported in phloem"
-        },
-        {
-          "letter": "D",
-          "text": "Magnesium is required to open the stomata at night"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Without magnesium, plants cannot synthesize chlorophyll. The leaves turn yellow (chlorosis), sunlight cannot be absorbed efficiently, photosynthesis slows down, and fewer carbohydrates are available for growth.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q089",
+      "id": "q_89",
       "questionNumber": 89,
       "questionText": "How do minerals locked in the dead bodies of animals become available once again for plant uptake?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Decomposers (saprophytic bacteria and fungi) decompose organic matter, releasing soluble mineral ions into soil water"
-        },
-        {
-          "letter": "B",
-          "text": "Sunlight evaporates the minerals directly into plant leaves"
-        },
-        {
-          "letter": "C",
-          "text": "Minerals are converted into atmospheric nitrogen gas"
-        },
-        {
-          "letter": "D",
-          "text": "Earthworms eat the dead animals and secrete glucose crystals"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Saprophytic bacteria and fungi secrete digestive enzymes onto dead organic remains, breaking down proteins, nucleic acids, and bones, and releasing ammonium, nitrates, and phosphates back into the soil solution.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q090",
+      "id": "q_90",
       "questionNumber": 90,
       "questionText": "What is the function of the sepal (calyx) in an angiosperm flower?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Protects the internal flower parts while the flower is an unopened bud"
-        },
-        {
-          "letter": "B",
-          "text": "Attracts nocturnal moth pollinators with sweet nectar"
-        },
-        {
-          "letter": "C",
-          "text": "Produces haploid pollen grains inside pollen sacs"
-        },
-        {
-          "letter": "D",
-          "text": "Catches airborne pollen grains on its feathery surface"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Sepals are the outermost green leaf-like structures of a flower. Their primary function is enclosing and shielding the delicate reproductive organs while in the bud stage.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q091",
+      "id": "q_91",
       "questionNumber": 91,
       "questionText": "Define the term 'sexual reproduction'.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The process involving the fusion of two haploid gamete nuclei to form a diploid zygote, producing genetically varied offspring"
-        },
-        {
-          "letter": "B",
-          "text": "The production of identical clones from a single parent without gametes"
-        },
-        {
-          "letter": "C",
-          "text": "The division of a single somatic cell by mitosis into four daughter cells"
-        },
-        {
-          "letter": "D",
-          "text": "The regeneration of lost body limbs through tissue differentiation"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Sexual reproduction involves the fusion of haploid male (sperm) and female (ovum) gametes during fertilisation, restoring the diploid chromosome number and creating genetic diversity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q092",
+      "id": "q_92",
       "questionNumber": 92,
       "questionText": "What are the two major biological functions of the human testis?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Production of sperm cells (spermatogenesis) and secretion of testosterone"
-        },
-        {
-          "letter": "B",
-          "text": "Filtration of urea and storage of urine"
-        },
-        {
-          "letter": "C",
-          "text": "Production of progesterone and maintenance of the endometrium"
-        },
-        {
-          "letter": "D",
-          "text": "Secretion of seminal fluid and erection of the penis"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The testes produce male gametes (spermatozoa) in the seminiferous tubules and synthesize the male androgen hormone testosterone in interstitial Leydig cells.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q093",
+      "id": "q_93",
       "questionNumber": 93,
       "questionText": "Where is a surgical vasectomy carried out to achieve permanent male birth control?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cutting and tying of the sperm ducts (vas deferens)"
-        },
-        {
-          "letter": "B",
-          "text": "Removal of the prostate gland"
-        },
-        {
-          "letter": "C",
-          "text": "Severing the urethra at the base of the bladder"
-        },
-        {
-          "letter": "D",
-          "text": "Surgical removal of the scrotal sac"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "A vasectomy involves cutting and ligating both vas deferens (sperm ducts). Sperm produced in the testes can no longer reach the urethra, so semen ejaculated contains no sperm.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q094",
+      "id": "q_94",
       "questionNumber": 94,
       "questionText": "State two secondary sexual characteristics that develop in adolescent males during puberty under the influence of testosterone.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Deepening of voice and development of facial and pubic hair"
-        },
-        {
-          "letter": "B",
-          "text": "Widening of pelvic girdle and onset of menstruation"
-        },
-        {
-          "letter": "C",
-          "text": "Development of mammary glands and lactation"
-        },
-        {
-          "letter": "D",
-          "text": "Decrease in muscle mass and loss of body hair"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Under the influence of testosterone, males experience voice breaking (enlargement of the larynx), growth of facial, underarm, and pubic hair, increased muscle mass, and broadening of the shoulders.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q095",
+      "id": "q_95",
       "questionNumber": 95,
       "questionText": "State two maternal factors, apart from infant sex, that significantly affect the birth mass of a baby.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Maternal nutrition/diet during gestation and whether the mother smoked during pregnancy"
-        },
-        {
-          "letter": "B",
-          "text": "The father's eye colour and maternal blood group"
-        },
-        {
-          "letter": "C",
-          "text": "The time of day the baby is delivered and room temperature"
-        },
-        {
-          "letter": "D",
-          "text": "The mother's hair length and ear lobe attachment"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Birth weight is influenced by maternal diet quality, smoking/passive smoking (nicotine and CO restrict oxygen to fetus, causing low birth weight), maternal disease (hypertension/diabetes), gestational age, and single vs multiple pregnancy.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q096",
+      "id": "q_96",
       "questionNumber": 96,
       "questionText": "Why do growth curves show that teenage girls temporarily exceed boys in average body mass between ages 10 and 13?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Girls undergo puberty and their adolescent growth spurt earlier than boys"
-        },
-        {
-          "letter": "B",
-          "text": "Girls consume significantly more calories than boys"
-        },
-        {
-          "letter": "C",
-          "text": "Boys lose bone density during early adolescence"
-        },
-        {
-          "letter": "D",
-          "text": "Girls have higher levels of testosterone during early childhood"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The female pubertal growth spurt begins around age 10-11 under oestrogen, whereas the male growth spurt occurs around age 13-15. Boys catch up and surpass girls in height and mass later.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q097",
+      "id": "q_97",
       "questionNumber": 97,
       "questionText": "Which hormone is primarily responsible for the development of secondary sexual characteristics in females at puberty?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Oestrogen"
-        },
-        {
-          "letter": "B",
-          "text": "Testosterone"
-        },
-        {
-          "letter": "C",
-          "text": "Insulin"
-        },
-        {
-          "letter": "D",
-          "text": "Adrenaline"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Oestrogen, secreted by developing ovarian follicles, triggers breast development, widening of hips, pubic hair growth, and the onset of the menstrual cycle (menarche).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q098",
+      "id": "q_98",
       "questionNumber": 98,
       "questionText": "State two major physical changes occurring in females at puberty.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Onset of menstruation and development of breasts"
-        },
-        {
-          "letter": "B",
-          "text": "Deepening of voice and growth of facial beard"
-        },
-        {
-          "letter": "C",
-          "text": "Production of sperm cells and enlargement of larynx"
-        },
-        {
-          "letter": "D",
-          "text": "Broadening of shoulders and loss of subcutaneous fat"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Female pubertal changes include the commencement of the menstrual cycle and ovulation, breast enlargement, widening of the hips/pelvis, and growth of pubic and axillary hair.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q099",
+      "id": "q_99",
       "questionNumber": 99,
       "questionText": "What is the function of the amniotic fluid surrounding the fetus in the uterus?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cushions the fetus against physical shocks, supports fetal movement, and maintains constant temperature"
-        },
-        {
-          "letter": "B",
-          "text": "Supplies oxygen directly to the fetal lungs for respiration"
-        },
-        {
-          "letter": "C",
-          "text": "Digests swallowed food particles inside the fetal stomach"
-        },
-        {
-          "letter": "D",
-          "text": "Produces red blood cells for the fetal circulatory system"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Amniotic fluid enclosed in the amnion cushions the fetus from external mechanical trauma, prevents the fetal skin from adhering to the amnion, and allows free muscular movement and skeletal development.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q100",
+      "id": "q_100",
       "questionNumber": 100,
       "questionText": "In amniocentesis, how do fetal cells from a Down's syndrome fetus differ from normal human cells?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They possess 47 chromosomes instead of 46, due to an extra copy of chromosome 21 (Trisomy 21)"
-        },
-        {
-          "letter": "B",
-          "text": "They lack a cell membrane and cytoplasm completely"
-        },
-        {
-          "letter": "C",
-          "text": "They contain only 23 single chromosomes in somatic cells"
-        },
-        {
-          "letter": "D",
-          "text": "They possess three X chromosomes and two Y chromosomes"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Down's syndrome is caused by non-disjunction of chromosome 21 during meiosis in gamete formation. The resulting individual has an extra 21st chromosome, bringing the total count to 47.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q101",
+      "id": "q_101",
       "questionNumber": 101,
       "questionText": "How can fetal sex be identified through microscopic examination of fetal cells obtained by amniocentesis?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Presence of two X chromosomes (XX) indicates a female; presence of one X and one Y chromosome (XY) indicates a male"
-        },
-        {
-          "letter": "B",
-          "text": "Female cells have chloroplasts while male cells have mitochondria"
-        },
-        {
-          "letter": "C",
-          "text": "Male cells contain only 20 chromosomes while female cells have 30"
-        },
-        {
-          "letter": "D",
-          "text": "Female cells have red nuclei while male cells have blue nuclei"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Karyotype analysis reveals sex chromosomes: an XX pair identifies a female fetus, whereas an XY pair identifies a male fetus.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q102",
+      "id": "q_102",
       "questionNumber": 102,
       "questionText": "Why is a pregnant woman's urine routinely analysed during antenatal clinic visits?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To test for glucose (screening for gestational diabetes) and protein (screening for pre-eclampsia and kidney damage)"
-        },
-        {
-          "letter": "B",
-          "text": "To check if the fetus has begun eating solid foods"
-        },
-        {
-          "letter": "C",
-          "text": "To count the number of fetal red blood cells present"
-        },
-        {
-          "letter": "D",
-          "text": "To measure the baby's adult height potential"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Routine urinalysis detects glucose (sign of gestational diabetes) and protein/albumin (indicator of pre-eclampsia and renal dysfunction), ensuring early medical intervention.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q103",
+      "id": "q_103",
       "questionNumber": 103,
       "questionText": "How do oxygen and glucose reach the fetus across the placenta without direct mixing of maternal and fetal blood?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They diffuse down concentration gradients from maternal blood in placental spaces across thin membranes into fetal capillaries"
-        },
-        {
-          "letter": "B",
-          "text": "Maternal red blood cells swim directly through open pores into the fetal aorta"
-        },
-        {
-          "letter": "C",
-          "text": "The umbilical artery pumps blood from the mother's heart directly to the baby's lungs"
-        },
-        {
-          "letter": "D",
-          "text": "The amniotic fluid absorbs nutrients from the mother's stomach and pumps them into the fetus"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Maternal and fetal blood systems remain physically separate. Oxygen dissociates from maternal haemoglobin and diffuses across the thin placental trophoblast membrane into fetal capillaries, binding to fetal haemoglobin.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q104",
+      "id": "q_104",
       "questionNumber": 104,
       "questionText": "What pathogen causes syphilis, and what is the characteristic sign of its primary stage?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bacterium (Treponema pallidum); a hard, painless sore (chancre) at the site of infection"
-        },
-        {
-          "letter": "B",
-          "text": "Virus (HIV); persistent dry cough and swollen glands"
-        },
-        {
-          "letter": "C",
-          "text": "Fungus (Candida albicans); white patches on the tongue"
-        },
-        {
-          "letter": "D",
-          "text": "Protozoan (Plasmodium); high shivering fever every 48 hours"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Syphilis is caused by the spirochete bacterium Treponema pallidum. Primary syphilis presents as a painless hard ulcer/chancre on external genitalia, mouth, or cervix.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q105",
+      "id": "q_105",
       "questionNumber": 105,
       "questionText": "Why can antibiotic medications (like penicillin) cure syphilis but have NO effect against AIDS?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Syphilis is caused by a bacterium which antibiotics destroy; AIDS is caused by HIV, a virus, and antibiotics do not affect viruses"
-        },
-        {
-          "letter": "B",
-          "text": "Penicillin is destroyed by stomach acid in AIDS patients"
-        },
-        {
-          "letter": "C",
-          "text": "Syphilis only affects red blood cells while AIDS affects nerve cells"
-        },
-        {
-          "letter": "D",
-          "text": "AIDS virus develops a thick cellulose cell wall that blocks drugs"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Antibiotics specifically disrupt bacterial cell wall synthesis or bacterial ribosomes. Viruses (like HIV) lack cell walls, have no independent metabolic machinery, and replicate inside host cells, making them completely immune to antibiotics.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q106",
+      "id": "q_106",
       "questionNumber": 106,
       "questionText": "Define the genetics terms 'homozygous' and 'recessive'.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Homozygous means having two identical alleles for a gene; recessive describes an allele only expressed when homozygous"
-        },
-        {
-          "letter": "B",
-          "text": "Homozygous means having one dominant and one recessive allele; recessive alleles are always expressed"
-        },
-        {
-          "letter": "C",
-          "text": "Homozygous refers to organisms that reproduce asexually; recessive refers to lethal mutations"
-        },
-        {
-          "letter": "D",
-          "text": "Homozygous means having 47 chromosomes; recessive means having 23 chromosomes"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Homozygous individuals have two copies of the same allele (e.g. BB or bb). A recessive allele is masked in the presence of a dominant allele and only produces its phenotype when homozygous (bb).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q107",
+      "id": "q_107",
       "questionNumber": 107,
       "questionText": "A homozygous black-haired mouse (BB) is crossed with a homozygous brown-haired mouse (bb). All offspring are black. Which is the dominant hair colour?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Black"
-        },
-        {
-          "letter": "B",
-          "text": "Brown"
-        },
-        {
-          "letter": "C",
-          "text": "Both colours are codominant"
-        },
-        {
-          "letter": "D",
-          "text": "Neither colour is dominant"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "When crossing true-breeding black and brown mice, all F1 offspring express black fur, proving the black allele (B) is dominant over the brown allele (b).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q108",
+      "id": "q_108",
       "questionNumber": 108,
       "questionText": "One of the heterozygous black mice (Bb) is bred with a homozygous brown mouse (bb). What is the expected phenotypic ratio among the offspring?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "1 Black : 1 Brown (50% black, 50% brown)"
-        },
-        {
-          "letter": "B",
-          "text": "3 Black : 1 Brown (75% black, 25% brown)"
-        },
-        {
-          "letter": "C",
-          "text": "100% Black"
-        },
-        {
-          "letter": "D",
-          "text": "100% Brown"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Punnett cross Bb \u00d7 bb gives gametes B, b from one parent and b, b from the other: genotypes 50% Bb (black) and 50% bb (brown), a 1:1 ratio.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Punnett cross Bb × bb gives gametes B, b from one parent and b, b from the other: genotypes 50% Bb (black) and 50% bb (brown), a 1:1 ratio.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q109",
+      "id": "q_109",
       "questionNumber": 109,
       "questionText": "Which type of cell division halves the chromosome number from diploid to haploid, producing four genetically varied gametes?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Meiosis"
-        },
-        {
-          "letter": "B",
-          "text": "Mitosis"
-        },
-        {
-          "letter": "C",
-          "text": "Binary fission"
-        },
-        {
-          "letter": "D",
-          "text": "Budding"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Meiosis is the reduction division occurring in the gonads (testes and ovaries) that halves chromosome number and introduces genetic variation into gametes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q110",
+      "id": "q_110",
       "questionNumber": 110,
       "questionText": "In a family pedigree for phenylketonuria (PKU), two unaffected parents have a child with PKU. Is the PKU allele dominant or recessive, and why?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Recessive; neither parent has the condition, showing the allele was masked in both heterozygous carrier parents"
-        },
-        {
-          "letter": "B",
-          "text": "Dominant; it skips generations randomly"
-        },
-        {
-          "letter": "C",
-          "text": "Codominant; both parents have mild symptoms"
-        },
-        {
-          "letter": "D",
-          "text": "Sex-linked dominant; only boys can inherit it"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "If unaffected parents produce an affected child, the allele must be recessive (parents are heterozygous carriers Hh; the child inherits hh). If dominant, at least one parent would have to show PKU.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q111",
+      "id": "q_111",
       "questionNumber": 111,
-      "questionText": "If parents are both heterozygous carriers of the PKU allele (Hh \u00d7 Hh), what are the possible genotypes of an unaffected sibling?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "HH or Hh"
-        },
-        {
-          "letter": "B",
-          "text": "hh only"
-        },
-        {
-          "letter": "C",
-          "text": "Hh only"
-        },
-        {
-          "letter": "D",
-          "text": "HH only"
-        }
-      ],
-      "correctAnswer": "A",
+      "questionText": "If parents are both heterozygous carriers of the PKU allele (Hh × Hh), what are the possible genotypes of an unaffected sibling?",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "An unaffected sibling does not have the genotype hh, so they can be either homozygous normal (HH, 1/3 probability) or a heterozygous carrier (Hh, 2/3 probability).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q112",
+      "id": "q_112",
       "questionNumber": 112,
       "questionText": "How does a down feather differ structurally and functionally from a flight feather on a bird?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Down feather has fluffy non-interlocking barbs and traps air for heat insulation; flight feather has a stiff vane for aerodynamic lift"
-        },
-        {
-          "letter": "B",
-          "text": "Down feather is waterproof and used for diving; flight feather generates metabolic heat"
-        },
-        {
-          "letter": "C",
-          "text": "Down feather is found only on the beak; flight feather is found on legs"
-        },
-        {
-          "letter": "D",
-          "text": "Down feather is rigid with large surface area; flight feather is soft and flexible"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Down feathers form a dense, fluffy underlayer close to the skin. Their barbs do not interlock, creating pockets of still trapped air that provide excellent thermal insulation in cold climates.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q113",
+      "id": "q_113",
       "questionNumber": 113,
       "questionText": "Cystic fibrosis is caused by a recessive allele (f). What is the genotype of a healthy carrier of cystic fibrosis?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ff"
-        },
-        {
-          "letter": "B",
-          "text": "FF"
-        },
-        {
-          "letter": "C",
-          "text": "ff"
-        },
-        {
-          "letter": "D",
-          "text": "XY"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "A carrier possesses one normal dominant allele (F) and one mutated recessive allele (f), represented by the heterozygous genotype Ff.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q114",
+      "id": "q_114",
       "questionNumber": 114,
       "questionText": "Can a man homozygous for the normal allele (FF) and a woman who is a carrier (Ff) produce a child with cystic fibrosis (ff)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "No, 0% chance; all children will inherit a dominant normal allele (F) from the father"
-        },
-        {
-          "letter": "B",
-          "text": "Yes, 25% chance"
-        },
-        {
-          "letter": "C",
-          "text": "Yes, 50% chance"
-        },
-        {
-          "letter": "D",
-          "text": "Yes, 100% chance"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Cross FF \u00d7 Ff yields 50% FF (normal) and 50% Ff (healthy carriers). None of the offspring can be ff, so zero children will suffer from cystic fibrosis.",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Cross FF × Ff yields 50% FF (normal) and 50% Ff (healthy carriers). None of the offspring can be ff, so zero children will suffer from cystic fibrosis.",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q115",
+      "id": "q_115",
       "questionNumber": 115,
       "questionText": "How does the accumulation of thick, sticky mucus harm a person suffering from cystic fibrosis?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Blocks bronchioles and alveoli causing breathing difficulty and infections, and blocks pancreatic ducts impairing digestion"
-        },
-        {
-          "letter": "B",
-          "text": "Causes excess bone calcification and joint rigidity"
-        },
-        {
-          "letter": "C",
-          "text": "Destroys white blood cells, causing leukaemia"
-        },
-        {
-          "letter": "D",
-          "text": "Prevents red blood cells from synthesising haemoglobin"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Defective chloride transport leads to dehydrated mucus. In the lungs, thick mucus clogs airways and traps pathogens. In the pancreas, it blocks enzyme ducts, causing malabsorption and weight loss.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q116",
+      "id": "q_116",
       "questionNumber": 116,
       "questionText": "What is the shape of an abnormal red blood cell from a sufferer of sickle cell anaemia under low oxygen conditions?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Sickle / crescent shaped"
-        },
-        {
-          "letter": "B",
-          "text": "Biconcave circular disc"
-        },
-        {
-          "letter": "C",
-          "text": "Spherical globule"
-        },
-        {
-          "letter": "D",
-          "text": "Flat square plate"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Under low oxygen tension, abnormal haemoglobin (HbS) polymerises into rigid crystalline rods, distorting the red blood cell into a rigid, fragile sickle or crescent shape.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q117",
+      "id": "q_117",
       "questionNumber": 117,
       "questionText": "What is the genotype of a person with the sickle cell trait (heterozygous carrier)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "HA HS"
-        },
-        {
-          "letter": "B",
-          "text": "HA HA"
-        },
-        {
-          "letter": "C",
-          "text": "HS HS"
-        },
-        {
-          "letter": "D",
-          "text": "Hh"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Because the normal haemoglobin allele (HA) and the sickle haemoglobin allele (HS) are codominant, the heterozygous carrier genotype is written as HA HS.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q118",
+      "id": "q_118",
       "questionNumber": 118,
       "questionText": "Which genotype provides the greatest natural protection against severe malaria in tropical regions?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "HA HS (heterozygous sickle cell trait)"
-        },
-        {
-          "letter": "B",
-          "text": "HA HA (homozygous normal)"
-        },
-        {
-          "letter": "C",
-          "text": "HS HS (homozygous sickle cell anaemia)"
-        },
-        {
-          "letter": "D",
-          "text": "O negative"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Individuals heterozygous for sickle cell (HA HS) enjoy the 'heterozygote advantage': the malaria parasite Plasmodium cannot multiply effectively in red cells containing HbS, granting resistance against fatal malaria.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q119",
+      "id": "q_119",
       "questionNumber": 119,
       "questionText": "A man suffering from sickle cell anaemia (HS HS) marries a woman who is a carrier (HA HS). What percentage of their children is predicted to suffer from sickle cell anaemia?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "50%"
-        },
-        {
-          "letter": "B",
-          "text": "25%"
-        },
-        {
-          "letter": "C",
-          "text": "75%"
-        },
-        {
-          "letter": "D",
-          "text": "0%"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The cross is HS HS \u00d7 HA HS. The father provides only HS gametes; the mother provides 50% HA and 50% HS. Offspring: 50% HA HS (carriers) and 50% HS HS (sufferers).",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "The cross is HS HS × HA HS. The father provides only HS gametes; the mother provides 50% HA and 50% HS. Offspring: 50% HA HS (carriers) and 50% HS HS (sufferers).",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q120",
+      "id": "q_120",
       "questionNumber": 120,
       "questionText": "What is the term for the process where individual organisms with characteristics best suited to their environment survive, reproduce, and pass on advantageous alleles?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Natural selection"
-        },
-        {
-          "letter": "B",
-          "text": "Artificial selection"
-        },
-        {
-          "letter": "C",
-          "text": "Genetic engineering"
-        },
-        {
-          "letter": "D",
-          "text": "Adaptive radiation"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Natural selection is the mechanism of evolution: individuals possessing advantageous phenotypic traits have higher reproductive fitness, increasing favorable allele frequencies over generations.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q121",
+      "id": "q_121",
       "questionNumber": 121,
       "questionText": "Using a dichotomous key for arthropods, which disease-carrying insect has wings shorter than its abdomen?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Anopheles mosquito"
-        },
-        {
-          "letter": "B",
-          "text": "Musca housefly"
-        },
-        {
-          "letter": "C",
-          "text": "Pulex flea"
-        },
-        {
-          "letter": "D",
-          "text": "Pediculus human louse"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "In the 0610 dichotomous key: wings present \u2192 wings shorter than abdomen identifies the Anopheles mosquito; wings longer than abdomen identifies the housefly (Musca).",
-      "answerConfidence": "high"
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "In the 0610 dichotomous key: wings present → wings shorter than abdomen identifies the Anopheles mosquito; wings longer than abdomen identifies the housefly (Musca).",
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q122",
+      "id": "q_122",
       "questionNumber": 122,
       "questionText": "Which disease vector is an arachnid possessing four pairs of legs and no wings?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Ornithodorus tick"
-        },
-        {
-          "letter": "B",
-          "text": "Anopheles mosquito"
-        },
-        {
-          "letter": "C",
-          "text": "Pediculus louse"
-        },
-        {
-          "letter": "D",
-          "text": "Glossina tsetse fly"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Ticks such as Ornithodorus belong to the class Arachnida. Adults have 4 pairs of jointed legs (8 legs), lack wings, and have no antennae.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q123",
+      "id": "q_123",
       "questionNumber": 123,
       "questionText": "In the binomial naming system for the lion, Panthera leo, what do the two names represent?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Panthera is the genus name; leo is the species name"
-        },
-        {
-          "letter": "B",
-          "text": "Panthera is the family; leo is the kingdom"
-        },
-        {
-          "letter": "C",
-          "text": "Panthera is the species; leo is the variety"
-        },
-        {
-          "letter": "D",
-          "text": "Panthera is the common name; leo is the Latin order"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Under the Linnaean binomial system, the first word represents the Genus (capitalized) and the second word represents the specific epithet or species (lowercase).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q124",
+      "id": "q_124",
       "questionNumber": 124,
       "questionText": "State two structural features that distinguish bacteria from viruses.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bacteria have a cell wall and cell membrane; viruses have only a protein coat and no cellular structures"
-        },
-        {
-          "letter": "B",
-          "text": "Bacteria contain only RNA; viruses contain only circular DNA"
-        },
-        {
-          "letter": "C",
-          "text": "Bacteria are always non-living crystals; viruses carry out independent respiration"
-        },
-        {
-          "letter": "D",
-          "text": "Bacteria have no ribosomes; viruses have numerous chloroplasts"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Bacteria are cellular organisms with peptidoglycan walls, cell membranes, cytoplasm, and ribosomes that reproduce independently. Viruses consist solely of a DNA/RNA core in a protein capsid and cannot reproduce outside host cells.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q125",
+      "id": "q_125",
       "questionNumber": 125,
       "questionText": "State two features that distinguish arachnids (e.g. spiders) from crustaceans (e.g. crabs).",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Arachnids have 4 pairs of walking legs and no antennae; crustaceans have 5+ pairs of legs and 2 pairs of antennae"
-        },
-        {
-          "letter": "B",
-          "text": "Arachnids have 3 pairs of legs and wings; crustaceans have 4 pairs of legs and no carapace"
-        },
-        {
-          "letter": "C",
-          "text": "Arachnids have gills; crustaceans breathe through spiracles"
-        },
-        {
-          "letter": "D",
-          "text": "Arachnids have compound eyes; crustaceans have only simple ocelli"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Arachnids have 8 legs (4 pairs), chelicerae, simple eyes, and zero antennae. Crustaceans have 10+ legs (5+ pairs), 2 pairs of antennae, compound eyes, and a calcified exoskeleton/carapace.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q126",
+      "id": "q_126",
       "questionNumber": 126,
       "questionText": "Which characteristics distinguish monocotyledonous plants from dicotyledonous plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Monocots have one cotyledon, parallel leaf veins, and fibrous roots; dicots have two cotyledons, net veins, and a taproot"
-        },
-        {
-          "letter": "B",
-          "text": "Monocots have broad leaves and woody bark; dicots have narrow leaves and no flowers"
-        },
-        {
-          "letter": "C",
-          "text": "Monocots have floral parts in multiples of 4 or 5; dicots have floral parts in 3s"
-        },
-        {
-          "letter": "D",
-          "text": "Monocots have vascular bundles in a ring; dicots have scattered bundles"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Monocots possess a single seed leaf, parallel venation, floral organs in multiples of three, and fibrous roots. Dicots possess two seed leaves, branching reticulate venation, floral parts in 4s or 5s, and a taproot.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q127",
+      "id": "q_127",
       "questionNumber": 127,
       "questionText": "Why are fungi classified into their own distinct kingdom rather than being grouped with plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Fungi lack chlorophyll, cannot perform photosynthesis, and have chitinous cell walls rather than cellulose"
-        },
-        {
-          "letter": "B",
-          "text": "Fungi are all single-celled prokaryotes"
-        },
-        {
-          "letter": "C",
-          "text": "Fungi have animal-like muscles and nervous systems"
-        },
-        {
-          "letter": "D",
-          "text": "Fungi possess blood vessels and pump haemoglobin"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Fungi are heterotrophic saprophytes or parasites that do not contain chloroplasts or synthesize chlorophyll. Their cell walls are composed of chitin, whereas plant walls are composed of cellulose.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q128",
+      "id": "q_128",
       "questionNumber": 128,
       "questionText": "State two structural features of insects that have contributed to their immense evolutionary success across diverse habitats.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Wings allowing flight/dispersal and an impermeable chitinous exoskeleton preventing desiccation"
-        },
-        {
-          "letter": "B",
-          "text": "Soft permeable skin and heavy bones"
-        },
-        {
-          "letter": "C",
-          "text": "Single-chambered heart and external gills"
-        },
-        {
-          "letter": "D",
-          "text": "Lobe-finned limbs and lack of antennae"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Wings enable flight to locate food, find mates, and escape predators. The waterproof, waxy, chitinous cuticle prevents water loss in terrestrial and arid habitats, while high reproductive fecundity ensures rapid adaptation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q129",
+      "id": "q_129",
       "questionNumber": 129,
       "questionText": "Which anatomical feature is unique to birds and distinguishes them from all other vertebrate classes?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Presence of feathers"
-        },
-        {
-          "letter": "B",
-          "text": "Laying amniotic eggs"
-        },
-        {
-          "letter": "C",
-          "text": "Having a backbone of vertebrae"
-        },
-        {
-          "letter": "D",
-          "text": "Being endothermic (warm-blooded)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Feathers are unique to the class Aves (birds). Other classes share endothermy (mammals) or egg laying (reptiles, amphibians, fish), but only birds possess feathers.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q130",
+      "id": "q_130",
       "questionNumber": 130,
       "questionText": "In the nitrogen cycle, which group of bacteria lives in the root nodules of leguminous plants and converts atmospheric N2 into ammonium?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Nitrogen-fixing bacteria (Rhizobium)"
-        },
-        {
-          "letter": "B",
-          "text": "Nitrifying bacteria (Nitrobacter)"
-        },
-        {
-          "letter": "C",
-          "text": "Denitrifying bacteria (Pseudomonas)"
-        },
-        {
-          "letter": "D",
-          "text": "Decomposing fungi (Penicillium)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Symbiotic nitrogen-fixing bacteria (Rhizobium) colonize root nodules of legumes, reducing atmospheric N2 gas into ammonium compounds used by the plant to synthesize proteins.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q131",
+      "id": "q_131",
       "questionNumber": 131,
       "questionText": "What is the role of nitrifying bacteria in the soil nitrogen cycle?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Convert ammonium compounds into nitrites and then into nitrates"
-        },
-        {
-          "letter": "B",
-          "text": "Convert nitrates into free atmospheric nitrogen gas"
-        },
-        {
-          "letter": "C",
-          "text": "Break down dead leaves into starch"
-        },
-        {
-          "letter": "D",
-          "text": "Fix nitrogen gas directly into carbohydrates"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Nitrifying bacteria are chemosynthetic aerobes: Nitrosomonas oxidizes ammonium ions into nitrites, and Nitrobacter oxidizes nitrites into nitrates, the form most readily absorbed by plant roots.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q132",
+      "id": "q_132",
       "questionNumber": 132,
       "questionText": "If grassland is converted into farmland and maize is grown continuously year after year without fertiliser, what happens to soil nitrates and crop yield?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Harvesting crops removes nitrogen compounds from the field, soil nitrates deplete, and maize yields decrease over time"
-        },
-        {
-          "letter": "B",
-          "text": "Soil nitrates increase exponentially due to maize root secretions"
-        },
-        {
-          "letter": "C",
-          "text": "Crop yield increases each year because weeds are eliminated"
-        },
-        {
-          "letter": "D",
-          "text": "Nitrogen gas in the air replaces all harvested minerals automatically"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "When crops are harvested and removed, plant biomass is no longer returned to the soil for decay and nitrification. Soil nitrates are progressively exhausted, leading to stunted crops and declining yields.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q133",
+      "id": "q_133",
       "questionNumber": 133,
       "questionText": "How can a farmer maintain high crop yields without relying exclusively on expensive synthetic chemical fertilisers?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Apply animal manure/compost and practice crop rotation with leguminous crops"
-        },
-        {
-          "letter": "B",
-          "text": "Flood the field with seawater every spring"
-        },
-        {
-          "letter": "C",
-          "text": "Burn all crop residues and remove the ash from the farm"
-        },
-        {
-          "letter": "D",
-          "text": "Plow the soil five times a day during the dry season"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Organic manure and compost return decaying biomass to soil. Growing legumes (beans, groundnuts, clover) in rotation enriches soil nitrates naturally through symbiotic nitrogen fixation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q134",
+      "id": "q_134",
       "questionNumber": 134,
       "questionText": "In a freshwater pond food web, what is the trophic level of microscopic photosynthetic algae?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Producers (Trophic level 1)"
-        },
-        {
-          "letter": "B",
-          "text": "Primary consumers (Trophic level 2)"
-        },
-        {
-          "letter": "C",
-          "text": "Secondary consumers (Trophic level 3)"
-        },
-        {
-          "letter": "D",
-          "text": "Tertiary consumers (Trophic level 4)"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Algae and phytoplankton are photosynthetic autotrophs that trap light energy and manufacture organic matter, occupying the first trophic level as producers.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q135",
+      "id": "q_135",
       "questionNumber": 135,
       "questionText": "Why are food chains in nature typically limited to only four or five trophic levels?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Approximately 90% of energy is lost at each trophic stage via respiration, movement, and heat, leaving insufficient energy to support higher levels"
-        },
-        {
-          "letter": "B",
-          "text": "Predators at the top of the chain run out of water"
-        },
-        {
-          "letter": "C",
-          "text": "Animals at higher levels produce too many offspring to survive"
-        },
-        {
-          "letter": "D",
-          "text": "Decomposers consume all top carnivores before they can hunt"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Due to the second law of thermodynamics, roughly 90% of energy is dissipated as metabolic heat or lost in excretion/uneaten parts. By the 4th or 5th trophic level, remaining energy is insufficient to sustain a viable population.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q136",
+      "id": "q_136",
       "questionNumber": 136,
       "questionText": "In a sigmoid (S-shaped) population growth curve, what causes the population to transition from exponential growth into a stationary plateau?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Environmental limiting factors such as food shortages, competition for space, predators, and disease balance birth and death rates"
-        },
-        {
-          "letter": "B",
-          "text": "Organisms stop reproducing entirely due to old age"
-        },
-        {
-          "letter": "C",
-          "text": "Sunlight levels decrease permanently across the entire habitat"
-        },
-        {
-          "letter": "D",
-          "text": "The population evolves into a new species with fewer individuals"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "As population density nears the habitat's carrying capacity, density-dependent limiting factors (competition for food, shelter, disease, accumulation of waste) increase the death rate until births equal deaths.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q137",
+      "id": "q_137",
       "questionNumber": 137,
       "questionText": "Why has the global human population continued to grow exponentially rather than leveling off at a natural carrying capacity plateau?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Medical advances, vaccines, modern agricultural machinery, synthetic fertilisers, and improved sanitation have drastically reduced death rates"
-        },
-        {
-          "letter": "B",
-          "text": "Humans no longer require water or oxygen to survive"
-        },
-        {
-          "letter": "C",
-          "text": "Human gestation has shortened from nine months to three months"
-        },
-        {
-          "letter": "D",
-          "text": "Natural disasters and climate patterns have completely stopped"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Human technological innovation (sanitation, antibiotics, immunizations, synthetic fertilizers, global food distribution, disease control) has overcome natural limiting factors and lowered infant and adult mortality worldwide.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q138",
+      "id": "q_138",
       "questionNumber": 138,
       "questionText": "In an African savanna food web, what immediate effect is expected on the water buffalo population if a massive grasshopper swarm consumes most of the grass?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Water buffalo population will decrease because grasshoppers drastically reduce the available grass food supply"
-        },
-        {
-          "letter": "B",
-          "text": "Water buffalo will switch to hunting lions for food"
-        },
-        {
-          "letter": "C",
-          "text": "Water buffalo population will double because grasshoppers fertilize the soil"
-        },
-        {
-          "letter": "D",
-          "text": "Water buffalo will grow wings to find grass elsewhere"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Water buffalo are herbivorous grazers that depend directly on grass. Competition from a massive swarm of grasshoppers severely reduces food availability, resulting in starvation and population decline.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q139",
+      "id": "q_139",
       "questionNumber": 139,
       "questionText": "Why are isolated oceanic islands like South Uist easily colonized by birds but rarely colonized by non-flying mammals?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Birds can fly across ocean barriers, whereas terrestrial mammals cannot swim long oceanic distances"
-        },
-        {
-          "letter": "B",
-          "text": "Islands have no oxygen in the air for mammals"
-        },
-        {
-          "letter": "C",
-          "text": "Marine water contains chemicals that repel mammals but attract birds"
-        },
-        {
-          "letter": "D",
-          "text": "Mammals cannot digest seeds or plants growing on islands"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Flight enables birds to cross wide stretches of open sea and establish breeding populations on isolated islands. Non-volant terrestrial mammals are blocked by marine barriers.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q140",
+      "id": "q_140",
       "questionNumber": 140,
       "questionText": "Why did the introduction of hedgehogs onto South Uist island threaten native ground-nesting Corncrake birds with extinction?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hedgehogs eat ground-nesting Corncrake eggs and compete with them for soil earthworms and insects"
-        },
-        {
-          "letter": "B",
-          "text": "Hedgehogs spread fungal diseases that destroy hay grass"
-        },
-        {
-          "letter": "C",
-          "text": "Hedgehogs hunt adult Corncrakes during flight"
-        },
-        {
-          "letter": "D",
-          "text": "Hedgehogs drink all the freshwater ponds on the island"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Corncrakes nest directly on the ground in hayfields. Introduced hedgehogs have few natural island predators and prey heavily on unprotected bird eggs and chicks, while competing for invertebrate food.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q141",
+      "id": "q_141",
       "questionNumber": 141,
       "questionText": "State two effective conservation measures to prevent the extinction of endangered ground-nesting birds on islands invaded by non-native predators.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Eradicating or trapping the introduced predators, and establishing predator-free fenced wildlife reserves"
-        },
-        {
-          "letter": "B",
-          "text": "Burning all nesting hayfields each spring"
-        },
-        {
-          "letter": "C",
-          "text": "Spraying toxic organophosphate insecticides across all fields"
-        },
-        {
-          "letter": "D",
-          "text": "Introducing foxes and feral cats to hunt the hedgehogs"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Key conservation strategies include systematic eradication/removal of alien predators, creating fenced predator-proof breeding sanctuaries, delayed mowing practices, and captive breeding.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q142",
+      "id": "q_142",
       "questionNumber": 142,
       "questionText": "What is the initial trigger in the process of aquatic eutrophication when untreated sewage or fertilizer enters a freshwater lake?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Excess nitrates and phosphates cause rapid, explosive proliferation of surface algae (algal bloom)"
-        },
-        {
-          "letter": "B",
-          "text": "Water temperature drops to freezing immediately"
-        },
-        {
-          "letter": "C",
-          "text": "Dissolved oxygen levels spike to 100%, poisoning fish gills"
-        },
-        {
-          "letter": "D",
-          "text": "Water acidity dissolves the shell of all freshwater snails"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "High concentrations of dissolved nitrates and phosphates act as limiting nutrients, sparking rapid, explosive growth of phytoplankton and filamentous algae across the lake surface (algal bloom).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q143",
+      "id": "q_143",
       "questionNumber": 143,
       "questionText": "Why do submerged aquatic plants die during a severe algal bloom in a eutrophic lake?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Dense surface algal mats block sunlight, preventing submerged plants from carrying out photosynthesis"
-        },
-        {
-          "letter": "B",
-          "text": "Surface algae pump toxic carbon monoxide into deep water"
-        },
-        {
-          "letter": "C",
-          "text": "Algae physically uproot submerged plants from the lakebed"
-        },
-        {
-          "letter": "D",
-          "text": "Submerged plants absorb too much nitrogen and burst"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The dense green layer of surface algae absorbs and reflects incoming sunlight. Light cannot penetrate to deeper water, so benthic and submerged aquatic vegetation cannot photosynthesize and dies.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q144",
+      "id": "q_144",
       "questionNumber": 144,
       "questionText": "Why do dissolved oxygen levels drop drastically to near zero during the advanced stages of eutrophication?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Aerobic decomposing bacteria multiply massively to feed on dead plants and consume oxygen during cellular respiration"
-        },
-        {
-          "letter": "B",
-          "text": "Fish drink all the water containing dissolved oxygen"
-        },
-        {
-          "letter": "C",
-          "text": "Nitrate ions react with oxygen to form solid nitrogen rock"
-        },
-        {
-          "letter": "D",
-          "text": "Water molecules break down into hydrogen gas that evaporates"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Masses of dead algae and submerged plants provide a vast organic substrate for saprophytic bacteria. These aerobic decomposers multiply rapidly and consume dissolved oxygen in respiration, creating fatal hypoxic/anoxic conditions.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q145",
+      "id": "q_145",
       "questionNumber": 145,
       "questionText": "What is the primary physical process carried out in the first screening stage of modern sewage treatment?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Passing sewage through metal bar screens to remove large floating solids like rags, plastics, and sticks"
-        },
-        {
-          "letter": "B",
-          "text": "Bubbling ozone gas to destroy viral genomes"
-        },
-        {
-          "letter": "C",
-          "text": "Spraying effluent over crushed stone beds"
-        },
-        {
-          "letter": "D",
-          "text": "Adding sodium hydroxide to dissolve all proteins"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "The primary screening stage relies on coarse metal grates and fine screens to mechanically filter out large, non-biodegradable debris that would otherwise clog pumps and treatment channels.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q146",
+      "id": "q_146",
       "questionNumber": 146,
       "questionText": "What biological process takes place in the aeration tanks (or trickling filters) during secondary sewage treatment?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Aerobic microorganisms (bacteria and protoctists) feed on dissolved organic pollutants, breaking them down into harmless minerals"
-        },
-        {
-          "letter": "B",
-          "text": "Anaerobic fermenters convert all water into pure methane fuel"
-        },
-        {
-          "letter": "C",
-          "text": "Chlorine gas is bubbled through to sterilize all enzymes"
-        },
-        {
-          "letter": "D",
-          "text": "Centrifugal pumps evaporate water into pure steam"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "In trickling filter beds or activated sludge aeration tanks, air is continuously supplied so colonies of aerobic bacteria, fungi, and protoctists can oxidize dissolved organic wastes into CO2, water, and harmless mineral ions.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q147",
+      "id": "q_147",
       "questionNumber": 147,
       "questionText": "Why is the final clear water effluent treated with chlorine gas or ultraviolet (UV) irradiation before discharge into natural waterways?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To disinfect the water by killing any remaining pathogenic bacteria and viruses"
-        },
-        {
-          "letter": "B",
-          "text": "To increase the water's sugar concentration for river fish"
-        },
-        {
-          "letter": "C",
-          "text": "To remove heavy sand particles that passed through filters"
-        },
-        {
-          "letter": "D",
-          "text": "To lower the water's temperature below 0\u00b0C"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Chlorination or UV disinfection is the tertiary treatment step that destroys waterborne pathogens (e.g. Vibrio cholerae, Salmonella typhi, viral enteroviruses) before effluent is released into rivers or reservoirs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q148",
+      "id": "q_148",
       "questionNumber": 148,
       "questionText": "State two morphological leaf adaptations of xerophytic desert plants that minimise transpirational water loss.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Thick waxy cuticle and sunken stomata in pits"
-        },
-        {
-          "letter": "B",
-          "text": "Broad thin leaves with high stomatal density on both sides"
-        },
-        {
-          "letter": "C",
-          "text": "Absence of cell walls and large open stomata at midday"
-        },
-        {
-          "letter": "D",
-          "text": "Aerial breathing roots and translucent papery epidermis"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Xerophytes have a thick impermeable waxy cuticle that blocks evaporation, and stomata sunken in pits or hair-lined grooves that trap humid air, reducing the diffusion gradient and minimizing transpiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q149",
+      "id": "q_149",
       "questionNumber": 149,
       "questionText": "Why do desert cacti have leaves reduced to sharp spines?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Spines reduce the surface-area-to-volume ratio for transpiration and deter thirsty herbivores from eating succulent tissues"
-        },
-        {
-          "letter": "B",
-          "text": "Spines trap airborne water droplets from passing clouds to drink directly"
-        },
-        {
-          "letter": "C",
-          "text": "Spines conduct photosynthesis at night using moonlight"
-        },
-        {
-          "letter": "D",
-          "text": "Spines release methane gas to cool the plant stem"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Modifying leaves into spines drastically reduces surface area where water could be lost by transpiration, while stem tissues take over photosynthesis and store water. Spines also protect against grazing animals.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     },
     {
-      "id": "bio_0610_q150",
+      "id": "q_150",
       "questionNumber": 150,
       "questionText": "How does the extensive root system of desert xerophytes aid survival in arid environments?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Deep taproots reach down to the underground water table, while shallow lateral roots rapidly absorb brief rainwater"
-        },
-        {
-          "letter": "B",
-          "text": "Roots absorb oxygen directly from underground limestone caves"
-        },
-        {
-          "letter": "C",
-          "text": "Roots produce chemical fertilizers that convert sand into fertile loam"
-        },
-        {
-          "letter": "D",
-          "text": "Roots pump water out of the plant into soil to keep surroundings moist"
-        }
-      ],
-      "correctAnswer": "A",
+      "options": [],
+      "correctAnswer": null,
       "explanation": "Desert xerophytes exhibit dual root strategies: long penetrating taproots reach deep water reserves, while wide-spreading shallow root networks immediately capture rainfall from sudden desert showers before surface evaporation occurs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Structured Theory"
     }
   ]
 }

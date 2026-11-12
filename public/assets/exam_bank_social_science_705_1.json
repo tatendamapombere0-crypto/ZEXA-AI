@@ -1,20 +1,24 @@
 {
   "paperInfo": {
+    "id": "exam_bank_social_science_705_1",
+    "file": "exam_bank_social_science_705_1.json",
     "subject": "Social Science",
     "level": "Primary",
     "paperCode": "705/1",
     "paperName": "Grade 7 Social Science Paper 1 (Practice - Multiple Choice)",
-    "paperType": "Practice Paper"
+    "paperType": "Multiple Choice",
+    "questionCount": 40,
+    "totalQuestions": 40
   },
   "questions": [
     {
-      "id": "ss705_1_q1",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "Which relative belongs to a person's extended family?",
       "options": [
         {
           "letter": "A",
-          "text": "mother"
+          "text": "uncle"
         },
         {
           "letter": "B",
@@ -22,19 +26,20 @@
         },
         {
           "letter": "C",
-          "text": "uncle"
+          "text": "mother"
         },
         {
           "letter": "D",
           "text": "sister"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "An uncle is part of the extended family, while mother, father and sister belong to the nuclear family.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q2",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "A family in which a child takes care of younger siblings after the death of both parents is called a",
       "options": [
@@ -57,10 +62,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "A child-headed family is one where a child, usually the eldest sibling, takes on responsibility for the household.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q3",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "Which action shows respect for an elder in Zimbabwean culture?",
       "options": [
@@ -70,29 +76,30 @@
         },
         {
           "letter": "B",
-          "text": "greeting them politely and kneeling where customary"
+          "text": "ignoring their advice"
         },
         {
           "letter": "C",
-          "text": "ignoring their advice"
+          "text": "greeting them politely and kneeling where customary"
         },
         {
           "letter": "D",
           "text": "walking away when they speak"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Greeting elders politely, and kneeling in cultures where this is customary, shows respect.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q4",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "Which practice helps build cooperation between families in a rural community?",
       "options": [
         {
           "letter": "A",
-          "text": "nhimbe/ilima (communal work party)"
+          "text": "avoiding neighbours"
         },
         {
           "letter": "B",
@@ -104,25 +111,26 @@
         },
         {
           "letter": "D",
-          "text": "avoiding neighbours"
+          "text": "nhimbe/ilima (communal work party)"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Nhimbe/ilima brings community members together to help each other with farm or household tasks.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q5",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "A family with one husband and more than one wife is called a",
       "options": [
         {
           "letter": "A",
-          "text": "monogamous family"
+          "text": "polygamous family"
         },
         {
           "letter": "B",
-          "text": "polygamous family"
+          "text": "monogamous family"
         },
         {
           "letter": "C",
@@ -133,12 +141,13 @@
           "text": "nuclear family"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "A polygamous family has one spouse married to more than one partner, typically one husband with multiple wives.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q6",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Which of these is a responsibility a Grade 7 learner has at home?",
       "options": [
@@ -161,10 +170,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Learners are expected to help with age-appropriate chores as part of their family responsibilities.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q7",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "Which practice helps prevent tooth decay?",
       "options": [
@@ -174,23 +184,24 @@
         },
         {
           "letter": "B",
-          "text": "brushing teeth regularly"
+          "text": "avoiding water"
         },
         {
           "letter": "C",
-          "text": "avoiding water"
+          "text": "brushing teeth regularly"
         },
         {
           "letter": "D",
           "text": "chewing on hard objects"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Regular brushing removes plaque and food particles that cause tooth decay.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q8",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "Which of these is a communicable disease?",
       "options": [
@@ -200,7 +211,7 @@
         },
         {
           "letter": "B",
-          "text": "tuberculosis"
+          "text": "arthritis"
         },
         {
           "letter": "C",
@@ -208,21 +219,22 @@
         },
         {
           "letter": "D",
-          "text": "arthritis"
+          "text": "tuberculosis"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Tuberculosis is caused by bacteria and can spread from person to person, making it communicable.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q9",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Failing to provide a child with food and shelter violates the child's right to",
       "options": [
         {
           "letter": "A",
-          "text": "religion"
+          "text": "an adequate standard of living"
         },
         {
           "letter": "B",
@@ -230,19 +242,20 @@
         },
         {
           "letter": "C",
-          "text": "an adequate standard of living"
+          "text": "religion"
         },
         {
           "letter": "D",
           "text": "freedom of speech"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Food and shelter fall under a child's right to an adequate standard of living.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q10",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "Hitting or beating a child is a form of",
       "options": [
@@ -265,16 +278,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "Physical abuse involves causing bodily harm, such as hitting or beating.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q11",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "Which of the following is a healthy lifestyle practice?",
       "options": [
         {
           "letter": "A",
-          "text": "regular physical exercise"
+          "text": "avoiding all physical activity"
         },
         {
           "letter": "B",
@@ -282,19 +296,20 @@
         },
         {
           "letter": "C",
-          "text": "avoiding all physical activity"
+          "text": "regular physical exercise"
         },
         {
           "letter": "D",
           "text": "skipping meals frequently"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Regular physical exercise supports overall physical and mental health.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q12",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "Immunising babies mainly helps to",
       "options": [
@@ -304,7 +319,7 @@
         },
         {
           "letter": "B",
-          "text": "protect babies from certain diseases"
+          "text": "improve babies' eyesight"
         },
         {
           "letter": "C",
@@ -312,25 +327,26 @@
         },
         {
           "letter": "D",
-          "text": "improve babies' eyesight"
+          "text": "protect babies from certain diseases"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Immunisation protects infants by building resistance against specific infectious diseases.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q13",
+      "id": "q_13",
       "questionNumber": 13,
       "questionText": "One effect of HIV and AIDS on communities is an increase in",
       "options": [
         {
           "letter": "A",
-          "text": "population growth"
+          "text": "child-headed households"
         },
         {
           "letter": "B",
-          "text": "child-headed households"
+          "text": "population growth"
         },
         {
           "letter": "C",
@@ -341,12 +357,13 @@
           "text": "employment rates"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "HIV and AIDS can leave children without parents, increasing the number of child-headed households.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q14",
+      "id": "q_14",
       "questionNumber": 14,
       "questionText": "Jesus Christ's followers who travelled with him and learned from him were called",
       "options": [
@@ -369,10 +386,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The twelve close followers of Jesus Christ are referred to as his disciples.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q15",
+      "id": "q_15",
       "questionNumber": 15,
       "questionText": "In Christianity, baptism mainly symbolises",
       "options": [
@@ -382,23 +400,24 @@
         },
         {
           "letter": "B",
-          "text": "cleansing from sin and entry into the faith"
+          "text": "reaching adulthood"
         },
         {
           "letter": "C",
-          "text": "reaching adulthood"
+          "text": "cleansing from sin and entry into the faith"
         },
         {
           "letter": "D",
           "text": "becoming a religious leader"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Baptism symbolises spiritual cleansing and initiation into the Christian faith.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q16",
+      "id": "q_16",
       "questionNumber": 16,
       "questionText": "The holy book of Judaism, containing its foundational laws and teachings, is called the",
       "options": [
@@ -408,7 +427,7 @@
         },
         {
           "letter": "B",
-          "text": "Torah"
+          "text": "Vedas"
         },
         {
           "letter": "C",
@@ -416,21 +435,22 @@
         },
         {
           "letter": "D",
-          "text": "Vedas"
+          "text": "Torah"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The Torah is the central sacred text of Judaism.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q17",
+      "id": "q_17",
       "questionNumber": 17,
       "questionText": "Jews traditionally gather to worship in a building called a",
       "options": [
         {
           "letter": "A",
-          "text": "mosque"
+          "text": "synagogue"
         },
         {
           "letter": "B",
@@ -438,19 +458,20 @@
         },
         {
           "letter": "C",
-          "text": "synagogue"
+          "text": "mosque"
         },
         {
           "letter": "D",
           "text": "shrine"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Jewish communal worship traditionally takes place in a synagogue.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q18",
+      "id": "q_18",
       "questionNumber": 18,
       "questionText": "Which of the Five Pillars of Islam involves travelling to Mecca?",
       "options": [
@@ -460,23 +481,24 @@
         },
         {
           "letter": "B",
-          "text": "Zakat"
+          "text": "Hajj"
         },
         {
           "letter": "C",
-          "text": "Hajj"
+          "text": "Zakat"
         },
         {
           "letter": "D",
           "text": "Salah"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Hajj is the pilgrimage to Mecca that Muslims are expected to undertake at least once if able.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q19",
+      "id": "q_19",
       "questionNumber": 19,
       "questionText": "In Indigenous Religion, a person who communicates with ancestral spirits on behalf of the family or community is called a",
       "options": [
@@ -486,23 +508,24 @@
         },
         {
           "letter": "B",
-          "text": "spirit medium/n'anga"
+          "text": "headman"
         },
         {
           "letter": "C",
-          "text": "headman"
+          "text": "spirit medium/n'anga"
         },
         {
           "letter": "D",
           "text": "teacher"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "A spirit medium or n'anga is believed to communicate with ancestral spirits.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q20",
+      "id": "q_20",
       "questionNumber": 20,
       "questionText": "A ceremony held about a year after a death, believed to welcome the deceased's spirit back as an ancestor, is called",
       "options": [
@@ -512,7 +535,7 @@
         },
         {
           "letter": "B",
-          "text": "kurova guva"
+          "text": "nhimbe"
         },
         {
           "letter": "C",
@@ -520,21 +543,22 @@
         },
         {
           "letter": "D",
-          "text": "nhimbe"
+          "text": "kurova guva"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Kurova guva is the ceremony performed to formally welcome a deceased person's spirit back as a family ancestor.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q21",
+      "id": "q_21",
       "questionNumber": 21,
       "questionText": "Which symbol is closely associated with Christianity?",
       "options": [
         {
           "letter": "A",
-          "text": "the Star of David"
+          "text": "the Cross"
         },
         {
           "letter": "B",
@@ -542,19 +566,20 @@
         },
         {
           "letter": "C",
-          "text": "the Cross"
+          "text": "the Star of David"
         },
         {
           "letter": "D",
           "text": "the Wheel"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The Cross represents Jesus Christ's crucifixion and is a central Christian symbol.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q22",
+      "id": "q_22",
       "questionNumber": 22,
       "questionText": "Which pre-colonial state is associated with the building of Great Zimbabwe?",
       "options": [
@@ -564,23 +589,24 @@
         },
         {
           "letter": "B",
-          "text": "Rozvi State"
+          "text": "Torwa State"
         },
         {
           "letter": "C",
-          "text": "Torwa State"
+          "text": "Rozvi State"
         },
         {
           "letter": "D",
           "text": "Ndebele State"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The Torwa State is associated with building and later occupying the Great Zimbabwe monument complex in its later period, alongside earlier Shona builders.",
-      "answerConfidence": "medium"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q23",
+      "id": "q_23",
       "questionNumber": 23,
       "questionText": "Zimbabwe's national coat of arms includes an animal known for representing keen eyesight and vigilance. Which animal is this?",
       "options": [
@@ -590,23 +616,24 @@
         },
         {
           "letter": "B",
-          "text": "kudu"
+          "text": "zebra"
         },
         {
           "letter": "C",
-          "text": "zebra"
+          "text": "kudu"
         },
         {
           "letter": "D",
           "text": "elephant"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Kudus appear on Zimbabwe's coat of arms as supporters, often associated with alertness and grace.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q24",
+      "id": "q_24",
       "questionNumber": 24,
       "questionText": "The first Chimurenga/Umvukela was mainly a reaction against",
       "options": [
@@ -616,7 +643,7 @@
         },
         {
           "letter": "B",
-          "text": "colonial rule and land seizure"
+          "text": "poor harvests"
         },
         {
           "letter": "C",
@@ -624,25 +651,26 @@
         },
         {
           "letter": "D",
-          "text": "poor harvests"
+          "text": "colonial rule and land seizure"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The first Chimurenga/Umvukela arose largely in resistance to colonial occupation and the loss of land.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q25",
+      "id": "q_25",
       "questionNumber": 25,
       "questionText": "Which national holiday specifically honours the contribution of soldiers?",
       "options": [
         {
           "letter": "A",
-          "text": "Independence Day"
+          "text": "Defence Forces Day"
         },
         {
           "letter": "B",
-          "text": "Defence Forces Day"
+          "text": "Independence Day"
         },
         {
           "letter": "C",
@@ -653,22 +681,23 @@
           "text": "Unity Day"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Defence Forces Day is set aside to recognise the role and sacrifice of the armed forces.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q26",
+      "id": "q_26",
       "questionNumber": 26,
       "questionText": "A traditional court where community disputes are resolved by elders or a chief is called a",
       "options": [
         {
           "letter": "A",
-          "text": "dare/inkundla"
+          "text": "parliament"
         },
         {
           "letter": "B",
-          "text": "parliament"
+          "text": "dare/inkundla"
         },
         {
           "letter": "C",
@@ -679,12 +708,13 @@
           "text": "tribunal"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "The dare/inkundla is a traditional/customary community gathering used to resolve disputes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q27",
+      "id": "q_27",
       "questionNumber": 27,
       "questionText": "Great Zimbabwe and Khami are both examples of",
       "options": [
@@ -694,23 +724,24 @@
         },
         {
           "letter": "B",
-          "text": "pre-colonial stone-built monuments"
+          "text": "colonial forts"
         },
         {
           "letter": "C",
-          "text": "colonial forts"
+          "text": "pre-colonial stone-built monuments"
         },
         {
           "letter": "D",
           "text": "mission stations"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Both Great Zimbabwe and Khami are stone-walled monuments built by pre-colonial Zimbabwean states.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q28",
+      "id": "q_28",
       "questionNumber": 28,
       "questionText": "A child adopted by Zimbabwean parents and formally registered as Zimbabwean gains citizenship by",
       "options": [
@@ -720,7 +751,7 @@
         },
         {
           "letter": "B",
-          "text": "registration"
+          "text": "marriage"
         },
         {
           "letter": "C",
@@ -728,25 +759,26 @@
         },
         {
           "letter": "D",
-          "text": "marriage"
+          "text": "registration"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Citizenship gained through a formal legal registration process (such as after adoption) is citizenship by registration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q29",
+      "id": "q_29",
       "questionNumber": 29,
       "questionText": "A leader who allows workers to make most decisions with little supervision is practising",
       "options": [
         {
           "letter": "A",
-          "text": "autocratic leadership"
+          "text": "democratic/participatory leadership"
         },
         {
           "letter": "B",
-          "text": "democratic/participatory leadership"
+          "text": "autocratic leadership"
         },
         {
           "letter": "C",
@@ -757,12 +789,13 @@
           "text": "monarchy"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Allowing followers to participate freely in decisions reflects democratic or participatory leadership.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q30",
+      "id": "q_30",
       "questionNumber": 30,
       "questionText": "A legal document used to state how a deceased person's property should be shared is called a",
       "options": [
@@ -785,10 +818,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "A will is the legal document specifying how a person's estate should be distributed after death.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q31",
+      "id": "q_31",
       "questionNumber": 31,
       "questionText": "Writing or drawing on public walls without permission is called",
       "options": [
@@ -798,23 +832,24 @@
         },
         {
           "letter": "B",
-          "text": "graffiti"
+          "text": "portraiture"
         },
         {
           "letter": "C",
-          "text": "portraiture"
+          "text": "graffiti"
         },
         {
           "letter": "D",
           "text": "weaving"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Unauthorised writing/drawing on walls or public property is known as graffiti.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q32",
+      "id": "q_32",
       "questionNumber": 32,
       "questionText": "In the traditional leadership hierarchy in Zimbabwe, who holds the highest authority?",
       "options": [
@@ -837,10 +872,11 @@
       ],
       "correctAnswer": "D",
       "explanation": "In the traditional hierarchy, the chief holds authority over headmen, village heads and family heads.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q33",
+      "id": "q_33",
       "questionNumber": 33,
       "questionText": "Neighbours forming a group to watch over each other's homes and property is an example of",
       "options": [
@@ -863,20 +899,21 @@
       ],
       "correctAnswer": "A",
       "explanation": "A neighbourhood watch committee is a community-based group formed to improve security.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q34",
+      "id": "q_34",
       "questionNumber": 34,
       "questionText": "Burning coal for energy mainly contributes to",
       "options": [
         {
           "letter": "A",
-          "text": "air pollution"
+          "text": "noise pollution"
         },
         {
           "letter": "B",
-          "text": "noise pollution"
+          "text": "air pollution"
         },
         {
           "letter": "C",
@@ -887,12 +924,13 @@
           "text": "land pollution"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Burning coal releases smoke and gases into the atmosphere, causing air pollution.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q35",
+      "id": "q_35",
       "questionNumber": 35,
       "questionText": "The replanting of trees in an area that had trees before is called",
       "options": [
@@ -915,10 +953,11 @@
       ],
       "correctAnswer": "C",
       "explanation": "Reforestation specifically refers to replanting trees where forest previously existed.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q36",
+      "id": "q_36",
       "questionNumber": 36,
       "questionText": "Which of these is a way of overcoming desertification?",
       "options": [
@@ -928,7 +967,7 @@
         },
         {
           "letter": "B",
-          "text": "planting trees and grass to cover bare soil"
+          "text": "allowing uncontrolled veld fires"
         },
         {
           "letter": "C",
@@ -936,25 +975,26 @@
         },
         {
           "letter": "D",
-          "text": "allowing uncontrolled veld fires"
+          "text": "planting trees and grass to cover bare soil"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Planting vegetation helps stabilise soil and reverse the spread of desert-like conditions.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q37",
+      "id": "q_37",
       "questionNumber": 37,
       "questionText": "A build-up of litter such as plastic bottles and papers in an open area is an example of",
       "options": [
         {
           "letter": "A",
-          "text": "noise pollution"
+          "text": "land pollution"
         },
         {
           "letter": "B",
-          "text": "land pollution"
+          "text": "noise pollution"
         },
         {
           "letter": "C",
@@ -965,12 +1005,13 @@
           "text": "light pollution"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Solid waste scattered on land is a form of land pollution.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q38",
+      "id": "q_38",
       "questionNumber": 38,
       "questionText": "Which method is traditionally used to make a woven basket?",
       "options": [
@@ -980,23 +1021,24 @@
         },
         {
           "letter": "B",
-          "text": "moulding"
+          "text": "weaving"
         },
         {
           "letter": "C",
-          "text": "weaving"
+          "text": "moulding"
         },
         {
           "letter": "D",
           "text": "welding"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Baskets are traditionally made by weaving materials such as reeds or grass together.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q39",
+      "id": "q_39",
       "questionNumber": 39,
       "questionText": "Which organisation is mainly responsible for administering football in Zimbabwe?",
       "options": [
@@ -1006,23 +1048,24 @@
         },
         {
           "letter": "B",
-          "text": "Zimbabwe Football Association (ZIFA)"
+          "text": "Zimbabwe Athletics"
         },
         {
           "letter": "C",
-          "text": "Zimbabwe Athletics"
+          "text": "Zimbabwe Football Association (ZIFA)"
         },
         {
           "letter": "D",
           "text": "Zimbabwe Rugby Union"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "ZIFA (Zimbabwe Football Association) is the governing body for football/soccer in Zimbabwe.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     },
     {
-      "id": "ss705_1_q40",
+      "id": "q_40",
       "questionNumber": 40,
       "questionText": "A road sign showing people walking is meant to warn drivers of",
       "options": [
@@ -1032,7 +1075,7 @@
         },
         {
           "letter": "B",
-          "text": "pedestrians/children crossing"
+          "text": "a speed bump"
         },
         {
           "letter": "C",
@@ -1040,12 +1083,13 @@
         },
         {
           "letter": "D",
-          "text": "a speed bump"
+          "text": "pedestrians/children crossing"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "A pedestrian symbol on a road sign warns drivers to watch for people, often children, crossing the road.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Social Science Examination Practice"
     }
   ]
 }

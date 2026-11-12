@@ -1,1514 +1,240 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_geography_a_level_6037_paper2_150",
+    "file": "exam_bank_zimsec_geography_a_level_6037_paper2_150.json",
     "subject": "Geography",
     "level": "A-Level",
     "paperCode": "6037/02",
-    "paperName": "Geography Paper 2 — Human Geography",
+    "paperName": "Geography A-Level Paper 2 — Human Geography",
     "paperType": "Structured Free-Response/Data Response",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC 6037/02; MoPSE Heritage-Based Geography Forms 5–6 syllabus 2024–2030; ZIMSEC specimen/past-paper patterns.",
-    "copyrightNote": "Original practice questions synthesized from the ZIMSEC syllabus and publicly accessible specimen/past-paper patterns; not a verbatim reproduction of past papers."
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "geo_alevel_p2_001",
+      "id": "geo6037_2_q1",
       "questionNumber": 1,
-      "questionText": "Evaluate the geographical factors shaping Settlement dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Compare Malthusian and Boserupian theories regarding the relationship between population growth and food supply, evaluating which better explains modern agricultural trends in sub-Saharan Africa. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
+      "explanation": "### Mark Scheme [25 marks]\n- **Malthus (1798):** Geometric population growth outstrips arithmetic food growth, triggering preventive (moral restraint) and positive checks (famine, war, disease) [8 marks].\n- **Boserup (1965):** Rising population density acts as catalyst driving agricultural intensification (shortened fallow, irrigation, green-revolution hybrids, mechanisation) [9 marks].\n- **Evaluation:** Boserup explains global yield surges where capital/extension exist, but localized Malthusian vulnerability persists under climate droughts, soil exhaustion, and weak rural infrastructure [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_002",
+      "id": "geo6037_2_q2",
       "questionNumber": 2,
-      "questionText": "Evaluate the geographical factors shaping Population and migration. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Analyse the five-stage Demographic Transition Model (DTM) and evaluate its applicability to the changing birth rates, death rates, and age pyramids of Zimbabwe and SADC nations. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
+      "explanation": "### Mark Scheme [20 marks]\n- **DTM Stages 1–5:** High stationary → Early expanding → Late expanding → Low stationary → Declining [8 marks].\n- **Zimbabwe Application & Critique:** Zimbabwe reflects late Stage 2 / Stage 3 with falling fertility via female education and contraception alongside death rate fluctuations from HIV/AIDS impacts (now stabilising via ART), showing the Western Eurocentric model needs adaptation for health shocks and migration [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_003",
+      "id": "geo6037_2_q3",
       "questionNumber": 3,
-      "questionText": "Evaluate the geographical factors shaping Agricultural production and food security. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Explain Von Thünen's Agricultural Location Model, stating its simplifying assumptions and assessing why modern refrigeration, highways, and command policies distort its concentric land-use zones around Harare. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
+      "explanation": "### Mark Scheme [20 marks]\n- **Model & Bid Rent:** Locational rent R = Y(P−C) − Y·t·d places perishable/high-transport-cost horticulture & dairying closest to the central market, then forestry, arable grains, and extensive ranching furthest out [10 marks].\n- **Real-world Distortions:** Refrigerated trucks, multiple urban markets, fertile soil anisotropy, irrigation dams, and government pricing/land tenure distort ideal rings [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_004",
+      "id": "geo6037_2_q4",
       "questionNumber": 4,
-      "questionText": "Evaluate the geographical factors shaping Industrial dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Evaluate Alfred Weber's Least-Cost Industrial Location Theory, distinguishing between weight-losing and weight-gaining industries with Zimbabwean manufacturing examples. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
+      "explanation": "### Mark Scheme [20 marks]\n- **Weber Model:** Minimises transport cost (Locational Triangle of Material Index MI), labour cost, and agglomeration economies [8 marks].\n- **Examples:** Weight-losing (MI > 1: iron smelting at Redcliff/Kwekwe, sugar milling in Lowveld, cement near limestone) locates at raw materials; Weight-gaining (MI < 1: soft-drink bottling, bakeries) locates at urban markets; evaluate neglect of tariffs, electricity availability, and environmental zoning [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_005",
+      "id": "geo6037_2_q5",
       "questionNumber": 5,
-      "questionText": "Evaluate the geographical factors shaping Mining and mineral beneficiation. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Using Christaller's Central Place Theory (Threshold Population and Range of a Good), explain the hierarchy of urban settlements in Zimbabwe from rural growth points to Harare. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
+      "explanation": "### Mark Scheme [20 marks]\n- **Concepts:** Range = max distance consumers travel; Threshold = min population/demand needed to sustain a service; Hexagonal non-overlapping service hinterlands (k=3,4,7) [9 marks].\n- **Hierarchy:** Low-order rural service centres (groceries, primary clinic — small range/threshold) → District growth points/towns (bank, secondary hospital) → Bulawayo/Harare high-order regional cities (universities, specialist surgery, airports) [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_006",
+      "id": "geo6037_2_q6",
       "questionNumber": 6,
-      "questionText": "Evaluate the geographical factors shaping Energy sources and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Compare the concentric zone (Burgess), sector (Hoyt), and multiple-nuclei (Harris & Ullman) urban land-use models and evaluate how colonial planning shaped Harare's dual urban morphology. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
+      "explanation": "### Mark Scheme [25 marks]\n- **Classic Models:** Burgess rings, Hoyt transport wedges, Harris & Ullman polycentric hubs [10 marks].\n- **Harare Morphology:** Historical segregation placed low-density affluent suburbs (Borrowdale/Mount Pleasant) in well-drained northern sectors and high-density industrial-worker townships (Mbare, Highfield, Chitungwiza satellite) in southern/south-western sectors alongside industrial rail corridors—now modified by CBD edge office parks and peri-urban growth [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_007",
+      "id": "geo6037_2_q7",
       "questionNumber": 7,
-      "questionText": "Evaluate the geographical factors shaping Transport systems and trade. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Assess the causes, socioeconomic contributions, and environmental/planning challenges of the Informal Sector in African cities. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
+      "explanation": "### Mark Scheme [20 marks]\n- **Drivers:** Formal job contraction, rapid urban migration, low entry capital barriers [5 marks].\n- **Contributions vs Challenges:** Provides livelihoods, cheap urban goods/recycling, and entrepreneurial incubators (Siya So / Magaba), yet creates congestion, unserviced sanitation waste, tax base erosion, and precarious worker safety [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_008",
+      "id": "geo6037_2_q8",
       "questionNumber": 8,
-      "questionText": "Evaluate the geographical factors shaping Regional inequalities and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "With reference to Lee's Push-Pull Migration Model and Ravenstein's Laws, analyse the impacts of skilled international emigration (\"brain drain\") on Zimbabwe versus the role of diaspora remittances. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
+      "explanation": "### Mark Scheme [25 marks]\n- **Push/Pull/Intervening Obstacles:** Economic opportunities & wage differentials pull nurses, engineers, and teachers abroad despite visa costs [8 marks].\n- **Impacts:** Loss of public-funded human capital and strained clinics/schools vs substantial forex remittances sustaining household consumption, housing, and education fees [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_009",
+      "id": "geo6037_2_q9",
       "questionNumber": 9,
-      "questionText": "Evaluate the geographical factors shaping GIS applications to human geography. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Evaluate the causes and possible remedies for Urban Traffic Congestion in major cities such as Harare and Bulawayo. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
+      "explanation": "### Mark Scheme [20 marks]\n- **Causes:** Dominance of private vehicles & low-capacity kombis, radial CBD concentration, uncoordinated traffic signals, absence of suburban light rail, peak commuter waves from Chitungwiza/Norton [8 marks].\n- **Solutions:** High-capacity Bus Rapid Transit (BRT) / commuter rail corridors, park-and-ride hubs, outer ring-roads, decongesting offices to suburban nodes, congestion charging—evaluate funding & enforcement hurdles [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_010",
+      "id": "geo6037_2_q10",
       "questionNumber": 10,
-      "questionText": "Evaluate the geographical factors shaping Development and sustainability. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
+      "questionText": "Explain the \"Resource Curse\" hypothesis and assess how Mineral Beneficiation and Value Addition policies can transform Zimbabwe's mining sector (platinum, lithium, gold). [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
+      "explanation": "### Mark Scheme [20 marks]\n- **Resource Curse:** Over-reliance on raw ore exports fuels price vulnerability, Dutch disease, weak linkages, and rent-seeking [7 marks].\n- **Beneficiation:** Refining concentrates, manufacturing battery-grade lithium salts or platinum catalysts captures higher export value, builds engineering skills, and creates multiplier factories—constrained by reliable high-voltage power supply and refining capex [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_011",
+      "id": "geo6037_2_q11",
       "questionNumber": 11,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Settlement dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Compare Rostow's Five Stages of Economic Growth with Friedmann's Core-Periphery Model in explaining regional development disparities within Zimbabwe. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
+      "explanation": "### Mark Scheme [25 marks]\n- **Rostow:** Linear domestic stages (Traditional → Preconditions → Take-off → Maturity → Mass Consumption) criticised for ignoring colonial trade structures and external debt [10 marks].\n- **Friedmann Core-Periphery:** Cumulative causation concentrates industry, talent, and investment in core hubs (Harare-Bulawayo rail spine) leaving peripheral rural districts lagging via backwash effects unless deliberate spread/decentralisation growth points intervene [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_012",
+      "id": "geo6037_2_q12",
       "questionNumber": 12,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Population and migration. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Evaluate the environmental, economic, and social impacts of Large-Scale Hydroelectric Dams (e.g., Kariba Dam) versus Distributed Solar Mini-Grids for rural energy security. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
+      "explanation": "### Mark Scheme [20 marks]\n- **Large Hydro:** High baseload capacity and multi-purpose irrigation/fisheries, yet suffers severe El Niño drought vulnerability, community displacement, and huge grid transmission losses to remote villages [10 marks].\n- **Solar Mini-Grids:** Fast modular deployment, zero transmission loss, climate-resilient, empowers rural clinics/cold-chains, though battery storage costs limit heavy industrial smelting [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_013",
+      "id": "geo6037_2_q13",
       "questionNumber": 13,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Agricultural production and food security. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Explain the principles and stages of an Environmental Impact Assessment (EIA) under Zimbabwe's Environmental Management Agency (EMA) before approving a major open-cast mine or highway. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
+      "explanation": "### Mark Scheme [15 marks]\n- **Purpose:** Precautionary decision tool weighing biophysical and socioeconomic impacts prior to project approval [4 marks].\n- **Stages:** Screening → Scoping & Baseline Survey → Public Stakeholder Consultation → Impact Prediction & Mitigation Design (EMS) → EMA Review Decision → Post-implementation Auditing & Decommissioning bonds [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_014",
+      "id": "geo6037_2_q14",
       "questionNumber": 14,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Industrial dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Assess the opportunities and challenges of Sustainable Ecotourism (including CAMPFIRE community conservation programmes) for rural livelihoods in Zimbabwe. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
+      "explanation": "### Mark Scheme [20 marks]\n- **Mechanism:** Devolves wildlife benefits (photographic & safari revenues) to rural wards so communities value conservation over poaching [8 marks].\n- **Evaluation:** Builds local clinics/schools and tolerates human-wildlife conflict when revenues reach households transparently; vulnerable to global travel shocks, governance leakage, and drought [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_015",
+      "id": "geo6037_2_q15",
       "questionNumber": 15,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Mining and mineral beneficiation. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Explain the Globalisation drivers (containerisation, TNCs, ICT) and evaluate why benefits of global trade have been distributed unevenly between core and developing economies. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
+      "explanation": "### Mark Scheme [20 marks]\n- **Drivers:** Falling transport/communication costs, trade liberalisation, Transnational Corporations dispersing assembly globally [8 marks].\n- **Uneven Distribution:** Value capture concentrates in R&D/brand hubs in core countries while developing nations face tariff escalation on processed exports, commodity price volatility, and infrastructure deficits [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_016",
+      "id": "geo6037_2_q16",
       "questionNumber": 16,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Energy sources and development. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Contrast Urban Renewal (Gentrification & Redevelopment) with Slum Upgrading (\"Sites and Services\") as strategies for improving low-income urban housing. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
+      "explanation": "### Mark Scheme [20 marks]\n- **Demolition/Redevelopment:** Replaces dilapidated stock with modern apartments, but displaces poor residents to unserviced fringes and destroys social networks [9 marks].\n- **In-situ Upgrading / Sites-and-Services:** Provides secure land tenure, piped water, sewerage, and incremental self-build plots—retains community cohesion and matches household budgets when paired with micro-mortgages [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_017",
+      "id": "geo6037_2_q17",
       "questionNumber": 17,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Transport systems and trade. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Analyse the causes of Food Insecurity in semi-arid Regions IV and V of Zimbabwe and evaluate drought-resilient farming innovations (Pfumvudza/Intwasa, small grains, solar drip irrigation). [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
+      "explanation": "### Mark Scheme [20 marks]\n- **Causes:** Erratic rainfall, dry spells, sandy nutrient-poor soils, post-harvest weevil losses, input price barriers [7 marks].\n- **Remedies:** Conservation basins + mulching trap scarce moisture & organic fertility; drought-tolerant sorghum/millet/pearl millet outperform maize in dry years; small solar drip schemes boost winter nutrition [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_018",
+      "id": "geo6037_2_q18",
       "questionNumber": 18,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Regional inequalities and development. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Using Burgess/Bid-Rent curves, explain why commercial retail and finance concentrate at the Peak Land Value Intersection (CBD) and why \"Out-of-Town\" retail parks are expanding. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
+      "explanation": "### Mark Scheme [15 marks]\n- **Bid-Rent:** Finance and flagship retail require maximum pedestrian accessibility and can outbid industry/housing per m² in the CBD core [8 marks].\n- **Suburban Decentralisation:** Rising CBD congestion, parking scarcity, and high land rates push supermarkets and offices to accessible suburban hubs (e.g., Borrowdale/Msasa/Westgate) [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_019",
+      "id": "geo6037_2_q19",
       "questionNumber": 19,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of GIS applications to human geography. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Distinguish between Renewable and Non-Renewable Energy transitions and evaluate the socio-economic barriers slowing adoption of clean cooking alternatives over fuelwood in rural areas. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
+      "explanation": "### Mark Scheme [20 marks]\n- **Fuelwood Reliance:** ~60%+ rural energy uses wood/charcoal, driving deforestation around towns and indoor smoke respiratory illness [8 marks].\n- **Barriers:** Upfront cost of LPG cylinders/stoves/biogas digesters, unreliable rural gas refilling networks, free collection of deadwood, cultural cooking preferences [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_020",
+      "id": "geo6037_2_q20",
       "questionNumber": 20,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Development and sustainability. Evaluate alternative strategies and give a justified recommendation. [25]",
+      "questionText": "Evaluate the role of Transport Networks (Kansky's Beta & Gamma network connectivity indices, Beira/North-South corridors) in unlocking landlocked Zimbabwe's trade competitiveness. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
+      "explanation": "### Mark Scheme [20 marks]\n- **Indices & Corridors:** Higher Beta (e/v) and Gamma indices measure network efficiency/redundancy; corridors linking Beitbridge, Forbes-Beira, and Chirundu connect inland mines/farms to sea ports [10 marks].\n- **Evaluation:** Upgraded NRZ rail freight and one-stop border posts (Chirundu/Beitbridge) sharply lower bulk transit costs compared with overloaded haulage trucks damaging highways [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_021",
+      "id": "geo6037_2_q21",
       "questionNumber": 21,
-      "questionText": "Treat Settlement dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
+      "questionText": "Explain how Population Pyramids reflect Dependency Ratios and future planning needs for Education, Healthcare, and Pensions across contrasting countries. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
+      "explanation": "### Mark Scheme [15 marks]\n- **Youthful Pyramid (Zimbabwe):** Wide base → high youth dependency ratio, urgent need for schools, maternal/paediatric health, and rapid formal job creation [8 marks].\n- **Ageing Pyramid (Japan/UK):** Narrow base, broad apex → rising old-age dependency, pension funding strain, geriatric care, and labour automation needs [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_022",
+      "id": "geo6037_2_q22",
       "questionNumber": 22,
-      "questionText": "Treat Population and migration as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
+      "questionText": "Compare Spatial Allocation of Health Services and Water Supply between urban and rural districts, assessing the role of devolution in narrowing spatial inequality. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
+      "explanation": "### Mark Scheme [20 marks]\n- **Disparities:** Urban centres concentrate referral hospitals, specialists, and piped supply; remote rural wards face long travel distances, seasonal boreholes, and referral delays [10 marks].\n- **Devolution Assessment:** Directing fiscal grants to Rural District Councils targets local clinic and borehole priorities better if coupled with transparent audit capacity [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_023",
+      "id": "geo6037_2_q23",
       "questionNumber": 23,
-      "questionText": "Treat Agricultural production and food security as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
+      "questionText": "Evaluate how Agglomeration Economies and Industrial Inertia keep established manufacturing clusters (e.g., Workington/Msasa/Belmont) thriving even after original locational advantages change. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
+      "explanation": "### Mark Scheme [15 marks]\n- **Internal & External Economies:** Shared skilled labour pool, component suppliers, utilities, repair services, and lower freight interchange costs [9 marks].\n- **Inertia vs Diseconomies:** Sunk factory capital keeps firms anchored until traffic congestion, high municipal rates, and ageing infrastructure push decentralisation to outlying industrial parks [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_024",
+      "id": "geo6037_2_q24",
       "questionNumber": 24,
-      "questionText": "Treat Industrial dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
+      "questionText": "Assess the socio-economic and environmental trade-offs of Rapid Peri-Urban Residential Sprawl on Harare's wetlands and agricultural greenbelt. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
+      "explanation": "### Mark Scheme [20 marks]\n- **Pressures:** Housing backlog pushes unregulated subdivisions onto seasonal vlei wetlands and former market-gardening farms [7 marks].\n- **Impacts & Policy:** Destroys natural flood sponges and Lake Chivero water filtration, increases cholera/borehole contamination risks, and lengthens commuter infrastructure costs; requires compact high-density infill and strict EMA wetland enforcement [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "geo_alevel_p2_025",
+      "id": "geo6037_2_q25",
       "questionNumber": 25,
-      "questionText": "Treat Mining and mineral beneficiation as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
+      "questionText": "Explain how a geographer uses Nearest Neighbour Analysis (Rₙ) to objectively classify rural settlement patterns (nucleated, random, or uniform/dispersed). [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_026",
-      "questionNumber": 26,
-      "questionText": "Treat Energy sources and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_027",
-      "questionNumber": 27,
-      "questionText": "Treat Transport systems and trade as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_028",
-      "questionNumber": 28,
-      "questionText": "Treat Regional inequalities and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_029",
-      "questionNumber": 29,
-      "questionText": "Treat GIS applications to human geography as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_030",
-      "questionNumber": 30,
-      "questionText": "Treat Development and sustainability as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_031",
-      "questionNumber": 31,
-      "questionText": "Study a hypothetical case of Settlement dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_032",
-      "questionNumber": 32,
-      "questionText": "Study a hypothetical case of Population and migration. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_033",
-      "questionNumber": 33,
-      "questionText": "Study a hypothetical case of Agricultural production and food security. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_034",
-      "questionNumber": 34,
-      "questionText": "Study a hypothetical case of Industrial dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_035",
-      "questionNumber": 35,
-      "questionText": "Study a hypothetical case of Mining and mineral beneficiation. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_036",
-      "questionNumber": 36,
-      "questionText": "Study a hypothetical case of Energy sources and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_037",
-      "questionNumber": 37,
-      "questionText": "Study a hypothetical case of Transport systems and trade. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_038",
-      "questionNumber": 38,
-      "questionText": "Study a hypothetical case of Regional inequalities and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_039",
-      "questionNumber": 39,
-      "questionText": "Study a hypothetical case of GIS applications to human geography. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_040",
-      "questionNumber": 40,
-      "questionText": "Study a hypothetical case of Development and sustainability. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_041",
-      "questionNumber": 41,
-      "questionText": "Design a field investigation into Settlement dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_042",
-      "questionNumber": 42,
-      "questionText": "Design a field investigation into Population and migration. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_043",
-      "questionNumber": 43,
-      "questionText": "Design a field investigation into Agricultural production and food security. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_044",
-      "questionNumber": 44,
-      "questionText": "Design a field investigation into Industrial dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_045",
-      "questionNumber": 45,
-      "questionText": "Design a field investigation into Mining and mineral beneficiation. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_046",
-      "questionNumber": 46,
-      "questionText": "Design a field investigation into Energy sources and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_047",
-      "questionNumber": 47,
-      "questionText": "Design a field investigation into Transport systems and trade. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_048",
-      "questionNumber": 48,
-      "questionText": "Design a field investigation into Regional inequalities and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_049",
-      "questionNumber": 49,
-      "questionText": "Design a field investigation into GIS applications to human geography. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_050",
-      "questionNumber": 50,
-      "questionText": "Design a field investigation into Development and sustainability. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_051",
-      "questionNumber": 51,
-      "questionText": "Evaluate the geographical factors shaping Settlement dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_052",
-      "questionNumber": 52,
-      "questionText": "Evaluate the geographical factors shaping Population and migration. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_053",
-      "questionNumber": 53,
-      "questionText": "Evaluate the geographical factors shaping Agricultural production and food security. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_054",
-      "questionNumber": 54,
-      "questionText": "Evaluate the geographical factors shaping Industrial dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_055",
-      "questionNumber": 55,
-      "questionText": "Evaluate the geographical factors shaping Mining and mineral beneficiation. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_056",
-      "questionNumber": 56,
-      "questionText": "Evaluate the geographical factors shaping Energy sources and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_057",
-      "questionNumber": 57,
-      "questionText": "Evaluate the geographical factors shaping Transport systems and trade. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_058",
-      "questionNumber": 58,
-      "questionText": "Evaluate the geographical factors shaping Regional inequalities and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_059",
-      "questionNumber": 59,
-      "questionText": "Evaluate the geographical factors shaping GIS applications to human geography. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_060",
-      "questionNumber": 60,
-      "questionText": "Evaluate the geographical factors shaping Development and sustainability. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_061",
-      "questionNumber": 61,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Settlement dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_062",
-      "questionNumber": 62,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Population and migration. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_063",
-      "questionNumber": 63,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Agricultural production and food security. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_064",
-      "questionNumber": 64,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Industrial dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_065",
-      "questionNumber": 65,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Mining and mineral beneficiation. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_066",
-      "questionNumber": 66,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Energy sources and development. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_067",
-      "questionNumber": 67,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Transport systems and trade. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_068",
-      "questionNumber": 68,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Regional inequalities and development. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_069",
-      "questionNumber": 69,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of GIS applications to human geography. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_070",
-      "questionNumber": 70,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Development and sustainability. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_071",
-      "questionNumber": 71,
-      "questionText": "Treat Settlement dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_072",
-      "questionNumber": 72,
-      "questionText": "Treat Population and migration as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_073",
-      "questionNumber": 73,
-      "questionText": "Treat Agricultural production and food security as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_074",
-      "questionNumber": 74,
-      "questionText": "Treat Industrial dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_075",
-      "questionNumber": 75,
-      "questionText": "Treat Mining and mineral beneficiation as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_076",
-      "questionNumber": 76,
-      "questionText": "Treat Energy sources and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_077",
-      "questionNumber": 77,
-      "questionText": "Treat Transport systems and trade as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_078",
-      "questionNumber": 78,
-      "questionText": "Treat Regional inequalities and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_079",
-      "questionNumber": 79,
-      "questionText": "Treat GIS applications to human geography as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_080",
-      "questionNumber": 80,
-      "questionText": "Treat Development and sustainability as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_081",
-      "questionNumber": 81,
-      "questionText": "Study a hypothetical case of Settlement dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_082",
-      "questionNumber": 82,
-      "questionText": "Study a hypothetical case of Population and migration. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_083",
-      "questionNumber": 83,
-      "questionText": "Study a hypothetical case of Agricultural production and food security. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_084",
-      "questionNumber": 84,
-      "questionText": "Study a hypothetical case of Industrial dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_085",
-      "questionNumber": 85,
-      "questionText": "Study a hypothetical case of Mining and mineral beneficiation. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_086",
-      "questionNumber": 86,
-      "questionText": "Study a hypothetical case of Energy sources and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_087",
-      "questionNumber": 87,
-      "questionText": "Study a hypothetical case of Transport systems and trade. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_088",
-      "questionNumber": 88,
-      "questionText": "Study a hypothetical case of Regional inequalities and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_089",
-      "questionNumber": 89,
-      "questionText": "Study a hypothetical case of GIS applications to human geography. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_090",
-      "questionNumber": 90,
-      "questionText": "Study a hypothetical case of Development and sustainability. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_091",
-      "questionNumber": 91,
-      "questionText": "Design a field investigation into Settlement dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_092",
-      "questionNumber": 92,
-      "questionText": "Design a field investigation into Population and migration. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_093",
-      "questionNumber": 93,
-      "questionText": "Design a field investigation into Agricultural production and food security. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_094",
-      "questionNumber": 94,
-      "questionText": "Design a field investigation into Industrial dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_095",
-      "questionNumber": 95,
-      "questionText": "Design a field investigation into Mining and mineral beneficiation. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_096",
-      "questionNumber": 96,
-      "questionText": "Design a field investigation into Energy sources and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_097",
-      "questionNumber": 97,
-      "questionText": "Design a field investigation into Transport systems and trade. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_098",
-      "questionNumber": 98,
-      "questionText": "Design a field investigation into Regional inequalities and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_099",
-      "questionNumber": 99,
-      "questionText": "Design a field investigation into GIS applications to human geography. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_100",
-      "questionNumber": 100,
-      "questionText": "Design a field investigation into Development and sustainability. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_101",
-      "questionNumber": 101,
-      "questionText": "Evaluate the geographical factors shaping Settlement dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_102",
-      "questionNumber": 102,
-      "questionText": "Evaluate the geographical factors shaping Population and migration. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_103",
-      "questionNumber": 103,
-      "questionText": "Evaluate the geographical factors shaping Agricultural production and food security. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_104",
-      "questionNumber": 104,
-      "questionText": "Evaluate the geographical factors shaping Industrial dynamics. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_105",
-      "questionNumber": 105,
-      "questionText": "Evaluate the geographical factors shaping Mining and mineral beneficiation. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_106",
-      "questionNumber": 106,
-      "questionText": "Evaluate the geographical factors shaping Energy sources and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_107",
-      "questionNumber": 107,
-      "questionText": "Evaluate the geographical factors shaping Transport systems and trade. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_108",
-      "questionNumber": 108,
-      "questionText": "Evaluate the geographical factors shaping Regional inequalities and development. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_109",
-      "questionNumber": 109,
-      "questionText": "Evaluate the geographical factors shaping GIS applications to human geography. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_110",
-      "questionNumber": 110,
-      "questionText": "Evaluate the geographical factors shaping Development and sustainability. Develop a balanced argument using location, accessibility, resources, markets, labour, technology and policy where relevant. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_111",
-      "questionNumber": 111,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Settlement dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_112",
-      "questionNumber": 112,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Population and migration. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_113",
-      "questionNumber": 113,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Agricultural production and food security. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_114",
-      "questionNumber": 114,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Industrial dynamics. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_115",
-      "questionNumber": 115,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Mining and mineral beneficiation. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_116",
-      "questionNumber": 116,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Energy sources and development. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_117",
-      "questionNumber": 117,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Transport systems and trade. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_118",
-      "questionNumber": 118,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Regional inequalities and development. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_119",
-      "questionNumber": 119,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of GIS applications to human geography. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_120",
-      "questionNumber": 120,
-      "questionText": "Using a named Zimbabwean or African example, analyse the causes and consequences of Development and sustainability. Evaluate alternative strategies and give a justified recommendation. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_121",
-      "questionNumber": 121,
-      "questionText": "Treat Settlement dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_122",
-      "questionNumber": 122,
-      "questionText": "Treat Population and migration as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_123",
-      "questionNumber": 123,
-      "questionText": "Treat Agricultural production and food security as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_124",
-      "questionNumber": 124,
-      "questionText": "Treat Industrial dynamics as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_125",
-      "questionNumber": 125,
-      "questionText": "Treat Mining and mineral beneficiation as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_126",
-      "questionNumber": 126,
-      "questionText": "Treat Energy sources and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_127",
-      "questionNumber": 127,
-      "questionText": "Treat Transport systems and trade as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_128",
-      "questionNumber": 128,
-      "questionText": "Treat Regional inequalities and development as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_129",
-      "questionNumber": 129,
-      "questionText": "Treat GIS applications to human geography as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_130",
-      "questionNumber": 130,
-      "questionText": "Treat Development and sustainability as a geographical system. Identify inputs, processes, outputs and feedbacks, then assess how policy or technology could alter the system. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_131",
-      "questionNumber": 131,
-      "questionText": "Study a hypothetical case of Settlement dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_132",
-      "questionNumber": 132,
-      "questionText": "Study a hypothetical case of Population and migration. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_133",
-      "questionNumber": 133,
-      "questionText": "Study a hypothetical case of Agricultural production and food security. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_134",
-      "questionNumber": 134,
-      "questionText": "Study a hypothetical case of Industrial dynamics. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_135",
-      "questionNumber": 135,
-      "questionText": "Study a hypothetical case of Mining and mineral beneficiation. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_136",
-      "questionNumber": 136,
-      "questionText": "Study a hypothetical case of Energy sources and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_137",
-      "questionNumber": 137,
-      "questionText": "Study a hypothetical case of Transport systems and trade. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_138",
-      "questionNumber": 138,
-      "questionText": "Study a hypothetical case of Regional inequalities and development. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_139",
-      "questionNumber": 139,
-      "questionText": "Study a hypothetical case of GIS applications to human geography. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_140",
-      "questionNumber": 140,
-      "questionText": "Study a hypothetical case of Development and sustainability. Explain the spatial pattern, analyse the data that should be collected, and evaluate the likely development implications. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
-    },
-    {
-      "id": "geo_alevel_p2_141",
-      "questionNumber": 141,
-      "questionText": "Design a field investigation into Settlement dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Settlement dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_142",
-      "questionNumber": 142,
-      "questionText": "Design a field investigation into Population and migration. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Population and migration"
-    },
-    {
-      "id": "geo_alevel_p2_143",
-      "questionNumber": 143,
-      "questionText": "Design a field investigation into Agricultural production and food security. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Agricultural production and food security"
-    },
-    {
-      "id": "geo_alevel_p2_144",
-      "questionNumber": 144,
-      "questionText": "Design a field investigation into Industrial dynamics. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Industrial dynamics"
-    },
-    {
-      "id": "geo_alevel_p2_145",
-      "questionNumber": 145,
-      "questionText": "Design a field investigation into Mining and mineral beneficiation. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Mining and mineral beneficiation"
-    },
-    {
-      "id": "geo_alevel_p2_146",
-      "questionNumber": 146,
-      "questionText": "Design a field investigation into Energy sources and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Energy sources and development"
-    },
-    {
-      "id": "geo_alevel_p2_147",
-      "questionNumber": 147,
-      "questionText": "Design a field investigation into Transport systems and trade. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Transport systems and trade"
-    },
-    {
-      "id": "geo_alevel_p2_148",
-      "questionNumber": 148,
-      "questionText": "Design a field investigation into Regional inequalities and development. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Regional inequalities and development"
-    },
-    {
-      "id": "geo_alevel_p2_149",
-      "questionNumber": 149,
-      "questionText": "Design a field investigation into GIS applications to human geography. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "GIS applications to human geography"
-    },
-    {
-      "id": "geo_alevel_p2_150",
-      "questionNumber": 150,
-      "questionText": "Design a field investigation into Development and sustainability. Include a hypothesis, sampling design, primary and secondary data, presentation methods, analysis and limitations. [25]",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "unverified",
-      "topic": "Development and sustainability"
+      "explanation": "### Mark Scheme [15 marks]\n- **Formula:** Rₙ = 2 · d̄_obs · √(n / A), where d̄_obs = mean distance to nearest neighbour, n = settlements, A = study area [6 marks].\n- **Scale Interpretation:** Rₙ = 0 (completely clustered/nucleated—floodplain or borehole clusters); Rₙ = 1.0 (random); Rₙ ≈ 2.15 (uniform dispersed hexagonal spacing—regular smallholdings) [9 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

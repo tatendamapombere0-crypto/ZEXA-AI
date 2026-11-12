@@ -1,4066 +1,795 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_business_studies_a_level_6025_paper1_150",
+    "file": "exam_bank_zimsec_business_studies_a_level_6025_paper1_150.json",
     "subject": "Business Studies",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "6025/01",
-    "paperName": "Paper 1 – Multiple Choice",
-    "paperType": "multiple_choice",
+    "paperName": "Business Studies A-Level Paper 1 — Multiple Choice",
+    "paperType": "Multiple Choice",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Business_Studies_A_Level_6025_Paper1_150.json",
-    "curriculum": "ZIMSEC Advanced Level syllabus/specimen-based practice",
-    "copyrightNote": "Original practice questions synthesized from syllabus structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC Business Studies 6025/1/2 syllabus/specimen and examination structure."
+    "totalQuestions": 30
   },
   "questions": [
     {
-      "id": "Q001",
+      "id": "bs6025_1_q1",
       "questionNumber": 1,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
+      "questionText": "In Ansoff's Growth Matrix, what strategy is a Harare beverage manufacturer pursuing when it launches an entirely new energy drink targeted at existing retail supermarkets?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "Product Development"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "Market Penetration"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "Market Development"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Diversification"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
+      "explanation": "Introducing a NEW product into an EXISTING market represents Product Development in Ansoff's Matrix.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q002",
+      "id": "bs6025_1_q2",
       "questionNumber": 2,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
+      "questionText": "According to Frederick Herzberg's Two-Factor Theory, which of the following acts purely as a Hygiene Factor rather than a Motivator?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Opportunity for achievement and promotion"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Fair base salary, safe working conditions, and clear company supervision policies"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Recognition for excellent performance"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "Job enrichment and greater responsibility"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
+      "correctAnswer": "B",
+      "explanation": "Herzberg classifies pay, working conditions, status, and supervision as Hygiene factors (prevent dissatisfaction), whereas achievement, recognition, work itself, and responsibility are Motivators.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q003",
+      "id": "bs6025_1_q3",
       "questionNumber": 3,
-      "questionText": "A business has a value of $10,150. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "In the Boston Consulting Group (BCG) Matrix, which product category generates strong positive cash surpluses from a high share of a slow-growing mature market?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,522"
+          "text": "Question Mark (Problem Child)"
         },
         {
           "letter": "B",
-          "text": "$10,165"
+          "text": "Star"
         },
         {
           "letter": "C",
-          "text": "$10,135"
+          "text": "Cash Cow"
         },
         {
           "letter": "D",
-          "text": "$3,045"
+          "text": "Dog"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $10,150 = $1,522.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
+      "correctAnswer": "C",
+      "explanation": "Cash Cows hold high market share in low-growth mature markets, requiring little reinvestment while generating surplus cash to fund Stars and Question Marks.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q004",
+      "id": "bs6025_1_q4",
       "questionNumber": 4,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
+      "questionText": "Which legal structure offers owners limited liability while prohibiting the sale of shares to the general public on the Zimbabwe Stock Exchange (ZSE)?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "Sole Proprietorship"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "Public Limited Company (PLC)"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "General Partnership"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Private Limited Company (Pvt Ltd)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
+      "correctAnswer": "D",
+      "explanation": "A Private Limited Company (Pvt Ltd) grants limited liability and separate legal personality but restricts share transfers and cannot list on the ZSE.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q005",
+      "id": "bs6025_1_q5",
       "questionNumber": 5,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
+      "questionText": "Which feature best defines Elron Mayo's Human Relations Theory based on the Hawthorne Studies?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "Worker productivity improves significantly when employees feel valued, consulted, and belong to cohesive informal work teams"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "Workers are motivated solely by piece-rate monetary wages"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "Strict bureaucratic rules and authoritarian supervision maximise output"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Technology completely removes the need for workplace communication"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
+      "explanation": "Mayo's Hawthorne experiments showed social cohesion, managerial attention, and group norms strongly lift productivity beyond physical conditions alone.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q006",
+      "id": "bs6025_1_q6",
       "questionNumber": 6,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
+      "questionText": "When Price Elasticity of Demand (PED) for a firm's product is −2.5, how should the firm alter price to increase Total Sales Revenue?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Increase price sharply to raise margin per unit"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Decrease price slightly, because percentage rise in quantity demanded will exceed percentage fall in price"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Keep price constant because revenue cannot change"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "Stop advertising immediately"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
+      "correctAnswer": "B",
+      "explanation": "|PED| = 2.5 > 1 means demand is price elastic: cutting price generates a proportionately larger increase in quantity sold, increasing total revenue.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q007",
+      "id": "bs6025_1_q7",
       "questionNumber": 7,
-      "questionText": "A business has a value of $10,350. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "A smartphone brand launches a flagship model at $1,200 initially for early adopters before gradually lowering the price once competitors enter. Which pricing strategy is this?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,552"
+          "text": "Predatory Pricing"
         },
         {
           "letter": "B",
-          "text": "$10,365"
+          "text": "Penetration Pricing"
         },
         {
           "letter": "C",
-          "text": "$10,335"
+          "text": "Price Skimming"
         },
         {
           "letter": "D",
-          "text": "$3,105"
+          "text": "Loss-Leader Pricing"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $10,350 = $1,552.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
+      "correctAnswer": "C",
+      "explanation": "Price skimming sets a high initial price to capture high consumer surplus from innovative early adopters and recoup R&D quickly.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q008",
+      "id": "bs6025_1_q8",
       "questionNumber": 8,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
+      "questionText": "What is the main risk of operating a strict Just-In-Time (JIT) inventory system in Zimbabwe?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "Inability to customise customer orders"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "Excessive warehouse rental and obsolescence expenses"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "Over-investment in buffer raw materials"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Vulnerability to sudden transport disruptions, border delays, or supplier failure halting the entire production line"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
+      "correctAnswer": "D",
+      "explanation": "Because JIT holds minimal buffer inventory, any disruption in delivery logistics or supplier reliability immediately halts operations.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q009",
+      "id": "bs6025_1_q9",
       "questionNumber": 9,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
+      "questionText": "In Critical Path Analysis (CPA), what does \"Total Float\" on an activity represent?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "The maximum time an activity can be delayed without delaying the overall project completion date"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "The shortest possible time to finish the entire project"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "A dummy arrow linking two parallel nodes"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Capital tied up in raw material stock"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
+      "explanation": "Total Float = LFT − Duration − EST. Critical activities have zero float; non-critical activities possess positive float.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q010",
+      "id": "bs6025_1_q10",
       "questionNumber": 10,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
+      "questionText": "A business has Non-Current Liabilities $120,000, Issued Share Capital $180,000, and Reserves $100,000. Calculate its Gearing Ratio (Debt / Capital Employed).",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "40%"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "30%"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "66.7%"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "25%"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
+      "correctAnswer": "B",
+      "explanation": "Total Capital Employed = $120,000 + $180,000 + $100,000 = $400,000. Gearing = $120,000 ÷ $400,000 = 30%.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q011",
+      "id": "bs6025_1_q11",
       "questionNumber": 11,
-      "questionText": "A business has a value of $10,550. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "Which motivational theorist introduced the distinction between Theory X (assuming employees dislike work) and Theory Y (assuming employees seek responsibility)?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,582"
+          "text": "Frederick Taylor"
         },
         {
           "letter": "B",
-          "text": "$10,565"
+          "text": "Abraham Maslow"
         },
         {
           "letter": "C",
-          "text": "$10,535"
+          "text": "Douglas McGregor"
         },
         {
           "letter": "D",
-          "text": "$3,165"
+          "text": "Victor Vroom"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $10,550 = $1,582.",
-      "answerConfidence": "high",
-      "topic": "Market research"
+      "correctAnswer": "C",
+      "explanation": "Douglas McGregor formulated Theory X and Theory Y managerial assumptions in 1960.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q012",
+      "id": "bs6025_1_q12",
       "questionNumber": 12,
-      "questionText": "Which factor is most likely to influence a decision concerning product and pricing?",
+      "questionText": "Under Porter's Five Forces model, when does \"Buyer Bargaining Power\" become strongest?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "When raw materials are scarce worldwide"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "When the supplier sells a uniquely patented product with no substitutes"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "When industry barriers to entry are extremely high"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "When a few large retail buyers account for most of a supplier's sales and switching costs are low"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Product and pricing"
+      "correctAnswer": "D",
+      "explanation": "Buyer power is high when buyers are concentrated, buy standardised products, and face low switching costs.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q013",
+      "id": "bs6025_1_q13",
       "questionNumber": 13,
-      "questionText": "Which statement best describes promotion in an A-Level business context?",
+      "questionText": "Which statement correctly distinguishes Quality Assurance (QA) from traditional Quality Control (QC)?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "QA builds quality into every stage of design and production to prevent defects; QC inspects finished goods to detect defects"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "QC prevents defects at the design stage while QA only inspects finished goods"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "QA relies strictly on random sample destruction at the factory gate"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "QC eliminates all supplier involvement"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Promotion"
+      "explanation": "QC is reactive inspection of output; QA focuses on systemic process prevention and Total Quality Management (TQM).",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q014",
+      "id": "bs6025_1_q14",
       "questionNumber": 14,
-      "questionText": "A Zimbabwean enterprise is reviewing distribution. Which action is most appropriate?",
+      "questionText": "How does a sudden depreciation of the domestic currency affect a Zimbabwean gold or tobacco exporter pricing in US dollars?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Exports immediately become more expensive for foreign buyers"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Export competitiveness rises and local-currency revenue per USD earned increases, though imported fuel/machinery inputs cost more"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Imported machinery automatically becomes cheaper"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "Domestic inflation drops immediately to zero"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Distribution"
+      "correctAnswer": "B",
+      "explanation": "Currency depreciation lowers foreign-currency export prices (or increases domestic-currency proceeds) while raising the local cost of imported inputs.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q015",
+      "id": "bs6025_1_q15",
       "questionNumber": 15,
-      "questionText": "A business has a value of $10,750. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "In Kotter's 8-Step Change Model, what is the crucial first step leaders must take before implementing restructuring?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,612"
+          "text": "Distribute annual bonuses before announcing the change"
         },
         {
           "letter": "B",
-          "text": "$10,765"
+          "text": "Eliminate middle management layers immediately"
         },
         {
           "letter": "C",
-          "text": "$10,735"
+          "text": "Establish a sense of urgency so employees understand why change is necessary"
         },
         {
           "letter": "D",
-          "text": "$3,225"
+          "text": "Rewrite the Memorandum of Association"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $10,750 = $1,612.",
-      "answerConfidence": "high",
-      "topic": "Production"
+      "correctAnswer": "C",
+      "explanation": "Kotter's Step 1 is creating a compelling sense of urgency to overcome organisational complacency before building a guiding coalition.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q016",
+      "id": "bs6025_1_q16",
       "questionNumber": 16,
-      "questionText": "Which factor is most likely to influence a decision concerning quality management?",
+      "questionText": "When a central bank raises interest rates sharply to curb inflation, what is the likely impact on highly geared businesses?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "Lower dividend yield expectations"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "Cheaper bank overdrafts and booming mortgage demand"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "Automatic elimination of fixed overheads"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Higher debt-servicing interest costs and reduced consumer credit spending, squeezing net profit margins"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Quality management"
+      "correctAnswer": "D",
+      "explanation": "Higher interest rates increase borrowing expenses for geared firms, discourage capital investment, and dampen consumer spending.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q017",
+      "id": "bs6025_1_q17",
       "questionNumber": 17,
-      "questionText": "Which statement best describes inventory control in an A-Level business context?",
+      "questionText": "What is the primary distinction between Horizontal Integration and Vertical Forward Integration?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "Horizontal joins competitors at the same stage of production; Vertical Forward acquires a distributor or retailer closer to the final consumer"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "Horizontal acquires raw material mines; Vertical Forward merges with a bank"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "Horizontal diversifies into unrelated industries; Vertical Forward reduces capacity"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Both always involve buying raw material suppliers"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Inventory control"
+      "explanation": "Horizontal integration unites firms at the same supply-chain stage; vertical forward integration moves downstream toward customers.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q018",
+      "id": "bs6025_1_q18",
       "questionNumber": 18,
-      "questionText": "A Zimbabwean enterprise is reviewing finance. Which action is most appropriate?",
+      "questionText": "A company calculates Inventory Turnover as 8 times per year (45.6 days) compared with an industry average of 14 times. What does this signal?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Stock is selling out faster than all rivals"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Stock is moving slowly, tying up working capital and risking obsolescence or storage costs"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Gross profit margin is automatically above 50%"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "The business has excessive trade payables"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Finance"
+      "correctAnswer": "B",
+      "explanation": "Lower inventory turnover means goods sit in warehouses longer, tying up cash and raising holding/spoilage risk.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q019",
+      "id": "bs6025_1_q19",
       "questionNumber": 19,
-      "questionText": "A business has a value of $10,950. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "In Henri Fayol's Functions of Management alongside Henry Mintzberg's Roles, which Mintzberg category includes Monitor, Disseminator, and Spokesperson?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,642"
+          "text": "Decisional Roles"
         },
         {
           "letter": "B",
-          "text": "$10,965"
+          "text": "Interpersonal Roles"
         },
         {
           "letter": "C",
-          "text": "$10,935"
+          "text": "Informational Roles"
         },
         {
           "letter": "D",
-          "text": "$3,285"
+          "text": "Bureaucratic Roles"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $10,950 = $1,642.",
-      "answerConfidence": "high",
-      "topic": "Sources of finance"
+      "correctAnswer": "C",
+      "explanation": "Mintzberg groups managerial roles into Interpersonal (Figurehead, Leader, Liaison), Informational (Monitor, Disseminator, Spokesperson), and Decisional (Entrepreneur, Disturbance Handler, Resource Allocator, Negotiator).",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q020",
+      "id": "bs6025_1_q20",
       "questionNumber": 20,
-      "questionText": "Which factor is most likely to influence a decision concerning financial statements?",
+      "questionText": "Which organisational structure delegates authority widely to junior managers across regional branches while reducing layers of hierarchy?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "Matrix structure without team leaders"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "Tall, centralised bureaucratic structure"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "Autocratic sole-control structure"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Flat, decentralised structure"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Financial statements"
+      "correctAnswer": "D",
+      "explanation": "A flat structure has fewer management tiers (wider spans of control), and decentralisation empowers local branches to decide quickly.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q021",
+      "id": "bs6025_1_q21",
       "questionNumber": 21,
-      "questionText": "Which statement best describes ratio analysis in an A-Level business context?",
+      "questionText": "In Decision Tree analysis, a firm must choose Project A (60% chance of $200k payoff, 40% chance of $50k payoff; cost $90k). Calculate the Expected Monetary Value (EMV) and Net Gain.",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "EMV = $140,000; Net Gain = +$50,000"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "EMV = $250,000; Net Gain = +$160,000"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "EMV = $120,000; Net Gain = +$30,000"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "EMV = $90,000; Net Gain = $0"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Ratio analysis"
+      "explanation": "EMV = (0.60 × $200,000) + (0.40 × $50,000) = $120,000 + $20,000 = $140,000. Net Expected Gain = $140,000 − $90,000 = +$50,000.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q022",
+      "id": "bs6025_1_q22",
       "questionNumber": 22,
-      "questionText": "A Zimbabwean enterprise is reviewing business location. Which action is most appropriate?",
+      "questionText": "Which metric measures the proportion of a company's current profit paid out versus retained by examining Dividend per Share ÷ Market Price per Share?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Price/Earnings Ratio"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Dividend Yield"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Acid-Test Ratio"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "Capital Employed"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Business location"
+      "correctAnswer": "B",
+      "explanation": "Dividend Yield = (Dividend per Share ÷ Market Share Price) × 100%, showing annual cash return percentage on the share price.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q023",
+      "id": "bs6025_1_q23",
       "questionNumber": 23,
-      "questionText": "A business has a value of $11,150. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "Why does a business conduct \"Test Marketing\" before full national launch of a new food product?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,672"
+          "text": "To eliminate all fixed manufacturing overheads permanently"
         },
         {
           "letter": "B",
-          "text": "$11,165"
+          "text": "To obtain ISO 9001 factory safety accreditation"
         },
         {
           "letter": "C",
-          "text": "$11,135"
+          "text": "To gather real consumer sales feedback and refine pricing/packaging in a small representative region before committing full launch capital"
         },
         {
           "letter": "D",
-          "text": "$3,345"
+          "text": "To issue bonus shares to founding directors"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $11,150 = $1,672.",
-      "answerConfidence": "high",
-      "topic": "Growth"
+      "correctAnswer": "C",
+      "explanation": "Test marketing trials the product in a limited geographic area to measure repeat purchase rates and fix flaws before costly nationwide distribution.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q024",
+      "id": "bs6025_1_q24",
       "questionNumber": 24,
-      "questionText": "Which factor is most likely to influence a decision concerning globalisation?",
+      "questionText": "What distinguishes \"Corporate Social Responsibility (CSR)\" from minimum legal compliance?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "Maximising short-term share price at the expense of pollution controls"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "Paying statutory PAYE and VAT taxes on time"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "Following minimum wage statutes only when inspected"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Voluntary business initiatives beyond legal obligations to support community welfare, ethical sourcing, and environmental sustainability"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Globalisation"
+      "correctAnswer": "D",
+      "explanation": "CSR goes beyond bare statutory duty, integrating social and environmental stewardship into business strategy.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q025",
+      "id": "bs6025_1_q25",
       "questionNumber": 25,
-      "questionText": "Which statement best describes government and business in an A-Level business context?",
+      "questionText": "Under F.W. Taylor's Scientific Management approach, how are productivity gains achieved?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "Time-and-motion work study to identify one optimal method paired with differential piece-rate financial incentives"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "Autonomous self-managed worker teams with job rotation"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "Eliminating performance targets completely"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Replacing financial wages solely with social recognition"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Government and business"
+      "explanation": "Taylorism breaks jobs into standardised, scientifically measured tasks linked tightly to piece-rate pay.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q026",
+      "id": "bs6025_1_q26",
       "questionNumber": 26,
-      "questionText": "A Zimbabwean enterprise is reviewing ethics and sustainability. Which action is most appropriate?",
+      "questionText": "In Operations Management, when a factory produces 3,600 units against a maximum design capacity of 4,500 units, what is its Capacity Utilisation and how does this affect unit fixed cost?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "125% utilisation; unit fixed cost rises sharply"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "80% utilisation; higher output spreads fixed overhead over more units, lowering average total unit cost"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "80% utilisation; unit variable cost drops to zero"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "60% utilisation; total fixed cost increases linearly"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Ethics and sustainability"
+      "correctAnswer": "B",
+      "explanation": "Capacity utilisation = (3,600 ÷ 4,500) × 100% = 80%. Raising utilisation spreads fixed costs across more units, reducing average cost per unit.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q027",
+      "id": "bs6025_1_q27",
       "questionNumber": 27,
-      "questionText": "A business has a value of $11,350. A change of 15% is being considered. What is 15% of the amount?",
+      "questionText": "Which element of a \"Balanced Scorecard\" evaluates internal operational bottlenecks, defect rates, and cycle times alongside financial profit?",
       "options": [
         {
           "letter": "A",
-          "text": "$1,702"
+          "text": "Statutory Audit perspective"
         },
         {
           "letter": "B",
-          "text": "$11,365"
+          "text": "Balance Sheet Gearing perspective"
         },
         {
           "letter": "C",
-          "text": "$11,335"
+          "text": "Internal Business Processes perspective"
         },
         {
           "letter": "D",
-          "text": "$3,405"
+          "text": "Competitor Monopoly perspective"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "15% of $11,350 = $1,702.",
-      "answerConfidence": "high",
-      "topic": "ICT in business"
+      "correctAnswer": "C",
+      "explanation": "Kaplan & Norton's Balanced Scorecard tracks four perspectives: Financial, Customer, Internal Business Processes, and Learning & Growth.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q028",
+      "id": "bs6025_1_q28",
       "questionNumber": 28,
-      "questionText": "Which factor is most likely to influence a decision concerning strategic planning?",
+      "questionText": "Why might \"Off-the-Job Training\" be preferable to \"On-the-Job Training\" for introducing complex CAD engineering software?",
       "options": [
         {
           "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
+          "text": "It avoids any theoretical knowledge of software features"
         },
         {
           "letter": "B",
-          "text": "The alphabetic order of customers"
+          "text": "It guarantees zero travel or course fee costs"
         },
         {
           "letter": "C",
-          "text": "Only the colour of the company logo"
+          "text": "It immediately produces saleable factory output on day one"
         },
         {
           "letter": "D",
-          "text": "None of the above"
+          "text": "Learners receive specialist instruction free from workplace distractions and avoid costly mistakes on live customer orders"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Strategic planning"
+      "correctAnswer": "D",
+      "explanation": "Off-the-job training suits technical skills requiring specialist trainers and uninterrupted practice away from live production pressures.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q029",
+      "id": "bs6025_1_q29",
       "questionNumber": 29,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
+      "questionText": "When a firm applies \"PESTLE Analysis\" prior to opening a branch in Bulawayo, which factors fall under the Legal and Technological dimensions?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
+          "text": "Minimum wage/EMA environmental regulations (Legal) and mobile payment/solar power infrastructure (Technological)"
         },
         {
           "letter": "B",
-          "text": "It applies only to large companies"
+          "text": "Brand logo colour (Legal) and Maslow's hierarchy (Technological)"
         },
         {
           "letter": "C",
-          "text": "It excludes external influences"
+          "text": "Internal cash budget (Legal) and staff absenteeism (Technological)"
         },
         {
           "letter": "D",
-          "text": "It concerns accounting only"
+          "text": "Gross profit margin (Legal) and balance sheet equity (Technological)"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
+      "explanation": "PESTLE scans external Political, Economic, Social, Technological, Legal, and Environmental influences.",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q030",
+      "id": "bs6025_1_q30",
       "questionNumber": 30,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
+      "questionText": "What is the danger of \"Overtrading\" in a rapidly expanding SME?",
       "options": [
         {
           "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
+          "text": "Holding excessive surplus cash earning bank interest"
         },
         {
           "letter": "B",
-          "text": "Ignore stakeholder interests"
+          "text": "Expanding sales rapidly without sufficient working capital, causing acute cash illiquidity despite rising paper profits"
         },
         {
           "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
+          "text": "Having zero trade receivables on the balance sheet"
         },
         {
           "letter": "D",
-          "text": "Avoid measuring outcomes"
+          "text": "Cutting sales below break-even deliberately"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q031",
-      "questionNumber": 31,
-      "questionText": "A business has a value of $11,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,732"
-        },
-        {
-          "letter": "B",
-          "text": "$11,565"
-        },
-        {
-          "letter": "C",
-          "text": "$11,535"
-        },
-        {
-          "letter": "D",
-          "text": "$3,465"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $11,550 = $1,732.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q032",
-      "questionNumber": 32,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q033",
-      "questionNumber": 33,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q034",
-      "questionNumber": 34,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q035",
-      "questionNumber": 35,
-      "questionText": "A business has a value of $11,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,762"
-        },
-        {
-          "letter": "B",
-          "text": "$11,765"
-        },
-        {
-          "letter": "C",
-          "text": "$11,735"
-        },
-        {
-          "letter": "D",
-          "text": "$3,525"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $11,750 = $1,762.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q036",
-      "questionNumber": 36,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q037",
-      "questionNumber": 37,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q038",
-      "questionNumber": 38,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q039",
-      "questionNumber": 39,
-      "questionText": "A business has a value of $11,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,792"
-        },
-        {
-          "letter": "B",
-          "text": "$11,965"
-        },
-        {
-          "letter": "C",
-          "text": "$11,935"
-        },
-        {
-          "letter": "D",
-          "text": "$3,585"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $11,950 = $1,792.",
-      "answerConfidence": "high",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q040",
-      "questionNumber": 40,
-      "questionText": "Which factor is most likely to influence a decision concerning product and pricing?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q041",
-      "questionNumber": 41,
-      "questionText": "Which statement best describes promotion in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q042",
-      "questionNumber": 42,
-      "questionText": "A Zimbabwean enterprise is reviewing distribution. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q043",
-      "questionNumber": 43,
-      "questionText": "A business has a value of $12,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,822"
-        },
-        {
-          "letter": "B",
-          "text": "$12,165"
-        },
-        {
-          "letter": "C",
-          "text": "$12,135"
-        },
-        {
-          "letter": "D",
-          "text": "$3,645"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $12,150 = $1,822.",
-      "answerConfidence": "high",
-      "topic": "Production"
-    },
-    {
-      "id": "Q044",
-      "questionNumber": 44,
-      "questionText": "Which factor is most likely to influence a decision concerning quality management?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q045",
-      "questionNumber": 45,
-      "questionText": "Which statement best describes inventory control in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q046",
-      "questionNumber": 46,
-      "questionText": "A Zimbabwean enterprise is reviewing finance. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q047",
-      "questionNumber": 47,
-      "questionText": "A business has a value of $12,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,852"
-        },
-        {
-          "letter": "B",
-          "text": "$12,365"
-        },
-        {
-          "letter": "C",
-          "text": "$12,335"
-        },
-        {
-          "letter": "D",
-          "text": "$3,705"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $12,350 = $1,852.",
-      "answerConfidence": "high",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q048",
-      "questionNumber": 48,
-      "questionText": "Which factor is most likely to influence a decision concerning financial statements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q049",
-      "questionNumber": 49,
-      "questionText": "Which statement best describes ratio analysis in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q050",
-      "questionNumber": 50,
-      "questionText": "A Zimbabwean enterprise is reviewing business location. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q051",
-      "questionNumber": 51,
-      "questionText": "A business has a value of $12,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,882"
-        },
-        {
-          "letter": "B",
-          "text": "$12,565"
-        },
-        {
-          "letter": "C",
-          "text": "$12,535"
-        },
-        {
-          "letter": "D",
-          "text": "$3,765"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $12,550 = $1,882.",
-      "answerConfidence": "high",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q052",
-      "questionNumber": 52,
-      "questionText": "Which factor is most likely to influence a decision concerning globalisation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q053",
-      "questionNumber": 53,
-      "questionText": "Which statement best describes government and business in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q054",
-      "questionNumber": 54,
-      "questionText": "A Zimbabwean enterprise is reviewing ethics and sustainability. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q055",
-      "questionNumber": 55,
-      "questionText": "A business has a value of $12,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,912"
-        },
-        {
-          "letter": "B",
-          "text": "$12,765"
-        },
-        {
-          "letter": "C",
-          "text": "$12,735"
-        },
-        {
-          "letter": "D",
-          "text": "$3,825"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $12,750 = $1,912.",
-      "answerConfidence": "high",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q056",
-      "questionNumber": 56,
-      "questionText": "Which factor is most likely to influence a decision concerning strategic planning?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q057",
-      "questionNumber": 57,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q058",
-      "questionNumber": 58,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q059",
-      "questionNumber": 59,
-      "questionText": "A business has a value of $12,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,942"
-        },
-        {
-          "letter": "B",
-          "text": "$12,965"
-        },
-        {
-          "letter": "C",
-          "text": "$12,935"
-        },
-        {
-          "letter": "D",
-          "text": "$3,885"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $12,950 = $1,942.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q060",
-      "questionNumber": 60,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q061",
-      "questionNumber": 61,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q062",
-      "questionNumber": 62,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q063",
-      "questionNumber": 63,
-      "questionText": "A business has a value of $13,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$1,972"
-        },
-        {
-          "letter": "B",
-          "text": "$13,165"
-        },
-        {
-          "letter": "C",
-          "text": "$13,135"
-        },
-        {
-          "letter": "D",
-          "text": "$3,945"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $13,150 = $1,972.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q064",
-      "questionNumber": 64,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q065",
-      "questionNumber": 65,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q066",
-      "questionNumber": 66,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q067",
-      "questionNumber": 67,
-      "questionText": "A business has a value of $13,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,002"
-        },
-        {
-          "letter": "B",
-          "text": "$13,365"
-        },
-        {
-          "letter": "C",
-          "text": "$13,335"
-        },
-        {
-          "letter": "D",
-          "text": "$4,005"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $13,350 = $2,002.",
-      "answerConfidence": "high",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q068",
-      "questionNumber": 68,
-      "questionText": "Which factor is most likely to influence a decision concerning product and pricing?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q069",
-      "questionNumber": 69,
-      "questionText": "Which statement best describes promotion in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q070",
-      "questionNumber": 70,
-      "questionText": "A Zimbabwean enterprise is reviewing distribution. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q071",
-      "questionNumber": 71,
-      "questionText": "A business has a value of $13,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,032"
-        },
-        {
-          "letter": "B",
-          "text": "$13,565"
-        },
-        {
-          "letter": "C",
-          "text": "$13,535"
-        },
-        {
-          "letter": "D",
-          "text": "$4,065"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $13,550 = $2,032.",
-      "answerConfidence": "high",
-      "topic": "Production"
-    },
-    {
-      "id": "Q072",
-      "questionNumber": 72,
-      "questionText": "Which factor is most likely to influence a decision concerning quality management?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q073",
-      "questionNumber": 73,
-      "questionText": "Which statement best describes inventory control in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q074",
-      "questionNumber": 74,
-      "questionText": "A Zimbabwean enterprise is reviewing finance. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q075",
-      "questionNumber": 75,
-      "questionText": "A business has a value of $13,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,062"
-        },
-        {
-          "letter": "B",
-          "text": "$13,765"
-        },
-        {
-          "letter": "C",
-          "text": "$13,735"
-        },
-        {
-          "letter": "D",
-          "text": "$4,125"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $13,750 = $2,062.",
-      "answerConfidence": "high",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q076",
-      "questionNumber": 76,
-      "questionText": "Which factor is most likely to influence a decision concerning financial statements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q077",
-      "questionNumber": 77,
-      "questionText": "Which statement best describes ratio analysis in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q078",
-      "questionNumber": 78,
-      "questionText": "A Zimbabwean enterprise is reviewing business location. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q079",
-      "questionNumber": 79,
-      "questionText": "A business has a value of $13,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,092"
-        },
-        {
-          "letter": "B",
-          "text": "$13,965"
-        },
-        {
-          "letter": "C",
-          "text": "$13,935"
-        },
-        {
-          "letter": "D",
-          "text": "$4,185"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $13,950 = $2,092.",
-      "answerConfidence": "high",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q080",
-      "questionNumber": 80,
-      "questionText": "Which factor is most likely to influence a decision concerning globalisation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q081",
-      "questionNumber": 81,
-      "questionText": "Which statement best describes government and business in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q082",
-      "questionNumber": 82,
-      "questionText": "A Zimbabwean enterprise is reviewing ethics and sustainability. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q083",
-      "questionNumber": 83,
-      "questionText": "A business has a value of $14,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,122"
-        },
-        {
-          "letter": "B",
-          "text": "$14,165"
-        },
-        {
-          "letter": "C",
-          "text": "$14,135"
-        },
-        {
-          "letter": "D",
-          "text": "$4,245"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $14,150 = $2,122.",
-      "answerConfidence": "high",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q084",
-      "questionNumber": 84,
-      "questionText": "Which factor is most likely to influence a decision concerning strategic planning?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q085",
-      "questionNumber": 85,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q086",
-      "questionNumber": 86,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q087",
-      "questionNumber": 87,
-      "questionText": "A business has a value of $14,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,152"
-        },
-        {
-          "letter": "B",
-          "text": "$14,365"
-        },
-        {
-          "letter": "C",
-          "text": "$14,335"
-        },
-        {
-          "letter": "D",
-          "text": "$4,305"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $14,350 = $2,152.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q088",
-      "questionNumber": 88,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q089",
-      "questionNumber": 89,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q090",
-      "questionNumber": 90,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q091",
-      "questionNumber": 91,
-      "questionText": "A business has a value of $14,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,182"
-        },
-        {
-          "letter": "B",
-          "text": "$14,565"
-        },
-        {
-          "letter": "C",
-          "text": "$14,535"
-        },
-        {
-          "letter": "D",
-          "text": "$4,365"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $14,550 = $2,182.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q092",
-      "questionNumber": 92,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q093",
-      "questionNumber": 93,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q094",
-      "questionNumber": 94,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q095",
-      "questionNumber": 95,
-      "questionText": "A business has a value of $14,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,212"
-        },
-        {
-          "letter": "B",
-          "text": "$14,765"
-        },
-        {
-          "letter": "C",
-          "text": "$14,735"
-        },
-        {
-          "letter": "D",
-          "text": "$4,425"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $14,750 = $2,212.",
-      "answerConfidence": "high",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q096",
-      "questionNumber": 96,
-      "questionText": "Which factor is most likely to influence a decision concerning product and pricing?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q097",
-      "questionNumber": 97,
-      "questionText": "Which statement best describes promotion in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q098",
-      "questionNumber": 98,
-      "questionText": "A Zimbabwean enterprise is reviewing distribution. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q099",
-      "questionNumber": 99,
-      "questionText": "A business has a value of $14,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,242"
-        },
-        {
-          "letter": "B",
-          "text": "$14,965"
-        },
-        {
-          "letter": "C",
-          "text": "$14,935"
-        },
-        {
-          "letter": "D",
-          "text": "$4,485"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $14,950 = $2,242.",
-      "answerConfidence": "high",
-      "topic": "Production"
-    },
-    {
-      "id": "Q100",
-      "questionNumber": 100,
-      "questionText": "Which factor is most likely to influence a decision concerning quality management?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q101",
-      "questionNumber": 101,
-      "questionText": "Which statement best describes inventory control in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q102",
-      "questionNumber": 102,
-      "questionText": "A Zimbabwean enterprise is reviewing finance. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q103",
-      "questionNumber": 103,
-      "questionText": "A business has a value of $15,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,272"
-        },
-        {
-          "letter": "B",
-          "text": "$15,165"
-        },
-        {
-          "letter": "C",
-          "text": "$15,135"
-        },
-        {
-          "letter": "D",
-          "text": "$4,545"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $15,150 = $2,272.",
-      "answerConfidence": "high",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q104",
-      "questionNumber": 104,
-      "questionText": "Which factor is most likely to influence a decision concerning financial statements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q105",
-      "questionNumber": 105,
-      "questionText": "Which statement best describes ratio analysis in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q106",
-      "questionNumber": 106,
-      "questionText": "A Zimbabwean enterprise is reviewing business location. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q107",
-      "questionNumber": 107,
-      "questionText": "A business has a value of $15,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,302"
-        },
-        {
-          "letter": "B",
-          "text": "$15,365"
-        },
-        {
-          "letter": "C",
-          "text": "$15,335"
-        },
-        {
-          "letter": "D",
-          "text": "$4,605"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $15,350 = $2,302.",
-      "answerConfidence": "high",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q108",
-      "questionNumber": 108,
-      "questionText": "Which factor is most likely to influence a decision concerning globalisation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q109",
-      "questionNumber": 109,
-      "questionText": "Which statement best describes government and business in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q110",
-      "questionNumber": 110,
-      "questionText": "A Zimbabwean enterprise is reviewing ethics and sustainability. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q111",
-      "questionNumber": 111,
-      "questionText": "A business has a value of $15,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,332"
-        },
-        {
-          "letter": "B",
-          "text": "$15,565"
-        },
-        {
-          "letter": "C",
-          "text": "$15,535"
-        },
-        {
-          "letter": "D",
-          "text": "$4,665"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $15,550 = $2,332.",
-      "answerConfidence": "high",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q112",
-      "questionNumber": 112,
-      "questionText": "Which factor is most likely to influence a decision concerning strategic planning?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q113",
-      "questionNumber": 113,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q114",
-      "questionNumber": 114,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q115",
-      "questionNumber": 115,
-      "questionText": "A business has a value of $15,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,362"
-        },
-        {
-          "letter": "B",
-          "text": "$15,765"
-        },
-        {
-          "letter": "C",
-          "text": "$15,735"
-        },
-        {
-          "letter": "D",
-          "text": "$4,725"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $15,750 = $2,362.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q116",
-      "questionNumber": 116,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q117",
-      "questionNumber": 117,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q118",
-      "questionNumber": 118,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q119",
-      "questionNumber": 119,
-      "questionText": "A business has a value of $15,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,392"
-        },
-        {
-          "letter": "B",
-          "text": "$15,965"
-        },
-        {
-          "letter": "C",
-          "text": "$15,935"
-        },
-        {
-          "letter": "D",
-          "text": "$4,785"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $15,950 = $2,392.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q120",
-      "questionNumber": 120,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q121",
-      "questionNumber": 121,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q122",
-      "questionNumber": 122,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q123",
-      "questionNumber": 123,
-      "questionText": "A business has a value of $16,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,422"
-        },
-        {
-          "letter": "B",
-          "text": "$16,165"
-        },
-        {
-          "letter": "C",
-          "text": "$16,135"
-        },
-        {
-          "letter": "D",
-          "text": "$4,845"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $16,150 = $2,422.",
-      "answerConfidence": "high",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q124",
-      "questionNumber": 124,
-      "questionText": "Which factor is most likely to influence a decision concerning product and pricing?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q125",
-      "questionNumber": 125,
-      "questionText": "Which statement best describes promotion in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q126",
-      "questionNumber": 126,
-      "questionText": "A Zimbabwean enterprise is reviewing distribution. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q127",
-      "questionNumber": 127,
-      "questionText": "A business has a value of $16,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,452"
-        },
-        {
-          "letter": "B",
-          "text": "$16,365"
-        },
-        {
-          "letter": "C",
-          "text": "$16,335"
-        },
-        {
-          "letter": "D",
-          "text": "$4,905"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $16,350 = $2,452.",
-      "answerConfidence": "high",
-      "topic": "Production"
-    },
-    {
-      "id": "Q128",
-      "questionNumber": 128,
-      "questionText": "Which factor is most likely to influence a decision concerning quality management?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q129",
-      "questionNumber": 129,
-      "questionText": "Which statement best describes inventory control in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q130",
-      "questionNumber": 130,
-      "questionText": "A Zimbabwean enterprise is reviewing finance. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q131",
-      "questionNumber": 131,
-      "questionText": "A business has a value of $16,550. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,482"
-        },
-        {
-          "letter": "B",
-          "text": "$16,565"
-        },
-        {
-          "letter": "C",
-          "text": "$16,535"
-        },
-        {
-          "letter": "D",
-          "text": "$4,965"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $16,550 = $2,482.",
-      "answerConfidence": "high",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q132",
-      "questionNumber": 132,
-      "questionText": "Which factor is most likely to influence a decision concerning financial statements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q133",
-      "questionNumber": 133,
-      "questionText": "Which statement best describes ratio analysis in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q134",
-      "questionNumber": 134,
-      "questionText": "A Zimbabwean enterprise is reviewing business location. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q135",
-      "questionNumber": 135,
-      "questionText": "A business has a value of $16,750. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,512"
-        },
-        {
-          "letter": "B",
-          "text": "$16,765"
-        },
-        {
-          "letter": "C",
-          "text": "$16,735"
-        },
-        {
-          "letter": "D",
-          "text": "$5,025"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $16,750 = $2,512.",
-      "answerConfidence": "high",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q136",
-      "questionNumber": 136,
-      "questionText": "Which factor is most likely to influence a decision concerning globalisation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q137",
-      "questionNumber": 137,
-      "questionText": "Which statement best describes government and business in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q138",
-      "questionNumber": 138,
-      "questionText": "A Zimbabwean enterprise is reviewing ethics and sustainability. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q139",
-      "questionNumber": 139,
-      "questionText": "A business has a value of $16,950. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,542"
-        },
-        {
-          "letter": "B",
-          "text": "$16,965"
-        },
-        {
-          "letter": "C",
-          "text": "$16,935"
-        },
-        {
-          "letter": "D",
-          "text": "$5,085"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $16,950 = $2,542.",
-      "answerConfidence": "high",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q140",
-      "questionNumber": 140,
-      "questionText": "Which factor is most likely to influence a decision concerning strategic planning?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q141",
-      "questionNumber": 141,
-      "questionText": "Which statement best describes business objectives in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q142",
-      "questionNumber": 142,
-      "questionText": "A Zimbabwean enterprise is reviewing entrepreneurship. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q143",
-      "questionNumber": 143,
-      "questionText": "A business has a value of $17,150. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,572"
-        },
-        {
-          "letter": "B",
-          "text": "$17,165"
-        },
-        {
-          "letter": "C",
-          "text": "$17,135"
-        },
-        {
-          "letter": "D",
-          "text": "$5,145"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $17,150 = $2,572.",
-      "answerConfidence": "high",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q144",
-      "questionNumber": 144,
-      "questionText": "Which factor is most likely to influence a decision concerning stakeholders?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q145",
-      "questionNumber": 145,
-      "questionText": "Which statement best describes business environment in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q146",
-      "questionNumber": 146,
-      "questionText": "A Zimbabwean enterprise is reviewing management and leadership. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q147",
-      "questionNumber": 147,
-      "questionText": "A business has a value of $17,350. A change of 15% is being considered. What is 15% of the amount?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$2,602"
-        },
-        {
-          "letter": "B",
-          "text": "$17,365"
-        },
-        {
-          "letter": "C",
-          "text": "$17,335"
-        },
-        {
-          "letter": "D",
-          "text": "$5,205"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "15% of $17,350 = $2,602.",
-      "answerConfidence": "high",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q148",
-      "questionNumber": 148,
-      "questionText": "Which factor is most likely to influence a decision concerning motivation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Objectives, resources, market conditions and stakeholder effects"
-        },
-        {
-          "letter": "B",
-          "text": "The alphabetic order of customers"
-        },
-        {
-          "letter": "C",
-          "text": "Only the colour of the company logo"
-        },
-        {
-          "letter": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions are influenced by objectives, resources, environment and stakeholders.",
-      "answerConfidence": "high",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q149",
-      "questionNumber": 149,
-      "questionText": "Which statement best describes communication in an A-Level business context?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns decisions and processes used to achieve business objectives efficiently"
-        },
-        {
-          "letter": "B",
-          "text": "It applies only to large companies"
-        },
-        {
-          "letter": "C",
-          "text": "It excludes external influences"
-        },
-        {
-          "letter": "D",
-          "text": "It concerns accounting only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the broad business-management focus of the topic.",
-      "answerConfidence": "high",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q150",
-      "questionNumber": 150,
-      "questionText": "A Zimbabwean enterprise is reviewing marketing. Which action is most appropriate?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Analyse relevant evidence before selecting a course of action"
-        },
-        {
-          "letter": "B",
-          "text": "Ignore stakeholder interests"
-        },
-        {
-          "letter": "C",
-          "text": "Use the same decision regardless of circumstances"
-        },
-        {
-          "letter": "D",
-          "text": "Avoid measuring outcomes"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Business decisions should be evidence-based and evaluated against objectives.",
-      "answerConfidence": "high",
-      "topic": "Marketing"
+      "correctAnswer": "B",
+      "explanation": "Overtrading occurs when fast sales growth outpaces permanent capital, exhausting cash on stock/debtors until the firm cannot pay pressing creditors.",
+      "answerConfidence": "high"
     }
   ]
 }

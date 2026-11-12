@@ -1,14 +1,17 @@
 {
   "paperInfo": {
+    "id": "exam_bank_biology_paper1",
+    "file": "exam_bank_biology_paper1.json",
     "subject": "Biology",
     "level": "O-Level",
     "paperCode": "BIO-P1-PRACTICE",
     "paperName": "Biology Paper 1 - Multiple Choice Practice Questions (Full Syllabus Coverage)",
-    "paperType": "Practice Questions (Original, ZIMSEC-syllabus-aligned - not a real past exam paper)"
+    "paperType": "Practice Questions (Original, ZIMSEC-syllabus-aligned - not a real past exam paper)",
+    "questionCount": 150
   },
   "questions": [
     {
-      "id": "bio_p1_q001",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "Which of the following is NOT one of the characteristics used to classify a thing as a living organism?",
       "options": [
@@ -18,23 +21,24 @@
         },
         {
           "letter": "B",
-          "text": "Respiration"
+          "text": "Colour"
         },
         {
           "letter": "C",
-          "text": "Colour"
+          "text": "Respiration"
         },
         {
           "letter": "D",
           "text": "Reproduction"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The characteristics of living organisms are commonly remembered as MRS GREN (Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition). Colour is not one of these characteristics.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q002",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "The scientific naming system in which every organism is given a two-part Latin name is called:",
       "options": [
@@ -44,23 +48,24 @@
         },
         {
           "letter": "B",
-          "text": "Binomial nomenclature"
+          "text": "Taxonomy"
         },
         {
           "letter": "C",
-          "text": "Taxonomy"
+          "text": "Binomial nomenclature"
         },
         {
           "letter": "D",
           "text": "Dichotomous keying"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Binomial nomenclature gives each organism a two-part name consisting of its genus and species, e.g. Homo sapiens.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q003",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "Which group of organisms is characterised by having a body made of thread-like hyphae and reproducing by spores, and cannot photosynthesise?",
       "options": [
@@ -74,29 +79,30 @@
         },
         {
           "letter": "C",
-          "text": "Fungi"
+          "text": "Bacteria"
         },
         {
           "letter": "D",
-          "text": "Bacteria"
+          "text": "Fungi"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Fungi have a body made of hyphae (forming a mycelium), reproduce by spores, and obtain nutrients by absorption rather than photosynthesis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q004",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "A dichotomous key is used mainly to:",
       "options": [
         {
           "letter": "A",
-          "text": "measure the size of an organism"
+          "text": "identify an unknown organism through a series of paired choices"
         },
         {
           "letter": "B",
-          "text": "identify an unknown organism through a series of paired choices"
+          "text": "measure the size of an organism"
         },
         {
           "letter": "C",
@@ -107,12 +113,13 @@
           "text": "determine the age of an organism"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "A dichotomous key identifies organisms by presenting a series of paired (either/or) statements about observable features, leading step by step to the correct identification.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q005",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "Viruses are generally considered non-living because they:",
       "options": [
@@ -135,10 +142,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Viruses lack the cellular machinery to carry out life processes such as reproduction on their own; they can only replicate by hijacking a living host cell.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q006",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Which kingdom includes organisms that are unicellular, lack a true nucleus, and have a cell wall made of peptidoglycan?",
       "options": [
@@ -161,10 +169,11 @@
       ],
       "correctAnswer": "C",
       "explanation": "Bacteria are prokaryotes: unicellular organisms without a membrane-bound nucleus, with a cell wall containing peptidoglycan.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q007",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "Which of the following best describes 'sensitivity' as a characteristic of living organisms?",
       "options": [
@@ -174,7 +183,7 @@
         },
         {
           "letter": "B",
-          "text": "The ability to detect and respond to changes in the environment"
+          "text": "The ability to remove waste products from the body"
         },
         {
           "letter": "C",
@@ -182,25 +191,26 @@
         },
         {
           "letter": "D",
-          "text": "The ability to remove waste products from the body"
+          "text": "The ability to detect and respond to changes in the environment"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Sensitivity (irritability) is the ability of an organism to detect and respond appropriately to stimuli/changes in its surroundings.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q008",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "The organelle responsible for controlling the activities of a cell and containing hereditary material is the:",
       "options": [
         {
           "letter": "A",
-          "text": "mitochondrion"
+          "text": "nucleus"
         },
         {
           "letter": "B",
-          "text": "nucleus"
+          "text": "mitochondrion"
         },
         {
           "letter": "C",
@@ -211,12 +221,13 @@
           "text": "Golgi body"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The nucleus contains the cell's DNA (hereditary material) and controls the cell's activities, including growth and reproduction.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q009",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Which structure is found in plant cells but NOT in animal cells?",
       "options": [
@@ -226,23 +237,24 @@
         },
         {
           "letter": "B",
-          "text": "Cell membrane"
+          "text": "Cellulose cell wall"
         },
         {
           "letter": "C",
-          "text": "Cellulose cell wall"
+          "text": "Cell membrane"
         },
         {
           "letter": "D",
           "text": "Cytoplasm"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Plant cells have a rigid cellulose cell wall outside the cell membrane, which gives support and shape; animal cells lack this structure.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q010",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "The site of aerobic respiration, where most ATP is produced, is the:",
       "options": [
@@ -261,24 +273,21 @@
         {
           "letter": "D",
           "text": "vacuole"
-        },
-        {
-          "letter": "E",
-          "text": "ribosome"
         }
       ],
       "correctAnswer": "C",
       "explanation": "Mitochondria are the site of aerobic respiration, producing most of a cell's ATP (energy currency).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q011",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "Which organelle is responsible for photosynthesis in plant cells?",
       "options": [
         {
           "letter": "A",
-          "text": "Chloroplast"
+          "text": "Vacuole"
         },
         {
           "letter": "B",
@@ -290,15 +299,16 @@
         },
         {
           "letter": "D",
-          "text": "Vacuole"
+          "text": "Chloroplast"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Chloroplasts contain chlorophyll, which absorbs light energy used to carry out photosynthesis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q012",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "A large, fluid-filled space in a plant cell that helps maintain turgidity is the:",
       "options": [
@@ -321,10 +331,11 @@
       ],
       "correctAnswer": "A",
       "explanation": "The large permanent vacuole in plant cells is filled with cell sap and helps maintain turgor pressure, keeping the cell firm.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q013",
+      "id": "q_13",
       "questionNumber": 13,
       "questionText": "Root hair cells are specialised for water absorption mainly by having:",
       "options": [
@@ -347,10 +358,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Root hair cells have a long, thin projection that greatly increases surface area in contact with soil water, maximising water absorption by osmosis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q014",
+      "id": "q_14",
       "questionNumber": 14,
       "questionText": "Red blood cells are adapted for oxygen transport by:",
       "options": [
@@ -360,23 +372,24 @@
         },
         {
           "letter": "B",
-          "text": "having no nucleus, allowing more space for haemoglobin"
+          "text": "having many chloroplasts"
         },
         {
           "letter": "C",
-          "text": "having many chloroplasts"
+          "text": "having no nucleus, allowing more space for haemoglobin"
         },
         {
           "letter": "D",
           "text": "having a cellulose cell wall"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Mature red blood cells lack a nucleus, providing more internal space to pack in haemoglobin, which binds and carries oxygen.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q015",
+      "id": "q_15",
       "questionNumber": 15,
       "questionText": "The movement of molecules from a region of high concentration to a region of low concentration is called:",
       "options": [
@@ -390,29 +403,30 @@
         },
         {
           "letter": "C",
-          "text": "diffusion"
+          "text": "transpiration"
         },
         {
           "letter": "D",
-          "text": "transpiration"
+          "text": "diffusion"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Diffusion is the net movement of particles from an area of higher concentration to an area of lower concentration, down a concentration gradient.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q016",
+      "id": "q_16",
       "questionNumber": 16,
       "questionText": "Osmosis is best defined as the movement of:",
       "options": [
         {
           "letter": "A",
-          "text": "solute particles across a partially permeable membrane"
+          "text": "water from a region of high water potential to low water potential through a partially permeable membrane"
         },
         {
           "letter": "B",
-          "text": "water from a region of high water potential to low water potential through a partially permeable membrane"
+          "text": "solute particles across a partially permeable membrane"
         },
         {
           "letter": "C",
@@ -423,12 +437,13 @@
           "text": "gases into and out of the lungs"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Osmosis is the net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q017",
+      "id": "q_17",
       "questionNumber": 17,
       "questionText": "When a plant cell is placed in a concentrated salt solution, it will most likely become:",
       "options": [
@@ -451,10 +466,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "In a concentrated (hypertonic) solution, water leaves the cell by osmosis, causing the cell membrane to pull away from the cell wall - a condition called plasmolysis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q018",
+      "id": "q_18",
       "questionNumber": 18,
       "questionText": "Active transport differs from diffusion because active transport:",
       "options": [
@@ -464,23 +480,24 @@
         },
         {
           "letter": "B",
-          "text": "requires energy (ATP) and can move substances against a concentration gradient"
+          "text": "does not require a cell membrane"
         },
         {
           "letter": "C",
-          "text": "does not require a cell membrane"
+          "text": "requires energy (ATP) and can move substances against a concentration gradient"
         },
         {
           "letter": "D",
           "text": "only occurs in plants"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Active transport uses energy from respiration (ATP) to move substances from a region of low concentration to high concentration, against the concentration gradient.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q019",
+      "id": "q_19",
       "questionNumber": 19,
       "questionText": "Root hair cells absorb mineral ions from the soil mainly by:",
       "options": [
@@ -490,7 +507,7 @@
         },
         {
           "letter": "B",
-          "text": "active transport, since minerals are often more concentrated inside the root hair cell"
+          "text": "filtration"
         },
         {
           "letter": "C",
@@ -498,25 +515,26 @@
         },
         {
           "letter": "D",
-          "text": "filtration"
+          "text": "active transport, since minerals are often more concentrated inside the root hair cell"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Mineral ions are often at a lower concentration in the soil than inside root hair cells, so active transport (requiring energy) is used to absorb them against the concentration gradient.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q020",
+      "id": "q_20",
       "questionNumber": 20,
       "questionText": "A red blood cell placed in distilled (pure) water will most likely:",
       "options": [
         {
           "letter": "A",
-          "text": "shrink and crenate"
+          "text": "swell and possibly burst (haemolysis)"
         },
         {
           "letter": "B",
-          "text": "swell and possibly burst (haemolysis)"
+          "text": "shrink and crenate"
         },
         {
           "letter": "C",
@@ -527,12 +545,13 @@
           "text": "turn into a plant cell"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Distilled water has a higher water potential than the cell's cytoplasm, so water enters the cell by osmosis; since animal cells lack a cell wall, they can swell and burst (haemolysis).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q021",
+      "id": "q_21",
       "questionNumber": 21,
       "questionText": "Which cell structure controls what enters and leaves a cell?",
       "options": [
@@ -555,10 +574,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The cell (plasma) membrane is partially permeable and controls the movement of substances into and out of the cell.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q022",
+      "id": "q_22",
       "questionNumber": 22,
       "questionText": "A tissue is best defined as:",
       "options": [
@@ -568,23 +588,24 @@
         },
         {
           "letter": "B",
-          "text": "a group of similar cells working together to perform a specific function"
+          "text": "a group of different organs working together"
         },
         {
           "letter": "C",
-          "text": "a group of different organs working together"
+          "text": "a group of similar cells working together to perform a specific function"
         },
         {
           "letter": "D",
           "text": "the smallest unit of an organism's classification"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "A tissue is a group of similar cells that work together to carry out a particular function, such as muscle tissue or xylem tissue.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q023",
+      "id": "q_23",
       "questionNumber": 23,
       "questionText": "An organ is best defined as:",
       "options": [
@@ -594,7 +615,7 @@
         },
         {
           "letter": "B",
-          "text": "a group of different tissues working together to perform a specific function"
+          "text": "a group of organisms of the same species"
         },
         {
           "letter": "C",
@@ -602,21 +623,22 @@
         },
         {
           "letter": "D",
-          "text": "a group of organisms of the same species"
+          "text": "a group of different tissues working together to perform a specific function"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "An organ is made up of two or more different tissues working together to carry out a specific function, such as the heart or a leaf.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q024",
+      "id": "q_24",
       "questionNumber": 24,
       "questionText": "Which of the following elements is found in proteins but NOT in carbohydrates or fats?",
       "options": [
         {
           "letter": "A",
-          "text": "Carbon"
+          "text": "Nitrogen"
         },
         {
           "letter": "B",
@@ -624,19 +646,20 @@
         },
         {
           "letter": "C",
-          "text": "Nitrogen"
+          "text": "Carbon"
         },
         {
           "letter": "D",
           "text": "Oxygen"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Proteins contain nitrogen (in their amino acid groups) in addition to carbon, hydrogen and oxygen, which distinguishes them from carbohydrates and fats.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q025",
+      "id": "q_25",
       "questionNumber": 25,
       "questionText": "The building blocks (monomers) of proteins are called:",
       "options": [
@@ -659,10 +682,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Proteins are made up of long chains of amino acids joined together by peptide bonds.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q026",
+      "id": "q_26",
       "questionNumber": 26,
       "questionText": "The test used to detect the presence of starch in a food sample uses:",
       "options": [
@@ -672,23 +696,24 @@
         },
         {
           "letter": "B",
-          "text": "Iodine solution, turning blue-black"
+          "text": "Biuret solution, turning purple/lilac"
         },
         {
           "letter": "C",
-          "text": "Biuret solution, turning purple/lilac"
+          "text": "Iodine solution, turning blue-black"
         },
         {
           "letter": "D",
           "text": "Ethanol, forming a white emulsion"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Iodine solution turns from orange-brown to blue-black in the presence of starch.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q027",
+      "id": "q_27",
       "questionNumber": 27,
       "questionText": "Which test is used to detect the presence of reducing sugars, such as glucose, in a food sample?",
       "options": [
@@ -702,29 +727,30 @@
         },
         {
           "letter": "C",
-          "text": "Benedict's test"
+          "text": "Ethanol emulsion test"
         },
         {
           "letter": "D",
-          "text": "Ethanol emulsion test"
+          "text": "Benedict's test"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Benedict's test detects reducing sugars: a blue Benedict's solution turns green, then yellow, then brick-red/orange precipitate when heated with a reducing sugar present.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q028",
+      "id": "q_28",
       "questionNumber": 28,
       "questionText": "An enzyme is best described as:",
       "options": [
         {
           "letter": "A",
-          "text": "a type of carbohydrate that stores energy"
+          "text": "a biological catalyst that speeds up chemical reactions without being used up"
         },
         {
           "letter": "B",
-          "text": "a biological catalyst that speeds up chemical reactions without being used up"
+          "text": "a type of carbohydrate that stores energy"
         },
         {
           "letter": "C",
@@ -735,12 +761,13 @@
           "text": "a type of vitamin required in the diet"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Enzymes are biological catalysts, usually proteins, that speed up specific biochemical reactions without being permanently changed or used up themselves.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q029",
+      "id": "q_29",
       "questionNumber": 29,
       "questionText": "According to the lock-and-key model, an enzyme is specific to its substrate because:",
       "options": [
@@ -763,10 +790,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The lock-and-key model explains enzyme specificity: only a substrate with a shape that fits the enzyme's active site can bind and react.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q030",
+      "id": "q_30",
       "questionNumber": 30,
       "questionText": "Most human enzymes work best at an optimum temperature of approximately:",
       "options": [
@@ -776,23 +804,24 @@
         },
         {
           "letter": "B",
-          "text": "37 degrees Celsius"
+          "text": "75 degrees Celsius"
         },
         {
           "letter": "C",
-          "text": "75 degrees Celsius"
+          "text": "37 degrees Celsius"
         },
         {
           "letter": "D",
           "text": "100 degrees Celsius"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Most human enzymes have an optimum temperature around 37 degrees Celsius, matching normal human body temperature.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q031",
+      "id": "q_31",
       "questionNumber": 31,
       "questionText": "At temperatures well above an enzyme's optimum, its activity decreases mainly because:",
       "options": [
@@ -802,7 +831,7 @@
         },
         {
           "letter": "B",
-          "text": "the enzyme's active site becomes denatured and changes shape"
+          "text": "there is too little water present"
         },
         {
           "letter": "C",
@@ -810,25 +839,26 @@
         },
         {
           "letter": "D",
-          "text": "there is too little water present"
+          "text": "the enzyme's active site becomes denatured and changes shape"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "High temperatures cause the enzyme's protein structure, including the active site, to denature (change shape irreversibly), so it can no longer bind its substrate effectively.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q032",
+      "id": "q_32",
       "questionNumber": 32,
       "questionText": "The overall word equation for photosynthesis is:",
       "options": [
         {
           "letter": "A",
-          "text": "glucose + oxygen -> carbon dioxide + water + energy"
+          "text": "carbon dioxide + water --(light energy)--> glucose + oxygen"
         },
         {
           "letter": "B",
-          "text": "carbon dioxide + water --(light energy)--> glucose + oxygen"
+          "text": "glucose + oxygen -> carbon dioxide + water + energy"
         },
         {
           "letter": "C",
@@ -839,12 +869,13 @@
           "text": "glucose + water -> carbon dioxide + oxygen"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Photosynthesis combines carbon dioxide and water, using light energy trapped by chlorophyll, to produce glucose and oxygen.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q033",
+      "id": "q_33",
       "questionNumber": 33,
       "questionText": "The green pigment in chloroplasts that absorbs light energy for photosynthesis is called:",
       "options": [
@@ -867,10 +898,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Chlorophyll is the green pigment found in chloroplasts that absorbs light energy, mainly in the red and blue parts of the spectrum, to drive photosynthesis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q034",
+      "id": "q_34",
       "questionNumber": 34,
       "questionText": "Which of the following is NOT a limiting factor of photosynthesis?",
       "options": [
@@ -884,19 +916,20 @@
         },
         {
           "letter": "C",
-          "text": "Temperature"
+          "text": "Soil pH only"
         },
         {
           "letter": "D",
-          "text": "Soil pH only"
+          "text": "Temperature"
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "The main limiting factors of photosynthesis are light intensity, carbon dioxide concentration and temperature; soil pH alone is not considered a primary limiting factor of the photosynthesis reaction itself.",
-      "answerConfidence": "medium"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q035",
+      "id": "q_35",
       "questionNumber": 35,
       "questionText": "Stomata on a leaf mainly function to allow:",
       "options": [
@@ -906,7 +939,7 @@
         },
         {
           "letter": "B",
-          "text": "gaseous exchange (carbon dioxide in, oxygen and water vapour out)"
+          "text": "anchorage of the plant"
         },
         {
           "letter": "C",
@@ -914,25 +947,26 @@
         },
         {
           "letter": "D",
-          "text": "anchorage of the plant"
+          "text": "gaseous exchange (carbon dioxide in, oxygen and water vapour out)"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Stomata are small pores, mainly on the underside of leaves, that allow gaseous exchange (carbon dioxide entering for photosynthesis, oxygen and water vapour leaving) and are controlled by guard cells.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q036",
+      "id": "q_36",
       "questionNumber": 36,
       "questionText": "A mineral deficiency causing yellowing of leaves (chlorosis) due to lack of chlorophyll production is most associated with a lack of:",
       "options": [
         {
           "letter": "A",
-          "text": "nitrate"
+          "text": "magnesium"
         },
         {
           "letter": "B",
-          "text": "magnesium"
+          "text": "nitrate"
         },
         {
           "letter": "C",
@@ -943,22 +977,23 @@
           "text": "phosphate"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Magnesium is a key component of the chlorophyll molecule; a deficiency causes yellowing of leaves (chlorosis) as less chlorophyll can be made.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q037",
+      "id": "q_37",
       "questionNumber": 37,
       "questionText": "A deficiency of nitrate ions in a plant typically causes:",
       "options": [
         {
           "letter": "A",
-          "text": "stunted growth and yellowing of older leaves"
+          "text": "purple discolouration of leaves only"
         },
         {
           "letter": "B",
-          "text": "purple discolouration of leaves only"
+          "text": "stunted growth and yellowing of older leaves"
         },
         {
           "letter": "C",
@@ -969,12 +1004,13 @@
           "text": "no visible effect"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Nitrate is needed to make amino acids and proteins for growth; a deficiency causes stunted growth and yellowing (chlorosis), particularly of older leaves.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q038",
+      "id": "q_38",
       "questionNumber": 38,
       "questionText": "A balanced diet should contain all of the following EXCEPT:",
       "options": [
@@ -988,19 +1024,20 @@
         },
         {
           "letter": "C",
-          "text": "vitamins and minerals"
+          "text": "only water, with no other nutrients"
         },
         {
           "letter": "D",
-          "text": "only water, with no other nutrients"
+          "text": "vitamins and minerals"
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "A balanced diet requires carbohydrates, proteins, fats, vitamins, minerals, fibre and water together, not water alone.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q039",
+      "id": "q_39",
       "questionNumber": 39,
       "questionText": "Which vitamin deficiency is most closely associated with the disease scurvy?",
       "options": [
@@ -1010,7 +1047,7 @@
         },
         {
           "letter": "B",
-          "text": "Vitamin C"
+          "text": "Vitamin K"
         },
         {
           "letter": "C",
@@ -1018,25 +1055,26 @@
         },
         {
           "letter": "D",
-          "text": "Vitamin K"
+          "text": "Vitamin C"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "A deficiency of vitamin C causes scurvy, characterised by bleeding gums and poor wound healing, since vitamin C is needed for healthy connective tissue.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q040",
+      "id": "q_40",
       "questionNumber": 40,
       "questionText": "Which enzyme, found in saliva, begins the digestion of starch in the mouth?",
       "options": [
         {
           "letter": "A",
-          "text": "Pepsin"
+          "text": "Amylase"
         },
         {
           "letter": "B",
-          "text": "Amylase"
+          "text": "Pepsin"
         },
         {
           "letter": "C",
@@ -1047,22 +1085,23 @@
           "text": "Trypsin"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Salivary amylase breaks down starch into maltose, beginning carbohydrate digestion in the mouth.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q041",
+      "id": "q_41",
       "questionNumber": 41,
       "questionText": "Pepsin is an enzyme that digests proteins and works best in the:",
       "options": [
         {
           "letter": "A",
-          "text": "strongly acidic conditions of the stomach"
+          "text": "alkaline conditions of the small intestine"
         },
         {
           "letter": "B",
-          "text": "alkaline conditions of the small intestine"
+          "text": "strongly acidic conditions of the stomach"
         },
         {
           "letter": "C",
@@ -1073,12 +1112,13 @@
           "text": "alkaline conditions of the large intestine"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Pepsin is secreted in the stomach and works optimally in the strongly acidic conditions created by hydrochloric acid there.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q042",
+      "id": "q_42",
       "questionNumber": 42,
       "questionText": "Bile, produced by the liver, aids digestion mainly by:",
       "options": [
@@ -1088,23 +1128,24 @@
         },
         {
           "letter": "B",
-          "text": "emulsifying fats into smaller droplets to increase surface area for lipase"
+          "text": "neutralising all enzymes in the small intestine"
         },
         {
           "letter": "C",
-          "text": "neutralising all enzymes in the small intestine"
+          "text": "emulsifying fats into smaller droplets to increase surface area for lipase"
         },
         {
           "letter": "D",
           "text": "digesting starch into glucose"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Bile emulsifies large fat droplets into smaller ones, increasing the surface area available for lipase enzymes to break down fats more efficiently. Bile itself is not an enzyme.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q043",
+      "id": "q_43",
       "questionNumber": 43,
       "questionText": "The main site of absorption of digested food into the bloodstream is the:",
       "options": [
@@ -1118,29 +1159,30 @@
         },
         {
           "letter": "C",
-          "text": "small intestine"
+          "text": "oesophagus"
         },
         {
           "letter": "D",
-          "text": "oesophagus"
+          "text": "small intestine"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The small intestine, with its highly folded lining covered in villi, is the main site where digested nutrients are absorbed into the blood.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q044",
+      "id": "q_44",
       "questionNumber": 44,
       "questionText": "Villi in the small intestine increase the efficiency of absorption mainly by:",
       "options": [
         {
           "letter": "A",
-          "text": "producing more mucus"
+          "text": "increasing the surface area available for absorption"
         },
         {
           "letter": "B",
-          "text": "increasing the surface area available for absorption"
+          "text": "producing more mucus"
         },
         {
           "letter": "C",
@@ -1151,12 +1193,13 @@
           "text": "storing undigested food"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Villi are finger-like projections that greatly increase the surface area of the small intestine lining, maximising nutrient absorption into the blood.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q045",
+      "id": "q_45",
       "questionNumber": 45,
       "questionText": "The main function of the large intestine is to:",
       "options": [
@@ -1179,10 +1222,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The large intestine mainly absorbs water (and some salts) from the remaining undigested material, forming and compacting faeces.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q046",
+      "id": "q_46",
       "questionNumber": 46,
       "questionText": "Peristalsis refers to:",
       "options": [
@@ -1192,23 +1236,24 @@
         },
         {
           "letter": "B",
-          "text": "wave-like muscular contractions that push food along the gut"
+          "text": "the absorption of water in the large intestine"
         },
         {
           "letter": "C",
-          "text": "the absorption of water in the large intestine"
+          "text": "wave-like muscular contractions that push food along the gut"
         },
         {
           "letter": "D",
           "text": "the production of saliva"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Peristalsis is the rhythmic, wave-like contraction of muscles in the wall of the alimentary canal that pushes food along its length.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q047",
+      "id": "q_47",
       "questionNumber": 47,
       "questionText": "Which of the following food tests would turn purple/lilac in the presence of protein?",
       "options": [
@@ -1222,29 +1267,30 @@
         },
         {
           "letter": "C",
-          "text": "Biuret test"
+          "text": "Ethanol emulsion test"
         },
         {
           "letter": "D",
-          "text": "Ethanol emulsion test"
+          "text": "Biuret test"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The Biuret test detects protein: sodium hydroxide and dilute copper sulphate turn from blue to purple/lilac in the presence of protein.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q048",
+      "id": "q_48",
       "questionNumber": 48,
       "questionText": "Water and mineral ions are transported upward through a plant mainly in the:",
       "options": [
         {
           "letter": "A",
-          "text": "phloem"
+          "text": "xylem"
         },
         {
           "letter": "B",
-          "text": "xylem"
+          "text": "phloem"
         },
         {
           "letter": "C",
@@ -1255,12 +1301,13 @@
           "text": "cambium only"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Xylem tissue transports water and dissolved mineral ions from the roots upward through the plant to the leaves.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q049",
+      "id": "q_49",
       "questionNumber": 49,
       "questionText": "Manufactured food (sugars), mainly sucrose, is transported around a plant in the:",
       "options": [
@@ -1283,10 +1330,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Phloem tissue transports the products of photosynthesis (mainly sucrose), a process called translocation, from the leaves to other parts of the plant.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q050",
+      "id": "q_50",
       "questionNumber": 50,
       "questionText": "Transpiration is best defined as:",
       "options": [
@@ -1296,23 +1344,24 @@
         },
         {
           "letter": "B",
-          "text": "the loss of water vapour from the aerial parts of a plant, mainly through stomata"
+          "text": "the movement of sugar through phloem"
         },
         {
           "letter": "C",
-          "text": "the movement of sugar through phloem"
+          "text": "the loss of water vapour from the aerial parts of a plant, mainly through stomata"
         },
         {
           "letter": "D",
           "text": "the process of photosynthesis"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Transpiration is the evaporation and loss of water vapour from a plant's surface, mainly through the stomata of the leaves.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q051",
+      "id": "q_51",
       "questionNumber": 51,
       "questionText": "Which of the following conditions would generally INCREASE the rate of transpiration?",
       "options": [
@@ -1326,29 +1375,30 @@
         },
         {
           "letter": "C",
-          "text": "Increased wind speed"
+          "text": "Complete darkness"
         },
         {
           "letter": "D",
-          "text": "Complete darkness"
+          "text": "Increased wind speed"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Increased wind speed removes water vapour from around the leaf surface quickly, maintaining a steep diffusion gradient and increasing the rate of transpiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q052",
+      "id": "q_52",
       "questionNumber": 52,
       "questionText": "The continuous column of water moving through a plant from roots to leaves, pulled by transpiration, is known as the:",
       "options": [
         {
           "letter": "A",
-          "text": "translocation stream"
+          "text": "transpiration stream"
         },
         {
           "letter": "B",
-          "text": "transpiration stream"
+          "text": "translocation stream"
         },
         {
           "letter": "C",
@@ -1359,12 +1409,13 @@
           "text": "capillary reserve"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The transpiration stream is the continuous movement of water from the roots, through the xylem, to the leaves, driven largely by water loss (transpiration) from the leaves.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q053",
+      "id": "q_53",
       "questionNumber": 53,
       "questionText": "Guard cells control the opening and closing of stomata mainly by changes in their:",
       "options": [
@@ -1387,16 +1438,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "Guard cells change shape as they become turgid (swollen with water) or flaccid, opening or closing the stomatal pore between them.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q054",
+      "id": "q_54",
       "questionNumber": 54,
       "questionText": "A plant wilts mainly because:",
       "options": [
         {
           "letter": "A",
-          "text": "cells lose turgidity as water loss exceeds water uptake"
+          "text": "photosynthesis has stopped completely"
         },
         {
           "letter": "B",
@@ -1404,19 +1456,20 @@
         },
         {
           "letter": "C",
-          "text": "photosynthesis has stopped completely"
+          "text": "cells lose turgidity as water loss exceeds water uptake"
         },
         {
           "letter": "D",
           "text": "the plant has been overwatered"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Wilting occurs when transpiration (water loss) exceeds water uptake by the roots, so cells lose turgor pressure and the plant droops.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q055",
+      "id": "q_55",
       "questionNumber": 55,
       "questionText": "The chamber of the human heart that pumps oxygenated blood to the whole body is the:",
       "options": [
@@ -1439,20 +1492,21 @@
       ],
       "correctAnswer": "D",
       "explanation": "The left ventricle has the thickest muscular wall and pumps oxygenated blood at high pressure to the whole body via the aorta.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q056",
+      "id": "q_56",
       "questionNumber": 56,
       "questionText": "Blood vessels that carry blood away from the heart, usually under high pressure, are called:",
       "options": [
         {
           "letter": "A",
-          "text": "veins"
+          "text": "arteries"
         },
         {
           "letter": "B",
-          "text": "arteries"
+          "text": "veins"
         },
         {
           "letter": "C",
@@ -1463,12 +1517,13 @@
           "text": "venules only"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Arteries carry blood away from the heart, generally under high pressure, and have thick, muscular, elastic walls.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q057",
+      "id": "q_57",
       "questionNumber": 57,
       "questionText": "Capillaries are adapted for efficient exchange of substances with tissues mainly because they have:",
       "options": [
@@ -1491,10 +1546,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Capillary walls are only one cell thick, providing a very short diffusion distance for oxygen, nutrients and waste to exchange between blood and body tissues.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q058",
+      "id": "q_58",
       "questionNumber": 58,
       "questionText": "Which blood component is mainly responsible for transporting oxygen around the body?",
       "options": [
@@ -1517,10 +1573,11 @@
       ],
       "correctAnswer": "C",
       "explanation": "Red blood cells contain haemoglobin, which binds to oxygen in the lungs and releases it to body tissues.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q059",
+      "id": "q_59",
       "questionNumber": 59,
       "questionText": "Platelets in the blood are mainly responsible for:",
       "options": [
@@ -1534,29 +1591,30 @@
         },
         {
           "letter": "C",
-          "text": "blood clotting"
+          "text": "digesting food"
         },
         {
           "letter": "D",
-          "text": "digesting food"
+          "text": "blood clotting"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "Platelets are cell fragments involved in the blood clotting process, helping to seal wounds and prevent excessive blood loss.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q060",
+      "id": "q_60",
       "questionNumber": 60,
       "questionText": "Veins differ from arteries in that veins:",
       "options": [
         {
           "letter": "A",
-          "text": "carry blood at higher pressure"
+          "text": "have valves to prevent backflow of blood"
         },
         {
           "letter": "B",
-          "text": "have valves to prevent backflow of blood"
+          "text": "carry blood at higher pressure"
         },
         {
           "letter": "C",
@@ -1567,12 +1625,13 @@
           "text": "have much thicker walls than arteries"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Veins carry blood back to the heart under lower pressure and contain valves to prevent the backflow of blood, especially in the limbs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q061",
+      "id": "q_61",
       "questionNumber": 61,
       "questionText": "The double circulatory system in humans means that blood passes through the heart:",
       "options": [
@@ -1595,16 +1654,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "In a double circulatory system, blood passes through the heart twice in one complete circuit: once via pulmonary circulation to the lungs and once via systemic circulation to the rest of the body.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q062",
+      "id": "q_62",
       "questionNumber": 62,
       "questionText": "Pathogens are best described as:",
       "options": [
         {
           "letter": "A",
-          "text": "organisms that cause disease"
+          "text": "antibodies produced by the body"
         },
         {
           "letter": "B",
@@ -1612,19 +1672,20 @@
         },
         {
           "letter": "C",
-          "text": "antibodies produced by the body"
+          "text": "organisms that cause disease"
         },
         {
           "letter": "D",
           "text": "vitamins needed for immunity"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Pathogens are disease-causing organisms or agents, such as bacteria, viruses, fungi and protozoa.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q063",
+      "id": "q_63",
       "questionNumber": 63,
       "questionText": "Cholera is a disease caused mainly by:",
       "options": [
@@ -1634,7 +1695,7 @@
         },
         {
           "letter": "B",
-          "text": "a bacterium spread through contaminated water"
+          "text": "a parasitic worm"
         },
         {
           "letter": "C",
@@ -1642,25 +1703,26 @@
         },
         {
           "letter": "D",
-          "text": "a parasitic worm"
+          "text": "a bacterium spread through contaminated water"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Cholera is caused by a bacterium and is typically spread through water or food contaminated with the faeces of an infected person.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q064",
+      "id": "q_64",
       "questionNumber": 64,
       "questionText": "Malaria is transmitted to humans mainly through:",
       "options": [
         {
           "letter": "A",
-          "text": "contaminated water"
+          "text": "the bite of an infected female Anopheles mosquito"
         },
         {
           "letter": "B",
-          "text": "the bite of an infected female Anopheles mosquito"
+          "text": "contaminated water"
         },
         {
           "letter": "C",
@@ -1671,12 +1733,13 @@
           "text": "direct skin contact"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Malaria is caused by a Plasmodium parasite transmitted through the bite of an infected female Anopheles mosquito.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q065",
+      "id": "q_65",
       "questionNumber": 65,
       "questionText": "Bilharzia (schistosomiasis) is contracted mainly by:",
       "options": [
@@ -1699,10 +1762,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Bilharzia is caused by parasitic flatworms whose larvae are released by infected freshwater snails and can penetrate human skin during contact with contaminated water.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q066",
+      "id": "q_66",
       "questionNumber": 66,
       "questionText": "White blood cells that engulf and digest pathogens by phagocytosis are called:",
       "options": [
@@ -1712,29 +1776,30 @@
         },
         {
           "letter": "B",
-          "text": "phagocytes"
+          "text": "platelets"
         },
         {
           "letter": "C",
-          "text": "platelets"
+          "text": "phagocytes"
         },
         {
           "letter": "D",
           "text": "red blood cells"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Phagocytes are white blood cells that engulf and digest pathogens through a process called phagocytosis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q067",
+      "id": "q_67",
       "questionNumber": 67,
       "questionText": "Lymphocytes provide immunity mainly by:",
       "options": [
         {
           "letter": "A",
-          "text": "producing antibodies specific to particular antigens"
+          "text": "digesting bacteria directly like phagocytes"
         },
         {
           "letter": "B",
@@ -1746,25 +1811,26 @@
         },
         {
           "letter": "D",
-          "text": "digesting bacteria directly like phagocytes"
+          "text": "producing antibodies specific to particular antigens"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Lymphocytes are white blood cells that produce antibodies specific to particular antigens found on pathogens, helping to neutralise or mark them for destruction.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q068",
+      "id": "q_68",
       "questionNumber": 68,
       "questionText": "Vaccination provides immunity by:",
       "options": [
         {
           "letter": "A",
-          "text": "directly killing all pathogens in the body"
+          "text": "introducing a weakened or inactive form of a pathogen so the body produces antibodies and memory cells"
         },
         {
           "letter": "B",
-          "text": "introducing a weakened or inactive form of a pathogen so the body produces antibodies and memory cells"
+          "text": "directly killing all pathogens in the body"
         },
         {
           "letter": "C",
@@ -1775,12 +1841,13 @@
           "text": "removing white blood cells from the blood"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Vaccines contain a weakened, inactive, or partial form of a pathogen that stimulates the immune system to produce antibodies and memory cells, providing future protection.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q069",
+      "id": "q_69",
       "questionNumber": 69,
       "questionText": "HIV (Human Immunodeficiency Virus) primarily attacks which type of cell in the body?",
       "options": [
@@ -1803,10 +1870,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "HIV attacks and destroys T-helper lymphocytes, a type of white blood cell important for coordinating the immune response, progressively weakening the body's immunity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q070",
+      "id": "q_70",
       "questionNumber": 70,
       "questionText": "Which of the following is a correct method for preventing the spread of cholera in a community?",
       "options": [
@@ -1816,23 +1884,24 @@
         },
         {
           "letter": "B",
-          "text": "Ensuring safe water supply and proper sanitation/sewage disposal"
+          "text": "Taking antimalarial tablets"
         },
         {
           "letter": "C",
-          "text": "Taking antimalarial tablets"
+          "text": "Ensuring safe water supply and proper sanitation/sewage disposal"
         },
         {
           "letter": "D",
           "text": "Avoiding sunlight exposure"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Since cholera spreads through water or food contaminated with faecal matter, ensuring safe drinking water and proper sanitation are the most effective preventive measures.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q071",
+      "id": "q_71",
       "questionNumber": 71,
       "questionText": "The tiny air sacs in the lungs where gaseous exchange occurs are called:",
       "options": [
@@ -1842,7 +1911,7 @@
         },
         {
           "letter": "B",
-          "text": "alveoli"
+          "text": "bronchioles only"
         },
         {
           "letter": "C",
@@ -1850,25 +1919,26 @@
         },
         {
           "letter": "D",
-          "text": "bronchioles only"
+          "text": "alveoli"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Alveoli are tiny, thin-walled air sacs surrounded by capillaries, where oxygen and carbon dioxide are exchanged between the air and the blood.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q072",
+      "id": "q_72",
       "questionNumber": 72,
       "questionText": "Alveoli are adapted for efficient gaseous exchange mainly because they have:",
       "options": [
         {
           "letter": "A",
-          "text": "thick walls and a small surface area"
+          "text": "a large surface area, thin walls, and a good blood supply"
         },
         {
           "letter": "B",
-          "text": "a large surface area, thin walls, and a good blood supply"
+          "text": "thick walls and a small surface area"
         },
         {
           "letter": "C",
@@ -1879,12 +1949,13 @@
           "text": "cartilage rings for support"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Alveoli have a large total surface area, very thin (one-cell-thick) walls, and a rich capillary blood supply, all maximising the rate of gaseous exchange by diffusion.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q073",
+      "id": "q_73",
       "questionNumber": 73,
       "questionText": "During inhalation, the diaphragm:",
       "options": [
@@ -1907,10 +1978,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "During inhalation, the diaphragm contracts and flattens, increasing the volume of the chest cavity, which draws air into the lungs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q074",
+      "id": "q_74",
       "questionNumber": 74,
       "questionText": "Which structure prevents food from entering the trachea during swallowing?",
       "options": [
@@ -1920,23 +1992,24 @@
         },
         {
           "letter": "B",
-          "text": "Epiglottis"
+          "text": "Bronchus"
         },
         {
           "letter": "C",
-          "text": "Bronchus"
+          "text": "Epiglottis"
         },
         {
           "letter": "D",
           "text": "Diaphragm"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The epiglottis is a flap of tissue that closes over the entrance to the trachea (windpipe) during swallowing, directing food into the oesophagus instead.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q075",
+      "id": "q_75",
       "questionNumber": 75,
       "questionText": "Cilia and mucus in the trachea and bronchi mainly function to:",
       "options": [
@@ -1946,7 +2019,7 @@
         },
         {
           "letter": "B",
-          "text": "trap and remove dust, pathogens and debris from the airways"
+          "text": "produce sound"
         },
         {
           "letter": "C",
@@ -1954,25 +2027,26 @@
         },
         {
           "letter": "D",
-          "text": "produce sound"
+          "text": "trap and remove dust, pathogens and debris from the airways"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Mucus traps dust, debris and pathogens in inhaled air, while cilia sweep this mucus upward toward the throat to be swallowed or expelled, keeping airways clear.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q076",
+      "id": "q_76",
       "questionNumber": 76,
       "questionText": "Which of the following correctly compares inhaled and exhaled air?",
       "options": [
         {
           "letter": "A",
-          "text": "Exhaled air contains more oxygen and less carbon dioxide than inhaled air"
+          "text": "Exhaled air contains less oxygen and more carbon dioxide than inhaled air"
         },
         {
           "letter": "B",
-          "text": "Exhaled air contains less oxygen and more carbon dioxide than inhaled air"
+          "text": "Exhaled air contains more oxygen and less carbon dioxide than inhaled air"
         },
         {
           "letter": "C",
@@ -1983,12 +2057,13 @@
           "text": "Inhaled air contains more carbon dioxide than exhaled air"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "During gaseous exchange, oxygen is absorbed into the blood and carbon dioxide is released, so exhaled air has less oxygen and more carbon dioxide than inhaled air.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q077",
+      "id": "q_77",
       "questionNumber": 77,
       "questionText": "Smoking damages the lungs partly because tar and chemicals in cigarette smoke:",
       "options": [
@@ -2011,16 +2086,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "Chemicals in cigarette smoke damage and destroy cilia (reducing the lungs' ability to clear mucus and debris) and can cause chronic bronchitis, emphysema and lung cancer over time.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q078",
+      "id": "q_78",
       "questionNumber": 78,
       "questionText": "The word equation for aerobic respiration is:",
       "options": [
         {
           "letter": "A",
-          "text": "glucose + oxygen -> carbon dioxide + water (+ energy)"
+          "text": "glucose -> lactic acid (+ energy)"
         },
         {
           "letter": "B",
@@ -2028,19 +2104,20 @@
         },
         {
           "letter": "C",
-          "text": "glucose -> lactic acid (+ energy)"
+          "text": "glucose + oxygen -> carbon dioxide + water (+ energy)"
         },
         {
           "letter": "D",
           "text": "glucose -> ethanol + carbon dioxide (+ energy)"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Aerobic respiration breaks down glucose using oxygen to release energy, producing carbon dioxide and water as by-products.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q079",
+      "id": "q_79",
       "questionNumber": 79,
       "questionText": "Anaerobic respiration in human muscle cells (during vigorous exercise) produces:",
       "options": [
@@ -2050,7 +2127,7 @@
         },
         {
           "letter": "B",
-          "text": "lactic acid"
+          "text": "oxygen"
         },
         {
           "letter": "C",
@@ -2058,25 +2135,26 @@
         },
         {
           "letter": "D",
-          "text": "oxygen"
+          "text": "lactic acid"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "In human muscle cells, anaerobic respiration (in the absence of enough oxygen) breaks down glucose incompletely to produce lactic acid, releasing less energy than aerobic respiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q080",
+      "id": "q_80",
       "questionNumber": 80,
       "questionText": "Anaerobic respiration in yeast produces:",
       "options": [
         {
           "letter": "A",
-          "text": "lactic acid only"
+          "text": "ethanol and carbon dioxide"
         },
         {
           "letter": "B",
-          "text": "ethanol and carbon dioxide"
+          "text": "lactic acid only"
         },
         {
           "letter": "C",
@@ -2087,12 +2165,13 @@
           "text": "only carbon dioxide with no other product"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Anaerobic respiration in yeast (fermentation) breaks down glucose to produce ethanol (alcohol) and carbon dioxide.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q081",
+      "id": "q_81",
       "questionNumber": 81,
       "questionText": "Compared to aerobic respiration, anaerobic respiration releases:",
       "options": [
@@ -2115,10 +2194,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Anaerobic respiration releases far less energy per glucose molecule than aerobic respiration, since glucose is only partially broken down.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q082",
+      "id": "q_82",
       "questionNumber": 82,
       "questionText": "'Oxygen debt' refers to the:",
       "options": [
@@ -2128,23 +2208,24 @@
         },
         {
           "letter": "B",
-          "text": "extra oxygen needed after exercise to break down accumulated lactic acid"
+          "text": "total lung capacity of a person"
         },
         {
           "letter": "C",
-          "text": "total lung capacity of a person"
+          "text": "extra oxygen needed after exercise to break down accumulated lactic acid"
         },
         {
           "letter": "D",
           "text": "amount of carbon dioxide produced during rest"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Oxygen debt is the extra oxygen the body needs after strenuous exercise to break down the lactic acid that built up during anaerobic respiration.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q083",
+      "id": "q_83",
       "questionNumber": 83,
       "questionText": "Excretion is best defined as:",
       "options": [
@@ -2154,7 +2235,7 @@
         },
         {
           "letter": "B",
-          "text": "the removal of metabolic waste products made by the body's own cells"
+          "text": "the process of breathing"
         },
         {
           "letter": "C",
@@ -2162,25 +2243,26 @@
         },
         {
           "letter": "D",
-          "text": "the process of breathing"
+          "text": "the removal of metabolic waste products made by the body's own cells"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Excretion is the removal from the body of waste products of metabolism (such as carbon dioxide and urea), which is different from egestion (removal of undigested food waste/faeces).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q084",
+      "id": "q_84",
       "questionNumber": 84,
       "questionText": "The main organ responsible for filtering blood and producing urine is the:",
       "options": [
         {
           "letter": "A",
-          "text": "liver"
+          "text": "kidney"
         },
         {
           "letter": "B",
-          "text": "kidney"
+          "text": "liver"
         },
         {
           "letter": "C",
@@ -2191,12 +2273,13 @@
           "text": "bladder"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The kidneys filter the blood, removing urea and excess substances, and produce urine as a result.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q085",
+      "id": "q_85",
       "questionNumber": 85,
       "questionText": "Urea is produced mainly in the:",
       "options": [
@@ -2219,10 +2302,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The liver breaks down excess amino acids in a process called deamination, producing urea, which is then transported to the kidneys for removal from the blood.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q086",
+      "id": "q_86",
       "questionNumber": 86,
       "questionText": "The functional unit of the kidney, responsible for filtration and reabsorption, is called the:",
       "options": [
@@ -2232,23 +2316,24 @@
         },
         {
           "letter": "B",
-          "text": "nephron"
+          "text": "alveolus"
         },
         {
           "letter": "C",
-          "text": "alveolus"
+          "text": "nephron"
         },
         {
           "letter": "D",
           "text": "villus"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The nephron is the microscopic functional unit of the kidney where blood filtration and selective reabsorption take place.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q087",
+      "id": "q_87",
       "questionNumber": 87,
       "questionText": "Homeostasis is best defined as:",
       "options": [
@@ -2258,7 +2343,7 @@
         },
         {
           "letter": "B",
-          "text": "the maintenance of a constant internal environment within the body"
+          "text": "the process of cell division"
         },
         {
           "letter": "C",
@@ -2266,25 +2351,26 @@
         },
         {
           "letter": "D",
-          "text": "the process of cell division"
+          "text": "the maintenance of a constant internal environment within the body"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Homeostasis is the regulation of the internal environment of the body (e.g. temperature, water balance, blood glucose) to maintain relatively stable, constant conditions.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q088",
+      "id": "q_88",
       "questionNumber": 88,
       "questionText": "When body temperature rises above normal, sweating helps cool the body mainly through:",
       "options": [
         {
           "letter": "A",
-          "text": "the chemical breakdown of sweat"
+          "text": "evaporation of sweat from the skin surface, removing heat energy"
         },
         {
           "letter": "B",
-          "text": "evaporation of sweat from the skin surface, removing heat energy"
+          "text": "the chemical breakdown of sweat"
         },
         {
           "letter": "C",
@@ -2295,12 +2381,13 @@
           "text": "vasoconstriction of skin blood vessels"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Sweat evaporates from the skin surface, and this evaporation requires heat energy taken from the skin, cooling the body down.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q089",
+      "id": "q_89",
       "questionNumber": 89,
       "questionText": "When the body is cold, blood vessels near the skin surface narrow in a process called:",
       "options": [
@@ -2323,16 +2410,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "Vasoconstriction is the narrowing of blood vessels near the skin surface, reducing blood flow to the skin and therefore reducing heat loss when the body is cold.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q090",
+      "id": "q_90",
       "questionNumber": 90,
       "questionText": "Shivering helps to warm the body because:",
       "options": [
         {
           "letter": "A",
-          "text": "rapid muscle contractions release heat energy through increased respiration"
+          "text": "it stops sweating completely"
         },
         {
           "letter": "B",
@@ -2340,19 +2428,20 @@
         },
         {
           "letter": "C",
-          "text": "it stops sweating completely"
+          "text": "rapid muscle contractions release heat energy through increased respiration"
         },
         {
           "letter": "D",
           "text": "it slows the heart rate"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Shivering involves rapid, involuntary muscle contractions, which increase the rate of respiration in muscle cells, releasing heat as a by-product and warming the body.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q091",
+      "id": "q_91",
       "questionNumber": 91,
       "questionText": "The hormone insulin, produced by the pancreas, helps regulate blood glucose by:",
       "options": [
@@ -2362,7 +2451,7 @@
         },
         {
           "letter": "B",
-          "text": "causing cells to absorb glucose and the liver to convert glucose to glycogen, lowering blood glucose"
+          "text": "increasing urine production only"
         },
         {
           "letter": "C",
@@ -2370,15 +2459,16 @@
         },
         {
           "letter": "D",
-          "text": "increasing urine production only"
+          "text": "causing cells to absorb glucose and the liver to convert glucose to glycogen, lowering blood glucose"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Insulin lowers blood glucose levels by stimulating cells to take up glucose and the liver to convert excess glucose into glycogen for storage.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q092",
+      "id": "q_92",
       "questionNumber": 92,
       "questionText": "Diabetes mellitus (Type 1) is caused mainly by:",
       "options": [
@@ -2401,10 +2491,11 @@
       ],
       "correctAnswer": "A",
       "explanation": "Type 1 diabetes results from the pancreas producing insufficient (or no) insulin, leading to poorly controlled, often elevated, blood glucose levels.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q093",
+      "id": "q_93",
       "questionNumber": 93,
       "questionText": "The human skeleton provides all of the following functions EXCEPT:",
       "options": [
@@ -2414,23 +2505,24 @@
         },
         {
           "letter": "B",
-          "text": "protection of delicate organs"
+          "text": "production of digestive enzymes"
         },
         {
           "letter": "C",
-          "text": "production of digestive enzymes"
+          "text": "protection of delicate organs"
         },
         {
           "letter": "D",
           "text": "attachment for muscles enabling movement"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The skeleton provides support, protection, movement (via muscle attachment), and blood cell production (in bone marrow), but does not produce digestive enzymes.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q094",
+      "id": "q_94",
       "questionNumber": 94,
       "questionText": "A joint where bones meet and movement occurs is held together by tough connective tissue called:",
       "options": [
@@ -2440,23 +2532,24 @@
         },
         {
           "letter": "B",
-          "text": "ligaments"
+          "text": "cartilage only"
         },
         {
           "letter": "C",
-          "text": "cartilage only"
+          "text": "ligaments"
         },
         {
           "letter": "D",
           "text": "muscle fibres"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Ligaments are tough, elastic connective tissue that join bone to bone at a joint, providing stability while allowing movement.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q095",
+      "id": "q_95",
       "questionNumber": 95,
       "questionText": "Tendons connect:",
       "options": [
@@ -2466,7 +2559,7 @@
         },
         {
           "letter": "B",
-          "text": "muscle to bone"
+          "text": "nerve to muscle"
         },
         {
           "letter": "C",
@@ -2474,25 +2567,26 @@
         },
         {
           "letter": "D",
-          "text": "nerve to muscle"
+          "text": "muscle to bone"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Tendons are tough connective tissue that attach muscles to bones, allowing muscle contraction to move the skeleton.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q096",
+      "id": "q_96",
       "questionNumber": 96,
       "questionText": "At the elbow joint, the biceps and triceps muscles work as an antagonistic pair, meaning:",
       "options": [
         {
           "letter": "A",
-          "text": "they contract together at the same time"
+          "text": "as one contracts, the other relaxes, producing opposite movements"
         },
         {
           "letter": "B",
-          "text": "as one contracts, the other relaxes, producing opposite movements"
+          "text": "they contract together at the same time"
         },
         {
           "letter": "C",
@@ -2503,12 +2597,13 @@
           "text": "neither muscle is ever used"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Antagonistic muscle pairs work in opposition: as the biceps contracts to bend the arm, the triceps relaxes, and vice versa when straightening the arm.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q097",
+      "id": "q_97",
       "questionNumber": 97,
       "questionText": "Cartilage found at the ends of bones in a joint mainly functions to:",
       "options": [
@@ -2531,10 +2626,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Cartilage covers the ends of bones at a joint, providing a smooth surface that reduces friction and absorbs shock during movement.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q098",
+      "id": "q_98",
       "questionNumber": 98,
       "questionText": "A ball-and-socket joint, such as the hip joint, allows movement in:",
       "options": [
@@ -2544,29 +2640,30 @@
         },
         {
           "letter": "B",
-          "text": "multiple directions, including rotation"
+          "text": "no directions at all (a fixed/fused joint)"
         },
         {
           "letter": "C",
-          "text": "no directions at all (a fixed/fused joint)"
+          "text": "multiple directions, including rotation"
         },
         {
           "letter": "D",
           "text": "only a sliding motion"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Ball-and-socket joints, such as the hip and shoulder, allow a wide range of movement in multiple directions, including rotation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q099",
+      "id": "q_99",
       "questionNumber": 99,
       "questionText": "Bone marrow found inside certain bones is important because it:",
       "options": [
         {
           "letter": "A",
-          "text": "produces red and white blood cells"
+          "text": "stores glucose only"
         },
         {
           "letter": "B",
@@ -2578,25 +2675,26 @@
         },
         {
           "letter": "D",
-          "text": "stores glucose only"
+          "text": "produces red and white blood cells"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Bone marrow, found within certain bones, is the site of production of red blood cells and some white blood cells.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q100",
+      "id": "q_100",
       "questionNumber": 100,
       "questionText": "The basic functional unit of the nervous system is the:",
       "options": [
         {
           "letter": "A",
-          "text": "nephron"
+          "text": "neuron (nerve cell)"
         },
         {
           "letter": "B",
-          "text": "neuron (nerve cell)"
+          "text": "nephron"
         },
         {
           "letter": "C",
@@ -2607,12 +2705,13 @@
           "text": "axon only"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "A neuron (nerve cell) is the basic structural and functional unit of the nervous system, transmitting electrical impulses.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q101",
+      "id": "q_101",
       "questionNumber": 101,
       "questionText": "A reflex action is best described as:",
       "options": [
@@ -2635,16 +2734,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "A reflex action is a fast, automatic, involuntary response to a stimulus that does not require conscious thought, such as withdrawing a hand from a hot surface.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q102",
+      "id": "q_102",
       "questionNumber": 102,
       "questionText": "The correct order of a simple reflex arc is:",
       "options": [
         {
           "letter": "A",
-          "text": "receptor -> sensory neuron -> relay neuron (spinal cord) -> motor neuron -> effector"
+          "text": "receptor -> motor neuron -> effector only"
         },
         {
           "letter": "B",
@@ -2652,19 +2752,20 @@
         },
         {
           "letter": "C",
-          "text": "receptor -> motor neuron -> effector only"
+          "text": "receptor -> sensory neuron -> relay neuron (spinal cord) -> motor neuron -> effector"
         },
         {
           "letter": "D",
           "text": "effector -> receptor -> brain"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "A reflex arc passes from a receptor, along a sensory neuron, through a relay neuron in the spinal cord, along a motor neuron, to an effector (muscle or gland), producing a rapid response.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q103",
+      "id": "q_103",
       "questionNumber": 103,
       "questionText": "The part of the eye that controls the amount of light entering the eye by changing the size of the pupil is the:",
       "options": [
@@ -2674,7 +2775,7 @@
         },
         {
           "letter": "B",
-          "text": "iris"
+          "text": "lens"
         },
         {
           "letter": "C",
@@ -2682,25 +2783,26 @@
         },
         {
           "letter": "D",
-          "text": "lens"
+          "text": "iris"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The iris is a ring of muscle that controls the size of the pupil, regulating the amount of light entering the eye.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q104",
+      "id": "q_104",
       "questionNumber": 104,
       "questionText": "Light-sensitive cells that detect light and form images are found in the:",
       "options": [
         {
           "letter": "A",
-          "text": "cornea"
+          "text": "retina"
         },
         {
           "letter": "B",
-          "text": "retina"
+          "text": "cornea"
         },
         {
           "letter": "C",
@@ -2711,22 +2813,23 @@
           "text": "pupil"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The retina contains light-sensitive receptor cells (rods and cones) that detect light and send nerve impulses to the brain via the optic nerve.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q105",
+      "id": "q_105",
       "questionNumber": 105,
       "questionText": "The gap between two neurons, across which a nerve impulse is transmitted chemically, is called a:",
       "options": [
         {
           "letter": "A",
-          "text": "synapse"
+          "text": "nephron"
         },
         {
           "letter": "B",
-          "text": "nephron"
+          "text": "synapse"
         },
         {
           "letter": "C",
@@ -2737,18 +2840,19 @@
           "text": "dendrite only"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "A synapse is the small gap between two neurons where the nerve impulse is transmitted from one neuron to the next using chemical neurotransmitters.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q106",
+      "id": "q_106",
       "questionNumber": 106,
       "questionText": "The central nervous system in humans consists of the:",
       "options": [
         {
           "letter": "A",
-          "text": "brain and spinal cord"
+          "text": "all nerves in the body"
         },
         {
           "letter": "B",
@@ -2756,19 +2860,20 @@
         },
         {
           "letter": "C",
-          "text": "all nerves in the body"
+          "text": "brain and spinal cord"
         },
         {
           "letter": "D",
           "text": "heart and lungs"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "The central nervous system (CNS) is made up of the brain and spinal cord, which process and coordinate information from throughout the body.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q107",
+      "id": "q_107",
       "questionNumber": 107,
       "questionText": "Which part of the brain is mainly responsible for controlling balance and coordination of movement?",
       "options": [
@@ -2778,7 +2883,7 @@
         },
         {
           "letter": "B",
-          "text": "Cerebellum"
+          "text": "Hypothalamus only"
         },
         {
           "letter": "C",
@@ -2786,25 +2891,26 @@
         },
         {
           "letter": "D",
-          "text": "Hypothalamus only"
+          "text": "Cerebellum"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The cerebellum is mainly responsible for coordinating fine movement, posture and balance.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q108",
+      "id": "q_108",
       "questionNumber": 108,
       "questionText": "Hormones are transported around the body in the:",
       "options": [
         {
           "letter": "A",
-          "text": "nerves"
+          "text": "blood"
         },
         {
           "letter": "B",
-          "text": "blood"
+          "text": "nerves"
         },
         {
           "letter": "C",
@@ -2815,12 +2921,13 @@
           "text": "digestive tract"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Hormones are chemical messengers secreted by endocrine glands directly into the blood, which carries them to target organs around the body.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q109",
+      "id": "q_109",
       "questionNumber": 109,
       "questionText": "Compared to nervous responses, hormonal responses are generally:",
       "options": [
@@ -2843,10 +2950,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Hormonal (endocrine) responses are generally slower to take effect but longer-lasting compared to fast, short-lived nervous responses.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q110",
+      "id": "q_110",
       "questionNumber": 110,
       "questionText": "Adrenaline, released by the adrenal glands, prepares the body for 'fight or flight' by:",
       "options": [
@@ -2856,23 +2964,24 @@
         },
         {
           "letter": "B",
-          "text": "increasing heart rate, breathing rate and blood glucose levels"
+          "text": "stopping digestion completely with no other effect"
         },
         {
           "letter": "C",
-          "text": "stopping digestion completely with no other effect"
+          "text": "increasing heart rate, breathing rate and blood glucose levels"
         },
         {
           "letter": "D",
           "text": "reducing oxygen supply to muscles"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Adrenaline increases heart rate, breathing rate and blood glucose levels, preparing the body for rapid physical action in response to stress or danger.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q111",
+      "id": "q_111",
       "questionNumber": 111,
       "questionText": "The gland often called the 'master gland' because it controls many other endocrine glands is the:",
       "options": [
@@ -2882,7 +2991,7 @@
         },
         {
           "letter": "B",
-          "text": "pituitary gland"
+          "text": "adrenal gland"
         },
         {
           "letter": "C",
@@ -2890,25 +2999,26 @@
         },
         {
           "letter": "D",
-          "text": "adrenal gland"
+          "text": "pituitary gland"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The pituitary gland, located at the base of the brain, is called the 'master gland' because it produces hormones that regulate the activity of many other endocrine glands.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q112",
+      "id": "q_112",
       "questionNumber": 112,
       "questionText": "The thyroid gland produces a hormone that mainly controls:",
       "options": [
         {
           "letter": "A",
-          "text": "blood clotting"
+          "text": "the body's metabolic rate"
         },
         {
           "letter": "B",
-          "text": "the body's metabolic rate"
+          "text": "blood clotting"
         },
         {
           "letter": "C",
@@ -2919,22 +3029,23 @@
           "text": "the menstrual cycle"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The thyroid gland produces thyroxine, a hormone that regulates the body's basal metabolic rate, affecting growth and energy use.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q113",
+      "id": "q_113",
       "questionNumber": 113,
       "questionText": "Which of the following is an example of a negative feedback mechanism in the body?",
       "options": [
         {
           "letter": "A",
-          "text": "Insulin lowering blood glucose when it rises, and glucagon raising it when it falls too low"
+          "text": "Continuous, unregulated increase in body temperature"
         },
         {
           "letter": "B",
-          "text": "Continuous, unregulated increase in body temperature"
+          "text": "Insulin lowering blood glucose when it rises, and glucagon raising it when it falls too low"
         },
         {
           "letter": "C",
@@ -2945,12 +3056,13 @@
           "text": "Random hormone release with no relation to blood glucose levels"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Negative feedback mechanisms detect a change from the normal set point and trigger a response that reverses that change, such as insulin/glucagon regulating blood glucose to keep it within a stable range.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q114",
+      "id": "q_114",
       "questionNumber": 114,
       "questionText": "A drug that slows down the activity of the nervous system, such as alcohol, is classified as a:",
       "options": [
@@ -2960,29 +3072,30 @@
         },
         {
           "letter": "B",
-          "text": "depressant"
+          "text": "hallucinogen only"
         },
         {
           "letter": "C",
-          "text": "hallucinogen only"
+          "text": "depressant"
         },
         {
           "letter": "D",
           "text": "antibiotic"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Depressants, such as alcohol, slow down the activity of the central nervous system, reducing brain and body function.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q115",
+      "id": "q_115",
       "questionNumber": 115,
       "questionText": "A drug that increases the activity of the nervous system, such as caffeine, is classified as a:",
       "options": [
         {
           "letter": "A",
-          "text": "stimulant"
+          "text": "antibiotic"
         },
         {
           "letter": "B",
@@ -2994,25 +3107,26 @@
         },
         {
           "letter": "D",
-          "text": "antibiotic"
+          "text": "stimulant"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Stimulants, such as caffeine and nicotine, increase the activity of the nervous system, making a person feel more alert.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q116",
+      "id": "q_116",
       "questionNumber": 116,
       "questionText": "Drug addiction is best described as:",
       "options": [
         {
           "letter": "A",
-          "text": "a one-time use of any drug"
+          "text": "a physical and/or psychological dependence on a drug, often with withdrawal symptoms if stopped"
         },
         {
           "letter": "B",
-          "text": "a physical and/or psychological dependence on a drug, often with withdrawal symptoms if stopped"
+          "text": "a one-time use of any drug"
         },
         {
           "letter": "C",
@@ -3023,12 +3137,13 @@
           "text": "a drug that has no effect on the body"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Addiction involves a physical and/or psychological dependence on a drug, often producing withdrawal symptoms (such as cravings, anxiety or physical discomfort) when use is stopped.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q117",
+      "id": "q_117",
       "questionNumber": 117,
       "questionText": "Long-term heavy alcohol consumption is most strongly associated with damage to the:",
       "options": [
@@ -3051,16 +3166,17 @@
       ],
       "correctAnswer": "B",
       "explanation": "Long-term heavy alcohol use is strongly associated with liver damage, including cirrhosis, since the liver breaks down alcohol and can become scarred from prolonged exposure.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q118",
+      "id": "q_118",
       "questionNumber": 118,
       "questionText": "Antibiotics are used to treat infections caused by:",
       "options": [
         {
           "letter": "A",
-          "text": "bacteria"
+          "text": "vitamin deficiencies"
         },
         {
           "letter": "B",
@@ -3068,25 +3184,26 @@
         },
         {
           "letter": "C",
-          "text": "vitamin deficiencies"
+          "text": "bacteria"
         },
         {
           "letter": "D",
           "text": "physical injuries only"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Antibiotics work against bacteria by killing them or stopping their growth; they are not effective against viruses.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q119",
+      "id": "q_119",
       "questionNumber": 119,
       "questionText": "Which of the following best explains why antibiotic misuse (e.g. not completing a full course) is a public health concern?",
       "options": [
         {
           "letter": "A",
-          "text": "It can lead to antibiotic-resistant bacteria developing"
+          "text": "It only affects viruses"
         },
         {
           "letter": "B",
@@ -3098,15 +3215,16 @@
         },
         {
           "letter": "D",
-          "text": "It only affects viruses"
+          "text": "It can lead to antibiotic-resistant bacteria developing"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Incomplete or inappropriate antibiotic use allows surviving bacteria (which may have some resistance) to multiply, contributing to the development of antibiotic-resistant strains.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q120",
+      "id": "q_120",
       "questionNumber": 120,
       "questionText": "In human males, sperm cells are produced in the:",
       "options": [
@@ -3129,10 +3247,11 @@
       ],
       "correctAnswer": "A",
       "explanation": "Sperm cells are produced in the testes through the process of meiosis.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q121",
+      "id": "q_121",
       "questionNumber": 121,
       "questionText": "In human females, egg cells (ova) mature and are released from the:",
       "options": [
@@ -3155,10 +3274,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Egg cells mature within follicles in the ovary, and one is typically released (ovulation) around the middle of each menstrual cycle.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q122",
+      "id": "q_122",
       "questionNumber": 122,
       "questionText": "Fertilisation in humans normally occurs in the:",
       "options": [
@@ -3168,23 +3288,24 @@
         },
         {
           "letter": "B",
-          "text": "oviduct (fallopian tube)"
+          "text": "vagina"
         },
         {
           "letter": "C",
-          "text": "vagina"
+          "text": "oviduct (fallopian tube)"
         },
         {
           "letter": "D",
           "text": "cervix"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Fertilisation, the fusion of a sperm and egg cell, normally takes place in the oviduct (fallopian tube).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q123",
+      "id": "q_123",
       "questionNumber": 123,
       "questionText": "The placenta functions mainly to:",
       "options": [
@@ -3194,7 +3315,7 @@
         },
         {
           "letter": "B",
-          "text": "allow exchange of nutrients, oxygen and waste between mother and foetus"
+          "text": "produce milk after birth"
         },
         {
           "letter": "C",
@@ -3202,25 +3323,26 @@
         },
         {
           "letter": "D",
-          "text": "produce milk after birth"
+          "text": "allow exchange of nutrients, oxygen and waste between mother and foetus"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The placenta is the organ that allows the exchange of nutrients, oxygen, and waste products between the mother's blood and the developing foetus's blood, without the two blood supplies mixing directly.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q124",
+      "id": "q_124",
       "questionNumber": 124,
       "questionText": "During the menstrual cycle, the lining of the uterus (endometrium) breaks down and is shed if:",
       "options": [
         {
           "letter": "A",
-          "text": "fertilisation has occurred"
+          "text": "fertilisation has NOT occurred"
         },
         {
           "letter": "B",
-          "text": "fertilisation has NOT occurred"
+          "text": "fertilisation has occurred"
         },
         {
           "letter": "C",
@@ -3231,12 +3353,13 @@
           "text": "ovulation has not yet happened"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If the released egg is not fertilised, hormone levels fall, causing the thickened uterus lining to break down and be shed as menstruation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q125",
+      "id": "q_125",
       "questionNumber": 125,
       "questionText": "Which method of contraception works by creating a physical barrier preventing sperm from reaching an egg?",
       "options": [
@@ -3259,10 +3382,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "A condom is a barrier method of contraception that physically prevents sperm from reaching and fertilising an egg.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q126",
+      "id": "q_126",
       "questionNumber": 126,
       "questionText": "In flowering plants, pollination is best defined as:",
       "options": [
@@ -3272,23 +3396,24 @@
         },
         {
           "letter": "B",
-          "text": "the transfer of pollen from the anther to the stigma"
+          "text": "the germination of a seed"
         },
         {
           "letter": "C",
-          "text": "the germination of a seed"
+          "text": "the transfer of pollen from the anther to the stigma"
         },
         {
           "letter": "D",
           "text": "the growth of a fruit"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Pollination is the transfer of pollen grains from the anther (male part) to the stigma (female part) of a flower, which may be of the same or a different flower.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q127",
+      "id": "q_127",
       "questionNumber": 127,
       "questionText": "A seed requires which of the following conditions to germinate?",
       "options": [
@@ -3298,7 +3423,7 @@
         },
         {
           "letter": "B",
-          "text": "Water, oxygen and a suitable temperature"
+          "text": "Soil pH of exactly 7 and nothing else"
         },
         {
           "letter": "C",
@@ -3306,25 +3431,26 @@
         },
         {
           "letter": "D",
-          "text": "Soil pH of exactly 7 and nothing else"
+          "text": "Water, oxygen and a suitable temperature"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Seeds generally require sufficient water, oxygen for respiration, and a suitable (usually warm) temperature to germinate successfully.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q128",
+      "id": "q_128",
       "questionNumber": 128,
       "questionText": "The chromosome number in a normal human body (somatic) cell is:",
       "options": [
         {
           "letter": "A",
-          "text": "23"
+          "text": "46"
         },
         {
           "letter": "B",
-          "text": "46"
+          "text": "23"
         },
         {
           "letter": "C",
@@ -3335,12 +3461,13 @@
           "text": "12"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Normal human body (somatic) cells contain 46 chromosomes, arranged in 23 homologous pairs.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q129",
+      "id": "q_129",
       "questionNumber": 129,
       "questionText": "Human sex cells (gametes) contain how many chromosomes?",
       "options": [
@@ -3363,10 +3490,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Gametes (sperm and egg cells) contain 23 chromosomes, half the number in normal body cells, produced through meiosis, so that fertilisation restores the full 46.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q130",
+      "id": "q_130",
       "questionNumber": 130,
       "questionText": "In humans, the sex of a baby is determined by which chromosomes it inherits, specifically:",
       "options": [
@@ -3376,23 +3504,24 @@
         },
         {
           "letter": "B",
-          "text": "XX for female, XY for male"
+          "text": "YY for female, XX for male"
         },
         {
           "letter": "C",
-          "text": "YY for female, XX for male"
+          "text": "XX for female, XY for male"
         },
         {
           "letter": "D",
           "text": "Sex is determined only by the mother's egg"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "In humans, females have two X chromosomes (XX) and males have one X and one Y chromosome (XY); the father's sperm determines the baby's sex depending on whether it carries an X or Y chromosome.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q131",
+      "id": "q_131",
       "questionNumber": 131,
       "questionText": "A gene is best defined as:",
       "options": [
@@ -3402,7 +3531,7 @@
         },
         {
           "letter": "B",
-          "text": "a section of DNA that codes for a particular characteristic/protein"
+          "text": "a fully formed organism"
         },
         {
           "letter": "C",
@@ -3410,25 +3539,26 @@
         },
         {
           "letter": "D",
-          "text": "a fully formed organism"
+          "text": "a section of DNA that codes for a particular characteristic/protein"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "A gene is a specific section of DNA on a chromosome that codes for a particular protein, which in turn influences a particular characteristic.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q132",
+      "id": "q_132",
       "questionNumber": 132,
       "questionText": "If both parents are heterozygous for a recessive genetic condition (Aa x Aa), what proportion of their offspring is expected to show the recessive condition?",
       "options": [
         {
           "letter": "A",
-          "text": "0%"
+          "text": "25%"
         },
         {
           "letter": "B",
-          "text": "25%"
+          "text": "0%"
         },
         {
           "letter": "C",
@@ -3439,12 +3569,13 @@
           "text": "100%"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "A cross between two heterozygous parents (Aa x Aa) produces offspring in the ratio 1 AA : 2 Aa : 1 aa, meaning 25% (1 in 4) are expected to be homozygous recessive (aa) and show the recessive condition.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q133",
+      "id": "q_133",
       "questionNumber": 133,
       "questionText": "An allele that is expressed in the phenotype even when only one copy is present (in a heterozygous individual) is called:",
       "options": [
@@ -3467,10 +3598,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "A dominant allele is expressed in the phenotype whenever it is present, even alongside a different (recessive) allele in a heterozygous individual.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q134",
+      "id": "q_134",
       "questionNumber": 134,
       "questionText": "Sickle cell anaemia is an example of a genetic condition inherited as a:",
       "options": [
@@ -3480,23 +3612,24 @@
         },
         {
           "letter": "B",
-          "text": "recessive allele"
+          "text": "non-genetic, purely environmental condition"
         },
         {
           "letter": "C",
-          "text": "non-genetic, purely environmental condition"
+          "text": "recessive allele"
         },
         {
           "letter": "D",
           "text": "sex-linked condition affecting only females"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Sickle cell anaemia is inherited as a recessive allele; a person needs two copies of the sickle cell allele (homozygous recessive) to have the full condition.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q135",
+      "id": "q_135",
       "questionNumber": 135,
       "questionText": "Variation between offspring of the same two parents mainly arises from:",
       "options": [
@@ -3506,7 +3639,7 @@
         },
         {
           "letter": "B",
-          "text": "meiosis (crossing over and independent assortment) and random fertilisation"
+          "text": "the environment alone, with no genetic contribution"
         },
         {
           "letter": "C",
@@ -3514,25 +3647,26 @@
         },
         {
           "letter": "D",
-          "text": "the environment alone, with no genetic contribution"
+          "text": "meiosis (crossing over and independent assortment) and random fertilisation"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Genetic variation among offspring arises mainly from processes during meiosis (such as crossing over and independent assortment of chromosomes) and the random combination of gametes at fertilisation.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q136",
+      "id": "q_136",
       "questionNumber": 136,
       "questionText": "Continuous variation (e.g. human height) differs from discontinuous variation (e.g. human blood group) mainly because continuous variation:",
       "options": [
         {
           "letter": "A",
-          "text": "shows a small number of distinct categories with no intermediates"
+          "text": "shows a range of values with many intermediates, often influenced by both genes and environment"
         },
         {
           "letter": "B",
-          "text": "shows a range of values with many intermediates, often influenced by both genes and environment"
+          "text": "shows a small number of distinct categories with no intermediates"
         },
         {
           "letter": "C",
@@ -3543,12 +3677,13 @@
           "text": "is not influenced by the environment at all"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Continuous variation produces a full range of values with intermediates (e.g. height), usually influenced by multiple genes and environmental factors, unlike discontinuous variation which falls into distinct categories.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q137",
+      "id": "q_137",
       "questionNumber": 137,
       "questionText": "Natural selection is best described as the process by which:",
       "options": [
@@ -3571,10 +3706,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "Natural selection is the process where individuals with characteristics better suited to their environment are more likely to survive and reproduce, passing those advantageous characteristics to offspring over generations.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q138",
+      "id": "q_138",
       "questionNumber": 138,
       "questionText": "Antibiotic resistance in bacteria is an example of:",
       "options": [
@@ -3584,23 +3720,24 @@
         },
         {
           "letter": "B",
-          "text": "natural selection favouring resistant bacteria when antibiotics are used"
+          "text": "a process unrelated to evolution"
         },
         {
           "letter": "C",
-          "text": "a process unrelated to evolution"
+          "text": "natural selection favouring resistant bacteria when antibiotics are used"
         },
         {
           "letter": "D",
           "text": "a purely random event with no survival advantage involved"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "When antibiotics are used, susceptible bacteria die while any naturally resistant bacteria survive and reproduce, illustrating natural selection favouring resistance over generations.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q139",
+      "id": "q_139",
       "questionNumber": 139,
       "questionText": "Selective breeding (artificial selection) differs from natural selection mainly because in selective breeding:",
       "options": [
@@ -3610,7 +3747,7 @@
         },
         {
           "letter": "B",
-          "text": "humans choose which organisms with desired traits are bred together"
+          "text": "only wild populations are involved"
         },
         {
           "letter": "C",
@@ -3618,25 +3755,26 @@
         },
         {
           "letter": "D",
-          "text": "only wild populations are involved"
+          "text": "humans choose which organisms with desired traits are bred together"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "In selective breeding, humans (not natural environmental pressures) deliberately choose organisms with desirable characteristics to breed, gradually increasing the frequency of those traits.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q140",
+      "id": "q_140",
       "questionNumber": 140,
       "questionText": "A species is generally defined as a group of organisms that can:",
       "options": [
         {
           "letter": "A",
-          "text": "only live in the same habitat"
+          "text": "interbreed and produce fertile offspring"
         },
         {
           "letter": "B",
-          "text": "interbreed and produce fertile offspring"
+          "text": "only live in the same habitat"
         },
         {
           "letter": "C",
@@ -3647,22 +3785,23 @@
           "text": "share an identical diet"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "A species is generally defined as a group of organisms capable of interbreeding with one another to produce fertile offspring.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q141",
+      "id": "q_141",
       "questionNumber": 141,
       "questionText": "Adaptation refers to:",
       "options": [
         {
           "letter": "A",
-          "text": "a feature that helps an organism survive and reproduce in its environment"
+          "text": "a random mutation with no benefit"
         },
         {
           "letter": "B",
-          "text": "a random mutation with no benefit"
+          "text": "a feature that helps an organism survive and reproduce in its environment"
         },
         {
           "letter": "C",
@@ -3673,18 +3812,19 @@
           "text": "a feature found only in extinct organisms"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "An adaptation is an inherited feature that increases an organism's chances of survival and successful reproduction in its particular environment.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q142",
+      "id": "q_142",
       "questionNumber": 142,
       "questionText": "In a food chain, the arrow between organisms represents:",
       "options": [
         {
           "letter": "A",
-          "text": "the direction of energy flow, from organism eaten to organism that eats it"
+          "text": "a random relationship with no biological meaning"
         },
         {
           "letter": "B",
@@ -3692,19 +3832,20 @@
         },
         {
           "letter": "C",
-          "text": "a random relationship with no biological meaning"
+          "text": "the direction of energy flow, from organism eaten to organism that eats it"
         },
         {
           "letter": "D",
           "text": "the flow of oxygen only"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "In a food chain, the arrow shows the direction of energy transfer, pointing from the organism being eaten to the organism that eats it.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q143",
+      "id": "q_143",
       "questionNumber": 143,
       "questionText": "Organisms that make their own food using light energy, forming the base of most food chains, are called:",
       "options": [
@@ -3714,7 +3855,7 @@
         },
         {
           "letter": "B",
-          "text": "producers"
+          "text": "secondary consumers"
         },
         {
           "letter": "C",
@@ -3722,21 +3863,22 @@
         },
         {
           "letter": "D",
-          "text": "secondary consumers"
+          "text": "producers"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Producers, mainly green plants and algae, make their own food through photosynthesis and form the base of almost all food chains.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q144",
+      "id": "q_144",
       "questionNumber": 144,
       "questionText": "Organisms that break down dead organic matter and waste, recycling nutrients back into the ecosystem, are called:",
       "options": [
         {
           "letter": "A",
-          "text": "producers"
+          "text": "decomposers"
         },
         {
           "letter": "B",
@@ -3744,19 +3886,20 @@
         },
         {
           "letter": "C",
-          "text": "decomposers"
+          "text": "producers"
         },
         {
           "letter": "D",
           "text": "tertiary consumers"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Decomposers, such as certain bacteria and fungi, break down dead organisms and waste material, releasing nutrients back into the ecosystem.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q145",
+      "id": "q_145",
       "questionNumber": 145,
       "questionText": "Only about 10% of energy is typically transferred from one trophic level to the next in a food chain, mainly because energy is lost through:",
       "options": [
@@ -3775,24 +3918,21 @@
         {
           "letter": "D",
           "text": "osmosis"
-        },
-        {
-          "letter": "E",
-          "text": "none of the above; all energy is transferred"
         }
       ],
       "correctAnswer": "B",
       "explanation": "Energy is lost at each trophic level mainly through respiration (as heat), movement, and material that is not eaten, digested or absorbed, meaning only a small proportion is passed to the next level.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q146",
+      "id": "q_146",
       "questionNumber": 146,
       "questionText": "Deforestation can lead to which of the following environmental problems?",
       "options": [
         {
           "letter": "A",
-          "text": "Increased soil erosion and loss of habitat"
+          "text": "Reduced carbon dioxide levels in the atmosphere"
         },
         {
           "letter": "B",
@@ -3800,19 +3940,20 @@
         },
         {
           "letter": "C",
-          "text": "Reduced carbon dioxide levels in the atmosphere"
+          "text": "Increased soil erosion and loss of habitat"
         },
         {
           "letter": "D",
           "text": "No effect on local climate or wildlife"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Deforestation removes tree roots that hold soil in place and provide habitat, leading to increased soil erosion, habitat loss, and reduced biodiversity.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q147",
+      "id": "q_147",
       "questionNumber": 147,
       "questionText": "The excessive use of chemical fertilisers running off into rivers and lakes can cause a problem known as:",
       "options": [
@@ -3822,7 +3963,7 @@
         },
         {
           "letter": "B",
-          "text": "eutrophication"
+          "text": "ozone depletion"
         },
         {
           "letter": "C",
@@ -3830,25 +3971,26 @@
         },
         {
           "letter": "D",
-          "text": "ozone depletion"
+          "text": "eutrophication"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Eutrophication occurs when excess nutrients (such as from fertiliser run-off) enter water bodies, causing algal blooms that block light and, when they decompose, deplete oxygen and kill aquatic life.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q148",
+      "id": "q_148",
       "questionNumber": 148,
       "questionText": "Conservation of wildlife and natural habitats is important mainly because it:",
       "options": [
         {
           "letter": "A",
-          "text": "has no real benefit to humans"
+          "text": "maintains biodiversity, ecological balance, and resources for future generations"
         },
         {
           "letter": "B",
-          "text": "maintains biodiversity, ecological balance, and resources for future generations"
+          "text": "has no real benefit to humans"
         },
         {
           "letter": "C",
@@ -3859,12 +4001,13 @@
           "text": "increases pollution levels"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Conservation maintains biodiversity and ecological balance, protects resources (such as clean water and fertile soil), and preserves natural heritage for future generations.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q149",
+      "id": "q_149",
       "questionNumber": 149,
       "questionText": "An ecosystem is best defined as:",
       "options": [
@@ -3887,10 +4030,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "An ecosystem includes both a community of interacting living organisms (biotic factors) and the non-living physical environment (abiotic factors) they interact with.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     },
     {
-      "id": "bio_p1_q150",
+      "id": "q_150",
       "questionNumber": 150,
       "questionText": "Which of the following is an abiotic (non-living) factor that can affect the population size of organisms in an ecosystem?",
       "options": [
@@ -3913,7 +4057,8 @@
       ],
       "correctAnswer": "C",
       "explanation": "Temperature and rainfall are abiotic (non-living, physical) factors that can significantly affect population size, unlike predation, competition and disease, which are biotic factors.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Biology Examination Practice"
     }
   ]
 }

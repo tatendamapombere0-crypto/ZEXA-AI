@@ -5,23 +5,22 @@
     "paperCode": "4022/01",
     "paperName": "Geography Paper 1 — Multiple Choice",
     "paperType": "Multiple Choice",
-    "questionCount": 150,
-    "sourceFile": "ZIMSEC 4022/01; MoPSE Geography Forms 1–4 syllabus; ZIMSEC specimen/past-paper patterns.",
-    "copyrightNote": "Original practice questions synthesized from the ZIMSEC syllabus and publicly accessible specimen/past-paper patterns; not a verbatim reproduction of past papers."
+    "questionCount": 67,
+    "totalQuestions": 41
   },
   "questions": [
     {
-      "id": "geo_olevel_p1_001",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm?",
       "options": [
         {
           "letter": "A",
-          "text": "0.3 km"
+          "text": "3 km"
         },
         {
           "letter": "B",
-          "text": "3 km"
+          "text": "300 km"
         },
         {
           "letter": "C",
@@ -29,26 +28,26 @@
         },
         {
           "letter": "D",
-          "text": "300 km"
+          "text": "0.3 km"
         }
       ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "A",
+      "explanation": "Scale 1:50 000 means 1 cm on the map represents 50 000 cm = 500 m = 0.5 km. Therefore 6 cm represents 6 × 0.5 km = 3.0 km on the ground.",
       "answerConfidence": "high",
       "topic": "Mapwork"
     },
     {
-      "id": "geo_olevel_p1_002",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "Which instrument measures atmospheric pressure?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Thermometer"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Barometer"
         },
         {
           "letter": "C",
@@ -59,46 +58,46 @@
           "text": "Wind vane"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "B",
+      "explanation": "A barometer (mercury or aneroid barometer) measures atmospheric pressure in millibars or hectopascals (hPa). Hygrometers measure humidity and anemometers measure wind speed.",
       "answerConfidence": "high",
       "topic": "Weather"
     },
     {
-      "id": "geo_olevel_p1_003",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "Which river process transports sediment by rolling it along the channel bed?",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
           "text": "Suspension"
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "Solution"
+        },
+        {
+          "letter": "C",
+          "text": "Traction"
         },
         {
           "letter": "D",
           "text": "Evaporation"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "C",
+      "explanation": "Correct Answer (B): Traction.",
       "answerConfidence": "high",
       "topic": "Geomorphology"
     },
     {
-      "id": "geo_olevel_p1_004",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope?",
       "options": [
         {
           "letter": "A",
-          "text": "Contour ploughing"
+          "text": "Overgrazing"
         },
         {
           "letter": "B",
@@ -106,20 +105,20 @@
         },
         {
           "letter": "C",
-          "text": "Overgrazing"
+          "text": "Removing vegetation"
         },
         {
           "letter": "D",
-          "text": "Removing vegetation"
+          "text": "Contour ploughing"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "D",
+      "explanation": "Correct Answer (C): Contour ploughing.",
       "answerConfidence": "high",
       "topic": "Agriculture"
     },
     {
-      "id": "geo_olevel_p1_005",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "Beneficiation of a mineral means:",
       "options": [
@@ -141,22 +140,22 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Correct Answer (D): adding value through processing.",
       "answerConfidence": "high",
       "topic": "Industry"
     },
     {
-      "id": "geo_olevel_p1_006",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Population density is calculated by dividing population by:",
       "options": [
         {
           "letter": "A",
-          "text": "area"
+          "text": "birth rate"
         },
         {
           "letter": "B",
-          "text": "birth rate"
+          "text": "area"
         },
         {
           "letter": "C",
@@ -167,46 +166,46 @@
           "text": "migration"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "B",
+      "explanation": "Correct Answer (A): area.",
       "answerConfidence": "high",
       "topic": "Population"
     },
     {
-      "id": "geo_olevel_p1_007",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "A settlement in which houses are closely grouped is described as:",
       "options": [
         {
           "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
           "text": "dispersed"
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "isolated"
+        },
+        {
+          "letter": "C",
+          "text": "nucleated"
         },
         {
           "letter": "D",
           "text": "randomly linear"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "C",
+      "explanation": "Correct Answer (B): nucleated.",
       "answerConfidence": "high",
       "topic": "Settlement"
     },
     {
-      "id": "geo_olevel_p1_008",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
       "options": [
         {
           "letter": "A",
-          "text": "Rail"
+          "text": "Pipeline for all minerals"
         },
         {
           "letter": "B",
@@ -214,20 +213,20 @@
         },
         {
           "letter": "C",
-          "text": "Pipeline for all minerals"
+          "text": "Air"
         },
         {
           "letter": "D",
-          "text": "Air"
+          "text": "Rail"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "D",
+      "explanation": "Rail transport is most economical for heavy, bulky, non-perishable minerals such as coal, chrome, and iron ore over long overland distances.",
       "answerConfidence": "high",
       "topic": "Transport"
     },
     {
-      "id": "geo_olevel_p1_009",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Which action is a direct climate-change mitigation measure?",
       "options": [
@@ -249,22 +248,22 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Reducing greenhouse-gas emissions (such as CO₂ and CH₄) directly tackles the cause of enhanced global warming.",
       "answerConfidence": "high",
       "topic": "Environment"
     },
     {
-      "id": "geo_olevel_p1_010",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "Which of the following is a renewable energy resource?",
       "options": [
         {
           "letter": "A",
-          "text": "Solar"
+          "text": "Coal"
         },
         {
           "letter": "B",
-          "text": "Coal"
+          "text": "Solar"
         },
         {
           "letter": "C",
@@ -275,46 +274,46 @@
           "text": "Natural gas"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "B",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
       "topic": "Resources"
     },
     {
-      "id": "geo_olevel_p1_011",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "Igneous rocks are formed mainly by:",
       "options": [
         {
           "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
           "text": "compaction of soil"
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "decay of vegetation"
+        },
+        {
+          "letter": "C",
+          "text": "cooling and solidification of molten material"
         },
         {
           "letter": "D",
           "text": "river erosion"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "C",
+      "explanation": "Igneous rocks form when molten magma (intrusive) or lava (extrusive) cools and solidifies into interlocking mineral crystals.",
       "answerConfidence": "high",
       "topic": "Rocks"
     },
     {
-      "id": "geo_olevel_p1_012",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "Biodiversity refers to the:",
       "options": [
         {
           "letter": "A",
-          "text": "variety of living organisms"
+          "text": "amount of rainfall"
         },
         {
           "letter": "B",
@@ -322,264 +321,129 @@
         },
         {
           "letter": "C",
-          "text": "amount of rainfall"
+          "text": "depth of rivers"
         },
         {
           "letter": "D",
-          "text": "depth of rivers"
+          "text": "variety of living organisms"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "D",
+      "explanation": "Biodiversity is the total variety of living organisms (species, genetic diversity, and ecosystem diversity) within an area.",
       "answerConfidence": "high",
       "topic": "Ecosystems"
     },
     {
-      "id": "geo_olevel_p1_013",
+      "id": "q_15",
       "questionNumber": 13,
-      "questionText": "A map has a scale of 1:50 000. Which value ground distance is represented by 6 cm?",
+      "questionText": "Which of the following river process transports sediment by rolling it along the channel bed?",
       "options": [
         {
           "letter": "A",
-          "text": "0.3 km"
+          "text": "Traction"
         },
         {
           "letter": "B",
-          "text": "3 km"
+          "text": "Suspension"
         },
         {
           "letter": "C",
-          "text": "30 km"
+          "text": "Solution"
         },
         {
           "letter": "D",
-          "text": "300 km"
+          "text": "Evaporation"
         }
       ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "A",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Geomorphology"
     },
     {
-      "id": "geo_olevel_p1_014",
+      "id": "q_16",
       "questionNumber": 14,
-      "questionText": "Which of the following instrument measures atmospheric pressure?",
+      "questionText": "Which of the following practice is most effective for reducing soil erosion on a cultivated slope?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Overgrazing"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Contour ploughing"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Up-slope burning"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Removing vegetation"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "B",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
-      "topic": "Weather"
+      "topic": "Agriculture"
     },
     {
-      "id": "geo_olevel_p1_015",
+      "id": "q_17",
       "questionNumber": 15,
-      "questionText": "Which of the following river process transports sediment by rolling it along the channel bed?",
+      "questionText": "Which of the following transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
+          "text": "Air"
         },
         {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Bicycle"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Rail"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
+          "text": "Pipeline for all minerals"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "C",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
-      "topic": "Geomorphology"
+      "topic": "Transport"
     },
     {
-      "id": "geo_olevel_p1_016",
+      "id": "q_18",
       "questionNumber": 16,
-      "questionText": "Which of the following practice is most effective for reducing soil erosion on a cultivated slope?",
+      "questionText": "Which of the following action is a direct climate-change mitigation measure?",
       "options": [
         {
           "letter": "A",
-          "text": "Contour ploughing"
+          "text": "Destroying wetlands"
         },
         {
           "letter": "B",
-          "text": "Up-slope burning"
+          "text": "Increasing deforestation"
         },
         {
           "letter": "C",
-          "text": "Overgrazing"
+          "text": "Burning more coal"
         },
         {
           "letter": "D",
-          "text": "Removing vegetation"
+          "text": "Reducing greenhouse-gas emissions"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "D",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
-      "topic": "Agriculture"
+      "topic": "Environment"
     },
     {
-      "id": "geo_olevel_p1_017",
+      "id": "q_19",
       "questionNumber": 17,
-      "questionText": "Beneficiation of a mineral means:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_018",
-      "questionNumber": 18,
-      "questionText": "Population density is calculated by dividing population by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_019",
-      "questionNumber": 19,
-      "questionText": "A settlement in which houses are closely grouped is described as:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_020",
-      "questionNumber": 20,
-      "questionText": "Which of the following transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_021",
-      "questionNumber": 21,
-      "questionText": "Which of the following action is a direct climate-change mitigation measure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_022",
-      "questionNumber": 22,
       "questionText": "Which of the following of the following is a renewable energy resource?",
       "options": [
         {
@@ -600,3465 +464,657 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "A batholith is an intrusive plutonic igneous landform formed when magma cools slowly deep underground. Calderas, lava plateaus, and composite cones are extrusive landforms.",
       "answerConfidence": "high",
       "topic": "Resources"
     },
     {
-      "id": "geo_olevel_p1_023",
-      "questionNumber": 23,
-      "questionText": "Igneous rocks are formed mainly by:",
+      "id": "geo4022_1_x1",
+      "questionText": "On a 1:50 000 topographic map, what is the vertical interval usually shown between adjacent contour lines in Zimbabwe?",
       "options": [
         {
           "letter": "A",
-          "text": "cooling and solidification of molten material"
+          "text": "5 metres"
         },
         {
           "letter": "B",
-          "text": "compaction of soil"
+          "text": "20 metres"
         },
         {
           "letter": "C",
-          "text": "decay of vegetation"
+          "text": "100 metres"
         },
         {
           "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_024",
-      "questionNumber": 24,
-      "questionText": "Biodiversity refers to the:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_025",
-      "questionNumber": 25,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "1 metre"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Standard Zimbabwe 1:50 000 topographic maps use a 20 m contour interval.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Mapwork",
+      "questionNumber": 18
     },
     {
-      "id": "geo_olevel_p1_026",
-      "questionNumber": 26,
-      "questionText": "Which instrument measures atmospheric pressure? Consider the most appropriate geographical answer.",
+      "id": "geo4022_1_x2",
+      "questionText": "When giving a 6-figure grid reference on a topographic map, which digits are read FIRST?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Northings (vertical axis)"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Bearings"
         },
         {
           "letter": "C",
+          "text": "Eastings (horizontal axis)"
+        },
+        {
+          "letter": "D",
+          "text": "Contour heights"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Always read Eastings first (\"along the corridor\"), then Northings (\"up the stairs\").",
+      "answerConfidence": "high",
+      "topic": "Mapwork",
+      "questionNumber": 19
+    },
+    {
+      "id": "geo4022_1_x3",
+      "questionText": "Which weather instrument measures relative humidity using wet-bulb and dry-bulb thermometers?",
+      "options": [
+        {
+          "letter": "A",
           "text": "Rain gauge"
         },
         {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_027",
-      "questionNumber": 27,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Barograph"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Anemometer"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
+          "text": "Hygrometer (Stevenson screen)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "correctAnswer": "D",
+      "explanation": "A wet-and-dry bulb hygrometer inside a Stevenson screen determines relative humidity.",
       "answerConfidence": "high",
-      "topic": "Geomorphology"
+      "topic": "Weather & Climate",
+      "questionNumber": 20
     },
     {
-      "id": "geo_olevel_p1_028",
-      "questionNumber": 28,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Consider the most appropriate geographical answer.",
+      "id": "geo4022_1_x4",
+      "questionText": "In Southern Africa, the Inter-Tropical Convergence Zone (ITCZ) moves southward during December–February bringing:",
       "options": [
         {
           "letter": "A",
-          "text": "Contour ploughing"
+          "text": "Warm moist air and main summer rainfall over Zimbabwe"
         },
         {
           "letter": "B",
-          "text": "Up-slope burning"
+          "text": "Cold dry winter frost"
         },
         {
           "letter": "C",
-          "text": "Overgrazing"
+          "text": "Permanent desert drought"
         },
         {
           "letter": "D",
-          "text": "Removing vegetation"
+          "text": "Polar snowstorms"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "The summer southward shift of the ITCZ drives Zimbabwe's main wet season.",
       "answerConfidence": "high",
-      "topic": "Agriculture"
+      "topic": "Climate",
+      "questionNumber": 21
     },
     {
-      "id": "geo_olevel_p1_029",
-      "questionNumber": 29,
-      "questionText": "Beneficiation of a mineral means: Consider the most appropriate geographical answer.",
+      "id": "geo4022_1_x5",
+      "questionText": "Which landform is created by river deposition in the lower course when floodwater overflows riverbanks?",
       "options": [
         {
           "letter": "A",
-          "text": "adding value through processing"
+          "text": "V-shaped valley"
         },
         {
           "letter": "B",
-          "text": "exporting it unprocessed"
+          "text": "Levee and floodplain"
         },
         {
           "letter": "C",
-          "text": "burying mining waste"
+          "text": "Interlocking spur"
         },
         {
           "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_030",
-      "questionNumber": 30,
-      "questionText": "Population density is calculated by dividing population by: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_031",
-      "questionNumber": 31,
-      "questionText": "A settlement in which houses are closely grouped is described as: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_032",
-      "questionNumber": 32,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_033",
-      "questionNumber": 33,
-      "questionText": "Which action is a direct climate-change mitigation measure? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_034",
-      "questionNumber": 34,
-      "questionText": "Which of the following is a renewable energy resource? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_035",
-      "questionNumber": 35,
-      "questionText": "Igneous rocks are formed mainly by: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_036",
-      "questionNumber": 36,
-      "questionText": "Biodiversity refers to the: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_037",
-      "questionNumber": 37,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "Waterfall plunge pool"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Repeated flooding deposits coarse silt along banks forming raised natural levees across floodplains.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Rivers",
+      "questionNumber": 22
     },
     {
-      "id": "geo_olevel_p1_038",
-      "questionNumber": 38,
-      "questionText": "Which instrument measures atmospheric pressure? Select the option that best applies in Zimbabwe.",
+      "id": "geo4022_1_x6",
+      "questionText": "Which type of weathering dominates in arid desert regions with huge daily temperature swings (hot days, freezing nights)?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Carbonation"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Biological root wedging"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Exfoliation (thermal/onion-skin weathering)"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Hydrolysis"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Repeated heating and cooling causes outer rock layers to expand/contract and peel off (exfoliation).",
+      "answerConfidence": "high",
+      "topic": "Weathering",
+      "questionNumber": 23
+    },
+    {
+      "id": "geo4022_1_x7",
+      "questionText": "Great Zimbabwe's Domboshava and Matobo granite kopjes (balanced rocks) evolved mainly through:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coral reef uplift"
+        },
+        {
+          "letter": "B",
+          "text": "Volcanic lava eruptions"
+        },
+        {
+          "letter": "C",
+          "text": "Glacial ice moraines"
+        },
+        {
+          "letter": "D",
+          "text": "Deep chemical weathering along joints followed by exhumation (stripping)"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Granite batholiths weathered along rectangular joints underground before erosion exposed tors/balancing rocks.",
+      "answerConfidence": "high",
+      "topic": "Landforms",
+      "questionNumber": 24
+    },
+    {
+      "id": "geo4022_1_x8",
+      "questionText": "Which Zimbabwean mineral is mined along the Great Dyke at Zvishavane, Shurugwi, and Ngezi?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Platinum group metals (PGMs) and chrome"
+        },
+        {
+          "letter": "B",
+          "text": "Coal and limestone"
+        },
+        {
+          "letter": "C",
+          "text": "Bauxite and oil"
+        },
+        {
+          "letter": "D",
+          "text": "Rock salt"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "The Great Dyke is world-famous for chrome and platinum-group metals.",
       "answerConfidence": "high",
-      "topic": "Weather"
+      "topic": "Mining",
+      "questionNumber": 25
     },
     {
-      "id": "geo_olevel_p1_039",
-      "questionNumber": 39,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Select the option that best applies in Zimbabwe.",
+      "id": "geo4022_1_x9",
+      "questionText": "Where is Zimbabwe's major bituminous coal mined for thermal power generation and coking?",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
+          "text": "Bikita"
         },
         {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Hwange"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Marange"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_040",
-      "questionNumber": 40,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_041",
-      "questionNumber": 41,
-      "questionText": "Beneficiation of a mineral means: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_042",
-      "questionNumber": 42,
-      "questionText": "Population density is calculated by dividing population by: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_043",
-      "questionNumber": 43,
-      "questionText": "A settlement in which houses are closely grouped is described as: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_044",
-      "questionNumber": 44,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_045",
-      "questionNumber": 45,
-      "questionText": "Which action is a direct climate-change mitigation measure? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_046",
-      "questionNumber": 46,
-      "questionText": "Which of the following is a renewable energy resource? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_047",
-      "questionNumber": 47,
-      "questionText": "Igneous rocks are formed mainly by: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_048",
-      "questionNumber": 48,
-      "questionText": "Biodiversity refers to the: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_049",
-      "questionNumber": 49,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "Chimanimani"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Hwange Colliery in Matabeleland North supplies Zimbabwe's major coal reserves.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Energy & Mining",
+      "questionNumber": 26
     },
     {
-      "id": "geo_olevel_p1_050",
-      "questionNumber": 50,
-      "questionText": "Which instrument measures atmospheric pressure? Which option gives the most accurate interpretation?",
+      "id": "geo4022_1_x10",
+      "questionText": "What type of population pyramid has a very wide base and narrow tapering top?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Contracting developed-country pyramid"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Inverted ageing pyramid"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Expanding youthful developing-country pyramid (high birth rate)"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Stationary European pyramid"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A wide base shows high birth rates and youthful population structure.",
+      "answerConfidence": "high",
+      "topic": "Population",
+      "questionNumber": 27
+    },
+    {
+      "id": "geo4022_1_x11",
+      "questionText": "Which type of farming grows cash crops such as tea in Chipinge or sugarcane in Triangle/Chiredzi on large estates?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Urban market gardening"
+        },
+        {
+          "letter": "B",
+          "text": "Nomadic pastoralism"
+        },
+        {
+          "letter": "C",
+          "text": "Shifting cultivation"
+        },
+        {
+          "letter": "D",
+          "text": "Plantation / estate agriculture"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Tea in Chipinge and sugarcane in the Lowveld are capital-intensive estate/plantation crops.",
+      "answerConfidence": "high",
+      "topic": "Agriculture",
+      "questionNumber": 28
+    },
+    {
+      "id": "geo4022_1_x12",
+      "questionText": "Which factor explains why Kariba Hydroelectric Power Station was built at Kariba Gorge?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Narrow steep rock gorge, large Zambezi discharge, and hard gneiss bedrock"
+        },
+        {
+          "letter": "B",
+          "text": "Flat desert plain with coal deposits underneath"
+        },
+        {
+          "letter": "C",
+          "text": "High tidal ocean waves"
+        },
+        {
+          "letter": "D",
+          "text": "Proximity to Victoria Falls airport only"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Kariba Gorge offered a narrow impermeable rock constriction and huge Zambezi headwater catchment.",
       "answerConfidence": "high",
-      "topic": "Weather"
+      "topic": "Energy",
+      "questionNumber": 29
     },
     {
-      "id": "geo_olevel_p1_051",
-      "questionNumber": 51,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Which option gives the most accurate interpretation?",
+      "id": "geo4022_1_x13",
+      "questionText": "In urban geography, the Central Business District (CBD) is characterised by:",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
+          "text": "Lowest land values and sparse farms"
         },
         {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Highest land values, multi-storey offices/shops, and maximum accessibility"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Heavy blast furnaces only"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_052",
-      "questionNumber": 52,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_053",
-      "questionNumber": 53,
-      "questionText": "Beneficiation of a mineral means: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_054",
-      "questionNumber": 54,
-      "questionText": "Population density is calculated by dividing population by: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_055",
-      "questionNumber": 55,
-      "questionText": "A settlement in which houses are closely grouped is described as: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_056",
-      "questionNumber": 56,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_057",
-      "questionNumber": 57,
-      "questionText": "Which action is a direct climate-change mitigation measure? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_058",
-      "questionNumber": 58,
-      "questionText": "Which of the following is a renewable energy resource? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_059",
-      "questionNumber": 59,
-      "questionText": "Igneous rocks are formed mainly by: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_060",
-      "questionNumber": 60,
-      "questionText": "Biodiversity refers to the: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_061",
-      "questionNumber": 61,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "Low-density weekend cottages"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Because transport routes converge at the CBD, competition produces peak land values and tall buildings.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Settlements",
+      "questionNumber": 30
     },
     {
-      "id": "geo_olevel_p1_062",
-      "questionNumber": 62,
-      "questionText": "Which instrument measures atmospheric pressure?",
+      "id": "geo4022_1_x14",
+      "questionText": "Which soil conservation measure converts steep slopes into flat stepped benches in the Eastern Highlands?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Stream-bank ploughing"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Clear-felling"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Terracing"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Downslope ploughing"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Terracing cuts flat steps into steep slopes to trap rainwater and prevent gullying.",
+      "answerConfidence": "high",
+      "topic": "Conservation",
+      "questionNumber": 31
+    },
+    {
+      "id": "geo4022_1_x15",
+      "questionText": "Which Zimbabwean ecosystem is dominated by tall savanna grasses and scattered Acacia/Msasa woodlands?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mediterranean scrub"
+        },
+        {
+          "letter": "B",
+          "text": "Tropical rainforest"
+        },
+        {
+          "letter": "C",
+          "text": "Tundra permafrost"
+        },
+        {
+          "letter": "D",
+          "text": "Tropical Savanna (Miombo & Acacia woodland)"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Most of Zimbabwe lies within the seasonal Tropical Savanna biome (Miombo/Mopane/Acacia).",
+      "answerConfidence": "high",
+      "topic": "Ecosystems",
+      "questionNumber": 32
+    },
+    {
+      "id": "geo4022_1_x16",
+      "questionText": "What causes acid rain around heavy coal-burning industrial centres?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide (SO₂) and nitrogen oxides dissolving in rainwater"
+        },
+        {
+          "letter": "B",
+          "text": "Oxygen and neon"
+        },
+        {
+          "letter": "C",
+          "text": "Argon and water vapour"
+        },
+        {
+          "letter": "D",
+          "text": "Ozone depletion by methane"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "SO₂ and NOₓ react with atmospheric moisture to form dilute sulfuric and nitric acids.",
       "answerConfidence": "high",
-      "topic": "Weather"
+      "topic": "Environmental Management",
+      "questionNumber": 33
     },
     {
-      "id": "geo_olevel_p1_063",
-      "questionNumber": 63,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed?",
+      "id": "geo4022_1_x17",
+      "questionText": "Which term describes the permanent movement of skilled professionals (doctors, engineers) out of Zimbabwe to foreign countries?",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
+          "text": "Counter-urbanisation"
         },
         {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Brain drain"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Commuting"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_064",
-      "questionNumber": 64,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_065",
-      "questionNumber": 65,
-      "questionText": "Beneficiation of a mineral means:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_066",
-      "questionNumber": 66,
-      "questionText": "Population density is calculated by dividing population by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_067",
-      "questionNumber": 67,
-      "questionText": "A settlement in which houses are closely grouped is described as:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_068",
-      "questionNumber": 68,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_069",
-      "questionNumber": 69,
-      "questionText": "Which action is a direct climate-change mitigation measure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_070",
-      "questionNumber": 70,
-      "questionText": "Which of the following is a renewable energy resource?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_071",
-      "questionNumber": 71,
-      "questionText": "Igneous rocks are formed mainly by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_072",
-      "questionNumber": 72,
-      "questionText": "Biodiversity refers to the:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_073",
-      "questionNumber": 73,
-      "questionText": "A map has a scale of 1:50 000. Which value ground distance is represented by 6 cm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "Rural depopulation"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Brain drain is the emigration of highly trained professionals.",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Population",
+      "questionNumber": 34
     },
     {
-      "id": "geo_olevel_p1_074",
-      "questionNumber": 74,
-      "questionText": "Which of the following instrument measures atmospheric pressure?",
+      "id": "geo4022_1_x18",
+      "questionText": "Which plate boundary type creates deep ocean trenches and fold mountains like the Andes?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Constructive (divergent) boundary"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Passive continental shelf"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Destructive (convergent subduction) boundary"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Conservative transform fault"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Subduction of denser oceanic crust under continental crust forms trenches and fold mountains.",
+      "answerConfidence": "high",
+      "topic": "Tectonics",
+      "questionNumber": 35
+    },
+    {
+      "id": "geo4022_1_x19",
+      "questionText": "In a Stevenson Screen at a weather station, why is the wooden box painted white and fitted with louvred sides?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To attract insects"
+        },
+        {
+          "letter": "B",
+          "text": "To absorb maximum sunlight and trap wind"
+        },
+        {
+          "letter": "C",
+          "text": "To amplify rainfall sound"
+        },
+        {
+          "letter": "D",
+          "text": "To reflect direct solar radiation while allowing free air circulation"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "White paint reflects heat and louvres permit airflow so thermometers measure true shade air temperature.",
+      "answerConfidence": "high",
+      "topic": "Weather",
+      "questionNumber": 36
+    },
+    {
+      "id": "geo4022_1_x20",
+      "questionText": "Which organisation oversees Environmental Impact Assessments (EIA) in Zimbabwe before major mines or dams are built?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Environmental Management Agency (EMA)"
+        },
+        {
+          "letter": "B",
+          "text": "ZSE"
+        },
+        {
+          "letter": "C",
+          "text": "ZIMSEC"
+        },
+        {
+          "letter": "D",
+          "text": "ZBC"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "EMA administers environmental protection laws and EIA approvals in Zimbabwe.",
       "answerConfidence": "high",
-      "topic": "Weather"
+      "topic": "Environmental Management",
+      "questionNumber": 37
     },
     {
-      "id": "geo_olevel_p1_075",
-      "questionNumber": 75,
-      "questionText": "Which of the following river process transports sediment by rolling it along the channel bed?",
+      "id": "geo4022_1_x21",
+      "questionText": "What happens to air temperature as altitude increases by 1,000 metres in the troposphere?",
       "options": [
         {
           "letter": "A",
-          "text": "Traction"
+          "text": "Increases by ~6.5°C"
         },
         {
           "letter": "B",
-          "text": "Suspension"
+          "text": "Decreases by ~6.5°C (environmental lapse rate)"
         },
         {
           "letter": "C",
-          "text": "Solution"
+          "text": "Remains identical everywhere"
         },
         {
           "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_076",
-      "questionNumber": 76,
-      "questionText": "Which of the following practice is most effective for reducing soil erosion on a cultivated slope?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_077",
-      "questionNumber": 77,
-      "questionText": "Beneficiation of a mineral means:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_078",
-      "questionNumber": 78,
-      "questionText": "Population density is calculated by dividing population by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_079",
-      "questionNumber": 79,
-      "questionText": "A settlement in which houses are closely grouped is described as:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_080",
-      "questionNumber": 80,
-      "questionText": "Which of the following transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_081",
-      "questionNumber": 81,
-      "questionText": "Which of the following action is a direct climate-change mitigation measure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_082",
-      "questionNumber": 82,
-      "questionText": "Which of the following of the following is a renewable energy resource?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_083",
-      "questionNumber": 83,
-      "questionText": "Igneous rocks are formed mainly by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_084",
-      "questionNumber": 84,
-      "questionText": "Biodiversity refers to the:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_085",
-      "questionNumber": 85,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
+          "text": "Drops to absolute zero"
         }
       ],
       "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Temperature falls by roughly 6.5°C per 1,000 m ascent (explaining cooler Nyanga highlands).",
       "answerConfidence": "high",
-      "topic": "Mapwork"
+      "topic": "Weather & Climate",
+      "questionNumber": 38
     },
     {
-      "id": "geo_olevel_p1_086",
-      "questionNumber": 86,
-      "questionText": "Which instrument measures atmospheric pressure? Consider the most appropriate geographical answer.",
+      "id": "geo4022_1_x22",
+      "questionText": "Which agricultural practice grows a single crop continuously on the same field without rotation?",
       "options": [
         {
           "letter": "A",
-          "text": "Barometer"
+          "text": "Intercropping"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Mixed farming"
         },
         {
           "letter": "C",
-          "text": "Rain gauge"
+          "text": "Monoculture"
         },
         {
           "letter": "D",
-          "text": "Wind vane"
+          "text": "Agroforestry"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Monoculture grows one crop repeatedly, increasing pest risk and nutrient depletion.",
+      "answerConfidence": "high",
+      "topic": "Agriculture",
+      "questionNumber": 39
+    },
+    {
+      "id": "geo4022_1_x23",
+      "questionText": "A river's drainage basin boundary separating two neighbouring river systems is called a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Meander"
+        },
+        {
+          "letter": "B",
+          "text": "Confluence"
+        },
+        {
+          "letter": "C",
+          "text": "Tributary"
+        },
+        {
+          "letter": "D",
+          "text": "Watershed"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A watershed (divide) is the highland ridge separating adjacent drainage basins.",
+      "answerConfidence": "high",
+      "topic": "Hydrology",
+      "questionNumber": 40
+    },
+    {
+      "id": "geo4022_1_x24",
+      "questionText": "Why does Chitungwiza experience rapid dormitory commuter traffic towards Harare every weekday morning?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High housing demand & lower residential costs make it a satellite/dormitory town for Harare workers"
+        },
+        {
+          "letter": "B",
+          "text": "All Harare factories closed"
+        },
+        {
+          "letter": "C",
+          "text": "It sits on Lake Kariba"
+        },
+        {
+          "letter": "D",
+          "text": "It bans public buses"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
+      "explanation": "Chitungwiza grew largely as a high-density residential satellite town linked to Harare employment.",
       "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_087",
-      "questionNumber": 87,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_088",
-      "questionNumber": 88,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_089",
-      "questionNumber": 89,
-      "questionText": "Beneficiation of a mineral means: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_090",
-      "questionNumber": 90,
-      "questionText": "Population density is calculated by dividing population by: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_091",
-      "questionNumber": 91,
-      "questionText": "A settlement in which houses are closely grouped is described as: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_092",
-      "questionNumber": 92,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_093",
-      "questionNumber": 93,
-      "questionText": "Which action is a direct climate-change mitigation measure? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_094",
-      "questionNumber": 94,
-      "questionText": "Which of the following is a renewable energy resource? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_095",
-      "questionNumber": 95,
-      "questionText": "Igneous rocks are formed mainly by: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_096",
-      "questionNumber": 96,
-      "questionText": "Biodiversity refers to the: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_097",
-      "questionNumber": 97,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Mapwork"
-    },
-    {
-      "id": "geo_olevel_p1_098",
-      "questionNumber": 98,
-      "questionText": "Which instrument measures atmospheric pressure? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Barometer"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_099",
-      "questionNumber": 99,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_100",
-      "questionNumber": 100,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_101",
-      "questionNumber": 101,
-      "questionText": "Beneficiation of a mineral means: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_102",
-      "questionNumber": 102,
-      "questionText": "Population density is calculated by dividing population by: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_103",
-      "questionNumber": 103,
-      "questionText": "A settlement in which houses are closely grouped is described as: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_104",
-      "questionNumber": 104,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_105",
-      "questionNumber": 105,
-      "questionText": "Which action is a direct climate-change mitigation measure? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_106",
-      "questionNumber": 106,
-      "questionText": "Which of the following is a renewable energy resource? Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_107",
-      "questionNumber": 107,
-      "questionText": "Igneous rocks are formed mainly by: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_108",
-      "questionNumber": 108,
-      "questionText": "Biodiversity refers to the: Select the option that best applies in Zimbabwe.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_109",
-      "questionNumber": 109,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Mapwork"
-    },
-    {
-      "id": "geo_olevel_p1_110",
-      "questionNumber": 110,
-      "questionText": "Which instrument measures atmospheric pressure? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Barometer"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_111",
-      "questionNumber": 111,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_112",
-      "questionNumber": 112,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_113",
-      "questionNumber": 113,
-      "questionText": "Beneficiation of a mineral means: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_114",
-      "questionNumber": 114,
-      "questionText": "Population density is calculated by dividing population by: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_115",
-      "questionNumber": 115,
-      "questionText": "A settlement in which houses are closely grouped is described as: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_116",
-      "questionNumber": 116,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_117",
-      "questionNumber": 117,
-      "questionText": "Which action is a direct climate-change mitigation measure? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_118",
-      "questionNumber": 118,
-      "questionText": "Which of the following is a renewable energy resource? Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_119",
-      "questionNumber": 119,
-      "questionText": "Igneous rocks are formed mainly by: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_120",
-      "questionNumber": 120,
-      "questionText": "Biodiversity refers to the: Which option gives the most accurate interpretation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_121",
-      "questionNumber": 121,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Mapwork"
-    },
-    {
-      "id": "geo_olevel_p1_122",
-      "questionNumber": 122,
-      "questionText": "Which instrument measures atmospheric pressure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Barometer"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_123",
-      "questionNumber": 123,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_124",
-      "questionNumber": 124,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_125",
-      "questionNumber": 125,
-      "questionText": "Beneficiation of a mineral means:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_126",
-      "questionNumber": 126,
-      "questionText": "Population density is calculated by dividing population by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_127",
-      "questionNumber": 127,
-      "questionText": "A settlement in which houses are closely grouped is described as:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_128",
-      "questionNumber": 128,
-      "questionText": "Which transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_129",
-      "questionNumber": 129,
-      "questionText": "Which action is a direct climate-change mitigation measure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_130",
-      "questionNumber": 130,
-      "questionText": "Which of the following is a renewable energy resource?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_131",
-      "questionNumber": 131,
-      "questionText": "Igneous rocks are formed mainly by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_132",
-      "questionNumber": 132,
-      "questionText": "Biodiversity refers to the:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_133",
-      "questionNumber": 133,
-      "questionText": "A map has a scale of 1:50 000. Which value ground distance is represented by 6 cm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Mapwork"
-    },
-    {
-      "id": "geo_olevel_p1_134",
-      "questionNumber": 134,
-      "questionText": "Which of the following instrument measures atmospheric pressure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Barometer"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_135",
-      "questionNumber": 135,
-      "questionText": "Which of the following river process transports sediment by rolling it along the channel bed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_136",
-      "questionNumber": 136,
-      "questionText": "Which of the following practice is most effective for reducing soil erosion on a cultivated slope?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_137",
-      "questionNumber": 137,
-      "questionText": "Beneficiation of a mineral means:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_138",
-      "questionNumber": 138,
-      "questionText": "Population density is calculated by dividing population by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
-    },
-    {
-      "id": "geo_olevel_p1_139",
-      "questionNumber": 139,
-      "questionText": "A settlement in which houses are closely grouped is described as:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nucleated"
-        },
-        {
-          "letter": "B",
-          "text": "dispersed"
-        },
-        {
-          "letter": "C",
-          "text": "isolated"
-        },
-        {
-          "letter": "D",
-          "text": "randomly linear"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Settlement"
-    },
-    {
-      "id": "geo_olevel_p1_140",
-      "questionNumber": 140,
-      "questionText": "Which of the following transport mode is generally most suitable for moving very large quantities of bulk minerals over long distances?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rail"
-        },
-        {
-          "letter": "B",
-          "text": "Bicycle"
-        },
-        {
-          "letter": "C",
-          "text": "Pipeline for all minerals"
-        },
-        {
-          "letter": "D",
-          "text": "Air"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Transport"
-    },
-    {
-      "id": "geo_olevel_p1_141",
-      "questionNumber": 141,
-      "questionText": "Which of the following action is a direct climate-change mitigation measure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Reducing greenhouse-gas emissions"
-        },
-        {
-          "letter": "B",
-          "text": "Increasing deforestation"
-        },
-        {
-          "letter": "C",
-          "text": "Burning more coal"
-        },
-        {
-          "letter": "D",
-          "text": "Destroying wetlands"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Environment"
-    },
-    {
-      "id": "geo_olevel_p1_142",
-      "questionNumber": 142,
-      "questionText": "Which of the following of the following is a renewable energy resource?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Solar"
-        },
-        {
-          "letter": "B",
-          "text": "Coal"
-        },
-        {
-          "letter": "C",
-          "text": "Petroleum"
-        },
-        {
-          "letter": "D",
-          "text": "Natural gas"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Resources"
-    },
-    {
-      "id": "geo_olevel_p1_143",
-      "questionNumber": 143,
-      "questionText": "Igneous rocks are formed mainly by:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "cooling and solidification of molten material"
-        },
-        {
-          "letter": "B",
-          "text": "compaction of soil"
-        },
-        {
-          "letter": "C",
-          "text": "decay of vegetation"
-        },
-        {
-          "letter": "D",
-          "text": "river erosion"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Rocks"
-    },
-    {
-      "id": "geo_olevel_p1_144",
-      "questionNumber": 144,
-      "questionText": "Biodiversity refers to the:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "variety of living organisms"
-        },
-        {
-          "letter": "B",
-          "text": "number of roads"
-        },
-        {
-          "letter": "C",
-          "text": "amount of rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "depth of rivers"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Ecosystems"
-    },
-    {
-      "id": "geo_olevel_p1_145",
-      "questionNumber": 145,
-      "questionText": "A map has a scale of 1:50 000. What ground distance is represented by 6 cm? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "0.3 km"
-        },
-        {
-          "letter": "B",
-          "text": "3 km"
-        },
-        {
-          "letter": "C",
-          "text": "30 km"
-        },
-        {
-          "letter": "D",
-          "text": "300 km"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Mapwork"
-    },
-    {
-      "id": "geo_olevel_p1_146",
-      "questionNumber": 146,
-      "questionText": "Which instrument measures atmospheric pressure? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Barometer"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "D",
-          "text": "Wind vane"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Weather"
-    },
-    {
-      "id": "geo_olevel_p1_147",
-      "questionNumber": 147,
-      "questionText": "Which river process transports sediment by rolling it along the channel bed? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Traction"
-        },
-        {
-          "letter": "B",
-          "text": "Suspension"
-        },
-        {
-          "letter": "C",
-          "text": "Solution"
-        },
-        {
-          "letter": "D",
-          "text": "Evaporation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Geomorphology"
-    },
-    {
-      "id": "geo_olevel_p1_148",
-      "questionNumber": 148,
-      "questionText": "Which practice is most effective for reducing soil erosion on a cultivated slope? Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour ploughing"
-        },
-        {
-          "letter": "B",
-          "text": "Up-slope burning"
-        },
-        {
-          "letter": "C",
-          "text": "Overgrazing"
-        },
-        {
-          "letter": "D",
-          "text": "Removing vegetation"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Agriculture"
-    },
-    {
-      "id": "geo_olevel_p1_149",
-      "questionNumber": 149,
-      "questionText": "Beneficiation of a mineral means: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "adding value through processing"
-        },
-        {
-          "letter": "B",
-          "text": "exporting it unprocessed"
-        },
-        {
-          "letter": "C",
-          "text": "burying mining waste"
-        },
-        {
-          "letter": "D",
-          "text": "stopping extraction"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Industry"
-    },
-    {
-      "id": "geo_olevel_p1_150",
-      "questionNumber": 150,
-      "questionText": "Population density is calculated by dividing population by: Consider the most appropriate geographical answer.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "area"
-        },
-        {
-          "letter": "B",
-          "text": "birth rate"
-        },
-        {
-          "letter": "C",
-          "text": "rainfall"
-        },
-        {
-          "letter": "D",
-          "text": "migration"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Original practice item aligned to ZIMSEC syllabus and exam-style patterns.",
-      "answerConfidence": "high",
-      "topic": "Population"
+      "topic": "Settlements",
+      "questionNumber": 41
     }
   ]
 }

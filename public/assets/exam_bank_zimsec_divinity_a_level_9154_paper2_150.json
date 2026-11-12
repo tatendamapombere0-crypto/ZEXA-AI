@@ -1,1516 +1,240 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_divinity_a_level_9154_paper2_150",
+    "file": "exam_bank_zimsec_divinity_a_level_9154_paper2_150.json",
     "subject": "Divinity",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "9154/02",
-    "paperName": "Paper 2 – The Gospels",
-    "paperType": "essay",
+    "paperName": "Divinity A-Level Paper 2 — The Gospels & Early Church",
+    "paperType": "Structured Essays",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Divinity_A_Level_9154_Paper2_150.json",
-    "curriculum": "ZIMSEC Advanced Level syllabus/specimen-based practice",
-    "copyrightNote": "Original practice questions synthesized from syllabus structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC Advanced Level Divinity 9154 syllabus structure: Paper 2 focuses on the Gospels."
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "Q001",
+      "id": "div9154_2_q1",
       "questionNumber": 1,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the evidence for and criticisms of the Two-Source Hypothesis (Markan Priority and Q) in explaining the Synoptic Problem. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
+      "explanation": "### Mark Scheme [25 marks]\n- **Evidence for Markan Priority:** ~90%+ of Mark appears in Matthew/Luke; Mark's rougher Greek/vivid detail polished by Matthew/Luke; hard theological readings in Mark (e.g., Mk 6:5) softened; shared order anchored on Mark [13 marks].\n- **Q & Challenges:** Shared non-Markan sayings in Matt/Luke (Beatitudes, Lord's Prayer) suggest Q; however, Streeter's Four-Document theory adds M & L, while Farrer/Griesbach hypotheses explain minor agreements without hypothetical Q [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q002",
+      "id": "div9154_2_q2",
       "questionNumber": 2,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss William Wrede's \"Messianic Secret\" theory in Mark's Gospel and evaluate alternative theological explanations for Jesus' commands to silence. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
+      "explanation": "### Mark Scheme [25 marks]\n- **Evidence in Mark:** Silencing demons (1:34), healed lepers (1:44), disciples after Peter's confession (8:30) and Transfiguration (9:9) [9 marks].\n- **Evaluation:** Wrede argued the secret was Mark's late literary invention to excuse why Jesus wasn't widely hailed as Messiah during his life; scholars counter Jesus historically feared political Zealot misunderstandings of \"Messiah\" before revealing His true identity through the Cross & Suffering Servant [16 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q003",
+      "id": "div9154_2_q3",
       "questionNumber": 3,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse Matthew's portrayal of Jesus as the \"New Moses\" and \"Fulfilment of the Law and Prophets\", with reference to the Five Discourses and Sermon on the Mount. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
+      "explanation": "### Mark Scheme [25 marks]\n- **New Moses Parallels:** Infancy escape from Herod's slaughter (paralleling Pharaoh), Egypt exodus (\"Out of Egypt I called my son\"), 40 days fasting, teaching on a mountain into five structured Discourses mirroring the Pentateuch [13 marks].\n- **Fulfilment & Torah (Matt 5:17–48):** Jesus does not abolish Torah but intensifies it inward (murder → anger, adultery → lust, love of enemies) alongside frequent *formula quotations* [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q004",
+      "id": "div9154_2_q4",
       "questionNumber": 4,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine Luke's distinctive theological emphases on Universal Salvation, Care for the Marginalised, Women, and the Role of the Holy Spirit across Luke–Acts. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
+      "explanation": "### Mark Scheme [25 marks]\n- **Universalism & Outcasts:** Genealogy traced to Adam; Simeon hails \"light to Gentiles\"; Good Samaritan, Zacchaeus, Prodigal Son, repentant criminal [12 marks].\n- **Women & Spirit:** Mary's Magnificat, Elizabeth, Anna, Mary & Martha, women patrons (Lk 8:1–3); Spirit drives Incarnation, Jordan Baptism, Nazareth Manifesto (Lk 4:18), and Pentecost expansion [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q005",
+      "id": "div9154_2_q5",
       "questionNumber": 5,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the Christological purpose and structural role of the \"Seven Signs\" and \"I AM\" (*Ego Eimi*) sayings in the Gospel of John. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
+      "explanation": "### Mark Scheme [25 marks]\n- **Signs (*Semeia*):** John uses signs (Cana water-to-wine, Bread of Life, Blind Man, Raising Lazarus) not just for compassion but to reveal divine *glory (doxa)* and compel faith (Jn 20:30–31) [12 marks].\n- **High Christology (*Ego Eimi*):** Echoes Ex 3:14 (\"Before Abraham was, I AM\") and pairs with metaphors (Bread, Light, Good Shepherd, Resurrection, Way/Truth/Life, Vine) revealing Jesus as Incarnate Logos [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q006",
+      "id": "div9154_2_q6",
       "questionNumber": 6,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "\"The Kingdom of God in Jesus' teaching is strictly future and apocalyptic rather than present.\" Discuss with reference to Jesus' parables and exorcisms. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
+      "explanation": "### Mark Scheme [25 marks]\n- **Present (\"Realised Eschatology\" — C.H. Dodd):** \"If by the finger of God I cast out demons, then the Kingdom of God has come upon you\" (Lk 11:20); mustard seed/leaven silently growing now [11 marks].\n- **Future Apocalyptic (Schweitzer) & Inaugurated Consensus (Ladd):** \"Thy Kingdom come\", Son of Man returning in glory (Mk 13), Sheep & Goats judgment—consensus views Kingdom as \"already inaugurated, not yet consummated\" [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q007",
+      "id": "div9154_2_q7",
       "questionNumber": 7,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine the meaning and pastoral purpose of Jesus' Parables of the Kingdom and Mercy (e.g., Good Samaritan, Prodigal Son, Sower, Mustard Seed). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
+      "explanation": "### Mark Scheme [25 marks]\n- **Method:** Earthly stories subverting religious stereotypes to compel listener self-judgment (e.g., Samaritan enemy proves true neighbour; elder brother challenged by Father's extravagant grace) [14 marks].\n- **Hardening Purpose Question (Mk 4:10–12):** Contrasts insiders who ask & receive explanation with complacent outsiders—ultimately aimed at inviting decisive faith [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q008",
+      "id": "div9154_2_q8",
       "questionNumber": 8,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare the accounts of Jesus' Baptism and Temptations across the Synoptic Gospels and explain their theological significance for His messianic ministry. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
+      "explanation": "### Mark Scheme [25 marks]\n- **Baptism:** Trinitarian confirmation (\"You are My beloved Son\"—Ps 2:7 + Isa 42:1 Suffering Servant), solidifying Jesus' solidarity with sinful humanity [12 marks].\n- **Temptations (Mt 4 / Lk 4):** Three tests (stones to bread, Temple pinnacle spectacle, worldly political kingdoms) reject economic, sensationalist, and political-military models of messiahship in favour of costly obedience [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q009",
+      "id": "div9154_2_q9",
       "questionNumber": 9,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Assess the significance of Peter's Confession at Caesarea Philippi and the Transfiguration as turning points in Mark's Gospel. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
+      "explanation": "### Mark Scheme [25 marks]\n- **Caesarea Philippi (Mk 8:27–38):** Watershed dividing Galilean popularity from Jerusalem road to the Cross; Peter confesses \"Christ\", then rejects the suffering Son of Man prediction—redefining discipleship as \"take up your cross\" [13 marks].\n- **Transfiguration (Mk 9):** Moses (Law) and Elijah (Prophets) converse with Jesus under Shekinah glory cloud, validating the suffering path to disciples [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q010",
+      "id": "div9154_2_q10",
       "questionNumber": 10,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare the Roman and Jewish Trial accounts of Jesus in the Synoptics versus John, assessing the political and religious charges raised against Him. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
+      "explanation": "### Mark Scheme [25 marks]\n- **Sanhedrin Trial (Religious Charges):** Temple threat (\"destroy this temple\"), claims to divine Sonship/blasphemy (\"Right Hand of Power\" — Dan 7:13) [11 marks].\n- **Pilate Trial (Political Reframing):** Jewish leaders reframe religious charge into Roman sedition (\"King of the Jews\", forbidding tribute to Caesar); John highlights Pilate's theological dialogue (\"My kingdom is not of this world\") and Passover timing divergence [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q011",
+      "id": "div9154_2_q11",
       "questionNumber": 11,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine the meaning of the Last Supper as a Covenant/Passover meal and evaluate differences in dating and theology between the Synoptics and John. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
+      "explanation": "### Mark Scheme [25 marks]\n- **Symbolism:** Broken bread and cup as \"blood of the new covenant poured out for many\" (echoing Ex 24, Jer 31, Isa 53)—establishing Eucharistic remembrance [13 marks].\n- **Dating & Johannine Shift:** Synoptics depict Thursday evening Passover Seder; John places crucifixion on Friday afternoon just as Passover lambs are slaughtered in the Temple, casting Jesus as the true Paschal Lamb (Jn 1:29; 19:36) [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q012",
+      "id": "div9154_2_q12",
       "questionNumber": 12,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the historical and theological significance of Jesus' Resurrection appearances and compare the accounts in Matthew 28, Luke 24, and John 20–21. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
+      "explanation": "### Mark Scheme [25 marks]\n- **Core Apologetic/Theological Foundation:** Empty tomb discovered first by women (criterion of embarrassment), bodily continuity yet glorified transformation, foundation of apostolic kerygma (1 Cor 15) [13 marks].\n- **Divergences & Emphases:** Mark 16:8 abrupt awe; Matthew Galilee Great Commission; Luke Jerusalem Emmaus meal & Ascension; John personal Magdalene/Thomas confession & Peter restoration [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q013",
+      "id": "div9154_2_q13",
       "questionNumber": 13,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse the significance of Jesus' miracles as \"acted parables of salvation\" rather than mere displays of magical power. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
+      "explanation": "### Mark Scheme [25 marks]\n- **Theological Purpose:** Nature, healing, and exorcism miracles defeat Satanic bondage, restore ritually excluded sufferers (lepers, haemorrhaging woman) back to community, and anticipate cosmic renewal [15 marks].\n- **Contrast with Magic:** Jesus refuses manipulative signs for Herod/Pharisees (Mt 12:38) and links miracles inseparably to faith and forgiveness of sins (Mk 2:1–12) [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q014",
+      "id": "div9154_2_q14",
       "questionNumber": 14,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine Paul's doctrine of \"Justification by Faith\" in Galatians and Romans, evaluating James' response regarding Faith and Works (James 2:14–26). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
+      "explanation": "### Mark Scheme [25 marks]\n- **Paul:** Righteous status (*dikaiosyne*) is a free gift of grace received through faith in Christ, not by Mosaic works of law (circumcision/food laws) separating Jew and Gentile (Gal 2–3; Rom 3–5) [14 marks].\n- **James & Reconciliation:** James attacks dead intellectual assent without charitable action (\"faith without works is dead\"); harmonious reading shows Paul opposes legalistic self-salvation while James insists genuine saving faith inevitably produces loving deeds [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q015",
+      "id": "div9154_2_q15",
       "questionNumber": 15,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the controversies resolved at the Council of Jerusalem (Acts 15 / Galatians 2) and their decisive impact on Christianity becoming a world religion. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
+      "explanation": "### Mark Scheme [25 marks]\n- **Crisis:** Judaisers demanded Gentile converts in Antioch be circumcised & keep Mosaic Law to be saved [8 marks].\n- **Outcome:** Led by Peter, Paul, Barnabas, and James, the Council exempted Gentiles from circumcision (asking only abstention from idol meat, blood, strangled meat, sexual immorality for table fellowship), emancipating the Church from ethnic Judaism into a universal multi-ethnic faith [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q016",
+      "id": "div9154_2_q16",
       "questionNumber": 16,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse Paul's pastoral counsel to the Corinthian church on Divisions, Spiritual Gifts (*Charismata*), and Christian Love (1 Corinthians 1–4, 12–14). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
+      "explanation": "### Mark Scheme [25 marks]\n- **Factions:** Rebukes personality cults (Paul/Apollos/Cephas) through theology of the Cross [7 marks].\n- **Body of Christ & Agape:** Diversity of gifts serves common building up (*oikodome*), elevating intelligible prophecy above disorderly glossolalia, crowned by Chapter 13's superior way of self-giving *agape* love [18 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q017",
+      "id": "div9154_2_q17",
       "questionNumber": 17,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Assess the significance of the title \"Son of Man\" versus \"Son of God\" and \"Messiah (Christ)\" in understanding Jesus' self-identity in the Gospels. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
+      "explanation": "### Mark Scheme [25 marks]\n- **Son of Man:** Jesus' preferred self-designation blending ordinary humanity, earthly authority to forgive sins (Mk 2:10), suffering destiny (Mk 8:31), and Dan 7:13 eschatological vindication [12 marks].\n- **Christ & Son of God:** Transformed from Davidic military liberator into Suffering Servant King and unique filial intimacy (*Abba*) [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q018",
+      "id": "div9154_2_q18",
       "questionNumber": 18,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare the ethical demands of Jesus' teaching on Wealth, Forgiveness, and Non-Retaliation (Sermon on the Mount / Sermon on the Plain) with Old Testament lex talionis. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
+      "explanation": "### Mark Scheme [25 marks]\n- **Transformations:** Replaces \"eye for eye\" judicial ceiling with creative non-violent dignity (\"turn the other cheek\"), warns against Mammon idolatry (\"blessed are you poor\" / rich young ruler), mandates limitless 70×7 forgiveness [16 marks].\n- **Evaluation:** Practical viability vs Reinhold Niebuhr's \"impossible ideal\" stimulating constant social conscience [9 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q019",
+      "id": "div9154_2_q19",
       "questionNumber": 19,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the conflict between Jesus and the Pharisees and Sadducees over Sabbath observance, ritual purity, and authority. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
+      "explanation": "### Mark Scheme [25 marks]\n- **Sabbath & Purity:** \"The Sabbath was made for man, not man for the Sabbath\" (Mk 2:27); Jesus heals on Sabbath & touches lepers, declaring internal heart purity decisive over external handwashing/cleanliness codes (Mk 7) [14 marks].\n- **Sadducees:** Aristocratic priestly Temple guardians challenged by Cleansing of the Temple and Resurrection debates (Mk 12) [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q020",
+      "id": "div9154_2_q20",
       "questionNumber": 20,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine John's distinctive presentation of the Farewell Discourses (John 13–17), focusing on the Footwashing, Paraclete promise, and High Priestly Prayer. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
+      "explanation": "### Mark Scheme [25 marks]\n- **Footwashing (Ch 13):** Replaces Synoptic institution narrative with humble servant love (\"Love one another as I have loved you\") [8 marks].\n- **Paraclete (Holy Spirit) & Unity Prayer:** Advocates, teaches, convicts world, and sustains disciples after Jesus departs; Ch 17 prays that believers be united in love so the world may believe [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q021",
+      "id": "div9154_2_q21",
       "questionNumber": 21,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the role of John the Baptist as forerunner to Jesus in both the Synoptics and the Fourth Gospel. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
+      "explanation": "### Mark Scheme [25 marks]\n- **Prophetic Elijah Role:** Wilderness preacher calling Israel to urgent water baptism of repentance & social sharing (Lk 3:10–14) before Messiah's judgment [12 marks].\n- **Johannine Clarification:** Explicitly denies being the Christ, declares Jesus \"the Lamb of God who takes away the sin of the world\", concluding \"He must increase, I must decrease\" [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q022",
+      "id": "div9154_2_q22",
       "questionNumber": 22,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Assess how far Luke in the Acts of the Apostles portrays Stephen, Philip, and Cornelius as pivotal steps in breaking Jewish ethnic boundaries. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
+      "explanation": "### Mark Scheme [25 marks]\n- **Stephen (Acts 6–7):** Critiques fixed Jerusalem Temple worship; martyrdom scatters Hellenistic believers [8 marks].\n- **Philip & Cornelius (Acts 8 & 10–11):** Gospel crosses to despised Samaritans and Ethiopian eunuch; Peter's Joppa vision baptises Roman centurion Cornelius proving \"God shows no partiality\" [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q023",
+      "id": "div9154_2_q23",
       "questionNumber": 23,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine Form Criticism and Redaction Criticism as methods of Gospel study, discussing their strengths and limitations. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
+      "explanation": "### Mark Scheme [25 marks]\n- **Form Criticism (Bultmann/Dibelius):** Examines pre-literary oral units (*pericopae*) shaped by early Church *Sitz im Leben* (preaching, liturgy, controversy)—illuminates oral community life yet risks excessive historical scepticism [13 marks].\n- **Redaction Criticism (Bornkamm/Conzelmann):** Analyses how each Evangelist edited sources as a creative theologian rather than mere compiler—reveals distinct Matthean, Markan, Lukan portraits [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q024",
+      "id": "div9154_2_q24",
       "questionNumber": 24,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare Christian Baptism and Eucharist in the Early Church (Acts & 1 Corinthians) with modern Zimbabwean church practices. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
+      "explanation": "### Mark Scheme [25 marks]\n- **New Testament Roots:** Baptism into Christ's death & resurrection (Rom 6:3–4) welcoming all believers; Lord's Supper celebrating unity (1 Cor 11 warning against rich humiliating poor at Agape meal) [14 marks].\n- **Zimbabwean Context:** Diversity between infant baptism vs believer's immersion (AICs/Baptist/Pentecostal) and sacramental reverence vs social reconciliation [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q025",
+      "id": "div9154_2_q25",
       "questionNumber": 25,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate how Jesus' attitude towards Women, Wealth, and Political Authority (Mk 12:17 \"Render to Caesar\") challenges contemporary Christian citizenship in Zimbabwe. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q026",
-      "questionNumber": 26,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q027",
-      "questionNumber": 27,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q028",
-      "questionNumber": 28,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q029",
-      "questionNumber": 29,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q030",
-      "questionNumber": 30,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q031",
-      "questionNumber": 31,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q032",
-      "questionNumber": 32,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q033",
-      "questionNumber": 33,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q034",
-      "questionNumber": 34,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q035",
-      "questionNumber": 35,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
-    },
-    {
-      "id": "Q036",
-      "questionNumber": 36,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
-    },
-    {
-      "id": "Q037",
-      "questionNumber": 37,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
-    },
-    {
-      "id": "Q038",
-      "questionNumber": 38,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
-    },
-    {
-      "id": "Q039",
-      "questionNumber": 39,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
-    },
-    {
-      "id": "Q040",
-      "questionNumber": 40,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
-    },
-    {
-      "id": "Q041",
-      "questionNumber": 41,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
-    },
-    {
-      "id": "Q042",
-      "questionNumber": 42,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
-    },
-    {
-      "id": "Q043",
-      "questionNumber": 43,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
-    },
-    {
-      "id": "Q044",
-      "questionNumber": 44,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
-    },
-    {
-      "id": "Q045",
-      "questionNumber": 45,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
-    },
-    {
-      "id": "Q046",
-      "questionNumber": 46,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
-    },
-    {
-      "id": "Q047",
-      "questionNumber": 47,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
-    },
-    {
-      "id": "Q048",
-      "questionNumber": 48,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q049",
-      "questionNumber": 49,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q050",
-      "questionNumber": 50,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q051",
-      "questionNumber": 51,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q052",
-      "questionNumber": 52,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q053",
-      "questionNumber": 53,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q054",
-      "questionNumber": 54,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q055",
-      "questionNumber": 55,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q056",
-      "questionNumber": 56,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q057",
-      "questionNumber": 57,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q058",
-      "questionNumber": 58,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
-    },
-    {
-      "id": "Q059",
-      "questionNumber": 59,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
-    },
-    {
-      "id": "Q060",
-      "questionNumber": 60,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
-    },
-    {
-      "id": "Q061",
-      "questionNumber": 61,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
-    },
-    {
-      "id": "Q062",
-      "questionNumber": 62,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
-    },
-    {
-      "id": "Q063",
-      "questionNumber": 63,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
-    },
-    {
-      "id": "Q064",
-      "questionNumber": 64,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
-    },
-    {
-      "id": "Q065",
-      "questionNumber": 65,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
-    },
-    {
-      "id": "Q066",
-      "questionNumber": 66,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
-    },
-    {
-      "id": "Q067",
-      "questionNumber": 67,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
-    },
-    {
-      "id": "Q068",
-      "questionNumber": 68,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
-    },
-    {
-      "id": "Q069",
-      "questionNumber": 69,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
-    },
-    {
-      "id": "Q070",
-      "questionNumber": 70,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
-    },
-    {
-      "id": "Q071",
-      "questionNumber": 71,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q072",
-      "questionNumber": 72,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q073",
-      "questionNumber": 73,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q074",
-      "questionNumber": 74,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q075",
-      "questionNumber": 75,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q076",
-      "questionNumber": 76,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q077",
-      "questionNumber": 77,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q078",
-      "questionNumber": 78,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q079",
-      "questionNumber": 79,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q080",
-      "questionNumber": 80,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q081",
-      "questionNumber": 81,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
-    },
-    {
-      "id": "Q082",
-      "questionNumber": 82,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
-    },
-    {
-      "id": "Q083",
-      "questionNumber": 83,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
-    },
-    {
-      "id": "Q084",
-      "questionNumber": 84,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
-    },
-    {
-      "id": "Q085",
-      "questionNumber": 85,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
-    },
-    {
-      "id": "Q086",
-      "questionNumber": 86,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
-    },
-    {
-      "id": "Q087",
-      "questionNumber": 87,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
-    },
-    {
-      "id": "Q088",
-      "questionNumber": 88,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
-    },
-    {
-      "id": "Q089",
-      "questionNumber": 89,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
-    },
-    {
-      "id": "Q090",
-      "questionNumber": 90,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
-    },
-    {
-      "id": "Q091",
-      "questionNumber": 91,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
-    },
-    {
-      "id": "Q092",
-      "questionNumber": 92,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
-    },
-    {
-      "id": "Q093",
-      "questionNumber": 93,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
-    },
-    {
-      "id": "Q094",
-      "questionNumber": 94,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q095",
-      "questionNumber": 95,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q096",
-      "questionNumber": 96,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q097",
-      "questionNumber": 97,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q098",
-      "questionNumber": 98,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q099",
-      "questionNumber": 99,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q100",
-      "questionNumber": 100,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q101",
-      "questionNumber": 101,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q102",
-      "questionNumber": 102,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q103",
-      "questionNumber": 103,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q104",
-      "questionNumber": 104,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
-    },
-    {
-      "id": "Q105",
-      "questionNumber": 105,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
-    },
-    {
-      "id": "Q106",
-      "questionNumber": 106,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
-    },
-    {
-      "id": "Q107",
-      "questionNumber": 107,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
-    },
-    {
-      "id": "Q108",
-      "questionNumber": 108,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
-    },
-    {
-      "id": "Q109",
-      "questionNumber": 109,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
-    },
-    {
-      "id": "Q110",
-      "questionNumber": 110,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
-    },
-    {
-      "id": "Q111",
-      "questionNumber": 111,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
-    },
-    {
-      "id": "Q112",
-      "questionNumber": 112,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
-    },
-    {
-      "id": "Q113",
-      "questionNumber": 113,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
-    },
-    {
-      "id": "Q114",
-      "questionNumber": 114,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
-    },
-    {
-      "id": "Q115",
-      "questionNumber": 115,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
-    },
-    {
-      "id": "Q116",
-      "questionNumber": 116,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
-    },
-    {
-      "id": "Q117",
-      "questionNumber": 117,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q118",
-      "questionNumber": 118,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q119",
-      "questionNumber": 119,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q120",
-      "questionNumber": 120,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q121",
-      "questionNumber": 121,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q122",
-      "questionNumber": 122,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q123",
-      "questionNumber": 123,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q124",
-      "questionNumber": 124,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q125",
-      "questionNumber": 125,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q126",
-      "questionNumber": 126,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q127",
-      "questionNumber": 127,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
-    },
-    {
-      "id": "Q128",
-      "questionNumber": 128,
-      "questionText": "Miracles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Miracles"
-    },
-    {
-      "id": "Q129",
-      "questionNumber": 129,
-      "questionText": "Discipleship: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Discipleship"
-    },
-    {
-      "id": "Q130",
-      "questionNumber": 130,
-      "questionText": "Forgiveness and salvation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Forgiveness and salvation"
-    },
-    {
-      "id": "Q131",
-      "questionNumber": 131,
-      "questionText": "Wealth and possessions: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Wealth and possessions"
-    },
-    {
-      "id": "Q132",
-      "questionNumber": 132,
-      "questionText": "Prayer: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prayer"
-    },
-    {
-      "id": "Q133",
-      "questionNumber": 133,
-      "questionText": "Jesus and Jewish authorities: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jesus and Jewish authorities"
-    },
-    {
-      "id": "Q134",
-      "questionNumber": 134,
-      "questionText": "Passion and resurrection: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Passion and resurrection"
-    },
-    {
-      "id": "Q135",
-      "questionNumber": 135,
-      "questionText": "Johannine theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Johannine theology"
-    },
-    {
-      "id": "Q136",
-      "questionNumber": 136,
-      "questionText": "I AM sayings: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "I AM sayings"
-    },
-    {
-      "id": "Q137",
-      "questionNumber": 137,
-      "questionText": "Christological titles: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Christological titles"
-    },
-    {
-      "id": "Q138",
-      "questionNumber": 138,
-      "questionText": "Gospel interpretation in Zimbabwe: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel interpretation in Zimbabwe"
-    },
-    {
-      "id": "Q139",
-      "questionNumber": 139,
-      "questionText": "Gospel background: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Gospel background"
-    },
-    {
-      "id": "Q140",
-      "questionNumber": 140,
-      "questionText": "Synoptic Gospels: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Synoptic Gospels"
-    },
-    {
-      "id": "Q141",
-      "questionNumber": 141,
-      "questionText": "Mark: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Mark"
-    },
-    {
-      "id": "Q142",
-      "questionNumber": 142,
-      "questionText": "Matthew: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Matthew"
-    },
-    {
-      "id": "Q143",
-      "questionNumber": 143,
-      "questionText": "Luke: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Luke"
-    },
-    {
-      "id": "Q144",
-      "questionNumber": 144,
-      "questionText": "John: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John"
-    },
-    {
-      "id": "Q145",
-      "questionNumber": 145,
-      "questionText": "Historical Jesus: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Historical Jesus"
-    },
-    {
-      "id": "Q146",
-      "questionNumber": 146,
-      "questionText": "Birth narratives: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Birth narratives"
-    },
-    {
-      "id": "Q147",
-      "questionNumber": 147,
-      "questionText": "John the Baptist: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "John the Baptist"
-    },
-    {
-      "id": "Q148",
-      "questionNumber": 148,
-      "questionText": "Baptism and temptation: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Baptism and temptation"
-    },
-    {
-      "id": "Q149",
-      "questionNumber": 149,
-      "questionText": "Kingdom of God: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingdom of God"
-    },
-    {
-      "id": "Q150",
-      "questionNumber": 150,
-      "questionText": "Parables: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Parables"
+      "explanation": "### Mark Scheme [25 marks]\n- **Gospel Foundations:** Affirmation of Mary of Bethany as theological disciple (Lk 10:39), warning against greedy wealth hoarding (Lk 12:15), nuanced distinction between civic tax obedience and ultimate allegiance to God (\"Caesar vs God\") [15 marks].\n- **Application:** Guides gender equality, integrity against corruption, peaceful civic engagement, and prophetic solidarity with vulnerable communities [10 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

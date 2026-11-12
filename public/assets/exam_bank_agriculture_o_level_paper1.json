@@ -1,37 +1,28 @@
 {
   "paperInfo": {
+    "id": "exam_bank_agriculture_o_level_paper1",
+    "file": "exam_bank_agriculture_o_level_paper1.json",
     "subject": "Agriculture",
     "level": "O-Level",
     "paperCode": "Agriculture Paper 1",
     "paperName": "Agriculture O-Level Paper 1 — Exam Mode",
     "paperType": "Original ZIMSEC-aligned practice bank",
-    "sourceBasis": [
-      "Zimbabwe secondary Agriculture syllabus/topic coverage",
-      "ZIMSEC-style assessment formats and recurring syllabus areas",
-      "Original questions generated for this bank; not transcriptions of past papers"
-    ],
-    "yearsReferenced": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "questionCount": 150,
-    "note": "Original practice questions aligned to Agriculture syllabus coverage. They do not reproduce copyrighted past-paper text."
+    "questionCount": 56,
+    "totalQuestions": 36
   },
   "questions": [
     {
-      "id": "ag_ol_p1_001",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "A farmer plants 4 hectares at a seed rate of 12 kg/ha. What quantity of seed is required?",
       "options": [
         {
           "letter": "A",
-          "text": "44 kg"
+          "text": "48 kg"
         },
         {
           "letter": "B",
-          "text": "48 kg"
+          "text": "44 kg"
         },
         {
           "letter": "C",
@@ -42,62 +33,46 @@
           "text": "96 kg"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Seed required = area × seed rate = 4 × 12 = 48 kg.",
       "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm calculations"
     },
     {
-      "id": "ag_ol_p1_002",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "A farmer obtains a soil pH of 6. Which amendment would generally be used to raise the pH of an acidic soil?",
       "options": [
         {
           "letter": "A",
-          "text": "Agricultural lime"
+          "text": "Urea only"
         },
         {
           "letter": "B",
-          "text": "Ammonium sulphate"
+          "text": "Agricultural lime"
         },
         {
           "letter": "C",
-          "text": "Urea only"
+          "text": "Ammonium sulphate"
         },
         {
           "letter": "D",
           "text": "Sodium chloride"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
       "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Soil science"
     },
     {
-      "id": "ag_ol_p1_003",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
       "options": [
         {
           "letter": "A",
-          "text": "Weeding"
+          "text": "Vaccination"
         },
         {
           "letter": "B",
@@ -105,34 +80,26 @@
         },
         {
           "letter": "C",
-          "text": "Milking"
+          "text": "Weeding"
         },
         {
           "letter": "D",
-          "text": "Vaccination"
+          "text": "Milking"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
       "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Crop production"
     },
     {
-      "id": "ag_ol_p1_004",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
       "options": [
         {
           "letter": "A",
-          "text": "Use certified treated seed"
+          "text": "Delay harvesting"
         },
         {
           "letter": "B",
@@ -144,24 +111,16 @@
         },
         {
           "letter": "D",
-          "text": "Delay harvesting"
+          "text": "Use certified treated seed"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
       "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Crop protection"
     },
     {
-      "id": "ag_ol_p1_005",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
       "options": [
@@ -185,59 +144,43 @@
       "correctAnswer": "A",
       "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
       "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Livestock production"
     },
     {
-      "id": "ag_ol_p1_006",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Which nutrient is primarily required by livestock for body building, tissue repair and production of enzymes?",
       "options": [
         {
           "letter": "A",
-          "text": "Protein"
+          "text": "Fibre only"
         },
         {
           "letter": "B",
-          "text": "Water only"
+          "text": "Protein"
         },
         {
           "letter": "C",
-          "text": "Fibre only"
+          "text": "Water only"
         },
         {
           "letter": "D",
           "text": "Salt only"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Protein supplies amino acids needed for growth, tissue repair and many metabolic functions.",
       "answerConfidence": "high",
-      "topic": "Animal nutrition",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Animal nutrition"
     },
     {
-      "id": "ag_ol_p1_007",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
       "options": [
         {
           "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
+          "text": "Normal movement"
         },
         {
           "letter": "B",
@@ -245,34 +188,26 @@
         },
         {
           "letter": "C",
-          "text": "Normal drinking"
+          "text": "Persistent loss of appetite and abnormal behaviour"
         },
         {
           "letter": "D",
-          "text": "Normal movement"
+          "text": "Normal drinking"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
       "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Animal health"
     },
     {
-      "id": "ag_ol_p1_008",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "Why are legumes valuable components of many pastures?",
       "options": [
         {
           "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
+          "text": "They cannot be grazed"
         },
         {
           "letter": "B",
@@ -284,24 +219,16 @@
         },
         {
           "letter": "D",
-          "text": "They cannot be grazed"
+          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
       "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Pasture and forage"
     },
     {
-      "id": "ag_ol_p1_009",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
       "options": [
@@ -325,4950 +252,736 @@
       "correctAnswer": "A",
       "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
       "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm tools and machinery"
     },
     {
-      "id": "ag_ol_p1_010",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
       "options": [
         {
           "letter": "A",
-          "text": "It decreases"
+          "text": "It becomes zero automatically"
         },
         {
           "letter": "B",
-          "text": "It increases"
+          "text": "It decreases"
         },
         {
           "letter": "C",
-          "text": "It becomes zero automatically"
+          "text": "It increases"
         },
         {
           "letter": "D",
           "text": "It is unaffected"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
       "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Agricultural economics"
     },
     {
-      "id": "ag_ol_p1_011",
+      "id": "q_12",
       "questionNumber": 11,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 13 kg/ha. What quantity of seed is required?",
+      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
       "options": [
         {
           "letter": "A",
-          "text": "48 kg"
+          "text": "Weather map"
         },
         {
           "letter": "B",
-          "text": "52 kg"
+          "text": "Birth record"
         },
         {
           "letter": "C",
-          "text": "56 kg"
+          "text": "Input record"
         },
         {
           "letter": "D",
-          "text": "104 kg"
+          "text": "Pedigree record only"
         }
       ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 13 = 52 kg.",
+      "correctAnswer": "C",
+      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
       "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Agricultural records"
     },
     {
-      "id": "ag_ol_p1_012",
+      "id": "q_13",
       "questionNumber": 12,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
+      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
       "options": [
         {
           "letter": "A",
-          "text": "Input record"
+          "text": "Leaving soil bare"
         },
         {
           "letter": "B",
-          "text": "Birth record"
+          "text": "Removing all crop residues"
         },
         {
           "letter": "C",
-          "text": "Pedigree record only"
+          "text": "Cultivating up and down the slope"
         },
         {
           "letter": "D",
-          "text": "Weather map"
+          "text": "Contour farming"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
+      "correctAnswer": "D",
+      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
       "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Conservation"
     },
     {
-      "id": "ag_ol_p1_013",
+      "id": "q_14",
       "questionNumber": 13,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
+      "questionText": "Which weather instrument is used to measure rainfall?",
       "options": [
         {
           "letter": "A",
-          "text": "Contour farming"
+          "text": "Rain gauge"
         },
         {
           "letter": "B",
-          "text": "Removing all crop residues"
+          "text": "Thermometer"
         },
         {
           "letter": "C",
-          "text": "Cultivating up and down the slope"
+          "text": "Wind vane"
         },
         {
           "letter": "D",
-          "text": "Leaving soil bare"
+          "text": "Barometer"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
+      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
       "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Weather and climate"
     },
     {
-      "id": "ag_ol_p1_014",
+      "id": "q_15",
       "questionNumber": 14,
-      "questionText": "Which weather instrument is used to measure rainfall?",
+      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
       "options": [
         {
           "letter": "A",
-          "text": "Rain gauge"
+          "text": "Cross-pollination only"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "Stem cutting"
         },
         {
           "letter": "C",
-          "text": "Wind vane"
+          "text": "Seed sowing"
         },
         {
           "letter": "D",
-          "text": "Barometer"
+          "text": "Seed scarification only"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
+      "correctAnswer": "B",
+      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
       "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Plant propagation"
     },
     {
-      "id": "ag_ol_p1_015",
+      "id": "q_16",
       "questionNumber": 15,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
+      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
       "options": [
         {
           "letter": "A",
-          "text": "Stem cutting"
+          "text": "Vaccination"
         },
         {
           "letter": "B",
-          "text": "Seed sowing"
+          "text": "Random sampling"
         },
         {
           "letter": "C",
-          "text": "Cross-pollination only"
+          "text": "Gross-margin analysis"
         },
         {
           "letter": "D",
-          "text": "Seed scarification only"
+          "text": "Liming"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
+      "correctAnswer": "C",
+      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
       "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm management"
     },
     {
-      "id": "ag_ol_p1_016",
+      "id": "q_19",
       "questionNumber": 16,
-      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
+      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
       "options": [
         {
           "letter": "A",
-          "text": "Gross-margin analysis"
+          "text": "Germination"
         },
         {
           "letter": "B",
-          "text": "Random sampling"
+          "text": "Vaccination"
         },
         {
           "letter": "C",
-          "text": "Liming"
+          "text": "Ploughing"
         },
         {
           "letter": "D",
-          "text": "Vaccination"
+          "text": "Bulking"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
+      "correctAnswer": "D",
+      "explanation": "Bulking combines produce into larger marketable quantities.",
       "answerConfidence": "high",
-      "topic": "Farm management",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Agricultural marketing"
     },
     {
-      "id": "ag_ol_p1_017",
+      "id": "ag_o1_x1",
       "questionNumber": 17,
-      "questionText": "A farmer obtains a soil pH of 5. Which amendment would generally be used to raise the pH of an acidic soil?",
+      "questionText": "Which Zimbabwean agro-ecological natural region receives the highest annual rainfall (>1,000 mm) and specialises in tea, coffee, timber, and intensive dairy farming?",
       "options": [
         {
           "letter": "A",
-          "text": "Agricultural lime"
+          "text": "Region I"
         },
         {
           "letter": "B",
-          "text": "Ammonium sulphate"
+          "text": "Region II"
         },
         {
           "letter": "C",
-          "text": "Urea only"
+          "text": "Region IV"
         },
         {
           "letter": "D",
-          "text": "Sodium chloride"
+          "text": "Region V"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
+      "explanation": "Natural Region I (Eastern Highlands) receives >1,000 mm rainfall per year.",
       "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Land Use & Regions"
     },
     {
-      "id": "ag_ol_p1_018",
+      "id": "ag_o1_x2",
       "questionNumber": 18,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
+      "questionText": "Which soil horizon is richest in organic humus and dark minerals essential for shallow crop roots?",
       "options": [
         {
           "letter": "A",
-          "text": "Weeding"
+          "text": "Bedrock (R horizon)"
         },
         {
           "letter": "B",
-          "text": "Harvesting"
+          "text": "Topsoil (A horizon)"
         },
         {
           "letter": "C",
-          "text": "Milking"
+          "text": "Subsoil (B horizon)"
         },
         {
           "letter": "D",
-          "text": "Vaccination"
+          "text": "Parent rock (C horizon)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
+      "correctAnswer": "B",
+      "explanation": "Topsoil (Horizon A) contains decomposed organic matter, microbes, and available nutrients.",
       "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Soil Science"
     },
     {
-      "id": "ag_ol_p1_019",
+      "id": "ag_o1_x3",
       "questionNumber": 19,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
+      "questionText": "Which mineral nutrient deficiency in maize causes purple discolouration along lower leaves and weak root establishment?",
       "options": [
         {
           "letter": "A",
-          "text": "Use certified treated seed"
+          "text": "Nitrogen"
         },
         {
           "letter": "B",
-          "text": "Increase plant spacing only"
+          "text": "Magnesium"
         },
         {
           "letter": "C",
-          "text": "Apply more nitrogen"
+          "text": "Phosphorus"
         },
         {
           "letter": "D",
-          "text": "Delay harvesting"
+          "text": "Potassium"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
+      "correctAnswer": "C",
+      "explanation": "Phosphorus deficiency leads to purpling of leaves and stunted root systems.",
       "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Crop Nutrition"
     },
     {
-      "id": "ag_ol_p1_020",
+      "id": "ag_o1_x4",
       "questionNumber": 20,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
+      "questionText": "Which crop pest attacks maize stems by boring inside the stalk and damaging the growing point (\"dead heart\")?",
       "options": [
         {
           "letter": "A",
-          "text": "Good growth rate and feed conversion"
+          "text": "Cutworm"
         },
         {
           "letter": "B",
-          "text": "High milk yield only"
+          "text": "Aphids"
         },
         {
           "letter": "C",
-          "text": "Very small mature size"
+          "text": "Red spider mite"
         },
         {
           "letter": "D",
-          "text": "Low appetite"
+          "text": "Maize stalk borer (Busseola fusca)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
+      "correctAnswer": "D",
+      "explanation": "Stalk borer larvae tunnel down the maize funnel and stem.",
       "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Crop Protection"
     },
     {
-      "id": "ag_ol_p1_021",
+      "id": "ag_o1_x5",
       "questionNumber": 21,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 14 kg/ha. What quantity of seed is required?",
+      "questionText": "In ruminant cattle digestion, where does microbial fermentation of cellulose fibre primarily occur?",
       "options": [
         {
           "letter": "A",
-          "text": "52 kg"
+          "text": "Rumen"
         },
         {
           "letter": "B",
-          "text": "56 kg"
+          "text": "Abomasum"
         },
         {
           "letter": "C",
-          "text": "60 kg"
+          "text": "Omasum"
         },
         {
           "letter": "D",
-          "text": "112 kg"
+          "text": "Duodenum"
         }
       ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 14 = 56 kg.",
+      "correctAnswer": "A",
+      "explanation": "The large rumen houses symbiotic bacteria and protozoa that ferment cellulose.",
       "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Animal Science"
     },
     {
-      "id": "ag_ol_p1_022",
+      "id": "ag_o1_x6",
       "questionNumber": 22,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
+      "questionText": "Which tick-borne cattle disease in Zimbabwe is caused by Theileria parva and often causes swollen lymph nodes and high fever?",
       "options": [
         {
           "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
+          "text": "Heartwater"
         },
         {
           "letter": "B",
-          "text": "Normal rumination"
+          "text": "East Coast Fever (January disease)"
         },
         {
           "letter": "C",
-          "text": "Normal drinking"
+          "text": "Anthrax"
         },
         {
           "letter": "D",
-          "text": "Normal movement"
+          "text": "Foot and mouth disease"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
+      "correctAnswer": "B",
+      "explanation": "January disease (Theileriosis) is transmitted by brown ear ticks, especially in wet summer months.",
       "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Livestock Health"
     },
     {
-      "id": "ag_ol_p1_023",
+      "id": "ag_o1_x7",
       "questionNumber": 23,
-      "questionText": "Why are legumes valuable components of many pastures?",
+      "questionText": "What is the main function of the mouldboard on an ox-drawn mouldboard plough?",
       "options": [
         {
           "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
+          "text": "Breaks up hardpan below subsoil"
         },
         {
           "letter": "B",
-          "text": "They always require no water"
+          "text": "Applies basal Compound D fertiliser"
         },
         {
           "letter": "C",
-          "text": "They prevent all pests"
+          "text": "Inverts the cut furrow slice to bury weeds and crop residues"
         },
         {
           "letter": "D",
-          "text": "They cannot be grazed"
+          "text": "Levels seedbeds after harrowing"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
+      "correctAnswer": "C",
+      "explanation": "The curved mouldboard turns over the soil slice cut by the share.",
       "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm Implements"
     },
     {
-      "id": "ag_ol_p1_024",
+      "id": "ag_o1_x8",
       "questionNumber": 24,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
+      "questionText": "Which of the following is a variable cost in maize production?",
       "options": [
         {
           "letter": "A",
-          "text": "Hoe"
+          "text": "Tractor depreciation"
         },
         {
           "letter": "B",
-          "text": "Milking churn"
+          "text": "Permanent manager salary"
         },
         {
           "letter": "C",
-          "text": "Knapsack sprayer only"
+          "text": "Tractor shed rent"
         },
         {
           "letter": "D",
-          "text": "Sickle for harvesting grain"
+          "text": "Hybrid seed and ammonium nitrate fertiliser"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
+      "correctAnswer": "D",
+      "explanation": "Variable costs change directly with the scale of planting/production (seed, fertiliser, casual labour).",
       "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm Economics"
     },
     {
-      "id": "ag_ol_p1_025",
+      "id": "ag_o1_x9",
       "questionNumber": 25,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
+      "questionText": "Why are groundnuts or soya beans planted before maize in a crop rotation?",
       "options": [
         {
           "letter": "A",
-          "text": "It decreases"
+          "text": "Their root-nodule Rhizobium bacteria fix atmospheric nitrogen into nitrates"
         },
         {
           "letter": "B",
-          "text": "It increases"
+          "text": "They consume more soil nitrogen"
         },
         {
           "letter": "C",
-          "text": "It becomes zero automatically"
+          "text": "They attract witchweed (Striga)"
         },
         {
           "letter": "D",
-          "text": "It is unaffected"
+          "text": "They eliminate the need for rain"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
+      "explanation": "Legumes host Rhizobium bacteria in root nodules that enrich soil nitrogen for subsequent maize.",
       "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Crop Husbandry"
     },
     {
-      "id": "ag_ol_p1_026",
+      "id": "ag_o1_x10",
       "questionNumber": 26,
-      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
+      "questionText": "What does \"carrying capacity\" of a pasture mean?",
       "options": [
         {
           "letter": "A",
-          "text": "Bulking"
+          "text": "Maximum weight a farm trailer can haul"
         },
         {
           "letter": "B",
-          "text": "Vaccination"
+          "text": "Maximum number of livestock units a grazing area can support without pasture degradation"
         },
         {
           "letter": "C",
-          "text": "Ploughing"
+          "text": "Total water volume of a borehole"
         },
         {
           "letter": "D",
-          "text": "Germination"
+          "text": "Minimum rainfall needed for wheat"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Bulking combines produce into larger marketable quantities.",
+      "correctAnswer": "B",
+      "explanation": "Carrying capacity balances stocking rate against sustainable grass regeneration.",
       "answerConfidence": "high",
-      "topic": "Agricultural marketing",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Pasture Management"
     },
     {
-      "id": "ag_ol_p1_027",
+      "id": "ag_o1_x11",
       "questionNumber": 27,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
+      "questionText": "Which irrigation method delivers water drop by drop directly at plant roots with minimal evaporation loss?",
       "options": [
         {
           "letter": "A",
-          "text": "Input record"
+          "text": "Flood basin irrigation"
         },
         {
           "letter": "B",
-          "text": "Birth record"
+          "text": "Overhead sprinkler irrigation"
         },
         {
           "letter": "C",
-          "text": "Pedigree record only"
+          "text": "Drip (trickle) irrigation"
         },
         {
           "letter": "D",
-          "text": "Weather map"
+          "text": "Furrow irrigation"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
+      "correctAnswer": "C",
+      "explanation": "Drip irrigation achieves the highest water-use efficiency in dry regions.",
       "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Irrigation"
     },
     {
-      "id": "ag_ol_p1_028",
+      "id": "ag_o1_x12",
       "questionNumber": 28,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
+      "questionText": "Which poultry disease causes twisted necks, greenish diarrhoea, and sudden high flock mortality, controlled by routine vaccination?",
       "options": [
         {
           "letter": "A",
-          "text": "Contour farming"
+          "text": "Bumblefoot"
         },
         {
           "letter": "B",
-          "text": "Removing all crop residues"
+          "text": "Coccidiosis"
         },
         {
           "letter": "C",
-          "text": "Cultivating up and down the slope"
+          "text": "Fowl pox"
         },
         {
           "letter": "D",
-          "text": "Leaving soil bare"
+          "text": "Newcastle disease"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
+      "correctAnswer": "D",
+      "explanation": "Newcastle disease is a notifiable viral killer prevented through live vaccination programmes.",
       "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Poultry"
     },
     {
-      "id": "ag_ol_p1_029",
+      "id": "ag_o1_x13",
       "questionNumber": 29,
-      "questionText": "Which weather instrument is used to measure rainfall?",
+      "questionText": "In farm fencing, what is the purpose of a corner/strainer post with diagonal stays?",
       "options": [
         {
           "letter": "A",
-          "text": "Rain gauge"
+          "text": "To absorb high pulling tension when straining barbed wire"
         },
         {
           "letter": "B",
-          "text": "Thermometer"
+          "text": "To allow wildlife underneath"
         },
         {
           "letter": "C",
-          "text": "Wind vane"
+          "text": "To keep termites out"
         },
         {
           "letter": "D",
-          "text": "Barometer"
+          "text": "To measure paddock area"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
+      "explanation": "Braced strainer posts anchor wire tension along fence lines without leaning.",
       "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Farm Structures"
     },
     {
-      "id": "ag_ol_p1_030",
+      "id": "ag_o1_x14",
       "questionNumber": 30,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
+      "questionText": "Which herbicide type kills only targeted broadleaf weeds while leaving narrow-leaved maize unharmed?",
       "options": [
         {
           "letter": "A",
-          "text": "Stem cutting"
+          "text": "Non-selective contact herbicide"
         },
         {
           "letter": "B",
-          "text": "Seed sowing"
+          "text": "Selective systemic herbicide"
         },
         {
           "letter": "C",
-          "text": "Cross-pollination only"
+          "text": "Soil fumigant"
         },
         {
           "letter": "D",
-          "text": "Seed scarification only"
+          "text": "Fungicide"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
+      "correctAnswer": "B",
+      "explanation": "Selective herbicides target specific weed families without killing the crop.",
       "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Weed Control"
     },
     {
-      "id": "ag_ol_p1_031",
+      "id": "ag_o1_x15",
       "questionNumber": 31,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 15 kg/ha. What quantity of seed is required?",
+      "questionText": "Which livestock management practice involves removing horn buds from young calves (1–2 weeks old) using a hot iron?",
       "options": [
         {
           "letter": "A",
-          "text": "56 kg"
+          "text": "Castration"
         },
         {
           "letter": "B",
-          "text": "60 kg"
+          "text": "Drenching"
         },
         {
           "letter": "C",
-          "text": "64 kg"
+          "text": "Dehorning / Disbudding"
         },
         {
           "letter": "D",
-          "text": "120 kg"
+          "text": "Ear tagging"
         }
       ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 15 = 60 kg.",
+      "correctAnswer": "C",
+      "explanation": "Disbudding prevents adult cattle injuring each other or workers in pens.",
       "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Livestock Management"
     },
     {
-      "id": "ag_ol_p1_032",
+      "id": "ag_o1_x16",
       "questionNumber": 32,
-      "questionText": "A farmer obtains a soil pH of 8. Which amendment would generally be used to raise the pH of an acidic soil?",
+      "questionText": "Why should top-dressing fertiliser (AN) be applied as split applications on sandy soils?",
       "options": [
         {
           "letter": "A",
-          "text": "Agricultural lime"
+          "text": "Because sandy soil has high clay content"
         },
         {
           "letter": "B",
-          "text": "Ammonium sulphate"
+          "text": "Sandy soils fix nitrogen permanently"
         },
         {
           "letter": "C",
-          "text": "Urea only"
+          "text": "To make weeds grow faster"
         },
         {
           "letter": "D",
-          "text": "Sodium chloride"
+          "text": "To reduce nitrate leaching loss during heavy rainstorms"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
+      "correctAnswer": "D",
+      "explanation": "Split dressing matches maize uptake and reduces nitrogen washing below the root zone.",
       "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Soil Fertility"
     },
     {
-      "id": "ag_ol_p1_033",
+      "id": "ag_o1_x17",
       "questionNumber": 33,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
+      "questionText": "What is the ideal moisture content for safe long-term storage of shelled maize grain in silos?",
       "options": [
         {
           "letter": "A",
-          "text": "Weeding"
+          "text": "12% or below"
         },
         {
           "letter": "B",
-          "text": "Harvesting"
+          "text": "30%"
         },
         {
           "letter": "C",
-          "text": "Milking"
+          "text": "22%"
         },
         {
           "letter": "D",
-          "text": "Vaccination"
+          "text": "50%"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
+      "explanation": "Drying grain to ≤12% moisture prevents fungal mould and aflatoxin growth.",
       "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Post-Harvest"
     },
     {
-      "id": "ag_ol_p1_034",
+      "id": "ag_o1_x18",
       "questionNumber": 34,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
+      "questionText": "Which forest tree genus widely grown in Zimbabwe's Eastern Highlands provides fast-growing poles and firewood?",
       "options": [
         {
           "letter": "A",
-          "text": "Use certified treated seed"
+          "text": "Baobab (Adansonia)"
         },
         {
           "letter": "B",
-          "text": "Increase plant spacing only"
+          "text": "Eucalyptus (Gum tree)"
         },
         {
           "letter": "C",
-          "text": "Apply more nitrogen"
+          "text": "Mopane"
         },
         {
           "letter": "D",
-          "text": "Delay harvesting"
+          "text": "Marula"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
+      "correctAnswer": "B",
+      "explanation": "Eucalyptus plantations supply timber, treated poles, and fuelwood rapidly.",
       "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Forestry"
     },
     {
-      "id": "ag_ol_p1_035",
+      "id": "ag_o1_x19",
       "questionNumber": 35,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
+      "questionText": "In Mendelian genetics used in livestock breeding, what is a cross between two unrelated pure breeds called?",
       "options": [
         {
           "letter": "A",
-          "text": "Good growth rate and feed conversion"
+          "text": "Inbreeding"
         },
         {
           "letter": "B",
-          "text": "High milk yield only"
+          "text": "Selfing"
         },
         {
           "letter": "C",
-          "text": "Very small mature size"
+          "text": "Crossbreeding (producing hybrid vigour)"
         },
         {
           "letter": "D",
-          "text": "Low appetite"
+          "text": "Clonal propagation"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
+      "correctAnswer": "C",
+      "explanation": "Crossbreeding combines desirable traits from two breeds to achieve heterosis (hybrid vigour).",
       "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Genetics"
     },
     {
-      "id": "ag_ol_p1_036",
+      "id": "ag_o1_x20",
       "questionNumber": 36,
-      "questionText": "Which nutrient is primarily required by livestock for body building, tissue repair and production of enzymes?",
+      "questionText": "Which government agency in Zimbabwe buys and maintains strategic national maize grain reserves?",
       "options": [
         {
           "letter": "A",
-          "text": "Protein"
+          "text": "TIMB"
         },
         {
           "letter": "B",
-          "text": "Water only"
+          "text": "ZINWA"
         },
         {
           "letter": "C",
-          "text": "Fibre only"
+          "text": "EMA"
         },
         {
           "letter": "D",
-          "text": "Salt only"
+          "text": "Grain Marketing Board (GMB)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Protein supplies amino acids needed for growth, tissue repair and many metabolic functions.",
+      "correctAnswer": "D",
+      "explanation": "The Grain Marketing Board (GMB) handles strategic grain purchasing and storage.",
       "answerConfidence": "high",
-      "topic": "Animal nutrition",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_037",
-      "questionNumber": 37,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_038",
-      "questionNumber": 38,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_039",
-      "questionNumber": 39,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_040",
-      "questionNumber": 40,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_041",
-      "questionNumber": 41,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 16 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "60 kg"
-        },
-        {
-          "letter": "B",
-          "text": "64 kg"
-        },
-        {
-          "letter": "C",
-          "text": "68 kg"
-        },
-        {
-          "letter": "D",
-          "text": "128 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 16 = 64 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_042",
-      "questionNumber": 42,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_043",
-      "questionNumber": 43,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_044",
-      "questionNumber": 44,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_045",
-      "questionNumber": 45,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_046",
-      "questionNumber": 46,
-      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Gross-margin analysis"
-        },
-        {
-          "letter": "B",
-          "text": "Random sampling"
-        },
-        {
-          "letter": "C",
-          "text": "Liming"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
-      "answerConfidence": "high",
-      "topic": "Farm management",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_047",
-      "questionNumber": 47,
-      "questionText": "A farmer obtains a soil pH of 7. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_048",
-      "questionNumber": 48,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_049",
-      "questionNumber": 49,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_050",
-      "questionNumber": 50,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_051",
-      "questionNumber": 51,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 17 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "64 kg"
-        },
-        {
-          "letter": "B",
-          "text": "68 kg"
-        },
-        {
-          "letter": "C",
-          "text": "72 kg"
-        },
-        {
-          "letter": "D",
-          "text": "136 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 17 = 68 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_052",
-      "questionNumber": 52,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_053",
-      "questionNumber": 53,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_054",
-      "questionNumber": 54,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_055",
-      "questionNumber": 55,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_056",
-      "questionNumber": 56,
-      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bulking"
-        },
-        {
-          "letter": "B",
-          "text": "Vaccination"
-        },
-        {
-          "letter": "C",
-          "text": "Ploughing"
-        },
-        {
-          "letter": "D",
-          "text": "Germination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Bulking combines produce into larger marketable quantities.",
-      "answerConfidence": "high",
-      "topic": "Agricultural marketing",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_057",
-      "questionNumber": 57,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_058",
-      "questionNumber": 58,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_059",
-      "questionNumber": 59,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_060",
-      "questionNumber": 60,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_061",
-      "questionNumber": 61,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 18 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "68 kg"
-        },
-        {
-          "letter": "B",
-          "text": "72 kg"
-        },
-        {
-          "letter": "C",
-          "text": "76 kg"
-        },
-        {
-          "letter": "D",
-          "text": "144 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 18 = 72 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_062",
-      "questionNumber": 62,
-      "questionText": "A farmer obtains a soil pH of 6. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_063",
-      "questionNumber": 63,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_064",
-      "questionNumber": 64,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_065",
-      "questionNumber": 65,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_066",
-      "questionNumber": 66,
-      "questionText": "Which nutrient is primarily required by livestock for body building, tissue repair and production of enzymes?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Protein"
-        },
-        {
-          "letter": "B",
-          "text": "Water only"
-        },
-        {
-          "letter": "C",
-          "text": "Fibre only"
-        },
-        {
-          "letter": "D",
-          "text": "Salt only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Protein supplies amino acids needed for growth, tissue repair and many metabolic functions.",
-      "answerConfidence": "high",
-      "topic": "Animal nutrition",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_067",
-      "questionNumber": 67,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_068",
-      "questionNumber": 68,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_069",
-      "questionNumber": 69,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_070",
-      "questionNumber": 70,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_071",
-      "questionNumber": 71,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 19 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "72 kg"
-        },
-        {
-          "letter": "B",
-          "text": "76 kg"
-        },
-        {
-          "letter": "C",
-          "text": "80 kg"
-        },
-        {
-          "letter": "D",
-          "text": "152 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 19 = 76 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_072",
-      "questionNumber": 72,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_073",
-      "questionNumber": 73,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_074",
-      "questionNumber": 74,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_075",
-      "questionNumber": 75,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_076",
-      "questionNumber": 76,
-      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Gross-margin analysis"
-        },
-        {
-          "letter": "B",
-          "text": "Random sampling"
-        },
-        {
-          "letter": "C",
-          "text": "Liming"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
-      "answerConfidence": "high",
-      "topic": "Farm management",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_077",
-      "questionNumber": 77,
-      "questionText": "A farmer obtains a soil pH of 5. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_078",
-      "questionNumber": 78,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_079",
-      "questionNumber": 79,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_080",
-      "questionNumber": 80,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_081",
-      "questionNumber": 81,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 20 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "76 kg"
-        },
-        {
-          "letter": "B",
-          "text": "80 kg"
-        },
-        {
-          "letter": "C",
-          "text": "84 kg"
-        },
-        {
-          "letter": "D",
-          "text": "160 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 20 = 80 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_082",
-      "questionNumber": 82,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_083",
-      "questionNumber": 83,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_084",
-      "questionNumber": 84,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_085",
-      "questionNumber": 85,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_086",
-      "questionNumber": 86,
-      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bulking"
-        },
-        {
-          "letter": "B",
-          "text": "Vaccination"
-        },
-        {
-          "letter": "C",
-          "text": "Ploughing"
-        },
-        {
-          "letter": "D",
-          "text": "Germination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Bulking combines produce into larger marketable quantities.",
-      "answerConfidence": "high",
-      "topic": "Agricultural marketing",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_087",
-      "questionNumber": 87,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_088",
-      "questionNumber": 88,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_089",
-      "questionNumber": 89,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_090",
-      "questionNumber": 90,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_091",
-      "questionNumber": 91,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 12 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "44 kg"
-        },
-        {
-          "letter": "B",
-          "text": "48 kg"
-        },
-        {
-          "letter": "C",
-          "text": "52 kg"
-        },
-        {
-          "letter": "D",
-          "text": "96 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 12 = 48 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_092",
-      "questionNumber": 92,
-      "questionText": "A farmer obtains a soil pH of 8. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_093",
-      "questionNumber": 93,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_094",
-      "questionNumber": 94,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_095",
-      "questionNumber": 95,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_096",
-      "questionNumber": 96,
-      "questionText": "Which nutrient is primarily required by livestock for body building, tissue repair and production of enzymes?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Protein"
-        },
-        {
-          "letter": "B",
-          "text": "Water only"
-        },
-        {
-          "letter": "C",
-          "text": "Fibre only"
-        },
-        {
-          "letter": "D",
-          "text": "Salt only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Protein supplies amino acids needed for growth, tissue repair and many metabolic functions.",
-      "answerConfidence": "high",
-      "topic": "Animal nutrition",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_097",
-      "questionNumber": 97,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_098",
-      "questionNumber": 98,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_099",
-      "questionNumber": 99,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_100",
-      "questionNumber": 100,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_101",
-      "questionNumber": 101,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 13 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "48 kg"
-        },
-        {
-          "letter": "B",
-          "text": "52 kg"
-        },
-        {
-          "letter": "C",
-          "text": "56 kg"
-        },
-        {
-          "letter": "D",
-          "text": "104 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 13 = 52 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_102",
-      "questionNumber": 102,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_103",
-      "questionNumber": 103,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_104",
-      "questionNumber": 104,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_105",
-      "questionNumber": 105,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_106",
-      "questionNumber": 106,
-      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Gross-margin analysis"
-        },
-        {
-          "letter": "B",
-          "text": "Random sampling"
-        },
-        {
-          "letter": "C",
-          "text": "Liming"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
-      "answerConfidence": "high",
-      "topic": "Farm management",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_107",
-      "questionNumber": 107,
-      "questionText": "A farmer obtains a soil pH of 7. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_108",
-      "questionNumber": 108,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_109",
-      "questionNumber": 109,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_110",
-      "questionNumber": 110,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_111",
-      "questionNumber": 111,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 14 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "52 kg"
-        },
-        {
-          "letter": "B",
-          "text": "56 kg"
-        },
-        {
-          "letter": "C",
-          "text": "60 kg"
-        },
-        {
-          "letter": "D",
-          "text": "112 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 14 = 56 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_112",
-      "questionNumber": 112,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_113",
-      "questionNumber": 113,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_114",
-      "questionNumber": 114,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_115",
-      "questionNumber": 115,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_116",
-      "questionNumber": 116,
-      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bulking"
-        },
-        {
-          "letter": "B",
-          "text": "Vaccination"
-        },
-        {
-          "letter": "C",
-          "text": "Ploughing"
-        },
-        {
-          "letter": "D",
-          "text": "Germination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Bulking combines produce into larger marketable quantities.",
-      "answerConfidence": "high",
-      "topic": "Agricultural marketing",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_117",
-      "questionNumber": 117,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_118",
-      "questionNumber": 118,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_119",
-      "questionNumber": 119,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_120",
-      "questionNumber": 120,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_121",
-      "questionNumber": 121,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 15 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "56 kg"
-        },
-        {
-          "letter": "B",
-          "text": "60 kg"
-        },
-        {
-          "letter": "C",
-          "text": "64 kg"
-        },
-        {
-          "letter": "D",
-          "text": "120 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 15 = 60 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_122",
-      "questionNumber": 122,
-      "questionText": "A farmer obtains a soil pH of 6. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_123",
-      "questionNumber": 123,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_124",
-      "questionNumber": 124,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_125",
-      "questionNumber": 125,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_126",
-      "questionNumber": 126,
-      "questionText": "Which nutrient is primarily required by livestock for body building, tissue repair and production of enzymes?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Protein"
-        },
-        {
-          "letter": "B",
-          "text": "Water only"
-        },
-        {
-          "letter": "C",
-          "text": "Fibre only"
-        },
-        {
-          "letter": "D",
-          "text": "Salt only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Protein supplies amino acids needed for growth, tissue repair and many metabolic functions.",
-      "answerConfidence": "high",
-      "topic": "Animal nutrition",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_127",
-      "questionNumber": 127,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_128",
-      "questionNumber": 128,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_129",
-      "questionNumber": 129,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_130",
-      "questionNumber": 130,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_131",
-      "questionNumber": 131,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 16 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "60 kg"
-        },
-        {
-          "letter": "B",
-          "text": "64 kg"
-        },
-        {
-          "letter": "C",
-          "text": "68 kg"
-        },
-        {
-          "letter": "D",
-          "text": "128 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 16 = 64 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_132",
-      "questionNumber": 132,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_133",
-      "questionNumber": 133,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_134",
-      "questionNumber": 134,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_135",
-      "questionNumber": 135,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_136",
-      "questionNumber": 136,
-      "questionText": "Which farm-management practice is most appropriate when a farmer wants to compare the performance of two enterprises using their costs and returns?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Gross-margin analysis"
-        },
-        {
-          "letter": "B",
-          "text": "Random sampling"
-        },
-        {
-          "letter": "C",
-          "text": "Liming"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross-margin analysis compares enterprise variable costs and returns and is used to support farm-management decisions.",
-      "answerConfidence": "high",
-      "topic": "Farm management",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_137",
-      "questionNumber": 137,
-      "questionText": "A farmer obtains a soil pH of 5. Which amendment would generally be used to raise the pH of an acidic soil?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Agricultural lime"
-        },
-        {
-          "letter": "B",
-          "text": "Ammonium sulphate"
-        },
-        {
-          "letter": "C",
-          "text": "Urea only"
-        },
-        {
-          "letter": "D",
-          "text": "Sodium chloride"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Agricultural lime neutralises soil acidity and raises soil pH.",
-      "answerConfidence": "high",
-      "topic": "Soil science",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_138",
-      "questionNumber": 138,
-      "questionText": "Which operation should normally be carried out after sowing a crop when the main aim is to reduce competition from unwanted plants?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Weeding"
-        },
-        {
-          "letter": "B",
-          "text": "Harvesting"
-        },
-        {
-          "letter": "C",
-          "text": "Milking"
-        },
-        {
-          "letter": "D",
-          "text": "Vaccination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Weeding removes or suppresses weeds so that the crop has less competition for light, water and nutrients.",
-      "answerConfidence": "high",
-      "topic": "Crop production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_139",
-      "questionNumber": 139,
-      "questionText": "Which method is most appropriate for reducing the spread of a seed-borne fungal disease before planting?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Use certified treated seed"
-        },
-        {
-          "letter": "B",
-          "text": "Increase plant spacing only"
-        },
-        {
-          "letter": "C",
-          "text": "Apply more nitrogen"
-        },
-        {
-          "letter": "D",
-          "text": "Delay harvesting"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Certified treated seed reduces the risk of introducing seed-borne pathogens into the field.",
-      "answerConfidence": "high",
-      "topic": "Crop protection",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_140",
-      "questionNumber": 140,
-      "questionText": "Which feature is most useful when selecting cattle for a beef-production enterprise?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Good growth rate and feed conversion"
-        },
-        {
-          "letter": "B",
-          "text": "High milk yield only"
-        },
-        {
-          "letter": "C",
-          "text": "Very small mature size"
-        },
-        {
-          "letter": "D",
-          "text": "Low appetite"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Beef cattle are selected for desirable growth, carcass and feed-utilisation traits.",
-      "answerConfidence": "high",
-      "topic": "Livestock production",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_141",
-      "questionNumber": 141,
-      "questionText": "A farmer plants 4 hectares at a seed rate of 17 kg/ha. What quantity of seed is required?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "64 kg"
-        },
-        {
-          "letter": "B",
-          "text": "68 kg"
-        },
-        {
-          "letter": "C",
-          "text": "72 kg"
-        },
-        {
-          "letter": "D",
-          "text": "136 kg"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Seed required = area × seed rate = 4 × 17 = 68 kg.",
-      "answerConfidence": "high",
-      "topic": "Farm calculations",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_142",
-      "questionNumber": 142,
-      "questionText": "Which observation would most strongly suggest that an animal requires veterinary attention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Persistent loss of appetite and abnormal behaviour"
-        },
-        {
-          "letter": "B",
-          "text": "Normal rumination"
-        },
-        {
-          "letter": "C",
-          "text": "Normal drinking"
-        },
-        {
-          "letter": "D",
-          "text": "Normal movement"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Persistent loss of appetite together with abnormal behaviour can indicate illness and warrants examination.",
-      "answerConfidence": "high",
-      "topic": "Animal health",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_143",
-      "questionNumber": 143,
-      "questionText": "Why are legumes valuable components of many pastures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "They can fix atmospheric nitrogen through symbiotic bacteria"
-        },
-        {
-          "letter": "B",
-          "text": "They always require no water"
-        },
-        {
-          "letter": "C",
-          "text": "They prevent all pests"
-        },
-        {
-          "letter": "D",
-          "text": "They cannot be grazed"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Legumes form symbiotic associations with nitrogen-fixing bacteria, improving nitrogen availability in the pasture.",
-      "answerConfidence": "high",
-      "topic": "Pasture and forage",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_144",
-      "questionNumber": 144,
-      "questionText": "Which farm tool is primarily used for loosening soil and making planting holes on a small holding?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Hoe"
-        },
-        {
-          "letter": "B",
-          "text": "Milking churn"
-        },
-        {
-          "letter": "C",
-          "text": "Knapsack sprayer only"
-        },
-        {
-          "letter": "D",
-          "text": "Sickle for harvesting grain"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A hoe is a common hand tool for loosening soil, making planting holes and controlling weeds.",
-      "answerConfidence": "high",
-      "topic": "Farm tools and machinery",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_145",
-      "questionNumber": 145,
-      "questionText": "If total variable costs rise while output price and output remain unchanged, what happens to gross margin?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It decreases"
-        },
-        {
-          "letter": "B",
-          "text": "It increases"
-        },
-        {
-          "letter": "C",
-          "text": "It becomes zero automatically"
-        },
-        {
-          "letter": "D",
-          "text": "It is unaffected"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Gross margin equals gross income minus variable costs, so higher variable costs reduce gross margin when other factors stay constant.",
-      "answerConfidence": "high",
-      "topic": "Agricultural economics",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_146",
-      "questionNumber": 146,
-      "questionText": "Which marketing function involves collecting produce from several farmers and assembling it into larger quantities for buyers?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Bulking"
-        },
-        {
-          "letter": "B",
-          "text": "Vaccination"
-        },
-        {
-          "letter": "C",
-          "text": "Ploughing"
-        },
-        {
-          "letter": "D",
-          "text": "Germination"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Bulking combines produce into larger marketable quantities.",
-      "answerConfidence": "high",
-      "topic": "Agricultural marketing",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_147",
-      "questionNumber": 147,
-      "questionText": "Which record is most useful for determining the quantities of fertiliser purchased and used on a farm?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Input record"
-        },
-        {
-          "letter": "B",
-          "text": "Birth record"
-        },
-        {
-          "letter": "C",
-          "text": "Pedigree record only"
-        },
-        {
-          "letter": "D",
-          "text": "Weather map"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "An input record documents purchases and use of inputs such as fertiliser, seed and chemicals.",
-      "answerConfidence": "high",
-      "topic": "Agricultural records",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_148",
-      "questionNumber": 148,
-      "questionText": "Which practice is most effective for reducing soil erosion on sloping cultivated land?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Contour farming"
-        },
-        {
-          "letter": "B",
-          "text": "Removing all crop residues"
-        },
-        {
-          "letter": "C",
-          "text": "Cultivating up and down the slope"
-        },
-        {
-          "letter": "D",
-          "text": "Leaving soil bare"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Contour cultivation slows runoff across slopes and helps reduce soil erosion.",
-      "answerConfidence": "high",
-      "topic": "Conservation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_149",
-      "questionNumber": 149,
-      "questionText": "Which weather instrument is used to measure rainfall?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Rain gauge"
-        },
-        {
-          "letter": "B",
-          "text": "Thermometer"
-        },
-        {
-          "letter": "C",
-          "text": "Wind vane"
-        },
-        {
-          "letter": "D",
-          "text": "Barometer"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A rain gauge measures the amount of precipitation received over a specified period.",
-      "answerConfidence": "high",
-      "topic": "Weather and climate",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
-    },
-    {
-      "id": "ag_ol_p1_150",
-      "questionNumber": 150,
-      "questionText": "Which propagation method produces a new plant from a vegetative part of the parent plant rather than from a seed?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Stem cutting"
-        },
-        {
-          "letter": "B",
-          "text": "Seed sowing"
-        },
-        {
-          "letter": "C",
-          "text": "Cross-pollination only"
-        },
-        {
-          "letter": "D",
-          "text": "Seed scarification only"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "A stem cutting is a vegetative propagation method in which a stem section develops roots and shoots.",
-      "answerConfidence": "high",
-      "topic": "Plant propagation",
-      "difficulty": "medium",
-      "questionOrigin": "original_zimsec_aligned",
-      "referenceYears": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ]
+      "topic": "Agricultural Marketing"
     }
   ]
 }

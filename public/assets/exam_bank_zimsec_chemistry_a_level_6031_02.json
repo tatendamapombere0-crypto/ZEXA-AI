@@ -1,1371 +1,212 @@
 {
   "paperInfo": {
     "subject": "Chemistry",
-    "level": "O-Level",
-    "paperCode": "4024/02",
+    "level": "A-Level",
+    "paperCode": "6031/02",
     "paperName": "Chemistry Paper 2",
     "paperType": "Structured Theory",
-    "syllabus": "O-Level Chemistry Forms 3–4 (revised 2024–2030; ZIMSEC code 4024)",
-    "coverage": "Original expanded practice bank synthesised from ZIMSEC syllabus scope and recurring examination-style skills; not a reproduction of copyrighted past-paper text.",
-    "source": "ZIMSEC official resources (www5.zimsec.co.zw) and syllabus copies hosted on StudyLib (studylib.net).",
-    "referenceYears": [
-      "2023",
-      "2024",
-      "2025",
-      "June 2026"
-    ],
-    "notes": "150 original structured questions. The app accepts empty options for non-MCQ items; model answers are stored in explanation."
+    "questionCount": 20
   },
   "questions": [
     {
-      "id": "zimsec_o_chem_p2_001",
-      "questionNumber": 1,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
+      "id": "chem6031_2_1",
+      "questionText": "First 6 successive ionisation energies (kJ/mol) of Period 3 element X are: 786, 1580, 3230, 4360, 16100, 19800.\n(a) State which group of the Periodic Table X belongs to and explain your reasoning. [3 marks]\n(b) Explain why first ionisation energy drops slightly between Mg and Al. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
+      "explanation": "(a) Group 14 (IV) [1]. Huge jump occurs between IE₄ (4,360) and IE₅ (16,100), showing 4 outer-shell valence electrons; removing the 5th breaks into a stable inner shell closer to the nucleus [2].\n(b) Al's outer electron is in a higher-energy 3p orbital further from nucleus and shielded by 3s² electrons, so less energy removes it than Mg's 3s electron [3].",
+      "answerConfidence": "high",
+      "topic": "Atomic Structure",
+      "questionNumber": 1
     },
     {
-      "id": "zimsec_o_chem_p2_002",
-      "questionNumber": 2,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
+      "id": "chem6031_2_2",
+      "questionText": "Hess's Law & Enthalpy Cycles:\nGiven standard enthalpies of combustion (kJ/mol): C(s) = -394, H₂(g) = -286, CH₃OH(l) = -726.\nConstruct an enthalpy cycle and calculate ΔH°_f of liquid methanol CH₃OH(l). [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
+      "explanation": "C(s) + 2H₂(g) + ½O₂(g) → CH₃OH(l).\nΔH°_f = ΣΔH°_c(reactants) - ΔH°_c(product) = [-394 + 2(-286)] - (-726) = -966 + 726 = -240 kJ/mol [4 marks].",
+      "answerConfidence": "high",
+      "topic": "Energetics",
+      "questionNumber": 2
     },
     {
-      "id": "zimsec_o_chem_p2_003",
-      "questionNumber": 3,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
+      "id": "chem6031_2_3",
+      "questionText": "Chemical Equilibria (Kp):\nFor N₂O₄(g) ⇌ 2NO₂(g), 1.00 mol of N₂O₄ dissociates in a vessel at 120°C and total equilibrium pressure 200 kPa until 60% has dissociated.\n(a) Write the Kp expression. [1 mark]\n(b) Calculate partial pressures and the numerical value of Kp with units. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
+      "explanation": "(a) Kp = p(NO₂)² / p(N₂O₄) [1].\n(b) Initial moles N₂O₄ = 1.00; dissociated = 0.60 -> remaining N₂O₄ = 0.40 mol, formed NO₂ = 1.20 mol. Total equilibrium moles = 1.60 [2]. p(N₂O₄) = (0.40/1.60)×200 = 50 kPa; p(NO₂) = (1.20/1.60)×200 = 150 kPa [2]. Kp = 150² / 50 = 450 kPa [1].",
+      "answerConfidence": "high",
+      "topic": "Equilibria",
+      "questionNumber": 3
     },
     {
-      "id": "zimsec_o_chem_p2_004",
-      "questionNumber": 4,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
+      "id": "chem6031_2_4",
+      "questionText": "Reaction Kinetics:\nFor 2NO(g) + H₂(g) → N₂O(g) + H₂O(g), doubling [NO] quadruples rate, while doubling [H₂] doubles rate.\n(a) Write the rate equation and state overall order. [2 marks]\n(b) Given initial rate = 3.6 × 10⁻⁴ mol/(dm³·s) when [NO] = 0.020 and [H₂] = 0.015 mol/dm³, calculate rate constant k with units. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
+      "explanation": "(a) Rate = k[NO]²[H₂]; overall order = 2 + 1 = 3 [2].\n(b) k = 3.6×10⁻⁴ / [(0.020)²(0.015)] = 3.6×10⁻⁴ / (6.0×10⁻⁶) = 60 mol⁻²·dm⁶·s⁻¹ [3].",
+      "answerConfidence": "high",
+      "topic": "Kinetics",
+      "questionNumber": 4
     },
     {
-      "id": "zimsec_o_chem_p2_005",
-      "questionNumber": 5,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
+      "id": "chem6031_2_5",
+      "questionText": "Buffer Solutions & pH:\n(a) Explain how an ethanoic acid / sodium ethanoate buffer resists sharp pH change when small amounts of H⁺ or OH⁻ are added, using equations. [4 marks]\n(b) Calculate the pH of a buffer containing 0.20 mol/dm³ CH₃COOH (Ka = 1.7 × 10⁻⁵) and 0.40 mol/dm³ CH₃COONa. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
+      "explanation": "(a) CH₃COOH ⇌ H⁺ + CH₃COO⁻. Added H⁺ reacts with large reserve of CH₃COO⁻ forming weak undissociated CH₃COOH; added OH⁻ reacts with H⁺, shifting CH₃COOH dissociation right to restore H⁺ [4].\n(b) [H⁺] = Ka([Acid]/[Salt]) = 1.7×10⁻⁵ × (0.20/0.40) = 8.5×10⁻⁶ mol/dm³. pH = -log₁₀(8.5×10⁻⁶) = 5.07 [3].",
+      "answerConfidence": "high",
+      "topic": "Ionic Equilibria",
+      "questionNumber": 5
     },
     {
-      "id": "zimsec_o_chem_p2_006",
-      "questionNumber": 6,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
+      "id": "chem6031_2_6",
+      "questionText": "Born–Haber Cycle for MgO:\nDefine \"Lattice Energy\" and explain why the lattice enthalpy of MgO (-3,791 kJ/mol) is much more exothermic than that of NaCl (-787 kJ/mol). [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
+      "explanation": "Lattice energy is the enthalpy change when 1 mole of solid ionic lattice is formed from its gaseous ions under standard conditions [2]. Mg²⁺ and O²⁻ carry doubly charged ions (2+ / 2−) and smaller ionic radii than Na⁺/Cl⁻, producing far stronger electrostatic attraction [2].",
+      "answerConfidence": "high",
+      "topic": "Energetics",
+      "questionNumber": 6
     },
     {
-      "id": "zimsec_o_chem_p2_007",
-      "questionNumber": 7,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
+      "id": "chem6031_2_7",
+      "questionText": "Electrochemistry (Standard Electrode Potentials):\nGiven E°(Cu²⁺/Cu) = +0.34 V and E°(Zn²⁺/Zn) = -0.76 V:\n(a) Write the overall cell diagram and balanced equation for the feasible Daniell cell. [2 marks]\n(b) Calculate E°_cell and state the direction of electron flow in the external circuit. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
+      "explanation": "(a) Zn(s) | Zn²⁺(aq) || Cu²⁺(aq) | Cu(s); Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s) [2].\n(b) E°_cell = +0.34 - (-0.76) = +1.10 V; electrons flow through wire from Zinc anode to Copper cathode [3].",
+      "answerConfidence": "high",
+      "topic": "Electrochemistry",
+      "questionNumber": 7
     },
     {
-      "id": "zimsec_o_chem_p2_008",
-      "questionNumber": 8,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
+      "id": "chem6031_2_8",
+      "questionText": "Period 3 Oxides & Chlorides:\nExplain why Na₂O forms a strongly alkaline solution (pH 13) in water, Al₂O₃ is amphoteric and insoluble, and SiCl₄ hydrolyses violently giving misty fumes. Include balanced equations. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
+      "explanation": "Na₂O is ionic with O²⁻ ions that react vigorously with water: Na₂O + H₂O → 2NaOH (pH 13) [2]. Al₂O₃ has strong lattice + partial covalent character making it insoluble, reacting with both acids (Al₂O₃ + 6H⁺ → 2Al³⁺ + 3H₂O) and hot alkalis (Al₂O₃ + 2OH⁻ + 3H₂O → 2[Al(OH)₄]⁻) [2]. SiCl₄ has empty 3d orbitals allowing nucleophilic water attack: SiCl₄ + 2H₂O → SiO₂ + 4HCl(g) misty fumes [2].",
+      "answerConfidence": "high",
+      "topic": "Inorganic Periodicity",
+      "questionNumber": 8
     },
     {
-      "id": "zimsec_o_chem_p2_009",
-      "questionNumber": 9,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
+      "id": "chem6031_2_9",
+      "questionText": "Transition Metals:\n(a) Explain why transition elements show variable oxidation states and form coloured aqueous complexes using d-orbital splitting. [4 marks]\n(b) Explain why ligand exchange from [Cu(H₂O)₆]²⁺ to [CuCl₄]²⁻ changes both colour and coordination number. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
+      "explanation": "(a) Small energy gap between 3d and 4s subshells allows losing varying numbers of electrons [2]. Ligands split degenerate 3d orbitals into ΔE gaps; d-d electron transitions absorb specific visible wavelengths leaving the complementary colour transmitted [2].\n(b) Pale blue octahedral [Cu(H₂O)₆]²⁺ (coord 6) turns yellow-green tetrahedral [CuCl₄]²⁻ (coord 4) because larger Cl⁻ ligands limit 4 around Cu²⁺ and alter ΔE [3].",
+      "answerConfidence": "high",
+      "topic": "Transition Elements",
+      "questionNumber": 9
     },
     {
-      "id": "zimsec_o_chem_p2_010",
-      "questionNumber": 10,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
+      "id": "chem6031_2_10",
+      "questionText": "Organic Mechanisms (Nucleophilic Substitution SN1 vs SN2):\nCompare the SN1 hydrolysis of 2-bromo-2-methylpropane with the SN2 hydrolysis of bromoethane in terms of rate equation, stereochemistry, and carbocation stability. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
+      "explanation": "SN1 (tertiary): Rate = k[(CH₃)₃CBr] (first-order), forms a planar carbocation stabilised by three electron-donating methyl groups (+I effect), leading to racemic mixture if chiral [3]. SN2 (primary): Rate = k[CH₃CH₂Br][OH⁻] (second-order), concerted backside attack via 5-coordinate transition state giving clean Walden inversion of configuration [3].",
+      "answerConfidence": "high",
+      "topic": "Organic Chemistry",
+      "questionNumber": 10
     },
     {
-      "id": "zimsec_o_chem_p2_011",
-      "questionNumber": 11,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
+      "id": "chem6031_2_11",
+      "questionText": "Electrophilic Substitution of Benzene vs Phenol:\nWhy does phenol react instantaneously with aqueous bromine at room temperature to form white 2,4,6-tribromophenol, whereas benzene requires an AlBr₃/FeBr₃ catalyst and warming? [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
+      "explanation": "In phenol, a lone pair on oxygen overlaps into the delocalised benzene π-ring, greatly increasing ring electron density and activating positions 2, 4, and 6 [3]. This polarises Br₂ directly without a halogen-carrier Lewis acid catalyst, forming 2,4,6-tribromophenol white precipitate + 3HBr [2].",
+      "answerConfidence": "high",
+      "topic": "Arenes & Phenols",
+      "questionNumber": 11
     },
     {
-      "id": "zimsec_o_chem_p2_012",
-      "questionNumber": 12,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
+      "id": "chem6031_2_12",
+      "questionText": "Carbonyl Chemistry & Mechanisms:\nOutline the nucleophilic addition mechanism of HCN (with KCN catalyst) to propanone (CH₃COCH₃) to form 2-hydroxy-2-methylpropanenitrile, explaining why racemic mixtures form from asymmetric ketones. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
+      "explanation": "Step 1: :CN⁻ attacks δ⁺ carbonyl C, pushing π-bond electrons onto O⁻ [2]. Step 2: Alkoxide O⁻ abstracts H⁺ from HCN regenerating CN⁻ catalyst [1]. Since carbonyl carbon is trigonal planar, CN⁻ attacks equally from above or below, giving a 50:50 optically inactive racemic mixture [2].",
+      "answerConfidence": "high",
+      "topic": "Carbonyls",
+      "questionNumber": 12
     },
     {
-      "id": "zimsec_o_chem_p2_013",
-      "questionNumber": 13,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
+      "id": "chem6031_2_13",
+      "questionText": "Carboxylic Acids, Acyl Chlorides & Esters:\nCompare the relative ease of hydrolysis of chloroethane, chlorobenzene, and ethanoyl chloride with cold water, giving structural explanations. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
+      "explanation": "Ethanoyl chloride (CH₃COCl) hydrolyses instantaneously/violently in cold water because carbonyl C is bonded to two strongly electronegative atoms (O and Cl), creating large δ⁺ for fast water attack [2]. Chloroethane reacts slowly on warming [1.5]. Chlorobenzene resists hydrolysis because C-Cl lone pair delocalises into the π-ring strengthening the bond [1.5].",
+      "answerConfidence": "high",
+      "topic": "Acyl Derivatives",
+      "questionNumber": 13
     },
     {
-      "id": "zimsec_o_chem_p2_014",
-      "questionNumber": 14,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
+      "id": "chem6031_2_14",
+      "questionText": "Amines, Diazonium Salts & Azo Dyes:\nDescribe the two-step synthesis of a brightly coloured azo dye starting from phenylamine (aniline), stating reagents, temperature control (<10°C), and coupling phenol in NaOH. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
+      "explanation": "Step 1 (Diazotisation): React phenylamine with NaNO₂ + dilute HCl kept below 5–10°C (using ice bath; above 10°C it decomposes to phenol + N₂) forming benzenediazonium chloride [C₆H₅N₂⁺Cl⁻] [3]. Step 2 (Coupling): Pour cold diazonium salt into alkaline phenol (dissolved in cold NaOH) to yield orange-red azo dye via -N=N- bridge [2].",
+      "answerConfidence": "high",
+      "topic": "Nitrogen Compounds",
+      "questionNumber": 14
     },
     {
-      "id": "zimsec_o_chem_p2_015",
-      "questionNumber": 15,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
+      "id": "chem6031_2_15",
+      "questionText": "Polymerisation & Amino Acids:\n(a) Explain what a zwitterion is using glycine (H₂NCH₂COOH) and explain why amino acids have high melting points and dissolve in water. [3 marks]\n(b) Distinguish addition polymerisation (polythene) from condensation polymerisation (nylon-6,6 / Terylene). [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
+      "explanation": "(a) Zwitterion is a neutral dipolar ion ⁺H₃NCH₂COO⁻ formed by internal proton transfer; strong ionic lattice attractions give high melting points and hydration in water [3].\n(b) Addition links unsaturated alkene monomers with 100% atom economy (no small byproduct); condensation links bifunctional monomers (diamine + dicarboxylic acid / diol) eliminating small molecules like H₂O or HCl [3].",
+      "answerConfidence": "high",
+      "topic": "Polymers & Amino Acids",
+      "questionNumber": 15
     },
     {
-      "id": "zimsec_o_chem_p2_016",
-      "questionNumber": 16,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
+      "id": "chem6031_2_16",
+      "questionText": "Entropy & Gibbs Free Energy (ΔG = ΔH - TΔS):\nFor CaCO₃(s) → CaO(s) + CO₂(g), ΔH° = +178 kJ/mol and ΔS° = +161 J/(K·mol).\n(a) Calculate ΔG° at 298 K and state whether decomposition is spontaneous. [3 marks]\n(b) Calculate the minimum temperature (in K and °C) above which thermal decomposition becomes spontaneous. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
+      "explanation": "(a) ΔG° = 178 - 298(0.161) = 178 - 47.98 = +130.0 kJ/mol (>0, non-spontaneous at 298 K) [3].\n(b) Spontaneous when ΔG < 0 -> T > ΔH/ΔS = 178 / 0.161 = 1,106 K (833°C) [2].",
+      "answerConfidence": "high",
+      "topic": "Thermodynamics",
+      "questionNumber": 16
     },
     {
-      "id": "zimsec_o_chem_p2_017",
-      "questionNumber": 17,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
+      "id": "chem6031_2_17",
+      "questionText": "Analytical Chemistry — Mass Spectrometry & ¹H NMR:\nState how high-resolution mass spectrometry and ¹H NMR (chemical shift δ and n+1 splitting rule) distinguish ethanol (CH₃CH₂OH) from methoxymethane (CH₃OCH₃). [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
+      "explanation": "Same molecular formula C₂H₆O -> identical M⁺ peak at m/z 46, but fragmentation shows m/z 31 (CH₂OH⁺) & 45 for ethanol vs m/z 15/45 for ether [2]. In ¹H NMR: methoxymethane gives just ONE singlet peak (6 equivalent H); ethanol gives THREE peaks — triplet (CH₃), quartet (CH₂), and broad singlet (OH) [3].",
+      "answerConfidence": "high",
+      "topic": "Spectroscopy",
+      "questionNumber": 17
     },
     {
-      "id": "zimsec_o_chem_p2_018",
-      "questionNumber": 18,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
+      "id": "chem6031_2_18",
+      "questionText": "Group 2 Thermal Stability:\nExplain why the thermal decomposition temperatures of Group 2 carbonates and nitrates increase down the group from Mg to Ba. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
+      "explanation": "Cation ionic radius increases down Group 2 (Mg²⁺ → Ba²⁺) while charge stays +2, so charge density and polarising power decrease [2]. Larger cations distort the electron cloud of the large CO₃²⁻/NO₃⁻ anion much less, requiring higher temperature to decompose the bond [2].",
+      "answerConfidence": "high",
+      "topic": "Group 2 Chemistry",
+      "questionNumber": 18
     },
     {
-      "id": "zimsec_o_chem_p2_019",
-      "questionNumber": 19,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
+      "id": "chem6031_2_19",
+      "questionText": "Redox Titration (KMnO₄ vs Fe²⁺):\n25.0 cm³ of acidified FeSO₄(aq) required 22.50 cm³ of 0.0200 mol/dm³ KMnO₄(aq) for oxidation.\n(a) Write the balanced ionic equation. [2 marks]\n(b) Calculate the concentration of Fe²⁺(aq) in mol/dm³. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
+      "explanation": "(a) MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O [2].\n(b) Moles MnO₄⁻ = (22.50/1000) × 0.0200 = 4.50×10⁻⁴ mol. Moles Fe²⁺ = 5 × 4.50×10⁻⁴ = 2.25×10⁻³ mol [2]. [Fe²⁺] = 2.25×10⁻³ / 0.0250 = 0.0900 mol/dm³ [1].",
+      "answerConfidence": "high",
+      "topic": "Redox Titrations",
+      "questionNumber": 19
     },
     {
-      "id": "zimsec_o_chem_p2_020",
-      "questionNumber": 20,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
+      "id": "chem6031_2_20",
+      "questionText": "Solubility Product (Ksp) & Common Ion Effect:\nLead(II) chloride has Ksp = 1.6 × 10⁻⁵ mol³·dm⁻⁹ at 25°C.\n(a) Calculate the molar solubility of PbCl₂ in pure water. [3 marks]\n(b) Explain qualitatively how adding NaCl(aq) affects PbCl₂ solubility. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_021",
-      "questionNumber": 21,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_022",
-      "questionNumber": 22,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_023",
-      "questionNumber": 23,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_024",
-      "questionNumber": 24,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_025",
-      "questionNumber": 25,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_026",
-      "questionNumber": 26,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_027",
-      "questionNumber": 27,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_028",
-      "questionNumber": 28,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_029",
-      "questionNumber": 29,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_030",
-      "questionNumber": 30,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_031",
-      "questionNumber": 31,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_032",
-      "questionNumber": 32,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_033",
-      "questionNumber": 33,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_034",
-      "questionNumber": 34,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_035",
-      "questionNumber": 35,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_036",
-      "questionNumber": 36,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_037",
-      "questionNumber": 37,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_038",
-      "questionNumber": 38,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_039",
-      "questionNumber": 39,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_040",
-      "questionNumber": 40,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_041",
-      "questionNumber": 41,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_042",
-      "questionNumber": 42,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_043",
-      "questionNumber": 43,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_044",
-      "questionNumber": 44,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_045",
-      "questionNumber": 45,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_046",
-      "questionNumber": 46,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_047",
-      "questionNumber": 47,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_048",
-      "questionNumber": 48,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_049",
-      "questionNumber": 49,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_050",
-      "questionNumber": 50,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_051",
-      "questionNumber": 51,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_052",
-      "questionNumber": 52,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_053",
-      "questionNumber": 53,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_054",
-      "questionNumber": 54,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_055",
-      "questionNumber": 55,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_056",
-      "questionNumber": 56,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_057",
-      "questionNumber": 57,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_058",
-      "questionNumber": 58,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_059",
-      "questionNumber": 59,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_060",
-      "questionNumber": 60,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_061",
-      "questionNumber": 61,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_062",
-      "questionNumber": 62,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_063",
-      "questionNumber": 63,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_064",
-      "questionNumber": 64,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_065",
-      "questionNumber": 65,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_066",
-      "questionNumber": 66,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_067",
-      "questionNumber": 67,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_068",
-      "questionNumber": 68,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_069",
-      "questionNumber": 69,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_070",
-      "questionNumber": 70,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_071",
-      "questionNumber": 71,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_072",
-      "questionNumber": 72,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_073",
-      "questionNumber": 73,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_074",
-      "questionNumber": 74,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_075",
-      "questionNumber": 75,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_076",
-      "questionNumber": 76,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_077",
-      "questionNumber": 77,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_078",
-      "questionNumber": 78,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_079",
-      "questionNumber": 79,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_080",
-      "questionNumber": 80,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_081",
-      "questionNumber": 81,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_082",
-      "questionNumber": 82,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_083",
-      "questionNumber": 83,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_084",
-      "questionNumber": 84,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_085",
-      "questionNumber": 85,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_086",
-      "questionNumber": 86,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_087",
-      "questionNumber": 87,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_088",
-      "questionNumber": 88,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_089",
-      "questionNumber": 89,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_090",
-      "questionNumber": 90,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_091",
-      "questionNumber": 91,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_092",
-      "questionNumber": 92,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_093",
-      "questionNumber": 93,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_094",
-      "questionNumber": 94,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_095",
-      "questionNumber": 95,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_096",
-      "questionNumber": 96,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_097",
-      "questionNumber": 97,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_098",
-      "questionNumber": 98,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_099",
-      "questionNumber": 99,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_100",
-      "questionNumber": 100,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_101",
-      "questionNumber": 101,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_102",
-      "questionNumber": 102,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_103",
-      "questionNumber": 103,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_104",
-      "questionNumber": 104,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_105",
-      "questionNumber": 105,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_106",
-      "questionNumber": 106,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_107",
-      "questionNumber": 107,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_108",
-      "questionNumber": 108,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_109",
-      "questionNumber": 109,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_110",
-      "questionNumber": 110,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_111",
-      "questionNumber": 111,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_112",
-      "questionNumber": 112,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_113",
-      "questionNumber": 113,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_114",
-      "questionNumber": 114,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_115",
-      "questionNumber": 115,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_116",
-      "questionNumber": 116,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_117",
-      "questionNumber": 117,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_118",
-      "questionNumber": 118,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_119",
-      "questionNumber": 119,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_120",
-      "questionNumber": 120,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_121",
-      "questionNumber": 121,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_122",
-      "questionNumber": 122,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_123",
-      "questionNumber": 123,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_124",
-      "questionNumber": 124,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_125",
-      "questionNumber": 125,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_126",
-      "questionNumber": 126,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_127",
-      "questionNumber": 127,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_128",
-      "questionNumber": 128,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_129",
-      "questionNumber": 129,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_130",
-      "questionNumber": 130,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_131",
-      "questionNumber": 131,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_132",
-      "questionNumber": 132,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_133",
-      "questionNumber": 133,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_134",
-      "questionNumber": 134,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_135",
-      "questionNumber": 135,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_136",
-      "questionNumber": 136,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_137",
-      "questionNumber": 137,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_138",
-      "questionNumber": 138,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_139",
-      "questionNumber": 139,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_140",
-      "questionNumber": 140,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_141",
-      "questionNumber": 141,
-      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_142",
-      "questionNumber": 142,
-      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_143",
-      "questionNumber": 143,
-      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_144",
-      "questionNumber": 144,
-      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_145",
-      "questionNumber": 145,
-      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_146",
-      "questionNumber": 146,
-      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_147",
-      "questionNumber": 147,
-      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_148",
-      "questionNumber": 148,
-      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_149",
-      "questionNumber": 149,
-      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_o_chem_p2_150",
-      "questionNumber": 150,
-      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
-      "answerConfidence": "high"
+      "explanation": "(a) PbCl₂(s) ⇌ Pb²⁺ + 2Cl⁻ -> Ksp = s(2s)² = 4s³ -> s³ = 4.0×10⁻⁶ -> s = 0.0159 mol/dm³ [3].\n(b) Extra Cl⁻ increases [Cl⁻] (common ion effect), shifting equilibrium left to precipitate PbCl₂ so solubility drops sharply [2].",
+      "answerConfidence": "high",
+      "topic": "Solubility Equilibria",
+      "questionNumber": 20
     }
   ]
 }

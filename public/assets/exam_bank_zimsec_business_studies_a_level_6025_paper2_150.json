@@ -1,1516 +1,195 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_business_studies_a_level_6025_paper2_150",
+    "file": "exam_bank_zimsec_business_studies_a_level_6025_paper2_150.json",
     "subject": "Business Studies",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "6025/02",
-    "paperName": "Paper 2 – Structured Questions",
-    "paperType": "structured",
+    "paperName": "Business Studies A-Level Paper 2 — Data Response & Structured Essays",
+    "paperType": "Case Study & Essays",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Business_Studies_A_Level_6025_Paper2_150.json",
-    "curriculum": "ZIMSEC Advanced Level syllabus/specimen-based practice",
-    "copyrightNote": "Original practice questions synthesized from syllabus structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC Business Studies 6025/1/2 syllabus/specimen and examination structure."
+    "totalQuestions": 20
   },
   "questions": [
     {
-      "id": "Q001",
+      "id": "bs6025_2_q1",
       "questionNumber": 1,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Case Context: Chinhoyi Agro-Processing (Pvt) Ltd plans to expand into bottled fruit juices. Option A buys local bottling lines ($200,000; payback 3.2 yrs; ARR 18%). Option B outsources bottling to a Harare contractor ($40,000 setup; lower fixed risk, higher variable unit cost). Evaluate which option Chinhoyi Agro-Processing should choose. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
+      "explanation": "### Mark Scheme [20 marks: Knowledge 4, Application 4, Analysis 6, Evaluation 6]\n- **Knowledge/Application:** Define outsourcing vs in-house capital investment; compare Option A ($200k capex, high ARR 18%) vs Option B (low fixed outlay $40k, lower capital strain) [8 marks].\n- **Analysis:** Option A provides full quality/schedule control and higher margins at high sales volumes; Option B lowers break-even and shields liquidity during initial market uncertainty [6 marks].\n- **Evaluation:** Recommend Option B initially while testing juice demand in Mashonaland West, then shift to Option A once sustained volume justifies capital commitment [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q002",
+      "id": "bs6025_2_q2",
       "questionNumber": 2,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the extent to which financial rewards alone are sufficient to motivate skilled Zimbabwean manufacturing engineers, making reference to Maslow, Taylor, and Herzberg. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
+      "explanation": "### Mark Scheme [25 marks]\n- **Financial case (Taylor):** High salaries, performance bonuses, and medical/school-fee allowances meet critical physiological & security needs (Maslow) in a cost-of-living environment [8 marks].\n- **Non-financial case (Herzberg & Maslow):** Money is primarily a hygiene factor; engineers also require job enrichment, autonomy, R&D recognition, and career growth (self-actualisation) to prevent high turnover [10 marks].\n- **Evaluation:** Competitive pay is necessary to attract and retain talent, but non-financial motivators drive sustained innovation and commitment [7 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q003",
+      "id": "bs6025_2_q3",
       "questionNumber": 3,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "A national supermarket chain reports Current Ratio falling from 1.9:1 to 1.1:1, Quick Ratio 0.35:1, and Trade Payables Days rising from 38 to 72 days while Sales rose 28%. Analyse the liquidity position and recommend four corrective strategies. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
+      "explanation": "### Mark Scheme [20 marks]\n- **Analysis:** Classic symptoms of overtrading and cash squeeze—quick ratio (0.35:1) is dangerously below 1:1, showing reliance on inventory sales to pay overdue suppliers (72 days risk supply cut-off) [10 marks].\n- **Recommendations:** (1) Convert overdraft to longer-term loan or fresh equity; (2) Tighten inventory control / clear slow stock; (3) Factor or tighten debtor collection; (4) Moderate store expansion pace until cash flow stabilises [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q004",
+      "id": "bs6025_2_q4",
       "questionNumber": 4,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Explain the benefits and risks of switching a Bulawayo clothing factory from Batch Production to Flow Production. Evaluate whether market demand supports this change. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
+      "explanation": "### Mark Scheme [20 marks]\n- **Benefits of Flow:** Lower unit labour cost via automation/economies of scale, uniform quality, continuous 24/7 output [6 marks].\n- **Risks:** High initial capital outlay, inflexible product range (harder to switch styles), employee boredom/alienation, costly total line stoppages [8 marks].\n- **Evaluation:** Justified ONLY for standardised bulk workwear/school uniforms, NOT fast-changing fashion garments where batch remains superior [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q005",
+      "id": "bs6025_2_q5",
       "questionNumber": 5,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the usefulness of Break-Even Analysis for a newly established Harare bakery facing fluctuating flour and electricity prices. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
+      "explanation": "### Mark Scheme [20 marks]\n- **Usefulness:** Quantifies minimum output to avoid loss, supports bank loan applications, enables \"what-if\" sensitivity testing on price/cost changes, calculates Margin of Safety [10 marks].\n- **Limitations:** Assumes constant selling price and linear variable costs (fails with bulk discounts or overtime); ignores multi-product mix complexity; input price volatility (flour/tariffs) quickly invalidates static lines [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q006",
+      "id": "bs6025_2_q6",
       "questionNumber": 6,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Distinguish between Market Orientation and Product Orientation, and evaluate which approach is more appropriate for an emerging Zimbabwean fintech payments app. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
+      "explanation": "### Mark Scheme [20 marks]\n- **Concepts:** Market orientation begins with customer pain points (market research → product); Product orientation focuses on internal engineering capability first [6 marks].\n- **Application/Analysis:** Fintech apps must solve real transaction barriers (low data usage, USSD fallback, ZiG/USD interoperability, merchant trust) — making Market Orientation vital for user adoption [8 marks].\n- **Evaluation:** Must blend Market Orientation (solving user needs) with continuous R&D innovation in cybersecurity [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q007",
+      "id": "bs6025_2_q7",
       "questionNumber": 7,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Analyse how a large agribusiness can manage resistance to organisational change using Kotter and Schlesinger's six strategies when introducing automated irrigation software. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
+      "explanation": "### Mark Scheme [20 marks]\n- **Sources of Resistance:** Fear of job loss, lack of digital skills, misunderstanding purpose, low tolerance for change [6 marks].\n- **Strategies:** Education & communication, Participation & involvement, Facilitation & training support, Negotiation/incentives, Co-optation, and last-resort Explicit coercion [10 marks].\n- **Evaluation:** Communication + hands-on training build sustainable adoption far better than coercion [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q008",
+      "id": "acc6025_2_q8",
       "questionNumber": 8,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the strategic value of SWOT and PESTLE analysis for a Zimbabwean solar-energy distributor planning expansion into Zambia and Botswana. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
+      "explanation": "### Mark Scheme [20 marks]\n- **PESTLE:** Assesses external cross-border tariffs, SADC customs rules, exchange rate convertibility, grid deficit demand, and licensing laws [8 marks].\n- **SWOT:** Links internal Strengths/Weaknesses (installation expertise, capital limits) with external Opportunities/Threats [6 marks].\n- **Evaluation:** Both are essential structured planning frameworks, though qualitative and subjective unless backed by hard market research and financial appraisals [6 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q009",
+      "id": "bs6025_2_q9",
       "questionNumber": 9,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "With reference to Porter's Five Forces, evaluate how an independent private college in Gweru can defend profitability in a crowded education market. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
+      "explanation": "### Mark Scheme [20 marks]\n- **Five Forces Applied:** High rivalry among colleges, low entry barriers for small tuition centres, high buyer (parent) price sensitivity, online learning substitutes [10 marks].\n- **Strategic Response (Generic Strategies):** Differentiation via high ZIMSEC/Cambridge pass rates, modern science labs, and pastoral care rather than destructive fee wars [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q010",
+      "id": "bs6025_2_q10",
       "questionNumber": 10,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Assess the advantages and disadvantages of Decentralisation versus Centralisation for a multi-branch hardware retailer operating in all ten provinces of Zimbabwe. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
+      "explanation": "### Mark Scheme [20 marks]\n- **Decentralisation Benefits:** Faster local pricing/stock response to regional building booms, higher branch manager motivation, lower head-office overload [8 marks].\n- **Centralisation Benefits:** Bulk national purchasing power, unified brand/ERP controls, consistent credit policy preventing bad debts [8 marks].\n- **Evaluation:** Hybrid \"federal\" structure—centralise procurement & finance controls, decentralise local customer service & promotions [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q011",
+      "id": "bs6025_2_q11",
       "questionNumber": 11,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving market research. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Explain Total Quality Management (TQM) and Kaizen, and evaluate the barriers to implementing Kaizen successfully in a traditional manufacturing firm. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Market research"
+      "explanation": "### Mark Scheme [20 marks]\n- **TQM & Kaizen:** TQM embeds zero-defect responsibility across all staff and suppliers (\"internal customers\"); Kaizen pursues continuous small incremental improvements from shop-floor workers [8 marks].\n- **Barriers:** Autocratic management culture refusing bottom-up suggestions, upfront training cost, employee cynicism without gain-sharing [8 marks].\n- **Evaluation:** Requires genuine cultural transformation led from the Boardroom, not just posters [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q012",
+      "id": "bs6025_2_q12",
       "questionNumber": 12,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving product and pricing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Discuss the impact of an Integrated Marketing Mix (4Ps/7Ps) when launching a luxury eco-tourism lodge near Victoria Falls versus a budget student hostel in Harare. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Product and pricing"
+      "explanation": "### Mark Scheme [20 marks]\n- **Eco-Lodge (High-end Services 7Ps):** Value-based premium pricing, international travel-agent/direct digital channels, bespoke butler People & eco-luxury Physical Evidence [8 marks].\n- **Budget Hostel:** Penetration/economy pricing, proximity & university campus noticeboards/social media, clean functional Processes [8 marks].\n- **Evaluation:** Consistency across all 7Ps prevents mixed brand positioning (e.g., luxury prices with poor service destroys trust) [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q013",
+      "id": "bs6025_2_q13",
       "questionNumber": 13,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving promotion. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "A company needs $500,000 for factory automation. Compare raising funds via a Rights Issue of Ordinary Shares versus a 12% Long-Term Bank Loan. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Promotion"
+      "explanation": "### Mark Scheme [20 marks]\n- **Rights Issue:** Permanent equity, zero mandatory fixed interest, lowers gearing ratio; drawbacks are prospectus/issue costs, potential share price dilution if underpriced, and slower execution [9 marks].\n- **12% Loan:** Interest tax-deductible, avoids ownership dilution, faster arrangement; drawbacks are $60k/yr fixed cash drain regardless of profit, collateral pledge, higher gearing risk [9 marks].\n- **Evaluation:** Depends on existing gearing, interest cover, and cash flow predictability [2 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q014",
+      "id": "bs6025_2_q14",
       "questionNumber": 14,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving distribution. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the role of Human Resource Management (HRM) hard versus soft approaches in reducing high labour turnover and improving productivity. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Distribution"
+      "explanation": "### Mark Scheme [20 marks]\n- **Hard HRM:** Treats staff as a quantifiable cost resource (headcount cuts, strict KPIs, zero-hour flexibility)—lowers short-term payroll cost but fuels stress and attrition [8 marks].\n- **Soft HRM:** Views employees as core competitive assets (training, empowerment, career paths, dialogue)—lifts retention, loyalty, and productivity [8 marks].\n- **Evaluation:** Soft HRM builds durable advantage for knowledge/skilled sectors; cost discipline remains necessary during recessions [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q015",
+      "id": "bs6025_2_q15",
       "questionNumber": 15,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving production. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Explain why multinational mining corporations increasingly embed \"Triple Bottom Line\" (People, Planet, Profit) reporting alongside statutory financial statements. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Production"
+      "explanation": "### Mark Scheme [20 marks]\n- **Dimensions:** Social impact (community clinics/local hiring — People), Environmental rehabilitation & emissions (Planet), Financial return (Profit) [8 marks].\n- **Strategic Drivers:** Secures social licence to operate, attracts ESG institutional investors, meets EMA compliance, mitigates boycott/reputational risks [8 marks].\n- **Evaluation:** Credible only when audited externally rather than used as \"greenwashing\" PR [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q016",
+      "id": "bs6025_2_q16",
       "questionNumber": 16,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving quality management. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the usefulness and limitations of Ratio Analysis (Profitability, Liquidity, Efficiency, Gearing) when deciding whether to buy shares in a listed company. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Quality management"
+      "explanation": "### Mark Scheme [20 marks]\n- **Usefulness:** Compares ROCE, EPS, P/E, Gearing, and Current Ratio across years and sector rivals, normalising company size differences [9 marks].\n- **Limitations:** Historical backwards-looking data, inflation distortions on asset values, window dressing at year-end, differing accounting policies, ignores non-financial factors (management quality, patent expiry) [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q017",
+      "id": "bs6025_2_q17",
       "questionNumber": 17,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving inventory control. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Assess the benefits and risks of forming a Strategic Alliance or Joint Venture versus a full Acquisition when entering a foreign SADC market. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Inventory control"
+      "explanation": "### Mark Scheme [20 marks]\n- **Joint Venture Benefits:** Shared capital risk, instant local regulatory/market knowledge, faster political acceptance [8 marks].\n- **JV Risks vs Acquisition:** Culture clashes, profit sharing, loss of intellectual property, slow joint decision-making vs complete unilateral control under Acquisition [8 marks].\n- **Evaluation:** JV suits heavily regulated or unfamiliar jurisdictions where local distribution networks are decisive [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q018",
+      "id": "bs6025_2_q18",
       "questionNumber": 18,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Using Critical Path Analysis (CPA) concepts, explain how operations managers should respond when a non-critical activity with 4 days of float falls behind schedule by 2 days, versus when a critical activity falls behind by 2 days. [15 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Finance"
+      "explanation": "### Mark Scheme [15 marks]\n- **Non-critical activity (+4 days float, delayed 2 days):** Absorbed safely within total float (2 days float remain); project end date unaffected. Monitor closely without costly overtime [7 marks].\n- **Critical activity (0 float, delayed 2 days):** Whole project completion slips by 2 days unless manager crashes/expedites downstream critical activities via overtime, extra resources, or parallel fast-tracking [8 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q019",
+      "id": "bs6025_2_q19",
       "questionNumber": 19,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving sources of finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Explain the Product Life Cycle (PLC) and evaluate how marketing mix strategies must evolve between the Growth, Maturity, and Decline stages. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Sources of finance"
+      "explanation": "### Mark Scheme [20 marks]\n- **PLC Stages:** Introduction → Growth → Maturity → Decline [4 marks].\n- **Strategy Shifts:** Growth focuses on wide distribution & brand loyalty; Maturity uses extension strategies (repackaging, new uses, promotional pricing) to defend share; Decline harvests cash, cuts SKUs, or exits [12 marks].\n- **Evaluation:** PLC shapes vary widely; treating it as a rigid predictor risks prematurely killing loyal niche products [4 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q020",
+      "id": "bs6025_2_q20",
       "questionNumber": 20,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving financial statements. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
+      "questionText": "Evaluate the role of Trade Unions and Collective Bargaining in promoting constructive industrial relations in Zimbabwean enterprises. [20 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q021",
-      "questionNumber": 21,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ratio analysis. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q022",
-      "questionNumber": 22,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business location. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q023",
-      "questionNumber": 23,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving growth. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q024",
-      "questionNumber": 24,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving globalisation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q025",
-      "questionNumber": 25,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving government and business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q026",
-      "questionNumber": 26,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ethics and sustainability. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q027",
-      "questionNumber": 27,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ict in business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q028",
-      "questionNumber": 28,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving strategic planning. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q029",
-      "questionNumber": 29,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q030",
-      "questionNumber": 30,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q031",
-      "questionNumber": 31,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q032",
-      "questionNumber": 32,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q033",
-      "questionNumber": 33,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q034",
-      "questionNumber": 34,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q035",
-      "questionNumber": 35,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q036",
-      "questionNumber": 36,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q037",
-      "questionNumber": 37,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q038",
-      "questionNumber": 38,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q039",
-      "questionNumber": 39,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving market research. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q040",
-      "questionNumber": 40,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving product and pricing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q041",
-      "questionNumber": 41,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving promotion. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q042",
-      "questionNumber": 42,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving distribution. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q043",
-      "questionNumber": 43,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving production. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Production"
-    },
-    {
-      "id": "Q044",
-      "questionNumber": 44,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving quality management. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q045",
-      "questionNumber": 45,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving inventory control. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q046",
-      "questionNumber": 46,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q047",
-      "questionNumber": 47,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving sources of finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q048",
-      "questionNumber": 48,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving financial statements. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q049",
-      "questionNumber": 49,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ratio analysis. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q050",
-      "questionNumber": 50,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business location. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q051",
-      "questionNumber": 51,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving growth. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q052",
-      "questionNumber": 52,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving globalisation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q053",
-      "questionNumber": 53,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving government and business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q054",
-      "questionNumber": 54,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ethics and sustainability. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q055",
-      "questionNumber": 55,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ict in business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q056",
-      "questionNumber": 56,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving strategic planning. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q057",
-      "questionNumber": 57,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q058",
-      "questionNumber": 58,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q059",
-      "questionNumber": 59,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q060",
-      "questionNumber": 60,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q061",
-      "questionNumber": 61,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q062",
-      "questionNumber": 62,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q063",
-      "questionNumber": 63,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q064",
-      "questionNumber": 64,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q065",
-      "questionNumber": 65,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q066",
-      "questionNumber": 66,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q067",
-      "questionNumber": 67,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving market research. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q068",
-      "questionNumber": 68,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving product and pricing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q069",
-      "questionNumber": 69,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving promotion. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q070",
-      "questionNumber": 70,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving distribution. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q071",
-      "questionNumber": 71,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving production. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Production"
-    },
-    {
-      "id": "Q072",
-      "questionNumber": 72,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving quality management. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q073",
-      "questionNumber": 73,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving inventory control. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q074",
-      "questionNumber": 74,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q075",
-      "questionNumber": 75,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving sources of finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q076",
-      "questionNumber": 76,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving financial statements. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q077",
-      "questionNumber": 77,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ratio analysis. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q078",
-      "questionNumber": 78,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business location. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q079",
-      "questionNumber": 79,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving growth. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q080",
-      "questionNumber": 80,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving globalisation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q081",
-      "questionNumber": 81,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving government and business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q082",
-      "questionNumber": 82,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ethics and sustainability. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q083",
-      "questionNumber": 83,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ict in business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q084",
-      "questionNumber": 84,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving strategic planning. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q085",
-      "questionNumber": 85,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q086",
-      "questionNumber": 86,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q087",
-      "questionNumber": 87,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q088",
-      "questionNumber": 88,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q089",
-      "questionNumber": 89,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q090",
-      "questionNumber": 90,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q091",
-      "questionNumber": 91,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q092",
-      "questionNumber": 92,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q093",
-      "questionNumber": 93,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q094",
-      "questionNumber": 94,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q095",
-      "questionNumber": 95,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving market research. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q096",
-      "questionNumber": 96,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving product and pricing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q097",
-      "questionNumber": 97,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving promotion. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q098",
-      "questionNumber": 98,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving distribution. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q099",
-      "questionNumber": 99,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving production. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Production"
-    },
-    {
-      "id": "Q100",
-      "questionNumber": 100,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving quality management. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q101",
-      "questionNumber": 101,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving inventory control. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q102",
-      "questionNumber": 102,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q103",
-      "questionNumber": 103,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving sources of finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q104",
-      "questionNumber": 104,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving financial statements. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q105",
-      "questionNumber": 105,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ratio analysis. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q106",
-      "questionNumber": 106,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business location. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q107",
-      "questionNumber": 107,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving growth. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q108",
-      "questionNumber": 108,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving globalisation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q109",
-      "questionNumber": 109,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving government and business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q110",
-      "questionNumber": 110,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ethics and sustainability. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q111",
-      "questionNumber": 111,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ict in business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q112",
-      "questionNumber": 112,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving strategic planning. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q113",
-      "questionNumber": 113,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q114",
-      "questionNumber": 114,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q115",
-      "questionNumber": 115,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q116",
-      "questionNumber": 116,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q117",
-      "questionNumber": 117,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q118",
-      "questionNumber": 118,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q119",
-      "questionNumber": 119,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q120",
-      "questionNumber": 120,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q121",
-      "questionNumber": 121,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q122",
-      "questionNumber": 122,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
-    },
-    {
-      "id": "Q123",
-      "questionNumber": 123,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving market research. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Market research"
-    },
-    {
-      "id": "Q124",
-      "questionNumber": 124,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving product and pricing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Product and pricing"
-    },
-    {
-      "id": "Q125",
-      "questionNumber": 125,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving promotion. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Promotion"
-    },
-    {
-      "id": "Q126",
-      "questionNumber": 126,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving distribution. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Distribution"
-    },
-    {
-      "id": "Q127",
-      "questionNumber": 127,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving production. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Production"
-    },
-    {
-      "id": "Q128",
-      "questionNumber": 128,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving quality management. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Quality management"
-    },
-    {
-      "id": "Q129",
-      "questionNumber": 129,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving inventory control. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Inventory control"
-    },
-    {
-      "id": "Q130",
-      "questionNumber": 130,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Finance"
-    },
-    {
-      "id": "Q131",
-      "questionNumber": 131,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving sources of finance. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Sources of finance"
-    },
-    {
-      "id": "Q132",
-      "questionNumber": 132,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving financial statements. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Financial statements"
-    },
-    {
-      "id": "Q133",
-      "questionNumber": 133,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ratio analysis. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ratio analysis"
-    },
-    {
-      "id": "Q134",
-      "questionNumber": 134,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business location. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business location"
-    },
-    {
-      "id": "Q135",
-      "questionNumber": 135,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving growth. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Growth"
-    },
-    {
-      "id": "Q136",
-      "questionNumber": 136,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving globalisation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Globalisation"
-    },
-    {
-      "id": "Q137",
-      "questionNumber": 137,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving government and business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Government and business"
-    },
-    {
-      "id": "Q138",
-      "questionNumber": 138,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ethics and sustainability. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Ethics and sustainability"
-    },
-    {
-      "id": "Q139",
-      "questionNumber": 139,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving ict in business. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "ICT in business"
-    },
-    {
-      "id": "Q140",
-      "questionNumber": 140,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving strategic planning. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Strategic planning"
-    },
-    {
-      "id": "Q141",
-      "questionNumber": 141,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business objectives. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business objectives"
-    },
-    {
-      "id": "Q142",
-      "questionNumber": 142,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving entrepreneurship. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Entrepreneurship"
-    },
-    {
-      "id": "Q143",
-      "questionNumber": 143,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business ownership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business ownership"
-    },
-    {
-      "id": "Q144",
-      "questionNumber": 144,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving stakeholders. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Stakeholders"
-    },
-    {
-      "id": "Q145",
-      "questionNumber": 145,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving business environment. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Business environment"
-    },
-    {
-      "id": "Q146",
-      "questionNumber": 146,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving management and leadership. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Management and leadership"
-    },
-    {
-      "id": "Q147",
-      "questionNumber": 147,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving human resources. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Human resources"
-    },
-    {
-      "id": "Q148",
-      "questionNumber": 148,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving motivation. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Motivation"
-    },
-    {
-      "id": "Q149",
-      "questionNumber": 149,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving communication. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Communication"
-    },
-    {
-      "id": "Q150",
-      "questionNumber": 150,
-      "questionText": "Case study: A Zimbabwean business is considering a major decision involving marketing. Explain the issue, identify relevant internal and external factors, and evaluate two possible courses of action. Conclude with a justified recommendation for the business.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A strong response should define the issue, apply relevant business concepts to the case, analyse benefits and costs of alternatives, consider stakeholders and justify a conclusion.",
-      "answerConfidence": "unverified",
-      "topic": "Marketing"
+      "explanation": "### Mark Scheme [20 marks]\n- **Benefits:** Unified employee voice, fair transparent NEC wage/safety agreements, structured dispute resolution preventing wildcat strikes [8 marks].\n- **Drawbacks:** Potential upward wage pressure eroding export competitiveness, strike disruptions, slower restructuring flexibility [8 marks].\n- **Evaluation:** Cooperative joint works-council bargaining aligns productivity gains with fair living wages [4 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

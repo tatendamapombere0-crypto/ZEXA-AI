@@ -1,1516 +1,240 @@
 {
   "paperInfo": {
+    "id": "exam_bank_zimsec_divinity_a_level_9154_paper1_150",
+    "file": "exam_bank_zimsec_divinity_a_level_9154_paper1_150.json",
     "subject": "Divinity",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "9154/01",
-    "paperName": "Paper 1 – Prophets of the Old Testament",
-    "paperType": "essay",
+    "paperName": "Divinity A-Level Paper 1 — Prophets of the Old Testament",
+    "paperType": "Structured Essays",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Divinity_A_Level_9154_Paper1_150.json",
-    "curriculum": "ZIMSEC Advanced Level syllabus/specimen-based practice",
-    "copyrightNote": "Original practice questions synthesized from syllabus structure and recurring examination themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC Advanced Level Divinity 9154 syllabus structure: Paper 1 focuses on the Prophets of the Old Testament."
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "Q001",
+      "id": "div9154_1_q1",
       "questionNumber": 1,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare the phenomena of ecstatic prophecy (e.g., 1 Samuel 10 & 19) with classical eighth-century literary prophecy (Amos, Hosea, Isaiah). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
+      "explanation": "### Mark Scheme [25 marks]\n- **Ecstatic Groups (Nebiim):** Band-based, music-induced frenzy, associated with royal shrines & military morale, little emphasis on social ethics [11 marks].\n- **Classical Prophets:** Individual divine calls (*Amos 7, Isaiah 6*), direct \"Thus says the Lord\" moral indictment of injustice/idolatry, written oracle preservation [11 marks].\n- **Continuity/Synthesis:** Traces of visionary ecstasy and symbolic acts persist in classical prophets (Jeremiah, Ezekiel) [3 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q002",
+      "id": "div9154_1_q2",
       "questionNumber": 2,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the role played by Samuel in Israel's transition from the period of the Judges to the Monarchy (1 Samuel 1–15). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
+      "explanation": "### Mark Scheme [25 marks]\n- **Bridge Figure:** Last circuit judge & prophet-priest uniting tribal confederacy at Mizpah/Ramah [7 marks].\n- **Ambiguity over Kingship:** Anti-monarchical warnings (1 Sam 8) vs pro-monarchical divine anointing of Saul and later David, insisting kings remain subordinate to covenant Torah [18 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q003",
+      "id": "div9154_1_q3",
       "questionNumber": 3,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine the religious and socio-political significance of Elijah's confrontation with Ahab and Jezebel on Mount Carmel (1 Kings 18) and over Naboth's Vineyard (1 Kings 21). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
+      "explanation": "### Mark Scheme [25 marks]\n- **Mount Carmel:** Combats Phoenician Baalism syncretism promoted by Jezebel—fire from heaven proves Yahweh sovereign over rain, fire, and Israel's exclusivity [13 marks].\n- **Naboth's Vineyard:** Defends covenant tribal inheritance rights (*nahalah*) against royal tyranny—proving Israelite kings are subject to Yahweh's moral law, unlike absolutist Canaanite monarchs [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q004",
+      "id": "div9154_1_q4",
       "questionNumber": 4,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the significance of Elisha's miracles and his political involvement in Northern Israel and Aram (2 Kings 2–13). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Miracles:** Pastoral compassion for widows/sons of prophets (oil jar, Shunammite child, poisoned stew) and healing foreigner Naaman showing Yahweh's universal power [12 marks].\n- **Politics:** Anoints Jehu to purge the House of Omri and counsels kings against Aramean raids (\"King-maker\" prophet) [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q005",
+      "id": "div9154_1_q5",
       "questionNumber": 5,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Explain Amos' teaching on Social Justice and Covenant Election (Amos 2:6–8; 3:1–2; 5:21–24), and assess why Amaziah rejected him at Bethel (Amos 7:10–17). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Social Justice:** Condemns selling the needy for silver/sandals, bribery at city gates, dishonest weights, luxurious \"cows of Bashan\", and hollow cultic sacrifices divorced from righteousness (\"Let justice roll down like waters\") [14 marks].\n- **Bethel Confrontation:** Election brings heavier accountability (\"You only have I known... therefore I will punish you\"). Amaziah treats Amos as a subversive Judean professional prophet threatening state sanctuary [11 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q006",
+      "id": "div9154_1_q6",
       "questionNumber": 6,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "\"Amos is a prophet of unrelenting doom without any authentic message of hope.\" How far do you agree with reference to Amos 9:11–15? [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
+      "explanation": "### Mark Scheme [25 marks]\n- **Evidence for Unrelenting Doom:** Five visions ending in \"The end has come upon my people\" (8:2), Bethel altar destruction, Day of the Lord as darkness not light (5:18) [13 marks].\n- **Case for Authentic Hope:** Calls to \"Seek the Lord and live\" (5:4–6), \"perhaps the Lord will be gracious to the remnant\" (5:15), and scholarly debate on whether post-exilic Judean editors appended 9:11–15 (\"Booth of David\") [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q007",
+      "id": "div9154_1_q7",
       "questionNumber": 7,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine how Hosea's domestic experience with Gomer symbolises Israel's covenant infidelity, divine *hesed* (steadfast love), and ultimate restoration. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Domestic Symbolism (Ch 1–3):** Gomer's unfaithfulness & prophetic child names (Jezreel, Lo-Ruhamah, Lo-Ammi) dramatise Israel's political alliances and Baal fertility cult apostasy [12 marks].\n- **Redemptive Hesed (Ch 2, 11, 14):** Hosea's costly repurchase of Gomer reveals Yahweh's agonising paternal love (\"How can I give you up, O Ephraim?\" 11:8) seeking knowledge of God (*da'at Elohim*) over empty sacrifice [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q008",
+      "id": "div9154_1_q8",
       "questionNumber": 8,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse the significance of Isaiah's Temple Call Vision (Isaiah 6) for his understanding of God's holiness, Israel's obduracy, and the Remnant theology. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
+      "explanation": "### Mark Scheme [25 marks]\n- **Holiness (*Qadosh*):** Seraphim hymn reveals God's moral majesty & Isaiah's cleansed lips (*\"Woe is me\"* → *\"Here am I, send me\"*) [10 marks].\n- **Hardening & Remnant:** Paradoxical commission that dull hearts resist repentance until judgment leaves only a felled stump—yet \"the holy seed is its stump\" (*Shear-Jashub*: \"A remnant shall return\") [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q009",
+      "id": "div9154_1_q9",
       "questionNumber": 9,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the significance of Isaiah's Immanuel prophecy (Isaiah 7:10–17) in the historical context of the Syro-Ephraimite Crisis (734 BCE). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
+      "explanation": "### Mark Scheme [25 marks]\n- **Historical Context:** Pekah of Israel and Rezin of Damascus threaten Jerusalem to force Ahaz into an anti-Assyrian coalition; Ahaz plans to appeal to Tiglath-Pileser III instead of trusting Yahweh [11 marks].\n- **Sign of Immanuel:** \"With us is God\" serves both as urgent warning against faithless foreign alliances (Assyria will devastate Judah like a razor) and promise that David's line survives before the child knows good from evil [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q010",
+      "id": "div9154_1_q10",
       "questionNumber": 10,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Contrast Micah's condemnation of corrupt rulers, false prophets, and cultic ritualism with his vision of true religion in Micah 6:6–8. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
+      "explanation": "### Mark Scheme [25 marks]\n- **Indictments:** Corrupt officials skinning the poor (3:2–3), land seizures (2:1–2), prophets who cry \"Peace\" when paid [12 marks].\n- **Micah 6:8 Ethics:** Rejects extravagant burnt offerings (\"thousands of rams / firstborn\") in favour of covenant triad: **Do justice (*mishpat*), love mercy/steadfast love (*hesed*), and walk humbly (*tsana*) with your God** [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q011",
+      "id": "div9154_1_q11",
       "questionNumber": 11,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the reasons why Jeremiah's Temple Sermon (Jeremiah 7 & 26) provoked near-fatal hostility from Jerusalem's religious and political establishment. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
+      "explanation": "### Mark Scheme [25 marks]\n- **Challenge to Zion Inviolability Dogma:** Popular belief since 701 BCE held that Solomon's Temple guaranteed unconditional immunity (\"The temple of the Lord!\") [11 marks].\n- **Conditional Covenant & Shiloh Precedent:** Jeremiah calls the Temple a \"den of robbers\" harbouring oppression and warns Yahweh will destroy Jerusalem like Shiloh unless Judah genuinely reforms society; contrast Baruch/princes defending him via Micah precedent [14 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q012",
+      "id": "div9154_1_q12",
       "questionNumber": 12,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse Jeremiah's \"Confessions\" (Jeremiah 11–20) and explain what they reveal about the psychological cost of true prophetic vocation. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
+      "explanation": "### Mark Scheme [25 marks]\n- **Content of Laments:** Isolation (forbidden marriage/mourning ch 16), persecution by family in Anathoth, stocks under Pashhur (20:1–6), crying \"O Lord, you have deceived me\" (20:7) [13 marks].\n- **Theological Insight:** Prophetic authority rests not on human bravado or popularity, but on inescapable inner compulsion (\"fire shut up in my bones\") and raw honest dialogue with God [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q013",
+      "id": "div9154_1_q13",
       "questionNumber": 13,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Assess the revolutionary elements of Jeremiah's New Covenant prophecy (Jeremiah 31:31–34) compared with the Mosaic Sinai Covenant. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
+      "explanation": "### Mark Scheme [25 marks]\n- **Failure of Old Covenant:** Written on stone tablets, repeatedly broken despite prophetic warnings, leading to 587 BCE exile [9 marks].\n- **New Covenant Breakthrough:** Law written internally on the heart, unmediated personal knowledge of God across all ages (\"No longer teach neighbour\"), unconditional divine forgiveness of sins, yet retaining continuity with Yahweh's Torah [16 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q014",
+      "id": "div9154_1_q14",
       "questionNumber": 14,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine Ezekiel's teaching on Individual Moral Responsibility (Ezekiel 18) and the Watchman (Ezekiel 3 & 33) among the Babylonian exiles. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
+      "explanation": "### Mark Scheme [25 marks]\n- **Refuting \"Sour Grapes\" Fatalism:** Exiles blamed ancestral sins for disaster; Ezekiel insists \"the soul that sins shall die\"—each generation and individual may repent and live righteously [13 marks].\n- **Watchman Accountability:** Prophet is personally liable before God to warn sinners clearly; once warned, responsibility shifts entirely to the listener [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q015",
+      "id": "div9154_1_q15",
       "questionNumber": 15,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Explain the vision of the Valley of Dry Bones (Ezekiel 37:1–14) and evaluate its theological message of national resurrection and universal divine sovereignty. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
+      "explanation": "### Mark Scheme [25 marks]\n- **Exilic Despair:** \"Our bones are dried up, our hope is lost\" after Jerusalem's fall [7 marks].\n- **Theology of Restoration:** Prophetic word + divine Spirit (*Ruach*) breathe physical and spiritual life into dead Israel—not by Israel's merit (\"Not for your sake\" 36:22) but to vindicate Yahweh's holy name among the nations [18 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q016",
+      "id": "div9154_1_q16",
       "questionNumber": 16,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the identity and theological mission of the \"Suffering Servant\" in Deutero-Isaiah (Isaiah 42, 49, 50, 52:13–53:12). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
+      "explanation": "### Mark Scheme [25 marks]\n- **Four Servant Songs:** Gentle mission establishing justice (42), light to the Gentiles (49), obedient endurance (50), vicarious atonement wounded for others' transgressions (53) [13 marks].\n- **Identity Debate:** Collective faithful Israel/remnant, an ideal future Davidic messiah, the anonymous exilic prophet himself, or Christological NT fulfilment [12 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q017",
+      "id": "div9154_1_q17",
       "questionNumber": 17,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss how prophets used Symbolic Actions (e.g., Isaiah going barefoot, Jeremiah's linen loincloth/wooden yoke, Ezekiel's siege brick) to communicate urgent divine messages. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
+      "explanation": "### Mark Scheme [25 marks]\n- **Purpose:** Not mere visual theatre; in Hebrew thought (*dabar* = word-deed), prophetic acts set God's judgment or deliverance irrevocably in motion [10 marks].\n- **Examples & Analysis:** Isaiah 20 (captivity to Assyria), Jeremiah 13 (spoilt pride), Jeremiah 27–28 (Nebuchadnezzar yoke vs Hananiah), Ezekiel 4–5 (siege starvation & shaved hair) [15 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q018",
+      "id": "div9154_1_q18",
       "questionNumber": 18,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Analyse the criteria by which true prophets could be distinguished from false prophets in Old Testament Israel (Deuteronomy 13, 18; 1 Kings 22; Jeremiah 23 & 28). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
+      "explanation": "### Mark Scheme [25 marks]\n- **Biblical Tests:** Fulfilment of prediction (Deut 18:22), loyalty to Yahweh's exclusive worship (Deut 13), moral courage to rebuke sin rather than flatter rulers with \"Peace, peace\" (Micah 3, Jer 23), personal sacrifice [15 marks].\n- **Dilemma of Immediacy (Micaiah vs Zedekiah; Jeremiah vs Hananiah):** When prophets invoke Yahweh in conflicting ways, immediate proof is hard—requiring moral/theological discernment [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q019",
+      "id": "div9154_1_q19",
       "questionNumber": 19,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Assess the importance of \"False Religion and Empty Ritualism\" across Amos, Isaiah 1, and Jeremiah 7, asking whether the prophets rejected sacrificial worship altogether. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
+      "explanation": "### Mark Scheme [25 marks]\n- **Prophetic Attack:** Amos 5:21 (\"I hate, I despise your feasts\"), Isaiah 1:11–17 (\"stop bringing meaningless offerings... defend the orphan & widow\") [12 marks].\n- **Evaluation:** Prophets did NOT abolish cultic worship itself; rather, they rejected magical reliance on sacrifice without ethical obedience, compassion, and social righteousness (*hesed* and *mishpat*) [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q020",
+      "id": "div9154_1_q20",
       "questionNumber": 20,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine how Deutero-Isaiah (Isaiah 40–55) develops radical Monotheism, Creation theology, and Universal Salvation for Babylonian exiles. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Radical Monotheism:** Yahweh is Creator of earth's ends (\"Beside Me there is no god\" 45:5); Babylonian idols are lifeless carved wood mocked by satire (44:9–20) [12 marks].\n- **Universalism & Cyrus:** Yahweh sovereignly commissions Persian King Cyrus as His \"anointed\" deliverer and summons Israel to shine as \"a light to the nations\" (49:6) [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q021",
+      "id": "div9154_1_q21",
       "questionNumber": 21,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Compare the call experiences of Moses (Exodus 3), Isaiah (Isaiah 6), Jeremiah (Jeremiah 1), and Ezekiel (Ezekiel 1–3). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Common Literary Structure (Call Form):** Divine encounter/theophany, commissioning, human objection/inadequacy (\"slow of speech\", \"unclean lips\", \"only a youth\"), divine reassurance & enabling sign [15 marks].\n- **Distinctive Emphases:** Isaiah volunteers amid Temple holiness; Jeremiah feels pre-natal compulsion yet timid vulnerability; Ezekiel experiences mobile transcendence of God's glory (*kabod*) in pagan Babylon [10 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q022",
+      "id": "div9154_1_q22",
       "questionNumber": 22,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate Nathan's rebuke of King David (2 Samuel 12) and compare Nathan's prophetic courage with Elijah or Amos. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
+      "explanation": "### Mark Scheme [25 marks]\n- **Nathan's Parable (Rich Man & Poor Man's Ewe Lamb):** Cleverly bypasses royal defensiveness so David condemns himself before hearing *\"You are the man!\"* [12 marks].\n- **Comparison:** Like Elijah rebuking Ahab over Naboth and Amos confronting Bethel priest Amaziah, Nathan demonstrates royal accountability to Torah justice—crucial precedent for civic truth-telling today [13 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q023",
+      "id": "div9154_1_q23",
       "questionNumber": 23,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Discuss the theme of \"The Day of the Lord\" (*Yom Yahweh*) from Amos to Zephaniah and Joel, showing how classical prophets inverted popular optimism. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
+      "explanation": "### Mark Scheme [25 marks]\n- **Popular Expectation:** Israel expected miraculous military victory, light, and material prosperity over Gentile foes [8 marks].\n- **Prophetic Reversal:** Amos 5:18 warns it is \"darkness and not light\" purging Israel's own injustice; Zephaniah broadens it to cosmic judgment sparing only the humble remnant; Joel pairs locust judgment with Spirit outpouring (Joel 2:28) [17 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q024",
+      "id": "div9154_1_q24",
       "questionNumber": 24,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Examine the post-exilic encouragement of Haggai and Zechariah (1–8) in rebuilding the Second Temple (520–516 BCE). [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
+      "explanation": "### Mark Scheme [25 marks]\n- **Context of Apathy:** Returned exiles prioritised panelled private houses over ruined Temple amid crop failure (Hag 1:4–9) [9 marks].\n- **Haggai & Zechariah:** Link covenant fidelity to Temple reconstruction, promising \"Not by might, nor by power, but by My Spirit\" (Zech 4:6) alongside joint leadership of Joshua (high priest) and Zerubbabel (Davidic governor) [16 marks].",
+      "answerConfidence": "high"
     },
     {
-      "id": "Q025",
+      "id": "div9154_1_q25",
       "questionNumber": 25,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
+      "questionText": "Evaluate the relevance of eighth-century Old Testament prophetic teaching on corruption, wealth disparity, and land rights to contemporary Zimbabwean society. [25 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q026",
-      "questionNumber": 26,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q027",
-      "questionNumber": 27,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q028",
-      "questionNumber": 28,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q029",
-      "questionNumber": 29,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q030",
-      "questionNumber": 30,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q031",
-      "questionNumber": 31,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q032",
-      "questionNumber": 32,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q033",
-      "questionNumber": 33,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q034",
-      "questionNumber": 34,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q035",
-      "questionNumber": 35,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q036",
-      "questionNumber": 36,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q037",
-      "questionNumber": 37,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q038",
-      "questionNumber": 38,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q039",
-      "questionNumber": 39,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q040",
-      "questionNumber": 40,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q041",
-      "questionNumber": 41,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q042",
-      "questionNumber": 42,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q043",
-      "questionNumber": 43,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q044",
-      "questionNumber": 44,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q045",
-      "questionNumber": 45,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q046",
-      "questionNumber": 46,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q047",
-      "questionNumber": 47,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q048",
-      "questionNumber": 48,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q049",
-      "questionNumber": 49,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q050",
-      "questionNumber": 50,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q051",
-      "questionNumber": 51,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q052",
-      "questionNumber": 52,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q053",
-      "questionNumber": 53,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q054",
-      "questionNumber": 54,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q055",
-      "questionNumber": 55,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q056",
-      "questionNumber": 56,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q057",
-      "questionNumber": 57,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q058",
-      "questionNumber": 58,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q059",
-      "questionNumber": 59,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q060",
-      "questionNumber": 60,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q061",
-      "questionNumber": 61,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q062",
-      "questionNumber": 62,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q063",
-      "questionNumber": 63,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q064",
-      "questionNumber": 64,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q065",
-      "questionNumber": 65,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q066",
-      "questionNumber": 66,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q067",
-      "questionNumber": 67,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q068",
-      "questionNumber": 68,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q069",
-      "questionNumber": 69,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q070",
-      "questionNumber": 70,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q071",
-      "questionNumber": 71,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q072",
-      "questionNumber": 72,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q073",
-      "questionNumber": 73,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q074",
-      "questionNumber": 74,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q075",
-      "questionNumber": 75,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q076",
-      "questionNumber": 76,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q077",
-      "questionNumber": 77,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q078",
-      "questionNumber": 78,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q079",
-      "questionNumber": 79,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q080",
-      "questionNumber": 80,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q081",
-      "questionNumber": 81,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q082",
-      "questionNumber": 82,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q083",
-      "questionNumber": 83,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q084",
-      "questionNumber": 84,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q085",
-      "questionNumber": 85,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q086",
-      "questionNumber": 86,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q087",
-      "questionNumber": 87,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q088",
-      "questionNumber": 88,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q089",
-      "questionNumber": 89,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q090",
-      "questionNumber": 90,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q091",
-      "questionNumber": 91,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q092",
-      "questionNumber": 92,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q093",
-      "questionNumber": 93,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q094",
-      "questionNumber": 94,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q095",
-      "questionNumber": 95,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q096",
-      "questionNumber": 96,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q097",
-      "questionNumber": 97,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q098",
-      "questionNumber": 98,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q099",
-      "questionNumber": 99,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q100",
-      "questionNumber": 100,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q101",
-      "questionNumber": 101,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q102",
-      "questionNumber": 102,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q103",
-      "questionNumber": 103,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q104",
-      "questionNumber": 104,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q105",
-      "questionNumber": 105,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q106",
-      "questionNumber": 106,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q107",
-      "questionNumber": 107,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q108",
-      "questionNumber": 108,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q109",
-      "questionNumber": 109,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q110",
-      "questionNumber": 110,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q111",
-      "questionNumber": 111,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q112",
-      "questionNumber": 112,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q113",
-      "questionNumber": 113,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q114",
-      "questionNumber": 114,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q115",
-      "questionNumber": 115,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q116",
-      "questionNumber": 116,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q117",
-      "questionNumber": 117,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q118",
-      "questionNumber": 118,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q119",
-      "questionNumber": 119,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q120",
-      "questionNumber": 120,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q121",
-      "questionNumber": 121,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q122",
-      "questionNumber": 122,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q123",
-      "questionNumber": 123,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q124",
-      "questionNumber": 124,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q125",
-      "questionNumber": 125,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q126",
-      "questionNumber": 126,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q127",
-      "questionNumber": 127,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q128",
-      "questionNumber": 128,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q129",
-      "questionNumber": 129,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q130",
-      "questionNumber": 130,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q131",
-      "questionNumber": 131,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q132",
-      "questionNumber": 132,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q133",
-      "questionNumber": 133,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q134",
-      "questionNumber": 134,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
-    },
-    {
-      "id": "Q135",
-      "questionNumber": 135,
-      "questionText": "Micah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Micah"
-    },
-    {
-      "id": "Q136",
-      "questionNumber": 136,
-      "questionText": "Prophetic criticism: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic criticism"
-    },
-    {
-      "id": "Q137",
-      "questionNumber": 137,
-      "questionText": "Covenant: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Covenant"
-    },
-    {
-      "id": "Q138",
-      "questionNumber": 138,
-      "questionText": "Social justice: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Social justice"
-    },
-    {
-      "id": "Q139",
-      "questionNumber": 139,
-      "questionText": "Idolatry: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Idolatry"
-    },
-    {
-      "id": "Q140",
-      "questionNumber": 140,
-      "questionText": "Kingship and prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Kingship and prophecy"
-    },
-    {
-      "id": "Q141",
-      "questionNumber": 141,
-      "questionText": "Exile: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Exile"
-    },
-    {
-      "id": "Q142",
-      "questionNumber": 142,
-      "questionText": "Remnant theology: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Remnant theology"
-    },
-    {
-      "id": "Q143",
-      "questionNumber": 143,
-      "questionText": "Prophetic ethics: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophetic ethics"
-    },
-    {
-      "id": "Q144",
-      "questionNumber": 144,
-      "questionText": "Prophets and Zimbabwean society: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Prophets and Zimbabwean society"
-    },
-    {
-      "id": "Q145",
-      "questionNumber": 145,
-      "questionText": "The nature of prophecy: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "The nature of prophecy"
-    },
-    {
-      "id": "Q146",
-      "questionNumber": 146,
-      "questionText": "Amos: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Amos"
-    },
-    {
-      "id": "Q147",
-      "questionNumber": 147,
-      "questionText": "Hosea: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Hosea"
-    },
-    {
-      "id": "Q148",
-      "questionNumber": 148,
-      "questionText": "Isaiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Isaiah"
-    },
-    {
-      "id": "Q149",
-      "questionNumber": 149,
-      "questionText": "Jeremiah: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Jeremiah"
-    },
-    {
-      "id": "Q150",
-      "questionNumber": 150,
-      "questionText": "Ezekiel: Explain the historical and religious context of this theme, discuss its major teachings or issues, evaluate at least two scholarly interpretations where relevant, and apply the significance of the theme to a contemporary Zimbabwean context.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A high-level answer should demonstrate accurate biblical knowledge, contextual interpretation, critical evaluation and a relevant Zimbabwean application.",
-      "answerConfidence": "unverified",
-      "topic": "Ezekiel"
+      "explanation": "### Mark Scheme [25 marks]\n- **Textual Grounding:** Amos 5/8 (bribery in courts, exploiting workers, rigging scales), Isaiah 5:8 (\"joining house to house & field to field\"), Micah 2–3, 1 Kings 21 [12 marks].\n- **Contemporary Application:** Critique of public corruption, wage injustice, environmental/land stewardship, and empty outward religiosity without ethical integrity—grounded balanced against secular economic nuance [13 marks].",
+      "answerConfidence": "high"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   LogOut, 
   Brain, 
@@ -11,13 +11,14 @@ import {
   Check, 
   AlertTriangle,
   Clock,
-  Sparkles,
-  BookOpen,
+  RefreshCw,
+  Upload,
   Info
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
+import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
 
 interface SettingsViewProps {
   educationLevel: EducationLevel;
@@ -50,10 +51,28 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   const [preferredLang, setPreferredLang] = useState<'en' | 'sn'>(() =>
     StorageManager.getPreferredLanguage()
   );
+  const [qwenState, setQwenState] = useState<QwenProgressState>(() => QwenEngine.getStatus());
+  const ggufFileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    return QwenEngine.subscribe(setQwenState);
+  }, []);
 
   const currentPeriod = TermCalendarManager.getCurrentPeriod();
   const daysLeft = TermCalendarManager.getDaysRemainingInCurrentTerm();
   const userEmail = StorageManager.getSessionUserEmail();
+
+  const handleConnectAssetsGGUF = async () => {
+    await QwenEngine.loadModel();
+  };
+
+  const handleLocalGGUFFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      await QwenEngine.loadModelFromFile(file);
+    }
+    e.target.value = '';
+  };
 
   const handleLanguageChange = (lang: 'en' | 'sn') => {
     setPreferredLang(lang);
@@ -159,27 +178,80 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
             <Brain className="w-4 h-4" /> AI Model &amp; Neural Brain
           </div>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 border border-cyan-500/30 text-cyan-300 font-bold">
-            100% OFFLINE
+          <span
+            className={`text-[10px] font-mono px-2 py-0.5 rounded border font-bold ${
+              qwenState.status === 'ready'
+                ? 'bg-emerald-950 border-emerald-500/40 text-emerald-300'
+                : qwenState.status === 'loading' || qwenState.status === 'checking'
+                ? 'bg-cyan-950 border-cyan-500/40 text-cyan-300'
+                : 'bg-amber-950/70 border-amber-500/40 text-amber-300'
+            }`}
+          >
+            {qwenState.status === 'ready'
+              ? 'GGUF CONNECTED'
+              : qwenState.status === 'loading'
+              ? `LOADING ${qwenState.progress}%`
+              : 'JSON RAG ACTIVE'}
           </span>
         </div>
 
         <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-700/60 space-y-3">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h4 className="text-sm font-bold text-white">ZEXA 3.8-27B Offline Brain</h4>
+              <h4 className="text-sm font-bold text-white">Qwen 2.5 (0.5B Instruct Q4_K_M GGUF) + JSON RAG</h4>
               <p className="text-xs text-slate-400 mt-0.5">
-                Specialized offline neural model trained on the ZIMSEC syllabus and Zimbabwean heritage archives.
+                {qwenState.statusText}
               </p>
+              {qwenState.error && (
+                <p className="text-[11px] text-amber-300 mt-1">{qwenState.error}</p>
+              )}
             </div>
             <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0" />
           </div>
 
+          {qwenState.status === 'loading' && (
+            <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden border border-white/[0.08]">
+              <div
+                className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
+                style={{ width: `${qwenState.progress}%` }}
+              />
+            </div>
+          )}
+
           <div className="grid grid-cols-2 gap-2 text-[11px] font-mono text-slate-300 bg-slate-950/70 p-3 rounded-xl border border-slate-800">
-            <div>• Execution: Local Device RAM</div>
-            <div>• Quantization: 4-bit GGUF</div>
-            <div>• Context Window: 32,768 tokens</div>
-            <div>• Knowledge Store: 1,251+ topics</div>
+            <div>• Model: {qwenState.modelName}</div>
+            <div>• Runtime: Offline WASM / NDK</div>
+            <div>• Context: 2,048 tokens RAG</div>
+            <div>• Syllabus: 8,260+ Topics (127 JSONs)</div>
+          </div>
+
+          <div className="flex flex-wrap gap-2 pt-1">
+            <button
+              type="button"
+              onClick={handleConnectAssetsGGUF}
+              disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+              className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span>Scan /assets/ GGUF</span>
+            </button>
+
+            <input
+              ref={ggufFileInputRef}
+              type="file"
+              accept=".gguf"
+              onChange={handleLocalGGUFFile}
+              className="hidden"
+            />
+            <button
+              type="button"
+              onClick={() => ggufFileInputRef.current?.click()}
+              disabled={qwenState.status === 'loading'}
+              className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 border border-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+            >
+              <Upload className="w-3.5 h-3.5" />
+              <span>Load Local .gguf File</span>
+            </button>
           </div>
         </div>
       </div>

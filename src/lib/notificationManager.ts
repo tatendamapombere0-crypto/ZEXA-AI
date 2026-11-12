@@ -230,24 +230,32 @@ export class NotificationManager {
 
   /**
    * Triggers the notification for the given slot (6am, 12pm, 6pm)
+   * Sends directly to the phone/device notification bar (no in-app dashboard alert)
    */
   static async triggerScheduledNotification(slotName?: '6:00 AM' | '12:00 PM' | '6:00 PM'): Promise<void> {
     const payload = this.buildNotificationPayload(slotName);
     StorageManager.setLastNotificationSlot(`${payload.slot} on ${new Date().toISOString().slice(0, 10)}`);
 
-    // 1. Dispatch in-app notification event for active viewers
-    this.dispatchInAppNotification(payload);
-
-    // 2. Dispatch device system notification via Service Worker or Web Notifications API
+    // Route directly to phone/device status bar as incoming notification
     await this.dispatchDeviceNotification(payload);
   }
 
   /**
-   * Sends an actual operating system notification to the device
+   * Sends an actual operating system notification to the device status bar / notification drawer
    */
   static async dispatchDeviceNotification(payload: StudyReminderPayload): Promise<boolean> {
     if (typeof window === 'undefined' || !('Notification' in window)) {
       return false;
+    }
+
+    // Auto-request permission if in default state
+    if (Notification.permission === 'default') {
+      try {
+        const permission = await Notification.requestPermission();
+        if (permission !== 'granted') return false;
+      } catch {
+        return false;
+      }
     }
 
     if (Notification.permission !== 'granted') {
@@ -258,8 +266,9 @@ export class NotificationManager {
       body: payload.body,
       icon: '/assets/zexa_logo_icon.png',
       badge: '/assets/zexa_favicon.png',
-      tag: 'zexa-study-reminder',
+      tag: `zexa-study-${payload.slot || 'alert'}`,
       renotify: true,
+      requireInteraction: false,
       data: {
         type: payload.type,
         question: payload.question,
@@ -267,7 +276,7 @@ export class NotificationManager {
       }
     };
 
-    // Try through active service worker first (supports background/installed PWA)
+    // Try through active service worker first (supports background/installed PWA on phones)
     if ('serviceWorker' in navigator) {
       try {
         const registration = await navigator.serviceWorker.ready;
@@ -287,24 +296,6 @@ export class NotificationManager {
     } catch (err) {
       console.warn('Direct notification error:', err);
       return false;
-    }
-  }
-
-  /**
-   * Dispatches in-app callback for visible application UI
-   */
-  private static dispatchInAppNotification(payload: StudyReminderPayload): void {
-    for (const cb of this.onNotificationCallbacks) {
-      try {
-        cb(payload);
-      } catch (err) {
-        console.error('Notification callback error:', err);
-      }
-    }
-
-    // Also dispatch custom DOM event
-    if (typeof window !== 'undefined') {
-      window.dispatchEvent(new CustomEvent('zexa-notification', { detail: payload }));
     }
   }
 
@@ -360,8 +351,6 @@ export class NotificationManager {
         payload.question = 'Describe ways of preserving heritage sites of Zimbabwe';
       }
     }
-
-    this.dispatchInAppNotification(payload);
     return await this.dispatchDeviceNotification(payload);
   }
 }

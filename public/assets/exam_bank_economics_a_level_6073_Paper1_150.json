@@ -1,4066 +1,795 @@
 {
   "paperInfo": {
+    "id": "exam_bank_economics_a_level_6073_Paper1_150",
+    "file": "exam_bank_economics_a_level_6073_Paper1_150.json",
     "subject": "Economics",
-    "level": "A Level",
+    "level": "A-Level",
     "paperCode": "6073/1",
-    "paperName": "Paper 1 – Multiple Choice",
-    "paperType": "multiple_choice",
+    "paperName": "Economics A-Level Paper 1 — Multiple Choice",
+    "paperType": "Multiple Choice",
     "questionCount": 150,
-    "sourceFile": "ZIMSEC_Economics_A_Level_6073_Paper1_150.json",
-    "curriculum": "ZIMSEC Heritage-Based Curriculum / Forms 5–6 syllabus",
-    "copyrightNote": "Original practice questions synthesized from ZIMSEC syllabus/specimen structure and recurring exam themes; not verbatim copies of copyrighted past papers.",
-    "sourceBasis": "ZIMSEC syllabus/specimen resources and publicly accessible examination-pattern references."
+    "totalQuestions": 30
   },
   "questions": [
     {
-      "id": "SCA-001",
+      "id": "ec6073_1_q1",
       "questionNumber": 1,
-      "questionText": "Which statement best explains scarcity and opportunity cost?",
+      "questionText": "Why is a Production Possibility Curve (PPC) typically drawn concave (bowed outward) from the origin?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "Because resources are imperfectly adaptable between goods, creating increasing opportunity cost as more of one good is produced"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Because technology declines as output expands"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Because opportunity cost per unit remains strictly constant at all points"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Because economic growth shifts the curve inward"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
+      "explanation": "Shifting specialised resources (e.g., fertile wheat land into manufacturing) yields progressively smaller gains per unit sacrificed—increasing opportunity cost.",
+      "answerConfidence": "high"
     },
     {
-      "id": "DEM-002",
+      "id": "ec6073_1_q2",
       "questionNumber": 2,
-      "questionText": "A price rises from $12 to $14.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "The price of cooking oil rises from $2.00 to $2.40 (+20%), and quantity demanded falls from 1,000 litres to 880 litres (−12%). Calculate Price Elasticity of Demand (PED) and the effect on Total Revenue.",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "PED = −1.67 (elastic); Total Revenue falls"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "PED = −0.6 (inelastic); Total Revenue increases from $2,000 to $2,112"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "PED = −0.6 (inelastic); Total Revenue falls"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "PED = +0.6 (normal good); Total Revenue is unchanged"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
+      "correctAnswer": "B",
+      "explanation": "PED = %ΔQ / %ΔP = −12% / +20% = −0.6. Since demand is price inelastic (|PED| < 1), raising price increases Total Revenue ($2.40 × 880 = $2,112 > $2,000).",
+      "answerConfidence": "high"
     },
     {
-      "id": "ELA-003",
+      "id": "ec6073_1_q3",
       "questionNumber": 3,
-      "questionText": "A government introduces a policy related to elasticity. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "Good X and Good Y have a Cross Elasticity of Demand (XED) of +1.8, while Good X has an Income Elasticity of Demand (YED) of −0.5. What does this tell us?",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "X and Y are unrelated goods, and Good X is normal"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "X and Y are strong complements, and Good X is a luxury good"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "X and Y are close substitutes, and Good X is an inferior good"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "X is a Giffen good with zero substitutes"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
+      "correctAnswer": "C",
+      "explanation": "Positive XED (+1.8) indicates substitutes (price rise in Y increases demand for X); negative YED (−0.5) indicates an inferior good (demand falls as income rises).",
+      "answerConfidence": "high"
     },
     {
-      "id": "CON-004",
+      "id": "ec6073_1_q4",
       "questionNumber": 4,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse consumer behaviour?",
+      "questionText": "When a negative production externality (e.g., factory river pollution) exists in an unregulated free market, how does market equilibrium compare with the socially optimal output?",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "Marginal External Cost is zero at equilibrium"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Free market underproduces because MSB exceeds MPB"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Free market automatically achieves allocative efficiency"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Free market overproduces because Marginal Private Cost (MPC) is below Marginal Social Cost (MSC), creating a deadweight welfare loss"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
+      "correctAnswer": "D",
+      "explanation": "Polluting firms ignore Marginal External Cost (MEC), equating MPB = MPC at Q_m > Q_opt (where MSB = MSC), causing overproduction and welfare loss.",
+      "answerConfidence": "high"
     },
     {
-      "id": "PRO-005",
+      "id": "ec6073_1_q5",
       "questionNumber": 5,
-      "questionText": "Which statement best explains production and costs?",
+      "questionText": "Which feature differentiates a Pure Public Good (such as street lighting or national defence) from a Private Good?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "Non-excludability (cannot stop non-payers) and Non-rivalry (one person's consumption does not reduce availability for others)"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Zero opportunity cost of production"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Always supplied exclusively by private profit-maximising monopolies"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Excludable through market pricing mechanisms"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
+      "explanation": "Non-excludability triggers the free-rider problem and non-rivalry means MC = 0, causing complete missing markets if left purely to private firms.",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAR-006",
+      "id": "ec6073_1_q6",
       "questionNumber": 6,
-      "questionText": "A price rises from $16 to $19.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "According to the Law of Diminishing Marginal Returns in the short run:",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "All factors of production increase in equal proportion causing diseconomies of scale"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "Adding successive units of a variable factor (labour) to a fixed factor (land/machinery) eventually causes marginal product of labour to fall"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Total product declines immediately from the first worker hired"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Long-run average costs always fall indefinitely"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
+      "correctAnswer": "B",
+      "explanation": "Diminishing marginal returns is a short-run phenomenon where overcrowding on fixed capital lowers marginal physical product after an initial specialisation phase.",
+      "answerConfidence": "high"
     },
     {
-      "id": "GOV-007",
+      "id": "ec6073_1_q7",
       "questionNumber": 7,
-      "questionText": "A government introduces a policy related to government intervention. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "In Long-Run Equilibrium under Perfect Competition, why do firms achieve both Productive Efficiency and Allocative Efficiency?",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "Products are heavily differentiated through persuasive advertising"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "Firms restrict output where P > MC to earn supernormal profit indefinitely"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "Price equals minimum Long-Run Average Cost (Productive Efficiency) and Price equals Marginal Cost (Allocative Efficiency), yielding only normal profit"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "Barriers to entry prevent new firms from entering"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
+      "correctAnswer": "C",
+      "explanation": "Free entry drives price down to minimum AC (productive efficiency) and profit-maximising rule MR = MC becomes P = MC (allocative efficiency).",
+      "answerConfidence": "high"
     },
     {
-      "id": "LAB-008",
+      "id": "ec6073_1_q8",
       "questionNumber": 8,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse labour markets?",
+      "questionText": "What does the Kinked Demand Curve model explain in an Oligopoly market?",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "How firms maximise sales revenue rather than profit"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Guaranteed price wars every week"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Zero interdependence between competing firms"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Price rigidity: rivals match price cuts (inelastic demand below kink) but ignore price hikes (elastic demand above kink), leaving a vertical gap in MR"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
+      "correctAnswer": "D",
+      "explanation": "Sweezy's kinked demand curve produces a discontinuous Marginal Revenue curve, so modest shifts in Marginal Cost keep the profit-maximising price stable.",
+      "answerConfidence": "high"
     },
     {
-      "id": "NAT-009",
+      "id": "ec6073_1_q9",
       "questionNumber": 9,
-      "questionText": "Which statement best explains national income?",
+      "questionText": "When does a Profit-Maximising firm continue operating in the short run even while making an economic loss?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "Whenever Price covers Average Variable Cost (P ≥ AVC), contributing towards unavoidable fixed costs"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Whenever Price is below Average Variable Cost (P < AVC)"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Whenever Marginal Revenue exceeds Total Revenue"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Only if fixed costs are zero"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "National income"
+      "explanation": "If P ≥ AVC, shutting down sacrifices contribution to unavoidable fixed costs; the short-run shutdown point is P < AVC.",
+      "answerConfidence": "high"
     },
     {
-      "id": "INF-010",
+      "id": "ec6073_1_q10",
       "questionNumber": 10,
-      "questionText": "A price rises from $11 to $13.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "In Consumer Theory, at the utility-maximising consumer equilibrium along a budget line and indifference curve:",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "Total Utility equals zero"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "The Marginal Rate of Substitution (MRS) equals the price ratio (Pₓ / Pᵧ), and MUₓ / Pₓ = MUᵧ / Pᵧ"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "The indifference curve is convex upward away from the origin"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "All income is spent exclusively on the cheapest good"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
+      "correctAnswer": "B",
+      "explanation": "Equilibrium occurs where the highest reachable indifference curve is tangent to the budget constraint: slope MRS = Pₓ / Pᵧ.",
+      "answerConfidence": "high"
     },
     {
-      "id": "UNE-011",
+      "id": "ec6073_1_q11",
       "questionNumber": 11,
-      "questionText": "A government introduces a policy related to unemployment. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "An economy has Marginal Propensity to Save (MPS) = 0.15, Marginal Propensity to Tax (MPT) = 0.10, and Marginal Propensity to Import (MPM) = 0.25. Calculate the Keynesian National Income Multiplier (k).",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "1.5"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "4.0"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "2.0 [k = 1 / (0.15 + 0.10 + 0.25) = 1 / 0.50]"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "5.0"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
+      "correctAnswer": "C",
+      "explanation": "Open-economy multiplier k = 1 / MPW = 1 / (MPS + MPT + MPM) = 1 / (0.15 + 0.10 + 0.25) = 1 / 0.50 = 2.0.",
+      "answerConfidence": "high"
     },
     {
-      "id": "ECO-012",
+      "id": "ec6073_1_q12",
       "questionNumber": 12,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic growth?",
+      "questionText": "In Irving Fisher's Quantity Theory of Money (MV = PT), if Velocity (V) and Real Transactions (T) remain constant at full employment while Money Supply (M) grows by 30%, what occurs?",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "Unemployment falls to negative values"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Real GDP rises permanently by 30%"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Velocity doubles automatically"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "The general Price Level (P) rises by approximately 30% (demand-pull monetary inflation)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
+      "correctAnswer": "D",
+      "explanation": "Monetarists hold that with V and T fixed in the long run, percentage increases in M transmit directly into proportionate inflation in P.",
+      "answerConfidence": "high"
     },
     {
-      "id": "FIS-013",
+      "id": "ec6073_1_q13",
       "questionNumber": 13,
-      "questionText": "Which statement best explains fiscal policy?",
+      "questionText": "If a country's Export Price Index rises from 100 to 120 while its Import Price Index rises from 100 to 110, what happened to its Terms of Trade (ToT)?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "ToT improved from 100 to 109.1 (each unit of exports now buys more imports)"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "ToT deteriorated from 100 to 91.7"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Balance of Payments surplus automatically doubled"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Terms of Trade fell by 10%"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
+      "explanation": "Terms of Trade = (Index of Export Prices ÷ Index of Import Prices) × 100 = (120 ÷ 110) × 100 = 109.1 (favourable improvement).",
+      "answerConfidence": "high"
     },
     {
-      "id": "MON-014",
+      "id": "ec6073_1_q14",
       "questionNumber": 14,
-      "questionText": "A price rises from $15 to $18.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "Under the Marshall-Lerner condition, when will a currency devaluation successfully improve a country's Balance of Trade deficit?",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "When both export and import demand are completely price inelastic (sum = 0)"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "When the sum of the absolute price elasticities of demand for exports and imports exceeds 1 (|PED_x| + |PED_m| > 1)"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Immediately on the same day without any time lag"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Only under a strict gold standard"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
+      "correctAnswer": "B",
+      "explanation": "Marshall-Lerner states devaluation improves the trade balance in the long run if |PED_x| + |PED_m| > 1; initially, inelastic contracts cause the short-run J-curve worsening.",
+      "answerConfidence": "high"
     },
     {
-      "id": "BAL-015",
+      "id": "ec6073_1_q15",
       "questionNumber": 15,
-      "questionText": "A government introduces a policy related to balance of payments. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "In the Lorenz Curve diagram for Income Inequality, what does a Gini Coefficient closer to 1.0 signify?",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "Zero structural unemployment"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "Complete income equality across every household"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "Extreme income inequality, with the Lorenz curve bowing far away from the 45° line of perfect equality"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "Maximum GDP per capita growth"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
+      "correctAnswer": "C",
+      "explanation": "Gini = Area A / (Area A + B): 0 represents total equality; 1 represents complete concentration of national income in one recipient.",
+      "answerConfidence": "high"
     },
     {
-      "id": "EXC-016",
+      "id": "ec6073_1_q16",
       "questionNumber": 16,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse exchange rates?",
+      "questionText": "Country A produces either 100 tonnes of maize or 50 tonnes of cotton; Country B produces either 60 tonnes of maize or 15 tonnes of cotton. According to Comparative Advantage:",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "No mutually beneficial trade is possible"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Country A should produce both goods and never trade with B"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Country B has comparative advantage in cotton"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Country A has comparative advantage in cotton (OC = 2 maize vs 4 maize in B), and Country B has comparative advantage in maize (OC = 0.25 cotton vs 0.5 in A)"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
+      "correctAnswer": "D",
+      "explanation": "Country A gives up only 2 maize per cotton (B gives up 4); Country B gives up only 0.25 cotton per maize (A gives up 0.5). Both gain by specialising in their lower-opportunity-cost good.",
+      "answerConfidence": "high"
     },
     {
-      "id": "INT-017",
+      "id": "ec6073_1_q17",
       "questionNumber": 17,
-      "questionText": "Which statement best explains international trade?",
+      "questionText": "What causes \"Cost-Push Inflation\" in an economy?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "Rising production costs such as higher imported fuel prices, wage settlements above productivity, or indirect tax hikes shifting SRAS leftward"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Excess aggregate demand pulling prices up at full capacity"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Rapid expansion in bank consumer credit above LRAS"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "A dramatic fall in global oil prices"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "International trade"
+      "explanation": "Rising input costs shift Short-Run Aggregate Supply (SRAS) leftward, raising the price level while reducing real output (stagflation risk).",
+      "answerConfidence": "high"
     },
     {
-      "id": "ECO-018",
+      "id": "ec6073_1_q18",
       "questionNumber": 18,
-      "questionText": "A price rises from $10 to $12.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "Under Milton Friedman's Expectations-Augmented Phillips Curve, what shape does the Long-Run Phillips Curve (LRPC) take?",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "Downward sloping forever with a stable permanent inflation-unemployment trade-off"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "Vertical at the Natural Rate of Unemployment (NAIRU), meaning fiscal/monetary demand expansion cannot permanently lower unemployment below NRU without accelerating inflation"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Horizontal at 0% inflation"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Upward sloping from the origin"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
+      "correctAnswer": "B",
+      "explanation": "In the long run, workers adjust inflation expectations upward, restoring real wages and returning unemployment to NRU at higher inflation.",
+      "answerConfidence": "high"
     },
     {
-      "id": "PUB-019",
+      "id": "ec6073_1_q19",
       "questionNumber": 19,
-      "questionText": "A government introduces a policy related to public finance. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "In Factor Markets under Monopsony (a single dominant employer of mineworkers in a region), compared with a competitive labour market, the employer hires:",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "Where MRP equals zero"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "More workers at a higher wage rate"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "Fewer workers at a lower wage rate because Marginal Cost of Labour (MCL) exceeds the Wage (ACL) supply curve"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "All available labour at the national minimum wage automatically"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
+      "correctAnswer": "C",
+      "explanation": "A monopsonist faces an upward-sloping labour supply curve, so hiring one extra worker requires raising wages for all existing workers (MCL > W); equilibrium MCL = MRP results in lower employment and lower wages.",
+      "answerConfidence": "high"
     },
     {
-      "id": "ENV-020",
+      "id": "ec6073_1_q20",
       "questionNumber": 20,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse environmental economics?",
+      "questionText": "When a government imposes an effective Maximum Price Ceiling (e.g., on staple mealie-meal) below market equilibrium price:",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "Allocative efficiency improves automatically"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "A chronic unsold surplus builds up in government silos"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Producers double supply immediately at the lower price"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Quantity demanded exceeds quantity supplied, creating shortages, rationing queues, and potential parallel (black) markets"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
+      "correctAnswer": "D",
+      "explanation": "A binding price ceiling below equilibrium raises Qd and cuts Qs, causing persistent excess demand unless subsidised or rationed.",
+      "answerConfidence": "high"
     },
     {
-      "id": "ZIM-021",
+      "id": "ec6073_1_q21",
       "questionNumber": 21,
-      "questionText": "Which statement best explains zimbabwean economic issues?",
+      "questionText": "What distinguishes \"Crowding Out\" in Keynesian/Monetarist fiscal policy debates?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "Heavy government borrowing increases demand for loanable funds, pushing up market interest rates and squeezing out private-sector investment"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Lowering income taxes directly raises private investment"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Exports exceed imports in the Current Account"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Commercial banks hold excess zero-interest reserves"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
+      "explanation": "Financial crowding out occurs when deficit financing bids up interest rates, dampening interest-sensitive private capital formation.",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAR-022",
+      "id": "ec6073_1_q22",
       "questionNumber": 22,
-      "questionText": "A price rises from $14 to $16.80. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "Which item is recorded in the Financial Account rather than the Current Account of the Balance of Payments?",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "Export receipts from tobacco and platinum shipments"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "Foreign Direct Investment (FDI) in a lithium processing plant and foreign portfolio equity purchases"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Remittances sent home by Zimbabweans working abroad"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Payments for international tourism and shipping insurance"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
+      "correctAnswer": "B",
+      "explanation": "Goods, services, primary income, and secondary transfers (remittances) enter the Current Account; FDI, portfolio flows, and reserve assets enter the Financial Account.",
+      "answerConfidence": "high"
     },
     {
-      "id": "SCA-023",
+      "id": "ec6073_1_q23",
       "questionNumber": 23,
-      "questionText": "A government introduces a policy related to scarcity and opportunity cost. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "Which supply-side policy aims directly to raise Long-Run Aggregate Supply (LRAS) in Zimbabwe?",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "Raising personal income tax rates to 60%"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "Printing currency to finance recurrent civil service consumption"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "Rehabilitating reliable power generation, rail infrastructure, STEM/vocational training, and streamlining business licensing"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "Increasing tariffs on imported industrial spare parts"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
+      "correctAnswer": "C",
+      "explanation": "Supply-side policies expand productive potential and efficiency, shifting LRAS rightward without triggering inflation.",
+      "answerConfidence": "high"
     },
     {
-      "id": "DEM-024",
+      "id": "ec6073_1_q24",
       "questionNumber": 24,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse demand and supply?",
+      "questionText": "Under Third-Degree Price Discrimination, how does a monopolist (e.g., ZESA or an airline) set prices across two segmented markets?",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "Sets price equal to fixed cost in all segments"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Charges identical prices to students and corporate travellers"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Charges higher prices where demand is infinitely elastic"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Charges a higher price in the market with more price-inelastic demand and a lower price in the more price-elastic market"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
+      "correctAnswer": "D",
+      "explanation": "Maximising profit across separated markets equates MR₁ = MR₂ = MC, which mathematically sets higher prices where |PED| is lower (inelastic).",
+      "answerConfidence": "high"
     },
     {
-      "id": "ELA-025",
+      "id": "ec6073_1_q25",
       "questionNumber": 25,
-      "questionText": "Which statement best explains elasticity?",
+      "questionText": "Why is \"GDP per capita\" considered an incomplete measure of economic development compared with the Human Development Index (HDI)?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "GDP per capita ignores income distribution, informal/subsistence activity, health/life expectancy, education access, and environmental degradation"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "GDP per capita already measures adult literacy and life expectancy directly"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "HDI counts only manufacturing exports"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "GDP excludes all government expenditure"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
+      "explanation": "HDI combines GNI per capita (PPP), mean/expected years of schooling, and life expectancy at birth to capture broader human wellbeing.",
+      "answerConfidence": "high"
     },
     {
-      "id": "CON-026",
+      "id": "ec6073_1_q26",
       "questionNumber": 26,
-      "questionText": "A price rises from $18 to $21.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "In Keynesian Liquidity Preference Theory, what is the \"Liquidity Trap\"?",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "Commercial banks refuse all customer deposits"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "At very low interest rates, bond prices are expected to fall, so speculative demand for money becomes infinitely elastic and extra money supply fails to lower interest rates further"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Interest rates exceed 50% forcing immediate investment boom"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Velocity of circulation accelerates without limit"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
+      "correctAnswer": "B",
+      "explanation": "In a liquidity trap, monetary expansion fails to stimulate investment because agents hoard extra cash rather than buy low-yield bonds, making fiscal policy essential.",
+      "answerConfidence": "high"
     },
     {
-      "id": "PRO-027",
+      "id": "ec6073_1_q27",
       "questionNumber": 27,
-      "questionText": "A government introduces a policy related to production and costs. Evaluate one possible benefit and one possible drawback.",
+      "questionText": "How does a Minimum Price Floor (e.g., guaranteed agricultural producer price above equilibrium) create a cost for government?",
       "options": [
         {
           "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
+          "text": "Farmers cut production to zero"
         },
         {
           "letter": "B",
-          "text": "Every policy has only benefits"
+          "text": "Consumers face severe shortages and queues"
         },
         {
           "letter": "C",
-          "text": "Every policy has only costs"
+          "text": "Supply exceeds demand at the floor price, forcing a marketing board to purchase, store, or subsidise disposal of the excess agricultural surplus"
         },
         {
           "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
+          "text": "Import tariffs drop automatically"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
+      "correctAnswer": "C",
+      "explanation": "A binding price floor above equilibrium sets Qs > Qd; without government surplus purchasing, farmers would undercut the floor.",
+      "answerConfidence": "high"
     },
     {
-      "id": "MAR-028",
+      "id": "ec6073_1_q28",
       "questionNumber": 28,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market structures?",
+      "questionText": "Which type of unemployment persists because of a mismatch between workers' skills or geographic locations and available job vacancies?",
       "options": [
         {
           "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
+          "text": "Cyclical (demand-deficient) unemployment"
         },
         {
           "letter": "B",
-          "text": "A balance sheet only"
+          "text": "Frictional unemployment"
         },
         {
           "letter": "C",
-          "text": "A random list of prices"
+          "text": "Seasonal unemployment"
         },
         {
           "letter": "D",
-          "text": "A historical narrative without variables"
+          "text": "Structural unemployment"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
+      "correctAnswer": "D",
+      "explanation": "Structural unemployment stems from long-term industrial shifts, automation, or skill/regional mismatches requiring retraining rather than simple AD stimulus.",
+      "answerConfidence": "high"
     },
     {
-      "id": "GOV-029",
+      "id": "ec6073_1_q29",
       "questionNumber": 29,
-      "questionText": "Which statement best explains government intervention?",
+      "questionText": "When a central bank raises the Statutory Reserve Ratio (cash reserve requirement) for commercial banks, what is the direct impact on the Money Multiplier and credit creation?",
       "options": [
         {
           "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
+          "text": "The credit multiplier (1/r) decreases, shrinking banks' capacity to create new deposits and loans"
         },
         {
           "letter": "B",
-          "text": "It assumes resources are unlimited"
+          "text": "Banks expand lending recklessly without reserves"
         },
         {
           "letter": "C",
-          "text": "It applies only to households"
+          "text": "Interest rates fall immediately to zero"
         },
         {
           "letter": "D",
-          "text": "It excludes government decisions"
+          "text": "Commercial banks create unlimited credit"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
+      "explanation": "Money multiplier k = 1 / reserve ratio. Increasing mandatory reserves reduces excess reserves available for re-lending and shrinks broad money M3.",
+      "answerConfidence": "high"
     },
     {
-      "id": "LAB-030",
+      "id": "ec6073_1_q30",
       "questionNumber": 30,
-      "questionText": "A price rises from $13 to $15.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
+      "questionText": "In Contestable Market Theory (Baumol), why might an apparent monopolist price close to competitive levels even without current rivals?",
       "options": [
         {
           "letter": "A",
-          "text": "Price elasticity of demand"
+          "text": "Government nationalises every firm with one factory"
         },
         {
           "letter": "B",
-          "text": "Comparative advantage"
+          "text": "Low sunk entry and exit costs expose it to credible \"hit-and-run\" entry whenever it tries to earn excessive supernormal profits"
         },
         {
           "letter": "C",
-          "text": "Fiscal deficit"
+          "text": "Fixed costs equal variable costs at all outputs"
         },
         {
           "letter": "D",
-          "text": "Terms of trade"
+          "text": "Demand is perfectly vertical"
         }
       ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-031",
-      "questionNumber": 31,
-      "questionText": "A government introduces a policy related to national income. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-032",
-      "questionNumber": 32,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse inflation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-033",
-      "questionNumber": 33,
-      "questionText": "Which statement best explains unemployment?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-034",
-      "questionNumber": 34,
-      "questionText": "A price rises from $17 to $20.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-035",
-      "questionNumber": 35,
-      "questionText": "A government introduces a policy related to fiscal policy. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-036",
-      "questionNumber": 36,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse monetary policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-037",
-      "questionNumber": 37,
-      "questionText": "Which statement best explains balance of payments?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-038",
-      "questionNumber": 38,
-      "questionText": "A price rises from $12 to $14.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-039",
-      "questionNumber": 39,
-      "questionText": "A government introduces a policy related to international trade. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-040",
-      "questionNumber": 40,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic development?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
-    },
-    {
-      "id": "PUB-041",
-      "questionNumber": 41,
-      "questionText": "Which statement best explains public finance?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
-    },
-    {
-      "id": "ENV-042",
-      "questionNumber": 42,
-      "questionText": "A price rises from $16 to $19.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
-    },
-    {
-      "id": "ZIM-043",
-      "questionNumber": 43,
-      "questionText": "A government introduces a policy related to zimbabwean economic issues. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
-    },
-    {
-      "id": "MAR-044",
-      "questionNumber": 44,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market failure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
-    },
-    {
-      "id": "SCA-045",
-      "questionNumber": 45,
-      "questionText": "Which statement best explains scarcity and opportunity cost?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
-    },
-    {
-      "id": "DEM-046",
-      "questionNumber": 46,
-      "questionText": "A price rises from $11 to $13.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
-    },
-    {
-      "id": "ELA-047",
-      "questionNumber": 47,
-      "questionText": "A government introduces a policy related to elasticity. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
-    },
-    {
-      "id": "CON-048",
-      "questionNumber": 48,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse consumer behaviour?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
-    },
-    {
-      "id": "PRO-049",
-      "questionNumber": 49,
-      "questionText": "Which statement best explains production and costs?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
-    },
-    {
-      "id": "MAR-050",
-      "questionNumber": 50,
-      "questionText": "A price rises from $15 to $18.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
-    },
-    {
-      "id": "GOV-051",
-      "questionNumber": 51,
-      "questionText": "A government introduces a policy related to government intervention. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
-    },
-    {
-      "id": "LAB-052",
-      "questionNumber": 52,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse labour markets?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-053",
-      "questionNumber": 53,
-      "questionText": "Which statement best explains national income?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-054",
-      "questionNumber": 54,
-      "questionText": "A price rises from $10 to $12.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-055",
-      "questionNumber": 55,
-      "questionText": "A government introduces a policy related to unemployment. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-056",
-      "questionNumber": 56,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic growth?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-057",
-      "questionNumber": 57,
-      "questionText": "Which statement best explains fiscal policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-058",
-      "questionNumber": 58,
-      "questionText": "A price rises from $14 to $16.80. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-059",
-      "questionNumber": 59,
-      "questionText": "A government introduces a policy related to balance of payments. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-060",
-      "questionNumber": 60,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse exchange rates?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-061",
-      "questionNumber": 61,
-      "questionText": "Which statement best explains international trade?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-062",
-      "questionNumber": 62,
-      "questionText": "A price rises from $18 to $21.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
-    },
-    {
-      "id": "PUB-063",
-      "questionNumber": 63,
-      "questionText": "A government introduces a policy related to public finance. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
-    },
-    {
-      "id": "ENV-064",
-      "questionNumber": 64,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse environmental economics?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
-    },
-    {
-      "id": "ZIM-065",
-      "questionNumber": 65,
-      "questionText": "Which statement best explains zimbabwean economic issues?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
-    },
-    {
-      "id": "MAR-066",
-      "questionNumber": 66,
-      "questionText": "A price rises from $13 to $15.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
-    },
-    {
-      "id": "SCA-067",
-      "questionNumber": 67,
-      "questionText": "A government introduces a policy related to scarcity and opportunity cost. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
-    },
-    {
-      "id": "DEM-068",
-      "questionNumber": 68,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse demand and supply?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
-    },
-    {
-      "id": "ELA-069",
-      "questionNumber": 69,
-      "questionText": "Which statement best explains elasticity?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
-    },
-    {
-      "id": "CON-070",
-      "questionNumber": 70,
-      "questionText": "A price rises from $17 to $20.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
-    },
-    {
-      "id": "PRO-071",
-      "questionNumber": 71,
-      "questionText": "A government introduces a policy related to production and costs. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
-    },
-    {
-      "id": "MAR-072",
-      "questionNumber": 72,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market structures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
-    },
-    {
-      "id": "GOV-073",
-      "questionNumber": 73,
-      "questionText": "Which statement best explains government intervention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
-    },
-    {
-      "id": "LAB-074",
-      "questionNumber": 74,
-      "questionText": "A price rises from $12 to $14.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-075",
-      "questionNumber": 75,
-      "questionText": "A government introduces a policy related to national income. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-076",
-      "questionNumber": 76,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse inflation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-077",
-      "questionNumber": 77,
-      "questionText": "Which statement best explains unemployment?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-078",
-      "questionNumber": 78,
-      "questionText": "A price rises from $16 to $19.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-079",
-      "questionNumber": 79,
-      "questionText": "A government introduces a policy related to fiscal policy. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-080",
-      "questionNumber": 80,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse monetary policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-081",
-      "questionNumber": 81,
-      "questionText": "Which statement best explains balance of payments?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-082",
-      "questionNumber": 82,
-      "questionText": "A price rises from $11 to $13.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-083",
-      "questionNumber": 83,
-      "questionText": "A government introduces a policy related to international trade. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-084",
-      "questionNumber": 84,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic development?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
-    },
-    {
-      "id": "PUB-085",
-      "questionNumber": 85,
-      "questionText": "Which statement best explains public finance?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
-    },
-    {
-      "id": "ENV-086",
-      "questionNumber": 86,
-      "questionText": "A price rises from $15 to $18.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
-    },
-    {
-      "id": "ZIM-087",
-      "questionNumber": 87,
-      "questionText": "A government introduces a policy related to zimbabwean economic issues. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
-    },
-    {
-      "id": "MAR-088",
-      "questionNumber": 88,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market failure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
-    },
-    {
-      "id": "SCA-089",
-      "questionNumber": 89,
-      "questionText": "Which statement best explains scarcity and opportunity cost?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
-    },
-    {
-      "id": "DEM-090",
-      "questionNumber": 90,
-      "questionText": "A price rises from $10 to $12.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
-    },
-    {
-      "id": "ELA-091",
-      "questionNumber": 91,
-      "questionText": "A government introduces a policy related to elasticity. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
-    },
-    {
-      "id": "CON-092",
-      "questionNumber": 92,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse consumer behaviour?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
-    },
-    {
-      "id": "PRO-093",
-      "questionNumber": 93,
-      "questionText": "Which statement best explains production and costs?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
-    },
-    {
-      "id": "MAR-094",
-      "questionNumber": 94,
-      "questionText": "A price rises from $14 to $16.80. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
-    },
-    {
-      "id": "GOV-095",
-      "questionNumber": 95,
-      "questionText": "A government introduces a policy related to government intervention. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
-    },
-    {
-      "id": "LAB-096",
-      "questionNumber": 96,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse labour markets?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-097",
-      "questionNumber": 97,
-      "questionText": "Which statement best explains national income?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-098",
-      "questionNumber": 98,
-      "questionText": "A price rises from $18 to $21.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-099",
-      "questionNumber": 99,
-      "questionText": "A government introduces a policy related to unemployment. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-100",
-      "questionNumber": 100,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic growth?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-101",
-      "questionNumber": 101,
-      "questionText": "Which statement best explains fiscal policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-102",
-      "questionNumber": 102,
-      "questionText": "A price rises from $13 to $15.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-103",
-      "questionNumber": 103,
-      "questionText": "A government introduces a policy related to balance of payments. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-104",
-      "questionNumber": 104,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse exchange rates?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-105",
-      "questionNumber": 105,
-      "questionText": "Which statement best explains international trade?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-106",
-      "questionNumber": 106,
-      "questionText": "A price rises from $17 to $20.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
-    },
-    {
-      "id": "PUB-107",
-      "questionNumber": 107,
-      "questionText": "A government introduces a policy related to public finance. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
-    },
-    {
-      "id": "ENV-108",
-      "questionNumber": 108,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse environmental economics?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
-    },
-    {
-      "id": "ZIM-109",
-      "questionNumber": 109,
-      "questionText": "Which statement best explains zimbabwean economic issues?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
-    },
-    {
-      "id": "MAR-110",
-      "questionNumber": 110,
-      "questionText": "A price rises from $12 to $14.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
-    },
-    {
-      "id": "SCA-111",
-      "questionNumber": 111,
-      "questionText": "A government introduces a policy related to scarcity and opportunity cost. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
-    },
-    {
-      "id": "DEM-112",
-      "questionNumber": 112,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse demand and supply?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
-    },
-    {
-      "id": "ELA-113",
-      "questionNumber": 113,
-      "questionText": "Which statement best explains elasticity?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
-    },
-    {
-      "id": "CON-114",
-      "questionNumber": 114,
-      "questionText": "A price rises from $16 to $19.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
-    },
-    {
-      "id": "PRO-115",
-      "questionNumber": 115,
-      "questionText": "A government introduces a policy related to production and costs. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
-    },
-    {
-      "id": "MAR-116",
-      "questionNumber": 116,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market structures?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
-    },
-    {
-      "id": "GOV-117",
-      "questionNumber": 117,
-      "questionText": "Which statement best explains government intervention?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
-    },
-    {
-      "id": "LAB-118",
-      "questionNumber": 118,
-      "questionText": "A price rises from $11 to $13.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-119",
-      "questionNumber": 119,
-      "questionText": "A government introduces a policy related to national income. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-120",
-      "questionNumber": 120,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse inflation?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-121",
-      "questionNumber": 121,
-      "questionText": "Which statement best explains unemployment?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-122",
-      "questionNumber": 122,
-      "questionText": "A price rises from $15 to $18.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-123",
-      "questionNumber": 123,
-      "questionText": "A government introduces a policy related to fiscal policy. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-124",
-      "questionNumber": 124,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse monetary policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-125",
-      "questionNumber": 125,
-      "questionText": "Which statement best explains balance of payments?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-126",
-      "questionNumber": 126,
-      "questionText": "A price rises from $10 to $12.00. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-127",
-      "questionNumber": 127,
-      "questionText": "A government introduces a policy related to international trade. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-128",
-      "questionNumber": 128,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic development?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
-    },
-    {
-      "id": "PUB-129",
-      "questionNumber": 129,
-      "questionText": "Which statement best explains public finance?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Public finance"
-    },
-    {
-      "id": "ENV-130",
-      "questionNumber": 130,
-      "questionText": "A price rises from $14 to $16.80. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Environmental economics"
-    },
-    {
-      "id": "ZIM-131",
-      "questionNumber": 131,
-      "questionText": "A government introduces a policy related to zimbabwean economic issues. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Zimbabwean economic issues"
-    },
-    {
-      "id": "MAR-132",
-      "questionNumber": 132,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse market failure?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Market failure"
-    },
-    {
-      "id": "SCA-133",
-      "questionNumber": 133,
-      "questionText": "Which statement best explains scarcity and opportunity cost?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Scarcity and opportunity cost"
-    },
-    {
-      "id": "DEM-134",
-      "questionNumber": 134,
-      "questionText": "A price rises from $18 to $21.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Demand and supply"
-    },
-    {
-      "id": "ELA-135",
-      "questionNumber": 135,
-      "questionText": "A government introduces a policy related to elasticity. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Elasticity"
-    },
-    {
-      "id": "CON-136",
-      "questionNumber": 136,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse consumer behaviour?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Consumer behaviour"
-    },
-    {
-      "id": "PRO-137",
-      "questionNumber": 137,
-      "questionText": "Which statement best explains production and costs?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Production and costs"
-    },
-    {
-      "id": "MAR-138",
-      "questionNumber": 138,
-      "questionText": "A price rises from $13 to $15.60. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Market structures"
-    },
-    {
-      "id": "GOV-139",
-      "questionNumber": 139,
-      "questionText": "A government introduces a policy related to government intervention. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Government intervention"
-    },
-    {
-      "id": "LAB-140",
-      "questionNumber": 140,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse labour markets?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Labour markets"
-    },
-    {
-      "id": "NAT-141",
-      "questionNumber": 141,
-      "questionText": "Which statement best explains national income?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "National income"
-    },
-    {
-      "id": "INF-142",
-      "questionNumber": 142,
-      "questionText": "A price rises from $17 to $20.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Inflation"
-    },
-    {
-      "id": "UNE-143",
-      "questionNumber": 143,
-      "questionText": "A government introduces a policy related to unemployment. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Unemployment"
-    },
-    {
-      "id": "ECO-144",
-      "questionNumber": 144,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse economic growth?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Economic growth"
-    },
-    {
-      "id": "FIS-145",
-      "questionNumber": 145,
-      "questionText": "Which statement best explains fiscal policy?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "Fiscal policy"
-    },
-    {
-      "id": "MON-146",
-      "questionNumber": 146,
-      "questionText": "A price rises from $12 to $14.40. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Monetary policy"
-    },
-    {
-      "id": "BAL-147",
-      "questionNumber": 147,
-      "questionText": "A government introduces a policy related to balance of payments. Evaluate one possible benefit and one possible drawback.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Benefits and costs depend on objectives, incentives, distributional effects and unintended consequences"
-        },
-        {
-          "letter": "B",
-          "text": "Every policy has only benefits"
-        },
-        {
-          "letter": "C",
-          "text": "Every policy has only costs"
-        },
-        {
-          "letter": "D",
-          "text": "Policy effects are independent of economic conditions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Economic evaluation should consider both intended and unintended effects.",
-      "answerConfidence": "high",
-      "topic": "Balance of payments"
-    },
-    {
-      "id": "EXC-148",
-      "questionNumber": 148,
-      "questionText": "Which diagrammatic or analytical tool would most directly help analyse exchange rates?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An appropriate demand/supply, cost, income, macroeconomic or trade framework"
-        },
-        {
-          "letter": "B",
-          "text": "A balance sheet only"
-        },
-        {
-          "letter": "C",
-          "text": "A random list of prices"
-        },
-        {
-          "letter": "D",
-          "text": "A historical narrative without variables"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The appropriate economic model depends on the issue being analysed.",
-      "answerConfidence": "high",
-      "topic": "Exchange rates"
-    },
-    {
-      "id": "INT-149",
-      "questionNumber": 149,
-      "questionText": "Which statement best explains international trade?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It concerns the allocation and use of scarce resources under stated constraints"
-        },
-        {
-          "letter": "B",
-          "text": "It assumes resources are unlimited"
-        },
-        {
-          "letter": "C",
-          "text": "It applies only to households"
-        },
-        {
-          "letter": "D",
-          "text": "It excludes government decisions"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "The first option captures the economic resource-allocation perspective.",
-      "answerConfidence": "high",
-      "topic": "International trade"
-    },
-    {
-      "id": "ECO-150",
-      "questionNumber": 150,
-      "questionText": "A price rises from $16 to $19.20. Which concept would be most relevant when assessing the resulting change in quantity demanded?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Price elasticity of demand"
-        },
-        {
-          "letter": "B",
-          "text": "Comparative advantage"
-        },
-        {
-          "letter": "C",
-          "text": "Fiscal deficit"
-        },
-        {
-          "letter": "D",
-          "text": "Terms of trade"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Price elasticity measures responsiveness of quantity demanded to a change in price.",
-      "answerConfidence": "high",
-      "topic": "Economic development"
+      "correctAnswer": "B",
+      "explanation": "Threat of potential entry disciplines incumbent pricing when entry/exit barriers and sunk costs are minimal.",
+      "answerConfidence": "high"
     }
   ]
 }

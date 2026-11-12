@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   X, 
   KeyRound, 
@@ -9,16 +9,18 @@ import {
   Languages, 
   Calendar, 
   Trash2, 
-  Sparkles, 
+  RefreshCw, 
   Cpu, 
   RotateCcw,
   CheckCircle2,
   Crown,
-  Bell
+  Bell,
+  Upload
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
+import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -64,6 +66,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [preferredLang, setPreferredLang] = useState<'en' | 'sn'>(() =>
     StorageManager.getPreferredLanguage()
   );
+  const [qwenState, setQwenState] = useState<QwenProgressState>(() => QwenEngine.getStatus());
+  const ggufFileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    return QwenEngine.subscribe(setQwenState);
+  }, []);
 
   if (!isOpen) return null;
 
@@ -245,23 +253,81 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </p>
         </div>
 
-        {/* 3. ZEXA AI BRAIN ARCHITECTURE */}
+        {/* 3. ZEXA AI BRAIN ARCHITECTURE (Qwen 2.5 0.5B GGUF + JSON RAG) */}
         <div className="p-4 rounded-2xl glass-panel space-y-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
               <Cpu className="w-4 h-4" /> AI Brain Engine
             </div>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-500/30 font-bold">
-              Active Offline
+            <span
+              className={`text-[10px] font-mono px-2 py-0.5 rounded-full border font-bold ${
+                qwenState.status === 'ready'
+                  ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/30'
+                  : qwenState.status === 'loading' || qwenState.status === 'checking'
+                  ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/30'
+                  : 'bg-amber-950/80 text-amber-300 border-amber-500/30'
+              }`}
+            >
+              {qwenState.status === 'ready'
+                ? 'Qwen GGUF Connected'
+                : qwenState.status === 'loading'
+                ? `Loading ${qwenState.progress}%`
+                : 'JSON RAG Active'}
             </span>
           </div>
-          <div className="text-xs text-slate-300 space-y-1">
-            <p className="font-bold text-white text-sm">ZEXA 3.8-27B Zimbabwe Brain</p>
+          <div className="text-xs text-slate-300 space-y-1.5">
+            <p className="font-bold text-white text-sm">Qwen 2.5 (0.5B Q4_K_M GGUF) + JSON RAG</p>
+            <p className="text-[11px] text-slate-400">{qwenState.statusText}</p>
+            {qwenState.error && (
+              <p className="text-[11px] text-amber-300">{qwenState.error}</p>
+            )}
             <div className="grid grid-cols-2 gap-1.5 font-mono text-[11px] text-slate-400 pt-1">
-              <div>• Architecture: ZEXA 2.5/3.8</div>
-              <div>• Mode: 100% Offline</div>
-              <div>• Inference: Local Neural Cache</div>
-              <div>• Languages: ChiShona &amp; English</div>
+              <div>• Model: {qwenState.modelName}</div>
+              <div>• Mode: 100% Offline WASM</div>
+              <div>• Knowledge: 8,260+ Topics</div>
+              <div>• Exam Bank: 4,360+ Verified Qs</div>
+            </div>
+
+            {qwenState.status === 'loading' && (
+              <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden mt-1.5">
+                <div
+                  className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
+                  style={{ width: `${qwenState.progress}%` }}
+                />
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-2 pt-2">
+              <button
+                type="button"
+                onClick={() => QwenEngine.loadModel()}
+                disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+                className="px-3 py-1.5 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />
+                <span>Scan /assets/ GGUF</span>
+              </button>
+
+              <input
+                ref={ggufFileInputRef}
+                type="file"
+                accept=".gguf"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) QwenEngine.loadModelFromFile(file);
+                  e.target.value = '';
+                }}
+                className="hidden"
+              />
+              <button
+                type="button"
+                onClick={() => ggufFileInputRef.current?.click()}
+                disabled={qwenState.status === 'loading'}
+                className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 border border-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+              >
+                <Upload className="w-3.5 h-3.5" />
+                <span>Load Local .gguf</span>
+              </button>
             </div>
           </div>
         </div>

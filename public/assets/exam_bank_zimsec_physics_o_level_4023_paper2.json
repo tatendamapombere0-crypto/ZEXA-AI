@@ -1,0 +1,212 @@
+{
+  "paperInfo": {
+    "subject": "Physics",
+    "level": "O-Level",
+    "paperCode": "4023/2",
+    "paperName": "Physics Paper 2 — Structured Theory",
+    "paperType": "Original ZIMSEC-aligned Practice Bank",
+    "questionCount": 20
+  },
+  "questions": [
+    {
+      "id": "phy4023_2_1",
+      "questionText": "A car of mass 1,200 kg accelerates uniformly from 5 m/s to 25 m/s in 8.0 s along a level road.\n(a) Calculate the acceleration of the car. [2 marks]\n(b) Calculate the resultant forward force acting on the car. [2 marks]\n(c) Calculate the distance travelled during these 8.0 s. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) a = (v - u)/t = (25 - 5)/8.0 = 2.5 m/s² [2 marks].\n(b) F = ma = 1,200 × 2.5 = 3,000 N [2 marks].\n(c) s = ½(u + v)t = ½(5 + 25) × 8.0 = 120 m [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Kinematics & Dynamics",
+      "questionNumber": 1
+    },
+    {
+      "id": "phy4023_2_2",
+      "questionText": "An electric pump raises 400 kg of water from a borehole 30 m deep to a raised tank in 40 s (g = 10 N/kg).\n(a) Calculate the gravitational potential energy gained by the water. [2 marks]\n(b) Calculate the useful power of the pump. [2 marks]\n(c) If the electrical input power is 4.0 kW, calculate the percentage efficiency of the pump. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) GPE = mgh = 400 × 10 × 30 = 120,000 J (120 kJ) [2 marks].\n(b) Useful Power = 120,000 / 40 = 3,000 W (3.0 kW) [2 marks].\n(c) Efficiency = (3.0 / 4.0) × 100% = 75% [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Work Energy Power",
+      "questionNumber": 2
+    },
+    {
+      "id": "phy4023_2_3",
+      "questionText": "A block of metal of mass 2.0 kg and specific heat capacity 400 J/(kg°C) is heated from 20°C to 75°C by an electric immersion heater rated 500 W.\n(a) Calculate the thermal energy absorbed by the metal block. [2 marks]\n(b) Calculate the minimum time needed to heat the block assuming no heat loss. [2 marks]\n(c) State why the actual time taken in a laboratory is longer. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Q = mcΔθ = 2.0 × 400 × (75 - 20) = 44,000 J [2 marks].\n(b) t = Q / P = 44,000 / 500 = 88 s [2 marks].\n(c) Some heat is lost to the surrounding air, bench, and beaker [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Thermal Capacity",
+      "questionNumber": 3
+    },
+    {
+      "id": "phy4023_2_4",
+      "questionText": "Two resistors of 4.0 Ω and 12.0 Ω are connected in parallel across a 12 V d.c. battery.\n(a) Calculate the combined resistance of the two resistors. [2 marks]\n(b) Calculate the total current drawn from the battery. [2 marks]\n(c) Calculate the current flowing through the 4.0 Ω resistor. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) 1/R = 1/4 + 1/12 = 4/12 = 1/3 -> R = 3.0 Ω [2 marks].\n(b) I = V / R = 12 / 3.0 = 4.0 A [2 marks].\n(c) I₄ = 12 / 4.0 = 3.0 A [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Electric Circuits",
+      "questionNumber": 4
+    },
+    {
+      "id": "phy4023_2_5",
+      "questionText": "(a) State the two conditions required for total internal reflection to occur. [2 marks]\n(b) Glass has a refractive index n = 1.50. Calculate its critical angle c. [2 marks]\n(c) Give one practical application of total internal reflection. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Light travels from an optically denser to less dense medium, and angle of incidence exceeds critical angle (i > c) [2 marks].\n(b) sin c = 1/n = 1/1.50 = 0.6667 -> c = 41.8° [2 marks].\n(c) Optical fibres in telecommunications/endoscopes, or prism periscopes [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Optics",
+      "questionNumber": 5
+    },
+    {
+      "id": "phy4023_2_6",
+      "questionText": "A uniform beam AB of length 4.0 m and weight 100 N is pivoted at its midpoint C (2.0 m). A boy weighing 400 N sits 1.5 m from C on the left side.\n(a) Calculate the anticlockwise moment produced by the boy about C. [2 marks]\n(b) How far to the right of C must a girl weighing 300 N sit to balance the beam horizontally? [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Moment = F × d = 400 × 1.5 = 600 N·m [2 marks].\n(b) Clockwise moment = 600 N·m -> 300 × d₂ = 600 -> d₂ = 2.0 m from C (at end B) [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Moments",
+      "questionNumber": 6
+    },
+    {
+      "id": "phy4023_2_7",
+      "questionText": "Describe a simple laboratory experiment to determine the density of a small irregularly shaped stone using a balance and a measuring cylinder. [5 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1. Measure mass m of the dry stone on an electronic/beam balance in grams [1 mark].\n2. Pour water into a measuring cylinder and record initial volume V₁ [1 mark].\n3. Tie stone with thin thread and gently lower until fully submerged; record new volume V₂ [1 mark].\n4. Volume of stone V = V₂ - V₁ [1 mark].\n5. Calculate density ρ = m / V [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Measurement & Density",
+      "questionNumber": 7
+    },
+    {
+      "id": "phy4023_2_8",
+      "questionText": "A transformer connected to 230 V mains supplies 11.5 V to a school bell.\n(a) Explain why the transformer core is made of laminated soft iron. [2 marks]\n(b) If the primary coil has 2,400 turns, calculate the number of turns on the secondary coil. [2 marks]\n(c) If the secondary current is 2.0 A and the transformer is 100% efficient, find the primary current. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Soft iron easily magnetises and demagnetises to link magnetic flux; laminations reduce eddy-current heating losses [2 marks].\n(b) Ns = Np × (Vs/Vp) = 2400 × (11.5/230) = 120 turns [2 marks].\n(c) VpIp = VsIs -> 230 × Ip = 11.5 × 2.0 -> Ip = 0.10 A [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Electromagnetic Induction",
+      "questionNumber": 8
+    },
+    {
+      "id": "phy4023_2_9",
+      "questionText": "A student fires a starting pistol 510 m from a cliff and hears the echo 3.0 s later.\n(a) Calculate the speed of sound in air from these measurements. [3 marks]\n(b) State two uses of ultrasound waves. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Total distance travelled = 2 × 510 = 1,020 m [1 mark]. Speed = 1020 / 3.0 = 340 m/s [2 marks].\n(b) Prenatal fetal imaging/scanning; cleaning delicate jewellery/instruments or sonar depth sounding [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Sound Waves",
+      "questionNumber": 9
+    },
+    {
+      "id": "phy4023_2_10",
+      "questionText": "Compare alpha (α), beta (β), and gamma (γ) radiations in terms of:\n(a) nature/identity [3 marks],\n(b) ionising power and penetrating ability [3 marks],\n(c) one safety precaution when handling radioactive sources in a school laboratory [1 mark].",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) α: helium nucleus (2p+2n, charge +2); β: fast electron (-1); γ: high-frequency electromagnetic wave (0 charge) [3 marks].\n(b) α is strongly ionising but stopped by paper; β has medium ionisation and is stopped by ~5 mm aluminium; γ is weakly ionising but highly penetrating requiring thick lead/concrete [3 marks].\n(c) Handle with long tongs/forceps, keep sources in lead-lined box, never point at anyone [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Nuclear Physics",
+      "questionNumber": 10
+    },
+    {
+      "id": "phy4023_2_11",
+      "questionText": "(a) Distinguish between evaporation and boiling of a liquid. Give two differences. [4 marks]\n(b) Explain why a swimmer feels cold when stepping out of water into a breeze. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Evaporation occurs at any temperature below boiling point and only at the surface; boiling occurs at a fixed temperature throughout the entire liquid with bubbles [4 marks].\n(b) Breeze speeds evaporation; high-energy water molecules escape taking latent heat from the skin, lowering body surface temperature [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Thermal Physics",
+      "questionNumber": 11
+    },
+    {
+      "id": "phy4023_2_12",
+      "questionText": "A car battery has an EMF of 12 V and delivers a current of 3.0 A to two identical headlamps connected in parallel.\n(a) Explain what is meant by \"EMF of 12 V\". [2 marks]\n(b) Calculate the total resistance of the two lamps combined and the resistance of a single lamp. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) 12 J of chemical energy is converted into electrical energy per coulomb of charge driven around the complete circuit [2 marks].\n(b) R_total = V/I = 12/3.0 = 4.0 Ω [1 mark]. Since two identical lamps in parallel give half of one lamp: R_single = 2 × 4.0 = 8.0 Ω [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Electricity",
+      "questionNumber": 12
+    },
+    {
+      "id": "phy4023_2_13",
+      "questionText": "State Newton's three laws of motion and give one everyday example of Newton's First Law (inertia) in vehicle safety. [5 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1st Law: A body stays at rest or constant velocity unless acted on by a resultant force [1]. 2nd Law: Resultant force F = ma (rate of change of momentum) [1]. 3rd Law: For every action force there is an equal and opposite reaction force [1]. Example: Seatbelts restrain passengers whose inertia tends to keep them moving forward when a car brakes suddenly [2].",
+      "answerConfidence": "high",
+      "topic": "Dynamics",
+      "questionNumber": 13
+    },
+    {
+      "id": "phy4023_2_14",
+      "questionText": "A rectangular brick measures 20 cm × 10 cm × 5 cm and weighs 25 N.\n(a) Calculate the maximum pressure it can exert on a table (in N/cm² and in Pa). [3 marks]\n(b) Calculate the minimum pressure it can exert on the table (in N/cm²). [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Maximum pressure occurs on smallest area A = 10 × 5 = 50 cm² (= 0.005 m²). P_max = 25 / 50 = 0.50 N/cm² = 5,000 Pa [3 marks].\n(b) Minimum pressure on largest area A = 20 × 10 = 200 cm². P_min = 25 / 200 = 0.125 N/cm² [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Pressure",
+      "questionNumber": 14
+    },
+    {
+      "id": "phy4023_2_15",
+      "questionText": "(a) Draw/describe the truth table of a 2-input NOR gate. [2 marks]\n(b) Explain how a thermistor can be used in a potential-divider circuit as an automatic fire alarm trigger. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) NOR gate outputs 1 ONLY when both inputs A=0 and B=0; outputs 0 when either or both inputs are 1 [2 marks].\n(b) An NTC thermistor's resistance falls sharply as temperature rises; in series with a fixed resistor, voltage across the fixed resistor rises to exceed the threshold switching on the alarm/relay [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Electronics",
+      "questionNumber": 15
+    },
+    {
+      "id": "phy4023_2_16",
+      "questionText": "Describe an experiment to measure the specific heat capacity of water using an electrical immersion heater, thermometer, beaker, stopwatch, and joulemeter (or ammeter & voltmeter). [5 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1. Weigh empty insulated beaker and add known mass m of water [1].\n2. Record initial water temperature θ₁ [1].\n3. Switch on heater, start stopwatch, and record V, I (or joulemeter reading E = VIt) while stirring gently [1].\n4. Switch off, stir, and record highest steady temperature θ₂ [1].\n5. Compute c = VIt / [m(θ₂ - θ₁)] [1].",
+      "answerConfidence": "high",
+      "topic": "Practical Thermal",
+      "questionNumber": 16
+    },
+    {
+      "id": "phy4023_2_17",
+      "questionText": "An object 2.0 cm tall is placed 15 cm in front of a convex (converging) lens of focal length 10 cm.\n(a) Use the lens formula 1/f = 1/u + 1/v to find the image distance v. [3 marks]\n(b) State three properties of the image formed (real/virtual, upright/inverted, size). [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) 1/10 = 1/15 + 1/v -> 1/v = 1/10 - 1/15 = 1/30 -> v = +30 cm [3 marks].\n(b) Real, inverted, magnified (magnification = 30/15 = 2×, height 4.0 cm) [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Optics",
+      "questionNumber": 17
+    },
+    {
+      "id": "phy4023_2_18",
+      "questionText": "A copper rod rests across two bare horizontal rails inside a strong magnetic field directed vertically downwards. When a battery is connected across the rails, the rod rolls sideways.\n(a) Name the physical effect demonstrated. [1 mark]\n(b) State two ways to increase the force pushing the rod. [2 marks]\n(c) State one way to reverse the direction of motion. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) The motor effect (force on a current-carrying conductor in a magnetic field) [1 mark].\n(b) Increase the electric current; use stronger magnets [2 marks].\n(c) Reverse battery polarity (current direction) OR swap N and S magnetic poles [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Electromagnetism",
+      "questionNumber": 18
+    },
+    {
+      "id": "phy4023_2_19",
+      "questionText": "Explain why:\n(a) small gaps are left between steel railway tracks, [2 marks]\n(b) power lines hang loosely in summer, [2 marks]\n(c) double-glazed windows keep rooms warmer in winter. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Allows thermal expansion on hot sunny days so rails do not buckle/bend [2 marks].\n(b) Prevents cables snapping under tension when they contract in cold winter nights [2 marks].\n(c) Trapped dry air/vacuum between glass panes is a very poor conductor and suppresses convection currents [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Thermal Expansion & Insulation",
+      "questionNumber": 19
+    },
+    {
+      "id": "phy4023_2_20",
+      "questionText": "A stone of mass 0.5 kg is thrown vertically upwards at 20 m/s (g = 10 m/s²). Neglecting air resistance:\n(a) Calculate its initial kinetic energy. [2 marks]\n(b) Use conservation of energy to calculate the maximum height reached. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) KE = ½mv² = ½ × 0.5 × 20² = 100 J [2 marks].\n(b) At max height all KE converts to GPE: mgh = 100 -> 0.5 × 10 × h = 100 -> h = 20 m [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Energy Conservation",
+      "questionNumber": 20
+    }
+  ]
+}

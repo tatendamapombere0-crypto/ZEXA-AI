@@ -4,6 +4,8 @@ import grade7HbcQAData from '../data/zimsec_grade7_hbc_line_by_line_qa.json';
 import oLevelBiologyQAData from '../data/o_level_biology_qa_notes.json';
 import oLevelBiologyChunks from '../data/o_level_biology_chunks.json';
 import { COMPREHENSIVE_STUDY_PACKS } from '../data/comprehensiveStudyPacks';
+import assetsKnowledgeIndex from '../data/assets_knowledge_index.json';
+import { extractTopicsFromJsonAsset, ExtractedAssetTopic } from './jsonAssetExtractor';
 
 export interface UniversalGlossaryEntry {
   id: string;
@@ -16,6 +18,17 @@ export interface UniversalGlossaryEntry {
   topic?: string;
   content?: string;
   keywords?: string[];
+}
+
+export interface AssetKnowledgeIndexItem {
+  id: string;
+  t: string; // topic
+  s: string; // subject
+  l: string; // level
+  f: string; // file name
+  idx: number;
+  kw: string[];
+  snip: string;
 }
 
 interface ScoredChunk {
@@ -35,6 +48,47 @@ export class KnowledgeStore {
   private static cache = new Map<string, SearchResult>();
   public static universalGlossary: Map<string, UniversalGlossaryEntry> = new Map();
   private static sortedGlossaryKeys: Array<[string, UniversalGlossaryEntry]> = [];
+  private static assetsIndex: AssetKnowledgeIndexItem[] = Array.isArray(assetsKnowledgeIndex)
+    ? (assetsKnowledgeIndex as unknown as AssetKnowledgeIndexItem[])
+    : [];
+  private static loadedAssetFiles = new Map<string, any>();
+
+  private static loadedAssetTopics = new Map<string, ExtractedAssetTopic[]>();
+
+  /**
+   * Loads full markdown syllabus content for an indexed asset file on demand with caching.
+   */
+  public static async loadAssetFileContent(fileName: string, entryIdx: number, fallbackSnip: string): Promise<string> {
+    try {
+      let topics = this.loadedAssetTopics.get(fileName);
+      if (!topics) {
+        let fileData = this.loadedAssetFiles.get(fileName);
+        if (!fileData && typeof fetch === 'function') {
+          const controller = new AbortController();
+          const tid = setTimeout(() => controller.abort(), 3000);
+          const url = typeof window === 'undefined'
+            ? `http://localhost:3000/assets/${encodeURIComponent(fileName)}`
+            : `/assets/${encodeURIComponent(fileName)}`;
+          const res = await fetch(url, { signal: controller.signal });
+          clearTimeout(tid);
+          if (res.ok) {
+            fileData = await res.json();
+            this.loadedAssetFiles.set(fileName, fileData);
+          }
+        }
+        if (fileData) {
+          topics = extractTopicsFromJsonAsset(fileData, fileName);
+          this.loadedAssetTopics.set(fileName, topics);
+        }
+      }
+      if (topics && typeof entryIdx === 'number' && topics[entryIdx]?.content) {
+        return topics[entryIdx].content;
+      }
+    } catch {
+      // Graceful fallback to snippet
+    }
+    return fallbackSnip;
+  }
 
   static {
     // Synchronously index all 2,640+ universal curriculum terms at bundle time (0ms latency)
@@ -301,16 +355,12 @@ export class KnowledgeStore {
         }
       }
 
-      if (bestScore >= 4 && directWordMatches >= 1) {
-        if (qWords.length >= 3 && directWordMatches < 2 && bestScore < 7) {
-          // Check if the single direct match is a distinctive biology keyword (length >= 8)
-          const hasDistinctiveKeyword = qWords.some(w => w.length >= 8 && directWordMatches >= 1);
-          if (hasDistinctiveKeyword) {
-            return bestItem;
-          }
-        } else {
-          return bestItem;
-        }
+      // Require at least 2 direct word matches for multi-word queries, or 1 exact word match for single-word queries
+      if (qWords.length >= 2 && directWordMatches >= 2 && bestScore >= 8) {
+        return bestItem;
+      }
+      if (qWords.length === 1 && directWordMatches === 1 && bestScore >= 4) {
+        return bestItem;
       }
     }
 
@@ -1916,200 +1966,111 @@ Rules of Debit and Credit:
     if (this.isLoaded) return;
     if (this.loadPromise) return this.loadPromise;
 
-    this.loadPromise = (async () => {
-      const seenIds = new Set<string>();
-      const initialChunks = [
-        ...(COMPREHENSIVE_STUDY_PACKS as any[]),
-        ...this.PRIMARY_SEED_CHUNKS,
-        ...this.SECONDARY_SEED_CHUNKS,
-        ...this.TERTIARY_SEED_CHUNKS,
-        ...(oLevelBiologyChunks as any[])
-      ];
-      this.chunks = [];
-      for (const chunk of initialChunks) {
-        if (!seenIds.has(chunk.id)) {
-          seenIds.add(chunk.id);
-          this.chunks.push(chunk);
-        }
+    // 1. Synchronously populate all comprehensive study modules, seeds, biology chunks, and glossary
+    const seenIds = new Set<string>();
+    const initialChunks = [
+      ...(COMPREHENSIVE_STUDY_PACKS as any[]),
+      ...this.PRIMARY_SEED_CHUNKS,
+      ...this.SECONDARY_SEED_CHUNKS,
+      ...this.TERTIARY_SEED_CHUNKS,
+      ...(oLevelBiologyChunks as any[])
+    ];
+    this.chunks = [];
+    for (const chunk of initialChunks) {
+      if (!seenIds.has(chunk.id)) {
+        seenIds.add(chunk.id);
+        this.chunks.push(chunk);
       }
+    }
 
-      // Ingest all 2,640+ universal curriculum terms into searchable chunks for Primary, O-Level, and A-Level
-      if (Array.isArray(universalGlossaryData)) {
-        for (const entry of universalGlossaryData) {
-          const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level'];
-          for (const lvl of levels) {
-            if (lvl === 'General') continue;
-            const chunkId = `glossary_${lvl}_${entry.id}`;
-            if (!seenIds.has(chunkId)) {
-              seenIds.add(chunkId);
-              this.chunks.push({
-                id: chunkId,
-                level: lvl,
-                subject: entry.subject || 'General Curriculum',
-                topic: entry.term,
-                content: entry.content || `${entry.term} (${entry.subject}): ${entry.definition}`,
-                source: 'ZIMSEC Universal Curriculum Knowledge Base',
-                keywords: Array.isArray(entry.keywords) ? entry.keywords : [entry.canonicalName.toLowerCase()]
-              });
-            }
+    // Ingest all 2,640+ universal curriculum terms into searchable chunks for Primary, O-Level, and A-Level
+    if (Array.isArray(universalGlossaryData)) {
+      for (const entry of universalGlossaryData) {
+        const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level'];
+        for (const lvl of levels) {
+          if (lvl === 'General') continue;
+          const chunkId = `glossary_${lvl}_${entry.id}`;
+          if (!seenIds.has(chunkId)) {
+            seenIds.add(chunkId);
+            this.chunks.push({
+              id: chunkId,
+              level: lvl,
+              subject: entry.subject || 'General Curriculum',
+              topic: entry.term,
+              content: entry.content || `${entry.term} (${entry.subject}): ${entry.definition}`,
+              source: 'ZIMSEC Universal Curriculum Knowledge Base',
+              keywords: Array.isArray(entry.keywords) ? entry.keywords : [entry.canonicalName.toLowerCase()]
+            });
           }
         }
       }
+    }
 
+    // Mark loaded immediately so UI (Study Pack, Exam Mode, AI Chat) has 0ms initial load time!
+    this.isLoaded = true;
+
+    // 2. Non-blocking background loader for secondary asset JSON files (does not block UI or offline mode)
+    this.loadPromise = (async () => {
+      // Background load only runs if browser is online
+      if (typeof navigator !== 'undefined' && !navigator.onLine) {
+        return;
+      }
       try {
-        // Fetch primary specific JSON curriculum notes
-        // Fetch primary specific JSON curriculum notes with accurate subject mappings
         const primaryFiles = [
           { f: 'zimsec_grade7_hbc_notes.json', s: 'General' },
           { f: 'zimsec_supplement_civics_primary.json', s: 'Social Science' },
           { f: 'zimsec_general_knowledge_current_affairs.json', s: 'Social Science' },
           { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'Social Science' },
-          { f: 'zimsec_history_heritage_full_depth.json', s: 'Social Science' },
           { f: 'zimsec_primary_heritage_grade7.json', s: 'Social Science' },
           { f: 'zimsec_heritage_social_studies.json', s: 'Social Science' },
-          { f: 'zimsec_heritage_studies_grade7_topics1-3.json', s: 'Social Science' },
-          { f: 'zimsec_heritage_primary.json', s: 'Social Science' },
-          { f: 'zimsec primary_social_studies_syllabus.json', s: 'Social Science' },
-          { f: 'zimsec primary_social_studies 2.json', s: 'Social Science' },
           { f: 'zimsec_grade7_frme.json', s: 'Social Science' },
-          { f: 'zimsec_fareme primary.json', s: 'Social Science' },
-          { f: 'zimsec_fareme.json', s: 'Social Science' },
           { f: 'zimsec_mathematics_grade7.json', s: 'Mathematics' },
           { f: 'zimsec_primary_math_full_depth.json', s: 'Mathematics' },
           { f: 'zimsec_science_technology_full_depth.json', s: 'Agric, Science & Tech' },
           { f: 'zimsec_science_and_technology.json', s: 'Agric, Science & Tech' },
-          { f: 'zimsec_primary_expansion_v2.json', s: 'Agric, Science & Tech' },
           { f: 'zimsec_agriculture_science_tech_grade7.json', s: 'Agric, Science & Tech' },
           { f: 'zimsec_grade_7_agriculture_full_expanded.json', s: 'Agric, Science & Tech' },
-          { f: 'zimsec_agriculture_7grade.json', s: 'Agric, Science & Tech' },
-          { f: 'zimsec_agriculture Primary.json', s: 'Agric, Science & Tech' },
           { f: 'zimsec_ict_grade7.json', s: 'Agric, Science & Tech' },
-          { f: 'zimsec_ict primary.json', s: 'Agric, Science & Tech' },
           { f: 'zimsec_english_junior_grades_3to7.json', s: 'English' },
-          { f: 'zimsec_grade7_english_paper1_exam_bank_150.json', s: 'English' },
-          { f: 'zimsec_grade7_english_paper2_exam_bank_150.json', s: 'English' },
           { f: 'zimsec_chishona_g7_full_notes.json', s: 'Shona' },
           { f: 'zimsec_chishona_g7_studyguide.json', s: 'Shona' },
-          { f: 'zimsec_chishona primary 2.json', s: 'Shona' },
           { f: 'zimsec_ndebele_grade7.json', s: 'Shona' },
-          { f: 'zimsec_isindebele primary.json', s: 'Shona' },
-          { f: 'zimsec_isindebele Primary 1.json', s: 'Shona' },
           { f: 'zimsec_primary_pe_grade7.json', s: 'Physical Edu & Arts' },
-          { f: 'zimsec primary _health_creative_performing_arts_syllabus.json', s: 'Physical Edu & Arts' },
-          { f: 'zimsec_pe_sport_mass_displays.json', s: 'Physical Edu & Arts' },
           { f: 'zimsec_visual_performing_arts.json', s: 'Physical Edu & Arts' }
         ];
 
+        // Fetch in small background batches without blocking main thread
         for (const item of primaryFiles) {
           try {
-            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
+            const controller = new AbortController();
+            const tid = setTimeout(() => controller.abort(), 2000);
+            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`, { signal: controller.signal });
+            clearTimeout(tid);
             if (res.ok) {
               const data = await res.json();
-              this.extractChunksUniversal(
-                data,
-                item.s,
-                'Primary',
-                'ZIMSEC Grade 7 Primary Curriculum',
-                item.f,
-                seenIds
-              );
+              this.extractChunksUniversal(data, item.s, 'Primary', 'ZIMSEC Grade 7 Primary Curriculum', item.f, seenIds);
             }
           } catch {
-            // Skip if file missing
+            // Non-blocking skip
           }
         }
-
-        // Fetch O-Level files
-        const oLevelFiles = [
-          { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'History' },
-          { f: 'zimsec_history_heritage_full_depth.json', s: 'History' },
-          { f: 'zimsec_history_olevel_paper1_topic1_precolonial_states.json', s: 'History' },
-          { f: 'zimsec_history_olevel_paper1_topics2-7.json', s: 'History' },
-          { f: 'zimsec_history_secondary.json', s: 'History' },
-          { f: 'zimsec_mathematics_olevel.json', s: 'Mathematics' },
-          { f: 'zimsec_combined_science_o_level_100k_detailed.json', s: 'Combined Science' },
-          { f: 'zimsec_olevel_english_language.json', s: 'English Language' },
-          { f: 'zimsec_shona_o_level_4007_study_pack.json', s: 'Shona' },
-          { f: 'zimsec_geography_o_level_full_study_pack.json', s: 'Geography' },
-          { f: 'zimsec_commerce_4049_o_level_FULL_DEPTH_FINAL.json', s: 'Commerce' },
-          { f: 'zimsec_computer_science_4021_o_level_FULL_DEPTH_FINAL.json', s: 'Computer Science' },
-          { f: 'zimsec_accounting_4051_o_level_final.json', s: 'Principles of Accounts' },
-          { f: 'zimsec_agriculture_4001_o_level_full_study_pack.json', s: 'Agriculture' },
-          { f: 'zimsec_biology_4025_o_level_full_study_pack.json', s: 'Biology' },
-          { f: 'zimsec_cambridge_o_level_biology_comprehensive_notes.json', s: 'Biology' },
-          { f: 'zimsec_chemistry_o_level_full_study_pack.json', s: 'Chemistry' },
-          { f: 'zimsec_physics_4023_o_level_FULL_DEPTH_FINAL_310KB.json', s: 'Physics' },
-          { f: 'zimsec_geography_secondary.json', s: 'Geography' },
-          { f: 'zimsec_biology_v1.json', s: 'Biology' },
-          { f: 'zimsec_physics_v1.json', s: 'Physics' },
-          { f: 'zimsec_chemistry_v1.json', s: 'Chemistry' }
-        ];
-
-        for (const item of oLevelFiles) {
-          try {
-            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
-            if (res.ok) {
-              const data = await res.json();
-              this.extractChunksUniversal(
-                data,
-                item.s,
-                'O-Level',
-                'ZIMSEC O-Level Curriculum',
-                item.f,
-                seenIds
-              );
-            }
-          } catch {
-            // Skip if missing
-          }
-        }
-
-        // Fetch A-Level files
-        const aLevelFiles = [
-          { f: 'zimsec_history_heritage_comprehensive_archive.json', s: 'History' },
-          { f: 'zimsec_history_heritage_full_depth.json', s: 'History' },
-          { f: 'zimsec_a_level_pure_mathematics_6042_full_final.json', s: 'Pure Mathematics' },
-          { f: 'zimsec_a_level_biology_full_final.json', s: 'Biology' },
-          { f: 'zimsec_a_level_history_9155_extensive_study_pack.json', s: 'History' },
-          { f: 'zimsec_a_level_geography_full_syllabus.json', s: 'Geography' },
-          { f: 'zimsec_a_level_english_literature_9153_full_expanded.json', s: 'Literature in English' },
-          { f: 'zimsec_a_level_divinity_full_syllabus.json', s: 'Divinity' },
-          { f: 'zimsec_a_level_shona_9145_full_expanded.json', s: 'Shona' },
-          { f: 'zimsec_accounting_a_level_2024_2030_expanded.json', s: 'Accounting' },
-          { f: 'zimsec_business_studies_a_level_2024_2030_expanded.json', s: 'Business Studies' },
-          { f: 'zimsec_chemistry_a_level_full.json', s: 'Chemistry' },
-          { f: 'zimsec_economics_a_level_2024_2030_expanded.json', s: 'Economics' },
-          { f: 'zimsec_physics_a_level_2024_2030_expanded.json', s: 'Physics' },
-          { f: 'zimsec_statistics_a_level_6046_study_pack.json', s: 'Statistics' }
-        ];
-
-        for (const item of aLevelFiles) {
-          try {
-            const res = await fetch(`/assets/${encodeURIComponent(item.f)}`);
-            if (res.ok) {
-              const data = await res.json();
-              this.extractChunksUniversal(
-                data,
-                item.s,
-                'A-Level',
-                'ZIMSEC Advanced Level Curriculum',
-                item.f,
-                seenIds
-              );
-            }
-          } catch {
-            // Skip if missing
-          }
-        }
-
       } catch {
-        // Fallback on seed chunks
+        // Safe non-blocking fallback
       }
-
-      this.isLoaded = true;
     })();
 
-    return this.loadPromise;
+    return Promise.resolve();
+  }
+
+  /**
+   * Retrieves all visual topics for a given education level instantly (0ms latency)
+   */
+  public static getAllVisualTopics(level: string): KnowledgeChunk[] {
+    const normLevel = this.normalizeLevel(level);
+    return (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[]).filter((p) => {
+      const pLvl = this.normalizeLevel(p.level);
+      return pLvl === normLevel && p.hasVisual && p.diagramId;
+    });
   }
 
   /**
@@ -2322,8 +2283,19 @@ Rules of Debit and Credit:
       'explain', 'describe', 'discuss', 'state', 'identify', 'name', 'outline', 'detail', 'solve',
       'calculate', 'using', 'between', 'give', 'list', 'show', 'acts', 'much', 'about', 'your',
       'process', 'processes', 'processing', 'steps', 'definition', 'define', 'meaning', 'concept',
-      'concepts', 'tell', 'write', 'notes', 'answer', 'answers'
+      'concepts', 'tell', 'write', 'notes', 'answer', 'answers', 'work', 'works', 'working',
+      'does', 'did', 'done', 'can', 'could', 'would', 'should', 'will'
     ]);
+
+    // Comparison words should be ignored as search target unless query specifically asks for potential difference
+    if (!coreQuery.toLowerCase().includes('potential difference') && !coreQuery.toLowerCase().includes('common difference')) {
+      stopWords.add('difference');
+      stopWords.add('differences');
+      stopWords.add('distinguish');
+      stopWords.add('compare');
+      stopWords.add('contrast');
+      stopWords.add('versus');
+    }
 
     const words = coreQuery
       .toLowerCase()
@@ -2408,18 +2380,22 @@ Rules of Debit and Credit:
       for (const word of effectiveWords) {
         const stemmed = this.stem(word);
         let wordMatched = false;
+        const isShortWord = word.length <= 4;
+        const matchesTopic = isShortWord
+          ? new RegExp(`\\b${word}\\b`, 'i').test(topicLower)
+          : (topicLower.includes(word) || topicLower.includes(stemmed));
 
         // Direct topic match is the highest relevance signal
-        if (topicLower.includes(word) || topicLower.includes(stemmed)) {
+        if (matchesTopic) {
           score += 140;
           wordMatched = true;
           if (topicLower.startsWith(word) || topicLower.endsWith(word)) score += 30;
         }
-        if (kwLower.some((k) => k === word || (word.length >= 4 && k.includes(word)))) {
+        if (kwLower.some((k) => k === word || (!isShortWord && k.includes(word)))) {
           score += 70;
           wordMatched = true;
         }
-        if (contentLower.includes(word)) {
+        if (isShortWord ? new RegExp(`\\b${word}\\b`, 'i').test(contentLower) : contentLower.includes(word)) {
           score += 25;
           wordMatched = true;
         }
@@ -2444,6 +2420,122 @@ Rules of Debit and Credit:
       if (score >= 20 && matchedWords.size >= threshold) {
         scored.push({ chunk, score, matchedWords });
       }
+    }
+
+    // 2. Search across ALL 5,928 syllabus topics indexed from all 125 JSON files in /public/assets/
+    const indexCandidates = this.assetsIndex.filter((item) => {
+      const cLevel = this.normalizeLevel(item.l);
+      if (normLevel === 'primary') return cLevel === 'primary' || cLevel === 'grade7';
+      if (normLevel === 'alevel') return cLevel === 'alevel';
+      if (normLevel === 'olevel') return cLevel === 'olevel';
+      if (normLevel === 'tertiary') return cLevel === 'tertiary';
+      if (normLevel === 'all') return true;
+      return cLevel === normLevel;
+    });
+
+    interface ScoredAssetMatch {
+      item: AssetKnowledgeIndexItem;
+      score: number;
+      matchedWords: Set<string>;
+    }
+    const scoredAssetMatches: ScoredAssetMatch[] = [];
+
+    for (const item of indexCandidates) {
+      let score = 0;
+      const matchedWords = new Set<string>();
+      const topicLower = item.t.toLowerCase();
+      const subjectLower = item.s.toLowerCase();
+      const snipLower = item.snip.toLowerCase();
+      const kwLower = (item.kw || []).map((k) => k.toLowerCase());
+
+      if (preferredSubject && (subjectLower.includes(preferredSubject) || preferredSubject.includes(subjectLower))) {
+        score += 60;
+      }
+
+      if (topicLower.includes('syllabus scope') || topicLower.includes('study guide') || topicLower.includes('scheme of work')) {
+        score -= 150;
+      }
+
+      // Exact phrase match from coreQuery
+      if (coreQuery.length > 5 && topicLower.includes(coreQuery.toLowerCase())) {
+        score += 450;
+      }
+
+      // Bigram matching
+      for (let i = 0; i < effectiveWords.length - 1; i++) {
+        const bigram = `${effectiveWords[i]} ${effectiveWords[i + 1]}`;
+        if (topicLower.includes(bigram)) {
+          score += 320;
+        } else if (kwLower.some((k) => k.includes(bigram))) {
+          score += 200;
+        } else if (snipLower.includes(bigram)) {
+          score += 80;
+        }
+      }
+
+      for (const word of effectiveWords) {
+        const stemmed = this.stem(word);
+        let wordMatched = false;
+        const isShortWord = word.length <= 4;
+        const matchesTopic = isShortWord
+          ? new RegExp(`\\b${word}\\b`, 'i').test(topicLower)
+          : (topicLower.includes(word) || topicLower.includes(stemmed));
+
+        if (matchesTopic) {
+          score += 150;
+          wordMatched = true;
+          if (topicLower.startsWith(word) || topicLower.endsWith(word)) score += 30;
+        }
+        if (kwLower.some((k) => k === word || (!isShortWord && k.includes(word)))) {
+          score += 75;
+          wordMatched = true;
+        }
+        if (isShortWord ? new RegExp(`\\b${word}\\b`, 'i').test(snipLower) : snipLower.includes(word)) {
+          score += 30;
+          wordMatched = true;
+        }
+        if (subjectLower.includes(word)) {
+          score += 20;
+          wordMatched = true;
+        }
+
+        if (wordMatched) matchedWords.add(word);
+      }
+
+      // Exact biographical boost
+      if (isPersonQuery && (topicLower.includes('biography') || topicLower.includes('profile') || topicLower.includes('cde ') || topicLower.includes('king '))) {
+        for (const word of effectiveWords) {
+          if (topicLower.includes(word)) {
+            score += 150;
+          }
+        }
+      }
+
+      const threshold = effectiveWords.length <= 2 ? 1 : Math.max(1, Math.floor(effectiveWords.length * 0.4));
+      if (score >= 40 && matchedWords.size >= threshold) {
+        scoredAssetMatches.push({ item, score, matchedWords });
+      }
+    }
+
+    scoredAssetMatches.sort((a, b) => b.score - a.score);
+
+    // For the top matching asset items, resolve their full in-depth content from the JSON asset file
+    for (const match of scoredAssetMatches.slice(0, 3)) {
+      const fullContent = await this.loadAssetFileContent(match.item.f, match.item.idx, match.item.snip);
+      const chunk: KnowledgeChunk = {
+        id: match.item.id,
+        level: match.item.l,
+        subject: match.item.s,
+        topic: match.item.t,
+        content: fullContent,
+        source: `ZIMSEC Syllabus (${match.item.f.replace('.json', '').replace(/_/g, ' ')})`,
+        keywords: match.item.kw || [match.item.t.toLowerCase()]
+      };
+      scored.push({
+        chunk,
+        score: match.score,
+        matchedWords: match.matchedWords
+      });
     }
 
     scored.sort((a, b) => b.score - a.score);
@@ -2613,11 +2705,30 @@ Rules of Debit and Credit:
       return stdSubj.toLowerCase() === subLower;
     });
 
+    // 3. Draw matching topics from all indexed syllabus asset files
+    const indexMatches = this.assetsIndex
+      .filter((item) => {
+        const cLvl = this.normalizeLevel(item.l);
+        if (cLvl !== normLevel) return false;
+        const itemSubLower = item.s.toLowerCase();
+        return itemSubLower === subLower || itemSubLower.includes(subLower) || subLower.includes(itemSubLower);
+      })
+      .slice(0, 50)
+      .map((item) => ({
+        id: item.id,
+        level: item.l,
+        subject: item.s,
+        topic: item.t,
+        content: item.snip,
+        source: `ZIMSEC Syllabus (${item.f.replace('.json', '').replace(/_/g, ' ')})`,
+        keywords: item.kw || [item.t.toLowerCase()]
+      }));
+
     // Deduplicate by topic title
     const seenTopics = new Set<string>();
     const results: KnowledgeChunk[] = [];
 
-    for (const item of [...primaryPacks, ...extraChunks]) {
+    for (const item of [...primaryPacks, ...extraChunks, ...indexMatches]) {
       const normTopic = item.topic.toLowerCase().trim();
       if (!seenTopics.has(normTopic)) {
         seenTopics.add(normTopic);

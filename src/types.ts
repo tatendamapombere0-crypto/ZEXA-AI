@@ -10,7 +10,7 @@ export type ContentLevel = 'Primary' | 'O-Level' | 'A-Level' | 'Tertiary';
 
 export type SubscriptionStatus = 'FREE' | 'PREMIUM' | 'HOLIDAY_FREE';
 
-export type AIEngineType = 'zexa-instant';
+export type AIEngineType = 'zexa-instant' | 'qwen-neural';
 
 export interface KnowledgeChunk {
   id: string;

@@ -1,20 +1,24 @@
 {
   "paperInfo": {
+    "id": "exam_bank_mathematics_002_1_set_b",
+    "file": "exam_bank_mathematics_002_1_set_b.json",
     "subject": "Mathematics",
     "level": "Primary",
     "paperCode": "002/1",
     "paperName": "Grade 7 Mathematics Paper 1 - Practice Set B (MCQ, ZIMSEC 002/1 format)",
-    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)"
+    "paperType": "Practice Paper (original questions, written in the real ZIMSEC 002/1 format/style)",
+    "questionCount": 45,
+    "totalQuestions": 45
   },
   "questions": [
     {
-      "id": "q1",
+      "id": "q_1",
       "questionNumber": 1,
       "questionText": "Sixty thousand and ninety in figures is",
       "options": [
         {
           "letter": "A",
-          "text": "600 090."
+          "text": "60 090."
         },
         {
           "letter": "B",
@@ -22,19 +26,20 @@
         },
         {
           "letter": "C",
-          "text": "60 090."
+          "text": "600 090."
         },
         {
           "letter": "D",
           "text": "6 090."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Sixty thousand (60 000) plus ninety (90) = 60 090.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q2",
+      "id": "q_2",
       "questionNumber": 2,
       "questionText": "27,548 correct to two decimal places is",
       "options": [
@@ -57,10 +62,11 @@
       ],
       "correctAnswer": "B",
       "explanation": "The third decimal digit is 8, which rounds the second decimal digit up: 27,548 -> 27,55.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q3",
+      "id": "q_3",
       "questionNumber": 3,
       "questionText": "30 - 4 x 5",
       "options": [
@@ -74,19 +80,20 @@
         },
         {
           "letter": "C",
-          "text": "20."
+          "text": "10."
         },
         {
           "letter": "D",
-          "text": "10."
+          "text": "20."
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanation": "Order of operations: multiply first (4 x 5 = 20), then subtract: 30 - 20 = 10.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q4",
+      "id": "q_4",
       "questionNumber": 4,
       "questionText": "21/5 expressed as a mixed number is",
       "options": [
@@ -96,7 +103,7 @@
         },
         {
           "letter": "B",
-          "text": "4(1/5)."
+          "text": "5(1/5)."
         },
         {
           "letter": "C",
@@ -104,21 +111,22 @@
         },
         {
           "letter": "D",
-          "text": "5(1/5)."
+          "text": "4(1/5)."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "21 divided by 5 = 4 remainder 1, so 21/5 = 4(1/5).",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q5",
+      "id": "q_5",
       "questionNumber": 5,
       "questionText": "How many lines of symmetry does an equilateral triangle have?",
       "options": [
         {
           "letter": "A",
-          "text": "1."
+          "text": "3."
         },
         {
           "letter": "B",
@@ -126,29 +134,30 @@
         },
         {
           "letter": "C",
-          "text": "3."
+          "text": "1."
         },
         {
           "letter": "D",
           "text": "4."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "An equilateral triangle (three equal sides) has 3 lines of symmetry.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q6",
+      "id": "q_6",
       "questionNumber": 6,
       "questionText": "Which of the following solid shapes has exactly 6 identical square faces?",
       "options": [
         {
           "letter": "A",
-          "text": "Cube"
+          "text": "Cuboid"
         },
         {
           "letter": "B",
-          "text": "Cuboid"
+          "text": "Cube"
         },
         {
           "letter": "C",
@@ -159,12 +168,13 @@
           "text": "Triangular prism"
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "A cube has 6 identical square faces. A cuboid may have rectangular (not all square) faces.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q7",
+      "id": "q_7",
       "questionNumber": 7,
       "questionText": "In 56 / 8 = 7, which one is a divisor?",
       "options": [
@@ -174,23 +184,24 @@
         },
         {
           "letter": "B",
-          "text": "8"
+          "text": "7"
         },
         {
           "letter": "C",
-          "text": "7"
+          "text": "8"
         },
         {
           "letter": "D",
           "text": "63"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "In a division sentence, the divisor is the number you divide by: 8.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q8",
+      "id": "q_8",
       "questionNumber": 8,
       "questionText": "The time shown on a clock is 1350. In 1 hour 40 minutes the time will be",
       "options": [
@@ -213,20 +224,21 @@
       ],
       "correctAnswer": "D",
       "explanation": "1350 + 1 hour = 1450. 1450 + 40 minutes = 1530.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q9",
+      "id": "q_9",
       "questionNumber": 9,
       "questionText": "Tendai bought 12 books for $60. He sold each book for $6. His profit was",
       "options": [
         {
           "letter": "A",
-          "text": "$0."
+          "text": "$12."
         },
         {
           "letter": "B",
-          "text": "$12."
+          "text": "$0."
         },
         {
           "letter": "C",
@@ -237,22 +249,23 @@
           "text": "$72."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Selling price total = 12 x 6 = $72. Profit = 72 - 60 = $12.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q10",
+      "id": "q_10",
       "questionNumber": 10,
       "questionText": "398 245 rounded off to the nearest 1 000 is",
       "options": [
         {
           "letter": "A",
-          "text": "398 000."
+          "text": "399 000."
         },
         {
           "letter": "B",
-          "text": "399 000."
+          "text": "398 000."
         },
         {
           "letter": "C",
@@ -263,12 +276,13 @@
           "text": "390 000."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "The hundreds digit is 2, which is less than 5, so 398 245 rounds down to 398 000.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q11",
+      "id": "q_11",
       "questionNumber": 11,
       "questionText": "The difference between two numbers is 6. Their product is 91. The numbers are",
       "options": [
@@ -291,16 +305,17 @@
       ],
       "correctAnswer": "C",
       "explanation": "13 - 7 = 6 and 13 x 7 = 91, so the numbers are 7 and 13.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q12",
+      "id": "q_12",
       "questionNumber": 12,
       "questionText": "9/12 in its lowest terms is",
       "options": [
         {
           "letter": "A",
-          "text": "3/4."
+          "text": "2/3."
         },
         {
           "letter": "B",
@@ -312,21 +327,22 @@
         },
         {
           "letter": "D",
-          "text": "2/3."
+          "text": "3/4."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Dividing both 9 and 12 by their highest common factor, 3, gives 3/4.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q13",
+      "id": "q_13",
       "questionNumber": 13,
       "questionText": "What is the area of a rectangle measuring 15m by 8m?",
       "options": [
         {
           "letter": "A",
-          "text": "23 sq m."
+          "text": "120 sq m."
         },
         {
           "letter": "B",
@@ -334,19 +350,20 @@
         },
         {
           "letter": "C",
-          "text": "120 sq m."
+          "text": "23 sq m."
         },
         {
           "letter": "D",
           "text": "240 sq m."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Area of a rectangle = length x width = 15 x 8 = 120 sq m.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q14",
+      "id": "q_14",
       "questionNumber": 14,
       "questionText": "4 painters can paint a hall in 18 days. How many painters are needed to paint the same hall in 8 days?",
       "options": [
@@ -356,23 +373,24 @@
         },
         {
           "letter": "B",
-          "text": "8."
+          "text": "9."
         },
         {
           "letter": "C",
-          "text": "9."
+          "text": "8."
         },
         {
           "letter": "D",
           "text": "12."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "This is inverse proportion: 4 x 18 = 72 painter-days. 72 / 8 = 9 painters.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q15",
+      "id": "q_15",
       "questionNumber": 15,
       "questionText": "Find the value of 12,4 x 100.",
       "options": [
@@ -382,29 +400,30 @@
         },
         {
           "letter": "B",
-          "text": "1 240."
+          "text": "0,124."
         },
         {
           "letter": "C",
-          "text": "0,124."
+          "text": "1 240."
         },
         {
           "letter": "D",
           "text": "12 400."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Multiplying by 100 moves the decimal point two places to the right: 12,4 x 100 = 1 240.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q16",
+      "id": "q_16",
       "questionNumber": 16,
       "questionText": "What must be subtracted from 5 000 to leave 3 246?",
       "options": [
         {
           "letter": "A",
-          "text": "1 754."
+          "text": "1 854."
         },
         {
           "letter": "B",
@@ -416,21 +435,22 @@
         },
         {
           "letter": "D",
-          "text": "1 854."
+          "text": "1 754."
         }
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "5 000 - 3 246 = 1 754.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q17",
+      "id": "q_17",
       "questionNumber": 17,
       "questionText": "Share 240 sweets between Farai and Tino in the ratio 3:5. How many sweets does Farai get?",
       "options": [
         {
           "letter": "A",
-          "text": "60."
+          "text": "90."
         },
         {
           "letter": "B",
@@ -438,19 +458,20 @@
         },
         {
           "letter": "C",
-          "text": "90."
+          "text": "60."
         },
         {
           "letter": "D",
           "text": "150."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Total parts = 3 + 5 = 8. One part = 240 / 8 = 30. Farai's share (3 parts) = 3 x 30 = 90.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q18",
+      "id": "q_18",
       "questionNumber": 18,
       "questionText": "Find the average of 15, 22, 19, 26 and 18.",
       "options": [
@@ -460,23 +481,24 @@
         },
         {
           "letter": "B",
-          "text": "19."
+          "text": "20."
         },
         {
           "letter": "C",
-          "text": "20."
+          "text": "19."
         },
         {
           "letter": "D",
           "text": "21."
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Sum = 15 + 22 + 19 + 26 + 18 = 100. Average = 100 / 5 = 20.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q19",
+      "id": "q_19",
       "questionNumber": 19,
       "questionText": "A number, when multiplied by 7, gives 168. The number is",
       "options": [
@@ -486,23 +508,24 @@
         },
         {
           "letter": "B",
-          "text": "24."
+          "text": "26."
         },
         {
           "letter": "C",
-          "text": "26."
+          "text": "24."
         },
         {
           "letter": "D",
           "text": "28."
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Number = 168 / 7 = 24.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     },
     {
-      "id": "q20",
+      "id": "q_20",
       "questionNumber": 20,
       "questionText": "Which of the following angles is a reflex angle?",
       "options": [
@@ -525,7 +548,683 @@
       ],
       "correctAnswer": "D",
       "explanation": "A reflex angle is greater than 180 degrees but less than 360 degrees; 200 degrees fits this range.",
-      "answerConfidence": "high"
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
+    },
+    {
+      "id": "q_21",
+      "questionNumber": 21,
+      "questionText": "Find the value of 64 + 38 × 3 in the given arithmetic problem.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "178"
+        },
+        {
+          "letter": "B",
+          "text": "306"
+        },
+        {
+          "letter": "C",
+          "text": "168"
+        },
+        {
+          "letter": "D",
+          "text": "193"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Official Mathematical Working: Apply BODMAS order of operations. First multiply (38 × 3 = 114), then add 64 to obtain 178.",
+      "answerConfidence": "high",
+      "topic": "Numbers and Operations"
+    },
+    {
+      "id": "g7m_p1_9",
+      "questionNumber": 22,
+      "questionText": "Evaluate: 4.8 ÷ 0.06",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8"
+        },
+        {
+          "letter": "B",
+          "text": "80"
+        },
+        {
+          "letter": "C",
+          "text": "8"
+        },
+        {
+          "letter": "D",
+          "text": "800"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Multiply numerator and denominator by 100: 480 ÷ 6 = 80.",
+      "answerConfidence": "high",
+      "topic": "Decimals"
+    },
+    {
+      "id": "g7m_p1_10",
+      "questionNumber": 23,
+      "questionText": "How many vertices does a triangular prism have?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "5"
+        },
+        {
+          "letter": "C",
+          "text": "6"
+        },
+        {
+          "letter": "D",
+          "text": "9"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A triangular prism has 3 vertices on each triangular face = 6 vertices total.",
+      "answerConfidence": "high",
+      "topic": "Geometry 3D Shapes"
+    },
+    {
+      "id": "g7m_p1_11",
+      "questionNumber": 24,
+      "questionText": "What is the Highest Common Factor (HCF) of 36 and 54?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "9"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "18"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Factors of 36 and 54: greatest shared divisor is 18 (36=18×2, 54=18×3).",
+      "answerConfidence": "high",
+      "topic": "HCF"
+    },
+    {
+      "id": "g7m_p1_12",
+      "questionNumber": 25,
+      "questionText": "In a triangle, two angles measure 48° and 67°. Find the size of the third angle.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "65°"
+        },
+        {
+          "letter": "B",
+          "text": "55°"
+        },
+        {
+          "letter": "C",
+          "text": "75°"
+        },
+        {
+          "letter": "D",
+          "text": "115°"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Angles in a triangle add to 180°: 180° - (48° + 67°) = 180° - 115° = 65°.",
+      "answerConfidence": "high",
+      "topic": "Angles"
+    },
+    {
+      "id": "g7m_p1_13",
+      "questionNumber": 26,
+      "questionText": "A farmer harvests 3.4 tonnes of maize. How many 50 kg bags can be filled completely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "58"
+        },
+        {
+          "letter": "B",
+          "text": "68"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "72"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "3.4 tonnes = 3,400 kg. 3,400 ÷ 50 = 68 bags.",
+      "answerConfidence": "high",
+      "topic": "Mass & Units"
+    },
+    {
+      "id": "g7m_p1_14",
+      "questionNumber": 27,
+      "questionText": "Which fraction is the largest: 2/3, 5/8, 7/12, or 3/4?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2/3"
+        },
+        {
+          "letter": "B",
+          "text": "5/8"
+        },
+        {
+          "letter": "C",
+          "text": "3/4"
+        },
+        {
+          "letter": "D",
+          "text": "7/12"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Over denominator 24: 2/3 = 16/24, 5/8 = 15/24, 7/12 = 14/24, 3/4 = 18/24 (largest).",
+      "answerConfidence": "high",
+      "topic": "Ordering Fractions"
+    },
+    {
+      "id": "g7m_p1_15",
+      "questionNumber": 28,
+      "questionText": "Find the mean (average) of 14, 18, 22, 20, and 26.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18"
+        },
+        {
+          "letter": "B",
+          "text": "19"
+        },
+        {
+          "letter": "C",
+          "text": "22"
+        },
+        {
+          "letter": "D",
+          "text": "20"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sum = 14+18+22+20+26 = 100. Mean = 100 ÷ 5 = 20.",
+      "answerConfidence": "high",
+      "topic": "Statistics"
+    },
+    {
+      "id": "g7m_p1_16",
+      "questionNumber": 29,
+      "questionText": "A cylindrical tank holds 4.5 litres of cooking oil. How many 250 ml bottles can be filled from it?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18"
+        },
+        {
+          "letter": "B",
+          "text": "16"
+        },
+        {
+          "letter": "C",
+          "text": "12"
+        },
+        {
+          "letter": "D",
+          "text": "20"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "4.5 litres = 4,500 ml. 4,500 ÷ 250 = 18 bottles.",
+      "answerConfidence": "high",
+      "topic": "Capacity"
+    },
+    {
+      "id": "g7m_p1_17",
+      "questionNumber": 30,
+      "questionText": "Write the Roman numeral MCMXLIV in Hindu-Arabic numerals.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1934"
+        },
+        {
+          "letter": "B",
+          "text": "1944"
+        },
+        {
+          "letter": "C",
+          "text": "1964"
+        },
+        {
+          "letter": "D",
+          "text": "2044"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "M=1000, CM=900, XL=40, IV=4 -> 1944.",
+      "answerConfidence": "high",
+      "topic": "Roman Numerals"
+    },
+    {
+      "id": "g7m_p1_18",
+      "questionNumber": 31,
+      "questionText": "Solve for x: 3x - 7 = 20",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "7"
+        },
+        {
+          "letter": "C",
+          "text": "9"
+        },
+        {
+          "letter": "D",
+          "text": "13"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "3x = 20 + 7 = 27, so x = 27 ÷ 3 = 9.",
+      "answerConfidence": "high",
+      "topic": "Algebra"
+    },
+    {
+      "id": "g7m_p1_19",
+      "questionNumber": 32,
+      "questionText": "A motorist travels 210 km in 2 hours 30 minutes. Calculate the average speed.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "75 km/h"
+        },
+        {
+          "letter": "B",
+          "text": "80 km/h"
+        },
+        {
+          "letter": "C",
+          "text": "90 km/h"
+        },
+        {
+          "letter": "D",
+          "text": "84 km/h"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Speed = Distance ÷ Time = 210 ÷ 2.5 = 84 km/h.",
+      "answerConfidence": "high",
+      "topic": "Speed Distance Time"
+    },
+    {
+      "id": "g7m_p1_20",
+      "questionNumber": 33,
+      "questionText": "What is the volume of a cuboid measuring 8 cm by 5 cm by 4 cm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "160 cm³"
+        },
+        {
+          "letter": "B",
+          "text": "80 cm³"
+        },
+        {
+          "letter": "C",
+          "text": "120 cm³"
+        },
+        {
+          "letter": "D",
+          "text": "17 cm³"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Volume = L × W × H = 8 × 5 × 4 = 160 cm³.",
+      "answerConfidence": "high",
+      "topic": "Volume"
+    },
+    {
+      "id": "g7m_p1_21",
+      "questionNumber": 34,
+      "questionText": "Round 47,862 to the nearest thousand.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "47,000"
+        },
+        {
+          "letter": "B",
+          "text": "48,000"
+        },
+        {
+          "letter": "C",
+          "text": "47,800"
+        },
+        {
+          "letter": "D",
+          "text": "50,000"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The hundreds digit is 8 (>= 5), so 47,862 rounds up to 48,000.",
+      "answerConfidence": "high",
+      "topic": "Place Value & Rounding"
+    },
+    {
+      "id": "g7m_p1_22",
+      "questionNumber": 35,
+      "questionText": "Evaluate: 2/3 + 3/4 - 1/2",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7/12"
+        },
+        {
+          "letter": "B",
+          "text": "5/6"
+        },
+        {
+          "letter": "C",
+          "text": "11/12"
+        },
+        {
+          "letter": "D",
+          "text": "1 1/12"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Common denominator 12: 8/12 + 9/12 - 6/12 = 11/12.",
+      "answerConfidence": "high",
+      "topic": "Fractions"
+    },
+    {
+      "id": "g7m_p1_23",
+      "questionNumber": 36,
+      "questionText": "A water tank loses 15% of its 800 litres due to evaporation. How many litres remain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "120 litres"
+        },
+        {
+          "letter": "B",
+          "text": "640 litres"
+        },
+        {
+          "letter": "C",
+          "text": "785 litres"
+        },
+        {
+          "letter": "D",
+          "text": "680 litres"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "15% of 800 = 120 litres lost. Remaining = 800 - 120 = 680 litres.",
+      "answerConfidence": "high",
+      "topic": "Percentages"
+    },
+    {
+      "id": "g7m_p1_24",
+      "questionNumber": 37,
+      "questionText": "If 6 pens cost $4.50, how much do 10 pens cost at the same rate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$7.50"
+        },
+        {
+          "letter": "B",
+          "text": "$7.00"
+        },
+        {
+          "letter": "C",
+          "text": "$6.50"
+        },
+        {
+          "letter": "D",
+          "text": "$8.50"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "1 pen costs $4.50 ÷ 6 = $0.75. 10 pens = 10 × $0.75 = $7.50.",
+      "answerConfidence": "high",
+      "topic": "Proportion"
+    },
+    {
+      "id": "g7m_p1_25",
+      "questionNumber": 38,
+      "questionText": "Find the area of a triangle with base 14 cm and perpendicular height 9 cm.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23 cm²"
+        },
+        {
+          "letter": "B",
+          "text": "63 cm²"
+        },
+        {
+          "letter": "C",
+          "text": "126 cm²"
+        },
+        {
+          "letter": "D",
+          "text": "46 cm²"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Area = ½ × base × height = ½ × 14 × 9 = 63 cm².",
+      "answerConfidence": "high",
+      "topic": "Area of Triangle"
+    },
+    {
+      "id": "g7m_p1_26",
+      "questionNumber": 39,
+      "questionText": "What is the square root of 225?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "13"
+        },
+        {
+          "letter": "B",
+          "text": "14"
+        },
+        {
+          "letter": "C",
+          "text": "15"
+        },
+        {
+          "letter": "D",
+          "text": "25"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "15 × 15 = 225, so √225 = 15.",
+      "answerConfidence": "high",
+      "topic": "Squares & Roots"
+    },
+    {
+      "id": "g7m_p1_27",
+      "questionNumber": 40,
+      "questionText": "In a class of 40 pupils, 24 are girls. What percentage of the class are boys?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16%"
+        },
+        {
+          "letter": "B",
+          "text": "24%"
+        },
+        {
+          "letter": "C",
+          "text": "60%"
+        },
+        {
+          "letter": "D",
+          "text": "40%"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Boys = 40 - 24 = 16. Percentage = (16/40) × 100% = 40%.",
+      "answerConfidence": "high",
+      "topic": "Percentages"
+    },
+    {
+      "id": "g7m_p1_28",
+      "questionNumber": 41,
+      "questionText": "Convert 3 hours 45 minutes into minutes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "225 minutes"
+        },
+        {
+          "letter": "B",
+          "text": "215 minutes"
+        },
+        {
+          "letter": "C",
+          "text": "185 minutes"
+        },
+        {
+          "letter": "D",
+          "text": "245 minutes"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "(3 × 60) + 45 = 180 + 45 = 225 minutes.",
+      "answerConfidence": "high",
+      "topic": "Time"
+    },
+    {
+      "id": "g7m_p1_29",
+      "questionNumber": 42,
+      "questionText": "Which of the following numbers is a prime number: 21, 27, 29, or 33?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "21"
+        },
+        {
+          "letter": "B",
+          "text": "29"
+        },
+        {
+          "letter": "C",
+          "text": "27"
+        },
+        {
+          "letter": "D",
+          "text": "33"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "29 has exactly two factors (1 and 29). 21=3×7, 27=3×9, 33=3×11.",
+      "answerConfidence": "high",
+      "topic": "Number Properties"
+    },
+    {
+      "id": "g7m_p1_30",
+      "questionNumber": 43,
+      "questionText": "A circle has radius 7 cm. Taking π = 22/7, calculate its circumference.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "22 cm"
+        },
+        {
+          "letter": "B",
+          "text": "88 cm"
+        },
+        {
+          "letter": "C",
+          "text": "44 cm"
+        },
+        {
+          "letter": "D",
+          "text": "154 cm"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Circumference = 2πr = 2 × (22/7) × 7 = 44 cm.",
+      "answerConfidence": "high",
+      "topic": "Circles"
+    },
+    {
+      "id": "g7m_p1_1",
+      "questionNumber": 44,
+      "questionText": "Express 3/8 as a decimal fraction.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.25"
+        },
+        {
+          "letter": "B",
+          "text": "0.625"
+        },
+        {
+          "letter": "C",
+          "text": "0.38"
+        },
+        {
+          "letter": "D",
+          "text": "0.375"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Working: 3 ÷ 8 = 0.375. Answer: B.",
+      "answerConfidence": "high",
+      "topic": "Fractions & Decimals"
+    },
+    {
+      "id": "q_1",
+      "questionNumber": 45,
+      "questionText": "Calculate 1,200 + 230.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1430"
+        },
+        {
+          "letter": "B",
+          "text": "1420"
+        },
+        {
+          "letter": "C",
+          "text": "1440"
+        },
+        {
+          "letter": "D",
+          "text": "1530"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "1,200 + 230 = 1,430.",
+      "answerConfidence": "high",
+      "topic": "Mathematics Examination Practice"
     }
   ]
 }

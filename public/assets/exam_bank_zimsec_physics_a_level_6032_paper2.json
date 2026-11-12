@@ -1,0 +1,212 @@
+{
+  "paperInfo": {
+    "subject": "Physics",
+    "level": "A-Level",
+    "paperCode": "6032/02",
+    "paperName": "Physics Paper 2 — Structured Theory",
+    "paperType": "Structured",
+    "questionCount": 20
+  },
+  "questions": [
+    {
+      "id": "phy6032_2_1",
+      "questionText": "Gravitational Fields:\n(a) Define gravitational potential φ at a point in a field, and explain why values are negative. [3 marks]\n(b) A geostationary satellite orbits Earth of mass M = 5.97 × 10²⁴ kg (G = 6.67 × 10⁻¹¹ N·m²·kg⁻²). Derive and calculate its orbital radius r given T = 24 hours. [4 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Work done per unit mass bringing a small test mass from infinity to that point [2]. Zero potential is defined at infinity and gravity is always attractive, so work is released coming in (negative potential) [1].\n(b) GMm/r² = mω²r = m(2π/T)²r -> r³ = GMT² / (4π²) [2]. With T = 86,400 s: r³ = (6.67×10⁻¹¹ × 5.97×10²⁴ × 86400²)/(4π²) = 7.53×10²² -> r = 4.22 × 10⁷ m (42,200 km) [2].",
+      "answerConfidence": "high",
+      "topic": "Gravitation",
+      "questionNumber": 1
+    },
+    {
+      "id": "phy6032_2_2",
+      "questionText": "Simple Harmonic Motion:\nA mass of 0.40 kg on a smooth horizontal surface oscillates between springs with amplitude x₀ = 0.060 m and frequency f = 2.5 Hz.\n(a) Calculate the angular frequency ω and maximum acceleration. [3 marks]\n(b) Calculate the total mechanical energy of the oscillating mass. [2 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) ω = 2πf = 2π(2.5) = 5π = 15.7 rad/s [1.5]. a_max = ω²x₀ = (15.71)² × 0.060 = 14.8 m/s² [1.5].\n(b) E_total = ½mω²x₀² = ½(0.40)(15.71)²(0.060)² = 0.178 J [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Oscillations",
+      "questionNumber": 2
+    },
+    {
+      "id": "phy6032_2_3",
+      "questionText": "Capacitors & Exponential Decay:\nA 2,200 µF capacitor is charged to 12.0 V and then discharged through a 15.0 kΩ resistor.\n(a) Calculate the initial charge Q₀ and stored energy E₀. [3 marks]\n(b) Calculate the potential difference across the capacitor after 20.0 s. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Q₀ = CV = 2200×10⁻⁶ × 12.0 = 0.0264 C (26.4 mC) [1.5]. E₀ = ½CV² = ½(2200×10⁻⁶)(144) = 0.158 J [1.5].\n(b) τ = RC = 15×10³ × 2200×10⁻⁶ = 33.0 s [1]. V = V₀e^(-t/τ) = 12.0 × e^(-20/33) = 12.0 × 0.5455 = 6.55 V [2].",
+      "answerConfidence": "high",
+      "topic": "Capacitance",
+      "questionNumber": 3
+    },
+    {
+      "id": "phy6032_2_4",
+      "questionText": "Electromagnetic Induction & Hall Effect:\n(a) State Faraday's law of electromagnetic induction. [2 marks]\n(b) A circular coil of 200 turns and cross-sectional area 4.0 × 10⁻³ m² sits perpendicular to a 0.35 T magnetic field. The field is reduced uniformly to zero in 0.050 s. Calculate the magnitude of induced EMF. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Magnitude of induced EMF is directly proportional to the rate of change of magnetic flux linkage (E = d(NΦ)/dt) [2].\n(b) Δ(NΦ) = BAN = 0.35 × 4.0×10⁻³ × 200 = 0.28 Wb [1.5]. E = Δ(NΦ)/Δt = 0.28 / 0.050 = 5.6 V [1.5].",
+      "answerConfidence": "high",
+      "topic": "EM Induction",
+      "questionNumber": 4
+    },
+    {
+      "id": "phy6032_2_5",
+      "questionText": "Photoelectric Effect & Quantum Theory:\nExplain three experimental observations of the photoelectric effect that wave theory fails to explain, and how Einstein's photon model resolves each. [6 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1. Threshold frequency f₀: Waves predict any frequency should emit electrons eventually; photon energy E = hf requires hf ≥ Φ [2].\n2. Instantaneous emission at even tiny intensity: Wave energy spreads slowly; single photon transfers all energy E = hf instantly to one electron [2].\n3. KE_max depends on frequency, independent of intensity: Intensity only controls photon arrival rate (photocurrent), whereas excess photon energy hf - Φ sets KE_max [2].",
+      "answerConfidence": "high",
+      "topic": "Quantum Physics",
+      "questionNumber": 5
+    },
+    {
+      "id": "phy6032_2_6",
+      "questionText": "Nuclear Fission & Binding Energy:\nCalculate the energy released in MeV when a single ²³⁵₉₂U nucleus undergoes fission releasing Δm = 0.215 u of mass defect (1 u = 1.6605 × 10⁻²⁷ kg; c = 3.00 × 10⁸ m/s; 1 eV = 1.60 × 10⁻¹⁹ J). [4 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Δm = 0.215 × 1.6605×10⁻²⁷ = 3.570 × 10⁻²⁸ kg [1]. ΔE = Δmc² = 3.570×10⁻²⁸ × (3.00×10⁸)² = 3.213 × 10⁻¹¹ J [2]. In MeV: (3.213×10⁻¹¹)/(1.60×10⁻¹³) = 200.8 MeV [1].",
+      "answerConfidence": "high",
+      "topic": "Nuclear Physics",
+      "questionNumber": 6
+    },
+    {
+      "id": "phy6032_2_7",
+      "questionText": "Alternating Current & Rectification:\nA sinusoidal supply V = 340 sin(100πt) is connected across a 100 Ω heater.\n(a) Determine the frequency and V_rms of the supply. [3 marks]\n(b) Calculate the mean power dissipated in the heater and explain the effect of placing an ideal diode in series. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) ω = 2πf = 100π -> f = 50 Hz [1.5]. V_rms = 340/√2 = 240.4 V [1.5].\n(b) Mean power = V_rms² / R = 240.4² / 100 = 578 W [1.5]. Half-wave diode conducts on positive half-cycles only, halving mean power to 289 W [1.5].",
+      "answerConfidence": "high",
+      "topic": "A.C. Circuits",
+      "questionNumber": 7
+    },
+    {
+      "id": "phy6032_2_8",
+      "questionText": "Ideal Gases & Thermal Physics:\nA cylinder holds 0.50 mol of helium (monatomic ideal gas, R = 8.31 J/(mol·K)) at 300 K and 1.0 × 10⁵ Pa.\n(a) Calculate the volume occupied by the gas. [2 marks]\n(b) Heat is supplied at constant volume until temperature rises to 450 K. Calculate ΔU and heat supplied q (given C_v = 12.5 J/(mol·K)). [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) V = nRT/p = (0.50 × 8.31 × 300) / (1.0×10⁵) = 0.0125 m³ [2].\n(b) At constant volume w = 0 -> q = ΔU = nC_vΔT = 0.50 × 12.5 × (450 - 300) = 937.5 J [3].",
+      "answerConfidence": "high",
+      "topic": "Thermal Physics",
+      "questionNumber": 8
+    },
+    {
+      "id": "phy6032_2_9",
+      "questionText": "Medical Imaging — CT & MRI:\nCompare X-ray Computed Tomography (CT scanning) and Magnetic Resonance Imaging (MRI) in terms of physical mechanism, soft-tissue contrast, and radiation risk. [6 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Mechanism: CT rotates thin X-ray fan beams around patient reconstructing 3D slice attenuation maps; MRI aligns hydrogen-1 proton spins in a strong magnetic field using RF pulses and detects Larmor relaxation signals [2]. Soft-tissue contrast: MRI excels for brain/ligaments/soft tissue; CT excels for bone/lungs/fast trauma [2]. Risk: CT uses ionising radiation; MRI uses non-ionising fields (safe for repeated scans unless patient has metallic implants) [2].",
+      "answerConfidence": "high",
+      "topic": "Medical Physics",
+      "questionNumber": 9
+    },
+    {
+      "id": "phy6032_2_10",
+      "questionText": "Kirchhoff's Laws & Potentiometer:\nState Kirchhoff's First and Second Laws and explain which physical conservation law underlies each. [4 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1st Law: Sum of currents entering any junction equals sum leaving (ΣI_in = ΣI_out) — Conservation of electric charge [2].\n2nd Law: Around any closed circuit loop, algebraic sum of EMFs equals sum of potential drops (ΣE = ΣIR) — Conservation of energy [2].",
+      "answerConfidence": "high",
+      "topic": "D.C. Circuits",
+      "questionNumber": 10
+    },
+    {
+      "id": "phy6032_2_11",
+      "questionText": "Diffraction & Interference:\nDistinguish between diffraction and interference of waves, and explain why coherent light sources (e.g., laser split into two slits) are needed to observe stationary two-source interference fringes. [5 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Diffraction is the spreading of waves passing through an aperture or around an obstacle; interference is the superposition of overlapping waves forming regions of constructive and destructive amplitude [2]. Coherent sources have identical frequency and a constant phase difference so bright/dark fringe positions remain fixed rather than washing out rapidly [3].",
+      "answerConfidence": "high",
+      "topic": "Waves",
+      "questionNumber": 11
+    },
+    {
+      "id": "phy6032_2_12",
+      "questionText": "Electric Potential vs Electric Field Strength:\nA small charged sphere carries +2.0 µC at the centre of air.\n(a) Derive/calculate electric field strength E and electric potential V at 0.30 m from the centre (1/(4πε₀) = 8.99 × 10⁹ N·m²·C⁻²). [4 marks]\n(b) State the mathematical relationship E = -dV/dr. [1 mark]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) E = kQ/r² = (8.99×10⁹ × 2.0×10⁻⁶) / 0.30² = 2.00 × 10⁵ N/C (V/m) [2]. V = kQ/r = (8.99×10⁹ × 2.0×10⁻⁶) / 0.30 = 5.99 × 10⁴ V [2].\n(b) Electric field strength equals the negative potential gradient [1].",
+      "answerConfidence": "high",
+      "topic": "Electric Fields",
+      "questionNumber": 12
+    },
+    {
+      "id": "phy6032_2_13",
+      "questionText": "Magnetic Resonance & Velocity Selector:\nIn a velocity selector, perpendicular fields E = 4.0 × 10⁴ V/m and B = 0.080 T pass ions undeflected.\n(a) Show how to find the selected speed v and compute it. [3 marks]\n(b) Those ions then enter another magnetic field B₂ = 0.40 T and trace a semicircle of radius 0.26 m. Calculate the charge-to-mass ratio q/m of the ions. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Electric force balances magnetic force: qE = Bqv -> v = E/B = (4.0×10⁴)/0.080 = 5.0 × 10⁵ m/s [3].\n(b) B₂qv = mv²/r -> q/m = v/(B₂r) = (5.0×10⁵)/(0.40 × 0.26) = 4.81 × 10⁶ C/kg [3].",
+      "answerConfidence": "high",
+      "topic": "Charged Particles",
+      "questionNumber": 13
+    },
+    {
+      "id": "phy6032_2_14",
+      "questionText": "Deformation of Materials:\nDefine Stress, Strain, and Elastic Potential Energy per unit volume, and distinguish ductile, brittle, and polymeric stress-strain graphs. [6 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Stress σ = F/A (Pa); Strain ε = ΔL/L (no unit); Energy density = ½σε (area under σ-ε curve) [3]. Ductile metals show linear elastic region then clear plastic necking; brittle materials (glass/cast iron) fracture cleanly straight after linear elastic limit; polymers (rubber) show huge nonlinear elastic hysteresis loops [3].",
+      "answerConfidence": "high",
+      "topic": "Materials",
+      "questionNumber": 14
+    },
+    {
+      "id": "phy6032_2_15",
+      "questionText": "Communication Systems (AM vs FM & Optical Fibres):\n(a) Compare Amplitude Modulation (AM) and Frequency Modulation (FM) radio transmission for sound quality, bandwidth, and range. [3 marks]\n(b) Explain two causes of signal attenuation in optical fibres and how regeneration fixes them. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) FM offers higher audio quality and noise immunity (wider bandwidth) over shorter line-of-sight range; AM travels further via skywave reflection at lower bandwidth but suffers electrical interference [3].\n(b) Attenuation arises from light absorption/scattering by glass impurities and multipath dispersion; repeaters regenerate clean square digital pulses along long cables [3].",
+      "answerConfidence": "high",
+      "topic": "Communications",
+      "questionNumber": 15
+    },
+    {
+      "id": "phy6032_2_16",
+      "questionText": "Thermal Conduction & Newton's Cooling:\nDescribe Searle's bar method or an electrical method to measure thermal conductivity k of a good metallic conductor, stating why steady-state lagging is required. [5 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "Heat one end of uniform metal bar with constant power P (or steam), cool opposite end with steady water flow [2]. Record two steady temperatures θ₁, θ₂ at separation Δx along bar of cross-sectional area A [1]. Lagging prevents radial heat loss so axial flow is uniform: P = kA(θ₁ - θ₂)/Δx -> k calculated [2].",
+      "answerConfidence": "high",
+      "topic": "Thermal Conduction",
+      "questionNumber": 16
+    },
+    {
+      "id": "phy6032_2_17",
+      "questionText": "Operational Amplifier Feedback:\nExplain two advantages of applying negative feedback to an operational amplifier circuit despite lowering overall gain. [4 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "1. Stabilises voltage gain cleanly by passive resistor ratios independent of temperature/supply drift [2]. 2. Widens usable frequency bandwidth and reduces signal distortion [2].",
+      "answerConfidence": "high",
+      "topic": "Electronics",
+      "questionNumber": 17
+    },
+    {
+      "id": "phy6032_2_18",
+      "questionText": "Radioactive Decay & Activity:\nA sample of Iodine-131 (half-life = 8.0 days) has initial activity 6.4 × 10⁷ Bq.\n(a) Calculate its decay constant λ in s⁻¹. [2 marks]\n(b) Calculate its activity after 24.0 days and the number of undecayed I-131 nuclei initially present. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) t_½ = 8.0 × 86,400 = 6.912×10⁵ s; λ = ln 2 / 6.912×10⁵ = 1.003 × 10⁻⁶ s⁻¹ [2].\n(b) 24 days = 3 half-lives -> A = 6.4×10⁷ / 8 = 8.0 × 10⁶ Bq [1.5]. N₀ = A₀/λ = 6.4×10⁷ / 1.003×10⁻⁶ = 6.38 × 10¹³ nuclei [1.5].",
+      "answerConfidence": "high",
+      "topic": "Nuclear Decay",
+      "questionNumber": 18
+    },
+    {
+      "id": "phy6032_2_19",
+      "questionText": "Doppler Effect for Sound:\nA train blows a 400 Hz horn while approaching a stationary observer at 25 m/s (speed of sound v = 340 m/s). Calculate the observed frequency heard and explain why pitch drops sharply as the train passes. [4 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "f_o = f_s × v / (v - v_s) = 400 × 340 / (340 - 25) = 400 × 340 / 315 = 431.7 Hz [2.5]. After passing, source moves away (v + v_s = 365) compressing wavelengths behind and stretching ahead -> observed frequency drops to 372.6 Hz [1.5].",
+      "answerConfidence": "high",
+      "topic": "Waves",
+      "questionNumber": 19
+    },
+    {
+      "id": "phy6032_2_20",
+      "questionText": "Planning Investigation (Uncertainty & Error Bars):\nA student tests T = 2π√(L/g) for a simple pendulum.\n(a) Explain why timing 20 oscillations twice and dividing by 20 reduces percentage uncertainty in T. [2 marks]\n(b) Describe what straight-line graph to plot to determine g accurately from the gradient. [3 marks]",
+      "options": [],
+      "correctAnswer": null,
+      "explanation": "(a) Human reaction-time error (~0.2 s) is divided across 20 periods instead of 1, cutting uncertainty by 20× [2].\n(b) Rearrange T² = (4π²/g)L. Plot T² (y-axis) against L (x-axis) over 6 lengths [1.5]. Best-fit line through origin gives gradient m = 4π²/g -> g = 4π² / m [1.5].",
+      "answerConfidence": "high",
+      "topic": "Practical & Planning",
+      "questionNumber": 20
+    }
+  ]
+}

@@ -1,1371 +1,263 @@
 {
   "paperInfo": {
     "subject": "Chemistry",
-    "level": "A-Level",
-    "paperCode": "6031/02",
-    "paperName": "Chemistry Paper 2",
+    "level": "O-Level",
+    "paperCode": "4024/02",
+    "paperName": "ZIMSEC Chemistry O-Level Paper 2 (Structured Theory)",
     "paperType": "Structured Theory",
-    "syllabus": "A-Level Chemistry Forms 5–6 (ZIMSEC code 6031; current heritage-based syllabus scope)",
-    "coverage": "Original expanded practice bank synthesised from ZIMSEC syllabus scope and recurring examination-style skills; not a reproduction of copyrighted past-paper text.",
-    "source": "ZIMSEC official resources (www5.zimsec.co.zw) and syllabus copies hosted on StudyLib (studylib.net).",
-    "referenceYears": [
-      "2023",
-      "2024",
-      "2025",
-      "June 2026"
-    ],
-    "notes": "150 original structured questions with expanded marking guidance in explanation."
+    "questionCount": 65,
+    "totalQuestions": 25
   },
   "questions": [
     {
-      "id": "zimsec_a_chem_p2_001",
+      "id": "q_1",
       "questionNumber": 1,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "A sample of water contains dissolved sodium chloride and a small amount of insoluble sand. Describe a suitable sequence of separation methods and explain the scientific principle used at each stage. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
+      "explanation": "Use filtration first to remove insoluble sand because the solid particles are retained by the filter while the solution passes through. Then use simple distillation to obtain pure water; water is vaporised and condensed while dissolved salt remains in the flask. If the aim is to recover the salt instead, evaporate the water or crystallise the salt solution, using controlled heating.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_002",
+      "id": "q_2",
       "questionNumber": 2,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "An element X has atomic number 13 and mass number 27. State the numbers of protons, neutrons and electrons in a neutral atom of X, and explain how an ion X3+ forms. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
+      "explanation": "Protons = 13. Neutrons = 27 − 13 = 14. A neutral atom has 13 electrons. X3+ forms when three electrons are removed, leaving 10 electrons.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_003",
+      "id": "q_3",
       "questionNumber": 3,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Explain why magnesium oxide has a high melting point and why molten magnesium oxide conducts electricity whereas solid magnesium oxide does not. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
+      "explanation": "MgO has a giant ionic lattice containing strong electrostatic attractions between Mg2+ and O2− ions, requiring much energy to overcome. In the solid the ions are fixed in position and cannot carry charge through the lattice. When molten, the ions are mobile and can carry electrical charge.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_004",
+      "id": "q_4",
       "questionNumber": 4,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Calcium carbonate reacts with hydrochloric acid: CaCO3 + 2HCl → CaCl2 + H2O + CO2. Calculate the amount, in moles, in 10.0 g of CaCO3 (Mr = 100), then calculate the volume of CO2 at r.t.p. produced if CaCO3 is in excess of acid. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
+      "explanation": "Moles of CaCO3 = 10.0/100 = 0.100 mol. The equation gives a 1:1 mole ratio of CaCO3:CO2, so CO2 = 0.100 mol. At r.t.p. 1 mol gas occupies about 24 dm3, so volume = 0.100 × 24 = 2.40 dm3.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_005",
+      "id": "q_5",
       "questionNumber": 5,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "A student reacts equal masses of calcium carbonate with excess hydrochloric acid. Experiment A uses large chips and Experiment B uses powder. Explain which experiment is faster and describe two other changes that could increase the rate. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
+      "explanation": "Powder reacts faster because it exposes a larger surface area, producing more frequent successful collisions. Increasing temperature generally increases rate because particles have more kinetic energy and a greater fraction exceed activation energy. Increasing acid concentration also increases collision frequency; a suitable catalyst can speed some reactions by lowering activation energy.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_006",
+      "id": "q_6",
       "questionNumber": 6,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "For the reversible reaction N2(g) + 3H2(g) ⇌ 2NH3(g), explain what happens to the equilibrium position when pressure is increased and why. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A school laboratory.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
+      "explanation": "The system shifts towards the side with fewer gas molecules. There are 4 moles of gas on the left and 2 on the right, so increased pressure favours ammonia formation. The change does not alter the equilibrium constant at fixed temperature; it changes the equilibrium composition.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_007",
+      "id": "q_7",
       "questionNumber": 7,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Describe how a pure, dry sample of copper(II) sulfate crystals could be prepared from copper(II) oxide and dilute sulfuric acid. Include the main practical steps. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A small-scale water-treatment investigation.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
+      "explanation": "Warm dilute sulfuric acid and add copper(II) oxide in small portions while stirring. Continue adding solid until some remains unreacted, showing the acid has been neutralised; filter off excess solid. Concentrate the filtrate by gentle evaporation, allow it to cool to crystallise, then filter and dry the crystals.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_008",
+      "id": "q_8",
       "questionNumber": 8,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Molten lead(II) bromide is electrolysed. Identify the products at the cathode and anode and write half-equations for their formation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: An industrial chemistry exercise.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
+      "explanation": "At the cathode, Pb2+ gains electrons: Pb2+ + 2e− → Pb. At the anode, bromide ions lose electrons: 2Br− → Br2 + 2e−. Lead forms at the negative electrode and bromine forms at the positive electrode.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_009",
+      "id": "q_9",
       "questionNumber": 9,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Explain why iron is extracted in a blast furnace using carbon monoxide and describe the role of limestone in the furnace. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A mining and manufacturing case study.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
+      "explanation": "Carbon monoxide reduces iron(III) oxide to iron because it removes oxygen from the ore. Limestone decomposes on heating to calcium oxide and carbon dioxide. Calcium oxide reacts with acidic impurities such as silica to form slag, helping separate impurities from molten iron.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_010",
+      "id": "q_10",
       "questionNumber": 10,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
+      "questionText": "Ethanol can be oxidised to ethanoic acid. State the conditions generally used for this oxidation and explain one practical difference between complete combustion and controlled oxidation. Your work should be presented as a clear, logically ordered response suitable for a ZIMSEC Paper 2 structured question. Context: A household chemistry investigation.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
+      "explanation": "Ethanol can be oxidised using an oxidising agent such as acidified potassium manganate(VII), with heating; reflux is used when complete oxidation to the acid is required. Complete combustion in excess oxygen produces carbon dioxide and water. Controlled oxidation can form an oxygen-containing organic product such as ethanoic acid rather than fully oxidising all carbon to CO2.",
+      "answerConfidence": "high",
+      "topic": "Chemistry Structured Theory"
     },
     {
-      "id": "zimsec_a_chem_p2_011",
-      "questionNumber": 11,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x1",
+      "questionText": "Calcium carbonate reacts with dilute hydrochloric acid: CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).\n(a) Calculate the relative formula mass (Mr) of CaCO₃ (Ca=40, C=12, O=16). [1 mark]\n(b) Calculate the number of moles in 5.0 g of CaCO₃. [2 marks]\n(c) Calculate the volume of CO₂ produced at r.t.p. (molar gas volume = 24 dm³). [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
+      "explanation": "(a) Mr(CaCO₃) = 40 + 12 + (3 × 16) = 100 [1 mark].\n(b) Moles = mass / Mr = 5.0 / 100 = 0.050 mol [2 marks].\n(c) 1 mol CaCO₃ produces 1 mol CO₂ -> 0.050 mol CO₂. Volume = 0.050 × 24 = 1.2 dm³ [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Stoichiometry & Moles",
+      "questionNumber": 11
     },
     {
-      "id": "zimsec_a_chem_p2_012",
-      "questionNumber": 12,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x2",
+      "questionText": "In the Haber process, nitrogen reacts with hydrogen to form ammonia:\nN₂(g) + 3H₂(g) ⇌ 2NH₃(g)  ΔH = -92 kJ/mol.\n(a) State the raw materials from which nitrogen and hydrogen are obtained. [2 marks]\n(b) State the industrial conditions (temperature, pressure, catalyst) used. [3 marks]\n(c) Explain why a very low temperature is not used even though the forward reaction is exothermic. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
+      "explanation": "(a) Nitrogen from fractional distillation of liquid air; hydrogen from natural gas (methane + steam) or electrolysis of water [2 marks].\n(b) Temperature ~450°C, pressure ~200 atmospheres, finely divided iron (Fe) catalyst [3 marks].\n(c) At very low temperatures the rate of reaction would be far too slow to be economically viable; 450°C is a compromise giving reasonable yield quickly [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Industrial Chemistry",
+      "questionNumber": 12
     },
     {
-      "id": "zimsec_a_chem_p2_013",
-      "questionNumber": 13,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x3",
+      "questionText": "Describe the Contact process for the manufacture of sulfuric acid in three main chemical stages, naming the catalyst and giving balanced equations where appropriate. [6 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
+      "explanation": "Stage 1: Sulfur (or sulfide ore) is burned in air to form sulfur dioxide: S(s) + O₂(g) → SO₂(g) [1 mark].\nStage 2: Sulfur dioxide reacts reversibly with oxygen at ~450°C, 1–2 atm, over vanadium(V) oxide (V₂O₅) catalyst: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) [3 marks].\nStage 3: SO₃ is absorbed into concentrated H₂SO₄ to form oleum (H₂S₂O₇), then safely diluted with water to form concentrated sulfuric acid (H₂SO₄) [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Industrial Chemistry",
+      "questionNumber": 13
     },
     {
-      "id": "zimsec_a_chem_p2_014",
-      "questionNumber": 14,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x4",
+      "questionText": "In the blast furnace extraction of iron using haematite (Fe₂O₃), coke (C), and limestone (CaCO₃):\n(a) State two functions of coke in the blast furnace. [2 marks]\n(b) Write a balanced equation for the reduction of iron(III) oxide by carbon monoxide. [2 marks]\n(c) Explain how limestone removes sandy impurities (SiO₂) as slag. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
+      "explanation": "(a) Burns in hot air to supply intense heat (C + O₂ → CO₂) and reacts with CO₂ to produce carbon monoxide reducing agent (CO₂ + C → 2CO) [2 marks].\n(b) Fe₂O₃(s) + 3CO(g) → 2Fe(l) + 3CO₂(g) [2 marks].\n(c) Limestone thermally decomposes to CaO (CaCO₃ → CaO + CO₂); basic CaO reacts with acidic silica: CaO + SiO₂ → CaSiO₃ (molten calcium silicate slag) [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Metals Extraction",
+      "questionNumber": 14
     },
     {
-      "id": "zimsec_a_chem_p2_015",
-      "questionNumber": 15,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x5",
+      "questionText": "Aqueous copper(II) sulfate (CuSO₄) is electrolysed using inert graphite (carbon) electrodes.\n(a) State what is observed at the cathode and write the half-equation. [2 marks]\n(b) State what is observed at the anode and write the half-equation. [2 marks]\n(c) Explain why the blue colour of the solution gradually fades. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
+      "explanation": "(a) Reddish-brown solid copper deposits on the cathode: Cu²⁺(aq) + 2e⁻ → Cu(s) [2 marks].\n(b) Colourless oxygen gas bubbles form at the anode: 4OH⁻(aq) → 2H₂O(l) + O₂(g) + 4e⁻ [2 marks].\n(c) Blue Cu²⁺ ions are continuously removed from solution at the cathode and not replaced by inert carbon electrodes [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Electrochemistry",
+      "questionNumber": 15
     },
     {
-      "id": "zimsec_a_chem_p2_016",
-      "questionNumber": 16,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x6",
+      "questionText": "Explain, using the collision theory, how increasing (a) temperature [3 marks] and (b) concentration of an acid [3 marks] increases the rate of reaction with magnesium ribbon.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
+      "explanation": "(a) Higher temperature increases average kinetic energy of particles, so particles move faster, collide more frequently, and a much higher fraction of collisions exceed activation energy (Ea) [3 marks].\n(b) Higher acid concentration means more H⁺ ions per unit volume, causing more frequent successful collisions per second [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Rates of Reaction",
+      "questionNumber": 16
     },
     {
-      "id": "zimsec_a_chem_p2_017",
-      "questionNumber": 17,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x7",
+      "questionText": "Describe step-by-step how to prepare pure dry crystals of zinc sulfate starting from insoluble zinc oxide powder and dilute sulfuric acid. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
+      "explanation": "1. Warm dilute H₂SO₄ in a beaker and add excess zinc oxide powder while stirring until no more dissolves [2 marks].\n2. Filter the mixture to remove unreacted excess zinc oxide residue [1 mark].\n3. Gently heat the filtrate to evaporate water until crystallisation point is reached [1 mark].\n4. Leave to cool to form crystals, filter, and dry between filter papers [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Acids Bases & Salts",
+      "questionNumber": 17
     },
     {
-      "id": "zimsec_a_chem_p2_018",
-      "questionNumber": 18,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x8",
+      "questionText": "Compare Group VII elements (chlorine, bromine, iodine) in terms of:\n(a) physical state and colour at room temperature [3 marks],\n(b) trend in reactivity down the group and its explanation [3 marks].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
+      "explanation": "(a) Chlorine: pale yellow-green gas; Bromine: reddish-brown liquid; Iodine: dark grey-black solid (purple vapour) [3 marks].\n(b) Reactivity decreases down Group VII because atomic radius increases and inner shells shield the nucleus, weakening attraction for an incoming outer electron [3 marks].",
+      "answerConfidence": "high",
+      "topic": "Periodic Table",
+      "questionNumber": 18
     },
     {
-      "id": "zimsec_a_chem_p2_019",
-      "questionNumber": 19,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x9",
+      "questionText": "Ethene (C₂H₄) and ethane (C₂H₆) are two hydrocarbons.\n(a) State which is unsaturated and give a chemical test to distinguish them, stating the expected observation. [3 marks]\n(b) Write the equation for ethene reacting with steam in the presence of phosphoric acid catalyst. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
+      "explanation": "(a) Ethene is unsaturated (contains a C=C double bond). Test: shake each gas with aqueous bromine water. Ethene decolourises orange-brown bromine water rapidly; ethane leaves it orange-brown [3 marks].\n(b) C₂H₄(g) + H₂O(g) → C₂H₅OH(g) (ethanol) [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Organic Chemistry",
+      "questionNumber": 19
     },
     {
-      "id": "zimsec_a_chem_p2_020",
-      "questionNumber": 20,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x10",
+      "questionText": "In a titration, 25.0 cm³ of 0.10 mol/dm³ sodium hydroxide (NaOH) solution required 20.0 cm³ of hydrochloric acid (HCl) for complete neutralisation.\n(a) Write the balanced equation for the reaction. [1 mark]\n(b) Calculate the concentration of the hydrochloric acid in mol/dm³. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
+      "explanation": "(a) NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l) [1 mark].\n(b) Moles NaOH = (25.0/1000) × 0.10 = 0.0025 mol [1 mark]. Mole ratio 1:1 -> moles HCl = 0.0025 mol [1 mark]. Concentration HCl = 0.0025 / (20.0/1000) = 0.125 mol/dm³ [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Volumetric Analysis",
+      "questionNumber": 20
     },
     {
-      "id": "zimsec_a_chem_p2_021",
-      "questionNumber": 21,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x11",
+      "questionText": "(a) Distinguish between covalent and ionic bonding in terms of electron transfer vs sharing. [2 marks]\n(b) Explain why solid sodium chloride does not conduct electricity whereas molten sodium chloride does. [2 marks]\n(c) Explain why simple molecular substances like methane have low melting points. [2 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
+      "explanation": "(a) Ionic bonding involves transfer of electrons from a metal to a non-metal forming oppositely charged ions; covalent bonding involves sharing pairs of electrons between non-metal atoms [2 marks].\n(b) In solid NaCl ions are fixed in a rigid lattice; when molten, ions become mobile and carry charge [2 marks].\n(c) Only weak intermolecular forces exist between molecules, needing little heat energy to overcome [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Bonding & Structure",
+      "questionNumber": 21
     },
     {
-      "id": "zimsec_a_chem_p2_022",
-      "questionNumber": 22,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x12",
+      "questionText": "Define temporary and permanent hardness of water, name one ion responsible for water hardness, and give two methods of softening hard water. [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
+      "explanation": "Water hardness is caused by dissolved Ca²⁺ or Mg²⁺ ions [1 mark]. Temporary hardness (due to hydrogencarbonates) is removed by boiling; permanent hardness (sulfates/chlorides) is not removed by boiling [2 marks]. Softening methods: adding washing soda (Na₂CO₃) to precipitate CaCO₃, or passing through an ion-exchange resin [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Water & Air",
+      "questionNumber": 22
     },
     {
-      "id": "zimsec_a_chem_p2_023",
-      "questionNumber": 23,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x13",
+      "questionText": "In the fermentation of glucose (C₆H₁₂O₆) to produce ethanol:\n(a) Write the balanced chemical equation. [2 marks]\n(b) State why yeast is used and why temperature must be kept around 30–35°C under anaerobic conditions. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
+      "explanation": "(a) C₆H₁₂O₆(aq) → 2C₂H₅OH(aq) + 2CO₂(g) [2 marks].\n(b) Yeast provides enzymes (zymase) that catalyse fermentation [1 mark]. Too hot (>45°C) denatures enzymes; air/oxygen causes ethanoic acid (vinegar) oxidation instead of ethanol [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Organic Chemistry",
+      "questionNumber": 23
     },
     {
-      "id": "zimsec_a_chem_p2_024",
-      "questionNumber": 24,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x14",
+      "questionText": "Magnesium burns in air and also reacts slowly with steam.\n(a) Write balanced equations for magnesium reacting with oxygen and with steam. [2 marks]\n(b) Arrange copper, magnesium, zinc, and potassium in decreasing order of reactivity and state how copper is extracted from copper(II) oxide. [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
+      "explanation": "(a) 2Mg + O₂ → 2MgO; Mg + H₂O(g) → MgO + H₂ [2 marks].\n(b) Decreasing reactivity: Potassium > Magnesium > Zinc > Copper [2 marks]. Copper is extracted from CuO by heating/reduction with carbon [1 mark].",
+      "answerConfidence": "high",
+      "topic": "Reactivity Series",
+      "questionNumber": 24
     },
     {
-      "id": "zimsec_a_chem_p2_025",
-      "questionNumber": 25,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
+      "id": "chem4024_2_x15",
+      "questionText": "Define isotopes using carbon-12 and carbon-14 as examples. Calculate the number of protons, neutrons, and electrons in ¹⁴₆C. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_026",
-      "questionNumber": 26,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_027",
-      "questionNumber": 27,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_028",
-      "questionNumber": 28,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_029",
-      "questionNumber": 29,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_030",
-      "questionNumber": 30,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_031",
-      "questionNumber": 31,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_032",
-      "questionNumber": 32,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_033",
-      "questionNumber": 33,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_034",
-      "questionNumber": 34,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_035",
-      "questionNumber": 35,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_036",
-      "questionNumber": 36,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_037",
-      "questionNumber": 37,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_038",
-      "questionNumber": 38,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_039",
-      "questionNumber": 39,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_040",
-      "questionNumber": 40,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_041",
-      "questionNumber": 41,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_042",
-      "questionNumber": 42,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_043",
-      "questionNumber": 43,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_044",
-      "questionNumber": 44,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_045",
-      "questionNumber": 45,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_046",
-      "questionNumber": 46,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_047",
-      "questionNumber": 47,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_048",
-      "questionNumber": 48,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_049",
-      "questionNumber": 49,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_050",
-      "questionNumber": 50,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_051",
-      "questionNumber": 51,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_052",
-      "questionNumber": 52,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_053",
-      "questionNumber": 53,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_054",
-      "questionNumber": 54,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_055",
-      "questionNumber": 55,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_056",
-      "questionNumber": 56,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_057",
-      "questionNumber": 57,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_058",
-      "questionNumber": 58,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_059",
-      "questionNumber": 59,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_060",
-      "questionNumber": 60,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_061",
-      "questionNumber": 61,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_062",
-      "questionNumber": 62,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_063",
-      "questionNumber": 63,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_064",
-      "questionNumber": 64,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_065",
-      "questionNumber": 65,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_066",
-      "questionNumber": 66,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_067",
-      "questionNumber": 67,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_068",
-      "questionNumber": 68,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_069",
-      "questionNumber": 69,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_070",
-      "questionNumber": 70,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_071",
-      "questionNumber": 71,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_072",
-      "questionNumber": 72,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_073",
-      "questionNumber": 73,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_074",
-      "questionNumber": 74,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_075",
-      "questionNumber": 75,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_076",
-      "questionNumber": 76,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_077",
-      "questionNumber": 77,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_078",
-      "questionNumber": 78,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_079",
-      "questionNumber": 79,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_080",
-      "questionNumber": 80,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_081",
-      "questionNumber": 81,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_082",
-      "questionNumber": 82,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_083",
-      "questionNumber": 83,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_084",
-      "questionNumber": 84,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_085",
-      "questionNumber": 85,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_086",
-      "questionNumber": 86,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_087",
-      "questionNumber": 87,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_088",
-      "questionNumber": 88,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_089",
-      "questionNumber": 89,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_090",
-      "questionNumber": 90,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_091",
-      "questionNumber": 91,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_092",
-      "questionNumber": 92,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_093",
-      "questionNumber": 93,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_094",
-      "questionNumber": 94,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_095",
-      "questionNumber": 95,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_096",
-      "questionNumber": 96,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_097",
-      "questionNumber": 97,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_098",
-      "questionNumber": 98,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_099",
-      "questionNumber": 99,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_100",
-      "questionNumber": 100,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_101",
-      "questionNumber": 101,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_102",
-      "questionNumber": 102,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_103",
-      "questionNumber": 103,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_104",
-      "questionNumber": 104,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_105",
-      "questionNumber": 105,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_106",
-      "questionNumber": 106,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_107",
-      "questionNumber": 107,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_108",
-      "questionNumber": 108,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_109",
-      "questionNumber": 109,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_110",
-      "questionNumber": 110,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_111",
-      "questionNumber": 111,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_112",
-      "questionNumber": 112,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_113",
-      "questionNumber": 113,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_114",
-      "questionNumber": 114,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_115",
-      "questionNumber": 115,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_116",
-      "questionNumber": 116,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_117",
-      "questionNumber": 117,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_118",
-      "questionNumber": 118,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_119",
-      "questionNumber": 119,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_120",
-      "questionNumber": 120,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_121",
-      "questionNumber": 121,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_122",
-      "questionNumber": 122,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_123",
-      "questionNumber": 123,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_124",
-      "questionNumber": 124,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_125",
-      "questionNumber": 125,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_126",
-      "questionNumber": 126,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_127",
-      "questionNumber": 127,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_128",
-      "questionNumber": 128,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_129",
-      "questionNumber": 129,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_130",
-      "questionNumber": 130,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_131",
-      "questionNumber": 131,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_132",
-      "questionNumber": 132,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_133",
-      "questionNumber": 133,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_134",
-      "questionNumber": 134,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_135",
-      "questionNumber": 135,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_136",
-      "questionNumber": 136,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_137",
-      "questionNumber": 137,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_138",
-      "questionNumber": 138,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_139",
-      "questionNumber": 139,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_140",
-      "questionNumber": 140,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_141",
-      "questionNumber": 141,
-      "questionText": "Explain how successive ionisation energies can be used to infer the number of outer-shell electrons in an element. Include the significance of a large jump between successive values. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "A large jump occurs when removal begins from an inner shell rather than the valence shell. The position of the jump therefore indicates how many electrons were removed from the outer shell before a new shell was accessed.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_142",
-      "questionNumber": 142,
-      "questionText": "Use Hess's law to explain how an unknown enthalpy change can be calculated from known thermochemical equations. State the rules for manipulating equations and enthalpy changes. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Equations may be reversed or multiplied to make intermediates cancel. Reversing an equation changes the sign of ΔH, while multiplying an equation multiplies ΔH by the same factor. Adding the adjusted equations gives the required overall ΔH.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_143",
-      "questionNumber": 143,
-      "questionText": "Experimental data show that doubling concentration of A leaves rate unchanged, while doubling concentration of B increases rate fourfold. Deduce the rate equation in terms of A and B and state the overall order. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The reaction is zero order in A because changing [A] has no effect. It is second order in B because doubling [B] gives a fourfold rate increase. Therefore rate = k[B]² and the overall order is 2.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_144",
-      "questionNumber": 144,
-      "questionText": "For a gaseous equilibrium, explain the effects of changing concentration, pressure and temperature on equilibrium composition. Distinguish changes in equilibrium position from changes in Kc. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Concentration and pressure can shift equilibrium composition but Kc changes only when temperature changes. Increasing pressure favours the side with fewer moles of gas. Increasing temperature favours the endothermic direction.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_145",
-      "questionNumber": 145,
-      "questionText": "A weak acid HA has concentration 0.100 mol dm−3 and Ka = 1.0×10−5. Estimate its hydrogen-ion concentration and pH using the weak-acid approximation. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "For a weak acid, [H+]≈sqrt(Ka×c)=sqrt(1.0×10−6)=1.0×10−3 mol dm−3. Therefore pH≈3.00. The approximation is valid because ionisation is small compared with the initial acid concentration.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_146",
-      "questionNumber": 146,
-      "questionText": "Explain how standard electrode potentials can be used to predict the direction of a redox reaction and calculate E°cell. Context: industrial process. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Choose the more positive reduction potential as the cathode reduction and reverse the other half-equation to make it oxidation. E°cell = E°cathode − E°anode. A positive value indicates a favourable cell reaction under standard conditions.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_147",
-      "questionNumber": 147,
-      "questionText": "Explain the difference between electrophilic addition and nucleophilic substitution, giving one representative organic example for each. Context: school laboratory. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Electrophilic addition occurs at an electron-rich multiple bond when an electrophile attacks the π system. Nucleophilic substitution involves a nucleophile replacing a leaving group, commonly in haloalkanes. The mechanisms differ in the reacting species and bond changes.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_148",
-      "questionNumber": 148,
-      "questionText": "Explain why benzene undergoes substitution more readily than addition under ordinary electrophilic conditions. Context: environmental analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Addition would destroy the aromatic delocalisation that stabilises benzene. Electrophilic substitution temporarily disrupts the aromatic system but restores delocalisation at the end, retaining aromatic stability.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_149",
-      "questionNumber": 149,
-      "questionText": "Explain why transition-metal compounds can show variable oxidation states and form coloured complexes. Include the role of d orbitals. Context: Zimbabwean mineral-processing context. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "The 3d and 4s energy levels are relatively close, so different numbers of electrons can participate in bonding and oxidation. In complexes, ligands split the d-orbital energies; absorption of visible light can promote d-electron transitions, producing colour.",
-      "answerConfidence": "high"
-    },
-    {
-      "id": "zimsec_a_chem_p2_150",
-      "questionNumber": 150,
-      "questionText": "Describe a systematic approach to identifying an unknown organic compound using a combination of chemical tests and spectroscopic evidence. Context: pharmaceutical or food analysis. Show equations, assumptions, units and reasoning where relevant.",
-      "options": [],
-      "correctAnswer": null,
-      "explanation": "Begin with physical observations and elemental or functional-group tests. Use IR to identify characteristic bonds, mass spectrometry for molecular mass and fragments, and NMR where available for carbon/hydrogen environments. Results should be cross-checked so the proposed structure explains all evidence.",
-      "answerConfidence": "high"
+      "explanation": "Isotopes are atoms of the same element having the same number of protons (atomic number) but different numbers of neutrons (mass numbers) [2 marks]. ¹⁴₆C has 6 protons, 6 electrons, and 14 - 6 = 8 neutrons [2 marks].",
+      "answerConfidence": "high",
+      "topic": "Atomic Structure",
+      "questionNumber": 25
     }
   ]
 }

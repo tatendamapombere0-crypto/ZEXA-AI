@@ -1,9 +1,13 @@
 import { ExamManifestItem, ExamPaper, ExamQuestion } from '../types';
+import bundledExamManifest from '../data/exam_manifest.json';
+import bundledBiologyOLevel from '../data/exam_bank_biology_o_level_cambridge_past_papers.json';
+import bundledAgric4001 from '../data/exam_bank_agriculture_4001_1.json';
 
 export class ExamStore {
-  private static manifest: ExamManifestItem[] = [];
-  private static isLoaded = false;
-  private static loadPromise: Promise<ExamManifestItem[]> | null = null;
+  private static manifest: ExamManifestItem[] = Array.isArray(bundledExamManifest)
+    ? (bundledExamManifest as unknown as ExamManifestItem[])
+    : [];
+  private static isLoaded = true;
   private static papersCache = new Map<string, ExamPaper>();
 
   private static normalizeLevel(level: string): string {
@@ -16,24 +20,22 @@ export class ExamStore {
   }
 
   static async loadManifest(): Promise<ExamManifestItem[]> {
-    if (this.isLoaded) return this.manifest;
-    if (this.loadPromise) return this.loadPromise;
-
-    this.loadPromise = (async () => {
-      try {
-        const res = await fetch('/assets/exam_manifest.json');
-        if (res.ok) {
-          const data = await res.json();
-          this.manifest = Array.isArray(data) ? data : [];
-        }
-      } catch {
-        this.manifest = [];
-      }
-      this.isLoaded = true;
+    // 100% offline instant access from bundled manifest (0ms latency)
+    if (this.manifest && this.manifest.length > 0) {
       return this.manifest;
-    })();
-
-    return this.loadPromise;
+    }
+    try {
+      const res = await fetch('/assets/exam_manifest.json');
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) {
+          this.manifest = data;
+        }
+      }
+    } catch {
+      // Offline fallback
+    }
+    return this.manifest;
   }
 
   private static isPaperForLevel(item: ExamManifestItem, normLevel: string): boolean {
@@ -219,15 +221,65 @@ export class ExamStore {
 
   static async loadPaperDetails(item: ExamManifestItem): Promise<ExamPaper | null> {
     const cacheKey = `${item.file}#${item.id || item.paperCode || ''}`;
+    
+    // 1. In-memory cache hit
     if (this.papersCache.has(cacheKey)) {
       return this.papersCache.get(cacheKey)!;
     }
 
+    // 2. Check localStorage offline persistent cache (v4 for verified real question banks)
     try {
-      const res = await fetch(`/assets/${encodeURIComponent(item.file)}`);
-      if (!res.ok) return null;
-      const raw = await res.json();
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const localCached = window.localStorage.getItem(`zexa_exam_paper_v4_${cacheKey}`);
+        if (localCached) {
+          const parsed = JSON.parse(localCached);
+          if (parsed && Array.isArray(parsed.questions) && parsed.questions.length > 0) {
+            this.papersCache.set(cacheKey, parsed);
+            return parsed;
+          }
+        }
+      }
+    } catch {
+      // LocalStorage error fallback
+    }
 
+    // 3. Bundled offline paper fallback (100% offline instant)
+    let raw: any = null;
+    const fLower = (item.file || '').toLowerCase();
+    if (fLower.includes('biology_o_level_cambridge') || item.id === 'exam_bank_biology_o_level_cambridge_past_papers') {
+      raw = bundledBiologyOLevel;
+    } else if (fLower.includes('agriculture_4001_1') || item.id === 'exam_bank_agriculture_4001_1') {
+      raw = bundledAgric4001;
+    }
+
+    // 4. If not bundled, fetch from /assets with timeout
+    if (!raw) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 4000); // 4s timeout
+
+        const assetUrl = typeof window === 'undefined'
+          ? `http://localhost:3000/assets/${encodeURIComponent(item.file)}`
+          : `/assets/${encodeURIComponent(item.file)}`;
+        const res = await fetch(assetUrl, {
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+
+        if (res.ok) {
+          raw = await res.json();
+        }
+      } catch (err) {
+        // Offline or network timeout
+      }
+    }
+
+    // If asset could not be loaded (e.g. completely offline and not yet cached), return null cleanly
+    if (!raw) {
+      return null;
+    }
+
+    try {
       const isPaper2 =
         item.paperCode?.includes('/2') ||
         item.paperCode?.includes('-2') ||
@@ -248,22 +300,22 @@ export class ExamStore {
       }
 
       const questions: ExamQuestion[] = (questionsRaw || []).map((q: any, idx: number) => {
-        const rawOptions = q.options || [];
+        const rawOptions = Array.isArray(q?.options) ? q.options : [];
         const options = rawOptions.map((opt: any, optIdx: number) => {
           if (typeof opt === 'string') {
             return { letter: String.fromCharCode(65 + optIdx), text: opt };
           }
-          return { letter: opt.letter || String.fromCharCode(65 + optIdx), text: opt.text || '' };
+          return { letter: opt?.letter || String.fromCharCode(65 + optIdx), text: opt?.text || '' };
         });
 
         return {
-          id: q.id || `q_${idx + 1}`,
-          questionNumber: q.questionNumber || idx + 1,
-          questionText: q.questionText || '',
-          options,
-          correctAnswer: q.correctAnswer || null,
-          explanation: q.explanation || '',
-          answerConfidence: q.answerConfidence || 'medium'
+          id: q?.id || `q_${idx + 1}`,
+          questionNumber: q?.questionNumber || idx + 1,
+          questionText: q?.questionText || `Question ${idx + 1}`,
+          options: options || [],
+          correctAnswer: q?.correctAnswer || null,
+          explanation: q?.explanation || q?.expectedAnswer || q?.modelAnswer || '',
+          answerConfidence: q?.answerConfidence || 'medium'
         };
       });
 
@@ -278,7 +330,16 @@ export class ExamStore {
         sourceFile: item.file
       };
 
+      // Cache in memory and localStorage for instant offline access
       this.papersCache.set(cacheKey, paper);
+      try {
+        if (typeof window !== 'undefined' && window.localStorage) {
+          window.localStorage.setItem(`zexa_exam_paper_v4_${cacheKey}`, JSON.stringify(paper));
+        }
+      } catch {
+        // LocalStorage quota fallback
+      }
+
       return paper;
     } catch {
       return null;

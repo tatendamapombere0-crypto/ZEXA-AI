@@ -52,16 +52,8 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
         setSelectedSubject(null);
       }
 
-      // Collect all visual topics across subjects for the diagrams gallery
-      const allVisuals: KnowledgeChunk[] = [];
-      for (const s of subList) {
-        const chunkList = await KnowledgeStore.getTopics(contentLevel, s);
-        for (const t of chunkList) {
-          if (t.hasVisual && t.diagramId) {
-            allVisuals.push(t);
-          }
-        }
-      }
+      // Instant 0ms retrieval of visual topics for the gallery
+      const allVisuals = KnowledgeStore.getAllVisualTopics(contentLevel);
       setAllVisualTopics(allVisuals);
       setLoading(false);
     }
