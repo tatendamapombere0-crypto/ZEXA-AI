@@ -292,21 +292,40 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   const [isWorkspaceOpen, setIsWorkspaceOpen] = useState(true);
   const [copiedAnswer, setCopiedAnswer] = useState(false);
 
-  // Purge legacy v3 caches and refresh active paper if cached count mismatches verified manifest
+  // Purge legacy v3/v4 caches and refresh active paper if cached metadata or count mismatches verified manifest
   useEffect(() => {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
         for (let i = localStorage.length - 1; i >= 0; i--) {
           const k = localStorage.key(i);
-          if (k && k.startsWith('zexa_exam_paper_v3_')) {
+          if (k && (k.startsWith('zexa_exam_paper_v3_') || k.startsWith('zexa_exam_paper_v4_'))) {
             localStorage.removeItem(k);
           }
         }
       }
     } catch {}
 
-    if (activePaper && activePaperItem && activePaper.questions.length !== activePaperItem.questionCount) {
-      ExamStore.loadPaperDetails(activePaperItem).then((refreshed) => {
+    const matchedManifest = activePaperItem
+      ? papers.find((p) => p.id === activePaperItem.id || p.file === activePaperItem.file)
+      : undefined;
+
+    if (
+      activePaper &&
+      activePaperItem &&
+      (activePaper.questions.length !== activePaperItem.questionCount ||
+        (matchedManifest &&
+          (activePaper.paperName !== matchedManifest.paperName ||
+            activePaper.subject !== matchedManifest.subject ||
+            activePaper.paperCode !== matchedManifest.paperCode)))
+    ) {
+      const targetItem = matchedManifest || activePaperItem;
+      if (matchedManifest) {
+        setActivePaperItem(matchedManifest);
+        try {
+          localStorage.setItem('zexa_active_paper_item', JSON.stringify(matchedManifest));
+        } catch {}
+      }
+      ExamStore.loadPaperDetails(targetItem).then((refreshed) => {
         if (refreshed && refreshed.questions.length > 0) {
           setActivePaper(refreshed);
           setCurrentQIndex((prev) => Math.min(prev, Math.max(0, refreshed.questions.length - 1)));
@@ -316,7 +335,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
         }
       });
     }
-  }, [activePaper, activePaperItem]);
+  }, [activePaper, activePaperItem, papers]);
 
   // Sync session state to localStorage
   useEffect(() => {
@@ -359,6 +378,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
       setLoading(true);
       const subList = await ExamStore.getSubjects(contentLevel);
       setSubjects(['All', ...subList]);
+      setSelectedSubject('All');
 
       const paperList = await ExamStore.getPapers(contentLevel);
       setPapers(paperList);

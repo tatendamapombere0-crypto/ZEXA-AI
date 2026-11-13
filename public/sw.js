@@ -1,7 +1,7 @@
 // public/sw.js
 // ZEXA AI Service Worker for PWA Offline Caching & Automated Study Notifications
 
-const CACHE_NAME = 'zexa-ai-v4.0.0';
+const CACHE_NAME = 'zexa-ai-v4.1.0';
 const PRECACHE_ASSETS = [
   '/',
   '/index.html',

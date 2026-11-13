@@ -25,15 +25,15 @@ function inferSubjectFromFileName(fileName: string): string {
   if (f.includes('agriculture') || f.includes('agric')) return 'Agriculture';
   if (f.includes('shona') || f.includes('chishona')) return 'ChiShona';
   if (f.includes('ndebele')) return 'IsiNdebele';
-  if (f.includes('english_lit') || f.includes('literature')) return 'English Literature';
+  if (f.includes('english_lit') || f.includes('literature')) return 'Literature in English';
   if (f.includes('english')) return 'English Language';
   if (f.includes('divinity')) return 'Divinity';
   if (f.includes('religious') || f.includes('fareme')) return 'Family and Religious Studies';
   if (f.includes('social_stud') || f.includes('social_science') || f.includes('heritage')) return 'Social Science';
-  if (f.includes('health') || f.includes('physical_edu') || f.includes('performing_arts')) return 'Physical Education & Arts';
+  if (f.includes('health') || f.includes('physical_edu') || f.includes('performing_arts')) return 'Physical Edu & Arts';
   if (f.includes('textile')) return 'Textile Technology and Design';
   if (f.includes('tve')) return 'Technical & Vocational Education';
-  if (f.includes('general_paper')) return 'General Paper';
+  if (f.includes('general_paper')) return 'Social Science';
   return 'ZIMSEC Curriculum';
 }
 

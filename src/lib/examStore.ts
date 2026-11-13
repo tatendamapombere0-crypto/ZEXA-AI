@@ -227,10 +227,10 @@ export class ExamStore {
       return this.papersCache.get(cacheKey)!;
     }
 
-    // 2. Check localStorage offline persistent cache (v4 for verified real question banks)
+    // 2. Check localStorage offline persistent cache (v5 for official subject headlines & verified banks)
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
-        const localCached = window.localStorage.getItem(`zexa_exam_paper_v4_${cacheKey}`);
+        const localCached = window.localStorage.getItem(`zexa_exam_paper_v5_${cacheKey}`);
         if (localCached) {
           const parsed = JSON.parse(localCached);
           if (parsed && Array.isArray(parsed.questions) && parsed.questions.length > 0) {
@@ -334,7 +334,7 @@ export class ExamStore {
       this.papersCache.set(cacheKey, paper);
       try {
         if (typeof window !== 'undefined' && window.localStorage) {
-          window.localStorage.setItem(`zexa_exam_paper_v4_${cacheKey}`, JSON.stringify(paper));
+          window.localStorage.setItem(`zexa_exam_paper_v5_${cacheKey}`, JSON.stringify(paper));
         }
       } catch {
         // LocalStorage quota fallback
