@@ -22,6 +22,7 @@ import { StorageManager } from '../lib/storage';
 interface StudyNotificationModalProps {
   isOpen: boolean;
   onClose: () => void;
+  country?: string;
   onOpenPremium: () => void;
   onAskQuestion: (question: string) => void;
 }
@@ -29,27 +30,30 @@ interface StudyNotificationModalProps {
 export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
   isOpen,
   onClose,
+  country = 'Zimbabwe',
   onOpenPremium,
   onAskQuestion
 }) => {
-  const [clock, setClock] = useState<HarareClockInfo>(() => NotificationManager.getHarareClockInfo());
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const [clock, setClock] = useState<HarareClockInfo>(() => NotificationManager.getHarareClockInfo(country));
   const [permission, setPermission] = useState<NotificationPermission>(() => NotificationManager.getPermissionStatus());
   const [isEnabled, setIsEnabled] = useState<boolean>(() => StorageManager.areNotificationsEnabled());
   const [testStatus, setTestStatus] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isOpen) return;
+    setClock(NotificationManager.getHarareClockInfo(country));
     const interval = setInterval(() => {
-      setClock(NotificationManager.getHarareClockInfo());
+      setClock(NotificationManager.getHarareClockInfo(country));
     }, 1000);
     return () => clearInterval(interval);
-  }, [isOpen]);
+  }, [isOpen, country]);
 
   if (!isOpen) return null;
 
   const isPremium = StorageManager.isPremium();
   const hasUsedAi = StorageManager.hasUsedAiEver();
-  const previewPayload = NotificationManager.buildNotificationPayload();
+  const previewPayload = NotificationManager.buildNotificationPayload(undefined, country);
 
   const handleRequestPermission = async () => {
     const res = await NotificationManager.requestPermission();
@@ -57,7 +61,7 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
     setIsEnabled(StorageManager.areNotificationsEnabled());
     if (res === 'granted') {
       setTestStatus('✅ Notifications enabled! Testing your device now...');
-      await NotificationManager.sendTestNotification();
+      await NotificationManager.sendTestNotification(undefined, country);
       setTimeout(() => setTestStatus(null), 4000);
     }
   };
@@ -73,7 +77,7 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
 
   const handleSendTest = async (type?: 'ACTIVATE_PREMIUM' | 'STUDY_REMINDER') => {
     setTestStatus('🚀 Sending test notification to this device...');
-    const delivered = await NotificationManager.sendTestNotification(type);
+    const delivered = await NotificationManager.sendTestNotification(type, country);
     if (delivered) {
       setTestStatus('✅ Notification delivered to your system tray & screen!');
     } else {
@@ -96,10 +100,12 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
             </div>
             <div>
               <h3 className="font-bold text-base sm:text-lg text-white">
-                Daily ZIMSEC Study Reminders
+                {isZim ? 'Daily ZIMSEC Study Reminders' : `Daily ${country} Study Reminders`}
               </h3>
               <p className="text-xs text-slate-400">
-                6:00 AM • 12:00 PM • 6:00 PM Harare Time (CAT)
+                {isZim
+                  ? '6:00 AM • 12:00 PM • 6:00 PM Harare Time (CAT)'
+                  : '6:00 AM • 12:00 PM • 6:00 PM Scheduled Study Alerts'}
               </p>
             </div>
           </div>
@@ -111,13 +117,13 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
           </button>
         </div>
 
-        {/* Live Harare Clock & Schedule Banner */}
+        {/* Live Clock & Schedule Banner */}
         <div className="mt-4 p-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div className="flex items-center gap-2.5">
             <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
             <div>
               <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-                Current Harare Time (CAT)
+                {isZim ? 'Current Harare Time (CAT)' : 'Current Study Schedule Clock'}
               </div>
               <div className="text-sm sm:text-base font-bold font-mono text-cyan-300">
                 {clock.harareTimeString}
@@ -231,7 +237,7 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
         </div>
 
         <p className="text-[10px] text-center text-slate-500 mt-3 font-mono">
-          Automated alerts are powered 100% offline via ZEXA Local Brain & device service workers.
+          Automated alerts are powered 100% offline via ZEXA AI & device service workers.
         </p>
       </div>
     </div>

@@ -61,7 +61,9 @@ export const App: React.FC = () => {
 
   // Session authentication state (Login -> Education Level -> AI Brain -> Dashboard)
   const [isSessionActive, setIsSessionActive] = useState<boolean>(() =>
-    StorageManager.isSessionLoggedIn() && StorageManager.isBrainInitialized()
+    StorageManager.isSessionLoggedIn() &&
+    StorageManager.isBrainInitialized() &&
+    StorageManager.hasSelectedCountry()
   );
 
   const [educationLevel, setEducationLevel] = useState<EducationLevel>(() =>
@@ -69,6 +71,9 @@ export const App: React.FC = () => {
   );
   const [contentLevel, setContentLevel] = useState<string>(() =>
     StorageManager.getContentLevel()
+  );
+  const [country, setCountry] = useState<string>(() =>
+    StorageManager.getUserCountry()
   );
   const [subscriptionStatus, setSubscriptionStatus] = useState<SubscriptionStatus>(() =>
     StorageManager.getSubscriptionStatus()
@@ -132,9 +137,23 @@ export const App: React.FC = () => {
     setMessages([]);
   };
 
-  const handleOnboardingComplete = (level: EducationLevel, email?: string) => {
-    StorageManager.initNewSession(email || 'Offline Student');
+  const handleCountryChange = (newCountry: string) => {
+    StorageManager.setUserCountry(newCountry);
+    setCountry(newCountry);
+    try {
+      localStorage.removeItem('zexa_active_paper');
+      localStorage.removeItem('zexa_active_paper_item');
+      localStorage.removeItem('zexa_active_paper_qindex');
+      localStorage.removeItem('zexa_active_paper_answers');
+      localStorage.removeItem('zexa_active_paper_revealed');
+    } catch {}
+  };
+
+  const handleOnboardingComplete = (level: EducationLevel, email?: string, selectedCountry?: string) => {
+    const resolvedCountry = selectedCountry || StorageManager.getUserCountry();
+    StorageManager.initNewSession(email || 'Offline Student', resolvedCountry);
     StorageManager.setBrainInitialized(true);
+    setCountry(resolvedCountry);
     handleLevelSelect(level);
     setIsSessionActive(true);
     setMessages([]);
@@ -144,6 +163,14 @@ export const App: React.FC = () => {
 
   const handleLogout = () => {
     StorageManager.logout();
+    try {
+      localStorage.removeItem('zexa_active_paper');
+      localStorage.removeItem('zexa_active_paper_item');
+      localStorage.removeItem('zexa_active_paper_qindex');
+      localStorage.removeItem('zexa_active_paper_answers');
+      localStorage.removeItem('zexa_active_paper_revealed');
+    } catch {}
+    setCountry('Zimbabwe');
     setIsSessionActive(false);
     setMessages([]);
     setActiveTab('chat');
@@ -161,6 +188,7 @@ export const App: React.FC = () => {
       <AppHeader
         educationLevel={educationLevel}
         contentLevel={contentLevel}
+        country={country}
         subscriptionStatus={subscriptionStatus}
         queriesUsedToday={queriesUsedToday}
         dailyLimit={dailyLimit}
@@ -179,6 +207,7 @@ export const App: React.FC = () => {
             setMessages={setMessages}
             educationLevel={educationLevel}
             contentLevel={contentLevel}
+            country={country}
             subscriptionStatus={subscriptionStatus}
             queriesUsedToday={queriesUsedToday}
             dailyLimit={dailyLimit}
@@ -193,6 +222,7 @@ export const App: React.FC = () => {
         {activeTab === 'studypack' && (
           <StudyPackView
             contentLevel={contentLevel}
+            country={country}
             onAskZexa={handleAskZexaFromStudyPack}
           />
         )}
@@ -200,6 +230,7 @@ export const App: React.FC = () => {
         {activeTab === 'exam' && (
           <ExamModeView
             contentLevel={contentLevel}
+            country={country}
             onAskZexaQuestion={handleAskZexaFromExam}
           />
         )}
@@ -218,6 +249,7 @@ export const App: React.FC = () => {
         onClose={() => setIsLevelModalOpen(false)}
         currentLevel={educationLevel}
         contentLevel={contentLevel}
+        country={country}
         onSelectLevel={handleLevelSelect}
         onOpenUpgrade={handleOpenUpgrade}
         isPremium={subscriptionStatus === 'PREMIUM'}
@@ -227,12 +259,14 @@ export const App: React.FC = () => {
         isOpen={isPremiumModalOpen}
         onClose={() => setIsPremiumModalOpen(false)}
         educationLevel={educationLevel}
+        country={country}
         onActivated={refreshQueries}
       />
 
       <StudyNotificationModal
         isOpen={isNotificationModalOpen}
         onClose={() => setIsNotificationModalOpen(false)}
+        country={country}
         onOpenPremium={() => {
           setIsNotificationModalOpen(false);
           setIsPremiumModalOpen(true);
@@ -249,6 +283,8 @@ export const App: React.FC = () => {
         onClose={() => setIsSettingsModalOpen(false)}
         educationLevel={educationLevel}
         contentLevel={contentLevel}
+        country={country}
+        onCountryChange={handleCountryChange}
         subscriptionStatus={subscriptionStatus}
         queriesUsedToday={queriesUsedToday}
         dailyLimit={dailyLimit}

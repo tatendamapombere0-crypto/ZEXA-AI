@@ -1,9 +1,11 @@
 import { KnowledgeChunk } from '../types';
+import { StorageManager } from './storage';
 import universalGlossaryData from '../data/zimsec_universal_glossary_terms.json';
 import grade7HbcQAData from '../data/zimsec_grade7_hbc_line_by_line_qa.json';
 import oLevelBiologyQAData from '../data/o_level_biology_qa_notes.json';
 import oLevelBiologyChunks from '../data/o_level_biology_chunks.json';
 import { COMPREHENSIVE_STUDY_PACKS } from '../data/comprehensiveStudyPacks';
+import { ZIMBABWE_ENCYCLOPEDIA_ENTRIES } from '../data/zimbabweEncyclopedia';
 import assetsKnowledgeIndex from '../data/assets_knowledge_index.json';
 import { extractTopicsFromJsonAsset, ExtractedAssetTopic } from './jsonAssetExtractor';
 
@@ -1983,6 +1985,28 @@ Rules of Debit and Credit:
       }
     }
 
+    // Ingest complete offline Zimbabwe National & Heritage Encyclopedia across all education levels (0ms, 100% offline)
+    if (Array.isArray(ZIMBABWE_ENCYCLOPEDIA_ENTRIES)) {
+      for (const entry of ZIMBABWE_ENCYCLOPEDIA_ENTRIES) {
+        const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level', 'Tertiary'];
+        for (const lvl of levels) {
+          const chunkId = `${entry.id}_${lvl.toLowerCase().replace(/[^a-z0-9]/g, '')}`;
+          if (!seenIds.has(chunkId)) {
+            seenIds.add(chunkId);
+            this.chunks.push({
+              id: chunkId,
+              level: lvl,
+              subject: entry.subject,
+              topic: entry.topic,
+              content: entry.content,
+              source: 'ZEXA Verified Zimbabwe Encyclopedia • Heritage & National Studies',
+              keywords: entry.keywords
+            });
+          }
+        }
+      }
+    }
+
     // Ingest all 2,640+ universal curriculum terms into searchable chunks for Primary, O-Level, and A-Level
     if (Array.isArray(universalGlossaryData)) {
       for (const entry of universalGlossaryData) {
@@ -2063,14 +2087,167 @@ Rules of Debit and Credit:
   }
 
   /**
+   * Determines whether a syllabus chunk or asset belongs strictly to Zimbabwe's
+   * national/ZIMSEC heritage & indigenous curriculum (hidden for non-Zimbabwe accounts).
+   */
+  public static isZimbabweSpecificItem(item: {
+    id?: string;
+    subject?: string;
+    topic?: string;
+    source?: string;
+    file?: string;
+  }): boolean {
+    const id = (item.id || '').toLowerCase();
+    const subject = (item.subject || '').toLowerCase();
+    const topic = (item.topic || '').toLowerCase();
+    const source = (item.source || '').toLowerCase();
+    const file = (item.file || '').toLowerCase();
+
+    if (
+      id.startsWith('zw_') ||
+      id.startsWith('g7_curriculum_') ||
+      id.startsWith('g7_social_') ||
+      id.startsWith('g7_heritage_') ||
+      id.startsWith('g7_history_') ||
+      id.startsWith('g7_shona_') ||
+      id.startsWith('g7_ndebele_') ||
+      id.startsWith('g7_ast_pfumvudza') ||
+      id === 'g7_pe_health_games' ||
+      id === 'pri_pea_fitness_traditional_arts' ||
+      id.startsWith('pri_shona_') ||
+      id.startsWith('pri_soc_') ||
+      id === 'olevel_hist_precolonial_liberation' ||
+      id.startsWith('olevel_shona_') ||
+      id === 'geo_agro_regions' ||
+      id === 'hist_great_zimbabwe' ||
+      id === 'hist_zulu_shaka_mfecane' ||
+      id.startsWith('hist_bio_mugabe') ||
+      id.startsWith('hist_third_chimurenga') ||
+      id.startsWith('hist_unity_accord') ||
+      id.startsWith('hist_second_republic') ||
+      id.startsWith('hist_constitution_2013')
+    ) {
+      return true;
+    }
+
+    if (
+      subject.includes('shona') ||
+      subject.includes('ndebele') ||
+      subject.includes('social science') ||
+      subject.includes('heritage') ||
+      subject.includes('fareme') ||
+      subject.includes('civics')
+    ) {
+      return true;
+    }
+
+    const meta = `${file} ${source} ${topic}`;
+    const zimSignals = [
+      'zimbabwe',
+      'zimsec_chishona',
+      'zimsec_shona',
+      'zimsec_isindebele',
+      'zimsec_ndebele',
+      'zimsec_heritage',
+      'zimsec_history_heritage',
+      'zimsec_history_olevel_paper1',
+      'zimsec_fareme',
+      'zimsec_grade7_frme',
+      'zimsec_primary_heritage',
+      'zimsec primary_social_studies',
+      'zimsec_supplement_civics',
+      'zimsec_general_knowledge_current_affairs',
+      'zimsec_grade7_hbc',
+      'exam_bank_primary_general_paper',
+      'grade 7 six official',
+      'grade 7 grading system',
+      'chimurenga',
+      'great zimbabwe',
+      'mutapa',
+      'rozvi',
+      'lobengula',
+      'mzilikazi',
+      'pfumvudza',
+      'intwasa',
+      'unhu/ubuntu',
+      'tsumo',
+      'izaga',
+      'madimikira',
+      'rondedzero',
+      'nzwisiso',
+      'zvirungamutauro',
+      'zig currency',
+      'vision 2030',
+      'chiredzi',
+      'kariba',
+      'harare',
+      'bulawayo',
+      'lancaster house',
+      'chinhoyi',
+      'nyadzonia',
+      'chimoio',
+      'mnangagwa',
+      'mugabe',
+      'nkomo',
+      'tongogara',
+      'chitepo',
+      'nehanda',
+      'kaguvi',
+      'natural farming regions of zimbabwe'
+    ];
+    return zimSignals.some((sig) => meta.includes(sig));
+  }
+
+  public static sanitizeChunkForCountry(chunk: KnowledgeChunk, isZim: boolean): KnowledgeChunk {
+    if (isZim) return chunk;
+    const cleanMultiline = (val: string) =>
+      val
+        .replace(/Cambridge\s*\(?(\d+)\)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, 'Cambridge / International $2 ')
+        .replace(/Cambridge IGCSE\s*(\d+)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, 'Cambridge IGCSE $1 / International $2 ')
+        .replace(/ZIMSEC\s*Universal\s*Curriculum\s*Knowledge\s*Base/gi, 'International Curriculum Knowledge Base')
+        .replace(/ZIMSEC\s*Grade\s*7\s*Primary\s*Curriculum/gi, 'Primary International Curriculum')
+        .replace(/In\s+ZIMSEC\s+Grade\s*7\b/gi, 'In Primary')
+        .replace(/ZIMSEC\s*Combined\s*Science\s*\d*\s*&\s*/gi, 'International Combined Science & ')
+        .replace(/ZIMSEC\s*(Grade\s*7|Primary|O-Level|A-Level)\s*/gi, 'International $1 ')
+        .replace(/\bZIMSEC\s*&\s*/gi, '')
+        .replace(/\bZIMSEC\b[ \t]*/gi, '')
+        .replace(/[ \t]*\(HBC Topic \d+[^)]*\)/gi, '')
+        .replace(/[ \t]*\((?:International[ \t]*)?(?:7010|7030|4001|4003|4004|4021|4025|4026|1122|2248|6042|6046|9153|9154|9155|9156|9158|9188|9189|9190|9197|9198)\)/gi, '')
+        .replace(/\b(Syllabus|Biology|Chemistry|Physics|Mathematics|Geography|History|Agriculture|Accounting|Commerce|Economics|Literature|Computer Science)[ \t]+(?:7010|7030|4001|4003|4004|4021|4025|4026|1122|2248|6042|6046|9153|9154|9155|9156|9158|9188|9189|9190|9197|9198)\b/gi, '$1')
+        .replace(/\(ZiG vs USD\)/gi, '(FX & inflation)')
+        .replace(/ and practical erosion control in Zimbabwe\./gi, ' and practical soil erosion control.')
+        .replace(/[ \t]{2,}/g, ' ');
+
+    const cleanSingleLine = (val: string) => cleanMultiline(val).replace(/\s+/g, ' ').trim();
+
+    return {
+      ...chunk,
+      topic: cleanSingleLine(chunk.topic || ''),
+      summary: chunk.summary ? cleanSingleLine(chunk.summary) : chunk.summary,
+      source: cleanSingleLine(chunk.source || ''),
+      content: cleanMultiline(chunk.content || '')
+    };
+  }
+
+  /**
    * Retrieves all visual topics for a given education level instantly (0ms latency)
    */
-  public static getAllVisualTopics(level: string): KnowledgeChunk[] {
+  public static getAllVisualTopics(level: string, country?: string): KnowledgeChunk[] {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return [];
+    }
     const normLevel = this.normalizeLevel(level);
-    return (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[]).filter((p) => {
-      const pLvl = this.normalizeLevel(p.level);
-      return pLvl === normLevel && p.hasVisual && p.diagramId;
-    });
+    const isZim = StorageManager.isZimbabweAccount(country);
+    return (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[])
+      .filter((p) => {
+        const pLvl = this.normalizeLevel(p.level);
+        if (pLvl !== normLevel || !p.hasVisual || !p.diagramId) return false;
+        if (!isZim && this.isZimbabweSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+          return false;
+        }
+        return true;
+      })
+      .map((p) => this.sanitizeChunkForCountry(p, isZim));
   }
 
   /**
@@ -2259,11 +2436,15 @@ Rules of Debit and Credit:
   }
 
   /**
-   * Strictly filters knowledge chunks for the target education level!
+   * Strictly filters knowledge chunks for the target education level and account country!
    */
-  static async searchScored(query: string, level: string): Promise<SearchResult> {
+  static async searchScored(query: string, level: string, country?: string): Promise<SearchResult> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return { results: [], queryWords: [] };
+    }
     await this.load();
-    const cacheKey = `${query}|${level}`;
+    const isZim = StorageManager.isZimbabweAccount(country);
+    const cacheKey = `${query}|${level}|${isZim ? 'zw' : 'intl'}`;
     if (this.cache.has(cacheKey)) {
       return this.cache.get(cacheKey)!;
     }
@@ -2284,7 +2465,9 @@ Rules of Debit and Credit:
       'calculate', 'using', 'between', 'give', 'list', 'show', 'acts', 'much', 'about', 'your',
       'process', 'processes', 'processing', 'steps', 'definition', 'define', 'meaning', 'concept',
       'concepts', 'tell', 'write', 'notes', 'answer', 'answers', 'work', 'works', 'working',
-      'does', 'did', 'done', 'can', 'could', 'would', 'should', 'will'
+      'does', 'did', 'done', 'can', 'could', 'would', 'should', 'will',
+      'need', 'help', 'homework', 'please', 'assist', 'assistance', 'assignment', 'assignments',
+      'study', 'studying', 'tutor', 'schoolwork', 'want', 'got', 'have', 'some', 'today'
     ]);
 
     // Comparison words should be ignored as search target unless query specifically asks for potential difference
@@ -2302,9 +2485,7 @@ Rules of Debit and Credit:
       .split(/[^a-zA-Z0-9]+/)
       .filter((w) => w.length > 2 && !stopWords.has(w));
 
-    const effectiveWords = words.length > 0
-      ? words
-      : coreQuery.toLowerCase().split(/[^a-zA-Z0-9]+/).filter((w) => w.length > 2);
+    const effectiveWords = words;
 
     if (effectiveWords.length === 0) {
       return { results: [], queryWords: [] };
@@ -2312,12 +2493,16 @@ Rules of Debit and Credit:
 
     const normLevel = this.normalizeLevel(level);
 
-    // STRICT LEVEL FILTERING:
+    // STRICT LEVEL & COUNTRY FILTERING:
     // Primary ONLY matches Primary / Grade 7
     // O-Level ONLY matches O-Level (Forms 1 - 4)
     // A-Level ONLY matches A-Level (Forms 5 - 6)
     // Tertiary ONLY matches Tertiary
+    // Non-Zimbabwe accounts exclude Zimbabwe-only data and heritage modules
     const candidates = this.chunks.filter((c) => {
+      if (!isZim && this.isZimbabweSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
       const cLevel = this.normalizeLevel(c.level);
       if (normLevel === 'primary') {
         return cLevel === 'primary' || cLevel === 'grade7';
@@ -2422,8 +2607,11 @@ Rules of Debit and Credit:
       }
     }
 
-    // 2. Search across ALL 5,928 syllabus topics indexed from all 125 JSON files in /public/assets/
+    // 2. Search across indexed syllabus topics filtered by level and account country
     const indexCandidates = this.assetsIndex.filter((item) => {
+      if (!isZim && this.isZimbabweSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+        return false;
+      }
       const cLevel = this.normalizeLevel(item.l);
       if (normLevel === 'primary') return cLevel === 'primary' || cLevel === 'grade7';
       if (normLevel === 'alevel') return cLevel === 'alevel';
@@ -2522,13 +2710,14 @@ Rules of Debit and Credit:
     // For the top matching asset items, resolve their full in-depth content from the JSON asset file
     for (const match of scoredAssetMatches.slice(0, 3)) {
       const fullContent = await this.loadAssetFileContent(match.item.f, match.item.idx, match.item.snip);
+      const syllabusPrefix = isZim ? 'ZIMSEC Syllabus' : 'International Syllabus';
       const chunk: KnowledgeChunk = {
         id: match.item.id,
         level: match.item.l,
         subject: match.item.s,
         topic: match.item.t,
         content: fullContent,
-        source: `ZIMSEC Syllabus (${match.item.f.replace('.json', '').replace(/_/g, ' ')})`,
+        source: `${syllabusPrefix} (${match.item.f.replace('.json', '').replace(/_/g, ' ').replace(/^zimsec\s+/i, '')})`,
         keywords: match.item.kw || [match.item.t.toLowerCase()]
       };
       scored.push({
@@ -2539,7 +2728,10 @@ Rules of Debit and Credit:
     }
 
     scored.sort((a, b) => b.score - a.score);
-    const topResults = scored.slice(0, 5);
+    const topResults = scored.slice(0, 5).map((item) => ({
+      ...item,
+      chunk: this.sanitizeChunkForCountry(item.chunk, isZim)
+    }));
     const finalResult = { results: topResults, queryWords: effectiveWords };
     this.cache.set(cacheKey, finalResult);
     return finalResult;
@@ -2595,28 +2787,38 @@ Rules of Debit and Credit:
   }
 
   /**
-   * Returns standard, clean subjects specific to the given level.
-   * Primary: ZIMSEC Primary 6-Subject Official Format.
-   * O-Level: Core ZIMSEC & Cambridge O-Level Academic Disciplines.
-   * A-Level: Advanced Level Disciplines.
+   * Returns subjects specific to the given level and selected country curriculum.
+   * Zimbabwe accounts see full ZIMSEC 6-Subject Primary & ChiShona curriculum.
+   * Non-Zimbabwe accounts see International / Global curriculum subjects without Zimbabwe-only modules.
    */
-  static async getSubjects(level: string): Promise<string[]> {
+  static async getSubjects(level: string, country?: string): Promise<string[]> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return [];
+    }
     await this.load();
     const normLevel = this.normalizeLevel(level);
+    const isZim = StorageManager.isZimbabweAccount(country);
 
     if (normLevel === 'primary') {
-      return [
-        'English',
-        'Mathematics',
-        'Agric, Science & Tech',
-        'Shona',
-        'Social Science',
-        'Physical Edu & Arts'
-      ];
+      return isZim
+        ? [
+            'English',
+            'Mathematics',
+            'Agric, Science & Tech',
+            'Shona',
+            'Social Science',
+            'Physical Edu & Arts'
+          ]
+        : [
+            'English',
+            'Mathematics',
+            'Agric, Science & Tech',
+            'Physical Edu & Arts'
+          ];
     }
 
     if (normLevel === 'olevel') {
-      return [
+      const base = [
         'Biology',
         'Combined Science',
         'Mathematics',
@@ -2627,9 +2829,9 @@ Rules of Debit and Credit:
         'Agriculture',
         'English Language',
         'Commerce & Accounts',
-        'Computer Science',
-        'Shona'
+        'Computer Science'
       ];
+      return isZim ? [...base, 'Shona'] : base;
     }
 
     if (normLevel === 'alevel') {
@@ -2671,18 +2873,25 @@ Rules of Debit and Credit:
   }
 
   /**
-   * Retrieves comprehensive study modules and substantial textbook notes for the selected subject.
-   * Excludes single-sentence dictionary definitions to ensure high-depth study material.
+   * Retrieves comprehensive study modules and substantial textbook notes for the selected subject and country.
+   * Excludes single-sentence dictionary definitions and isolates Zimbabwe-specific packs to Zimbabwe accounts.
    */
-  static async getTopics(level: string, subject: string): Promise<KnowledgeChunk[]> {
+  static async getTopics(level: string, subject: string, country?: string): Promise<KnowledgeChunk[]> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return [];
+    }
     await this.load();
     const normLevel = this.normalizeLevel(level);
     const subLower = subject.toLowerCase().trim();
+    const isZim = StorageManager.isZimbabweAccount(country);
 
     // 1. Pick from COMPREHENSIVE_STUDY_PACKS (high-depth textbook lessons with visual diagrams)
     const primaryPacks = (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[]).filter((p) => {
       const pLvl = this.normalizeLevel(p.level);
       if (pLvl !== normLevel) return false;
+      if (!isZim && this.isZimbabweSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+        return false;
+      }
       return p.subject.toLowerCase() === subLower;
     });
 
@@ -2692,6 +2901,9 @@ Rules of Debit and Credit:
       if (cLvl !== normLevel) return false;
       // Filter out small glossary snippets
       if (c.id.startsWith('glossary_') || c.content.length < 350) return false;
+      if (!isZim && this.isZimbabweSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
 
       let stdSubj = c.subject;
       if (normLevel === 'primary') {
@@ -2710,6 +2922,9 @@ Rules of Debit and Credit:
       .filter((item) => {
         const cLvl = this.normalizeLevel(item.l);
         if (cLvl !== normLevel) return false;
+        if (!isZim && this.isZimbabweSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+          return false;
+        }
         const itemSubLower = item.s.toLowerCase();
         return itemSubLower === subLower || itemSubLower.includes(subLower) || subLower.includes(itemSubLower);
       })
@@ -2720,7 +2935,7 @@ Rules of Debit and Credit:
         subject: item.s,
         topic: item.t,
         content: item.snip,
-        source: `ZIMSEC Syllabus (${item.f.replace('.json', '').replace(/_/g, ' ')})`,
+        source: `${isZim ? 'ZIMSEC Syllabus' : 'International Syllabus'} (${item.f.replace('.json', '').replace(/_/g, ' ').replace(/^zimsec\s+/i, '')})`,
         keywords: item.kw || [item.t.toLowerCase()]
       }));
 
@@ -2729,10 +2944,11 @@ Rules of Debit and Credit:
     const results: KnowledgeChunk[] = [];
 
     for (const item of [...primaryPacks, ...extraChunks, ...indexMatches]) {
-      const normTopic = item.topic.toLowerCase().trim();
+      const sanitized = this.sanitizeChunkForCountry(item, isZim);
+      const normTopic = sanitized.topic.toLowerCase().trim();
       if (!seenTopics.has(normTopic)) {
         seenTopics.add(normTopic);
-        results.push(item);
+        results.push(sanitized);
       }
     }
 

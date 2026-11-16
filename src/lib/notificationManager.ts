@@ -66,6 +66,41 @@ const DASHBOARD_STUDY_HINTS = [
   }
 ];
 
+const INTERNATIONAL_STUDY_HINTS = [
+  {
+    subject: 'Biology',
+    question: 'Explain the light and dark reactions of photosynthesis with word equation'
+  },
+  {
+    subject: 'Biology',
+    question: 'What is respiration and how does it release energy in living cells?'
+  },
+  {
+    subject: 'Mathematics',
+    question: 'Solve 2x² - 5x - 3 = 0 step by step using the quadratic formula'
+  },
+  {
+    subject: 'Physics',
+    question: 'Explain Newton’s three laws of motion with real-life examples'
+  },
+  {
+    subject: 'Chemistry',
+    question: 'Compare ionic, covalent, and metallic bonding with examples'
+  },
+  {
+    subject: 'Geography',
+    question: 'How do river erosion features like waterfalls and gorges form upstream?'
+  },
+  {
+    subject: 'Economics',
+    question: 'Compare Perfect Competition and Monopoly market structures'
+  },
+  {
+    subject: 'Computer Science',
+    question: 'Explain the fetch-decode-execute cycle in a computer CPU'
+  }
+];
+
 export class NotificationManager {
   private static timerId: any = null;
   private static onNotificationCallbacks: Array<(payload: StudyReminderPayload) => void> = [];
@@ -75,20 +110,16 @@ export class NotificationManager {
    * and time remaining until the next scheduled notification slot:
    * 6:00 AM, 12:00 PM, or 6:00 PM Harare Time.
    */
-  static getHarareClockInfo(): HarareClockInfo {
+  static getHarareClockInfo(countryOverride?: string): HarareClockInfo {
+    const isZim = StorageManager.isZimbabweAccount(countryOverride);
     const now = new Date();
-    // Harare is UTC+2 with no daylight saving time (DST)
-    const harareTimeMs = now.getTime() + (2 * 60 * 60 * 1000) + (now.getTimezoneOffset() * 60 * 1000);
-    const harareNow = new Date(harareTimeMs);
+    // Zimbabwe uses Harare CAT (UTC+2); other accounts use device local time
+    const effectiveNow = isZim
+      ? new Date(now.getTime() + (2 * 60 * 60 * 1000) + (now.getTimezoneOffset() * 60 * 1000))
+      : now;
 
-    const h = harareNow.getHours();
-    const m = harareNow.getMinutes();
-    const s = harareNow.getSeconds();
-
-    // Target slots in Harare time (hours in 24h):
-    // Slot 1: 06:00 (6:00 AM) -> 04:00 UTC
-    // Slot 2: 12:00 (12:00 PM) -> 10:00 UTC
-    // Slot 3: 18:00 (6:00 PM) -> 16:00 UTC
+    const h = effectiveNow.getHours();
+    const m = effectiveNow.getMinutes();
 
     let nextSlotName: '6:00 AM' | '12:00 PM' | '6:00 PM' = '6:00 AM';
     let targetHour = 6;
@@ -97,40 +128,36 @@ export class NotificationManager {
     const currentMinuteOfDay = h * 60 + m;
 
     if (currentMinuteOfDay < 6 * 60) {
-      // Before 6 AM today
       targetHour = 6;
       nextSlotName = '6:00 AM';
       daysToAdd = 0;
     } else if (currentMinuteOfDay < 12 * 60) {
-      // Between 6 AM and 12 PM today
       targetHour = 12;
       nextSlotName = '12:00 PM';
       daysToAdd = 0;
     } else if (currentMinuteOfDay < 18 * 60) {
-      // Between 12 PM and 6 PM today
       targetHour = 18;
       nextSlotName = '6:00 PM';
       daysToAdd = 0;
     } else {
-      // After 6 PM today -> Tomorrow at 6:00 AM
       targetHour = 6;
       nextSlotName = '6:00 AM';
       daysToAdd = 1;
     }
 
-    const targetDate = new Date(harareNow);
+    const targetDate = new Date(effectiveNow);
     targetDate.setDate(targetDate.getDate() + daysToAdd);
     targetDate.setHours(targetHour, 0, 0, 0);
 
-    const msUntilNextSlot = Math.max(1000, targetDate.getTime() - harareNow.getTime());
+    const msUntilNextSlot = Math.max(1000, targetDate.getTime() - effectiveNow.getTime());
     const hoursUntilNext = Math.floor(msUntilNextSlot / (1000 * 60 * 60));
     const minutesUntilNext = Math.floor((msUntilNextSlot % (1000 * 60 * 60)) / (1000 * 60));
 
-    const timeString = harareNow.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
-    const dateString = harareNow.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+    const timeString = effectiveNow.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+    const dateString = effectiveNow.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
 
     return {
-      harareTimeString: `${timeString} CAT (Harare)`,
+      harareTimeString: isZim ? `${timeString} CAT (Harare)` : `${timeString} Local Time`,
       harareDateString: dateString,
       nextSlotName,
       msUntilNextSlot,
@@ -146,17 +173,27 @@ export class NotificationManager {
    * - If user is active / studying:
    *   "Have you done your study today? Let's begin!" with a hint of a dashboard question.
    */
-  static buildNotificationPayload(slotName?: '6:00 AM' | '12:00 PM' | '6:00 PM'): StudyReminderPayload {
+  static buildNotificationPayload(
+    slotName?: '6:00 AM' | '12:00 PM' | '6:00 PM',
+    countryOverride?: string
+  ): StudyReminderPayload {
     const isPremium = StorageManager.isPremium();
     const hasUsedAi = StorageManager.hasUsedAiEver();
-    const clock = this.getHarareClockInfo();
+    const isZim = StorageManager.isZimbabweAccount(countryOverride);
+    const activeCountry = countryOverride || StorageManager.getUserCountry();
+    const clock = this.getHarareClockInfo(countryOverride);
     const slot = slotName || clock.nextSlotName;
 
+    const hasPack = StorageManager.hasCountryCurriculumPack(countryOverride);
     // Condition A: User has installed the app, but has not used the AI or not paid the premium
     if (!isPremium || !hasUsedAi) {
       return {
         title: '⚡ Activate Premium for 100% Offline Access',
-        body: 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!',
+        body: isZim
+          ? 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!'
+          : hasPack
+          ? `Activate premium for offline access. Start now to unlock all ${activeCountry} syllabuses, practice papers, and offline AI answers!`
+          : `Activate premium for unlimited offline ZEXA AI chat tutoring in ${activeCountry}!`,
         type: 'ACTIVATE_PREMIUM',
         slot,
         timestamp: Date.now()
@@ -164,17 +201,23 @@ export class NotificationManager {
     }
 
     // Condition B: Active student studying with ZEXA AI
-    // Rotate through high-yield dashboard questions
+    // Rotate through high-yield dashboard questions scoped to country
+    const hints = isZim ? DASHBOARD_STUDY_HINTS : INTERNATIONAL_STUDY_HINTS;
     const dayIndex = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
     const slotOffset = slot === '6:00 AM' ? 0 : slot === '12:00 PM' ? 1 : 2;
-    const selectedItem = DASHBOARD_STUDY_HINTS[(dayIndex + slotOffset) % DASHBOARD_STUDY_HINTS.length];
+    const selectedItem = hints[(dayIndex + slotOffset) % hints.length];
 
-    const slotTitlePrefix =
-      slot === '6:00 AM'
+    const slotTitlePrefix = isZim
+      ? slot === '6:00 AM'
         ? '🌅 Morning ZIMSEC Kickoff (6:00 AM Harare)'
         : slot === '12:00 PM'
         ? '☀️ Midday ZIMSEC Revision (12:00 PM Harare)'
-        : '🌙 Evening ZIMSEC Mastery (6:00 PM Harare)';
+        : '🌙 Evening ZIMSEC Mastery (6:00 PM Harare)'
+      : slot === '6:00 AM'
+      ? `🌅 Morning ${activeCountry} Study Kickoff (6:00 AM)`
+      : slot === '12:00 PM'
+      ? `☀️ Midday ${activeCountry} Revision (12:00 PM)`
+      : `🌙 Evening ${activeCountry} Mastery (6:00 PM)`;
 
     return {
       title: slotTitlePrefix,
@@ -215,13 +258,29 @@ export class NotificationManager {
     this.registerServiceWorker();
   }
 
+  private static swUpdateListenerBound = false;
+
   /**
    * Registers public/sw.js to handle notifications on installed devices
    */
   private static async registerServiceWorker(): Promise<void> {
     if ('serviceWorker' in navigator) {
       try {
-        await navigator.serviceWorker.register('/sw.js');
+        const hadController = Boolean(navigator.serviceWorker.controller);
+        if (!this.swUpdateListenerBound) {
+          this.swUpdateListenerBound = true;
+          let refreshing = false;
+          navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (hadController && !refreshing) {
+              refreshing = true;
+              window.location.reload();
+            }
+          });
+        }
+        const registration = await navigator.serviceWorker.register('/sw.js', {
+          updateViaCache: 'none'
+        });
+        registration.update().catch(() => {});
       } catch (err) {
         console.warn('Service worker registration note:', err);
       }
@@ -337,18 +396,28 @@ export class NotificationManager {
   /**
    * Sends an immediate test notification so users can verify device notifications instantly
    */
-  static async sendTestNotification(overrideType?: 'ACTIVATE_PREMIUM' | 'STUDY_REMINDER'): Promise<boolean> {
-    const payload = this.buildNotificationPayload();
+  static async sendTestNotification(
+    overrideType?: 'ACTIVATE_PREMIUM' | 'STUDY_REMINDER',
+    countryOverride?: string
+  ): Promise<boolean> {
+    const isZim = StorageManager.isZimbabweAccount(countryOverride);
+    const activeCountry = countryOverride || StorageManager.getUserCountry();
+    const payload = this.buildNotificationPayload(undefined, countryOverride);
     if (overrideType) {
       payload.type = overrideType;
       if (overrideType === 'ACTIVATE_PREMIUM') {
         payload.title = '⚡ Activate Premium for 100% Offline Access (Test)';
-        payload.body = 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!';
+        payload.body = isZim
+          ? 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!'
+          : `Activate premium for offline access. Start now to unlock all ${activeCountry} syllabuses, practice papers, and offline AI answers!`;
         payload.question = undefined;
       } else {
+        const sampleQuestion = isZim
+          ? 'Describe ways of preserving heritage sites of Zimbabwe'
+          : INTERNATIONAL_STUDY_HINTS[0].question;
         payload.title = '📚 ZEXA Study Reminder (Test)';
-        payload.body = 'Have you done your study today? Let\'s begin! 💡 Study Question: "Describe ways of preserving heritage sites of Zimbabwe". Tap to explore answer offline.';
-        payload.question = 'Describe ways of preserving heritage sites of Zimbabwe';
+        payload.body = `Have you done your study today? Let's begin! 💡 Study Question: "${sampleQuestion}". Tap to explore answer offline.`;
+        payload.question = sampleQuestion;
       }
     }
     return await this.dispatchDeviceNotification(payload);

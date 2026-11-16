@@ -1,4 +1,5 @@
 import { ExamManifestItem, ExamPaper, ExamQuestion } from '../types';
+import { StorageManager } from './storage';
 import bundledExamManifest from '../data/exam_manifest.json';
 import bundledBiologyOLevel from '../data/exam_bank_biology_o_level_cambridge_past_papers.json';
 import bundledAgric4001 from '../data/exam_bank_agriculture_4001_1.json';
@@ -163,48 +164,132 @@ export class ExamStore {
   }
 
   /**
-   * Returns subjects strictly aligned with the chosen level.
-   * For Primary, returns the official ZIMSEC 6-Subject results slip structure.
-   * For O-Level, returns only O-Level exam subjects.
-   * For A-Level, returns only A-Level exam subjects.
+   * Returns true if an exam paper belongs specifically to Zimbabwe local/indigenous/heritage
+   * examinations so non-Zimbabwe accounts only see universal/international papers.
    */
-  static async getSubjects(level: string): Promise<string[]> {
+  public static isZimbabweSpecificPaper(item: ExamManifestItem): boolean {
+    const s = (item.subject || '').toLowerCase();
+    const n = (item.paperName || '').toLowerCase();
+    const f = (item.file || '').toLowerCase();
+    const c = (item.paperCode || '').toLowerCase();
+    const combined = `${s} ${n} ${f} ${c}`;
+
+    if (
+      combined.includes('zimbabwe') ||
+      combined.includes('shona') ||
+      combined.includes('chishona') ||
+      combined.includes('ndebele') ||
+      combined.includes('isindebele') ||
+      combined.includes('social science') ||
+      combined.includes('general paper') ||
+      combined.includes('genpaper') ||
+      combined.includes('heritage') ||
+      combined.includes('family and religious') ||
+      f.includes('705_') ||
+      f.includes('7050') ||
+      c.startsWith('705/') ||
+      c.startsWith('7050/') ||
+      c.startsWith('7040/') ||
+      c.startsWith('4007/') ||
+      c.startsWith('4047/') ||
+      c.startsWith('6039/02') ||
+      c.startsWith('9155/1') ||
+      f.includes('history_olevel_2167') ||
+      f.includes('history_alevel_9155_paper1')
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
+  public static formatPaperLabelForCountry(text: string, isZim: boolean): string {
+    if (!text || isZim) return text;
+    return text
+      .replace(/Cambridge\s*&\s*ZIMSEC\s*/gi, 'Cambridge / International ')
+      .replace(/Ministry\/ZIMSEC-style/gi, 'International')
+      .replace(/ZIMSEC-style/gi, 'Standard')
+      .replace(/ZIMSEC-syllabus-aligned/gi, 'Syllabus-aligned')
+      .replace(/ZIMSEC-aligned/gi, 'Standard')
+      .replace(/ZIMSEC-format/gi, 'Standard format')
+      .replace(/\bZIMSEC\b\s*/gi, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
+  /**
+   * Returns subjects strictly aligned with the chosen level and account country.
+   * Zimbabwe Primary accounts see the official ZIMSEC 6-Subject results slip structure.
+   * Non-Zimbabwe accounts see international academic subjects without Zimbabwe-only papers.
+   */
+  static async getSubjects(level: string, country?: string): Promise<string[]> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return [];
+    }
     const manifest = await this.loadManifest();
     const normLevel = this.normalizeLevel(level);
+    const isZim = StorageManager.isZimbabweAccount(country);
 
     if (normLevel === 'primary') {
-      return [
-        'English',
-        'Mathematics',
-        'Agric, Science & Tech',
-        'Shona',
-        'Social Science',
-        'Physical Edu & Arts'
-      ];
+      return isZim
+        ? [
+            'English',
+            'Mathematics',
+            'Agric, Science & Tech',
+            'Shona',
+            'Social Science',
+            'Physical Edu & Arts'
+          ]
+        : [
+            'English',
+            'Mathematics',
+            'Agric, Science & Tech',
+            'Physical Edu & Arts'
+          ];
     }
 
     if (normLevel === 'tertiary') {
       return ['Higher Education Assessments'];
     }
 
-    const papersForLevel = manifest.filter((item) => this.isPaperForLevel(item, normLevel));
+    const papersForLevel = manifest.filter((item) => {
+      if (!this.isPaperForLevel(item, normLevel)) return false;
+      if (!isZim && this.isZimbabweSpecificPaper(item)) return false;
+      return true;
+    });
     return Array.from(new Set(papersForLevel.map((i) => i.subject))).sort();
   }
 
   /**
-   * Strictly filters exam papers by education level!
+   * Strictly filters exam papers by education level and account country!
    * Separate papers for Primary, O-Level (Forms 1-4), and A-Level (Forms 5-6).
    */
-  static async getPapers(level: string, subject?: string): Promise<ExamManifestItem[]> {
+  static async getPapers(level: string, subject?: string, country?: string): Promise<ExamManifestItem[]> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return [];
+    }
     const manifest = await this.loadManifest();
     const normLevel = this.normalizeLevel(level);
+    const isZim = StorageManager.isZimbabweAccount(country);
 
-    let papersForLevel = manifest.filter((item) => this.isPaperForLevel(item, normLevel));
+    let papersForLevel = manifest.filter((item) => {
+      if (!this.isPaperForLevel(item, normLevel)) return false;
+      if (!isZim && this.isZimbabweSpecificPaper(item)) return false;
+      return true;
+    });
 
     if (normLevel === 'primary') {
       papersForLevel = papersForLevel.map((item) => ({
         ...item,
         subject: this.standardizePrimarySubject(item.subject, item.paperName, item.file)
+      }));
+    }
+
+    if (!isZim) {
+      papersForLevel = papersForLevel.map((item) => ({
+        ...item,
+        paperName: this.formatPaperLabelForCountry(item.paperName, false),
+        paperType: this.formatPaperLabelForCountry(item.paperType, false)
       }));
     }
 

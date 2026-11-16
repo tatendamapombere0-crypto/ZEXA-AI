@@ -1,13 +1,15 @@
 import React from 'react';
 import { X, Check, BookOpen, GraduationCap, School } from 'lucide-react';
 import { EducationLevel } from '../types';
-import { LEVEL_PRICES } from '../lib/storage';
+import { findCountryConfig } from '../data/worldCountries';
+import { LEVEL_PRICES, StorageManager } from '../lib/storage';
 
 interface LevelSelectModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentLevel: EducationLevel;
   contentLevel?: string;
+  country?: string;
   onSelectLevel: (level: EducationLevel) => void;
   onOpenUpgrade: (level: EducationLevel, price: number) => void;
   isPremium: boolean;
@@ -18,11 +20,15 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
   onClose,
   currentLevel,
   contentLevel,
+  country = 'Zimbabwe',
   onSelectLevel,
   onOpenUpgrade,
   isPremium
 }) => {
   if (!isOpen) return null;
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const hasPack = StorageManager.hasCountryCurriculumPack(country);
+  const countryConfig = findCountryConfig(country);
 
   const handlePickLevel = (level: EducationLevel) => {
     if (level === currentLevel) {
@@ -73,7 +79,9 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
           <div>
             <h3 className="text-base sm:text-lg font-bold text-white">Select Education Level</h3>
             <p className="text-xs text-slate-400">
-              Tailors syllabus knowledge and exam banks to your curriculum tier
+              {hasPack
+                ? `Tailors ${isZim ? 'ZIMSEC' : countryConfig.curriculum} syllabus knowledge and exam banks to your tier`
+                : `Adjusts ZEXA AI explanation depth for ${country}`}
             </p>
           </div>
         </div>
@@ -105,10 +113,14 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     )}
                   </div>
                   <p className="text-xs text-cyan-300 font-medium mt-0.5">
-                    Grade 1 to Grade 7 (Heritage-Based Curriculum)
+                    {isZim
+                      ? 'Grade 1 to Grade 7 (Heritage-Based Curriculum)'
+                      : `Grade 1 to Grade 7 (${countryConfig.curriculum})`}
                   </p>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    Official 6-Subject Format: English, Mathematics, Agric, Science &amp; Tech, Shona, Social Science, Physical Edu &amp; Arts.
+                    {isZim
+                      ? 'Official 6-Subject Format: English, Mathematics, Agric, Science & Tech, Shona, Social Science, Physical Edu & Arts.'
+                      : 'Core Primary Subjects: English, Mathematics, Science & Technology, Physical Education & Arts.'}
                   </p>
                 </div>
               </div>
@@ -158,11 +170,15 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     O-Level (Form 1 to 4)
                   </h5>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    Combined Science, Mathematics, Commerce, Accounts, Geography, History, English, Shona.
+                    {isZim
+                      ? 'Combined Science, Mathematics, Commerce, Accounts, Geography, History, English, Shona.'
+                      : 'Combined Science, Biology, Chemistry, Physics, Mathematics, Commerce, Accounts, Geography, History, English.'}
                   </p>
                 </div>
                 <div className="mt-3 pt-2 border-t border-white/[0.08] flex items-center justify-between text-[11px]">
-                  <span className="text-slate-500">ZIMSEC O-Level</span>
+                  <span className="text-slate-500">
+                    {isZim ? 'ZIMSEC O-Level' : `${countryConfig.curriculum} O-Level`}
+                  </span>
                   <span className="text-cyan-400 font-mono font-bold">$5/term</span>
                 </div>
               </div>
@@ -191,11 +207,15 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     A-Level (Form 5 to 6)
                   </h5>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    Pure Mathematics, Biology, History 9155, Geography, Economics, Physics, Accounting.
+                    {isZim
+                      ? 'Pure Mathematics, Biology, History 9155, Geography, Economics, Physics, Accounting.'
+                      : 'Pure Mathematics, Biology, History, Geography, Economics, Physics, Accounting.'}
                   </p>
                 </div>
                 <div className="mt-3 pt-2 border-t border-white/[0.08] flex items-center justify-between text-[11px]">
-                  <span className="text-slate-500">ZIMSEC Advanced Level</span>
+                  <span className="text-slate-500">
+                    {isZim ? 'ZIMSEC Advanced Level' : `${countryConfig.curriculum} A-Level`}
+                  </span>
                   <span className="text-purple-400 font-mono font-bold">$5/term</span>
                 </div>
               </div>

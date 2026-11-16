@@ -10,6 +10,7 @@ interface PremiumModalProps {
   isOpen: boolean;
   onClose: () => void;
   educationLevel: EducationLevel;
+  country?: string;
   onActivated: () => void;
 }
 
@@ -17,8 +18,10 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
   isOpen,
   onClose,
   educationLevel,
+  country = 'Zimbabwe',
   onActivated
 }) => {
+  const isZim = StorageManager.isZimbabweAccount(country);
   const [activationCode, setActivationCode] = useState('');
   const [codeError, setCodeError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'code' | 'ecocash'>('code');
@@ -68,7 +71,11 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
       // Confetti fallback
     }
 
-    setSuccessMessage(`${message}. Unlimited ZEXA AI queries and full offline exam bank access active for ${currentPeriod.name}!`);
+    setSuccessMessage(
+      StorageManager.hasCountryCurriculumPack(country)
+        ? `${message}. Unlimited ZEXA AI queries and full offline exam bank access active for ${currentPeriod.name}!`
+        : `${message}. Unlimited ZEXA AI tutoring is now active for ${currentPeriod.name}!`
+    );
     setTimeout(() => {
       onClose();
     }, 2500);
@@ -128,32 +135,38 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
           </div>
         </div>
 
-        {/* Tabs: Activation Code vs EcoCash */}
-        <div className="grid grid-cols-2 gap-1 p-1 bg-slate-900/80 rounded-xl border border-white/[0.08]">
-          <button
-            onClick={() => setActiveTab('code')}
-            className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
-              activeTab === 'code'
-                ? 'bg-cyan-500 text-slate-950 font-bold shadow'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Key className="w-3.5 h-3.5" /> Offline Activation Code
-          </button>
-          <button
-            onClick={() => setActiveTab('ecocash')}
-            className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
-              activeTab === 'ecocash'
-                ? 'bg-cyan-500 text-slate-950 font-bold shadow'
-                : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Phone className="w-3.5 h-3.5" /> EcoCash USSD
-          </button>
-        </div>
+        {/* Tabs: Activation Code (plus EcoCash for Zimbabwe) */}
+        {isZim ? (
+          <div className="grid grid-cols-2 gap-1 p-1 bg-slate-900/80 rounded-xl border border-white/[0.08]">
+            <button
+              onClick={() => setActiveTab('code')}
+              className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'code'
+                  ? 'bg-cyan-500 text-slate-950 font-bold shadow'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Key className="w-3.5 h-3.5" /> Offline Activation Code
+            </button>
+            <button
+              onClick={() => setActiveTab('ecocash')}
+              className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'ecocash'
+                  ? 'bg-cyan-500 text-slate-950 font-bold shadow'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Phone className="w-3.5 h-3.5" /> EcoCash USSD
+            </button>
+          </div>
+        ) : (
+          <div className="px-3 py-2 rounded-xl bg-slate-900/80 border border-white/[0.08] text-xs font-semibold text-cyan-300 flex items-center gap-2">
+            <Key className="w-3.5 h-3.5" /> Offline Activation Code ({country})
+          </div>
+        )}
 
         {/* Tab 1: Offline Activation Code */}
-        {activeTab === 'code' && (
+        {(activeTab === 'code' || !isZim) && (
           <div className="space-y-3 pt-1">
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
@@ -185,8 +198,8 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
           </div>
         )}
 
-        {/* Tab 2: EcoCash USSD Instructions */}
-        {activeTab === 'ecocash' && (
+        {/* Tab 2: EcoCash USSD Instructions (Zimbabwe only) */}
+        {isZim && activeTab === 'ecocash' && (
           <div className="space-y-3 pt-1 text-xs text-slate-300">
             <div className="p-4 rounded-xl glass-panel space-y-2">
               <h4 className="font-bold text-white text-sm flex items-center gap-1.5">

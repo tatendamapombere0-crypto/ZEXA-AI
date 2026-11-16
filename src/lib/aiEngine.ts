@@ -1,9 +1,12 @@
 import { KnowledgeStore } from './knowledgeStore';
 import { ExamBankMatcher } from './examBankMatcher';
 import { QwenEngine } from './qwenEngine';
+import { StorageManager } from './storage';
+import { ZIMBABWE_ENCYCLOPEDIA_ENTRIES } from '../data/zimbabweEncyclopedia';
 
 export interface GenerationOptions {
   level: string;
+  country?: string;
   hint?: string;
   history?: Array<{ question: string; answer: string }>;
   engineType?: 'zexa-instant' | 'qwen-neural';
@@ -22,6 +25,7 @@ type QuestionIntent =
   | 'GREETING'
   | 'IDENTITY'
   | 'GRATITUDE'
+  | 'HOMEWORK_HELP'
   | 'CAUSES'
   | 'EFFECTS'
   | 'BIOGRAPHY'
@@ -168,25 +172,25 @@ export class AIEngine {
       return { resolvedQuery: currentQuery, previousTopic: '', isFollowUp: false };
     }
 
-    // Check if current query is a conversational follow-up
-    const isPronounFollowUp = /\b(it|they|them|she|he|her|his|that|this|these|those)\b/i.test(q);
-    const isShortQuestion =
-      q.length < 55 &&
-      (q.startsWith('who') ||
-        q.startsWith('why') ||
-        q.startsWith('where') ||
-        q.startsWith('when') ||
-        q.startsWith('what happened') ||
-        q.startsWith('tell me more') ||
-        q.startsWith('explain') ||
-        q.startsWith('how') ||
-        q.includes('results') ||
-        q.includes('effects') ||
-        q.includes('leaders') ||
-        q.includes('leader') ||
-        q.includes('causes'));
+    // Check if current query is a genuine conversational follow-up (pronoun reference or explicit continuation)
+    const isPronounFollowUp = /\b(it|its|they|them|their|she|he|him|her|his|that|this|these|those)\b/i.test(q);
+    const isExplicitContinuation =
+      q.startsWith('tell me more') ||
+      q.startsWith('what happened') ||
+      q.startsWith('and what') ||
+      q.startsWith('and who') ||
+      q.startsWith('and why') ||
+      q.startsWith('why did') ||
+      q.startsWith('when did') ||
+      q.startsWith('where did') ||
+      q.startsWith('how did') ||
+      q.includes('the results') ||
+      q.includes('the effects') ||
+      q.includes('the leaders') ||
+      q.includes('the causes') ||
+      /^(causes|effects|results|leaders|outcomes)\??$/.test(q);
 
-    if (isPronounFollowUp || isShortQuestion) {
+    if (isPronounFollowUp || isExplicitContinuation) {
       let resolved = `${topicAnchor} ${currentQuery}`;
       if (q.includes('who led') || q.includes('who was the leader') || q.includes('who were the leaders') || q.includes('leaders')) {
         resolved = `${topicAnchor} leaders spirit mediums command`;
@@ -231,17 +235,21 @@ export class AIEngine {
         return;
       }
 
+      const activeCountry = options.country || StorageManager.getUserCountry();
       const useQwenNeural =
         !bundle.isConversationalFastPath &&
+        !bundle.lockToVerifiedTruth &&
         options.engineType !== 'zexa-instant' &&
         QwenEngine.isReady();
 
       if (useQwenNeural) {
         let streamedAnyToken = false;
+        let qwenFailureReason = '';
 
         const qwenFailedBeforeOutput = await new Promise<boolean>((resolve) => {
           QwenEngine.generate(trimmedQuestion, {
             level: options.level,
+            country: activeCountry,
             contextSnippet: bundle.contextSnippet,
             sourceTag: bundle.rawResult.sourceTag,
             history: options.history,
@@ -254,7 +262,8 @@ export class AIEngine {
               options.onComplete(metrics, source || bundle.rawResult.sourceTag, []);
               resolve(false);
             },
-            onError: (_err) => {
+            onError: (err) => {
+              qwenFailureReason = err || 'Fallback';
               if (!streamedAnyToken && !this.isCancelled) {
                 resolve(true);
               } else {
@@ -268,8 +277,9 @@ export class AIEngine {
         if (!qwenFailedBeforeOutput || this.isCancelled) {
           return;
         }
-        // Failover seamlessly to deterministic verified RAG output
-        await this.streamResult(bundle.rawResult, options, startTime, 'JSON RAG Failover');
+        // Failover seamlessly to deterministic verified knowledge base while surfacing reason in metrics
+        const failLabel = qwenFailureReason ? `ZEXA AI (${qwenFailureReason})` : 'ZEXA AI';
+        await this.streamResult(bundle.rawResult, options, startTime, failLabel);
         return;
       }
 
@@ -283,16 +293,57 @@ export class AIEngine {
    * Builds a hallucination-proof grounded context bundle across ExamBankMatcher,
    * KnowledgeStore (all 127 JSON files / 8,260+ topics), and deterministic synthesis.
    */
-  private static async retrieveGroundedBundle(
+  public static async retrieveGroundedBundle(
     trimmedQuestion: string,
     options: GenerationOptions
   ): Promise<{
     rawResult: SynthesisResult;
     contextSnippet: string;
     isConversationalFastPath: boolean;
+    lockToVerifiedTruth: boolean;
   }> {
+    const activeCountry = options.country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+    const hasPack = StorageManager.hasCountryCurriculumPack(activeCountry);
+
     // Fast conversational path for greetings/identity/gratitude (0ms latency)
     const fastIntent = !options.hint ? this.detectIntent(trimmedQuestion) : 'GENERAL';
+
+    // Countries without a loaded curriculum pack operate strictly in Qwen AI-only mode:
+    // zero Zimbabwe RAG chunks, zero exam-bank matches, zero borrowed syllabus handlers.
+    if (!hasPack) {
+      if (fastIntent === 'GREETING' || fastIntent === 'IDENTITY' || fastIntent === 'GRATITUDE') {
+        const greetingText =
+          fastIntent === 'GRATITUDE'
+            ? `You're welcome! Ask any study or general question for **${activeCountry}** whenever you're ready.`
+            : fastIntent === 'IDENTITY'
+            ? `### ZEXA AI · ${activeCountry} (${options.level})\n\nI am **ZEXA AI**, your offline study tutor for **${activeCountry}**. Ask me any question in math, science, humanities, languages, or exam preparation!`
+            : `### Welcome to ZEXA AI · ${activeCountry} (${options.level})\n\nHello! Ask any math, science, essay, or general question below.`;
+
+        return {
+          rawResult: {
+            text: greetingText,
+            sourceTag: `ZEXA AI · ${activeCountry}`,
+            suggestions: []
+          },
+          contextSnippet: '',
+          isConversationalFastPath: true,
+          lockToVerifiedTruth: false
+        };
+      }
+
+      return {
+        rawResult: {
+          text: `### ${activeCountry} · ZEXA AI\n\nConnect or mount your offline AI brain file in **Settings → Load Local Brain File** to generate live offline neural answers for **${activeCountry}**.`,
+          sourceTag: `ZEXA AI · ${activeCountry}`,
+          suggestions: []
+        },
+        contextSnippet: '',
+        isConversationalFastPath: false,
+        lockToVerifiedTruth: false
+      };
+    }
+
     if (fastIntent === 'GREETING' || fastIntent === 'IDENTITY' || fastIntent === 'GRATITUDE') {
       const fastResult = this.synthesizeResponse(
         trimmedQuestion,
@@ -300,12 +351,26 @@ export class AIEngine {
         null,
         0,
         options.hint,
-        options.history
+        options.history,
+        activeCountry
       );
       return {
         rawResult: fastResult,
         contextSnippet: fastResult.text,
-        isConversationalFastPath: true
+        isConversationalFastPath: true,
+        lockToVerifiedTruth: true
+      };
+    }
+
+    // Generic homework / study help opener without a specific topic yet:
+    // Let Qwen respond directly in open tutor mode (empty RAG context, zero irrelevant snippets)
+    // and keep handleHomeworkHelp() as clean fallback if Qwen is unloaded.
+    if (fastIntent === 'HOMEWORK_HELP') {
+      return {
+        rawResult: this.handleHomeworkHelp(options.level, activeCountry),
+        contextSnippet: '',
+        isConversationalFastPath: false,
+        lockToVerifiedTruth: false
       };
     }
 
@@ -313,17 +378,17 @@ export class AIEngine {
     const contextual = this.resolveContextualQuery(trimmedQuestion, options.history);
     const searchEffectiveQuery = contextual.isFollowUp ? contextual.resolvedQuery : trimmedQuestion;
 
-    // 2. Always query KnowledgeStore across indexed 127 JSON files (with cross-level fallback)
+    // 2. Always query KnowledgeStore across indexed curriculum files scoped to level & country
     let matchedChunk: any = null;
     let matchedScore = 0;
     let extraChunks: any[] = [];
 
     if (!options.hint) {
-      const primarySearch = await KnowledgeStore.searchScored(searchEffectiveQuery, options.level);
+      const primarySearch = await KnowledgeStore.searchScored(searchEffectiveQuery, options.level, activeCountry);
       const fallbackSearch =
         primarySearch.results.length > 0 && primarySearch.results[0].score >= 350
           ? null
-          : await KnowledgeStore.searchScored(searchEffectiveQuery, 'all');
+          : await KnowledgeStore.searchScored(searchEffectiveQuery, 'all', activeCountry);
 
       const merged = [
         ...(primarySearch.results || []),
@@ -345,18 +410,30 @@ export class AIEngine {
       }
     }
 
-    // 3. Check ExamBankMatcher (past exam marking schemes & ZIMSEC questions)
+    // 3. Check ExamBankMatcher (past exam marking schemes) scoped by country
     let rawResult: SynthesisResult | null = null;
+    let hasExamMatch = false;
     if (!options.hint) {
-      const examMatch = await ExamBankMatcher.matchQuestion(searchEffectiveQuery, options.level);
-      if (examMatch) {
+      const examMatch = await ExamBankMatcher.matchQuestion(searchEffectiveQuery, options.level, activeCountry);
+      const isZimPaperMatch =
+        examMatch &&
+        (examMatch.subject.toLowerCase().includes('shona') ||
+          examMatch.subject.toLowerCase().includes('social') ||
+          examMatch.paperName.toLowerCase().includes('zimbabwe') ||
+          examMatch.paperName.toLowerCase().includes('general paper') ||
+          examMatch.paperCode.startsWith('705') ||
+          examMatch.paperCode.startsWith('7040') ||
+          examMatch.paperCode.startsWith('4007') ||
+          examMatch.paperCode.startsWith('4047'));
+      if (examMatch && (isZim || !isZimPaperMatch)) {
+        hasExamMatch = true;
         rawResult = {
           text: examMatch.formattedResponse,
-          sourceTag: `ZIMSEC ${examMatch.level} ${examMatch.subject} (${examMatch.paperCode || 'Exam Bank'})`,
+          sourceTag: `${isZim ? 'ZIMSEC' : 'International'} ${examMatch.level} ${examMatch.subject} (${examMatch.paperCode || 'Exam Bank'})`,
           suggestions: [
-            'What are the key ZIMSEC marking points for this question?',
+            'What are the key marking points for this question?',
             'Give another practice question on this topic',
-            'How would a Level 4 candidate evaluate this?'
+            'How would a top candidate evaluate this?'
           ]
         };
       }
@@ -369,31 +446,192 @@ export class AIEngine {
         matchedChunk,
         matchedScore,
         options.hint,
-        options.history
+        options.history,
+        activeCountry
       );
     }
 
-    // 4. Construct concise grounded context window (<= 2,350 chars for crisp 0.5B attention)
-    const contextParts: string[] = [];
-    if (rawResult.text) {
-      contextParts.push(`[VERIFIED PRIMARY REFERENCE]\n${this.cleanSymbols(rawResult.text).slice(0, 1450)}`);
+    if (!isZim && rawResult) {
+      rawResult = this.sanitizeResultForCountry(rawResult, activeCountry);
     }
 
-    for (const chunk of extraChunks) {
-      if (!chunk?.content) continue;
-      const header = `[SYLLABUS ASSET: ${chunk.subject} • ${chunk.topic} (${chunk.source || 'JSON'})]`;
-      const body = this.cleanSymbols(String(chunk.content)).slice(0, 650);
-      const currentTotal = contextParts.join('\n\n').length;
-      if (currentTotal + header.length + body.length < 2350) {
-        contextParts.push(`${header}\n${body}`);
+    // Detect if rawResult fell all the way through to the generic boilerplate template
+    const isGenericBoilerplate =
+      !options.hint &&
+      !hasExamMatch &&
+      matchedScore < 20 &&
+      rawResult.text.includes('is tested on precision of definition, factual explanation, and practical application');
+
+    // Dual-Layer Routing Architecture (scoped by Country):
+    // 1. For Zimbabwe accounts: Heritage-Based & Zimbabwe-Related Queries (plus Exam Mode answer hints) ->
+    //    Routed strictly to the verified offline RAG System (Zero Qwen hallucination).
+    // 2. For Non-Zimbabwe accounts (or Global Knowledge / STEM queries):
+    //    Only explicit Exam Mode answer hints lock to RAG; all general curriculum & global queries go cleanly to Qwen (with deterministic fallback if unloaded).
+    const isHeritageOrZimbabwe =
+      isZim &&
+      this.isLocalHeritageOrExamTruth(
+        searchEffectiveQuery,
+        rawResult.sourceTag,
+        hasExamMatch,
+        Boolean(options.hint),
+        matchedChunk
+      );
+
+    const lockToVerifiedTruth =
+      Boolean(options.hint) ||
+      (!isGenericBoilerplate && isHeritageOrZimbabwe);
+
+    // 4. For everything else answered by Qwen, pass empty context so Qwen answers cleanly
+    // from its neural weights without slow prompt prefill or unrelated snippet constraints.
+    const contextParts: string[] = [];
+    if (lockToVerifiedTruth && !isGenericBoilerplate && rawResult.text) {
+      contextParts.push(`[VERIFIED REFERENCE]\n${this.cleanSymbols(rawResult.text).slice(0, 560)}`);
+      for (const chunk of extraChunks.slice(0, 1)) {
+        if (!chunk?.content) continue;
+        const header = `[SYLLABUS: ${chunk.subject} · ${chunk.topic}]`;
+        const body = this.cleanSymbols(String(chunk.content)).slice(0, 320);
+        const currentTotal = contextParts.join('\n\n').length;
+        if (currentTotal + header.length + body.length < 900) {
+          contextParts.push(`${header}\n${body}`);
+        }
       }
     }
 
     return {
       rawResult,
-      contextSnippet: contextParts.join('\n\n').slice(0, 2400),
-      isConversationalFastPath: false
+      contextSnippet: contextParts.join('\n\n').slice(0, 900),
+      isConversationalFastPath: false,
+      lockToVerifiedTruth
     };
+  }
+
+  /**
+   * Ensures non-Zimbabwe accounts never see ZIMSEC board labels or Zimbabwe syllabus codes
+   * in universal subject answers or metadata tags.
+   */
+  private static sanitizeResultForCountry(result: SynthesisResult, activeCountry: string): SynthesisResult {
+    const cleanText = (val: string) =>
+      val
+        .replace(/Cambridge\s*\(0610\)\s*&\s*ZIMSEC\s+O-Level/gi, 'Cambridge IGCSE (0610) / O-Level')
+        .replace(/\bZIMSEC-aligned\b/gi, `${activeCountry} curriculum-aligned`)
+        .replace(/\bZIMSEC-style\b/gi, `${activeCountry}-style`)
+        .replace(/\bZIMSEC\s+(?:O-Level|A-Level|Grade\s*7|Primary|Secondary|Tertiary)\b/gi, (m) =>
+          m.replace(/^ZIMSEC/i, activeCountry)
+        )
+        .replace(/\bExamined in ZIMSEC\b/gi, 'examined in final exams')
+        .replace(/\bin ZIMSEC\b/gi, 'in school exams')
+        .replace(/\bZIMSEC\b/gi, activeCountry);
+
+    return {
+      text: cleanText(result.text || ''),
+      sourceTag: cleanText(result.sourceTag || `${activeCountry} Syllabus`),
+      suggestions: (result.suggestions || []).map((s) => cleanText(s))
+    };
+  }
+
+  /**
+   * Determines whether a query or retrieved syllabus item is Heritage-Based or Zimbabwe-Related
+   * (or an explicit Exam Mode answer-key hint) so it routes exclusively to the verified RAG system,
+   * leaving all other subjects and global knowledge for Qwen.
+   */
+  private static isLocalHeritageOrExamTruth(
+    query: string,
+    sourceTag: string,
+    hasExamMatch: boolean,
+    hasHint: boolean,
+    matchedChunk?: any
+  ): boolean {
+    if (hasHint || this.isShonaQuery(query)) {
+      return true;
+    }
+
+    const q = query.toLowerCase();
+    const s = (sourceTag || '').toLowerCase();
+    const chunkSubj = String(matchedChunk?.subject || '').toLowerCase();
+    const chunkSrc = String(matchedChunk?.source || '').toLowerCase();
+    const combinedSource = `${s} ${chunkSubj} ${chunkSrc}`;
+
+    const localHeritageSourceSignals = [
+      'heritage',
+      'governance',
+      'post-independence',
+      'executive leadership',
+      'separation of powers',
+      'first chimurenga',
+      'second chimurenga',
+      'third chimurenga',
+      'liberation',
+      'pre-colonial',
+      'mfecane',
+      'history 2167',
+      'grade 7 subjects',
+      'grade 7 examination',
+      'grading system',
+      'indigenous',
+      'chishona',
+      'isindebele',
+      'shona',
+      'ndebele',
+      'social studies',
+      'social science',
+      'fareme',
+      'civics',
+      'natural farming region',
+      'climate-smart agriculture',
+      'zimbabwe gold',
+      'great dyke',
+      'cala',
+      'zimbabwe encyclopedia',
+      'national studies'
+    ];
+    if (localHeritageSourceSignals.some((sig) => combinedSource.includes(sig))) {
+      return true;
+    }
+
+    // If an exam paper match is specifically a Zimbabwean History/Social/Heritage/Indigenous paper
+    if (hasExamMatch && (combinedSource.includes('zimbabwe') || combinedSource.includes('social') || combinedSource.includes('heritage'))) {
+      return true;
+    }
+
+    if (/\b(zim|zig|hbc|bira|pada|ndau|sadc|cala|nds1)\b/i.test(q)) {
+      return true;
+    }
+
+    const localHeritageQuerySignals = [
+      'heritage', 'heritage based', 'heritage-based', 'fareme', 'social science', 'social studies',
+      'african traditional religion', 'traditional religion', 'vadzimu', 'midzimu', 'mudzimu', 'musikavanhu', 'nyadenga', 'mwari', 'mhondoro', 'svikiro', 'masvikiro', 'njelele', 'matonjeni', 'mlimo', 'nanga', 'zinatha',
+      'totem', 'totems', 'clan praise', 'indigenous knowledge', 'iks', 'indigenous game', 'tsoro', 'nhodo',
+      'mnangagwa', 'mugabe', 'nkomo', 'canaan banana', 'chiwenga', 'mohadi', 'tsvangirai',
+      'arms of government', 'capital of zimbabwe', 'zimbabwe', 'harare', 'bulawayo', 'chitungwiza', 'epworth',
+      'manicaland', 'mashonaland', 'matabeleland', 'masvingo', 'midlands',
+      'mutare', 'gweru', 'bindura', 'marondera', 'chinhoyi', 'lupane', 'gwanda',
+      'kwekwe', 'kadoma', 'chiredzi', 'beitbridge', 'binga', 'zvishavane', 'plumtree',
+      'chimurenga', 'umvukela', 'nehanda', 'kaguvi', 'chaminuka', 'mkwati', 'mukwati', 'umlugulu', 'chingaira', 'mapondera',
+      'great zimbabwe', 'dzimba dza mabwe', 'mutapa', 'munhumutapa', 'nyatsimba', 'matope', 'rozvi', 'changamire', 'torwa', 'khami', 'mapungubwe',
+      'lobengula', 'mzilikazi', 'mfecane', 'mufecane', 'difaqane', 'shaka', 'zulu kingdom',
+      'rudd concession', 'moffat treaty', 'grobler treaty', 'pioneer column', 'land apportionment', 'land tenure', 'land husbandry', 'land reform', 'fast-track', 'ian smith', 'rhodesia', 'bsac', 'cecil rhodes',
+      'lancaster house', 'unity accord', 'zanla', 'zipra', 'zapu', 'zanu', 'tongogara', 'chitepo', 'takawira', 'muzenda', 'msika', 'mgagao', 'chimoio', 'nyadzonia',
+      'gukurahundi', 'esap', 'global political agreement', 'operation restore legacy', 'cyclone idai',
+      'zimbabwe gold', 'pfumvudza', 'intwasa', 'natural farming region', 'natural region', 'great dyke', 'makorokoza', 'manhize', 'dinson', 'bikita', 'marange', 'chiadzwa', 'muzarabani', 'invictus',
+      'trabablas', 'mbudzi', 'mount hampden', 'new parliament', 'gwayi-shangani', 'kunzvi',
+      'unhu', 'ubuntu', 'vumunhu', 'roora', 'lobola', 'nhimbe', 'ilima', 'zunde ramambo', 'isiphala senkosi', 'kurova guva', 'umbuyiso',
+      'mukwerera', 'mbira', 'hosho', 'marimba', 'ngoma', 'chipendani', 'jerusarema', 'mbende', 'muchongoyo', 'isitshikitsha', 'dinhe', 'mbakumba',
+      'tsumo', 'madimikira', 'zvirahwe', 'nhetembo', 'zviera', 'chishona', 'shona', 'isindebele', 'ndebele', 'kalanga', 'tonga', 'venda', 'shangani', 'nambya', 'sotho', 'tswana', 'khoisan', 'xhosa', 'chewa', 'chibarwe', 'lemba', 'remba',
+      'mutupo', 'mitupo', 'izibongo', 'ukama', 'sahwira', 'vatete',
+      'sadza', 'isitshwala', 'madora', 'amacimbi', 'maheu', 'mutakura', 'derere', 'rupiza', 'nhopi', 'zumbani', 'gavakava',
+      'msasa', 'munhondo', 'muchakata', 'muhacha', 'baobab', 'muuyu', 'muzhanje', 'mubvamaropa', 'pangolin', 'haka', 'campfire', 'tree planting day',
+      'heroes day', 'unity day', 'defence forces day', 'public holidays',
+      'heroes acre', 'national pledge', 'national anthem', 'simudzai mureza', 'kalibusiswe', 'mutswairo',
+      'national flag', 'flag colours', 'flag colors', 'colours of the flag', 'colors of the flag', 'colours on the flag', 'colors on the flag',
+      'coat of arms', 'flame lily', 'zimbabwe bird', 'hungwe',
+      'matopos', 'matobo', 'kariba', 'tugwi-mukosi', 'tokwe-mukosi', 'mutirikwi', 'chivero', 'nyangani', 'inyangani', 'chimanimani', 'vumba', 'bvumba', 'honde valley', 'domboshava',
+      'hwange', 'gonarezhou', 'mana pools', 'victoria falls', 'mosi-oa-tunya', 'zambezi', 'limpopo', 'save river', 'mtarazi',
+      '2013 constitution', 'marriages act', 'chapter 5:17', 'official languages', 'education 5.0', 'vision 2030', 'nds1', 'nds2', 'zimstat', '2022 census',
+      'zdf', 'zrp', 'zpcs', 'zesa', 'zinwa', 'potraz', 'nssa', 'zupco', 'natpharm', 'parirenyatwa', 'mpilo', 'econet', 'ecocash', 'onemoney', 'starlink', 'zitf', 'zbc', 'zimpapers',
+      'mtukudzi', 'mapfumo', 'chiweshe', 'kirsty coventry', 'peter ndlovu', 'warriors', 'chevrons', 'mighty warriors', 'sables',
+      'zimsec', 'school-based project', 'school based project'
+    ];
+    return localHeritageQuerySignals.some((kw) => q.includes(kw));
   }
 
   /**
@@ -428,7 +666,7 @@ export class AIEngine {
         } else {
           const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
           const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.1';
-          const label = metricSuffix ? `ZEXA JSON RAG • ${metricSuffix}` : 'ZEXA JSON RAG';
+          const label = metricSuffix ? metricSuffix : 'ZEXA AI Offline Core';
           const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ${label}`;
           options.onComplete(metrics, rawResult.sourceTag, []);
           resolve();
@@ -757,6 +995,31 @@ export class AIEngine {
       return 'GRATITUDE';
     }
 
+    // 3b. Generic Homework / Study Help Opener (e.g. "I need help with homework", "can you help me study")
+    // Triggered ONLY when there is a help/homework cue and zero specific academic topics left after removing filler words.
+    const helpCues = ['help', 'homework', 'assignment', 'assist', 'tutor', 'schoolwork'];
+    if (helpCues.some((hc) => new RegExp(`\\b${hc}\\b`, 'i').test(q))) {
+      const fillerTokens = new Set([
+        'i', 'im', 'am', 'need', 'want', 'would', 'like', 'can', 'could', 'you', 'will',
+        'please', 'pls', 'help', 'me', 'us', 'with', 'my', 'our', 'the', 'a', 'an',
+        'some', 'for', 'on', 'in', 'to', 'of', 'about', 'this', 'that', 'it', 'do',
+        'homework', 'home', 'work', 'assignment', 'assignments', 'schoolwork', 'school',
+        'assist', 'assistance', 'study', 'studying', 'revise', 'revision', 'tutor',
+        'tutoring', 'teach', 'question', 'questions', 'problem', 'problems', 'task',
+        'subject', 'subjects', 'today', 'now', 'hello', 'hi', 'hey', 'zexa', 'ai',
+        'got', 'have', 'here', 'yes', 'ok', 'okay', 'zimsec', 'primary', 'olevel', 'alevel',
+        'level', 'grade', 'form'
+      ]);
+      const substantiveTokens = q
+        .replace(/o-level/g, 'olevel')
+        .replace(/a-level/g, 'alevel')
+        .split(/[^a-z0-9]+/)
+        .filter((w) => w.length > 0 && !fillerTokens.has(w));
+      if (substantiveTokens.length === 0) {
+        return 'HOMEWORK_HELP';
+      }
+    }
+
     // 4. Causes / Reasons
     if (
       q.includes('why') ||
@@ -880,17 +1143,21 @@ export class AIEngine {
     matchedChunk: any,
     matchedScore: number,
     hint?: string,
-    history?: Array<{ question: string; answer: string }>
+    history?: Array<{ question: string; answer: string }>,
+    country?: string
   ): SynthesisResult {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+
     // 1. Exam hint override
     if (hint) {
       return {
         text: `### Exam Question Analysis & Solution\n\n${hint}`,
-        sourceTag: `ZIMSEC ${level} Exam Bank`,
+        sourceTag: isZim ? `ZIMSEC ${level} Exam Bank` : `${activeCountry} ${level} Exam Bank`,
         suggestions: [
           'Explain why the other options are incorrect',
           'Give another practice question on this topic',
-          'What are the key ZIMSEC marking points for this question?'
+          'What are the key marking points for this question?'
         ]
       };
     }
@@ -900,17 +1167,20 @@ export class AIEngine {
 
     // 2. Conversational greetings & identity layer
     if (intent === 'GREETING') {
-      return this.handleGreeting(level);
+      return this.handleGreeting(level, activeCountry);
     }
     if (intent === 'IDENTITY') {
-      return this.handleIdentity();
+      return this.handleIdentity(activeCountry);
     }
     if (intent === 'GRATITUDE') {
       return this.handleGratitude();
     }
+    if (intent === 'HOMEWORK_HELP') {
+      return this.handleHomeworkHelp(level, activeCountry);
+    }
 
-    // 3. ChiShona Query Processing
-    if (this.isShonaQuery(question)) {
+    // 3. ChiShona Query Processing (Zimbabwe accounts only)
+    if (isZim && this.isShonaQuery(question)) {
       return this.generateShonaResponse(question, level, intent, matchedChunk);
     }
 
@@ -920,11 +1190,13 @@ export class AIEngine {
       return comparisonResult;
     }
 
-    // 4. Targeted Domain Handlers (History, Science, Math, Geography, Accounts, Grade 7 Curriculum)
-    // Dedicated Grade 7 Heritage-Based Curriculum (HBC) Line-by-Line Question Resolver
-    const hbcLineResult = this.handleGrade7HbcLineByLineQuery(question, level, intent);
-    if (hbcLineResult) {
-      return hbcLineResult;
+    // 4. Targeted Domain Handlers (History, Science, Math, Geography, Accounts)
+    // Zimbabwe-specific HBC & ZIMSEC Curriculum handlers are strictly gated to Zimbabwe accounts
+    if (isZim) {
+      const hbcLineResult = this.handleGrade7HbcLineByLineQuery(question, level, intent);
+      if (hbcLineResult) {
+        return hbcLineResult;
+      }
     }
 
     // Dedicated Cambridge & ZIMSEC O-Level Biology Past Paper & Notes Question Resolver
@@ -933,123 +1205,124 @@ export class AIEngine {
       return bioPastPaperResult;
     }
 
-    // ZIMSEC Grade 7 Examination Structure, The 6 Official Subjects, Grading System (Units 1-9) & Results Slips
-    const grade7OverviewResult = this.handleZimsecGradeSevenOverviewAndGradingQuery(question, level, intent);
-    if (grade7OverviewResult) {
-      return grade7OverviewResult;
-    }
+    if (isZim) {
+      // ZIMSEC Grade 7 Examination Structure, The 6 Official Subjects, Grading System (Units 1-9) & Results Slips
+      const grade7OverviewResult = this.handleZimsecGradeSevenOverviewAndGradingQuery(question, level, intent);
+      if (grade7OverviewResult) {
+        return grade7OverviewResult;
+      }
 
-    // Presidents, Leadership & Governance of Zimbabwe (Emmerson Mnangagwa, Canaan Banana, Robert Mugabe, Head of State, Vice Presidents, Arms of Government)
-    const governanceResult = this.handlePresidentsAndGovernanceQuery(question, level, intent);
-    if (governanceResult) {
-      return governanceResult;
-    }
+      // Presidents, Leadership & Governance of Zimbabwe
+      const governanceResult = this.handlePresidentsAndGovernanceQuery(question, level, intent);
+      if (governanceResult) {
+        return governanceResult;
+      }
 
-    // Robert Gabriel Mugabe (including handling common typos like "mufabe")
-    if (qLower.includes('mugabe') || qLower.includes('mufabe')) {
-      return this.handleMugabeQuery(question, level, intent);
-    }
+      // Robert Gabriel Mugabe (including handling common typos like "mufabe")
+      if (qLower.includes('mugabe') || qLower.includes('mufabe')) {
+        return this.handleMugabeQuery(question, level, intent);
+      }
 
-    // Dr. Joshua Mqabuko Nkomo
-    if (qLower.includes('nkomo') || qLower.includes('father zimbabwe') || qLower.includes('chibwechitedza')) {
-      return this.handleNkomoQuery(question, level, intent);
-    }
+      // Dr. Joshua Mqabuko Nkomo
+      if (qLower.includes('nkomo') || qLower.includes('father zimbabwe') || qLower.includes('chibwechitedza')) {
+        return this.handleNkomoQuery(question, level, intent);
+      }
 
-    // King Shaka, Zulu Kingdom, Mfecane / Difaqane, King Mzilikazi
-    if (
-      qLower.includes('zulu') ||
-      qLower.includes('shaka') ||
-      qLower.includes('mfecane') ||
-      qLower.includes('mufecane') ||
-      qLower.includes('difaqane') ||
-      qLower.includes('mzilikazi')
-    ) {
-      return this.handleZuluMfecaneMzilikaziQuery(question, level, intent);
-    }
+      // King Shaka, Zulu Kingdom, Mfecane / Difaqane, King Mzilikazi
+      if (
+        qLower.includes('zulu') ||
+        qLower.includes('shaka') ||
+        qLower.includes('mfecane') ||
+        qLower.includes('mufecane') ||
+        qLower.includes('difaqane') ||
+        qLower.includes('mzilikazi')
+      ) {
+        return this.handleZuluMfecaneMzilikaziQuery(question, level, intent);
+      }
 
-    // King Lobengula & 1893 War / Treaties
-    if (
-      qLower.includes('lobengula') ||
-      qLower.includes('rudd') ||
-      qLower.includes('moffat treaty') ||
-      qLower.includes('grobler') ||
-      qLower.includes('1893')
-    ) {
-      return this.handleLobengulaQuery(question, level, intent);
-    }
+      // King Lobengula & 1893 War / Treaties
+      if (
+        qLower.includes('lobengula') ||
+        qLower.includes('rudd') ||
+        qLower.includes('moffat treaty') ||
+        qLower.includes('grobler') ||
+        qLower.includes('1893')
+      ) {
+        return this.handleLobengulaQuery(question, level, intent);
+      }
 
-    // Second Chimurenga / National Liberation Struggle (1966 – 1979), Chinhoyi Battle, Lancaster House, UDI, ZANLA & ZIPRA
-    if (
-      qLower.includes('second chimurenga') ||
-      qLower.includes('2nd chimurenga') ||
-      qLower.includes('chimurenga 2') ||
-      qLower.includes('chinhoyi') ||
-      qLower.includes('zanla') ||
-      qLower.includes('zipra') ||
-      qLower.includes('lancaster house') ||
-      qLower.includes('land apportionment') ||
-      qLower.includes('land tenure act') ||
-      qLower.includes('nyadzonia') ||
-      qLower.includes('chimoio') ||
-      (qLower.includes('chimurenga') && (
+      // Second Chimurenga / National Liberation Struggle (1966 – 1979), Chinhoyi Battle, Lancaster House, UDI, ZANLA & ZIPRA
+      if (
+        qLower.includes('second chimurenga') ||
+        qLower.includes('2nd chimurenga') ||
+        qLower.includes('chimurenga 2') ||
+        qLower.includes('chinhoyi') ||
+        qLower.includes('zanla') ||
+        qLower.includes('zipra') ||
+        qLower.includes('lancaster house') ||
+        qLower.includes('land apportionment') ||
+        qLower.includes('land tenure act') ||
+        qLower.includes('nyadzonia') ||
+        qLower.includes('chimoio') ||
+        (qLower.includes('chimurenga') && (
+          qLower.includes('second') ||
+          qLower.includes('2nd') ||
+          qLower.includes('1966') ||
+          qLower.includes('1979') ||
+          qLower.includes('1980') ||
+          qLower.includes('smith') ||
+          qLower.includes('liberation')
+        )) ||
+        (qLower.includes('liberation') && (qLower.includes('war') || qLower.includes('struggle') || qLower.includes('cause')))
+      ) {
+        return this.handleSecondChimurengaQuery(question, level, intent);
+      }
+
+      // First Chimurenga / Umvukela (1896 - 1897) & Nehanda
+      const isExplicitlySecondChimurenga =
         qLower.includes('second') ||
         qLower.includes('2nd') ||
+        qLower.includes('chinhoyi') ||
         qLower.includes('1966') ||
         qLower.includes('1979') ||
         qLower.includes('1980') ||
-        qLower.includes('smith') ||
-        qLower.includes('liberation')
-      )) ||
-      (qLower.includes('liberation') && (qLower.includes('war') || qLower.includes('struggle') || qLower.includes('cause')))
-    ) {
-      return this.handleSecondChimurengaQuery(question, level, intent);
-    }
+        qLower.includes('zanla') ||
+        qLower.includes('zipra') ||
+        qLower.includes('lancaster') ||
+        qLower.includes('smith');
 
-    // First Chimurenga / Umvukela (1896 - 1897) & Nehanda
-    // STRICT GUARD: Must NOT intercept Second Chimurenga or 1966-1980 liberation queries!
-    const isExplicitlySecondChimurenga =
-      qLower.includes('second') ||
-      qLower.includes('2nd') ||
-      qLower.includes('chinhoyi') ||
-      qLower.includes('1966') ||
-      qLower.includes('1979') ||
-      qLower.includes('1980') ||
-      qLower.includes('zanla') ||
-      qLower.includes('zipra') ||
-      qLower.includes('lancaster') ||
-      qLower.includes('smith');
+      if (!isExplicitlySecondChimurenga && (
+        qLower.includes('1896') ||
+        qLower.includes('1897') ||
+        qLower.includes('first chimurenga') ||
+        qLower.includes('1st chimurenga') ||
+        qLower.includes('chimurenga 1') ||
+        qLower.includes('umvukela') ||
+        qLower.includes('nehanda') ||
+        qLower.includes('kaguvi') ||
+        qLower.includes('mkwati') ||
+        qLower.includes('mukwati') ||
+        (qLower.includes('chimurenga') && (
+          qLower.includes('cause') ||
+          qLower.includes('start') ||
+          qLower.includes('first') ||
+          qLower.includes('why') ||
+          qLower.includes('shona') ||
+          qLower.includes('ndebele') ||
+          qLower.includes('uprising') ||
+          qLower.includes('rebellion') ||
+          qLower.includes('revolt') ||
+          qLower.includes('who')
+        ))
+      )) {
+        return this.handleFirstChimurengaQuery(question, level, intent);
+      }
 
-    if (!isExplicitlySecondChimurenga && (
-      qLower.includes('1896') ||
-      qLower.includes('1897') ||
-      qLower.includes('first chimurenga') ||
-      qLower.includes('1st chimurenga') ||
-      qLower.includes('chimurenga 1') ||
-      qLower.includes('umvukela') ||
-      qLower.includes('nehanda') ||
-      qLower.includes('kaguvi') ||
-      qLower.includes('mkwati') ||
-      qLower.includes('mukwati') ||
-      (qLower.includes('chimurenga') && (
-        qLower.includes('cause') ||
-        qLower.includes('start') ||
-        qLower.includes('first') ||
-        qLower.includes('why') ||
-        qLower.includes('shona') ||
-        qLower.includes('ndebele') ||
-        qLower.includes('uprising') ||
-        qLower.includes('rebellion') ||
-        qLower.includes('revolt') ||
-        qLower.includes('who')
-      ))
-    )) {
-      return this.handleFirstChimurengaQuery(question, level, intent);
-    }
-
-    // Gallant Liberation Struggle Heroes & Heroines (Josiah Tongogara, Herbert Chitepo, J.Z. Moyo, Leopold Takawira, Nikita Mangena, Simon Muzenda)
-    const heroesResult = this.handleNationalHeroesQuery(question, level, intent);
-    if (heroesResult) {
-      return heroesResult;
+      // Gallant Liberation Struggle Heroes & Heroines
+      const heroesResult = this.handleNationalHeroesQuery(question, level, intent);
+      if (heroesResult) {
+        return heroesResult;
+      }
     }
 
     // Respiration & Cellular Energetics (Cellular Respiration, Aerobic & Anaerobic, Breathing vs Respiration, Respiratory System)
@@ -1098,22 +1371,24 @@ export class AIEngine {
       return this.handleOsmosisAndCellTransportQuery(question, level, intent);
     }
 
-    // Natural Farming Regions & Chiredzi
+    // Natural Farming Regions & Chiredzi (Zimbabwe accounts only)
     if (
-      qLower.includes('chiredzi') ||
-      qLower.includes('farming region') ||
-      qLower.includes('natural region')
+      isZim &&
+      (qLower.includes('chiredzi') ||
+        qLower.includes('farming region') ||
+        qLower.includes('natural region'))
     ) {
       return this.handleFarmingRegionsQuery(question, level, intent);
     }
 
-    // Great Zimbabwe, Mutapa, and Rozvi States
+    // Great Zimbabwe, Mutapa, and Rozvi States (Zimbabwe accounts only)
     if (
-      qLower.includes('great zimbabwe') ||
-      qLower.includes('mutapa') ||
-      qLower.includes('rozvi') ||
-      qLower.includes('nyatsimba mutota') ||
-      qLower.includes('changamire dombo')
+      isZim &&
+      (qLower.includes('great zimbabwe') ||
+        qLower.includes('mutapa') ||
+        qLower.includes('rozvi') ||
+        qLower.includes('nyatsimba mutota') ||
+        qLower.includes('changamire dombo'))
     ) {
       return this.handlePreColonialStatesQuery(question, level, intent);
     }
@@ -1140,22 +1415,23 @@ export class AIEngine {
       return this.handleDoubleEntryQuery(question, level, intent);
     }
 
-    // Zimbabwe Gold (ZiG) Currency
-    if (qLower.includes('zig') || (qLower.includes('currency') && qLower.includes('zimbabwe')) || qLower.includes('zimbabwe gold')) {
+    // Zimbabwe Gold (ZiG) Currency (Zimbabwe accounts only)
+    if (isZim && (qLower.includes('zig') || (qLower.includes('currency') && qLower.includes('zimbabwe')) || qLower.includes('zimbabwe gold'))) {
       return this.handleZiGQuery(question, level, intent);
     }
 
-    // Heritage-Based Curriculum (2024-2030), CALA Scrap, School-Based Projects (SBP), 5 O-Level Core Subjects
+    // Heritage-Based Curriculum (2024-2030), CALA Scrap, School-Based Projects (SBP), 5 O-Level Core Subjects (Zimbabwe accounts only)
     if (
-      qLower.includes('cala') ||
-      qLower.includes('heritage based curriculum') ||
-      qLower.includes('heritage-based curriculum') ||
-      qLower.includes('school based project') ||
-      qLower.includes('school-based project') ||
-      qLower.includes('sbp') ||
-      qLower.includes('two route') ||
-      qLower.includes('two-route') ||
-      (qLower.includes('compulsory') && qLower.includes('subject'))
+      isZim &&
+      (qLower.includes('cala') ||
+        qLower.includes('heritage based curriculum') ||
+        qLower.includes('heritage-based curriculum') ||
+        qLower.includes('school based project') ||
+        qLower.includes('school-based project') ||
+        qLower.includes('sbp') ||
+        qLower.includes('two route') ||
+        qLower.includes('two-route') ||
+        (qLower.includes('compulsory') && qLower.includes('subject')))
     ) {
       return this.handleHeritageBasedCurriculumAndCalaQuery(question, level, intent);
     }
@@ -1182,11 +1458,12 @@ export class AIEngine {
       return this.handleEarthGeometryQuery(question, level, intent);
     }
 
-    // Mining in Zimbabwe & The Great Dyke (Geography & Heritage Studies)
+    // Mining in Zimbabwe & The Great Dyke (Zimbabwe accounts only)
     if (
-      qLower.includes('great dyke') ||
-      (qLower.includes('mining') && (qLower.includes('zimbabwe') || qLower.includes('problem') || qLower.includes('impact') || qLower.includes('makorokoza') || qLower.includes('artisanal'))) ||
-      qLower.includes('makorokoza')
+      isZim &&
+      (qLower.includes('great dyke') ||
+        (qLower.includes('mining') && (qLower.includes('zimbabwe') || qLower.includes('problem') || qLower.includes('impact') || qLower.includes('makorokoza') || qLower.includes('artisanal'))) ||
+        qLower.includes('makorokoza'))
     ) {
       return this.handleMiningAndGreatDykeQuery(question, level, intent);
     }
@@ -1220,54 +1497,61 @@ export class AIEngine {
       qLower.startsWith('give the definition of') ||
       qLower.startsWith('what is the law of')
     ) {
-      const explicitGlossary = this.handleUniversalGlossaryQuery(question, level, intent);
+      const explicitGlossary = this.handleUniversalGlossaryQuery(question, level, intent, activeCountry);
       if (explicitGlossary) return explicitGlossary;
     }
 
-    // High-confidence curriculum asset match (from the 5,928 topics across all 125 syllabus JSON files)
-    // Takes precedence over 1-sentence dictionary lookups so full detailed explanations with steps/points are delivered
-    if (matchedChunk && matchedScore >= 180) {
-      return this.restructureSyllabusChunk(question, level, matchedChunk, intent);
+    // Dedicated Comprehensive Zimbabwe National & Heritage Encyclopedia Resolver (Zimbabwe accounts only)
+    if (isZim) {
+      const zwEncyclopediaResult = this.handleZimbabweEncyclopediaQuery(question, level);
+      if (zwEncyclopediaResult) {
+        return zwEncyclopediaResult;
+      }
     }
 
-    // Universal Curriculum Glossary & Terminology (Across All Education Levels: Primary, O-Level, A-Level)
-    // Direct single-intent term resolution from the 2,640+ uploaded syllabus terms. Returns the concise, exact definition without dumping multi-paragraph module chunks.
-    const glossaryResult = this.handleUniversalGlossaryQuery(question, level, intent);
+    // High-confidence curriculum asset match
+    if (matchedChunk && matchedScore >= 180) {
+      return this.restructureSyllabusChunk(question, level, matchedChunk, intent, activeCountry);
+    }
+
+    // Universal Curriculum Glossary & Terminology (Across All Education Levels)
+    const glossaryResult = this.handleUniversalGlossaryQuery(question, level, intent, activeCountry);
     if (glossaryResult) {
       return glossaryResult;
     }
 
-    // Primary & Junior English Language Curriculum (ZIMSEC 7010)
+    // Primary & Junior English Language Curriculum
     const englishResult = this.handlePrimaryEnglishQuery(question, level, intent);
     if (englishResult) {
       return englishResult;
     }
 
-    // Primary & Junior Mathematics Curriculum (ZIMSEC 7020)
+    // Primary & Junior Mathematics Curriculum
     const mathResult = this.handlePrimaryMathQuery(question, level, intent);
     if (mathResult) {
       return mathResult;
     }
 
-    // Primary & Junior Agriculture, Science & Technology Curriculum (ZIMSEC 7030)
+    // Primary & Junior Agriculture, Science & Technology Curriculum
     const scienceResult = this.handlePrimaryScienceTechQuery(question, level, intent);
     if (scienceResult) {
       return scienceResult;
     }
 
-    // Primary & Junior Indigenous Languages: ChiShona (7040) & IsiNdebele (7041)
-    const indigenousResult = this.handlePrimaryIndigenousLanguagesQuery(question, level, intent);
-    if (indigenousResult) {
-      return indigenousResult;
+    // Zimbabwe Indigenous Languages & Social Sciences (Zimbabwe accounts only)
+    if (isZim) {
+      const indigenousResult = this.handlePrimaryIndigenousLanguagesQuery(question, level, intent);
+      if (indigenousResult) {
+        return indigenousResult;
+      }
+
+      const socialResult = this.handlePrimarySocialScienceQuery(question, level, intent);
+      if (socialResult) {
+        return socialResult;
+      }
     }
 
-    // Primary & Junior Social Sciences (ZIMSEC 7050 - Heritage & Social Studies, FAREME)
-    const socialResult = this.handlePrimarySocialScienceQuery(question, level, intent);
-    if (socialResult) {
-      return socialResult;
-    }
-
-    // Primary & Junior Physical Education & Arts (ZIMSEC 7130 - PE, VPA, Mass Displays)
+    // Primary & Junior Physical Education & Arts
     const peaResult = this.handlePrimaryPhysicalEduArtsQuery(question, level, intent);
     if (peaResult) {
       return peaResult;
@@ -1275,18 +1559,45 @@ export class AIEngine {
 
     // 5. If matched Chunk from RAG is available, synthesize a crisp answer from the chunk
     if (matchedChunk && matchedScore >= 20) {
-      return this.restructureSyllabusChunk(question, level, matchedChunk, intent);
+      return this.restructureSyllabusChunk(question, level, matchedChunk, intent, activeCountry);
     }
 
     // 6. Intelligent multi-domain curriculum synthesizer for any other syllabus query
-    return this.synthesizeGeneralCurriculumResponse(question, level, intent);
+    return this.synthesizeGeneralCurriculumResponse(question, level, intent, activeCountry);
   }
 
   // =========================================================================
   // DEDICATED CONVERSATIONAL & TOPIC HANDLERS
   // =========================================================================
 
-  private static handleGreeting(level: string): SynthesisResult {
+  private static handleGreeting(level: string, country?: string): SynthesisResult {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+
+    if (!isZim) {
+      return {
+        text: `### Hello and Welcome to ZEXA AI!
+
+I am ZEXA AI, your 100% offline study assistant configured for **${activeCountry} (${level})**.
+
+- Mode: 100% Offline (Operating with 0 MB internet data required).
+- Active Curriculum Scope: ${activeCountry} · ${level}.
+
+How can I assist your study today? You can ask me to:
+- Break down scientific processes, biology, chemistry reactions, or physics principles.
+- Solve mathematics equations step-by-step with formulas and working.
+- Review world history, geography, computer science, economics, and English writing.
+- Practice structured exam questions and mark schemes.`,
+        sourceTag: `ZEXA AI • ${activeCountry} Offline Tutor`,
+        suggestions: [
+          'Explain the light and dark reactions of photosynthesis',
+          'Solve 2x² - 5x - 3 = 0 using the quadratic formula',
+          'Explain Newton’s three laws of motion with examples',
+          'What is the difference between aerobic and anaerobic respiration?'
+        ]
+      };
+    }
+
     return {
       text: `### Hello and Welcome to ZEXA AI!
 
@@ -1311,7 +1622,29 @@ How can I assist your study today? You can ask me to:
     };
   }
 
-  private static handleIdentity(): SynthesisResult {
+  private static handleIdentity(country?: string): SynthesisResult {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+
+    if (!isZim) {
+      return {
+        text: `### About ZEXA AI (${activeCountry} Edition)
+
+**Direct Answer:** ZEXA AI is a 100% offline educational intelligence engineered to deliver fast, curriculum-structured tutoring for students in **${activeCountry}** without requiring internet data.
+
+Key Capabilities:
+- **100% Offline with 0 MB Data:** Operates directly on your device without Wi-Fi or mobile data.
+- **International Curriculum Coverage:** Supports Primary, Secondary (O-Level / IGCSE), A-Level, and Tertiary STEM, Humanities, Business, and Languages.
+- **Exam-Standard Question Solving:** Provides step-by-step solutions across Mathematics, Sciences, Computer Science, Economics, Accounting, and English.`,
+        sourceTag: `ZEXA AI • ${activeCountry} Offline Study Engine`,
+        suggestions: [
+          'Explain the process of photosynthesis',
+          'Solve 2x² - 5x - 3 = 0 step by step',
+          'What are the core principles of double-entry bookkeeping?'
+        ]
+      };
+    }
+
     return {
       text: `### About ZEXA AI: First Zimbabwe OFFLINE AI
 
@@ -1341,6 +1674,38 @@ Official Curriculum Subjects Covered:
         'Explain the Grade 7 grading system',
         'How does Paper 1 and Paper 2 work?'
       ]
+    };
+  }
+
+  private static handleHomeworkHelp(level: string, country?: string): SynthesisResult {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+
+    return {
+      text: `### Homework Tutor Ready (${level})
+
+**I am ready to help you with your ${level} homework!**
+
+Please share the exact homework task so I can work through it step-by-step with you:
+- **Paste the question:** Type or paste the exact question from your exercise book or worksheet.
+- **Show what you tried (optional):** Tell me where you got stuck or which step is confusing.
+- **Name the subject or topic:** e.g., ${
+        isZim
+          ? '*Mathematics (quadratic equations, fractions)*, *Combined Science / Biology (photosynthesis, respiration)*, *History (First/Second Chimurenga)*, *Geography (rivers, weather)*, *English (composition, concord)*, or *ChiShona*.'
+          : '*Mathematics (quadratic equations, calculus, fractions)*, *Science / Biology / Chemistry / Physics*, *Geography (rivers, weather)*, *Computer Science*, or *English*.'
+      }`,
+      sourceTag: `ZEXA AI • ${level} Homework Tutor`,
+      suggestions: isZim
+        ? [
+            'Solve 2x² - 5x - 3 = 0 step by step',
+            'Explain the process of photosynthesis and its word equation',
+            'What were the main causes of the First Chimurenga?'
+          ]
+        : [
+            'Solve 2x² - 5x - 3 = 0 step by step',
+            'Explain the process of photosynthesis and its word equation',
+            'Explain Newton’s laws of motion with examples'
+          ]
     };
   }
 
@@ -1565,6 +1930,22 @@ Feel free to ask your next question whenever you are ready.`,
   ): SynthesisResult | null {
     const q = question.toLowerCase();
 
+    const foreignEntitySignals = [
+      'usa', 'u.s.', 'united states', 'america', 'south africa', 'zambia', 'botswana',
+      'mozambique', 'kenya', 'nigeria', 'ghana', 'tanzania', 'namibia', 'malawi',
+      'china', 'russia', 'france', 'germany', 'india', 'brazil', 'britain', 'england', 'uk',
+      'washington', 'lincoln', 'obama', 'trump', 'biden', 'mandela', 'ramaphosa',
+      'kaunda', 'nkrumah', 'nyerere', 'kenyatta', 'japan', 'canada', 'australia'
+    ];
+    const hasForeignEntity = foreignEntitySignals.some((f) =>
+      f.length <= 3
+        ? new RegExp(`\\b${f.replace(/\./g, '\\.')}\\b`, 'i').test(q)
+        : q.includes(f)
+    );
+    if (!q.includes('zimbabwe') && hasForeignEntity) {
+      return null;
+    }
+
     const isGovQuery =
       q.includes('president') ||
       q.includes('mnangagwa') ||
@@ -1578,7 +1959,7 @@ Feel free to ask your next question whenever you are ready.`,
       q.includes('arms of government') ||
       q.includes('second republic') ||
       q.includes('capital of zimbabwe') ||
-      q.includes('capital city') ||
+      (q.includes('capital city') && (q.includes('zimbabwe') || !hasForeignEntity)) ||
       q.includes('who rules zimbabwe') ||
       q.includes('who leads zimbabwe');
 
@@ -1603,18 +1984,18 @@ Feel free to ask your next question whenever you are ready.`,
 1. Chronology of Zimbabwe's Presidents since 1980:
 - **Rev. Canaan Sodindo Banana (1980 – 1987):** First President of Zimbabwe. Under the 1980 Lancaster House Constitution, this was a ceremonial presidency while executive power was held by Prime Minister Robert Mugabe.
 - **Cde Robert Gabriel Mugabe (1987 – 2017):** First Executive President of Zimbabwe following the 1987 Unity Accord and constitutional amendments creating an executive presidency. (Previously served as Prime Minister from 18 April 1980 to 22 December 1987). Resigned in November 2017.
-- **Cde Emmerson Dambudzo Mnangagwa (24 November 2017 – Present):** President of Zimbabwe and leader of the Second Republic. Re-elected in the 2018 and 2023 harmonized general elections.
+- **Cde Emmerson Dambudzo Mnangagwa (24 November 2017 – Present):** President of Zimbabwe and leader of the Second Republic; re-elected in the 2018 and August 2023 harmonised general elections, served as SADC Chairperson (2024–2025) after hosting the 44th SADC Summit at Mount Hampden's New Parliament Building, and oversees the transition from NDS1 (2021–2025) into NDS2 (2026–2030).
 
 2. Current National Leadership of the Second Republic:
 - **Head of State & Government:** President Emmerson Dambudzo Mnangagwa.
 - **First Vice President:** General (Rtd) Dr. Constantino Guveya Dominic Nyikadzino Chiwenga.
 - **Second Vice President:** Col (Rtd) Kembo Dugish Campbell Muleya Mohadi.
 
-3. Guiding National Philosophies (Second Republic):
+3. Guiding National Philosophies & Present-Day Priorities:
 - *"Nyika inovakwa nevene vayo / Ilizwe lakhiwa ngabanikazi balo"* (A nation is built by its own owners).
 - *"Leaving no one and no place behind"*.
-- **Vision 2030:** Transforming Zimbabwe into an Empowered and Prosperous Upper-Middle-Income Society by 2030.
-- **National Currency:** Zimbabwe Gold (ZiG), backed by mineral and gold reserves.`,
+- **Vision 2030:** Transforming Zimbabwe into an Empowered and Prosperous Upper-Middle-Income Society by 2030 (via NDS1 & NDS2).
+- **National Currency:** **Zimbabwe Gold (ZiG)** (launched April 2024), backed by gold and mineral reserves.`,
         sourceTag: 'ZIMSEC Heritage & Social Studies • Governance & Modern Zimbabwe',
         suggestions: [
           'Who was the first President of Zimbabwe (Canaan Banana)?',
@@ -1720,6 +2101,134 @@ Historical Context of Vice Presidents in Zimbabwe:
           'Who is the current President of Zimbabwe?',
           'What was the 1987 Unity Accord?',
           'Who was Dr. Joshua Mqabuko Nkomo?'
+        ]
+      };
+    }
+
+    return null;
+  }
+
+  /**
+   * Matches any detailed Zimbabwe geography, symbols, anthem, provinces, languages,
+   * constitution, mining, agriculture, economy, history, culture, cuisine, sports, or education query
+   * directly against the verified offline Zimbabwe National Encyclopedia.
+   */
+  private static handleZimbabweEncyclopediaQuery(question: string, _level: string): SynthesisResult | null {
+    const q = question.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!q) return null;
+
+    // 1. Direct "today / present day / current affairs / everything about Zimbabwe" intent
+    if (
+      /\b(today|present day|modern|current affairs|recent developments|now|2024|2025|2026)\b.*\bzimbabwe\b/.test(q) ||
+      /\bzimbabwe\b.*\b(today|present day|modern|current affairs|recent developments|2024|2025|2026)\b/.test(q)
+    ) {
+      const presentEntry = ZIMBABWE_ENCYCLOPEDIA_ENTRIES.find((e) => e.id === 'zw_second_republic_present_day_2026');
+      if (presentEntry) {
+        return {
+          text: presentEntry.content,
+          sourceTag: 'ZEXA Verified Zimbabwe Encyclopedia • Present-Day National Studies',
+          suggestions: presentEntry.suggestions || []
+        };
+      }
+    }
+
+    if (
+      /\b(everything|all facts|tell me about|overview|profile|facts about)\b.*\bzimbabwe\b/.test(q) ||
+      q === 'zimbabwe' ||
+      q === 'republic of zimbabwe'
+    ) {
+      const overview = ZIMBABWE_ENCYCLOPEDIA_ENTRIES.find((e) => e.id === 'zw_overview_identity');
+      if (overview) {
+        return {
+          text: overview.content,
+          sourceTag: 'ZEXA Verified Zimbabwe Encyclopedia • National Profile',
+          suggestions: overview.suggestions || []
+        };
+      }
+    }
+
+    // Avoid intercepting explicitly foreign-country queries unless Zimbabwe is also referenced
+    const foreignCountrySignals = [
+      'south africa', 'zambia', 'botswana', 'mozambique', 'namibia', 'kenya', 'nigeria',
+      'ghana', 'tanzania', 'malawi', 'united kingdom', 'united states', 'america', 'england',
+      'china', 'russia', 'france', 'germany', 'india', 'brazil', 'japan', 'canada', 'australia'
+    ];
+    if (!q.includes('zimbabwe') && foreignCountrySignals.some((fc) => q.includes(fc))) {
+      return null;
+    }
+
+    // Check explicit Zimbabwe/Heritage context tokens OR any specific encyclopedia keyword match
+    const zimbabweContextTokens = [
+      'zimbabwe', 'zimbabwean', 'harare', 'bulawayo', 'mutare', 'gweru', 'masvingo', 'chinhoyi',
+      'bindura', 'marondera', 'lupane', 'gwanda', 'chitungwiza', 'epworth', 'manicaland', 'mashonaland', 'matabeleland', 'midlands',
+      'zambezi', 'limpopo', 'save river', 'kariba', 'tugwi', 'tokwe', 'mutirikwi', 'chivero', 'gwayi', 'kunzvi',
+      'nyangani', 'inyangani', 'chimanimani', 'vumba', 'bvumba', 'honde valley', 'domboshava',
+      'victoria falls', 'mosi oa tunya', 'hwange', 'gonarezhou', 'mana pools', 'matobo', 'matopos', 'chinhoyi caves',
+      'national anthem', 'simudzai mureza', 'kalibusiswe', 'national pledge', 'coat of arms',
+      'hungwe', 'flame lily', 'zimbabwe flag', 'flag of zimbabwe', 'flag colours', 'flag colors', 'colours of the flag', 'colors of the flag', 'colours on the flag', 'colors on the flag',
+      'public holidays', '16 official languages', 'official languages of zimbabwe', 'provinces of zimbabwe', '10 provinces', 'ten provinces',
+      '2013 constitution', 'marriages act', 'chapter 5 17', 'education 5 0', 'universities in zimbabwe', 'pfumvudza', 'intwasa',
+      'manhize', 'dinson', 'bikita', 'marange', 'chiadzwa', 'muzarabani', 'invictus', 'trabablas', 'mbudzi', 'mount hampden',
+      'unhu', 'vumunhu', 'mitupo', 'mutupo', 'zunde ramambo', 'kurova guva', 'umbuyiso', 'mbira', 'hosho', 'jerusarema', 'mbende',
+      'muchongoyo', 'isitshikitsha', 'sadza', 'isitshwala', 'madora', 'amacimbi', 'maheu', 'zumbani', 'gavakava',
+      'oliver mtukudzi', 'mtukudzi', 'thomas mapfumo', 'stella chiweshe', 'kirsty coventry',
+      'peter ndlovu', 'chevrons', 'mighty warriors', 'warriors', 'sables', 'vision 2030', 'nds1', 'nds2', 'sadc',
+      'dzimba dza mabwe', 'grobler', 'moffat', 'rudd concession', 'pioneer column', 'land apportionment',
+      'solomon mutswairo', 'tsitsi dangarembga', 'charles mungoshi', 'dambudzo marechera',
+      'zimstat', '2022 census', 'population', 'hbc', 'heritage based', 'school based project', 'sbp', 'iks', 'indigenous knowledge',
+      'mwari', 'vadzimu', 'mhondoro', 'svikiro', 'njelele', 'matonjeni', 'fareme', 'zaoga', 'remba', 'lemba',
+      'zdf', 'zrp', 'zpcs', 'zesa', 'zinwa', 'ema', 'potraz', 'nssa', 'zimra', 'zupco', 'natpharm', 'campfire',
+      'msasa', 'munhondo', 'muchakata', 'muhacha', 'baobab', 'pangolin', 'tree planting day',
+      'parirenyatwa', 'mpilo', 'econet', 'ecocash', 'onemoney', 'starlink', 'zbc', 'zimpapers',
+      'zvirahwe', 'nhetembo', 'zviera', 'madimikira', 'zitf', 'intwasa',
+      'gukurahundi', 'esap', 'gnu', 'gpa', 'operation restore legacy', 'cyclone idai', 'morgan tsvangirai', 'post independence'
+    ];
+
+    const hasExplicitToken = zimbabweContextTokens.some((tok) =>
+      tok.length <= 4 ? new RegExp(`\\b${tok}\\b`, 'i').test(q) : q.includes(tok)
+    );
+
+    let bestEntry: (typeof ZIMBABWE_ENCYCLOPEDIA_ENTRIES)[number] | null = null;
+    let bestScore = 0;
+
+    const queryWords = q.split(' ').filter((w) => w.length >= 3 && !['what', 'are', 'the', 'about', 'tell', 'explain', 'describe', 'list', 'give', 'all', 'know', 'zimbabwe', 'zimbabwean', 'for', 'and', 'with', 'how', 'why', 'who', 'where', 'when', 'today', 'present'].includes(w));
+
+    for (const entry of ZIMBABWE_ENCYCLOPEDIA_ENTRIES) {
+      let score = 0;
+      const topicLower = entry.topic.toLowerCase();
+
+      for (const kw of entry.keywords) {
+        const kwClean = kw.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
+        if (!kwClean || kwClean === 'zimbabwe') continue;
+        if (q === kwClean) {
+          score += 500;
+        } else if (kwClean.includes(' ') && q.includes(kwClean)) {
+          score += 240;
+        } else if (kwClean.length >= 4 && q.includes(kwClean)) {
+          score += 110;
+        }
+      }
+
+      for (const w of queryWords) {
+        if (topicLower.includes(w)) score += 65;
+        if (entry.content.toLowerCase().includes(w)) score += 12;
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestEntry = entry;
+      }
+    }
+
+    // Return if either a Zimbabwe context token was detected (score >= 110) OR an unmistakable exact/phrase keyword matched strongly (>= 240)
+    if (bestEntry && ((hasExplicitToken && bestScore >= 110) || bestScore >= 240)) {
+      return {
+        text: bestEntry.content,
+        sourceTag: `ZEXA Verified Zimbabwe Encyclopedia • ${bestEntry.subject}`,
+        suggestions: bestEntry.suggestions || [
+          'List all 10 provinces of Zimbabwe',
+          'What are the key developments in present-day Zimbabwe (2024–2026)?',
+          'Tell me about Zimbabwe’s national symbols and Heritage-Based Curriculum'
         ]
       };
     }
@@ -3656,9 +4165,35 @@ Assets = Capital + Liabilities
 4. **Contribution to ZIMSEC:** School-Based Project marks are verified by school clusters and ZIMSEC monitors and contribute directly to the candidate's final examination score.`,
         sourceTag: 'ZIMSEC & MoPSE Curriculum Policy • Heritage-Based Curriculum 2024–2030',
         suggestions: [
+          'What are the 6 stages of a School-Based Project (SBP)?',
           'What are the 5 compulsory O-Level subjects?',
-          'How does the two-route system work?',
-          'What is the goal of the Heritage-Based Curriculum?'
+          'How does the two-route system work?'
+        ]
+      };
+    }
+
+    if (
+      q.includes('sbp') ||
+      q.includes('school based project') ||
+      q.includes('school-based project') ||
+      q.includes('stages of a project')
+    ) {
+      return {
+        text: `### School-Based Projects (SBP) — Official 6-Stage Heritage-Based Guide
+
+**Direct Answer:** Replaced CALA in 2024 under the Heritage-Based Curriculum (HBC). Learners solve a real local community/school problem in **6 structured stages** supervised by teachers at school:
+
+1. **Stage 1 — Problem Identification:** State the real challenge in your school, home, or local Zimbabwean community, describing who is affected and why it matters.
+2. **Stage 2 — Investigation of Related Ideas:** Research existing solutions, consult community elders (*Indigenous Knowledge Systems*), or inspect local materials.
+3. **Stage 3 — Generation of Ideas / Solutions:** Propose 2 to 3 possible practical solutions using affordable, locally available resources, listing pros and cons.
+4. **Stage 4 — Development / Refinement of Chosen Solution:** Select the best idea, draw plans/recipes/code/models, and refine it to work effectively.
+5. **Stage 5 — Presentation of Final Solution:** Build, showcase, or demonstrate the working prototype, product, garden, craft, or report.
+6. **Stage 6 — Evaluation & Recommendations:** Reflect on successes, challenges encountered, costs saved, and how the project can be improved.`,
+        sourceTag: 'ZIMSEC & MoPSE • Heritage-Based Curriculum (SBP Guide)',
+        suggestions: [
+          'Why was CALA replaced by School-Based Projects?',
+          'What are the 5 compulsory O-Level subjects under HBC?',
+          'Explain Indigenous Knowledge Systems (IKS) in Zimbabwe'
         ]
       };
     }
@@ -7259,8 +7794,11 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
   private static handleUniversalGlossaryQuery(
     question: string,
     level: string,
-    intent: QuestionIntent
+    intent: QuestionIntent,
+    country?: string
   ): SynthesisResult | null {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
     const qLower = question.toLowerCase().trim();
 
     // Do not intercept if question is asking for detailed multi-step comparison, math calculation, or exam breakdown
@@ -7295,11 +7833,13 @@ KusiNdebele sebanga lesi-7 kuhlolwa izaga, izitsho, kanye lohlelo lolimi:
 
     return {
       text,
-      sourceTag: `ZIMSEC ${level} Curriculum Glossary`,
+      sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Curriculum Glossary`,
       suggestions: [
         `Give an example of ${entry.canonicalName}`,
         `What are the key points to remember about ${entry.canonicalName}?`,
-        `How is ${entry.canonicalName} examined in ZIMSEC?`
+        isZim
+          ? `How is ${entry.canonicalName} examined in ZIMSEC?`
+          : `How is ${entry.canonicalName} tested in exams?`
       ]
     };
   }
@@ -7832,24 +8372,46 @@ Pachidzidzo ichi cheZIMSEC:
     question: string,
     level: string,
     matchedChunk: any,
-    intent: QuestionIntent
+    intent: QuestionIntent,
+    country?: string
   ): SynthesisResult {
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
+    const boardLabel = isZim ? 'ZIMSEC' : activeCountry;
     const rawContent = matchedChunk.content || '';
     const topicTitle = matchedChunk.topic || 'Syllabus Topic';
     const subject = matchedChunk.subject || level;
 
     // 0. Universal Glossary direct formatting (prevents paragraph dumping)
-    if (matchedChunk.id && (String(matchedChunk.id).startsWith('glossary_') || matchedChunk.source === 'ZIMSEC Universal Curriculum Knowledge Base')) {
+    if (matchedChunk.id && (String(matchedChunk.id).startsWith('glossary_') || String(matchedChunk.source || '').includes('Universal Curriculum Knowledge Base'))) {
       const colonIdx = rawContent.indexOf(':');
       const termTitle = colonIdx !== -1 ? rawContent.slice(0, colonIdx).trim() : topicTitle;
       const termDef = colonIdx !== -1 ? rawContent.slice(colonIdx + 1).trim() : rawContent;
       return {
         text: `### ${termTitle}\n\n${termDef}`,
-        sourceTag: `ZIMSEC ${level} Curriculum Glossary`,
+        sourceTag: `${boardLabel} ${level} Curriculum Glossary`,
         suggestions: [
           `Give an example of ${topicTitle}`,
           `What are the key points to remember about ${topicTitle}?`,
-          `How is ${topicTitle} examined in ZIMSEC?`
+          isZim
+            ? `How is ${topicTitle} examined in ZIMSEC?`
+            : `How is ${topicTitle} tested in exams?`
+        ]
+      };
+    }
+
+    // 0b. Verified Zimbabwe Encyclopedia full-depth delivery (never truncate official facts)
+    if (
+      matchedChunk.id &&
+      (String(matchedChunk.id).startsWith('zw_') || String(matchedChunk.source || '').includes('Zimbabwe Encyclopedia'))
+    ) {
+      return {
+        text: rawContent,
+        sourceTag: matchedChunk.source || 'ZEXA Verified Zimbabwe Encyclopedia • Heritage & National Studies',
+        suggestions: [
+          'List all 10 provinces of Zimbabwe and their capitals',
+          'What are the 16 officially recognised languages of Zimbabwe?',
+          'Tell me about Zimbabwe’s national symbols and anthem'
         ]
       };
     }
@@ -7951,7 +8513,7 @@ Pachidzidzo ichi cheZIMSEC:
 
     // Case 1: ONLY definition requested
     if (decomp.asksOnlyDefinition) {
-      structuredOutput = `### ${topicTitle}\n\n${definitionSentence || `${topicTitle} is an essential curriculum topic in the ZIMSEC ${subject} syllabus.`}`;
+      structuredOutput = `### ${topicTitle}\n\n${definitionSentence || `${topicTitle} is an essential curriculum topic in the ${boardLabel} ${subject} syllabus.`}`;
     }
     // Case 2: ONLY process/steps requested
     else if (decomp.asksOnlyProcess) {
@@ -7981,7 +8543,7 @@ Pachidzidzo ichi cheZIMSEC:
     else {
       const parts: string[] = [`### ${topicTitle}`];
       if (decomp.asksDefinition) {
-        parts.push(`#### 1. What is ${topicTitle}?\n${definitionSentence || `${topicTitle} is a core subject area in the ZIMSEC ${subject} syllabus.`}`);
+        parts.push(`#### 1. What is ${topicTitle}?\n${definitionSentence || `${topicTitle} is a core subject area in the ${boardLabel} ${subject} syllabus.`}`);
       }
       if (decomp.asksProcess) {
         parts.push(`#### ${parts.length}. The Process and Mechanism\n${processItems}`);
@@ -8020,7 +8582,7 @@ Pachidzidzo ichi cheZIMSEC:
 
     return {
       text: structuredOutput.trim(),
-      sourceTag: `${topicTitle} • ${matchedChunk.source || 'ZIMSEC Syllabus'}`,
+      sourceTag: `${topicTitle} • ${matchedChunk.source || `${boardLabel} Syllabus`}`,
       suggestions: [
         `What are common exam questions on ${topicTitle}?`,
         `Give key definitions for ${topicTitle}`,
@@ -8036,12 +8598,15 @@ Pachidzidzo ichi cheZIMSEC:
   private static synthesizeGeneralCurriculumResponse(
     question: string,
     level: string,
-    intent: QuestionIntent
+    intent: QuestionIntent,
+    country?: string
   ): SynthesisResult {
     const q = question.toLowerCase().trim();
+    const activeCountry = country || StorageManager.getUserCountry();
+    const isZim = StorageManager.isZimbabweAccount(activeCountry);
 
     // 1. Scramble for Africa & Berlin Conference (1884–1885)
-    if (q.includes('scramble') || q.includes('berlin conference') || (q.includes('partition') && q.includes('africa'))) {
+    if (isZim && (q.includes('scramble') || q.includes('berlin conference') || (q.includes('partition') && q.includes('africa')))) {
       return {
         text: `### History: The Scramble for Africa and the Berlin Conference (1884 – 1885)
 
@@ -8070,7 +8635,7 @@ Pachidzidzo ichi cheZIMSEC:
     }
 
     // 2. Pioneer Column (1890) & Occupation of Mashonaland
-    if (q.includes('pioneer column') || (q.includes('occupation') && q.includes('1890')) || q.includes('fort salisbury')) {
+    if (isZim && (q.includes('pioneer column') || (q.includes('occupation') && q.includes('1890')) || q.includes('fort salisbury'))) {
       return {
         text: `### History: The Pioneer Column and the Occupation of Mashonaland (1890)
 
@@ -8096,7 +8661,7 @@ Pachidzidzo ichi cheZIMSEC:
     }
 
     // 3. Great Zimbabwe (Decline, Trade, Architecture)
-    if (q.includes('great zimbabwe')) {
+    if (isZim && q.includes('great zimbabwe')) {
       if (q.includes('decline') || q.includes('fall') || q.includes('collapse') || q.includes('abandon')) {
         return {
           text: `### History: Reasons for the Decline of Great Zimbabwe (mid-15th Century)
@@ -8151,8 +8716,8 @@ Pachidzidzo ichi cheZIMSEC:
       };
     }
 
-    // 4. Mutapa State & Rozvi State
-    if (q.includes('mutapa') || q.includes('nyatsimba mutota') || q.includes('munhumutapa')) {
+    // 4. Mutapa State & Rozvi State (Zimbabwe accounts only)
+    if (isZim && (q.includes('mutapa') || q.includes('nyatsimba mutota') || q.includes('munhumutapa'))) {
       return {
         text: `### History: The Mutapa State (c. 1450 – 1890)
 
@@ -8179,7 +8744,7 @@ Pachidzidzo ichi cheZIMSEC:
       };
     }
 
-    if (q.includes('rozvi') || q.includes('changamire') || q.includes('dombo')) {
+    if (isZim && (q.includes('rozvi') || q.includes('changamire') || q.includes('dombo'))) {
       return {
         text: `### History: The Rozvi State and Changamire Dombo (1684 – 1830s)
 
@@ -8204,8 +8769,8 @@ Pachidzidzo ichi cheZIMSEC:
       };
     }
 
-    // 5. National Symbols, Constitution & 3 Arms of Government
-    if (q.includes('arm of government') || q.includes('arms of government') || q.includes('judiciary') || q.includes('legislature') || q.includes('executive')) {
+    // 5. National Symbols, Constitution & 3 Arms of Government (Zimbabwe accounts only)
+    if (isZim && (q.includes('arm of government') || q.includes('arms of government') || q.includes('judiciary') || q.includes('legislature') || q.includes('executive'))) {
       return {
         text: `### Heritage & Civics: The Three Arms of Government in Zimbabwe
 
@@ -8234,7 +8799,7 @@ Pachidzidzo ichi cheZIMSEC:
       };
     }
 
-    if (q.includes('national symbol') || q.includes('coat of arms') || (q.includes('flag') && q.includes('color'))) {
+    if (isZim && (q.includes('national symbol') || q.includes('coat of arms') || (q.includes('flag') && q.includes('color')))) {
       return {
         text: `### Heritage & Civics: National Symbols of Zimbabwe
 
@@ -8282,7 +8847,7 @@ Pachidzidzo ichi cheZIMSEC:
 - **Physical Barriers:** Sleeping under insecticide-treated mosquito nets (ITNs).
 - **Chemical Control:** Indoor Residual Spraying (IRS) of walls with insecticides to kill adult mosquitoes.
 - **Treatment:** Artemisinin-based Combination Therapy (ACT), commonly Coartem.`,
-        sourceTag: `ZIMSEC ${level} Science • Communicable Diseases`,
+        sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Science • Communicable Diseases`,
         suggestions: [
           'What causes cholera and how is it prevented?',
           'What is bilharzia (schistosomiasis) and its vector?',
@@ -8308,9 +8873,9 @@ Pachidzidzo ichi cheZIMSEC:
 
 3. Treatment & Control:
 - **Oral Rehydration Therapy (ORT / ORS):** Immediate replenishment of water and vital electrolytes (1 liter clean boiled water + 6 teaspoons sugar + 1/2 teaspoon salt).
-- **Water Sanitation:** Boiling drinking water or treating with water purification tablets (WaterGuard / Aquatabs).
+- **Water Sanitation:** Boiling drinking water or treating with water purification tablets.
 - **Hygiene:** Strict handwashing with soap before eating and after using the toilet; proper sewage and refuse disposal.`,
-        sourceTag: `ZIMSEC ${level} Science • Communicable Diseases`,
+        sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Science • Communicable Diseases`,
         suggestions: [
           'What causes malaria and how is it prevented?',
           'What is bilharzia (schistosomiasis)?',
@@ -8337,7 +8902,7 @@ Pachidzidzo ichi cheZIMSEC:
 - Avoid swimming, bathing, or wading barefoot in untreated, slow-moving rivers and dams.
 - Provide clean borehole water and piped water in rural schools and communities.
 - **Treatment:** Single-dose oral medication with **Praziquantel**.`,
-        sourceTag: `ZIMSEC ${level} Science • Parasitic Diseases`,
+        sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Science • Parasitic Diseases`,
         suggestions: [
           'What causes malaria and how is it treated?',
           'What are the symptoms of cholera?',
@@ -8353,7 +8918,7 @@ Pachidzidzo ichi cheZIMSEC:
 **Direct Answer:** Nutritional deficiency diseases occur when the body lacks essential nutrients, vitamins, or minerals in the daily diet:
 
 1. Kwashiorkor (Protein Deficiency):
-- **Cause:** Diet containing carbohydrates (e.g. sadza) but lacking essential proteins (milk, eggs, meat, beans, groundnuts).
+- **Cause:** Diet containing carbohydrates (${isZim ? 'e.g. sadza' : 'e.g. maize porridge, rice, or cassava'}) but lacking essential proteins (milk, eggs, meat, beans, groundnuts).
 - **Signs & Symptoms:**
   * **Oedema:** Swollen abdomen (pot belly) and puffy feet/face due to fluid accumulation.
   * Discolored, brittle, reddish-brown thinning hair.
@@ -8368,13 +8933,13 @@ Pachidzidzo ichi cheZIMSEC:
   * Prominent rib cage, sunken eyes, and insatiable hunger.
 - **Cure:** Balanced diet high in energy-rich foods and proteins.
 
-3. Other Key ZIMSEC Deficiency Diseases:
+3. Other Key ${isZim ? 'ZIMSEC ' : ''}Deficiency Diseases:
 - **Scurvy (Vitamin C):** Bleeding gums, slow wound healing (eat citrus fruits, guavas).
 - **Rickets (Vitamin D / Calcium):** Soft, bow-shaped leg bones in children (sunlight, milk).
 - **Goitre (Iodine):** Swollen thyroid gland in neck (iodized salt, seafood).
 - **Anaemia (Iron):** Pale tongue/eyelids, fatigue (green vegetables, liver, red meat).
 - **Night Blindness (Vitamin A):** Poor vision in dim light (carrots, yellow fruits, liver).`,
-        sourceTag: `ZIMSEC ${level} Science • Nutrition & Deficiency Diseases`,
+        sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Science • Nutrition & Deficiency Diseases`,
         suggestions: [
           'What are the 7 classes of food and their functions?',
           'What causes kwashiorkor and how is it treated?',
@@ -8383,8 +8948,8 @@ Pachidzidzo ichi cheZIMSEC:
       };
     }
 
-    // 7. Agriculture: Pfumvudza, Soils, Crops, Farm Tools
-    if (q.includes('pfumvudza') || q.includes('intwasa')) {
+    // 7. Agriculture: Pfumvudza (Zimbabwe accounts only), Soils, Crops, Farm Tools
+    if (isZim && (q.includes('pfumvudza') || q.includes('intwasa'))) {
       return {
         text: `### Agriculture: The Pfumvudza / Intwasa Conservation Agriculture Model
 
@@ -8429,36 +8994,43 @@ Pachidzidzo ichi cheZIMSEC:
 - **Rill Erosion:** Small, visible channels carved by flowing water.
 - **Gully Erosion:** Deep, wide trenches caused by intense water runoff (cannot be smoothed by ordinary ploughing).
 
-3. Soil Conservation Methods in Zimbabwe:
+3. Soil Conservation Methods:
 - **Contour Ridges:** Earth banks built across hill slopes to slow down runoff.
 - **Terracing:** Converting steep slopes into stepped horizontal flat benches.
 - **Mulching:** Covering bare ground with plant residues to break raindrop impact and conserve moisture.
 - **Planting Vetiver Grass:** Dense root systems binding soil along contours.`,
-        sourceTag: `ZIMSEC ${level} Agriculture • Soil Science`,
-        suggestions: [
-          'What is Pfumvudza / Intwasa agriculture?',
-          'What are the 5 Natural Farming Regions of Zimbabwe?',
-          'What is soil pH and how is it corrected by liming?'
-        ]
+        sourceTag: `${isZim ? 'ZIMSEC' : activeCountry} ${level} Agriculture • Soil Science`,
+        suggestions: isZim
+          ? [
+              'What is Pfumvudza / Intwasa agriculture?',
+              'What are the 5 Natural Farming Regions of Zimbabwe?',
+              'What is soil pH and how is it corrected by liming?'
+            ]
+          : [
+              'What is soil pH and how is it corrected by liming?',
+              'Explain crop rotation and its advantages',
+              'What are the causes of soil erosion?'
+            ]
       };
     }
 
     // 8. General Subject Router with Deep Factual Synthesis
     let subject = 'General Curriculum Studies';
-    if (q.includes('history') || q.includes('war') || q.includes('treaty') || q.includes('rudd') || q.includes(' Rhodes')) subject = 'History 2167/9155';
-    else if (q.includes('science') || q.includes('cell') || q.includes('organ') || q.includes('blood') || q.includes('plant')) subject = 'Combined Science 4003';
-    else if (q.includes('math') || q.includes('solve') || q.includes('calculate') || q.includes('angle') || q.includes('triangle')) subject = 'Mathematics 4004';
-    else if (q.includes('agri') || q.includes('crop') || q.includes('farm') || q.includes('cattle') || q.includes('fertilizer')) subject = 'Agriculture 5038';
-    else if (q.includes('geography') || q.includes('rainfall') || q.includes('river') || q.includes('climate') || q.includes('mining')) subject = 'Geography 2248';
-    else if (q.includes('account') || q.includes('commerce') || q.includes('debit') || q.includes('credit') || q.includes('bank')) subject = 'Principles of Accounts 7110';
-    else if (q.includes('english') || q.includes('concord') || q.includes('verb') || q.includes('noun') || q.includes('letter')) subject = 'English Language 1122';
+    if (q.includes('history') || q.includes('war') || q.includes('treaty') || q.includes('rudd') || q.includes(' rhodes')) subject = isZim ? 'History 2167/9155' : 'History';
+    else if (q.includes('science') || q.includes('cell') || q.includes('organ') || q.includes('blood') || q.includes('plant')) subject = isZim ? 'Combined Science 4003' : 'Science / Biology';
+    else if (q.includes('math') || q.includes('solve') || q.includes('calculate') || q.includes('angle') || q.includes('triangle')) subject = isZim ? 'Mathematics 4004' : 'Mathematics';
+    else if (q.includes('agri') || q.includes('crop') || q.includes('farm') || q.includes('cattle') || q.includes('fertilizer')) subject = isZim ? 'Agriculture 5038' : 'Agriculture';
+    else if (q.includes('geography') || q.includes('rainfall') || q.includes('river') || q.includes('climate') || q.includes('mining')) subject = isZim ? 'Geography 2248' : 'Geography';
+    else if (q.includes('account') || q.includes('commerce') || q.includes('debit') || q.includes('credit') || q.includes('bank')) subject = isZim ? 'Principles of Accounts 7110' : 'Accounting & Commerce';
+    else if (q.includes('english') || q.includes('concord') || q.includes('verb') || q.includes('noun') || q.includes('letter')) subject = isZim ? 'English Language 1122' : 'English Language';
 
     const cleanedTopic = question.charAt(0).toUpperCase() + question.slice(1);
+    const curriculumPrefix = isZim ? `ZIMSEC ${level}` : `${activeCountry} ${level}`;
 
     return {
       text: `### ${subject}: ${cleanedTopic}
 
-**Direct Answer:** In the ZIMSEC ${level} curriculum, **${cleanedTopic}** is tested on precision of definition, factual explanation, and practical application.
+**Direct Answer:** In the ${curriculumPrefix} curriculum, **${cleanedTopic}** is tested on precision of definition, factual explanation, and practical application.
 
 1. Core Definition & Fundamental Concepts:
 - **Definition:** Clearly states the central scientific mechanism, mathematical law, historical timeline, or geographic principle.
@@ -8468,14 +9040,14 @@ Pachidzidzo ichi cheZIMSEC:
 - **Mechanism / Sequence:** Follows a logical, chronological, or procedural order from cause to effect.
 - **Supporting Evidence & Units:** Ensure standard scientific SI units, accurate chemical/mathematical formulas, or exact historical dates are stated.
 
-3. Zimbabwean Syllabus Application & Exam Guidance:
-- **Local Application:** Grounded in Zimbabwean environmental, agricultural, or national historical contexts.
+3. Syllabus Application & Exam Guidance:
+- **Practical Application:** Connects theoretical principles to real-world scientific, environmental, or academic problem solving.
 - **Exam Technique:** For "State/List" questions, provide direct bulleted facts; for "Describe/Explain", include supporting reasons, mechanisms, and consequences to attain full marks.`,
-      sourceTag: `ZIMSEC ${level} • ${subject}`,
+      sourceTag: `${curriculumPrefix} • ${subject}`,
       suggestions: [
         `Explain the key principles of ${cleanedTopic}`,
-        `What are common ZIMSEC exam questions on this topic?`,
-        `Give practical Zimbabwean examples for this topic`
+        `What are common exam questions on ${cleanedTopic}?`,
+        `Give practical examples for ${cleanedTopic}`
       ]
     };
   }

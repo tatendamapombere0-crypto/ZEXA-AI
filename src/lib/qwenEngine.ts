@@ -35,10 +35,10 @@ export class QwenEngine {
   private static wllama: Wllama | null = null;
   private static currentStatus: QwenModelStatus = 'unloaded';
   private static currentProgress = 0;
-  private static statusMessage = 'Checking for qwen2.5-0.5b-instruct-q4_k_m.gguf...';
+  private static statusMessage = 'Initializing ZEXA AI Offline Engine...';
   private static errorMessage = '';
   private static modelFoundInAssets = false;
-  private static activeModelName = 'qwen2.5-0.5b-instruct-q4_k_m.gguf';
+  private static activeModelName = 'ZEXA AI Neural Core';
   private static isCancelled = false;
   private static activeAbortController: AbortController | null = null;
   private static loadPromise: Promise<boolean> | null = null;
@@ -87,8 +87,8 @@ export class QwenEngine {
     return {
       status: isNative ? 'ready' : this.currentStatus,
       progress: isNative ? 100 : this.currentProgress,
-      statusText: isNative ? 'Android Native NDK Qwen Engine Ready' : this.statusMessage,
-      modelName: this.activeModelName,
+      statusText: isNative ? 'ZEXA AI Native Engine Ready' : this.statusMessage,
+      modelName: 'ZEXA AI Neural Core',
       modelPresentInAssets: isNative || this.modelFoundInAssets,
       error: this.errorMessage || undefined,
       isAndroidNative: isNative
@@ -142,14 +142,14 @@ export class QwenEngine {
       });
 
       if (!rangeRes.ok) {
-        return { exists: false, reason: `HTTP ${rangeRes.status} for ${this.LOCAL_GGUF_URL}` };
+        return { exists: false, reason: 'ZEXA Neural package not present in offline bundle' };
       }
 
       const contentType = (rangeRes.headers.get('content-type') || '').toLowerCase();
       if (contentType.includes('text/html')) {
         return {
           exists: false,
-          reason: `${this.MODEL_FILENAME} not uploaded to /public/assets/ yet`
+          reason: 'ZEXA Neural package not mounted yet'
         };
       }
 
@@ -165,7 +165,7 @@ export class QwenEngine {
       if (!isGGUFMagic) {
         return {
           exists: false,
-          reason: `File at ${this.LOCAL_GGUF_URL} is not a valid GGUF header`
+          reason: 'ZEXA Neural package header mismatch'
         };
       }
 
@@ -181,7 +181,7 @@ export class QwenEngine {
       this.modelFoundInAssets = true;
       return { exists: true, sizeBytes };
     } catch (err: any) {
-      return { exists: false, reason: err?.message || 'Unable to probe local GGUF model' };
+      return { exists: false, reason: err?.message || 'Unable to probe offline brain package' };
     }
   }
 
@@ -231,7 +231,7 @@ export class QwenEngine {
       this.currentStatus = 'ready';
       this.currentProgress = 100;
       this.modelFoundInAssets = true;
-      this.statusMessage = 'Native Android Studio Qwen GGUF Bridge Connected';
+      this.statusMessage = 'ZEXA AI Connected';
       this.errorMessage = '';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
@@ -245,7 +245,7 @@ export class QwenEngine {
 
     this.currentStatus = 'checking';
     this.currentProgress = 5;
-    this.statusMessage = `Scanning /assets/ for ${this.MODEL_FILENAME}...`;
+    this.statusMessage = 'Initializing ZEXA AI...';
     if (onProgress) onProgress(this.getStatus());
     this.notifySubscribers();
 
@@ -255,7 +255,7 @@ export class QwenEngine {
       this.currentStatus = 'awaiting_model';
       this.currentProgress = 0;
       this.errorMessage = '';
-      this.statusMessage = `Ready for ${this.MODEL_FILENAME} in /public/assets/ (ZEXA RAG Active)`;
+      this.statusMessage = 'ZEXA AI Offline Mode Active';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
       return false;
@@ -266,7 +266,7 @@ export class QwenEngine {
       this.currentStatus = 'loading';
       this.currentProgress = 8;
       this.errorMessage = '';
-      this.statusMessage = `Mounting ${this.MODEL_FILENAME} into local WASM memory...`;
+      this.statusMessage = 'Loading ZEXA AI into offline memory...';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
 
@@ -282,32 +282,36 @@ export class QwenEngine {
 
       const absoluteModelUrl = new URL(this.LOCAL_GGUF_URL, window.location.origin).toString();
       await this.wllama.loadModelFromUrl(absoluteModelUrl, {
-        n_ctx: 2048,
+        n_ctx: 1536,
         n_batch: 256,
+        n_parallel: 1,
+        kv_unified: true,
+        warmup: false,
+        ctx_shift: true,
         useCache: true,
         progressCallback: ({ loaded, total }) => {
           const pct = total > 0 ? Math.min(98, Math.max(10, Math.round((loaded / total) * 100))) : 50;
           this.currentProgress = pct;
           const loadedMb = (loaded / (1024 * 1024)).toFixed(0);
           const totalMb = total > 0 ? (total / (1024 * 1024)).toFixed(0) : '?';
-          this.statusMessage = `Loading ${this.MODEL_FILENAME} (${loadedMb}/${totalMb} MB • ${pct}%)`;
+          this.statusMessage = `Loading ZEXA AI (${loadedMb}/${totalMb} MB • ${pct}%)`;
           if (onProgress) onProgress(this.getStatus());
           this.notifySubscribers();
         }
       });
 
-      this.activeModelName = this.MODEL_FILENAME;
+      this.activeModelName = 'ZEXA AI';
       this.currentStatus = 'ready';
       this.currentProgress = 100;
-      this.statusMessage = 'Qwen 2.5 (0.5B GGUF) + JSON RAG Pipeline Connected';
+      this.statusMessage = 'ZEXA AI Connected & Ready';
       this.errorMessage = '';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
       return true;
     } catch (err: any) {
       this.currentStatus = 'error';
-      this.errorMessage = err?.message || 'Failed to mount GGUF model in WebAssembly';
-      this.statusMessage = 'GGUF load fallback active (ZEXA RAG answering)';
+      this.errorMessage = err?.message || 'Unable to load offline weights';
+      this.statusMessage = 'ZEXA AI Offline Mode Active';
       if (this.wllama) {
         try {
           await this.wllama.exit();
@@ -329,10 +333,29 @@ export class QwenEngine {
     file: File,
     onProgress?: (state: QwenProgressState) => void
   ): Promise<boolean> {
-    if (!file || !file.name.toLowerCase().endsWith('.gguf')) {
+    if (!file) {
       this.currentStatus = 'error';
-      this.errorMessage = 'Please select a valid .gguf model file.';
-      this.statusMessage = 'Invalid file format (must be .gguf)';
+      this.errorMessage = 'No file selected.';
+      this.statusMessage = 'Please select a ZEXA offline brain file';
+      if (onProgress) onProgress(this.getStatus());
+      this.notifySubscribers();
+      return false;
+    }
+
+    let isGGUF = file.name.toLowerCase().endsWith('.gguf');
+    if (!isGGUF && file.size >= 4) {
+      try {
+        const header = new Uint8Array(await file.slice(0, 4).arrayBuffer());
+        isGGUF = header[0] === 0x47 && header[1] === 0x47 && header[2] === 0x55 && header[3] === 0x46;
+      } catch {
+        isGGUF = false;
+      }
+    }
+
+    if (!isGGUF) {
+      this.currentStatus = 'error';
+      this.errorMessage = `Selected file "${file.name}" is not a supported ZEXA AI brain binary.`;
+      this.statusMessage = 'Unsupported offline brain file format';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
       return false;
@@ -341,9 +364,9 @@ export class QwenEngine {
     try {
       this.currentStatus = 'loading';
       this.currentProgress = 15;
-      this.activeModelName = file.name;
+      this.activeModelName = 'ZEXA AI';
       this.errorMessage = '';
-      this.statusMessage = `Mounting ${file.name} from local storage...`;
+      this.statusMessage = 'Loading ZEXA AI from local storage...';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
 
@@ -357,20 +380,24 @@ export class QwenEngine {
 
       this.wllama = this.createWllamaInstance();
       await this.wllama.loadModel([file], {
-        n_ctx: 2048,
-        n_batch: 256
+        n_ctx: 1536,
+        n_batch: 256,
+        n_parallel: 1,
+        kv_unified: true,
+        warmup: false,
+        ctx_shift: true
       });
 
       this.currentStatus = 'ready';
       this.currentProgress = 100;
-      this.statusMessage = `${file.name} (GGUF) Connected to JSON RAG Pipeline`;
+      this.statusMessage = 'ZEXA AI Connected & Ready';
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
       return true;
     } catch (err: any) {
       this.currentStatus = 'error';
-      this.errorMessage = err?.message || 'Failed to mount local GGUF file';
-      this.statusMessage = 'Failed to load local GGUF file';
+      this.errorMessage = err?.message || 'Failed to mount offline ZEXA AI file';
+      this.statusMessage = 'Failed to load offline ZEXA AI file';
       this.wllama = null;
       if (onProgress) onProgress(this.getStatus());
       this.notifySubscribers();
@@ -387,6 +414,7 @@ export class QwenEngine {
     question: string,
     options: {
       level: string;
+      country?: string;
       contextSnippet?: string;
       sourceTag?: string;
       history?: Array<{ question: string; answer: string }>;
@@ -399,6 +427,8 @@ export class QwenEngine {
     const startTime = performance.now();
     let firstTokenTime = 0;
     const w = typeof window !== 'undefined' ? (window as any) : {};
+    const country = (options.country || 'Zimbabwe').trim() || 'Zimbabwe';
+    const isZim = country.toLowerCase() === 'zimbabwe';
 
     // --- PATH A: Native Android Studio Bridge ---
     const nativeBridge = w.AndroidNativeAI || w.ZexaNative || w.AndroidBridge;
@@ -407,6 +437,7 @@ export class QwenEngine {
         const payload = JSON.stringify({
           question: question.trim(),
           level: options.level,
+          country,
           context: (options.contextSnippet || '').slice(0, 2200),
           history: options.history?.slice(-2) || []
         });
@@ -420,8 +451,8 @@ export class QwenEngine {
         w.__onNativeComplete = (metricsStr?: string) => {
           const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
           options.onComplete(
-            metricsStr || `Total: ${totalTime}s • Qwen 2.5 0.5B GGUF (Android NDK)`,
-            options.sourceTag || 'Qwen 2.5 GGUF + ZIMSEC JSON RAG'
+            metricsStr || `Total: ${totalTime}s • ZEXA AI`,
+            options.sourceTag || `ZEXA AI · ${isZim ? 'ZIMSEC' : country} Curriculum`
           );
         };
 
@@ -437,47 +468,56 @@ export class QwenEngine {
       }
     }
 
-    // --- PATH B: Local WebAssembly Wllama GGUF Engine ---
+    // --- PATH B: Local WebAssembly ZEXA Neural Engine ---
     if (!this.wllama || !this.wllama.isModelLoaded() || this.currentStatus !== 'ready') {
-      options.onError('GGUF_NOT_LOADED');
+      options.onError('ZEXA_CORE_NOT_LOADED');
       return;
     }
 
     const abortController = new AbortController();
     this.activeAbortController = abortController;
 
-    // 14s first-token watchdog so slow CPUs gracefully fail over to instant RAG without freezing chat
+    // Stall watchdog: resets whenever prefill progress or tokens arrive (45s ceiling if completely frozen)
     let hasEmittedTokens = false;
-    const watchdog = setTimeout(() => {
-      if (!hasEmittedTokens && !this.isCancelled) {
-        this.isCancelled = true;
-        abortController.abort();
-        options.onError('DEVICE_TIMEOUT');
-      }
-    }, 14000);
+    let timedOut = false;
+    let watchdog: ReturnType<typeof setTimeout> | null = null;
+    const armWatchdog = (ms = 45000) => {
+      if (watchdog) clearTimeout(watchdog);
+      watchdog = setTimeout(() => {
+        if (!hasEmittedTokens && !this.isCancelled) {
+          timedOut = true;
+          abortController.abort();
+        }
+      }, ms);
+    };
+    armWatchdog(45000);
 
     try {
-      const groundedContext = (options.contextSnippet || '').trim().slice(0, 2400);
+      const groundedContext = (options.contextSnippet || '').trim().slice(0, 900);
 
-      const systemPrompt = [
-        `You are ZEXA AI, Zimbabwe's offline ZIMSEC tutor for ${options.level} students.`,
-        `STRICT ACCURACY RULES:`,
-        `1. Base your answer strictly on the VERIFIED ZIMSEC SYLLABUS & EXAM DATA below.`,
-        `2. Preserve all exact dates, names, scientific laws, equations, and mark-scheme points from the verified data.`,
-        `3. Do NOT guess or invent facts, names, or years not supported by the verified data.`,
-        `4. Format clearly with a short ### Heading, a Direct Answer, and crisp bullet points.`,
-        groundedContext
-          ? `\nVERIFIED ZIMSEC SYLLABUS & EXAM DATA (${options.sourceTag || 'Official JSON Assets'}):\n"""\n${groundedContext}\n"""`
-          : `\nNote: No pre-written snippet matched directly. Explain clearly at ${options.level} ZIMSEC standard without inventing unverified Zimbabwe-specific statistics.`
-      ].join('\n');
+      const tutorRole = isZim
+        ? `You are ZEXA AI, Zimbabwe's offline ZIMSEC tutor for ${options.level} students.`
+        : `You are ZEXA AI, an offline educational tutor for ${options.level} students in ${country}.`;
+
+      const systemPrompt = groundedContext
+        ? [
+            tutorRole,
+            `STRICT RULE: Answer using ONLY the verified facts below and certain foundational science/math principles. NEVER invent names, dates, officials, or statistics. Format cleanly with a short ### Heading and concise bullets.`,
+            `\nVERIFIED CURRICULUM DATA (${options.sourceTag || 'Official Notes'}):\n"""\n${groundedContext}\n"""`
+          ].join('\n')
+        : [
+            tutorRole,
+            `Answer science, math, technology, history, literature, and general study questions accurately and concisely at ${options.level} level. NEVER invent officials, local historical dates, or unverified statistics—if unsure of a specific fact, state that clearly instead of guessing.`,
+            `If the student is asking for general homework help without stating a problem yet, greet them warmly and invite them to paste their exact question, equation, or topic.`
+          ].join('\n');
 
       const messages: ChatCompletionMessage[] = [{ role: 'system', content: systemPrompt }];
 
       if (options.history && options.history.length > 0) {
-        for (const h of options.history.slice(-2)) {
+        for (const h of options.history.slice(-1)) {
           if (h.question && h.answer) {
-            messages.push({ role: 'user', content: h.question.slice(0, 180) });
-            messages.push({ role: 'assistant', content: h.answer.slice(0, 260) });
+            messages.push({ role: 'user', content: h.question.slice(0, 140) });
+            messages.push({ role: 'assistant', content: h.answer.slice(0, 200) });
           }
         }
       }
@@ -486,31 +526,51 @@ export class QwenEngine {
 
       let emittedLength = 0;
 
-      await this.wllama.createChatCompletion({
+      const stream = await this.wllama.createChatCompletion({
         messages,
         stream: true,
-        temperature: 0.25,
-        top_p: 0.85,
+        return_progress: true,
+        cache_prompt: true,
+        temperature: groundedContext ? 0.25 : 0.35,
+        top_p: 0.88,
         penalty_repeat: 1.12,
-        max_tokens: 340,
-        abortSignal: abortController.signal,
-        onData: (chunk) => {
-          if (this.isCancelled) return;
-          const delta = chunk.choices?.[0]?.delta?.content || '';
-          if (delta) {
-            if (!hasEmittedTokens) {
-              hasEmittedTokens = true;
-              clearTimeout(watchdog);
-              firstTokenTime = performance.now();
-            }
-            emittedLength += delta.length;
-            options.onToken(delta);
-          }
-        }
+        max_tokens: 300,
+        abortSignal: abortController.signal
       });
 
-      clearTimeout(watchdog);
+      for await (const chunk of stream) {
+        if (this.isCancelled || timedOut) {
+          break;
+        }
+        if (chunk.prompt_progress && !hasEmittedTokens) {
+          // Keep watchdog alive while WASM is actively prefilling tokens
+          armWatchdog(45000);
+        }
+        const delta = chunk.choices?.[0]?.delta?.content || '';
+        if (delta) {
+          if (!hasEmittedTokens) {
+            hasEmittedTokens = true;
+            if (watchdog) {
+              clearTimeout(watchdog);
+              watchdog = null;
+            }
+            firstTokenTime = performance.now();
+          }
+          emittedLength += delta.length;
+          options.onToken(delta);
+        }
+      }
+
+      if (watchdog) {
+        clearTimeout(watchdog);
+        watchdog = null;
+      }
       this.activeAbortController = null;
+
+      if (timedOut) {
+        options.onError('DEVICE_TIMEOUT (45s)');
+        return;
+      }
 
       if (this.isCancelled) {
         options.onComplete('Cancelled by user');
@@ -518,28 +578,35 @@ export class QwenEngine {
       }
 
       if (emittedLength === 0) {
-        options.onError('EMPTY_GGUF_OUTPUT');
+        options.onError('EMPTY_NEURAL_OUTPUT');
         return;
       }
 
       const totalTime = ((performance.now() - startTime) / 1000).toFixed(1);
       const ttft = firstTokenTime > 0 ? ((firstTokenTime - startTime) / 1000).toFixed(1) : '0.8';
-      const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • Qwen 2.5 0.5B GGUF + JSON RAG`;
+      const metrics = `Prefill: ${ttft}s | Total: ${totalTime}s • ZEXA AI`;
       options.onComplete(
         metrics,
-        options.sourceTag ? `${options.sourceTag} · Qwen 2.5 GGUF` : 'Qwen 2.5 0.5B GGUF + JSON RAG'
+        groundedContext && options.sourceTag
+          ? `${options.sourceTag} · ZEXA AI`
+          : `ZEXA AI (${options.level})`
       );
     } catch (err: any) {
-      clearTimeout(watchdog);
+      if (watchdog) {
+        clearTimeout(watchdog);
+        watchdog = null;
+      }
       this.activeAbortController = null;
-      if (this.isCancelled || err?.name === 'AbortError') {
+      if (timedOut) {
+        options.onError('DEVICE_TIMEOUT (45s)');
+      } else if (this.isCancelled || err?.name === 'AbortError') {
         if (hasEmittedTokens) {
           options.onComplete('Stopped by user');
         } else {
           options.onError('GENERATION_ABORTED');
         }
       } else {
-        options.onError(err?.message || 'GGUF inference error');
+        options.onError(err?.message || 'Inference error');
       }
     }
   }
@@ -557,8 +624,8 @@ export class QwenEngine {
     this.currentStatus = this.modelFoundInAssets ? 'unloaded' : 'awaiting_model';
     this.currentProgress = 0;
     this.statusMessage = this.modelFoundInAssets
-      ? 'GGUF Unloaded (Click to reload)'
-      : `Ready for ${this.MODEL_FILENAME} in /public/assets/`;
+      ? 'ZEXA AI Unloaded (Tap to reload)'
+      : 'ZEXA AI Offline Mode Active';
     this.errorMessage = '';
     this.notifySubscribers();
   }

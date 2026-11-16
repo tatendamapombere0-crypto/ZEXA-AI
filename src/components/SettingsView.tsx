@@ -61,6 +61,9 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   const currentPeriod = TermCalendarManager.getCurrentPeriod();
   const daysLeft = TermCalendarManager.getDaysRemainingInCurrentTerm();
   const userEmail = StorageManager.getSessionUserEmail();
+  const activeCountry = StorageManager.getUserCountry();
+  const isZim = StorageManager.isZimbabweAccount(activeCountry);
+  const hasPack = StorageManager.hasCountryCurriculumPack(activeCountry);
 
   const handleConnectAssetsGGUF = async () => {
     await QwenEngine.loadModel();
@@ -167,7 +170,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             </p>
           </div>
           <span className="text-[11px] font-mono px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-bold">
-            ✓ ZIMSEC Synced
+            {isZim ? '✓ ZIMSEC Synced' : `✓ ${activeCountry}`}
           </span>
         </div>
       </div>
@@ -176,7 +179,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
       <div className="p-5 rounded-3xl bg-[#0f172a]/90 border border-slate-800 space-y-4 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
-            <Brain className="w-4 h-4" /> AI Model &amp; Neural Brain
+            <Brain className="w-4 h-4" /> ZEXA AI Engine
           </div>
           <span
             className={`text-[10px] font-mono px-2 py-0.5 rounded border font-bold ${
@@ -188,17 +191,17 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             }`}
           >
             {qwenState.status === 'ready'
-              ? 'GGUF CONNECTED'
+              ? 'ZEXA AI CONNECTED'
               : qwenState.status === 'loading'
               ? `LOADING ${qwenState.progress}%`
-              : 'JSON RAG ACTIVE'}
+              : 'ZEXA AI ACTIVE'}
           </span>
         </div>
 
         <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-700/60 space-y-3">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h4 className="text-sm font-bold text-white">Qwen 2.5 (0.5B Instruct Q4_K_M GGUF) + JSON RAG</h4>
+              <h4 className="text-sm font-bold text-white">ZEXA AI</h4>
               <p className="text-xs text-slate-400 mt-0.5">
                 {qwenState.statusText}
               </p>
@@ -219,27 +222,17 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           )}
 
           <div className="grid grid-cols-2 gap-2 text-[11px] font-mono text-slate-300 bg-slate-950/70 p-3 rounded-xl border border-slate-800">
-            <div>• Model: {qwenState.modelName}</div>
-            <div>• Runtime: Offline WASM / NDK</div>
-            <div>• Context: 2,048 tokens RAG</div>
-            <div>• Syllabus: 8,260+ Topics (127 JSONs)</div>
+            <div>• Engine: ZEXA AI</div>
+            <div>• Runtime: Offline Device Engine</div>
+            <div>• Data Usage: 0 MB Required</div>
+            <div>• Region: {hasPack ? '8,260+ ZIMSEC Topics' : activeCountry}</div>
           </div>
 
           <div className="flex flex-wrap gap-2 pt-1">
-            <button
-              type="button"
-              onClick={handleConnectAssetsGGUF}
-              disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
-              className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
-            >
-              <RefreshCw className="w-3.5 h-3.5" />
-              <span>Scan /assets/ GGUF</span>
-            </button>
-
             <input
               ref={ggufFileInputRef}
               type="file"
-              accept=".gguf"
+              accept=".gguf,application/octet-stream,*/*"
               onChange={handleLocalGGUFFile}
               className="hidden"
             />
@@ -247,78 +240,90 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               type="button"
               onClick={() => ggufFileInputRef.current?.click()}
               disabled={qwenState.status === 'loading'}
-              className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 border border-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+              className="px-3.5 py-2 rounded-xl btn-primary-gradient text-slate-950 disabled:opacity-50 text-xs font-bold flex items-center gap-1.5 shadow-md transition-all"
             >
               <Upload className="w-3.5 h-3.5" />
-              <span>Load Local .gguf File</span>
+              <span>Load Local Brain File</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleConnectAssetsGGUF}
+              disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+              className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span>Refresh Offline Brain</span>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Language Preferences & Shona Support */}
-      <div className="p-5 rounded-3xl bg-[#0f172a]/90 border border-slate-800 space-y-4 shadow-lg">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
-            <Languages className="w-4 h-4" /> Language &amp; ChiShona AI Support
-          </div>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 border border-emerald-500/30 text-emerald-300 font-bold">
-            Bilingual Active
-          </span>
-        </div>
-
-        <p className="text-xs text-slate-300 leading-relaxed">
-          ZEXA AI understands and responds in both <strong>English</strong> and <strong>ChiShona</strong>. If you ask or type in Shona, ZEXA AI automatically provides accurate answers in authentic ChiShona.
-        </p>
-
-        <div className="grid grid-cols-2 gap-2.5">
-          <button
-            type="button"
-            onClick={() => handleLanguageChange('en')}
-            className={`p-3 rounded-xl border text-xs font-bold transition-all ${
-              preferredLang === 'en'
-                ? 'bg-cyan-950/60 border-cyan-400 text-white glow-cyan-sm'
-                : 'bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            🇬🇧 English (Default)
-          </button>
-          <button
-            type="button"
-            onClick={() => handleLanguageChange('sn')}
-            className={`p-3 rounded-xl border text-xs font-bold transition-all ${
-              preferredLang === 'sn'
-                ? 'bg-cyan-950/60 border-cyan-400 text-white glow-cyan-sm'
-                : 'bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            🇿🇼 ChiShona (Zimbabwe)
-          </button>
-        </div>
-
-        {/* Quick Shona test chips */}
-        {onQuickQuery && (
-          <div className="space-y-1.5 pt-1">
-            <p className="text-[11px] font-bold text-cyan-300">Try asking in ChiShona:</p>
-            <div className="flex flex-wrap gap-1.5">
-              {[
-                'Mugabe ndiani?',
-                'Chii chinonzi photosynthesis?',
-                'Chiredzi iri mudunhu ripi rekurima?',
-                'Tsanangura tsumo: Chara chimwe hachitswanyi inda'
-              ].map((q) => (
-                <button
-                  key={q}
-                  onClick={() => onQuickQuery(q)}
-                  className="text-xs px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-cyan-300 transition-all text-left"
-                >
-                  {q}
-                </button>
-              ))}
+      {/* Language Preferences & Shona Support (Zimbabwe only) */}
+      {isZim && (
+        <div className="p-5 rounded-3xl bg-[#0f172a]/90 border border-slate-800 space-y-4 shadow-lg">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
+              <Languages className="w-4 h-4" /> Language &amp; ChiShona AI Support
             </div>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 border border-emerald-500/30 text-emerald-300 font-bold">
+              Bilingual Active
+            </span>
           </div>
-        )}
-      </div>
+
+          <p className="text-xs text-slate-300 leading-relaxed">
+            ZEXA AI understands and responds in both <strong>English</strong> and <strong>ChiShona</strong>. If you ask or type in Shona, ZEXA AI automatically provides accurate answers in authentic ChiShona.
+          </p>
+
+          <div className="grid grid-cols-2 gap-2.5">
+            <button
+              type="button"
+              onClick={() => handleLanguageChange('en')}
+              className={`p-3 rounded-xl border text-xs font-bold transition-all ${
+                preferredLang === 'en'
+                  ? 'bg-cyan-950/60 border-cyan-400 text-white glow-cyan-sm'
+                  : 'bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              🇬🇧 English (Default)
+            </button>
+            <button
+              type="button"
+              onClick={() => handleLanguageChange('sn')}
+              className={`p-3 rounded-xl border text-xs font-bold transition-all ${
+                preferredLang === 'sn'
+                  ? 'bg-cyan-950/60 border-cyan-400 text-white glow-cyan-sm'
+                  : 'bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              🇿🇼 ChiShona (Zimbabwe)
+            </button>
+          </div>
+
+          {/* Quick Shona test chips */}
+          {onQuickQuery && (
+            <div className="space-y-1.5 pt-1">
+              <p className="text-[11px] font-bold text-cyan-300">Try asking in ChiShona:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  'Mugabe ndiani?',
+                  'Chii chinonzi photosynthesis?',
+                  'Chiredzi iri mudunhu ripi rekurima?',
+                  'Tsanangura tsumo: Chara chimwe hachitswanyi inda'
+                ].map((q) => (
+                  <button
+                    key={q}
+                    onClick={() => onQuickQuery(q)}
+                    className="text-xs px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-cyan-300 transition-all text-left"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Daily Limit & Subscription (Automated Reset) */}
       <div className="p-5 rounded-3xl bg-[#0f172a]/90 border border-slate-800 space-y-4 shadow-lg">
@@ -443,10 +448,12 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           className="w-40 mx-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]"
         />
         <p className="font-semibold text-slate-400">
-          ZEXA AI Zimbabwe • First Zimbabwe OFFLINE AI Engine
+          {isZim ? 'ZEXA AI Zimbabwe • First Zimbabwe OFFLINE AI Engine' : `ZEXA AI · ${activeCountry}`}
         </p>
         <p className="text-[11px] max-w-md mx-auto">
-          Empowering Zimbabwean students with offline curriculum revision, past papers, and bilingual tutoring.
+          {isZim
+            ? 'Empowering Zimbabwean students with offline curriculum revision, past papers, and bilingual tutoring.'
+            : `Offline AI study companion for ${activeCountry}.`}
         </p>
       </div>
     </div>

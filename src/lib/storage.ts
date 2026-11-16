@@ -21,7 +21,9 @@ const STORAGE_KEYS = {
   PREFERRED_LANGUAGE: 'zexa_preferred_language',
   HAS_USED_AI_EVER: 'zexa_has_used_ai_ever',
   NOTIFICATIONS_ENABLED: 'zexa_notifications_enabled',
-  LAST_NOTIFICATION_SLOT: 'zexa_last_notification_slot'
+  LAST_NOTIFICATION_SLOT: 'zexa_last_notification_slot',
+  USER_COUNTRY: 'zexa_user_country',
+  ACCOUNT_COUNTRIES: 'zexa_account_countries'
 };
 
 export const LEVEL_PRICES: Record<EducationLevel, number> = {
@@ -245,8 +247,77 @@ export class StorageManager {
     localStorage.setItem(STORAGE_KEYS.PREFERRED_LANGUAGE, lang);
   }
 
-  static initNewSession(email?: string): void {
-    this.setSessionLoggedIn(true, email || 'Offline Student');
+  static hasSelectedCountry(): boolean {
+    const val = localStorage.getItem(STORAGE_KEYS.USER_COUNTRY);
+    return Boolean(val && val.trim());
+  }
+
+  static getUserCountry(): string {
+    return localStorage.getItem(STORAGE_KEYS.USER_COUNTRY) || 'Zimbabwe';
+  }
+
+  static isZimbabweAccount(countryOverride?: string): boolean {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return active === 'zimbabwe';
+  }
+
+  /**
+   * Currently only Zimbabwe has an offline curriculum, syllabus study pack,
+   * past examination bank, and Heritage Encyclopedia loaded in the app.
+   * All other countries run in Qwen / ZEXA AI-only mode until their local
+   * curriculum data packs are loaded.
+   */
+  static hasCountryCurriculumPack(countryOverride?: string): boolean {
+    return this.isZimbabweAccount(countryOverride);
+  }
+
+  static getSavedCountryForEmail(email: string): string | null {
+    const cleanEmail = (email || '').trim().toLowerCase();
+    if (!cleanEmail || cleanEmail === 'offline student') return null;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.ACCOUNT_COUNTRIES);
+      if (!raw) return null;
+      const map = JSON.parse(raw) as Record<string, string>;
+      return map[cleanEmail] || null;
+    } catch {
+      return null;
+    }
+  }
+
+  static setUserCountry(country: string, email?: string): void {
+    const cleanCountry = (country || 'Zimbabwe').trim() || 'Zimbabwe';
+    localStorage.setItem(STORAGE_KEYS.USER_COUNTRY, cleanCountry);
+    const activeEmail = (email || this.getSessionUserEmail() || '').trim().toLowerCase();
+    if (activeEmail && activeEmail !== 'offline student') {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEYS.ACCOUNT_COUNTRIES);
+        const map = raw ? (JSON.parse(raw) as Record<string, string>) : {};
+        map[activeEmail] = cleanCountry;
+        localStorage.setItem(STORAGE_KEYS.ACCOUNT_COUNTRIES, JSON.stringify(map));
+      } catch {
+        // Ignore storage quota errors
+      }
+    }
+  }
+
+  static initNewSession(email?: string, country?: string): void {
+    const cleanEmail = email || 'Offline Student';
+    this.setSessionLoggedIn(true, cleanEmail);
+    const resolvedCountry =
+      country ||
+      this.getSavedCountryForEmail(cleanEmail) ||
+      'Zimbabwe';
+    this.setUserCountry(resolvedCountry, cleanEmail);
+    // Reset active chat & residual paper cache from previous account session
+    localStorage.removeItem(STORAGE_KEYS.CHAT_MESSAGES);
+    localStorage.removeItem('zexa_active_paper');
+    localStorage.removeItem('zexa_active_paper_item');
+    localStorage.removeItem('zexa_active_paper_qindex');
+    localStorage.removeItem('zexa_active_paper_answers');
+    localStorage.removeItem('zexa_active_paper_revealed');
+    if (!this.isZimbabweAccount(resolvedCountry)) {
+      localStorage.setItem(STORAGE_KEYS.PREFERRED_LANGUAGE, 'en');
+    }
     // Ensure fresh account starts on Free tier with 2 free questions
     localStorage.removeItem(STORAGE_KEYS.IS_PREMIUM);
     localStorage.setItem(STORAGE_KEYS.OFFLINE_QUERY_COUNT, '0');
@@ -286,6 +357,7 @@ export class StorageManager {
   static logout(): void {
     localStorage.removeItem(STORAGE_KEYS.SESSION_LOGGED_IN);
     localStorage.removeItem(STORAGE_KEYS.SESSION_USER_EMAIL);
+    localStorage.removeItem(STORAGE_KEYS.USER_COUNTRY);
     localStorage.removeItem(STORAGE_KEYS.BRAIN_INITIALIZED);
     localStorage.removeItem(STORAGE_KEYS.LEVEL_SELECTED);
     localStorage.removeItem(STORAGE_KEYS.CHAT_MESSAGES);

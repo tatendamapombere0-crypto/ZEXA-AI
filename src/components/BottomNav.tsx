@@ -21,14 +21,14 @@ export const BottomNav: React.FC<BottomNavProps> = ({
     ? [
         {
           id: 'chat',
-          label: 'ZEXA Chat',
+          label: 'ZEXA AI',
           icon: <MessageSquare className="w-4 h-4" />
         }
       ]
     : [
         {
           id: 'chat',
-          label: 'ZEXA Chat',
+          label: 'ZEXA AI',
           icon: <MessageSquare className="w-4 h-4" />
         },
         {

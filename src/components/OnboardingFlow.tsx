@@ -1,36 +1,83 @@
 import React, { useState } from 'react';
-import { Sparkles, Brain, Download, CheckCircle2, ChevronRight, Lock, Mail, ArrowRight, ShieldCheck, BookOpen, Layers, Cpu } from 'lucide-react';
+import {
+  Sparkles,
+  Brain,
+  Download,
+  CheckCircle2,
+  ChevronRight,
+  Lock,
+  Mail,
+  ArrowRight,
+  ShieldCheck,
+  BookOpen,
+  Layers,
+  Cpu,
+  Globe,
+  AlertCircle,
+  ArrowLeft,
+  Search
+} from 'lucide-react';
 import { EducationLevel } from '../types';
+import { WORLD_COUNTRIES, findCountryConfig } from '../data/worldCountries';
 import { StorageManager } from '../lib/storage';
 import { KnowledgeStore } from '../lib/knowledgeStore';
 import { QwenEngine } from '../lib/qwenEngine';
 
 interface OnboardingFlowProps {
-  onComplete: (level: EducationLevel, email?: string) => void;
+  onComplete: (level: EducationLevel, email?: string, country?: string) => void;
 }
 
-type OnboardingStep = 'login' | 'education-category' | 'ai-brain';
+type OnboardingStep = 'login' | 'country-select' | 'education-category' | 'ai-brain';
 
 export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) => {
   const [currentStep, setCurrentStep] = useState<OnboardingStep>('login');
-  
-  // Login form state
+
+  // Step 1: Entry / auth mode state
+  const [authMode, setAuthMode] = useState<'offline' | 'online'>('offline');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isRegisterMode, setIsRegisterMode] = useState(false);
   const [loginError, setLoginError] = useState<string | null>(null);
 
-  // Education level state
+  // Step 2: Whole-world country selection state (required after Start Offline or Online login)
+  const [selectedCountry, setSelectedCountry] = useState<string>('');
+  const [countrySearch, setCountrySearch] = useState<string>('');
+  const [countryError, setCountryError] = useState<string | null>(null);
+
+  // Step 3: Education level state
   const [selectedLevel, setSelectedLevel] = useState<EducationLevel>('O-Level (Form 1 to 4)');
   const [secondarySubLevel, setSecondarySubLevel] = useState<'olevel' | 'alevel'>('olevel');
 
-  // AI Brain state
+  // Step 4: AI Brain state
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [downloadStage, setDownloadStage] = useState('Standby');
   const [isBrainReady, setIsBrainReady] = useState(false);
 
-  // Step 1 handlers
+  const activeCountryConfig = selectedCountry ? findCountryConfig(selectedCountry) : null;
+  const isZimbabweSelected = selectedCountry.trim().toLowerCase() === 'zimbabwe';
+  const hasPack = Boolean(activeCountryConfig?.hasCurriculumPack);
+
+  const filteredCountries = WORLD_COUNTRIES.filter((c) => {
+    const q = countrySearch.trim().toLowerCase();
+    if (!q) return true;
+    return (
+      c.name.toLowerCase().includes(q) ||
+      c.code.toLowerCase().includes(q) ||
+      (c.region || '').toLowerCase().includes(q)
+    );
+  });
+
+  // Step 1 handlers: Pressing Start Study Offline or Sign In Online advances to Choose Country
+  const handleStartOffline = () => {
+    setAuthMode('offline');
+    setLoginError(null);
+    setCountryError(null);
+    setCountrySearch('');
+    setSelectedCountry('');
+    setCurrentStep('country-select');
+  };
+
   const handleOnlineLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) {
@@ -42,16 +89,27 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
       return;
     }
     setLoginError(null);
-    StorageManager.initNewSession(email);
+    setAuthMode('online');
+    setCountryError(null);
+    setCountrySearch('');
+    const savedCountry = StorageManager.getSavedCountryForEmail(email);
+    setSelectedCountry(savedCountry || '');
+    setCurrentStep('country-select');
+  };
+
+  // Step 2 handler: Must pick a country from the world list before proceeding
+  const handleConfirmCountry = () => {
+    if (!selectedCountry || !activeCountryConfig) {
+      setCountryError('Please select a country from the list to continue.');
+      return;
+    }
+    setCountryError(null);
+    const activeEmail = authMode === 'online' && email.trim() ? email.trim() : 'Offline Student';
+    StorageManager.initNewSession(activeEmail, selectedCountry);
     setCurrentStep('education-category');
   };
 
-  const handleStartOffline = () => {
-    StorageManager.initNewSession('Offline Student');
-    setCurrentStep('education-category');
-  };
-
-  // Step 2 handlers
+  // Step 3 handlers
   const handleSelectCategory = (category: 'primary' | 'secondary' | 'tertiary') => {
     if (category === 'primary') {
       setSelectedLevel('Primary Education');
@@ -62,7 +120,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
       StorageManager.setEducationLevel('Tertiary Education');
       setCurrentStep('ai-brain');
     } else {
-      const levelToSet: EducationLevel = secondarySubLevel === 'alevel' ? 'A-Level (Form 5 to 6)' : 'O-Level (Form 1 to 4)';
+      const levelToSet: EducationLevel =
+        secondarySubLevel === 'alevel' ? 'A-Level (Form 5 to 6)' : 'O-Level (Form 1 to 4)';
       setSelectedLevel(levelToSet);
       StorageManager.setEducationLevel(levelToSet);
       setCurrentStep('ai-brain');
@@ -77,17 +136,21 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
     setCurrentStep('ai-brain');
   };
 
-  // Step 3 handlers: Real KnowledgeStore + Qwen 2.5 (0.5B Q4_K_M GGUF) initialization
+  // Step 4 handler: Curriculum (only if country pack exists) + ZEXA AI initialization
   const handleLoadBrain = async () => {
     if (isDownloading || isBrainReady) return;
     setIsDownloading(true);
     setDownloadProgress(15);
-    setDownloadStage('Mounting 8,260+ ZIMSEC JSON topics & 4,360+ verified exam questions...');
 
-    await KnowledgeStore.load();
+    if (hasPack) {
+      setDownloadStage(`Mounting ${selectedCountry} syllabus topics & verified exam questions...`);
+      await KnowledgeStore.load();
+    } else {
+      setDownloadStage(`Preparing ZEXA AI workspace for ${selectedCountry}...`);
+    }
 
     setDownloadProgress(35);
-    setDownloadStage('Scanning /public/assets/ for qwen2.5-0.5b-instruct-q4_k_m.gguf...');
+    setDownloadStage('Initializing ZEXA AI...');
 
     const ggufLoaded = await QwenEngine.loadModel((state) => {
       if (state.status === 'loading') {
@@ -95,15 +158,13 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
         setDownloadStage(state.statusText);
       } else if (state.status === 'ready') {
         setDownloadProgress(100);
-        setDownloadStage('Qwen 2.5 (0.5B GGUF) + JSON RAG Pipeline Connected!');
+        setDownloadStage('ZEXA AI Connected!');
       }
     });
 
     if (!ggufLoaded) {
       setDownloadProgress(100);
-      setDownloadStage(
-        'Offline JSON RAG Ready (Drop qwen2.5-0.5b-instruct-q4_k_m.gguf in /public/assets/ to activate GGUF neural synthesis)'
-      );
+      setDownloadStage('ZEXA AI Ready!');
     }
 
     setIsDownloading(false);
@@ -112,7 +173,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
   };
 
   const handleStartChat = () => {
-    onComplete(selectedLevel, email || 'Offline Student');
+    const activeEmail = authMode === 'online' && email.trim() ? email.trim() : 'Offline Student';
+    onComplete(selectedLevel, activeEmail, selectedCountry);
   };
 
   return (
@@ -124,8 +186,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
 
       {/* Main container */}
       <div className="w-full max-w-lg z-10 space-y-6">
-        
-        {/* App Logo Header - Pure HD Brain Logo Only, No Box Corners */}
+        {/* App Logo Header */}
         <div className="text-center space-y-2">
           <div className="flex justify-center">
             <img
@@ -141,27 +202,29 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
             <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
               <span className="flex items-center gap-1.5 text-cyan-300 font-medium">
                 <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
-                First Zimbabwe OFFLINE AI Engine
+                {!selectedCountry
+                  ? '100% Offline AI Learning Engine'
+                  : isZimbabweSelected
+                  ? 'First Zimbabwe OFFLINE AI Engine'
+                  : `Offline AI Learning Engine · ${selectedCountry}`}
               </span>
-              <span>·</span>
-              <span className="font-mono text-slate-400">ZEXA 2.5/3.8</span>
             </div>
           </div>
         </div>
 
-        {/* STEP 1: LOGIN & OFFLINE ENTRY */}
+        {/* STEP 1: WELCOME — START OFFLINE OR ONLINE LOGIN */}
         {currentStep === 'login' && (
-          <div className="glass-panel-elevated p-6 sm:p-8 rounded-3xl space-y-6 animate-fadeIn">
+          <div className="glass-panel-elevated p-6 sm:p-8 rounded-3xl space-y-5 animate-fadeIn">
             <div className="text-center space-y-1">
               <h2 className="text-xl font-bold tracking-tight text-white">Welcome to ZEXA AI</h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                Study 100% offline with zero data or sign in with your student account.
+                Start studying 100% offline or sign in with your student account, then choose your country from around the world.
               </p>
             </div>
 
             {/* Offline Button (Primary Option) */}
             <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-cyan-950/40 via-[#0e1729] to-blue-950/30 border border-cyan-500/30 space-y-3">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <span className="text-xs font-bold text-cyan-300 uppercase tracking-wider flex items-center gap-1.5">
                   <Brain className="w-4 h-4 text-cyan-400" /> 100% Offline Study Mode
                 </span>
@@ -170,7 +233,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                 </span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Full ZIMSEC Grade 7, O-Level, and A-Level syllabus notes, past exam papers, and bilingual tutoring running directly on your device.
+                Tap below to start studying offline and pick your country &amp; curriculum workspace on your device.
               </p>
               <button
                 type="button"
@@ -207,7 +270,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="student@school.co.zw"
+                  placeholder="student@school.edu"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-white/[0.08] focus:border-cyan-400 focus:outline-none text-white text-xs placeholder:text-slate-500 transition-colors"
                 />
               </div>
@@ -230,6 +293,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                 className="w-full py-2.5 px-4 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-white/[0.08] hover:border-cyan-500/40 text-white font-medium text-xs flex items-center justify-center gap-2 transition-all active:scale-[0.98]"
               >
                 <span>{isRegisterMode ? 'Create Online Account' : 'Sign In Online'}</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </button>
 
               <div className="text-center pt-1">
@@ -245,13 +309,149 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
           </div>
         )}
 
-        {/* STEP 2: EDUCATION SELECTION CATEGORY */}
+        {/* STEP 2: WHOLE-WORLD COUNTRY SELECTION (Shown after Start Study Offline or Sign In) */}
+        {currentStep === 'country-select' && (
+          <div className="glass-panel-elevated p-5 sm:p-7 rounded-3xl space-y-4 animate-fadeIn">
+            <div className="flex items-center justify-between">
+              <button
+                type="button"
+                onClick={() => setCurrentStep('login')}
+                className="inline-flex items-center gap-1 text-xs text-slate-400 hover:text-cyan-300 transition-colors"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" />
+                <span>Back</span>
+              </button>
+              <span className="text-[11px] font-mono text-cyan-300 bg-cyan-950/60 border border-cyan-500/30 px-2.5 py-0.5 rounded-full">
+                {WORLD_COUNTRIES.length} Countries
+              </span>
+            </div>
+
+            <div className="text-center space-y-1">
+              <div className="flex items-center justify-center gap-2 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+                <Globe className="w-4 h-4 text-cyan-400" />
+                <span>Choose Your Country</span>
+              </div>
+              <h2 className="text-xl font-bold tracking-tight text-white">Select Country from the World</h2>
+              <p className="text-xs text-slate-400">
+                Choose your country below to personalize your ZEXA AI study workspace.
+              </p>
+            </div>
+
+            {/* Search bar across all world countries */}
+            <div className="relative">
+              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                id="onboarding-country-search"
+                type="text"
+                value={countrySearch}
+                onChange={(e) => setCountrySearch(e.target.value)}
+                placeholder="Search any country (e.g. Zimbabwe, South Africa, Kenya, UK...)"
+                className="w-full pl-10 pr-3.5 py-2.5 rounded-xl bg-[#0b1222] border border-cyan-500/35 focus:border-cyan-400 focus:outline-none text-white text-xs sm:text-sm placeholder:text-slate-500"
+              />
+            </div>
+
+            {/* Scrollable full world countries list */}
+            <div
+              id="onboarding-country-list"
+              role="listbox"
+              aria-label="World countries list"
+              className="max-h-64 overflow-y-auto space-y-1.5 pr-1"
+            >
+              {filteredCountries.length === 0 ? (
+                <div className="p-6 text-center text-xs text-slate-400 rounded-xl bg-slate-900/60 border border-white/[0.06]">
+                  No countries matching &quot;{countrySearch}&quot;.
+                </div>
+              ) : (
+                filteredCountries.map((c) => {
+                  const isSelected = selectedCountry === c.name;
+                  return (
+                    <button
+                      key={c.code}
+                      type="button"
+                      role="option"
+                      aria-selected={isSelected}
+                      onClick={() => {
+                        setSelectedCountry(c.name);
+                        setCountryError(null);
+                      }}
+                      className={`w-full px-3.5 py-2.5 rounded-xl border text-left flex items-center justify-between gap-2 transition-all ${
+                        isSelected
+                          ? 'bg-cyan-950/75 border-cyan-400 text-white shadow shadow-cyan-500/15'
+                          : 'bg-[#0b1222]/90 border-white/[0.07] hover:border-cyan-500/40 text-slate-200 hover:bg-slate-900'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-lg shrink-0">{c.flag}</span>
+                        <div className="min-w-0">
+                          <div className="text-xs sm:text-sm font-semibold truncate">{c.name}</div>
+                          <div className="text-[10px] text-slate-400 truncate">
+                            {c.region} · {c.code}
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })
+              )}
+            </div>
+
+            {countryError && (
+              <div
+                role="alert"
+                className="p-2.5 rounded-xl bg-red-950/50 border border-red-500/40 text-red-300 text-xs flex items-center gap-2"
+              >
+                <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
+                <span>{countryError}</span>
+              </div>
+            )}
+
+            {/* Selected country confirmation pill */}
+            {activeCountryConfig && (
+              <div className="p-3 rounded-xl border bg-cyan-950/35 border-cyan-500/30 text-xs text-slate-200 flex items-center justify-between gap-2">
+                <span>
+                  Selected country: <strong className="text-cyan-300">{activeCountryConfig.flag} {selectedCountry}</strong>
+                </span>
+                <span className="text-[11px] font-mono text-slate-400">{activeCountryConfig.region}</span>
+              </div>
+            )}
+
+            <button
+              type="button"
+              onClick={handleConfirmCountry}
+              className="w-full py-3.5 px-5 rounded-xl btn-primary-gradient text-slate-950 font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 transition-all active:scale-[0.98]"
+            >
+              <span>
+                {selectedCountry && activeCountryConfig
+                  ? `Continue with ${activeCountryConfig.flag} ${selectedCountry}`
+                  : 'Continue'}
+              </span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+
+        {/* STEP 3: EDUCATION SELECTION CATEGORY */}
         {currentStep === 'education-category' && (
           <div className="glass-panel-elevated p-6 sm:p-8 rounded-3xl space-y-6 animate-fadeIn">
             <div className="text-center space-y-1">
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-[11px] font-mono">
+                  <span>{activeCountryConfig?.flag} {selectedCountry}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setCurrentStep('country-select')}
+                  className="inline-flex items-center gap-1 text-[11px] text-slate-400 hover:text-cyan-300 transition-colors"
+                >
+                  <ArrowLeft className="w-3 h-3" />
+                  <span>Change Country</span>
+                </button>
+              </div>
               <h2 className="text-xl font-bold tracking-tight text-white">Window of Education Category</h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                Select your education level to configure the ZIMSEC syllabus topics and AI context.
+                {hasPack
+                  ? 'Select your education level to configure the ZIMSEC syllabus topics and AI context.'
+                  : `Select your education level for ${selectedCountry}.`}
               </p>
             </div>
 
@@ -270,19 +470,23 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                     </span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Official 6-subject ZIMSEC curriculum: English, Mathematics, Agric Science &amp; Tech, Shona, Social Science, Physical Edu &amp; Arts.
+                    {hasPack
+                      ? 'Official 6-subject ZIMSEC curriculum: English, Mathematics, Agric Science & Tech, Shona, Social Science, Physical Edu & Arts.'
+                      : `AI tutor tailored for ${selectedCountry} Primary learners.`}
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors shrink-0 mt-1" />
               </button>
 
-              {/* Secondary Education Card (with O-Level & A-Level Choice) */}
+              {/* Secondary Education Card */}
               <div className="p-4 rounded-2xl glass-panel space-y-3">
                 <div className="flex items-center gap-2 text-white font-bold text-sm">
                   <Layers className="w-4 h-4 text-cyan-400" /> Secondary Education (Forms 1 to 6)
                 </div>
                 <p className="text-xs text-slate-400">
-                  Select your exact academic tier for tailored syllabus notes and past exam papers:
+                  {hasPack
+                    ? 'Select your exact academic tier for tailored syllabus notes and past exam papers:'
+                    : 'Select your secondary study tier for ZEXA AI tutoring:'}
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
@@ -296,7 +500,9 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                       <ChevronRight className="w-3.5 h-3.5 text-cyan-400" />
                     </div>
                     <p className="text-[11px] text-slate-400 mt-1">
-                      Combined Science, Maths, Commerce, Geography, History, Accounts, etc.
+                      {hasPack
+                        ? 'Combined Science, Maths, Commerce, Geography, History, Accounts, etc.'
+                        : 'Junior / Middle Secondary AI Tutoring'}
                     </p>
                   </button>
 
@@ -310,7 +516,9 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                       <ChevronRight className="w-3.5 h-3.5 text-purple-400" />
                     </div>
                     <p className="text-[11px] text-slate-400 mt-1">
-                      Pure Maths, Biology, History 9155, Geography, Economics, Physics, etc.
+                      {hasPack
+                        ? 'Pure Maths, Biology, History 9155, Geography, Economics, Physics, etc.'
+                        : 'Senior Secondary / Pre-University AI Tutoring'}
                     </p>
                   </button>
                 </div>
@@ -339,28 +547,31 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
           </div>
         )}
 
-        {/* STEP 3: CHOOSE YOUR AI BRAIN */}
+        {/* STEP 4: INITIALIZE AI BRAIN */}
         {currentStep === 'ai-brain' && (
           <div className="glass-panel-elevated p-6 sm:p-8 rounded-3xl space-y-6 animate-fadeIn">
             <div className="text-center space-y-1">
-              <h2 className="text-xl font-bold tracking-tight text-white">Choose Your AI Brain</h2>
+              <h2 className="text-xl font-bold tracking-tight text-white">Initialize ZEXA AI</h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                Initialize the local offline ZEXA Neural Brain for {selectedLevel}.
+                Prepare ZEXA AI offline mode for {selectedLevel}.
               </p>
             </div>
 
-            {/* Model Card */}
             <div className="p-5 rounded-2xl glass-panel border border-cyan-500/30 space-y-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <img
                     src="/assets/zexa_brain_logo.png"
-                    alt="ZEXA AI Brain Logo"
+                    alt="ZEXA AI"
                     className="w-10 h-9 object-contain animate-brain-glow shrink-0"
                   />
                   <div>
-                    <h3 className="font-bold text-sm text-white">Qwen 2.5 (0.5B) + ZIMSEC RAG</h3>
-                    <p className="text-xs text-slate-400">qwen2.5-0.5b-instruct-q4_k_m.gguf</p>
+                    <h3 className="font-bold text-sm text-white">ZEXA AI</h3>
+                    <p className="text-xs text-slate-400">
+                      {hasPack
+                        ? 'Offline ZIMSEC Curriculum Tutor'
+                        : `${selectedCountry} Study Tutor`}
+                    </p>
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 font-bold border border-emerald-500/30">
@@ -369,13 +580,12 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-[11px] font-mono text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-white/[0.05]">
-                <div>• Engine: Qwen 2.5 Q4_K_M GGUF</div>
-                <div>• Runtime: Local WASM + JSON</div>
-                <div>• Knowledge: 8,260+ Topics</div>
-                <div>• Exam Bank: 4,360+ Verified Qs</div>
+                <div>• Engine: ZEXA AI</div>
+                <div>• Runtime: 100% Offline Local</div>
+                <div>• Country: {activeCountryConfig?.flag} {selectedCountry}</div>
+                <div>• Level: {selectedLevel.split(' ')[0]}</div>
               </div>
 
-              {/* Download / Progress Bar */}
               {isDownloading && (
                 <div className="space-y-2 animate-fadeIn">
                   <div className="flex items-center justify-between text-xs font-medium">
@@ -391,15 +601,13 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                 </div>
               )}
 
-              {/* Ready Badge */}
               {isBrainReady && (
                 <div className="p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2 animate-fadeIn">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>ZEXA AI Brain loaded and ready in offline memory!</span>
+                  <span>ZEXA AI is loaded and ready offline!</span>
                 </div>
               )}
 
-              {/* Action Button */}
               {!isBrainReady ? (
                 <button
                   type="button"
@@ -408,7 +616,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   className="w-full py-3.5 px-4 rounded-xl btn-primary-gradient disabled:opacity-50 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 transition-all active:scale-[0.98]"
                 >
                   <Download className="w-4 h-4" />
-                  <span>{isDownloading ? 'Initializing AI Brain...' : 'Download & Load ZEXA AI Brain'}</span>
+                  <span>{isDownloading ? 'Initializing ZEXA AI...' : 'Initialize ZEXA AI'}</span>
                 </button>
               ) : (
                 <button
@@ -417,7 +625,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 transition-all active:scale-[0.98] animate-pulse"
                 >
                   <Sparkles className="w-4 h-4 fill-slate-950" />
-                  <span>Start ZEXA Chat</span>
+                  <span>Start ZEXA AI</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               )}
@@ -428,4 +636,3 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
     </div>
   );
 };
-

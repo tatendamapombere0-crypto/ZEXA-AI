@@ -29,12 +29,14 @@ interface StudyDiagramProps {
   diagramId: DiagramId;
   caption?: string;
   interactive?: boolean;
+  isZim?: boolean;
 }
 
 export const StudyDiagram: React.FC<StudyDiagramProps> = ({
   diagramId,
   caption,
-  interactive = true
+  interactive = true,
+  isZim = true
 }) => {
   const [activePart, setActivePart] = useState<string | null>(null);
   const [showLabels, setShowLabels] = useState(true);
@@ -949,7 +951,7 @@ export const StudyDiagram: React.FC<StudyDiagramProps> = ({
         return (
           <svg viewBox="0 0 800 380" className="w-full h-auto select-none font-sans">
             <text x="400" y="28" fill="#10b981" fontSize="16" fontWeight="extrabold" textAnchor="middle" letterSpacing="1">
-              THE NITROGEN CYCLE (ZIMSEC AGRICULTURE &amp; BIOLOGY)
+              {isZim ? 'THE NITROGEN CYCLE (ZIMSEC AGRICULTURE & BIOLOGY)' : 'THE NITROGEN CYCLE (AGRICULTURE & BIOLOGY)'}
             </text>
 
             {/* Atmospheric Nitrogen */}

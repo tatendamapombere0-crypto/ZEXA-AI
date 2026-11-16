@@ -1,10 +1,12 @@
 import React from 'react';
-import { Crown, Settings, Plus, ChevronDown, BookOpen, Sparkles, CheckCircle2, Bell } from 'lucide-react';
+import { Crown, Settings, Plus, ChevronDown, CheckCircle2, Bell } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
+import { findCountryConfig } from '../data/worldCountries';
 
 interface AppHeaderProps {
   educationLevel: EducationLevel;
   contentLevel: string;
+  country?: string;
   subscriptionStatus: SubscriptionStatus;
   queriesUsedToday: number;
   dailyLimit: number;
@@ -18,6 +20,7 @@ interface AppHeaderProps {
 export const AppHeader: React.FC<AppHeaderProps> = ({
   educationLevel,
   contentLevel,
+  country = 'Zimbabwe',
   subscriptionStatus,
   queriesUsedToday,
   dailyLimit,
@@ -29,6 +32,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
 }) => {
   const isPremium = subscriptionStatus === 'PREMIUM';
   const remaining = Math.max(0, dailyLimit - queriesUsedToday);
+  const countryConfig = findCountryConfig(country);
 
   return (
     <header className="sticky top-0 z-30 bg-[#080d1a]/85 backdrop-blur-xl border-b border-white/[0.08] px-3 sm:px-6 py-2.5 shadow-sm transition-all">
@@ -60,6 +64,16 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
 
         {/* Level Selector & Command Actions */}
         <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Active Country / Curriculum Badge */}
+          <button
+            onClick={onOpenSettings}
+            className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] hover:border-cyan-500/40 text-xs font-medium text-slate-200 transition-all shadow-sm"
+            title={`Account Country: ${country} (${countryConfig.curriculum})`}
+          >
+            <span>{countryConfig.flag}</span>
+            <span className="font-mono text-[11px] font-semibold text-cyan-300">{countryConfig.code}</span>
+          </button>
+
           {/* Level Switcher Button (Linear Command Style) */}
           <button
             onClick={onOpenLevelSelect}
@@ -116,11 +130,15 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
             <Plus className="w-4 h-4" />
           </button>
 
-          {/* Daily Study Notifications Trigger (6 AM, 12 PM, 6 PM Harare Time) */}
+          {/* Daily Study Notifications Trigger */}
           <button
             onClick={onOpenNotifications}
             className="p-2 rounded-xl bg-white/[0.04] hover:bg-cyan-500/10 border border-white/[0.08] hover:border-cyan-500/40 text-slate-300 hover:text-cyan-300 transition-all active:scale-95 relative"
-            title="Daily Study Reminders (6:00 AM • 12:00 PM • 6:00 PM Harare Time)"
+            title={
+              country.trim().toLowerCase() === 'zimbabwe'
+                ? 'Daily Study Reminders (6:00 AM • 12:00 PM • 6:00 PM Harare Time)'
+                : 'Daily Study Reminders (6:00 AM • 12:00 PM • 6:00 PM Scheduled Alerts)'
+            }
           >
             <Bell className="w-4 h-4" />
             <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />

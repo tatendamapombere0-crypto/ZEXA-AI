@@ -1,5 +1,6 @@
 import highYieldData from '../data/exam_bank_high_yield_qa.json';
 import { ExamStore } from './examStore';
+import { StorageManager } from './storage';
 
 export interface ExamMatchResult {
   questionText: string;
@@ -71,14 +72,47 @@ export class ExamBankMatcher {
     return set;
   }
 
+  private static isZimbabweHighYieldItem(item: HighYieldItem): boolean {
+    const combined = `${item.s || ''} ${item.p || ''} ${item.c || ''} ${item.f || ''} ${item.topic || ''} ${item.q || ''}`.toLowerCase();
+    return (
+      combined.includes('zimbabwe') ||
+      combined.includes('shona') ||
+      combined.includes('chishona') ||
+      combined.includes('ndebele') ||
+      combined.includes('social science') ||
+      combined.includes('general paper') ||
+      combined.includes('heritage') ||
+      combined.includes('chimurenga') ||
+      combined.includes('mutapa') ||
+      combined.includes('rozvi') ||
+      combined.includes('lobengula') ||
+      combined.includes('mzilikazi') ||
+      combined.includes('lancaster house') ||
+      item.c?.startsWith('705') ||
+      item.c?.startsWith('7040') ||
+      item.c?.startsWith('4007') ||
+      item.c?.startsWith('4047') ||
+      item.c?.startsWith('6039/02') ||
+      item.c?.startsWith('9155/1')
+    );
+  }
+
   /**
-   * Matches a student query against official ZIMSEC past exam bank questions.
+   * Matches a student query against official past exam bank questions scoped to account country.
    * Returns authoritative marking scheme if similarity threshold is met.
    */
-  public static async matchQuestion(query: string, preferredLevel?: string): Promise<ExamMatchResult | null> {
+  public static async matchQuestion(
+    query: string,
+    preferredLevel?: string,
+    country?: string
+  ): Promise<ExamMatchResult | null> {
+    if (!StorageManager.hasCountryCurriculumPack(country)) {
+      return null;
+    }
     const trimmed = query.trim();
     if (!trimmed || trimmed.length < 5) return null;
 
+    const isZim = StorageManager.isZimbabweAccount(country);
     const qTokens = this.tokenize(trimmed);
     if (qTokens.size === 0) return null;
 
@@ -101,6 +135,9 @@ export class ExamBankMatcher {
 
     // 1. Scan high-yield pre-indexed questions (0ms synchronous lookup)
     for (const item of this.highYieldItems) {
+      if (!isZim && this.isZimbabweHighYieldItem(item)) {
+        continue;
+      }
       // If civic query, never match unrelated exam questions
       if (isCivicQuery && !item.q.toLowerCase().includes('president') && !item.q.toLowerCase().includes('head of state')) {
         continue;
@@ -172,12 +209,14 @@ export class ExamBankMatcher {
       return this.buildResult(bestItem, bestScore);
     }
 
-    // 3. Fallback: Search dynamic paper banks across ALL 97 exam papers for the active subject
+    // 3. Fallback: Search dynamic paper banks scoped by account country
     try {
       if (isCivicQuery) return null;
 
       const manifest = await ExamStore.loadManifest();
       const targetManifestItems = manifest.filter((m) => {
+        if (!isZim && ExamStore.isZimbabweSpecificPaper(m)) return false;
+
         const fileLower = (m.file || '').toLowerCase();
         const subLower = (m.subject || '').toLowerCase();
         const pLvl = (m.level || '').toLowerCase();
@@ -203,7 +242,7 @@ export class ExamBankMatcher {
         if (subLower.includes('physics') && (qTokens.has('transformer') || qTokens.has('current') || qTokens.has('voltage') || qTokens.has('refraction') || qTokens.has('lens') || qTokens.has('circuit') || qTokens.has('velocity') || qTokens.has('acceleration'))) return true;
         if (subLower.includes('chemistry') && (qTokens.has('atom') || qTokens.has('mole') || qTokens.has('stoichiometry') || qTokens.has('electrolysis') || qTokens.has('acid') || qTokens.has('base') || qTokens.has('titration') || qTokens.has('reaction'))) return true;
         if (subLower.includes('agriculture') && (qTokens.has('soil') || qTokens.has('nitrogen') || qTokens.has('crop') || qTokens.has('livestock') || qTokens.has('cattle') || qTokens.has('fertilizer') || qTokens.has('pesticide'))) return true;
-        if ((subLower.includes('shona') || subLower.includes('chishona')) && (qTokens.has('tsumo') || qTokens.has('madimikira') || qTokens.has('nyaudzosingwi') || qTokens.has('rondedzero') || qTokens.has('zviera') || qTokens.has('ukama'))) return true;
+        if (isZim && (subLower.includes('shona') || subLower.includes('chishona')) && (qTokens.has('tsumo') || qTokens.has('madimikira') || qTokens.has('nyaudzosingwi') || qTokens.has('rondedzero') || qTokens.has('zviera') || qTokens.has('ukama'))) return true;
         if (subLower.includes('commerce') && (qTokens.has('retail') || qTokens.has('wholesale') || qTokens.has('insurance') || qTokens.has('banking') || qTokens.has('advertising') || qTokens.has('trade'))) return true;
         if (subLower.includes('mathematics') && (qTokens.has('algebra') || qTokens.has('trigonometry') || qTokens.has('calculus') || qTokens.has('geometry') || qTokens.has('matrix') || qTokens.has('fraction') || qTokens.has('equation'))) return true;
 

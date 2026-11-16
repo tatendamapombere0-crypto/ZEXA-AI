@@ -16,18 +16,23 @@ import {
 } from 'lucide-react';
 import { KnowledgeChunk } from '../types';
 import { KnowledgeStore } from '../lib/knowledgeStore';
+import { StorageManager } from '../lib/storage';
 import { StudyDiagram, DiagramId } from './StudyDiagrams';
 import { MarkdownArticle } from './MarkdownArticle';
 
 interface StudyPackViewProps {
   contentLevel: string;
+  country?: string;
   onAskZexa: (question: string) => void;
 }
 
 export const StudyPackView: React.FC<StudyPackViewProps> = ({
   contentLevel,
+  country = 'Zimbabwe',
   onAskZexa
 }) => {
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const [activeViewMode, setActiveViewMode] = useState<'modules' | 'diagrams'>('modules');
   const [subjects, setSubjects] = useState<string[]>([]);
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
@@ -44,32 +49,33 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
     async function init() {
       setLoading(true);
       setSelectedTopic(null);
-      const subList = await KnowledgeStore.getSubjects(contentLevel);
+      const subList = await KnowledgeStore.getSubjects(contentLevel, country);
       setSubjects(subList);
       if (subList.length > 0) {
         setSelectedSubject(subList[0]);
       } else {
         setSelectedSubject(null);
+        setTopics([]);
       }
 
       // Instant 0ms retrieval of visual topics for the gallery
-      const allVisuals = KnowledgeStore.getAllVisualTopics(contentLevel);
+      const allVisuals = KnowledgeStore.getAllVisualTopics(contentLevel, country);
       setAllVisualTopics(allVisuals);
       setLoading(false);
     }
     init();
-  }, [contentLevel]);
+  }, [contentLevel, country]);
 
   useEffect(() => {
     async function loadSubjectTopics() {
       if (!selectedSubject) return;
       setLoading(true);
-      const chunkList = await KnowledgeStore.getTopics(contentLevel, selectedSubject);
+      const chunkList = await KnowledgeStore.getTopics(contentLevel, selectedSubject, country);
       setTopics(chunkList);
       setLoading(false);
     }
     loadSubjectTopics();
-  }, [selectedSubject, contentLevel]);
+  }, [selectedSubject, contentLevel, country]);
 
   const filteredTopics = topics.filter((t) => {
     if (visualOnlyFilter && !t.hasVisual) return false;
@@ -95,45 +101,63 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
         <div>
           <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold mb-1">
             <BookMarked className="w-4 h-4" />
-            <span>Curriculum Vault · {contentLevel}</span>
+            <span>Curriculum Vault · {country} · {contentLevel}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
-            <span>ZIMSEC &amp; Cambridge Study Pack</span>
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 font-normal">
-              Textbook Depth + Visuals
-            </span>
+            <span>{isZim ? 'ZIMSEC & Cambridge Study Pack' : `${country} Study Pack`}</span>
+            {hasPack && (
+              <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 font-normal">
+                Textbook Depth + Visuals
+              </span>
+            )}
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
-            Rich structured textbook lessons, formulas, step-by-step mechanisms &amp; interactive vector diagrams.
+            {hasPack
+              ? 'Rich structured textbook lessons, formulas, step-by-step mechanisms & interactive vector diagrams.'
+              : `${country} · ${contentLevel}`}
           </p>
         </div>
 
         {/* View Switcher: Modules vs Diagrams Gallery */}
-        <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-slate-900/80 border border-white/[0.08] self-start sm:self-auto shadow-inner">
-          <button
-            onClick={() => { setActiveViewMode('modules'); setSelectedTopic(null); }}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
-              activeViewMode === 'modules'
-                ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>Syllabus Modules</span>
-          </button>
-          <button
-            onClick={() => { setActiveViewMode('diagrams'); setSelectedTopic(null); }}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
-              activeViewMode === 'diagrams'
-                ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <ImageIcon className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Visual Diagrams ({allVisualTopics.length})</span>
-          </button>
-        </div>
+        {hasPack && (
+          <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-slate-900/80 border border-white/[0.08] self-start sm:self-auto shadow-inner">
+            <button
+              onClick={() => { setActiveViewMode('modules'); setSelectedTopic(null); }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                activeViewMode === 'modules'
+                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Syllabus Modules</span>
+            </button>
+            <button
+              onClick={() => { setActiveViewMode('diagrams'); setSelectedTopic(null); }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                activeViewMode === 'diagrams'
+                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <ImageIcon className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Visual Diagrams ({allVisualTopics.length})</span>
+            </button>
+          </div>
+        )}
       </div>
+
+      {!hasPack ? (
+        <div className="p-10 sm:p-14 rounded-3xl glass-panel border border-white/[0.06] min-h-[260px] flex flex-col items-center justify-center text-center space-y-2 animate-fadeIn">
+          <div className="w-11 h-11 rounded-2xl bg-slate-900/80 border border-white/[0.08] flex items-center justify-center text-slate-400">
+            <BookOpen className="w-5 h-5" />
+          </div>
+          <p className="text-sm font-medium text-slate-400">
+            No study modules available for {country} yet.
+          </p>
+        </div>
+      ) : (
+        <>
 
       {/* VIEW MODE 1: DIAGRAMS GALLERY */}
       {activeViewMode === 'diagrams' && !selectedTopic && (
@@ -209,11 +233,15 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
             </button>
 
             <button
-              onClick={() => onAskZexa(`Can you tutor me on ${selectedTopic.topic} in ZIMSEC ${contentLevel}? Please explain step-by-step and give exam tips.`)}
+              onClick={() =>
+                onAskZexa(
+                  `Can you tutor me on ${selectedTopic.topic} in ${isZim ? `ZIMSEC ${contentLevel}` : `${country} ${contentLevel}`}? Please explain step-by-step and give exam tips.`
+                )
+              }
               className="flex items-center gap-2 px-4 py-2 rounded-xl btn-primary-gradient text-xs font-bold transition-all shrink-0 active:scale-95 shadow-md"
             >
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>Ask ZEXA About This</span>
+              <span>Ask ZEXA AI About This</span>
             </button>
           </div>
 
@@ -246,6 +274,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
               <StudyDiagram
                 diagramId={selectedTopic.diagramId as DiagramId}
                 caption={selectedTopic.visualCaption || selectedTopic.summary}
+                isZim={isZim}
               />
             </div>
           )}
@@ -405,6 +434,8 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
           )}
 
         </div>
+      )}
+        </>
       )}
 
     </div>

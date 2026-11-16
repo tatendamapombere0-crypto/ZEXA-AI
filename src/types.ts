@@ -90,3 +90,122 @@ export interface UserSubscription {
   paidForTerm: string;
   termEndDate: number;
 }
+
+export interface CountryConfig {
+  id: string;
+  code: string;
+  flag: string;
+  name: string;
+  region?: string;
+  curriculum: string;
+  curriculumLabel: string;
+  hasCurriculumPack?: boolean;
+  badge: string;
+  description: string;
+}
+
+export const SUPPORTED_COUNTRIES: CountryConfig[] = [
+  {
+    id: 'Zimbabwe',
+    code: 'ZW',
+    flag: '🇿🇼',
+    name: 'Zimbabwe',
+    region: 'Africa',
+    curriculum: 'ZIMSEC & Heritage-Based Curriculum',
+    curriculumLabel: 'ZIMSEC & Heritage-Based Curriculum',
+    hasCurriculumPack: true,
+    badge: 'ZIMSEC · HBC',
+    description: 'Full Zimbabwe national data, ZIMSEC Grade 7, O-Level & A-Level syllabi, ChiShona/IsiNdebele, and Heritage Studies.'
+  },
+  {
+    id: 'South Africa',
+    code: 'ZA',
+    flag: '🇿🇦',
+    name: 'South Africa',
+    curriculum: 'Global & CAPS-Aligned Academics',
+    curriculumLabel: 'Global & CAPS-Aligned Academics',
+    badge: 'Global STEM',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'Zambia',
+    code: 'ZM',
+    flag: '🇿🇲',
+    name: 'Zambia',
+    curriculum: 'Global & Regional Academics',
+    curriculumLabel: 'Global & Regional Academics',
+    badge: 'Global STEM',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'Botswana',
+    code: 'BW',
+    flag: '🇧🇼',
+    name: 'Botswana',
+    curriculum: 'Global & Cambridge Academics',
+    curriculumLabel: 'Global & Cambridge Academics',
+    badge: 'Cambridge / Global',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'Namibia',
+    code: 'NA',
+    flag: '🇳🇦',
+    name: 'Namibia',
+    curriculum: 'Global & NSSCO Academics',
+    curriculumLabel: 'Global & NSSCO Academics',
+    badge: 'Global STEM',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'Kenya',
+    code: 'KE',
+    flag: '🇰🇪',
+    name: 'Kenya',
+    curriculum: 'Global & International Academics',
+    curriculumLabel: 'Global & International Academics',
+    badge: 'Global STEM',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'Nigeria',
+    code: 'NG',
+    flag: '🇳🇬',
+    name: 'Nigeria',
+    curriculum: 'Global & International Academics',
+    curriculumLabel: 'Global & International Academics',
+    badge: 'Global STEM',
+    description: 'International STEM, Mathematics, Sciences, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'United Kingdom',
+    code: 'UK',
+    flag: '🇬🇧',
+    name: 'United Kingdom',
+    curriculum: 'Cambridge / GCSE & A-Level',
+    curriculumLabel: 'Cambridge / GCSE & A-Level',
+    badge: 'Cambridge / UK',
+    description: 'International Sciences, Mathematics, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'United States',
+    code: 'US',
+    flag: '🇺🇸',
+    name: 'United States',
+    curriculum: 'Global STEM & General Studies',
+    curriculumLabel: 'Global STEM & General Studies',
+    badge: 'Global STEM',
+    description: 'International Sciences, Mathematics, English, and Global Reasoning without Zimbabwe-only local data.'
+  },
+  {
+    id: 'International / Other',
+    code: 'GLB',
+    flag: '🌍',
+    name: 'International / Other',
+    curriculum: 'Global International Curriculum',
+    curriculumLabel: 'Global International Curriculum',
+    badge: 'Global',
+    description: 'Global Sciences, Mathematics, English, and AI Reasoning without Zimbabwe-only local data.'
+  }
+];
+

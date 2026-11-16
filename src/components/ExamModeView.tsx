@@ -24,9 +24,11 @@ import {
 import confetti from 'canvas-confetti';
 import { ExamManifestItem, ExamPaper, ExamQuestion } from '../types';
 import { ExamStore } from '../lib/examStore';
+import { StorageManager } from '../lib/storage';
 
 interface ExamModeViewProps {
   contentLevel: string;
+  country?: string;
   onAskZexaQuestion: (prompt: string, hint?: string) => void;
 }
 
@@ -34,7 +36,7 @@ interface ExamModeViewProps {
  * Professional Markdown & Marking Scheme Renderer for Paper 2 Structured Theory
  * Formats headings, numbered steps, bullet points, and official mark badges [X marks].
  */
-const Paper2AnswerRenderer: React.FC<{ text: string }> = ({ text }) => {
+const Paper2AnswerRenderer: React.FC<{ text: string; isZim?: boolean }> = ({ text, isZim = true }) => {
   if (!text) return null;
 
   const lines = text.split('\n');
@@ -86,7 +88,7 @@ const Paper2AnswerRenderer: React.FC<{ text: string }> = ({ text }) => {
         >
           <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm sm:text-[15px] mb-2 pb-2 border-b border-emerald-500/20">
             <Award className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>{guidanceTitle || 'ZIMSEC Examiner Mark Scheme Guidance'}</span>
+            <span>{guidanceTitle || (isZim ? 'ZIMSEC Examiner Mark Scheme Guidance' : 'Examiner Mark Scheme Guidance')}</span>
           </div>
           <div className="space-y-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed font-sans">
             {guidanceLines.map((gl, gIdx) => (
@@ -225,8 +227,11 @@ const Paper2AnswerRenderer: React.FC<{ text: string }> = ({ text }) => {
 
 export const ExamModeView: React.FC<ExamModeViewProps> = ({
   contentLevel,
+  country = 'Zimbabwe',
   onAskZexaQuestion
 }) => {
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const [papers, setPapers] = useState<ExamManifestItem[]>([]);
   const [subjects, setSubjects] = useState<string[]>([]);
   const [selectedSubject, setSelectedSubject] = useState<string>('All');
@@ -376,16 +381,19 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   useEffect(() => {
     async function loadPapers() {
       setLoading(true);
-      const subList = await ExamStore.getSubjects(contentLevel);
-      setSubjects(['All', ...subList]);
+      if (!hasPack || (!isZim && activePaperItem && ExamStore.isZimbabweSpecificPaper(activePaperItem))) {
+        handleExitPaper();
+      }
+      const subList = await ExamStore.getSubjects(contentLevel, country);
+      setSubjects(subList.length > 0 ? ['All', ...subList] : []);
       setSelectedSubject('All');
 
-      const paperList = await ExamStore.getPapers(contentLevel);
+      const paperList = await ExamStore.getPapers(contentLevel, undefined, country);
       setPapers(paperList);
       setLoading(false);
     }
     loadPapers();
-  }, [contentLevel]);
+  }, [contentLevel, country, isZim, hasPack]);
 
   const handleSelectPaper = async (item: ExamManifestItem) => {
     setLoading(true);
@@ -505,18 +513,29 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
         <div>
           <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold mb-1">
             <GraduationCap className="w-4 h-4" />
-            <span>Official Examination Cockpit · {contentLevel}</span>
+            <span>Official Examination Cockpit · {country} · {contentLevel}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-            ZIMSEC Past Papers &amp; Timed Mocks
+            {isZim ? 'ZIMSEC Past Papers & Timed Mocks' : `${country} Practice Papers`}
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
-            Real past examination papers with instant marking, answer guides, and AI coaching.
+            {hasPack
+              ? 'Real past examination papers with instant marking, answer guides, and AI coaching.'
+              : `${country} · ${contentLevel}`}
           </p>
         </div>
       </div>
 
-      {activePaper ? (
+      {!hasPack ? (
+        <div className="p-10 sm:p-14 rounded-3xl glass-panel border border-white/[0.06] min-h-[260px] flex flex-col items-center justify-center text-center space-y-2 animate-fadeIn">
+          <div className="w-11 h-11 rounded-2xl bg-slate-900/80 border border-white/[0.08] flex items-center justify-center text-slate-400">
+            <GraduationCap className="w-5 h-5" />
+          </div>
+          <p className="text-sm font-medium text-slate-400">
+            No exam papers available for {country} yet.
+          </p>
+        </div>
+      ) : activePaper ? (
         /* Active Paper Exam View */
         <div className="space-y-4">
           {/* Top Paper Header Bar */}
@@ -689,11 +708,12 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <button
                     onClick={() => {
                       const q = activePaper.questions[currentQIndex];
+                      const boardPrefix = isZim ? 'ZIMSEC ' : '';
                       const prompt = isCurrentPaper1
-                        ? `Help me solve this ZIMSEC ${activePaper.subject} examination question:\n\n${q.questionText}\n\nOptions:\n${(q.options || [])
+                        ? `Help me solve this ${boardPrefix}${activePaper.subject} examination question:\n\n${q.questionText}\n\nOptions:\n${(q.options || [])
                             .map((o) => `${o.letter}) ${o.text}`)
                             .join('\n')}`
-                        : `Help me structure a full-mark model answer for this ZIMSEC ${activePaper.subject} Paper 2 structured question:\n\n${q.questionText}`;
+                        : `Help me structure a full-mark model answer for this ${boardPrefix}${activePaper.subject} Paper 2 structured question:\n\n${q.questionText}`;
                       const hint = q.explanation
                         ? `Official Marking Scheme Reference:\n${q.explanation}`
                         : undefined;
@@ -791,7 +811,9 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                           Structured Question &amp; Extended Essay Workspace
                         </h4>
                         <p className="text-xs text-slate-300 mt-0.5">
-                          Formulate your response below in your rough notes, then verify with the official ZIMSEC criteria.
+                          {isZim
+                            ? 'Formulate your response below in your rough notes, then verify with the official ZIMSEC criteria.'
+                            : 'Formulate your response below in your rough notes, then verify with the official marking criteria.'}
                         </p>
                       </div>
                     </div>
@@ -863,7 +885,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <div className="flex items-center justify-between gap-2 border-b border-white/[0.08] pb-2.5">
                     <div className="flex items-center gap-2 font-bold text-cyan-300 font-mono text-xs uppercase tracking-wide">
                       <HelpCircle className="w-4 h-4 text-cyan-400" />
-                      <span>🏛️ Official ZIMSEC Marking Scheme &amp; Solution Notes</span>
+                      <span>{isZim ? '🏛️ Official ZIMSEC Marking Scheme & Solution Notes' : '🏛️ Official Marking Scheme & Solution Notes'}</span>
                     </div>
 
                     <button
@@ -887,14 +909,14 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
                   {/* Render using the rich structured Paper 2 / MCQ solution renderer */}
                   <div className="text-slate-200">
-                    <Paper2AnswerRenderer text={activePaper.questions[currentQIndex].explanation} />
+                    <Paper2AnswerRenderer text={activePaper.questions[currentQIndex].explanation} isZim={isZim} />
                   </div>
 
                   {/* Examiner Insight Note */}
                   <div className="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/20 flex items-start gap-2.5 text-xs text-slate-300">
                     <Lightbulb className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white font-semibold">ZIMSEC Examiner Strategy:</strong>{' '}
+                      <strong className="text-white font-semibold">{isZim ? 'ZIMSEC Examiner Strategy:' : 'Examiner Strategy:'}</strong>{' '}
                       Review every mark allocation breakdown. Full marks require precise academic terminology, step-by-step methods, and adherence to official syllabus key points.
                     </div>
                   </div>

@@ -28,6 +28,7 @@ interface ChatViewProps {
   setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
   educationLevel: EducationLevel;
   contentLevel: string;
+  country?: string;
   subscriptionStatus: SubscriptionStatus;
   queriesUsedToday: number;
   dailyLimit: number;
@@ -41,9 +42,10 @@ interface ChatViewProps {
 interface AnswerRendererProps {
   text: string;
   isUser?: boolean;
+  isZim?: boolean;
 }
 
-const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUser }) => {
+const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUser, isZim = true }) => {
   if (isUser) {
     return (
       <div className="whitespace-pre-wrap select-text leading-relaxed font-sans text-[14.5px] sm:text-base text-white">
@@ -143,7 +145,7 @@ const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUse
         >
           <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm sm:text-[15px] mb-2.5 pb-2 border-b border-emerald-500/20">
             <GraduationCap className="w-5 h-5 text-emerald-400 shrink-0" />
-            <span>{guidanceTitle || 'ZIMSEC Examiner Mark Scheme Guidance'}</span>
+            <span>{guidanceTitle || (isZim ? 'ZIMSEC Examiner Mark Scheme Guidance' : 'Examiner Mark Scheme Guidance')}</span>
           </div>
           <div className="space-y-2 text-xs sm:text-sm text-emerald-100/90 leading-relaxed font-sans">
             {guidanceLines.map((gl, gIdx) => (
@@ -334,6 +336,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
   setMessages,
   educationLevel,
   contentLevel,
+  country = 'Zimbabwe',
   subscriptionStatus,
   queriesUsedToday,
   dailyLimit,
@@ -343,6 +346,8 @@ export const ChatView: React.FC<ChatViewProps> = ({
   activeExamPrompt,
   onClearActiveExamPrompt
 }) => {
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const [inputText, setInputText] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -422,6 +427,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
 
     await AIEngine.generate(text, {
       level: contentLevel,
+      country,
       hint,
       history: conversationHistory,
       engineType: qwenState.status === 'ready' || QwenEngine.isReady() ? 'qwen-neural' : 'zexa-instant',
@@ -478,9 +484,27 @@ export const ChatView: React.FC<ChatViewProps> = ({
       educationLevel.includes('Forms 5') ||
       contentLevel === 'A-Level';
 
+    if (!hasPack) {
+      const levelLabel = isPrimary
+        ? 'PRIMARY'
+        : isTertiary
+        ? 'TERTIARY'
+        : isALevel
+        ? 'A-LEVEL / SENIOR'
+        : 'SECONDARY / O-LEVEL';
+
+      return {
+        badge: `${country.toUpperCase()} · ${levelLabel}`,
+        title: `${country} AI Tutor`,
+        desc: `Ask ZEXA AI any ${levelLabel.toLowerCase()} study question, problem, or topic below.`,
+        placeholder: `Ask ZEXA AI any ${country} question...`,
+        suggestions: [] as Array<{ subject: string; text: string }>
+      };
+    }
+
     if (isPrimary) {
       return {
-        badge: 'GRADE 1 - 7 PRIMARY',
+        badge: 'ZIMBABWE · GRADE 1 - 7 PRIMARY',
         title: 'Primary Curriculum Revision',
         desc: 'Explore all 6 official ZIMSEC subjects: English, Mathematics, Agric Science & Tech, Shona, Social Science, and Physical Edu & Arts.',
         placeholder: 'Ask ZEXA AI about any Primary subject or type in ChiShona...',
@@ -507,7 +531,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
 
     if (isTertiary) {
       return {
-        badge: 'TERTIARY & HIGHER EDUCATION',
+        badge: 'ZIMBABWE · TERTIARY & HIGHER EDUCATION',
         title: 'Research & Advanced Academics',
         desc: 'Advanced technical revision, research methodology, macroeconomics, and higher engineering modules.',
         placeholder: 'Ask ZEXA AI for advanced academic research and analysis...',
@@ -518,7 +542,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
           },
           {
             subject: 'Computer Science',
-            text: 'Explain neural network quantization (GGUF 4-bit) for offline edge AI'
+            text: 'Explain neural network quantization (4-bit) for offline edge AI'
           },
           {
             subject: 'Research Methodology',
@@ -534,7 +558,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
 
     if (isALevel) {
       return {
-        badge: 'SECONDARY · A-LEVEL (FORMS 5 - 6)',
+        badge: 'ZIMBABWE · A-LEVEL (FORMS 5 - 6)',
         title: 'A-Level Examination Mastery',
         desc: 'In-depth coverage for Pure Math, Physics, Chemistry, Biology, History (9155), Literature, Accounting & Geography.',
         placeholder: 'Ask ZEXA AI about A-Level syllabus, past papers, or marking schemes...',
@@ -559,9 +583,9 @@ export const ChatView: React.FC<ChatViewProps> = ({
       };
     }
 
-    // Default: O-Level
+    // Default: O-Level (Zimbabwe)
     return {
-      badge: 'SECONDARY · O-LEVEL (FORMS 1 - 4)',
+      badge: 'ZIMBABWE · O-LEVEL (FORMS 1 - 4)',
       title: 'O-Level Syllabus & Exam Prep',
       desc: 'Master Combined Science, Mathematics 4004, Geography 4022, History 2167, English 4005, and Commerce.',
       placeholder: 'Ask ZEXA AI any O-Level syllabus question or past exam paper doubt...',
@@ -621,34 +645,36 @@ export const ChatView: React.FC<ChatViewProps> = ({
             <p className="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl mx-auto mb-5">
               {levelInfo.desc}
             </p>
-            {/* Categorized Question Starter Cards (Silicon Valley Grid) */}
-            <div className="text-left max-w-2xl mx-auto space-y-2.5">
-              <p className="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
-                <Lightbulb className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Recommended Exam Questions:</span>
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {levelInfo.suggestions.map((item, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleSendMessage(item.text)}
-                    className="p-3 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.08] hover:border-cyan-500/40 text-left transition-all group flex flex-col justify-between gap-2 shadow-sm hover:shadow-[0_4px_20px_rgba(6,182,212,0.12)] active:scale-98"
-                  >
-                    <span className="text-[10px] font-mono font-semibold text-cyan-400 uppercase tracking-wide">
-                      {item.subject}
-                    </span>
-                    <span className="text-xs text-slate-200 group-hover:text-white font-medium line-clamp-2 leading-relaxed">
-                      {item.text}
-                    </span>
-                    <div className="flex items-center justify-end text-slate-500 group-hover:text-cyan-400 text-[11px] mt-1 font-mono">
-                      <span>Ask ZEXA</span>
-                      <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
-                    </div>
-                  </button>
-                ))}
+            {/* Categorized Question Starter Cards (Shown only when curriculum data pack is loaded) */}
+            {levelInfo.suggestions.length > 0 && (
+              <div className="text-left max-w-2xl mx-auto space-y-2.5">
+                <p className="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
+                  <Lightbulb className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Recommended Exam Questions:</span>
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {levelInfo.suggestions.map((item, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => handleSendMessage(item.text)}
+                      className="p-3 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.08] hover:border-cyan-500/40 text-left transition-all group flex flex-col justify-between gap-2 shadow-sm hover:shadow-[0_4px_20px_rgba(6,182,212,0.12)] active:scale-98"
+                    >
+                      <span className="text-[10px] font-mono font-semibold text-cyan-400 uppercase tracking-wide">
+                        {item.subject}
+                      </span>
+                      <span className="text-xs text-slate-200 group-hover:text-white font-medium line-clamp-2 leading-relaxed">
+                        {item.text}
+                      </span>
+                      <div className="flex items-center justify-end text-slate-500 group-hover:text-cyan-400 text-[11px] mt-1 font-mono">
+                        <span>Ask ZEXA AI</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
+                      </div>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
           </div>
         )}
@@ -688,7 +714,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
                       />
                       <div className="flex items-center gap-2">
                         <span className="font-extrabold text-white text-sm sm:text-[15px] tracking-tight">
-                          ZEXA AI Brain
+                          ZEXA AI
                         </span>
                         <span className="text-slate-500 text-xs">·</span>
                         <span className="text-xs text-cyan-400 font-mono font-medium">
@@ -697,18 +723,29 @@ export const ChatView: React.FC<ChatViewProps> = ({
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-full">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>ZIMSEC Verified Answer</span>
-                    </div>
+                    {!hasPack || (msg.metrics && msg.metrics.includes('• ZEXA AI') && !msg.metrics.includes('Offline Core')) ? (
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-cyan-300 bg-cyan-950/70 border border-cyan-500/40 px-2.5 py-1 rounded-full">
+                        <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                        <span>ZEXA AI Answer</span>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-full">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                        <span>{isZim ? 'ZIMSEC Verified Answer' : 'Verified Curriculum Answer'}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Message Content */}
                   {msg.text ? (
-                    <ProfessionalAnswerRenderer text={msg.text} isUser={false} />
+                    <ProfessionalAnswerRenderer text={msg.text} isUser={false} isZim={isZim} />
                   ) : (
                     <div className="flex items-center gap-2.5 text-cyan-400 font-mono text-xs py-3">
-                      <span>SYNTHESIZING VERIFIED ANSWER</span>
+                      <span>
+                        {!hasPack || qwenState.status === 'ready' || QwenEngine.isReady()
+                          ? 'ZEXA AI THINKING'
+                          : 'SYNTHESIZING VERIFIED ANSWER'}
+                      </span>
                       <span className="inline-flex gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-bounce" />
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-bounce [animation-delay:0.2s]" />
@@ -717,12 +754,22 @@ export const ChatView: React.FC<ChatViewProps> = ({
                     </div>
                   )}
 
-                  {/* Action Footer: Source Citation + Copy Button */}
+                  {/* Action Footer: Source Citation, Engine Metrics + Copy Button */}
                   {!msg.isUser && msg.text && (
                     <div className="mt-5 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
-                      <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-400">
-                        <BookCheck className="w-3.5 h-3.5 text-cyan-400" />
-                        <span>{msg.source || `ZIMSEC ${contentLevel} Syllabus Curriculum`}</span>
+                      <div className="flex flex-col gap-0.5 text-[11px] font-mono text-slate-400">
+                        <div className="flex items-center gap-1.5">
+                          <BookCheck className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                          <span>
+                            {msg.source ||
+                              (isZim
+                                ? `ZIMSEC ${contentLevel} Syllabus Curriculum`
+                                : `ZEXA AI · ${country} (${contentLevel})`)}
+                          </span>
+                        </div>
+                        {msg.metrics && (
+                          <span className="text-[10px] text-slate-500 pl-5">{msg.metrics}</span>
+                        )}
                       </div>
 
                       <button

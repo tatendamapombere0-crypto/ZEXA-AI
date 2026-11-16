@@ -1,7 +1,7 @@
 // public/sw.js
 // ZEXA AI Service Worker for PWA Offline Caching & Automated Study Notifications
 
-const CACHE_NAME = 'zexa-ai-v4.1.0';
+const CACHE_NAME = 'zexa-ai-v5.0.0';
 const PRECACHE_ASSETS = [
   '/',
   '/index.html',
@@ -23,7 +23,7 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activate event: purge old caches
+// Activate event: purge old caches immediately
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
@@ -34,15 +34,22 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch event: Offline-First caching strategy for assets and exam papers
+// Fetch event: Network-First for app code/HTML so updates apply immediately, Cache-First for heavy offline packs/WASM/images
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Skip non-GET requests or external analytics
-  if (event.request.method !== 'GET') return;
+  // Skip non-GET requests or external origins
+  if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
 
-  // Let large .gguf model files bypass Cache API put() (handled cleanly by Wllama OPFS/CacheManager + HTTP Range)
-  if (url.pathname.endsWith('.gguf') || event.request.headers.has('range')) {
+  // Never intercept service worker script updates, Vite dev server HMR modules, or large .gguf files
+  if (
+    url.pathname === '/sw.js' ||
+    url.pathname.startsWith('/src/') ||
+    url.pathname.startsWith('/@') ||
+    url.pathname.startsWith('/node_modules/') ||
+    url.pathname.endsWith('.gguf') ||
+    event.request.headers.has('range')
+  ) {
     return;
   }
 
@@ -64,8 +71,14 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. Exam assets, JSON files, WASM, images: Cache-first with background revalidation
-  if (url.pathname.startsWith('/assets/') || url.pathname.endsWith('.json') || url.pathname.endsWith('.wasm') || url.pathname.endsWith('.png') || url.pathname.endsWith('.svg')) {
+  // 2. Heavy immutable offline packs, JSON knowledge banks, WASM, images: Cache-first with background revalidation
+  if (
+    url.pathname.endsWith('.json') ||
+    url.pathname.endsWith('.wasm') ||
+    url.pathname.endsWith('.png') ||
+    url.pathname.endsWith('.svg') ||
+    url.pathname.endsWith('.ico')
+  ) {
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
         if (cachedResponse) {
@@ -90,7 +103,6 @@ self.addEventListener('fetch', (event) => {
             return networkResponse;
           })
           .catch((fetchError) => {
-            // Return empty JSON fallback for failed JSON requests when completely offline
             if (url.pathname.endsWith('.json')) {
               return new Response(JSON.stringify({ error: 'offline', offline: true }), {
                 headers: { 'Content-Type': 'application/json' }
@@ -103,17 +115,17 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 3. General static scripts & styles
+  // 3. App scripts & styles: Network-First so new builds apply immediately, with offline cache fallback
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request).then((res) => {
+    fetch(event.request)
+      .then((res) => {
         if (res && res.status === 200) {
           const clone = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
         return res;
-      }).catch(() => cached);
-    })
+      })
+      .catch(() => caches.match(event.request))
   );
 });
 

@@ -15,9 +15,11 @@ import {
   CheckCircle2,
   Crown,
   Bell,
-  Upload
+  Upload,
+  Globe
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
+import { WORLD_COUNTRIES, findCountryConfig } from '../data/worldCountries';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
 import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
@@ -36,6 +38,8 @@ interface SettingsModalProps {
   onResetQueries: () => void;
   onClearChat: () => void;
   onLogout: () => void;
+  country?: string;
+  onCountryChange?: (newCountry: string) => void;
 }
 
 export const SettingsModal: React.FC<SettingsModalProps> = ({
@@ -51,7 +55,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onOpenNotifications,
   onResetQueries,
   onClearChat,
-  onLogout
+  onLogout,
+  country = 'Zimbabwe',
+  onCountryChange
 }) => {
   const [activationCode, setActivationCode] = useState('');
   const [activationFeedback, setActivationFeedback] = useState<{
@@ -70,8 +76,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const ggufFileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    setQwenState(QwenEngine.getStatus());
     return QwenEngine.subscribe(setQwenState);
-  }, []);
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -80,6 +87,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const userEmail = StorageManager.getSessionUserEmail();
   const isPremium = subscriptionStatus === 'PREMIUM';
   const remainingQueries = Math.max(0, dailyLimit - queriesUsedToday);
+  const isZim = StorageManager.isZimbabweAccount(country);
+  const hasPack = StorageManager.hasCountryCurriculumPack(country);
+  const countryConfig = findCountryConfig(country);
 
   const handleApplyActivationCode = (e: React.FormEvent) => {
     e.preventDefault();
@@ -161,7 +171,84 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </button>
         </div>
 
-        {/* 1. ACTIVATION CODE & SUBSCRIPTION STATUS */}
+        {/* 1. ZEXA AI ENGINE — TOP FOR INSTANT ACCESS */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#0e1b33]/90 via-[#0e1628]/95 to-[#080d1a] border border-cyan-500/40 shadow-lg space-y-2.5">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
+              <Cpu className="w-4 h-4" /> ZEXA AI Engine
+            </div>
+            <span
+              className={`text-[10px] font-mono px-2 py-0.5 rounded-full border font-bold ${
+                qwenState.status === 'ready'
+                  ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/30'
+                  : qwenState.status === 'loading' || qwenState.status === 'checking'
+                  ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/30'
+                  : 'bg-amber-950/80 text-amber-300 border-amber-500/30'
+              }`}
+            >
+              {qwenState.status === 'ready'
+                ? 'ZEXA AI Connected'
+                : qwenState.status === 'loading'
+                ? `Loading ${qwenState.progress}%`
+                : 'ZEXA AI Active'}
+            </span>
+          </div>
+          <div className="text-xs text-slate-300 space-y-2">
+            <p className="font-bold text-white text-sm">ZEXA AI</p>
+            <p className="text-[11px] text-slate-400">{qwenState.statusText}</p>
+            {qwenState.error && (
+              <p className="text-[11px] text-amber-300">{qwenState.error}</p>
+            )}
+
+            {qwenState.status === 'loading' && (
+              <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden mt-1.5 border border-white/[0.08]">
+                <div
+                  className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
+                  style={{ width: `${qwenState.progress}%` }}
+                />
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-2 pt-1">
+              <input
+                ref={ggufFileInputRef}
+                type="file"
+                accept=".gguf,application/octet-stream,*/*"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) QwenEngine.loadModelFromFile(file);
+                  e.target.value = '';
+                }}
+                className="hidden"
+              />
+              <button
+                type="button"
+                onClick={() => ggufFileInputRef.current?.click()}
+                disabled={qwenState.status === 'loading'}
+                className="px-3.5 py-2 rounded-xl btn-primary-gradient text-slate-950 disabled:opacity-50 text-xs font-bold flex items-center gap-1.5 shadow-md transition-all active:scale-95"
+              >
+                <Upload className="w-3.5 h-3.5" />
+                <span>Load Local Brain File</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => QwenEngine.loadModel()}
+                disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+                className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />
+                <span>Refresh Offline Brain</span>
+              </button>
+            </div>
+
+            <p className="text-[11px] text-slate-400 leading-relaxed">
+              Operates 100% offline on your device with zero mobile data required.
+            </p>
+          </div>
+        </div>
+
+        {/* 2. ACTIVATION CODE & SUBSCRIPTION STATUS */}
         <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#121c32]/80 via-[#0e1628]/90 to-[#080d1a] border border-cyan-500/30 space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs font-bold text-cyan-300 uppercase tracking-wider">
@@ -180,7 +267,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           <p className="text-xs text-slate-300 leading-relaxed">
             {isPremium
-              ? 'Your device is fully activated with unlimited offline access to all subjects, exam questions, and ChiShona tutoring.'
+              ? hasPack
+                ? 'Your device is fully activated with unlimited offline access to all subjects, exam questions, and ChiShona tutoring.'
+                : `Your device is activated with unlimited offline ZEXA AI tutoring for ${country}.`
               : 'Enter your school activation code or scratch card key below to unlock unlimited offline queries.'}
           </p>
 
@@ -231,139 +320,94 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </div>
         </div>
 
-        {/* 2. CURRICULUM LEVEL SWITCHER */}
-        <div className="p-4 rounded-2xl glass-panel space-y-2.5">
+        {/* 3. ACCOUNT COUNTRY & CURRICULUM LEVEL SWITCHER */}
+        <div className="p-4 rounded-2xl glass-panel space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
-              <Layers className="w-4 h-4" /> Curriculum Level
+              <Globe className="w-4 h-4" /> Account Country &amp; Curriculum
+            </div>
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300">
+              {countryConfig.flag} {country}
+            </span>
+          </div>
+
+          {onCountryChange && (
+            <div className="space-y-1.5">
+              <select
+                value={country}
+                onChange={(e) => onCountryChange(e.target.value)}
+                className="w-full px-3 py-2 rounded-xl bg-slate-900/90 border border-white/[0.1] focus:border-cyan-400 focus:outline-none text-white text-xs font-medium"
+              >
+                {WORLD_COUNTRIES.map((c) => (
+                  <option key={c.code} value={c.name} className="bg-slate-900 text-white">
+                    {c.flag} {c.name}
+                  </option>
+                ))}
+              </select>
+              <p className="text-[11px] text-slate-400">
+                {hasPack
+                  ? 'Zimbabwe Heritage, ChiShona, Social Science, and ZIMSEC curriculum data are enabled for this account.'
+                  : `${countryConfig.flag} Account country: ${country}.`}
+              </p>
+            </div>
+          )}
+
+          <div className="pt-2 border-t border-white/[0.06] flex items-center justify-between">
+            <div>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1">
+                <Layers className="w-3.5 h-3.5" /> Curriculum Level
+              </div>
+              <p className="text-sm font-semibold text-white">
+                {educationLevel}
+              </p>
+              <p className="text-xs text-slate-400">
+                Active focus: <span className="text-cyan-300">{contentLevel}</span>
+              </p>
             </div>
             <button
               type="button"
               onClick={onOpenLevelSelect}
-              className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/60 transition-all"
+              className="text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/60 transition-all shrink-0"
             >
               Change Level
             </button>
           </div>
-          <p className="text-sm font-semibold text-white">
-            {educationLevel}
-          </p>
-          <p className="text-xs text-slate-400">
-            Current syllabus focus: <span className="text-cyan-300">{contentLevel}</span>
-          </p>
         </div>
 
-        {/* 3. ZEXA AI BRAIN ARCHITECTURE (Qwen 2.5 0.5B GGUF + JSON RAG) */}
-        <div className="p-4 rounded-2xl glass-panel space-y-2.5">
-          <div className="flex items-center justify-between">
+        {/* 4. LANGUAGE SELECTOR (Zimbabwe accounts include bilingual ChiShona) */}
+        {isZim && (
+          <div className="p-4 rounded-2xl glass-panel space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
-              <Cpu className="w-4 h-4" /> AI Brain Engine
+              <Languages className="w-4 h-4" /> Language Preference
             </div>
-            <span
-              className={`text-[10px] font-mono px-2 py-0.5 rounded-full border font-bold ${
-                qwenState.status === 'ready'
-                  ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/30'
-                  : qwenState.status === 'loading' || qwenState.status === 'checking'
-                  ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/30'
-                  : 'bg-amber-950/80 text-amber-300 border-amber-500/30'
-              }`}
-            >
-              {qwenState.status === 'ready'
-                ? 'Qwen GGUF Connected'
-                : qwenState.status === 'loading'
-                ? `Loading ${qwenState.progress}%`
-                : 'JSON RAG Active'}
-            </span>
-          </div>
-          <div className="text-xs text-slate-300 space-y-1.5">
-            <p className="font-bold text-white text-sm">Qwen 2.5 (0.5B Q4_K_M GGUF) + JSON RAG</p>
-            <p className="text-[11px] text-slate-400">{qwenState.statusText}</p>
-            {qwenState.error && (
-              <p className="text-[11px] text-amber-300">{qwenState.error}</p>
-            )}
-            <div className="grid grid-cols-2 gap-1.5 font-mono text-[11px] text-slate-400 pt-1">
-              <div>• Model: {qwenState.modelName}</div>
-              <div>• Mode: 100% Offline WASM</div>
-              <div>• Knowledge: 8,260+ Topics</div>
-              <div>• Exam Bank: 4,360+ Verified Qs</div>
-            </div>
-
-            {qwenState.status === 'loading' && (
-              <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden mt-1.5">
-                <div
-                  className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
-                  style={{ width: `${qwenState.progress}%` }}
-                />
-              </div>
-            )}
-
-            <div className="flex flex-wrap gap-2 pt-2">
+            <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                onClick={() => QwenEngine.loadModel()}
-                disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
-                className="px-3 py-1.5 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+                onClick={() => handleLanguageChange('en')}
+                className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
+                  preferredLang === 'en'
+                    ? 'bg-cyan-950/80 border-cyan-400/80 text-cyan-300 shadow'
+                    : 'bg-slate-900/60 border-white/[0.08] text-slate-400 hover:text-white'
+                }`}
               >
-                <RefreshCw className="w-3.5 h-3.5" />
-                <span>Scan /assets/ GGUF</span>
+                English (Primary)
               </button>
-
-              <input
-                ref={ggufFileInputRef}
-                type="file"
-                accept=".gguf"
-                onChange={(e) => {
-                  const file = e.target.files?.[0];
-                  if (file) QwenEngine.loadModelFromFile(file);
-                  e.target.value = '';
-                }}
-                className="hidden"
-              />
               <button
                 type="button"
-                onClick={() => ggufFileInputRef.current?.click()}
-                disabled={qwenState.status === 'loading'}
-                className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 border border-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 transition-all"
+                onClick={() => handleLanguageChange('sn')}
+                className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
+                  preferredLang === 'sn'
+                    ? 'bg-cyan-950/80 border-cyan-400/80 text-cyan-300 shadow'
+                    : 'bg-slate-900/60 border-white/[0.08] text-slate-400 hover:text-white'
+                }`}
               >
-                <Upload className="w-3.5 h-3.5" />
-                <span>Load Local .gguf</span>
+                ChiShona (Bilingual)
               </button>
             </div>
           </div>
-        </div>
+        )}
 
-        {/* 4. LANGUAGE SELECTOR */}
-        <div className="p-4 rounded-2xl glass-panel space-y-2.5">
-          <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
-            <Languages className="w-4 h-4" /> Language Preference
-          </div>
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              type="button"
-              onClick={() => handleLanguageChange('en')}
-              className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
-                preferredLang === 'en'
-                  ? 'bg-cyan-950/80 border-cyan-400/80 text-cyan-300 shadow'
-                  : 'bg-slate-900/60 border-white/[0.08] text-slate-400 hover:text-white'
-              }`}
-            >
-              English (Primary)
-            </button>
-            <button
-              type="button"
-              onClick={() => handleLanguageChange('sn')}
-              className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
-                preferredLang === 'sn'
-                  ? 'bg-cyan-950/80 border-cyan-400/80 text-cyan-300 shadow'
-                  : 'bg-slate-900/60 border-white/[0.08] text-slate-400 hover:text-white'
-              }`}
-            >
-              ChiShona (Bilingual)
-            </button>
-          </div>
-        </div>
-
-        {/* 5. DAILY STUDY REMINDERS (HARARE TIME: 6:00 AM, 12:00 PM, 6:00 PM) */}
+        {/* 5. DAILY STUDY REMINDERS */}
         <div className="p-4 rounded-2xl glass-panel space-y-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
@@ -380,17 +424,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             )}
           </div>
           <p className="text-xs text-slate-300">
-            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> Harare Time (CAT).
+            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> {isZim ? 'Harare Time (CAT)' : 'Local Time'}.
           </p>
           <div className="flex flex-wrap gap-2 pt-0.5">
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌅 06:00 CAT
+              🌅 06:00 {isZim ? 'CAT' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              ☀️ 12:00 CAT
+              ☀️ 12:00 {isZim ? 'CAT' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌙 18:00 CAT
+              🌙 18:00 {isZim ? 'CAT' : ''}
             </span>
           </div>
         </div>
@@ -501,10 +545,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         {/* 8. FOOTER (NO LOGO ON BELOW SECTION) */}
         <div className="pt-2 text-center text-[11px] text-slate-500 space-y-1">
           <p className="font-semibold text-slate-400">
-            ZEXA AI Zimbabwe · First Zimbabwe OFFLINE AI Engine
+            {isZim
+              ? 'ZEXA AI Zimbabwe · First Zimbabwe OFFLINE AI Engine'
+              : `ZEXA AI · ${country}`}
           </p>
           <p className="text-[10px] text-slate-500">
-            Empowering Zimbabwean students with offline curriculum revision and bilingual tutoring.
+            {isZim
+              ? 'Empowering Zimbabwean students with offline curriculum revision and bilingual tutoring.'
+              : `Empowering students in ${country} with 100% offline AI tutoring.`}
           </p>
         </div>
 
