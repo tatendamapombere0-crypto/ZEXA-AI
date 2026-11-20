@@ -31,7 +31,7 @@
     "level": "O-Level",
     "subject": "Mathematics",
     "topic": "Trigonometry",
-    "content": "In a right-angled triangle, we use SOH CAH TOA: Sin(theta) = Opposite/Hypotenuse, Cos(theta) = Adjacent/Hypotenuse, Tan(theta) = Opposite/Adjacent. The Sine Rule: a/sinA = b/sinB = c/sinC. The Cosine Rule: a^2 = b^2 + c^2 - 2bc cosA.",
+    "content": "Trigonometry relates the angles and side lengths of triangles. In any right-angled triangle, use SOH CAH TOA relative to acute angle theta: sin(theta) = Opposite / Hypotenuse, cos(theta) = Adjacent / Hypotenuse, and tan(theta) = Opposite / Adjacent, alongside Pythagoras' Theorem (a^2 + b^2 = c^2). For non-right-angled triangles, apply the Sine Rule (a/sin A = b/sin B = c/sin C) when given an angle-opposite side pair, or the Cosine Rule (a^2 = b^2 + c^2 - 2bc cos A) when given two sides and the included angle (SAS) or three sides (SSS), as well as Area = 1/2 ab sin C for bearings and elevation problems.",
     "source": "ZIMSEC Mathematics Textbook",
     "keywords": ["trigonometry", "sine", "cosine", "tangent", "sohcahtoa", "triangle", "angles"]
   },
@@ -76,7 +76,7 @@
     "level": "O-Level",
     "subject": "General",
     "topic": "ZIMSEC",
-    "content": "ZIMSEC stands for the Zimbabwe School Examinations Council. It is the body responsible for O-Level and A-Level exams in Zimbabwe. It was established in 1996 and provides internationally recognized qualifications.",
+    "content": "ZIMSEC (the Zimbabwe School Examinations Council) is Zimbabwe's statutory national examination board established by an Act of Parliament in 1994 (taking over localisation of school exams in 1996 from UCLES/Cambridge). Operating in partnership with the Ministry of Primary and Secondary Education (MoPSE) under the Heritage-Based Curriculum (HBC 2024–2030), ZIMSEC administers the Grade 7 Primary Examination, Ordinary Level (O-Level Forms 1–4), and Advanced Level (A-Level Forms 5–6) assessments, issuing internationally recognised certificates aligned with university and vocational entry worldwide.",
     "source": "Official ZIMSEC Info",
     "keywords": ["zimsec", "exams", "zimbabwe", "education", "council"]
   }

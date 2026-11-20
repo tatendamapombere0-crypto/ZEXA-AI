@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { EducationLevel, SubscriptionStatus, ChatMessage } from './types';
 import { StorageManager, mapEducationToContentLevel } from './lib/storage';
 import { KnowledgeStore } from './lib/knowledgeStore';
-import { QwenEngine } from './lib/qwenEngine';
+import { ZexaNeuralEngine } from './lib/zexaNeuralEngine';
 import { AppHeader } from './components/AppHeader';
 import { BottomNav, NavTab } from './components/BottomNav';
 import { ChatView } from './components/ChatView';
 import { StudyPackView } from './components/StudyPackView';
 import { ExamModeView } from './components/ExamModeView';
+import { RevisionHubView } from './components/RevisionHubView';
 import { LevelSelectModal } from './components/LevelSelectModal';
 import { PremiumModal } from './components/PremiumModal';
 import { SettingsModal } from './components/SettingsModal';
@@ -16,10 +17,10 @@ import { StudyNotificationModal } from './components/StudyNotificationModal';
 import { NotificationManager } from './lib/notificationManager';
 
 export const App: React.FC = () => {
-  // Warm up offline knowledge store, auto-connect local Qwen GGUF if present, & initialize Harare reminders
+  // Warm up offline knowledge store, auto-connect bundled ZEXA AI weights if present, & initialize reminders
   useEffect(() => {
     KnowledgeStore.load();
-    QwenEngine.autoConnectLocalGGUF();
+    ZexaNeuralEngine.autoConnectLocalGGUF();
     NotificationManager.initScheduler();
 
     // Check URL parameters for notification click actions
@@ -102,9 +103,24 @@ export const App: React.FC = () => {
     hint?: string;
   } | null>(null);
 
+  const computeRevisionTotal = (c: string) => {
+    const stats = StorageManager.getStudyStats(c);
+    return stats.searchHistoryCount + stats.examQACount + stats.bookmarksCount;
+  };
+
+  const [revisionCount, setRevisionCount] = useState<number>(() =>
+    computeRevisionTotal(StorageManager.getUserCountry())
+  );
+
+  const refreshRevisionCount = (countryOverride?: string) => {
+    const activeCountry = countryOverride || country;
+    setRevisionCount(computeRevisionTotal(activeCountry));
+  };
+
   const refreshQueries = () => {
     setQueriesUsedToday(StorageManager.getDailyQueriesUsed());
     setSubscriptionStatus(StorageManager.getSubscriptionStatus());
+    refreshRevisionCount();
   };
 
   const handleLevelSelect = (newLevel: EducationLevel) => {
@@ -147,6 +163,7 @@ export const App: React.FC = () => {
       localStorage.removeItem('zexa_active_paper_answers');
       localStorage.removeItem('zexa_active_paper_revealed');
     } catch {}
+    refreshRevisionCount(newCountry);
   };
 
   const handleOnboardingComplete = (level: EducationLevel, email?: string, selectedCountry?: string) => {
@@ -159,6 +176,7 @@ export const App: React.FC = () => {
     setMessages([]);
     setActiveTab('chat');
     refreshQueries();
+    refreshRevisionCount(resolvedCountry);
   };
 
   const handleLogout = () => {
@@ -175,6 +193,7 @@ export const App: React.FC = () => {
     setMessages([]);
     setActiveTab('chat');
     refreshQueries();
+    refreshRevisionCount('Zimbabwe');
   };
 
   // If not logged in or AI brain not initialized, present the complete login & onboarding sequence
@@ -182,8 +201,14 @@ export const App: React.FC = () => {
     return <OnboardingFlow onComplete={handleOnboardingComplete} />;
   }
 
+  const isChatTab = activeTab === 'chat';
+
   return (
-    <div className="min-h-screen bg-[#080d1a] bg-mesh text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div
+      className={`${
+        isChatTab ? 'h-dvh overflow-hidden' : 'min-h-screen'
+      } bg-[#080d1a] bg-mesh text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200`}
+    >
       {/* App Header */}
       <AppHeader
         educationLevel={educationLevel}
@@ -200,7 +225,7 @@ export const App: React.FC = () => {
       />
 
       {/* Main View Area */}
-      <main className="flex-1 w-full">
+      <main className={isChatTab ? 'flex-1 min-h-0 flex flex-col w-full' : 'flex-1 w-full'}>
         {activeTab === 'chat' && (
           <ChatView
             messages={messages}
@@ -212,6 +237,7 @@ export const App: React.FC = () => {
             queriesUsedToday={queriesUsedToday}
             dailyLimit={dailyLimit}
             onQueriesUpdated={refreshQueries}
+            onRevisionUpdated={() => refreshRevisionCount()}
             onOpenPremium={() => setIsPremiumModalOpen(true)}
             onOpenNotifications={() => setIsNotificationModalOpen(true)}
             activeExamPrompt={activeExamPrompt}
@@ -224,6 +250,7 @@ export const App: React.FC = () => {
             contentLevel={contentLevel}
             country={country}
             onAskZexa={handleAskZexaFromStudyPack}
+            onRevisionUpdated={() => refreshRevisionCount()}
           />
         )}
 
@@ -232,6 +259,16 @@ export const App: React.FC = () => {
             contentLevel={contentLevel}
             country={country}
             onAskZexaQuestion={handleAskZexaFromExam}
+            onRevisionUpdated={() => refreshRevisionCount()}
+          />
+        )}
+
+        {activeTab === 'revision' && (
+          <RevisionHubView
+            country={country}
+            contentLevel={contentLevel}
+            onAskZexa={handleAskZexaFromStudyPack}
+            onDataUpdated={() => refreshRevisionCount()}
           />
         )}
       </main>
@@ -241,6 +278,7 @@ export const App: React.FC = () => {
         activeTab={activeTab}
         onTabChange={setActiveTab}
         educationLevel={educationLevel}
+        revisionCount={revisionCount}
       />
 
       {/* Modals */}

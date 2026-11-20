@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   GraduationCap,
   CheckCircle2,
@@ -19,17 +19,21 @@ import {
   Lightbulb,
   Award,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Bookmark,
+  Clock
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { ExamManifestItem, ExamPaper, ExamQuestion } from '../types';
+import { ExamManifestItem, ExamPaper, ExamQuestion, SavedExamScore } from '../types';
 import { ExamStore } from '../lib/examStore';
 import { StorageManager } from '../lib/storage';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 
 interface ExamModeViewProps {
   contentLevel: string;
   country?: string;
   onAskZexaQuestion: (prompt: string, hint?: string) => void;
+  onRevisionUpdated?: () => void;
 }
 
 /**
@@ -228,9 +232,11 @@ const Paper2AnswerRenderer: React.FC<{ text: string; isZim?: boolean }> = ({ tex
 export const ExamModeView: React.FC<ExamModeViewProps> = ({
   contentLevel,
   country = 'Zimbabwe',
-  onAskZexaQuestion
+  onAskZexaQuestion,
+  onRevisionUpdated
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
+  const isBw = StorageManager.isBotswanaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const [papers, setPapers] = useState<ExamManifestItem[]>([]);
   const [subjects, setSubjects] = useState<string[]>([]);
@@ -296,6 +302,15 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   });
   const [isWorkspaceOpen, setIsWorkspaceOpen] = useState(true);
   const [copiedAnswer, setCopiedAnswer] = useState(false);
+
+  // Timed Mock Exam + Bookmarks + Best Scores
+  const [isTimedMode, setIsTimedMode] = useState(false);
+  const [secondsRemaining, setSecondsRemaining] = useState(0);
+  const paperStartedAtRef = useRef<number>(Date.now());
+  const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() =>
+    StorageManager.getBookmarkedQuestions(country).map((b) => b.id)
+  );
+  const [bestScoresMap, setBestScoresMap] = useState<Record<string, SavedExamScore>>({});
 
   // Purge legacy v3/v4 caches and refresh active paper if cached metadata or count mismatches verified manifest
   useEffect(() => {
@@ -378,7 +393,19 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [activePaper]);
 
+  const refreshScoresAndBookmarks = () => {
+    setBookmarkedIds(StorageManager.getBookmarkedQuestions(country).map((b) => b.id));
+    const map: Record<string, SavedExamScore> = {};
+    for (const s of StorageManager.getExamScores(country)) {
+      if (!map[s.paperId] || s.percent > map[s.paperId].percent) {
+        map[s.paperId] = s;
+      }
+    }
+    setBestScoresMap(map);
+  };
+
   useEffect(() => {
+    refreshScoresAndBookmarks();
     async function loadPapers() {
       setLoading(true);
       if (!hasPack || (!isZim && activePaperItem && ExamStore.isZimbabweSpecificPaper(activePaperItem))) {
@@ -395,6 +422,21 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
     loadPapers();
   }, [contentLevel, country, isZim, hasPack]);
 
+  // Countdown tick when Timed Mock Mode is active
+  useEffect(() => {
+    if (!activePaper || !isTimedMode || examFinished) return;
+    const interval = setInterval(() => {
+      setSecondsRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [activePaper, isTimedMode, examFinished]);
+
   const handleSelectPaper = async (item: ExamManifestItem) => {
     setLoading(true);
     setActivePaperItem(item);
@@ -407,6 +449,10 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
     setUserAnswers({});
     setRevealedQuestions({});
     setExamFinished(false);
+    setIsTimedMode(false);
+    paperStartedAtRef.current = Date.now();
+    const defaultMinutes = Math.min(90, Math.max(15, Math.round((paper?.questions.length || 20) * 1.5)));
+    setSecondsRemaining(defaultMinutes * 60);
     setLoading(false);
   };
 
@@ -431,9 +477,43 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
    * read the explanation and marking scheme without automatic switching.
    * User manually presses "Next Question" when ready.
    */
+  const persistQuestionToRevision = (
+    q: ExamQuestion,
+    idx: number,
+    selectedLetter: string | null,
+    draftAnswer?: string
+  ) => {
+    if (!activePaper) return;
+    const qNum = Number(q.questionNumber || idx + 1);
+    const hasOptions = q.options && q.options.length > 0;
+    const userVal = hasOptions
+      ? selectedLetter
+      : draftAnswer && draftAnswer.trim()
+      ? draftAnswer.trim()
+      : 'Reviewed Marking Scheme';
+
+    StorageManager.recordExamQA({
+      paperId: activePaper.id,
+      paperCode: activePaper.paperCode,
+      paperName: activePaper.paperName,
+      subject: activePaper.subject,
+      level: activePaper.level || contentLevel,
+      country,
+      questionNumber: qNum,
+      questionText: q.questionText,
+      options: q.options,
+      userAnswer: userVal,
+      correctAnswer: hasOptions ? q.correctAnswer : 'Paper 2 Model Scheme',
+      isCorrect: hasOptions && selectedLetter && q.correctAnswer ? selectedLetter === q.correctAnswer : undefined,
+      explanation: q.explanation,
+      paperType: activePaper.paperType
+    });
+  };
+
   const handleSelectOption = (letter: string) => {
     if (examFinished || !activePaper) return;
     const answeredIdx = currentQIndex;
+    const currentQ = activePaper.questions[answeredIdx];
     setUserAnswers((prev) => ({
       ...prev,
       [answeredIdx]: letter
@@ -442,6 +522,10 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
       ...prev,
       [answeredIdx]: true
     }));
+    if (currentQ) {
+      persistQuestionToRevision(currentQ, answeredIdx, letter);
+      onRevisionUpdated?.();
+    }
   };
 
   const handleNextQuestion = () => {
@@ -482,10 +566,36 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   };
 
   const handleFinishExam = () => {
-    if (!activePaper) return;
+    if (!activePaper || examFinished) return;
     setExamFinished(true);
+    setIsTimedMode(false);
 
     const score = calculateScore();
+    const durationSeconds = Math.max(1, Math.round((Date.now() - paperStartedAtRef.current) / 1000));
+
+    activePaper.questions.forEach((q, idx) => {
+      if (userAnswers[idx] || revealedQuestions[idx]) {
+        persistQuestionToRevision(q, idx, userAnswers[idx] || null, draftWorkspace[idx]);
+      }
+    });
+
+    StorageManager.saveExamScore({
+      paperId: activePaper.id,
+      paperCode: activePaper.paperCode,
+      paperName: activePaper.paperName,
+      subject: activePaper.subject,
+      level: activePaper.level || contentLevel,
+      country,
+      correct: score.correct,
+      total: score.total,
+      percent: score.percent,
+      grade: score.grade,
+      durationSeconds,
+      timed: isTimedMode
+    });
+    refreshScoresAndBookmarks();
+    onRevisionUpdated?.();
+
     if (score.percent >= 50) {
       try {
         confetti({
@@ -497,6 +607,57 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
     }
   };
 
+  // Auto-submit on Timed Mock expiry
+  useEffect(() => {
+    if (isTimedMode && secondsRemaining === 0 && activePaper && !examFinished) {
+      handleFinishExam();
+    }
+  }, [isTimedMode, secondsRemaining, activePaper, examFinished]);
+
+  const handleToggleTimedMode = () => {
+    if (!activePaper || examFinished) return;
+    if (!isTimedMode && secondsRemaining <= 0) {
+      const defaultMinutes = Math.min(90, Math.max(15, Math.round(activePaper.questions.length * 1.5)));
+      setSecondsRemaining(defaultMinutes * 60);
+    }
+    setIsTimedMode((prev) => !prev);
+  };
+
+  const formatCountdown = (secs: number): string => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+
+  const getCurrentBookmarkId = (): string => {
+    if (!activePaper) return '';
+    const q = activePaper.questions[currentQIndex];
+    const qNum = q?.questionNumber || currentQIndex + 1;
+    return `${activePaper.id}_q${qNum}`;
+  };
+
+  const handleToggleBookmarkCurrent = () => {
+    if (!activePaper || !activePaper.questions[currentQIndex]) return;
+    const q = activePaper.questions[currentQIndex];
+    const qNum = Number(q.questionNumber || currentQIndex + 1);
+    const id = `${activePaper.id}_q${qNum}`;
+    StorageManager.toggleBookmarkQuestion({
+      id,
+      paperId: activePaper.id,
+      paperCode: activePaper.paperCode,
+      paperName: activePaper.paperName,
+      subject: activePaper.subject,
+      level: activePaper.level || contentLevel,
+      questionNumber: qNum,
+      questionText: q.questionText,
+      correctAnswer: q.correctAnswer ?? null,
+      explanation: q.explanation,
+      country
+    });
+    refreshScoresAndBookmarks();
+    onRevisionUpdated?.();
+  };
+
   const filteredPapers = papers.filter((p) => {
     if (selectedSubject === 'All') return true;
     return p.subject.toLowerCase() === selectedSubject.toLowerCase();
@@ -506,6 +667,8 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
   const currentDraft = draftWorkspace[currentQIndex] || '';
   const draftWords = currentDraft.trim() ? currentDraft.trim().split(/\s+/).length : 0;
 
+  const activeTier = getTierForContentLevel(country, contentLevel);
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-5 pb-28 animate-fadeIn">
       {/* Top Header */}
@@ -513,15 +676,15 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
         <div>
           <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold mb-1">
             <GraduationCap className="w-4 h-4" />
-            <span>Official Examination Cockpit · {country} · {contentLevel}</span>
+            <span>Official Examination Cockpit · {country} · {activeTier.shortLabel}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-            {isZim ? 'ZIMSEC Past Papers & Timed Mocks' : `${country} Practice Papers`}
+            {isZim ? 'ZIMSEC Past Papers & Timed Mocks' : isBw ? 'BEC Past Papers & Timed Mocks' : `${country} Practice Papers`}
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
             {hasPack
               ? 'Real past examination papers with instant marking, answer guides, and AI coaching.'
-              : `${country} · ${contentLevel}`}
+              : `${country} · ${activeTier.label}`}
           </p>
         </div>
       </div>
@@ -563,11 +726,28 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              {!examFinished && (
+                <button
+                  onClick={handleToggleTimedMode}
+                  className={`flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-xl border transition-all active:scale-95 tabular-nums ${
+                    isTimedMode
+                      ? secondsRemaining < 300
+                        ? 'bg-amber-950/70 border-amber-400 text-amber-300'
+                        : 'bg-cyan-500/20 border-cyan-400/60 text-cyan-200'
+                      : 'bg-white/[0.04] hover:bg-white/[0.08] border-white/[0.08] text-slate-300'
+                  }`}
+                  title="Toggle Timed Exam Countdown"
+                >
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>{isTimedMode ? formatCountdown(secondsRemaining) : 'Timed Mock'}</span>
+                </button>
+              )}
+
               {/* Question Palette Trigger */}
               <button
                 onClick={() => setIsPaletteOpen(true)}
-                className="flex items-center gap-1.5 text-xs font-mono text-cyan-300 bg-cyan-950/60 hover:bg-cyan-900/80 px-3 py-1.5 rounded-xl border border-cyan-500/30 transition-all active:scale-95"
+                className="flex items-center gap-1.5 text-xs font-mono text-cyan-300 bg-cyan-950/60 hover:bg-cyan-900/80 px-3 py-1.5 rounded-xl border border-cyan-500/30 transition-all active:scale-95 tabular-nums"
                 title="View All Questions"
               >
                 <Filter className="w-3.5 h-3.5 text-cyan-400" />
@@ -587,6 +767,9 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                     setExamFinished(false);
                     setUserAnswers({});
                     setCurrentQIndex(0);
+                    paperStartedAtRef.current = Date.now();
+                    const defaultMinutes = Math.min(90, Math.max(15, Math.round(activePaper.questions.length * 1.5)));
+                    setSecondsRemaining(defaultMinutes * 60);
                   }}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.1] text-slate-200 text-xs font-semibold"
                 >
@@ -706,9 +889,22 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
                 <div className="flex items-center gap-2">
                   <button
+                    onClick={handleToggleBookmarkCurrent}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-semibold transition-all active:scale-95 ${
+                      bookmarkedIds.includes(getCurrentBookmarkId())
+                        ? 'bg-amber-950/60 border-amber-400/60 text-amber-300'
+                        : 'bg-white/[0.04] hover:bg-white/[0.08] border-white/[0.08] text-slate-300 hover:text-white'
+                    }`}
+                    title="Bookmark question for Revision Hub"
+                  >
+                    <Bookmark className={`w-3.5 h-3.5 ${bookmarkedIds.includes(getCurrentBookmarkId()) ? 'fill-amber-300 text-amber-300' : ''}`} />
+                    <span>{bookmarkedIds.includes(getCurrentBookmarkId()) ? 'Bookmarked' : 'Bookmark'}</span>
+                  </button>
+
+                  <button
                     onClick={() => {
                       const q = activePaper.questions[currentQIndex];
-                      const boardPrefix = isZim ? 'ZIMSEC ' : '';
+                      const boardPrefix = isZim ? 'ZIMSEC ' : isBw ? 'BEC ' : '';
                       const prompt = isCurrentPaper1
                         ? `Help me solve this ${boardPrefix}${activePaper.subject} examination question:\n\n${q.questionText}\n\nOptions:\n${(q.options || [])
                             .map((o) => `${o.letter}) ${o.text}`)
@@ -813,18 +1009,26 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                         <p className="text-xs text-slate-300 mt-0.5">
                           {isZim
                             ? 'Formulate your response below in your rough notes, then verify with the official ZIMSEC criteria.'
+                            : isBw
+                            ? 'Formulate your response below in your rough notes, then verify with the official BEC criteria.'
                             : 'Formulate your response below in your rough notes, then verify with the official marking criteria.'}
                         </p>
                       </div>
                     </div>
 
                     <button
-                      onClick={() =>
+                      onClick={() => {
+                        const willReveal = !revealedQuestions[currentQIndex];
                         setRevealedQuestions((prev) => ({
                           ...prev,
-                          [currentQIndex]: !prev[currentQIndex]
-                        }))
-                      }
+                          [currentQIndex]: willReveal
+                        }));
+                        const q = activePaper.questions[currentQIndex];
+                        if (willReveal && q) {
+                          persistQuestionToRevision(q, currentQIndex, null, draftWorkspace[currentQIndex]);
+                          onRevisionUpdated?.();
+                        }
+                      }}
                       className={`px-4 py-2 rounded-xl border text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1.5 self-start sm:self-center ${
                         revealedQuestions[currentQIndex]
                           ? 'bg-purple-900/60 border-purple-400 text-purple-200'
@@ -885,7 +1089,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <div className="flex items-center justify-between gap-2 border-b border-white/[0.08] pb-2.5">
                     <div className="flex items-center gap-2 font-bold text-cyan-300 font-mono text-xs uppercase tracking-wide">
                       <HelpCircle className="w-4 h-4 text-cyan-400" />
-                      <span>{isZim ? '🏛️ Official ZIMSEC Marking Scheme & Solution Notes' : '🏛️ Official Marking Scheme & Solution Notes'}</span>
+                      <span>{isZim ? '🏛️ Official ZIMSEC Marking Scheme & Solution Notes' : isBw ? '🏛️ Official BEC Marking Scheme & Solution Notes' : '🏛️ Official Marking Scheme & Solution Notes'}</span>
                     </div>
 
                     <button
@@ -916,7 +1120,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <div className="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/20 flex items-start gap-2.5 text-xs text-slate-300">
                     <Lightbulb className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white font-semibold">{isZim ? 'ZIMSEC Examiner Strategy:' : 'Examiner Strategy:'}</strong>{' '}
+                      <strong className="text-white font-semibold">{isZim ? 'ZIMSEC Examiner Strategy:' : isBw ? 'BEC Examiner Strategy:' : 'Examiner Strategy:'}</strong>{' '}
                       Review every mark allocation breakdown. Full marks require precise academic terminology, step-by-step methods, and adherence to official syllabus key points.
                     </div>
                   </div>
@@ -995,24 +1199,33 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
             </div>
           ) : filteredPapers.length === 0 ? (
             <div className="p-12 text-center rounded-3xl glass-panel text-slate-400 text-sm">
-              No examination papers found for {selectedSubject} in {contentLevel}.
+              No examination papers found for {selectedSubject} in {activeTier.shortLabel}.
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {filteredPapers.map((paper, idx) => (
+              {filteredPapers.map((paper, idx) => {
+                const best = bestScoresMap[paper.id];
+                return (
                 <div
                   key={`${paper.id}_${idx}`}
                   onClick={() => handleSelectPaper(paper)}
                   className="glass-panel glass-card-hover rounded-2xl p-5 cursor-pointer flex flex-col justify-between group border border-white/[0.06] hover:border-cyan-500/40 transition-all shadow-md hover:shadow-cyan-950/20"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between gap-2 mb-2">
                       <span className="text-[10px] font-mono font-semibold text-cyan-400 uppercase tracking-wide">
                         {paper.paperCode}
                       </span>
-                      <span className="text-xs font-mono font-bold text-emerald-300 bg-emerald-950/60 border border-emerald-500/30 px-2 py-0.5 rounded">
-                        {paper.questionCount} Questions
-                      </span>
+                      <div className="flex items-center gap-2 font-mono text-xs">
+                        {best && (
+                          <span className="font-bold text-amber-300 tabular-nums">
+                            Best: {best.percent}%
+                          </span>
+                        )}
+                        <span className="font-bold text-emerald-300 tabular-nums">
+                          {paper.questionCount} Questions
+                        </span>
+                      </div>
                     </div>
 
                     <h4 className="font-bold text-white text-base group-hover:text-cyan-200 transition-colors line-clamp-1 mb-1">
@@ -1033,7 +1246,8 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                     </span>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

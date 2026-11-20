@@ -35,6 +35,7 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
   onAskQuestion
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
+  const isBw = StorageManager.isBotswanaAccount(country);
   const [clock, setClock] = useState<HarareClockInfo>(() => NotificationManager.getHarareClockInfo(country));
   const [permission, setPermission] = useState<NotificationPermission>(() => NotificationManager.getPermissionStatus());
   const [isEnabled, setIsEnabled] = useState<boolean>(() => StorageManager.areNotificationsEnabled());
@@ -100,11 +101,13 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
             </div>
             <div>
               <h3 className="font-bold text-base sm:text-lg text-white">
-                {isZim ? 'Daily ZIMSEC Study Reminders' : `Daily ${country} Study Reminders`}
+                {isZim ? 'Daily ZIMSEC Study Reminders' : isBw ? 'Daily BEC Botswana Study Reminders' : `Daily ${country} Study Reminders`}
               </h3>
               <p className="text-xs text-slate-400">
                 {isZim
                   ? '6:00 AM • 12:00 PM • 6:00 PM Harare Time (CAT)'
+                  : isBw
+                  ? '6:00 AM • 12:00 PM • 6:00 PM Gaborone Time (CAT)'
                   : '6:00 AM • 12:00 PM • 6:00 PM Scheduled Study Alerts'}
               </p>
             </div>

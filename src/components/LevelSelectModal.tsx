@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Check, BookOpen, GraduationCap, School } from 'lucide-react';
 import { EducationLevel } from '../types';
 import { findCountryConfig } from '../data/worldCountries';
+import { getCountryEducationSystem } from '../data/countryEducationLevels';
 import { LEVEL_PRICES, StorageManager } from '../lib/storage';
 
 interface LevelSelectModalProps {
@@ -29,6 +30,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
   const isZim = StorageManager.isZimbabweAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const countryConfig = findCountryConfig(country);
+  const eduSystem = getCountryEducationSystem(country);
 
   const handlePickLevel = (level: EducationLevel) => {
     if (level === currentLevel) {
@@ -57,6 +59,11 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
     contentLevel === 'A-Level';
   const isTertiaryActive = currentLevel === 'Tertiary Education' || contentLevel === 'Tertiary';
 
+  const primaryTier = eduSystem.tiers.Primary;
+  const lowerSecTier = eduSystem.tiers['O-Level'];
+  const upperSecTier = eduSystem.tiers['A-Level'];
+  const tertiaryTier = eduSystem.tiers.Tertiary;
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
       <div className="glass-panel-elevated rounded-3xl max-w-xl w-full p-5 sm:p-6 shadow-2xl relative max-h-[92vh] overflow-y-auto space-y-4">
@@ -77,17 +84,19 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
             className="w-10 h-9 object-contain animate-brain-glow shrink-0"
           />
           <div>
-            <h3 className="text-base sm:text-lg font-bold text-white">Select Education Level</h3>
+            <h3 className="text-base sm:text-lg font-bold text-white">
+              Select {country} Education Level
+            </h3>
             <p className="text-xs text-slate-400">
               {hasPack
                 ? `Tailors ${isZim ? 'ZIMSEC' : countryConfig.curriculum} syllabus knowledge and exam banks to your tier`
-                : `Adjusts ZEXA AI explanation depth for ${country}`}
+                : `Adjusts ZEXA AI explanation depth for ${country} (${eduSystem.curriculumName})`}
             </p>
           </div>
         </div>
 
         <div className="space-y-3 pt-1">
-          {/* Primary Education Card */}
+          {/* Primary Tier Card */}
           <div
             onClick={() => handlePickLevel('Primary Education')}
             className={`p-4 rounded-2xl border cursor-pointer transition-all ${
@@ -104,7 +113,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                 <div>
                   <div className="flex items-center gap-2">
                     <h4 className="font-bold text-slate-100 text-sm">
-                      Primary Education
+                      {primaryTier.label}
                     </h4>
                     {isPrimaryActive && (
                       <span className="flex items-center gap-1 text-[10px] font-bold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded-full border border-cyan-500/30">
@@ -113,40 +122,36 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     )}
                   </div>
                   <p className="text-xs text-cyan-300 font-medium mt-0.5">
-                    {isZim
-                      ? 'Grade 1 to Grade 7 (Heritage-Based Curriculum)'
-                      : `Grade 1 to Grade 7 (${countryConfig.curriculum})`}
+                    {primaryTier.sublabel}
                   </p>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    {isZim
-                      ? 'Official 6-Subject Format: English, Mathematics, Agric, Science & Tech, Shona, Social Science, Physical Edu & Arts.'
-                      : 'Core Primary Subjects: English, Mathematics, Science & Technology, Physical Education & Arts.'}
+                    {primaryTier.subjects}
                   </p>
                 </div>
               </div>
 
               <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-slate-800/80 border border-white/[0.08] text-slate-300 shrink-0">
-                $4/term
+                {primaryTier.priceLabel}
               </span>
             </div>
           </div>
 
-          {/* Secondary Education Section (O-Level & A-Level Choice) */}
+          {/* Secondary Tiers Section */}
           <div className="p-4 rounded-2xl glass-panel space-y-3">
             <div className="flex items-center justify-between border-b border-white/[0.08] pb-2">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-cyan-400" />
                 <span className="text-xs font-bold text-slate-200 tracking-wider uppercase">
-                  Secondary Education
+                  {eduSystem.secondaryGroupTitle}
                 </span>
               </div>
               <span className="text-[11px] text-cyan-400 font-mono">
-                Forms 1 to 6
+                {eduSystem.secondaryGroupRange}
               </span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              {/* O-Level Option */}
+              {/* Lower Secondary / Middle Option */}
               <div
                 onClick={() => handlePickLevel('O-Level (Form 1 to 4)')}
                 className={`p-3.5 rounded-xl border cursor-pointer transition-all flex flex-col justify-between ${
@@ -158,7 +163,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-[10px] font-mono font-bold text-cyan-300 bg-cyan-950/80 px-2 py-0.5 rounded-full border border-cyan-500/30">
-                      FORMS 1 – 4
+                      {lowerSecTier.badge}
                     </span>
                     {isOLevelActive && (
                       <span className="flex items-center gap-1 text-[10px] font-bold text-cyan-300">
@@ -167,23 +172,21 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     )}
                   </div>
                   <h5 className="font-bold text-sm text-white mt-1">
-                    O-Level (Form 1 to 4)
+                    {lowerSecTier.label}
                   </h5>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    {isZim
-                      ? 'Combined Science, Mathematics, Commerce, Accounts, Geography, History, English, Shona.'
-                      : 'Combined Science, Biology, Chemistry, Physics, Mathematics, Commerce, Accounts, Geography, History, English.'}
+                    {lowerSecTier.subjects}
                   </p>
                 </div>
                 <div className="mt-3 pt-2 border-t border-white/[0.08] flex items-center justify-between text-[11px]">
                   <span className="text-slate-500">
-                    {isZim ? 'ZIMSEC O-Level' : `${countryConfig.curriculum} O-Level`}
+                    {lowerSecTier.boardTag}
                   </span>
-                  <span className="text-cyan-400 font-mono font-bold">$5/term</span>
+                  <span className="text-cyan-400 font-mono font-bold">{lowerSecTier.priceLabel}</span>
                 </div>
               </div>
 
-              {/* A-Level Option */}
+              {/* Upper Secondary / Matric / Matura Option */}
               <div
                 onClick={() => handlePickLevel('A-Level (Form 5 to 6)')}
                 className={`p-3.5 rounded-xl border cursor-pointer transition-all flex flex-col justify-between ${
@@ -195,7 +198,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-[10px] font-mono font-bold text-purple-300 bg-purple-950/80 px-2 py-0.5 rounded-full border border-purple-500/30">
-                      FORMS 5 – 6
+                      {upperSecTier.badge}
                     </span>
                     {isALevelActive && (
                       <span className="flex items-center gap-1 text-[10px] font-bold text-purple-300">
@@ -204,25 +207,23 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     )}
                   </div>
                   <h5 className="font-bold text-sm text-white mt-1">
-                    A-Level (Form 5 to 6)
+                    {upperSecTier.label}
                   </h5>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    {isZim
-                      ? 'Pure Mathematics, Biology, History 9155, Geography, Economics, Physics, Accounting.'
-                      : 'Pure Mathematics, Biology, History, Geography, Economics, Physics, Accounting.'}
+                    {upperSecTier.subjects}
                   </p>
                 </div>
                 <div className="mt-3 pt-2 border-t border-white/[0.08] flex items-center justify-between text-[11px]">
                   <span className="text-slate-500">
-                    {isZim ? 'ZIMSEC Advanced Level' : `${countryConfig.curriculum} A-Level`}
+                    {upperSecTier.boardTag}
                   </span>
-                  <span className="text-purple-400 font-mono font-bold">$5/term</span>
+                  <span className="text-purple-400 font-mono font-bold">{upperSecTier.priceLabel}</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Tertiary Education Card */}
+          {/* Tertiary Tier Card */}
           <div
             onClick={() => handlePickLevel('Tertiary Education')}
             className={`p-4 rounded-2xl border cursor-pointer transition-all ${
@@ -239,7 +240,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                 <div>
                   <div className="flex items-center gap-2">
                     <h4 className="font-bold text-slate-100 text-sm">
-                      Tertiary &amp; Higher Education
+                      {tertiaryTier.label}
                     </h4>
                     {isTertiaryActive && (
                       <span className="flex items-center gap-1 text-[10px] font-bold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded-full border border-cyan-500/30">
@@ -248,23 +249,23 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
                     )}
                   </div>
                   <p className="text-xs text-cyan-300 font-medium mt-0.5">
-                    Colleges, Polytechnics &amp; Universities
+                    {tertiaryTier.sublabel}
                   </p>
                   <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                    Higher education research dissertations, polytechnic subjects, engineering, economics, and advanced coursework.
+                    {tertiaryTier.subjects}
                   </p>
                 </div>
               </div>
 
               <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-slate-800/80 border border-white/[0.08] text-slate-300 shrink-0">
-                $5/term
+                {tertiaryTier.priceLabel}
               </span>
             </div>
           </div>
         </div>
 
         <p className="text-[11px] text-slate-500 text-center pt-1">
-          Selecting your exact level ensures syllabus notes, exam questions, and AI explanations match your curriculum.
+          Selecting your exact level ensures syllabus notes, exam questions, and AI explanations match {country}&apos;s education system.
         </p>
       </div>
     </div>

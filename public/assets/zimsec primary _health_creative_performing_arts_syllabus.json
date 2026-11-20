@@ -67,20 +67,64 @@
   ],
 
   "arts_syllabus_topics": [
-    {"id": 1, "name": "History and Culture", "description": "The role of music, musicians, composers, visual artists, actors, dancers and their works in family, school, community and national culture, past and present."},
-    {"id": 2, "name": "The Creative Process and Performance", "description": "Practical creation and performance skills across music (pitch, rhythm, composition), visual arts (drawing, painting, modelling, crafting), theatre (story-telling, improvisation, tableau) and dance (movement patterns, sequences, group dynamics)."},
-    {"id": 3, "name": "Aesthetic Values and Appreciation", "description": "Appreciating and critiquing artworks and performances; understanding elements/principles of design, meaning, mood and emotional response in art, music, theatre and dance."},
-    {"id": 4, "name": "Arts Technology", "description": "Use of technological tools in the arts - photography, video/filming, recording, ICT tools, lighting and sound effects, digital theatre, and internet ethics."},
-    {"id": 5, "name": "Enterprising Skills (Entrepreneurship)", "description": "Careers in the arts, business ethics, copyright protection, fundraising performances, exhibitions and commissioned work."}
+    {
+      "id": 1,
+      "name": "History and Culture",
+      "description": "This topic examines how music, visual arts, dance, and theatre preserve Zimbabwean heritage and community identity from pre-colonial times to the present. Learners study the social roles of musicians, praise poets, carvers, potters, weavers, actors, and dancers during ceremonies, harvests, national celebrations, and resistance struggles. Key Zimbabwean cultural traditions covered include indigenous instruments (mbira, marimba, hosho, ngoma), stone and wood sculpture (such as Great Zimbabwe soapstone carvings and Chapungu stone art), traditional dances (Mbende/Jerusarema, Muchongoyo, Isitshikitsha, Dinhe), and community storytelling."
+    },
+    {
+      "id": 2,
+      "name": "The Creative Process and Performance",
+      "description": "Learners develop hands-on practical competence by creating, rehearsing, and performing original works across all four arts disciplines. In Music, learners practise solfa/staff pitch reading, rhythm patterns, call-and-response singing, and ensemble playing using percussion and pitched instruments. In Visual Arts, they explore 2D and 3D media—drawing, painting, collage, clay moulding, basket weaving, and printmaking—applying line, shape, colour, texture, and form. In Theatre and Dance, learners perform folk tales, scripted playlets, pantomime, tableau (still images), and choreographed movement sequences that build coordination and confidence."
+    },
+    {
+      "id": 3,
+      "name": "Aesthetic Values and Appreciation",
+      "description": "This strand trains learners to observe, listen attentively, analyse, and respectfully critique artworks and live performances using arts vocabulary. Learners identify the elements and principles of design (balance, contrast, harmony, rhythm, proportion, pattern) in paintings, pottery, and crafts, and interpret mood, tempo, pitch, symbolism, and moral messages in music, drama, and dance. Rooted in Unhu/Ubuntu/Vumunhu, aesthetic appreciation teaches learners how to be constructive audience members—clapping appropriately, valuing cultural diversity across Zimbabwe's regions, and justifying why specific artworks evoke particular emotions."
+    },
+    {
+      "id": 4,
+      "name": "Arts Technology",
+      "description": "Arts Technology connects creative expression with modern tools, engineering, and responsible digital citizenship under Zimbabwe's Heritage-Based Curriculum. Learners discover both traditional technologies (tanned drum skins, calabash resonators, natural mineral pigments) and modern ICT production tools including audio recorders, digital cameras, video filming, music notation/mixing software, stage lighting, shadows/silhouettes, and sound effects. Equal emphasis is placed on internet ethics, online safety, avoiding piracy, and using digital media constructively for artistic creation and school exhibitions."
+    },
+    {
+      "id": 5,
+      "name": "Enterprising Skills (Entrepreneurship)",
+      "description": "Reflecting Education 5.0 and practical self-reliance, this topic shows learners how creative talents and sport generate sustainable livelihoods and careers. Learners explore professions such as composer, sound engineer, illustrator, sculptor, fashion designer, actor, choreographer, coach, and referee. They plan realistic school fundraising concerts, craft markets, and exhibitions, practise budgeting, pricing, and customer care, and study business ethics, Unhu/Ubuntu integrity, and intellectual property/copyright laws that protect artists' original songs, paintings, and scripts from unauthorised copying."
+    }
   ],
 
   "physical_education_health_topics": [
-    {"id": 1, "name": "Human Body and Health", "description": "Body systems (e.g. digestion, respiration/breathing), personal hygiene, nutrition, growth and development."},
-    {"id": 2, "name": "Safety and Injury Prevention", "description": "Safety rules and regulations for physical activities and games; recognising and preventing common injuries; use of protective gear."},
-    {"id": 3, "name": "Fundamental Movement Skills", "description": "Running, jumping, balancing, throwing, catching, sprinting and other basic motor skills developed through games and gymnastics."},
-    {"id": 4, "name": "Games and Sports", "description": "Indigenous and modern children's games, team sports, athletics, and mass displays."},
-    {"id": 5, "name": "Healthy Living and Disease Prevention", "description": "Effects of physical inactivity and poor sanitation, disease prevention (including HIV/AIDS awareness), hydration and healthy habits."},
-    {"id": 6, "name": "Dance and Physical Expression", "description": "Movement patterns, rhythm and physical expression, overlapping with the Creative Arts strand."}
+    {
+      "id": 1,
+      "name": "Human Body and Health",
+      "description": "Learners study external and internal parts of the human body—especially the digestive system (mouth, oesophagus, stomach, intestines) for breaking down and absorbing nutrients, and the respiratory system (nose, trachea, lungs, diaphragm) for taking in oxygen and removing carbon dioxide. They examine how regular physical activity strengthens the heart, lungs, muscles, and bones, while practising daily personal hygiene (handwashing, dental care, bathing, clean clothing) and eating balanced meals containing carbohydrates, proteins, fats, vitamins, minerals, and clean water for healthy growth."
+    },
+    {
+      "id": 2,
+      "name": "Safety and Injury Prevention",
+      "description": "Before participating in athletics, gymnastics, ball games, or aquatics, learners must master safety protocols that prevent avoidable injuries on the playground and field. Essential rules include inspecting grounds for broken glass, stones, or slippery mud, wearing proper sportswear and protective gear (shin guards, helmets, mouthguards where required), completing dynamic warm-up stretches before vigorous movement and cool-down exercises afterwards, obeying referees and equipment storage rules, following water-hazard guidelines near pools or rivers, and applying basic First Aid (RICE—Rest, Ice, Compression, Elevation—and calling an adult/nurse for bleeding or fractures)."
+    },
+    {
+      "id": 3,
+      "name": "Fundamental Movement Skills",
+      "description": "Fundamental movement skills form the physical literacy foundation needed for every sport and daily physical task. Learners practise locomotor skills (walking, sprinting, jogging, hopping, skipping, galloping, leaping over hurdles), non-locomotor stability skills (static and dynamic balancing, bending, twisting, stretching, gymnastics rolls and landing safely on bent knees), and manipulative skills (throwing, catching, kicking, dribbling, striking with bats or rackets). Repeated drills build spatial awareness, agility, hand-eye and foot-eye coordination, reaction speed, and muscular endurance."
+    },
+    {
+      "id": 4,
+      "name": "Games and Sports",
+      "description": "Learners participate in both traditional Zimbabwean children's games and formal modern sports that develop teamwork, strategic thinking, and fair play. Indigenous games include nhodo (hand-eye dexterity with pebbles), pada (hopscotch balance), tsoro (strategic counting board game), and chuti/kudada. Modern track-and-field athletics cover short sprints, relays, middle-distance running, long jump, high jump, and shot/ball throws alongside invasion, net, and striking games (football, netball, volleyball, basketball, cricket, tennis) and synchronised Mass Displays combining gymnastics, formations, and music."
+    },
+    {
+      "id": 5,
+      "name": "Healthy Living and Disease Prevention",
+      "description": "This topic equips learners to make lifelong health-protecting choices by contrasting active lifestyles with the dangers of physical inactivity (obesity, weak heart, fatigue) and poor sanitation (cholera, typhoid, dysentery, bilharzia). Learners examine safe drinking water treatment (boiling, chlorination), proper refuse and toilet hygiene, adequate sleep and hydration during sport, nutrition, immunisation, substance-abuse refusal, and age-appropriate HIV/AIDS education promoting prevention, compassion, and stigma-free support in schools and communities."
+    },
+    {
+      "id": 6,
+      "name": "Dance and Physical Expression",
+      "description": "Bridging Physical Education and Creative Performing Arts, this topic develops rhythmic coordination, posture, cardiovascular stamina, and cultural storytelling through structured movement. Learners explore spatial levels (high, medium, low), pathways, tempo, symmetry, and energy dynamics while mastering traditional Zimbabwean dances—such as Mbende/Jerusarema, Muchongoyo, Mhande, Isitshikitsha, and Amabhiza—as well as contemporary creative dance and Mass Display choreography accompanied by ngoma, hosho, clapping, or recorded music."
+    }
   ],
 
   "infant_level_scope_and_sequence_arts": {
@@ -206,9 +250,9 @@
       "Injury prevention during physical activities"
     ],
     "arts_topics_covered_alongside_pe_at_this_grade": [
-      "Zimbabwean music: cultural significance and evolution over time",
-      "Zimbabwean dance: cultural significance and evolution over time",
-      "Zimbabwean visual arts: cultural significance and evolution over time"
+      "Zimbabwean music: cultural significance, indigenous instruments (mbira, ngoma, marimba, hosho), liberation and post-independence songs, and modern genres over time",
+      "Zimbabwean dance: ceremonial, agricultural, and celebration roles of Mbende/Jerusarema, Muchongoyo, Isitshikitsha, and Mhande, plus costume and rhythmic evolution",
+      "Zimbabwean visual arts: heritage rock art (Matobo), Great Zimbabwe stone carvings, Shona sculpture, pottery, basketry, and contemporary design movements"
     ]
   },
 

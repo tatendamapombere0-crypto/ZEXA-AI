@@ -5,6 +5,7 @@ import { EducationLevel } from '../types';
 import { TermCalendarManager } from '../lib/termCalendar';
 import { OfflineActivationManager } from '../lib/offlineActivation';
 import { LEVEL_PRICES, StorageManager } from '../lib/storage';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 
 interface PremiumModalProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
   onActivated
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
+  const activeTier = getTierForContentLevel(country, educationLevel);
   const [activationCode, setActivationCode] = useState('');
   const [codeError, setCodeError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'code' | 'ecocash'>('code');
@@ -105,7 +107,7 @@ export const PremiumModal: React.FC<PremiumModalProps> = ({
               Activate ZEXA Premium
             </h3>
             <p className="text-xs text-slate-400">
-              Unlimited offline AI tutoring for <span className="text-cyan-300 font-medium">{educationLevel}</span>
+              Unlimited offline AI tutoring for <span className="text-cyan-300 font-medium">{activeTier.label}</span>
             </p>
           </div>
         </div>

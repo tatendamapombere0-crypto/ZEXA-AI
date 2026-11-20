@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Sparkles,
   Brain,
@@ -19,9 +19,10 @@ import {
 } from 'lucide-react';
 import { EducationLevel } from '../types';
 import { WORLD_COUNTRIES, findCountryConfig } from '../data/worldCountries';
-import { StorageManager } from '../lib/storage';
+import { getCountryEducationSystem } from '../data/countryEducationLevels';
+import { StorageManager, mapEducationToContentLevel } from '../lib/storage';
 import { KnowledgeStore } from '../lib/knowledgeStore';
-import { QwenEngine } from '../lib/qwenEngine';
+import { ZexaNeuralEngine } from '../lib/zexaNeuralEngine';
 
 interface OnboardingFlowProps {
   onComplete: (level: EducationLevel, email?: string, country?: string) => void;
@@ -48,15 +49,19 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
   const [selectedLevel, setSelectedLevel] = useState<EducationLevel>('O-Level (Form 1 to 4)');
   const [secondarySubLevel, setSecondarySubLevel] = useState<'olevel' | 'alevel'>('olevel');
 
-  // Step 4: AI Brain state
+  // Step 4: AI Brain state (auto-loads on install/entry)
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
-  const [downloadStage, setDownloadStage] = useState('Standby');
+  const [downloadStage, setDownloadStage] = useState('Initializing ZEXA AI...');
   const [isBrainReady, setIsBrainReady] = useState(false);
+  const autoLoadTriggeredRef = useRef(false);
 
   const activeCountryConfig = selectedCountry ? findCountryConfig(selectedCountry) : null;
   const isZimbabweSelected = selectedCountry.trim().toLowerCase() === 'zimbabwe';
+  const isBotswanaSelected = selectedCountry.trim().toLowerCase() === 'botswana';
   const hasPack = Boolean(activeCountryConfig?.hasCurriculumPack);
+  const eduSystem = getCountryEducationSystem(selectedCountry || 'Zimbabwe');
+  const activeTier = eduSystem.tiers[mapEducationToContentLevel(selectedLevel)];
 
   const filteredCountries = WORLD_COUNTRIES.filter((c) => {
     const q = countrySearch.trim().toLowerCase();
@@ -136,7 +141,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
     setCurrentStep('ai-brain');
   };
 
-  // Step 4 handler: Curriculum (only if country pack exists) + ZEXA AI initialization
+  // Step 4 handler: Curriculum (only if country pack exists) + automatic ZEXA AI asset initialization
   const handleLoadBrain = async () => {
     if (isDownloading || isBrainReady) return;
     setIsDownloading(true);
@@ -152,7 +157,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
     setDownloadProgress(35);
     setDownloadStage('Initializing ZEXA AI...');
 
-    const ggufLoaded = await QwenEngine.loadModel((state) => {
+    const neuralLoaded = await ZexaNeuralEngine.autoConnectLocalGGUF((state) => {
       if (state.status === 'loading') {
         setDownloadProgress(Math.max(40, state.progress));
         setDownloadStage(state.statusText);
@@ -162,15 +167,39 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
       }
     });
 
-    if (!ggufLoaded) {
+    if (!neuralLoaded) {
       setDownloadProgress(100);
-      setDownloadStage('ZEXA AI Ready!');
+      setDownloadStage('ZEXA AI Workspace Ready!');
     }
 
     setIsDownloading(false);
     setIsBrainReady(true);
     StorageManager.setBrainInitialized(true);
   };
+
+  useEffect(() => {
+    if (currentStep !== 'ai-brain') {
+      autoLoadTriggeredRef.current = false;
+      return;
+    }
+
+    const unsubscribe = ZexaNeuralEngine.subscribe((state) => {
+      if (state.status === 'loading') {
+        setDownloadProgress((prev) => Math.max(prev, Math.max(40, state.progress)));
+        setDownloadStage(state.statusText);
+      } else if (state.status === 'ready') {
+        setDownloadProgress(100);
+        setDownloadStage('ZEXA AI Connected!');
+      }
+    });
+
+    if (!autoLoadTriggeredRef.current) {
+      autoLoadTriggeredRef.current = true;
+      void handleLoadBrain();
+    }
+
+    return unsubscribe;
+  }, [currentStep]);
 
   const handleStartChat = () => {
     const activeEmail = authMode === 'online' && email.trim() ? email.trim() : 'Offline Student';
@@ -447,16 +476,20 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   <span>Change Country</span>
                 </button>
               </div>
-              <h2 className="text-xl font-bold tracking-tight text-white">Window of Education Category</h2>
+              <h2 className="text-xl font-bold tracking-tight text-white">
+                {selectedCountry} Education Levels
+              </h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                {hasPack
+                {isZimbabweSelected
                   ? 'Select your education level to configure the ZIMSEC syllabus topics and AI context.'
-                  : `Select your education level for ${selectedCountry}.`}
+                  : isBotswanaSelected
+                  ? 'Select your education level to configure the BEC Botswana syllabus topics (PSLE, JCE, BGCSE) and AI context.'
+                  : `Select your ${selectedCountry} education level (${eduSystem.curriculumName}).`}
               </p>
             </div>
 
             <div className="space-y-3">
-              {/* Primary Education Card */}
+              {/* Primary Tier Card */}
               <button
                 type="button"
                 onClick={() => handleSelectCategory('primary')}
@@ -466,27 +499,26 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-emerald-400" />
                     <span className="font-bold text-sm text-white group-hover:text-cyan-300 transition-colors">
-                      Primary Education (Grade 1 - 7)
+                      {eduSystem.tiers.Primary.label}
                     </span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    {hasPack
-                      ? 'Official 6-subject ZIMSEC curriculum: English, Mathematics, Agric Science & Tech, Shona, Social Science, Physical Edu & Arts.'
-                      : `AI tutor tailored for ${selectedCountry} Primary learners.`}
+                    {eduSystem.tiers.Primary.subjects}
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors shrink-0 mt-1" />
               </button>
 
-              {/* Secondary Education Card */}
+              {/* Secondary Tier Section */}
               <div className="p-4 rounded-2xl glass-panel space-y-3">
-                <div className="flex items-center gap-2 text-white font-bold text-sm">
-                  <Layers className="w-4 h-4 text-cyan-400" /> Secondary Education (Forms 1 to 6)
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 text-white font-bold text-sm">
+                    <Layers className="w-4 h-4 text-cyan-400" /> {eduSystem.secondaryGroupTitle}
+                  </div>
+                  <span className="text-[11px] font-mono text-cyan-300">{eduSystem.secondaryGroupRange}</span>
                 </div>
                 <p className="text-xs text-slate-400">
-                  {hasPack
-                    ? 'Select your exact academic tier for tailored syllabus notes and past exam papers:'
-                    : 'Select your secondary study tier for ZEXA AI tutoring:'}
+                  {eduSystem.secondaryGroupPrompt}
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
@@ -495,14 +527,12 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                     onClick={() => handleConfirmSecondary('olevel')}
                     className="p-3 rounded-xl bg-cyan-950/30 hover:bg-cyan-950/60 border border-cyan-500/30 hover:border-cyan-400/60 text-left transition-all active:scale-[0.98] group"
                   >
-                    <div className="font-bold text-xs text-cyan-300 group-hover:text-white flex items-center justify-between">
-                      <span>O-Level (Forms 1 - 4)</span>
-                      <ChevronRight className="w-3.5 h-3.5 text-cyan-400" />
+                    <div className="font-bold text-xs text-cyan-300 group-hover:text-white flex items-center justify-between gap-1">
+                      <span>{eduSystem.tiers['O-Level'].label}</span>
+                      <ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
                     </div>
                     <p className="text-[11px] text-slate-400 mt-1">
-                      {hasPack
-                        ? 'Combined Science, Maths, Commerce, Geography, History, Accounts, etc.'
-                        : 'Junior / Middle Secondary AI Tutoring'}
+                      {eduSystem.tiers['O-Level'].subjects}
                     </p>
                   </button>
 
@@ -511,20 +541,18 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                     onClick={() => handleConfirmSecondary('alevel')}
                     className="p-3 rounded-xl bg-purple-950/30 hover:bg-purple-950/60 border border-purple-500/30 hover:border-purple-400/60 text-left transition-all active:scale-[0.98] group"
                   >
-                    <div className="font-bold text-xs text-purple-300 group-hover:text-white flex items-center justify-between">
-                      <span>A-Level (Forms 5 - 6)</span>
-                      <ChevronRight className="w-3.5 h-3.5 text-purple-400" />
+                    <div className="font-bold text-xs text-purple-300 group-hover:text-white flex items-center justify-between gap-1">
+                      <span>{eduSystem.tiers['A-Level'].label}</span>
+                      <ChevronRight className="w-3.5 h-3.5 text-purple-400 shrink-0" />
                     </div>
                     <p className="text-[11px] text-slate-400 mt-1">
-                      {hasPack
-                        ? 'Pure Maths, Biology, History 9155, Geography, Economics, Physics, etc.'
-                        : 'Senior Secondary / Pre-University AI Tutoring'}
+                      {eduSystem.tiers['A-Level'].subjects}
                     </p>
                   </button>
                 </div>
               </div>
 
-              {/* Tertiary Education Card */}
+              {/* Tertiary Tier Card */}
               <button
                 type="button"
                 onClick={() => handleSelectCategory('tertiary')}
@@ -534,11 +562,11 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   <div className="flex items-center gap-2">
                     <Cpu className="w-4 h-4 text-amber-400" />
                     <span className="font-bold text-sm text-white group-hover:text-cyan-300 transition-colors">
-                      Tertiary &amp; Higher Education
+                      {eduSystem.tiers.Tertiary.label}
                     </span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Universities, Polytechnics, Teachers Colleges &amp; advanced research modules.
+                    {eduSystem.tiers.Tertiary.sublabel}. {eduSystem.tiers.Tertiary.subjects}
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors shrink-0 mt-1" />
@@ -553,7 +581,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
             <div className="text-center space-y-1">
               <h2 className="text-xl font-bold tracking-tight text-white">Initialize ZEXA AI</h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                Prepare ZEXA AI offline mode for {selectedLevel}.
+                Prepare ZEXA AI offline mode for {activeTier.label}.
               </p>
             </div>
 
@@ -568,8 +596,10 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   <div>
                     <h3 className="font-bold text-sm text-white">ZEXA AI</h3>
                     <p className="text-xs text-slate-400">
-                      {hasPack
+                      {isZimbabweSelected
                         ? 'Offline ZIMSEC Curriculum Tutor'
+                        : isBotswanaSelected
+                        ? 'Offline BEC Botswana Curriculum Tutor'
                         : `${selectedCountry} Study Tutor`}
                     </p>
                   </div>
@@ -583,7 +613,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                 <div>• Engine: ZEXA AI</div>
                 <div>• Runtime: 100% Offline Local</div>
                 <div>• Country: {activeCountryConfig?.flag} {selectedCountry}</div>
-                <div>• Level: {selectedLevel.split(' ')[0]}</div>
+                <div>• Level: {activeTier.shortLabel}</div>
               </div>
 
               {isDownloading && (
@@ -604,7 +634,11 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
               {isBrainReady && (
                 <div className="p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2 animate-fadeIn">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>ZEXA AI is loaded and ready offline!</span>
+                  <span>
+                    {ZexaNeuralEngine.isReady()
+                      ? 'ZEXA AI neural engine is connected and ready offline!'
+                      : 'ZEXA AI workspace is ready! You can ask study questions now or connect a local brain file anytime in Settings.'}
+                  </span>
                 </div>
               )}
 

@@ -6,6 +6,10 @@ import oLevelBiologyQAData from '../data/o_level_biology_qa_notes.json';
 import oLevelBiologyChunks from '../data/o_level_biology_chunks.json';
 import { COMPREHENSIVE_STUDY_PACKS } from '../data/comprehensiveStudyPacks';
 import { ZIMBABWE_ENCYCLOPEDIA_ENTRIES } from '../data/zimbabweEncyclopedia';
+import { BOTSWANA_ENCYCLOPEDIA_ENTRIES } from '../data/botswanaEncyclopedia';
+import { BOTSWANA_CURRICULUM_CHUNKS } from '../data/botswanaCurriculum';
+import { SOUTH_AFRICA_ENCYCLOPEDIA_ENTRIES } from '../data/southAfricaEncyclopedia';
+import { SOUTH_AFRICA_CURRICULUM_CHUNKS } from '../data/southAfricaCurriculum';
 import assetsKnowledgeIndex from '../data/assets_knowledge_index.json';
 import { extractTopicsFromJsonAsset, ExtractedAssetTopic } from './jsonAssetExtractor';
 
@@ -357,11 +361,12 @@ export class KnowledgeStore {
         }
       }
 
-      // Require at least 2 direct word matches for multi-word queries, or 1 exact word match for single-word queries
+      // Require at least 2 direct word matches for multi-word queries; for single-word queries avoid incidental non-biology collisions (e.g. "gravity" -> peristalsis)
+      const NON_SOLO_BIO_WORDS = new Set(['gravity', 'force', 'light', 'heat', 'mass', 'work', 'power', 'rate', 'space', 'earth', 'water', 'time']);
       if (qWords.length >= 2 && directWordMatches >= 2 && bestScore >= 8) {
         return bestItem;
       }
-      if (qWords.length === 1 && directWordMatches === 1 && bestScore >= 4) {
+      if (qWords.length === 1 && directWordMatches === 1 && bestScore >= 4 && !NON_SOLO_BIO_WORDS.has(qWords[0])) {
         return bestItem;
       }
     }
@@ -1933,32 +1938,200 @@ Rules of Debit and Credit:
     }
   ];
 
-  // Tertiary Education Seed Chunks (Higher Education & Research)
+  // Tertiary Education Seed Chunks (Higher Education & Research across all 7 Faculties)
   private static readonly TERTIARY_SEED_CHUNKS: KnowledgeChunk[] = [
+    {
+      id: 'tert_bus_strategic_mgmt',
+      level: 'Tertiary',
+      subject: 'Business Administration',
+      topic: 'Strategic Management, SWOT & Porter’s Five Forces',
+      content: `### Strategic Management Framework
+University-level Business Administration evaluates how organisations build sustainable competitive advantage under dynamic market conditions:
+
+1. **Internal Analysis (RBV & VRIO)**: Assesses whether a firm's resources and capabilities are **Valuable, Rare, Inimitable, and Organised (VRIO)**.
+2. **External Macro-Environment (PESTLE)**: Examines Political, Economic, Social, Technological, Legal, and Environmental forces—for instance exchange-rate stability, digital mobile-money adoption, and SADC regional trade tariffs.
+3. **Porter’s Five Forces (Industry Structure)**:
+   - Threat of new entrants (barriers to entry, capital requirements, licensing)
+   - Bargaining power of buyers and suppliers
+   - Threat of substitute products or services
+   - Intensity of competitive rivalry among existing firms
+4. **Generic Competitive Strategies**: Cost leadership, broad differentiation, and focused niche positioning, measured through Balanced Scorecard financial, customer, internal-process, and learning metrics.`,
+      source: 'University Tertiary Business Administration Framework',
+      keywords: ['business administration', 'strategic management', 'porter five forces', 'vrio', 'pestle', 'swot', 'tertiary']
+    },
+    {
+      id: 'tert_bus_org_governance',
+      level: 'Tertiary',
+      subject: 'Business Administration',
+      topic: 'Corporate Governance, Organisational Behaviour & Operations',
+      content: `### Corporate Governance & Operations Management
+Effective enterprise leadership integrates ethical accountability with operational efficiency:
+
+- **Corporate Governance Pillars**: Fairness, Accountability, Responsibility, and Transparency aligned with board oversight, audit committees, and stakeholder protection.
+- **Organisational Leadership & Motivation**: Maslow's Hierarchy, Herzberg's Two-Factor Theory (hygiene vs motivators), and Transformational vs Transactional leadership models.
+- **Operations & Supply Chain**: Lean production, Just-In-Time (JIT) inventory control, Total Quality Management (TQM), Six Sigma variance reduction, and critical path scheduling (PERT/CPM) to minimise bottlenecks.`,
+      source: 'University Tertiary Business Administration Framework',
+      keywords: ['corporate governance', 'organisational behaviour', 'operations management', 'lean', 'tqm', 'tertiary']
+    },
     {
       id: 'tert_macro_policy',
       level: 'Tertiary',
       subject: 'Economics & Commerce',
       topic: 'Macroeconomic Fiscal and Monetary Policy Paradigms',
-      content: `Comparative macroeconomic models:
-1. Keynesian Paradigm: Focuses on aggregate demand rigidities, sticky wages, and the liquidity trap. Prescribes counter-cyclical discretionary fiscal policy and expansionary public spending during demand-deficient recessions.
-2. Classical / Neoclassical Paradigm: Assumes price flexibility, Say's Law ("supply creates its own demand"), and long-run money neutrality. Emphasizes supply-side incentives, deregulation, and inflation targeting via rule-based central bank monetary policy.`,
+      content: `### Comparative Macroeconomic Models
+1. **Keynesian Paradigm**: Focuses on aggregate demand rigidities, sticky wages, and the liquidity trap. Prescribes counter-cyclical discretionary fiscal policy and expansionary public spending during demand-deficient recessions, where the fiscal multiplier ($k = \\frac{1}{1 - MPC}$) amplifies autonomous expenditure.
+2. **Classical / Neoclassical Paradigm**: Assumes price flexibility, Say's Law ("supply creates its own demand"), and long-run money neutrality. Emphasises supply-side incentives, deregulation, and inflation targeting via rule-based central bank monetary policy (Taylor Rule, open-market operations, reserve ratios).`,
       source: 'University Tertiary Economics & Finance Framework',
       keywords: ['macroeconomics', 'keynesian', 'monetary policy', 'fiscal policy', 'inflation', 'aggregate demand', 'tertiary']
+    },
+    {
+      id: 'tert_econ_econometrics',
+      level: 'Tertiary',
+      subject: 'Economics & Commerce',
+      topic: 'International Trade, Balance of Payments & Econometric Analysis',
+      content: `### International Trade & Econometric Modelling
+- **Comparative Advantage (Ricardian & Heckscher-Ohlin)**: Nations gain from trade by specialising in goods with lower opportunity cost or abundant factor endowments (land, labour, capital).
+- **Balance of Payments (BoP)**: Records the Current Account (visible trade, services, remittances) and Capital/Financial Account (FDI, portfolio flows, reserve assets).
+- **OLS Econometric Regression**: Models $Y_i = \\beta_0 + \\beta_1 X_i + u_i$ under Gauss-Markov assumptions (linearity, zero conditional mean, homoscedasticity, no autocorrelation) to produce Best Linear Unbiased Estimators (BLUE).`,
+      source: 'University Tertiary Economics & Finance Framework',
+      keywords: ['international trade', 'balance of payments', 'econometrics', 'ols regression', 'comparative advantage', 'tertiary']
     },
     {
       id: 'tert_software_solid',
       level: 'Tertiary',
       subject: 'Computer Science & Engineering',
       topic: 'Object-Oriented Design and SOLID Principles',
-      content: `SOLID Principles in Software Engineering:
-- S: Single Responsibility Principle (A class should have one, and only one, reason to change).
-- O: Open/Closed Principle (Software entities should be open for extension, but closed for modification).
-- L: Liskov Substitution Principle (Subtypes must be substitutable for their base types without altering correctness).
-- I: Interface Segregation Principle (Clients should not be forced to depend on interfaces they do not use).
-- D: Dependency Inversion Principle (High-level modules should depend on abstractions, not on low-level concretions).`,
+      content: `### SOLID Principles in Software Engineering
+- **S — Single Responsibility Principle**: A class or module should have one, and only one, reason to change.
+- **O — Open/Closed Principle**: Software entities should be open for extension, but closed for modification.
+- **L — Liskov Substitution Principle**: Subtypes must be substitutable for their base types without altering correctness.
+- **I — Interface Segregation Principle**: Clients should not be forced to depend on interfaces they do not use.
+- **D — Dependency Inversion Principle**: High-level modules should depend on abstractions, not on low-level concretions.`,
       source: 'University Computer Science & Software Engineering',
       keywords: ['solid', 'object-oriented', 'design patterns', 'software engineering', 'computer science', 'tertiary']
+    },
+    {
+      id: 'tert_cs_algorithms_systems',
+      level: 'Tertiary',
+      subject: 'Computer Science & Engineering',
+      topic: 'Algorithms, Complexity Analysis (Big-O) & Operating Systems',
+      content: `### Algorithms & Systems Architecture
+1. **Asymptotic Complexity**: Evaluates time and space growth as input size $n \\to \\infty$ ($O(1)$, $O(\\log n)$ binary search, $O(n \\log n)$ merge sort, $O(n^2)$ nested comparisons) alongside P vs NP decidability.
+2. **Data Structures**: Balanced search trees (AVL, Red-Black), Hash Tables with collision resolution, and Graph traversal (BFS, DFS, Dijkstra shortest path).
+3. **Operating Systems & Concurrency**: Process scheduling, virtual memory paging, mutexes/semaphores, deadlock prevention (Coffman conditions), and ACID database transactions.`,
+      source: 'University Computer Science & Software Engineering',
+      keywords: ['algorithms', 'big-o', 'data structures', 'operating systems', 'concurrency', 'tertiary']
+    },
+    {
+      id: 'tert_edu_pedagogy_bloom',
+      level: 'Tertiary',
+      subject: 'Education & Pedagogy',
+      topic: 'Constructivist Learning Theory, Bloom’s Taxonomy & Curriculum Design',
+      content: `### Educational Psychology & Curriculum Design
+Modern teacher education integrates cognitive science with competency-based instruction:
+
+1. **Constructivism & Scaffolding**:
+   - **Piaget's Cognitive Stages**: Assimilation, accommodation, and schema equilibration from concrete operational to formal abstract reasoning.
+   - **Vygotsky's Zone of Proximal Development (ZPD)**: Learning accelerates through guided social interaction and gradual release of scaffolding.
+2. **Revised Bloom’s Taxonomy**: Structures learning objectives hierarchically from *Remembering* and *Understanding* through *Applying*, *Analysing*, *Evaluating*, and *Creating*.
+3. **Education 5.0 & Heritage-Based Pedagogy**: Aligns Teaching, Research, Community Service, Innovation, and Industrialisation with Continuous Assessment and inclusive differentiation.`,
+      source: 'University Faculty of Education & Teacher Training',
+      keywords: ['education', 'pedagogy', 'bloom taxonomy', 'constructivism', 'vygotsky', 'zpd', 'curriculum', 'tertiary']
+    },
+    {
+      id: 'tert_edu_assessment',
+      level: 'Tertiary',
+      subject: 'Education & Pedagogy',
+      topic: 'Educational Measurement, Formative vs Summative Assessment',
+      content: `### Educational Assessment & Psychometrics
+- **Formative Assessment (Assessment for Learning)**: Diagnostic quizzes, rubrics, and descriptive feedback used mid-instruction to close conceptual gaps.
+- **Summative Assessment (Assessment of Learning)**: Standardised end-of-term or national examinations measuring attainment against explicit marking schemes.
+- **Validity & Reliability**: Content, construct, and criterion validity ensure items measure intended competencies; test-retest and inter-rater reliability (Cronbach's alpha) ensure consistent scoring across candidates.`,
+      source: 'University Faculty of Education & Teacher Training',
+      keywords: ['assessment', 'formative', 'summative', 'validity', 'reliability', 'pedagogy', 'tertiary']
+    },
+    {
+      id: 'tert_law_constitutional',
+      level: 'Tertiary',
+      subject: 'Law & Jurisprudence',
+      topic: 'Constitutional Law, Separation of Powers & Sources of Law',
+      content: `### Foundations of Constitutional & Statutory Jurisprudence
+1. **Separation of Powers & Rule of Law**: Divides state authority among the **Legislature** (law-making), **Executive** (administration and policy), and independent **Judiciary** (adjudication and constitutional review) with checks and balances.
+2. **Primary Sources of Law (Roman-Dutch & Common Law Tradition)**:
+   - The **Constitution** as the supreme law (any inconsistent law or conduct is void to the extent of inconsistency)
+   - **Legislation / Statutes** passed by Parliament and delegated statutory instruments
+   - **Judicial Precedent (Stare Decisis)** — *ratio decidendi* binds lower courts, while *obiter dicta* are persuasive
+   - **Common Law** (Roman-Dutch jurists) and **Customary Law** recognised where consistent with constitutional rights.`,
+      source: 'University Faculty of Law & Jurisprudence',
+      keywords: ['law', 'constitutional law', 'jurisprudence', 'separation of powers', 'stare decisis', 'roman-dutch', 'tertiary']
+    },
+    {
+      id: 'tert_law_contract_delict',
+      level: 'Tertiary',
+      subject: 'Law & Jurisprudence',
+      topic: 'Law of Contract, Delict & Criminal Liability Principles',
+      content: `### Private Law (Contract & Delict) and Criminal Law
+- **Essential Elements of a Valid Contract**: Consensus (*offer and acceptance*), contractual capacity, legality, physical possibility of performance, and required formalities. Remedies for breach include specific performance, cancellation, and contractual damages.
+- **Law of Delict (Aquilian Liability)**: Requires (1) conduct, (2) wrongfulness, (3) fault (*intent/dolus* or *negligence/culpa*), (4) causation (factual 'but-for' and legal remoteness), and (5) patrimonial or non-patrimonial harm.
+- **Criminal Liability**: *Actus reus* (unlawful voluntary conduct) + *Mens rea* (fault/guilty mind) proved beyond a reasonable doubt.`,
+      source: 'University Faculty of Law & Jurisprudence',
+      keywords: ['contract law', 'delict', 'criminal law', 'mens rea', 'actus reus', 'jurisprudence', 'tertiary']
+    },
+    {
+      id: 'tert_med_phc_epidemiology',
+      level: 'Tertiary',
+      subject: 'Medicine & Health Sciences',
+      topic: 'Primary Health Care, Epidemiology & Pathophysiology Principles',
+      content: `### Public Health, Epidemiology & Clinical Foundations
+1. **Epidemiological Indicators**:
+   - **Incidence**: New cases arising in a population at risk over a specified time period.
+   - **Prevalence**: Total existing cases (new + old) at a point or period in time ($Prevalence \\approx Incidence \\times Duration$).
+   - **Herd Immunity Threshold**: $HIT = 1 - \\frac{1}{R_0}$, guiding immunisation coverage targets against measles, polio, and endemic infections.
+2. **Primary Health Care (Alma-Ata / Astana Principles)**: Universal health coverage emphasising health education, clean water and sanitation, maternal-child care, essential medicines, and disease surveillance.
+3. **Homeostatic Pathophysiology**: Cellular hypoxia, inflammatory cascades (cytokines, complement), and acid-base regulation ($pH = 7.35 - 7.45$, Henderson-Hasselbalch buffering).`,
+      source: 'University College of Medicine & Health Sciences',
+      keywords: ['medicine', 'health sciences', 'epidemiology', 'primary health care', 'pathophysiology', 'immunity', 'tertiary']
+    },
+    {
+      id: 'tert_med_pharmacology',
+      level: 'Tertiary',
+      subject: 'Medicine & Health Sciences',
+      topic: 'Clinical Pharmacology: Pharmacokinetics (ADME) & Pharmacodynamics',
+      content: `### Principles of Clinical Pharmacology
+- **Pharmacokinetics (What the body does to the drug — ADME)**:
+  - **Absorption**: Bioavailability ($F$), first-pass hepatic metabolism via portal circulation.
+  - **Distribution**: Volume of distribution ($V_d$), plasma protein binding (albumin), blood-brain barrier permeability.
+  - **Metabolism**: Phase I oxidation/reduction (Cytochrome P450 enzymes) and Phase II conjugation.
+  - **Excretion**: Renal glomerular filtration rate (GFR), half-life ($t_{1/2} = \\frac{0.693 \\times V_d}{Cl}$).
+- **Pharmacodynamics**: Receptor agonism, competitive vs non-competitive antagonism, therapeutic index ($TD_{50}/ED_{50}$), and antimicrobial stewardship.`,
+      source: 'University College of Medicine & Health Sciences',
+      keywords: ['pharmacology', 'pharmacokinetics', 'adme', 'pharmacodynamics', 'half-life', 'medicine', 'tertiary']
+    },
+    {
+      id: 'tert_soc_theory_research',
+      level: 'Tertiary',
+      subject: 'Social Sciences',
+      topic: 'Classical & Contemporary Sociological Paradigms & Research Methods',
+      content: `### Sociological Theory & Social Research Methodology
+1. **Three Core Theoretical Perspectives**:
+   - **Structural Functionalism (Durkheim, Parsons)**: Views society as interconnected institutions maintaining stability, socialisation, and organic solidarity.
+   - **Conflict Theory (Marx, Weber)**: Analyses power asymmetries, class stratification, resource inequality, and social change driven by competing interests.
+   - **Symbolic Interactionism (Mead, Goffman)**: Examines micro-level meaning construction, identity, labelling, and everyday social interaction.
+2. **Research Design**: Mixed-methods triangulation combining quantitative probability sampling (surveys, chi-square/regression) with qualitative ethnography, semi-structured interviews, thematic coding, and informed ethical consent.`,
+      source: 'University Faculty of Social & Behavioural Sciences',
+      keywords: ['social sciences', 'sociology', 'functionalism', 'conflict theory', 'symbolic interactionism', 'research methods', 'tertiary']
+    },
+    {
+      id: 'tert_soc_development',
+      level: 'Tertiary',
+      subject: 'Social Sciences',
+      topic: 'Development Studies, Urbanisation & African Political Economy',
+      content: `### Development Studies & Governance Analysis
+- **Measuring Development**: Moves beyond GDP per capita to Amartya Sen's **Capability Approach** and the **Human Development Index (HDI)** combining life expectancy, education years, and GNI per capita.
+- **Modernisation vs Dependency Theory**: Contrasts internal institutional stages of growth against structural core-periphery trade imbalances in global commodity value chains.
+- **Rural-Urban Migration & Social Policy**: Examines demographic transitions, informal-sector resilience, climate adaptation in smallholder agriculture, and decentralisation of local municipal service delivery.`,
+      source: 'University Faculty of Social & Behavioural Sciences',
+      keywords: ['development studies', 'hdi', 'political economy', 'urbanisation', 'social policy', 'tertiary']
     }
   ];
 
@@ -1972,6 +2145,8 @@ Rules of Debit and Credit:
     const seenIds = new Set<string>();
     const initialChunks = [
       ...(COMPREHENSIVE_STUDY_PACKS as any[]),
+      ...(BOTSWANA_CURRICULUM_CHUNKS as any[]),
+      ...(SOUTH_AFRICA_CURRICULUM_CHUNKS as any[]),
       ...this.PRIMARY_SEED_CHUNKS,
       ...this.SECONDARY_SEED_CHUNKS,
       ...this.TERTIARY_SEED_CHUNKS,
@@ -2000,6 +2175,50 @@ Rules of Debit and Credit:
               topic: entry.topic,
               content: entry.content,
               source: 'ZEXA Verified Zimbabwe Encyclopedia • Heritage & National Studies',
+              keywords: entry.keywords
+            });
+          }
+        }
+      }
+    }
+
+    // Ingest complete offline Botswana National Encyclopedia across all education levels (0ms, 100% offline)
+    if (Array.isArray(BOTSWANA_ENCYCLOPEDIA_ENTRIES)) {
+      for (const entry of BOTSWANA_ENCYCLOPEDIA_ENTRIES) {
+        const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level', 'Tertiary'];
+        for (const lvl of levels) {
+          const chunkId = `${entry.id}_${lvl.toLowerCase().replace(/[^a-z0-9]/g, '')}`;
+          if (!seenIds.has(chunkId)) {
+            seenIds.add(chunkId);
+            this.chunks.push({
+              id: chunkId,
+              level: lvl,
+              subject: entry.subject,
+              topic: entry.topic,
+              content: entry.content,
+              source: 'ZEXA Verified Botswana Encyclopedia • BEC National Studies',
+              keywords: entry.keywords
+            });
+          }
+        }
+      }
+    }
+
+    // Ingest complete offline South Africa National Encyclopedia across all education levels (0ms, 100% offline)
+    if (Array.isArray(SOUTH_AFRICA_ENCYCLOPEDIA_ENTRIES)) {
+      for (const entry of SOUTH_AFRICA_ENCYCLOPEDIA_ENTRIES) {
+        const levels = Array.isArray(entry.levels) ? entry.levels : ['Primary', 'O-Level', 'A-Level', 'Tertiary'];
+        for (const lvl of levels) {
+          const chunkId = `${entry.id}_${lvl.toLowerCase().replace(/[^a-z0-9]/g, '')}`;
+          if (!seenIds.has(chunkId)) {
+            seenIds.add(chunkId);
+            this.chunks.push({
+              id: chunkId,
+              level: lvl,
+              subject: entry.subject,
+              topic: entry.topic,
+              content: entry.content,
+              source: 'ZEXA Verified South Africa Encyclopedia • DBE CAPS National Studies',
               keywords: entry.keywords
             });
           }
@@ -2058,7 +2277,7 @@ Rules of Debit and Credit:
           { f: 'zimsec_english_junior_grades_3to7.json', s: 'English' },
           { f: 'zimsec_chishona_g7_full_notes.json', s: 'Shona' },
           { f: 'zimsec_chishona_g7_studyguide.json', s: 'Shona' },
-          { f: 'zimsec_ndebele_grade7.json', s: 'Shona' },
+          { f: 'zimsec_ndebele_grade7.json', s: 'IsiNdebele' },
           { f: 'zimsec_primary_pe_grade7.json', s: 'Physical Edu & Arts' },
           { f: 'zimsec_visual_performing_arts.json', s: 'Physical Edu & Arts' }
         ];
@@ -2104,6 +2323,28 @@ Rules of Debit and Credit:
     const file = (item.file || '').toLowerCase();
 
     if (
+      id.startsWith('bw_') ||
+      id.startsWith('za_') ||
+      subject.includes('setswana') ||
+      subject === 'development studies' ||
+      subject === 'moral education' ||
+      subject === 'capa' ||
+      subject === 'life orientation' ||
+      subject === 'mathematical literacy' ||
+      subject === 'economic & management sciences' ||
+      subject === 'natural sciences' ||
+      subject === 'natural sciences & technology' ||
+      subject === 'languages (isizulu & afrikaans)' ||
+      source.includes('botswana') ||
+      source.includes('bec ') ||
+      source.includes('south africa') ||
+      source.includes('dbe caps') ||
+      source.includes('saqa')
+    ) {
+      return false;
+    }
+
+    if (
       id.startsWith('zw_') ||
       id.startsWith('g7_curriculum_') ||
       id.startsWith('g7_social_') ||
@@ -2133,7 +2374,7 @@ Rules of Debit and Credit:
     if (
       subject.includes('shona') ||
       subject.includes('ndebele') ||
-      subject.includes('social science') ||
+      subject === 'social science' ||
       subject.includes('heritage') ||
       subject.includes('fareme') ||
       subject.includes('civics')
@@ -2198,24 +2439,124 @@ Rules of Debit and Credit:
     return zimSignals.some((sig) => meta.includes(sig));
   }
 
-  public static sanitizeChunkForCountry(chunk: KnowledgeChunk, isZim: boolean): KnowledgeChunk {
+  /**
+   * Determines whether a chunk or asset belongs strictly to Botswana's
+   * national/BEC curriculum and encyclopedia (hidden for Zimbabwe and non-Botswana accounts).
+   */
+  public static isBotswanaSpecificItem(item: {
+    id?: string;
+    subject?: string;
+    topic?: string;
+    source?: string;
+    file?: string;
+  }): boolean {
+    const id = (item.id || '').toLowerCase();
+    const subject = (item.subject || '').toLowerCase();
+    const topic = (item.topic || '').toLowerCase();
+    const source = (item.source || '').toLowerCase();
+    const file = (item.file || '').toLowerCase();
+
+    if (
+      id.startsWith('bw_') ||
+      file.startsWith('bw_') ||
+      subject.includes('setswana') ||
+      subject === 'development studies' ||
+      subject === 'moral education' ||
+      subject === 'capa' ||
+      source.includes('botswana') ||
+      source.includes('bec ')
+    ) {
+      return true;
+    }
+
+    const meta = `${topic} ${source} ${file}`;
+    return (
+      meta.includes('botswana') ||
+      meta.includes('setswana') ||
+      meta.includes('okavango') ||
+      meta.includes('three dikgosi') ||
+      meta.includes('debswana') ||
+      meta.includes('vision 2036') ||
+      meta.includes('bechuanaland')
+    );
+  }
+
+  /**
+   * Determines whether a chunk or asset belongs strictly to South Africa's
+   * DBE CAPS / NSC curriculum and encyclopedia (hidden for Zimbabwe, Botswana, and non-SA accounts).
+   */
+  public static isSouthAfricaSpecificItem(item: {
+    id?: string;
+    subject?: string;
+    topic?: string;
+    source?: string;
+    file?: string;
+  }): boolean {
+    const id = (item.id || '').toLowerCase();
+    const subject = (item.subject || '').toLowerCase();
+    const topic = (item.topic || '').toLowerCase();
+    const source = (item.source || '').toLowerCase();
+    const file = (item.file || '').toLowerCase();
+
+    if (
+      id.startsWith('za_') ||
+      file.startsWith('za_') ||
+      subject === 'life orientation' ||
+      subject === 'mathematical literacy' ||
+      subject === 'economic & management sciences' ||
+      subject === 'natural sciences' ||
+      subject === 'natural sciences & technology' ||
+      subject === 'languages (isizulu & afrikaans)' ||
+      subject === 'physical sciences' ||
+      subject === 'life sciences' ||
+      subject === 'economics & business studies' ||
+      subject === 'history & geography' ||
+      subject === 'economics & tvet engineering' ||
+      source.includes('dbe caps') ||
+      source.includes('south africa') ||
+      source.includes('saqa')
+    ) {
+      return true;
+    }
+
+    const meta = `${topic} ${source} ${file}`;
+    return (
+      meta.includes('south africa') ||
+      meta.includes('mapungubwe') ||
+      meta.includes('soweto uprising') ||
+      meta.includes('sharpeville') ||
+      meta.includes('apartheid') ||
+      meta.includes('nsc matric') ||
+      meta.includes('cradle of humankind') ||
+      meta.includes('ramaphosa') ||
+      meta.includes('codesa')
+    );
+  }
+
+  public static sanitizeChunkForCountry(
+    chunk: KnowledgeChunk,
+    isZim: boolean,
+    isBw: boolean = false,
+    isZa: boolean = false
+  ): KnowledgeChunk {
     if (isZim) return chunk;
     const cleanMultiline = (val: string) =>
       val
-        .replace(/Cambridge\s*\(?(\d+)\)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, 'Cambridge / International $2 ')
-        .replace(/Cambridge IGCSE\s*(\d+)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, 'Cambridge IGCSE $1 / International $2 ')
-        .replace(/ZIMSEC\s*Universal\s*Curriculum\s*Knowledge\s*Base/gi, 'International Curriculum Knowledge Base')
-        .replace(/ZIMSEC\s*Grade\s*7\s*Primary\s*Curriculum/gi, 'Primary International Curriculum')
-        .replace(/In\s+ZIMSEC\s+Grade\s*7\b/gi, 'In Primary')
-        .replace(/ZIMSEC\s*Combined\s*Science\s*\d*\s*&\s*/gi, 'International Combined Science & ')
-        .replace(/ZIMSEC\s*(Grade\s*7|Primary|O-Level|A-Level)\s*/gi, 'International $1 ')
+        .replace(/Cambridge\s*\(?(\d+)\)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, isBw ? 'Cambridge / BEC $2 ' : isZa ? 'DBE CAPS / NSC $2 ' : 'Cambridge / International $2 ')
+        .replace(/Cambridge IGCSE\s*(\d+)?\s*&\s*ZIMSEC\s*(O-Level|A-Level)?\s*/gi, isBw ? 'Cambridge IGCSE $1 / BEC $2 ' : isZa ? 'DBE CAPS / NSC $2 ' : 'Cambridge IGCSE $1 / International $2 ')
+        .replace(/ZIMSEC\s*Universal\s*Curriculum\s*Knowledge\s*Base/gi, isBw ? 'BEC Curriculum Knowledge Base' : isZa ? 'DBE CAPS Curriculum Knowledge Base' : 'International Curriculum Knowledge Base')
+        .replace(/ZIMSEC\s*Grade\s*7\s*Primary\s*Curriculum/gi, isBw ? 'BEC PSLE Primary Curriculum' : isZa ? 'DBE CAPS GET Primary Curriculum' : 'Primary International Curriculum')
+        .replace(/In\s+ZIMSEC\s+Grade\s*7\b/gi, isBw ? 'In BEC PSLE Primary' : isZa ? 'In CAPS Primary' : 'In Primary')
+        .replace(/ZIMSEC\s*Combined\s*Science\s*\d*\s*&\s*/gi, isBw ? 'BEC Science & ' : isZa ? 'CAPS Natural Sciences & ' : 'International Combined Science & ')
+        .replace(/ZIMSEC\s*(Grade\s*7|Primary|O-Level|A-Level)\s*/gi, isBw ? 'BEC $1 ' : isZa ? 'CAPS $1 ' : 'International $1 ')
         .replace(/\bZIMSEC\s*&\s*/gi, '')
         .replace(/\bZIMSEC\b[ \t]*/gi, '')
+        .replace(/Education 5\.0 & Heritage-Based Pedagogy/gi, 'Competency & Outcomes-Based Pedagogy')
         .replace(/[ \t]*\(HBC Topic \d+[^)]*\)/gi, '')
-        .replace(/[ \t]*\((?:International[ \t]*)?(?:7010|7030|4001|4003|4004|4021|4025|4026|1122|2248|6042|6046|9153|9154|9155|9156|9158|9188|9189|9190|9197|9198)\)/gi, '')
+        .replace(/[ \t]*\((?:International[ \t]*|BEC[ \t]*|CAPS[ \t]*)?(?:7010|7030|4001|4003|4004|4021|4025|4026|1122|2248|6042|6046|9153|9154|9155|9156|9158|9188|9189|9190|9197|9198)\)/gi, '')
         .replace(/\b(Syllabus|Biology|Chemistry|Physics|Mathematics|Geography|History|Agriculture|Accounting|Commerce|Economics|Literature|Computer Science)[ \t]+(?:7010|7030|4001|4003|4004|4021|4025|4026|1122|2248|6042|6046|9153|9154|9155|9156|9158|9188|9189|9190|9197|9198)\b/gi, '$1')
         .replace(/\(ZiG vs USD\)/gi, '(FX & inflation)')
-        .replace(/ and practical erosion control in Zimbabwe\./gi, ' and practical soil erosion control.')
+        .replace(/ and practical erosion control in Zimbabwe\./gi, isBw ? ' and practical soil erosion control in Botswana.' : isZa ? ' and practical soil erosion control in South Africa.' : ' and practical soil erosion control.')
         .replace(/[ \t]{2,}/g, ' ');
 
     const cleanSingleLine = (val: string) => cleanMultiline(val).replace(/\s+/g, ' ').trim();
@@ -2238,6 +2579,8 @@ Rules of Debit and Credit:
     }
     const normLevel = this.normalizeLevel(level);
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
     return (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[])
       .filter((p) => {
         const pLvl = this.normalizeLevel(p.level);
@@ -2245,9 +2588,15 @@ Rules of Debit and Credit:
         if (!isZim && this.isZimbabweSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
           return false;
         }
+        if (!isBw && this.isBotswanaSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+          return false;
+        }
+        if (!isZa && this.isSouthAfricaSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+          return false;
+        }
         return true;
       })
-      .map((p) => this.sanitizeChunkForCountry(p, isZim));
+      .map((p) => this.sanitizeChunkForCountry(p, isZim, isBw, isZa));
   }
 
   /**
@@ -2378,11 +2727,56 @@ Rules of Debit and Credit:
    * 5. Social Science
    * 6. Physical Edu & Arts
    */
-  public static standardizePrimarySubject(raw: string): string {
+  public static standardizePrimarySubject(raw: string, isBw: boolean = false, isZa: boolean = false): string {
     const s = (raw || '').toLowerCase();
     if (s.includes('english')) return 'English';
     if (s.includes('math')) return 'Mathematics';
-    if (s.includes('shona') || s.includes('chishona') || s.includes('ndebele')) return 'Shona';
+    if (isZa) {
+      if (s.includes('isizulu') || s.includes('afrikaans') || s.includes('languages')) return 'Languages (isiZulu & Afrikaans)';
+      if (s.includes('economic') || s.includes('ems')) return 'Economic & Management Sciences';
+      if (s.includes('life orientation')) return 'Life Orientation';
+      if (
+        s.includes('physical') ||
+        /\b(pe|pea|arts?)\b/i.test(s) ||
+        s.includes('sport') ||
+        s.includes('music')
+      ) {
+        return 'Physical Edu & Arts';
+      }
+      if (s.includes('social') || s.includes('general') || s.includes('history') || s.includes('geography')) {
+        return 'Social Sciences';
+      }
+      if (s.includes('natural') || s.includes('science') || s.includes('tech') || s.includes('ict') || s.includes('agri')) {
+        return 'Natural Sciences & Technology';
+      }
+      return 'Social Sciences';
+    }
+    if (isBw) {
+      if (s.includes('setswana')) return 'Setswana';
+      if (
+        s.includes('capa') ||
+        s.includes('physical') ||
+        /\b(pe|pea|arts?)\b/i.test(s) ||
+        s.includes('sport') ||
+        s.includes('music')
+      ) {
+        return 'CAPA';
+      }
+      if (
+        s.includes('social') ||
+        s.includes('moral') ||
+        s.includes('civic') ||
+        s.includes('religion') ||
+        s.includes('general')
+      ) {
+        return 'Social Studies';
+      }
+      if (s.includes('agri') && !s.includes('science')) return 'Agriculture';
+      if (s.includes('science') || s.includes('ict') || s.includes('tech')) return 'Science';
+      return 'Social Studies';
+    }
+    if (s.includes('ndebele')) return 'IsiNdebele';
+    if (s.includes('shona') || s.includes('chishona')) return 'Shona';
     if (
       s.includes('physical') ||
       s.includes('7130') ||
@@ -2420,7 +2814,7 @@ Rules of Debit and Credit:
     const l = (level || '').replace(/-/g, '').replace(/\s+/g, '').toLowerCase();
     if (l.includes('primary') || l.includes('grade')) return 'primary';
     if (l.includes('alevel') || l.includes('form5') || l.includes('form6')) return 'alevel';
-    if (l.includes('olevel') || l.includes('form1') || l.includes('form2') || l.includes('form3') || l.includes('form4')) return 'olevel';
+    if (l.includes('olevel') || l.includes('secondary') || l.includes('form1') || l.includes('form2') || l.includes('form3') || l.includes('form4')) return 'olevel';
     if (l.includes('tertiary') || l.includes('university') || l.includes('college')) return 'tertiary';
     return l;
   }
@@ -2444,7 +2838,9 @@ Rules of Debit and Credit:
     }
     await this.load();
     const isZim = StorageManager.isZimbabweAccount(country);
-    const cacheKey = `${query}|${level}|${isZim ? 'zw' : 'intl'}`;
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
+    const cacheKey = `${query}|${level}|${isZim ? 'zw' : isBw ? 'bw' : isZa ? 'za' : 'intl'}`;
     if (this.cache.has(cacheKey)) {
       return this.cache.get(cacheKey)!;
     }
@@ -2501,6 +2897,12 @@ Rules of Debit and Credit:
     // Non-Zimbabwe accounts exclude Zimbabwe-only data and heritage modules
     const candidates = this.chunks.filter((c) => {
       if (!isZim && this.isZimbabweSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
+      if (!isBw && this.isBotswanaSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
+      if (!isZa && this.isSouthAfricaSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
         return false;
       }
       const cLevel = this.normalizeLevel(c.level);
@@ -2601,7 +3003,7 @@ Rules of Debit and Credit:
         }
       }
 
-      const threshold = effectiveWords.length <= 2 ? 1 : Math.max(1, Math.floor(effectiveWords.length * 0.4));
+      const threshold = effectiveWords.length <= 2 ? 1 : Math.max(2, Math.floor(effectiveWords.length * 0.5));
       if (score >= 20 && matchedWords.size >= threshold) {
         scored.push({ chunk, score, matchedWords });
       }
@@ -2610,6 +3012,12 @@ Rules of Debit and Credit:
     // 2. Search across indexed syllabus topics filtered by level and account country
     const indexCandidates = this.assetsIndex.filter((item) => {
       if (!isZim && this.isZimbabweSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+        return false;
+      }
+      if (!isBw && this.isBotswanaSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+        return false;
+      }
+      if (!isZa && this.isSouthAfricaSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
         return false;
       }
       const cLevel = this.normalizeLevel(item.l);
@@ -2699,7 +3107,7 @@ Rules of Debit and Credit:
         }
       }
 
-      const threshold = effectiveWords.length <= 2 ? 1 : Math.max(1, Math.floor(effectiveWords.length * 0.4));
+      const threshold = effectiveWords.length <= 2 ? 1 : Math.max(2, Math.floor(effectiveWords.length * 0.5));
       if (score >= 40 && matchedWords.size >= threshold) {
         scoredAssetMatches.push({ item, score, matchedWords });
       }
@@ -2710,7 +3118,7 @@ Rules of Debit and Credit:
     // For the top matching asset items, resolve their full in-depth content from the JSON asset file
     for (const match of scoredAssetMatches.slice(0, 3)) {
       const fullContent = await this.loadAssetFileContent(match.item.f, match.item.idx, match.item.snip);
-      const syllabusPrefix = isZim ? 'ZIMSEC Syllabus' : 'International Syllabus';
+      const syllabusPrefix = isZim ? 'ZIMSEC Syllabus' : isBw ? 'BEC Syllabus' : isZa ? 'DBE CAPS Syllabus' : 'International Syllabus';
       const chunk: KnowledgeChunk = {
         id: match.item.id,
         level: match.item.l,
@@ -2730,7 +3138,7 @@ Rules of Debit and Credit:
     scored.sort((a, b) => b.score - a.score);
     const topResults = scored.slice(0, 5).map((item) => ({
       ...item,
-      chunk: this.sanitizeChunkForCountry(item.chunk, isZim)
+      chunk: this.sanitizeChunkForCountry(item.chunk, isZim, isBw, isZa)
     }));
     const finalResult = { results: topResults, queryWords: effectiveWords };
     this.cache.set(cacheKey, finalResult);
@@ -2743,34 +3151,116 @@ Rules of Debit and Credit:
    * O-Level: ZIMSEC O-Level (Forms 1 - 4).
    * A-Level: ZIMSEC Advanced Level (Forms 5 - 6).
    */
-  public static standardizeOLevelSubject(raw?: string, topic?: string): string {
+  public static standardizeOLevelSubject(raw?: string, topic?: string, isBw: boolean = false, isZa: boolean = false): string {
     const s = (raw || '').toLowerCase();
     const t = (topic || '').toLowerCase();
+    if (isZa) {
+      if (s === 'social sciences') return 'Social Sciences';
+      if (s === 'natural sciences') return 'Natural Sciences';
+      if (s === 'economic & management sciences') return 'Economic & Management Sciences';
+      if (s === 'technology') return 'Technology';
+      if (s === 'life orientation') return 'Life Orientation';
+      if (s.includes('combined science') || s.includes('general science')) return 'Natural Sciences';
+      if (s.includes('account') || s.includes('commerce') || s.includes('business') || t.includes('ledger') || t.includes('balance sheet')) {
+        return 'Economic & Management Sciences';
+      }
+      if (
+        s.includes('design') ||
+        s.includes('textile') ||
+        s.includes('wood technology') ||
+        s.includes('metal technology') ||
+        s.includes('building technology') ||
+        s.includes('food technology') ||
+        s.includes('technical')
+      ) {
+        return 'Technology';
+      }
+    }
+    if (isBw) {
+      if (s.includes('setswana')) return 'Setswana';
+      if (s.includes('moral')) return 'Moral Education';
+      if (s.includes('social studies') || s.includes('civic')) return 'Social Studies';
+      if (
+        s.includes('design') ||
+        s.includes('textile') ||
+        s.includes('wood technology') ||
+        s.includes('metal technology') ||
+        s.includes('building technology') ||
+        s.includes('food technology') ||
+        s.includes('technical')
+      ) {
+        return 'Design & Technology';
+      }
+      if (s.includes('combined science') || s.includes('general science') || s.includes('integrated science')) {
+        return 'Integrated Science';
+      }
+      if (s.includes('account') || s.includes('commerce') || s.includes('business') || t.includes('ledger') || t.includes('balance sheet')) {
+        return 'Commerce & Accounting';
+      }
+    }
     if (s.includes('bio') || t.includes('photosynthesis') || t.includes('cell') || t.includes('enzyme') || t.includes('digestion') || t.includes('genetics') || t.includes('circulation')) {
-      if (!s.includes('combined')) return 'Biology';
+      if (!s.includes('combined') && !s.includes('integrated') && !s.includes('natural science')) return 'Biology';
     }
     if (s.includes('chem') || t.includes('periodic table') || t.includes('atomic') || t.includes('electrolysis') || t.includes('mole')) {
-      if (!s.includes('combined')) return 'Chemistry';
+      if (!s.includes('combined') && !s.includes('integrated') && !s.includes('natural science')) return 'Chemistry';
     }
     if (s.includes('physic') || t.includes('circuit') || t.includes('optics') || t.includes('electricity') || t.includes('wave')) {
-      if (!s.includes('combined')) return 'Physics';
+      if (!s.includes('combined') && !s.includes('integrated') && !s.includes('natural science')) return 'Physics';
     }
-    if (s.includes('combined science') || s.includes('science')) return 'Combined Science';
+    if (s.includes('combined science') || s.includes('general science') || s.includes('integrated science')) {
+      return isBw ? 'Integrated Science' : isZa ? 'Natural Sciences' : 'Combined Science';
+    }
+    if (s.includes('textile')) return isBw ? 'Design & Technology' : isZa ? 'Technology' : 'Textile Technology and Design';
+    if (
+      s.includes('wood technology') ||
+      s.includes('metal technology') ||
+      s.includes('building technology') ||
+      s.includes('food technology') ||
+      s.includes('technical graphics') ||
+      s.includes('design and technology') ||
+      s.includes('design & technology')
+    ) {
+      return isBw ? 'Design & Technology' : isZa ? 'Technology' : 'Technical & Vocational Education';
+    }
+    if (s.includes('heritage') || s.includes('curriculum overview')) return 'Heritage Studies';
+    if (s.includes('religious') || s.includes('fareme')) return 'Family & Religious Studies';
     if (s.includes('agric') || t.includes('soil') || t.includes('crop') || t.includes('livestock') || t.includes('nitrogen')) return 'Agriculture';
     if (s.includes('geog') || t.includes('weather') || t.includes('river') || t.includes('rock') || t.includes('plate') || t.includes('water cycle')) return 'Geography';
-    if (s.includes('hist') || s.includes('heritage') || t.includes('chimurenga') || t.includes('mutapa') || t.includes('great zimbabwe')) return 'History';
+    if (s.includes('hist') || t.includes('chimurenga') || t.includes('mutapa') || t.includes('great zimbabwe')) return 'History';
     if (s.includes('math') || t.includes('algebra') || t.includes('geometry') || t.includes('trigonometry') || t.includes('circle') || t.includes('bearing')) return 'Mathematics';
-    if (s.includes('english') || s.includes('literature') || s.includes('composition') || s.includes('grammar') || s.includes('comprehension')) return 'English Language';
-    if (s.includes('account') || s.includes('commerce') || s.includes('business') || s.includes('ledger') || s.includes('balance sheet')) return 'Commerce & Accounts';
+    if (s.includes('english') || s.includes('literature') || t.includes('comprehension') || t.includes('composition') || t.includes('grammar')) return 'English Language';
+    if (s.includes('account') || s.includes('commerce') || s.includes('business') || t.includes('ledger') || t.includes('balance sheet')) {
+      return isBw ? 'Commerce & Accounting' : isZa ? 'Economic & Management Sciences' : 'Commerce & Accounts';
+    }
     if (s.includes('comput') || s.includes('ict') || t.includes('algorithm') || t.includes('logic') || t.includes('cpu')) return 'Computer Science';
     if (s.includes('shona') || s.includes('ndebele') || s.includes('indigenous')) return 'Shona';
-    return 'Combined Science';
+    return isBw ? 'Integrated Science' : isZa ? 'Natural Sciences' : 'Combined Science';
   }
 
-  public static standardizeALevelSubject(raw?: string, topic?: string): string {
+  public static standardizeALevelSubject(raw?: string, topic?: string, isBw: boolean = false, isZa: boolean = false): string {
     const s = (raw || '').toLowerCase();
     const t = (topic || '').toLowerCase();
-    if (s.includes('math') || t.includes('calculus') || t.includes('algebra') || t.includes('differential') || t.includes('integral')) return 'Pure Mathematics';
+    if (isZa) {
+      if (s === 'mathematical literacy') return 'Mathematical Literacy';
+      if (s === 'physical sciences') return 'Physical Sciences';
+      if (s === 'life sciences') return 'Life Sciences';
+      if (s === 'life orientation') return 'Life Orientation';
+      if (s === 'social sciences') return 'Geography';
+      if (s === 'mathematics') return 'Mathematics';
+      if (s === 'accounting') return 'Accounting';
+      if (s === 'economics & business studies') return 'Economics';
+      if (s === 'history & geography') return 'History';
+    }
+    if (isBw) {
+      if (s.includes('development studies') || s.includes('dev studies')) return 'Development Studies';
+      if (s.includes('double science')) return 'Double Science';
+      if (s.includes('setswana')) return 'Setswana';
+      if (s.includes('agric')) return 'Agriculture';
+    }
+    if (s.includes('stat') || t.includes('hypothesis') || t.includes('distribution')) return 'Statistics';
+    if (s.includes('math') || t.includes('calculus') || t.includes('algebra') || t.includes('differential') || t.includes('integral')) {
+      return isZa ? 'Mathematics' : 'Pure Mathematics';
+    }
     if (s.includes('bio') || t.includes('respiration') || t.includes('calvin') || t.includes('photosynthesis') || t.includes('macromolecule')) return 'Biology';
     if (s.includes('chem') || t.includes('born-haber') || t.includes('equilibrium') || t.includes('energetics') || t.includes('organic')) return 'Chemistry';
     if (s.includes('physic') || t.includes('shm') || t.includes('gravitational') || t.includes('circular') || t.includes('quantum')) return 'Physics';
@@ -2779,17 +3269,179 @@ Rules of Debit and Credit:
     if (s.includes('account') || t.includes('cash flow') || t.includes('ias 7')) return 'Accounting';
     if (s.includes('econ') || t.includes('market') || t.includes('monopoly') || t.includes('elasticity')) return 'Economics';
     if (s.includes('business') || t.includes('marketing') || t.includes('management')) return 'Business Studies';
-    if (s.includes('stat') || t.includes('hypothesis') || t.includes('distribution')) return 'Statistics';
     if (s.includes('literature') || s.includes('english')) return 'Literature in English';
     if (s.includes('divinity') || s.includes('religion')) return 'Divinity';
     if (s.includes('shona')) return 'Shona';
-    return 'Pure Mathematics';
+    if (s.includes('sociology')) return 'Sociology';
+    if (
+      s.includes('technical') ||
+      s.includes('wood') ||
+      s.includes('metal') ||
+      s.includes('building') ||
+      s.includes('food') ||
+      s.includes('textile') ||
+      s.includes('design')
+    ) {
+      return 'Technical & Vocational Education';
+    }
+    return isZa ? 'Mathematics' : 'Pure Mathematics';
+  }
+
+  private static matchesRequestedSubject(
+    normLevel: string,
+    subLower: string,
+    itemSub: string,
+    itemFile: string
+  ): boolean {
+    const s = itemSub.toLowerCase().trim();
+    const f = itemFile.toLowerCase();
+
+    if (s === subLower) return true;
+
+    if (normLevel === 'primary') {
+      if (subLower === 'english') return s === 'english' || s === 'english language';
+      if (subLower === 'mathematics') return s === 'mathematics';
+      if (subLower === 'shona') return (s.includes('shona') || s.includes('chishona')) && !s.includes('ndebele');
+      if (subLower === 'isindebele') return s.includes('ndebele');
+      if (subLower === 'setswana') return s.includes('setswana');
+      if (subLower === 'physical edu & arts' || subLower === 'capa') {
+        return (
+          s.includes('capa') ||
+          s.includes('physical') ||
+          s.includes('arts') ||
+          s.includes('music') ||
+          s.includes('mass displays') ||
+          s.includes('performing')
+        );
+      }
+      if (subLower === 'social science' || subLower === 'social studies' || subLower === 'social sciences') {
+        return (
+          s.includes('social') ||
+          s.includes('heritage') ||
+          s.includes('fareme') ||
+          s.includes('religious') ||
+          s.includes('religion') ||
+          s.includes('general knowledge') ||
+          s.includes('civics')
+        );
+      }
+      if (subLower === 'languages (isizulu & afrikaans)') {
+        return s.includes('isizulu') || s.includes('afrikaans') || s.includes('languages');
+      }
+      if (subLower === 'economic & management sciences') {
+        return s.includes('economic') || s.includes('ems');
+      }
+      if (subLower === 'natural sciences & technology') {
+        return (s.includes('science') || s.includes('tech') || s.includes('ict')) && !s.includes('social');
+      }
+      if (subLower === 'science') {
+        return (s.includes('science') || s.includes('ict') || s.includes('tech')) && !s.includes('social') && !s.includes('agri');
+      }
+      if (subLower === 'agriculture') {
+        return s.includes('agri');
+      }
+      if (subLower === 'agric, science & tech') {
+        return (
+          (s.includes('agri') ||
+            s.includes('science') ||
+            s.includes('ict') ||
+            s.includes('technology') ||
+            s.includes('computer')) &&
+          !s.includes('social') &&
+          !s.includes('textile')
+        );
+      }
+      return false;
+    }
+
+    if (normLevel === 'olevel') {
+      if (subLower === 'biology') return s === 'biology';
+      if (subLower === 'combined science' || subLower === 'integrated science' || subLower === 'natural sciences') {
+        return s === 'combined science' || s === 'general science' || s === 'integrated science' || s === 'natural sciences';
+      }
+      if (subLower === 'mathematics') return s === 'mathematics';
+      if (subLower === 'chemistry') return s === 'chemistry';
+      if (subLower === 'physics') return s === 'physics';
+      if (subLower === 'geography') return s.startsWith('geography');
+      if (subLower === 'history') return s.startsWith('history');
+      if (subLower === 'heritage studies') return s === 'heritage studies' || s === 'curriculum overview';
+      if (subLower === 'social studies') return s === 'social studies';
+      if (subLower === 'social sciences') return s === 'social sciences';
+      if (subLower === 'life orientation') return s === 'life orientation';
+      if (subLower === 'moral education') return s === 'moral education';
+      if (subLower === 'setswana') return s === 'setswana';
+      if (subLower === 'family & religious studies') {
+        return s === 'family and religious studies' || s === 'religious studies';
+      }
+      if (subLower === 'agriculture') return s === 'agriculture' && !f.includes('zimsec_tve');
+      if (subLower === 'english language') {
+        return s === 'english language' || s === 'literature' || s === 'literature in english';
+      }
+      if (
+        subLower === 'commerce & accounts' ||
+        subLower === 'commerce & accounting' ||
+        subLower === 'economic & management sciences'
+      ) {
+        return (
+          s === 'commerce' ||
+          s === 'principles of accounting' ||
+          s === 'principles of accounts' ||
+          s === 'commerce & accounting' ||
+          s === 'economic & management sciences'
+        );
+      }
+      if (subLower === 'computer science') return s === 'computer science' && !f.includes('zimsec_tve');
+      if (subLower === 'textile technology and design') return s === 'textile technology and design';
+      if (subLower === 'technical & vocational education' || subLower === 'design & technology' || subLower === 'technology') {
+        return (
+          f.includes('zimsec_tve') ||
+          s.includes('technical graphics') ||
+          s.includes('wood technology') ||
+          s.includes('metal technology') ||
+          s.includes('building technology') ||
+          s.includes('food technology') ||
+          s === 'design and technology' ||
+          s === 'design & technology' ||
+          s === 'technology' ||
+          s === 'textile technology and design'
+        );
+      }
+      if (subLower === 'shona') return s === 'shona' || s === 'chishona';
+      return false;
+    }
+
+    if (normLevel === 'alevel') {
+      if (subLower === 'pure mathematics' || subLower === 'mathematics') {
+        return s === 'pure mathematics' || s === 'mathematics';
+      }
+      if (subLower === 'mathematical literacy') return s === 'mathematical literacy';
+      if (subLower === 'physical sciences') return s === 'physical sciences' || s === 'physics' || s === 'chemistry';
+      if (subLower === 'life sciences') return s === 'life sciences' || s === 'biology';
+      if (subLower === 'life orientation') return s === 'life orientation';
+      if (subLower === 'literature in english') return s === 'literature in english' || s === 'english literature';
+      if (subLower === 'accounting') return s === 'accounting' || s === 'principles of accounts';
+      if (subLower === 'economics') return s === 'economics' || s === 'economics & business studies';
+      if (subLower === 'business studies') return s === 'business studies' || s === 'economics & business studies';
+      if (subLower === 'geography') return s === 'geography' || s === 'history & geography' || s === 'social sciences';
+      if (subLower === 'history') return s === 'history' || s === 'history & geography';
+      if (subLower === 'development studies') return s === 'development studies';
+      if (subLower === 'double science') return s === 'double science';
+      if (subLower === 'setswana') return s === 'setswana';
+      if (subLower === 'agriculture') return s === 'agriculture';
+      if (subLower === 'technical & vocational education') {
+        return f.includes('zimsec_tve') && !['agriculture', 'computer science'].includes(s);
+      }
+      return s === subLower;
+    }
+
+    return s === subLower;
   }
 
   /**
    * Returns subjects specific to the given level and selected country curriculum.
-   * Zimbabwe accounts see full ZIMSEC 6-Subject Primary & ChiShona curriculum.
-   * Non-Zimbabwe accounts see International / Global curriculum subjects without Zimbabwe-only modules.
+   * Zimbabwe accounts see full ZIMSEC Primary (with IsiNdebele & ChiShona), O-Level, A-Level & Tertiary subjects.
+   * Botswana accounts see authentic BEC PSLE, JCE, BGCSE, and BQA Tertiary subjects.
+   * South Africa accounts see authentic DBE CAPS GET (Gr 1–7, Gr 8–9), FET/NSC Matric (Gr 10–12), and SAQA Tertiary subjects.
    */
   static async getSubjects(level: string, country?: string): Promise<string[]> {
     if (!StorageManager.hasCountryCurriculumPack(country)) {
@@ -2798,14 +3450,39 @@ Rules of Debit and Credit:
     await this.load();
     const normLevel = this.normalizeLevel(level);
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
 
     if (normLevel === 'primary') {
+      if (isZa) {
+        return [
+          'English',
+          'Languages (isiZulu & Afrikaans)',
+          'Mathematics',
+          'Natural Sciences & Technology',
+          'Social Sciences',
+          'Economic & Management Sciences',
+          'Physical Edu & Arts'
+        ];
+      }
+      if (isBw) {
+        return [
+          'English',
+          'Setswana',
+          'Mathematics',
+          'Science',
+          'Agriculture',
+          'Social Studies',
+          'CAPA'
+        ];
+      }
       return isZim
         ? [
             'English',
             'Mathematics',
             'Agric, Science & Tech',
             'Shona',
+            'IsiNdebele',
             'Social Science',
             'Physical Edu & Arts'
           ]
@@ -2818,6 +3495,42 @@ Rules of Debit and Credit:
     }
 
     if (normLevel === 'olevel') {
+      if (isZa) {
+        return [
+          'Mathematics',
+          'Natural Sciences',
+          'Economic & Management Sciences',
+          'Social Sciences',
+          'Technology',
+          'Life Orientation',
+          'English Language',
+          'Biology',
+          'Chemistry',
+          'Physics',
+          'Geography',
+          'History',
+          'Computer Science'
+        ];
+      }
+      if (isBw) {
+        return [
+          'Setswana',
+          'Social Studies',
+          'Moral Education',
+          'Integrated Science',
+          'Mathematics',
+          'English Language',
+          'Agriculture',
+          'Design & Technology',
+          'Commerce & Accounting',
+          'Biology',
+          'Chemistry',
+          'Physics',
+          'Geography',
+          'History',
+          'Computer Science'
+        ];
+      }
       const base = [
         'Biology',
         'Combined Science',
@@ -2829,13 +3542,62 @@ Rules of Debit and Credit:
         'Agriculture',
         'English Language',
         'Commerce & Accounts',
-        'Computer Science'
+        'Computer Science',
+        'Textile Technology and Design',
+        'Technical & Vocational Education'
       ];
-      return isZim ? [...base, 'Shona'] : base;
+      return isZim
+        ? [
+            ...base.slice(0, 7),
+            'Heritage Studies',
+            'Family & Religious Studies',
+            ...base.slice(7),
+            'Shona'
+          ]
+        : base;
     }
 
     if (normLevel === 'alevel') {
-      return [
+      if (isZa) {
+        return [
+          'Mathematics',
+          'Mathematical Literacy',
+          'Physical Sciences',
+          'Life Sciences',
+          'Accounting',
+          'Economics',
+          'Business Studies',
+          'History',
+          'Geography',
+          'Life Orientation',
+          'Biology',
+          'Chemistry',
+          'Physics',
+          'Statistics',
+          'Literature in English'
+        ];
+      }
+      if (isBw) {
+        return [
+          'Development Studies',
+          'Setswana',
+          'Double Science',
+          'Pure Mathematics',
+          'Biology',
+          'Chemistry',
+          'Physics',
+          'Geography',
+          'History',
+          'Agriculture',
+          'Accounting',
+          'Economics',
+          'Business Studies',
+          'Statistics',
+          'Literature in English',
+          'Sociology'
+        ];
+      }
+      const base = [
         'Pure Mathematics',
         'Biology',
         'Chemistry',
@@ -2847,8 +3609,11 @@ Rules of Debit and Credit:
         'Business Studies',
         'Statistics',
         'Literature in English',
-        'Divinity'
+        'Divinity',
+        'Sociology',
+        'Technical & Vocational Education'
       ];
+      return isZim ? [...base.slice(0, 12), 'Shona', ...base.slice(12)] : base;
     }
 
     if (normLevel === 'tertiary') {
@@ -2863,18 +3628,16 @@ Rules of Debit and Credit:
       ];
     }
 
-    return [
-      'Combined Science',
-      'Mathematics',
-      'Geography',
-      'History',
-      'English Language'
-    ];
+    return isBw
+      ? ['Integrated Science', 'Mathematics', 'Geography', 'History', 'English Language', 'Setswana']
+      : isZa
+      ? ['Mathematics', 'Physical Sciences', 'Life Sciences', 'Accounting', 'Geography', 'History']
+      : ['Combined Science', 'Mathematics', 'Geography', 'History', 'English Language'];
   }
 
   /**
    * Retrieves comprehensive study modules and substantial textbook notes for the selected subject and country.
-   * Excludes single-sentence dictionary definitions and isolates Zimbabwe-specific packs to Zimbabwe accounts.
+   * Excludes single-sentence dictionary definitions and isolates Zimbabwe, Botswana & South Africa packs mutually.
    */
   static async getTopics(level: string, subject: string, country?: string): Promise<KnowledgeChunk[]> {
     if (!StorageManager.hasCountryCurriculumPack(country)) {
@@ -2884,12 +3647,44 @@ Rules of Debit and Credit:
     const normLevel = this.normalizeLevel(level);
     const subLower = subject.toLowerCase().trim();
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
 
     // 1. Pick from COMPREHENSIVE_STUDY_PACKS (high-depth textbook lessons with visual diagrams)
     const primaryPacks = (COMPREHENSIVE_STUDY_PACKS as KnowledgeChunk[]).filter((p) => {
       const pLvl = this.normalizeLevel(p.level);
       if (pLvl !== normLevel) return false;
       if (!isZim && this.isZimbabweSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+        return false;
+      }
+      if (!isBw && this.isBotswanaSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+        return false;
+      }
+      if (!isZa && this.isSouthAfricaSpecificItem({ id: p.id, subject: p.subject, topic: p.topic, source: p.source })) {
+        return false;
+      }
+      if (isBw) {
+        const mapped = normLevel === 'primary'
+          ? this.standardizePrimarySubject(p.subject, true, false)
+          : normLevel === 'olevel'
+          ? this.standardizeOLevelSubject(p.subject, p.topic, true, false)
+          : normLevel === 'alevel'
+          ? this.standardizeALevelSubject(p.subject, p.topic, true, false)
+          : p.subject;
+        return mapped.toLowerCase() === subLower;
+      }
+      if (isZa) {
+        const mapped = normLevel === 'primary'
+          ? this.standardizePrimarySubject(p.subject, false, true)
+          : normLevel === 'olevel'
+          ? this.standardizeOLevelSubject(p.subject, p.topic, false, true)
+          : normLevel === 'alevel'
+          ? this.standardizeALevelSubject(p.subject, p.topic, false, true)
+          : p.subject;
+        if (mapped.toLowerCase() === subLower) return true;
+        if (subLower === 'physical sciences' && (p.subject.toLowerCase() === 'physics' || p.subject.toLowerCase() === 'chemistry')) return true;
+        if (subLower === 'life sciences' && p.subject.toLowerCase() === 'biology') return true;
+        if (subLower === 'pure mathematics' && p.subject.toLowerCase() === 'pure mathematics') return true;
         return false;
       }
       return p.subject.toLowerCase() === subLower;
@@ -2899,44 +3694,79 @@ Rules of Debit and Credit:
     const extraChunks = this.chunks.filter((c) => {
       const cLvl = this.normalizeLevel(c.level);
       if (cLvl !== normLevel) return false;
-      // Filter out small glossary snippets
-      if (c.id.startsWith('glossary_') || c.content.length < 350) return false;
+      if (c.id.startsWith('glossary_') || c.content.length < 300) return false;
       if (!isZim && this.isZimbabweSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
         return false;
+      }
+      if (!isBw && this.isBotswanaSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
+      if (!isZa && this.isSouthAfricaSpecificItem({ id: c.id, subject: c.subject, topic: c.topic, source: c.source })) {
+        return false;
+      }
+
+      if (isZa) {
+        const csLower = c.subject.toLowerCase();
+        if (subLower === 'business studies' && csLower === 'economics & business studies') return true;
+        if (subLower === 'geography' && (csLower === 'history & geography' || csLower === 'social sciences')) return true;
+        if (subLower === 'history' && csLower === 'history & geography') return true;
+        if (subLower === 'law & jurisprudence' && csLower === 'law') return true;
+        if (subLower === 'economics & commerce' && csLower === 'economics & tvet engineering') return true;
+        if (subLower === 'physics' && csLower === 'physical sciences') return true;
+        if (subLower === 'chemistry' && csLower === 'physical sciences') return true;
+        if (subLower === 'biology' && csLower === 'life sciences') return true;
       }
 
       let stdSubj = c.subject;
       if (normLevel === 'primary') {
-        stdSubj = this.standardizePrimarySubject(c.subject);
+        stdSubj = this.standardizePrimarySubject(c.subject, isBw, isZa);
       } else if (normLevel === 'olevel') {
-        stdSubj = this.standardizeOLevelSubject(c.subject, c.topic);
+        stdSubj = this.standardizeOLevelSubject(c.subject, c.topic, isBw, isZa);
       } else if (normLevel === 'alevel') {
-        stdSubj = this.standardizeALevelSubject(c.subject, c.topic);
+        stdSubj = this.standardizeALevelSubject(c.subject, c.topic, isBw, isZa);
       }
 
       return stdSubj.toLowerCase() === subLower;
     });
 
-    // 3. Draw matching topics from all indexed syllabus asset files
+    // 3. Draw matching topics from all indexed syllabus asset files (excluding exam banks & universal dictionary)
+    const isAlevelTve =
+      !isBw && !isZa && normLevel === 'alevel' && subLower === 'technical & vocational education';
     const indexMatches = this.assetsIndex
       .filter((item) => {
-        const cLvl = this.normalizeLevel(item.l);
-        if (cLvl !== normLevel) return false;
+        const fLower = item.f.toLowerCase();
+        if (fLower.includes('exam_bank') || fLower === 'zimsec_universal_glossary_terms.json') {
+          return false;
+        }
         if (!isZim && this.isZimbabweSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
           return false;
         }
-        const itemSubLower = item.s.toLowerCase();
-        return itemSubLower === subLower || itemSubLower.includes(subLower) || subLower.includes(itemSubLower);
+        if (!isBw && this.isBotswanaSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+          return false;
+        }
+        if (!isZa && this.isSouthAfricaSpecificItem({ id: item.id, subject: item.s, topic: item.t, file: item.f })) {
+          return false;
+        }
+        const cLvl = this.normalizeLevel(item.l);
+        if (isAlevelTve) {
+          if (!fLower.includes('zimsec_tve')) return false;
+        } else if (cLvl !== normLevel) {
+          return false;
+        }
+        return this.matchesRequestedSubject(normLevel, subLower, item.s, item.f);
       })
-      .slice(0, 50)
+      .slice(0, 250)
       .map((item) => ({
         id: item.id,
         level: item.l,
-        subject: item.s,
+        subject: subject,
         topic: item.t,
         content: item.snip,
-        source: `${isZim ? 'ZIMSEC Syllabus' : 'International Syllabus'} (${item.f.replace('.json', '').replace(/_/g, ' ').replace(/^zimsec\s+/i, '')})`,
-        keywords: item.kw || [item.t.toLowerCase()]
+        summary: item.snip,
+        source: `${isZim ? 'ZIMSEC Syllabus' : isBw ? 'BEC Syllabus' : isZa ? 'DBE CAPS Syllabus' : 'International Syllabus'} (${item.f.replace('.json', '').replace(/_/g, ' ').replace(/^zimsec\s+/i, '')})`,
+        keywords: item.kw || [item.t.toLowerCase()],
+        assetFile: item.f,
+        assetIdx: item.idx
       }));
 
     // Deduplicate by topic title
@@ -2944,7 +3774,7 @@ Rules of Debit and Credit:
     const results: KnowledgeChunk[] = [];
 
     for (const item of [...primaryPacks, ...extraChunks, ...indexMatches]) {
-      const sanitized = this.sanitizeChunkForCountry(item, isZim);
+      const sanitized = this.sanitizeChunkForCountry(item, isZim, isBw, isZa);
       const normTopic = sanitized.topic.toLowerCase().trim();
       if (!seenTopics.has(normTopic)) {
         seenTopics.add(normTopic);

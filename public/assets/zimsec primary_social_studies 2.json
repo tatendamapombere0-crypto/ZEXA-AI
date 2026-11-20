@@ -108,16 +108,66 @@
   },
 
   "topics_overview": [
-    {"id": 1, "name": "Identity: Family History and Local Heritage"},
-    {"id": 2, "name": "Cultural Heritage"},
-    {"id": 3, "name": "National History, Sovereignty and Governance"},
-    {"id": 4, "name": "Entitlements/Rights and Responsibilities"},
-    {"id": 5, "name": "Shelter"},
-    {"id": 6, "name": "Social Services and Volunteerism"},
-    {"id": 7, "name": "Natural Heritage: Production, Distribution and Consumption of Goods and Services"},
-    {"id": 8, "name": "Transport and Communication"},
-    {"id": 9, "name": "Work and Leisure"},
-    {"id": 10, "name": "Global Issues"}
+    {
+      "id": 1,
+      "name": "Identity: Family History and Local Heritage",
+      "description": "Learners explore their personal identity, family structure (nuclear, extended, single-parent, child-headed, monogamous, and polygamous), family genealogies, and Zimbabwean totem systems (mitupo/izibongo). The topic develops pride in local heritage by studying indigenous farming tools (badza/ikhuba, sickle), hunting tools (uta nemiseve, spear), and grain-processing tools (duri/umgigo, guyo/imbokodo), alongside local shrines, national monuments, clan lineages, and Zimbabwe's 16 constitutionally recognised languages.",
+      "key_concepts": ["Nuclear and extended family roles", "Genealogy and family trees", "Mitupo (totems) and zvidawo (praise names)", "Indigenous tools (duri, guyo, badza)", "Local heroes, shrines, and conflict management"]
+    },
+    {
+      "id": 2,
+      "name": "Cultural Heritage",
+      "description": "This strand builds Unhu/Ubuntu/Vumunhu—humanity, respect, hospitality, honesty, and moral discipline—as the ethical foundation of Zimbabwean society. Learners compare cultural customs across dress, food, folklore, music, and traditional games (nhodo, pada, tsoro), examine family ceremonies and rites of passage (birth, adolescence, courtship, customary and civil marriage, death, heirship), and learn about age of consent and healthy boy-girl relationships.",
+      "key_concepts": ["Unhu/Ubuntu/Vumunhu values", "Rites of passage and family ceremonies", "Customary vs civil marriage and heirship", "Traditional folklore, songs, dances, and games", "Healthy peer relationships and respect"]
+    },
+    {
+      "id": 3,
+      "name": "National History, Sovereignty and Governance",
+      "description": "Learners develop patriotism and civic literacy through Zimbabwe's National Anthem (Simudzai Mureza weZimbabwe / Kalibusiswe Ilizwe leZimbabwe), National Flag, Coat of Arms, Flame Lily, Zimbabwe Bird, and the National School Pledge. History progresses from early Khoisan and Bantu communities through the Great Zimbabwe, Mutapa, Rozvi, and Ndebele pre-colonial kingdoms, BSAC colonisation (1890), the First Chimurenga/Umvukela (1896–97), the Second Chimurenga (1966–79), Independence on 18 April 1980, Fast Track Land Reform, indigenous courts (Sabhuku, Sadunhu, Ishe), and Central/Local Government arms.",
+      "key_concepts": ["National symbols and National School Pledge", "Great Zimbabwe, Mutapa, Rozvi, and Ndebele states", "First and Second Chimurenga/Umvukela", "Independence (18 April 1980) and Land Reform", "Village, Headman, Chief, Local and Central Government"]
+    },
+    {
+      "id": 4,
+      "name": "Entitlements/Rights and Responsibilities",
+      "description": "Learners examine fundamental children's rights (education, healthcare, name and nationality, shelter, protection from abuse) balanced with daily responsibilities at home, school, and in the community. It covers child protection reporting channels (such as Childline 116, police, and teachers), substance-abuse prevention, gender equity, challenging harmful stereotypes, Zimbabwe's law-making process, elections, property ownership, inheritance law, and consumer rights.",
+      "key_concepts": ["Children's rights and citizenship duties", "Child protection and reporting abuse (116)", "Gender equity and dismantling stereotypes", "Law-making in Zimbabwe and democratic elections", "Property ownership, inheritance, and consumer rights"]
+    },
+    {
+      "id": 5,
+      "name": "Shelter",
+      "description": "This topic investigates why humans and animals need shelter for protection from weather, predators, and storage, comparing indigenous Zimbabwean dwellings (pole-and-dagga thatched huts, rondavels, granaries/dura) with modern urban and rural structures. Learners study historic stone architecture such as Great Zimbabwe and Khami Ruins, evaluate building materials by geographical climate, analyse disaster-resistant housing for flood or cyclone zones, and discuss urban settlement growth and solutions to housing shortages.",
+      "key_concepts": ["Reasons for human and animal shelter", "Indigenous vs modern Zimbabwean architecture", "Heritage stone monuments (Great Zimbabwe, Khami)", "Disaster-resilient siting and building materials", "Urban housing shortages and settlement planning"]
+    },
+    {
+      "id": 6,
+      "name": "Social Services and Volunteerism",
+      "description": "Learners identify vulnerable groups in the family and wider society—such as orphans, the elderly, persons living with disabilities, and impoverished households—and learn how families, communities, and the Government of Zimbabwe support them through schools, clinics, social welfare departments, and BEAM. The module cultivates active citizenship by examining voluntary humanitarian organisations, local charities, and Zimbabwean philanthropists.",
+      "key_concepts": ["Supporting vulnerable members in family and society", "Government social welfare, health, and education services", "Humanitarian NGOs and Red Cross/local charities", "Active participation in community volunteerism", "Prominent Zimbabwean community helpers"]
+    },
+    {
+      "id": 7,
+      "name": "Natural Heritage: Production, Distribution and Consumption of Goods and Services",
+      "description": "Learners explore Zimbabwe's land, minerals, forests, water, and wildlife as national wealth alongside food and cash crop production (maize, tobacco, cotton, wheat). The strand compares indigenous food preservation (drying vegetables/mufushwa, smoking, salting, granaries) with modern cold storage, explains barter trade versus modern money, budgeting, saving, and banking, and introduces manufacturing, imports/exports, national strategic grain reserves, and enterprise self-reliance skills.",
+      "key_concepts": ["Land as a primary means of production", "Conservation of natural resources", "Food vs cash crops and strategic reserves", "Indigenous food preservation and barter trade", "Budgeting, banking, imports/exports, and enterprise"]
+    },
+    {
+      "id": 8,
+      "name": "Transport and Communication",
+      "description": "This module traces how people move goods and share information, comparing traditional forms (foot, sledges, animal-drawn carts, drums/mbira signals, smoke, runners) with modern roads, railways, air/sea links, and ICT tools. Learners study Zimbabwe's major highway and rail corridors, regional SADC seaports (Beira, Maputo, Durban, Walvis Bay), road safety rules and traffic signs, map literacy, responsible internet/ICT use, and managing transport accidents.",
+      "key_concepts": ["Indigenous vs modern transport and communication", "Zimbabwe road/rail networks and SADC ports", "Traffic rules and pedestrian/cyclist road safety", "Responsible use of ICTs and digital citizenship", "Transport hazards and disaster preparedness"]
+    },
+    {
+      "id": 9,
+      "name": "Work and Leisure",
+      "description": "Learners examine why people work—to earn income, meet basic needs, build national infrastructure, and contribute to community progress—across careers in farming, mining, teaching, health, sport, and creative arts. It distinguishes constructive leisure (reading, music, dance, sports, visiting family, educational tours, traditional games like nhodo and tsoro) from harmful habits, emphasising occupational safety, workers' rights, entrepreneurship, and tourism in Zimbabwe and SADC.",
+      "key_concepts": ["Importance of work and community occupations", "Constructive vs harmful leisure activities", "Traditional games (nhodo, pada, tsoro) and arts", "Self-reliance, enterprise skills, and workers' rights", "Occupational safety and Zimbabwe/SADC tourism"]
+    },
+    {
+      "id": 10,
+      "name": "Global Issues",
+      "description": "Learners investigate environmental, health, and technological challenges affecting local and global livelihoods. Key units cover veld fire causes and fireguard prevention, flood and water disaster preparedness, deforestation vs afforestation, drought adaptation, HIV and AIDS facts and stigma reduction, desertification, air/water/land pollution control, poverty alleviation, disaster risk management, and how modern ICT shapes global communication.",
+      "key_concepts": ["Veld fire, flood, and drought disaster management", "Deforestation, desertification, and afforestation", "Pollution causes, effects, and sustainable solutions", "HIV and AIDS prevention and care", "Poverty reduction and global ICT connectivity"]
+    }
   ],
 
   "scope_and_sequence": {

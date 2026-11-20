@@ -1,4 +1,6 @@
 import highYieldData from '../data/exam_bank_high_yield_qa.json';
+import { BOTSWANA_HIGH_YIELD_ITEMS } from '../data/botswanaExamBank';
+import { SOUTH_AFRICA_HIGH_YIELD_ITEMS } from '../data/southAfricaExamBank';
 import { ExamStore } from './examStore';
 import { StorageManager } from './storage';
 
@@ -97,6 +99,36 @@ export class ExamBankMatcher {
     );
   }
 
+  private static isBotswanaHighYieldItem(item: HighYieldItem): boolean {
+    const combined = `${item.s || ''} ${item.p || ''} ${item.c || ''} ${item.f || ''} ${item.topic || ''} ${item.q || ''}`.toLowerCase();
+    return (
+      combined.includes('botswana') ||
+      combined.includes('setswana') ||
+      combined.includes('dikgosi') ||
+      combined.includes('okavango') ||
+      combined.includes('vision 2036') ||
+      combined.includes('debswana') ||
+      combined.includes('development studies') ||
+      combined.includes('moral education') ||
+      item.f?.startsWith('bw_') ||
+      item.c?.startsWith('BEC-')
+    );
+  }
+
+  private static isSouthAfricaHighYieldItem(item: HighYieldItem): boolean {
+    const combined = `${item.s || ''} ${item.p || ''} ${item.c || ''} ${item.f || ''} ${item.topic || ''} ${item.q || ''}`.toLowerCase();
+    return (
+      combined.includes('south africa') ||
+      combined.includes('mapungubwe') ||
+      combined.includes('cradle of humankind') ||
+      combined.includes('nsc matric') ||
+      combined.includes('trc') ||
+      item.f?.startsWith('za_') ||
+      item.c?.startsWith('CAPS-') ||
+      item.c?.startsWith('NSC-')
+    );
+  }
+
   /**
    * Matches a student query against official past exam bank questions scoped to account country.
    * Returns authoritative marking scheme if similarity threshold is met.
@@ -113,6 +145,8 @@ export class ExamBankMatcher {
     if (!trimmed || trimmed.length < 5) return null;
 
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
     const qTokens = this.tokenize(trimmed);
     if (qTokens.size === 0) return null;
 
@@ -124,18 +158,41 @@ export class ExamBankMatcher {
       queryLower.includes('president') ||
       queryLower.includes('head of state') ||
       queryLower.includes('vice president') ||
+      queryLower.includes('deputy president') ||
       queryLower.includes('mnangagwa') ||
+      queryLower.includes('duma boko') ||
+      queryLower.includes('seretse khama') ||
+      queryLower.includes('ramaphosa') ||
+      queryLower.includes('nelson mandela') ||
       queryLower.includes('leader of zimbabwe') ||
       queryLower.includes('leaders of zimbabwe') ||
       queryLower.includes('who rules zimbabwe') ||
-      queryLower.includes('who leads zimbabwe');
+      queryLower.includes('who leads zimbabwe') ||
+      queryLower.includes('leader of botswana') ||
+      queryLower.includes('leaders of botswana') ||
+      queryLower.includes('who leads botswana') ||
+      queryLower.includes('leader of south africa') ||
+      queryLower.includes('leaders of south africa') ||
+      queryLower.includes('who leads south africa');
 
     let bestItem: HighYieldItem | null = null;
     let bestScore = 0;
 
+    const itemsPool: HighYieldItem[] = isBw
+      ? [...BOTSWANA_HIGH_YIELD_ITEMS, ...this.highYieldItems]
+      : isZa
+      ? [...SOUTH_AFRICA_HIGH_YIELD_ITEMS, ...this.highYieldItems]
+      : this.highYieldItems;
+
     // 1. Scan high-yield pre-indexed questions (0ms synchronous lookup)
-    for (const item of this.highYieldItems) {
+    for (const item of itemsPool) {
       if (!isZim && this.isZimbabweHighYieldItem(item)) {
+        continue;
+      }
+      if (!isBw && this.isBotswanaHighYieldItem(item)) {
+        continue;
+      }
+      if (!isZa && this.isSouthAfricaHighYieldItem(item)) {
         continue;
       }
       // If civic query, never match unrelated exam questions
@@ -206,16 +263,22 @@ export class ExamBankMatcher {
 
     // Require high threshold (>= 0.60)
     if (bestItem && bestScore >= 0.60) {
-      return this.buildResult(bestItem, bestScore);
+      return this.buildResult(bestItem, bestScore, isBw, isZa);
     }
 
     // 3. Fallback: Search dynamic paper banks scoped by account country
     try {
       if (isCivicQuery) return null;
 
-      const manifest = await ExamStore.loadManifest();
+      const manifest = isBw
+        ? [...(await ExamStore.getPapers(preferredLevel || 'all', undefined, 'Botswana')), ...(await ExamStore.loadManifest())]
+        : isZa
+        ? [...(await ExamStore.getPapers(preferredLevel || 'all', undefined, 'South Africa')), ...(await ExamStore.loadManifest())]
+        : await ExamStore.loadManifest();
       const targetManifestItems = manifest.filter((m) => {
         if (!isZim && ExamStore.isZimbabweSpecificPaper(m)) return false;
+        if (!isBw && ExamStore.isBotswanaSpecificPaper(m)) return false;
+        if (!isZa && ExamStore.isSouthAfricaSpecificPaper(m)) return false;
 
         const fileLower = (m.file || '').toLowerCase();
         const subLower = (m.subject || '').toLowerCase();
@@ -301,7 +364,7 @@ export class ExamBankMatcher {
               correctAnswer: dynamicBestQ.correctAnswer
             };
             bestDynScore = dynamicBestScore;
-            bestDynResult = this.buildResult(dynItem, dynamicBestScore);
+            bestDynResult = this.buildResult(dynItem, dynamicBestScore, isBw, isZa);
           }
         }
       }
@@ -319,8 +382,13 @@ export class ExamBankMatcher {
    * Constructs a professionally structured, textbook-grade answer
    * formatted for the ZEXA AI chat interface.
    */
-  private static buildResult(item: HighYieldItem, score: number): ExamMatchResult {
-    const formatted = this.formatExamAnswer(item);
+  private static buildResult(
+    item: HighYieldItem,
+    score: number,
+    isBw: boolean = false,
+    isZa: boolean = false
+  ): ExamMatchResult {
+    const formatted = this.formatExamAnswer(item, isBw, isZa);
     return {
       questionText: item.q,
       explanation: item.a,
@@ -339,10 +407,11 @@ export class ExamBankMatcher {
   /**
    * Turns raw exam bank explanations into polished, structured, multi-section markdown
    */
-  private static formatExamAnswer(item: HighYieldItem): string {
+  private static formatExamAnswer(item: HighYieldItem, isBw: boolean = false, isZa: boolean = false): string {
     const subjectTitle = item.s ? `${item.s}` : 'Curriculum';
     const paperLabel = item.c ? `(${item.c})` : item.p ? `• ${item.p}` : '';
-    const levelLabel = item.l ? `ZIMSEC ${item.l}` : 'ZIMSEC';
+    const boardTag = isBw ? 'BEC' : isZa ? 'CAPS / NSC' : 'ZIMSEC';
+    const levelLabel = item.l ? `${boardTag} ${item.l}` : boardTag;
 
     let body = item.a.trim();
 

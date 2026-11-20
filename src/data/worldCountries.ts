@@ -32,7 +32,14 @@ const RAW_WORLD_COUNTRIES: WorldCountryEntry[] = [
   { code: 'BT', flag: '🇧🇹', name: 'Bhutan', region: 'Asia' },
   { code: 'BO', flag: '🇧🇴', name: 'Bolivia', region: 'Americas' },
   { code: 'BA', flag: '🇧🇦', name: 'Bosnia and Herzegovina', region: 'Europe' },
-  { code: 'BW', flag: '🇧🇼', name: 'Botswana', region: 'Africa', curriculum: 'BGCSE Curriculum' },
+  {
+    code: 'BW',
+    flag: '🇧🇼',
+    name: 'Botswana',
+    region: 'Africa',
+    curriculum: 'BEC · PSLE, JCE & BGCSE',
+    hasCurriculumPack: true
+  },
   { code: 'BR', flag: '🇧🇷', name: 'Brazil', region: 'Americas' },
   { code: 'BN', flag: '🇧🇳', name: 'Brunei', region: 'Asia' },
   { code: 'BG', flag: '🇧🇬', name: 'Bulgaria', region: 'Europe' },
@@ -171,7 +178,14 @@ const RAW_WORLD_COUNTRIES: WorldCountryEntry[] = [
   { code: 'SI', flag: '🇸🇮', name: 'Slovenia', region: 'Europe' },
   { code: 'SB', flag: '🇸🇧', name: 'Solomon Islands', region: 'Oceania' },
   { code: 'SO', flag: '🇸🇴', name: 'Somalia', region: 'Africa' },
-  { code: 'ZA', flag: '🇿🇦', name: 'South Africa', region: 'Africa', curriculum: 'South Africa CAPS Curriculum' },
+  {
+    code: 'ZA',
+    flag: '🇿🇦',
+    name: 'South Africa',
+    region: 'Africa',
+    curriculum: 'CAPS · GET, FET & NSC Matric',
+    hasCurriculumPack: true
+  },
   { code: 'SS', flag: '🇸🇸', name: 'South Sudan', region: 'Africa' },
   { code: 'ES', flag: '🇪🇸', name: 'Spain', region: 'Europe' },
   { code: 'LK', flag: '🇱🇰', name: 'Sri Lanka', region: 'Asia' },
@@ -218,6 +232,27 @@ const RAW_WORLD_COUNTRIES: WorldCountryEntry[] = [
 export const WORLD_COUNTRIES: CountryConfig[] = RAW_WORLD_COUNTRIES.map((c) => {
   const isLoaded = Boolean(c.hasCurriculumPack);
   const curriculum = c.curriculum || `${c.name} National Curriculum`;
+  const isZim = c.code === 'ZW';
+  const isBw = c.code === 'BW';
+  const isZa = c.code === 'ZA';
+  const badge = isLoaded
+    ? isZim
+      ? 'ZIMSEC · HBC'
+      : isBw
+      ? 'BEC · BGCSE'
+      : isZa
+      ? 'CAPS · NSC'
+      : curriculum
+    : c.region;
+  const description = isLoaded
+    ? isZim
+      ? 'Full Zimbabwe national data, ZIMSEC Grade 7, O-Level & A-Level syllabi, ChiShona/IsiNdebele, and Heritage Studies.'
+      : isBw
+      ? 'Full Botswana national data, BEC PSLE, JCE & BGCSE syllabi, Setswana, Development Studies, Moral Education & History.'
+      : isZa
+      ? 'Full South Africa national data, DBE CAPS GET (Gr 1–9), FET & NSC Matric (Gr 10–12), 12 Official Languages, History, Physical Sciences, Life Sciences & Accounting.'
+      : `${c.name} full local curriculum pack.`
+    : `${c.name} (${c.region})`;
   return {
     id: c.name,
     code: c.code,
@@ -227,10 +262,8 @@ export const WORLD_COUNTRIES: CountryConfig[] = RAW_WORLD_COUNTRIES.map((c) => {
     curriculum,
     curriculumLabel: curriculum,
     hasCurriculumPack: isLoaded,
-    badge: isLoaded ? 'ZIMSEC · HBC' : c.region,
-    description: isLoaded
-      ? 'Full Zimbabwe national data, ZIMSEC Grade 7, O-Level & A-Level syllabi, ChiShona/IsiNdebele, and Heritage Studies.'
-      : `${c.name} (${c.region})`
+    badge,
+    description
   };
 });
 

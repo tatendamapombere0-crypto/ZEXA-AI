@@ -66,6 +66,60 @@ const DASHBOARD_STUDY_HINTS = [
   }
 ];
 
+const BOTSWANA_STUDY_HINTS = [
+  {
+    subject: 'BEC History · Social Studies',
+    question: 'Why did the Three Dikgosi (Khama III, Sebele I, Bathoen I) travel to London in 1895?'
+  },
+  {
+    subject: 'BGCSE Development Studies',
+    question: 'Explain Botswana’s Vision 2036 strategies for economic diversification away from diamonds'
+  },
+  {
+    subject: 'BGCSE Geography',
+    question: 'Why does the Okavango Delta reach peak flooding during Botswana’s dry winter months?'
+  },
+  {
+    subject: 'Setswana',
+    question: 'Tlhalosa seane se se reng: Motho ke motho ka batho'
+  },
+  {
+    subject: 'JCE Moral Education',
+    question: 'Explain the philosophy of Botho and how the Kgotla promotes democratic participation in Botswana'
+  },
+  {
+    subject: 'Agriculture',
+    question: 'How do veterinary cordon fences and the BMC protect Botswana’s beef export market?'
+  }
+];
+
+const SOUTH_AFRICA_STUDY_HINTS = [
+  {
+    subject: 'NSC Physical Sciences',
+    question: 'Calculate the frequency heard using the Doppler Effect when a siren approaches a stationary listener'
+  },
+  {
+    subject: 'CAPS History · Heritage',
+    question: 'What were the main turning points of the 1960 Sharpeville Massacre and 1976 Soweto Uprising?'
+  },
+  {
+    subject: 'NSC Life Sciences',
+    question: 'Which hominid fossils from the Cradle of Humankind support the Out of Africa hypothesis?'
+  },
+  {
+    subject: 'CAPS Social Sciences',
+    question: 'List all 9 provinces of South Africa, their capitals, and explain Mapungubwe Kingdom'
+  },
+  {
+    subject: 'NSC Accounting · EMS',
+    question: 'Explain the Accounting Equation (A = OE + L) and how share buy-backs affect Retained Income'
+  },
+  {
+    subject: 'CAPS Life Orientation',
+    question: 'What are the pass requirements for a Bachelor’s Degree pass vs Diploma pass in NSC Matric?'
+  }
+];
+
 const INTERNATIONAL_STUDY_HINTS = [
   {
     subject: 'Biology',
@@ -112,9 +166,12 @@ export class NotificationManager {
    */
   static getHarareClockInfo(countryOverride?: string): HarareClockInfo {
     const isZim = StorageManager.isZimbabweAccount(countryOverride);
+    const isBw = StorageManager.isBotswanaAccount(countryOverride);
+    const isZa = StorageManager.isSouthAfricaAccount(countryOverride);
+    const usesCatOrSast = isZim || isBw || isZa;
     const now = new Date();
-    // Zimbabwe uses Harare CAT (UTC+2); other accounts use device local time
-    const effectiveNow = isZim
+    // Zimbabwe (CAT), Botswana (CAT), and South Africa (SAST) all run on UTC+2
+    const effectiveNow = usesCatOrSast
       ? new Date(now.getTime() + (2 * 60 * 60 * 1000) + (now.getTimezoneOffset() * 60 * 1000))
       : now;
 
@@ -157,7 +214,13 @@ export class NotificationManager {
     const dateString = effectiveNow.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
 
     return {
-      harareTimeString: isZim ? `${timeString} CAT (Harare)` : `${timeString} Local Time`,
+      harareTimeString: isZim
+        ? `${timeString} CAT (Harare)`
+        : isBw
+        ? `${timeString} CAT (Gaborone)`
+        : isZa
+        ? `${timeString} SAST (Johannesburg)`
+        : `${timeString} Local Time`,
       harareDateString: dateString,
       nextSlotName,
       msUntilNextSlot,
@@ -180,6 +243,8 @@ export class NotificationManager {
     const isPremium = StorageManager.isPremium();
     const hasUsedAi = StorageManager.hasUsedAiEver();
     const isZim = StorageManager.isZimbabweAccount(countryOverride);
+    const isBw = StorageManager.isBotswanaAccount(countryOverride);
+    const isZa = StorageManager.isSouthAfricaAccount(countryOverride);
     const activeCountry = countryOverride || StorageManager.getUserCountry();
     const clock = this.getHarareClockInfo(countryOverride);
     const slot = slotName || clock.nextSlotName;
@@ -191,6 +256,10 @@ export class NotificationManager {
         title: '⚡ Activate Premium for 100% Offline Access',
         body: isZim
           ? 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!'
+          : isBw
+          ? 'Activate premium for offline access. Start now to unlock all BEC (PSLE, JCE & BGCSE) syllabuses, Setswana, practice papers, and offline AI answers!'
+          : isZa
+          ? 'Activate premium for offline access. Start now to unlock all South Africa DBE CAPS & NSC Matric syllabuses, practice papers, and offline AI answers!'
           : hasPack
           ? `Activate premium for offline access. Start now to unlock all ${activeCountry} syllabuses, practice papers, and offline AI answers!`
           : `Activate premium for unlimited offline ZEXA AI chat tutoring in ${activeCountry}!`,
@@ -202,7 +271,13 @@ export class NotificationManager {
 
     // Condition B: Active student studying with ZEXA AI
     // Rotate through high-yield dashboard questions scoped to country
-    const hints = isZim ? DASHBOARD_STUDY_HINTS : INTERNATIONAL_STUDY_HINTS;
+    const hints = isZim
+      ? DASHBOARD_STUDY_HINTS
+      : isBw
+      ? BOTSWANA_STUDY_HINTS
+      : isZa
+      ? SOUTH_AFRICA_STUDY_HINTS
+      : INTERNATIONAL_STUDY_HINTS;
     const dayIndex = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
     const slotOffset = slot === '6:00 AM' ? 0 : slot === '12:00 PM' ? 1 : 2;
     const selectedItem = hints[(dayIndex + slotOffset) % hints.length];
@@ -213,6 +288,18 @@ export class NotificationManager {
         : slot === '12:00 PM'
         ? '☀️ Midday ZIMSEC Revision (12:00 PM Harare)'
         : '🌙 Evening ZIMSEC Mastery (6:00 PM Harare)'
+      : isBw
+      ? slot === '6:00 AM'
+        ? '🌅 Morning BEC Study Kickoff (6:00 AM Gaborone)'
+        : slot === '12:00 PM'
+        ? '☀️ Midday BEC Revision (12:00 PM Gaborone)'
+        : '🌙 Evening BGCSE & JCE Mastery (6:00 PM Gaborone)'
+      : isZa
+      ? slot === '6:00 AM'
+        ? '🌅 Morning CAPS Study Kickoff (6:00 AM SAST)'
+        : slot === '12:00 PM'
+        ? '☀️ Midday NSC Matric Revision (12:00 PM SAST)'
+        : '🌙 Evening CAPS & Matric Mastery (6:00 PM SAST)'
       : slot === '6:00 AM'
       ? `🌅 Morning ${activeCountry} Study Kickoff (6:00 AM)`
       : slot === '12:00 PM'
@@ -401,6 +488,8 @@ export class NotificationManager {
     countryOverride?: string
   ): Promise<boolean> {
     const isZim = StorageManager.isZimbabweAccount(countryOverride);
+    const isBw = StorageManager.isBotswanaAccount(countryOverride);
+    const isZa = StorageManager.isSouthAfricaAccount(countryOverride);
     const activeCountry = countryOverride || StorageManager.getUserCountry();
     const payload = this.buildNotificationPayload(undefined, countryOverride);
     if (overrideType) {
@@ -409,11 +498,19 @@ export class NotificationManager {
         payload.title = '⚡ Activate Premium for 100% Offline Access (Test)';
         payload.body = isZim
           ? 'Activate premium for offline access. Start now to unlock all ZIMSEC syllabuses, past papers, and offline AI answers!'
+          : isBw
+          ? 'Activate premium for offline access. Start now to unlock all BEC (PSLE, JCE & BGCSE) syllabuses, Setswana, practice papers, and offline AI answers!'
+          : isZa
+          ? 'Activate premium for offline access. Start now to unlock all South Africa DBE CAPS & NSC Matric syllabuses, practice papers, and offline AI answers!'
           : `Activate premium for offline access. Start now to unlock all ${activeCountry} syllabuses, practice papers, and offline AI answers!`;
         payload.question = undefined;
       } else {
         const sampleQuestion = isZim
           ? 'Describe ways of preserving heritage sites of Zimbabwe'
+          : isBw
+          ? BOTSWANA_STUDY_HINTS[0].question
+          : isZa
+          ? SOUTH_AFRICA_STUDY_HINTS[0].question
           : INTERNATIONAL_STUDY_HINTS[0].question;
         payload.title = '📚 ZEXA Study Reminder (Test)';
         payload.body = `Have you done your study today? Let's begin! 💡 Study Question: "${sampleQuestion}". Tap to explore answer offline.`;

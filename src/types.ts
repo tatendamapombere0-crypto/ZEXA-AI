@@ -10,7 +10,7 @@ export type ContentLevel = 'Primary' | 'O-Level' | 'A-Level' | 'Tertiary';
 
 export type SubscriptionStatus = 'FREE' | 'PREMIUM' | 'HOLIDAY_FREE';
 
-export type AIEngineType = 'zexa-instant' | 'qwen-neural';
+export type AIEngineType = 'zexa-instant' | 'zexa-neural';
 
 export interface KnowledgeChunk {
   id: string;
@@ -25,6 +25,8 @@ export interface KnowledgeChunk {
   diagramId?: string | null;
   visualTitle?: string | null;
   visualCaption?: string | null;
+  assetFile?: string;
+  assetIdx?: number;
 }
 
 export interface ExamOption {
@@ -208,4 +210,111 @@ export const SUPPORTED_COUNTRIES: CountryConfig[] = [
     description: 'Global Sciences, Mathematics, English, and AI Reasoning without Zimbabwe-only local data.'
   }
 ];
+
+export type StudyTutorMode =
+  | 'standard'
+  | 'step-by-step'
+  | 'exam-points'
+  | 'quiz-me'
+  | 'simplify';
+
+export interface SavedStudyNote {
+  id: string;
+  title: string;
+  content: string;
+  subject: string;
+  country: string;
+  source?: string;
+  createdAt: number;
+}
+
+export interface FlashcardItem {
+  id: string;
+  front: string;
+  back: string;
+  subject: string;
+  country: string;
+  mastered: boolean;
+  reviewCount: number;
+  createdAt: number;
+  lastReviewedAt?: number;
+}
+
+export interface BookmarkedExamQuestion {
+  id: string;
+  paperId: string;
+  paperCode: string;
+  paperName: string;
+  subject: string;
+  level: string;
+  country: string;
+  questionNumber: number;
+  questionText: string;
+  correctAnswer: string | null;
+  explanation: string;
+  createdAt: number;
+}
+
+export interface SavedExamScore {
+  id: string;
+  paperId: string;
+  paperCode: string;
+  paperName: string;
+  subject: string;
+  level: string;
+  country: string;
+  correct: number;
+  total: number;
+  percent: number;
+  grade: string;
+  durationSeconds?: number;
+  timed: boolean;
+  completedAt: number;
+}
+
+export interface SavedSearchQA {
+  id: string;
+  question: string;
+  answer: string;
+  subject: string;
+  source?: string;
+  tutorMode?: StudyTutorMode;
+  level: string;
+  country: string;
+  createdAt: number;
+}
+
+export interface SavedExamQA {
+  id: string;
+  paperId: string;
+  paperCode: string;
+  paperName: string;
+  subject: string;
+  level: string;
+  country: string;
+  questionNumber: number;
+  questionText: string;
+  options?: ExamOption[];
+  userAnswer: string | null;
+  correctAnswer: string | null;
+  isCorrect?: boolean;
+  explanation: string;
+  paperType: string;
+  updatedAt: number;
+}
+
+export interface StudyActivityStats {
+  streakDays: number;
+  todayMinutes: number;
+  totalMinutes: number;
+  completedTopicsCount: number;
+  savedNotesCount: number;
+  flashcardsTotal: number;
+  flashcardsMastered: number;
+  bookmarksCount: number;
+  examsCompleted: number;
+  searchHistoryCount: number;
+  examQACount: number;
+}
+
 

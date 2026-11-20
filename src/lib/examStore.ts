@@ -3,6 +3,8 @@ import { StorageManager } from './storage';
 import bundledExamManifest from '../data/exam_manifest.json';
 import bundledBiologyOLevel from '../data/exam_bank_biology_o_level_cambridge_past_papers.json';
 import bundledAgric4001 from '../data/exam_bank_agriculture_4001_1.json';
+import { BOTSWANA_EXAM_MANIFEST, BOTSWANA_EXAM_PAPERS } from '../data/botswanaExamBank';
+import { SOUTH_AFRICA_EXAM_MANIFEST, SOUTH_AFRICA_EXAM_PAPERS } from '../data/southAfricaExamBank';
 
 export class ExamStore {
   private static manifest: ExamManifestItem[] = Array.isArray(bundledExamManifest)
@@ -90,12 +92,26 @@ export class ExamStore {
   public static standardizePrimarySubject(
     subject?: string,
     paperName?: string,
-    fileName?: string
+    fileName?: string,
+    isBw: boolean = false,
+    isZa: boolean = false
   ): string {
     const s = (subject || '').toLowerCase();
     const n = (paperName || '').toLowerCase();
     const f = (fileName || '').toLowerCase();
     const combined = `${s} ${n} ${f}`;
+
+    if (s.includes('setswana') || f.includes('setswana') || n.includes('setswana')) {
+      return 'Setswana';
+    }
+
+    if (isZa && (s.includes('natural') || f.includes('natsci'))) {
+      return 'Natural Sciences & Technology';
+    }
+
+    if (isZa && (s.includes('economic') || s.includes('ems'))) {
+      return 'Economic & Management Sciences';
+    }
 
     // 1. English
     if (s.includes('english') || f.includes('english') || n.includes('english')) {
@@ -131,7 +147,7 @@ export class ExamStore {
       return 'Physical Edu & Arts';
     }
 
-    // 5. Social Science (Social Studies, Heritage Studies, FRME, General Paper)
+    // 5. Social Science / Social Studies / Social Sciences (CAPS)
     if (
       s.includes('social') ||
       f.includes('social') ||
@@ -142,7 +158,7 @@ export class ExamStore {
       f.includes('general') ||
       f.includes('705')
     ) {
-      return 'Social Science';
+      return isBw ? 'Social Studies' : isZa ? 'Social Sciences' : 'Social Science';
     }
 
     // 6. Agric, Science & Tech (Agriculture, Science, Technology, ICT)
@@ -157,10 +173,10 @@ export class ExamStore {
       f.includes('tech') ||
       s.includes('ict')
     ) {
-      return 'Agric, Science & Tech';
+      return isZa ? 'Natural Sciences & Technology' : 'Agric, Science & Tech';
     }
 
-    return 'Social Science';
+    return isZa ? 'Social Sciences' : 'Social Science';
   }
 
   /**
@@ -203,8 +219,75 @@ export class ExamStore {
     return false;
   }
 
-  public static formatPaperLabelForCountry(text: string, isZim: boolean): string {
+  public static isBotswanaSpecificPaper(item: ExamManifestItem): boolean {
+    const s = (item.subject || '').toLowerCase();
+    const n = (item.paperName || '').toLowerCase();
+    const f = (item.file || '').toLowerCase();
+    const c = (item.paperCode || '').toLowerCase();
+    const id = (item.id || '').toLowerCase();
+    const combined = `${id} ${s} ${n} ${f} ${c}`;
+
+    return (
+      id.startsWith('bw_') ||
+      f.startsWith('bw_') ||
+      combined.includes('botswana') ||
+      combined.includes('setswana') ||
+      combined.includes('moral education') ||
+      combined.includes('development studies') ||
+      c.startsWith('bec-')
+    );
+  }
+
+  public static isSouthAfricaSpecificPaper(item: ExamManifestItem): boolean {
+    const s = (item.subject || '').toLowerCase();
+    const n = (item.paperName || '').toLowerCase();
+    const f = (item.file || '').toLowerCase();
+    const c = (item.paperCode || '').toLowerCase();
+    const id = (item.id || '').toLowerCase();
+    const combined = `${id} ${s} ${n} ${f} ${c}`;
+
+    return (
+      id.startsWith('za_') ||
+      f.startsWith('za_') ||
+      c.startsWith('caps-') ||
+      c.startsWith('nsc-') ||
+      combined.includes('south africa') ||
+      combined.includes('nsc matric') ||
+      combined.includes('caps ')
+    );
+  }
+
+  public static formatPaperLabelForCountry(
+    text: string,
+    isZim: boolean,
+    isBw: boolean = false,
+    isZa: boolean = false
+  ): string {
     if (!text || isZim) return text;
+    if (isBw) {
+      return text
+        .replace(/Cambridge\s*&\s*ZIMSEC\s*/gi, 'Cambridge / BEC ')
+        .replace(/Ministry\/ZIMSEC-style/gi, 'BEC-aligned')
+        .replace(/ZIMSEC-style/gi, 'BEC-style')
+        .replace(/ZIMSEC-syllabus-aligned/gi, 'BEC syllabus-aligned')
+        .replace(/ZIMSEC-aligned/gi, 'BEC-aligned')
+        .replace(/ZIMSEC-format/gi, 'BEC-format')
+        .replace(/\bZIMSEC\b\s*/gi, 'BEC ')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+    if (isZa) {
+      return text
+        .replace(/Cambridge\s*&\s*ZIMSEC\s*/gi, 'CAPS / NSC ')
+        .replace(/Ministry\/ZIMSEC-style/gi, 'CAPS-aligned')
+        .replace(/ZIMSEC-style/gi, 'CAPS-style')
+        .replace(/ZIMSEC-syllabus-aligned/gi, 'CAPS syllabus-aligned')
+        .replace(/ZIMSEC-aligned/gi, 'CAPS-aligned')
+        .replace(/ZIMSEC-format/gi, 'NSC-format')
+        .replace(/\bZIMSEC\b\s*/gi, 'CAPS ')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
     return text
       .replace(/Cambridge\s*&\s*ZIMSEC\s*/gi, 'Cambridge / International ')
       .replace(/Ministry\/ZIMSEC-style/gi, 'International')
@@ -220,15 +303,24 @@ export class ExamStore {
   /**
    * Returns subjects strictly aligned with the chosen level and account country.
    * Zimbabwe Primary accounts see the official ZIMSEC 6-Subject results slip structure.
-   * Non-Zimbabwe accounts see international academic subjects without Zimbabwe-only papers.
+   * Botswana accounts see BEC PSLE, JCE & BGCSE subjects.
+   * South Africa accounts see DBE CAPS GET (Gr 1–9) & FET / NSC Matric (Gr 10–12) subjects.
+   * Countries without packs return empty arrays.
    */
   static async getSubjects(level: string, country?: string): Promise<string[]> {
     if (!StorageManager.hasCountryCurriculumPack(country)) {
       return [];
     }
-    const manifest = await this.loadManifest();
+    const baseManifest = await this.loadManifest();
     const normLevel = this.normalizeLevel(level);
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
+    const combinedManifest = isBw
+      ? [...BOTSWANA_EXAM_MANIFEST, ...baseManifest]
+      : isZa
+      ? [...SOUTH_AFRICA_EXAM_MANIFEST, ...baseManifest]
+      : baseManifest;
 
     if (normLevel === 'primary') {
       return isZim
@@ -238,6 +330,23 @@ export class ExamStore {
             'Agric, Science & Tech',
             'Shona',
             'Social Science',
+            'Physical Edu & Arts'
+          ]
+        : isBw
+        ? [
+            'English',
+            'Setswana',
+            'Mathematics',
+            'Agric, Science & Tech',
+            'Social Studies',
+            'Physical Edu & Arts'
+          ]
+        : isZa
+        ? [
+            'English',
+            'Mathematics',
+            'Natural Sciences & Technology',
+            'Social Sciences',
             'Physical Edu & Arts'
           ]
         : [
@@ -252,9 +361,11 @@ export class ExamStore {
       return ['Higher Education Assessments'];
     }
 
-    const papersForLevel = manifest.filter((item) => {
+    const papersForLevel = combinedManifest.filter((item) => {
       if (!this.isPaperForLevel(item, normLevel)) return false;
       if (!isZim && this.isZimbabweSpecificPaper(item)) return false;
+      if (!isBw && this.isBotswanaSpecificPaper(item)) return false;
+      if (!isZa && this.isSouthAfricaSpecificPaper(item)) return false;
       return true;
     });
     return Array.from(new Set(papersForLevel.map((i) => i.subject))).sort();
@@ -262,34 +373,43 @@ export class ExamStore {
 
   /**
    * Strictly filters exam papers by education level and account country!
-   * Separate papers for Primary, O-Level (Forms 1-4), and A-Level (Forms 5-6).
+   * Separate papers for Primary, O-Level, A-Level, and Tertiary.
    */
   static async getPapers(level: string, subject?: string, country?: string): Promise<ExamManifestItem[]> {
     if (!StorageManager.hasCountryCurriculumPack(country)) {
       return [];
     }
-    const manifest = await this.loadManifest();
+    const baseManifest = await this.loadManifest();
     const normLevel = this.normalizeLevel(level);
     const isZim = StorageManager.isZimbabweAccount(country);
+    const isBw = StorageManager.isBotswanaAccount(country);
+    const isZa = StorageManager.isSouthAfricaAccount(country);
+    const combinedManifest = isBw
+      ? [...BOTSWANA_EXAM_MANIFEST, ...baseManifest]
+      : isZa
+      ? [...SOUTH_AFRICA_EXAM_MANIFEST, ...baseManifest]
+      : baseManifest;
 
-    let papersForLevel = manifest.filter((item) => {
+    let papersForLevel = combinedManifest.filter((item) => {
       if (!this.isPaperForLevel(item, normLevel)) return false;
       if (!isZim && this.isZimbabweSpecificPaper(item)) return false;
+      if (!isBw && this.isBotswanaSpecificPaper(item)) return false;
+      if (!isZa && this.isSouthAfricaSpecificPaper(item)) return false;
       return true;
     });
 
     if (normLevel === 'primary') {
       papersForLevel = papersForLevel.map((item) => ({
         ...item,
-        subject: this.standardizePrimarySubject(item.subject, item.paperName, item.file)
+        subject: this.standardizePrimarySubject(item.subject, item.paperName, item.file, isBw, isZa)
       }));
     }
 
     if (!isZim) {
       papersForLevel = papersForLevel.map((item) => ({
         ...item,
-        paperName: this.formatPaperLabelForCountry(item.paperName, false),
-        paperType: this.formatPaperLabelForCountry(item.paperType, false)
+        paperName: this.formatPaperLabelForCountry(item.paperName, false, isBw, isZa),
+        paperType: this.formatPaperLabelForCountry(item.paperType, false, isBw, isZa)
       }));
     }
 
@@ -304,12 +424,55 @@ export class ExamStore {
     });
   }
 
-  static async loadPaperDetails(item: ExamManifestItem): Promise<ExamPaper | null> {
+  static async loadPaperDetails(itemOrId: ExamManifestItem | string): Promise<ExamPaper | null> {
+    if (typeof itemOrId === 'string') {
+      const bwDirect = BOTSWANA_EXAM_PAPERS.find(
+        (p) => p.id === itemOrId || p.sourceFile === itemOrId
+      );
+      if (bwDirect) {
+        this.papersCache.set(`${bwDirect.sourceFile || bwDirect.id}#${bwDirect.id}`, bwDirect);
+        return bwDirect;
+      }
+      const zaDirect = SOUTH_AFRICA_EXAM_PAPERS.find(
+        (p) => p.id === itemOrId || p.sourceFile === itemOrId
+      );
+      if (zaDirect) {
+        this.papersCache.set(`${zaDirect.sourceFile || zaDirect.id}#${zaDirect.id}`, zaDirect);
+        return zaDirect;
+      }
+      const manifestItem = [
+        ...BOTSWANA_EXAM_MANIFEST,
+        ...SOUTH_AFRICA_EXAM_MANIFEST,
+        ...(await this.loadManifest())
+      ].find((m) => m.id === itemOrId || m.file === itemOrId);
+      if (!manifestItem) return null;
+      return this.loadPaperDetails(manifestItem);
+    }
+
+    const item = itemOrId;
     const cacheKey = `${item.file}#${item.id || item.paperCode || ''}`;
     
     // 1. In-memory cache hit
     if (this.papersCache.has(cacheKey)) {
       return this.papersCache.get(cacheKey)!;
+    }
+
+    // 1b. Bundled Botswana BEC Exam Bank (0ms instant offline)
+    const bwPaper = BOTSWANA_EXAM_PAPERS.find(
+      (p) => p.id === item.id || p.sourceFile === item.file
+    );
+    if (bwPaper) {
+      this.papersCache.set(cacheKey, bwPaper);
+      return bwPaper;
+    }
+
+    // 1c. Bundled South Africa CAPS & NSC Exam Bank (0ms instant offline)
+    const zaPaper = SOUTH_AFRICA_EXAM_PAPERS.find(
+      (p) => p.id === item.id || p.sourceFile === item.file
+    );
+    if (zaPaper) {
+      this.papersCache.set(cacheKey, zaPaper);
+      return zaPaper;
     }
 
     // 2. Check localStorage offline persistent cache (v5 for official subject headlines & verified banks)

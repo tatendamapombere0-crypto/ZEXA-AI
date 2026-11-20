@@ -16,9 +16,10 @@ import {
   Info
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
-import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
+import { ZexaNeuralEngine, ZexaProgressState } from '../lib/zexaNeuralEngine';
 
 interface SettingsViewProps {
   educationLevel: EducationLevel;
@@ -51,11 +52,11 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   const [preferredLang, setPreferredLang] = useState<'en' | 'sn'>(() =>
     StorageManager.getPreferredLanguage()
   );
-  const [qwenState, setQwenState] = useState<QwenProgressState>(() => QwenEngine.getStatus());
+  const [neuralState, setNeuralState] = useState<ZexaProgressState>(() => ZexaNeuralEngine.getStatus());
   const ggufFileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    return QwenEngine.subscribe(setQwenState);
+    return ZexaNeuralEngine.subscribe(setNeuralState);
   }, []);
 
   const currentPeriod = TermCalendarManager.getCurrentPeriod();
@@ -63,16 +64,18 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   const userEmail = StorageManager.getSessionUserEmail();
   const activeCountry = StorageManager.getUserCountry();
   const isZim = StorageManager.isZimbabweAccount(activeCountry);
+  const isBw = StorageManager.isBotswanaAccount(activeCountry);
   const hasPack = StorageManager.hasCountryCurriculumPack(activeCountry);
+  const activeTier = getTierForContentLevel(activeCountry, contentLevel);
 
   const handleConnectAssetsGGUF = async () => {
-    await QwenEngine.loadModel();
+    await ZexaNeuralEngine.autoConnectLocalGGUF();
   };
 
   const handleLocalGGUFFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      await QwenEngine.loadModelFromFile(file);
+      await ZexaNeuralEngine.loadModelFromFile(file);
     }
     e.target.value = '';
   };
@@ -164,13 +167,13 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
 
         <div className="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-2xl bg-slate-900/80 border border-slate-700/60">
           <div>
-            <div className="text-sm font-bold text-white">{educationLevel}</div>
+            <div className="text-sm font-bold text-white">{activeTier.label}</div>
             <p className="text-xs text-slate-400 mt-0.5">
-              Active Content: <span className="text-cyan-300 font-mono font-semibold">{contentLevel}</span>
+              Active Content: <span className="text-cyan-300 font-mono font-semibold">{activeTier.shortLabel}</span> · {activeTier.boardTag}
             </p>
           </div>
           <span className="text-[11px] font-mono px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-bold">
-            {isZim ? '✓ ZIMSEC Synced' : `✓ ${activeCountry}`}
+            {isZim ? '✓ ZIMSEC Synced' : isBw ? '✓ BEC Botswana Synced' : `✓ ${activeCountry}`}
           </span>
         </div>
       </div>
@@ -183,18 +186,24 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           </div>
           <span
             className={`text-[10px] font-mono px-2 py-0.5 rounded border font-bold ${
-              qwenState.status === 'ready'
+              neuralState.status === 'ready'
                 ? 'bg-emerald-950 border-emerald-500/40 text-emerald-300'
-                : qwenState.status === 'loading' || qwenState.status === 'checking'
+                : neuralState.status === 'loading' || neuralState.status === 'checking'
                 ? 'bg-cyan-950 border-cyan-500/40 text-cyan-300'
+                : neuralState.status === 'error'
+                ? 'bg-red-950 border-red-500/40 text-red-300'
                 : 'bg-amber-950/70 border-amber-500/40 text-amber-300'
             }`}
           >
-            {qwenState.status === 'ready'
+            {neuralState.status === 'ready'
               ? 'ZEXA AI CONNECTED'
-              : qwenState.status === 'loading'
-              ? `LOADING ${qwenState.progress}%`
-              : 'ZEXA AI ACTIVE'}
+              : neuralState.status === 'loading'
+              ? `LOADING ${neuralState.progress}%`
+              : neuralState.status === 'checking'
+              ? 'CHECKING...'
+              : neuralState.status === 'error'
+              ? 'CONNECTION ERROR'
+              : 'BRAIN FILE NOT LOADED'}
           </span>
         </div>
 
@@ -203,20 +212,20 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <div>
               <h4 className="text-sm font-bold text-white">ZEXA AI</h4>
               <p className="text-xs text-slate-400 mt-0.5">
-                {qwenState.statusText}
+                {neuralState.statusText}
               </p>
-              {qwenState.error && (
-                <p className="text-[11px] text-amber-300 mt-1">{qwenState.error}</p>
+              {neuralState.error && (
+                <p className="text-[11px] text-amber-300 mt-1">{neuralState.error}</p>
               )}
             </div>
             <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0" />
           </div>
 
-          {qwenState.status === 'loading' && (
+          {neuralState.status === 'loading' && (
             <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden border border-white/[0.08]">
               <div
                 className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
-                style={{ width: `${qwenState.progress}%` }}
+                style={{ width: `${neuralState.progress}%` }}
               />
             </div>
           )}
@@ -225,7 +234,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <div>• Engine: ZEXA AI</div>
             <div>• Runtime: Offline Device Engine</div>
             <div>• Data Usage: 0 MB Required</div>
-            <div>• Region: {hasPack ? '8,260+ ZIMSEC Topics' : activeCountry}</div>
+            <div>• Region: {isZim ? '8,260+ ZIMSEC Topics' : isBw ? 'BEC PSLE / JCE / BGCSE' : activeCountry}</div>
           </div>
 
           <div className="flex flex-wrap gap-2 pt-1">
@@ -239,7 +248,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <button
               type="button"
               onClick={() => ggufFileInputRef.current?.click()}
-              disabled={qwenState.status === 'loading'}
+              disabled={neuralState.status === 'loading'}
               className="px-3.5 py-2 rounded-xl btn-primary-gradient text-slate-950 disabled:opacity-50 text-xs font-bold flex items-center gap-1.5 shadow-md transition-all"
             >
               <Upload className="w-3.5 h-3.5" />
@@ -249,7 +258,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <button
               type="button"
               onClick={handleConnectAssetsGGUF}
-              disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+              disabled={neuralState.status === 'loading' || neuralState.status === 'checking'}
               className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
             >
               <RefreshCw className="w-3.5 h-3.5" />
@@ -448,11 +457,17 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           className="w-40 mx-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]"
         />
         <p className="font-semibold text-slate-400">
-          {isZim ? 'ZEXA AI Zimbabwe • First Zimbabwe OFFLINE AI Engine' : `ZEXA AI · ${activeCountry}`}
+          {isZim
+            ? 'ZEXA AI Zimbabwe • First Zimbabwe OFFLINE AI Engine'
+            : isBw
+            ? 'ZEXA AI Botswana • BEC Offline Curriculum Tutor'
+            : `ZEXA AI · ${activeCountry}`}
         </p>
         <p className="text-[11px] max-w-md mx-auto">
           {isZim
             ? 'Empowering Zimbabwean students with offline curriculum revision, past papers, and bilingual tutoring.'
+            : isBw
+            ? 'Empowering Botswana students with offline PSLE, JCE & BGCSE revision, Setswana, and Development Studies.'
             : `Offline AI study companion for ${activeCountry}.`}
         </p>
       </div>

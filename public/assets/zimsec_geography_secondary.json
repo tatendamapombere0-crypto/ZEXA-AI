@@ -165,81 +165,81 @@
   "glossary": [
     {
       "term": "Scale",
-      "definition": "The ratio between distance on a map and the corresponding real distance on the ground, e.g. 1:50,000."
+      "definition": "Scale is the mathematical ratio between a measured distance on a map and the corresponding horizontal distance on the Earth's surface, shown on ZIMSEC topographical sheets as a representative fraction (e.g., 1:50,000 where 1 cm on the map represents 50,000 cm or 0.5 km on the ground), a linear scale bar, or a statement of scale."
     },
     {
       "term": "Grid reference",
-      "definition": "A system of numbers used to pinpoint a location on a map using the numbered grid lines (eastings and northings)."
+      "definition": "A grid reference is an ordered coordinate code read from the numbered vertical eastings and horizontal northings printed across a topographical survey map. Always read the easting first and northing second ('along the corridor, up the stairs'): four-figure references (e.g., 1834) locate a 1 km × 1 km grid square, while six-figure references (e.g., 183342) pinpoint a feature to the nearest 100 metres."
     },
     {
       "term": "Contour line",
-      "definition": "A line on a map joining points of equal height above sea level, used to show relief."
+      "definition": "A contour line is a brown or sepia line drawn on a topographical map connecting all points of equal elevation above mean sea level. The vertical height gap between successive contours is the contour interval (commonly 20 metres on 1:50,000 Zimbabwe survey maps), revealing steep slopes (tight contours), gentle plains (wide contours), hills, spurs, valleys, and cols."
     },
     {
       "term": "Gradient",
-      "definition": "The steepness of a slope, calculated as vertical height difference divided by horizontal distance."
+      "definition": "Gradient measures how steep or gentle a slope is between two points on the landscape. It is calculated by dividing the vertical rise (Vertical Interval, difference in contour height in metres) by the horizontal ground distance (Horizontal Equivalent, measured using map scale in metres), expressed as a simplified ratio such as 1:20 (meaning a 1 m rise per 20 m travelled horizontally)."
     },
     {
       "term": "Weathering",
-      "definition": "The breakdown of rock in situ (in place), without significant movement, through physical, chemical or biological processes."
+      "definition": "Weathering is the physical, chemical, or biological disintegration and decomposition of rock in situ (in place) exposed at the Earth's surface without the broken fragments being carried away. Common Zimbabwean examples include exfoliation (onion-skin peeling on granite dwalas/kopjes at Matobo and Domboshava) and carbonation/oxidation under seasonal tropical warmth and rainfall."
     },
     {
       "term": "Erosion",
-      "definition": "The wearing away and removal of rock/soil material by agents such as water, wind or ice."
+      "definition": "Erosion is the wearing away, detachment, and removal of soil and weathered rock fragments by dynamic natural agents—primarily running river water, sheetwash, wind, and waves—followed by transportation downslope or downstream. Unchecked sheet, rill, and gully (donga) erosion removes fertile topsoil on steep or deforested farmland."
     },
     {
       "term": "Drainage basin",
-      "definition": "The area of land drained by a river and its tributaries."
+      "definition": "A drainage basin (or catchment area) is the entire region of land bounded by higher ground called a watershed from which rainwater and surface runoff drain into a main river and all its tributary streams. Every basin operates as an open hydrological system with inputs (precipitation), stores (soil moisture, groundwater), flows (infiltration, overland flow, throughflow), and outputs (river discharge, evapotranspiration)."
     },
     {
       "term": "Miombo woodland",
-      "definition": "The dominant savanna woodland vegetation type across much of Zimbabwe's Highveld, dominated by Brachystegia and Julbernardia tree species."
+      "definition": "Miombo woodland is the characteristic seasonal tropical savanna woodland covering most of Zimbabwe's Highveld and Middleveld plateau above 1,000 m, dominated by Brachystegia (msasa, mupfuti) and Julbernardia (munhondo) trees. These deciduous trees flush bright red new leaves in early spring before the rains and shed leaves during the cool dry season to conserve moisture."
     },
     {
       "term": "Population density",
-      "definition": "The average number of people living per unit area of land, usually expressed as persons per square kilometre."
+      "definition": "Population density measures the concentration or crowding of people within a given land area, calculated by dividing total population by total land area (expressed as persons per square kilometre, persons/km²). In Zimbabwe, metropolitan Harare and Bulawayo plus high-rainfall Mashonaland and Manicaland rural districts have much higher population densities than arid Zambezi Valley or Beitbridge districts."
     },
     {
       "term": "Urbanisation",
-      "definition": "The increasing proportion of a population living in towns and cities, often driven by rural-to-urban migration."
+      "definition": "Urbanisation is the progressive increase in the percentage of a country's total population living in towns and cities compared to rural areas, driven primarily by rural-to-urban migration (push factors like drought and limited jobs; pull factors like factories, schools, and healthcare) alongside natural population increase inside expanding urban centres such as Harare, Bulawayo, Gweru, and Mutare."
     },
     {
       "term": "Natural Region",
-      "definition": "One of Zimbabwe's five agro-ecological zones, classified mainly by rainfall reliability and amount, used to guide appropriate farming systems."
+      "definition": "A Natural Region (Agro-Ecological Zone I–V) is one of Zimbabwe's five farming classifications defined primarily by annual rainfall amount, reliability, and temperature. Natural Region I (Eastern Highlands) supports specialised forestry, tea, and dairy; Region II–III suit intensive and semi-intensive maize, tobacco, and soya farming; while semi-arid Regions IV and V (Lowveld/Matabeleland) focus on drought-tolerant small grains, wildlife, and extensive cattle ranching."
     },
     {
       "term": "Great Dyke",
-      "definition": "A long, narrow north-south geological formation in Zimbabwe rich in platinum group metals, chrome and nickel."
+      "definition": "The Great Dyke is a massive, 550-kilometre-long narrow igneous geological intrusion running roughly north-northeast to south-southwest through central Zimbabwe from near Mvurwi to Mberengwa. It contains some of the world's richest commercial reserves of platinum group metals (Zimplats, Unki, Mimosa), chromite (chrome ore), nickel, and gold, anchoring Zimbabwe's mining economy."
     },
     {
       "term": "Landlocked",
-      "definition": "A country with no direct access to the sea/ocean coastline, relying on neighbouring countries for port access - a key feature of Zimbabwe's geography."
+      "definition": "A landlocked country is a sovereign state completely surrounded by land with no direct coastline or seaport of its own, such as Zimbabwe, Zambia, and Botswana. Because international maritime imports and exports must cross transit neighbours (via Beira and Maputo in Mozambique, Durban in South Africa, or Walvis Bay in Namibia), landlocked nations face higher transport costs and depend closely on SADC rail/road corridors."
     },
     {
       "term": "SADC",
-      "definition": "Southern African Development Community, a regional economic and political grouping of southern African states including Zimbabwe."
+      "definition": "The Southern African Development Community (SADC) is a regional intergovernmental economic and political bloc of 16 Southern African countries (including Zimbabwe, South Africa, Botswana, Zambia, Mozambique, and Namibia), headquartered in Gaborone. SADC promotes duty-free regional trade, cross-border transport corridors, shared power pools (SAPP), river-basin agreements (ZAMCOM), and collective regional food security."
     },
     {
       "term": "Cyclone",
-      "definition": "An intense tropical storm system with strong winds and heavy rainfall, originating over warm ocean waters, capable of causing severe flooding when it reaches land."
+      "definition": "A tropical cyclone is an intense, low-pressure rotating storm system with destructive spiral winds and torrential rainfall that forms over warm tropical ocean waters above 26.5 °C in the southwest Indian Ocean. When cyclones make landfall across Mozambique and eastern Zimbabwe—such as Cyclone Eline (2000) and Cyclone Idai (2019) in Chimanimani and Chipinge—they cause flash flooding, landslides, and severe infrastructure damage."
     }
   ],
   "worked_examples": [
     {
-      "problem": "On a 1:50,000 map, two points are 6cm apart. What is the real ground distance?",
-      "solution": "Real distance = 6cm x 50,000 = 300,000cm = 3,000m = 3km."
+      "problem": "Scale & Distance Worked Example: On a 1:50,000 ZIMSEC topographical map, two rural schools are 6 cm apart along a straight line. Calculate the real ground distance in kilometres and explain each step.",
+      "solution": "Step 1: Interpret the ratio scale 1:50,000, which means 1 cm on the map represents 50,000 cm on the ground.\nStep 2: Multiply the map measurement by the scale factor: 6 cm × 50,000 = 300,000 cm.\nStep 3: Convert centimetres to metres (divide by 100): 300,000 ÷ 100 = 3,000 m.\nStep 4: Convert metres to kilometres (divide by 1,000): 3,000 ÷ 1,000 = 3.0 km real ground distance."
     },
     {
-      "problem": "A province has a population of 2,000,000 people and an area of 40,000 km². Calculate its population density.",
-      "solution": "Population density = population / area = 2,000,000 / 40,000 = 50 people per km²."
+      "problem": "Population Density Worked Example: A Zimbabwean province has a census population of 2,000,000 people across a total land area of 40,000 km². Calculate its population density and state what it indicates.",
+      "solution": "Formula: Population Density = Total Population ÷ Total Land Area.\nStep 1: Substitute the values: 2,000,000 ÷ 40,000.\nStep 2: Simplify: 200 ÷ 4 = 50 people per km².\nInterpretation: On average, 50 inhabitants occupy each square kilometre, though real distribution clusters around towns, transport routes, and fertile farmland."
     },
     {
-      "problem": "A hill rises 200m over a horizontal distance of 4,000m. Calculate the gradient.",
-      "solution": "Gradient = vertical height / horizontal distance = 200 / 4,000 = 1:20 (or 0.05, i.e. a 5% slope)."
+      "problem": "Slope Gradient Worked Example: A kopje rises from the 1,100 m contour to the 1,300 m trig beacon over a horizontal ground distance of 4,000 m. Calculate the gradient and describe the slope.",
+      "solution": "Formula: Gradient = Vertical Interval (VI) ÷ Horizontal Equivalent (HE).\nStep 1: Find Vertical Interval (height change): 1,300 m - 1,100 m = 200 m.\nStep 2: Ensure both VI and HE are in the same units (metres): VI = 200 m, HE = 4,000 m.\nStep 3: Express as a ratio with numerator 1: 200 / 4,000 = 1 / 20 = 1:20 (a 5% gentle-to-moderate slope rising 1 m for every 20 m horizontal distance)."
     },
     {
-      "problem": "Give the four-figure grid reference for a point where the easting line is 24 and the northing line is 57.",
-      "solution": "2457 (easting read first, then northing - remember 'along the corridor, up the stairs')."
+      "problem": "Four-Figure & Six-Figure Grid Reference Worked Example: Explain how to write the four-figure grid reference for a clinic located inside the square bounded on the left by easting 24 and on the bottom by northing 57.",
+      "solution": "Rule: Always read Eastings (vertical grid lines numbered left-to-right across the top/bottom) BEFORE Northings (horizontal grid lines numbered bottom-to-top along the sides)—remember 'along the corridor, up the stairs'.\nStep 1: Read the easting on the left edge of the square: 24.\nStep 2: Read the northing on the bottom edge of the square: 57.\nAnswer: The four-figure grid reference is 2457 (for a six-figure pinpointing inside square 2457, estimate tenths east and north, e.g., 245573)."
     }
   ],
   "sample_questions": [

@@ -1,4 +1,16 @@
-import { EducationLevel, ContentLevel, SubscriptionStatus, ChatMessage } from '../types';
+import {
+  EducationLevel,
+  ContentLevel,
+  SubscriptionStatus,
+  ChatMessage,
+  SavedStudyNote,
+  FlashcardItem,
+  BookmarkedExamQuestion,
+  SavedExamScore,
+  SavedSearchQA,
+  SavedExamQA,
+  StudyActivityStats
+} from '../types';
 import { TermCalendarManager } from './termCalendar';
 
 const STORAGE_KEYS = {
@@ -15,6 +27,12 @@ const STORAGE_KEYS = {
   CHAT_MESSAGES: 'zexa_chat_messages',
   BOOKMARKED_QUESTIONS: 'zexa_bookmarked_questions',
   EXAM_SCORES: 'zexa_exam_scores',
+  SAVED_NOTES: 'zexa_saved_notes',
+  FLASHCARDS: 'zexa_flashcards',
+  COMPLETED_TOPICS: 'zexa_completed_topics',
+  STUDY_LOG_DATES: 'zexa_study_log_dates',
+  REVISION_SEARCH_HISTORY: 'zexa_revision_search_history',
+  REVISION_EXAM_QA: 'zexa_revision_exam_qa',
   SESSION_LOGGED_IN: 'zexa_session_logged_in',
   SESSION_USER_EMAIL: 'zexa_session_user_email',
   BRAIN_INITIALIZED: 'zexa_brain_initialized',
@@ -261,14 +279,27 @@ export class StorageManager {
     return active === 'zimbabwe';
   }
 
+  static isBotswanaAccount(countryOverride?: string): boolean {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return active === 'botswana';
+  }
+
+  static isSouthAfricaAccount(countryOverride?: string): boolean {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return active === 'south africa';
+  }
+
   /**
-   * Currently only Zimbabwe has an offline curriculum, syllabus study pack,
-   * past examination bank, and Heritage Encyclopedia loaded in the app.
-   * All other countries run in Qwen / ZEXA AI-only mode until their local
-   * curriculum data packs are loaded.
+   * Returns true for countries with full local offline curriculum packs,
+   * national encyclopedias, and examination banks loaded (Zimbabwe, Botswana, South Africa).
+   * All other countries run using ZEXA AI directly with zero regional leakage.
    */
   static hasCountryCurriculumPack(countryOverride?: string): boolean {
-    return this.isZimbabweAccount(countryOverride);
+    return (
+      this.isZimbabweAccount(countryOverride) ||
+      this.isBotswanaAccount(countryOverride) ||
+      this.isSouthAfricaAccount(countryOverride)
+    );
   }
 
   static getSavedCountryForEmail(email: string): string | null {
@@ -374,4 +405,412 @@ export class StorageManager {
   static clearChat(): void {
     localStorage.removeItem(STORAGE_KEYS.CHAT_MESSAGES);
   }
+
+  private static readJsonList<T>(key: string): T[] {
+    try {
+      const raw = localStorage.getItem(key);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  private static writeJsonList<T>(key: string, items: T[]): void {
+    try {
+      localStorage.setItem(key, JSON.stringify(items));
+    } catch {
+      // Ignore storage quota errors
+    }
+  }
+
+  static getSavedNotes(countryOverride?: string): SavedStudyNote[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<SavedStudyNote>(STORAGE_KEYS.SAVED_NOTES)
+      .filter((n) => (n.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => b.createdAt - a.createdAt);
+  }
+
+  static saveNote(note: Omit<SavedStudyNote, 'id' | 'createdAt' | 'country'> & { country?: string }): SavedStudyNote {
+    const activeCountry = (note.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const all = this.readJsonList<SavedStudyNote>(STORAGE_KEYS.SAVED_NOTES);
+    const created: SavedStudyNote = {
+      id: `note_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      title: note.title.trim() || 'Saved Study Note',
+      content: note.content,
+      subject: note.subject || 'General Study',
+      source: note.source,
+      country: activeCountry,
+      createdAt: Date.now()
+    };
+    this.writeJsonList(STORAGE_KEYS.SAVED_NOTES, [created, ...all].slice(0, 200));
+    this.markStudyActivity(0);
+    return created;
+  }
+
+  static deleteSavedNote(noteId: string): void {
+    const all = this.readJsonList<SavedStudyNote>(STORAGE_KEYS.SAVED_NOTES);
+    this.writeJsonList(
+      STORAGE_KEYS.SAVED_NOTES,
+      all.filter((n) => n.id !== noteId)
+    );
+  }
+
+  static getFlashcards(countryOverride?: string): FlashcardItem[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<FlashcardItem>(STORAGE_KEYS.FLASHCARDS)
+      .filter((f) => (f.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => Number(a.mastered) - Number(b.mastered) || b.createdAt - a.createdAt);
+  }
+
+  static saveFlashcard(card: {
+    front: string;
+    back: string;
+    subject?: string;
+    country?: string;
+  }): FlashcardItem {
+    const activeCountry = (card.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const all = this.readJsonList<FlashcardItem>(STORAGE_KEYS.FLASHCARDS);
+    const created: FlashcardItem = {
+      id: `fc_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      front: card.front.trim(),
+      back: card.back.trim(),
+      subject: (card.subject || 'Revision').trim(),
+      country: activeCountry,
+      mastered: false,
+      reviewCount: 0,
+      createdAt: Date.now()
+    };
+    this.writeJsonList(STORAGE_KEYS.FLASHCARDS, [created, ...all].slice(0, 300));
+    this.markStudyActivity(0);
+    return created;
+  }
+
+  static updateFlashcardMastery(cardId: string, mastered: boolean): void {
+    const all = this.readJsonList<FlashcardItem>(STORAGE_KEYS.FLASHCARDS);
+    const updated = all.map((c) =>
+      c.id === cardId
+        ? {
+            ...c,
+            mastered,
+            reviewCount: (c.reviewCount || 0) + 1,
+            lastReviewedAt: Date.now()
+          }
+        : c
+    );
+    this.writeJsonList(STORAGE_KEYS.FLASHCARDS, updated);
+    this.markStudyActivity(1);
+  }
+
+  static deleteFlashcard(cardId: string): void {
+    const all = this.readJsonList<FlashcardItem>(STORAGE_KEYS.FLASHCARDS);
+    this.writeJsonList(
+      STORAGE_KEYS.FLASHCARDS,
+      all.filter((c) => c.id !== cardId)
+    );
+  }
+
+  static getBookmarkedQuestions(countryOverride?: string): BookmarkedExamQuestion[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<BookmarkedExamQuestion>(STORAGE_KEYS.BOOKMARKED_QUESTIONS)
+      .filter((b) => (b.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => b.createdAt - a.createdAt);
+  }
+
+  static isQuestionBookmarked(bookmarkId: string, countryOverride?: string): boolean {
+    return this.getBookmarkedQuestions(countryOverride).some((b) => b.id === bookmarkId);
+  }
+
+  static toggleBookmarkQuestion(
+    item: Omit<BookmarkedExamQuestion, 'createdAt' | 'country'> & { country?: string }
+  ): boolean {
+    const activeCountry = (item.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const all = this.readJsonList<BookmarkedExamQuestion>(STORAGE_KEYS.BOOKMARKED_QUESTIONS);
+    const exists = all.some(
+      (b) => b.id === item.id && (b.country || '').trim().toLowerCase() === activeCountry.toLowerCase()
+    );
+    if (exists) {
+      this.writeJsonList(
+        STORAGE_KEYS.BOOKMARKED_QUESTIONS,
+        all.filter(
+          (b) => !(b.id === item.id && (b.country || '').trim().toLowerCase() === activeCountry.toLowerCase())
+        )
+      );
+      return false;
+    }
+    const created: BookmarkedExamQuestion = {
+      ...item,
+      country: activeCountry,
+      createdAt: Date.now()
+    };
+    this.writeJsonList(STORAGE_KEYS.BOOKMARKED_QUESTIONS, [created, ...all].slice(0, 200));
+    this.markStudyActivity(0);
+    return true;
+  }
+
+  static getExamScores(countryOverride?: string): SavedExamScore[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<SavedExamScore>(STORAGE_KEYS.EXAM_SCORES)
+      .filter((s) => (s.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => b.completedAt - a.completedAt);
+  }
+
+  static getBestScoreForPaper(paperId: string, countryOverride?: string): SavedExamScore | null {
+    const matching = this.getExamScores(countryOverride).filter((s) => s.paperId === paperId);
+    if (matching.length === 0) return null;
+    return matching.reduce((best, cur) => (cur.percent > best.percent ? cur : best), matching[0]);
+  }
+
+  static saveExamScore(
+    score: Omit<SavedExamScore, 'id' | 'completedAt' | 'country'> & { country?: string }
+  ): SavedExamScore {
+    const activeCountry = (score.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const all = this.readJsonList<SavedExamScore>(STORAGE_KEYS.EXAM_SCORES);
+    const created: SavedExamScore = {
+      ...score,
+      id: `score_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      country: activeCountry,
+      completedAt: Date.now()
+    };
+    this.writeJsonList(STORAGE_KEYS.EXAM_SCORES, [created, ...all].slice(0, 150));
+    const bonusMin = Math.max(1, Math.round((score.durationSeconds || 60) / 60));
+    this.markStudyActivity(bonusMin);
+    return created;
+  }
+
+  static getCompletedTopics(countryOverride?: string): string[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.COMPLETED_TOPICS);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw) as Record<string, string[]>;
+      const list = parsed?.[active];
+      return Array.isArray(list) ? list : [];
+    } catch {
+      return [];
+    }
+  }
+
+  static isTopicCompleted(topicId: string, countryOverride?: string): boolean {
+    return this.getCompletedTopics(countryOverride).includes(topicId);
+  }
+
+  static toggleTopicCompleted(topicId: string, countryOverride?: string): boolean {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    let map: Record<string, string[]> = {};
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.COMPLETED_TOPICS);
+      if (raw) map = JSON.parse(raw) || {};
+    } catch {
+      map = {};
+    }
+    const current = Array.isArray(map[active]) ? map[active] : [];
+    const exists = current.includes(topicId);
+    const next = exists ? current.filter((id) => id !== topicId) : [...current, topicId];
+    map[active] = next;
+    try {
+      localStorage.setItem(STORAGE_KEYS.COMPLETED_TOPICS, JSON.stringify(map));
+    } catch {
+      // ignore quota error
+    }
+    if (!exists) {
+      this.markStudyActivity(1);
+    }
+    return !exists;
+  }
+
+  static getStudyLogMap(): Record<string, number> {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.STUDY_LOG_DATES);
+      if (!raw) return {};
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+      return {};
+    }
+  }
+
+  static markStudyActivity(minutesToAdd = 0, dateOverride?: string): void {
+    const dateKey = dateOverride || this.getTodayString();
+    const map = this.getStudyLogMap();
+    const existing = typeof map[dateKey] === 'number' ? map[dateKey] : 0;
+    map[dateKey] = Math.max(0, existing + Math.max(0, Math.round(minutesToAdd)));
+    try {
+      localStorage.setItem(STORAGE_KEYS.STUDY_LOG_DATES, JSON.stringify(map));
+    } catch {
+      // ignore quota
+    }
+  }
+
+  static computeStreakDays(logMap: Record<string, number>, referenceDateStr?: string): number {
+    const activeDates = Object.keys(logMap).sort();
+    if (activeDates.length === 0) return 0;
+
+    const todayStr = referenceDateStr || this.getTodayString();
+    const shiftDate = (isoDate: string, deltaDays: number): string => {
+      const [y, m, d] = isoDate.split('-').map((n) => parseInt(n, 10));
+      const dt = new Date(Date.UTC(y, m - 1, d + deltaDays));
+      return dt.toISOString().slice(0, 10);
+    };
+
+    const yesterdayStr = shiftDate(todayStr, -1);
+    let cursor: string | null = null;
+    if (Object.prototype.hasOwnProperty.call(logMap, todayStr)) {
+      cursor = todayStr;
+    } else if (Object.prototype.hasOwnProperty.call(logMap, yesterdayStr)) {
+      cursor = yesterdayStr;
+    } else {
+      return 0;
+    }
+
+    let streak = 0;
+    while (cursor && Object.prototype.hasOwnProperty.call(logMap, cursor)) {
+      streak++;
+      cursor = shiftDate(cursor, -1);
+    }
+    return streak;
+  }
+
+  static getStudyStats(countryOverride?: string): StudyActivityStats {
+    const activeCountry = countryOverride || this.getUserCountry();
+    const logMap = this.getStudyLogMap();
+    const today = this.getTodayString();
+    const todayMinutes = typeof logMap[today] === 'number' ? logMap[today] : 0;
+    const totalMinutes = Object.values(logMap).reduce(
+      (sum, v) => sum + (typeof v === 'number' ? v : 0),
+      0
+    );
+    const notes = this.getSavedNotes(activeCountry);
+    const flashcards = this.getFlashcards(activeCountry);
+    const bookmarks = this.getBookmarkedQuestions(activeCountry);
+    const scores = this.getExamScores(activeCountry);
+    const completedTopics = this.getCompletedTopics(activeCountry);
+    const searchHistory = this.getSearchHistory(activeCountry);
+    const examQA = this.getExamQAArchive(activeCountry);
+
+    return {
+      streakDays: this.computeStreakDays(logMap, today),
+      todayMinutes,
+      totalMinutes,
+      completedTopicsCount: completedTopics.length,
+      savedNotesCount: notes.length,
+      flashcardsTotal: flashcards.length,
+      flashcardsMastered: flashcards.filter((c) => c.mastered).length,
+      bookmarksCount: bookmarks.length,
+      examsCompleted: scores.length,
+      searchHistoryCount: searchHistory.length,
+      examQACount: examQA.length
+    };
+  }
+
+  static getSearchHistory(countryOverride?: string): SavedSearchQA[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<SavedSearchQA>(STORAGE_KEYS.REVISION_SEARCH_HISTORY)
+      .filter((item) => (item.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => b.createdAt - a.createdAt);
+  }
+
+  static recordSearchQA(entry: {
+    question: string;
+    answer: string;
+    subject?: string;
+    source?: string;
+    tutorMode?: SavedSearchQA['tutorMode'];
+    level: string;
+    country?: string;
+  }): SavedSearchQA | null {
+    const cleanQ = (entry.question || '').trim();
+    const cleanA = (entry.answer || '').trim();
+    if (!cleanQ || !cleanA) return null;
+
+    const activeCountry = (entry.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const activeLower = activeCountry.toLowerCase();
+    const all = this.readJsonList<SavedSearchQA>(STORAGE_KEYS.REVISION_SEARCH_HISTORY);
+
+    // Avoid duplicating identical question in the same country — refresh timestamp & latest answer instead
+    const existingIdx = all.findIndex(
+      (item) =>
+        (item.country || '').trim().toLowerCase() === activeLower &&
+        item.question.trim().toLowerCase() === cleanQ.toLowerCase()
+    );
+
+    const record: SavedSearchQA = {
+      id: existingIdx >= 0 ? all[existingIdx].id : `sqa_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      question: cleanQ,
+      answer: cleanA,
+      subject: (entry.subject || `${entry.level} Study`).trim(),
+      source: entry.source,
+      tutorMode: entry.tutorMode,
+      level: entry.level,
+      country: activeCountry,
+      createdAt: Date.now()
+    };
+
+    const remaining = existingIdx >= 0 ? all.filter((_, i) => i !== existingIdx) : all;
+    this.writeJsonList(STORAGE_KEYS.REVISION_SEARCH_HISTORY, [record, ...remaining].slice(0, 300));
+    this.markStudyActivity(0);
+    return record;
+  }
+
+  static deleteSearchQA(id: string): void {
+    const all = this.readJsonList<SavedSearchQA>(STORAGE_KEYS.REVISION_SEARCH_HISTORY);
+    this.writeJsonList(
+      STORAGE_KEYS.REVISION_SEARCH_HISTORY,
+      all.filter((item) => item.id !== id)
+    );
+  }
+
+  static clearSearchHistory(countryOverride?: string): void {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    const all = this.readJsonList<SavedSearchQA>(STORAGE_KEYS.REVISION_SEARCH_HISTORY);
+    this.writeJsonList(
+      STORAGE_KEYS.REVISION_SEARCH_HISTORY,
+      all.filter((item) => (item.country || '').trim().toLowerCase() !== active)
+    );
+  }
+
+  static getExamQAArchive(countryOverride?: string): SavedExamQA[] {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    return this.readJsonList<SavedExamQA>(STORAGE_KEYS.REVISION_EXAM_QA)
+      .filter((item) => (item.country || '').trim().toLowerCase() === active)
+      .sort((a, b) => b.updatedAt - a.updatedAt);
+  }
+
+  static recordExamQA(entry: Omit<SavedExamQA, 'id' | 'updatedAt' | 'country'> & { country?: string }): SavedExamQA {
+    const activeCountry = (entry.country || this.getUserCountry()).trim() || 'Zimbabwe';
+    const activeLower = activeCountry.toLowerCase();
+    const uniqueKey = `${activeLower}_${entry.paperId}_q${entry.questionNumber}`;
+    const all = this.readJsonList<SavedExamQA>(STORAGE_KEYS.REVISION_EXAM_QA);
+
+    const record: SavedExamQA = {
+      ...entry,
+      id: uniqueKey,
+      country: activeCountry,
+      updatedAt: Date.now()
+    };
+
+    const remaining = all.filter((item) => item.id !== uniqueKey);
+    this.writeJsonList(STORAGE_KEYS.REVISION_EXAM_QA, [record, ...remaining].slice(0, 400));
+    this.markStudyActivity(0);
+    return record;
+  }
+
+  static deleteExamQA(id: string): void {
+    const all = this.readJsonList<SavedExamQA>(STORAGE_KEYS.REVISION_EXAM_QA);
+    this.writeJsonList(
+      STORAGE_KEYS.REVISION_EXAM_QA,
+      all.filter((item) => item.id !== id)
+    );
+  }
+
+  static clearExamQAArchive(countryOverride?: string): void {
+    const active = (countryOverride || this.getUserCountry()).trim().toLowerCase();
+    const all = this.readJsonList<SavedExamQA>(STORAGE_KEYS.REVISION_EXAM_QA);
+    this.writeJsonList(
+      STORAGE_KEYS.REVISION_EXAM_QA,
+      all.filter((item) => (item.country || '').trim().toLowerCase() !== active)
+    );
+  }
 }
+

@@ -969,31 +969,34 @@ Zimbabwe is an agro-based economy supporting **over 65% of livelihoods**:
       'sadc summit 2024', '44th sadc summit', 'mount hampden', 'new parliament building',
       'trabablas interchange', 'mbudzi interchange', 'gwayi shangani', 'muzarabani gas',
       'invictus energy', 'manhize', 'dinson steel', '2023 elections', 'leaving no one behind',
-      'nyika inovakwa nevene vayo', 'starlink zimbabwe', 'kirsty coventry ioc'
+      'nyika inovakwa nevene vayo', 'starlink zimbabwe', 'kirsty coventry ioc',
+      'chief justice', 'luke malaba', 'mthuli ncube', 'finance minister', 'jacob mudenda',
+      'mabel chinomona', 'john mushayavanhu', 'rbz governor', 'gukurahundi outreach'
     ],
     content: `### Present-Day Zimbabwe (2017 – 2026): National Development, Governance & Current Affairs
 
-1. Current Political Leadership & Governance (Present Day):
-- **President:** **His Excellency Cde Emmerson Dambudzo Mnangagwa** (serving his second and final constitutional term after winning the **23–24 August 2023 Harmonised Elections**).
+1. Current Political Leadership, Senior Office-Holders & Governance (Present Day):
+- **President:** **His Excellency Cde Emmerson Dambudzo Mnangagwa** (serving his second constitutional term following the **23–24 August 2023 Harmonised Elections**).
 - **Vice Presidents:** **General (Rtd) Dr. Constantino Chiwenga** (First VP) and **Col (Rtd) Kembo Mohadi** (Second VP).
-- **Parliament Seat:** Moved to the majestic **New Parliament Building at Mount Hampden** (north-west of Harare), anchoring a planned smart administrative capital city.
+- **Judiciary & Parliament Leadership:** **Chief Justice Luke Malaba** (Head of the Judiciary & Constitutional Court), **Adv. Jacob Mudenda** (Speaker of the National Assembly), and **Hon. Mabel Chinomona** (President of the Senate), operating from the **New Parliament Building at Mount Hampden** (north-west of Harare).
+- **Economic Leadership:** **Prof. Mthuli Ncube** (Minister of Finance, Economic Development & Investment Promotion) and **Dr. John Mushayavanhu** (Governor of the Reserve Bank of Zimbabwe — RBZ).
 - **Guiding National Philosophies:** *"Nyika inovakwa nevene vayo / Ilizwe lakhiwa ngabanikazi balo"* (A nation is built by its own owners) and *"Leaving no one and no place behind."*
 
 2. Economic Blueprints — **Vision 2030**, **NDS1 (2021–2025)** & **NDS2 (2026–2030)**:
-- **NDS1 (2021–2025):** First 5-year medium-term plan building food self-sufficiency, macro-stability, infrastructure, and devolution.
-- **NDS2 (2026–2030):** The second and final 5-year national strategy driving Zimbabwe to **Vision 2030** (an Empowered and Prosperous Upper-Middle-Income Society), prioritising industrial value addition, digital/AI transformation, renewable energy, and export competitiveness.
-- **Zimbabwe Gold (ZiG) Currency:** Launched **5 April 2024** backed by physical gold, precious minerals, and foreign currency reserves under the Reserve Bank of Zimbabwe (RBZ).
+- **NDS1 (2021–2025):** First 5-year medium-term plan building food self-sufficiency (winter wheat >500,000+ tonnes), macroeconomic stabilisation, infrastructure, and devolution.
+- **NDS2 (2026–2030):** The second and final 5-year national strategy driving Zimbabwe toward **Vision 2030** (an Empowered and Prosperous Upper-Middle-Income Society), prioritising industrial value addition, digital/AI transformation, renewable energy, and export competitiveness.
+- **Zimbabwe Gold (ZiG) Currency:** Launched **5 April 2024** under RBZ Governor Dr. John Mushayavanhu, backed by physical gold, precious minerals, and foreign currency reserves.
 
-3. Regional Leadership & Global Milestones (2024 – 2026):
-- **44th SADC Summit (August 2024):** Hosted at Mount Hampden, Harare, where President Mnangagwa assumed the **SADC Chairmanship (2024–2025)** under the theme of promoting innovation to unlock regional economic growth.
-- **Olympic & Global Sport History (March 2025):** Zimbabwe's **Kirsty Coventry** (Minister of Youth, Sport, Arts & Recreation and 7-time Olympic medallist) was elected **10th President of the International Olympic Committee (IOC)** — the **first woman and first African** ever elected to lead the IOC.
+3. Regional Leadership, National Healing & Global Milestones (2024 – 2026):
+- **44th SADC Summit (August 2024):** Hosted at Mount Hampden, Harare, where President Mnangagwa served as **SADC Chairperson (2024–2025)** under the theme of innovation-driven regional industrialisation.
+- **Olympic & Global Sport History (March 2025):** Zimbabwe's **Kirsty Coventry** (Minister of Sport and 7-time Olympic medallist) was elected **10th President of the International Olympic Committee (IOC)** — the **first woman and first African** ever elected to lead the IOC.
+- **National Healing Outreach (2024 – 2025):** Victim-centred **Gukurahundi Community Outreach Hearings** convened under Traditional Chiefs in Matabeleland and Midlands to foster truth, documentation, and national reconciliation.
 
-4. Major Contemporary Infrastructure, Energy & Industrial Mega-Projects:
-- **Trabablas (Mbudzi) Traffic Interchange (Harare):** Multi-level three-tier highway interchange on the Harare–Masvingo–Beitbridge corridor replacing the congested Mbudzi roundabout (completed and opened in **2025**).
+4. Major Contemporary Infrastructure, Energy & Drought-Recovery Projects:
+- **Trabablas (Mbudzi) Traffic Interchange (Harare):** Multi-level three-tier highway interchange on the Harare–Masvingo–Beitbridge corridor opened in **2025**.
 - **Dinson Iron and Steel Company (DISCO — Manhize):** Commissioned blast furnace in 2024 near Mvuma/Chivhu, establishing Southern Africa's largest integrated steel plant.
-- **Energy Security:** **Hwange Thermal Units 7 & 8** (+600 MW), **Kariba South** (1,050 MW), private solar IPPs, and ongoing **Invictus Energy oil/gas exploration in Muzarabani (Cabora Bassa Basin)**.
-- **Water & Climate Resilience:** **Lake Tugwi-Mukosi**, **Gwayi-Shangani Dam & Bulawayo pipeline**, **Kunzvi Dam** (for Harare), and over **3,000+ Presidential Rural Solar Borehole Schemes** alongside *Pfumvudza/Intwasa* recovery after the 2023/2024 El Niño drought.
-- **Digital Connectivity:** High-speed broadband expansion with **Starlink satellite internet licensed in 2024**, rural e-learning, and **Heritage-Based Curriculum (2024–2030)**.`,
+- **Energy & Gas:** **Hwange Thermal Units 7 & 8** (+600 MW), **Kariba South** (1,050 MW), private solar IPPs, and **Invictus Energy oil/gas exploration in Muzarabani**.
+- **Water, Drought Resilience & Digital Access:** **Lake Tugwi-Mukosi**, **Gwayi-Shangani Dam & pipeline**, **Kunzvi Dam**, **3,000+ Presidential Rural Solar Borehole Schemes**, *Pfumvudza/Intwasa* recovery after the 2023/2024 El Niño drought, **Starlink satellite internet (licensed 2024)**, and the **Heritage-Based Curriculum (2024–2030)**.`,
     suggestions: [
       'Give me a complete timeline of Zimbabwe from 1980 to today',
       'What is the population of Zimbabwe according to the 2022 census?',
@@ -1044,6 +1047,48 @@ Zimbabwe is an agro-based economy supporting **over 65% of livelihoods**:
     ]
   },
   {
+    id: 'zw_complete_history_chronology',
+    subject: 'History',
+    topic: 'Complete Chronological History of Zimbabwe: Pre-Colonial Civilisations to Colonisation, Liberation Wars, Independence & Present Day (2026)',
+    levels: ['Primary', 'O-Level', 'A-Level', 'Tertiary'],
+    keywords: [
+      'history of zimbabwe', 'full history of zimbabwe', 'complete history of zimbabwe',
+      'pre-colonial times to today', 'precolonial to present', 'zimbabwe history timeline',
+      'from great zimbabwe to today', 'all history of zimbabwe'
+    ],
+    content: `### Complete Chronological History of Zimbabwe (Pre-Colonial Era to 2026)
+
+1. **Pre-Colonial Civilisations (Stone Age to c. 1890):**
+- **San & Bantu Iron Age:** Earliest San hunter-gatherers left 3,000+ rock paintings (Matobo, Domboshava); Bantu agro-pastoralists (c. 200–1000 CE: Gokomere, Ziwa, Leopard's Kopje) introduced iron smelting, cattle, and crops, followed by **Mapungubwe (1075–1220s)**.
+- **Great Zimbabwe (c. 1100 – 1450 CE):** Mortarless granite capital (*Dzimba dza mabwe*) of cattle, iron, and Swahili-Arab gold trade.
+- **Mutapa Empire (c. 1430s – 19th Century):** Founded by **Nyatsimba Mutota** in Dande, expanded by **Matope**, resisting Portuguese encroachment.
+- **Torwa (Khami, c. 1450–1680s) & Rozvi Empire (c. 1680s–1830s):** **Changamire Dombo** expelled Portuguese inland fairs (1693) from capitals Danangombe & Manyanga.
+- **Ndebele Kingdom (1840 – 1893):** Founded by **King Mzilikazi Khumalo** after the Mfecane, succeeded by **King Lobengula** at Bulawayo.
+
+2. **Colonisation, Resistance & Racial Land Laws (1887 – 1965):**
+- **Deceptive Treaties & Occupation:** **Grobler Treaty (1887)**, **Moffat Treaty (Feb 1888)**, and the fraudulent **Rudd Concession (Oct 1888)** enabled Cecil Rhodes's **BSAC Charter (1889)** and the **Pioneer Column (12 Sept 1890 — Fort Salisbury)**, followed by the **1893 Anglo-Ndebele War**.
+- **First Chimurenga / Umvukela (1896 – 1897):** Mass African uprising led by spirit mediums **Mbuya Nehanda, Sekuru Kaguvi, Mukwati**, and **Umlugulu** against land seizures, cattle looting, *Chibharo* forced labour, and Hut Tax.
+- **Settler Legislation:** **1930 Land Apportionment Act**, **1951 Native Land Husbandry Act**, **1953–1963 Federation of Rhodesia & Nyasaland**, **Ian Smith's 1965 UDI**, and **1969 Land Tenure Act**.
+
+3. **Mass Nationalism, Second Chimurenga & Independence (1955 – 1980):**
+- **Liberation Movements:** City Youth League (1955) -> SRANC (1957) -> NDP (1960) -> **ZAPU (1961, Joshua Nkomo / ZIPRA)** & **ZANU (1963, Ndabaningi Sithole, Leopold Takawira, Herbert Chitepo, Robert Mugabe / ZANLA)**.
+- **Armed Struggle (1966 – 1979):** Ignited by the **28 April 1966 Battle of Chinhoyi**, expanded from Zambia and Mozambique under commanders **Josiah Tongogara, Rex Nhongo (Solomon Mujuru), J.Z. Moyo, Nikita Mangena**, and **Lookout Masuku**, surviving **Chimoio & Nyadzonia** raids with **Frontline States** support.
+- **Independence:** **1979 Lancaster House Agreement** led to February 1980 elections and sovereign independence on **18 April 1980**.
+
+4. **First Republic — Post-Independence Era (1980 – 2017):**
+- **1980 – 1989:** Reconciliation policy, universal schooling (>90% literacy), **SADCC** founding, **1982–87 Matabeleland/Midlands conflict (*Gukurahundi*)**, resolved by the **22 December 1987 Unity Accord** (merging ZANU & PF-ZAPU into ZANU-PF; Executive Presidency under Mugabe with VPs Nkomo & Muzenda).
+- **1990 – 2017:** **1991–95 ESAP**, **1998 DRC intervention**, **MDC** formation (1999), **2000 Fast-Track Land Reform (A1/A2)** & Western sanctions (ZDERA), **2007–08 hyperinflation**, **2008 GPA & 2009–13 GNU/dollarisation**, **22 May 2013 Constitution**, and **November 2017 Operation Restore Legacy**.
+
+5. **Second Republic & Present-Day Zimbabwe (2017 – 2026):**
+- Led by President **Emmerson Mnangagwa** with VPs **Constantino Chiwenga** and **Kembo Mohadi** toward **Vision 2030** (**NDS1 2021–2025 -> NDS2 2026–2030**).
+- Key recent milestones: **2022 ZimStat Census (15.18M)**, **Marriages Act (2022)**, **August 2023 Elections**, **New Parliament (Mt Hampden)**, **Heritage-Based Curriculum (2024–2030)**, **ZiG currency (April 2024)**, **44th SADC Summit & Chairmanship (2024–2025)**, **Manhize Steel**, **Trabablas Interchange (2025)**, and **Kirsty Coventry elected IOC President (March 2025)**.`,
+    suggestions: [
+      'Explain Pre-Colonial states (Great Zimbabwe, Mutapa, Rozvi, Ndebele)',
+      'What happened in post-independence Zimbabwe (1980 to today)?',
+      'What are the key developments in present-day Zimbabwe (2024–2026)?'
+    ]
+  },
+  {
     id: 'zw_population_demographics_census',
     subject: 'Geography',
     topic: 'Zimbabwe Population, 2022 ZimStat National Census, Ethnic Diversity & Major Urban Centres',
@@ -1063,9 +1108,9 @@ Zimbabwe is an agro-based economy supporting **over 65% of livelihoods**:
 
 2. Provincial Population Breakdown (Largest to Smallest in 2022):
 - **Harare Metropolitan:** ~2.43 million (most populous province).
-- **Midlands:** ~1.81 million.
 - **Manicaland:** ~2.04 million.
 - **Mashonaland West:** ~1.89 million.
+- **Midlands:** ~1.81 million.
 - **Mashonaland East:** ~1.73 million.
 - **Masvingo:** ~1.64 million.
 - **Mashonaland Central:** ~1.38 million.

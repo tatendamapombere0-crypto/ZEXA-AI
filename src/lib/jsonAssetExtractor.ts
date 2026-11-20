@@ -37,18 +37,96 @@ function inferSubjectFromFileName(fileName: string): string {
   return 'ZIMSEC Curriculum';
 }
 
-function inferLevelFromFileName(fileName: string, meta?: any): string {
-  const metaLvl = String(meta?.level || meta?.levels_covered || '').toLowerCase();
-  const f = fileName.toLowerCase();
-  if (f.includes('grade7') || f.includes('grade_7') || f.includes('primary') || f.includes('_g7_') || metaLvl.includes('grade 7') || metaLvl.includes('primary') || metaLvl.includes('junior')) {
+function normalizeExtractedLevel(rawLevel: string): string {
+  const l = (rawLevel || '').toLowerCase().trim();
+  if (!l) return 'O-Level';
+  if (l.includes('primary') || l.includes('grade') || l.includes('ecd') || l.includes('infant') || l.includes('junior')) {
     return 'Primary';
   }
-  if (f.includes('a_level') || f.includes('alevel') || f.includes('6042') || f.includes('6073') || f.includes('6037') || f.includes('9154') || f.includes('9155') || metaLvl.includes('advanced level') || metaLvl.includes('forms 5-6') || metaLvl.includes('a-level')) {
+  if (l.includes('a-level') || l.includes('alevel') || l.includes('advanced level') || l.includes('forms 5') || l.includes('form 5') || l.includes('form 6')) {
     return 'A-Level';
   }
-  if (f.includes('tertiary') || f.includes('university')) {
+  if (l.includes('tertiary') || l.includes('university')) {
     return 'Tertiary';
   }
+  if (l === 'general' || l.includes('secondary') || l.includes('o-level') || l.includes('olevel') || l.includes('ordinary level') || l.includes('forms 1')) {
+    return 'O-Level';
+  }
+  return rawLevel;
+}
+
+function inferLevelFromFileName(fileName: string, meta?: any, fileData?: any): string {
+  const combinedMeta = [
+    meta?.level,
+    meta?.levels_covered,
+    meta?.curriculum,
+    fileData?.curriculum,
+    Array.isArray(fileData?.syllabus_sources) ? fileData.syllabus_sources.join(' ') : fileData?.syllabus_source
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  const f = fileName.toLowerCase();
+
+  // Check explicit Grade / Primary / Infant / Junior / ECD signals first
+  if (
+    f.includes('grade7') ||
+    f.includes('grade_7') ||
+    f.includes('7grade') ||
+    f.includes('grade2') ||
+    f.includes('grade_2') ||
+    f.includes('primary') ||
+    f.includes('_g7_') ||
+    combinedMeta.includes('grade 7') ||
+    combinedMeta.includes('grade 3') ||
+    combinedMeta.includes('primary') ||
+    combinedMeta.includes('junior') ||
+    combinedMeta.includes('infant') ||
+    combinedMeta.includes('ecd')
+  ) {
+    return 'Primary';
+  }
+
+  // Explicitly distinguish Ordinary Level / Forms 1-4 BEFORE Advanced Level notes that may mention A-Level as a continuation
+  if (
+    f.includes('o_level') ||
+    f.includes('olevel') ||
+    f.includes('_secondary') ||
+    combinedMeta.includes('ordinary level') ||
+    combinedMeta.includes('forms 1-4')
+  ) {
+    return 'O-Level';
+  }
+
+  if (
+    f.includes('a_level') ||
+    f.includes('alevel') ||
+    f.includes('6042') ||
+    f.includes('6073') ||
+    f.includes('6037') ||
+    f.includes('9145') ||
+    f.includes('9153') ||
+    f.includes('9154') ||
+    f.includes('9155') ||
+    combinedMeta.includes('advanced level') ||
+    combinedMeta.includes('forms 5-6') ||
+    combinedMeta.includes('a-level')
+  ) {
+    return 'A-Level';
+  }
+
+  if (f.includes('tertiary') || f.includes('university') || combinedMeta.includes('tertiary')) {
+    return 'Tertiary';
+  }
+
+  // Fallback inspection of first chunk grade if present (e.g. zimsec_english_language.json)
+  if (Array.isArray(fileData?.chunks) && fileData.chunks.length > 0) {
+    const firstGrade = String(fileData.chunks[0]?.grade || '').toLowerCase();
+    if (firstGrade.includes('grade') || firstGrade.includes('ecd')) {
+      return 'Primary';
+    }
+  }
+
   return 'O-Level';
 }
 
@@ -103,8 +181,14 @@ function extractTextField(item: any): string {
   if (typeof item.definition === 'string' && item.definition.trim()) parts.push(item.definition.trim());
   if (typeof item.description === 'string' && item.description.trim()) parts.push(item.description.trim());
   if (typeof item.summary === 'string' && item.summary.trim() && parts.length === 0) parts.push(item.summary.trim());
-  if (typeof item.answer === 'string' && item.answer.trim()) {
-    parts.push(`**Answer:** ${item.answer.trim()}`);
+
+  const questionPrompt = item.q || item.problem || item.question;
+  if (typeof questionPrompt === 'string' && questionPrompt.trim() && !parts.includes(questionPrompt.trim())) {
+    parts.push(`**Question / Problem:** ${questionPrompt.trim()}`);
+  }
+  const solutionText = item.a || item.solution || item.answer;
+  if (typeof solutionText === 'string' && solutionText.trim()) {
+    parts.push(`**Worked Answer & Explanation:**\n${solutionText.trim()}`);
   }
   if (typeof item.meaning === 'string' && item.meaning.trim()) {
     parts.push(`**Meaning:** ${item.meaning.trim()}`);
@@ -114,6 +198,9 @@ function extractTextField(item: any): string {
   }
   if (Array.isArray(item.key_concepts) && item.key_concepts.length > 0) {
     parts.push(`#### Key Concepts\n${item.key_concepts.map((kc: any) => `- ${typeof kc === 'string' ? kc : flattenObjectToReadableText(kc)}`).join('\n')}`);
+  }
+  if (Array.isArray(item.learning_activities) && item.learning_activities.length > 0) {
+    parts.push(`#### Recommended Learning Activities\n${item.learning_activities.map((la: any) => `- ${typeof la === 'string' ? la : flattenObjectToReadableText(la)}`).join('\n')}`);
   }
   if (Array.isArray(item.examples) && item.examples.length > 0) {
     parts.push(`#### Examples\n${item.examples.map((ex: any) => `- ${typeof ex === 'string' ? ex : flattenObjectToReadableText(ex)}`).join('\n')}`);
@@ -133,9 +220,15 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
   const results: ExtractedAssetTopic[] = [];
   if (!fileData) return results;
 
-  const meta = fileData.metadata || fileData.meta || fileData.paperInfo || {};
-  const defaultSubject = String(meta.subject || meta.subject_name || inferSubjectFromFileName(fileName));
-  const defaultLevel = inferLevelFromFileName(fileName, meta);
+  const rawMeta = fileData.metadata || fileData.meta || fileData.paperInfo || {};
+  const meta = {
+    ...rawMeta,
+    subject: rawMeta.subject || rawMeta.subject_name || fileData.subject,
+    curriculum: rawMeta.curriculum || fileData.curriculum,
+    level: rawMeta.level || fileData.level
+  };
+  const defaultSubject = String(meta.subject || inferSubjectFromFileName(fileName));
+  const defaultLevel = inferLevelFromFileName(fileName, meta, fileData);
 
   const pushEntry = (title: string, rawContent: string, subject?: string, level?: string, keywords?: string[]) => {
     const cleanContent = (rawContent || '').trim();
@@ -145,7 +238,7 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
       title: cleanTitle,
       content: cleanContent,
       subject: subject || defaultSubject,
-      level: level || defaultLevel,
+      level: normalizeExtractedLevel(level || defaultLevel),
       keywords: keywords && keywords.length > 0 ? keywords : undefined
     });
   };
@@ -156,7 +249,9 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
       if (!item || typeof item !== 'object') continue;
       const title = item.topic || item.title || item.term || item.question || item.name || defaultSubject;
       const content = extractTextField(item);
-      pushEntry(title, content, item.subject || defaultSubject, item.level || defaultLevel, item.keywords);
+      const itemLevel = item.level || (Array.isArray(item.levels) && item.levels.length > 0 ? item.levels[0] : defaultLevel);
+      const itemSubject = item.subject || item.section || defaultSubject;
+      pushEntry(title, content, itemSubject, itemLevel, item.keywords);
     }
     return results;
   }
@@ -167,7 +262,8 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
       if (!item || typeof item !== 'object') continue;
       const title = item.topic || item.title || item.term || item.name || defaultSubject;
       const content = extractTextField(item);
-      pushEntry(title, content, item.subject || defaultSubject, item.level || defaultLevel, item.keywords);
+      const itemLevel = item.level || (item.grade ? normalizeExtractedLevel(String(item.grade)) : defaultLevel);
+      pushEntry(title, content, item.subject || item.section || defaultSubject, itemLevel, item.keywords);
     }
     return results;
   }
@@ -244,7 +340,7 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
     if (Array.isArray(fileData.worked_examples)) {
       for (const w of fileData.worked_examples) {
         if (!w || typeof w !== 'object') continue;
-        const title = w.title || w.topic || w.question || 'Worked Example';
+        const title = w.title || w.topic || w.problem || w.question || 'Worked Example';
         const content = extractTextField(w);
         pushEntry(title, content, defaultSubject, defaultLevel);
       }
@@ -252,7 +348,7 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
     if (Array.isArray(fileData.sample_questions)) {
       for (const q of fileData.sample_questions) {
         if (!q || typeof q !== 'object') continue;
-        const title = q.question || q.topic || 'Exam Practice Question';
+        const title = q.question || q.q || q.topic || 'Exam Practice Question';
         const content = extractTextField(q);
         pushEntry(title, content, defaultSubject, defaultLevel);
       }
@@ -293,18 +389,36 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
       ['Madimikira (ChiShona Idioms)', fileData.madimikira_practice],
       ['Nyaudzosingwi (Ideophones)', fileData.nyaudzosingwi_practice],
       ['Ukama (Family & Kinship)', fileData.ukama_quiz],
-      ['Mitupo (Totems)', fileData.mitupo_practice],
-      ['Rondedzero Prompts', fileData.sample_composition_prompts]
+      ['Mitupo (Totems & Zvidawo)', fileData.mitupo_practice],
+      ['Rondedzero Prompts (Composition Guide)', fileData.sample_composition_prompts]
     ] as const;
 
     for (const [secTitle, secObj] of sections) {
       if (!secObj) continue;
+      const intro = typeof secObj.instructions === 'string' ? `${secObj.instructions}\n\n` : '';
       const items = Array.isArray(secObj.items) ? secObj.items : Array.isArray(secObj) ? secObj : [];
       if (items.length > 0) {
-        const body = items
-          .map((it: any, i: number) => `${i + 1}. ${it.prompt || it.question || it.word || it.totem || ''}\n   - **Answer:** ${it.answer || it.meaning || ''}\n   - **Explanation:** ${it.meaning || it.explanation || it.example || ''}`.trim())
+        const itemLines = items
+          .map((it: any, i: number) => {
+            const head =
+              it.prompt ||
+              it.sentence ||
+              it.question ||
+              it.idiom ||
+              it.word ||
+              (it.mutupo ? `Mutupo: **${it.mutupo}** — Chidau: **${it.chidau || ''}**` : '') ||
+              it.totem ||
+              '';
+            const prefix = it.type ? `[${it.type}] ` : '';
+            const opts = Array.isArray(it.options) ? `\n   - **Options:** ${it.options.join(', ')}` : '';
+            const ansVal = it.answer || (it.mutupo ? it.chidau : '');
+            const ans = ansVal ? `\n   - **Answer:** ${ansVal}` : '';
+            const explVal = it.meaning || it.explanation || it.note || it.example || '';
+            const expl = explVal ? `\n   - **Explanation:** ${explVal}` : '';
+            return `${i + 1}. ${prefix}${head}${opts}${ans}${expl}`.trim();
+          })
           .join('\n\n');
-        pushEntry(secTitle, body, 'ChiShona', defaultLevel);
+        pushEntry(secTitle, `${intro}${itemLines}`.trim(), 'ChiShona', defaultLevel);
       }
     }
     if (results.length > 0) return results;
@@ -324,11 +438,20 @@ export function extractTopicsFromJsonAsset(fileData: any, fileName: string): Ext
   for (const pk of primarySectionKeys) {
     const val = fileData[pk];
     if (!val) continue;
+    if (pk === 'grade_3_sample_scheme' && typeof val === 'object' && !Array.isArray(val)) {
+      const schemeTitle = `Grade 3 Teaching Scheme: ${val.topic || 'Cultural Heritage'}`;
+      const text = flattenObjectToReadableText(val);
+      pushEntry(schemeTitle, text, defaultSubject, 'Primary');
+      continue;
+    }
     if (Array.isArray(val)) {
       for (const el of val) {
         if (el && typeof el === 'object') {
           const title = el.name || el.title || el.topic || pk.replace(/_/g, ' ');
-          pushEntry(title, extractTextField(el), defaultSubject, 'Primary');
+          const extracted = extractTextField(el);
+          // Skip bare stub entries that have no substantive description/explanation beyond Name/Id
+          if (!el.description && !el.explanation && !el.content && extracted.length < 100) continue;
+          pushEntry(title, extracted, defaultSubject, 'Primary');
         }
       }
     } else if (typeof val === 'object') {

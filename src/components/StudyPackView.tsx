@@ -19,20 +19,25 @@ import { KnowledgeStore } from '../lib/knowledgeStore';
 import { StorageManager } from '../lib/storage';
 import { StudyDiagram, DiagramId } from './StudyDiagrams';
 import { MarkdownArticle } from './MarkdownArticle';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 
 interface StudyPackViewProps {
   contentLevel: string;
   country?: string;
   onAskZexa: (question: string) => void;
+  onRevisionUpdated?: () => void;
 }
 
 export const StudyPackView: React.FC<StudyPackViewProps> = ({
   contentLevel,
   country = 'Zimbabwe',
-  onAskZexa
+  onAskZexa,
+  onRevisionUpdated
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
+  const isBw = StorageManager.isBotswanaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
+  const activeTier = getTierForContentLevel(country, contentLevel);
   const [activeViewMode, setActiveViewMode] = useState<'modules' | 'diagrams'>('modules');
   const [subjects, setSubjects] = useState<string[]>([]);
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
@@ -40,12 +45,19 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
   const [selectedTopic, setSelectedTopic] = useState<KnowledgeChunk | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [visualOnlyFilter, setVisualOnlyFilter] = useState(false);
+  const [studiedOnlyFilter, setStudiedOnlyFilter] = useState(false);
+  const [completedIds, setCompletedIds] = useState<string[]>(() =>
+    StorageManager.getCompletedTopics(country)
+  );
   const [loading, setLoading] = useState(true);
+  const [hydratedContentMap, setHydratedContentMap] = useState<Record<string, string>>({});
+  const [hydratingTopicId, setHydratingTopicId] = useState<string | null>(null);
 
   // Gallery of visual diagrams per level
   const [allVisualTopics, setAllVisualTopics] = useState<KnowledgeChunk[]>([]);
 
   useEffect(() => {
+    setCompletedIds(StorageManager.getCompletedTopics(country));
     async function init() {
       setLoading(true);
       setSelectedTopic(null);
@@ -77,8 +89,52 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
     loadSubjectTopics();
   }, [selectedSubject, contentLevel, country]);
 
+  useEffect(() => {
+    let cancelled = false;
+    async function hydrateSelectedTopic() {
+      if (!selectedTopic || !selectedTopic.assetFile || typeof selectedTopic.assetIdx !== 'number') {
+        setHydratingTopicId(null);
+        return;
+      }
+      if (hydratedContentMap[selectedTopic.id]) {
+        setHydratingTopicId(null);
+        return;
+      }
+      setHydratingTopicId(selectedTopic.id);
+      const loaded = await KnowledgeStore.loadAssetFileContent(
+        selectedTopic.assetFile,
+        selectedTopic.assetIdx,
+        selectedTopic.content
+      );
+      if (cancelled) return;
+      const sanitizedLoaded = KnowledgeStore.sanitizeChunkForCountry(
+        { ...selectedTopic, content: loaded || selectedTopic.content },
+        isZim
+      ).content;
+      setHydratedContentMap((prev) => ({
+        ...prev,
+        [selectedTopic.id]: sanitizedLoaded
+      }));
+      setHydratingTopicId(null);
+    }
+    hydrateSelectedTopic();
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedTopic, isZim]);
+
+  const handleToggleTopicStudied = (topicId: string) => {
+    StorageManager.toggleTopicCompleted(topicId, country);
+    setCompletedIds(StorageManager.getCompletedTopics(country));
+    onRevisionUpdated?.();
+  };
+
+  const completedInSubjectCount = topics.filter((t) => completedIds.includes(t.id)).length;
+  const masteryPercent = topics.length > 0 ? Math.round((completedInSubjectCount / topics.length) * 100) : 0;
+
   const filteredTopics = topics.filter((t) => {
     if (visualOnlyFilter && !t.hasVisual) return false;
+    if (studiedOnlyFilter && !completedIds.includes(t.id)) return false;
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
     return (
@@ -101,20 +157,20 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
         <div>
           <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold mb-1">
             <BookMarked className="w-4 h-4" />
-            <span>Curriculum Vault · {country} · {contentLevel}</span>
+            <span>Curriculum Vault · {country} · {activeTier.shortLabel}</span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
-            <span>{isZim ? 'ZIMSEC & Cambridge Study Pack' : `${country} Study Pack`}</span>
+          <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight flex flex-wrap items-center gap-2">
+            <span>{isZim ? 'ZIMSEC & Cambridge Study Pack' : isBw ? 'BEC · Botswana Study Pack' : `${country} Study Pack`}</span>
             {hasPack && (
-              <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 font-normal">
-                Textbook Depth + Visuals
+              <span className="text-[11px] font-mono text-cyan-300 font-medium tabular-nums">
+                · {completedInSubjectCount}/{topics.length} Studied ({masteryPercent}%)
               </span>
             )}
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
             {hasPack
               ? 'Rich structured textbook lessons, formulas, step-by-step mechanisms & interactive vector diagrams.'
-              : `${country} · ${contentLevel}`}
+              : `${country} · ${activeTier.label}`}
           </p>
         </div>
 
@@ -223,26 +279,40 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
       {selectedTopic ? (
         <div className="glass-panel rounded-3xl p-5 sm:p-7 shadow-2xl border border-white/[0.08] animate-fadeIn">
           {/* Breadcrumb Navigation & Top Toolbar */}
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <button
               onClick={() => setSelectedTopic(null)}
-              className="flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 font-semibold transition-colors bg-white/[0.04] px-3 py-1.5 rounded-xl border border-white/[0.06]"
+              className="flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 font-semibold transition-colors bg-white/[0.04] px-3 py-2 rounded-xl border border-white/[0.06]"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to {selectedTopic.subject} modules</span>
             </button>
 
-            <button
-              onClick={() =>
-                onAskZexa(
-                  `Can you tutor me on ${selectedTopic.topic} in ${isZim ? `ZIMSEC ${contentLevel}` : `${country} ${contentLevel}`}? Please explain step-by-step and give exam tips.`
-                )
-              }
-              className="flex items-center gap-2 px-4 py-2 rounded-xl btn-primary-gradient text-xs font-bold transition-all shrink-0 active:scale-95 shadow-md"
-            >
-              <MessageSquare className="w-3.5 h-3.5" />
-              <span>Ask ZEXA AI About This</span>
-            </button>
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                onClick={() => handleToggleTopicStudied(selectedTopic.id)}
+                className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border transition-all active:scale-95 ${
+                  completedIds.includes(selectedTopic.id)
+                    ? 'bg-emerald-500/20 border-emerald-400/60 text-emerald-300'
+                    : 'bg-white/[0.04] border-white/[0.08] text-slate-300 hover:text-white hover:border-cyan-500/40'
+                }`}
+              >
+                <CheckCircle2 className={`w-3.5 h-3.5 ${completedIds.includes(selectedTopic.id) ? 'text-emerald-400' : 'text-slate-400'}`} />
+                <span>{completedIds.includes(selectedTopic.id) ? 'Studied' : 'Mark as Studied'}</span>
+              </button>
+
+              <button
+                onClick={() =>
+                  onAskZexa(
+                    `Can you tutor me on ${selectedTopic.topic} in ${isZim ? `ZIMSEC ${activeTier.shortLabel}` : isBw ? `BEC ${activeTier.shortLabel}` : `${country} ${activeTier.label}`}? Please explain step-by-step and give exam tips.`
+                  )
+                }
+                className="flex items-center gap-2 px-4 py-2 rounded-xl btn-primary-gradient text-xs font-bold transition-all shrink-0 active:scale-95 shadow-md"
+              >
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>Ask ZEXA AI About This</span>
+              </button>
+            </div>
           </div>
 
           {/* Module Header */}
@@ -281,7 +351,16 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
 
           {/* Rich Formatted Markdown Content */}
           <div className="mt-4">
-            <MarkdownArticle content={selectedTopic.content} />
+            {hydratingTopicId === selectedTopic.id && !hydratedContentMap[selectedTopic.id] ? (
+              <div className="space-y-3">
+                <div className="text-[11px] font-mono text-cyan-400 animate-pulse">
+                  LOADING FULL SYLLABUS EXPLANATION...
+                </div>
+                <MarkdownArticle content={selectedTopic.content} />
+              </div>
+            ) : (
+              <MarkdownArticle content={hydratedContentMap[selectedTopic.id] || selectedTopic.content} />
+            )}
           </div>
 
           {/* Keywords / Index Tags */}
@@ -352,7 +431,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
             ))}
           </div>
 
-          {/* Search Bar & Visual Filter Pill */}
+          {/* Search Bar & Visual / Studied Filters */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
             <div className="relative flex-1">
               <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -365,17 +444,31 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
               />
             </div>
 
-            <button
-              onClick={() => setVisualOnlyFilter(!visualOnlyFilter)}
-              className={`flex items-center justify-center gap-2 px-4 py-3 rounded-2xl text-xs font-bold transition-all border shrink-0 ${
-                visualOnlyFilter
-                  ? 'bg-cyan-500/25 border-cyan-400 text-cyan-200 shadow-md'
-                  : 'bg-white/[0.03] border-white/[0.08] text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <ImageIcon className="w-4 h-4 text-cyan-400" />
-              <span>With Visuals Only</span>
-            </button>
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={() => setStudiedOnlyFilter(!studiedOnlyFilter)}
+                className={`flex items-center justify-center gap-1.5 px-3.5 py-3 rounded-2xl text-xs font-bold transition-all border shrink-0 ${
+                  studiedOnlyFilter
+                    ? 'bg-emerald-500/20 border-emerald-400/60 text-emerald-300'
+                    : 'bg-white/[0.03] border-white/[0.08] text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <span>Studied ({completedInSubjectCount})</span>
+              </button>
+
+              <button
+                onClick={() => setVisualOnlyFilter(!visualOnlyFilter)}
+                className={`flex items-center justify-center gap-1.5 px-3.5 py-3 rounded-2xl text-xs font-bold transition-all border shrink-0 ${
+                  visualOnlyFilter
+                    ? 'bg-cyan-500/25 border-cyan-400 text-cyan-200 shadow-md'
+                    : 'bg-white/[0.03] border-white/[0.08] text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <ImageIcon className="w-4 h-4 text-cyan-400" />
+                <span>With Visuals</span>
+              </button>
+            </div>
           </div>
 
           {/* Topics Grid */}
@@ -385,31 +478,39 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
             </div>
           ) : filteredTopics.length === 0 ? (
             <div className="p-12 text-center rounded-3xl glass-panel text-slate-400 text-sm">
-              No topics found matching &quot;{searchQuery}&quot; in {selectedSubject}.
+              No topics found matching current filters in {selectedSubject}.
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              {filteredTopics.map((topic, index) => (
+              {filteredTopics.map((topic, index) => {
+                const isStudied = completedIds.includes(topic.id);
+                return (
                 <div
                   key={`${topic.id}_${index}`}
                   onClick={() => setSelectedTopic(topic)}
                   className="glass-panel glass-card-hover rounded-2xl p-5 cursor-pointer flex flex-col justify-between group border border-white/[0.06] hover:border-cyan-500/40"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-2.5">
-                      <span className="text-[10px] font-mono font-bold text-cyan-400 uppercase tracking-wide bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-500/20">
+                    <div className="flex items-center justify-between gap-2 mb-2.5">
+                      <span className="text-[10px] font-mono font-bold text-cyan-400 uppercase tracking-wide">
                         {topic.subject}
                       </span>
-                      {topic.hasVisual ? (
-                        <span className="text-[10px] font-mono font-semibold text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1">
-                          <ImageIcon className="w-3 h-3" />
-                          <span>Visual Diagram</span>
-                        </span>
-                      ) : (
-                        <span className="text-[10px] font-mono text-slate-500">
-                          Textbook Module
-                        </span>
-                      )}
+                      <div className="flex items-center gap-2 text-[10px] font-mono">
+                        {isStudied && (
+                          <span className="font-semibold text-emerald-400 flex items-center gap-1">
+                            <CheckCircle2 className="w-3 h-3" />
+                            <span>Studied</span>
+                          </span>
+                        )}
+                        {topic.hasVisual ? (
+                          <span className="font-semibold text-cyan-300 flex items-center gap-1">
+                            <ImageIcon className="w-3 h-3" />
+                            <span>Diagram</span>
+                          </span>
+                        ) : (
+                          !isStudied && <span className="text-slate-500">Lesson</span>
+                        )}
+                      </div>
                     </div>
 
                     <h4 className="font-extrabold text-white text-base group-hover:text-cyan-200 transition-colors line-clamp-1 mb-2">
@@ -429,7 +530,8 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
                     </span>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           )}
 

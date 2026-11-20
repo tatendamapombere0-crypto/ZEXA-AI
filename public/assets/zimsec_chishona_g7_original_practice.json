@@ -30,11 +30,13 @@
     ]
   },
   "nyaudzosingwi_practice": {
-    "instructions": "Choose the ideophone that best completes each sentence.",
+    "instructions": "Nyaudzosingwi (ideophones) are expressive ChiShona words that imitate sounds, sudden actions, movements, textures, or stillness (usually preceded by the verb 'kuti'). Choose the ideophone that best completes each sentence.",
     "items": [
-      {"sentence": "Mwana akati ______ paakaona chikara.", "options": ["tsvi", "dzvi", "svo", "chechetu"], "answer": "dzvi", "note": "describes freezing/going still from fright"},
-      {"sentence": "Mvura yakanaya yakati ______ zuva rese.", "options": ["shwarara", "kwesu", "vhu", "bvurugu"], "answer": "shwarara", "note": "describes continuous, steady falling"},
-      {"sentence": "Akasvetuka rukova akati ______.", "options": ["svo", "pfacha", "twasu", "zii"], "answer": "svo", "note": "describes a quick leaping motion"}
+      {"sentence": "Mwana akati ______ paakaona chikara.", "options": ["tsvi", "dzvi", "svo", "chechetu"], "answer": "dzvi", "note": "'Dzvi' describes freezing, halting suddenly, or holding firmly still in fright or surprise."},
+      {"sentence": "Mvura yakanaya yakati ______ zuva rese.", "options": ["shwarara", "kwesu", "vhu", "bvurugu"], "answer": "shwarara", "note": "'Shwarara' describes continuous, steady falling of gentle rain over an extended period."},
+      {"sentence": "Akasvetuka rukova akati ______.", "options": ["svo", "pfacha", "twasu", "zii"], "answer": "svo", "note": "'Svo' captures a quick, agile leaping motion across a stream or obstacle."},
+      {"sentence": "Munhu wese akati ______ pakataura mukuru wechikoro.", "options": ["zii", "bheu", "pwere", "tasa"], "answer": "zii", "note": "'Zii' expresses complete silence and stillness when everyone pays close attention."},
+      {"sentence": "Akamira akati ______ pamberi pemureza weZimbabwe.", "options": ["twasu", "bvuu", "gwada", "tande"], "answer": "twasu", "note": "'Twasu' describes standing completely straight and upright with posture and respect."}
     ]
   },
   "ukama_quiz": {
@@ -48,13 +50,14 @@
     ]
   },
   "mitupo_practice": {
-    "instructions": "Match the totem (mutupo) to its chidau (praise name) - pairs are widely known Shona cultural knowledge.",
+    "instructions": "Mitupo (totems) and zvidawo (clan praise names) identify Shona family lineage, honour ancestors, regulate exogamous marriage, and encourage wildlife conservation through taboo animals.",
     "items": [
-      {"mutupo": "Moyo", "chidau": "Chirandu"},
-      {"mutupo": "Shava", "chidau": "Mhofu / Museyamwa"},
-      {"mutupo": "Shumba", "chidau": "Murambwi / Nechigumira"},
-      {"mutupo": "Nzou", "chidau": "Samanyanga"},
-      {"mutupo": "Mbizi", "chidau": "Marowa"}
+      {"mutupo": "Moyo", "chidau": "Chirandu", "meaning": "Heart clan—children inherit their father's totem; people sharing the same mutupo treat one another as relatives and do not marry."},
+      {"mutupo": "Shava", "chidau": "Mhofu / Museyamwa", "meaning": "Eland totem—protected by cultural taboo from being eaten or harmed by clan members, aiding indigenous conservation."},
+      {"mutupo": "Shumba", "chidau": "Murambwi / Nechigumira", "meaning": "Lion totem—invoked with respectful zvidawo such as 'Mhazi' or 'Nyenyedzi' when greeting or thanking elders."},
+      {"mutupo": "Nzou", "chidau": "Samanyanga", "meaning": "Elephant totem—'Samanyanga' honours the tusks and strength of the elephant lineage."},
+      {"mutupo": "Mbizi", "chidau": "Marowa / Tembo", "meaning": "Zebra totem—widely praised with 'Tembo Mazvimbakupa' to show gratitude and respect in Shona etiquette."},
+      {"mutupo": "Soko", "chidau": "Mhizha / Wafawanaka", "meaning": "Monkey/vervet totem—honoured for cleverness and craftsmanship among historic clans."}
     ]
   },
   "sample_composition_prompts": {

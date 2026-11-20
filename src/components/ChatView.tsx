@@ -1,27 +1,32 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { 
-  Send, 
-  Square, 
-  Copy, 
-  Check, 
-  User, 
-  Sparkles, 
-  BookCheck, 
-  AlertCircle, 
+import {
+  Send,
+  Square,
+  Copy,
+  Check,
+  User,
+  Sparkles,
+  BookCheck,
+  AlertCircle,
   ArrowUpRight,
-  Languages,
   Zap,
-  HelpCircle,
   Lightbulb,
-  Bell,
   Award,
   GraduationCap,
   CheckCircle2
 } from 'lucide-react';
-import { EducationLevel, SubscriptionStatus, ChatMessage } from '../types';
+import { EducationLevel, SubscriptionStatus, ChatMessage, StudyTutorMode } from '../types';
 import { AIEngine } from '../lib/aiEngine';
 import { StorageManager } from '../lib/storage';
-import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
+import { ZexaNeuralEngine, ZexaProgressState } from '../lib/zexaNeuralEngine';
+import {
+  getExamBoardProfile,
+  getUniversalStarterPrompts,
+  TUTOR_MODE_OPTIONS,
+  MATH_SCIENCE_SYMBOLS,
+  buildQuickFollowUps
+} from '../data/africanExamBoards';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 
 interface ChatViewProps {
   messages: ChatMessage[];
@@ -33,6 +38,7 @@ interface ChatViewProps {
   queriesUsedToday: number;
   dailyLimit: number;
   onQueriesUpdated: () => void;
+  onRevisionUpdated?: () => void;
   onOpenPremium: () => void;
   onOpenNotifications?: () => void;
   activeExamPrompt?: { question: string; hint?: string } | null;
@@ -341,22 +347,28 @@ export const ChatView: React.FC<ChatViewProps> = ({
   queriesUsedToday,
   dailyLimit,
   onQueriesUpdated,
+  onRevisionUpdated,
   onOpenPremium,
-  onOpenNotifications,
   activeExamPrompt,
   onClearActiveExamPrompt
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
+  const isBw = StorageManager.isBotswanaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
+  const boardProfile = getExamBoardProfile(country, contentLevel);
+  const activeTier = getTierForContentLevel(country, contentLevel);
+
   const [inputText, setInputText] = useState('');
+  const [tutorMode, setTutorMode] = useState<StudyTutorMode>('standard');
+  const [showSymbolPad, setShowSymbolPad] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [qwenState, setQwenState] = useState<QwenProgressState>(() => QwenEngine.getStatus());
+  const [neuralState, setNeuralState] = useState<ZexaProgressState>(() => ZexaNeuralEngine.getStatus());
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    return QwenEngine.subscribe(setQwenState);
+    return ZexaNeuralEngine.subscribe(setNeuralState);
   }, []);
 
   // Auto-scroll to bottom of chat
@@ -368,7 +380,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
     scrollToBottom();
   }, [messages, isGenerating]);
 
-  // Handle cross-screen prompt from Study Pack or Exam Mode
+  // Handle cross-screen prompt from Study Pack, Exam Mode, or Revision Hub
   useEffect(() => {
     if (activeExamPrompt && activeExamPrompt.question) {
       handleSendMessage(activeExamPrompt.question, activeExamPrompt.hint);
@@ -377,6 +389,23 @@ export const ChatView: React.FC<ChatViewProps> = ({
       }
     }
   }, [activeExamPrompt]);
+
+  const handleInsertSymbol = (sym: string) => {
+    const el = inputRef.current;
+    if (!el) {
+      setInputText((prev) => `${prev}${sym}`);
+      return;
+    }
+    const start = el.selectionStart ?? inputText.length;
+    const end = el.selectionEnd ?? inputText.length;
+    const next = inputText.slice(0, start) + sym + inputText.slice(end);
+    setInputText(next);
+    setTimeout(() => {
+      el.focus();
+      const pos = start + sym.length;
+      el.setSelectionRange(pos, pos);
+    }, 0);
+  };
 
   const handleSendMessage = async (textToSend?: string, hint?: string) => {
     const text = (textToSend || inputText).trim();
@@ -424,44 +453,109 @@ export const ChatView: React.FC<ChatViewProps> = ({
       }, []);
 
     setIsGenerating(true);
+    let streamedText = '';
 
-    await AIEngine.generate(text, {
-      level: contentLevel,
-      country,
-      hint,
-      history: conversationHistory,
-      engineType: qwenState.status === 'ready' || QwenEngine.isReady() ? 'qwen-neural' : 'zexa-instant',
-      onToken: (token) => {
-        setMessages((prev) =>
-          prev.map((m) => (m.id === aiMsgId ? { ...m, text: m.text + token } : m))
+    try {
+      await AIEngine.generate(text, {
+        level: contentLevel,
+        country,
+        tutorMode,
+        hint,
+        history: conversationHistory,
+        engineType:
+          neuralState.status === 'ready' || ZexaNeuralEngine.isReady() || ZexaNeuralEngine.isLoading()
+            ? 'zexa-neural'
+            : 'zexa-instant',
+        onToken: (token) => {
+          streamedText += token;
+          setMessages((prev) =>
+            prev.map((m) => (m.id === aiMsgId ? { ...m, text: m.text + token } : m))
+          );
+        },
+        onComplete: (metrics, source, suggestions) => {
+          setIsGenerating(false);
+          const resolvedAnswer = streamedText.trim();
+          const fallbackEmptyText =
+            resolvedAnswer.length === 0
+              ? 'Unable to complete this response. Please try asking your question again.'
+              : '';
+          const computedSuggestions =
+            suggestions && suggestions.length > 0
+              ? suggestions
+              : buildQuickFollowUps(text, country);
+
+          if (
+            resolvedAnswer.length > 0 &&
+            !resolvedAnswer.startsWith('Unable to generate a live neural response right now.')
+          ) {
+            StorageManager.recordSearchQA({
+              question: text,
+              answer: resolvedAnswer,
+              subject: source ? source.split('•')[0].trim() : `${activeTier.shortLabel} Study`,
+              source,
+              tutorMode,
+              level: activeTier.shortLabel,
+              country
+            });
+            if (onRevisionUpdated) onRevisionUpdated();
+          }
+
+          setMessages((prev) => {
+            const finalMessages = prev.map((m) =>
+              m.id === aiMsgId
+                ? {
+                    ...m,
+                    text:
+                      m.text && m.text.trim().length > 0
+                        ? m.text
+                        : resolvedAnswer.length > 0
+                        ? streamedText
+                        : fallbackEmptyText,
+                    metrics,
+                    source,
+                    suggestions: computedSuggestions
+                  }
+                : m
+            );
+            StorageManager.saveChatMessages(finalMessages);
+            return finalMessages;
+          });
+        },
+        onError: (err) => {
+          setIsGenerating(false);
+          setMessages((prev) => {
+            const finalMessages = prev.map((m) =>
+              m.id === aiMsgId
+                ? {
+                    ...m,
+                    text:
+                      m.text && m.text.trim().length > 0
+                        ? m.text
+                        : `An error occurred: ${err}. Please check your question or retry.`
+                  }
+                : m
+            );
+            StorageManager.saveChatMessages(finalMessages);
+            return finalMessages;
+          });
+        }
+      });
+    } catch (err: any) {
+      setMessages((prev) => {
+        const finalMessages = prev.map((m) =>
+          m.id === aiMsgId && (!m.text || m.text.trim().length === 0)
+            ? {
+                ...m,
+                text: `An error occurred: ${err?.message || 'Unable to generate response'}. Please retry.`
+              }
+            : m
         );
-      },
-      onComplete: (metrics, source, suggestions) => {
-        setIsGenerating(false);
-        setMessages((prev) => {
-          const finalMessages = prev.map((m) =>
-            m.id === aiMsgId ? { ...m, metrics, source, suggestions } : m
-          );
-          StorageManager.saveChatMessages(finalMessages);
-          return finalMessages;
-        });
-      },
-      onError: (err) => {
-        setIsGenerating(false);
-        setMessages((prev) => {
-          const finalMessages = prev.map((m) =>
-            m.id === aiMsgId
-              ? {
-                  ...m,
-                  text: `An error occurred: ${err}. Please check your question or retry.`
-                }
-              : m
-          );
-          StorageManager.saveChatMessages(finalMessages);
-          return finalMessages;
-        });
-      }
-    });
+        StorageManager.saveChatMessages(finalMessages);
+        return finalMessages;
+      });
+    } finally {
+      setIsGenerating(false);
+    }
   };
 
   const handleStop = () => {
@@ -485,20 +579,121 @@ export const ChatView: React.FC<ChatViewProps> = ({
       contentLevel === 'A-Level';
 
     if (!hasPack) {
-      const levelLabel = isPrimary
-        ? 'PRIMARY'
-        : isTertiary
-        ? 'TERTIARY'
-        : isALevel
-        ? 'A-LEVEL / SENIOR'
-        : 'SECONDARY / O-LEVEL';
-
       return {
-        badge: `${country.toUpperCase()} · ${levelLabel}`,
-        title: `${country} AI Tutor`,
-        desc: `Ask ZEXA AI any ${levelLabel.toLowerCase()} study question, problem, or topic below.`,
-        placeholder: `Ask ZEXA AI any ${country} question...`,
-        suggestions: [] as Array<{ subject: string; text: string }>
+        badge: `${country.toUpperCase()} · ${boardProfile.boardShort} · ${activeTier.shortLabel.toUpperCase()}`,
+        title: activeTier.chatTitle,
+        desc: `${boardProfile.description} Focus: ${activeTier.label}. Choose a topic below or ask any question.`,
+        placeholder: `Ask ZEXA AI any ${activeTier.shortLabel} or ${boardProfile.boardShort} question...`,
+        suggestions: getUniversalStarterPrompts(country, contentLevel)
+      };
+    }
+
+    if (isBw) {
+      if (isPrimary) {
+        return {
+          badge: 'BOTSWANA · BEC PSLE (STANDARDS 1–7)',
+          title: 'PSLE Primary Curriculum Revision',
+          desc: 'Explore BEC Primary subjects: English, Setswana, Mathematics, Science, Agriculture, Social Studies, and CAPA.',
+          placeholder: 'Ask ZEXA AI about any PSLE subject or type in Setswana...',
+          suggestions: [
+            {
+              subject: 'Social Studies',
+              text: 'Who were the Three Dikgosi and why did they travel to London in 1895?'
+            },
+            {
+              subject: 'Setswana',
+              text: 'Tlhalosa seane: Motho ke motho ka batho'
+            },
+            {
+              subject: 'Science',
+              text: 'Why is solar energy important in Botswana and how does photosynthesis work?'
+            },
+            {
+              subject: 'Agriculture',
+              text: 'Why are sorghum (mabele) and cowpeas suited to dryland farming in Botswana?'
+            }
+          ]
+        };
+      }
+
+      if (isTertiary) {
+        return {
+          badge: 'BOTSWANA · TERTIARY (UB, BIUST, BUAN, BQA)',
+          title: 'Tertiary & Research Mastery',
+          desc: 'Advanced study across Sovereign Wealth (Pula Fund), Roman-Dutch & Customary Law, Engineering, Economics, and Computing.',
+          placeholder: 'Ask ZEXA AI for Botswana Tertiary & research analysis...',
+          suggestions: [
+            {
+              subject: 'Economics & Commerce',
+              text: 'Explain how the Pula Fund and SACU help Botswana avoid Dutch Disease'
+            },
+            {
+              subject: 'Law & Jurisprudence',
+              text: 'Compare Roman-Dutch Common Law and Customary Law (Makgotla) in Botswana'
+            },
+            {
+              subject: 'Governance',
+              text: 'Who is the current President of Botswana and list all former Presidents?'
+            },
+            {
+              subject: 'Development Studies',
+              text: 'Analyze Botswana Vision 2036 diamond beneficiation and economic diversification'
+            }
+          ]
+        };
+      }
+
+      if (isALevel) {
+        return {
+          badge: 'BOTSWANA · BEC BGCSE (FORMS 4–5)',
+          title: 'BGCSE Examination Mastery',
+          desc: 'Master Development Studies, Setswana, Double Science, Mathematics, Geography, History, Accounting & Economics.',
+          placeholder: 'Ask ZEXA AI any BGCSE syllabus question or past paper doubt...',
+          suggestions: [
+            {
+              subject: 'Development Studies',
+              text: 'Explain the difference between GNP and HDI and how Vision 2036 diversifies Botswana’s economy'
+            },
+            {
+              subject: 'Geography',
+              text: 'Why does the Okavango Delta flood during Botswana’s dry winter months?'
+            },
+            {
+              subject: 'History',
+              text: 'Explain the Three Dikgosi mission (1895) and Seretse Khama’s path to 1966 independence'
+            },
+            {
+              subject: 'Social Studies & Civics',
+              text: 'Who is the current President of Botswana and how does the Kgotla system work?'
+            }
+          ]
+        };
+      }
+
+      // Default Botswana tier: JCE (Forms 1 - 3)
+      return {
+        badge: 'BOTSWANA · BEC JCE (FORMS 1–3)',
+        title: 'JCE Junior Secondary Revision',
+        desc: 'Master Setswana, Moral Education, Social Studies, Integrated Science, Mathematics, Agriculture & Design and Technology.',
+        placeholder: 'Ask ZEXA AI any JCE syllabus question or Setswana prompt...',
+        suggestions: [
+          {
+            subject: 'Governance & History',
+            text: 'Who is the current President of Botswana and list all former Presidents?'
+          },
+          {
+            subject: 'Social Studies',
+            text: 'List all 10 districts of Botswana and explain the symbols on Botswana’s flag'
+          },
+          {
+            subject: 'History',
+            text: 'Why did the Three Dikgosi (Khama III, Sebele I, Bathoen I) go to London in 1895?'
+          },
+          {
+            subject: 'Setswana & Moral Ed',
+            text: 'Tlhalosa seane: Motho ke motho ka batho'
+          }
+        ]
       };
     }
 
@@ -613,29 +808,27 @@ export const ChatView: React.FC<ChatViewProps> = ({
   const levelInfo = getLevelInfo();
 
   return (
-    <div className="flex flex-col h-[calc(100vh-62px)] pb-18 bg-mesh">
-      
+    <div className="flex flex-col flex-1 min-h-0 pb-[68px] bg-mesh">
       {/* Scrollable messages container */}
-      <div className="flex-1 overflow-y-auto px-3 sm:px-6 py-4 space-y-4 max-w-4xl w-full mx-auto">
-        
-        {/* Modern Silicon Valley Empty State */}
+      <div className="flex-1 min-h-0 overflow-y-auto px-3 sm:px-6 py-4 space-y-4 max-w-4xl w-full mx-auto">
+        {/* Modern Empty State */}
         {messages.length === 0 && (
-          <div className="my-4 sm:my-8 glass-panel rounded-3xl p-6 sm:p-8 text-center relative overflow-hidden animate-fadeIn">
+          <div className="my-2 sm:my-6 glass-panel rounded-3xl p-5 sm:p-8 text-center relative overflow-hidden animate-fadeIn">
             {/* Ambient Radial Spotlight */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
             {/* Glowing HD Brain Icon */}
-            <div className="flex justify-center mb-4 relative">
+            <div className="flex justify-center mb-3.5 relative">
               <img
                 src="/assets/zexa_brain_logo.png"
                 alt="ZEXA AI Brain Logo"
-                className="w-20 h-18 sm:w-24 sm:h-20 object-contain animate-brain-glow"
+                className="w-18 h-16 sm:w-22 sm:h-18 object-contain animate-brain-glow"
               />
             </div>
 
-            {/* Title & Level Kicker */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 font-mono text-[11px] font-semibold mb-3">
-              <Zap className="w-3 h-3 text-cyan-400" />
+            {/* Title & Level Kicker (Clean unboxed typography per minimalist standard) */}
+            <div className="inline-flex items-center gap-1.5 text-cyan-300 font-mono text-[11px] font-semibold mb-2 tracking-wide">
+              <Zap className="w-3.5 h-3.5 text-cyan-400" />
               <span>{levelInfo.badge}</span>
             </div>
 
@@ -645,28 +838,29 @@ export const ChatView: React.FC<ChatViewProps> = ({
             <p className="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl mx-auto mb-5">
               {levelInfo.desc}
             </p>
-            {/* Categorized Question Starter Cards (Shown only when curriculum data pack is loaded) */}
+
+            {/* Starter Topic Cards (Curriculum-aligned for Zimbabwe, Universal STEM/Humanities worldwide) */}
             {levelInfo.suggestions.length > 0 && (
               <div className="text-left max-w-2xl mx-auto space-y-2.5">
                 <p className="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-1.5">
                   <Lightbulb className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>Recommended Exam Questions:</span>
+                  <span>{hasPack ? 'Recommended Exam Questions:' : `Quick Study Topics (${boardProfile.boardShort}):`}</span>
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {levelInfo.suggestions.map((item, idx) => (
                     <button
                       key={idx}
                       onClick={() => handleSendMessage(item.text)}
-                      className="p-3 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.08] hover:border-cyan-500/40 text-left transition-all group flex flex-col justify-between gap-2 shadow-sm hover:shadow-[0_4px_20px_rgba(6,182,212,0.12)] active:scale-98"
+                      className="p-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.08] hover:border-cyan-500/40 text-left transition-all group flex flex-col justify-between gap-2 shadow-sm hover:shadow-[0_4px_20px_rgba(6,182,212,0.12)] active:scale-98"
                     >
                       <span className="text-[10px] font-mono font-semibold text-cyan-400 uppercase tracking-wide">
                         {item.subject}
                       </span>
-                      <span className="text-xs text-slate-200 group-hover:text-white font-medium line-clamp-2 leading-relaxed">
+                      <span className="text-xs sm:text-[13px] text-slate-200 group-hover:text-white font-medium line-clamp-2 leading-relaxed">
                         {item.text}
                       </span>
-                      <div className="flex items-center justify-end text-slate-500 group-hover:text-cyan-400 text-[11px] mt-1 font-mono">
+                      <div className="flex items-center justify-end text-slate-400 group-hover:text-cyan-400 text-[11px] mt-0.5 font-mono">
                         <span>Ask ZEXA AI</span>
                         <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
                       </div>
@@ -675,15 +869,13 @@ export const ChatView: React.FC<ChatViewProps> = ({
                 </div>
               </div>
             )}
-
           </div>
         )}
 
-        {/* Message Items Stream - Spacious Modern AI Chat Layout */}
+        {/* Message Items Stream */}
         {messages.map((msg, idx) => (
-          <div key={`${msg.id}_${idx}`} className="w-full animate-fadeIn py-2">
+          <div key={`${msg.id}_${idx}`} className="w-full animate-fadeIn py-1.5">
             {msg.isUser ? (
-              /* User Prompt Card: spacious, elegant question presentation */
               <div className="max-w-2xl ml-auto w-full">
                 <div className="flex items-center justify-end gap-2 mb-1.5 px-1 text-xs text-slate-400">
                   <span className="font-semibold text-cyan-300 flex items-center gap-1">
@@ -693,18 +885,16 @@ export const ChatView: React.FC<ChatViewProps> = ({
                   <span>·</span>
                   <span>Question</span>
                 </div>
-                <div className="rounded-2xl px-5 py-4 bg-gradient-to-r from-slate-900 via-slate-800/90 to-cyan-950/40 border border-cyan-500/35 text-white shadow-md">
+                <div className="rounded-2xl px-5 py-3.5 bg-gradient-to-r from-slate-900 via-slate-800/90 to-cyan-950/40 border border-cyan-500/35 text-white shadow-md">
                   <ProfessionalAnswerRenderer text={msg.text} isUser={true} />
                 </div>
               </div>
             ) : (
-              /* ZEXA AI Answer Card: authoritative, structured, and organized */
               <div className="max-w-3xl w-full mx-auto">
                 <div className="glass-panel text-slate-100 rounded-2xl border border-white/[0.08] shadow-xl p-5 sm:p-6 relative overflow-hidden">
-                  {/* Subtle top ambient glow */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-emerald-400 to-blue-500 opacity-70" />
 
-                  {/* Header bar: ZEXA AI Brain + Verified Marking Scheme Indicator */}
+                  {/* Answer Header */}
                   <div className="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-white/[0.08]">
                     <div className="flex items-center gap-2.5">
                       <img
@@ -718,33 +908,33 @@ export const ChatView: React.FC<ChatViewProps> = ({
                         </span>
                         <span className="text-slate-500 text-xs">·</span>
                         <span className="text-xs text-cyan-400 font-mono font-medium">
-                          {contentLevel}
+                          {activeTier.shortLabel}
                         </span>
                       </div>
                     </div>
 
                     {!hasPack || (msg.metrics && msg.metrics.includes('• ZEXA AI') && !msg.metrics.includes('Offline Core')) ? (
-                      <div className="flex items-center gap-1.5 text-xs font-semibold text-cyan-300 bg-cyan-950/70 border border-cyan-500/40 px-2.5 py-1 rounded-full">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-cyan-300">
                         <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                         <span>ZEXA AI Answer</span>
                       </div>
                     ) : (
-                      <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-full">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>{isZim ? 'ZIMSEC Verified Answer' : 'Verified Curriculum Answer'}</span>
+                        <span>{isZim ? 'ZIMSEC Verified Answer' : isBw ? 'BEC Verified Answer' : 'Verified Curriculum Answer'}</span>
                       </div>
                     )}
                   </div>
 
                   {/* Message Content */}
-                  {msg.text ? (
+                  {msg.text && msg.text.trim().length > 0 ? (
                     <ProfessionalAnswerRenderer text={msg.text} isUser={false} isZim={isZim} />
                   ) : (
                     <div className="flex items-center gap-2.5 text-cyan-400 font-mono text-xs py-3">
                       <span>
-                        {!hasPack || qwenState.status === 'ready' || QwenEngine.isReady()
+                        {neuralState.status === 'ready' || ZexaNeuralEngine.isReady()
                           ? 'ZEXA AI THINKING'
-                          : 'SYNTHESIZING VERIFIED ANSWER'}
+                          : 'SYNTHESIZING ANSWER'}
                       </span>
                       <span className="inline-flex gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-bounce" />
@@ -754,9 +944,29 @@ export const ChatView: React.FC<ChatViewProps> = ({
                     </div>
                   )}
 
-                  {/* Action Footer: Source Citation, Engine Metrics + Copy Button */}
-                  {!msg.isUser && msg.text && (
-                    <div className="mt-5 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
+                  {/* Interactive Follow-Up Suggestions */}
+                  {!msg.isUser && msg.text && msg.text.trim().length > 0 && msg.suggestions && msg.suggestions.length > 0 && !isGenerating && (
+                    <div className="mt-4 pt-3 border-t border-white/[0.06] space-y-2">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-semibold block">
+                        Continue Studying:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {msg.suggestions.slice(0, 3).map((sug, sIdx) => (
+                          <button
+                            key={sIdx}
+                            onClick={() => handleSendMessage(sug)}
+                            className="px-3 py-1.5 rounded-xl bg-cyan-950/50 hover:bg-cyan-900/60 border border-cyan-500/25 hover:border-cyan-400/50 text-xs text-cyan-200 font-medium text-left transition-all active:scale-98"
+                          >
+                            {sug}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Action Footer: Copy Answer */}
+                  {!msg.isUser && msg.text && msg.text.trim().length > 0 && (
+                    <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
                       <div className="flex flex-col gap-0.5 text-[11px] font-mono text-slate-400">
                         <div className="flex items-center gap-1.5">
                           <BookCheck className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
@@ -764,7 +974,9 @@ export const ChatView: React.FC<ChatViewProps> = ({
                             {msg.source ||
                               (isZim
                                 ? `ZIMSEC ${contentLevel} Syllabus Curriculum`
-                                : `ZEXA AI · ${country} (${contentLevel})`)}
+                                : isBw
+                                ? `BEC ${activeTier.shortLabel} Syllabus Curriculum`
+                                : `ZEXA AI · ${country} (${activeTier.label})`)}
                           </span>
                         </div>
                         {msg.metrics && (
@@ -772,23 +984,25 @@ export const ChatView: React.FC<ChatViewProps> = ({
                         )}
                       </div>
 
-                      <button
-                        onClick={() => copyToClipboard(msg.text, msg.id)}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg hover:bg-white/[0.06] border border-white/[0.08] hover:border-white/[0.15] text-slate-300 hover:text-white transition-all text-xs font-medium"
-                        title="Copy Answer to Clipboard"
-                      >
-                        {copiedId === msg.id ? (
-                          <>
-                            <Check className="w-3.5 h-3.5 text-emerald-400" />
-                            <span className="text-emerald-400">Copied</span>
-                          </>
-                        ) : (
-                          <>
-                            <Copy className="w-3.5 h-3.5" />
-                            <span>Copy Answer</span>
-                          </>
-                        )}
-                      </button>
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <button
+                          onClick={() => copyToClipboard(msg.text, msg.id)}
+                          className="inline-flex items-center gap-1 px-2.5 min-h-[34px] rounded-lg hover:bg-white/[0.06] border border-white/[0.08] hover:border-white/[0.15] text-slate-300 hover:text-white transition-all text-xs font-medium"
+                          title="Copy Answer to Clipboard"
+                        >
+                          {copiedId === msg.id ? (
+                            <>
+                              <Check className="w-3.5 h-3.5 text-emerald-400" />
+                              <span className="text-emerald-400">Copied</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="w-3.5 h-3.5" />
+                              <span>Copy</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -806,11 +1020,11 @@ export const ChatView: React.FC<ChatViewProps> = ({
           <div className="flex items-center justify-between p-3 rounded-2xl bg-amber-950/60 border border-amber-500/40 text-amber-200 text-xs shadow-lg">
             <div className="flex items-center gap-2">
               <AlertCircle className="w-4 h-4 text-amber-400 shrink-0" />
-              <span>You have used your 2 free offline queries for today.</span>
+              <span>You have used your {dailyLimit} free offline queries for today.</span>
             </div>
             <button
               onClick={onOpenPremium}
-              className="px-3 py-1 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow transition-all active:scale-95"
+              className="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow transition-all active:scale-95 whitespace-nowrap"
             >
               Enter Code / Upgrade
             </button>
@@ -819,7 +1033,60 @@ export const ChatView: React.FC<ChatViewProps> = ({
       )}
 
       {/* Floating Bottom Command Bar / Input Dock */}
-      <div className="px-3 sm:px-6 pb-2 max-w-4xl w-full mx-auto">
+      <div className="px-3 sm:px-6 pb-2 max-w-4xl w-full mx-auto space-y-1.5 shrink-0">
+        {/* Study Mode Selector + Math/Science Symbol Pad Toggle */}
+        <div className="flex items-center justify-between gap-2 overflow-x-auto scrollbar-none px-0.5">
+          <div className="flex items-center gap-1">
+            {TUTOR_MODE_OPTIONS.map((mode) => {
+              const active = tutorMode === mode.id;
+              return (
+                <button
+                  key={mode.id}
+                  type="button"
+                  onClick={() => setTutorMode(mode.id)}
+                  title={mode.shortDesc}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all whitespace-nowrap shrink-0 ${
+                    active
+                      ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                      : 'bg-white/[0.03] text-slate-400 hover:text-slate-200 border border-white/[0.06]'
+                  }`}
+                >
+                  {mode.label}
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setShowSymbolPad(!showSymbolPad)}
+            className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold transition-all whitespace-nowrap shrink-0 border ${
+              showSymbolPad
+                ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+                : 'bg-white/[0.03] text-slate-300 hover:text-white border-white/[0.08]'
+            }`}
+            title="Toggle Math & Science Symbols Keypad"
+          >
+            ∑ √ π Symbols
+          </button>
+        </div>
+
+        {/* Collapsible Math & Science Symbol Keypad */}
+        {showSymbolPad && (
+          <div className="flex items-center gap-1 overflow-x-auto scrollbar-none p-1.5 rounded-xl bg-slate-900/90 border border-cyan-500/25">
+            {MATH_SCIENCE_SYMBOLS.map((sym) => (
+              <button
+                key={sym}
+                type="button"
+                onClick={() => handleInsertSymbol(sym)}
+                className="min-w-[34px] h-8 px-2 rounded-lg bg-white/[0.05] hover:bg-cyan-500/25 border border-white/[0.08] text-xs font-mono font-bold text-cyan-200 transition-colors shrink-0"
+              >
+                {sym}
+              </button>
+            ))}
+          </div>
+        )}
+
         <div className="glass-panel-elevated rounded-2xl p-1.5 sm:p-2 border border-white/[0.1] shadow-2xl">
           <form
             onSubmit={(e) => {
@@ -835,14 +1102,14 @@ export const ChatView: React.FC<ChatViewProps> = ({
               onChange={(e) => setInputText(e.target.value)}
               disabled={isGenerating}
               placeholder={levelInfo.placeholder}
-              className="flex-1 bg-transparent px-3.5 py-2.5 text-sm text-white placeholder-slate-500 outline-none font-sans"
+              className="flex-1 bg-transparent px-3.5 min-h-[42px] text-sm text-white placeholder-slate-400 outline-none font-sans"
             />
 
             {isGenerating ? (
               <button
                 type="button"
                 onClick={handleStop}
-                className="px-3.5 py-2.5 rounded-xl bg-red-600/90 hover:bg-red-500 text-white text-xs font-bold flex items-center gap-1.5 shadow transition-all active:scale-95 shrink-0"
+                className="px-3.5 min-h-[42px] rounded-xl bg-red-600/90 hover:bg-red-500 text-white text-xs font-bold flex items-center gap-1.5 shadow transition-all active:scale-95 shrink-0"
               >
                 <Square className="w-3.5 h-3.5 fill-white" />
                 <span className="hidden sm:inline">Stop</span>
@@ -851,7 +1118,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
               <button
                 type="submit"
                 disabled={!inputText.trim()}
-                className="px-4 py-2.5 rounded-xl btn-primary-gradient disabled:opacity-40 disabled:cursor-not-allowed text-xs flex items-center gap-1.5 shrink-0 active:scale-95"
+                className="px-4 min-h-[42px] rounded-xl btn-primary-gradient disabled:opacity-40 disabled:cursor-not-allowed text-xs flex items-center gap-1.5 shrink-0 active:scale-95"
                 title="Send Question"
               >
                 <span>Ask</span>
@@ -861,8 +1128,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
           </form>
         </div>
       </div>
-
-
     </div>
   );
 };
+

@@ -20,9 +20,10 @@ import {
 } from 'lucide-react';
 import { EducationLevel, SubscriptionStatus } from '../types';
 import { WORLD_COUNTRIES, findCountryConfig } from '../data/worldCountries';
+import { getTierForContentLevel } from '../data/countryEducationLevels';
 import { StorageManager } from '../lib/storage';
 import { TermCalendarManager } from '../lib/termCalendar';
-import { QwenEngine, QwenProgressState } from '../lib/qwenEngine';
+import { ZexaNeuralEngine, ZexaProgressState } from '../lib/zexaNeuralEngine';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -72,12 +73,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [preferredLang, setPreferredLang] = useState<'en' | 'sn'>(() =>
     StorageManager.getPreferredLanguage()
   );
-  const [qwenState, setQwenState] = useState<QwenProgressState>(() => QwenEngine.getStatus());
+  const [neuralState, setNeuralState] = useState<ZexaProgressState>(() => ZexaNeuralEngine.getStatus());
   const ggufFileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    setQwenState(QwenEngine.getStatus());
-    return QwenEngine.subscribe(setQwenState);
+    setNeuralState(ZexaNeuralEngine.getStatus());
+    return ZexaNeuralEngine.subscribe(setNeuralState);
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -88,8 +89,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const isPremium = subscriptionStatus === 'PREMIUM';
   const remainingQueries = Math.max(0, dailyLimit - queriesUsedToday);
   const isZim = StorageManager.isZimbabweAccount(country);
+  const isBw = StorageManager.isBotswanaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const countryConfig = findCountryConfig(country);
+  const activeTier = getTierForContentLevel(country, contentLevel);
 
   const handleApplyActivationCode = (e: React.FormEvent) => {
     e.preventDefault();
@@ -179,32 +182,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
             <span
               className={`text-[10px] font-mono px-2 py-0.5 rounded-full border font-bold ${
-                qwenState.status === 'ready'
+                neuralState.status === 'ready'
                   ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/30'
-                  : qwenState.status === 'loading' || qwenState.status === 'checking'
+                  : neuralState.status === 'loading' || neuralState.status === 'checking'
                   ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/30'
+                  : neuralState.status === 'error'
+                  ? 'bg-red-950/80 text-red-300 border-red-500/30'
                   : 'bg-amber-950/80 text-amber-300 border-amber-500/30'
               }`}
             >
-              {qwenState.status === 'ready'
+              {neuralState.status === 'ready'
                 ? 'ZEXA AI Connected'
-                : qwenState.status === 'loading'
-                ? `Loading ${qwenState.progress}%`
-                : 'ZEXA AI Active'}
+                : neuralState.status === 'loading'
+                ? `Loading ${neuralState.progress}%`
+                : neuralState.status === 'checking'
+                ? 'Checking...'
+                : neuralState.status === 'error'
+                ? 'Connection Error'
+                : 'Brain File Not Loaded'}
             </span>
           </div>
           <div className="text-xs text-slate-300 space-y-2">
             <p className="font-bold text-white text-sm">ZEXA AI</p>
-            <p className="text-[11px] text-slate-400">{qwenState.statusText}</p>
-            {qwenState.error && (
-              <p className="text-[11px] text-amber-300">{qwenState.error}</p>
+            <p className="text-[11px] text-slate-400">{neuralState.statusText}</p>
+            {neuralState.error && (
+              <p className="text-[11px] text-amber-300">{neuralState.error}</p>
             )}
 
-            {qwenState.status === 'loading' && (
+            {neuralState.status === 'loading' && (
               <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden mt-1.5 border border-white/[0.08]">
                 <div
                   className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
-                  style={{ width: `${qwenState.progress}%` }}
+                  style={{ width: `${neuralState.progress}%` }}
                 />
               </div>
             )}
@@ -216,7 +225,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 accept=".gguf,application/octet-stream,*/*"
                 onChange={(e) => {
                   const file = e.target.files?.[0];
-                  if (file) QwenEngine.loadModelFromFile(file);
+                  if (file) ZexaNeuralEngine.loadModelFromFile(file);
                   e.target.value = '';
                 }}
                 className="hidden"
@@ -224,7 +233,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <button
                 type="button"
                 onClick={() => ggufFileInputRef.current?.click()}
-                disabled={qwenState.status === 'loading'}
+                disabled={neuralState.status === 'loading'}
                 className="px-3.5 py-2 rounded-xl btn-primary-gradient text-slate-950 disabled:opacity-50 text-xs font-bold flex items-center gap-1.5 shadow-md transition-all active:scale-95"
               >
                 <Upload className="w-3.5 h-3.5" />
@@ -233,8 +242,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
               <button
                 type="button"
-                onClick={() => QwenEngine.loadModel()}
-                disabled={qwenState.status === 'loading' || qwenState.status === 'checking'}
+                onClick={() => ZexaNeuralEngine.autoConnectLocalGGUF()}
+                disabled={neuralState.status === 'loading' || neuralState.status === 'checking'}
                 className="px-3 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/70 disabled:opacity-50 border border-cyan-500/40 text-cyan-200 text-xs font-bold flex items-center gap-1.5 transition-all"
               >
                 <RefreshCw className="w-3.5 h-3.5" />
@@ -267,8 +276,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           <p className="text-xs text-slate-300 leading-relaxed">
             {isPremium
-              ? hasPack
+              ? isZim
                 ? 'Your device is fully activated with unlimited offline access to all subjects, exam questions, and ChiShona tutoring.'
+                : isBw
+                ? 'Your device is fully activated with unlimited offline access to BEC PSLE, JCE, BGCSE, Setswana, and Botswana exam papers.'
                 : `Your device is activated with unlimited offline ZEXA AI tutoring for ${country}.`
               : 'Enter your school activation code or scratch card key below to unlock unlimited offline queries.'}
           </p>
@@ -345,8 +356,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 ))}
               </select>
               <p className="text-[11px] text-slate-400">
-                {hasPack
+                {isZim
                   ? 'Zimbabwe Heritage, ChiShona, Social Science, and ZIMSEC curriculum data are enabled for this account.'
+                  : isBw
+                  ? 'Botswana National Encyclopedia, Setswana, Development Studies, and BEC (PSLE, JCE, BGCSE) data are enabled for this account.'
                   : `${countryConfig.flag} Account country: ${country}.`}
               </p>
             </div>
@@ -358,10 +371,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 <Layers className="w-3.5 h-3.5" /> Curriculum Level
               </div>
               <p className="text-sm font-semibold text-white">
-                {educationLevel}
+                {activeTier.label}
               </p>
               <p className="text-xs text-slate-400">
-                Active focus: <span className="text-cyan-300">{contentLevel}</span>
+                Active focus: <span className="text-cyan-300">{activeTier.shortLabel}</span> · {activeTier.boardTag}
               </p>
             </div>
             <button
@@ -424,17 +437,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             )}
           </div>
           <p className="text-xs text-slate-300">
-            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> {isZim ? 'Harare Time (CAT)' : 'Local Time'}.
+            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> {isZim ? 'Harare Time (CAT)' : isBw ? 'Gaborone Time (CAT)' : 'Local Time'}.
           </p>
           <div className="flex flex-wrap gap-2 pt-0.5">
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌅 06:00 {isZim ? 'CAT' : ''}
+              🌅 06:00 {isZim || isBw ? 'CAT' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              ☀️ 12:00 {isZim ? 'CAT' : ''}
+              ☀️ 12:00 {isZim || isBw ? 'CAT' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌙 18:00 {isZim ? 'CAT' : ''}
+              🌙 18:00 {isZim || isBw ? 'CAT' : ''}
             </span>
           </div>
         </div>
