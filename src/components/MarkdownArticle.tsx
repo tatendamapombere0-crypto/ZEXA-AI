@@ -1,5 +1,6 @@
 import React from 'react';
-import { AlertCircle, Lightbulb, BookOpen, CheckCircle, ChevronRight, Hash } from 'lucide-react';
+import { AlertCircle, Lightbulb, BookOpen, ChevronRight } from 'lucide-react';
+import { formatMathNotation } from '../lib/mathFormatter';
 
 interface MarkdownArticleProps {
   content: string;
@@ -59,9 +60,10 @@ export const MarkdownArticle: React.FC<MarkdownArticleProps> = ({ content }) => 
     inTable = false;
   };
 
-  const formatInlineText = (text: string) => {
-    // Process bold, italics, inline code, and inline math
-    const parts = text.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`|\$.*?\$)/g);
+  const formatInlineText = (rawText: string) => {
+    const text = formatMathNotation(rawText);
+    // Process bold, italics, and inline code cleanly
+    const parts = text.split(/(\*\*.*?\*\*|\*[^*\n]+?\*|`.*?`)/g);
     return parts.map((part, index) => {
       if (part.startsWith('**') && part.endsWith('**')) {
         return (
@@ -70,7 +72,7 @@ export const MarkdownArticle: React.FC<MarkdownArticleProps> = ({ content }) => 
           </strong>
         );
       }
-      if (part.startsWith('*') && part.endsWith('*')) {
+      if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
         return (
           <em key={index} className="italic text-cyan-200">
             {part.slice(1, -1)}
@@ -82,13 +84,6 @@ export const MarkdownArticle: React.FC<MarkdownArticleProps> = ({ content }) => 
           <code key={index} className="font-mono text-xs px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/30 text-cyan-300">
             {part.slice(1, -1)}
           </code>
-        );
-      }
-      if (part.startsWith('$') && part.endsWith('$')) {
-        return (
-          <span key={index} className="font-mono text-[13px] px-1.5 py-0.5 rounded bg-slate-900 border border-cyan-500/20 text-emerald-300 font-semibold">
-            {part.slice(1, -1)}
-          </span>
         );
       }
       return part;
@@ -183,11 +178,16 @@ export const MarkdownArticle: React.FC<MarkdownArticleProps> = ({ content }) => 
       continue;
     }
 
-    // Math Equation Block ($$...$$)
-    if (trimmed.startsWith('$$') && trimmed.endsWith('$$')) {
-      const eq = trimmed.slice(2, -2).trim();
+    // Math Equation Block ($$...$$, \[...\], or ((...)) containing formulas)
+    const isBlockFormula =
+      (trimmed.startsWith('$$') && trimmed.endsWith('$$')) ||
+      (trimmed.startsWith('\\[') && trimmed.endsWith('\\]')) ||
+      (trimmed.startsWith('((') && trimmed.endsWith('))') && /\\(?:text|frac|quad|sqrt|times|div|rightarrow)/.test(trimmed));
+
+    if (isBlockFormula) {
+      const eq = formatMathNotation(trimmed);
       elements.push(
-        <div key={`eq_${i}`} className="my-3 p-3 rounded-xl bg-slate-900/90 border border-cyan-500/30 text-center font-mono text-xs sm:text-sm text-cyan-200 font-semibold shadow-inner">
+        <div key={`eq_${i}`} className="my-3 p-3 rounded-xl bg-slate-900/90 border border-cyan-500/30 text-center font-mono text-xs sm:text-sm text-cyan-200 font-semibold shadow-inner overflow-x-auto">
           {eq}
         </div>
       );

@@ -16,7 +16,7 @@
       "questionText": "A shop recorded 12,450 items in stock. It sold 375 items on Monday and 400 on Tuesday. Calculate the number of items remaining. Show all working.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Subtract both daily sales from the opening stock.",
+      "explanation": "**Worked Solution [4 marks]:** Start by adding the total number of items sold across both days so you know the combined outflow from the shop’s opening inventory: 375 + 400 = **775 items sold** [1 mark]. Next, subtract the combined sales from the opening stock recorded at the start of the week: 12,450 − 775 [1 mark]. Aligning the place values carefully—units under units, tens under tens, hundreds under hundreds—gives 12,450 − 700 = 11,750, and subtracting the remaining 75 leaves **11,675 items remaining** in stock [2 marks].\n\nThis problem tests multi-step **whole-number subtraction and place-value borrowing across zeros** in ZIMSEC Grade 7 Mathematics. You can also check the result step-by-step: after Monday’s sale of 375 items, 12,450 − 375 = 12,075 items remained; after Tuesday’s further sale of 400 items, 12,075 − 400 = 11,675 items remained. Performing the inverse addition check (11,675 + 775 = 12,450) immediately confirms that no borrowing error occurred in the tens or hundreds column during column subtraction.\n\nIn ZIMSEC Mathematics Paper 2, learners frequently lose accuracy marks by either subtracting only Monday’s 375 items or making a borrowing slip across the zero in 12,450. Always write down every intermediate line of vertical column working so that even if a final arithmetic slip happens, the examiner can still award **M1 method marks** for setting up the addition of daily sales and the subtraction from opening stock.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -26,7 +26,7 @@
       "questionText": "A farmer used 2/5 of a field for maize and 1/5 for beans. What fraction of the field was used altogether? Give your answer in simplest form and show working.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Add fractions with the same denominator and simplify.",
+      "explanation": "**Worked Solution [3 marks]:** Both crops occupy parts of the same whole field, represented by fractions sharing a **like denominator of 5** (fifths). To find the total fraction of the field planted altogether, add the numerators while keeping the common denominator unchanged: 2/5 + 1/5 = (2 + 1)/5 = **3/5** [2 marks]. Because 3 and 5 share no common factor other than 1 (their Highest Common Factor is 1), the fraction **3/5 is already in its simplest form** [1 mark].\n\nUnderstanding **fraction addition with common denominators** relies on visualising the whole farm divided into 5 equal strips of equal area. Maize covers 2 of those 5 equal strips and beans cover 1 of those 5 equal strips, meaning 3 out of the 5 equal strips are actively cultivated—while the remaining 2/5 of the field remains unplanted or fallow. A golden rule in fraction arithmetic is that the denominator tells you the *size* of each equal piece, so you must never add denominators together (writing 3/10 is conceptually wrong because tenths are half the size of fifths).\n\nZIMSEC Grade 7 examiners award full marks only when you show the numerator addition step explicitly and inspect the answer to verify lowest terms. Whenever a question asks for the result \"in simplest form\", test whether both numerator and denominator can be divided by 2, 3, or 5; showing **2/5 + 1/5 = 3/5** cleanly alongside the conclusion that **2/5 remains unused** demonstrates complete mastery.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -36,7 +36,7 @@
       "questionText": "A family buys 5 items at $17 each. A 10% discount is given on the total bill. Calculate (a) the total before discount and (b) the amount paid after discount.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Find quantity × price, calculate 10%, then subtract.",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Total before discount:** Multiply the number of items bought by the unit price of each item: 5 × $17 = **$85** (or **$85.00**) [2 marks]. **(b) Amount paid after discount:** First calculate the 10% discount on the $85 bill: 10% of $85 = (10 / 100) × $85 = **1/10 × $85 = $8.50** [2 marks]. Finally, subtract the $8.50 discount from the original $85.00 total: $85.00 − $8.50 = **$76.50** paid by the family [1 mark].\n\nIn commercial consumer arithmetic, a **percentage discount** is always calculated as a percentage of the marked or total price *before* money is taken off. Because 10% equals 1/10, you can compute 10% rapidly by dividing $85.00 by 10 (shifting the decimal point one place left to get $8.50), then subtracting cleanly in decimal dollars-and-cents columns ($85.00 − $8.50 = $76.50). Alternatively, paying after a 10% reduction means the family pays 90% of the bill: 0.90 × $85 = $76.50.\n\nGrade 7 markers commonly see candidates stop after finding the discount ($8.50) and forget to subtract it from $85.00 to answer part (b). Always label each line with **$ signs and two decimal places for cents** ($8.50 and $76.50 rather than 8.5 or 76.5), and underline the final dollar figure for part (a) and part (b) separately.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -46,7 +46,7 @@
       "questionText": "A rectangular garden measures 15 m by 10 m. Calculate (a) its perimeter and (b) its area. State the correct units.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Use P=2(l+w) and A=l×w.",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Perimeter:** The perimeter is the total distance around all four sides of the rectangle. Using P = 2 × (length + width): P = 2 × (15 m + 10 m) = 2 × 25 m = **50 m** [2 marks]. **(b) Area:** The area measures the flat surface enclosed inside the garden boundaries. Using A = length × width: A = 15 m × 10 m = **150 m²** [3 marks].\n\nThe critical conceptual distinction here lies between **one-dimensional boundary length (perimeter)** and **two-dimensional surface coverage (area)**. When a gardener builds a fence around the rectangular plot, they measure linearly in **metres (m)** along 15 + 10 + 15 + 10 = 50 m; when the gardener spreads topsoil, turf, or fertiliser across the flat surface inside, they multiply two perpendicular lengths (metres × metres) to measure square units in **square metres (m²)**.\n\nZIMSEC Paper 2 marking schemes strictly reserve **1 unit mark** whenever a geometry question states *\"State the correct units\"*. Writing simply \"50\" and \"150\", or mixing up **m** and **m²**, loses marks immediately even if your multiplication was exact—so write **50 m** for perimeter and **150 m²** for area cleanly.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -56,7 +56,7 @@
       "questionText": "A bus leaves at 11:28 and travels for 2 hours 35 minutes. What time does it arrive? Show how you handle the minutes and hours.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Add the duration carefully and convert excess minutes to an hour.",
+      "explanation": "**Worked Solution [3 marks]:** Add the journey hours and minutes separately to the departure time of 11:28. First, add 2 hours to 11 hours: 11 + 2 = 13 hours (13:28) [1 mark]. Next, add 35 minutes to 28 minutes: 28 + 35 = **63 minutes** [1 mark]. Because 60 minutes equal 1 full hour, regroup 63 minutes as **1 hour and 3 minutes** (63 − 60 = 3 minutes), carry that 1 hour over to 13 hours (13 + 1 = 14 hours), and leave 03 minutes—so the bus arrives at **14:03** (or **2:03 p.m.**) [1 mark].\n\nTime addition uses **base-60 regrouping** (60 seconds = 1 minute; 60 minutes = 1 hour) rather than ordinary base-10 column addition. Adding 11:28 + 2:35 blindly as decimals would falsely give 13.63, which is impossible on a clock face. An alternative safe checking method is bridging to the next whole hour: from 11:28 to 12:00 is 32 minutes; adding 2 hours reaches 14:00 (2 h 32 min elapsed); adding the remaining 3 minutes reaches **14:03** (total 2 h 35 min).\n\nExaminers expect Grade 7 candidates to state 24-hour times with **four digits and a leading zero on single-digit minutes** (**14:03**, not 14:3) or specify **2:03 p.m.** explicitly with *p.m.* Showing the **63 min = 1 h 03 min** conversion line guarantees full method and accuracy marks.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -66,7 +66,7 @@
       "questionText": "Share $72 in the ratio 3:3. Calculate each person's share and show your method.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Find total parts, then the value of one part.",
+      "explanation": "**Worked Solution [4 marks]:** Start by summing the parts in the ratio 3 : 3 to find the total number of equal shares: 3 + 3 = **6 parts** [1 mark]. Calculate the dollar value of 1 single part by dividing the total money ($72) by the 6 total parts: $72 ÷ 6 = **$12 per part** [1 mark]. Multiply each person’s ratio share by $12: Person 1 receives 3 × $12 = **$36**, and Person 2 receives 3 × $12 = **$36** [2 marks].\n\nNotice that the ratio **3 : 3** simplifies directly (by dividing both sides by their common factor 3) to **1 : 1**, meaning the money is shared equally into two halves of $36 each. Whether you work with unsimplified ratio parts (3 + 3 = 6 parts) or simplify first (1 + 1 = 2 parts; $72 ÷ 2 = $36), proportional sharing preserves the exact relative split and the final check **($36 + $36 = $72)** verifies that zero dollars were lost or overstated.\n\nIn ZIMSEC ratio questions, writing only \"$36\" without showing how total parts were computed forfeits method marks. State the three standard lines clearly: **(1) Total parts**, **(2) Value of 1 part**, and **(3) Each individual’s amount**, followed by an addition check summing back to $72.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -76,7 +76,7 @@
       "questionText": "Calculate 5% of $260. Then state the amount remaining after that percentage is deducted.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Percentage = pct/100 × amount.",
+      "explanation": "**Worked Solution [4 marks]:** First find 5% of $260 using the fraction form of a percentage (5% = 5/100): (5 / 100) × $260 = (5 × 260) ÷ 100 = 1,300 ÷ 100 = **$13** (or $13.00) [2 marks]. Next, subtract this 5% deduction ($13) from the original $260 amount to find the amount remaining: $260 − $13 = **$247** (or $247.00) [2 marks].\n\nMental verification is fast here because **10% of $260 = $26**, and since 5% is exactly half of 10%, 5% of $260 must be half of $26, which is **$13**. Similarly, once $13 is deducted (representing a 5% tax, levy, or discount), 95% of the original sum remains: 0.95 × $260 = $247, providing an instant double-check on your subtraction.\n\nCandidates sometimes confuse calculating **5% ($13)** with the final instruction asking for the **amount remaining ($247)**—reading only half the prompt costs 2 out of 4 marks. Always number both parts in your response so the marker sees both **$13** and **$247** unmistakably.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -86,7 +86,7 @@
       "questionText": "One angle on a straight line is 42°. Calculate the other angle and explain the angle rule you used.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Angles on a straight line total 180°.",
+      "explanation": "**Worked Solution [3 marks]:** Angles lying together along a **straight line** are supplementary, meaning their measures always add up to exactly **180°** [1 mark]. Since one angle measures 42°, subtract 42° from 180° to calculate the adjacent angle: 180° − 42° = **138°** [1 mark]. Check: 138° + 42° = 180°, confirming the straight angle (**180°**) [1 mark].\n\nA straight line forms half of a complete full turn (360° ÷ 2 = 180°), which is why any two or more adjacent angles sharing a common vertex along a straight line must sum to 180° (*\"adjacent angles on a straight line add up to 180°\"*). Visually, 42° is an acute angle (less than 90°), so its partner on the straight line must be an obtuse angle (greater than 90° and less than 180°), matching **138°**.\n\nIn ZIMSEC Geometry Paper 2, whenever a question says *\"explain the angle rule you used\"*, citing **180°** alone without writing *\"Angles on a straight line add up to 180°\"* loses the reasoning mark. Always attach the **degree symbol (°)** to angle answers so they are not misread as lengths.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -96,7 +96,7 @@
       "questionText": "A classroom floor is 28 m long and 16 m wide. Tiles cover 1 m² each. How many tiles are needed to cover the floor, ignoring wastage?",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Calculate the area in square metres.",
+      "explanation": "**Worked Solution [3 marks]:** First calculate the total area of the rectangular classroom floor by multiplying its length by its width: Area = 28 m × 16 m = **448 m²** (check: 28 × 10 = 280 and 28 × 6 = 168; 280 + 168 = 448 m²) [2 marks]. Since each square tile covers exactly **1 m²**, divide the floor area by the area of one tile: 448 m² ÷ 1 m² = **448 tiles** [1 mark].\n\nNotice how keeping all dimensions in matching units (**metres** and **square metres**) makes tiling calculations clean and error-free. Because 1 tile covers 1 m², the number of tiles equals the area in square metres numerically—whereas if tiles measured 0.5 m × 0.5 m (0.25 m²), you would divide 448 by 0.25 (multiplying by 4 to get 1,792 tiles).\n\nZIMSEC examiners watch closely for two-digit multiplication accuracy (28 × 16) and correct units: floor area must be labelled **448 m²**, while the final count must be labelled **448 tiles** (never \"448 m² tiles\"). Show the long multiplication working explicitly to protect method marks.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -106,7 +106,7 @@
       "questionText": "A rectangular box is 6 cm long, 7 cm wide and 7 cm high. Calculate its volume in cm³.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Volume = length × width × height = 6 cm × 7 cm × 7 cm = 294 cm³ [3 marks].",
+      "explanation": "**Worked Solution [3 marks]:** The volume of a rectangular prism (cuboid box) is found by multiplying its three perpendicular dimensions—length, width, and height: Volume = 6 cm × 7 cm × 7 cm [1 mark]. Compute step-by-step: 6 × 7 = 42 cm² (base area), then 42 × 7 = (40 × 7) + (2 × 7) = 280 + 14 = **294 cm³** [2 marks].\n\nMultiplying three lengths measured in centimetres (**cm × cm × cm**) produces **cubic centimetres (cm³)**, which literally count how many 1 cm × 1 cm × 1 cm unit cubes fit solidly inside the box—namely 7 layers stacked vertically, each layer holding 6 × 7 = 42 unit cubes (7 × 42 = 294 cubes). Note also that 294 cm³ equals 294 millilitres (0.294 litres) if the container holds liquid.\n\nNever confuse **volume (cm³)** with **surface area (cm²)** or add the three dimensions (6 + 7 + 7 = 20 gives neither perimeter nor volume). Always state the formula **V = l × w × h** first and attach **cm³** cleanly to your final answer.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -116,7 +116,7 @@
       "questionText": "The numbers of books read by five learners are 12, 18, 20, 24, 26. Calculate (a) the total, (b) the mean, and (c) the range.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Mean=total÷5; range=highest−lowest.",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Total:** Add all five learners’ book counts carefully: 12 + 18 + 20 + 24 + 26 = 30 + 20 + 50 = **100 books** [1 mark]. **(b) Mean:** Divide the total sum by the number of learners (5): Mean = 100 ÷ 5 = **20 books** [2 marks]. **(c) Range:** Subtract the lowest score (12) from the highest score (26): Range = 26 − 12 = **14 books** [2 marks].\n\nIn Grade 7 Statistics, the **mean (arithmetic average)** shares the total evenly across all 5 observations (20 books per learner represents the balanced central value), whereas the **range** measures how widely spread out the data are from lowest to highest (a gap of 14 books between the most active and least active reader). Because the data are already sorted in ascending order (12, 18, 20, 24, 26) and symmetric around 20, notice that the middle value (median) is also 20.\n\nLearners often lose marks by forgetting to divide by 5 for the mean, or by listing the minimum and maximum as *\"12 to 26\"* instead of subtracting to compute the single number **14** for the range. Label (a), (b), and (c) clearly with working for every calculation.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -126,7 +126,7 @@
       "questionText": "A table shows maize sales for three days: Monday 51 kg, Tuesday 66 kg, Wednesday 46 kg. Draw a suitable bar graph and state which day had the highest sales.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Use a consistent scale and labelled axes.",
+      "explanation": "**Model Answer & Graph Construction [5 marks]:** First identify the winning day directly from the sales table: **Tuesday had the highest maize sales (66 kg)**—15 kg higher than Monday (51 kg) and 20 kg higher than Wednesday (46 kg) [1 mark]. To draw an accurate **bar graph**, draw perpendicular horizontal (**x-axis: Days — Monday, Tuesday, Wednesday**) and vertical (**y-axis: Maize Sales in kg**) axes with a ruler and write a clear descriptive title (*\"Maize Sales Over Three Days\"*) [2 marks]. Choose a **uniform vertical scale** starting at 0 (for example, 1 cm = 10 kg running 0, 10, 20, 30, 40, 50, 60, 70 kg), draw three bars of **equal width** separated by **equal gaps** up to heights 51 kg, 66 kg, and 46 kg, and shade/label each bar clearly [2 marks].\n\nReading data accurately before plotting ensures every bar reaches the right grid height between major intervals: 51 kg sits one-tenth of an interval above 50 kg, 66 kg sits six-tenths of the way between 60 kg and 70 kg, and 46 kg sits six-tenths between 40 kg and 50 kg. Equal bar widths and uniform axis spacing prevent visual distortion so that differences in sales volume are immediately fair to read.\n\nZIMSEC Paper 2 graph questions deduct marks swiftly if the vertical axis skips numbers (e.g., jumping 0 → 40 → 50), lacks axis labels with units (**kg**), leaves out **0 at the origin**, or joins bars together like a histogram without gaps. Always draw bars cleanly in sharp pencil and never forget to explicitly answer the follow-up question identifying **Tuesday (66 kg)**.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -136,7 +136,7 @@
       "questionText": "A school has $156 for a project. Materials cost $17 each. If the school buys 5 materials, how much money remains? Show working and check whether the budget is sufficient.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Calculate 5×unit cost and subtract from the budget.",
+      "explanation": "**Worked Solution [4 marks]:** First calculate the total cost of the 5 materials at $17 each: Total cost = 5 × $17 = **$85** [2 marks]. Next, subtract this expenditure from the school’s $156 budget to calculate how much money remains: Remaining = $156 − $85 = **$71** [1 mark]. Because $85 is less than $156 leaving a positive balance of $71, **yes, the budget is sufficient** (in fact, the school could buy up to $156 ÷ $17 = 9 materials with $3 spare) [1 mark].\n\nChecking budget sufficiency in financial word problems requires comparing **total projected expenditure ($85)** against **available funds ($156)** before deciding whether a surplus or deficit exists. Multiplying $17 × 5 accurately gives (10 × 5) + (7 × 5) = 50 + 35 = $85, and subtracting 85 from 156 leaves $71 unused for extra stationery or delivery costs.\n\nMany candidates calculate $71 correctly yet lose the final mark because they overlook the second sentence asking *\"check whether the budget is sufficient\"*. Always answer every sub-question explicitly—state both **$71 remaining** and **\"Yes, the budget is sufficient because $85 < $156.\"**",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -146,7 +146,7 @@
       "questionText": "Consider the pattern 4, 8, 12, 16, ... (a) Write the next three terms. (b) Describe the rule. (c) Find the 10th term.",
       "options": [],
       "correctAnswer": null,
-      "explanation": "The common difference is 4.",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Next three terms:** Moving from left to right (4 → 8 → 12 → 16), each term increases by **+4**; adding 4 repeatedly gives the next three terms: 16 + 4 = **20**, 20 + 4 = **24**, and 24 + 4 = **28** [2 marks]. **(b) Pattern rule:** *\"Start at 4 and add 4 to each previous term\"* (equivalently, the sequence lists consecutive **multiples of 4**, or T_n = **4n**) [1 mark]. **(c) 10th term:** Multiplying position 10 by 4 gives **10 × 4 = 40** (or counting up: 4, 8, 12, 16, 20, 24, 28, 32, 36, **40**) [2 marks].\n\nNotice that an arithmetic sequence growing by a constant **common difference of +4** starting from 4 simply mirrors the 4 times table: term 1 = 4×1 = 4, term 2 = 4×2 = 8, term 3 = 4×3 = 12, so any *n*th term equals **4 × n**. Linking the additive rule (\"add 4 each time\") to the multiplicative position rule (\"multiply term number by 4\") lets you find large terms like the 10th or 50th term instantly without listing every term in between.\n\nIn ZIMSEC Paper 2, saying only *\"times 4\"* for part (b) is ambiguous—always phrase sequence rules cleanly as **\"Add 4 to the previous term\"** or **\"Multiply the position number by 4\"**. Double-check that part (a) lists **all three** terms (20, 24, 28) rather than just one.",
       "answerConfidence": "high",
       "topic": "Mathematics Structured Theory"
     },
@@ -156,7 +156,7 @@
       "questionText": "Rudo had $250. She spent 2/5 of it on school uniforms and 20% of the remainder on stationery. How much money did she have left? [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Uniforms = 2/5 × $250 = $100 [1 mark]. Remainder = $250 - $100 = $150 [1 mark]. Stationery = 20% of $150 = $30 [1 mark]. Money left = $150 - $30 = $120 [2 marks].",
+      "explanation": "**Worked Solution [5 marks]:** First calculate the amount Rudo spent on school uniforms: 2/5 × $250 = ($250 ÷ 5) × 2 = $50 × 2 = **$100** [1 mark]. Subtract uniform costs from her opening $250 to find the **remainder**: $250 − $100 = **$150** [1 mark]. Next, calculate 20% of that **$150 remainder** for stationery: 20% × $150 = (20 / 100) × $150 = 1/5 × $150 = **$30** [1 mark]. Finally, subtract $30 from the $150 remainder: $150 − $30 = **$120 left** [2 marks].\n\nThe decisive phrase in this Grade 7 fraction-and-percentage problem is **\"20% of the remainder\"**. Rudo does NOT spend 20% of her initial $250 (which would wrongly give $50); she spends 20% of the **$150** left *after* paying $100 for uniforms. Calculating sequentially (First find remaining amount → then apply the next percentage to that remainder) mirrors real household budgeting. You can verify the entire $250 budget by summing every share: $100 (uniforms) + $30 (stationery) + $120 (left) = $250.\n\nThis exact trap—applying the second percentage to the original $250 instead of the $150 remainder—costs candidates 2–3 marks every ZIMSEC examination sitting. Highlight the word **\"remainder\"** by underlining it on your question paper and label every intermediate dollar line clearly.",
       "answerConfidence": "high",
       "topic": "Fractions & Percentages"
     },
@@ -166,7 +166,7 @@
       "questionText": "A rectangular water tank measures 2.5 m long, 1.2 m wide, and 1.5 m deep. (a) Calculate the volume in m³ [2 marks]. (b) How many litres of water does it hold when full? (1 m³ = 1,000 litres) [2 marks].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "(a) Volume = 2.5 × 1.2 × 1.5 = 4.5 m³ [2 marks].\n(b) Capacity = 4.5 × 1,000 = 4,500 litres [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** **(a) Volume in m³:** Apply the cuboid volume formula V = length × width × depth: V = 2.5 m × 1.2 m × 1.5 m [1 mark]. Multiply step-by-step: 2.5 × 1.2 = **3.0 m²** (base area), then 3.0 × 1.5 = **4.5 m³** [1 mark]. **(b) Capacity in litres:** Using the given conversion **1 m³ = 1,000 litres**, multiply the tank’s volume in cubic metres by 1,000: Capacity = 4.5 × 1,000 = **4,500 litres** [2 marks].\n\nNotice how helpful breaking decimal multiplication into friendly pairs is: 2.5 × 1.2 equals (2.5 × 1) + (2.5 × 0.2) = 2.5 + 0.5 = **3**, which immediately turns into an integer before multiplying by 1.5! Physically, each 1 m × 1 m × 1 m cubic block holds 1,000 one-litre milk cartons, so a rural clinic or school tank of 4.5 cubic metres stores **4,500 litres** of harvested rainwater—enough to supply dozens of learners with safe drinking water.\n\nZIMSEC markers regularly check decimal-point placement (writing 45 or 0.45 m³ instead of 4.5 m³ loses both accuracy marks) and **units** (**m³** for part (a) volume and **litres** for part (b) capacity). Always check decimal digits carefully: 2.5 × 1.2 × 1.5 has three decimal digits initially (0.5, 0.2, 0.5), which simplify cleanly to 4.500 = **4.5**.",
       "answerConfidence": "high",
       "topic": "Volume & Capacity"
     },
@@ -176,7 +176,7 @@
       "questionText": "A farmer borrows $1,200 from a bank at 8% per annum simple interest for 2½ years. Calculate the total amount he must repay at the end of 2½ years. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "SI = (P × R × T) / 100 = (1,200 × 8 × 2.5) / 100 = $240 [2 marks]. Total repayment = Principal + Interest = $1,200 + $240 = $1,440 [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** Given Principal **P = $1,200**, Rate **R = 8% per annum**, and Time **T = 2½ years (2.5 years)**, first compute **Simple Interest (SI)** using the formula SI = (P × R × T) / 100 [1 mark]: SI = (1,200 × 8 × 2.5) / 100 = 12 × 8 × 2.5 = 96 × 2.5 = **$240** interest [1 mark]. Now calculate the **total amount to repay** by adding the Simple Interest back onto the original Principal borrowed: Total Repayment = Principal + Interest = $1,200 + $240 = **$1,440** [2 marks].\n\nUnderstanding **Simple Interest** builds sound agricultural financial literacy: the farmer pays 8% of $1,200 = $96 interest for **every single year** he holds the bank loan. Over 2 full years that equals 2 × $96 = $192, plus half a year ($96 ÷ 2 = $48), summing cleanly to $192 + $48 = **$240** in interest charges. Crucially, the bank does not only collect the $240 interest fee—the borrower must return both the $1,200 loan capital and the $240 interest.\n\nA classic ZIMSEC exam error is stopping at **$240** (Simple Interest) when the question asks for **\"the total amount he must repay\"**. Read the final line twice (*Amount* vs *Simple Interest*) and double-check that you converted 2½ years accurately into **2.5** (or 5/2).",
       "answerConfidence": "high",
       "topic": "Simple Interest"
     },
@@ -186,7 +186,7 @@
       "questionText": "A bus leaves Mutare at 07:35 and reaches Harare at 11:20 after stopping for 25 minutes in Rusape. (a) Find the total time taken [2 marks]. (b) If the distance is 263 km, calculate the average driving speed while moving [3 marks].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "(a) Total time from 07:35 to 11:20 = 3 hours 45 minutes [2 marks].\n(b) Driving time = 3 h 45 min - 25 min = 3 hours 20 minutes = 3⅓ hours (10/3 h) [1 mark]. Speed = 263 ÷ (10/3) = 78.9 km/h [2 marks].",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Total time taken:** Count from 07:35 to 11:20. From 07:35 to 08:00 is 25 minutes; from 08:00 to 11:00 is 3 hours; from 11:00 to 11:20 is 20 minutes. Adding the minutes gives 25 + 20 = 45 minutes, so total journey time = **3 hours 45 minutes** [2 marks]. **(b) Average driving speed:** Subtract the 25-minute stopover in Rusape to get actual driving time: 3 h 45 min − 25 min = **3 hours 20 minutes** [1 mark]. Convert 20 minutes to hours: 20/60 = 1/3 hour, so driving time = **3⅓ hours = 10/3 hours**. Divide distance by driving time: Speed = 263 ÷ (10/3) = (263 × 3) ÷ 10 = 789 ÷ 10 = **78.9 km/h** [2 marks].\n\nTwo skills combine here: **elapsed clock arithmetic** and **dividing by fractional hours**. Why must you convert 3 h 20 min to **3⅓ hours (10/3 h)** rather than writing 3.20? Because 20 minutes is one-third of a 60-minute hour (**0.333... h**), NOT one-fifth (**0.2 h**)! Writing 263 ÷ 3.20 is the single most common Grade 7 speed-distance-time mistake and gives an inflated speed of 82.19 km/h.\n\nTo secure all 5 marks in ZIMSEC Paper 2, state the **average speed formula** (*Speed = Distance ÷ Time*) explicitly, keep minutes as exact fractions (**20/60 = 1/3 h**) until dividing, and write **km/h** clearly on your final speed.",
       "answerConfidence": "high",
       "topic": "Speed Distance Time"
     },
@@ -196,7 +196,7 @@
       "questionText": "Share 720 kg of seed among three villages A, B, and C in the ratio 2 : 3 : 4. Calculate how many kilograms each village receives. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Total parts = 2 + 3 + 4 = 9 [1 mark]. 1 part = 720 ÷ 9 = 80 kg [1 mark]. Village A = 2 × 80 = 160 kg; Village B = 3 × 80 = 240 kg; Village C = 4 × 80 = 320 kg [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** Begin by adding all parts in the given ratio **2 : 3 : 4** to find the total number of equal shares: Total parts = 2 + 3 + 4 = **9 parts** [1 mark]. Next, calculate the mass represented by **1 single part** by dividing 720 kg by 9: 1 part = 720 ÷ 9 = **80 kg** [1 mark]. Now multiply 80 kg by each village’s ratio number: **Village A** = 2 × 80 = **160 kg**; **Village B** = 3 × 80 = **240 kg**; **Village C** = 4 × 80 = **320 kg** [2 marks].\n\nProportional sharing distributes agricultural inputs fairly according to need or cultivated land size—here Village C receives twice as much seed as Village A (4 parts vs 2 parts, and indeed 320 kg = 2 × 160 kg). A mandatory 5-second self-check after sharing any total is summing all shares back together: **160 kg + 240 kg + 320 kg = 720 kg**, proving nothing was miscalculated or dropped.\n\nZIMSEC examiners deduct 1 mark if kg units are omitted from the individual village answers or if the order A, B, C is swapped. List all three labelled shares cleanly (**Village A = 160 kg, Village B = 240 kg, Village C = 320 kg**) after showing the **720 ÷ 9 = 80 kg** step.",
       "answerConfidence": "high",
       "topic": "Ratio"
     },
@@ -206,7 +206,7 @@
       "questionText": "A shop sells a television marked at $480 at a 12½% cash discount. Calculate (a) the discount in dollars [2 marks] and (b) the cash price paid by a customer [2 marks].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "(a) 12½% = 1/8. Discount = $480 ÷ 8 = $60 [2 marks].\n(b) Cash price = $480 - $60 = $420 [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** **(a) Discount in dollars:** Notice the helpful fraction equivalence **12½% = 12.5 / 100 = 1/8** [1 mark]. Multiply the marked television price ($480) by 1/8 (which means dividing $480 by 8): Discount = $480 ÷ 8 = **$60** (or $60.00) [1 mark]. **(b) Cash price paid:** Subtract the $60 discount from the original $480 marked price: Cash price = $480 − $60 = **$420** (or $420.00) [2 marks].\n\nMemorising core Grade 7 percentage-to-fraction conversions turns tricky decimal percentages into one-line mental divisions: **50% = 1/2, 25% = 1/4, 12½% = 1/8, 33⅓% = 1/3, and 20% = 1/5**. Even if you forgot 12½% = 1/8, finding 10% ($48) + 2½% (quarter of 10% = $12) also gives $48 + $12 = **$60**, confirming your answer cleanly.\n\nMarkers award method marks immediately when you show **12½% = 1/8** before dividing $480 by 8. Always label **$60** as the discount for part (a) and **$420** as the reduced cash price for part (b) with dollar signs included.",
       "answerConfidence": "high",
       "topic": "Consumer Arithmetic"
     },
@@ -216,7 +216,7 @@
       "questionText": "Five learners scored 68%, 74%, 82%, 70%, and 86% in a Mathematics test. Find (a) their mean score [2 marks] and (b) the range of the scores [2 marks].",
       "options": [],
       "correctAnswer": null,
-      "explanation": "(a) Sum = 68+74+82+70+86 = 380. Mean = 380 ÷ 5 = 76% [2 marks].\n(b) Range = Highest - Lowest = 86% - 68% = 18% [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** **(a) Mean score:** First sum all five percentage test scores carefully: 68 + 74 + 82 + 70 + 86 = (68 + 82) + (74 + 86) + 70 = 150 + 160 + 70 = **380%** [1 mark]. Divide the total sum by the number of learners (5): Mean = 380 ÷ 5 = **76%** [1 mark]. **(b) Range:** Identify the highest score (**86%**) and lowest score (**68%**), then subtract: Range = 86% − 68% = **18%** [2 marks].\n\nPairing scores that sum to clean multiples of ten (68 + 82 = 150 and 74 + 86 = 160) prevents careless addition errors under exam pressure. Notice that the **mean (76%)** summarises overall class performance on one benchmark number, whereas the **range (18%)** shows the spread or consistency among those five learners—an 18-percentage-point gap separates the top performer from the lowest score.\n\nIn ZIMSEC Statistics Paper 2, learners often lose marks on **range** either by forgetting to sort/check the whole list for the true minimum/maximum (note 68% is first and 86% is last, while 70% is in the middle) or by writing \"68%–86%\" instead of computing the subtraction **18%**. Always include the **%** unit on both answers.",
       "answerConfidence": "high",
       "topic": "Statistics"
     },
@@ -226,7 +226,7 @@
       "questionText": "Calculate the perimeter and area of a right-angled triangle whose shorter sides are 6 cm and 8 cm, and whose hypotenuse is 10 cm. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Perimeter = 6 + 8 + 10 = 24 cm [2 marks]. Area = ½ × base × height = ½ × 6 × 8 = 24 cm² [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** **(a) Perimeter:** Sum the lengths of all three exterior boundary sides of the triangle: Perimeter = 6 cm + 8 cm + 10 cm = **24 cm** [2 marks]. **(b) Area:** In a right-angled triangle, the two shorter perpendicular sides (6 cm and 8 cm) serve directly as the **base** and **perpendicular height**, while the 10 cm hypotenuse is NOT used in the area formula: Area = ½ × base × height = ½ × 6 cm × 8 cm = 3 × 8 = **24 cm²** [2 marks].\n\nThis famous **(6, 8, 10)** right-angled triangle (twice the classic 3-4-5 Pythagorean triple) illustrates why choosing the right height matters: only sides meeting at a **90° right angle** form the base and vertical height of a triangle (forming half of a 6 cm × 8 cm = 48 cm² rectangle, hence 24 cm²). Coincidentally, both numeric values are 24 here, yet their units are completely different—**24 cm** measures linear border length while **24 cm²** measures enclosed flat surface!\n\nThe number one ZIMSEC trap in right-angled triangle questions is mistakenly using the slanted **10 cm hypotenuse** inside ½ × base × height (calculating ½ × 10 × 8 = 40 cm² or ½ × 10 × 6 = 30 cm²). Double-check that your base and height meet at **90°** and distinguish **cm** vs **cm²** explicitly.",
       "answerConfidence": "high",
       "topic": "Geometry"
     },
@@ -235,7 +235,7 @@
       "questionText": "A rectangular school hall floor is 18 m long and 12 m wide. Square tiles of side 50 cm (0.5 m) are used to tile the floor. (a) Calculate the area of the hall floor in m² [2 marks]. (b) How many tiles are needed to cover the whole floor? [3 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "(a) Area of hall = 18 m × 12 m = 216 m² [2 marks].\n(b) Area of 1 tile = 0.5 m × 0.5 m = 0.25 m² [1 mark]. Number of tiles = 216 ÷ 0.25 = 864 tiles [2 marks].",
+      "explanation": "**Worked Solution [5 marks]:** **(a) Area of the hall floor:** Multiply length by width in metres: Area = 18 m × 12 m = (18 × 10) + (18 × 2) = 180 + 36 = **216 m²** [2 marks]. **(b) Number of tiles needed:** First calculate the area covered by **one square tile** in matching square metres (**m²**): since side = 50 cm = 0.5 m, Area of 1 tile = 0.5 m × 0.5 m = **0.25 m²** [1 mark]. Divide the floor area by one tile’s area: Number of tiles = 216 m² ÷ 0.25 m² = 216 × 4 = **864 tiles** [2 marks].\n\nAlways verify unit consistency before dividing in tiling questions: dividing 216 m² by 50 cm directly would mix square metres with centimetres and yield nonsensical answers! Notice an even faster sanity check using linear lengths: along the 18 m length, you fit 18 ÷ 0.5 = **36 tiles** per row; along the 12 m width, you fit 12 ÷ 0.5 = **24 rows**; multiplying 36 × 24 also equals **864 tiles**, confirming **216 ÷ 0.25 = 864**.\n\nStudents routinely lose 2–3 marks by thinking that because 50 cm = 0.5 m, 1 ÷ 0.5 = 2 tiles fit inside 1 square metre—when in reality **four** (2 × 2) half-metre tiles cover 1 m² (1 ÷ 0.25 = 4). Showing **0.5 m × 0.5 m = 0.25 m²** clearly avoids that square-unit conversion trap.",
       "answerConfidence": "high",
       "topic": "Area & Measurement",
       "questionNumber": 23
@@ -245,7 +245,7 @@
       "questionText": "In an election at a primary school, 360 pupils voted. Candidate A received 45% of the votes, Candidate B received 1/3 of the votes, and Candidate C received the rest. How many votes did each candidate receive? [5 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Candidate A = 45/100 × 360 = 162 votes [2 marks].\nCandidate B = 1/3 × 360 = 120 votes [1 mark].\nCandidate C = 360 - (162 + 120) = 78 votes [2 marks].",
+      "explanation": "**Worked Solution [5 marks]:** Calculate each candidate’s votes out of the **360 total pupils**. **Candidate A (45%):** (45 / 100) × 360 = (9 / 20) × 360 = 9 × 18 = **162 votes** [2 marks]. **Candidate B (1/3):** (1 / 3) × 360 = 360 ÷ 3 = **120 votes** [1 mark]. **Candidate C (the rest):** Add A and B first (162 + 120 = 282 votes), then subtract from 360 total pupils: Candidate C = 360 − 282 = **78 votes** [2 marks].\n\nThis Grade 7 problem mixes **percentages (45%)** and **fractions (1/3)** against the same base total of **360 votes**. Notice that 10% of 360 = 36, so 40% = 4 × 36 = 144 and 5% = 18, giving 144 + 18 = **162 votes** smoothly without long multiplication errors. Equivalently, in percentages, Candidate B’s 1/3 is 33⅓%, leaving Candidate C with 100% − (45% + 33⅓%) = 21⅔%, and 21⅔% × 360 = 78 votes. Sum check: 162 + 120 + 78 = 360 votes.\n\nMarkers deduct marks if a candidate accidentally calculates **1/3 of the remaining votes** (360 − 162 = 198) instead of **1/3 of the votes (360)** as worded in the question. Read wording carefully (\"of the votes\" vs \"of the remainder\") and conclude by writing each candidate’s vote count on its own line.",
       "answerConfidence": "high",
       "topic": "Fractions & Percentages",
       "questionNumber": 24
@@ -255,7 +255,7 @@
       "questionText": "A cylindrical drum has a diameter of 14 cm and a height of 20 cm. Taking π = 22/7, calculate the volume of the drum. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Radius r = 14 ÷ 2 = 7 cm [1 mark]. Volume = πr²h = (22/7) × 7 × 7 × 20 [1 mark] = 22 × 7 × 20 = 3,080 cm³ [2 marks].",
+      "explanation": "**Worked Solution [4 marks]:** Notice that the question states the **diameter** (14 cm), whereas the cylinder volume formula **V = πr²h** requires the **radius (r)**—so first halve the diameter: r = 14 cm ÷ 2 = **7 cm** [1 mark]. Substitute r = 7 cm, h = 20 cm, and π = 22/7 into the formula: V = (22 / 7) × 7 × 7 × 20 [1 mark]. Cancel one 7 in the numerator with the 7 in the denominator, leaving V = 22 × 7 × 20 = 154 × 20 = **3,080 cm³** [2 marks].\n\nIn cylinder calculations, the circle base area **πr²** equals (22/7) × 7² = **154 cm²**, and stacking that circular cross-section through the full 20 cm height produces 154 × 20 = **3,080 cm³** (which holds 3.08 litres of water or oil). ZIMSEC deliberately sets cylinder diameters like 14 cm, 28 cm, or 42 cm so radii equal exact multiples of 7 (7, 14, 21), allowing clean cancellation with **π = 22/7**.\n\nUsing diameter d = 14 cm directly in place of radius r (evaluating 22/7 × 14 × 14 × 20 = 12,320 cm³—four times too large!) is the #1 ZIMSEC Paper 2 cylinder trap. Always highlight whether **radius** or **diameter** is given, show **r = d ÷ 2**, and finish with **cm³**.",
       "answerConfidence": "high",
       "topic": "Volume of Cylinder",
       "questionNumber": 25
@@ -265,7 +265,7 @@
       "questionText": "Mrs Moyo buys 3 dozen exercise books at $4.20 per dozen and 8 pens at $0.45 each. She pays with a $20 note. Calculate her change. [4 marks]",
       "options": [],
       "correctAnswer": null,
-      "explanation": "Books = 3 × $4.20 = $12.60 [1 mark]. Pens = 8 × $0.45 = $3.60 [1 mark]. Total spent = $12.60 + $3.60 = $16.20 [1 mark]. Change = $20.00 - $16.20 = $3.80 [1 mark].",
+      "explanation": "**Worked Solution [4 marks]:** First compute the cost of the exercise books (3 dozen at $4.20 per dozen): 3 × $4.20 = **$12.60** [1 mark]. Second, compute the cost of the 8 pens at $0.45 each: 8 × $0.45 = **$3.60** [1 mark]. Third, add both subtotals to obtain the total bill: Total spent = $12.60 + $3.60 = **$16.20** [1 mark]. Fourth, subtract the total bill from Mrs Moyo’s $20.00 payment note to calculate her change: Change = $20.00 − $16.20 = **$3.80** [1 mark].\n\nNotice how **\"per dozen\"** directly sets the rate per pack of 12 books—since Mrs Moyo buys **3 dozen** at **$4.20 per dozen**, you multiply 3 × $4.20 (NOT 36 × $4.20!), whereas 8 individual pens are multiplied directly by $0.45 each (8 × 45 cents = 360 cents = $3.60). Aligning decimal points vertically ($20.00 − $16.20) prevents borrowing mistakes across cents columns (100 cents − 20 cents = 80 cents; $19 − $16 = $3, leaving **$3.80**).\n\nZIMSEC commercial arithmetic marks one point per step cleanly: books subtotal, pens subtotal, grand total bill, and final change. Never write \"$3.8\" for currency—always express cents to **two decimal places** (**$3.80**) and check by adding back: $16.20 + $3.80 = $20.00.",
       "answerConfidence": "high",
       "topic": "Money & Bills",
       "questionNumber": 26

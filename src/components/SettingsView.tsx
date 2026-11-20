@@ -65,6 +65,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   const activeCountry = StorageManager.getUserCountry();
   const isZim = StorageManager.isZimbabweAccount(activeCountry);
   const isBw = StorageManager.isBotswanaAccount(activeCountry);
+  const isZa = StorageManager.isSouthAfricaAccount(activeCountry);
   const hasPack = StorageManager.hasCountryCurriculumPack(activeCountry);
   const activeTier = getTierForContentLevel(activeCountry, contentLevel);
 
@@ -173,7 +174,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             </p>
           </div>
           <span className="text-[11px] font-mono px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-bold">
-            {isZim ? '✓ ZIMSEC Synced' : isBw ? '✓ BEC Botswana Synced' : `✓ ${activeCountry}`}
+            {isZim ? '✓ ZIMSEC Synced' : isBw ? '✓ BEC Botswana Synced' : isZa ? '✓ CAPS South Africa Synced' : `✓ ${activeCountry}`}
           </span>
         </div>
       </div>
@@ -234,7 +235,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <div>• Engine: ZEXA AI</div>
             <div>• Runtime: Offline Device Engine</div>
             <div>• Data Usage: 0 MB Required</div>
-            <div>• Region: {isZim ? '8,260+ ZIMSEC Topics' : isBw ? 'BEC PSLE / JCE / BGCSE' : activeCountry}</div>
+            <div>• Region: {isZim ? '8,260+ ZIMSEC Topics' : isBw ? 'BEC PSLE / JCE / BGCSE' : isZa ? 'DBE CAPS & NSC Matric' : activeCountry}</div>
           </div>
 
           <div className="flex flex-wrap gap-2 pt-1">
@@ -461,6 +462,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             ? 'ZEXA AI Zimbabwe • First Zimbabwe OFFLINE AI Engine'
             : isBw
             ? 'ZEXA AI Botswana • BEC Offline Curriculum Tutor'
+            : isZa
+            ? 'ZEXA AI South Africa • DBE CAPS & NSC Offline Tutor'
             : `ZEXA AI · ${activeCountry}`}
         </p>
         <p className="text-[11px] max-w-md mx-auto">
@@ -468,6 +471,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             ? 'Empowering Zimbabwean students with offline curriculum revision, past papers, and bilingual tutoring.'
             : isBw
             ? 'Empowering Botswana students with offline PSLE, JCE & BGCSE revision, Setswana, and Development Studies.'
+            : isZa
+            ? 'Empowering South African learners with offline GET, Senior Phase, FET & NSC Matric revision, isiZulu & Afrikaans support.'
             : `Offline AI study companion for ${activeCountry}.`}
         </p>
       </div>

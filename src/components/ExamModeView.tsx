@@ -28,6 +28,7 @@ import { ExamManifestItem, ExamPaper, ExamQuestion, SavedExamScore } from '../ty
 import { ExamStore } from '../lib/examStore';
 import { StorageManager } from '../lib/storage';
 import { getTierForContentLevel } from '../data/countryEducationLevels';
+import { formatMathNotation } from '../lib/mathFormatter';
 
 interface ExamModeViewProps {
   contentLevel: string;
@@ -43,13 +44,14 @@ interface ExamModeViewProps {
 const Paper2AnswerRenderer: React.FC<{ text: string; isZim?: boolean }> = ({ text, isZim = true }) => {
   if (!text) return null;
 
-  const lines = text.split('\n');
+  const lines = formatMathNotation(text).split('\n');
   const elements: React.ReactNode[] = [];
 
   const renderInlineMarksAndBold = (str: string) => {
+    const cleanStr = formatMathNotation(str);
     // Detect mark allocations like [1 mark], [2 marks], [Total: 10 marks]
     const markRegex = /(\[(?:Total:?\s*)?\d+\s*marks?\])/gi;
-    const parts = str.split(markRegex);
+    const parts = cleanStr.split(markRegex);
 
     return parts.map((part, pIdx) => {
       if (part.match(markRegex)) {
@@ -237,6 +239,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
   const isBw = StorageManager.isBotswanaAccount(country);
+  const isZa = StorageManager.isSouthAfricaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const [papers, setPapers] = useState<ExamManifestItem[]>([]);
   const [subjects, setSubjects] = useState<string[]>([]);
@@ -539,7 +542,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
   const handleCopyModelAnswer = (text: string) => {
     if (!text) return;
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(formatMathNotation(text));
     setCopiedAnswer(true);
     setTimeout(() => setCopiedAnswer(false), 2000);
   };
@@ -679,7 +682,13 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
             <span>Official Examination Cockpit · {country} · {activeTier.shortLabel}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-            {isZim ? 'ZIMSEC Past Papers & Timed Mocks' : isBw ? 'BEC Past Papers & Timed Mocks' : `${country} Practice Papers`}
+            {isZim
+              ? 'ZIMSEC Past Papers & Timed Mocks'
+              : isBw
+              ? 'BEC Past Papers & Timed Mocks'
+              : isZa
+              ? 'CAPS & NSC Past Papers & Timed Mocks'
+              : `${country} Practice Papers`}
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
             {hasPack
@@ -904,7 +913,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <button
                     onClick={() => {
                       const q = activePaper.questions[currentQIndex];
-                      const boardPrefix = isZim ? 'ZIMSEC ' : isBw ? 'BEC ' : '';
+                      const boardPrefix = isZim ? 'ZIMSEC ' : isBw ? 'BEC ' : isZa ? 'CAPS ' : '';
                       const prompt = isCurrentPaper1
                         ? `Help me solve this ${boardPrefix}${activePaper.subject} examination question:\n\n${q.questionText}\n\nOptions:\n${(q.options || [])
                             .map((o) => `${o.letter}) ${o.text}`)
@@ -925,7 +934,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
 
               {/* Question Text */}
               <div className="text-base sm:text-lg font-semibold text-white leading-relaxed whitespace-pre-wrap">
-                {activePaper.questions[currentQIndex].questionText}
+                {formatMathNotation(activePaper.questions[currentQIndex].questionText)}
               </div>
 
               {/* Paper 1: Multiple Choice Options Grid */}
@@ -971,7 +980,7 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                           {option.letter}
                         </span>
                         <span className="text-sm mt-0.5 flex-1 leading-relaxed">
-                          {option.text}
+                          {formatMathNotation(option.text)}
                         </span>
 
                         {isRevealed && isCorrect && (
@@ -1011,6 +1020,8 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                             ? 'Formulate your response below in your rough notes, then verify with the official ZIMSEC criteria.'
                             : isBw
                             ? 'Formulate your response below in your rough notes, then verify with the official BEC criteria.'
+                            : isZa
+                            ? 'Formulate your response below in your rough notes, then verify with the official CAPS / NSC criteria.'
                             : 'Formulate your response below in your rough notes, then verify with the official marking criteria.'}
                         </p>
                       </div>
@@ -1089,7 +1100,15 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <div className="flex items-center justify-between gap-2 border-b border-white/[0.08] pb-2.5">
                     <div className="flex items-center gap-2 font-bold text-cyan-300 font-mono text-xs uppercase tracking-wide">
                       <HelpCircle className="w-4 h-4 text-cyan-400" />
-                      <span>{isZim ? '🏛️ Official ZIMSEC Marking Scheme & Solution Notes' : isBw ? '🏛️ Official BEC Marking Scheme & Solution Notes' : '🏛️ Official Marking Scheme & Solution Notes'}</span>
+                      <span>
+                        {isZim
+                          ? '🏛️ Official ZIMSEC Marking Scheme & Solution Notes'
+                          : isBw
+                          ? '🏛️ Official BEC Marking Scheme & Solution Notes'
+                          : isZa
+                          ? '🏛️ Official DBE CAPS / NSC Marking Guideline'
+                          : '🏛️ Official Marking Scheme & Solution Notes'}
+                      </span>
                     </div>
 
                     <button
@@ -1120,7 +1139,15 @@ export const ExamModeView: React.FC<ExamModeViewProps> = ({
                   <div className="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/20 flex items-start gap-2.5 text-xs text-slate-300">
                     <Lightbulb className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white font-semibold">{isZim ? 'ZIMSEC Examiner Strategy:' : isBw ? 'BEC Examiner Strategy:' : 'Examiner Strategy:'}</strong>{' '}
+                      <strong className="text-white font-semibold">
+                        {isZim
+                          ? 'ZIMSEC Examiner Strategy:'
+                          : isBw
+                          ? 'BEC Examiner Strategy:'
+                          : isZa
+                          ? 'CAPS / NSC Examiner Strategy:'
+                          : 'Examiner Strategy:'}
+                      </strong>{' '}
                       Review every mark allocation breakdown. Full marks require precise academic terminology, step-by-step methods, and adherence to official syllabus key points.
                     </div>
                   </div>

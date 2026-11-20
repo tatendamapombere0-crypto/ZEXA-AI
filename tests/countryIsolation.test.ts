@@ -80,7 +80,7 @@ const {
   getTierForContentLevel
 } = await import('../src/data/countryEducationLevels');
 
-test('WORLD_COUNTRIES contains the full world directory and marks only Botswana and Zimbabwe as curriculum-loaded', () => {
+test('WORLD_COUNTRIES contains the full world directory and marks Botswana, South Africa, and Zimbabwe as curriculum-loaded', () => {
   assert.ok(WORLD_COUNTRIES.length >= 190, `Expected full world list (>=190 countries), got ${WORLD_COUNTRIES.length}`);
 
   for (const name of ['Zimbabwe', 'South Africa', 'Botswana', 'Zambia', 'Nigeria', 'Kenya', 'United Kingdom', 'United States', 'Japan', 'Brazil']) {
@@ -89,15 +89,16 @@ test('WORLD_COUNTRIES contains the full world directory and marks only Botswana 
 
   assert.equal(hasCountryCurriculumPack('Zimbabwe'), true);
   assert.equal(hasCountryCurriculumPack('Botswana'), true);
-  assert.equal(hasCountryCurriculumPack('South Africa'), false);
+  assert.equal(hasCountryCurriculumPack('South Africa'), true);
+  assert.equal(hasCountryCurriculumPack('Nigeria'), false);
   assert.equal(hasCountryCurriculumPack('United Kingdom'), false);
   assert.equal(hasCountryCurriculumPack('Japan'), false);
 
   const loadedPacks = WORLD_COUNTRIES.filter((c) => c.hasCurriculumPack);
   assert.deepEqual(
     loadedPacks.map((c) => c.name).sort(),
-    ['Botswana', 'Zimbabwe'],
-    'Only Botswana and Zimbabwe should currently report offline curriculum packs loaded'
+    ['Botswana', 'South Africa', 'Zimbabwe'],
+    'Only Botswana, South Africa, and Zimbabwe should currently report offline curriculum packs loaded'
   );
 });
 
@@ -117,12 +118,12 @@ test('StorageManager persists per-account countries and resets residual session 
   assert.equal(StorageManager.hasCountryCurriculumPack(), true);
   assert.equal(StorageManager.getSavedCountryForEmail('tendai@school.co.zw'), 'Zimbabwe');
 
-  StorageManager.initNewSession('thabo@school.za', 'South Africa');
+  StorageManager.initNewSession('chidi@school.ng', 'Nigeria');
   assert.equal(StorageManager.hasSelectedCountry(), true);
-  assert.equal(StorageManager.getUserCountry(), 'South Africa');
+  assert.equal(StorageManager.getUserCountry(), 'Nigeria');
   assert.equal(StorageManager.isZimbabweAccount(), false);
   assert.equal(StorageManager.hasCountryCurriculumPack(), false);
-  assert.equal(StorageManager.getSavedCountryForEmail('thabo@school.za'), 'South Africa');
+  assert.equal(StorageManager.getSavedCountryForEmail('chidi@school.ng'), 'Nigeria');
   assert.equal(StorageManager.getSavedCountryForEmail('tendai@school.co.zw'), 'Zimbabwe');
   assert.equal(StorageManager.getPreferredLanguage(), 'en');
   assert.equal(localStorage.getItem('zexa_chat_messages'), null);
@@ -131,9 +132,9 @@ test('StorageManager persists per-account countries and resets residual session 
   StorageManager.logout();
   assert.equal(StorageManager.hasSelectedCountry(), false, 'Logout must clear selected country so next session selects again');
 
-  StorageManager.initNewSession('Offline Student', 'South Africa');
+  StorageManager.initNewSession('Offline Student', 'Nigeria');
   assert.equal(StorageManager.hasSelectedCountry(), true);
-  assert.equal(StorageManager.getUserCountry(), 'South Africa');
+  assert.equal(StorageManager.getUserCountry(), 'Nigeria');
   assert.equal(StorageManager.hasCountryCurriculumPack(), false);
 });
 
@@ -141,7 +142,7 @@ test('KnowledgeStore remains completely blank for countries without loaded curri
   localStorage.clear();
   await KnowledgeStore.load();
 
-  for (const country of ['South Africa', 'United Kingdom', 'Japan']) {
+  for (const country of ['Nigeria', 'United Kingdom', 'Japan']) {
     for (const level of ['Primary', 'O-Level', 'A-Level']) {
       const subjects = await KnowledgeStore.getSubjects(level, country);
       assert.deepEqual(subjects, [], `Expected 0 subjects for ${country} ${level} until data pack is loaded`);
@@ -172,10 +173,10 @@ test('KnowledgeStore remains completely blank for countries without loaded curri
   );
 });
 
-test('ExamStore and ExamBankMatcher remain empty for countries without loaded packs while serving Zimbabwe and Botswana separately', async () => {
+test('ExamStore and ExamBankMatcher remain empty for countries without loaded packs while serving Zimbabwe, Botswana, and South Africa separately', async () => {
   localStorage.clear();
 
-  for (const country of ['South Africa', 'United Kingdom', 'Kenya']) {
+  for (const country of ['Nigeria', 'United Kingdom', 'Kenya']) {
     for (const level of ['Primary', 'O-Level', 'A-Level']) {
       const subjects = await ExamStore.getSubjects(level, country);
       assert.deepEqual(subjects, [], `Expected 0 exam subjects for ${country} ${level}`);
@@ -194,9 +195,9 @@ test('ExamStore and ExamBankMatcher remain empty for countries without loaded pa
     'Zimbabwe A-Level account should retain Zimbabwe History/Literature papers'
   );
   assert.equal(
-    zimALevelPapers.some((p) => p.id.startsWith('bw_')),
+    zimALevelPapers.some((p) => p.id.startsWith('bw_') || p.id.startsWith('za_')),
     false,
-    'Zimbabwe A-Level account must never include Botswana BEC exam papers'
+    'Zimbabwe A-Level account must never include Botswana BEC or South Africa CAPS/NSC exam papers'
   );
 
   const bwALevelPapers = await ExamStore.getPapers('A-Level', undefined, 'Botswana');
@@ -205,19 +206,30 @@ test('ExamStore and ExamBankMatcher remain empty for countries without loaded pa
     'Botswana BGCSE account must include Botswana Development Studies exam papers'
   );
   assert.equal(
-    bwALevelPapers.some((p) => p.paperCode.startsWith('9155/1') || p.subject === 'Shona'),
+    bwALevelPapers.some((p) => p.paperCode.startsWith('9155/1') || p.subject === 'Shona' || p.id.startsWith('za_')),
     false,
-    'Botswana BGCSE account must never include ZIMSEC Zimbabwe papers'
+    'Botswana BGCSE account must never include ZIMSEC Zimbabwe or South Africa CAPS/NSC papers'
+  );
+
+  const zaALevelPapers = await ExamStore.getPapers('A-Level', undefined, 'South Africa');
+  assert.ok(
+    zaALevelPapers.some((p) => p.id.startsWith('za_') && p.subject === 'Physical Sciences'),
+    'South Africa NSC Matric account must include South Africa Physical Sciences exam papers'
+  );
+  assert.equal(
+    zaALevelPapers.some((p) => p.paperCode.startsWith('9155/1') || p.subject === 'Shona' || p.id.startsWith('bw_')),
+    false,
+    'South Africa NSC Matric account must never include ZIMSEC Zimbabwe or Botswana BEC papers'
   );
 });
 
 test('NotificationManager omits Harare and ZIMSEC hints for non-Zimbabwe accounts', () => {
   localStorage.clear();
-  const zaPayload = NotificationManager.buildNotificationPayload('6:00 AM', 'South Africa');
+  const kePayload = NotificationManager.buildNotificationPayload('6:00 AM', 'Kenya');
   assert.equal(
-    /zimsec|harare|zimbabwe|shona|pfumvudza|lobengula|nehanda/i.test(`${zaPayload.title} ${zaPayload.body}`),
+    /zimsec|harare|zimbabwe|shona|pfumvudza|lobengula|nehanda/i.test(`${kePayload.title} ${kePayload.body}`),
     false,
-    `Leaked Zimbabwe term in South Africa notification: ${zaPayload.title} / ${zaPayload.body}`
+    `Leaked Zimbabwe term in Kenya notification: ${kePayload.title} / ${kePayload.body}`
   );
 
   const zimPayload = NotificationManager.buildNotificationPayload('6:00 AM', 'Zimbabwe');
@@ -250,33 +262,33 @@ test('AIEngine routes Zimbabwe RAG truth only for Zimbabwe and answers universal
     'Explain photosynthesis',
     'What is 25 * 4?'
   ]) {
-    const zaBundle = await AIEngine.retrieveGroundedBundle(prompt, {
+    const ngBundle = await AIEngine.retrieveGroundedBundle(prompt, {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       ...noopCallbacks
     });
-    assert.equal(zaBundle.lockToVerifiedTruth, false, `South Africa must stay unlocked for "${prompt}"`);
-    assert.equal(zaBundle.contextSnippet, '', `South Africa must receive empty Zimbabwe RAG context for "${prompt}"`);
-    assert.equal(/\bZIMSEC\b|Nyatsimba Mutota|Harare/i.test(zaBundle.rawResult.text), false);
-    assert.equal(/\bZIMSEC\b/i.test(zaBundle.rawResult.sourceTag), false);
-    assert.deepEqual(zaBundle.rawResult.suggestions, []);
+    assert.equal(ngBundle.lockToVerifiedTruth, false, `Nigeria must stay unlocked for "${prompt}"`);
+    assert.equal(ngBundle.contextSnippet, '', `Nigeria must receive empty Zimbabwe RAG context for "${prompt}"`);
+    assert.equal(/\bZIMSEC\b|Nyatsimba Mutota|Harare/i.test(ngBundle.rawResult.text), false);
+    assert.equal(/\bZIMSEC\b/i.test(ngBundle.rawResult.sourceTag), false);
+    assert.deepEqual(ngBundle.rawResult.suggestions, []);
   }
 
-  const zaMath = await AIEngine.retrieveGroundedBundle('What is 25 * 4?', {
+  const ngMath = await AIEngine.retrieveGroundedBundle('What is 25 * 4?', {
     level: 'O-Level',
-    country: 'South Africa',
+    country: 'Nigeria',
     ...noopCallbacks
   });
-  assert.equal(zaMath.hasDeterministicFallback, true);
-  assert.match(zaMath.rawResult.text, /\b100\b/);
+  assert.equal(ngMath.hasDeterministicFallback, true);
+  assert.match(ngMath.rawResult.text, /\b100\b/);
 
-  const zaBio = await AIEngine.retrieveGroundedBundle('Explain photosynthesis', {
+  const ngBio = await AIEngine.retrieveGroundedBundle('Explain photosynthesis', {
     level: 'O-Level',
-    country: 'South Africa',
+    country: 'Nigeria',
     ...noopCallbacks
   });
-  assert.equal(zaBio.hasDeterministicFallback, true);
-  assert.match(zaBio.rawResult.text, /chlorophyll|carbon dioxide|glucose/i);
+  assert.equal(ngBio.hasDeterministicFallback, true);
+  assert.match(ngBio.rawResult.text, /chlorophyll|carbon dioxide|glucose/i);
 });
 
 test('AIEngine streams ZEXA AI neural responses when connected and recovers cleanly on inference failure', async () => {
@@ -288,7 +300,7 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
     AndroidNativeAI: {
       generate: (rawPayload: string) => {
         const payload = JSON.parse(rawPayload);
-        assert.equal(payload.country, 'South Africa');
+        assert.equal(payload.country, 'Nigeria');
         assert.equal(payload.context, '');
         assert.equal(payload.enableThinking, false);
         assert.equal(payload.maxTokens, 130);
@@ -311,7 +323,7 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
     let completed = false;
     await AIEngine.generate('How does photosynthesis work?', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         streamed += t;
       },
@@ -335,9 +347,9 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
 
     let failStreamed = '';
     let failCompleted = false;
-    await AIEngine.generate('Analyze apartheid land acts in South Africa', {
+    await AIEngine.generate('Analyze agrarian reform impacts in West Africa', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         failStreamed += t;
       },
@@ -371,7 +383,7 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
     let blankFailCompleted = false;
     await AIEngine.generate('What is gravity?', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         blankFailStreamed += t;
       },
@@ -393,7 +405,7 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
     let syncCompleted = false;
     await AIEngine.generate('What is gravity?', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         syncStreamed += t;
       },
@@ -423,7 +435,7 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
     let thinkStripCompleted = false;
     await AIEngine.generate('What is gravity?', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         thinkStripStreamed += t;
       },
@@ -448,9 +460,9 @@ test('AIEngine streams ZEXA AI neural responses when connected and recovers clea
 
     let thinkOnlyStreamed = '';
     let thinkOnlyCompleted = false;
-    await AIEngine.generate('Analyze apartheid land acts in South Africa', {
+    await AIEngine.generate('Analyze agrarian reform impacts in West Africa', {
       level: 'O-Level',
-      country: 'South Africa',
+      country: 'Nigeria',
       onToken: (t) => {
         thinkOnlyStreamed += t;
       },
@@ -581,30 +593,30 @@ test('Core physics, astronomy, chemistry, and economics queries resolve universa
     onError: () => {}
   };
 
-  const zaGravity = await AIEngine.retrieveGroundedBundle('What is gravity?', {
+  const ngGravity = await AIEngine.retrieveGroundedBundle('What is gravity?', {
     level: 'O-Level',
-    country: 'South Africa',
+    country: 'Nigeria',
     ...noop
   });
-  assert.match(zaGravity.rawResult.text, /Gravitational Force|Newton/i);
-  assert.doesNotMatch(zaGravity.rawResult.text, /peristalsis|bolus|oesophagus/i);
+  assert.match(ngGravity.rawResult.text, /Gravitational Force|Newton/i);
+  assert.doesNotMatch(ngGravity.rawResult.text, /peristalsis|bolus|oesophagus/i);
 
-  const zaOhms = await AIEngine.retrieveGroundedBundle("Explain Ohm's law", {
+  const ngOhms = await AIEngine.retrieveGroundedBundle("Explain Ohm's law", {
     level: 'O-Level',
-    country: 'South Africa',
+    country: 'Nigeria',
     ...noop
   });
-  assert.equal(zaOhms.hasDeterministicFallback, true);
-  assert.match(zaOhms.rawResult.text, /V = I × R|Volts|Resistance/i);
-  assert.doesNotMatch(zaOhms.rawResult.text, /\bZIMSEC\b|Harare|Zimbabwe/i);
+  assert.equal(ngOhms.hasDeterministicFallback, true);
+  assert.match(ngOhms.rawResult.text, /V = I × R|Volts|Resistance/i);
+  assert.doesNotMatch(ngOhms.rawResult.text, /\bZIMSEC\b|Harare|Zimbabwe/i);
 
-  const zaSupply = await AIEngine.retrieveGroundedBundle('Explain supply and demand', {
+  const ngSupply = await AIEngine.retrieveGroundedBundle('Explain supply and demand', {
     level: 'O-Level',
-    country: 'South Africa',
+    country: 'Nigeria',
     ...noop
   });
-  assert.equal(zaSupply.hasDeterministicFallback, true);
-  assert.match(zaSupply.rawResult.text, /Market Equilibrium|Law of Demand/i);
+  assert.equal(ngSupply.hasDeterministicFallback, true);
+  assert.match(ngSupply.rawResult.text, /Market Equilibrium|Law of Demand/i);
 
   const zimBlackHole = await AIEngine.retrieveGroundedBundle('Explain black holes in astronomy', {
     level: 'O-Level',
@@ -614,7 +626,7 @@ test('Core physics, astronomy, chemistry, and economics queries resolve universa
   assert.doesNotMatch(zimBlackHole.rawResult.text, /Black Stripe|National Flag/i);
 });
 
-test('African exam board profiles and non-Zimbabwe starter prompts isolate Zimbabwe terms and cover major African boards', () => {
+test('African exam board profiles and non-curriculum-pack starter prompts isolate Zimbabwe terms and cover major African boards', () => {
   assert.equal(getExamBoardProfile('Zimbabwe').boardShort, 'ZIMSEC · HBC');
   assert.equal(getExamBoardProfile('South Africa').boardShort, 'CAPS · NSC / IEB');
   assert.equal(getExamBoardProfile('Nigeria').boardShort, 'WAEC · NECO · JAMB');
@@ -623,11 +635,13 @@ test('African exam board profiles and non-Zimbabwe starter prompts isolate Zimba
   assert.equal(getExamBoardProfile('Zambia').boardShort, 'ECZ');
   assert.equal(getExamBoardProfile('Botswana').boardShort, 'BGCSE · JCE');
 
-  // Zimbabwe uses its ZIMSEC starter pack in ChatView
+  // Zimbabwe, Botswana & South Africa use their local starter packs in ChatView
   assert.deepEqual(getUniversalStarterPrompts('Zimbabwe', 'O-Level'), []);
+  assert.deepEqual(getUniversalStarterPrompts('Botswana', 'O-Level'), []);
+  assert.deepEqual(getUniversalStarterPrompts('South Africa', 'O-Level'), []);
 
-  // Non-Zimbabwe countries receive board-aware starters with zero ZIMSEC leakage
-  for (const country of ['South Africa', 'Nigeria', 'Kenya', 'Ghana', 'United Kingdom']) {
+  // Non-pack countries receive board-aware starters with zero ZIMSEC/BEC/CAPS leakage
+  for (const country of ['Nigeria', 'Kenya', 'Ghana', 'United Kingdom']) {
     const starters = getUniversalStarterPrompts(country, 'O-Level');
     assert.ok(starters.length >= 4, `Expected universal starters for ${country}`);
     for (const s of starters) {
@@ -1062,10 +1076,10 @@ test('Every ZIMSEC curriculum level and subject has substantive explanations wit
     }
   }
 
-  // Non-Zimbabwe accounts remain strictly isolated across all 4 levels including Tertiary
+  // Unpacked world accounts remain strictly isolated across all 4 levels including Tertiary
   for (const lvl of ['Primary', 'O-Level', 'A-Level', 'Tertiary']) {
-    assert.deepEqual(await KnowledgeStore.getSubjects(lvl, 'South Africa'), []);
-    assert.deepEqual(await KnowledgeStore.getTopics(lvl, 'Business Administration', 'South Africa'), []);
+    assert.deepEqual(await KnowledgeStore.getSubjects(lvl, 'Nigeria'), []);
+    assert.deepEqual(await KnowledgeStore.getTopics(lvl, 'Business Administration', 'Nigeria'), []);
   }
 });
 
@@ -1271,13 +1285,13 @@ test('Botswana local curriculum (PSLE, JCE, BGCSE, Tertiary), Encyclopedia, Sets
     }
   }
 
-  // Mutual isolation checks: Zimbabwe has zero Botswana topics; Botswana has zero Zimbabwe topics
+  // Mutual isolation checks: Zimbabwe, Botswana, South Africa, and unpacked world countries stay strictly separated
   const zimSearchForBw = await KnowledgeStore.searchScored('Three Dikgosi Duma Boko', 'O-Level', 'Zimbabwe');
   assert.equal(zimSearchForBw.results.some((r) => String(r.chunk.id).startsWith('bw_')), false);
   const bwSearchForZim = await KnowledgeStore.searchScored('First Chimurenga Nehanda Mnangagwa', 'O-Level', 'Botswana');
   assert.equal(bwSearchForZim.results.some((r) => String(r.chunk.id).startsWith('zw_')), false);
-  const saSearchForBw = await KnowledgeStore.searchScored('Okavango Delta Debswana', 'O-Level', 'South Africa');
-  assert.deepEqual(saSearchForBw.results, []);
+  const alSearchForBw = await KnowledgeStore.searchScored('Okavango Delta Debswana', 'O-Level', 'Albania');
+  assert.deepEqual(alSearchForBw.results, []);
 
   // 2. Botswana National Encyclopedia, Current Leadership (Duma Boko), History, Geography, Economy & Setswana in AIEngine
   const bwPresidents = await AIEngine.retrieveGroundedBundle('Who is the current President of Botswana and list all former Presidents?', {
@@ -1387,6 +1401,189 @@ test('Botswana local curriculum (PSLE, JCE, BGCSE, Tertiary), Encyclopedia, Sets
     }
   }
 });
+
+test('South Africa local curriculum (GET, Senior Phase, FET NSC Matric, Tertiary), Encyclopedia, isiZulu/Afrikaans, and CAPS/NSC Exams work offline with strict 3-way isolation', async () => {
+  localStorage.clear();
+  await KnowledgeStore.load();
+
+  // 1. South Africa Subjects & Substantive Content across all 4 Education Tiers
+  const getPrimarySubjects = await KnowledgeStore.getSubjects('Primary', 'South Africa');
+  for (const req of ['English', 'Mathematics', 'Natural Sciences & Technology', 'Social Sciences', 'Economic & Management Sciences', 'Languages (isiZulu & Afrikaans)', 'Physical Edu & Arts']) {
+    assert.ok(getPrimarySubjects.includes(req), `South Africa GET Primary must include ${req}`);
+  }
+
+  const seniorSubjects = await KnowledgeStore.getSubjects('O-Level', 'South Africa');
+  for (const req of ['Mathematics', 'Natural Sciences', 'Social Sciences', 'Economic & Management Sciences', 'Technology', 'Life Orientation']) {
+    assert.ok(seniorSubjects.includes(req), `South Africa Senior Phase must include ${req}`);
+  }
+  assert.equal(seniorSubjects.includes('Shona'), false, 'South Africa must never expose ChiShona');
+  assert.equal(seniorSubjects.includes('Heritage Studies'), false, 'South Africa must never expose Zimbabwe Heritage Studies');
+  assert.equal(seniorSubjects.includes('Development Studies'), false, 'South Africa must never expose Botswana Development Studies');
+
+  const nscSubjects = await KnowledgeStore.getSubjects('A-Level', 'South Africa');
+  for (const req of ['Physical Sciences', 'Life Sciences', 'Mathematics', 'Mathematical Literacy', 'Accounting', 'History', 'Geography', 'Life Orientation']) {
+    assert.ok(nscSubjects.includes(req), `South Africa FET & NSC Matric must include ${req}`);
+  }
+
+  for (const lvl of ['Primary', 'O-Level', 'A-Level', 'Tertiary']) {
+    const subs = await KnowledgeStore.getSubjects(lvl, 'South Africa');
+    assert.ok(subs.length > 0, `South Africa ${lvl} must have subjects`);
+    for (const subj of subs) {
+      const topics = await KnowledgeStore.getTopics(lvl, subj, 'South Africa');
+      assert.ok(topics.length > 0, `South Africa ${lvl} -> ${subj} must have >= 1 substantive topic`);
+      for (const t of topics) {
+        const text = `${t.topic} ${t.source} ${t.content}`;
+        assert.equal(/\bZIMSEC\b/i.test(text), false, `ZIMSEC leaked into South Africa ${lvl} -> ${subj} (${t.id})`);
+        assert.equal(String(t.id).startsWith('zw_'), false, `Zimbabwe entry leaked into South Africa (${t.id})`);
+        assert.equal(String(t.id).startsWith('bw_'), false, `Botswana entry leaked into South Africa (${t.id})`);
+      }
+    }
+  }
+
+  // Mutual 3-way isolation checks
+  const zimSearchForZa = await KnowledgeStore.searchScored('Cyril Ramaphosa Mapungubwe Soweto Uprising', 'A-Level', 'Zimbabwe');
+  assert.equal(zimSearchForZa.results.some((r) => String(r.chunk.id).startsWith('za_')), false);
+  const bwSearchForZa = await KnowledgeStore.searchScored('Cyril Ramaphosa CODESA Mathematical Literacy', 'A-Level', 'Botswana');
+  assert.equal(bwSearchForZa.results.some((r) => String(r.chunk.id).startsWith('za_')), false);
+  const zaSearchForZim = await KnowledgeStore.searchScored('First Chimurenga Mbuya Nehanda Pfumvudza', 'O-Level', 'South Africa');
+  assert.equal(zaSearchForZim.results.some((r) => String(r.chunk.id).startsWith('zw_')), false);
+  const zaSearchForBw = await KnowledgeStore.searchScored('Three Dikgosi Duma Boko Okavango', 'O-Level', 'South Africa');
+  assert.equal(zaSearchForBw.results.some((r) => String(r.chunk.id).startsWith('bw_')), false);
+  const alSearchForZa = await KnowledgeStore.searchScored('Cyril Ramaphosa Mapungubwe NSC Matric', 'A-Level', 'Albania');
+  assert.deepEqual(alSearchForZa.results, []);
+
+  // 2. South Africa Encyclopedia, Leadership, History, Geography, Languages, CAPS/NSC Pass Rules & Sciences
+  const noop = { onToken: () => {}, onComplete: () => {}, onError: () => {} };
+
+  const zaPresidents = await AIEngine.retrieveGroundedBundle('Who is the current President of South Africa and list all post-1994 Presidents?', {
+    level: 'A-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaPresidents.lockToVerifiedTruth, true);
+  assert.match(zaPresidents.rawResult.text, /Cyril Ramaphosa/);
+  assert.match(zaPresidents.rawResult.text, /Paul Mashatile/);
+  assert.match(zaPresidents.rawResult.text, /Government of National Unity|GNU/);
+  assert.match(zaPresidents.rawResult.text, /Nelson.*Mandela/);
+  assert.match(zaPresidents.rawResult.text, /Thabo.*Mbeki/);
+  assert.match(zaPresidents.rawResult.text, /Kgalema.*Motlanthe/);
+  assert.match(zaPresidents.rawResult.text, /Jacob.*Zuma/);
+
+  const zaPreCol = await AIEngine.retrieveGroundedBundle('Explain the Kingdom of Mapungubwe, the Mineral Revolution (1867–1886), and the 1913 Natives Land Act', {
+    level: 'O-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaPreCol.lockToVerifiedTruth, true);
+  assert.match(zaPreCol.rawResult.text, /Mapungubwe/);
+  assert.match(zaPreCol.rawResult.text, /1867|1886/);
+  assert.match(zaPreCol.rawResult.text, /1913/);
+
+  const zaSoweto = await AIEngine.retrieveGroundedBundle('Summarize the 1976 Soweto Uprising, CODESA, and the TRC', {
+    level: 'A-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaSoweto.lockToVerifiedTruth, true);
+  assert.match(zaSoweto.rawResult.text, /16 June 1976|Hector Pieterson/);
+  assert.match(zaSoweto.rawResult.text, /CODESA/);
+  assert.match(zaSoweto.rawResult.text, /Truth and Reconciliation|TRC/);
+
+  const zaProvinces = await AIEngine.retrieveGroundedBundle('List all 9 provinces of South Africa and South Africa’s 3 national capitals', {
+    level: 'Primary',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaProvinces.lockToVerifiedTruth, true);
+  assert.match(zaProvinces.rawResult.text, /Gauteng/);
+  assert.match(zaProvinces.rawResult.text, /Western Cape/);
+  assert.match(zaProvinces.rawResult.text, /KwaZulu-Natal/);
+
+  const zaNscRules = await AIEngine.retrieveGroundedBundle('Explain the DBE NSC Matric Bachelor’s, Diploma, and Higher Certificate pass rules', {
+    level: 'A-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaNscRules.lockToVerifiedTruth, true);
+  assert.match(zaNscRules.rawResult.text, /Bachelor/);
+  assert.match(zaNscRules.rawResult.text, /Higher Certificate/);
+
+  const zaZulu = await AIEngine.retrieveGroundedBundle('Umuntu ngumuntu ngabantu', {
+    level: 'Primary',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaZulu.lockToVerifiedTruth, true);
+  assert.match(zaZulu.rawResult.text, /Ubuntu|isiZulu/i);
+
+  const zaAfrikaans = await AIEngine.retrieveGroundedBundle('Verlede tyd en STOMPI', {
+    level: 'O-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaAfrikaans.lockToVerifiedTruth, true);
+  assert.match(zaAfrikaans.rawResult.text, /STOMPI/);
+
+  const zaDoppler = await AIEngine.retrieveGroundedBundle('Explain the Doppler Effect formula and applications in Grade 12 Physical Sciences', {
+    level: 'A-Level',
+    country: 'South Africa',
+    ...noop
+  });
+  assert.equal(zaDoppler.lockToVerifiedTruth, true);
+  assert.match(zaDoppler.rawResult.text, /Doppler/i);
+
+  // 3. ExamStore South Africa Papers load cleanly offline
+  const zaNscPhys = await ExamStore.loadPaperDetails('za_nsc_physical_sciences_p1');
+  assert.ok(zaNscPhys && zaNscPhys.questions.length >= 2);
+  const zaGetSoc = await ExamStore.loadPaperDetails('za_get_social_sciences_p1');
+  assert.ok(zaGetSoc && zaGetSoc.questions.length >= 2);
+
+  // 4. NotificationManager South Africa uses Johannesburg SAST / CAPS / NSC (zero ZIMSEC/BEC)
+  const zaNotif = NotificationManager.buildNotificationPayload('6:00 AM', 'South Africa');
+  assert.match(`${zaNotif.title} ${zaNotif.body}`, /CAPS|NSC|Matric|GET|Johannesburg|SAST/i);
+  assert.equal(/zimsec|harare|\bbec\b|gaborone/i.test(`${zaNotif.title} ${zaNotif.body}`), false);
+  const saClock = NotificationManager.getHarareClockInfo('South Africa');
+  assert.match(saClock.harareTimeString, /SAST \(Johannesburg\)/);
+
+  // 5. Verify RAG Truth Lock prevents neural engine override on South Africa verified facts
+  const origWindow = (globalThis as any).window;
+  let zaNativeCalls = 0;
+  const mockWin: any = {
+    AndroidNativeAI: {
+      isReady: () => true,
+      generate: () => {
+        zaNativeCalls++;
+        setTimeout(() => {
+          mockWin.__onNativeToken('Random neural guess');
+          mockWin.__onNativeComplete('Done');
+        }, 5);
+      },
+      stopGeneration: () => {}
+    }
+  };
+  (globalThis as any).window = mockWin;
+  try {
+    let presidentOut = '';
+    await AIEngine.generate('Who is the current President of South Africa?', {
+      level: 'A-Level',
+      country: 'South Africa',
+      onToken: (t) => {
+        presidentOut += t;
+      },
+      onComplete: () => {},
+      onError: (e) => assert.fail(e)
+    });
+    assert.equal(zaNativeCalls, 0, 'Neural engine must NOT override verified South Africa Encyclopedia facts');
+    assert.match(presidentOut, /Cyril Ramaphosa/);
+  } finally {
+    if (origWindow === undefined) {
+      delete (globalThis as any).window;
+    } else {
+      (globalThis as any).window = origWindow;
+    }
+  }
+});
+
 
 
 

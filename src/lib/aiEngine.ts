@@ -7,6 +7,7 @@ import { BOTSWANA_ENCYCLOPEDIA_ENTRIES } from '../data/botswanaEncyclopedia';
 import { SOUTH_AFRICA_ENCYCLOPEDIA_ENTRIES } from '../data/southAfricaEncyclopedia';
 import { getExamBoardProfile } from '../data/africanExamBoards';
 import { getCountryEducationSystem, getTierForContentLevel } from '../data/countryEducationLevels';
+import { formatMathNotation } from './mathFormatter';
 import type { StudyTutorMode } from '../types';
 
 export interface GenerationOptions {
@@ -1421,54 +1422,7 @@ export class AIEngine {
    */
   public static cleanSymbols(text: string): string {
     if (!text) return '';
-
-    let cleaned = text;
-
-    // Remove LaTeX text/math commands
-    cleaned = cleaned.replace(/\\text\{([^}]+)\}/g, '$1');
-    cleaned = cleaned.replace(/\\mathbf\{([^}]+)\}/g, '$1');
-    cleaned = cleaned.replace(/\\mathit\{([^}]+)\}/g, '$1');
-
-    // Convert LaTeX fractions: \frac{a}{b} -> (a / b)
-    cleaned = cleaned.replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '($1 / $2)');
-
-    // Convert LaTeX square roots: \sqrt{x} -> √(x)
-    cleaned = cleaned.replace(/\\sqrt\{([^}]+)\}/g, '√($1)');
-
-    // Convert arrows and symbols
-    cleaned = cleaned.replace(/\\xrightarrow\[([^\]]*)\]\{([^}]*)\}/g, '→ (with $2, $1)');
-    cleaned = cleaned.replace(/\\xrightarrow\{([^}]*)\}/g, '→ ($1)');
-    cleaned = cleaned.replace(/\\rightarrow/g, '→');
-    cleaned = cleaned.replace(/\\to/g, '→');
-    cleaned = cleaned.replace(/\\pm/g, '±');
-    cleaned = cleaned.replace(/\\times/g, '×');
-    cleaned = cleaned.replace(/\\cdot/g, '·');
-    cleaned = cleaned.replace(/\\quad/g, ' ');
-    cleaned = cleaned.replace(/\\qquad/g, '  ');
-    cleaned = cleaned.replace(/\\left\(/g, '(');
-    cleaned = cleaned.replace(/\\right\)/g, ')');
-    cleaned = cleaned.replace(/\\left\[/g, '[');
-    cleaned = cleaned.replace(/\\right\]/g, ']');
-
-    // Strip LaTeX math delimiters $$ ... $$ and $ ... $
-    cleaned = cleaned.replace(/\$\$([\s\S]*?)\$\$/g, '$1');
-    cleaned = cleaned.replace(/\$([^\$\n]+)\$/g, '$1');
-
-    // Convert chemical formulas and sub/superscripts to readable unicode
-    cleaned = cleaned.replace(/H_2O/g, 'H₂O');
-    cleaned = cleaned.replace(/CO_2/g, 'CO₂');
-    cleaned = cleaned.replace(/O_2/g, 'O₂');
-    cleaned = cleaned.replace(/C_6H_\{12\}O_6/g, 'C₆H₁₂O₆');
-    cleaned = cleaned.replace(/C_6H_12O_6/g, 'C₆H₁₂O₆');
-    cleaned = cleaned.replace(/H\^(\+)/g, 'H⁺');
-    cleaned = cleaned.replace(/e\^(\-)/g, 'e⁻');
-    cleaned = cleaned.replace(/\^2/g, '²');
-    cleaned = cleaned.replace(/\^3/g, '³');
-
-    // Remove stray LaTeX backslashes before words
-    cleaned = cleaned.replace(/\\([a-zA-Z]+)/g, '$1');
-
-    return cleaned.trim();
+    return formatMathNotation(text).trim();
   }
 
   private static tokenizeText(text: string): string[] {

@@ -20,6 +20,7 @@ import { StorageManager } from '../lib/storage';
 import { StudyDiagram, DiagramId } from './StudyDiagrams';
 import { MarkdownArticle } from './MarkdownArticle';
 import { getTierForContentLevel } from '../data/countryEducationLevels';
+import { formatMathNotation } from '../lib/mathFormatter';
 
 interface StudyPackViewProps {
   contentLevel: string;
@@ -36,6 +37,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
   const isBw = StorageManager.isBotswanaAccount(country);
+  const isZa = StorageManager.isSouthAfricaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const activeTier = getTierForContentLevel(country, contentLevel);
   const [activeViewMode, setActiveViewMode] = useState<'modules' | 'diagrams'>('modules');
@@ -109,7 +111,9 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
       if (cancelled) return;
       const sanitizedLoaded = KnowledgeStore.sanitizeChunkForCountry(
         { ...selectedTopic, content: loaded || selectedTopic.content },
-        isZim
+        isZim,
+        isBw,
+        isZa
       ).content;
       setHydratedContentMap((prev) => ({
         ...prev,
@@ -121,7 +125,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
     return () => {
       cancelled = true;
     };
-  }, [selectedTopic, isZim]);
+  }, [selectedTopic, isZim, isBw, isZa]);
 
   const handleToggleTopicStudied = (topicId: string) => {
     StorageManager.toggleTopicCompleted(topicId, country);
@@ -160,7 +164,15 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
             <span>Curriculum Vault · {country} · {activeTier.shortLabel}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight flex flex-wrap items-center gap-2">
-            <span>{isZim ? 'ZIMSEC & Cambridge Study Pack' : isBw ? 'BEC · Botswana Study Pack' : `${country} Study Pack`}</span>
+            <span>
+              {isZim
+                ? 'ZIMSEC & Cambridge Study Pack'
+                : isBw
+                ? 'BEC · Botswana Study Pack'
+                : isZa
+                ? 'CAPS · South Africa Study Pack'
+                : `${country} Study Pack`}
+            </span>
             {hasPack && (
               <span className="text-[11px] font-mono text-cyan-300 font-medium tabular-nums">
                 · {completedInSubjectCount}/{topics.length} Studied ({masteryPercent}%)
@@ -252,12 +264,12 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
                   </div>
 
                   <h4 className="font-bold text-white text-base group-hover:text-cyan-200 transition-colors mb-1.5">
-                    {item.topic}
+                    {formatMathNotation(item.topic)}
                   </h4>
 
                   {item.visualCaption && (
                     <p className="text-xs text-slate-300 line-clamp-2 leading-relaxed mb-3">
-                      {item.visualCaption}
+                      {formatMathNotation(item.visualCaption)}
                     </p>
                   )}
                 </div>
@@ -304,7 +316,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
               <button
                 onClick={() =>
                   onAskZexa(
-                    `Can you tutor me on ${selectedTopic.topic} in ${isZim ? `ZIMSEC ${activeTier.shortLabel}` : isBw ? `BEC ${activeTier.shortLabel}` : `${country} ${activeTier.label}`}? Please explain step-by-step and give exam tips.`
+                    `Can you tutor me on ${selectedTopic.topic} in ${isZim ? `ZIMSEC ${activeTier.shortLabel}` : isBw ? `BEC ${activeTier.shortLabel}` : isZa ? `CAPS / NSC ${activeTier.shortLabel}` : `${country} ${activeTier.label}`}? Please explain step-by-step and give exam tips.`
                   )
                 }
                 className="flex items-center gap-2 px-4 py-2 rounded-xl btn-primary-gradient text-xs font-bold transition-all shrink-0 active:scale-95 shadow-md"
@@ -334,7 +346,7 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
               )}
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              {selectedTopic.topic}
+              {formatMathNotation(selectedTopic.topic)}
             </h3>
           </div>
 
@@ -514,11 +526,11 @@ export const StudyPackView: React.FC<StudyPackViewProps> = ({
                     </div>
 
                     <h4 className="font-extrabold text-white text-base group-hover:text-cyan-200 transition-colors line-clamp-1 mb-2">
-                      {topic.topic}
+                      {formatMathNotation(topic.topic)}
                     </h4>
 
                     <p className="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-3">
-                      {topic.summary || topic.content}
+                      {formatMathNotation(topic.summary || topic.content)}
                     </p>
                   </div>
 

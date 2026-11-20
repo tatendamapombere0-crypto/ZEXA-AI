@@ -202,6 +202,47 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
     ]
   },
   {
+    id: 'bw_psle_social_studies_p2',
+    subject: 'Social Studies',
+    level: 'Primary',
+    paperCode: 'BEC-PSLE-SS2',
+    paperName: 'BEC PSLE Social Studies Structured Paper 2',
+    paperType: 'Paper 2 (Structured Theory)',
+    sourceFile: 'bw_psle_social_studies_p2.json',
+    questions: [
+      {
+        id: 'bw_psle_ss2_1',
+        questionNumber: 1,
+        questionText: '(a) Explain why the Bangwato, Bakwena, and Bangwaketse Dikgosi travelled to England in 1895.\n(b) Describe how the Kgotla helps Batswana communities solve problems democratically today. [10 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC PSLE Social Studies Marking Guide [10 Marks]
+
+In August 1895, **Kgosi Khama III** of the Bangwato, **Kgosi Sebele I** of the Bakwena, and **Kgosi Bathoen I** of the Bangwaketse travelled across the Atlantic Ocean to London to petition Queen Victoria’s Colonial Secretary, Joseph Chamberlain, against handing the Bechuanaland Protectorate over to Cecil John Rhodes’ **British South Africa Company (BSAC)** [2 marks]. Having witnessed how the BSAC violently seized Ndebele and Shona lands in neighbouring Southern Rhodesia, the Three Dikgosi feared that company rule would strip Batswana farmers of their ancestral grazing veld, abolish bogosi (traditional chieftaincy), and expose local villages to unregulated European liquor traders [2 marks]. Aided by missionary allies such as W.C. Willoughby and British public sympathy, they won an historic agreement keeping their territories directly under British Crown protection in exchange for a narrow eastern railway strip used for the Mafikeng–Bulawayo railway line [2 marks].
+
+Their courageous diplomacy in 1895 laid the constitutional bedrock for Botswana’s peaceful emergence as a self-governing republic on 30 September 1966 under Sir Seretse Khama, because the protectorate retained indigenous land tenure rather than becoming a settler colony dominated by mining monopolies [2 marks]. In the modern Republic of Botswana, that heritage of participatory governance lives on inside the **Kgotla**, the traditional public assembly arena found at the centre of every ward and village, where the Kgosi presides alongside elders and ordinary residents regardless of social standing [1 mark]. Guided by the Setswana proverb *"Mafoko a kgotla a mantle otlhe"* (every voice spoken at the Kgotla is respected), adult citizens debate community projects, raise grievances with cabinet ministers or councillors, settle minor customary disputes amicably, and uphold transparency before policies are implemented [1 mark].
+
+When answering PSLE Paper 2 questions on Botswana’s constitutional heritage, always link historic dates and named Dikgosi to concrete outcomes rather than writing vague summaries [Total: 10 marks]. Examiners reward pupils who connect the 1895 London Mission directly to the preservation of tribal land and who clearly contrast *Botho*-based consensus dialogue at the Kgotla with top-down authoritarian rule. Remember to name at least two specific outcomes (Crown protection plus restriction of the BSAC to the railway strip) and explain how modern district councils and members of parliament continue to consult villages at Kgotla meetings before rolling out Vision 2036 development programmes.`,
+        answerConfidence: 'high'
+      },
+      {
+        id: 'bw_psle_ss2_2',
+        questionNumber: 2,
+        questionText: 'Explain three ways the Kalahari Desert environment influences human settlement patterns and economic activities in Botswana. [6 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC PSLE Social Studies Marking Guide [6 Marks]
+
+Roughly eighty percent of Botswana’s surface area lies within the sandy Kalahari Basin, whose semi-arid to arid climate features low, unreliable summer convectional rainfall (often below 250–400 mm per year in western Kgalagadi and Ghanzi) and high daytime evaporation rates [2 marks]. Because permanent surface rivers are absent across the central plateau, Botswana’s human population is heavily concentrated along the more humid **eastern hardveld** corridor stretching from Lobatse and Gaborone northwards through Mahalapye, Palapye, Serowe, and Francistown, where deeper loamy soils, the Limpopo basin tributaries, the North-South Carrier water pipeline, and railway connections sustain arable crop farming and urban industry [2 marks]. In contrast, western Kalahari settlements such as Tsabong, Hukuntsi, and Kang remain relatively small, dispersed, and clustered strictly around deep subterranean boreholes drilled into underground aquifers [2 marks].
+
+Despite aridity, communities across the Kalahari Basin have adapted their economic livelihoods creatively to match water availability and open savannah grassveld [1 mark]. Extensive commercial and communal **cattle ranching** thrives in Ghanzi, Letlhakeng, and parts of Central District because drought-hardy grass species nourish Botswana’s beef herds destined for Botswana Meat Commission (BMC) abattoirs [1 mark]. Meanwhile, beneath the Kalahari sands at **Orapa, Jwaneng, Letlhakane, and Karowe**, rich kimberlite pipes form the backbone of Botswana’s world-leading diamond mining sector, while **wilderness eco-tourism** in the Central Kalahari Game Reserve and Makgadikgadi Pans earns vital foreign exchange and creates guiding, craft, and hospitality jobs for local trusts [1 mark].
+
+To secure full marks on geography-linked PSLE questions, weave physical rainfall and borehole facts together with clear named examples of towns, districts, and economic sectors rather than merely stating that "the desert is dry." Mentioning the contrast between the densely populated eastern hardveld and sparsely populated western sandveld demonstrates top-band analytical understanding to BEC markers [Total: 6 marks].`,
+        answerConfidence: 'high'
+      }
+    ]
+  },
+  {
     id: 'bw_jce_social_studies_p2',
     subject: 'Social Studies',
     level: 'O-Level',
@@ -218,14 +259,11 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         correctAnswer: null,
         explanation: `### BEC JCE Social Studies Marking Guide [10 Marks]
 
-#### (a) Reasons for the 1895 London Mission [6 Marks — 2 marks per explained point]:
-- **Prevent BSAC Annexation:** Britain planned to transfer Bechuanaland Protectorate to Cecil Rhodes’ British South Africa Company (BSAC), which had seized land in Rhodesia.
-- **Protect Batswana Land & Bogosi:** The Dikgosi feared loss of communal grazing/arable lands and erosion of traditional chieftainship rights.
-- **Ban Liquor Trade:** They sought strict prohibition of European alcohol within tribal territories.
+**(a) Causes of the 1895 London Mission [6 Marks]:** In 1895, British Colonial Secretary Joseph Chamberlain intended to transfer administrative control of the Bechuanaland Protectorate from London directly into the hands of Cecil John Rhodes’ private **British South Africa Company (BSAC)** [2 marks]. Recognising the brutal dispossession that had already occurred in neighbouring Matebeleland and Mashonaland, Kgosi Khama III (Bangwato), Kgosi Sebele I (Bakwena), and Kgosi Bathoen I (Bangwaketse) undertook the hazardous sea voyage to Britain primarily to prevent BSAC annexation and safeguard their peoples’ sovereign communal grazing lands, plough fields, and traditional system of *bogosi* (chieftainship) from settler confiscation [2 marks]. Alongside defending land and chieftaincy, the Dikgosi petitioned Whitehall to enforce a strict prohibition on the importation and sale of destructive European spirits within their tribal reserves, arguing that the liquor trade undermined family stability and community discipline [2 marks].
 
-#### (b) Key Outcomes [4 Marks — 2 marks per point]:
-- **Crown Protection Preserved:** Colonial Secretary Joseph Chamberlain agreed tribal lands of the three Dikgosi would remain directly under the British Crown rather than BSAC rule.
-- **Railway Strip Ceded:** In return, the Dikgosi granted a narrow eastern strip of land (Lobatse/Gaborone blocks) for building the Mafikeng–Bulawayo railway.`,
+**(b) Historic Outcomes & Long-Term Impact [4 Marks]:** Assisted by London Missionary Society supporters and persuasive public speeches across British cities, the Dikgosi secured an historic compromise from Chamberlain: the core tribal territories of Bangwato, Bakwena, and Bangwaketse would remain **directly under British Crown protection** rather than being handed to Rhodes’ BSAC [2 marks]. In exchange, the Dikgosi ceded only a narrow eastern border strip (the Lobatse, Gaborone, and Tuli/Tati corridor blocks) to permit construction of the strategic Cape-to-Bulawayo railway line [2 marks]. Although limited white settler farming blocks emerged along that eastern edge, keeping over ninety percent of Bechuanaland free from BSAC rule prevented full-scale land alienation, preserved indigenous institutions such as the *Kgotla*, and spared Botswana from entrenched settler racial wars, smoothing the path toward peaceful multi-party independence on **30 September 1966**.
+
+Examiners marking BEC JCE Paper 2 reward answers that distinguish clearly between part (a) motivations and part (b) concrete settlements. Ensure you correctly attribute each Kgosi to their *morafe* (Khama III — Bangwato; Sebele I — Bakwena; Bathoen I — Bangwaketse), explicitly mention Colonial Secretary Joseph Chamberlain and the Mafikeng–Bulawayo railway concession, and link the Crown-protectorate safeguard to Botswana’s later constitutional stability [Total: 10 marks].`,
         answerConfidence: 'high'
       },
       {
@@ -235,9 +273,53 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         options: [],
         correctAnswer: null,
         explanation: `### BEC JCE Social Studies Marking Guide [6 Marks]
-1. **Disease Segregation (FMD Control):** Veterinary cordon fences separate livestock grazing zones from wild buffalo herds carrying Foot-and-Mouth Disease (FMD), keeping export zones certified disease-free.
-2. **Traceability (BAITS System):** Mandatory ear-tagging records farm origin, movement history, and vaccination compliance required by strict European Union / UK buyers.
-3. **Centralised Processing & Quality Grading:** BMC abattoirs in Lobatse, Francistown, and Maun inspect hygiene and grade carcasses for reliable foreign exchange revenue.`,
+
+First, Botswana protects its lucrative international beef exports through a network of **veterinary cordon fences** (such as the Kuke and Makgadikgadi fences) that divide the country into strict livestock disease-control zones [2 marks]. Because free-roaming wild Cape buffalo herds in northern wetlands are natural asymptomatic carriers of the **Foot-and-Mouth Disease (FMD)** virus, physical separation prevents contact between wildlife reservoirs and commercial or communal cattle herds in central and southern Botswana, keeping key export zones certified FMD-free by the World Organisation for Animal Health [2 marks].
+
+Second, the government operates the mandatory **Botswana Animal Identification and Traceability System (BAITS)** alongside routine Department of Veterinary Services vaccination campaigns [2 marks]. Every calf is fitted with a digital ear-tag linking it to its owner, kraal, movement permit, and vaccination history; this ironclad "farm-to-fork" audit trail is a strict legal prerequisite for maintaining quota-free, high-price beef access to the European Union, United Kingdom, and Norwegian markets.
+
+Third, the **Botswana Meat Commission (BMC)** — operating modern export abattoirs in **Lobatse, Francistown, and Maun** — enforces rigorous cold-chain hygiene, ante-mortem and post-mortem veterinary meat inspection, and standardised carcass quality grading before vacuum-packed prime cuts leave the country [2 marks]. Together, disease zoning, digital traceability, and centralised abattoir standards convert traditional pastoralism into a reliable, foreign-exchange-earning pillar supporting rural livelihoods across Botswana [Total: 6 marks].`,
+        answerConfidence: 'high'
+      },
+      {
+        id: 'bw_jce_ss2_3',
+        questionNumber: 3,
+        questionText: 'Analyse three roles played by Botswana’s Independent Electoral Commission (IEC) and the Constitution in sustaining multiparty democracy since 1966. [6 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC JCE Social Studies Marking Guide [6 Marks]
+
+Since achieving independence in 1966, Botswana has stood as one of Africa’s longest-standing continuous multiparty democracies, anchored by a supreme **written Constitution** that guarantees universal adult suffrage (for citizens aged 18 and above) and mandates general elections every five years [2 marks]. The Constitution establishes clear separation of powers among the **Legislature** (Parliament and the consultative *Ntlo ya Dikgosi*), the **Executive** (President and Cabinet), and an **Independent Judiciary** (Magistrates’ Courts, High Court, and Court of Appeal), preventing any single branch from rigging electoral rules or abolishing political opposition [2 marks].
+
+A decisive institutional safeguard is the **Independent Electoral Commission (IEC)**, created by constitutional amendment in 1997 to replace direct civil-service administration of elections [2 marks]. The IEC conducts impartial nationwide voter registration, updates electronic voter rolls, delimits constituency boundaries fairly alongside the Delimitation Commission, trains neutral polling officers, regulates the secret ballot, and oversees transparent vote counting in full view of party polling agents and SADC/international observers.
+
+Furthermore, constitutional guarantees of **freedom of assembly, freedom of association, and freedom of expression** enable competing parties (such as the BDP, UDC, BCP, BPF, and independent candidates) to campaign freely at public rallies, broadcast manifestos, and contest disputed results in independent courts of law [Total: 6 marks]. For top marks in JCE Paper 2, always name specific democratic organs (Parliament, *Ntlo ya Dikgosi*, IEC, High Court) and explain *why* neutral election management builds citizen trust in peaceful transfers of power.`,
+        answerConfidence: 'high'
+      }
+    ]
+  },
+  {
+    id: 'bw_jce_moral_education_p2',
+    subject: 'Moral Education',
+    level: 'O-Level',
+    paperCode: 'BEC-JCE-ME2',
+    paperName: 'BEC JCE Moral Education Paper 2 (Ethics & Botho)',
+    paperType: 'Paper 2 (Structured Theory)',
+    sourceFile: 'bw_jce_moral_education_p2.json',
+    questions: [
+      {
+        id: 'bw_jce_me2_1',
+        questionNumber: 1,
+        questionText: '(a) Explain the philosophy of Botho ("Motho ke motho ka batho") and illustrate two ways it promotes social harmony in a school community.\n(b) Discuss two modern challenges that threaten traditional Batswana family support systems such as Mafisa and Molaletsa. [10 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC JCE Moral Education Marking Guide [10 Marks]
+
+**(a) The Philosophy of Botho in School Life [6 Marks]:** Rooted in the timeless Setswana proverb *"Motho ke motho ka batho"* ("a person is a person through other people"), **Botho** is Botswana’s foundational ethical philosophy, enshrined in national Vision 2036 as compassion, mutual respect, honesty, empathy, humility, and shared civic responsibility [2 marks]. Within a junior secondary school community, Botho manifests when learners actively reject bullying, tribalism, and cyber-harassment, choosing instead to welcome new students, protect school property as a shared resource, and speak respectfully to teachers, support staff, and peers alike [2 marks]. Practically, it is also seen in peer-mentoring study groups where academically stronger pupils patiently assist classmates struggling in Mathematics or Science, recognising that collective upliftment honours everyone’s dignity rather than selfishly hoarding knowledge [2 marks].
+
+**(b) Modern Challenges to Mafisa & Molaletsa [4 Marks]:** Traditional Batswana mutual-aid customs such as **Mafisa** (entrusting cattle to poorer relatives for milk, draught power, and calves) and **Molaletsa** (communal work parties assisting neighbours during ploughing, weeding, or harvesting) evolved in tightly knit agrarian villages bound by kinship reciprocity [1 mark]. Today, rapid **rural-to-urban migration** to Gaborone, Francistown, and mining towns separates extended family generations, turning household budgets toward purely cash-based nuclear family survival and reducing volunteer labour available for rural *molaletsa* [1.5 marks]. Simultaneously, growing **individualism and materialism** encourage people to hire paid wage contractors or fence off private commercial farms rather than loan breeding livestock under *mafisa*, weakening informal safety nets for elderly and orphaned citizens [1.5 marks].
+
+High-scoring JCE Moral Education responses blend authentic Setswana cultural terms (*Botho, Mafisa, Molaletsa, Kagisano*) with concrete ethical reasoning and realistic school-level examples [Total: 10 marks]. Avoid defining Botho vaguely as simply "being nice"; explicitly connect moral character to civic empathy, conflict resolution, and intergenerational solidarity.`,
         answerConfidence: 'high'
       }
     ]
@@ -259,14 +341,11 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         correctAnswer: null,
         explanation: `### BEC BGCSE Development Studies (0595) Marking Scheme [10 Marks]
 
-#### (a) GNP per capita vs HDI [4 Marks]:
-- **GNP per capita** measures average total income earned by citizens per person per year; it omits income inequality, informal sector activity, and social welfare.
-- **Human Development Index (HDI)** is a composite index combining **health (life expectancy at birth)**, **education (mean/expected years of schooling)**, and **standard of living (GNI per capita PPP)**.
+**(a) Distinguishing GNP per capita from HDI [4 Marks]:** **Gross National Product (GNP) per capita** calculates the total monetary value of all final goods and services produced by a country’s citizens (at home and abroad) divided by its total population [1 mark]. While useful for tracking raw economic output, GNP per capita is a narrow economic average that conceals extreme income inequality between wealthy elites and rural poor, omits subsistence and informal-sector livelihoods, and ignores whether revenue actually improves hospitals, clean water, or human freedoms [1 mark]. By contrast, the United Nations **Human Development Index (HDI)** is a holistic composite measure scored from 0 to 1 across three vital dimensions: **health** (life expectancy at birth), **knowledge/education** (mean and expected years of schooling), and **decent standard of living** (Gross National Income per capita adjusted for Purchasing Power Parity) [2 marks].
 
-#### (b) Botswana Economic Diversification Strategies [6 Marks — 2 marks per developed strategy]:
-- **Diamond Value Addition (Beneficiation):** Sorting, cutting, and polishing rough diamonds locally in Gaborone (DTCB & Okavango Diamond Company) rather than exporting raw stones alone.
-- **Eco-Tourism Development:** Expanding Botswana's High-Value, Low-Volume tourism industry in the Okavango Delta, Chobe, and Kalahari to generate sustainable foreign exchange and rural employment.
-- **Citizen Enterprise & Agro-Processing:** Financing citizen-owned SMEs, horticulture, renewable solar energy, and financial/ICT hubs through CEDA, LEA, and Special Economic Zones (SEZA).`,
+**(b) Botswana’s Economic Diversification Strategies under Vision 2036 [6 Marks]:** Because diamonds are a finite, non-renewable resource vulnerable to global luxury recessions and lab-grown synthetics, Botswana’s Vision 2036 prioritises structural economic transformation toward a knowledge-based economy [1 mark]. First, through **diamond beneficiation (downstream value addition)** led by Diamond Trading Company Botswana (DTCB) and the state-owned Okavango Diamond Company in Gaborone, Botswana no longer exports only raw rough stones—it mandates local sorting, valuing, cutting, polishing, and jewellery manufacturing that retain skilled high-wage jobs domestically [2 marks]. Second, Botswana expands **High-Value, Low-Volume Eco-Tourism** across the Okavango Delta UNESCO site, Chobe, Moremi, and the Central Kalahari, partnering with Community-Based Natural Resource Management (CBNRM) trusts so rural villages earn direct conservation income without ecological overcrowding [1.5 marks].
+
+Third, the government actively stimulates **citizen entrepreneurship, renewable solar power, agro-processing, and financial/ICT service hubs** via institutions such as CEDA (Citizen Entrepreneurial Development Agency), LEA (Local Enterprise Authority), the Botswana Innovation Hub, and Special Economic Zones (SEZA) in Gaborone, Lobatse, Selebi-Phikwe, and Francistown [1.5 marks]. On BGCSE 0595 Paper 2, candidates earn top marks by naming specific institutions (DTCB, CEDA, LEA, SEZA) and explicitly contrasting *economic growth* (quantity of output) with *sustainable human development* (quality of life) [Total: 10 marks].`,
         answerConfidence: 'high'
       },
       {
@@ -277,13 +356,11 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         correctAnswer: null,
         explanation: `### BEC BGCSE Development Studies Marking Scheme [8 Marks]
 
-#### Advantages [4 Marks]:
-- **Customs Revenue Share:** SACU pooled tariff receipts provide a vital fiscal revenue stream funding schools, roads, and health clinics.
-- **Expanded Duty-Free Market & Infrastructure:** Duty-free movement of goods across Southern Africa plus SADC regional corridors (Trans-Kalahari Highway & Kazungula Bridge) lower trade costs for landlocked Botswana.
+As a small, landlocked upper-middle-income economy, Botswana derives major structural benefits from its participation in the **Southern African Customs Union (SACU)** (comprising Botswana, Eswatini, Lesotho, Namibia, and South Africa) and the wider **Southern African Development Community (SADC)**, headquartered in Gaborone [1 mark]. A primary fiscal advantage of SACU is its **Common Revenue Pool**: customs and excise duties collected across all five member states are shared according to an agreed revenue formula, routinely providing Botswana’s national treasury with one of its largest non-mineral revenue streams to finance free public schooling, universal ARV healthcare, and clean water infrastructure [2 marks]. Second, duty-free movement of goods across SACU coupled with SADC regional transport corridors—most notably the **Trans-Kalahari Highway** to Walvis Bay and the **Kazungula Rail-and-Road Bridge** linking Botswana with Zambia—dramatically lowers import/export freight costs and expands access for Botswana’s beef, soda ash, and copper into a regional market exceeding 350 million consumers [2 marks].
 
-#### Challenges [4 Marks]:
-- **Competition from Larger Industrial Economies:** Duty-free imports from South African manufacturers make infant local factories in Botswana harder to protect.
-- **Revenue Volatility:** Fluctuations in regional import volumes directly cause unstable annual SACU treasury transfers.`,
+On the other hand, regional economic integration exposes Botswana to **severe competition from larger, longer-established South African industrial conglomerates** [1.5 marks]. Because SACU eliminates internal tariffs between members, high-volume South African supermarket chains and factories enjoy economies of scale that easily undercut emerging local Batswana manufacturers in clothing, dairy, and consumer goods, making infant-industry protection exceptionally difficult outside temporary safeguard clauses [1.5 marks].
+
+Furthermore, heavy reliance on **SACU revenue transfers introduces fiscal volatility**: whenever South African and regional import volumes slow down during global downturns, Botswana’s SACU payout drops sharply, disrupting multi-year National Development Plan budgets [1 mark]. For full evaluation marks in BGCSE Paper 2, always balance concrete gains (Common Revenue Pool, Kazungula Bridge, duty-free market scale) against structural trade asymmetries and external budget shocks [Total: 8 marks].`,
         answerConfidence: 'high'
       }
     ]
@@ -305,15 +382,52 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         correctAnswer: null,
         explanation: `### BEC BGCSE Geography (0584) Marking Scheme [10 Marks]
 
-#### (a) Winter Peak Flooding Mechanism [4 Marks]:
-- Rain falls heavily in the catchment highlands of central **Angola** during summer (January–February).
-- Runoff flows over **1,000 km** down the Cuito and Cubango rivers across extremely gentle alluvial gradients inside a fault-bounded graben.
-- Because the gradient is very flat and dense papyrus vegetation slows flow, the flood wave takes **4 to 6 months** to arrive at Maun and spread across the delta fan in **June–August**.
+**(a) Mechanism of Botswana’s Dry-Winter Peak Flooding [4 Marks]:** Remarkably, the Okavango Delta attains its maximum flood extent between **June and August**—right in the middle of Botswana’s rainless Kalahari winter—because over 95% of its water originates far outside Botswana in the humid **Bie Plateau highlands of central Angola**, where intense tropical convectional rains fall during **January and February** [1 mark]. That seasonal rainwater drains southwards for more than **1,000 kilometres** down the Cuito and Cubango rivers, crossing into Botswana at Mohembo inside a seismically active, fault-bounded graben (an extension of the East African Rift system) [1.5 marks]. Because the alluvial fan drops only about **60 metres over 250 km** of sandy terrain and is choked with dense *papyrus* reedbeds and termite-mound islands, floodwaters spread horizontally at a snail’s pace—taking **4 to 6 months** to travel from the Panhandle down to Maun and Lake Ngami [1.5 marks].
 
-#### (b) Benefits [6 Marks]:
-- **High-Value Eco-Tourism:** Supports lodges, mokoro polers, guides, and CBNRM community trusts, generating major foreign exchange.
-- **Biodiversity Conservation:** UNESCO World Heritage wetland harbouring sitatunga, hippopotamus, elephants, fish eagles, and papyrus reeds.
-- **Local Livelihoods & Water Supply:** Provides fish, molapo flood-recession farming moisture, reeds for building/thatching, and groundwater recharge.`,
+**(b) Economic and Ecological Significance [6 Marks]:** Economically, this winter flood pulse turns northern Ngamiland into one of Africa’s premier **High-Value, Low-Volume eco-tourism** destinations during the exact cool, cloudless dry season when international tourists seek wildlife safaris [2 marks]. Lodges, scenic flights, *mokoro* (dugout canoe) polers, professional guides, and **Community-Based Natural Resource Management (CBNRM)** trusts generate substantial foreign exchange and sustained rural employment for surrounding communities [1 mark]. Ecologically, as a Ramsar Wetland of International Importance and Botswana’s 1,000th **UNESCO World Heritage Site**, the delta sustains unmatched biodiversity—supporting threatened sitatunga antelope, hippopotamus, African elephants, wild dogs, over 400 bird species, and dense papyrus filtration beds [1.5 marks].
+
+Additionally, the seasonal inundation supports **indigenous local livelihoods**: floodwaters replenish shallow groundwater aquifers around Maun, yield freshwater tilapia and bream fisheries, supply reeds and thatching grass for traditional housing, and moisten fertile silt soils for traditional **molapo flood-recession farming** of maize, sorghum, and vegetables once waters recede in spring [1.5 marks]. Remember on BGCSE Geography 0584 Paper 2 to cite exact place names (*Angolan Highlands, Mohembo Panhandle, Maun, Thamalakane Fault*) and explain the physical *gradient + vegetation friction* cause of the 4–6 month hydrological lag [Total: 10 marks].`,
+        answerConfidence: 'high'
+      },
+      {
+        id: 'bw_bgcse_geo_2',
+        questionNumber: 2,
+        questionText: 'Explain three physical causes and three human management strategies for drought and desertification in Botswana’s Kgalagadi and western grazing regions. [12 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC BGCSE Geography (0584) Marking Scheme [12 Marks]
+
+**Physical Drivers of Drought & Aridity [6 Marks]:** Physically, Botswana’s interior plateau lies along the **Tropic of Capricorn (20°S–26°S)** under the persistent descending limb of the Southern Hemisphere **Hadley Cell (Subtropical High-Pressure Belt)**, which compresses and warms sinking air, inhibiting cloud formation for seven months every year [2 marks]. Second, Botswana sits far inland in a **continental interior position**, separated from warm Indian Ocean moisture by the Drakensberg escarpment, while the cold **Benguela Ocean Current** along the Namibian Atlantic coast chills western onshore winds so little moisture reaches Kgalagadi [2 marks]. Third, periodic **El Niño (ENSO)** warm Pacific events suppress the Inter-Tropical Convergence Zone (ITCZ) rain-belt over Southern Africa, triggering severe multi-year meteorological and agricultural droughts [2 marks].
+
+**Human Management & Anti-Desertification Strategies [6 Marks]:** Where overgrazing around crowded boreholes, bush encroachment, and uncontrolled veldfires strip protective grass cover—exposing loose Kalahari sand to wind erosion—Botswana implements targeted **rotational paddock grazing and carrying-capacity limits** (under agricultural extension policy) to allow perennial savannah grasses time to re-seed between rainy seasons [2 marks]. Communities and the Ministry of Environment also clear and maintain **firebreak networks (cutlines)** across rangelands while enforcing strict penalties against reckless bush-burning so organic topsoil and young acacia saplings survive dry winter winds [2 marks].
+
+Finally, expanding **borehole spacing regulations, solar-powered water pumping, rainwater harvesting, and drought-tolerant crop varieties** (such as early-maturing *Segaolane* sorghum, cowpeas, and pearl millet promoted by the Department of Agricultural Research) equips Batswana pastoralists and arable farmers to maintain food security without exhausting fragile aquifers [2 marks]. Strong BGCSE Geography essays tie atmospheric circulation (Hadley Cell, Benguela Current, ENSO) cleanly to ground-level sustainable range conservation [Total: 12 marks].`,
+        answerConfidence: 'high'
+      }
+    ]
+  },
+  {
+    id: 'bw_bgcse_agriculture_p2',
+    subject: 'Agriculture',
+    level: 'A-Level',
+    paperCode: 'BEC-BGCSE-0599/2',
+    paperName: 'BEC BGCSE Agriculture Paper 2 (0599/2)',
+    paperType: 'Paper 2 (Structured Theory)',
+    sourceFile: 'bw_bgcse_agriculture_p2.json',
+    questions: [
+      {
+        id: 'bw_bgcse_agri_1',
+        questionNumber: 1,
+        questionText: '(a) Explain how soil structure, humus content, and moisture conservation practices improve sorghum and cowpea yields under Botswana’s semi-arid climate.\n(b) Describe two biological advantages of intercropping sorghum with cowpeas (dinawa) on small-scale arable farms. [10 Marks]',
+        options: [],
+        correctAnswer: null,
+        explanation: `### BEC BGCSE Agriculture (0599) Marking Scheme [10 Marks]
+
+**(a) Soil Structure, Organic Humus & Moisture Conservation [6 Marks]:** Sandy loams across much of Botswana lose moisture rapidly after brief summer thunderstorms unless farmers actively build **crumb soil structure** through incorporating decomposed kraal manure, compost, or crop residues (**humus**) [2 marks]. Dark, colloidal humus binds loose mineral particles into stable porous aggregates, dramatically increasing the soil’s **water-holding capacity** and **cation exchange capacity (CEC)** so essential plant nutrients ($NO_3^-$, $K^+$, $Ca^{2+}$) remain available to roots instead of leaching away during heavy downpours [2 marks]. Coupled with conservation tillage techniques such as **tied ridges, contour ploughing, deep winter ploughing before first rains, and organic surface mulching**, surface runoff and soil surface temperatures fall markedly, preserving precious root-zone moisture through mid-season dry spells for crops like *Segaolane* sorghum [2 marks].
+
+**(b) Agronomic Benefits of Sorghum–Cowpea Intercropping [4 Marks]:** Pairing cereals such as sorghum (*mabele*) with drought-hardy legumes like cowpeas (*dinawa*) yields two powerful biological synergies on Batswana smallholder *masimo* (fields) [1 mark]. First, cowpea root nodules harbour symbiotic ***Rhizobium* bacteria**, which carry out **biological nitrogen fixation**—converting inert atmospheric nitrogen ($N_2$) into soluble ammonium compounds that enrich soil fertility for neighbouring and subsequent sorghum crops, cutting expensive inorganic fertiliser bills [2 marks]. Second, broad-leaved spreading cowpea vines act as a **living ground mulch**, shading bare inter-row soil to suppress competitive weeds, minimise evaporative moisture loss, and cushion raindrops against splash erosion, while diversified canopies reduce total crop failure risk if stem-borers or Striga witchweed strike [1 mark].
+
+In BEC Agriculture 0599 Paper 2, linking physiological soil processes (humus colloids, *Rhizobium* nitrogen fixation, transpiration cooling) with authentic local farming practices guarantees full distinction marks [Total: 10 marks].`,
         answerConfidence: 'high'
       }
     ]
@@ -334,9 +448,12 @@ export const BOTSWANA_EXAM_PAPERS: ExamPaper[] = [
         options: [],
         correctAnswer: null,
         explanation: `### BEC BGCSE History (0583) Marking Guide [10 Marks]
-- **British Appeasement of Apartheid South Africa:** Britain’s decision to ban Seretse Khama from the Bangwato bogosi following his marriage to Ruth Williams exposed colonial subservience to Pretoria’s racial policies.
-- **Politicisation at Kgotla Assemblies:** Heated kgotla debates in Serowe united Bangwato and broader Batswana opinion against arbitrary colonial decrees.
-- **Rise of Modern Political Parties:** Returning in 1956 as a private citizen, Seretse Khama’s immense popular legitimacy later anchored the founding of the **BDP (1962)** alongside **BPP (1960)** and **BNF (1965)**, accelerating peaceful independence in **1966**.`,
+
+The 1948–1956 crisis began when **Seretse Khama**, heir-designate to the Bangwato *bogosi* (chieftaincy), married an English woman, **Ruth Williams**, while studying law in London—triggering furious opposition from the newly elected National Party Apartheid government in Pretoria and conservative elders led by his uncle, Regent Tshekedi Khama [2 marks]. Seeking to appease South Africa’s white-minority regime and preserve regional strategic cooperation, Britain’s Labour government summoned Seretse to London in 1950 and treacherously **exiled him for six years**, banning him from assuming the throne he had already been overwhelmingly endorsed to inherit by Bangwato *kgotla* assemblies in June 1949 [2 marks].
+
+Rather than silencing nationalist sentiment, Britain’s heavy-handed intervention deeply **politicised ordinary Batswana across ethnic boundaries** [3 marks]. Mass *kgotla* protests in Serowe—including civil disobedience, boycotts of colonial administrative councils, and brave women’s demonstrations—exposed colonial hypocrisy: Britain claimed to uphold rule of law while bowing to Pretoria’s racial laws. Public debates inside *kgotla* courtyards transformed traditional loyalties into modern political consciousness demanding constitutional self-government, non-racial dignity, and direct elected representation [2 marks].
+
+When Seretse Khama finally returned home in 1956 as a private citizen after renouncing claims to the *bogosi* alongside Tshekedi, he commanded unrivalled moral legitimacy across Bechuanaland [3 marks]. That moral authority soon anchored the founding of modern political parties—including the **Bechuanaland People’s Party (BPP, 1960)**, **Seretse Khama’s Bechuanaland Democratic Party (BDP, 1962)**, and the **Botswana National Front (BNF, 1965)**—creating an unstoppable unified momentum toward peaceful multi-party independence on **30 September 1966** [Total: 10 marks].`,
         answerConfidence: 'high'
       }
     ]

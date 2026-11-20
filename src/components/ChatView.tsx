@@ -27,6 +27,7 @@ import {
   buildQuickFollowUps
 } from '../data/africanExamBoards';
 import { getTierForContentLevel } from '../data/countryEducationLevels';
+import { formatMathNotation } from '../lib/mathFormatter';
 
 interface ChatViewProps {
   messages: ChatMessage[];
@@ -62,12 +63,7 @@ const ProfessionalAnswerRenderer: React.FC<AnswerRendererProps> = ({ text, isUse
 
   // Render inline formatting with mark badges and bold/italic handling
   const renderInline = (str: string) => {
-    // Strip stray LaTeX and raw backslashes
-    const cleaned = str
-      .replace(/\\text\{([^}]+)\}/g, '$1')
-      .replace(/\\mathbf\{([^}]+)\}/g, '$1')
-      .replace(/\$\$?/g, '')
-      .replace(/\\/g, '');
+    const cleaned = formatMathNotation(str);
 
     // Check if line starts with a bold key/label like "Alliance System:", "Militarism:", "Process:", etc.
     const colonMatch = cleaned.match(/^([A-Za-z0-9\s—–()]+:)\s*(.*)$/);
@@ -354,6 +350,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
   const isBw = StorageManager.isBotswanaAccount(country);
+  const isZa = StorageManager.isSouthAfricaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const boardProfile = getExamBoardProfile(country, contentLevel);
   const activeTier = getTierForContentLevel(country, contentLevel);
@@ -697,6 +694,115 @@ export const ChatView: React.FC<ChatViewProps> = ({
       };
     }
 
+    if (isZa) {
+      if (isPrimary) {
+        return {
+          badge: 'SOUTH AFRICA · DBE CAPS GET (GRADES 1–7)',
+          title: 'Foundation & Intermediate CAPS Revision',
+          desc: 'Explore DBE CAPS primary subjects: English, isiZulu, Afrikaans, Mathematics, Natural Sciences & Technology, Social Sciences, and Life Skills.',
+          placeholder: 'Ask ZEXA AI about any GET Grades 1–7 CAPS topic or type in isiZulu/Afrikaans...',
+          suggestions: [
+            {
+              subject: 'Social Sciences',
+              text: 'Tell me about the Kingdom of Mapungubwe and South Africa’s 3 national capitals'
+            },
+            {
+              subject: 'Natural Sciences & Tech',
+              text: 'How do plants make food through photosynthesis and what are food chains?'
+            },
+            {
+              subject: 'isiZulu & Ubuntu',
+              text: 'Umuntu ngumuntu ngabantu'
+            },
+            {
+              subject: 'Life Skills & Civics',
+              text: 'List all 9 provinces of South Africa and all 12 official languages including SASL'
+            }
+          ]
+        };
+      }
+
+      if (isTertiary) {
+        return {
+          badge: 'SOUTH AFRICA · TERTIARY & SAQA NQF (5–10)',
+          title: 'University & TVET Research Mastery',
+          desc: 'Advanced study across Constitutional Law, SARB Monetary Policy, Corporate Financial Reporting (IFRS), Engineering, and Computing.',
+          placeholder: 'Ask ZEXA AI for South African Tertiary & SAQA NQF research analysis...',
+          suggestions: [
+            {
+              subject: 'Governance & Law',
+              text: 'Who is the current President of South Africa and list all post-1994 Presidents?'
+            },
+            {
+              subject: 'Economics & SARB',
+              text: 'Explain SARB inflation targeting, the Bushveld Platinum Complex, and South Africa’s economy'
+            },
+            {
+              subject: 'History & Justice',
+              text: 'Analyze CODESA negotiations, the 1996 Constitution, and the Truth and Reconciliation Commission (TRC)'
+            },
+            {
+              subject: 'Education Framework',
+              text: 'Explain the DBE NSC Matric Bachelor’s, Diploma, and Higher Certificate pass requirements'
+            }
+          ]
+        };
+      }
+
+      if (isALevel) {
+        return {
+          badge: 'SOUTH AFRICA · FET & NSC MATRIC (GRADES 10–12)',
+          title: 'NSC Matric Examination Mastery',
+          desc: 'Master DBE CAPS Physical Sciences, Life Sciences, Mathematics, Mathematical Literacy, Accounting, History, Geography & Life Orientation.',
+          placeholder: 'Ask ZEXA AI any NSC Matric Grades 10–12 syllabus question or past paper doubt...',
+          suggestions: [
+            {
+              subject: 'Governance & Civics',
+              text: 'Who is the current President of South Africa and how does the 2024 GNU work?'
+            },
+            {
+              subject: 'History (Grade 12)',
+              text: 'Summarize Apartheid, the 1976 Soweto Uprising, CODESA, and the 1994 Constitution'
+            },
+            {
+              subject: 'DBE NSC Pass Rules',
+              text: 'Explain the DBE NSC Matric Bachelor’s, Diploma, and Higher Certificate pass rules'
+            },
+            {
+              subject: 'Physical Sciences',
+              text: 'Explain the Doppler Effect formula and applications in CAPS Grade 12 Physical Sciences'
+            }
+          ]
+        };
+      }
+
+      // Default South Africa tier: Senior Phase (Grades 8 - 9)
+      return {
+        badge: 'SOUTH AFRICA · CAPS SENIOR PHASE (GRADES 8–9)',
+        title: 'Senior Phase GET Revision',
+        desc: 'Master DBE CAPS Senior Phase: Mathematics, Natural Sciences, Social Sciences, EMS (Economic & Management Sciences), Technology & Life Orientation.',
+        placeholder: 'Ask ZEXA AI any Grades 8–9 CAPS question or type in isiZulu / Afrikaans...',
+        suggestions: [
+          {
+            subject: 'Social Sciences (History)',
+            text: 'Explain the Mineral Revolution (1867–1886) and the 1913 Natives Land Act'
+          },
+          {
+            subject: 'EMS & Accounting',
+            text: 'Explain the Accounting Equation (A = O + L) and budgets in CAPS Senior Phase EMS'
+          },
+          {
+            subject: 'Natural Sciences',
+            text: 'Compare series and parallel electric circuits and Ohm’s Law'
+          },
+          {
+            subject: 'Governance & Geography',
+            text: 'List all 9 provinces of South Africa and all post-1994 Presidents'
+          }
+        ]
+      };
+    }
+
     if (isPrimary) {
       return {
         badge: 'ZIMBABWE · GRADE 1 - 7 PRIMARY',
@@ -921,7 +1027,15 @@ export const ChatView: React.FC<ChatViewProps> = ({
                     ) : (
                       <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>{isZim ? 'ZIMSEC Verified Answer' : isBw ? 'BEC Verified Answer' : 'Verified Curriculum Answer'}</span>
+                        <span>
+                          {isZim
+                            ? 'ZIMSEC Verified Answer'
+                            : isBw
+                            ? 'BEC Verified Answer'
+                            : isZa
+                            ? 'CAPS / NSC Verified Answer'
+                            : 'Verified Curriculum Answer'}
+                        </span>
                       </div>
                     )}
                   </div>
@@ -976,6 +1090,8 @@ export const ChatView: React.FC<ChatViewProps> = ({
                                 ? `ZIMSEC ${contentLevel} Syllabus Curriculum`
                                 : isBw
                                 ? `BEC ${activeTier.shortLabel} Syllabus Curriculum`
+                                : isZa
+                                ? `CAPS ${activeTier.shortLabel} Syllabus Curriculum`
                                 : `ZEXA AI · ${country} (${activeTier.label})`)}
                           </span>
                         </div>

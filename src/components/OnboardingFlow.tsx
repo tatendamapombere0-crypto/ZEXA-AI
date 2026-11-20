@@ -59,6 +59,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
   const activeCountryConfig = selectedCountry ? findCountryConfig(selectedCountry) : null;
   const isZimbabweSelected = selectedCountry.trim().toLowerCase() === 'zimbabwe';
   const isBotswanaSelected = selectedCountry.trim().toLowerCase() === 'botswana';
+  const isSouthAfricaSelected = selectedCountry.trim().toLowerCase() === 'south africa';
   const hasPack = Boolean(activeCountryConfig?.hasCurriculumPack);
   const eduSystem = getCountryEducationSystem(selectedCountry || 'Zimbabwe');
   const activeTier = eduSystem.tiers[mapEducationToContentLevel(selectedLevel)];
@@ -484,6 +485,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                   ? 'Select your education level to configure the ZIMSEC syllabus topics and AI context.'
                   : isBotswanaSelected
                   ? 'Select your education level to configure the BEC Botswana syllabus topics (PSLE, JCE, BGCSE) and AI context.'
+                  : isSouthAfricaSelected
+                  ? 'Select your education level to configure the DBE CAPS South Africa syllabus (GET, Senior Phase, FET & NSC Matric) and AI context.'
                   : `Select your ${selectedCountry} education level (${eduSystem.curriculumName}).`}
               </p>
             </div>
@@ -600,6 +603,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete }) =>
                         ? 'Offline ZIMSEC Curriculum Tutor'
                         : isBotswanaSelected
                         ? 'Offline BEC Botswana Curriculum Tutor'
+                        : isSouthAfricaSelected
+                        ? 'Offline DBE CAPS & NSC Matric Tutor'
                         : `${selectedCountry} Study Tutor`}
                     </p>
                   </div>

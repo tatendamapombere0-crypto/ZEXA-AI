@@ -90,6 +90,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const remainingQueries = Math.max(0, dailyLimit - queriesUsedToday);
   const isZim = StorageManager.isZimbabweAccount(country);
   const isBw = StorageManager.isBotswanaAccount(country);
+  const isZa = StorageManager.isSouthAfricaAccount(country);
   const hasPack = StorageManager.hasCountryCurriculumPack(country);
   const countryConfig = findCountryConfig(country);
   const activeTier = getTierForContentLevel(country, contentLevel);
@@ -280,6 +281,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 ? 'Your device is fully activated with unlimited offline access to all subjects, exam questions, and ChiShona tutoring.'
                 : isBw
                 ? 'Your device is fully activated with unlimited offline access to BEC PSLE, JCE, BGCSE, Setswana, and Botswana exam papers.'
+                : isZa
+                ? 'Your device is fully activated with unlimited offline access to DBE CAPS (GET, Senior Phase, FET & NSC Matric), isiZulu, Afrikaans, and SA exam papers.'
                 : `Your device is activated with unlimited offline ZEXA AI tutoring for ${country}.`
               : 'Enter your school activation code or scratch card key below to unlock unlimited offline queries.'}
           </p>
@@ -360,6 +363,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   ? 'Zimbabwe Heritage, ChiShona, Social Science, and ZIMSEC curriculum data are enabled for this account.'
                   : isBw
                   ? 'Botswana National Encyclopedia, Setswana, Development Studies, and BEC (PSLE, JCE, BGCSE) data are enabled for this account.'
+                  : isZa
+                  ? 'South Africa National Encyclopedia, isiZulu/Afrikaans, Physical & Life Sciences, EMS, and DBE CAPS / NSC Matric data are enabled for this account.'
                   : `${countryConfig.flag} Account country: ${country}.`}
               </p>
             </div>
@@ -437,17 +442,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             )}
           </div>
           <p className="text-xs text-slate-300">
-            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> {isZim ? 'Harare Time (CAT)' : isBw ? 'Gaborone Time (CAT)' : 'Local Time'}.
+            ZEXA AI sends revision prompts directly to your device daily at <strong className="text-white">6:00 AM</strong>, <strong className="text-white">12:00 PM</strong>, and <strong className="text-white">6:00 PM</strong> {isZim ? 'Harare Time (CAT)' : isBw ? 'Gaborone Time (CAT)' : isZa ? 'Johannesburg Time (SAST)' : 'Local Time'}.
           </p>
           <div className="flex flex-wrap gap-2 pt-0.5">
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌅 06:00 {isZim || isBw ? 'CAT' : ''}
+              🌅 06:00 {isZim || isBw ? 'CAT' : isZa ? 'SAST' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              ☀️ 12:00 {isZim || isBw ? 'CAT' : ''}
+              ☀️ 12:00 {isZim || isBw ? 'CAT' : isZa ? 'SAST' : ''}
             </span>
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-cyan-300">
-              🌙 18:00 {isZim || isBw ? 'CAT' : ''}
+              🌙 18:00 {isZim || isBw ? 'CAT' : isZa ? 'SAST' : ''}
             </span>
           </div>
         </div>

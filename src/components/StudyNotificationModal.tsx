@@ -36,6 +36,7 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
 }) => {
   const isZim = StorageManager.isZimbabweAccount(country);
   const isBw = StorageManager.isBotswanaAccount(country);
+  const isZa = StorageManager.isSouthAfricaAccount(country);
   const [clock, setClock] = useState<HarareClockInfo>(() => NotificationManager.getHarareClockInfo(country));
   const [permission, setPermission] = useState<NotificationPermission>(() => NotificationManager.getPermissionStatus());
   const [isEnabled, setIsEnabled] = useState<boolean>(() => StorageManager.areNotificationsEnabled());
@@ -101,13 +102,21 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
             </div>
             <div>
               <h3 className="font-bold text-base sm:text-lg text-white">
-                {isZim ? 'Daily ZIMSEC Study Reminders' : isBw ? 'Daily BEC Botswana Study Reminders' : `Daily ${country} Study Reminders`}
+                {isZim
+                  ? 'Daily ZIMSEC Study Reminders'
+                  : isBw
+                  ? 'Daily BEC Botswana Study Reminders'
+                  : isZa
+                  ? 'Daily CAPS South Africa Study Reminders'
+                  : `Daily ${country} Study Reminders`}
               </h3>
               <p className="text-xs text-slate-400">
                 {isZim
                   ? '6:00 AM • 12:00 PM • 6:00 PM Harare Time (CAT)'
                   : isBw
                   ? '6:00 AM • 12:00 PM • 6:00 PM Gaborone Time (CAT)'
+                  : isZa
+                  ? '6:00 AM • 12:00 PM • 6:00 PM Johannesburg Time (SAST)'
                   : '6:00 AM • 12:00 PM • 6:00 PM Scheduled Study Alerts'}
               </p>
             </div>
@@ -126,7 +135,13 @@ export const StudyNotificationModal: React.FC<StudyNotificationModalProps> = ({
             <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
             <div>
               <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-                {isZim ? 'Current Harare Time (CAT)' : 'Current Study Schedule Clock'}
+                {isZim
+                  ? 'Current Harare Time (CAT)'
+                  : isBw
+                  ? 'Current Gaborone Time (CAT)'
+                  : isZa
+                  ? 'Current Johannesburg Time (SAST)'
+                  : 'Current Study Schedule Clock'}
               </div>
               <div className="text-sm sm:text-base font-bold font-mono text-cyan-300">
                 {clock.harareTimeString}

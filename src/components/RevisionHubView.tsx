@@ -19,6 +19,7 @@ import type {
   BookmarkedExamQuestion
 } from '../types';
 import { MarkdownArticle } from './MarkdownArticle';
+import { formatMathNotation } from '../lib/mathFormatter';
 
 interface RevisionHubViewProps {
   country: string;
@@ -224,7 +225,7 @@ export const RevisionHubView: React.FC<RevisionHubViewProps> = ({
                           <span className="text-slate-400">{new Date(item.createdAt).toLocaleString()}</span>
                         </div>
                         <h3 className="font-bold text-white text-sm sm:text-base leading-snug">
-                          {item.question}
+                          {formatMathNotation(item.question)}
                         </h3>
                       </div>
 
@@ -262,7 +263,7 @@ export const RevisionHubView: React.FC<RevisionHubViewProps> = ({
                       </div>
                     ) : (
                       <p className="text-xs sm:text-sm text-slate-400 line-clamp-2 leading-relaxed">
-                        {item.answer.replace(/^#+\s*/gm, '').replace(/\*\*/g, '')}
+                        {formatMathNotation(item.answer.replace(/^#+\s*/gm, '').replace(/\*\*/g, ''))}
                       </p>
                     )}
                   </div>
@@ -369,11 +370,11 @@ export const RevisionHubView: React.FC<RevisionHubViewProps> = ({
                         <span className="text-slate-400">{bm.subject}</span>
                       </div>
                       <p className="text-xs sm:text-sm text-white font-medium leading-relaxed">
-                        {bm.questionText}
+                        {formatMathNotation(bm.questionText)}
                       </p>
                       {bm.explanation && (
                         <p className="text-xs text-slate-400 line-clamp-3 pt-1">
-                          {bm.explanation}
+                          {formatMathNotation(bm.explanation)}
                         </p>
                       )}
                     </div>
@@ -452,7 +453,7 @@ export const RevisionHubView: React.FC<RevisionHubViewProps> = ({
                           )}
                         </div>
                         <p className="text-sm sm:text-base font-semibold text-white leading-relaxed">
-                          {item.questionText}
+                          {formatMathNotation(item.questionText)}
                         </p>
                       </div>
 
@@ -508,7 +509,7 @@ export const RevisionHubView: React.FC<RevisionHubViewProps> = ({
                                   }`}
                                 >
                                   <span className="font-mono font-bold shrink-0">{opt.letter})</span>
-                                  <span className="flex-1">{opt.text}</span>
+                                  <span className="flex-1">{formatMathNotation(opt.text)}</span>
                                 </div>
                               );
                             })}
